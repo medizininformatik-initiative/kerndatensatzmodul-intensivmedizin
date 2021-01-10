@@ -48,30 +48,44 @@
       <path value="Procedure.category" />
       <min value="1" />
     </element>
+    <element id="Procedure.category.coding">
+      <path value="Procedure.category.coding" />
+      <min value="1" />
+    </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
       <min value="1" />
-      <binding>
-        <strength value="extensible" />
-      </binding>
     </element>
     <element id="Procedure.category.coding:sct.system">
       <path value="Procedure.category.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
+    <element id="Procedure.category.coding:sct.code">
+      <path value="Procedure.category.coding.code" />
+      <fixedCode value="182744004" />
+    </element>
     <element id="Procedure.category.coding:sct.display">
       <path value="Procedure.category.coding.display" />
+      <fixedString value="Extracorporeal circulation procedure (procedure)" />
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.category.coding:LOINC">
-      <path value="Procedure.category.coding" />
-      <sliceName value="LOINC" />
-    </element>
-    <element id="Procedure.category.coding:LOINC.system">
-      <path value="Procedure.category.coding.system" />
+    <element id="Procedure.code.coding:sct">
+      <path value="Procedure.code.coding" />
+      <sliceName value="sct" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
+      <binding>
+        <strength value="required" />
+        <description value="Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004 und 127788007)" />
+      </binding>
+    </element>
+    <element id="Procedure.code.coding:sct.system">
+      <path value="Procedure.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.code.coding:sct.display">
+      <path value="Procedure.code.coding.display" />
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
@@ -89,6 +103,10 @@
     </element>
     <element id="Procedure.performed[x].end">
       <path value="Procedure.performed[x].end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder" />
       <mustSupport value="true" />
     </element>
   </differential>

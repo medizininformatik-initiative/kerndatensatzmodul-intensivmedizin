@@ -1,0 +1,326 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+  "version": "1.0",
+  "name": "Prozedur",
+  "status": "active",
+  "description": "Dieses Profil beschreibt eine Prozedur in der Medizininformatik-Initiative.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "constraint": [
+          {
+            "key": "proc-mii-1",
+            "severity": "error",
+            "human": "Falls die Prozedur per OPS kodiert wird, muss eine SNOMED-CT kodierte Category abgebildet werden",
+            "expression": "code.coding.where(system = 'http://fhir.de/CodeSystem/dimdi/ops').exists() implies category.coding.where(system = 'http://snomed.info/sct').exists()",
+            "source": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure"
+          }
+        ]
+      },
+      {
+        "id": "Procedure.id",
+        "path": "Procedure.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta",
+        "path": "Procedure.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta.source",
+        "path": "Procedure.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.meta.profile",
+        "path": "Procedure.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.extension:recordedDate",
+        "path": "Procedure.extension",
+        "sliceName": "recordedDate",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/procedure-recordedDate"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:durchfuehrungsabsicht",
+        "path": "Procedure.extension",
+        "sliceName": "durchfuehrungsabsicht",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding",
+        "path": "Procedure.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Procedure.category.coding:sct",
+        "path": "Procedure.category.coding",
+        "sliceName": "sct",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct"
+        }
+      },
+      {
+        "id": "Procedure.category.coding:sct.system",
+        "path": "Procedure.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding:sct.code",
+        "path": "Procedure.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "constraint": [
+          {
+            "key": "sct-ops-1",
+            "severity": "error",
+            "human": "Entweder wird die Prozedur mit OPS oder SNOMED-CT kodiert.",
+            "expression": "coding.where(system = 'http://snomed.info/sct').exists() or coding.where(system = 'http://fhir.de/CodeSystem/dimdi/ops').exists()",
+            "source": "Procedure"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:ops",
+        "path": "Procedure.code.coding",
+        "sliceName": "ops",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/dimdi/ops"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:ops.extension",
+        "path": "Procedure.code.coding.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:ops.extension:seitenlokalisation",
+        "path": "Procedure.code.coding.extension",
+        "sliceName": "seitenlokalisation",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/seitenlokalisation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:ops.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "patternUri": "http://fhir.de/CodeSystem/dimdi/ops",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:ops.version",
+        "path": "Procedure.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:ops.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:sct",
+        "path": "Procedure.code.coding",
+        "sliceName": "sct",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:sct.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:sct.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "mustSupport": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BodySite"
+            }
+          ],
+          "strength": "extensible"
+        }
+      },
+      {
+        "id": "Procedure.note",
+        "path": "Procedure.note",
+        "mustSupport": true
+      }
+    ]
+  }
+}
