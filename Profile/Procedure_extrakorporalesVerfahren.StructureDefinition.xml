@@ -87,6 +87,10 @@
       <path value="Procedure.code.coding.display" />
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.code.coding:random">
+      <path value="Procedure.code.coding" />
+      <sliceName value="random" />
+    </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
       <mustSupport value="true" />
