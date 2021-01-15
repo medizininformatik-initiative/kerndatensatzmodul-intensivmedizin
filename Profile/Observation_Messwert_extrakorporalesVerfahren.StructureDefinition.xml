@@ -56,6 +56,7 @@
   <differential>
     <element id="Observation.partOf">
       <path value="Observation.partOf" />
+      <definition value="Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -68,6 +69,7 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding">
@@ -93,6 +95,10 @@
     <element id="Observation.category.coding:sct.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
+    </element>
+    <element id="Observation.category.coding:sct.display">
+      <path value="Observation.category.coding.display" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:ops">
       <path value="Observation.category.coding" />
