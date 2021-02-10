@@ -1511,7 +1511,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1638,6 +1638,7 @@
       <type>
         <code value="uri" />
       </type>
+      <patternUri value="http://snomed.info/sct" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1649,10 +1650,6 @@
       </constraint>
       <mustSupport value="true" />
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1775,7 +1772,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="Extracorporeal circulation procedure (procedure)" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4817,21 +4813,13 @@
       <patternCoding>
         <code value="182744004" />
       </patternCoding>
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
     </element>
     <element id="Procedure.category.coding:sct.system">
       <path value="Procedure.category.coding.system" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
+      <patternUri value="http://snomed.info/sct" />
     </element>
     <element id="Procedure.category.coding:sct.display">
       <path value="Procedure.category.coding.display" />
-      <fixedString value="Extracorporeal circulation procedure (procedure)" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding">
