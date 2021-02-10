@@ -972,6 +972,10 @@
       <type>
         <code value="Coding" />
       </type>
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="vital-signs" />
+      </patternCoding>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1108,7 +1112,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -1195,7 +1198,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="vital-signs" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4152,18 +4154,20 @@
     <element id="Observation.category:VSCat.coding">
       <path value="Observation.category.coding" />
       <min value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="vital-signs" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:VSCat.coding.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:VSCat.coding.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
-      <fixedCode value="vital-signs" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:SnomedCategory">

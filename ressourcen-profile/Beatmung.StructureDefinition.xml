@@ -1462,7 +1462,7 @@
       </extension>
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
-      <short value="Code defined by a terminology system" />
+      <short value="40617009 | 57485005" />
       <definition value="A reference to a code defined by a terminology system." />
       <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for alternative encodings within a code system, and translations to other code systems." />
@@ -1492,7 +1492,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_Beatmung_Code" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4612,10 +4612,7 @@
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_Beatmung_Code" />
-      </binding>
+      <short value="40617009 | 57485005" />
     </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
