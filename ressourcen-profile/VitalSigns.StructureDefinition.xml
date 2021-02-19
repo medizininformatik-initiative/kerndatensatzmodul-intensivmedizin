@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/VitalSigns" />
+  <url value="http://www.medizininformatik-initiative.de/fhir/StructureDefinition/VitalSigns" />
   <name value="VitalSigns" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -4176,11 +4176,6 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://loinc.org" />
-        </coding>
-      </fixedCodeableConcept>
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />

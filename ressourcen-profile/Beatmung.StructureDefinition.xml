@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/Beatmung" />
+  <url value="http://www.medizininformatik-initiative.de/fhir/StructureDefinition/Beatmung" />
   <name value="Beatmung" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -4609,6 +4608,10 @@
     </element>
   </snapshot>
   <differential>
+	<element id="Procedure.category">
+      <path value="Procedure.category" />
+      <min value="1" />
+    </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
