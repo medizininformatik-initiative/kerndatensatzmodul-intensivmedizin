@@ -1438,10 +1438,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -4800,12 +4796,9 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Procedure.category.coding">
-      <path value="Procedure.category.coding" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
+  <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <min value="1" />
     </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
