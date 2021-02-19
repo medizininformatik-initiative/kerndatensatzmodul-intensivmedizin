@@ -1846,7 +1846,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresulr" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
       </binding>
       <mapping>
         <identity value="rim" />
