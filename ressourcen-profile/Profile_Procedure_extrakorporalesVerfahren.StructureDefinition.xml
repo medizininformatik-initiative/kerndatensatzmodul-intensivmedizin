@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/Procedure_extrakorporalesVerfahren" />
+  <url value="http://www.medizininformatik-initiative.de/fhir/StructureDefinition/Procedure_extrakorporalesVerfahren" />
   <name value="Procedure_extrakorporalesVerfahren" />
   <status value="draft" />
   <contact>
@@ -1438,10 +1438,6 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element" />
       </constraint>
       <isSummary value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -4800,12 +4796,9 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Procedure.category.coding">
-      <path value="Procedure.category.coding" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
+  <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <min value="1" />
     </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
