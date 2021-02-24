@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://www.medizininformatik-initiative.de/fhir/StructureDefinition/VitalSigns" />
+  <url value="http://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/VitalSigns" />
   <name value="VitalSigns" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
