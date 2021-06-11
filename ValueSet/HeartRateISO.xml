@@ -1,0 +1,27 @@
+ <ValueSet xmlns="http://hl7.org/fhir">
+ <text>
+<status value="generated"/>
+ <div xmlns="http://www.w3.org/1999/xhtml">
+<h2>Heart Rate ISO</h2>
+<tt>https://www.medizininformatik-initiative.de/fhir/core/ext-ICU/ValueSet/HeartRateISO</tt>
+</div>
+</text>
+<url value="https://www.medizininformatik-initiative.de/fhir/core/ext-ICU/ValueSet/HeartRateISO"/>
+<name value="Heart_Rate_ISO"/>
+<title value="Heart Rate ISO"/>
+<status value="draft"/>
+ <contact>
+ <telecom>
+<system value="email"/>
+</telecom>
+</contact>
+ <compose>
+ <include>
+<system value="urn:std:iso:11073:10101"/>
+ <concept>
+<code value="16770"/>
+<display value="Hear rate"/>
+</concept>
+</include>
+</compose>
+</ValueSet>
