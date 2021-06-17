@@ -52,8 +52,8 @@
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
       <binding>
-        <strength value="required"/>
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_Beatmung_Category"/>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_Beatmung_Category" />
       </binding>
     </element>
     <element id="Procedure.category.coding:sct.display">
@@ -67,6 +67,20 @@
         <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_Beatmung_Code" />
       </binding>
+    </element>
+    <element id="Procedure.code.coding:sct.display">
+      <path value="Procedure.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <type>
+        <code value="Period" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
