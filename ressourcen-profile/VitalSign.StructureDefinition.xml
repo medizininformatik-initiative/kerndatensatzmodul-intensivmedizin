@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/VitalSigns" />
-  <name value="VitalSigns" />
+  <name value="VitalSign" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -37,7 +37,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.id">
@@ -54,28 +54,13 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:VSCat">
+    <element id="Observation.category:vs-cat">
       <path value="Observation.category" />
-      <sliceName value="VSCat" />
-      <min value="1" />
-      <max value="1" />
+      <sliceName value="vs-cat" />
     </element>
-    <element id="Observation.category:VSCat.coding">
+    <element id="Observation.category:vs-cat.coding">
       <path value="Observation.category.coding" />
       <min value="1" />
       <patternCoding>
@@ -84,12 +69,12 @@
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:VSCat.coding.system">
+    <element id="Observation.category:vs-cat.coding.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:VSCat.coding.code">
+    <element id="Observation.category:vs-cat.coding.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -97,25 +82,21 @@
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
       </binding>
     </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <mustSupport value="false" />
-    </element>
-    <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresulr" />
-      </binding>
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.encounter">
@@ -124,7 +105,6 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
-      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
@@ -133,9 +113,15 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.effective[x]:effectivePeriod">
+      <path value="Observation.effectivePeriod" />
+      <sliceName value="effectivePeriod" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <definition value="Vital Signs value are recorded using the Quantity data type. For supporting observations such as Cuff size could use other datatypes such as CodeableConcept." />
       <mustSupport value="true" />
     </element>
     <element id="Observation.dataAbsentReason">
@@ -144,7 +130,7 @@
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
-      <condition value="obs-3" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
@@ -152,24 +138,10 @@
     </element>
     <element id="Observation.component.code">
       <path value="Observation.component.code" />
-      <mustSupport value="true" />
       <binding>
-        <strength value="extensible" />
+        <strength value="example" />
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
       </binding>
-    </element>
-    <element id="Observation.component.value[x]">
-      <path value="Observation.component.value[x]" />
-      <short value="Vital Sign Value recorded with UCUM" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/ucum-vitals-common" />
-      </binding>
-    </element>
-    <element id="Observation.component.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
