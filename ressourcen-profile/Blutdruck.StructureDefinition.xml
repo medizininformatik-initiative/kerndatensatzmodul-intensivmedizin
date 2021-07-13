@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutdruck" />
+  <name value="Blutdruck" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/VitalSigns" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.category:sbp">
+      <path value="Observation.category" />
+      <sliceName value="sbp" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category:sbp.coding">
+      <path value="Observation.category.coding" />
+      <min value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="271649006" />
+        <display value="Systolic blood pressure (observable entity)" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:sbp.coding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:sbp.coding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:dbp">
+      <path value="Observation.category" />
+      <sliceName value="dbp" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category:dbp.coding">
+      <path value="Observation.category.coding" />
+      <min value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="271650006" />
+        <display value="Diastolic blood pressure (observable entity)" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:dbp.coding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:dbp.coding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:mbp">
+      <path value="Observation.category" />
+      <sliceName value="mbp" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category:mbp.coding">
+      <path value="Observation.category.coding" />
+      <min value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="6797001" />
+        <display value="Mean blood pressure (observable entity)" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:mbp.coding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:mbp.coding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code:systolicBloodPressureCode">
+      <path value="Observation.code" />
+      <sliceName value="systolicBloodPressureCode" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/SystolicBloodPressure" />
+      </binding>
+    </element>
+    <element id="Observation.code:systolicBloodPressureCode.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:systolicBloodPressureCode.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:systolicBloodPressureCode.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:diastolicBloodPressureCode">
+      <path value="Observation.code" />
+      <sliceName value="diastolicBloodPressureCode" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/DiastolicBloodPressure" />
+      </binding>
+    </element>
+    <element id="Observation.code:diastolicBloodPressureCode.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:diastolicBloodPressureCode.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:diastolicBloodPressureCode.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:meanBloodPressureCode">
+      <path value="Observation.code" />
+      <sliceName value="meanBloodPressureCode" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/MeanBloodPressure" />
+      </binding>
+    </element>
+    <element id="Observation.code:meanBloodPressureCode.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:meanBloodPressureCode.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code:meanBloodPressureCode.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
