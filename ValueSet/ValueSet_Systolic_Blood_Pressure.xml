@@ -1,0 +1,59 @@
+ <ValueSet xmlns="http://hl7.org/fhir">
+ <text>
+<status value="generated"/>
+ <div xmlns="http://www.w3.org/1999/xhtml">
+<h2>Systolic blood pressure</h2>
+<tt>https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/SystolicBloodPressure</tt>
+</div>
+</text>
+<url value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/SystolicBloodPressure"/>
+<name value="Systolic_blood_pressure"/>
+<title value="Systolic blood pressure"/>
+<status value="draft"/>
+ <contact>
+ <telecom>
+<system value="email"/>
+</telecom>
+</contact>
+ <compose>
+ <include>
+<system value="http://snomed.info/sct"/>
+ <concept>
+<code value="271649006"/>
+<display value="Systolic blood pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="314464000"/>
+<display value="24 hour systolic blood pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="716579001"/>
+<display value="Baseline systolic blood pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="407556006"/>
+<display value="Lying systolic blood pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="407554009"/>
+<display value="Sitting systolic blood pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="400974009"/>
+<display value="Standing systolic blood pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="72313002"/>
+<display value="Systolic arterial pressure (observable entity)"/>
+</concept>
+ <concept>
+<code value="708502007"/>
+<display value="Systolic blood pressure of neonate at birth (observable entity)"/>
+</concept>
+ <concept>
+<code value="399304008"/>
+<display value="Systolic blood pressure on admission (observable entity)"/>
+</concept>
+</include>
+</compose>
+</ValueSet>
