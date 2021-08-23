@@ -39,6 +39,25 @@
 <baseDefinition value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/VitalSigns"/>
 <derivation value="constraint"/>
  <differential>
+ <element id="Observation.code.coding">
+<path value="Observation.code.coding"/>
+<min value="1"/>
+<max value="1"/>
+ <patternCoding>
+<system value="http://snomed.info/sct"/>
+<code value="75367002"/>
+<display value="Blood pressure (observable entity)"/>
+</patternCoding>
+</element>
+ <element id="Observation.code.coding.system">
+<path value="Observation.code.coding.system"/>
+<min value="1"/>
+<mustSupport value="true"/>
+</element>
+ <element id="Observation.code.coding.code">
+<path value="Observation.code.coding.code"/>
+<min value="1"/>
+</element>
  <element id="Observation.component">
 <path value="Observation.component"/>
  <slicing>
@@ -70,7 +89,6 @@
  <element id="Observation.component:SystolicBP.code.coding">
 <path value="Observation.component.code.coding"/>
 <min value="1"/>
-<max value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.component:SystolicBP.code.coding.system">
@@ -86,6 +104,10 @@
  <element id="Observation.component:SystolicBP.code.coding.display">
 <path value="Observation.component.code.coding.display"/>
 <mustSupport value="true"/>
+</element>
+ <element id="Observation.component:SystolicBP.value[x]">
+<path value="Observation.component.value[x]"/>
+<min value="1"/>
 </element>
  <element id="Observation.component:MeanBP">
 <path value="Observation.component"/>
@@ -106,7 +128,11 @@
  <element id="Observation.component:MeanBP.code.coding">
 <path value="Observation.component.code.coding"/>
 <min value="1"/>
-<max value="1"/>
+ <patternCoding>
+<system value="http://snomed.info/sct"/>
+<code value="271650006"/>
+<display value="Diastolic blood pressure (observable entity)"/>
+</patternCoding>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.component:MeanBP.code.coding.system">
@@ -122,6 +148,10 @@
  <element id="Observation.component:MeanBP.code.coding.display">
 <path value="Observation.component.code.coding.display"/>
 <mustSupport value="true"/>
+</element>
+ <element id="Observation.component:MeanBP.value[x]">
+<path value="Observation.component.value[x]"/>
+<min value="1"/>
 </element>
  <element id="Observation.component:DiastolicBP">
 <path value="Observation.component"/>
@@ -142,7 +172,6 @@
  <element id="Observation.component:DiastolicBP.code.coding">
 <path value="Observation.component.code.coding"/>
 <min value="1"/>
-<max value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.component:DiastolicBP.code.coding.system">
@@ -158,6 +187,10 @@
  <element id="Observation.component:DiastolicBP.code.coding.display">
 <path value="Observation.component.code.coding.display"/>
 <mustSupport value="true"/>
+</element>
+ <element id="Observation.component:DiastolicBP.value[x]">
+<path value="Observation.component.value[x]"/>
+<min value="1"/>
 </element>
 </differential>
 </StructureDefinition>
