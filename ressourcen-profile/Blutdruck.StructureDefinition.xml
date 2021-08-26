@@ -58,6 +58,14 @@
 <path value="Observation.code.coding.code"/>
 <min value="1"/>
 </element>
+ <element id="Observation.value[x]">
+<path value="Observation.value[x]"/>
+<max value="0"/>
+</element>
+ <element id="Observation.referenceRange">
+<path value="Observation.referenceRange"/>
+<max value="0"/>
+</element>
  <element id="Observation.component">
 <path value="Observation.component"/>
  <slicing>
@@ -109,6 +117,11 @@
 <path value="Observation.component.value[x]"/>
 <min value="1"/>
 </element>
+ <element id="Observation.component:SystolicBP.referenceRange">
+<path value="Observation.component.referenceRange"/>
+<max value="1"/>
+<mustSupport value="true"/>
+</element>
  <element id="Observation.component:MeanBP">
 <path value="Observation.component"/>
 <sliceName value="MeanBP"/>
@@ -130,8 +143,6 @@
 <min value="1"/>
  <patternCoding>
 <system value="http://snomed.info/sct"/>
-<code value="271650006"/>
-<display value="Diastolic blood pressure (observable entity)"/>
 </patternCoding>
 <mustSupport value="true"/>
 </element>
@@ -152,6 +163,11 @@
  <element id="Observation.component:MeanBP.value[x]">
 <path value="Observation.component.value[x]"/>
 <min value="1"/>
+</element>
+ <element id="Observation.component:MeanBP.referenceRange">
+<path value="Observation.component.referenceRange"/>
+<max value="1"/>
+<mustSupport value="true"/>
 </element>
  <element id="Observation.component:DiastolicBP">
 <path value="Observation.component"/>
@@ -191,6 +207,11 @@
  <element id="Observation.component:DiastolicBP.value[x]">
 <path value="Observation.component.value[x]"/>
 <min value="1"/>
+</element>
+ <element id="Observation.component:DiastolicBP.referenceRange">
+<path value="Observation.component.referenceRange"/>
+<max value="1"/>
+<mustSupport value="true"/>
 </element>
 </differential>
 </StructureDefinition>
