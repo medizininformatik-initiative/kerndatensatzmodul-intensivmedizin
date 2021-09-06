@@ -67,6 +67,21 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.category:snomedCT">
+      <path value="Observation.category" />
+      <sliceName value="snomedCT" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="50373000" />
+          <display value="Body height measure (observable entity)" />
+        </coding>
+      </patternCodeableConcept>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergroesseCategory" />
+      </binding>
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
@@ -88,16 +103,32 @@
       <path value="Observation.code.coding.code" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergroesseCodeValueSet" />
+      </binding>
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]:effectiveDateTime">
-      <path value="Observation.effectiveDateTime" />
+      <path value="Observation.effective[x]" />
       <sliceName value="effectiveDateTime" />
       <mustSupport value="true" />
     </element>
@@ -108,11 +139,31 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <mustSupport value="false" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.value">
+      <path value="Observation.value[x].value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <path value="Observation.value[x].unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.system">
+      <path value="Observation.value[x].system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.value[x].code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
   </differential>
