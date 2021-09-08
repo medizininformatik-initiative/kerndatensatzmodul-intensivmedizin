@@ -73,14 +73,31 @@
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
-          <code value="50373000" />
-          <display value="Body height measure (observable entity)" />
+          <code value="248326004" />
+          <display value="Body measure (observable entity)" />
         </coding>
       </patternCodeableConcept>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergroesseCategory" />
       </binding>
+    </element>
+    <element id="Observation.category:snomedCT.coding">
+      <path value="Observation.category.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:snomedCT.coding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:snomedCT.coding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
@@ -113,8 +130,22 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergroesseCodeValueSet" />
       </binding>
     </element>
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
