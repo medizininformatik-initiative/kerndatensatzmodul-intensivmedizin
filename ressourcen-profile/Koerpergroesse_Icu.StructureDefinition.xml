@@ -70,6 +70,8 @@
     <element id="Observation.category:snomedCT">
       <path value="Observation.category" />
       <sliceName value="snomedCT" />
+      <min value="1" />
+      <max value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
@@ -169,7 +171,6 @@
         <ordered value="true" />
         <rules value="open" />
       </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
