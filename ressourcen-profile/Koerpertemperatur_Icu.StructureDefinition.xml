@@ -68,6 +68,32 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.category:snomedCT">
+      <path value="Observation.category" />
+      <sliceName value="snomedCT" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="386725007" />
+          <display value="Body temperature (observable entity)" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:snomedCT.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:snomedCT.coding.system">
+      <path value="Observation.category.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:snomedCT.coding.code">
+      <path value="Observation.category.coding.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
@@ -91,27 +117,74 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpertemperaturCode" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]:effectiveDateTime">
-      <path value="Observation.effectiveDateTime" />
+      <path value="Observation.effective[x]" />
       <sliceName value="effectiveDateTime" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.value">
+      <path value="Observation.valueQuantity.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <path value="Observation.valueQuantity.unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.system">
+      <path value="Observation.valueQuantity.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.valueQuantity.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
   </differential>
