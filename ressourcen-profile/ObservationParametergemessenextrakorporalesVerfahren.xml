@@ -1,4 +1,4 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+ <StructureDefinition xmlns="http://hl7.org/fhir">
 <url value="http://example.org/fhir/StructureDefinition/Observation_Messwert_extrakorporalesVerfahren"/>
 <name value="Observation_Parameter_gemessen_extrakorporalesVerfahren"/>
 <status value="draft"/>
@@ -101,6 +101,10 @@
 <system value="http://snomed.info/sct"/>
 </patternCoding>
 <mustSupport value="true"/>
+ <binding>
+<strength value="required"/>
+<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_intensivmedizin_extrakorporalesVerfahren_category"/>
+</binding>
 </element>
  <element id="Observation.category.coding:sct.system">
 <path value="Observation.category.coding.system"/>
@@ -161,6 +165,8 @@
  <type>
 <code value="Reference"/>
 <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
+<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
 </type>
  <fixedReference>
 <type value="Patient"/>
@@ -169,6 +175,10 @@
 </element>
  <element id="Observation.encounter">
 <path value="Observation.encounter"/>
+ <type>
+<code value="Reference"/>
+<profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"/>
+</type>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.effective[x]">
@@ -180,6 +190,11 @@
  <type>
 <code value="Period"/>
 </type>
+<mustSupport value="true"/>
+</element>
+ <element id="Observation.issued">
+<path value="Observation.issued"/>
+<mustSupport value="true"/>
 </element>
  <element id="Observation.value[x]">
 <path value="Observation.value[x]"/>
@@ -222,10 +237,6 @@
 </element>
  <element id="Observation.bodySite">
 <path value="Observation.bodySite"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.method">
-<path value="Observation.method"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.device">
