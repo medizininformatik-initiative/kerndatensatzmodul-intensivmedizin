@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+ <text>
+<status value="generated"/>
+ <div xmlns="http://www.w3.org/1999/xhtml">
+<h2>DeviceMetric_Type</h2>
+<tt>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_DeviceMetric_Type</tt>
+</div>
+</text>
+<url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_DeviceMetric_Type"/>
+<name value="DeviceMetric_Type"/>
+<title value="DeviceMetric_Type"/>
+<status value="draft"/>
+ <contact>
+ <telecom>
+<system value="email"/>
+</telecom>
+</contact>
+ <compose>
+ <include>
+<system value="http://snomed.info/sct"/>
+<valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_intensivmedizin_extrakorporalesVerfahren_category"/>
+<valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_Beatmung_Category"/>
+</include>
+</compose>
+</ValueSet>

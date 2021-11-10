@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://medizininformatik.de./fhir/StructureDefinition/DeviceMetric_ICU" />
+  <name value="DeviceMetric_ICU" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DeviceMetric" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DeviceMetric.type">
+      <path value="DeviceMetric.type" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_DeviceMetric_Type" />
+      </binding>
+    </element>
+    <element id="DeviceMetric.type.coding">
+      <path value="DeviceMetric.type.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.type.coding.system">
+      <path value="DeviceMetric.type.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.type.coding.code">
+      <path value="DeviceMetric.type.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.category">
+      <path value="DeviceMetric.category" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
