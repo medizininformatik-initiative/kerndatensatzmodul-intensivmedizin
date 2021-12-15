@@ -69,10 +69,6 @@
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Procedure_extrakorporalesVerfahren" />
       </type>
-      <patternReference>
-        <reference value="Procedure" />
-        <type value="Type" />
-      </patternReference>
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
