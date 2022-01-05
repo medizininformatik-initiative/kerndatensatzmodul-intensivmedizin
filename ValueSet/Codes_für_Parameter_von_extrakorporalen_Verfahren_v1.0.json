@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet_Parameter_von_extrakorporalen_Verfahren",
+  "version": "1.0",
+  "name": "Codes f\u00fcr Parameter von extrakorporalen Verfahren",
+  "title": "Codes f\u00fcr Parameter von extrakorporalen Verfahren",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-12-17T00:00:00",
+  "publisher": "https://www.medizininformatik-initiative.de",
+  "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "83064-6"
+          },
+          {
+            "code": "19941-4"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "444479000.0"
+          },
+          {
+            "code": "445940005.0"
+          },
+          {
+            "code": "445940005.0"
+          },
+          {
+            "code": "708513005.0"
+          },
+          {
+            "code": "708514004.0"
+          },
+          {
+            "code": "251286000.0"
+          },
+          {
+            "code": "251288004.0"
+          },
+          {
+            "code": "251289007.0"
+          },
+          {
+            "code": "252076005.0"
+          },
+          {
+            "code": "386534000.0"
+          }
+        ]
+      }
+    ]
+  }
+}
