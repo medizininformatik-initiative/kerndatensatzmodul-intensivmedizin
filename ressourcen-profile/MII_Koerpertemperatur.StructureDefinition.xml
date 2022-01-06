@@ -1,6 +1,6 @@
  <StructureDefinition xmlns="http://hl7.org/fhir">
-<url value="http://medizininformatik.org/fhir/StructureDefinition/Koerpergroesse_Icu"/>
-<name value="Koerpergroesse_Icu"/>
+<url value="http://medizininformatik.org/fhir/ext/modul-icu/StructureDefinition/MII_Koerpertemperatur"/>
+<name value="MII_Koerpertemperatur"/>
 <status value="draft"/>
 <fhirVersion value="4.0.1"/>
  <mapping>
@@ -36,7 +36,7 @@
 <kind value="resource"/>
 <abstract value="false"/>
 <type value="Observation"/>
-<baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"/>
+<baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpertemperatur"/>
 <derivation value="constraint"/>
  <differential>
  <element id="Observation.status">
@@ -50,10 +50,11 @@
  <element id="Observation.category:vs-cat">
 <path value="Observation.category"/>
 <sliceName value="vs-cat"/>
-<mustSupport value="true"/>
 </element>
  <element id="Observation.category:vs-cat.coding">
 <path value="Observation.category.coding"/>
+<min value="1"/>
+<max value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.category:vs-cat.coding.system">
@@ -73,30 +74,22 @@
  <patternCodeableConcept>
  <coding>
 <system value="http://snomed.info/sct"/>
-<code value="248326004"/>
-<display value="Body measure (observable entity)"/>
+<code value="386725007"/>
+<display value="Body temperature (observable entity)"/>
 </coding>
 </patternCodeableConcept>
 <mustSupport value="true"/>
- <binding>
-<strength value="preferred"/>
-<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergroesseCategory"/>
-</binding>
 </element>
  <element id="Observation.category:snomedCT.coding">
 <path value="Observation.category.coding"/>
-<min value="1"/>
-<max value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.category:snomedCT.coding.system">
 <path value="Observation.category.coding.system"/>
-<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.category:snomedCT.coding.code">
 <path value="Observation.category.coding.code"/>
-<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.code">
@@ -114,30 +107,29 @@
 </element>
  <element id="Observation.code.coding:loinc.system">
 <path value="Observation.code.coding.system"/>
+<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.code.coding:loinc.code">
 <path value="Observation.code.coding.code"/>
+<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.code.coding:snomedCT">
 <path value="Observation.code.coding"/>
 <sliceName value="snomedCT"/>
-<min value="1"/>
 <mustSupport value="true"/>
  <binding>
 <strength value="required"/>
-<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergroesseCodeValueSet"/>
+<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpertemperaturCode"/>
 </binding>
 </element>
  <element id="Observation.code.coding:snomedCT.system">
 <path value="Observation.code.coding.system"/>
-<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.code.coding:snomedCT.code">
 <path value="Observation.code.coding.code"/>
-<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.subject">
@@ -165,15 +157,12 @@
 </element>
  <element id="Observation.value[x]">
 <path value="Observation.value[x]"/>
- <slicing>
-<ordered value="true"/>
-<rules value="open"/>
-</slicing>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.value[x]:valueQuantity">
 <path value="Observation.value[x]"/>
 <sliceName value="valueQuantity"/>
+<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.value[x]:valueQuantity.value">

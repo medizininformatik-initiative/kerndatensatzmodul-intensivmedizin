@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/EingestellteUndGemesseneParameter" />
-  <name value="EingestellteUndGemesseneParameter" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_eingestellte_gemessene_Parameter_Beatmung" />
+  <name value="MII_eingestellte_gemessene_Parameter_Beatmung" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="DeviceMetric" />
@@ -34,11 +24,6 @@
     </element>
     <element id="DeviceMetric.category">
       <path value="DeviceMetric.category" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DeviceMetric.measurementPeriod">
-      <path value="DeviceMetric.measurementPeriod" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
   </differential>

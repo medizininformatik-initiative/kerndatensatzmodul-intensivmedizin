@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_Beatmung" />
+  <name value="MII_DeviceMetric_Beatmung" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DeviceMetric" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DeviceMetric.type">
+      <path value="DeviceMetric.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.category">
+      <path value="DeviceMetric.category" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

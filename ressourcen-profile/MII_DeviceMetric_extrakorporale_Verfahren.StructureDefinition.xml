@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://medizininformatik.de./fhir/StructureDefinition/DeviceMetric_ICU" />
-  <name value="DeviceMetric_ICU" />
+  <url value="http://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_extrakorporale_Verfahren" />
+  <name value="MII_DeviceMetric_extrakorporale_Verfahren" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

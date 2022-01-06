@@ -1,6 +1,6 @@
  <StructureDefinition xmlns="http://hl7.org/fhir">
-<url value="http://medizininformatik.org/fhir/StructureDefinition/Kopfumfang_Icu"/>
-<name value="Kopfumfang_Icu"/>
+<url value="http://medizininformatik.org/fhir/ext/modul-icu/StructureDefinition/MII_Kopfumfang"/>
+<name value="MII_Kopfumfang"/>
 <status value="draft"/>
 <fhirVersion value="4.0.1"/>
  <mapping>

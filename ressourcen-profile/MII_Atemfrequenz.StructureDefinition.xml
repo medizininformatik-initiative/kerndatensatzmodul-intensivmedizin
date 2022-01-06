@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/VitalSigns" />
-  <name value="VitalSign" />
+  <url value="https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/MII_Atemfrequenz" />
+  <name value="MII_Atemfrequenz" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -37,7 +37,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.id">
@@ -46,6 +46,10 @@
     </element>
     <element id="Observation.meta">
       <path value="Observation.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
@@ -59,14 +63,10 @@
     <element id="Observation.category:vs-cat">
       <path value="Observation.category" />
       <sliceName value="vs-cat" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category:vs-cat.coding">
       <path value="Observation.category.coding" />
-      <min value="1" />
-      <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-        <code value="vital-signs" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:vs-cat.coding.system">
@@ -82,58 +82,57 @@
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-        <valueSet value="http://hl7.org/fhir/R4/valueset-observation-vitalsignresult" />
-      </binding>
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT">
+    <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
+      <sliceName value="loinc" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT.system">
+    <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT.code">
+    <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT.display">
-      <path value="Observation.code.coding.display" />
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="86290005" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.encounter">
       <path value="Observation.encounter" />
-      <type>
-        <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
@@ -146,23 +145,19 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.effective[x]:effectivePeriod">
-      <path value="Observation.effective[x]" />
-      <sliceName value="effectivePeriod" />
-      <type>
-        <code value="Period" />
-      </type>
-    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <type>
-        <code value="Quantity" />
-      </type>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
+      <min value="1" />
+      <patternQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="/min" />
+      </patternQuantity>
     </element>
     <element id="Observation.value[x]:valueQuantity.value">
       <path value="Observation.value[x].value" />
@@ -182,51 +177,6 @@
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component">
-      <path value="Observation.component" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.code">
-      <path value="Observation.component.code" />
-      <binding>
-        <strength value="example" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/observation-vitalsignresult" />
-      </binding>
-    </element>
-    <element id="Observation.component.value[x]">
-      <path value="Observation.component.value[x]" />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity">
-      <path value="Observation.component.value[x]" />
-      <sliceName value="valueQuantity" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.value">
-      <path value="Observation.component.value[x].value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.comparator">
-      <path value="Observation.component.value[x].comparator" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.unit">
-      <path value="Observation.component.value[x].unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.system">
-      <path value="Observation.component.value[x].system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.code">
-      <path value="Observation.component.value[x].code" />
       <mustSupport value="true" />
     </element>
   </differential>

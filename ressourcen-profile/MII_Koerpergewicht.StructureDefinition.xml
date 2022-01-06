@@ -1,6 +1,6 @@
  <StructureDefinition xmlns="http://hl7.org/fhir">
-<url value="http://medizininformatik.org/fhir/StructureDefinition/Koerpertemperatur_Icu"/>
-<name value="Koerpertemperatur_Icu"/>
+<url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Koerpergewicht"/>
+<name value="MII_Koerpergewicht"/>
 <status value="draft"/>
 <fhirVersion value="4.0.1"/>
  <mapping>
@@ -36,7 +36,7 @@
 <kind value="resource"/>
 <abstract value="false"/>
 <type value="Observation"/>
-<baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpertemperatur"/>
+<baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"/>
 <derivation value="constraint"/>
  <differential>
  <element id="Observation.status">
@@ -50,6 +50,7 @@
  <element id="Observation.category:vs-cat">
 <path value="Observation.category"/>
 <sliceName value="vs-cat"/>
+<mustSupport value="true"/>
 </element>
  <element id="Observation.category:vs-cat.coding">
 <path value="Observation.category.coding"/>
@@ -74,63 +75,43 @@
  <patternCodeableConcept>
  <coding>
 <system value="http://snomed.info/sct"/>
-<code value="386725007"/>
-<display value="Body temperature (observable entity)"/>
+<code value="248326004"/>
+<display value="Body measure (observable entity)"/>
 </coding>
 </patternCodeableConcept>
 <mustSupport value="true"/>
+ <binding>
+<strength value="required"/>
+<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergewichtCategory"/>
+</binding>
 </element>
  <element id="Observation.category:snomedCT.coding">
 <path value="Observation.category.coding"/>
+<min value="1"/>
+<max value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.category:snomedCT.coding.system">
 <path value="Observation.category.coding.system"/>
+<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.category:snomedCT.coding.code">
 <path value="Observation.category.coding.code"/>
+<min value="1"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.code">
 <path value="Observation.code"/>
 <mustSupport value="true"/>
 </element>
- <element id="Observation.code.coding">
-<path value="Observation.code.coding"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.code.coding:loinc">
-<path value="Observation.code.coding"/>
-<sliceName value="loinc"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.code.coding:loinc.system">
-<path value="Observation.code.coding.system"/>
-<min value="1"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.code.coding:loinc.code">
-<path value="Observation.code.coding.code"/>
-<min value="1"/>
-<mustSupport value="true"/>
-</element>
  <element id="Observation.code.coding:snomedCT">
 <path value="Observation.code.coding"/>
 <sliceName value="snomedCT"/>
-<mustSupport value="true"/>
  <binding>
 <strength value="required"/>
-<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpertemperaturCode"/>
+<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-icu/ValueSet/KoerpergewichtCode"/>
 </binding>
-</element>
- <element id="Observation.code.coding:snomedCT.system">
-<path value="Observation.code.coding.system"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.code.coding:snomedCT.code">
-<path value="Observation.code.coding.code"/>
-<mustSupport value="true"/>
 </element>
  <element id="Observation.subject">
 <path value="Observation.subject"/>
@@ -162,27 +143,14 @@
  <element id="Observation.value[x]:valueQuantity">
 <path value="Observation.value[x]"/>
 <sliceName value="valueQuantity"/>
-<min value="1"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.value[x]:valueQuantity.value">
-<path value="Observation.value[x].value"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.value[x]:valueQuantity.unit">
-<path value="Observation.value[x].unit"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.value[x]:valueQuantity.system">
-<path value="Observation.value[x].system"/>
-<mustSupport value="true"/>
-</element>
- <element id="Observation.value[x]:valueQuantity.code">
-<path value="Observation.value[x].code"/>
 <mustSupport value="true"/>
 </element>
  <element id="Observation.dataAbsentReason">
 <path value="Observation.dataAbsentReason"/>
+<mustSupport value="true"/>
+</element>
+ <element id="Observation.component">
+<path value="Observation.component"/>
 <mustSupport value="true"/>
 </element>
 </differential>

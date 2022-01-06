@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Procedure_extrakorporalesVerfahren" />
-  <name value="ExtrakorporalesVerfahren" />
+  <url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_extrakorporales_Verfahren" />
+  <name value="MII_extrakorporales_Verfahren" />
   <status value="draft" />
   <contact>
     <name value="Müller, Christoph" />

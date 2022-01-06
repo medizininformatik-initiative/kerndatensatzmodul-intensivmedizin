@@ -1,6 +1,6 @@
  <StructureDefinition xmlns="http://hl7.org/fhir">
-<url value="http://medizininformatik-initiative.de/fhir/StructureDefinition/Observation_Messwert_extrakorporalesVerfahren"/>
-<name value="Parameter_von_extrakorporalen_Verfahren"/>
+<url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_extrakorporalen_Verfahren"/>
+<name value="MII_Parameter_von_extrakorporalen_Verfahren"/>
 <status value="active"/>
  <contact>
 <name value="Müller, Christoph"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/Monitoring_und_Vitaldaten" />
-  <name value="Monitoring_und_Vitaldaten" />
+  <url value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
+  <name value="MII_Monitoring_und_Vitaldaten" />
   <status value="draft" />
   <contact>
     <name value="Dincel, Berke" />
