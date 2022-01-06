@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_Beatmung" />
-  <name value="MII_DeviceMetric_Beatmung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
+  <name value="MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -12,6 +12,14 @@
   <differential>
     <element id="DeviceMetric.type">
       <path value="DeviceMetric.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.source">
+      <path value="DeviceMetric.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.operationalStatus">
+      <path value="DeviceMetric.operationalStatus" />
       <mustSupport value="true" />
     </element>
     <element id="DeviceMetric.category">

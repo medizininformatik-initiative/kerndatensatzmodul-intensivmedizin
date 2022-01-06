@@ -18,8 +18,7 @@
  <compose>
  <include>
 <system value="http://snomed.info/sct"/>
-<valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_intensivmedizin_extrakorporalesVerfahren_category"/>
-<valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet_Beatmung_Category"/>
+<valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII_Category_extrakorporale_Verfahren"/>
 </include>
 </compose>
 </ValueSet>
