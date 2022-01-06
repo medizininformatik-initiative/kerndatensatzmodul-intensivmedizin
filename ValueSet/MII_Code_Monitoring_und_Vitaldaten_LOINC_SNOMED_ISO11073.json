@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet_Monitoring_und_Vitaldaten",
+  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Monitoring-und-Vitaldaten-LOINC-SNOMED-ISO11073",
   "version": "1.0",
-  "name": "Codes f\u00fcr Parameter von Monitoring und Vitaldaten",
-  "title": "Codes f\u00fcr Parameter von Monitoring und Vitaldaten",
+  "name": "MII_Code_Monitoring_und_Vitaldaten_LOINC_SNOMED_ISO11073",
+  "title": "MII Code Monitoring und Vitaldaten [LOINC, SNOMED, ISO11073]",
   "status": "active",
   "experimental": false,
-  "date": "2021-12-17T00:00:00",
+  "date": "2022-01-06T00:00:00",
   "publisher": "https://www.medizininformatik-initiative.de",
   "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr Vitaldaten sowie Daten aus dem Patientenmonitoring.",
   "compose": {
