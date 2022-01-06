@@ -14,6 +14,13 @@
       <path value="DeviceMetric.type" />
       <mustSupport value="true" />
     </element>
+    <element id="DeviceMetric.type.coding">
+      <path value="DeviceMetric.type.coding" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Type-DeviceMetric-Beatmung" />
+      </binding>
+    </element>
     <element id="DeviceMetric.source">
       <path value="DeviceMetric.source" />
       <mustSupport value="true" />

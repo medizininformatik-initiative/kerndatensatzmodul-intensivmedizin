@@ -59,6 +59,10 @@
       <patternCoding>
         <code value="182744004" />
       </patternCoding>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII_Category_extrakorporale_Verfahren" />
+      </binding>
     </element>
     <element id="Procedure.category.coding:sct.system">
       <path value="Procedure.category.coding.system" />
@@ -88,7 +92,7 @@
       <binding>
         <strength value="required" />
         <description value="Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004)" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/intensivmedizin_extrakorporalesVerfahren_code" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII_Code_Extrakorporale_Verfahren" />
       </binding>
     </element>
     <element id="Procedure.code.coding:sct.code">

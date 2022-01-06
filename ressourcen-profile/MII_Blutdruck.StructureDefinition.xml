@@ -37,7 +37,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/VitalSigns" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_VitalSigns" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding">
@@ -50,14 +50,12 @@
         <display value="Blood pressure (observable entity)" />
       </patternCoding>
     </element>
-    <element id="Observation.code.coding.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <patternCoding>
+        <code value="75367002" />
+      </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
@@ -94,6 +92,10 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Systolischer-Blutdruck" />
+      </binding>
     </element>
     <element id="Observation.component:SystolicBP.code.coding">
       <path value="Observation.component.code.coding" />
@@ -138,6 +140,10 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-mittlerer-Blutdruck" />
+      </binding>
     </element>
     <element id="Observation.component:MeanBP.code.coding">
       <path value="Observation.component.code.coding" />
@@ -185,6 +191,10 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/module-icu/ValueSet/MII-Diastolischer-Blutdruck" />
+      </binding>
     </element>
     <element id="Observation.component:DiastolicBP.code.coding">
       <path value="Observation.component.code.coding" />

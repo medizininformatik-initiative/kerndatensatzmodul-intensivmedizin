@@ -105,7 +105,6 @@
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
-      <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
