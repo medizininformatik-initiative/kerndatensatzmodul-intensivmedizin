@@ -43,9 +43,5 @@
       <path value="DeviceMetric.category" />
       <mustSupport value="true" />
     </element>
-    <element id="DeviceMetric.measurementPeriod">
-      <path value="DeviceMetric.measurementPeriod" />
-      <min value="1" />
-    </element>
   </differential>
 </StructureDefinition>
