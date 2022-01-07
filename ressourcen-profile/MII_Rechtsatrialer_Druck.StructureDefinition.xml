@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Rechtsatrialler_Druck" />
+  <name value="MII_Rechtsatrialer_Druck" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:SystolicPressure">
+      <path value="Observation.component" />
+      <sliceName value="SystolicPressure" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="60998-2" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:iso11073">
+      <path value="Observation.component.code" />
+      <sliceName value="iso11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150069" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:SystolicPressure.code:iso11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:iso11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:iso11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanPressure">
+      <path value="Observation.component" />
+      <sliceName value="MeanPressure" />
+    </element>
+    <element id="Observation.component:MeanPressure.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:MeanPressure.code:Loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="Loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8400-4" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:MeanPressure.code:iso11073">
+      <path value="Observation.component.code" />
+      <sliceName value="iso11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150071" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:MeanPressure.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanPressure.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure">
+      <path value="Observation.component" />
+      <sliceName value="DiastolicPressure" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="60997-4" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:iso11073">
+      <path value="Observation.component.code" />
+      <sliceName value="iso11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150070" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:iso11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:iso11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:iso11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

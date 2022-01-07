@@ -222,7 +222,6 @@
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
@@ -233,10 +232,6 @@
       <type>
         <code value="Period" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.issued">
-      <path value="Observation.issued" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.performer">
@@ -284,14 +279,6 @@
       <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.interpretation">
-      <path value="Observation.interpretation" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.device">
       <path value="Observation.device" />
       <type>
@@ -299,10 +286,6 @@
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="http://medizininformatik.de./fhir/StructureDefinition/DeviceMetric_ICU" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
       <mustSupport value="true" />
     </element>
   </differential>

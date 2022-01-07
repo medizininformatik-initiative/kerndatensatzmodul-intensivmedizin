@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Sauerstoffsaettigung_im_arteriellen_Blut_durch_Pulsoxymetrie" />
+  <name value="MII_Sauerstoffsaettigung_im_arteriellen_Blut_durch_Pulsoxymetrie" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="59408-5" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:ISO11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="ISO11073" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="150456" />
+      </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

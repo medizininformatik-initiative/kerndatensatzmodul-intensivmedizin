@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Pulmonalarterieller_Blutdruck" />
+  <name value="MII_Pulmonalarterieller_Blutdruck" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:snomedCT">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
+      <patternCoding>
+        <code value="75367002" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:PA_SystolicBP">
+      <path value="Observation.component" />
+      <sliceName value="PA_SystolicBP" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="8440-0" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8440-0" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:iso11073">
+      <path value="Observation.component.code" />
+      <sliceName value="iso11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150045" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:iso11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:iso11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:iso11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <ordered value="true" />
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP">
+      <path value="Observation.component" />
+      <sliceName value="PA_MeanBP" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:iso11073">
+      <path value="Observation.component.code" />
+      <sliceName value="iso11073" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:iso11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:iso11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:iso11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP">
+      <path value="Observation.component" />
+      <sliceName value="PA_DiastolicBP" />
+      <requirements value="Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).  However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation." />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="text" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="2368781" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:iso11073">
+      <path value="Observation.component.code" />
+      <sliceName value="iso11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150046" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:iso11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:iso11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:iso11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]">
+      <path value="Observation.component.value[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -119,6 +119,12 @@
     <element id="Observation.component:SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicBP.referenceRange">
       <path value="Observation.component.referenceRange" />
@@ -170,6 +176,12 @@
     <element id="Observation.component:MeanBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.referenceRange">
       <path value="Observation.component.referenceRange" />
@@ -218,6 +230,12 @@
     <element id="Observation.component:DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicBP.referenceRange">
       <path value="Observation.component.referenceRange" />
