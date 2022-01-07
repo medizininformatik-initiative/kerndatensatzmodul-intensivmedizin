@@ -143,7 +143,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet_Parameter_von_Beatmung" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Observation-Beatmung-LOINC-SNOMED-ISO11073" />
       </binding>
     </element>
     <element id="Observation.code.coding:sct.system">
@@ -163,14 +163,13 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
-      <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
       </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet_Parameter_von_Beatmung" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Observation-Beatmung-LOINC-SNOMED-ISO11073" />
       </binding>
     </element>
     <element id="Observation.code.coding:loinc.system">
@@ -193,7 +192,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet_Parameter_von_Beatmung" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Observation-Beatmung-LOINC-SNOMED-ISO11073" />
       </binding>
     </element>
     <element id="Observation.code.coding:IEEE-11073.system">

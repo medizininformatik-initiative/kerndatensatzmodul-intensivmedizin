@@ -93,7 +93,7 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Systolischer-Blutdruck" />
       </binding>
     </element>
@@ -141,7 +141,7 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-mittlerer-Blutdruck" />
       </binding>
     </element>
@@ -192,7 +192,7 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/module-icu/ValueSet/MII-Diastolischer-Blutdruck" />
       </binding>
     </element>

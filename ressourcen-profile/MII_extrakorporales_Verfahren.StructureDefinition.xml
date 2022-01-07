@@ -60,7 +60,7 @@
         <code value="182744004" />
       </patternCoding>
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII_Category_extrakorporale_Verfahren" />
       </binding>
     </element>

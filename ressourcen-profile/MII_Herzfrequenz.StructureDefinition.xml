@@ -90,10 +90,16 @@
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
       <max value="1" />
+      <mustSupport value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-ICU/ValueSet/HeartRateSNOMEDCT" />
       </binding>
+    </element>
+    <element id="Observation.code.coding:ISO11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="ISO11073" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
@@ -106,6 +112,7 @@
       <type>
         <code value="dateTime" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]">
       <path value="Observation.component.value[x]" />
