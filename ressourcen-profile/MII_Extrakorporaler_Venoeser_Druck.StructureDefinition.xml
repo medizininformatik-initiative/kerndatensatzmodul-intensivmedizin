@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Horowitz-Index-In-Arteriellem-Blut" />
-  <name value="MII_Horowitz_Index_in_arteriellem_Blut" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Extrakorporaler_Venoeser_Druck" />
+  <name value="MII_Extrakorporaler_Venoeser_Druck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -9,4 +9,13 @@
   <type value="Observation" />
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_extrakorporalen_Verfahren" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="252076005" />
+      </patternCoding>
+    </element>
+  </differential>
 </StructureDefinition>

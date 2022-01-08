@@ -141,10 +141,6 @@
         <system value="http://snomed.info/sct" />
       </patternCoding>
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Observation-extrakorporale-Verfahren-LOINC-SNOMED-ISO11073" />
-      </binding>
     </element>
     <element id="Observation.code.coding:sct.system">
       <path value="Observation.code.coding.system" />
@@ -167,10 +163,6 @@
         <system value="http://loinc.org" />
       </patternCoding>
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Observation-extrakorporale-Verfahren-LOINC-SNOMED-ISO11073" />
-      </binding>
     </element>
     <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
@@ -190,10 +182,6 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Observation-extrakorporale-Verfahren-LOINC-SNOMED-ISO11073" />
-      </binding>
     </element>
     <element id="Observation.code.coding:IEEE-11073.system">
       <path value="Observation.code.coding.system" />

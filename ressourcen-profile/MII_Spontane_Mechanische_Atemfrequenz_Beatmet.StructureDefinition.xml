@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Spontane_Mechanische_Atemfrequenz_Beatmet" />
+  <name value="MII_Spontane_Mechanische_Atemfrequenz_Beatmet" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_Beatmung" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <code value="19840-8" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="152490" />
+      </patternCoding>
+    </element>
+  </differential>
+</StructureDefinition>
