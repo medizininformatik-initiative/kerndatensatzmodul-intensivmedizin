@@ -50,7 +50,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_VitalSigns" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.basedOn">
