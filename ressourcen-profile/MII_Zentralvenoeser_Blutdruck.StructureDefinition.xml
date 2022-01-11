@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Zentralvenoeser_Blutdruck" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Zentralvenoeser-Blutdruck" />
   <name value="MII_Zentralvenoeser_Blutdruck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -10,9 +10,9 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:snomedCT">
+    <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
+      <sliceName value="sct" />
       <patternCoding>
         <code value="71420008" />
       </patternCoding>
@@ -21,7 +21,6 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="60985-9" />
       </patternCoding>
     </element>
@@ -29,9 +28,17 @@
       <path value="Observation.code.coding" />
       <sliceName value="ISO11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150084" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

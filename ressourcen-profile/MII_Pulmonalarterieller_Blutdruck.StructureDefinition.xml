@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Pulmonalarterieller_Blutdruck" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Pulmonalarterieller-Blutdruck" />
   <name value="MII_Pulmonalarterieller_Blutdruck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -10,12 +10,20 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:snomedCT">
+    <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
+      <sliceName value="sct" />
       <patternCoding>
         <code value="75367002" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
@@ -98,17 +106,64 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:PA_SystolicBP.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:sct.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code:sct.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.component:PA_SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <slicing>
         <ordered value="true" />
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.component:PA_SystolicBP.value[x]:valueQuantity">
       <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.value[x]:valueQuantity.value">
+      <path value="Observation.component.valueQuantity.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.value[x]:valueQuantity.unit">
+      <path value="Observation.component.valueQuantity.unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.value[x]:valueQuantity.system">
+      <path value="Observation.component.valueQuantity.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.value[x]:valueQuantity.code">
+      <path value="Observation.component.valueQuantity.code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:PA_SystolicBP.dataAbsentReason">
@@ -168,14 +223,45 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:PA_MeanBP.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:sct.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code:sct.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.component:PA_MeanBP.value[x]">
       <path value="Observation.component.value[x]" />
-      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:PA_MeanBP.value[x]:valueQuantity">
       <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:PA_MeanBP.dataAbsentReason">
@@ -248,14 +334,60 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_DiastolicBP.value[x]">
-      <path value="Observation.component.value[x]" />
+    <element id="Observation.component:PA_DiastolicBP.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:sct.coding.system">
+      <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code:sct.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.component:PA_DiastolicBP.value[x]:valueQuantity">
       <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]:valueQuantity.value">
+      <path value="Observation.component.valueQuantity.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]:valueQuantity.unit">
+      <path value="Observation.component.valueQuantity.unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]:valueQuantity.system">
+      <path value="Observation.component.valueQuantity.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.value[x]:valueQuantity.code">
+      <path value="Observation.component.valueQuantity.code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:PA_DiastolicBP.dataAbsentReason">

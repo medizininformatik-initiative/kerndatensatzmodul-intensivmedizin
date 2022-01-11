@@ -10,9 +10,9 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:snomedCT">
+    <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
+      <sliceName value="sct" />
       <patternCoding>
         <code value="82799009" />
       </patternCoding>
@@ -21,7 +21,6 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="2498626" />
       </patternCoding>
     </element>
@@ -29,13 +28,8 @@
       <path value="Observation.code.coding" />
       <sliceName value="ISO11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150276" />
       </patternCoding>
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Blutdruck" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Blutdruck" />
   <name value="MII_Blutdruck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -37,11 +37,16 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_VitalSigns" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding">
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
+      <sliceName value="snomedCT" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
@@ -49,17 +54,41 @@
         <code value="75367002" />
         <display value="Blood pressure (observable entity)" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-      <patternCoding>
-        <code value="75367002" />
-      </patternCoding>
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter">
+      <path value="Observation.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime">
+      <path value="Observation.effective[x]" />
+      <sliceName value="effectiveDateTime" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <max value="0" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
@@ -76,14 +105,23 @@
       </slicing>
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicBP">
       <path value="Observation.component" />
       <sliceName value="SystolicBP" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicBP.code">
       <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
@@ -97,23 +135,82 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Systolischer-Blutdruck" />
       </binding>
     </element>
-    <element id="Observation.component:SystolicBP.code.coding">
-      <path value="Observation.component.code.coding" />
-      <min value="1" />
+    <element id="Observation.component:SystolicBP.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="271649006" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:SystolicBP.code.coding.system">
+    <element id="Observation.component:SystolicBP.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:sct.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:SystolicBP.code.coding.code">
+    <element id="Observation.component:SystolicBP.code:sct.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:SystolicBP.code.coding.display">
-      <path value="Observation.component.code.coding.display" />
+    <element id="Observation.component:SystolicBP.code:ISO11073">
+      <path value="Observation.component.code" />
+      <sliceName value="ISO11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150017" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:ISO11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:ISO11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:ISO11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="2403450" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="2403450" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicBP.value[x]">
@@ -122,8 +219,16 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicBP.value[x]:valueQuantity">
-      <path value="Observation.component.valueQuantity" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicBP.interpretation">
+      <path value="Observation.component.interpretation" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicBP.referenceRange">
@@ -135,9 +240,17 @@
       <path value="Observation.component" />
       <sliceName value="MeanBP" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.code">
       <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
@@ -151,26 +264,79 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-mittlerer-Blutdruck" />
       </binding>
     </element>
-    <element id="Observation.component:MeanBP.code.coding">
-      <path value="Observation.component.code.coding" />
-      <min value="1" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
+    <element id="Observation.component:MeanBP.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="6797001" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:MeanBP.code.coding.system">
+    <element id="Observation.component:MeanBP.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:sct.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:MeanBP.code.coding.code">
+    <element id="Observation.component:MeanBP.code:sct.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:MeanBP.code.coding.display">
-      <path value="Observation.component.code.coding.display" />
+    <element id="Observation.component:MeanBP.code:ISO11073">
+      <path value="Observation.component.code" />
+      <sliceName value="ISO11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150019" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:ISO11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:ISO11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:ISO11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8478-0" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]">
@@ -179,8 +345,16 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]:valueQuantity">
-      <path value="Observation.component.valueQuantity" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanBP.interpretation">
+      <path value="Observation.component.interpretation" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.referenceRange">
@@ -192,9 +366,17 @@
       <path value="Observation.component" />
       <sliceName value="DiastolicBP" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicBP.code">
       <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
@@ -208,23 +390,79 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/module-icu/ValueSet/MII-Diastolischer-Blutdruck" />
       </binding>
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding">
-      <path value="Observation.component.code.coding" />
-      <min value="1" />
+    <element id="Observation.component:DiastolicBP.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="271650006" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding.system">
+    <element id="Observation.component:DiastolicBP.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:sct.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding.code">
+    <element id="Observation.component:DiastolicBP.code:sct.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding.display">
-      <path value="Observation.component.code.coding.display" />
+    <element id="Observation.component:DiastolicBP.code:ISO11073">
+      <path value="Observation.component.code" />
+      <sliceName value="ISO11073" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150018" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:ISO11073.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:ISO11073.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:ISO11073.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="2396814" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicBP.value[x]">
@@ -233,8 +471,37 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicBP.value[x]:valueQuantity">
-      <path value="Observation.component.valueQuantity" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.value[x]:valueQuantity.value">
+      <path value="Observation.component.value[x].value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.value[x]:valueQuantity.unit">
+      <path value="Observation.component.value[x].unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.value[x]:valueQuantity.system">
+      <path value="Observation.component.value[x].system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.value[x]:valueQuantity.code">
+      <path value="Observation.component.value[x].code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicBP.interpretation">
+      <path value="Observation.component.interpretation" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicBP.referenceRange">

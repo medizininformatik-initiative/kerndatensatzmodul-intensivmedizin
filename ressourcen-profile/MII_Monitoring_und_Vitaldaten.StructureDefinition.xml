@@ -207,5 +207,62 @@
       <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.code">
+      <path value="Observation.component.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]:valueQuantity.value">
+      <path value="Observation.component.valueQuantity.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]:valueQuantity.unit">
+      <path value="Observation.component.valueQuantity.unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]:valueQuantity.system">
+      <path value="Observation.component.valueQuantity.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]:valueQuantity.code">
+      <path value="Observation.component.valueQuantity.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.interpretation">
+      <path value="Observation.component.interpretation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.referenceRange">
+      <path value="Observation.component.referenceRange" />
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>
