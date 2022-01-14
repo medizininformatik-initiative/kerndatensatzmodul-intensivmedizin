@@ -7,15 +7,62 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_extrakorporalen_Verfahren" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category:ecmo">
+      <path value="Observation.category" />
+      <sliceName value="ecmo" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII-Category-extrakorporale-Verfahren" />
+      </binding>
+    </element>
+    <element id="Observation.category:ecmo.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
         <code value="252076005" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <code value="mmHg" />
+      </patternQuantity>
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.value">
+      <path value="Observation.value[x].value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <path value="Observation.value[x].unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.system">
+      <path value="Observation.value[x].system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.value[x].code" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

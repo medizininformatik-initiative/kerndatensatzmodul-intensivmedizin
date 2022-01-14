@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik.org/fhir/ext/modul-icu/StructureDefinition/MII_Koerpergroesse" />
+  <url value="https://medizininformatik.org/fhir/ext/modul-icu/StructureDefinition/MII-Koerpergroesse" />
   <name value="MII_Koerpergroesse" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -65,19 +65,6 @@
     <element id="Observation.category:vs-cat.coding.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:snomedCT">
-      <path value="Observation.category" />
-      <sliceName value="snomedCT" />
-      <max value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="363789004" />
-          <display value="General characteristic of patient (observable entity)" />
-        </coding>
-      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">
@@ -156,6 +143,11 @@
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="centimeter" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="cm" />
+      </patternQuantity>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.value">
@@ -177,6 +169,14 @@
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <mustSupport value="false" />
     </element>
   </differential>
 </StructureDefinition>

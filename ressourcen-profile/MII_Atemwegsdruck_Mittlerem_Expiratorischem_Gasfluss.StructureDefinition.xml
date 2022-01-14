@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initative.de/fhir/ext/modul-icu/StructureDefinition/MII_Atemwegsdruck_Mittlerem_Expiratorischem_Gasfluss" />
+  <url value="https://medizininformatik-initative.de/fhir/ext/modul-icu/StructureDefinition/MII-Atemwegsdruck-Mittlerem-Expiratorischem-Gasfluss" />
   <name value="MII_Atemwegsdruck_Mittlerem_Expiratorischem_Gasfluss" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_Beatmung" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.category:sct">
+      <path value="Observation.category" />
+      <sliceName value="sct" />
+    </element>
+    <element id="Observation.category:sct.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
         <code value="20056-8" />
       </patternCoding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="centimeter of water" />
+        <code value="cm[H2O]" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

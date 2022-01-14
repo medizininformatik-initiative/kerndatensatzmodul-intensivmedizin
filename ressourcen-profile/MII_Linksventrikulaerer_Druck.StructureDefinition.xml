@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Linksventrikulaerer_Druck" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaerer-Druck" />
   <name value="MII_Linksventrikulaerer_Druck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -10,29 +10,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:ISO11073">
-      <path value="Observation.code.coding" />
-      <sliceName value="ISO11073" />
-      <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
-      </patternCoding>
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <min value="1" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
-      <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <slicing>
@@ -56,7 +33,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicPressure.code:loinc">
       <path value="Observation.component.code" />
@@ -67,7 +43,6 @@
           <code value="8430-1" />
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicPressure.code:loinc.coding">
       <path value="Observation.component.code.coding" />
@@ -92,7 +67,6 @@
           <code value="150101" />
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicPressure.code:iso11073.coding">
       <path value="Observation.component.code.coding" />
@@ -108,15 +82,32 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:SystolicPressure.value[x]">
-      <path value="Observation.component.value[x]" />
+    <element id="Observation.component:SystolicPressure.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:sct.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolicPressure.code:sct.coding.code">
+      <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolicPressure.value[x]:valueQuantity">
       <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
     </element>
     <element id="Observation.component:MeanPressure">
       <path value="Observation.component" />
@@ -131,7 +122,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanPressure.code:loinc">
       <path value="Observation.component.code" />
@@ -142,7 +132,6 @@
           <code value="8404-6" />
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanPressure.code:loinc.coding">
       <path value="Observation.component.code.coding" />
@@ -167,7 +156,6 @@
           <code value="150103" />
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanPressure.code:iso11073.coding">
       <path value="Observation.component.code.coding" />
@@ -183,15 +171,32 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:MeanPressure.value[x]">
-      <path value="Observation.component.value[x]" />
+    <element id="Observation.component:MeanPressure.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+    </element>
+    <element id="Observation.component:MeanPressure.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanPressure.code:sct.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MeanPressure.code:sct.coding.code">
+      <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanPressure.value[x]:valueQuantity">
       <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
     </element>
     <element id="Observation.component:DiastolicPressure">
       <path value="Observation.component" />
@@ -206,7 +211,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicPressure.code:loinc">
       <path value="Observation.component.code" />
@@ -217,7 +221,6 @@
           <code value="8375-8" />
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicPressure.code:loinc.coding">
       <path value="Observation.component.code.coding" />
@@ -242,7 +245,6 @@
           <code value="150102" />
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicPressure.code:iso11073.coding">
       <path value="Observation.component.code.coding" />
@@ -258,15 +260,43 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:DiastolicPressure.value[x]">
-      <path value="Observation.component.value[x]" />
+    <element id="Observation.component:DiastolicPressure.code:sct">
+      <path value="Observation.component.code" />
+      <sliceName value="sct" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:sct.coding">
+      <path value="Observation.component.code.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:sct.coding.system">
+      <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.code:sct.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolicPressure.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
     </element>
     <element id="Observation.component:DiastolicPressure.value[x]:valueQuantity">
       <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

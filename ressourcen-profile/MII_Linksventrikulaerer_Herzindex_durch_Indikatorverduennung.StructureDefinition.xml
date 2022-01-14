@@ -59,9 +59,8 @@
       <path value="Observation.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:ISO11073">
+    <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
-      <sliceName value="ISO11073" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -69,48 +68,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <patternCoding>
-        <code value="149772" />
-      </patternCoding>
     </element>
-    <element id="Observation.code.coding:ISO11073:sct">
-      <path value="Observation.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:ISO11073:sct.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:ISO11073:sct.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:ISO11073:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="8751-0" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:ISO11073:loinc.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:ISO11073:loinc.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:ISO11073:iso11073">
+    <element id="Observation.code.coding:iso11073">
       <path value="Observation.code.coding" />
       <sliceName value="iso11073" />
       <patternCoding>
@@ -119,12 +78,49 @@
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:ISO11073:iso11073.system">
+    <element id="Observation.code.coding:iso11073.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:ISO11073:iso11073.code">
+    <element id="Observation.code.coding:iso11073.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8751-0" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -155,7 +151,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <min value="1" />
       <type>

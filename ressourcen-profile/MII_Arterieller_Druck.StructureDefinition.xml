@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Blutfluss-Extrakoporaler-Gasaustausch" />
-  <name value="MII_Blutfluss_Extrakoporaler_Gasaustausch" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Arterieller-Druck" />
+  <name value="MII_Arterieller_Druck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -36,14 +36,21 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <code value="251288004" />
+        <code value="386534000" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="liter per minute" />
-        <code value="L/min" />
+        <unit value="millimeter of mecury" />
+        <code value="mm[Hg]" />
       </patternQuantity>
     </element>
   </differential>

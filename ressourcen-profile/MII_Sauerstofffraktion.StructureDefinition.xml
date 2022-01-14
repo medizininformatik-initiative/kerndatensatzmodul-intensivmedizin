@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Sauerstofffraktion" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Sauerstofffraktion" />
   <name value="MII_Sauerstofffraktion" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_Beatmung" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category:Beatmung">
+      <path value="Observation.category" />
+      <sliceName value="Beatmung" />
+    </element>
+    <element id="Observation.category:Beatmung.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
         <code value="71835-3" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="1" />
+        <code value="1" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

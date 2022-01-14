@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Einstellung_Einatmungszeit_Beatmung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Einstellung-Einatmungszeit-Beatmung" />
   <name value="MII_Einstellung_Einatmungszeit_Beatmung" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_Beatmung" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:loinc">
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
       <patternCoding>
+        <system value="http://loinc.org" />
         <code value="76334-2" />
       </patternCoding>
     </element>
@@ -21,9 +36,23 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="16929632" />
       </patternCoding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="second" />
+        <code value="s" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

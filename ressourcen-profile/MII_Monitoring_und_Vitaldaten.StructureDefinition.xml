@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Monitoring-und-Vitaldaten" />
   <name value="MII_Monitoring_und_Vitaldaten" />
   <status value="draft" />
   <contact>
@@ -138,20 +138,20 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:ISO11073">
+    <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
-      <sliceName value="ISO11073" />
+      <sliceName value="IEEE-11073" />
       <patternCoding>
         <system value="urn:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:ISO11073.system">
+    <element id="Observation.code.coding:IEEE-11073.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:ISO11073.code">
+    <element id="Observation.code.coding:IEEE-11073.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -176,7 +176,6 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
@@ -232,24 +231,24 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]:valueQuantity">
-      <path value="Observation.component.valueQuantity" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]:valueQuantity.value">
-      <path value="Observation.component.valueQuantity.value" />
+      <path value="Observation.component.value[x].value" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]:valueQuantity.unit">
-      <path value="Observation.component.valueQuantity.unit" />
+      <path value="Observation.component.value[x].unit" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]:valueQuantity.system">
-      <path value="Observation.component.valueQuantity.system" />
+      <path value="Observation.component.value[x].system" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]:valueQuantity.code">
-      <path value="Observation.component.valueQuantity.code" />
+      <path value="Observation.component.value[x].code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.dataAbsentReason">

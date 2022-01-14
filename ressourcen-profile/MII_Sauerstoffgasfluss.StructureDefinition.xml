@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Sauerstoffgasfluss" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Sauerstoffgasfluss" />
   <name value="MII_Sauerstoffgasfluss" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -10,12 +10,41 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_extrakorporalen_Verfahren" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category:ecmo">
+      <path value="Observation.category" />
+      <sliceName value="ecmo" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII-Category-extrakorporale-Verfahren" />
+      </binding>
+    </element>
+    <element id="Observation.category:ecmo.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:ecmo.coding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:ecmo.coding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
         <code value="19941-4" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="liter per minute" />
+        <code value="L/min" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

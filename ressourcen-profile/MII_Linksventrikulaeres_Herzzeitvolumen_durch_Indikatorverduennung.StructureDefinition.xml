@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Linksventrikulaeres_Herzzeitvolumen_durch_Indikatorverduennung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung" />
   <name value="MII_Linksventrikulaeres_Herzzeitvolumen_durch_Indikatorverduennung" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -25,7 +25,7 @@
       </patternCoding>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="liter per minute" />

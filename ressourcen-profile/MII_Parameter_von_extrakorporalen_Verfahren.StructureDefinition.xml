@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_extrakorporalen_Verfahren" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Extrakorporalen-Verfahren" />
   <name value="MII_Parameter_von_extrakorporalen_Verfahren" />
   <status value="active" />
   <contact>
@@ -51,7 +51,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.identifier">
@@ -77,7 +77,6 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -90,7 +89,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.category.coding:sct">
       <path value="Observation.category.coding" />
@@ -195,7 +194,6 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
@@ -213,7 +211,6 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
-      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>

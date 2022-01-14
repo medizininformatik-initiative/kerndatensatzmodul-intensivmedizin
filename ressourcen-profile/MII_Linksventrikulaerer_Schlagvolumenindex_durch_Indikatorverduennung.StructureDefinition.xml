@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Linksventrikulaerer_Schlagvolumenindex_durch_Indikatorverduennung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaerer-Schlagvolumenindex-durch-Indikatorverduennung" />
   <name value="MII_Linksventrikulaerer_Schlagvolumenindex_durch_Indikatorverduennung" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -14,14 +14,17 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="8791-6" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
+      <patternQuantity>
+        <unit value="per milliliter" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="/mL" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

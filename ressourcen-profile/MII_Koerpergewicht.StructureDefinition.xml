@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Koerpergewicht" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Koerpergewicht" />
   <name value="MII_Koerpergewicht" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -69,33 +69,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:snomedCT">
-      <path value="Observation.category" />
-      <sliceName value="snomedCT" />
-      <max value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="363789004" />
-          <display value="General characteristic of patient (observable entity)" />
-        </coding>
-      </patternCodeableConcept>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:snomedCT.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:snomedCT.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:snomedCT.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
@@ -107,27 +80,6 @@
         <system value="http://loinc.org" />
         <code value="29463-7" />
       </patternCoding>
-    </element>
-    <element id="Observation.code.coding:snomedCT">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="27113001" />
-        <display value="Body weight (observable entity)" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:snomedCT.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
@@ -159,6 +111,27 @@
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="kilogram" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="kg" />
+      </patternQuantity>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.value">
+      <path value="Observation.value[x].value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <path value="Observation.value[x].unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.system">
+      <path value="Observation.value[x].system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.value[x].code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.dataAbsentReason">

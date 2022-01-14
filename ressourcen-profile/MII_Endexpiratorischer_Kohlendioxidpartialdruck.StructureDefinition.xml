@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Endexpiratorischer_Kohlendioxidpartialdruck" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Endexpiratorischer-Kohlendioxidpartialdruck" />
   <name value="MII_Endexpiratorischer_Kohlendioxidpartialdruck" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_Beatmung" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category:Beatmung">
+      <path value="Observation.category" />
+      <sliceName value="Beatmung" />
+    </element>
+    <element id="Observation.category:Beatmung.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -28,9 +36,15 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="151708" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="mm[Hg]" />
+        <code value="mm[Hg]" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

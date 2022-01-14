@@ -24,15 +24,15 @@
         <code value="60985-9" />
       </patternCoding>
     </element>
-    <element id="Observation.code.coding:ISO11073">
+    <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
-      <sliceName value="ISO11073" />
+      <sliceName value="IEEE-11073" />
       <patternCoding>
         <code value="150084" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="millimeter of mecury" />

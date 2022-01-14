@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Sauerstoffsaettigung_im_Blut_postduktal_durch_Pulsoxymetrie" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie" />
   <name value="MII_Sauerstoffsaettigung_im_Blut_postduktal_durch_Pulsoxymetrie" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -14,7 +14,6 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="59418-4" />
       </patternCoding>
     </element>
@@ -22,9 +21,17 @@
       <path value="Observation.code.coding" />
       <sliceName value="ISO11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="160300" />
       </patternCoding>
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <unit value="Percent" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="%" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

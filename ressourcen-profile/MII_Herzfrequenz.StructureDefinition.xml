@@ -74,8 +74,6 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
-      <min value="1" />
-      <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
         <code value="8867-4" />
@@ -84,25 +82,53 @@
     </element>
     <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:snomedCT">
       <path value="Observation.code.coding" />
       <sliceName value="snomedCT" />
-      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="364075005" />
+      </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ext-ICU/ValueSet/HeartRateSNOMEDCT" />
       </binding>
     </element>
-    <element id="Observation.code.coding:ISO11073">
+    <element id="Observation.code.coding:snomedCT.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:snomedCT.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
-      <sliceName value="ISO11073" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:IEEE-11073.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:IEEE-11073.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
