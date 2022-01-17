@@ -7,7 +7,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Parameter_von_extrakorporalen_Verfahren" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-von-extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.category:ecmo">
