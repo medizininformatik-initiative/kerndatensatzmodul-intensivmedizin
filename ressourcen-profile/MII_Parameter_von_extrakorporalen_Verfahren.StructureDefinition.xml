@@ -54,6 +54,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="obs-10" />
+        <severity value="error" />
+        <human value="Either subject XOR encounter exists" />
+        <expression value="$this.encounter.exists() xor $this.subject.exists()" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
+      </constraint>
+    </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
       <mustSupport value="true" />
@@ -90,6 +100,7 @@
         <rules value="open" />
       </slicing>
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:sct">
       <path value="Observation.category.coding" />
@@ -180,6 +191,9 @@
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:IEEE-11073.system">
@@ -194,6 +208,7 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />

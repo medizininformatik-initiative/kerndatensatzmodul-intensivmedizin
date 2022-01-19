@@ -10,26 +10,15 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category:ecmo">
+    <element id="Observation.category">
       <path value="Observation.category" />
-      <sliceName value="ecmo" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII-Category-extrakorporale-Verfahren" />
       </binding>
     </element>
-    <element id="Observation.category:ecmo.coding">
+    <element id="Observation.category.coding">
       <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:ecmo.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:ecmo.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:sct">

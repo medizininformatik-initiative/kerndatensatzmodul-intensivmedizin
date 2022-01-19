@@ -39,10 +39,6 @@
       <path value="DeviceMetric.source" />
       <mustSupport value="true" />
     </element>
-    <element id="DeviceMetric.operationalStatus">
-      <path value="DeviceMetric.operationalStatus" />
-      <mustSupport value="true" />
-    </element>
     <element id="DeviceMetric.category">
       <path value="DeviceMetric.category" />
       <mustSupport value="true" />
