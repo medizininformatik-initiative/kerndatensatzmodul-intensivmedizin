@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie" />
   <name value="MII_Sauerstoffsaettigung_im_Blut_postduktal_durch_Pulsoxymetrie" />
-  <status value="draft" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_Monitoring_und_Vitaldaten" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding:loinc">
