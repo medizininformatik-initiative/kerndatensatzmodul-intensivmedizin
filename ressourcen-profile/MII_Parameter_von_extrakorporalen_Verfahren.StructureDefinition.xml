@@ -61,7 +61,6 @@
         <severity value="error" />
         <human value="Either subject XOR encounter exists" />
         <expression value="$this.encounter.exists() xor $this.subject.exists()" />
-        <source value="http://hl7.org/fhir/StructureDefinition/Observation" />
       </constraint>
     </element>
     <element id="Observation.identifier">

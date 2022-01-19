@@ -54,6 +54,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="obs-10" />
+        <severity value="error" />
+        <human value="Either subject XOR encounter exists" />
+        <expression value="$this.encounter.exists() xor $this.subject.exists()" />
+      </constraint>
+    </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
       <mustSupport value="true" />

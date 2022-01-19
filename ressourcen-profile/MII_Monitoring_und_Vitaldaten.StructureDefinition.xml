@@ -50,9 +50,19 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="obs-10" />
+        <severity value="error" />
+        <human value="Either subject XOR encounter exists" />
+        <expression value="$this.encounter.exists() xor $this.subject.exists()" />
+        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Monitoring-und-Vitaldaten" />
+      </constraint>
+    </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
       <mustSupport value="true" />
@@ -67,11 +77,24 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
-      <mustSupport value="true" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Observation.category:vs-cat">
       <path value="Observation.category" />
       <sliceName value="vs-cat" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="vital-signs" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:vs-cat.coding">
@@ -166,6 +189,7 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
@@ -176,6 +200,13 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <type>
         <code value="Quantity" />
       </type>
@@ -184,22 +215,9 @@
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.value[x].value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.value[x].unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.value[x].system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.value[x].code" />
+      <type>
+        <code value="Quantity" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.dataAbsentReason">
@@ -228,27 +246,24 @@
     </element>
     <element id="Observation.component.value[x]">
       <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.value[x]:valueQuantity">
       <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.value">
-      <path value="Observation.component.value[x].value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.unit">
-      <path value="Observation.component.value[x].unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.system">
-      <path value="Observation.component.value[x].system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]:valueQuantity.code">
-      <path value="Observation.component.value[x].code" />
+      <type>
+        <code value="Quantity" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component.dataAbsentReason">
