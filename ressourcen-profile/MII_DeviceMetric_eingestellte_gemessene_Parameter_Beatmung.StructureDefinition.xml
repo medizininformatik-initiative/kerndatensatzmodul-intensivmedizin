@@ -27,6 +27,15 @@
     </element>
     <element id="DeviceMetric.source">
       <path value="DeviceMetric.source" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/MII-ICU-Device" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.source.reference">
+      <path value="DeviceMetric.source.reference" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DeviceMetric.category">

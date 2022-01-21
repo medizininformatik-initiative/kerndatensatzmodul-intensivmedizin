@@ -61,6 +61,7 @@
         <severity value="error" />
         <human value="Either subject XOR encounter exists" />
         <expression value="$this.encounter.exists() xor $this.subject.exists()" />
+        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
       </constraint>
     </element>
     <element id="Observation.identifier">
@@ -184,6 +185,7 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
@@ -194,6 +196,11 @@
         <reference value="Patient" />
         <type value="Type" />
       </patternReference>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.reference">
+      <path value="Observation.subject.reference" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.encounter">
@@ -271,6 +278,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
       </type>
       <patternReference>
         <type value="DeviceMetric" />
