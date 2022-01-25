@@ -1,0 +1,144 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Monitoring-und-Vitaldaten-LOINC",
+  "version": "1.0",
+  "name": "MII_Code_Monitoring_und_Vitaldaten_LOINC",
+  "title": "MII Code Monitoring und Vitaldaten [LOINC]",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-01-06T00:00:00",
+  "publisher": "https://www.medizininformatik-initiative.de",
+  "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8867-4"
+          },
+          {
+            "code": "2403450"
+          },
+          {
+            "code": "8478-0"
+          },
+          {
+            "code": "2396814"
+          },
+          {
+            "code": "60985-9"
+          },
+          {
+            "code": "8440-0"
+          },
+          {
+            "code": "2379312"
+          },
+          {
+            "code": "2368781"
+          },
+          {
+            "code": "75994-4"
+          },
+          {
+            "code": "8737-9"
+          },
+          {
+            "code": "8751-0"
+          },
+          {
+            "code": "2498626"
+          },
+          {
+            "code": "75919-1"
+          },
+          {
+            "code": "8837-7"
+          },
+          {
+            "code": "2532684"
+          },
+          {
+            "code": "8771-8"
+          },
+          {
+            "code": "8791-6"
+          },
+          {
+            "code": "20562-5"
+          },
+          {
+            "code": "76297-1"
+          },
+          {
+            "code": "8329-5"
+          },
+          {
+            "code": "59408-5"
+          },
+          {
+            "code": "59418-4"
+          },
+          {
+            "code": "59407-7"
+          },
+          {
+            "code": "60956-0"
+          },
+          {
+            "code": "8404-6"
+          },
+          {
+            "code": "8406-1"
+          },
+          {
+            "code": "8430-1"
+          },
+          {
+            "code": "8432-7"
+          },
+          {
+            "code": "8375-8"
+          },
+          {
+            "code": "8377-4"
+          },
+          {
+            "code": "60998-2"
+          },
+          {
+            "code": "60989-1"
+          },
+          {
+            "code": "8399-8"
+          },
+          {
+            "code": "8400-4"
+          },
+          {
+            "code": "75933-2"
+          },
+          {
+            "code": "60997-4"
+          },
+          {
+            "code": "29463-7"
+          },
+          {
+            "code": "50064-5"
+          },
+          {
+            "code": "8302-2"
+          },
+          {
+            "code": "8303-0"
+          },
+          {
+            "code": "8336-0"
+          }
+        ]
+      }
+    ]
+  }
+}

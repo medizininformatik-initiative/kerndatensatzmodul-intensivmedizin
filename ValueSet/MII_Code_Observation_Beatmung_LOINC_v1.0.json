@@ -1,0 +1,108 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC",
+  "version": "1.0",
+  "name": "MII_Code_Observation_Beatmung_LOINC",
+  "title": "MII Code Observation Beatmung [LOINC",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-01-06T00:00:00",
+  "publisher": "https://www.medizininformatik-initiative.de",
+  "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr die im Kontext einer Beatmung eingestellten oder gemessenen Parametern.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "50984-4"
+          },
+          {
+            "code": "33438-3"
+          },
+          {
+            "code": "19839-0"
+          },
+          {
+            "code": "19840-8"
+          },
+          {
+            "code": "76334-2"
+          },
+          {
+            "code": "76187-4"
+          },
+          {
+            "code": "75931-6"
+          },
+          {
+            "code": "20112-9"
+          },
+          {
+            "code": "76222-9"
+          },
+          {
+            "code": "20116-0"
+          },
+          {
+            "code": "76009-0"
+          },
+          {
+            "code": "20118-6"
+          },
+          {
+            "code": "76190-8"
+          },
+          {
+            "code": "76229-4"
+          },
+          {
+            "code": "76275-7"
+          },
+          {
+            "code": "60794-5"
+          },
+          {
+            "code": "60792-9"
+          },
+          {
+            "code": "19994-3"
+          },
+          {
+            "code": "71835-3"
+          },
+          {
+            "code": "3147-6"
+          },
+          {
+            "code": "76530-5"
+          },
+          {
+            "code": "76531-3"
+          },
+          {
+            "code": "60827-3"
+          },
+          {
+            "code": "76248-4"
+          },
+          {
+            "code": "76154-4"
+          },
+          {
+            "code": "20056-8"
+          },
+          {
+            "code": "20060-0"
+          },
+          {
+            "code": "19891-1"
+          },
+          {
+            "code": "20079-0"
+          }
+        ]
+      }
+    ]
+  }
+}

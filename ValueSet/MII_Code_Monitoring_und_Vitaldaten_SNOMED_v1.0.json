@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Monitoring-und-Vitaldaten-SNOMED",
+  "version": "1.0",
+  "name": "MII_Code_Monitoring_und_Vitaldaten_SNOMED",
+  "title": "MII Code Monitoring und Vitaldaten [SNOMED]",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-01-06T00:00:00",
+  "publisher": "https://www.medizininformatik-initiative.de",
+  "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "364075005.0"
+          },
+          {
+            "code": "271649006.0"
+          },
+          {
+            "code": "6797001.0"
+          },
+          {
+            "code": "271650006.0"
+          },
+          {
+            "code": "71420008.0"
+          },
+          {
+            "code": "118433006.0"
+          },
+          {
+            "code": "82799009.0"
+          },
+          {
+            "code": "54993008.0"
+          },
+          {
+            "code": "276900001.0"
+          },
+          {
+            "code": "276902009.0"
+          },
+          {
+            "code": "90096001.0"
+          },
+          {
+            "code": "277381004.0"
+          },
+          {
+            "code": "276885007.0"
+          },
+          {
+            "code": "250844005.0"
+          },
+          {
+            "code": "27113001.0"
+          },
+          {
+            "code": "170804003.0"
+          },
+          {
+            "code": "1153637007.0"
+          },
+          {
+            "code": "1153605006.0"
+          },
+          {
+            "code": "1153592008.0"
+          }
+        ]
+      }
+    ]
+  }
+}
