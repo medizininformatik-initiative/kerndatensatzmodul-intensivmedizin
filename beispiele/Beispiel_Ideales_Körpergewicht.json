@@ -1,23 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "Arterieller-Druck",
+  "id": "Ideales-Koerpergewicht",
   "meta": {
     "profile": [
-      "https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/MII-Arterieller-Druck"
+      "https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/MII-Ideales-Koerpergewicht"
     ]
   },
-  "partOf": [
-    {
-      "reference": "Procedure/example"
-    }
-  ],
   "status": "final",
   "category": [
     {
       "coding": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
         }
       ]
     }
@@ -25,8 +20,12 @@
   "code": {
     "coding": [
       {
+        "system": "http://loinc.org",
+        "code": "50064-5"
+      },
+      {
         "system": "http://snomed.info/sct",
-        "code": "386534000.0"
+        "code": "170804003.0"
       }
     ]
   },
@@ -38,11 +37,8 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 20.0,
+    "value": 70.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mmHg"
-  },
-  "device": {
-    "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"
+    "code": "kg"
   }
 }
