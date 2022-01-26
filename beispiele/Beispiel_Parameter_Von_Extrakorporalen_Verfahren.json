@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "Beispiel-Parameter-Von-Extrakorporalen-Verfahren",
+    "meta": {
+        "profile":  [
+            "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Extrakorporalen-Verfahren"
+        ]
+    },
+    "partOf": {
+        "reference": "Procedure/example"
+    },
+    "status": "final",
+    "category":  [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "182744004"
+				}
+			]
+		}
+    ],
+    "code": {
+        "coding":  [
+			{
+				"system": "http://loinc.org"
+			}
+        ]
+    },
+    "subject": {
+        "reference": "Patient/example"
+    },
+    "effectivePeriod":[
+		{
+			"start": "2019-12-23T09:30:10+01:00",
+			"end": "2019-12-23T10:30:10+01:00"
+		}
+	],
+	"valueQuantity": {
+				"value": "90",
+				"unit": "millimeter of mercury",
+				"system": "http://unitsofmeasure.org",
+				"code": "mm[Hg]"
+    },
+}

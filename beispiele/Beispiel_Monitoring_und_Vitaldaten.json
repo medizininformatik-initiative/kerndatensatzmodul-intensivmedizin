@@ -1,0 +1,42 @@
+{
+    "resourceType": "Observation",
+    "id": "Beispiel-Monitoring-Und-Vitaldaten",
+    "meta": {
+        "profile":  [
+            "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Monitoring-und-Vitaldaten"
+        ]
+    },
+    "status": "final",
+    "category":  [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs"
+				}
+			]
+		}
+    ],
+    "code": {
+        "coding":  [
+			{
+				"system": "http://snomed.info/sct"
+			}
+        ]
+    },
+    "subject": {
+        "reference": "Patient/example"
+    },
+	"valueQuantity": {
+			"value": "120",
+			"unit": "millimeter of mercury",
+			"system": "http://unitsofmeasure.org",
+			"code": "mm[Hg]"
+	},
+    "effectivePeriod":[
+		{
+			"start": "2019-12-23T09:30:10+01:00",
+			"end": "2019-12-23T10:30:10+01:00"
+		}
+	]
+}

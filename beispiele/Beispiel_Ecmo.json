@@ -1,9 +1,9 @@
 {
                 "resourceType": "Procedure",
-                "id": "BeispielEcmoProcedure",
+                "id": "Beispiel-Ecmo-Procedure",
                 "meta": {
                     "profile": [
-                        "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_extrakorporales_Verfahren"
+                        "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Extrakorporales-Verfahren"
                     ]
                 },
                 "status": "completed",
