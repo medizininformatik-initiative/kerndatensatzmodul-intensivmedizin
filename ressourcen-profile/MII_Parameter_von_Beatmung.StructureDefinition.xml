@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
   <name value="MII_Parameter_von_Beatmung" />
-  <status value="draft" />
+  <status value="active" />
   <contact>
     <name value="Müller, Christoph" />
     <telecom>
@@ -128,6 +128,10 @@
         <system value="http://snomed.info/sct" />
       </patternCoding>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-SNOMED" />
+      </binding>
     </element>
     <element id="Observation.code.coding:sct.system">
       <path value="Observation.code.coding.system" />
@@ -150,6 +154,10 @@
         <system value="http://loinc.org" />
       </patternCoding>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC" />
+      </binding>
     </element>
     <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
@@ -172,6 +180,10 @@
         <system value="urn:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-ISO11073" />
+      </binding>
     </element>
     <element id="Observation.code.coding:IEEE-11073.system">
       <path value="Observation.code.coding.system" />

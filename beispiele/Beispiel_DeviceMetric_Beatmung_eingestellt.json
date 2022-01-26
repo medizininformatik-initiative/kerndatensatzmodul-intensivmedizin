@@ -1,0 +1,17 @@
+{
+	"resourceType": "DeviceMetric",
+	"id": "ExampleEingestellteUndGemesseneParameterBeatmung",
+	"meta": {
+		"profile": [
+			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung"
+		]
+	},
+	"type": {
+		"coding": [{
+			"code": "40617009",
+			"system": "http://snomed.info/sct"
+		}]
+	},
+
+	"category": "setting"
+}
