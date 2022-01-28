@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Linksventrikulaeres-Schlagvolumen-durch-Indikatorverduennung" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaeres-Schlagvolumen-durch-Indikatorverduennung" />
   <name value="MII_Linksventrikulaeres_Schlagvolumen_durch_Indikatorverduennung" />
   <status value="active" />

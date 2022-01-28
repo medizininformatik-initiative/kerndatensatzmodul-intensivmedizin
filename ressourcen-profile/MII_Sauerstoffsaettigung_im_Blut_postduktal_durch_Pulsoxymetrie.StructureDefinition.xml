@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie" />
   <name value="MII_Sauerstoffsaettigung_im_Blut_postduktal_durch_Pulsoxymetrie" />
   <status value="active" />

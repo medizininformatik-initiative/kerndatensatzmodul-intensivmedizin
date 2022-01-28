@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Pulmonalarterieller-Blutdruck" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Pulmonalarterieller-Blutdruck" />
   <name value="MII_Pulmonalarterieller_Blutdruck" />
   <status value="active" />

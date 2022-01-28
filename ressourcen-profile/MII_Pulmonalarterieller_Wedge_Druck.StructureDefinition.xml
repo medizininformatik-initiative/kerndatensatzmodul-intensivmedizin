@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Pulmonalarterieller-Wedge-Druck" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Pulmonalarterieller-Wedge-Druck" />
   <name value="MII_Pulmonalarterieller_Wedge_Druck" />
   <status value="active" />

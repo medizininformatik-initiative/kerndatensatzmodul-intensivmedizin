@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Pulmonalvaskulaerer-Widerstandsindex" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Pulmonalvaskulaerer-Widerstandsindex" />
   <name value="MII_Pulmonalvaskulaerer_Widerstandsindex" />
   <status value="draft" />

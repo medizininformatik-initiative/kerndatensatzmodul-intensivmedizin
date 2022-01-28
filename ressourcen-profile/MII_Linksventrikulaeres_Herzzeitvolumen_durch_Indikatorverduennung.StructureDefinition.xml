@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung" />
   <name value="MII_Linksventrikulaeres_Herzzeitvolumen_durch_Indikatorverduennung" />
   <status value="active" />

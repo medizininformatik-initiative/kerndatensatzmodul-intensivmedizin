@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Linksventrikulaerer-Herzindex-durch-Indikatorverduennung" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaerer-Herzindex-durch-Indikatorverduennung" />
   <name value="MII_Linksventrikulaerer_Herzindex_durch_Indikatorverduennung" />
   <status value="draft" />

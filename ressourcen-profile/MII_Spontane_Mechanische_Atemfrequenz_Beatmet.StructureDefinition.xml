@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Spontane-Mechanische-Atemfrequenz-Beatmet" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Spontane-Mechanische-Atemfrequenz-Beatmet" />
   <name value="MII_Spontane_Mechanische_Atemfrequenz_Beatmet" />
   <status value="draft" />

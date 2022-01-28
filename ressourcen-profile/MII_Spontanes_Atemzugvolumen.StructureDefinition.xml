@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Spontanes-Atemzugvolumen" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Spontanes-Atemzugvolumen" />
   <name value="MII_Spontanes_Atemzugvolumen" />
   <status value="draft" />
