@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Intrakranieller-Druck-ICP">
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Intrakranieller-Druck-ICP" />
   <name value="MII_Intrakranieller_Druck" />
   <status value="active" />

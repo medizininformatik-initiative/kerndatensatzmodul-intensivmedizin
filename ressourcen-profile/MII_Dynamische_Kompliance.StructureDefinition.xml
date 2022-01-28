@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Dynamische-Kompliance">
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Dynamische-Kompliance" />
   <name value="MII_Dynamische_Kompliance" />
   <status value="draft" />

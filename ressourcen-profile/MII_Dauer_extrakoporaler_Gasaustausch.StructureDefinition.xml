@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Dauer-Extrakoporaler-Gasaustausch">
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Dauer-Extrakoporaler-Gasaustausch" />
   <name value="MII_Dauer_extrakoporaler_Gasaustausch" />
   <status value="draft" />

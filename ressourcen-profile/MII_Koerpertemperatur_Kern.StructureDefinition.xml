@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Koerpertemperatur-Kern">
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Koerpertemperatur-Kern" />
   <name value="MII_Koerpertemperatur_Kern" />
   <status value="active" />
