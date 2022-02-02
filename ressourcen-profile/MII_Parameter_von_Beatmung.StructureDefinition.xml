@@ -115,7 +115,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -261,9 +261,6 @@
       <type>
         <code value="Quantity" />
       </type>
-      <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
-      </patternQuantity>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
@@ -272,6 +269,9 @@
       <type>
         <code value="Quantity" />
       </type>
+      <patternQuantity>
+        <unit value="http://unitsofmeasure.org" />
+      </patternQuantity>
       <mustSupport value="true" />
     </element>
     <element id="Observation.dataAbsentReason">
