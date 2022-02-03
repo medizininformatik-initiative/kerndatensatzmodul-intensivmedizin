@@ -19,17 +19,6 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII-Category-extrakorporale-Verfahren" />
       </binding>
     </element>
-    <element id="Observation.category:ecmo.coding">
-      <path value="Observation.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -39,31 +28,22 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <patternQuantity>
-        <unit value="millimeter of mecury" />
-        <code value="mmHg" />
-      </patternQuantity>
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.value[x].value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.value[x].unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.value[x].system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.value[x].code" />
-      <mustSupport value="true" />
+      <patternQuantity>
+        <unit value="millimeter of mecury" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="mmHg" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>
