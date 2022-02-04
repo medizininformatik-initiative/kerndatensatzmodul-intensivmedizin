@@ -73,20 +73,6 @@
       <path value="Procedure.category.coding.display" />
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.code.coding">
-      <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
       <sliceName value="sct" />
