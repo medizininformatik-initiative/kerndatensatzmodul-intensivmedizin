@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Arterieller-Druck",
+  "id": "Beatmungszeit-auf-neidriegem-Druck-",
   "meta": {
     "profile": [
-      "https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/MII-Arterieller-Druck"
+      "https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/MII-Beatmungszeit-auf-neidriegem-Druck-"
     ]
   },
   "partOf": [
@@ -17,7 +17,7 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "40617009"
         }
       ]
     }
@@ -25,8 +25,12 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "386534000.0"
+        "system": "http://loinc.org",
+        "code": "76229-4"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "16929864.0"
       }
     ]
   },
@@ -38,11 +42,11 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 20.0,
+    "value": 1.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mmHg"
+    "code": "s"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/Example_Eingestellte_Parameter_Beatmung"
   }
 }
