@@ -1,0 +1,10 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.icu",
+  "version": "1.0.0-ballot1",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.prozedur": "1.0.7"
+  }
+}

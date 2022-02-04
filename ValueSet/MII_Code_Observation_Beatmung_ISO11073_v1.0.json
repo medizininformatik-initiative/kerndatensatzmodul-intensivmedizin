@@ -1,12 +1,13 @@
 {
   "resourceType": "ValueSet",
+  "id": "ValueSet-Code-Observation-Beatmung-ISO11073",
   "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-ISO11073",
   "version": "1.0",
   "name": "MII_Code_Observation_Beatmung_ISO11073",
   "title": "MII Code Observation Beatmung [ISO11073]",
   "status": "active",
   "experimental": false,
-  "date": "2022-01-06T00:00:00",
+  "date": "2022-01-06",
   "publisher": "https://www.medizininformatik-initiative.de",
   "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr die im Kontext einer Beatmung eingestellten oder gemessenen Parametern.",
   "compose": {

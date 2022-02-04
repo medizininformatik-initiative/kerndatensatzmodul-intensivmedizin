@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Extrakorporales-Verfahren" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Extrakorporales-Verfahren" />
   <name value="MII_extrakorporales_Verfahren" />
-  <status value="draft" />
+  <status value="active" />
   <contact>
     <name value="Müller, Christoph" />
     <telecom>
@@ -71,20 +72,6 @@
     <element id="Procedure.category.coding:sct.display">
       <path value="Procedure.category.coding.display" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.code.coding">
-      <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />

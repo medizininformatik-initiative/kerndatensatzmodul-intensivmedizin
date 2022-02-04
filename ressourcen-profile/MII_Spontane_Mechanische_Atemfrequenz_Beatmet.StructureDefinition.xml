@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Spontane-Mechanische-Atemfrequenz-Beatmet" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Spontane-Mechanische-Atemfrequenz-Beatmet" />
   <name value="MII_Spontane_Mechanische_Atemfrequenz_Beatmet" />
-  <status value="draft" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -13,16 +14,6 @@
     <element id="Observation.category.coding">
       <path value="Observation.category.coding" />
       <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
@@ -38,20 +29,36 @@
         <code value="152490" />
       </patternCoding>
     </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
-    </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
       <min value="1" />
     </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.valueQuantity" />
+      <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="Breaths / minute" />
         <code value="{Breaths}/min" />
       </patternQuantity>
+    </element>
+    <element id="Observation.value[x]:valueQuantity.value">
+      <path value="Observation.valueQuantity.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <path value="Observation.valueQuantity.unit" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.system">
+      <path value="Observation.valueQuantity.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.valueQuantity.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

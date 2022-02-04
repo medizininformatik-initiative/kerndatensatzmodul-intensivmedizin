@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Beatmung" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Beatmung" />
   <name value="MII_Beatmung" />
-  <status value="draft" />
+  <status value="active" />
   <contact>
     <name value="Müller, Christoph" />
     <telecom>

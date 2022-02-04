@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Linksventrikulaeres-Schlagvolumen-Indikatorverduennung" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Linksventrikulaeres-Schlagvolumen-durch-Indikatorverduennung" />
   <name value="MII_Linksventrikulaeres_Schlagvolumen_durch_Indikatorverduennung" />
   <status value="active" />
@@ -17,13 +18,24 @@
         <code value="8771-8" />
       </patternCoding>
     </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Observation.effective[x]:effectiveDateTime">
-      <path value="Observation.effectiveDateTime" />
+      <path value="Observation.effective[x]" />
       <sliceName value="effectiveDateTime" />
-      <mustSupport value="true" />
+      <type>
+        <code value="dateTime" />
+      </type>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="per milliliter" />

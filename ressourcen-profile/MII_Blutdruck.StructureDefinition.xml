@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Blutdruck" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Blutdruck" />
   <name value="MII_Blutdruck" />
-  <status value="draft" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -366,10 +367,13 @@
     <element id="Observation.component:MeanBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]:valueQuantity">
-      <path value="Observation.component.valueQuantity" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="millimeter of mecury" />
@@ -379,19 +383,19 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]:valueQuantity.value">
-      <path value="Observation.component.valueQuantity.value" />
+      <path value="Observation.component.value[x].value" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]:valueQuantity.unit">
-      <path value="Observation.component.valueQuantity.unit" />
+      <path value="Observation.component.value[x].unit" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]:valueQuantity.system">
-      <path value="Observation.component.valueQuantity.system" />
+      <path value="Observation.component.value[x].system" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.value[x]:valueQuantity.code">
-      <path value="Observation.component.valueQuantity.code" />
+      <path value="Observation.component.value[x].code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MeanBP.dataAbsentReason">
@@ -513,6 +517,9 @@
     <element id="Observation.component:DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolicBP.value[x]:valueQuantity">

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Koerpertemperatur-Kern" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Koerpertemperatur-Kern" />
   <name value="MII_Koerpertemperatur_Kern" />
   <status value="active" />
@@ -17,9 +18,9 @@
         <code value="8329-5" />
       </patternCoding>
     </element>
-    <element id="Observation.code.coding:ISO11073">
+    <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
-      <sliceName value="ISO11073" />
+      <sliceName value="IEEE-11073" />
       <patternCoding>
         <code value="150368" />
       </patternCoding>

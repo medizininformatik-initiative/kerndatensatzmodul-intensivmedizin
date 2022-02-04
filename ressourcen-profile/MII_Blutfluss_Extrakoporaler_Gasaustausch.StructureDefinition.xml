@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-Blutfluss-Extrakoporaler-Gasaustausch" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Blutfluss-Extrakoporaler-Gasaustausch" />
   <name value="MII_Blutfluss_Extrakoporaler_Gasaustausch" />
-  <status value="draft" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -17,20 +18,6 @@
         <strength value="preferred" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII-Category-extrakorporale-Verfahren" />
       </binding>
-    </element>
-    <element id="Observation.category:ecmo.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:ecmo.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:ecmo.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
