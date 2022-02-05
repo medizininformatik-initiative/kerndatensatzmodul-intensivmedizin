@@ -41,8 +41,8 @@
       <path value="Observation.component" />
       <sliceName value="PA_SystolicBP" />
     </element>
-    <element id="Observation.component:PA_SystolicBP.code">
-      <path value="Observation.component.code" />
+    <element id="Observation.component:PA_SystolicBP.code.coding">
+      <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -50,80 +50,57 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <patternCodeableConcept>
-        <coding>
-          <system value="urn:std:iso:11073:10101" />
-          <code value="8440-0" />
-        </coding>
-      </patternCodeableConcept>
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_SystolicBP.code:loinc">
-      <path value="Observation.component.code" />
-      <sliceName value="loinc" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org" />
-          <code value="8440-0" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:loinc.coding">
+    <element id="Observation.component:PA_SystolicBP.code.coding:sct">
       <path value="Observation.component.code.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:loinc.coding.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:loinc.coding.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:IEEE-11073">
-      <path value="Observation.component.code" />
-      <sliceName value="IEEE-11073" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="urn:std:iso:11073:10101" />
-          <code value="150045" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:IEEE-11073.coding">
-      <path value="Observation.component.code.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:IEEE-11073.coding.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:IEEE-11073.coding.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:sct">
-      <path value="Observation.component.code" />
       <sliceName value="sct" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_SystolicBP.code:sct.coding">
-      <path value="Observation.component.code.coding" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_SystolicBP.code:sct.coding.system">
+    <element id="Observation.component:PA_SystolicBP.code.coding:sct.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_SystolicBP.code:sct.coding.code">
+    <element id="Observation.component:PA_SystolicBP.code.coding:sct.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8440-0" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="150045" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code.coding:IEEE-11073.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_SystolicBP.code.coding:IEEE-11073.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -135,9 +112,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <type>
-        <code value="Quantity" />
-      </type>
       <patternQuantity>
         <unit value="millimeter of mecury" />
         <system value="http://unitsofmeasure.org" />
@@ -157,8 +131,8 @@
       <path value="Observation.component" />
       <sliceName value="PA_MeanBP" />
     </element>
-    <element id="Observation.component:PA_MeanBP.code">
-      <path value="Observation.component.code" />
+    <element id="Observation.component:PA_MeanBP.code.coding">
+      <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -166,62 +140,57 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_MeanBP.code:loinc">
-      <path value="Observation.component.code" />
-      <sliceName value="loinc" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:loinc.coding">
+    <element id="Observation.component:PA_MeanBP.code.coding:sct">
       <path value="Observation.component.code.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:loinc.coding.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:loinc.coding.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:IEEE-11073">
-      <path value="Observation.component.code" />
-      <sliceName value="IEEE-11073" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:IEEE-11073.coding">
-      <path value="Observation.component.code.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:IEEE-11073.coding.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:IEEE-11073.coding.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:sct">
-      <path value="Observation.component.code" />
       <sliceName value="sct" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_MeanBP.code:sct.coding">
-      <path value="Observation.component.code.coding" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_MeanBP.code:sct.coding.system">
+    <element id="Observation.component:PA_MeanBP.code.coding:sct.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_MeanBP.code:sct.coding.code">
+    <element id="Observation.component:PA_MeanBP.code.coding:sct.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="2379312" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="150047" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code.coding:IEEE-11073.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_MeanBP.code.coding:IEEE-11073.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -229,9 +198,6 @@
     <element id="Observation.component:PA_MeanBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
-      <type>
-        <code value="Quantity" />
-      </type>
       <patternQuantity>
         <unit value="millimeter of mecury" />
         <system value="http://unitsofmeasure.org" />
@@ -252,83 +218,69 @@
       <sliceName value="PA_DiastolicBP" />
       <requirements value="Component observations share the same attributes in the Observation resource as the primary observation and are always treated a part of a single observation (they are not separable).  However, the reference range for the primary observation value is not inherited by the component values and is required when appropriate for each component observation." />
     </element>
-    <element id="Observation.component:PA_DiastolicBP.code">
-      <path value="Observation.component.code" />
+    <element id="Observation.component:PA_DiastolicBP.code.coding">
+      <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="text" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_DiastolicBP.code:loinc">
-      <path value="Observation.component.code" />
-      <sliceName value="loinc" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org" />
-          <code value="2368781" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:loinc.coding">
+    <element id="Observation.component:PA_DiastolicBP.code.coding:sct">
       <path value="Observation.component.code.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:loinc.coding.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:loinc.coding.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:IEEE-11073">
-      <path value="Observation.component.code" />
-      <sliceName value="IEEE-11073" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="urn:std:iso:11073:10101" />
-          <code value="150046" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:IEEE-11073.coding">
-      <path value="Observation.component.code.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:IEEE-11073.coding.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:IEEE-11073.coding.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:sct">
-      <path value="Observation.component.code" />
       <sliceName value="sct" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.component:PA_DiastolicBP.code:sct.coding">
-      <path value="Observation.component.code.coding" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_DiastolicBP.code:sct.coding.system">
+    <element id="Observation.component:PA_DiastolicBP.code.coding:sct.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:PA_DiastolicBP.code:sct.coding.code">
+    <element id="Observation.component:PA_DiastolicBP.code.coding:sct.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="2368781" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="150046" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code.coding:IEEE-11073.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:PA_DiastolicBP.code.coding:IEEE-11073.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -336,9 +288,6 @@
     <element id="Observation.component:PA_DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <min value="1" />
-      <type>
-        <code value="Quantity" />
-      </type>
       <patternQuantity>
         <unit value="millimeter of mecury" />
         <system value="http://unitsofmeasure.org" />
