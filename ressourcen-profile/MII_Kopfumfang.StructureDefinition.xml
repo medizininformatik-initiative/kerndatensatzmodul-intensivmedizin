@@ -45,13 +45,6 @@
       <path value="Observation.status" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Observation.category:vs-cat">
       <path value="Observation.category" />
       <sliceName value="vs-cat" />
