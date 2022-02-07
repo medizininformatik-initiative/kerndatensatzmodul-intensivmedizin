@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-DeviceMetric-eingestellte-gemessene-Parameter-Beatmung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-DeviceMetric-eingestellte-gemessene-Parameter-Beatmung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-eingestellte-gemessene-Parameter-Beatmung" />
   <name value="MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
@@ -16,21 +16,21 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Type-DeviceMetric-Beatmung" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Type-DeviceMetric-Beatmung" />
       </binding>
     </element>
     <element id="DeviceMetric.type.coding">
       <path value="DeviceMetric.type.coding" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Type-DeviceMetric-Beatmung" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Type-DeviceMetric-Beatmung" />
       </binding>
     </element>
     <element id="DeviceMetric.source">
       <path value="DeviceMetric.source" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/MII-ICU-Device" />
+        <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/ICU-Device" />
       </type>
       <mustSupport value="true" />
     </element>

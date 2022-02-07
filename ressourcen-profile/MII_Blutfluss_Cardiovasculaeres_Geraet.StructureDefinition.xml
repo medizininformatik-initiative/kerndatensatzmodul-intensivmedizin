@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-Blutfluss-Cardiovasculaeres-Geraet" />
-  <url value="https://medizininformatik-initative.de/fhir/ext/modul-icu/StructureDefinition/MII-Blutfluss-Cardiovasculaeres-Geraet" />
+  <url value="https://medizininformatik-initative.de/fhir/ext/modul-icu/StructureDefinition/Blutfluss-Cardiovasculaeres-Geraet" />
   <name value="MII_Blutfluss_Cardiovasculaeres_Geraet" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Extrakorporalen-Verfahren" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.category:ECMO">
@@ -16,7 +16,7 @@
       <sliceName value="ECMO" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/MII-Category-extrakorporale-Verfahren" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
       </binding>
     </element>
     <element id="Observation.category:ECMO.coding">

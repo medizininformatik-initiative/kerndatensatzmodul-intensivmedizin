@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-Beatmung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Beatmung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Beatmung" />
   <name value="MII_Beatmung" />
   <status value="active" />
   <contact>
@@ -84,7 +84,7 @@
       </patternCoding>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Code-Procedure-Beatmung-SNOMED" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Procedure-Beatmung-SNOMED" />
       </binding>
     </element>
     <element id="Procedure.code.coding:sct.display">

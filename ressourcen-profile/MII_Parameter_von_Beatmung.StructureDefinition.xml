@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-Parameter-Von-Beatmung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
   <name value="MII_Parameter_von_Beatmung" />
   <status value="active" />
   <contact>
@@ -62,7 +62,7 @@
         <severity value="error" />
         <human value="Either subject XOR encounter exists" />
         <expression value="$this.encounter.exists() xor $this.subject.exists()" />
-        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
+        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
       </constraint>
     </element>
     <element id="Observation.identifier">
@@ -77,7 +77,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
       </type>
       <mustSupport value="true" />
@@ -93,7 +93,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Category-Procedure-Beatmung-SNOMED" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Category-Procedure-Beatmung-SNOMED" />
       </binding>
     </element>
     <element id="Observation.category.coding">
@@ -205,7 +205,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
@@ -224,7 +224,7 @@
       <path value="Observation.encounter" />
       <type>
         <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Reference" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -294,7 +294,7 @@
       <path value="Observation.device" />
       <type>
         <code value="Reference" />
-        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Reference" />
         <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
       </type>
       <patternReference>

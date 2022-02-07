@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-Blutdruck" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Blutdruck" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutdruck" />
   <name value="MII_Blutdruck" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
@@ -38,7 +38,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Monitoring-und-Vitaldaten" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding:sct">
@@ -85,7 +85,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Systolischer-Blutdruck" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Systolischer-Blutdruck" />
       </binding>
     </element>
     <element id="Observation.component:SystolicBP.code.coding">
@@ -205,7 +205,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-mittlerer-Blutdruck" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mittlerer-Blutdruck" />
       </binding>
     </element>
     <element id="Observation.component:MeanBP.code.coding">
@@ -324,7 +324,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/module-icu/ValueSet/MII-Diastolischer-Blutdruck" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/module-icu/ValueSet/Diastolischer-Blutdruck" />
       </binding>
     </element>
     <element id="Observation.component:DiastolicBP.code.coding">
