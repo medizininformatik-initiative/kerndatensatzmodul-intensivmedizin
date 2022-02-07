@@ -30,18 +30,17 @@
       <path value="Observation.value[x]" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
+          <type value="type" />
           <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="millimeter of mecury" />
-        <system value="http://unitsofmeasure.org" />
         <code value="mmHg" />
       </patternQuantity>
     </element>

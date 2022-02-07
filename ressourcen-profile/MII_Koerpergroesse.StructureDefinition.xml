@@ -135,10 +135,6 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">

@@ -11,24 +11,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII-Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.category:sct">
-      <path value="Observation.category" />
-      <sliceName value="sct" />
-    </element>
-    <element id="Observation.category:sct.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />

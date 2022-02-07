@@ -107,10 +107,6 @@
     </element>
     <element id="Observation.component:PA_SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
-      <slicing>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
       <min value="1" />
       <patternQuantity>
         <unit value="millimeter of mecury" />

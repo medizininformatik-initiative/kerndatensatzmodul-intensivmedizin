@@ -18,22 +18,6 @@
         <code value="8771-8" />
       </patternCoding>
     </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Observation.effective[x]:effectiveDateTime">
-      <path value="Observation.effective[x]" />
-      <sliceName value="effectiveDateTime" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />

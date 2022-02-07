@@ -96,6 +96,10 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Category-Procedure-Beatmung-SNOMED" />
       </binding>
     </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.category.coding.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
@@ -264,7 +268,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
