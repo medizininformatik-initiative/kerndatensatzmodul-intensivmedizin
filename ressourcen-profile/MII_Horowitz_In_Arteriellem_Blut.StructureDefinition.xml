@@ -14,21 +14,6 @@
     <element id="Observation.category:vs-cat">
       <path value="Observation.category" />
       <sliceName value="vs-cat" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
@@ -49,7 +34,6 @@
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="millimeter of mecury" />
-        <system value="http://unitsofmeasure.org" />
         <code value="mm[Hg]" />
       </patternQuantity>
     </element>

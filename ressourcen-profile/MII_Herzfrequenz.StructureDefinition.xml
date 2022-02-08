@@ -25,10 +25,6 @@
       <sliceName value="vs-cat" />
       <min value="1" />
     </element>
-    <element id="Observation.category:vs-cat.coding.system">
-      <path value="Observation.category.coding.system" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />

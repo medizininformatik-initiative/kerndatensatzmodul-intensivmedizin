@@ -196,6 +196,9 @@
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
+      <patternReference>
+        <reference value="Patient" />
+      </patternReference>
       <mustSupport value="true" />
     </element>
     <element id="Observation.subject.reference">

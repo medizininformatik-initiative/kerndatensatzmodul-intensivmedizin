@@ -95,8 +95,8 @@
       <path value="Observation.category.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -228,6 +228,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
+      <patternReference>
+        <reference value="Patient" />
+      </patternReference>
       <mustSupport value="true" />
     </element>
     <element id="Observation.subject.reference">
@@ -302,7 +305,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Reference" />
-        <targetProfile value="http://medizininformatik.de./fhir/StructureDefinition/DeviceMetric_ICU" />
+        <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-Eingestellte-Gemessene-Parameter-Extrakorporale-Verfahren" />
       </type>
       <mustSupport value="true" />
     </element>

@@ -211,7 +211,6 @@
       </type>
       <patternReference>
         <reference value="Patient" />
-        <type value="Type" />
       </patternReference>
       <mustSupport value="true" />
     </element>
@@ -298,7 +297,7 @@
         <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
       </type>
       <patternReference>
-        <type value="DeviceMetric" />
+        <reference value="DeviceMetric" />
       </patternReference>
       <mustSupport value="true" />
     </element>
