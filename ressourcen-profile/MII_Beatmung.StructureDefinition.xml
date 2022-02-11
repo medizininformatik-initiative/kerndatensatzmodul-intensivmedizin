@@ -49,6 +49,7 @@
       <path value="Procedure.partOf" />
       <type>
         <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
       </type>
@@ -100,6 +101,10 @@
     </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]">
@@ -107,6 +112,14 @@
       <type>
         <code value="Period" />
       </type>
+    </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

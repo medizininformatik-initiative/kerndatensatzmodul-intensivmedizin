@@ -94,8 +94,16 @@
       <path value="Procedure.code.coding.display" />
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]">
@@ -117,6 +125,7 @@
       <path value="Procedure.recorder" />
       <type>
         <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />

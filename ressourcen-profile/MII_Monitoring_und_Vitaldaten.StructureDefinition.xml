@@ -62,6 +62,14 @@
       <path value="Observation.basedOn" />
       <max value="1" />
     </element>
+    <element id="Observation.partOf">
+      <path value="Observation.partOf" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+      </type>
+    </element>
     <element id="Observation.status">
       <path value="Observation.status" />
       <mustSupport value="true" />
@@ -196,10 +204,19 @@
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.encounter">
       <path value="Observation.encounter" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
@@ -270,8 +287,10 @@
       <path value="Observation.device" />
       <type>
         <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/ICU-Device" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
