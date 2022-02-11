@@ -68,7 +68,6 @@
       <sliceName value="valueQuantity" />
       <min value="1" />
       <patternQuantity>
-        <unit value="milliliter per minute per square meter" />
         <system value="http://unitsofmeasure.org" />
         <code value="mL/min/m2" />
       </patternQuantity>

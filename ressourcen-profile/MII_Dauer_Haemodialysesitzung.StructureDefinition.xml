@@ -47,7 +47,6 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="hour" />
         <code value="h" />
       </patternQuantity>
     </element>

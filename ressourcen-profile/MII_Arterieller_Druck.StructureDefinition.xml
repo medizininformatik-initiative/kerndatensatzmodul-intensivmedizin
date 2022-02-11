@@ -35,7 +35,6 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="millimeter of mecury" />
         <code value="mm[Hg]" />
       </patternQuantity>
     </element>

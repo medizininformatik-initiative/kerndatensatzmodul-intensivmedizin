@@ -47,7 +47,6 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="Milliliter per minute per square meter" />
         <code value="mL/min/m2" />
       </patternQuantity>
     </element>

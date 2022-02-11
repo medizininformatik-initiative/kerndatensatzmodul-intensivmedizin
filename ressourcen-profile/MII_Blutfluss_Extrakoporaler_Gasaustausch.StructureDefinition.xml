@@ -29,7 +29,6 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="liter per minute" />
         <code value="L/min" />
       </patternQuantity>
     </element>

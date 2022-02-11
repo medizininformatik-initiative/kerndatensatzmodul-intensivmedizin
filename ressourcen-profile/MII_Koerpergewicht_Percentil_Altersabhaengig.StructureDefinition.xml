@@ -29,7 +29,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="percent" />
         <system value="http://unitsofmeasure.org" />
         <code value="%" />
       </patternQuantity>

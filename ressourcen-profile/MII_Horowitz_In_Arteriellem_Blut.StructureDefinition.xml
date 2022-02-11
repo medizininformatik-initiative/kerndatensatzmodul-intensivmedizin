@@ -33,7 +33,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="millimeter of mecury" />
         <code value="mm[Hg]" />
       </patternQuantity>
     </element>

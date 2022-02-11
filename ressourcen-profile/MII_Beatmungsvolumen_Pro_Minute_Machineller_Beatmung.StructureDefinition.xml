@@ -40,7 +40,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="liter per minute" />
         <code value="L/min" />
       </patternQuantity>
     </element>

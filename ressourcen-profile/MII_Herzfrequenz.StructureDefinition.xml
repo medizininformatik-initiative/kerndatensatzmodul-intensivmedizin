@@ -35,7 +35,6 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="Beats / minute" />
         <system value="http://unitsofmeasure.org" />
         <code value="{beats}/min" />
       </patternQuantity>

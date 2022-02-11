@@ -141,7 +141,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="centimeter" />
         <system value="http://unitsofmeasure.org" />
         <code value="cm" />
       </patternQuantity>

@@ -113,7 +113,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="kilogram" />
         <system value="http://unitsofmeasure.org" />
         <code value="kg" />
       </patternQuantity>

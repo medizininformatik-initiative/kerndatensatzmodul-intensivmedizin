@@ -45,7 +45,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="dyne second per centimeter" />
         <system value="http://unitsofmeasure.org" />
         <code value="dyn.s/cm" />
       </patternQuantity>

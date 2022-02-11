@@ -8,7 +8,8 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/310",
+      "display": "Example_extrakorporales_Verfahren"
     }
   ],
   "status": "final",
@@ -43,6 +44,7 @@
     "code": "L/min"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/311",
+    "display": "Example_Eingestellte_Parameter_extrakorporale_Verfahren"
   }
 }

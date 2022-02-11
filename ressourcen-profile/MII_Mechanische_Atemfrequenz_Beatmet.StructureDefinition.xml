@@ -33,7 +33,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="Breaths / minute" />
         <code value="{Breaths}/min" />
       </patternQuantity>
     </element>

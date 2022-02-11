@@ -40,7 +40,6 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="ratio" />
         <code value="{ratio}" />
       </patternQuantity>
     </element>

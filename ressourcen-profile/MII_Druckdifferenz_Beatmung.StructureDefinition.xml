@@ -33,7 +33,6 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="centimeter of water" />
         <code value="cm[H2O]" />
       </patternQuantity>
     </element>

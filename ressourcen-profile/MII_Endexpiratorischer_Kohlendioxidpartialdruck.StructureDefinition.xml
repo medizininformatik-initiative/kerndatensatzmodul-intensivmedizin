@@ -44,7 +44,6 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <unit value="mm[Hg]" />
         <code value="mm[Hg]" />
       </patternQuantity>
     </element>
