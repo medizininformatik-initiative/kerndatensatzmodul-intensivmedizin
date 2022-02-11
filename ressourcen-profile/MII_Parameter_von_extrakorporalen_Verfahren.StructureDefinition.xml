@@ -236,6 +236,7 @@
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
@@ -275,7 +276,6 @@
     </element>
     <element id="Observation.value[x].unit">
       <path value="Observation.value[x].unit" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x].system">
