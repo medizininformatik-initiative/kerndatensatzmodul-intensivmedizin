@@ -292,9 +292,6 @@
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
         <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
       </type>
-      <patternReference>
-        <reference value="DeviceMetric" />
-      </patternReference>
       <mustSupport value="true" />
     </element>
     <element id="Observation.referenceRange">
