@@ -8,8 +8,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/310",
-      "display": "Example_extrakorporales_Verfahren"
+      "reference": "Procedure/Example_extrakorporales_Verfahren"
     }
   ],
   "status": "final",
@@ -44,7 +43,6 @@
     "code": "mmol/L"
   },
   "device": {
-    "reference": "DeviceMetric/331",
-    "display": "Example_Gemessene_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"
   }
 }
