@@ -209,14 +209,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
       </type>
-      <patternReference>
-        <reference value="Patient" />
-      </patternReference>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.subject.reference">
-      <path value="Observation.subject.reference" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.encounter">
