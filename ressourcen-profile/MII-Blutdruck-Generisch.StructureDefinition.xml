@@ -22,7 +22,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="code.coding" />
+          <path value="code" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -60,6 +60,8 @@
     <element id="Observation.component:SystolischBD.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding:loinc.system">
@@ -142,6 +144,8 @@
     <element id="Observation.component:DiastolischBD.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:loinc.system">
@@ -202,6 +206,8 @@
     <element id="Observation.component:MittlererBD.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MittlererBD.code.coding:loinc.system">

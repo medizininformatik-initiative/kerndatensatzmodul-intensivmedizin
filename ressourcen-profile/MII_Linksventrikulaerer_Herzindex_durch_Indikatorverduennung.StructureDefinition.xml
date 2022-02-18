@@ -14,35 +14,6 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="vital-signs" />
-        </coding>
-      </patternCodeableConcept>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct">
-      <path value="Observation.category" />
-      <sliceName value="sct" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.category:sct.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
@@ -61,6 +32,13 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
@@ -68,7 +46,6 @@
       <sliceName value="valueQuantity" />
       <min value="1" />
       <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
         <code value="mL/min/m2" />
       </patternQuantity>
     </element>

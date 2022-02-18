@@ -16,25 +16,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:sct">
-      <path value="Observation.category" />
-      <sliceName value="sct" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
