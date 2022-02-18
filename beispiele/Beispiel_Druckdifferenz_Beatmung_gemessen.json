@@ -1,18 +1,23 @@
 {
   "resourceType": "Observation",
-  "id": "Linksventrikulaeres-Schlagvolumen-",
+  "id": "Druckdiffernz-Beatmung",
   "meta": {
     "profile": [
-      "https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaeres-Schlagvolumen-"
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Druckdifferenz-Beatmung"
     ]
   },
+  "partOf": [
+    {
+      "reference": "Procedure/example"
+    }
+  ],
   "status": "final",
   "category": [
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "system": "http://snomed.info/sct",
+          "code": "40617009"
         }
       ]
     }
@@ -21,15 +26,11 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "20562-5"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "90096001.0"
+        "code": "76154-4"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150428.0"
+        "code": "152720.0"
       }
     ]
   },
@@ -41,8 +42,11 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 70.0,
+    "value": 9.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mL"
+    "code": "cm[H2O]"
+  },
+  "device": {
+    "reference": "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
   }
 }
