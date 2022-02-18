@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Blutfluss-Extrakoporaler-Gasaustausch" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutfluss-Extrakoporaler-Gasaustausch" />
-  <name value="MII_Blutfluss_Extrakoporaler_Gasaustausch" />
+  <id value="Profile-Blutfluss-Extrakorporaler-Gasaustausch" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutflussindex-Extrakorporaler-Gasaustausch" />
+  <name value="MII_Blutfluss_Extrakorporaler_Gasaustausch" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
