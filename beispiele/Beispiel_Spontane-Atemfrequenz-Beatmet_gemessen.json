@@ -44,7 +44,7 @@
   "valueQuantity": {
     "value": 8.0,
     "system": "http://unitsofmeasure.org",
-    "code": "{breaths}/min"
+    "code": "/min"
   },
   "device": {
     "reference": "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
