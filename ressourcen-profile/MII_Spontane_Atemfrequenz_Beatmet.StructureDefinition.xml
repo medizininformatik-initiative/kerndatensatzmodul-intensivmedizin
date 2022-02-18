@@ -26,7 +26,7 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <code value="{Breaths}/min" />
+        <code value="/min" />
       </patternQuantity>
     </element>
     <element id="Observation.value[x]:valueQuantity.value">
