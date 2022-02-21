@@ -47,7 +47,7 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <code value="mL/min/m2" />
+        <code value="L/(min.m2)" />
       </patternQuantity>
     </element>
     <element id="Observation.interpretation">
