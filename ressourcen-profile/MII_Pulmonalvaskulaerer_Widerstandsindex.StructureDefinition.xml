@@ -52,7 +52,7 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <code value="dyn.s/cm" />
+        <code value="dyn.s/(cm5.m2)" />
       </patternQuantity>
     </element>
   </differential>
