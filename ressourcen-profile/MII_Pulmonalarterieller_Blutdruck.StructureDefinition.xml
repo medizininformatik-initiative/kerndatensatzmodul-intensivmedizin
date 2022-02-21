@@ -15,7 +15,6 @@
       <path value="Observation.value[x]" />
       <max value="0" />
       <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
         <code value="mm[Hg]" />
       </patternQuantity>
     </element>
@@ -48,7 +47,7 @@
       <sliceName value="loinc" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="2368781" />
+        <code value="8385-7" />
       </patternCoding>
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073">
