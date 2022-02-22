@@ -16,6 +16,7 @@
   <differential>
     <element id="Intensivmedizin">
       <path value="Intensivmedizin" />
+      <definition value="Root-Element" />
       <min value="0" />
       <max value="*" />
     </element>
