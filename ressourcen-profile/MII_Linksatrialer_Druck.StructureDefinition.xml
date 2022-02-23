@@ -15,82 +15,61 @@
       <path value="Observation.component" />
       <sliceName value="SystolischBD" />
     </element>
-    <element id="Observation.component:SystolischBD.code.coding:sct">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="60989-1" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
-        <code value="150065" />
-      </patternCoding>
+    <element id="Observation.component:SystolischBD.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="60989-1" />
+        </coding>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150065" />
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Observation.component:DiastolischBD">
       <path value="Observation.component" />
       <sliceName value="DiastolischBD" />
     </element>
-    <element id="Observation.component:DiastolischBD.code.coding:sct">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="75933-2" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
-        <code value="150066" />
-      </patternCoding>
+    <element id="Observation.component:DiastolischBD.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="75933-2" />
+        </coding>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150066" />
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Observation.component:MittlererBD">
       <path value="Observation.component" />
       <sliceName value="MittlererBD" />
     </element>
-    <element id="Observation.component:MittlererBD.code.coding:sct">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="8399-8" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
-        <code value="150067" />
-      </patternCoding>
+    <element id="Observation.component:MittlererBD.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8399-8" />
+        </coding>
+        <coding>
+          <system value="urn:std:iso:11073:10101" />
+          <code value="150067" />
+        </coding>
+      </patternCodeableConcept>
     </element>
   </differential>
 </StructureDefinition>

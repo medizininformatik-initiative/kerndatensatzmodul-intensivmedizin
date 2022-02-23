@@ -45,9 +45,6 @@
     <element id="Observation.component:SystolischBD.code.coding:sct">
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding:sct.system">
@@ -132,9 +129,6 @@
     <element id="Observation.component:DiastolischBD.code.coding:sct">
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:sct.system">
@@ -197,9 +191,6 @@
     <element id="Observation.component:MittlererBD.code.coding:sct">
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MittlererBD.code.coding:sct.system">
