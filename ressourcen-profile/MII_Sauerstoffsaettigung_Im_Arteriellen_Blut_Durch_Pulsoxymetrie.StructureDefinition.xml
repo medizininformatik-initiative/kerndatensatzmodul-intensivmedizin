@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie" />
-  <name value="MII_Sauerstoffsaettigung_im_Blut_postduktal_durch_Pulsoxymetrie" />
+  <id value="Sauerstoffsaettigung-Im-Arteriellen-Blut-Per-Pulsoxymetrie" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Arteriellen-Blut-Per-Pulsoxymetrie" />
+  <name value="MII_Sauerstoffsaettigung_Im_Arteriellen_Blut_Per_Pulsoxymetrie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,14 +15,14 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <code value="59418-4" />
+        <code value="59408-5" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <code value="160300" />
+        <code value="150456" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]:valueQuantity">

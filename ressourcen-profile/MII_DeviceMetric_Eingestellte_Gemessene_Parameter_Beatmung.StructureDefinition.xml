@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-DeviceMetric-eingestellte-gemessene-Parameter-Beatmung" />
   <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-eingestellte-gemessene-Parameter-Beatmung" />
-  <name value="MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
+  <name value="MII_DeviceMetric_Eingestellte_Gemessene_Parameter_Beatmung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

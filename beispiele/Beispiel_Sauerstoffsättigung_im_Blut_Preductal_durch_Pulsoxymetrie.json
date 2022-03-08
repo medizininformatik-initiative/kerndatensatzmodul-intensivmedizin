@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Linksventrikulaerer-Herzindex-durch-Indikatorverduennung",
+  "id": "Sauerstoffsaettigung-im-Blut-Preductal-durch-Pulsoxymetrie",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaerer-Herzindex-durch-Indikatorverduennung"
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Blut-Preductal-Per-Pulsoxymetrie"
     ]
   },
   "status": "final",
@@ -21,11 +21,11 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8751-0"
+        "code": "59407-7"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "149772.0"
+        "code": "160296.0"
       }
     ]
   },
@@ -37,8 +37,8 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 3.0,
+    "value": 96.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/min/m2"
+    "code": "%"
   }
 }
