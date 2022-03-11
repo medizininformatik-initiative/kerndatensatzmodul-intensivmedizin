@@ -22,16 +22,28 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
       </binding>
     </element>
-    <element id="Observation.code.coding:IEEE-11073">
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <constraint>
+        <key value="obs-loinc-sct" />
+        <severity value="error" />
+        <human value="Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein" />
+        <expression value="coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()" />
+      </constraint>
+    </element>
+    <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
-      <sliceName value="IEEE-11073" />
+      <sliceName value="loinc" />
       <patternCoding>
         <code value="83064-6" />
       </patternCoding>
     </element>
-    <element id="Observation.encounter">
-      <path value="Observation.encounter" />
-      <mustSupport value="true" />
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+      </patternCoding>
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
