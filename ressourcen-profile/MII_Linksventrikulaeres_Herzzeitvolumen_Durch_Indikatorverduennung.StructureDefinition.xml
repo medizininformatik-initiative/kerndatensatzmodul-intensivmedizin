@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Sauerstoffsaettigung-Im-Arteriellen-Blut-Per-Pulsoxymetrie" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Arteriellen-Blut-Per-Pulsoxymetrie" />
-  <name value="MII_Sauerstoffsaettigung_im_arteriellen_Blut_Per_Pulsoxymetrie" />
+  <id value="Linksventrikulaeres-Herzzeitvolumen-Indikatorverduennung" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaeres-Herzzeitvolumen-Durch-Indikatorverduennung" />
+  <name value="MII_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,14 +15,14 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <code value="59408-5" />
+        <code value="8737-9" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <code value="150456" />
+        <code value="150276" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]:valueQuantity">
@@ -30,7 +30,7 @@
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <system value="http://unitsofmeasure.org" />
-        <code value="%" />
+        <code value="L/min" />
       </patternQuantity>
     </element>
   </differential>

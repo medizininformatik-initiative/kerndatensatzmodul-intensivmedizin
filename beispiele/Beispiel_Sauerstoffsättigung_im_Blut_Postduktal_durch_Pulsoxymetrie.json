@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Sauerstoffsaettigung-im-Blut-preductal-durch-Pulsoxymetrie",
+  "id": "Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Blut-Preductal-Per-Pulsoxymetrie"
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Blut-Postduktal-Per-Pulsoxymetrie"
     ]
   },
   "status": "final",
@@ -21,11 +21,11 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "59407-7"
+        "code": "59418-4"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "160296.0"
+        "code": "160300.0"
       }
     ]
   },
@@ -37,7 +37,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 96.0,
+    "value": 91.0,
     "system": "http://unitsofmeasure.org",
     "code": "%"
   }
