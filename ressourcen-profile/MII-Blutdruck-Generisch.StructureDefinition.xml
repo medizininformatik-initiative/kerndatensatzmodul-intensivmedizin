@@ -17,6 +17,10 @@
         <code value="75367002" />
       </patternCoding>
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <slicing>
