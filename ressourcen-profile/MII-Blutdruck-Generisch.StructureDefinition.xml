@@ -93,6 +93,13 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:SystolischBD.value[x]">
+      <path value="Observation.component.value[x]" />
+      <patternQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+      </patternQuantity>
+    </element>
     <element id="Observation.component:SystolischBD.value[x]:valueQuantity">
       <path value="Observation.component.value[x]" />
       <sliceName value="valueQuantity" />
@@ -177,6 +184,13 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:DiastolischBD.value[x]">
+      <path value="Observation.component.value[x]" />
+      <patternQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+      </patternQuantity>
+    </element>
     <element id="Observation.component:MittlererBD">
       <path value="Observation.component" />
       <sliceName value="MittlererBD" />
@@ -237,6 +251,13 @@
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:MittlererBD.value[x]">
+      <path value="Observation.component.value[x]" />
+      <patternQuantity>
+        <unit value="mm[Hg]" />
+        <system value="http://unitsofmeasure.org" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>
