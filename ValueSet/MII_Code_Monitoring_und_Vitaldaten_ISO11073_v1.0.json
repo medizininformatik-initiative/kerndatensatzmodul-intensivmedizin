@@ -16,103 +16,136 @@
         "system": "urn:iso:std:iso:11073:10101",
         "concept": [
           {
-            "code": "150017.0"
+            "code": "150017",
+            "display": "Systolic blood pressure"
           },
           {
-            "code": "150019.0"
+            "code": "150019",
+            "display": "Mean blood pressure"
           },
           {
-            "code": "150018.0"
+            "code": "150018",
+            "display": "Diastolic blood pressure"
           },
           {
-            "code": "150084.0"
+            "code": "150084",
+            "display": "Central venous pressure"
           },
           {
-            "code": "150045.0"
+            "code": "150045",
+            "display": "Systolic pulmonary arterial pressure"
           },
           {
-            "code": "150047.0"
+            "code": "150047",
+            "display": "Mean pulmonary arterial pressure"
           },
           {
-            "code": "150046.0"
+            "code": "150046",
+            "display": "Diastolic pulmonary arterial pressure"
           },
           {
-            "code": "150052.0"
+            "code": "150052",
+            "display": ""
           },
           {
-            "code": "150276.0"
+            "code": "150276",
+            "display": ""
           },
           {
-            "code": "149772.0"
+            "code": "149772",
+            "display": ""
           },
           {
-            "code": "150276.0"
+            "code": "150276",
+            "display": "Cardiac output"
           },
           {
-            "code": "149772.0"
+            "code": "149772",
+            "display": "Cardiac index"
           },
           {
-            "code": "149760.0"
+            "code": "149760",
+            "display": "Systemic vascular resistance indexed"
           },
           {
-            "code": "152852.0"
+            "code": "152852",
+            "display": ""
           },
           {
-            "code": "150428.0"
+            "code": "150428",
+            "display": ""
           },
           {
-            "code": "149764.0"
+            "code": "149764",
+            "display": ""
           },
           {
-            "code": "150368.0"
+            "code": "150368",
+            "display": ""
           },
           {
-            "code": "150456.0"
+            "code": "150456",
+            "display": ""
           },
           {
-            "code": "160300.0"
+            "code": "160300",
+            "display": ""
           },
           {
-            "code": "160296.0"
+            "code": "160296",
+            "display": ""
           },
           {
-            "code": "153608.0"
+            "code": "153608",
+            "display": ""
           },
           {
-            "code": "150103.0"
+            "code": "150103",
+            "display": ""
           },
           {
-            "code": "150107.0"
+            "code": "150107",
+            "display": ""
           },
           {
-            "code": "150101.0"
+            "code": "150101",
+            "display": ""
           },
           {
-            "code": "150105.0"
+            "code": "150105",
+            "display": ""
           },
           {
-            "code": "150102.0"
+            "code": "150102",
+            "display": ""
           },
           {
-            "code": "150106.0"
+            "code": "150106",
+            "display": ""
           },
           {
-            "code": "150069.0"
+            "code": "150069",
+            "display": "Systolic right atrial pressure"
           },
           {
-            "code": "150065.0"
+            "code": "150065",
+            "display": "Systolic left atrial pressure"
           },
           {
-            "code": "150067.0"
+            "code": "150067",
+            "display": "Mean left atrial pressure"
           },
           {
-            "code": "150071.0"
+            "code": "150071",
+            "display": "Mean right atrial pressure"
           },
           {
-            "code": "150066.0"
+            "code": "150066",
+            "display": "Diastolic left atrial pressure"
           },
           {
-            "code": "150070.0"
+            "code": "150070",
+            "display": "Diastolic right atrial pressure"
           }
         ]
       }

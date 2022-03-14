@@ -16,61 +16,80 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "364075005.0"
+            "code": "364075005",
+            "display": "Heart rate (observable entity)"
           },
           {
-            "code": "271649006.0"
+            "code": "271649006",
+            "display": "Systolic blood pressure (observable entity)"
           },
           {
-            "code": "6797001.0"
+            "code": "6797001",
+            "display": "Mean blood pressure (observable entity)"
           },
           {
-            "code": "271650006.0"
+            "code": "271650006",
+            "display": "Diastolic blood pressure (observable entity)"
           },
           {
-            "code": "71420008.0"
+            "code": "71420008",
+            "display": "Central venous pressure (observable entity))"
           },
           {
-            "code": "118433006.0"
+            "code": "118433006",
+            "display": "Pulmonary artery wedge pressure (observable entity)"
           },
           {
-            "code": "82799009.0"
+            "code": "82799009",
+            "display": "Cardiac output"
           },
           {
-            "code": "54993008.0"
+            "code": "54993008",
+            "display": "Left ventricular Cardiac index"
           },
           {
-            "code": "276900001.0"
+            "code": "276900001",
+            "display": "Systemic vascular Resistance index"
           },
           {
-            "code": "276902009.0"
+            "code": "276902009",
+            "display": "Pulmonary vascular Resistance index"
           },
           {
-            "code": "90096001.0"
+            "code": "90096001",
+            "display": "Stroke volume (observable entity)"
           },
           {
-            "code": "277381004.0"
+            "code": "277381004",
+            "display": "Stroke index (observable entity)"
           },
           {
-            "code": "276885007.0"
+            "code": "276885007",
+            "display": "Core body temperature (observable entity)"
           },
           {
-            "code": "250844005.0"
+            "code": "250844005",
+            "display": "Intracranial pressure (observable entity)"
           },
           {
-            "code": "27113001.0"
+            "code": "27113001",
+            "display": "Body weight (observable entity)"
           },
           {
-            "code": "170804003.0"
+            "code": "170804003",
+            "display": "Ideal body weight (observable entity)"
           },
           {
-            "code": "1153637007.0"
+            "code": "1153637007",
+            "display": "Body height (observable entity)"
           },
           {
-            "code": "1153605006.0"
+            "code": "1153605006",
+            "display": "Body height for age percentile (observable entity)"
           },
           {
-            "code": "1153592008.0"
+            "code": "1153592008",
+            "display": "Weight for age percentile (observable entity)"
           }
         ]
       }
