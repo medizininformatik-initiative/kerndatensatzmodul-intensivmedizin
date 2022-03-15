@@ -16,31 +16,40 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "250822000.0"
+            "code": "250822000",
+            "display": "Inspiration/expiration time ratio (observable entity)"
           },
           {
-            "code": "416811008.0"
+            "code": "416811008",
+            "display": "Tidal volume setting (observable entity)"
           },
           {
-            "code": "250874002.0"
+            "code": "250874002",
+            "display": "Ventilator delivered tidal volume (observable entity)"
           },
           {
-            "code": "250816009.0"
+            "code": "250816009",
+            "display": "Spontaneous tidal volume (observable entity)"
           },
           {
-            "code": "426102006.0"
+            "code": "426102006",
+            "display": "Inspiratory minute volume (observable entity)"
           },
           {
-            "code": "250775008.0"
+            "code": "250775008",
+            "display": "Expired oxygen concentration (observable entity)"
           },
           {
-            "code": "250823005.0"
+            "code": "250823005",
+            "display": "Total dynamic compliance (observable entity)"
           },
           {
-            "code": "250854009.0"
+            "code": "250854009",
+            "display": "Positive end expiratory pressure (observable entity)"
           },
           {
-            "code": "250784008.0"
+            "code": "250784008",
+            "display": "End tidal carbon dioxide concentration (observable entity)"
           }
         ]
       }
