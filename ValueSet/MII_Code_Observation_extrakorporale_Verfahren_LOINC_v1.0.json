@@ -16,10 +16,12 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "83064-6"
+            "code": "83064-6",
+            "display": "Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit"
           },
           {
-            "code": "19941-4"
+            "code": "19941-4",
+            "display": "Oxygen gas flow Oxygen delivery system"
           }
         ]
       }
