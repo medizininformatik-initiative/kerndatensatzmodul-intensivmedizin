@@ -96,8 +96,8 @@
     <element id="Observation.component:SystolischBD.value[x]">
       <path value="Observation.component.value[x]" />
       <patternQuantity>
-        <unit value="mm[Hg]" />
         <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
       </patternQuantity>
     </element>
     <element id="Observation.component:SystolischBD.value[x]:valueQuantity">
@@ -187,8 +187,8 @@
     <element id="Observation.component:DiastolischBD.value[x]">
       <path value="Observation.component.value[x]" />
       <patternQuantity>
-        <unit value="mm[Hg]" />
         <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
       </patternQuantity>
     </element>
     <element id="Observation.component:MittlererBD">
@@ -255,8 +255,8 @@
     <element id="Observation.component:MittlererBD.value[x]">
       <path value="Observation.component.value[x]" />
       <patternQuantity>
-        <unit value="mm[Hg]" />
         <system value="http://unitsofmeasure.org" />
+        <code value="mm[Hg]" />
       </patternQuantity>
     </element>
   </differential>
