@@ -49,6 +49,9 @@
     <element id="Observation.component:SystolischBD.code.coding:sct">
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding:sct.system">
@@ -66,6 +69,9 @@
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding:loinc.system">
@@ -81,6 +87,9 @@
     <element id="Observation.component:SystolischBD.code.coding:IEEE-11073">
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding:IEEE-11073.system">
@@ -140,6 +149,9 @@
     <element id="Observation.component:DiastolischBD.code.coding:sct">
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:sct.system">
@@ -157,6 +169,9 @@
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:loinc.system">
@@ -172,6 +187,9 @@
     <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073">
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073.system">
@@ -209,6 +227,9 @@
     <element id="Observation.component:MittlererBD.code.coding:sct">
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MittlererBD.code.coding:sct.system">
@@ -226,6 +247,9 @@
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MittlererBD.code.coding:loinc.system">
@@ -241,6 +265,9 @@
     <element id="Observation.component:MittlererBD.code.coding:IEEE-11073">
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:MittlererBD.code.coding:IEEE-11073.system">
