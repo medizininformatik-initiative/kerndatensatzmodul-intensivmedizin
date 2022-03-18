@@ -15,13 +15,6 @@
       <path value="Observation.category" />
       <min value="1" />
     </element>
-    <element id="Observation.category.coding">
-      <path value="Observation.category.coding" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
-      </binding>
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />

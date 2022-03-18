@@ -14,10 +14,6 @@
     <element id="Observation.category:ecmo">
       <path value="Observation.category" />
       <sliceName value="ecmo" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
-      </binding>
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
