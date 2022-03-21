@@ -18,12 +18,21 @@
         <code value="8791-6" />
       </patternCoding>
     </element>
-    <element id="Observation.value[x]:valueQuantity">
+    <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
-        <code value="/mL" />
+        <code value="mL" />
       </patternQuantity>
     </element>
   </differential>
