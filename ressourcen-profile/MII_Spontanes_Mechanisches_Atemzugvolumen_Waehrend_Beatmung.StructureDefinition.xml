@@ -15,7 +15,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <code value="20118-6-0" />
+        <code value="20118-6" />
       </patternCoding>
     </element>
     <element id="Observation.effective[x]">
@@ -33,7 +33,7 @@
       </slicing>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <code value="mL" />
