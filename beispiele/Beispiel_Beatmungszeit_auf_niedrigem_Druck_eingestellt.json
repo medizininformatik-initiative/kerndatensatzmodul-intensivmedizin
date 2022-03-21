@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Beatmungszeit-auf-niedriegem-Druck",
+  "id": "Beatmungszeit-auf-niedrigem-Druck",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Beatmungszeit-Niedriegem-Druck"
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Beatmungszeit-Niedrigem-Druck"
     ]
   },
   "partOf": [
