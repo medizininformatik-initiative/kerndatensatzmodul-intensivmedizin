@@ -29,10 +29,10 @@
       </slicing>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <code value="mmHg" />
+        <code value="mm[Hg]" />
       </patternQuantity>
     </element>
   </differential>
