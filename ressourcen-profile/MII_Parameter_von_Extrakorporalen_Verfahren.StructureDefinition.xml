@@ -150,7 +150,7 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-extrakorporale-Verfahren-SNOMED" />
       </binding>
     </element>
@@ -176,7 +176,7 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-extrakorporale-Verfahren-LOINC" />
       </binding>
     </element>
@@ -202,7 +202,7 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-extrakorporale-Verfahren-ISO11073" />
       </binding>
     </element>
