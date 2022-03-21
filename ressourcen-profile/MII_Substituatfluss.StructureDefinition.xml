@@ -32,17 +32,5 @@
         <code value="ml/h" />
       </patternQuantity>
     </element>
-    <element id="Observation.interpretation">
-      <path value="Observation.interpretation" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <mustSupport value="true" />
-    </element>
   </differential>
 </StructureDefinition>
