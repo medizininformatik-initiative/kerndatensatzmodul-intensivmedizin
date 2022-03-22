@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Blutfluss-extrakoporaler-Gasaustausch",
+  "id": "Blutfluss-extrakorporaler-Gasaustausch",
   "meta": {
     "profile": [
       "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutfluss-Extrakorporaler-Gasaustausch"
@@ -43,6 +43,6 @@
     "code": "L/min"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"
   }
 }
