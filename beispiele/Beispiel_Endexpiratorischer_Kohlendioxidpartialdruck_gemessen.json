@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,15 +27,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "19891-1"
+        "code": "19891-1",
+		"display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "250784008.0"
+        "code": "250784008",
+		"display": "End tidal carbon dioxide concentration (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "151708.0"
+        "code": "151708",
+		"display": "End tidal carbon dioxide concentration (or partial pressure) in airway gas"
       }
     ]
   },

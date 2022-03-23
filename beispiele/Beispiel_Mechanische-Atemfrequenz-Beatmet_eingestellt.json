@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,11 +27,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "33438-3"
+        "code": "33438-3",
+		"display": "Breath rate mechanical --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "151586.0"
+        "code": "151586",
+		"display": "Ventilation rate"
       }
     ]
   },

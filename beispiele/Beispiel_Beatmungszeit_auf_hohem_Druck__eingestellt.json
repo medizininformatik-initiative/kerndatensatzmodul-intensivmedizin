@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,11 +27,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "76190-8"
+        "code": "76190-8",
+		"display": "High pressure hold time setting"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "16929860.0"
+        "code": "16929860",
+		"display": "High baseline pressure"
       }
     ]
   },

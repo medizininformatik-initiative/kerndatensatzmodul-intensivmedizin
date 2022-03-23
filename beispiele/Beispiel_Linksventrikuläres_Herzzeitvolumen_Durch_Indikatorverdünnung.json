@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8737-9"
+        "code": "8737-9",
+		"display": "Left ventricular Cardiac output by Indicator dilution"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150276.0"
+        "code": "150276",
+		"display": "Cardiac output"
       }
     ]
   },

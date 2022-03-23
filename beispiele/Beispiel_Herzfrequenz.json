@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8867-4"
+        "code": "8867-4",
+		"display": "Heart Rate"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "364075005.0"
+        "code": "364075005",
+		"display": "Heart Rate"
       }
     ]
   },

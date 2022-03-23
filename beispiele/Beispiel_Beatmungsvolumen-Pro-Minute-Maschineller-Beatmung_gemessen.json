@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,15 +27,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "76009-0"
+        "code": "76009-0",
+		"display": "Inspired minute Volume during Mechanical ventilation"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "426102006.0"
+        "code": "426102006",
+		"display": "Inspiratory minute volume (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "152004.0"
+        "code": "152004",
+		"display": "Ventilation inspiratory minute volume"
       }
     ]
   },

@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,11 +27,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "76334-2"
+        "code": "76334-2",
+		"display": "Inspiratory time setting Ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "16929632.0"
+        "code": "16929632",
+		"display": "Inspiratory time setting"
       }
     ]
   },

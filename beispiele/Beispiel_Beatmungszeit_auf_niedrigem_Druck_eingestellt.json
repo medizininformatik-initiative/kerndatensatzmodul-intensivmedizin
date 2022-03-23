@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,11 +27,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "76229-4"
+        "code": "76229-4",
+		"display": "Low pressure hold time setting Ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "16929864.0"
+        "code": "16929864",
+		"display": "Low baseline pressure"
       }
     ]
   },

@@ -21,15 +21,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "2498626"
+        "code": "8741-1",
+		"display": "Left ventricular Cardiac output"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "82799009.0"
+        "code": "82799009",
+		"display": "Cardiac output (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150276.0"
+        "code": "150276",
+		"display": "Cardiac output"
       }
     ]
   },

@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,15 +27,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "3147-6"
+        "code": "3147-6",
+		"display": "Oxygen [Partial pressure] in Exhaled gas"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "250775008.0"
+        "code": "250775008",
+		"display": "Expired oxygen concentration (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "153132.0"
+        "code": "153132",
+		"display": "Expired oxygen concentration (or partial pressure) in airway gas"
       }
     ]
   },

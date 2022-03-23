@@ -36,15 +36,19 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8480-6"
+            "code": "8480-6",
+			"display": "Systolic blood pressure"
           },
           {
             "system": "http://snomed.info/sct",
-            "code": "271649006"
+            "code": "271649006",
+			"display": "Systolic blood pressure (observable entity)"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150017"
+            "code": "150017",
+			"display": "Systolic blood pressure"
+			
           }
         ]
       },
@@ -59,15 +63,18 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8478-0"
+            "code": "8478-0",
+			"display": "Mean blood pressure"
           },
           {
             "system": "http://snomed.info/sct",
-            "code": "6797001"
+            "code": "6797001",
+			"display": "Mean blood pressure (observable entity)"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150019"
+            "code": "150019",
+			"display": "Mean blood pressure"
           }
         ]
       },
@@ -82,15 +89,18 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8462-4"
+            "code": "8462-4",
+			"display": "Diastolic blood pressure"
           },
           {
             "system": "http://snomed.info/sct",
-            "code": "271650006"
+            "code": "271650006",
+			"display": "Diastolic blood pressure (observable entity)"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150018"
+            "code": "150018",
+			"display": "Diastolic blood pressure"
           }
         ]
       },

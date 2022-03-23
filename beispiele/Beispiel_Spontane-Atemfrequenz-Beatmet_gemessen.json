@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,11 +27,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "19839-0"
+        "code": "19839-0",
+		"display": "Breath rate spontaneous --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "152498.0"
+        "code": "152498",
+		"display": "Unassisted spontaneous breath rate; respiration rate"
       }
     ]
   },

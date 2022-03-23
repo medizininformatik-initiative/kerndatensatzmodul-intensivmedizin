@@ -21,15 +21,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "75994-4"
+        "code": "75994-4",
+		"display": "Pulmonary artery wedge pressure"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "118433006"
+        "code": "118433006",
+		"display": "Pulmonary artery wedge pressure (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150052"
+        "code": "150052",
+		"display": "Pulmonary artery wedge pressure"
       }
     ]
   },

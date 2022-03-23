@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8336-0"
+        "code": "8336-0",
+		"display": "Body weight [Percentile] Per age"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "1153592008.0"
+        "code": "1153592008",
+		"display": "Weight for age percentile (observable entity)"
       }
     ]
   },

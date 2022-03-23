@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "50064-5"
+        "code": "50064-5",
+		"display": "Ideal body weight"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "170804003.0"
+        "code": "170804003",
+		"display": "Ideal body weight (observable entity)"
       }
     ]
   },

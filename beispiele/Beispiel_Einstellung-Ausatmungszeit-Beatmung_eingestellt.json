@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "76187-4"
+        "code": "76187-4",
+		"display": "Expiratory hold time setting Ventilator"
       }
     ]
   },

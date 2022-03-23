@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,11 +27,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "50984-4"
+        "code": "50984-4",
+		"display": "Horowitz index in Arterial blood"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150656.0"
+        "code": "150656",
+		"display": "Oxygenation Ratio"
       }
     ]
   },

@@ -36,11 +36,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "60998-2"
+            "code": "60998-2",
+			"display": "Right atrial pressure Systolic"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150069.0"
+            "code": "150069",
+			"display": "Systolic right atrial pressure"
           }
         ]
       },
@@ -55,11 +57,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8400-4"
+            "code": "8400-4",
+			"display": "Right atrial Intrachamber mean pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150071.0"
+            "code": "150071",
+			"display": "Mean right atrial pressure"
           }
         ]
       },
@@ -74,11 +78,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "60997-4"
+            "code": "60997-4",
+			"display": "Right atrial Intrachamber diastolic pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150070.0"
+            "code": "150070",
+			"display": "Diastolic right atrial pressure"
           }
         ]
       },

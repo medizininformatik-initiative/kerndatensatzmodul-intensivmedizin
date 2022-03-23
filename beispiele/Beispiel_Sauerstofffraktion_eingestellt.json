@@ -18,6 +18,7 @@
         {
           "system": "http://snomed.info/sct",
           "code": "40617009"
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "19994-3"
+        "code": "19994-3",
+		"display": "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       }
     ]
   },

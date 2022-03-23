@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "71835-3"
+        "code": "71835-3",
+		"display": "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
       }
     ]
   },

@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8751-0"
+        "code": "8751-0",
+		"display": "Left ventricular Cardiac index by Indicator dilution"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "149772.0"
+        "code": "149772",
+		"display": "Cardiac index"
       }
     ]
   },

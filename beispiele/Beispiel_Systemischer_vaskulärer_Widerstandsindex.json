@@ -21,15 +21,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8837-7"
+        "code": "8837-7",
+		"display": "Systemic vascular Resistance index"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "276900001.0"
+        "code": "276900001",
+		"display": "Systemic vascular resistance index (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "149760.0"
+        "code": "149760",
+		"display": "Systemic vascular resistance indexed"
       }
     ]
   },
