@@ -65,9 +65,9 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:snomedCT">
+    <element id="Observation.category:sct">
       <path value="Observation.category" />
-      <sliceName value="snomedCT" />
+      <sliceName value="sct" />
       <max value="1" />
       <patternCodeableConcept>
         <coding>
@@ -78,24 +78,24 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:snomedCT.coding">
+    <element id="Observation.category:sct.coding">
       <path value="Observation.category.coding" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:snomedCT.coding.system">
+    <element id="Observation.category:sct.coding.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:snomedCT.coding.code">
+    <element id="Observation.category:sct.coding.code">
       <path value="Observation.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category:snomedCT.coding.display">
+    <element id="Observation.category:sct.coding.display">
       <path value="Observation.category.coding.display" />
       <min value="1" />
       <mustSupport value="true" />
@@ -123,9 +123,9 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT">
+    <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
+      <sliceName value="sct" />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
@@ -163,7 +163,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="centimeter" />
@@ -173,19 +173,19 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.valueQuantity.value" />
+      <path value="Observation.value[x].value" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.valueQuantity.unit" />
+      <path value="Observation.value[x].unit" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.valueQuantity.system" />
+      <path value="Observation.value[x].system" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.valueQuantity.code" />
+      <path value="Observation.value[x].code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.dataAbsentReason">
