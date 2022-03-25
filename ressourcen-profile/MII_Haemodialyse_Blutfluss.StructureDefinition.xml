@@ -22,13 +22,6 @@
         <code value="401000124105" />
       </patternCoding>
     </element>
-    <element id="Observation.code.coding:IEEE-11073">
-      <path value="Observation.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="83064-6" />
-      </patternCoding>
-    </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
       <min value="1" />
