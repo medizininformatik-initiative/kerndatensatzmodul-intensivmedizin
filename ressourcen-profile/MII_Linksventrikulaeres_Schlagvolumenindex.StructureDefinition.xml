@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Linksventrikulaerer-Schlagvolumenindex" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaerer-Schlagvolumenindex" />
-  <name value="MII_Linksventrikulaerer_Schlagvolumenindex" />
+  <id value="Profile-Linksventrikulaeres-Schlagvolumenindex" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaeres-Schlagvolumenindex" />
+  <name value="MII_Linksventrikulaeres_Schlagvolumenindex" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
