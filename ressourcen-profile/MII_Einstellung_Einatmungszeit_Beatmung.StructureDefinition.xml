@@ -11,15 +11,10 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:sct">
+    <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
-      <sliceName value="sct" />
+      <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="76334-2" />
       </patternCoding>
     </element>
@@ -34,31 +29,21 @@
       <path value="Observation.effective[x]" />
       <min value="1" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <code value="s" />
       </patternQuantity>
-    </element>
-    <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.valueQuantity.value" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.valueQuantity.unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.valueQuantity.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.valueQuantity.code" />
-      <min value="1" />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
