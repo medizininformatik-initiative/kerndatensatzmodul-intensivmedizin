@@ -25,11 +25,21 @@
   ],
   "code": {
     "coding": [
+	{
+		"system": "http://snomed.info/sct",
+		"code": "250820008",
+		"display": "Expiratory time (observable entity)"
+	},
       {
         "system": "http://loinc.org",
         "code": "76187-4",
 		"display": "Expiratory hold time setting Ventilator"
-      }
+      },
+	  {
+		  "system": "urn:std:iso:11073:10101",
+		  "code": "264338",
+		  "display": "Expiratory phase"
+	  }
     ]
   },
   "subject": {

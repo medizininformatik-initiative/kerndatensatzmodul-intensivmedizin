@@ -11,6 +11,13 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="250819002" />
+      </patternCoding>
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
