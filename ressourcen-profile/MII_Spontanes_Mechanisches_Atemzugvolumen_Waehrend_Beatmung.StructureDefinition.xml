@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Spontanes-Mechanisches-Atemzugvolumen-Waehrend-Beatmung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Mechanisches-Atemzugvolumen-Waehrend-Beatmung" />
-  <name value="MII_Spontanes_Mechanisches_Atemzugvolumen_Waehrend_Beatmung" />
+  <id value="Profile-Spontanes-Plus-Mechanisches-Atemzugvolumen" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Plus-Mechanisches-Atemzugvolumen" />
+  <name value="MII_Spontanes_Plus_Mechanisches_Atemzugvolumen" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
