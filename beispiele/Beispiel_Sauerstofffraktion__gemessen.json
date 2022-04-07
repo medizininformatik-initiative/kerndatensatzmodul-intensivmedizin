@@ -25,6 +25,11 @@
   ],
   "code": {
     "coding": [
+	{
+        "system": "http://snomed.info/sct",
+        "code": "250774007",
+		"display": "Inspired oxygen concentration (observable entity)"
+	},
       {
         "system": "http://loinc.org",
         "code": "71835-3",
