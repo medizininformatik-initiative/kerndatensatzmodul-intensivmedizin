@@ -25,6 +25,11 @@
   ],
   "code": {
     "coding": [
+	  {
+		"system": "http://snomed.info/sct",
+		"code": "250876000",
+		"display": "Ventilator rate (observable entity)"
+	  },
       {
         "system": "http://loinc.org",
         "code": "33438-3",
