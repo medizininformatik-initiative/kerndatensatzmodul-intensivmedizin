@@ -108,12 +108,9 @@
       <sliceName value="sct" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
+        <code value="182744004" />
       </patternCoding>
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/ValueSet_intensivmedizin_extrakorporalesVerfahren_category" />
-      </binding>
     </element>
     <element id="Observation.category.coding:sct.system">
       <path value="Observation.category.coding.system" />
@@ -153,7 +150,7 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-extrakorporale-Verfahren-SNOMED" />
       </binding>
     </element>
@@ -179,7 +176,7 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-extrakorporale-Verfahren-LOINC" />
       </binding>
     </element>
@@ -201,11 +198,11 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="http://loinc.org" />
+        <system value="urn:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-extrakorporale-Verfahren-ISO11073" />
       </binding>
     </element>
@@ -290,7 +287,7 @@
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason" />
-      <mustSupport value="true" />
+      <max value="0" />
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />

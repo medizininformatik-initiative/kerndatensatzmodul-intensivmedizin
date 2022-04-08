@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Blutfluss-Extrakorporaler-Gasaustausch" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutfluss-Extrakorporaler-Gasaustausch" />
-  <name value="MII_Blutfluss_Extrakorporaler_Gasaustausch" />
+  <id value="Profile-Blutflussindex-Extrakorporaler-Gasaustausch" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutflussindex-Extrakorporaler-Gasaustausch" />
+  <name value="MII_Blutflussindex_Extrakorporaler_Gasaustausch" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -11,25 +11,25 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category:ecmo">
+    <element id="Observation.category">
       <path value="Observation.category" />
-      <sliceName value="ecmo" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
-      </binding>
+      <min value="1" />
     </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <code value="251288004" />
+        <code value="251289007" />
       </patternCoding>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <code value="L/min" />
+        <code value="L/(min.m2)" />
       </patternQuantity>
     </element>
   </differential>

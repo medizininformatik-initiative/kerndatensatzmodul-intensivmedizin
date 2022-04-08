@@ -21,11 +21,13 @@
         "coding":  [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "86290005"
+				"code": "86290005",
+				"display": "Respiratory rate (observable entity)"
 			},
 			{
 				"system": "http://loinc.org",
-				"code": "9279-1"
+				"code": "9279-1",
+				"display": "Respiratory Rate"
 			}
         ]
     },

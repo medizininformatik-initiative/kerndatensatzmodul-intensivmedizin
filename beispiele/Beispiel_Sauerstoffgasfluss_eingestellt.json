@@ -17,16 +17,23 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
   ],
   "code": {
     "coding": [
+	  {
+		 "system": "",
+		 "code": "79063001",
+		 "display": "Gas flow rate (v) (observable entity)"
+	  },
       {
         "system": "http://loinc.org",
-        "code": "19941-4"
+        "code": "19941-4",
+		"display": "Oxygen gas flow Oxygen delivery system"
       }
     ]
   },

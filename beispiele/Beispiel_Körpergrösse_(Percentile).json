@@ -22,10 +22,12 @@
       {
         "system": "http://loinc.org",
         "code": "8303-0"
+		"display": "Body height [Percentile]"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "1153605006.0"
+        "code": "1153605006",
+		"display": "Body height for age percentile (observable entity)"
       }
     ]
   },

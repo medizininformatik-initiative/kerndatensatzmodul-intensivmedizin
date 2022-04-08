@@ -11,18 +11,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category:ECMO">
-      <path value="Observation.category" />
-      <sliceName value="ECMO" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
-      </binding>
-    </element>
-    <element id="Observation.category:ECMO.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />

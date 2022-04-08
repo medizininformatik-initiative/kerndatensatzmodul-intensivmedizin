@@ -36,11 +36,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8440-0"
+            "code": "8440-0",
+			"display": "Pulmonary artery Systolic blood pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150045.0"
+            "code": "150045",
+			"display": "Systolic pulmonary arterial pressure"
           }
         ]
       },
@@ -55,11 +57,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "2379312"
+            "code": "8414-5",
+			"display": "Pulmonary artery Mean blood pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150047.0"
+            "code": "150047",
+			"display": "Mean pulmonary arterial pressure"
           }
         ]
       },
@@ -74,11 +78,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "2368781"
+            "code": "8385-7",
+			"display": "Pulmonary artery Diastolic blood pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150046.0"
+            "code": "150046",
+			"display": "Diastolic pulmonary arterial pressure"
           }
         ]
       },

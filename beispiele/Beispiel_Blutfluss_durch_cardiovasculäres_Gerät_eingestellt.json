@@ -18,7 +18,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -27,7 +28,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "444479000.0"
+        "code": "444479000",
+		"display": "Rate of blood flow through cardiovascular device (observable entity)"
       }
     ]
   },
@@ -41,7 +43,7 @@
   "valueQuantity": {
     "value": 2.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/min"
+    "code": "l/min"
   },
   "device": {
     "reference": "DeviceMetric/311",

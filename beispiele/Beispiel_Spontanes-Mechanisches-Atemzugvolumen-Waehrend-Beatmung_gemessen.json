@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "Spontanes-Mechanisches-Atemzugvolumen-Waehrend-Beatmung",
+  "id": "Spontanes-Plus-Mechanisches-Atemzugvolumen",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Mechanisches-Atemzugvolumen-Waehrend-Beatmung"
-    ]
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Plus-Mechanisches-Atemzugvolumen"
+	  ]
   },
   "partOf": [
     {
@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "20118-6"
+        "code": "20118-6",
+		"display": "Tidal volume.spontaneous+mechanical --on ventilator"
       }
     ]
   },

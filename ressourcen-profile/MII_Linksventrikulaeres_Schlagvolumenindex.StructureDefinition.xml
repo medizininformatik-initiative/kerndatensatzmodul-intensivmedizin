@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Linksventrikulaerer-Schlagvolumenindex" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaerer-Schlagvolumenindex" />
-  <name value="MII_Linksventrikulaerer_Schlagvolumenindex" />
+  <id value="Profile-Linksventrikulaeres-Schlagvolumenindex" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaeres-Schlagvolumenindex" />
+  <name value="MII_Linksventrikulaeres_Schlagvolumenindex" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -11,11 +11,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -30,16 +25,12 @@
         <code value="76297-1" />
       </patternCoding>
     </element>
-    <element id="Observation.code.coding:IEEE-11073">
-      <path value="Observation.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="149764" />
-      </patternCoding>
-    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <min value="1" />
+      <patternQuantity>
+        <unit value="mL/m2" />
+      </patternQuantity>
     </element>
   </differential>
 </StructureDefinition>

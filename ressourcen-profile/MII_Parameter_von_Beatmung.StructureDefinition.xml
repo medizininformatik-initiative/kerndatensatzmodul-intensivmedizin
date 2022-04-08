@@ -277,25 +277,13 @@
       <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.interpretation">
-      <path value="Observation.interpretation" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.device">
       <path value="Observation.device" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/MII_DeviceMetric_eingestellte_gemessene_Parameter_Beatmung" />
+        <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-Eingestellte-Gemessene-Parameter-Beatmung" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
       <mustSupport value="true" />
     </element>
   </differential>

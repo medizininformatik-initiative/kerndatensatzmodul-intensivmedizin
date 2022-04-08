@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8302-2"
+        "code": "8302-2",
+		"display": "Body height"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "1153637007.0"
+        "code": "1153637007",
+		"display": "Body height (observable entity)"
       }
     ]
   },

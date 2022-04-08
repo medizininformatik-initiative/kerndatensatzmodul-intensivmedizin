@@ -24,17 +24,24 @@
     <element id="DeviceMetric.type">
       <path value="DeviceMetric.type" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Type-DeviceMetric" />
-      </binding>
     </element>
     <element id="DeviceMetric.type.coding">
       <path value="DeviceMetric.type.coding" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Type-DeviceMetric" />
-      </binding>
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="182744004" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.type.coding.system">
+      <path value="DeviceMetric.type.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.type.coding.code">
+      <path value="DeviceMetric.type.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DeviceMetric.source">
       <path value="DeviceMetric.source" />

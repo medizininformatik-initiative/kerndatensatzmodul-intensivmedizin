@@ -21,11 +21,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8737-9"
-      },
-      {
-        "system": "urn:iso:std:iso:11073:10101",
-        "code": "150276.0"
+        "code": "8737-9",
+		"display": "Left ventricular Cardiac output by Indicator dilution"
       }
     ]
   },
@@ -39,6 +36,6 @@
   "valueQuantity": {
     "value": 5.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/min/m2"
+    "code": "L/min"
   }
 }

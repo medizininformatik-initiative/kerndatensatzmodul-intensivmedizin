@@ -89,23 +89,23 @@
       <path value="Observation.code.coding.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT">
+    <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
-      <sliceName value="snomedCT" />
+      <sliceName value="sct" />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
-        <code value="50373000" />
-        <display value="Body height measure (observable entity)" />
+        <code value="1153637007" />
+        <display value="Body height (observable entity)" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT.system">
+    <element id="Observation.code.coding:sct.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:snomedCT.code">
+    <element id="Observation.code.coding:sct.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -138,7 +138,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <unit value="centimeter" />
@@ -148,19 +148,19 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.valueQuantity.value" />
+      <path value="Observation.value[x].value" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.valueQuantity.unit" />
+      <path value="Observation.value[x].unit" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.valueQuantity.system" />
+      <path value="Observation.value[x].system" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.valueQuantity.code" />
+      <path value="Observation.value[x].code" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.dataAbsentReason">

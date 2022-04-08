@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "59408-5"
+        "code": "59408-5",
+		"display": "Oxygen saturation in Arterial blood by Pulse oximetry"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150456.0"
+        "code": "150456":
+		"display": "Pulse Oximetry"
       }
     ]
   },
@@ -40,5 +42,14 @@
     "value": 98.0,
     "system": "http://unitsofmeasure.org",
     "code": "%"
+  }
+  "bodySite": {
+	  "coding": [
+	   {
+		 "system": "http://snomed.info/sct",
+		 "code": "11527006",
+		 "display": "Arterial system structure (body structure)"
+	   }
+	  ]
   }
 }

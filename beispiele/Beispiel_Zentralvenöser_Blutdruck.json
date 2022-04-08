@@ -21,15 +21,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "60985-9"
+        "code": "60985-9",
+		"display": "Central venous pressure (CVP)"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "71420008.0"
+        "code": "71420008",
+		"display": "Central venous pressure (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150084.0"
+        "code": "150084",
+		"display": "Central venous pressure"
       }
     ]
   },

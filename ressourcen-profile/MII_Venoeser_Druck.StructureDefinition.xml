@@ -11,14 +11,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category:ecmo">
-      <path value="Observation.category" />
-      <sliceName value="ecmo" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
-      </binding>
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -28,19 +20,8 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.value[x]" />
-      <sliceName value="valueQuantity" />
       <patternQuantity>
-        <code value="mmHg" />
+        <code value="mm[Hg]" />
       </patternQuantity>
     </element>
   </differential>

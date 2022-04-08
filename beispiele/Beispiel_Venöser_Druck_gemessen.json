@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "252076005.0"
+        "code": "252076005",
+		"display": "Venous pressure (observable entity)"
       }
     ]
   },
@@ -40,7 +42,7 @@
   "valueQuantity": {
     "value": -15.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mmHg"
+    "code": "mm[Hg]"
   },
   "device": {
     "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"

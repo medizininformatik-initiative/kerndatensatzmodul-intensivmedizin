@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,15 +27,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "20112-9"
+        "code": "20112-9",
+		"display": "Tidal volume setting Ventilator"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "416811008.0"
+        "code": "416811008",
+		"display": "Tidal volume setting (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "16929196.0"
+        "code": "16929196",
+		"display": "Tidal volume setting"
       }
     ]
   },

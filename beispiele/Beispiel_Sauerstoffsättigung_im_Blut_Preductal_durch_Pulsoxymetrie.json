@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "59407-7"
+        "code": "59407-7",
+		"display": "Oxygen saturation in Blood Preductal by Pulse oximetry"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "160296.0"
+        "code": "160296",
+		"display": "Preductal SpO2"
       }
     ]
   },

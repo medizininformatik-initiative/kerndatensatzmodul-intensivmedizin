@@ -21,15 +21,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "60956-0"
+        "code": "60956-0",
+		"display": "Intracranial pressure (ICP)"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "250844005.0"
+        "code": "250844005",
+		"display": "Intracranial pressure (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "153608.0"
+        "code": "153608",
+		"display": "Intracranial pressure"
       }
     ]
   },

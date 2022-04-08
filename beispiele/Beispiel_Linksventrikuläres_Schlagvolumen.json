@@ -21,15 +21,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "20562-5"
+        "code": "20562-5",
+		"display": "Left ventricular Stroke volume"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "90096001.0"
+        "code": "90096001",
+		"display": "Stroke volume (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150428.0"
+        "code": "150428",
+		"display": "Ventricular stroke"
       }
     ]
   },

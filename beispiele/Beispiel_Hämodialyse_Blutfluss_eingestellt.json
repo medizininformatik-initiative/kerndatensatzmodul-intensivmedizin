@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "401000124105.0"
+        "code": "401000124105",
+		"display": "Hemodialysis blood flow (observable entity)"
       }
     ]
   },
@@ -40,7 +42,7 @@
   "valueQuantity": {
     "value": 200.0,
     "system": "http://unitsofmeasure.org",
-    "code": "ml/h"
+    "code": "mL/min"
   },
   "device": {
     "reference": "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"

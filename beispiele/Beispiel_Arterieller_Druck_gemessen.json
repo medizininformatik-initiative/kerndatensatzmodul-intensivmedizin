@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "386534000.0"
+        "code": "386534000",
+		"display": "Arterial blood pressure (observable entity)"
       }
     ]
   },

@@ -11,6 +11,13 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="442476006" />
+      </patternCoding>
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
@@ -25,13 +32,45 @@
         <code value="150456" />
       </patternCoding>
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
         <code value="%" />
       </patternQuantity>
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="11527006" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Observation.bodySite.coding">
+      <path value="Observation.bodySite.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite.coding.system">
+      <path value="Observation.bodySite.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite.coding.code">
+      <path value="Observation.bodySite.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

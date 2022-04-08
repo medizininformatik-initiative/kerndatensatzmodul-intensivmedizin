@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Linksventrikulaerer-Schlagvolumenindex",
+  "id": "Linksventrikulaeres-Schlagvolumenindex",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaerer-Schlagvolumenindex"
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaeres-Schlagvolumenindex"
     ]
   },
   "status": "final",
@@ -21,15 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "76297-1"
+        "code": "76297-1",
+		"display": "Left ventricular Stroke volume index"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "277381004.0"
-      },
-      {
-        "system": "urn:iso:std:iso:11073:10101",
-        "code": "149764.0"
+        "code": "277381004",
+		"display": "Stroke index (observable entity)"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Blutfluss-extrakoporaler-Gasaustausch",
+  "id": "Blutfluss-extrakorporaler-Gasaustausch",
   "meta": {
     "profile": [
       "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutfluss-Extrakorporaler-Gasaustausch"
@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "251288004.0"
+        "code": "251288004",
+		"display": "Extracorporeal gas exchange flow rate (observable entity)"
       }
     ]
   },
@@ -43,6 +45,6 @@
     "code": "L/min"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"
   }
 }

@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "83064-6"
+        "code": "83064-6",
+		"display": "Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit"
       }
     ]
   },

@@ -15,13 +15,6 @@
       <path value="Observation.category" />
       <min value="1" />
     </element>
-    <element id="Observation.category.coding">
-      <path value="Observation.category.coding" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-intensivmedizin/ValueSet/Category-extrakorporale-Verfahren" />
-      </binding>
-    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <constraint>
@@ -29,6 +22,7 @@
         <severity value="error" />
         <human value="Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein" />
         <expression value="coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()" />
+        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Ionisiertes-Kalzium-Nierenersatzverfahren" />
       </constraint>
     </element>
     <element id="Observation.code.coding:loinc">
@@ -36,13 +30,6 @@
       <sliceName value="loinc" />
       <patternCoding>
         <code value="83064-6" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:IEEE-11073">
-      <path value="Observation.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
       </patternCoding>
     </element>
     <element id="Observation.effective[x]">
@@ -54,18 +41,6 @@
       <patternQuantity>
         <code value="mmol/L" />
       </patternQuantity>
-    </element>
-    <element id="Observation.interpretation">
-      <path value="Observation.interpretation" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

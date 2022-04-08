@@ -36,11 +36,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8404-6"
+            "code": "8404-6",
+			"display": "Left ventricular Intrachamber mean pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150103.0"
+            "code": "150103",
+			"display": "Mean left ventricular pressure"
           }
         ]
       },
@@ -55,11 +57,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8430-1"
+            "code": "8430-1",
+			"display": "Left ventricular Intrachamber systolic pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150101.0"
+            "code": "150101",
+			"display": "Systolic left ventricular pressure"
           }
         ]
       },
@@ -74,11 +78,13 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8375-8"
+            "code": "8375-8",
+			"display": "Left ventricular Intrachamber diastolic pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150102.0"
+            "code": "150102",
+			"display": "Diastolic left ventricular pressure"
           }
         ]
       },

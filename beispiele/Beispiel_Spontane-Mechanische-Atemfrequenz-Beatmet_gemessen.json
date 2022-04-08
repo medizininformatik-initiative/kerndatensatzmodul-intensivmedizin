@@ -17,20 +17,28 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
   ],
   "code": {
     "coding": [
+	  {	
+		"system": "http://snomed.info/sct",
+		"code": "250810003",
+		"display": "Total breath rate (observable entity)"
+	  },
       {
         "system": "http://loinc.org",
-        "code": "19840-8"
+        "code": "19840-8",
+		"display": "Breath rate spontaneous and mechanical --on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "152490.0"
+        "code": "152490",
+		"display": "Total respiratory rate; total breath rate"
       }
     ]
   },

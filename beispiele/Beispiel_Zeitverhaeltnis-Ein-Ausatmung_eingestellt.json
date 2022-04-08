@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
+          "code": "40617009",
+		  "display": "Artificial respiration (procedure)"
         }
       ]
     }
@@ -26,15 +27,18 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "75931-6"
+        "code": "75931-6",
+		"display": "Inspiration/Expiration time Ratio"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "250822000.0"
+        "code": "250822000",
+		"display": "Inspiration/expiration time ratio (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "151832.0"
+        "code": "151832",
+		"display": "Ratio inspiration expiration time"
       }
     ]
   },

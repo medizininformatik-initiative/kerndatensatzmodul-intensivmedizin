@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Blutflussindex-extrakoporaler-Gasaustausch",
+  "id": "Dauer-extrakorporaler-Gasaustausch",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutflussindex-Extrakorporaler-Gasaustausch"
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Dauer-Extrakorporaler-Gasaustausch"
     ]
   },
   "partOf": [
@@ -17,7 +17,8 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "182744004"
+          "code": "182744004",
+		  "display": "Extracorporeal circulation procedure (procedure)"
         }
       ]
     }
@@ -26,7 +27,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "251289007.0"
+        "code": "251286000",
+		"display": "Extracorporeal gas exchange duration (observable entity)"
       }
     ]
   },
@@ -38,9 +40,9 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 2.0,
+    "value": 72.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/(min.m2)"
+    "code": "h"
   },
   "device": {
     "reference": "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"

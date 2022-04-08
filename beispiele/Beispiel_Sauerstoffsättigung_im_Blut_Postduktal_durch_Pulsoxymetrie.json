@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "59418-4"
+        "code": "59418-4",
+		"display": "Oxygen saturation in Blood Postductal by Pulse oximetry"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "160300.0"
+        "code": "160300",
+		"display": "Postductal SpO2"
       }
     ]
   },
