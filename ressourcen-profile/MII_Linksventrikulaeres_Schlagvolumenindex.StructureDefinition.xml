@@ -11,11 +11,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -28,13 +23,6 @@
       <sliceName value="loinc" />
       <patternCoding>
         <code value="76297-1" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:IEEE-11073">
-      <path value="Observation.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="149764" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
