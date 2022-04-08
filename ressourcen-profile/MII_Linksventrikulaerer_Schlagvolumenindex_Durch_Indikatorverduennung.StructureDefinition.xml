@@ -31,9 +31,13 @@
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
-      <patternQuantity>
-        <code value="mL" />
-      </patternQuantity>
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.valueQuantity.code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-mL-per-squaremeter" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
