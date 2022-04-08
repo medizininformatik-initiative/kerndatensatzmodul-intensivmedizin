@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Sauerstoffsaettigung-Im-Blut-Preductal-Per-Pulsoxymetrie" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Blut-Preductal-Per-Pulsoxymetrie" />
-  <name value="MII_Sauerstoffsaettigung_Im_Blut_Preductal_Durch_Pulsoxymetrie" />
+  <id value="Profile-Sauerstoffsaettigung-Im-Blut-Preduktal-Per-Pulsoxymetrie" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Blut-Preduktal-Per-Pulsoxymetrie" />
+  <name value="MII_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -25,11 +25,20 @@
         <code value="160296" />
       </patternCoding>
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
         <code value="%" />
       </patternQuantity>
     </element>
