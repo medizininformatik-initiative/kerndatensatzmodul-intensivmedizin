@@ -17,19 +17,31 @@
         <ordered value="false" />
         <rules value="open" />
       </slicing>
-      <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.category:vs-cat">
       <path value="Observation.category" />
       <sliceName value="vs-cat" />
       <min value="1" />
     </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="364075005" />
+      </patternCoding>
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
         <code value="8867-4" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="147842" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">

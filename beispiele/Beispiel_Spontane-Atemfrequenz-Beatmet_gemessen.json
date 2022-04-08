@@ -25,6 +25,11 @@
   ],
   "code": {
     "coding": [
+	  {
+		"system": "http://snomed.info/sct",
+		"code": "271625008",
+		"display": "Rate of spontaneous respiration (observable entity)"
+	  },
       {
         "system": "http://loinc.org",
         "code": "19839-0",

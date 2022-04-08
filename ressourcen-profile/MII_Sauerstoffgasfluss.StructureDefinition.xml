@@ -11,9 +11,12 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category:ecmo">
-      <path value="Observation.category" />
-      <sliceName value="ecmo" />
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="79063001" />
+      </patternCoding>
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />

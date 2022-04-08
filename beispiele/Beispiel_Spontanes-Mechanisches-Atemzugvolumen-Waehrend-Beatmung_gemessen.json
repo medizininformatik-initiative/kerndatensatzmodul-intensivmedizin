@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "Spontanes-Mechanisches-Atemzugvolumen-Waehrend-Beatmung",
+  "id": "Spontanes-Plus-Mechanisches-Atemzugvolumen",
   "meta": {
     "profile": [
-      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Mechanisches-Atemzugvolumen-Waehrend-Beatmung"
-    ]
+      "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Plus-Mechanisches-Atemzugvolumen"
+	  ]
   },
   "partOf": [
     {

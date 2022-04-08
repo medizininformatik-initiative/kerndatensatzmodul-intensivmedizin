@@ -43,4 +43,13 @@
     "system": "http://unitsofmeasure.org",
     "code": "%"
   }
+  "bodySite": {
+	  "coding": [
+	   {
+		 "system": "http://snomed.info/sct",
+		 "code": "11527006",
+		 "display": "Arterial system structure (body structure)"
+	   }
+	  ]
+  }
 }

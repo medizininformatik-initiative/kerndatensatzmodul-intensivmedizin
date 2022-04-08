@@ -25,6 +25,11 @@
   ],
   "code": {
     "coding": [
+	  {	
+		"system": "http://snomed.info/sct",
+		"code": "250810003",
+		"display": "Total breath rate (observable entity)"
+	  },
       {
         "system": "http://loinc.org",
         "code": "19840-8",

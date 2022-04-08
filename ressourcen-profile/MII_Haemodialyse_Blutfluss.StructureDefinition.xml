@@ -29,7 +29,7 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <code value="mL/h" />
+        <code value="mL/min" />
       </patternQuantity>
     </element>
   </differential>
