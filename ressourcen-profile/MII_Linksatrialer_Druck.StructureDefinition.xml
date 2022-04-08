@@ -11,6 +11,13 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutdruck-Generisch" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="276762004" />
+      </patternCoding>
+    </element>
     <element id="Observation.component:SystolischBD">
       <path value="Observation.component" />
       <sliceName value="SystolischBD" />
@@ -19,7 +26,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="60989-1" />
       </patternCoding>
     </element>
@@ -27,7 +33,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150065" />
       </patternCoding>
     </element>
@@ -39,7 +44,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="75933-2" />
       </patternCoding>
     </element>
@@ -47,7 +51,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150066" />
       </patternCoding>
     </element>
@@ -59,7 +62,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="8399-8" />
       </patternCoding>
     </element>
@@ -67,7 +69,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150067" />
       </patternCoding>
     </element>

@@ -21,6 +21,10 @@
       <path value="Observation.value[x]" />
       <max value="0" />
     </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <slicing>
@@ -34,6 +38,8 @@
     <element id="Observation.component:SystolischBD">
       <path value="Observation.component" />
       <sliceName value="SystolischBD" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding">
       <path value="Observation.component.code.coding" />
@@ -135,6 +141,8 @@
     <element id="Observation.component:DiastolischBD">
       <path value="Observation.component" />
       <sliceName value="DiastolischBD" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding">
       <path value="Observation.component.code.coding" />

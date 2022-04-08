@@ -48,6 +48,10 @@
         <display value="Blood pressure (observable entity)" />
       </patternCoding>
     </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
       <max value="0" />
@@ -65,7 +69,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="271649006" />
       </patternCoding>
     </element>
@@ -73,7 +76,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="8480-6" />
       </patternCoding>
     </element>
@@ -81,7 +83,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150017" />
       </patternCoding>
     </element>
@@ -93,7 +94,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="271650006" />
       </patternCoding>
     </element>
@@ -101,7 +101,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="8462-4" />
       </patternCoding>
     </element>
@@ -109,7 +108,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150018" />
       </patternCoding>
     </element>
@@ -121,7 +119,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="6797001" />
       </patternCoding>
     </element>
@@ -129,7 +126,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <system value="http://loinc.org" />
         <code value="8478-0" />
       </patternCoding>
     </element>
@@ -137,7 +133,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
         <code value="150019" />
       </patternCoding>
     </element>
