@@ -192,5 +192,29 @@
       <path value="Observation.dataAbsentReason" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="69536005" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite.coding">
+      <path value="Observation.bodySite.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite.coding.system">
+      <path value="Observation.bodySite.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite.coding.code">
+      <path value="Observation.bodySite.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>
