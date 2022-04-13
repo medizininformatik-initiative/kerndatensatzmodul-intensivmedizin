@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Sauerstofffraktion-Eingestellt" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstofffraktion-Eingestellt" />
-  <name value="MII_Sauerstofffraktion_Eingestellt" />
+  <id value="Profile-Inspiratorische-Sauerstofffraktion" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Inspiratorische-Sauerstofffraktion" />
+  <name value="MII_Inspiratorische_Sauerstofffraktion" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -26,7 +26,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-        <code value="19994-3" />
+        <code value="71835-3" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -42,7 +42,7 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <code value="%" />
+        <code value="1" />
       </patternQuantity>
     </element>
   </differential>

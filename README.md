@@ -10,4 +10,19 @@ Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch div
 
 ### Kurzusammenfassung
 
-Der Kerndatensatz soll eine Datensatzbeschreibung mit der Bezeichnung ICU enthalten, die zur Herstellung der Bezüge zu den anderen Modulen genutzt wird. Neben der Verwendung standortinterner Identifikatoren, kann das Modul ICU bei Bedarf auch (direkte oder indirekte) Personenmerkmale für eine einrichtungs- und sektorenübergreifende (longitudinale) Integration enthalten.```
+Das Erweiterungsmodul Intensivmedizin spezifiziert akutmedizinische Daten für primär- und sekundär Nutzung.
+
+Die Modellierung der Daten soll hierbei die Komplexität und Granularität intensivmedizinischer Daten abbilden und ebenfalls gleichartigen Daten in ggf. abweichender Granularität in der Notfallmedizin sowie der stationären und ambulanten Medizin gerecht werden
+
+### Autoren und Ansprechpartner
+
+Leitung des Moduls:
+
+* Felix Erdfelder
+
+Technische Umsetzung:
+
+* Christoph Müller
+* Berke Enes Dincel
+* Alexander Zautke
+* Lily Wissing
