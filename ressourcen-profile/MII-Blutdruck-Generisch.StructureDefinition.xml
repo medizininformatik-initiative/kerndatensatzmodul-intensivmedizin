@@ -17,6 +17,13 @@
         <code value="75367002" />
       </patternCoding>
     </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <code value="85354-9" />
+      </patternCoding>
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <max value="0" />
