@@ -25,6 +25,11 @@
   ],
   "code": {
     "coding": [
+	{
+		"system": "http://snomed.info/sct",
+		"code": "698821009",
+		"display": "Mean inspiratory airway pressure (observable entity)"
+	},
       {
         "system": "http://loinc.org",
         "code": "76530-5",
