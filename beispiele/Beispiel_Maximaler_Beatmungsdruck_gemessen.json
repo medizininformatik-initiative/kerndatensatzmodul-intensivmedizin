@@ -25,6 +25,11 @@
   ],
   "code": {
     "coding": [
+	{
+		"system": "http://snomed.info/sct",
+		"code": "27913002",
+		"display": "Maximum inspiratory pressure (observable entity)",
+	},
       {
         "system": "http://loinc.org",
         "code": "76531-3",
