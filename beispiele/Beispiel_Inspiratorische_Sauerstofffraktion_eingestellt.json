@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Sauerstofffraktion-eingestellt-",
+  "id": "Sauerstofffraktion-eingestellt",
   "meta": {
     "profile": [
       "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Inspiratorische-Sauerstofffraktion-Eingestellt"
@@ -17,23 +17,23 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "code": "40617009"
-		  "display": "Artificial respiration (procedure)"
+          "code": "40617009",
+          "display": "Artificial respiration (procedure)"
         }
       ]
     }
   ],
   "code": {
     "coding": [
-	  {
-		  "system": "http://snomed.info/sct",
-		  "code": "250774007",
-		  "display": "Inspired oxygen concentration (observable entity)"
-	  },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "250774007",
+        "display": "Inspired oxygen concentration (observable entity)"
+      },
       {
         "system": "http://loinc.org",
         "code": "19994-3",
-		"display": "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+        "display": "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       }
     ]
   },
