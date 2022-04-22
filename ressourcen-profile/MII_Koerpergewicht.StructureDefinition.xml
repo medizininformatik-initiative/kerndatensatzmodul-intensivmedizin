@@ -47,6 +47,9 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:vs-cat">
@@ -99,6 +102,12 @@
       <path value="Observation.code" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
@@ -117,6 +126,9 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
       <type>
         <code value="dateTime" />
       </type>
@@ -132,6 +144,9 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -167,6 +182,12 @@
     <element id="Observation.component">
       <path value="Observation.component" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
     </element>
   </differential>
 </StructureDefinition>

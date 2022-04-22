@@ -11,6 +11,12 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Observation.category:sct">
       <path value="Observation.category" />
       <sliceName value="sct" />
@@ -36,6 +42,12 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -57,6 +69,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="closed" />
       </slicing>
     </element>
     <element id="Observation.value[x]:valueQuantity">
@@ -65,6 +78,12 @@
       <patternQuantity>
         <code value="%" />
       </patternQuantity>
+    </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
     </element>
   </differential>
 </StructureDefinition>

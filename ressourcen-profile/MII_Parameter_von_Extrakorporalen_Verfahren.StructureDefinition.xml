@@ -98,7 +98,7 @@
           <type value="pattern" />
           <path value="$this" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
       <max value="1" />
       <mustSupport value="true" />
@@ -137,7 +137,7 @@
           <type value="pattern" />
           <path value="$this" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
       <min value="1" />
       <mustSupport value="true" />

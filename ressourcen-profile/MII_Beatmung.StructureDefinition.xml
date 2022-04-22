@@ -58,6 +58,12 @@
       <path value="Procedure.category" />
       <min value="1" />
     </element>
+    <element id="Procedure.category.coding">
+      <path value="Procedure.category.coding" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
+    </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
@@ -69,6 +75,12 @@
     <element id="Procedure.category.coding:sct.display">
       <path value="Procedure.category.coding.display" />
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
     </element>
     <element id="Procedure.code.coding:ops">
       <path value="Procedure.code.coding" />
