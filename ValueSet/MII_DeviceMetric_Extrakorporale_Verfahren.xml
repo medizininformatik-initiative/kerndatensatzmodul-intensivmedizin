@@ -1,0 +1,23 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+     <id value="ValueSet-DeviceMetric-Extrakorporale-Verfahren-SNOMED" />
+	<url
+		value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-DeviceMetric-Extrakorporale-Verfahren" />
+	<version value="1.0" />
+	<name value="MII_Category_Procedure_Beatmung_SNOMED" />
+	<title value="MII Category Procedure Beatmung [SNOMED]" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2021-02-02" />
+	<publisher
+		value="https://www.medizininformatik-initiative.de" />
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct" />
+			<concept>
+				<code value="182744004" />
+				<display value="Extracorporeal circulation procedure (procedure)" />
+			</concept>
+
+		</include>
+	</compose>
+</ValueSet>
