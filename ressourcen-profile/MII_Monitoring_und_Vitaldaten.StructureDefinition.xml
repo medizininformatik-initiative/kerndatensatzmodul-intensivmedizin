@@ -123,6 +123,32 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.category:loinc-fhir-core">
+      <path value="Observation.category" />
+      <sliceName value="loinc-fhir-core" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="85353-1" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:loinc-fhir-core.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:loinc-fhir-core.coding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:loinc-fhir-core.coding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <constraint>

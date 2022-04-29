@@ -24,6 +24,15 @@
         <code value="85354-9" />
       </patternCoding>
     </element>
+    <element id="Observation.code.coding:loinc-fhir-core">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc-fhir-core" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="85354-9" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <max value="0" />
@@ -111,6 +120,25 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:SystolischBD.code.coding:IEEE-11073.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolischBD.code.coding:loinc-fhir-core">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-fhir-core" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8480-6" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolischBD.code.coding:loinc-fhir-core.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SystolischBD.code.coding:loinc-fhir-core.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -213,6 +241,25 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolischBD.code.coding:loinc-fhir-core">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-fhir-core" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8462-4" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolischBD.code.coding:loinc-fhir-core.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:DiastolischBD.code.coding:loinc-fhir-core.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
