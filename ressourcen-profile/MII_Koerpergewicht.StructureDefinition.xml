@@ -107,6 +107,7 @@
       <slicing>
         <rules value="closed" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
@@ -115,6 +116,26 @@
         <system value="http://loinc.org" />
         <code value="29463-7" />
       </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="27113001" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
