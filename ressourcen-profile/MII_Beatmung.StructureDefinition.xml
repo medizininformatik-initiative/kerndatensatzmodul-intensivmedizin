@@ -82,13 +82,6 @@
         <rules value="closed" />
       </slicing>
     </element>
-    <element id="Procedure.code.coding:ops">
-      <path value="Procedure.code.coding" />
-      <sliceName value="ops" />
-      <patternCoding>
-        <system value="http://fhir.de/CodeSystem/dimdi/ops" />
-      </patternCoding>
-    </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
       <sliceName value="sct" />
