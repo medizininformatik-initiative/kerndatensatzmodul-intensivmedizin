@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Trommelfell" />
-  <name value="MII_Koerpertemperatur_Trommelfell" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Brustwirbelsaeule" />
+  <name value="MII_Koerpertemperatur_Brustwirbelsaeule" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -14,16 +14,8 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <code value="415974002" />
-        <display value="Core body temperature measured at tympanic membrane (observable entity)" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="8333-7" />
-        <display value="Tympanic membrane temperature" />
+        <code value="364424001" />
+        <display value="Temperature of thoracic spine (observable entity)" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -38,8 +30,8 @@
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
-          <code value="42859004" />
-          <display value="ympanic membrane structure (body structure)" />
+          <code value="122495006" />
+          <display value="Structure of thoracic vertebral column (body structure)" />
         </coding>
       </patternCodeableConcept>
     </element>

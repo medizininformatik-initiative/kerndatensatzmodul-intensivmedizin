@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Lendenwirbelsauule" />
-  <name value="MII_Koerpertemperatur_Lendenwirbelsauule" />
-  <status value="draft" />
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Lendenwirbelsaeule" />
+  <name value="MII_Koerpertemperatur_Lendenwirbelsaeule" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
