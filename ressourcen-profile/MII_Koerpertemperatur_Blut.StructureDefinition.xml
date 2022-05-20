@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Blut" />
+  <name value="MII_Koerpertemperatur_Blut" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="860958002" />
+        <display value="Temperature of blood (observable entity)" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <code value="60834-9" />
+        <display value="Blood temperature" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="188436" />
+        <display value="Blood temperature" />
+      </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="Celsius" />
+        <code value="Cel" />
+      </patternQuantity>
+    </element>
+  </differential>
+</StructureDefinition>

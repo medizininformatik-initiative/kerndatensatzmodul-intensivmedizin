@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Speiseroehre" />
+  <name value="MII_Koerpertemperatur_Speiseroehre" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <code value="431598003" />
+        <display value="Core body temperature measured in esophagus (observable entity)" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <code value="60836-4" />
+        <display value="Esophageal temperature" />
+      </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <unit value="Celsius" />
+        <code value="Cel" />
+      </patternQuantity>
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="32849002" />
+          <display value="Esophageal structure (body structure)" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+  </differential>
+</StructureDefinition>
