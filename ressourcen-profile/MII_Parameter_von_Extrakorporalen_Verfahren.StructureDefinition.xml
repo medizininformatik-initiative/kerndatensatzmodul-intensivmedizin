@@ -64,6 +64,12 @@
         <expression value="$this.encounter.exists() xor $this.subject.exists()" />
         <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
       </constraint>
+      <constraint>
+        <key value="vs-de-2" />
+        <severity value="error" />
+        <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present" />
+        <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())" />
+      </constraint>
     </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
