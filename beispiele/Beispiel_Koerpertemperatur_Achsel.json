@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "Koerpertemperatur-Harnblase",
+	"id": "Koerpertemperatur-Achsel",
 	"meta": {
 		"profile": [
-			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Harnblase"
+			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Achsel"
 		]
 	},
 	"status": "final",
@@ -16,13 +16,18 @@
 	"code": {
 		"coding": [{
 				"system": "http://loinc.org",
-				"code": "8334-5",
-				"display": "Body temperature - Urinary bladder"
+				"code": "8328-7",
+				"display": "Axillary temperature"
 			},
 			{
 				"system": "http://snomed.info/sct",
-				"code": "698832009",
-				"display": "Core body temperature measured at urinary bladder (observable entity)"
+				"code": "415882003",
+				"display": "Estimated core body temperature measured in axillary region (observable entity)"
+			},
+			{
+				"system": "urn:iso:std:iso:11073:10101",
+				"code": "188496",
+				"display": "Axillary temperature"
 			}
 		]
 	},
@@ -42,8 +47,8 @@
 	"bodySite": {
 		"codeableConcept": [{
 			"system": "http://snomed.info/sct",
-			"code": "89837001",
-			"display": "Urinary bladder structure (body structure)"
+			"code": "91470000",
+			"display": "Axillary region structure (body structure)"
 		}]
 	}
 }

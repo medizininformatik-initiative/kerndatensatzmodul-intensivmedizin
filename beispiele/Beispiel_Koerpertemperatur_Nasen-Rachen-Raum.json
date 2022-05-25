@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "Koerpertemperatur-Harnblase",
+	"id": "Koerpertemperatur-Nasen-Rachen-Raum",
 	"meta": {
 		"profile": [
-			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Harnblase"
+			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Nasen-Rachen-Raum"
 		]
 	},
 	"status": "final",
@@ -14,15 +14,11 @@
 		}]
 	}],
 	"code": {
-		"coding": [{
-				"system": "http://loinc.org",
-				"code": "8334-5",
-				"display": "Body temperature - Urinary bladder"
-			},
+		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "698832009",
-				"display": "Core body temperature measured at urinary bladder (observable entity)"
+				"code": "698831002",
+				"display": "Core body temperature measured in nasopharynx (observable entity)"
 			}
 		]
 	},
@@ -42,8 +38,8 @@
 	"bodySite": {
 		"codeableConcept": [{
 			"system": "http://snomed.info/sct",
-			"code": "89837001",
-			"display": "Urinary bladder structure (body structure)"
+			"code": "71836000",
+			"display": "Nasopharyngeal structure (body structure)"
 		}]
 	}
 }
