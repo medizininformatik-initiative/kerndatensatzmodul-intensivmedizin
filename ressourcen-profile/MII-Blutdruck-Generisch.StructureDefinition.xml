@@ -41,6 +41,10 @@
       <path value="Observation.dataAbsentReason" />
       <max value="0" />
     </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="0" />
+    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
       <slicing>
