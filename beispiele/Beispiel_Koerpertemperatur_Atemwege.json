@@ -18,6 +18,11 @@
 				"system": "http://loinc.org",
 				"code": "60955-2",
 				"display": "Airway tempertaure"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "8310-5",
+				"display": "Body temperature"
 			}
 		]
 	},
@@ -35,7 +40,7 @@
 		"unit": "Celsius"
 	},
 	"bodySite": {
-		"codeableConcept": [{
+		"coding": [{
 			"system": "http://snomed.info/sct",
 			"code": "89187006",
 			"display": "Airway structure (body structure)"

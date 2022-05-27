@@ -23,6 +23,11 @@
 				"system": "http://snomed.info/sct",
 				"code": "431598003",
 				"display": "Core body temperature measured in esophagus (observable entity)"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "8310-5",
+				"display": "Body temperature"
 			}
 		]
 	},
@@ -40,7 +45,7 @@
 		"unit": "Celsius"
 	},
 	"bodySite": {
-		"codeableConcept": [{
+		"coding": [{
 			"system": "http://snomed.info/sct",
 			"code": "32849002",
 			"display": "Esophageal structure (body structure)"

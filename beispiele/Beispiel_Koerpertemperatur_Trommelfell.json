@@ -23,6 +23,11 @@
 				"system": "http://snomed.info/sct",
 				"code": "415974002",
 				"display": "Core body temperature measured at tympanic membrane (observable entity)"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "8310-5",
+				"display": "Body temperature"
 			}
 		]
 	},
@@ -40,7 +45,7 @@
 		"unit": "Celsius"
 	},
 	"bodySite": {
-		"codeableConcept": [{
+		"coding": [{
 			"system": "http://snomed.info/sct",
 			"code": "42859004",
 			"display": "Tympanic membrane structure (body structure)"

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch" />
+  <name value="MII_Koerpertemperatur_Generisch" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding:loinc-fhir-core">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc-fhir-core" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8310-5" />
+        <display value="Body temperature" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "Koerpertemperatur-Blut",
+	"id": "Koerpertemperatur-Generisch",
 	"meta": {
 		"profile": [
-			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Blut"
+			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Generisch"
 		]
 	},
 	"status": "final",
@@ -14,21 +14,7 @@
 		}]
 	}],
 	"code": {
-		"coding": [{
-				"system": "http://loinc.org",
-				"code": "60834-9",
-				"display": "Blood temperature"
-			},
-			{
-				"system": "http://snomed.info/sct",
-				"code": "860958002",
-				"display": "Temperature of blood (observable entity)"
-			},
-			{
-				"system": "urn:iso:std:iso:11073:10101",
-				"code": "188436",
-				"display": "Blood temperature"
-			},
+		"coding": [
 			{
 				"system": "http://loinc.org",
 				"code": "8310-5",

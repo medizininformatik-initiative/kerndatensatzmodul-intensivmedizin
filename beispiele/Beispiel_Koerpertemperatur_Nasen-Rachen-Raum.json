@@ -19,6 +19,11 @@
 				"system": "http://snomed.info/sct",
 				"code": "698831002",
 				"display": "Core body temperature measured in nasopharynx (observable entity)"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "8310-5",
+				"display": "Body temperature"
 			}
 		]
 	},
@@ -36,7 +41,7 @@
 		"unit": "Celsius"
 	},
 	"bodySite": {
-		"codeableConcept": [{
+		"coding": [{
 			"system": "http://snomed.info/sct",
 			"code": "71836000",
 			"display": "Nasopharyngeal structure (body structure)"

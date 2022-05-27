@@ -28,6 +28,11 @@
 				"system": "urn:iso:std:iso:11073:10101",
 				"code": "188496",
 				"display": "Axillary temperature"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "8310-5",
+				"display": "Body temperature"
 			}
 		]
 	},
@@ -45,7 +50,7 @@
 		"unit": "Celsius"
 	},
 	"bodySite": {
-		"codeableConcept": [{
+		"coding": [{
 			"system": "http://snomed.info/sct",
 			"code": "91470000",
 			"display": "Axillary region structure (body structure)"
