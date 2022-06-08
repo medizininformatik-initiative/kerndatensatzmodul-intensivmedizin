@@ -41,6 +41,13 @@
       <path value="Observation.dataAbsentReason" />
       <max value="0" />
     </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Method-Observation-Blutdruck" />
+      </binding>
+    </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
       <max value="0" />
