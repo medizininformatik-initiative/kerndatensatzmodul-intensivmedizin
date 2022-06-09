@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Monitoring-und-Vitaldaten",
+  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Monitoring-und-Vitaldaten",
   "version": "1.0",
-  "name": "MII_BodySite_Monitoring_und_Vitaldaten",
-  "title": "MII BodySite Monitoring und Vitaldaten",
+  "name": "MII_BodySite_Observation_Monitoring_und_Vitaldaten",
+  "title": "MII BodySite Observation Monitoring und Vitaldaten",
   "status": "active",
   "experimental": false,
   "date": "2022-06-03T00:00:00",

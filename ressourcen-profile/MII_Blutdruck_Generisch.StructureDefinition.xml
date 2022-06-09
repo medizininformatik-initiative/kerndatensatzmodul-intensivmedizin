@@ -41,6 +41,14 @@
       <path value="Observation.dataAbsentReason" />
       <max value="0" />
     </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Codes describing anatomical locations. May include laterality. Subset of ValueSet for Monitoring und Vitaldaten." />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Blutdruck" />
+      </binding>
+    </element>
     <element id="Observation.method">
       <path value="Observation.method" />
       <binding>

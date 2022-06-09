@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Blutdruck",
+  "version": "1.0",
+  "name": "MII_BodySite_Observation_Blutdruck",
+  "title": "MII BodySite Observation Blutdruck",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-06-08T00:00:00",
+  "publisher": "https://www.medizininformatik-initiative.de",
+  "description": "Dieses ValueSet enth\u00e4lt Codes f\u00fcr bodySites von Blutdr\u00fccken (pulsatilen Dr\u00fccken).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "11527006"
+          },
+          {
+            "code": "11527006"
+          },
+          {
+            "code": "11527006"
+          },
+          {
+            "code": "81040000"
+          },
+          {
+            "code": "81040000"
+          },
+          {
+            "code": "81040000"
+          },
+          {
+            "code": "264856002"
+          },
+          {
+            "code": "264856002"
+          },
+          {
+            "code": "264856002"
+          },
+          {
+            "code": "277633001"
+          },
+          {
+            "code": "277633001"
+          },
+          {
+            "code": "277633001"
+          },
+          {
+            "code": "244383003"
+          },
+          {
+            "code": "244387002"
+          },
+          {
+            "code": "244387002"
+          },
+          {
+            "code": "244383003"
+          },
+          {
+            "code": "244387002"
+          },
+          {
+            "code": "244383003"
+          }
+        ]
+      }
+    ]
+  }
+}

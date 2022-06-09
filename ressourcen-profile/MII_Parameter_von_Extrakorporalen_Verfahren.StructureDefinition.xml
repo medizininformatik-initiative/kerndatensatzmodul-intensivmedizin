@@ -69,6 +69,7 @@
         <severity value="error" />
         <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present" />
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())" />
+        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
       </constraint>
     </element>
     <element id="Observation.identifier">
@@ -293,7 +294,19 @@
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason" />
-      <max value="0" />
+      <constraint>
+        <key value="mii-icu-1" />
+        <severity value="error" />
+        <human value="If there is no Observation.value, a dataAbsentReason must be given." />
+        <expression value="value.exists().not() implies dataAbsentReason.exists()" />
+      </constraint>
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-extrakorporale-Verfahren" />
+      </binding>
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
