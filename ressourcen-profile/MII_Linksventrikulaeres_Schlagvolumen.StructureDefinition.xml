@@ -34,7 +34,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />

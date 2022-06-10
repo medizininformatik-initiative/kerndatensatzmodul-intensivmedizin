@@ -166,7 +166,6 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">

@@ -189,7 +189,6 @@
       <slicing>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">

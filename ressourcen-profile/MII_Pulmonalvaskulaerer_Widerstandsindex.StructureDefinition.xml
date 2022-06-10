@@ -11,11 +11,6 @@
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
@@ -46,18 +41,10 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.valueQuantity.code" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-dyn-s-cm5-m2" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

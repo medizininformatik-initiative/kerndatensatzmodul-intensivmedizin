@@ -187,7 +187,6 @@
       <slicing>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
@@ -222,6 +221,7 @@
         <severity value="error" />
         <human value="If there is no Observation.value, a dataAbsentReason must be given." />
         <expression value="value.exists().not() implies dataAbsentReason.exists()" />
+        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpergewicht" />
       </constraint>
     </element>
     <element id="Observation.component">
