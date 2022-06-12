@@ -23,7 +23,12 @@
         "system": "http://snomed.info/sct",
         "code": "276755008",
         "display": "Right atrial pressure (observable entity)"
-      }
+      },
+	  {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+		#"display": "Right atrial pressure Systolic"
+	  }
     ]
   },
   "subject": {
