@@ -48,93 +48,9 @@
         <display value="Blood pressure (observable entity)" />
       </patternCoding>
     </element>
-    <element id="Observation.dataAbsentReason">
-      <path value="Observation.dataAbsentReason" />
-      <max value="0" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <max value="0" />
-    </element>
     <element id="Observation.component">
       <path value="Observation.component" />
-      <min value="1" />
       <max value="3" />
-    </element>
-    <element id="Observation.component:SystolischBD">
-      <path value="Observation.component" />
-      <sliceName value="SystolischBD" />
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:sct">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <code value="271649006" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="8480-6" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="150017" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD">
-      <path value="Observation.component" />
-      <sliceName value="DiastolischBD" />
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:sct">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <code value="271650006" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="8462-4" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="150018" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD">
-      <path value="Observation.component" />
-      <sliceName value="MittlererBD" />
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:sct">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <code value="6797001" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="8478-0" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="150019" />
-      </patternCoding>
     </element>
   </differential>
 </StructureDefinition>

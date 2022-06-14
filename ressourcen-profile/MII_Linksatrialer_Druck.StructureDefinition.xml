@@ -18,59 +18,5 @@
         <code value="276762004" />
       </patternCoding>
     </element>
-    <element id="Observation.component:SystolischBD">
-      <path value="Observation.component" />
-      <sliceName value="SystolischBD" />
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="60989-1" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:SystolischBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="150065" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD">
-      <path value="Observation.component" />
-      <sliceName value="DiastolischBD" />
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="75933-2" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:DiastolischBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="150066" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD">
-      <path value="Observation.component" />
-      <sliceName value="MittlererBD" />
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:loinc">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="8399-8" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:MittlererBD.code.coding:IEEE-11073">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <code value="150067" />
-      </patternCoding>
-    </element>
   </differential>
 </StructureDefinition>
