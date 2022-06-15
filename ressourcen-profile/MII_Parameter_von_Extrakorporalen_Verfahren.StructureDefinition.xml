@@ -292,15 +292,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.dataAbsentReason">
-      <path value="Observation.dataAbsentReason" />
-      <constraint>
-        <key value="mii-icu-1" />
-        <severity value="error" />
-        <human value="If there is no Observation.value, a dataAbsentReason must be given." />
-        <expression value="value.exists().not() implies dataAbsentReason.exists()" />
-      </constraint>
-    </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
       <binding>
