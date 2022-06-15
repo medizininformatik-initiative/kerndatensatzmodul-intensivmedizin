@@ -18,5 +18,59 @@
         <code value="276762004" />
       </patternCoding>
     </element>
+    <element id="Observation.component:SystolicBP">
+      <path value="Observation.component" />
+      <sliceName value="SystolicBP" />
+    </element>
+    <element id="Observation.component:SystolicBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="150065" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:SystolicBP.code.coding:loinc-detailed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-detailed" />
+      <patternCoding>
+        <code value="60989-1" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:DiastolicBP">
+      <path value="Observation.component" />
+      <sliceName value="DiastolicBP" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="150066" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:DiastolicBP.code.coding:loinc-detailed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-detailed" />
+      <patternCoding>
+        <code value="75933-2" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:meanBP">
+      <path value="Observation.component" />
+      <sliceName value="meanBP" />
+    </element>
+    <element id="Observation.component:meanBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="150067" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:meanBP.code.coding:loinc-detailed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-detailed" />
+      <patternCoding>
+        <code value="8399-8" />
+      </patternCoding>
+    </element>
   </differential>
 </StructureDefinition>
