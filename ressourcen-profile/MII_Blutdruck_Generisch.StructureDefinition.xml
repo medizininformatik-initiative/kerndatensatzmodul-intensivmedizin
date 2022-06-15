@@ -247,7 +247,6 @@
       <sliceName value="loinc-detailed" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="8480-6" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -383,7 +382,6 @@
       <sliceName value="loinc-detailed" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="8462-4" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -503,7 +501,6 @@
       <sliceName value="loinc-detailed" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="8478-0" />
       </patternCoding>
       <mustSupport value="true" />
     </element>

@@ -10,4 +10,60 @@
   <type value="Observation" />
   <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutdruck-Generisch" />
   <derivation value="constraint" />
+  <differential>
+    <element id="Observation.component:SystolicBP">
+      <path value="Observation.component" />
+      <sliceName value="SystolicBP" />
+    </element>
+    <element id="Observation.component:SystolicBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="150101" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:SystolicBP.code.coding:loinc-detailed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-detailed" />
+      <patternCoding>
+        <code value="8430-1" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:DiastolicBP">
+      <path value="Observation.component" />
+      <sliceName value="DiastolicBP" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="150102" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:DiastolicBP.code.coding:loinc-detailed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-detailed" />
+      <patternCoding>
+        <code value="8375-8" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:meanBP">
+      <path value="Observation.component" />
+      <sliceName value="meanBP" />
+    </element>
+    <element id="Observation.component:meanBP.code.coding:IEEE-11073">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <code value="150103" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:meanBP.code.coding:loinc-detailed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc-detailed" />
+      <patternCoding>
+        <code value="8404-6" />
+      </patternCoding>
+    </element>
+  </differential>
 </StructureDefinition>
