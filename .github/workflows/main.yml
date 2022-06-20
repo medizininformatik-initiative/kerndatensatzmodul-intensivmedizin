@@ -30,7 +30,7 @@ jobs:
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.3.2
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.4
         with:
           PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet searchparameter logical-models
           PATH_TO_EXAMPLES: beispiele
