@@ -30,12 +30,12 @@ jobs:
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.3.4
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5-alpha3
         with:
           PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet searchparameter logical-models
           PATH_TO_EXAMPLES: beispiele
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
-          DOTNET_VALIDATION_ENABLED: false
+          DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           OUTPUT_FORMAT: RAW
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_CONFORMANCE_DOTNET
