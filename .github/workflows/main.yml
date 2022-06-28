@@ -35,7 +35,7 @@ jobs:
           PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet searchparameter logical-models
           PATH_TO_EXAMPLES: beispiele
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
-          DOTNET_VALIDATION_ENABLED: true
+          DOTNET_VALIDATION_ENABLED: false
           JAVA_VALIDATION_ENABLED: true
           OUTPUT_FORMAT: RAW
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_CONFORMANCE_DOTNET
