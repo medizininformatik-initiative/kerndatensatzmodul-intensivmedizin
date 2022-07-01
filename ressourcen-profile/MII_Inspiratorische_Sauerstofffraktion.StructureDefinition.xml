@@ -29,22 +29,5 @@
         <code value="71835-3" />
       </patternCoding>
     </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
-    <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
-      <sliceName value="valueQuantity" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-percent-1" />
-      </binding>
-    </element>
   </differential>
 </StructureDefinition>
