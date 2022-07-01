@@ -15,6 +15,12 @@
       <path value="Observation.category" />
       <sliceName value="Beatmung" />
     </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
