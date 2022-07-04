@@ -42,7 +42,7 @@ jobs:
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.3.4
         with:
-          PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet searchparameter logical-models
+          PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet logical-models
           PATH_TO_EXAMPLES: beispiele
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
           DOTNET_VALIDATION_ENABLED: true
