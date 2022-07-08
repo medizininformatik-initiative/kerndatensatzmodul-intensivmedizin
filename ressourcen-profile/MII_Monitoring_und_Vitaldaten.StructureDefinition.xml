@@ -87,10 +87,7 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
+        <ordered value="false" />
         <rules value="open" />
       </slicing>
       <min value="1" />
