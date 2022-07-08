@@ -34,14 +34,12 @@
     "subject": {
         "reference": "Patient/example"
     },
-    "effectivePeriod":[
-		{
+    "effectivePeriod": {
 			"start": "2019-12-23T09:30:10+01:00",
 			"end": "2019-12-23T10:30:10+01:00"
-		}
-	],
+	},
     "valueQuantity": {
-		"value": "15",
+		"value": 15,
 		"unit": "minutes",
         "system": "http://unitsofmeasure.org",
         "code": "/min"
