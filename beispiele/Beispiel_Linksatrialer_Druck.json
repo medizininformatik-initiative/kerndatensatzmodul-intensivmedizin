@@ -52,6 +52,7 @@
       },
       "valueQuantity": {
         "value": 8.0,
+		"unit": "millimeter of mercury",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
       }
@@ -73,6 +74,7 @@
       },
       "valueQuantity": {
         "value": 6.0,
+		"unit": "millimeter of mercury",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
       }
@@ -94,6 +96,7 @@
       },
       "valueQuantity": {
         "value": 4.0,
+		"unit": "millimeter of mercury",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
       }
