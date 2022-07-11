@@ -70,7 +70,8 @@
             "code": "150105",
 			"display": "Systolic right ventricular pressure"
           }
-        ]
+        ],
+		"text": "SystolicBP"
       },
       "valueQuantity": {
         "value": 25.0,
@@ -92,7 +93,8 @@
             "code": "150106",
 			"display": "Diastolic right ventricular pressure"
           }
-        ]
+        ],
+		"text": "DiastolicBP"
       },
       "valueQuantity": {
         "value": 5.0,
