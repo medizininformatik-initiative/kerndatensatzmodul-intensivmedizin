@@ -1,235 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Koerpergewicht" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpergewicht" />
-  <name value="MII_Koerpergewicht" />
-  <status value="active" />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="sct-concept" />
-    <uri value="http://snomed.info/conceptdomain" />
-    <name value="SNOMED CT Concept Domain Binding" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="sct-attr" />
-    <uri value="http://snomed.org/attributebinding" />
-    <name value="SNOMED CT Attribute Binding" />
-  </mapping>
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat">
-      <path value="Observation.category" />
-      <sliceName value="vs-cat" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat.coding">
-      <path value="Observation.category.coding" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:vs-cat.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct">
-      <path value="Observation.category" />
-      <sliceName value="sct" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="248326004" />
-          <display value="Body Measure (Observable Entity)" />
-        </coding>
-      </patternCodeableConcept>
-    </element>
-    <element id="Observation.category:sct.coding">
-      <path value="Observation.category.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category:sct.coding.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code">
-      <path value="Observation.code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="29463-7" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:sct">
-      <path value="Observation.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="27113001" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:sct.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:sct.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-fhir-core">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc-fhir-core" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="29463-7" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-fhir-core.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-fhir-core.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.effective[x]:effectiveDateTime">
-      <path value="Observation.effective[x]" />
-      <sliceName value="effectiveDateTime" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.value[x]" />
-      <sliceName value="valueQuantity" />
-      <patternQuantity>
-        <system value="http://unitsofmeasure.org" />
-        <code value="kg" />
-      </patternQuantity>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.value">
-      <path value="Observation.value[x].value" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.value[x].unit" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.system">
-      <path value="Observation.value[x].system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.code">
-      <path value="Observation.value[x].code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.dataAbsentReason">
-      <path value="Observation.dataAbsentReason" />
-      <constraint>
-        <key value="mii-icu-1" />
-        <severity value="error" />
-        <human value="If there is no Observation.value, a dataAbsentReason must be given." />
-        <expression value="value.exists().not() implies dataAbsentReason.exists()" />
-        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpergewicht" />
-      </constraint>
-    </element>
-    <element id="Observation.component">
-      <path value="Observation.component" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component.value[x]">
-      <path value="Observation.component.value[x]" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
-    </element>
-  </differential>
+	<id value="Profile-Koerpergewicht"/>
+	<url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpergewicht"/>
+	<name value="MII_Koerpergewicht"/>
+	<status value="active"/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="workflow"/>
+		<uri value="http://hl7.org/fhir/workflow"/>
+		<name value="Workflow Pattern"/>
+	</mapping>
+	<mapping>
+		<identity value="sct-concept"/>
+		<uri value="http://snomed.info/conceptdomain"/>
+		<name value="SNOMED CT Concept Domain Binding"/>
+	</mapping>
+	<mapping>
+		<identity value="v2"/>
+		<uri value="http://hl7.org/v2"/>
+		<name value="HL7 v2 Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="w5"/>
+		<uri value="http://hl7.org/fhir/fivews"/>
+		<name value="FiveWs Pattern Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="sct-attr"/>
+		<uri value="http://snomed.org/attributebinding"/>
+		<name value="SNOMED CT Attribute Binding"/>
+	</mapping>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation.status">
+			<path value="Observation.status"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category">
+			<path value="Observation.category"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:vs-cat">
+			<path value="Observation.category"/>
+			<sliceName value="vs-cat"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:vs-cat.coding">
+			<path value="Observation.category.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:vs-cat.coding.system">
+			<path value="Observation.category.coding.system"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:vs-cat.coding.code">
+			<path value="Observation.category.coding.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:sct">
+			<path value="Observation.category"/>
+			<sliceName value="sct"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="248326004"/>
+					<display value="Body Measure (Observable Entity)"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="Observation.category:sct.coding">
+			<path value="Observation.category.coding"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:sct.coding.system">
+			<path value="Observation.category.coding.system"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:sct.coding.code">
+			<path value="Observation.category.coding.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding">
+			<path value="Observation.code.coding"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:loinc">
+			<path value="Observation.code.coding"/>
+			<sliceName value="loinc"/>
+			<patternCoding>
+				<system value="http://loinc.org"/>
+				<code value="29463-7"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:sct">
+			<path value="Observation.code.coding"/>
+			<sliceName value="sct"/>
+			<patternCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="27113001"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:sct.system">
+			<path value="Observation.code.coding.system"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:sct.code">
+			<path value="Observation.code.coding.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:loinc-fhir-core">
+			<path value="Observation.code.coding"/>
+			<sliceName value="loinc-fhir-core"/>
+			<patternCoding>
+				<system value="http://loinc.org"/>
+				<code value="29463-7"/>
+			</patternCoding>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:loinc-fhir-core.system">
+			<path value="Observation.code.coding.system"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding:loinc-fhir-core.code">
+			<path value="Observation.code.coding.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveDateTime">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveDateTime"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]">
+			<path value="Observation.value[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueQuantity">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueQuantity"/>
+			<patternQuantity>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="kg"/>
+			</patternQuantity>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueQuantity.value">
+			<path value="Observation.value[x].value"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueQuantity.unit">
+			<path value="Observation.value[x].unit"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueQuantity.system">
+			<path value="Observation.value[x].system"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueQuantity.code">
+			<path value="Observation.value[x].code"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.dataAbsentReason">
+			<path value="Observation.dataAbsentReason"/>
+			<constraint>
+				<key value="mii-icu-1"/>
+				<severity value="error"/>
+				<human value="If there is no Observation.value, a dataAbsentReason must be given."/>
+				<expression value="value.exists().not() implies dataAbsentReason.exists()"/>
+				<source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpergewicht"/>
+			</constraint>
+		</element>
+		<element id="Observation.component">
+			<path value="Observation.component"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component.value[x]">
+			<path value="Observation.component.value[x]"/>
+		</element>
+	</differential>
 </StructureDefinition>

@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Inspiratorisch-Sauerstofffraktion-Eingestellt" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Inspiratorische-Sauerstofffraktion-Eingestellt" />
-  <name value="MII_Inspiratorisch_Sauerstofffraktion_Eingestellt" />
-  <status value="active" />
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Observation.category:Beatmung">
-      <path value="Observation.category" />
-      <sliceName value="Beatmung" />
-    </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.code.coding:sct">
-      <path value="Observation.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <code value="250774007" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <patternCoding>
-        <code value="19994-3" />
-      </patternCoding>
-    </element>
-  </differential>
+	<id value="Profile-Inspiratorisch-Sauerstofffraktion-Eingestellt"/>
+	<url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Inspiratorische-Sauerstofffraktion-Eingestellt"/>
+	<name value="MII_Inspiratorisch_Sauerstofffraktion_Eingestellt"/>
+	<status value="active"/>
+	<fhirVersion value="4.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation.category:Beatmung">
+			<path value="Observation.category"/>
+			<sliceName value="Beatmung"/>
+		</element>
+		<element id="Observation.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation.code.coding:sct">
+			<path value="Observation.code.coding"/>
+			<sliceName value="sct"/>
+			<patternCoding>
+				<code value="250774007"/>
+			</patternCoding>
+		</element>
+		<element id="Observation.code.coding:loinc">
+			<path value="Observation.code.coding"/>
+			<sliceName value="loinc"/>
+			<patternCoding>
+				<code value="19994-3"/>
+			</patternCoding>
+		</element>
+	</differential>
 </StructureDefinition>
