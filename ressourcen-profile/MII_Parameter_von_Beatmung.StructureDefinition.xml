@@ -116,6 +116,10 @@
 		</element>
 		<element id="Observation.code.coding">
 			<path value="Observation.code.coding"/>
+			<slicing>
+				<ordered value="false"/>
+				<rules value="open"/>
+			</slicing>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
