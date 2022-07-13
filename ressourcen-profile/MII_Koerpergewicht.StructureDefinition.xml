@@ -47,9 +47,6 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
-      <slicing>
-        <rules value="closed" />
-      </slicing>
       <mustSupport value="true" />
     </element>
     <element id="Observation.category:vs-cat">

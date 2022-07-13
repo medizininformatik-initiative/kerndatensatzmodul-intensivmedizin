@@ -38,6 +38,10 @@
     {
       "code": {
         "coding": [
+		{
+			"system": "http://loinc.org",
+			"code": "8478-0"
+		},
           {
             "system": "http://loinc.org",
             "code": "8406-1",
@@ -60,7 +64,11 @@
     {
       "code": {
         "coding": [
-          {
+			{
+			"system": "http://loinc.org",
+			"code": "8480-6"
+		},
+		{
             "system": "http://loinc.org",
             "code": "8432-7",
 			"display": "Right ventricular Intrachamber systolic pressure"
@@ -70,8 +78,7 @@
             "code": "150105",
 			"display": "Systolic right ventricular pressure"
           }
-        ],
-		"text": "SystolicBP"
+        ]
       },
       "valueQuantity": {
         "value": 25.0,
@@ -83,6 +90,10 @@
     {
       "code": {
         "coding": [
+		{
+			"system": "http://loinc.org",
+			"code": "8462-4"
+		},
           {
             "system": "http://loinc.org",
             "code": "8377-4",
@@ -93,8 +104,7 @@
             "code": "150106",
 			"display": "Diastolic right ventricular pressure"
           }
-        ],
-		"text": "DiastolicBP"
+        ]
       },
       "valueQuantity": {
         "value": 5.0,
