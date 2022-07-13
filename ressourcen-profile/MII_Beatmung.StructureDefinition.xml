@@ -66,7 +66,7 @@
 			<sliceName value="sct"/>
 			<binding>
 				<strength value="required"/>
-				<valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-Category-Procedure-Beatmung-SNOMED"/>
+				<valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Category-Procedure-Beatmung-SNOMED"/>
 			</binding>
 		</element>
 		<element id="Procedure.category.coding:sct.display">
