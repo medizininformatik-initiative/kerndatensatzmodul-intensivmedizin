@@ -1,16 +1,18 @@
 {
-    "resourceType": "Observation",
-    "id": "Beispiel-Parameter-Von-Beatmung",
-    "meta": {
-        "profile":  [
-            "https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung"
-        ]
-    },
-    "partOf": {
-        "reference": "Procedure/example"
-    },
-    "status": "final",
-    "category":  [
+	"resourceType": "Observation",
+	"id": "Beispiel-Parameter-Von-Beatmung",
+	"meta": {
+		"profile": [
+			"https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung"
+		]
+	},
+	"partOf": [
+		{
+			"reference": "Procedure/example"
+		}
+	],
+	"status": "final",
+	"category": [
 		{
 			"coding": [
 				{
@@ -20,27 +22,25 @@
 				}
 			]
 		}
-    ],
-    "code": {
-        "coding":  [
+	],
+	"code": {
+		"coding": [
 			{
 				"system": "http://loinc.org"
 			}
-        ]
-    },
-    "subject": {
-        "reference": "Patient/example"
-    },
-    "effectivePeriod":[
-		{
-			"start": "2019-12-23T09:30:10+01:00",
-			"end": "2019-12-23T10:30:10+01:00"
-		}
-	],
+		]
+	},
+	"subject": {
+		"reference": "Patient/example"
+	},
+	"effectivePeriod": {
+		"start": "2019-12-23T09:30:10+01:00",
+		"end": "2019-12-23T10:30:10+01:00"
+	},
 	"valueQuantity": {
-				"value": "90",
-				"unit": "millimeter of mercury",
-				"system": "http://unitsofmeasure.org",
-				"code": "mm[Hg]"
-    }
+		"value": 90,
+		"unit": "millimeter of mercury",
+		"system": "http://unitsofmeasure.org",
+		"code": "mm[Hg]"
+	}
 }

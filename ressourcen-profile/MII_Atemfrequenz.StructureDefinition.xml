@@ -123,25 +123,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-fhir-core">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc-fhir-core" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="9279-1" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-fhir-core.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-fhir-core.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <type>
