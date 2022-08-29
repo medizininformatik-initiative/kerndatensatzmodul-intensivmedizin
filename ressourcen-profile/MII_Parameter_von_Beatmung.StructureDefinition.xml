@@ -117,6 +117,10 @@
 		<element id="Observation.code.coding">
 			<path value="Observation.code.coding"/>
 			<slicing>
+				<discriminator>
+                    			<type value="pattern" />
+                    			<path value="$this" />
+                		</discriminator>
 				<ordered value="false"/>
 				<rules value="open"/>
 			</slicing>
