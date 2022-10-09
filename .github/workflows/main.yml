@@ -40,7 +40,7 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.3.4
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5
         with:
           PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet logical-models
           PATH_TO_EXAMPLES: beispiele
