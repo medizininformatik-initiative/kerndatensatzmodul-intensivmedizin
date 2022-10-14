@@ -40,6 +40,7 @@
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <code value="/mL" />
+		<system value="http://unitsofmeasure.org" />
       </patternQuantity>
     </element>
   </differential>

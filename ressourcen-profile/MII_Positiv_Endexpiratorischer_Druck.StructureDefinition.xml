@@ -41,6 +41,7 @@
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <code value="cm[H2O]" />
+		<system value="http://unitsofmeasure.org" />
       </patternQuantity>
     </element>
     <element id="Observation.value[x]:valueQuantity.value">

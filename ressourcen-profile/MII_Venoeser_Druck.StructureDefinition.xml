@@ -22,6 +22,7 @@
       <path value="Observation.value[x]" />
       <patternQuantity>
         <code value="mm[Hg]" />
+		<system value="http://unitsofmeasure.org" />
       </patternQuantity>
     </element>
   </differential>

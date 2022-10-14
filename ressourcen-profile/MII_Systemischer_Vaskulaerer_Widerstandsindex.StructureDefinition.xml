@@ -48,6 +48,7 @@
       </slicing>
       <patternQuantity>
         <code value="dyn.s/(cm5.m2)" />
+		<system value="http://unitsofmeasure.org" />
       </patternQuantity>
     </element>
     <element id="Observation.value[x]:valueQuantity">

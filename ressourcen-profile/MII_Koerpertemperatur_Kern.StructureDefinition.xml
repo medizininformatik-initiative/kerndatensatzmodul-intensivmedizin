@@ -52,7 +52,9 @@
 			<path value="Observation.value[x]"/>
 			<sliceName value="valueQuantity"/>
 			<patternQuantity>
+				<unit value="Celsius" />
 				<code value="Cel"/>
+				<system value="http://unitsofmeasure.org" />
 			</patternQuantity>
 		</element>
 		<element id="Observation.component.value[x]">

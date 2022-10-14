@@ -30,6 +30,7 @@
       <path value="Observation.value[x]" />
       <patternQuantity>
         <code value="h" />
+		<system value="http://unitsofmeasure.org" />
       </patternQuantity>
     </element>
   </differential>

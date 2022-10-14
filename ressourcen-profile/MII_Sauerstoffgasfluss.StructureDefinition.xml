@@ -29,6 +29,7 @@
       <path value="Observation.value[x]" />
       <patternQuantity>
         <code value="L/min" />
+		<system value="http://unitsofmeasure.org" />
       </patternQuantity>
     </element>
   </differential>

@@ -71,6 +71,7 @@
 			<sliceName value="valueQuantity"/>
 			<patternQuantity>
 				<code value="%"/>
+				<system value="http://unitsofmeasure.org" />
 			</patternQuantity>
 		</element>
 		<element id="Observation.component.value[x]">
