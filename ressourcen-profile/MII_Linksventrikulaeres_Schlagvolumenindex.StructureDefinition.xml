@@ -28,8 +28,8 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <unit value="mL/m2" />
 		<system value="http://unitsofmeasure.org" />
+        <unit value="mL/m2" />
       </patternQuantity>
     </element>
   </differential>

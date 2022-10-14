@@ -28,8 +28,8 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-        <code value="L/min" />
 		<system value="http://unitsofmeasure.org" />
+        <code value="L/min" />
       </patternQuantity>
     </element>
   </differential>

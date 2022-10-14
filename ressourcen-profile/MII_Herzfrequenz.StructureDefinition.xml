@@ -62,8 +62,8 @@
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
 			<patternQuantity>
-				<code value="/min"/>
 				<system value="http://unitsofmeasure.org" />
+				<code value="/min"/>
 			</patternQuantity>
 		</element>
 		<element id="Observation.value[x].code">

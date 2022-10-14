@@ -50,8 +50,8 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-        <code value="{Breaths}/min" />
 		<system value="http://unitsofmeasure.org" />
+        <code value="{Breaths}/min" />
       </patternQuantity>
     </element>
   </differential>
