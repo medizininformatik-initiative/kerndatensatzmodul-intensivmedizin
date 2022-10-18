@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Bilanzen-Generisch" />
+  <name value="SD_MII_Bilanzen_Generisch" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component.referenceRange">
+      <path value="Observation.component.referenceRange" />
+      <contentReference value="http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange" />
+    </element>
+  </differential>
+</StructureDefinition>
