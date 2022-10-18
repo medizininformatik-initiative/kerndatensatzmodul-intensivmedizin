@@ -29,6 +29,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="83064-6" />
       </patternCoding>
     </element>

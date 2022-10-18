@@ -14,16 +14,16 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="8499008" />
-        <display value="Pulse, function (observable entity)" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
+		<system value="urn:std:iso:11073:10101" />
         <code value="149514" />
-        <display value="Pulse rate" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -39,7 +39,6 @@
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="11527006" />
-        <display value="Arterial system structure (body structure)" />
       </patternCoding>
       <mustSupport value="true" />
     </element>

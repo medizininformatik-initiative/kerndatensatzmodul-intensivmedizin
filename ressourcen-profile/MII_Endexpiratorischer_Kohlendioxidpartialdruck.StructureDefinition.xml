@@ -19,6 +19,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="250790007" />
       </patternCoding>
     </element>
@@ -26,6 +27,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="19891-1" />
       </patternCoding>
     </element>
@@ -33,6 +35,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
+		<system value="urn:std:iso:11073:10101" />
         <code value="151708" />
       </patternCoding>
     </element>

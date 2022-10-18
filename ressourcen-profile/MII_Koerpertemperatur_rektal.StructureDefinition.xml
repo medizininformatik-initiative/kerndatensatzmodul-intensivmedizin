@@ -14,24 +14,24 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="307047009" />
-        <display value="Core body temperature measured in rectum (observable entity)" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8332-9" />
-        <display value="Rectal temperature" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
+		<system value="urn:std:iso:11073:10101" />
         <code value="188420" />
-        <display value="Rectal temperature" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -39,7 +39,6 @@
       <patternQuantity>
 		<system value="http://unitsofmeasure.org" />
         <code value="Cel" />
-        <unit value="Celsius" />
       </patternQuantity>
     </element>
     <element id="Observation.bodySite">
@@ -48,7 +47,6 @@
         <coding>
           <system value="http://snomed.info/sct" />
           <code value="34402009" />
-          <display value="Rectum structure (body structure)" />
         </coding>
       </patternCodeableConcept>
     </element>

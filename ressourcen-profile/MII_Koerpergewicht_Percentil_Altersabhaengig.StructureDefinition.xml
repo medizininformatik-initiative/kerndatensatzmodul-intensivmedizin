@@ -18,7 +18,6 @@
         <coding>
           <system value="http://snomed.info/sct" />
           <code value="248326004" />
-          <display value="Body Measure (Observable Entity)" />
         </coding>
       </patternCodeableConcept>
     </element>
@@ -40,6 +39,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="1153592008" />
       </patternCoding>
     </element>
@@ -47,6 +47,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8336-0" />
       </patternCoding>
     </element>

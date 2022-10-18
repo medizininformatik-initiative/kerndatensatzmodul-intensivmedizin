@@ -14,16 +14,16 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="415974002" />
-        <display value="Core body temperature measured at tympanic membrane (observable entity)" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8333-7" />
-        <display value="Tympanic membrane temperature" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -31,7 +31,6 @@
       <patternQuantity>
 		<system value="http://unitsofmeasure.org" />
         <code value="Cel" />
-        <unit value="Celsius" />
       </patternQuantity>
     </element>
     <element id="Observation.bodySite">
@@ -40,7 +39,6 @@
         <coding>
           <system value="http://snomed.info/sct" />
           <code value="42859004" />
-          <display value="Tympanic membrane structure (body structure)" />
         </coding>
       </patternCodeableConcept>
     </element>

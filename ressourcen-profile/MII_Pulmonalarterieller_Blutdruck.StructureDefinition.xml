@@ -26,6 +26,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
+		<system value="urn:std:iso:11073:10101" />
         <code value="150045" />
       </patternCoding>
     </element>
@@ -33,6 +34,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8440-0" />
       </patternCoding>
     </element>
@@ -44,6 +46,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
+		<system value="urn:std:iso:11073:10101" />
         <code value="150046" />
       </patternCoding>
     </element>
@@ -51,6 +54,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8385-7" />
       </patternCoding>
     </element>
@@ -62,6 +66,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
+		<system value="urn:std:iso:11073:10101" />
         <code value="150047" />
       </patternCoding>
     </element>
@@ -69,6 +74,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8414-5" />
       </patternCoding>
     </element>

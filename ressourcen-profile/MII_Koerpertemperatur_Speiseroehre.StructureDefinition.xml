@@ -14,16 +14,16 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="431598003" />
-        <display value="Core body temperature measured in esophagus (observable entity)" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="60836-4" />
-        <display value="Esophageal temperature" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -31,7 +31,6 @@
       <patternQuantity>
 		<system value="http://unitsofmeasure.org" />
         <code value="Cel" />
-        <unit value="Celsius" />
       </patternQuantity>
     </element>
     <element id="Observation.bodySite">
@@ -40,7 +39,6 @@
         <coding>
           <system value="http://snomed.info/sct" />
           <code value="32849002" />
-          <display value="Esophageal structure (body structure)" />
         </coding>
       </patternCodeableConcept>
     </element>

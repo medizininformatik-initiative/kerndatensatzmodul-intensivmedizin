@@ -46,6 +46,7 @@
 			<path value="Observation.code.coding"/>
 			<sliceName value="sct"/>
 			<patternCoding>
+				<system value="http://snomed.info/sct" />
 				<code value="1153605006"/>
 			</patternCoding>
 		</element>
@@ -53,6 +54,7 @@
 			<path value="Observation.code.coding"/>
 			<sliceName value="loinc"/>
 			<patternCoding>
+				<system value="http://loinc.org" />
 				<code value="8303-0"/>
 			</patternCoding>
 		</element>

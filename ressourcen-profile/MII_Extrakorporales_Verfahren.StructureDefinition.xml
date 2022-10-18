@@ -58,6 +58,7 @@
 			<path value="Procedure.category.coding"/>
 			<sliceName value="sct"/>
 			<patternCoding>
+				<system value="http://snomed.info/sct" />
 				<code value="182744004"/>
 			</patternCoding>
 		</element>

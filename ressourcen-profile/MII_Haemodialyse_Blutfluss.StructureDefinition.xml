@@ -19,6 +19,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+		<system value="http://snomed.info/sct" />
         <code value="401000124105" />
       </patternCoding>
     </element>

@@ -15,6 +15,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
+		<system value="http://loinc.org" />
         <code value="8771-8" />
       </patternCoding>
     </element>

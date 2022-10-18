@@ -21,6 +21,7 @@
 			<path value="Observation.code.coding"/>
 			<sliceName value="sct"/>
 			<patternCoding>
+				<system value="http://snomed.info/sct" />
 				<code value="276885007"/>
 			</patternCoding>
 		</element>
@@ -28,6 +29,7 @@
 			<path value="Observation.code.coding"/>
 			<sliceName value="loinc"/>
 			<patternCoding>
+				<system value="http://loinc.org" />
 				<code value="8329-5"/>
 			</patternCoding>
 		</element>
@@ -35,6 +37,7 @@
 			<path value="Observation.code.coding"/>
 			<sliceName value="IEEE-11073"/>
 			<patternCoding>
+				<system value="urn:std:iso:11073:10101" />
 				<code value="150368"/>
 			</patternCoding>
 		</element>
@@ -54,7 +57,6 @@
 			<patternQuantity>
 				<system value="http://unitsofmeasure.org" />
 				<code value="Cel"/>
-				<unit value="Celsius" />
 			</patternQuantity>
 		</element>
 		<element id="Observation.component.value[x]">
