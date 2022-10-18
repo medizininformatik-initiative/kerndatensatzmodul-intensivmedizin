@@ -45,7 +45,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <display value="Blood pressure (observable entity)" />
+        <system value="http://snomed.info/sct" />
       </patternCoding>
     </element>
     <element id="Observation.component">
