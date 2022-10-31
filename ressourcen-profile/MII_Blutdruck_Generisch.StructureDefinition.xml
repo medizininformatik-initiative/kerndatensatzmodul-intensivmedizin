@@ -222,28 +222,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc-detailed">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc-detailed" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc-detailed.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc-detailed.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:loinc-detailed.display">
-      <path value="Observation.component.code.coding.display" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.component:SystolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <patternQuantity>
@@ -357,28 +335,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc-detailed">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc-detailed" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc-detailed.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc-detailed.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:loinc-detailed.display">
-      <path value="Observation.component.code.coding.display" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.component:DiastolicBP.value[x]">
       <path value="Observation.component.value[x]" />
       <patternQuantity>
@@ -474,28 +430,6 @@
     <element id="Observation.component:meanBP.code.coding:IEEE-11073.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:meanBP.code.coding:loinc-detailed">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="loinc-detailed" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:meanBP.code.coding:loinc-detailed.system">
-      <path value="Observation.component.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:meanBP.code.coding:loinc-detailed.code">
-      <path value="Observation.component.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:meanBP.code.coding:loinc-detailed.display">
-      <path value="Observation.component.code.coding.display" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:meanBP.value[x]">
