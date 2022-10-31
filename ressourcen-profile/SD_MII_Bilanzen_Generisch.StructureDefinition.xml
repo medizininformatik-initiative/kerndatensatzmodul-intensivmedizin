@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-bilanzen-generisch" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch" />
@@ -24,6 +24,10 @@
     <element id="Observation.category.coding">
       <path value="Observation.category.coding" />
       <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
         <rules value="open" />
       </slicing>
       <mustSupport value="true" />
