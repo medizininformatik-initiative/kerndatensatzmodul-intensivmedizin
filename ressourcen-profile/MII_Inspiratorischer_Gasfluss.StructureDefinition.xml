@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Inspiratorischer-Gasfluss" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Inspiratorischer-Gasfluss" />
-  <name value="MII_Inspiratorischer_Gasfluss" />
+  <id value="sd-mii-icu-inspiratorischer-gasfluss" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorischer-gasfluss" />
+  <name value="SD_MII_ICU_Inspiratorischer_Gasfluss" />
+  <title value="SD MII ICU Inspiratorischer Gasfluss" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -23,7 +24,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="60794-5" />
       </patternCoding>
     </element>
@@ -31,7 +32,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="151948" />
       </patternCoding>
     </element>
@@ -39,7 +40,7 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="L/min" />
       </patternQuantity>
     </element>

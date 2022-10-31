@@ -1,53 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Profile-Spontane-Mechanische-Atemfrequenz-Beatmet"/>
-	<url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontane-Mechanische-Atemfrequenz-Beatmet"/>
-	<name value="MII_Spontane_Mechanische_Atemfrequenz_Beatmet"/>
-	<status value="active"/>
-	<fhirVersion value="4.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Observation"/>
-	<baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Observation.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation.code.coding:sct">
-			<path value="Observation.code.coding"/>
-			<sliceName value="sct"/>
-			<patternCoding>
-				<system value="http://snomed.info/sct" />
-				<code value="250810003"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:loinc">
-			<path value="Observation.code.coding"/>
-			<sliceName value="loinc"/>
-			<patternCoding>
-				<system value="http://loinc.org" />
-				<code value="19840-8"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:IEEE-11073">
-			<path value="Observation.code.coding"/>
-			<sliceName value="IEEE-11073"/>
-			<patternCoding>
-				<system value="urn:std:iso:11073:10101" />
-				<code value="152490"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.effective[x]">
-			<path value="Observation.effective[x]"/>
-			<min value="1"/>
-		</element>
-		<element id="Observation.value[x]">
-			<path value="Observation.value[x]"/>
-			<patternQuantity>
-				<system value="http://unitsofmeasure.org" />
-				<code value="/min"/>
-			</patternQuantity>
-		</element>
-	</differential>
+  <id value="sd-mii-icu-spontane-mechanische-atemfrequenz-beatmet" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-mechanische-atemfrequenz-beatmet" />
+  <name value="SD_MII_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet" />
+  <title value="SD MII ICU Spontane Mechanische Atemfrequenz Beatmet" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="250810003" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="19840-8" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="152490" />
+      </patternCoding>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="/min" />
+      </patternQuantity>
+    </element>
+  </differential>
 </StructureDefinition>

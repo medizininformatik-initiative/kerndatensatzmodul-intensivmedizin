@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Rechtsventrikulaerer-Druck" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Rechtsventrikulaerer-Druck" />
-  <name value="MII_Rechtsventrikulaerer_Druck" />
+  <id value="sd-mii-icu-rechtsventrikulaerer-druck" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/rechtsventrikulaerer-druck" />
+  <name value="SD_MII_ICU_Rechtsventrikulaerer_Druck" />
+  <title value="SD MII ICU Rechtsventrikulaerer Druck" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -19,7 +20,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150105" />
       </patternCoding>
     </element>
@@ -27,7 +28,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8432-7" />
       </patternCoding>
     </element>
@@ -39,7 +40,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150106" />
       </patternCoding>
     </element>
@@ -47,7 +48,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8377-4" />
       </patternCoding>
     </element>
@@ -59,7 +60,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150107" />
       </patternCoding>
     </element>
@@ -67,7 +68,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8406-1" />
       </patternCoding>
     </element>

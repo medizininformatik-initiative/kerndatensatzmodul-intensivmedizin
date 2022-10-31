@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Koerpergewicht-Percentil-Altersabhaengig" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul_icu/StructureDefinition/Koerpergewicht-Percentil-Altersabhaengig" />
-  <name value="MII_Koerpergewicht_Percentil_Altersabhaengig" />
+  <id value="sd-mii-icu-koerpergewicht-percentil-altersabhaengig" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht-percentil-altersabhaengig" />
+  <name value="SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig" />
+  <title value="SD MII ICU Koerpergewicht Percentil Altersabhaengig" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -39,7 +40,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="1153592008" />
       </patternCoding>
     </element>
@@ -47,7 +48,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8336-0" />
       </patternCoding>
     </element>
@@ -65,7 +66,7 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="%" />
       </patternQuantity>
     </element>

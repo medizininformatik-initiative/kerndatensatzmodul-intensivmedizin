@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Linksventrikulaeres-Herzzeitvolumen-Indikatorverduennung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Observation/linksventrikulaeres-herzzeitvolumen-durch-indikatorverduennung" />
-  <name value="MII_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung" />
+  <id value="sd-mii-icu-linksventrikulaeres-herzzeitvolumen-durch-indikatorverduennung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaeres-herzzeitvolumen-durch-indikatorverduennung" />
+  <name value="SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung" />
+  <title value="SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8737-9" />
       </patternCoding>
     </element>

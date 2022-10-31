@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Endexpiratorischer-Kohlendioxidpartialdruck" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Endexpiratorischer-Kohlendioxidpartialdruck" />
-  <name value="MII_Endexpiratorischer_Kohlendioxidpartialdruck" />
+  <id value="sd-mii-icu-endexpiratorischer-kohlendioxidpartialdruck" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/endexpiratorischer-kohlendioxidpartialdruck" />
+  <name value="SD_MII_ICU_Endexpiratorischer_Kohlendioxidpartialdruck" />
+  <title value="SD MII ICU Endexpiratorischer Kohlendioxidpartialdruck" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -19,7 +20,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="250790007" />
       </patternCoding>
     </element>
@@ -27,7 +28,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="19891-1" />
       </patternCoding>
     </element>
@@ -35,14 +36,14 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="151708" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="mm[Hg]" />
       </patternQuantity>
     </element>

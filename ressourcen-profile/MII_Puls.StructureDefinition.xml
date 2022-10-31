@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Observation/puls" />
-  <name value="MII_Puls" />
+  <id value="sd-mii-icu-puls" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/puls" />
+  <name value="SD_MII_ICU_Puls" />
+  <title value="SD MII ICU Puls" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -14,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="8499008" />
       </patternCoding>
     </element>
@@ -22,7 +24,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="149514" />
       </patternCoding>
     </element>

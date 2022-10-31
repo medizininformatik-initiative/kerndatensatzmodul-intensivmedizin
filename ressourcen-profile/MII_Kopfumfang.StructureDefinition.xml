@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Kopfumfang" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Kopfumfang" />
-  <name value="MII_Kopfumfang" />
+  <id value="sd-mii-icu-kopfumfang" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang" />
+  <name value="SD_MII_ICU_Kopfumfang" />
+  <title value="SD MII ICU Kopfumfang" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>

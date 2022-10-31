@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutdruck-Generisch" />
-  <name value="MII_Blutdruck_Generisch" />
+  <id value="sd-mii-icu-blutdruck-generisch" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck-generisch" />
+  <name value="SD_MII_ICU_Blutdruck_Generisch" />
+  <title value="SD MII ICU Blutdruck Generisch" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

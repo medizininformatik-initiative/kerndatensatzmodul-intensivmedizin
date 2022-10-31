@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Monitoring-und-Vitaldaten" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
-  <name value="MII_Monitoring_und_Vitaldaten" />
+  <id value="sd-mii-icu-monitoring-und-vitaldaten" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten" />
+  <name value="SD_MII_ICU_Monitoring_Und_Vitaldaten" />
+  <title value="SD MII ICU Monitoring und Vitaldaten" />
   <status value="active" />
   <contact>
     <name value="Dincel, Berke" />
@@ -87,7 +88,7 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <slicing>
-		<discriminator>
+        <discriminator>
           <type value="pattern" />
           <path value="$this" />
         </discriminator>

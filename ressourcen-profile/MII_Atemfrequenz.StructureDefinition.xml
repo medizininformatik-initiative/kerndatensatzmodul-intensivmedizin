@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Atemfrequenz" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Atemfrequenz" />
-  <name value="MII_Atemfrequenz" />
+  <id value="sd-mii-icu-atemfrequenz" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz" />
+  <name value="SD_MII_ICU_Atemfrequenz" />
+  <title value="SD MII ICU Atemfrequenz" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>

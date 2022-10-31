@@ -1,66 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Profile-Koerpertemperatur-Kern"/>
-	<url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Kern"/>
-	<name value="MII_Koerpertemperatur_Kern"/>
-	<status value="active"/>
-	<fhirVersion value="4.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Observation"/>
-	<baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Observation.category">
-			<path value="Observation.category"/>
-		</element>
-		<element id="Observation.code.coding">
-			<path value="Observation.code.coding"/>
-		</element>
-		<element id="Observation.code.coding:sct">
-			<path value="Observation.code.coding"/>
-			<sliceName value="sct"/>
-			<patternCoding>
-				<system value="http://snomed.info/sct" />
-				<code value="276885007"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:loinc">
-			<path value="Observation.code.coding"/>
-			<sliceName value="loinc"/>
-			<patternCoding>
-				<system value="http://loinc.org" />
-				<code value="8329-5"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:IEEE-11073">
-			<path value="Observation.code.coding"/>
-			<sliceName value="IEEE-11073"/>
-			<patternCoding>
-				<system value="urn:std:iso:11073:10101" />
-				<code value="150368"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.value[x]">
-			<path value="Observation.value[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="closed"/>
-			</slicing>
-		</element>
-		<element id="Observation.value[x]:valueQuantity">
-			<path value="Observation.value[x]"/>
-			<sliceName value="valueQuantity"/>
-			<patternQuantity>
-				<system value="http://unitsofmeasure.org" />
-				<code value="Cel"/>
-			</patternQuantity>
-		</element>
-		<element id="Observation.component.value[x]">
-			<path value="Observation.component.value[x]"/>
-		</element>
-	</differential>
+  <id value="sd-mii-icu-koerpertemperatur-kern" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-kern" />
+  <name value="SD_MII_ICU_Koerpertemperatur_Kern" />
+  <title value="SD MII ICU Koerpertemperatur Kern" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="276885007" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8329-5" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="150368" />
+      </patternCoding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueQuantity" />
+      <patternQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="Cel" />
+      </patternQuantity>
+    </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+    </element>
+  </differential>
 </StructureDefinition>

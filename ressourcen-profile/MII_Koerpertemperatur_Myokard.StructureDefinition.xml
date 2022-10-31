@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur-Myokard" />
-  <name value="MII_Koerpertemperatur_Myokard" />
+  <id value="sd-mii-icu-koerpertemperatur-myokard" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-myokard" />
+  <name value="SD_MII_ICU_Koerpertemperatur_Myokard" />
+  <title value="SD MII ICU Koerpertemperatur Myokard" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -14,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="61009-7" />
       </patternCoding>
     </element>
@@ -22,14 +24,14 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="188500" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="Cel" />
       </patternQuantity>
     </element>

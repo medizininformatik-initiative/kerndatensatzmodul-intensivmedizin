@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="SD-MII-ICU-Arterieller-Druck" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck" />
+  <id value="sd-mii-icu-arterieller-druck" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck" />
   <name value="SD_MII_ICU_Arterieller_Druck" />
   <title value="SD MII ICU Arterieller Druck" />
   <status value="active" />
@@ -16,6 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
+	    <system value="http://snomed.info/sct" />
         <code value="386534000" />
       </patternCoding>
     </element>

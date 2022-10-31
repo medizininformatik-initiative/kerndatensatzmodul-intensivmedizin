@@ -1,80 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Profile-Herzfrequenz"/>
-	<url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Herzfrequenz"/>
-	<name value="MII_Herzfrequenz"/>
-	<status value="active"/>
-	<fhirVersion value="4.0.1"/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Observation"/>
-	<baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Observation.category">
-			<path value="Observation.category"/>
-		</element>
-		<element id="Observation.category:vs-cat">
-			<path value="Observation.category"/>
-			<sliceName value="vs-cat"/>
-			<min value="1"/>
-		</element>
-		<element id="Observation.code.coding:sct">
-			<path value="Observation.code.coding"/>
-			<sliceName value="sct"/>
-			<patternCoding>
-				<system value="http://snomed.info/sct" />
-				<code value="364075005"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:loinc">
-			<path value="Observation.code.coding"/>
-			<sliceName value="loinc"/>
-			<patternCoding>
-				<system value="http://loinc.org" />
-				<code value="8867-4"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:IEEE-11073">
-			<path value="Observation.code.coding"/>
-			<sliceName value="IEEE-11073"/>
-			<patternCoding>
-				<system value="urn:std:iso:11073:10101" />
-				<code value="147842"/>
-			</patternCoding>
-		</element>
-		<element id="Observation.code.coding:loinc-fhir-core">
-			<path value="Observation.code.coding"/>
-			<sliceName value="loinc-fhir-core"/>
-			<patternCoding>
-				<system value="http://loinc.org"/>
-				<code value="8867-4"/>
-			</patternCoding>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.code.coding:loinc-fhir-core.system">
-			<path value="Observation.code.coding.system"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.code.coding:loinc-fhir-core.code">
-			<path value="Observation.code.coding.code"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.value[x]">
-			<path value="Observation.value[x]"/>
-			<patternQuantity>
-				<system value="http://unitsofmeasure.org" />
-				<code value="/min"/>
-			</patternQuantity>
-		</element>
-		<element id="Observation.value[x].code">
-			<path value="Observation.value[x].code"/>
-			<binding>
-				<strength value="required"/>
-				<valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-beats_per-minute"/>
-			</binding>
-		</element>
-	</differential>
+  <id value="sd-mii-icu-herzfrequenz" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz" />
+  <name value="SD_MII_ICU_Herzfrequenz" />
+  <title value="SD MII ICU Herzfrequenz" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+    </element>
+    <element id="Observation.category:vs-cat">
+      <path value="Observation.category" />
+      <sliceName value="vs-cat" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="364075005" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8867-4" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:std:iso:11073:10101" />
+        <code value="147842" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc-fhir-core" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8867-4" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <patternQuantity>
+        <system value="http://unitsofmeasure.org" />
+        <code value="/min" />
+      </patternQuantity>
+    </element>
+    <element id="Observation.value[x].code">
+      <path value="Observation.value[x].code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-beats_per-minute" />
+      </binding>
+    </element>
+  </differential>
 </StructureDefinition>

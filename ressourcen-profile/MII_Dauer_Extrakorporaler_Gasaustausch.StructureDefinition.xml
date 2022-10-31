@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Dauer-Extrakorporaler-Gasaustausch" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Dauer-Extrakorporaler-Gasaustausch" />
-  <name value="MII_Dauer_Extrakorporaler_Gasaustausch" />
+  <id value="sd-mii-icu-dauer-extrakorporaler-gasaustausch" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch" />
+  <name value="SD_MII_ICU_Dauer_Extrakorporaler_Gasaustausch" />
+  <title value="SD MII ICU Dauer Extrakorporaler Gasaustausch" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -19,7 +20,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="251286000" />
       </patternCoding>
     </element>
@@ -30,7 +31,7 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="h" />
       </patternQuantity>
     </element>

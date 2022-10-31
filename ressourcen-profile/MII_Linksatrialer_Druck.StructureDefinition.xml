@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Linksatrialer-Druck" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksatrialer-Druck" />
-  <name value="MII_Linksatrialer_Druck" />
+  <id value="sd-mii-icu-linksatrialer-druck" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksatrialer-druck" />
+  <name value="SD_MII_ICU_Linksatrialer_Druck" />
+  <title value="SD MII ICU Linksatrialer Druck" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="276762004" />
       </patternCoding>
     </element>
@@ -27,7 +28,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150065" />
       </patternCoding>
     </element>
@@ -35,7 +36,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="60989-1" />
       </patternCoding>
     </element>
@@ -47,7 +48,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150066" />
       </patternCoding>
     </element>
@@ -55,7 +56,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="75933-2" />
       </patternCoding>
     </element>
@@ -67,7 +68,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150067" />
       </patternCoding>
     </element>
@@ -75,7 +76,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc-detailed" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8399-8" />
       </patternCoding>
     </element>

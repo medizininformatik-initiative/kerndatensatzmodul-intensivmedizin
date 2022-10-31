@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Parameter-Von-Extrakorporalen-Verfahren" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
-  <name value="MII_Parameter_von_Extrakorporalen_Verfahren" />
+  <id value="sd-mii-icu-parameter-von-extrakorporalen-verfahren" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren" />
+  <name value="SD_MII_ICU_Parameter_Von_Extrakorporalen_Verfahren" />
+  <title value="SD MII ICU Parameter von Extrakorporalen Verfahren" />
   <status value="active" />
   <contact>
     <name value="Müller, Christoph" />

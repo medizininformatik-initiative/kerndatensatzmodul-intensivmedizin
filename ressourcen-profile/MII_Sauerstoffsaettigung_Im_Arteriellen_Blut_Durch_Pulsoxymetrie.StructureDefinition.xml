@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Sauerstoffsaettigung-Im-Arteriellen-Blut-Per-Pulsoxymetrie" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffsaettigung-Im-Arteriellen-Blut-Per-Pulsoxymetrie" />
-  <name value="MII_Sauerstoffsaettigung_Im_Arteriellen_Blut_Per_Pulsoxymetrie" />
+  <id value="sd-mii-icu-sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie" />
+  <name value="SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie" />
+  <title value="SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="442476006" />
       </patternCoding>
     </element>
@@ -23,7 +24,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="59408-5" />
       </patternCoding>
     </element>
@@ -31,7 +32,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150456" />
       </patternCoding>
     </element>
@@ -68,7 +69,7 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="%" />
       </patternQuantity>
     </element>

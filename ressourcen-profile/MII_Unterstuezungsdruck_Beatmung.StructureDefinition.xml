@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Unterstuzungsdruck-Beatmung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Unterstuetzungsdruck-Beatmung" />
-  <name value="MII_Unterstuzungsdruck_Beatmung" />
+  <id value="sd-mii-icu-unterstuezungsdruck-beatmung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/unterstuezungsdruck-beatmung" />
+  <name value="SD_MII_ICU_Unterstuezungsdruck_Beatmung" />
+  <title value="SD MII ICU Unterstuezungsdruck Beatmung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -19,7 +20,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="20079-0" />
       </patternCoding>
     </element>
@@ -31,7 +32,7 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="cm[H2O]" />
       </patternQuantity>
     </element>

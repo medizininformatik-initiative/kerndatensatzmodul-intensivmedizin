@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Ionisiertes-Kalzium-Nierenersatzverfahren" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Ionisiertes-Kalzium-Nierenersatzverfahren" />
-  <name value="MII_Ionisiertes_Kalzium_Nierenersatzverfahren" />
+  <id value="sd-mii-icu-ionisiertes-kalzium-nierenersatzverfahren" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren" />
+  <name value="SD_MII_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren" />
+  <title value="SD MII ICU Ionisiertes Kalzium Nierenersatzverfahren" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -29,7 +30,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="83064-6" />
       </patternCoding>
     </element>
@@ -40,7 +41,7 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="mmol/L" />
       </patternQuantity>
     </element>

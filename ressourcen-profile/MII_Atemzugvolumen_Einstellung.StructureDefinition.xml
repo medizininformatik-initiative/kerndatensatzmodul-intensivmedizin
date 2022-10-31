@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Atemzugvolumen-Einstellung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Atemzugvolumen-Einstellung" />
-  <name value="MII_Atemzugvolumen_Einstellung" />
+  <id value="sd-mii-icu-atemzugvolumen-einstellung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung" />
+  <name value="SD_MII_ICU_Atemzugvolumen_Einstellung" />
+  <title value="SD MII ICU Atemzugvolumen Einstellung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -21,7 +22,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="416811008" />
       </patternCoding>
     </element>
@@ -29,7 +30,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="20112-9" />
       </patternCoding>
     </element>
@@ -37,7 +38,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="16929196" />
       </patternCoding>
     </element>
@@ -49,7 +50,7 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="mL" />
       </patternQuantity>
     </element>

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Spontanes-Plus-Mechanisches-Atemzugvolumen" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Spontanes-Plus-Mechanisches-Atemzugvolumen" />
-  <name value="MII_Spontanes_Plus_Mechanisches_Atemzugvolumen" />
+  <id value="sd-mii-icu-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-mechanisches-atemzugvolumen-waehrend-beatmung" />
+  <name value="SD_MII_ICU_Spontanes_Mechanisches_Atemzugvolumen_Waehrend_Beatmung" />
+  <title value="SD MII ICU Spontanes Mechanisches Atemzugvolumen Waehrend Beatmung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="20118-6" />
       </patternCoding>
     </element>
@@ -37,7 +38,7 @@
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="mL" />
       </patternQuantity>
     </element>

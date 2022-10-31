@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Sauerstoffgasfluss" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Sauerstoffgasfluss" />
-  <name value="MII_Sauerstoffgasfluss" />
+  <id value="sd-mii-icu-sauerstoffgasfluss" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffgasfluss" />
+  <name value="SD_MII_ICU_Sauerstoffgasfluss" />
+  <title value="SD MII ICU Sauerstoffgasfluss" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="79063001" />
       </patternCoding>
     </element>
@@ -23,14 +24,14 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="19941-4" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="L/min" />
       </patternQuantity>
     </element>

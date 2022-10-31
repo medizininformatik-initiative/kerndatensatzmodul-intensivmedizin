@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Blutdruck" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Blutdruck" />
-  <name value="MII_Blutdruck" />
+  <id value="sd-mii-icu-blutdruck" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck" />
+  <name value="SD_MII_ICU_Blutdruck" />
+  <title value="SD MII ICU Blutdruck" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -60,7 +61,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="271649006" />
       </patternCoding>
     </element>
@@ -68,7 +69,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150017" />
       </patternCoding>
     </element>
@@ -80,7 +81,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="271650006" />
       </patternCoding>
     </element>
@@ -88,7 +89,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150018" />
       </patternCoding>
     </element>
@@ -100,7 +101,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-		<system value="http://snomed.info/sct" />
+        <system value="http://snomed.info/sct" />
         <code value="6797001" />
       </patternCoding>
     </element>
@@ -108,7 +109,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-		<system value="urn:std:iso:11073:10101" />
+        <system value="urn:std:iso:11073:10101" />
         <code value="150019" />
       </patternCoding>
     </element>

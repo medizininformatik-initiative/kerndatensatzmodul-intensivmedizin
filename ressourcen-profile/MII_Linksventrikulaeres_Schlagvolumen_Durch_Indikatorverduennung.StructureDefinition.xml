@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Linksventrikulaeres-Schlagvolumen-Indikatorverduennung" />
-  <url value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung" />
-  <name value="MII_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung" />
+  <id value="sd-mii-icu-linksventrikulaeres-schlagvolumen-durch-indikatorverduennung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaeres-schlagvolumen-durch-indikatorverduennung" />
+  <name value="SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung" />
+  <title value="SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -15,7 +16,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
-		<system value="http://loinc.org" />
+        <system value="http://loinc.org" />
         <code value="8771-8" />
       </patternCoding>
     </element>
@@ -33,7 +34,7 @@
       <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <patternQuantity>
-		<system value="http://unitsofmeasure.org" />
+        <system value="http://unitsofmeasure.org" />
         <code value="mL" />
       </patternQuantity>
     </element>

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-ICU-Device" />
-  <url value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/ICU-Device" />
-  <name value="MII_ICU_Device" />
+  <id value="sd-mii-icu-icu-device" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device" />
+  <name value="SD_MII_ICU_Icu_Device" />
+  <title value="SD MII ICU ICU Device" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

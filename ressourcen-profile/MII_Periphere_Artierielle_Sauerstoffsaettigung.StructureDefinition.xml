@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-Periphere-Artierielle-Sauerstoffsaettigung-ICU" />
-  <url value="https://medizininformatik.de/fhir/ext/modul-icu/StructureDefinition/Periphere-Artierielle-Sauerstoffsaettigung-ICU" />
-  <name value="MII_Periphere_Artierielle_Sauerstoffsaettigung_ICU" />
+  <id value="sd-mii-icu-periphere-artierielle-sauerstoffsaettigung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/periphere-artierielle-sauerstoffsaettigung" />
+  <name value="SD_MII_ICU_Periphere_Artierielle_Sauerstoffsaettigung" />
+  <title value="SD MII ICU Periphere Artierielle Sauerstoffsaettigung" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
