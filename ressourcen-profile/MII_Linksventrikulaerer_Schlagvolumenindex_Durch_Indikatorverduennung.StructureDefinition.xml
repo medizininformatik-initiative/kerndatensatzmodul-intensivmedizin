@@ -38,7 +38,7 @@
       <path value="Observation.valueQuantity.code" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-mL-per-squaremeter" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-L-per-minute-and-squaremeter" />
       </binding>
     </element>
   </differential>

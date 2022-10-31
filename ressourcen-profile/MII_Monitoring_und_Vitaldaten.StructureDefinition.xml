@@ -158,7 +158,7 @@
         <severity value="error" />
         <human value="Es muss mindestens ein snomed oder loinc code vorhanden sein" />
         <expression value="coding.exists() implies coding.where(system = 'http://snomed.info/sct').exists() or coding.where(system = 'http://loinc.org').exists()" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Monitoring-und-Vitaldaten" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -324,7 +324,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/ICU-Device" />
+        <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/icu-device" />
       </type>
       <mustSupport value="true" />
     </element>

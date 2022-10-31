@@ -23,7 +23,7 @@
         <severity value="error" />
         <human value="Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein" />
         <expression value="coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Ionisiertes-Kalzium-Nierenersatzverfahren" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren" />
       </constraint>
     </element>
     <element id="Observation.code.coding:loinc">

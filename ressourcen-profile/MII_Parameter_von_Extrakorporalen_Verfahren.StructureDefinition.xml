@@ -63,14 +63,14 @@
         <severity value="error" />
         <human value="Either subject XOR encounter exists" />
         <expression value="$this.encounter.exists() xor $this.subject.exists()" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren" />
       </constraint>
       <constraint>
         <key value="vs-de-2" />
         <severity value="error" />
         <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present" />
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Extrakorporalen-Verfahren" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren" />
       </constraint>
     </element>
     <element id="Observation.identifier">
