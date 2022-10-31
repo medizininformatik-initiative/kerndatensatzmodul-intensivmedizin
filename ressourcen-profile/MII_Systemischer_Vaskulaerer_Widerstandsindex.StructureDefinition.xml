@@ -63,7 +63,7 @@
       <path value="Observation.valueQuantity.code" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-dyn-s-cm5-m2" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-dyn-s-cm5-m2" />
       </binding>
     </element>
   </differential>

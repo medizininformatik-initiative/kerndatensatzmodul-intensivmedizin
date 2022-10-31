@@ -56,14 +56,14 @@
         <severity value="error" />
         <human value="Either subject XOR encounter exists" />
         <expression value="$this.encounter.exists() xor $this.subject.exists()" />
-        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
       </constraint>
       <constraint>
         <key value="vs-de-2" />
         <severity value="error" />
         <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present" />
         <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())" />
-        <source value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Parameter-Von-Beatmung" />
       </constraint>
     </element>
     <element id="Observation.identifier">
@@ -137,7 +137,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-SNOMED" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-SNOMED" />
       </binding>
     </element>
     <element id="Observation.code.coding:sct.system">
@@ -163,7 +163,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-LOINC" />
       </binding>
     </element>
     <element id="Observation.code.coding:loinc.system">
@@ -189,7 +189,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-ISO11073" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Code-Observation-Beatmung-ISO11073" />
       </binding>
     </element>
     <element id="Observation.code.coding:IEEE-11073.system">
@@ -283,7 +283,7 @@
       <path value="Observation.bodySite" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Beatmung" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Beatmung" />
       </binding>
     </element>
     <element id="Observation.device">
@@ -291,7 +291,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-Eingestellte-Gemessene-Parameter-Beatmung" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-Eingestellte-Gemessene-Parameter-Beatmung" />
       </type>
       <mustSupport value="true" />
     </element>
