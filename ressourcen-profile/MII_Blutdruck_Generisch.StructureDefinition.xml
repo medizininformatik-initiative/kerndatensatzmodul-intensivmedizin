@@ -76,28 +76,6 @@
       <path value="Observation.code.coding.display" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-detailed">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc-detailed" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-detailed.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-detailed.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-detailed.display">
-      <path value="Observation.code.coding.display" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
