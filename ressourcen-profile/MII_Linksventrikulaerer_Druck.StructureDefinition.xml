@@ -20,7 +20,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
         <code value="150101" />
       </patternCoding>
     </element>
@@ -40,7 +40,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
         <code value="150102" />
       </patternCoding>
     </element>
@@ -60,7 +60,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
         <code value="150103" />
       </patternCoding>
     </element>
