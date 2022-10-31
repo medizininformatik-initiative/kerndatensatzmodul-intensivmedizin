@@ -82,7 +82,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -127,14 +127,14 @@
       <binding>
         <strength value="extensible" />
         <description value="Codes describing anatomical locations. May include laterality. Subset of ValueSet for Monitoring und Vitaldaten." />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Blutdruck" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/BodySite-Observation-Blutdruck" />
       </binding>
     </element>
     <element id="Observation.method">
       <path value="Observation.method" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Method-Observation-Blutdruck" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Method-Observation-Blutdruck" />
       </binding>
     </element>
     <element id="Observation.device">
@@ -208,7 +208,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -343,7 +343,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -462,7 +462,7 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
       </patternCoding>
       <mustSupport value="true" />
     </element>

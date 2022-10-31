@@ -32,7 +32,7 @@
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
       <patternCoding>
-        <system value="urn:std:iso:11073:10101" />
+        <system value="urn:iso:std:iso:11073:10101" />
         <code value="150276" />
       </patternCoding>
     </element>
@@ -51,7 +51,7 @@
       <sliceName value="valueQuantity" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-L-per-minute" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-L-per-minute" />
       </binding>
     </element>
   </differential>

@@ -9,7 +9,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Device" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/device" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device" />
   <derivation value="constraint" />
   <differential>
     <element id="Device.identifier">
