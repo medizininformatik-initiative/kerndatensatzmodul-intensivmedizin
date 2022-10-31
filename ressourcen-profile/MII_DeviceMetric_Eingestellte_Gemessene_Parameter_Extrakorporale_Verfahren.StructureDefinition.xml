@@ -53,7 +53,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://medizininformatik-initiative.de/fhir/modul-icu/ext/StructureDefinition/ICU-Device" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device" />
       </type>
       <mustSupport value="true" />
     </element>
