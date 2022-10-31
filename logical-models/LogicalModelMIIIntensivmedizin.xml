@@ -10,7 +10,7 @@
   <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
-  <type value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin" />
+  <type value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/intensivmedizin" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
   <derivation value="specialization" />
   <differential>
