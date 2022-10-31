@@ -1,0 +1,29 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ValueSet-Category-Procedure-Beatmung-SNOMED",
+    "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Category-Procedure-Beatmung-SNOMED",
+    "version": "1.0",
+    "name": "VS_MII_ICU_Category_Procedure_Beatmung_SNOMED",
+    "title": "VS MII ICU Category Procedure Beatmung [SNOMED]",
+    "status": "active",
+    "experimental": false,
+    "date": "2021-02-02",
+    "publisher": "https://www.medizininformatik-initiative.de",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "40617009",
+                        "display": "Artificial respiration (procedure)"
+                    },
+                    {
+                        "code": "57485005",
+                        "display": "Oxygen therapy (procedure)"
+                    }
+                ]
+            }
+        ]
+    }
+}
