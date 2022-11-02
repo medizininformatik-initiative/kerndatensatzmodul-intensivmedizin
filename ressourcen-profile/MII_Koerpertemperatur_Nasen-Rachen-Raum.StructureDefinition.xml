@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-koerpertemperatur-nasen-rachen-raum" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-nasen-rachen-raum" />
-  <name value="SD_MII_ICU_Koerpertemperatur_Nasen-Rachen-Raum" />
+  <name value="SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum" />
   <title value="SD MII ICU Koerpertemperatur Nasen-Rachen-Raum" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
