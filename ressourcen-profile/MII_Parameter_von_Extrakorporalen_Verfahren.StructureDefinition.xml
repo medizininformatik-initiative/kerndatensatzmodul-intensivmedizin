@@ -86,7 +86,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Extrakorporales-Verfahren" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -305,7 +305,7 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/DeviceMetric-Eingestellte-Gemessene-Parameter-Extrakorporale-Verfahren" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren" />
       </type>
       <mustSupport value="true" />
     </element>
