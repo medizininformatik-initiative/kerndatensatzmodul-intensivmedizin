@@ -28,15 +28,7 @@
         <code value="364075005" />
       </patternCoding>
     </element>
-    <element id="Observation.code.coding:IEEE-11073">
-      <path value="Observation.code.coding" />
-      <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <system value="urn:iso:std:iso:11073:10101" />
-        <code value="147842" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:loinc">
+	<element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
@@ -54,6 +46,14 @@
       <path value="Observation.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:iso:std:iso:11073:10101" />
+        <code value="147842" />
+      </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />

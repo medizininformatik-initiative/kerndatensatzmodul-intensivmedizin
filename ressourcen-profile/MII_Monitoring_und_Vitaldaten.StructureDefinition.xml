@@ -176,9 +176,6 @@
     <element id="Observation.code.coding:sct">
       <path value="Observation.code.coding" />
       <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
@@ -198,9 +195,6 @@
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-      </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
@@ -220,9 +214,6 @@
     <element id="Observation.code.coding:IEEE-11073">
       <path value="Observation.code.coding" />
       <sliceName value="IEEE-11073" />
-      <patternCoding>
-        <system value="urn:iso:std:iso:11073:10101" />
-      </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
