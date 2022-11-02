@@ -158,7 +158,11 @@
           {
             "code": "364424001",
             "display": "Temperature of thoracic spine (observable entity)"
-          }
+          },
+		  {
+			  "code": "8499008",
+			  "display": "Pulse, function (observable entity)"
+		  }
         ]
       }
     ]
