@@ -19,7 +19,9 @@
 	}],
 	"code": {
 		"coding": [{
-			"system": "http://loinc.org"
+                "system": "http://snomed.info/sct",
+                "code": "386534000",
+                "display": "Arterial blood pressure (observable entity)"
 		}]
 	},
 	"subject": {
