@@ -19,6 +19,10 @@
 					"system": "http://snomed.info/sct",
 					"code": "40617009",
 					"display": "Artificial respiration (procedure)"
+				},
+				{
+					"system": "http://hl7.org/fhir/ValueSet/observation-category",
+					"code": "procedure"
 				}
 			]
 		}
