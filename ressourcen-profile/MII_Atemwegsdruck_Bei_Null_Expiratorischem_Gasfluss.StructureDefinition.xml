@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sd-mii-icu-atemwegsdruck-mittlerem-expiratorischem-gasfluss" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-mittlerem-expiratorischem-gasfluss" />
-  <name value="SD_MII_ICU_Atemwegsdruck_Mittlerem_Expiratorischem_Gasfluss" />
-  <title value="SD MII ICU Atemwegsdruck Mittlerem Expiratorischem Gasfluss" />
+  <id value="sd-mii-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-expiratorischem-gasfluss" />
+  <name value="SD_MII_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss" />
+  <title value="SD MII ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -17,7 +17,7 @@
       <sliceName value="loinc" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="20056-8" />
+        <code value="20060-0" />
       </patternCoding>
     </element>
     <element id="Observation.effective[x]">

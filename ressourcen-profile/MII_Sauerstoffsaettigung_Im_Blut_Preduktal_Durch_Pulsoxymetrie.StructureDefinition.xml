@@ -1,31 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sd-mii-icu-beatmungsvolumen-pro-minute-machineller-beatmung" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-machineller-beatmung" />
-  <name value="SD_MII_ICU_Beatmungsvolumen_Pro_Minute_Machineller_Beatmung" />
-  <title value="SD MII ICU Beatmungsvolumen Pro Minute Machineller Beatmung" />
+  <id value="sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-blut-preduktal-durch-pulsoxymetrie" />
+  <name value="SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie" />
+  <title value="SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:sct">
-      <path value="Observation.code.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="250875001" />
-      </patternCoding>
-    </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="76009-0" />
+        <code value="59407-7" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:IEEE-11073">
@@ -33,12 +25,27 @@
       <sliceName value="IEEE-11073" />
       <patternCoding>
         <system value="urn:iso:std:iso:11073:10101" />
-        <code value="152004" />
+        <code value="160296" />
       </patternCoding>
     </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
+    <element id="Observation.code.coding:loinc-fhir-core">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc-fhir-core" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="2708-6" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core.system">
+      <path value="Observation.code.coding.system" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc-fhir-core.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
@@ -47,7 +54,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Observation.value[x]:valueQuantity">
@@ -55,7 +62,7 @@
       <sliceName value="valueQuantity" />
       <patternQuantity>
         <system value="http://unitsofmeasure.org" />
-        <code value="L/min" />
+        <code value="%" />
       </patternQuantity>
     </element>
   </differential>
