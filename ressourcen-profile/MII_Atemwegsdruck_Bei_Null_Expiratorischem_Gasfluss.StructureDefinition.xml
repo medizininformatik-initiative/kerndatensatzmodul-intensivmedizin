@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-expiratorischem-gasfluss" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss" />
   <title value="SD MII ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss" />
   <status value="active" />

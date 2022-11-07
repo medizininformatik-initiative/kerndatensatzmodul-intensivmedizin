@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-blut-preduktal-durch-pulsoxymetrie" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie" />
   <title value="SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie" />
   <status value="active" />

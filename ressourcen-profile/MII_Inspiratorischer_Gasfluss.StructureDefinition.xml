@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-inspiratorischer-gasfluss" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorischer-gasfluss" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Inspiratorischer_Gasfluss" />
   <title value="SD MII ICU Inspiratorischer Gasfluss" />
   <status value="active" />

@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-ionisiertes-kalzium-nierenersatzverfahren" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren" />
   <title value="SD MII ICU Ionisiertes Kalzium Nierenersatzverfahren" />
   <status value="active" />

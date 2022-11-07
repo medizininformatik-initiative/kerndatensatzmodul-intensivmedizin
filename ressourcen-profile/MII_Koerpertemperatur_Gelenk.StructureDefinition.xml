@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-koerpertemperatur-gelenk" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-gelenk" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Koerpertemperatur_Gelenk" />
   <title value="SD MII ICU Koerpertemperatur Gelenk" />
   <status value="active" />

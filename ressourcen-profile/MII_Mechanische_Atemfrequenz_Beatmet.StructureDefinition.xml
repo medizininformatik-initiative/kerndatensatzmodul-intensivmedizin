@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-mechanische-atemfrequenz-beatmet" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mechanische-atemfrequenz-beatmet" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Mechanische_Atemfrequenz_Beatmet" />
   <title value="SD MII ICU Mechanische Atemfrequenz Beatmet" />
   <status value="active" />

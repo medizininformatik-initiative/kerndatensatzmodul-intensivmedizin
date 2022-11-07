@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-icu-koerpergewicht-percentil-altersabhaengig" />
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht-percentil-altersabhaengig" />
+  <version value="1.0.0" />
   <name value="SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig" />
   <title value="SD MII ICU Koerpergewicht Percentil Altersabhaengig" />
   <status value="active" />
