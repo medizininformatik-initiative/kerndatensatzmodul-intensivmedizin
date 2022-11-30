@@ -33,6 +33,162 @@
       </slicing>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.category.coding:hl7-vital-signs">
+      <path value="Observation.category.coding" />
+      <sliceName value="hl7-vital-signs" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="vital-signs" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:hl7-vital-signs.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:hl7-vital-signs.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:hl7-exam">
+      <path value="Observation.category.coding" />
+      <sliceName value="hl7-exam" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="exam" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:hl7-exam.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:hl7-exam.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:kdsicu-category">
+      <path value="Observation.category.coding" />
+      <sliceName value="kdsicu-category" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-bilanzen" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-bilanzen" />
+      </binding>
+    </element>
+    <element id="Observation.category.coding:kdsicu-category.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:kdsicu-category.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct">
+      <path value="Observation.code.coding" />
+      <sliceName value="sct" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/code-observation-bilanzen-snomed" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding:sct.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sct.display">
+      <path value="Observation.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/code-observation-bilanzen-loinc" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding:loinc.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:loinc.display">
+      <path value="Observation.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:IEEE-11073">
+      <path value="Observation.code.coding" />
+      <sliceName value="IEEE-11073" />
+      <patternCoding>
+        <system value="urn:iso:std:iso:11073:10101" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/code-observation-bilanzen-iso11073" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding:IEEE-11073.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:IEEE-11073.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.component.referenceRange">
       <path value="Observation.component.referenceRange" />
       <contentReference value="http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange" />
