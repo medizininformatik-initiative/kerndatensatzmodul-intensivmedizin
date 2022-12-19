@@ -1,0 +1,11 @@
+{
+  "name": "ressourcenprofile",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "de.basisprofil.r4": "1.4.0"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}
