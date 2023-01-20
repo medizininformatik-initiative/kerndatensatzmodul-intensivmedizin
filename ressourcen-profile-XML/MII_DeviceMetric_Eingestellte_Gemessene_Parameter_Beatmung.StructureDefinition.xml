@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sd-mii-icu-dm-eingestellte-gemessene-parameter-beatmung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung" />
+  <version value="1.0.0" />
+  <name value="SD_MII_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung" />
+  <title value="SD MII ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DeviceMetric" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DeviceMetric.type">
+      <path value="DeviceMetric.type" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/Category-Procedure-Beatmung-SNOMED" />
+      </binding>
+    </element>
+    <element id="DeviceMetric.type.coding">
+      <path value="DeviceMetric.type.coding" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.type.coding.system">
+      <path value="DeviceMetric.type.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.type.coding.code">
+      <path value="DeviceMetric.type.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.source">
+      <path value="DeviceMetric.source" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DeviceMetric.category">
+      <path value="DeviceMetric.category" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
