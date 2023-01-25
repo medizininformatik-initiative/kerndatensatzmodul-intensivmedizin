@@ -1,1 +1,36 @@
-{"resourceType":"StructureDefinition","id":"sd-mii-icu-arterieller-druck","url":"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck","version":"1.0.0","name":"SD_MII_ICU_Arterieller_Druck","title":"SD MII ICU Arterieller Druck","status":"active","fhirVersion":"4.0.1","kind":"resource","abstract":false,"type":"Observation","baseDefinition":"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren","derivation":"constraint","differential":{"element":[{"id":"Observation.code.coding:sct","path":"Observation.code.coding","sliceName":"sct","patternCoding":{"system":"http://snomed.info/sct","code":"386534000"}},{"id":"Observation.value[x]","path":"Observation.value[x]","patternQuantity":{"system":"http://unitsofmeasure.org","code":"mm[Hg]"}}]}}
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-arterieller-druck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck",
+  "version": "1.0.0",
+  "name": "SD_MII_ICU_Arterieller_Druck",
+  "title": "SD MII ICU Arterieller Druck",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "386534000"
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    ]
+  }
+}

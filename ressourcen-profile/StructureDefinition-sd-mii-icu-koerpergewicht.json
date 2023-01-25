@@ -1,1 +1,247 @@
-{"resourceType":"StructureDefinition","id":"sd-mii-icu-koerpergewicht","url":"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht","version":"1.0.0","name":"SD_MII_ICU_Koerpergewicht","title":"SD MII ICU Koerpergewicht","status":"active","fhirVersion":"4.0.1","mapping":[{"identity":"workflow","uri":"http://hl7.org/fhir/workflow","name":"Workflow Pattern"},{"identity":"sct-concept","uri":"http://snomed.info/conceptdomain","name":"SNOMED CT Concept Domain Binding"},{"identity":"v2","uri":"http://hl7.org/v2","name":"HL7 v2 Mapping"},{"identity":"rim","uri":"http://hl7.org/v3","name":"RIM Mapping"},{"identity":"w5","uri":"http://hl7.org/fhir/fivews","name":"FiveWs Pattern Mapping"},{"identity":"sct-attr","uri":"http://snomed.org/attributebinding","name":"SNOMED CT Attribute Binding"}],"kind":"resource","abstract":false,"type":"Observation","baseDefinition":"http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht","derivation":"constraint","differential":{"element":[{"id":"Observation.status","path":"Observation.status","mustSupport":true},{"id":"Observation.category","path":"Observation.category","mustSupport":true},{"id":"Observation.category:vs-cat","path":"Observation.category","sliceName":"vs-cat","mustSupport":true},{"id":"Observation.category:vs-cat.coding","path":"Observation.category.coding","min":1,"max":"1","mustSupport":true},{"id":"Observation.category:vs-cat.coding.system","path":"Observation.category.coding.system","min":1,"mustSupport":true},{"id":"Observation.category:vs-cat.coding.code","path":"Observation.category.coding.code","min":1,"mustSupport":true},{"id":"Observation.category:sct","path":"Observation.category","sliceName":"sct","patternCodeableConcept":{"coding":[{"system":"http://snomed.info/sct","code":"248326004"}]}},{"id":"Observation.category:sct.coding","path":"Observation.category.coding","mustSupport":true},{"id":"Observation.category:sct.coding.system","path":"Observation.category.coding.system","min":1,"mustSupport":true},{"id":"Observation.category:sct.coding.code","path":"Observation.category.coding.code","min":1,"mustSupport":true},{"id":"Observation.code","path":"Observation.code","mustSupport":true},{"id":"Observation.code.coding","path":"Observation.code.coding","mustSupport":true},{"id":"Observation.code.coding:loinc","path":"Observation.code.coding","sliceName":"loinc","patternCoding":{"system":"http://loinc.org","code":"29463-7"},"mustSupport":true},{"id":"Observation.code.coding:sct","path":"Observation.code.coding","sliceName":"sct","patternCoding":{"system":"http://snomed.info/sct","code":"27113001"},"mustSupport":true},{"id":"Observation.code.coding:sct.system","path":"Observation.code.coding.system","min":1,"mustSupport":true},{"id":"Observation.code.coding:sct.code","path":"Observation.code.coding.code","min":1,"mustSupport":true},{"id":"Observation.subject","path":"Observation.subject","type":[{"code":"Reference","targetProfile":["http://hl7.org/fhir/StructureDefinition/Patient"]}],"mustSupport":true},{"id":"Observation.effective[x]","path":"Observation.effective[x]","type":[{"code":"dateTime"},{"code":"Period"}],"mustSupport":true},{"id":"Observation.effective[x]:effectiveDateTime","path":"Observation.effective[x]","sliceName":"effectiveDateTime","mustSupport":true},{"id":"Observation.value[x]","path":"Observation.value[x]","mustSupport":true},{"id":"Observation.value[x]:valueQuantity","path":"Observation.value[x]","sliceName":"valueQuantity","patternQuantity":{"system":"http://unitsofmeasure.org","code":"kg"},"mustSupport":true},{"id":"Observation.value[x]:valueQuantity.value","path":"Observation.value[x].value","mustSupport":true},{"id":"Observation.value[x]:valueQuantity.unit","path":"Observation.value[x].unit","mustSupport":true},{"id":"Observation.value[x]:valueQuantity.system","path":"Observation.value[x].system","mustSupport":true},{"id":"Observation.value[x]:valueQuantity.code","path":"Observation.value[x].code","mustSupport":true},{"id":"Observation.dataAbsentReason","path":"Observation.dataAbsentReason","constraint":[{"key":"mii-icu-1","severity":"error","human":"If there is no Observation.value, a dataAbsentReason must be given.","expression":"value.exists().not() implies dataAbsentReason.exists()","source":"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht"}]},{"id":"Observation.component","path":"Observation.component","mustSupport":true},{"id":"Observation.component.value[x]","path":"Observation.component.value[x]"}]}}
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-koerpergewicht",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht",
+  "version": "1.0.0",
+  "name": "SD_MII_ICU_Koerpergewicht",
+  "title": "SD MII ICU Koerpergewicht",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:vs-cat",
+        "path": "Observation.category",
+        "sliceName": "vs-cat",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:vs-cat.coding",
+        "path": "Observation.category.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:vs-cat.coding.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:vs-cat.coding.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:sct",
+        "path": "Observation.category",
+        "sliceName": "sct",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248326004"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.category:sct.coding",
+        "path": "Observation.category.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:sct.coding.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:sct.coding.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "29463-7"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "27113001"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]:effectiveDateTime",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "constraint": [
+          {
+            "key": "mii-icu-1",
+            "severity": "error",
+            "human": "If there is no Observation.value, a dataAbsentReason must be given.",
+            "expression": "value.exists().not() implies dataAbsentReason.exists()",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]"
+      }
+    ]
+  }
+}
