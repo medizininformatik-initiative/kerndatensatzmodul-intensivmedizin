@@ -63,20 +63,6 @@
       {
         "id": "Observation.category.coding:hl7-category.code",
         "path": "Observation.category.coding.code",
-        "code": [
-          {
-            "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
-            "code": "vital-signs"
-          },
-          {
-            "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
-            "code": "therapy"
-          },
-          {
-            "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
-            "code": "exam"
-          }
-        ],
         "min": 1,
         "mustSupport": true
       },
@@ -108,24 +94,24 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:fixedCategoryBilanzen",
+        "id": "Observation.category.coding:fixedCategoryBilanz",
         "path": "Observation.category.coding",
-        "sliceName": "fixedCategoryBilanzen",
+        "sliceName": "fixedCategoryBilanz",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "https://www.medizininformatik-initiative.de/fhir/category-bilanzen-default",
-          "code": "Bilanzen"
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-bilanz-fixed",
+          "code": "Bilanz"
         }
       },
       {
-        "id": "Observation.category.coding:fixedCategoryBilanzen.system",
+        "id": "Observation.category.coding:fixedCategoryBilanz.system",
         "path": "Observation.category.coding.system",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:fixedCategoryBilanzen.code",
+        "id": "Observation.category.coding:fixedCategoryBilanz.code",
         "path": "Observation.category.coding.code",
         "min": 1,
         "mustSupport": true
@@ -315,6 +301,16 @@
       {
         "id": "Observation.method",
         "path": "Observation.method",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
         "mustSupport": true
       },
       {
