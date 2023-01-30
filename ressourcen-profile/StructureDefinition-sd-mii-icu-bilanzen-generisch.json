@@ -44,6 +44,9 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "max": "1",
+        "patternCoding": {
+          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -60,6 +63,20 @@
       {
         "id": "Observation.category.coding:hl7-category.code",
         "path": "Observation.category.coding.code",
+        "code": [
+          {
+            "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+            "code": "vital-signs"
+          },
+          {
+            "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+            "code": "therapy"
+          },
+          {
+            "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+            "code": "exam"
+          }
+        ],
         "min": 1,
         "mustSupport": true
       },
@@ -91,9 +108,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:fixedCategory",
+        "id": "Observation.category.coding:fixedCategoryBilanzen",
         "path": "Observation.category.coding",
-        "sliceName": "fixedCategory",
+        "sliceName": "fixedCategoryBilanzen",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -102,13 +119,13 @@
         }
       },
       {
-        "id": "Observation.category.coding:fixedCategory.system",
+        "id": "Observation.category.coding:fixedCategoryBilanzen.system",
         "path": "Observation.category.coding.system",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:fixedCategory.code",
+        "id": "Observation.category.coding:fixedCategoryBilanzen.code",
         "path": "Observation.category.coding.code",
         "min": 1,
         "mustSupport": true
@@ -304,11 +321,6 @@
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
         "mustSupport": true
-      },
-      {
-        "id": "Observation.component.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
       }
     ]
   }
