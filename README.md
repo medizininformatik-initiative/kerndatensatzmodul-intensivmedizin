@@ -23,6 +23,5 @@ Leitung des Moduls:
 Technische Umsetzung:
 
 * Christoph Müller
-* Berke Enes Dincel
+* Tim Steinbach
 * Alexander Zautke
-* Lily Wissing

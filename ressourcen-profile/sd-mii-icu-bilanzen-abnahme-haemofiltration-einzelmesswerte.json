@@ -1,0 +1,50 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-bilanzen-abnahme-haemofiltration-einzelmesswerte",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-abnahme-haemofiltration-einzelmesswerte",
+  "name": "SD_MII_ICU_Bilanzen_Abnahme_Haemofiltration-Einzelmesswerte",
+  "title": "SD MII ICU Bilanzen Abnahme Haemofiltration Einzelmesswerte",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category.coding:hl7-category",
+        "path": "Observation.category.coding",
+        "sliceName": "hl7-category",
+        "patternCoding": {
+          "code": "vital-sign"
+        }
+      },
+      {
+        "id": "Observation.category.coding:kdsicu-category",
+        "path": "Observation.category.coding",
+        "sliceName": "kdsicu-category",
+        "patternCoding": {
+          "code": "364396009"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "251850009"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "99741-1"
+        }
+      }
+    ]
+  }
+}

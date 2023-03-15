@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-bilanzen-gesamte-tages-bilanz",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-gesamte-tages-bilanz",
+  "name": "SD_MII_ICU_Bilanzen_Gesamte_Tages_Bilanz",
+  "title": "SD MII ICU Bilanzen Gesamte Tages Bilanz",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category.coding:hl7-category",
+        "path": "Observation.category.coding",
+        "sliceName": "hl7-category",
+        "patternCoding": {
+          "code": "vital-sign"
+        }
+      },
+      {
+        "id": "Observation.category.coding:kdsicu-category",
+        "path": "Observation.category.coding",
+        "sliceName": "kdsicu-category",
+        "patternCoding": {
+          "code": "364396009"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "251856003"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "9097-7"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "code": "26684"
+        }
+      }
+    ]
+  }
+}
