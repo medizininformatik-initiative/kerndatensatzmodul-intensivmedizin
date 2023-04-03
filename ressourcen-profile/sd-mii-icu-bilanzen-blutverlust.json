@@ -18,7 +18,7 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "exam"
+          "code": "vital-sign"
         }
       },
       {
@@ -27,7 +27,7 @@
         "sliceName": "kdsicu-category",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "251845003"
+          "code": "250771004"
         }
       },
       {
@@ -35,7 +35,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251845003"
+          "code": "250771004"
         }
       },
       {
@@ -43,7 +43,7 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "9203-1"
+          "code": "81661-1"
         }
       }
     ]
