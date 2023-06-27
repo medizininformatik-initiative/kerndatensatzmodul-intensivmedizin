@@ -69,10 +69,6 @@
         "min": 1
       },
       {
-        "id": "Procedure.category.coding",
-        "path": "Procedure.category.coding"
-      },
-      {
         "id": "Procedure.category.coding:sct",
         "path": "Procedure.category.coding",
         "sliceName": "sct",
@@ -87,8 +83,12 @@
         "mustSupport": true
       },
       {
-        "id": "Procedure.code.coding",
-        "path": "Procedure.code.coding"
+        "id": "Procedure.code.coding:ops",
+        "path": "Procedure.code.coding",
+        "sliceName": "ops",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/ops"
+        }
       },
       {
         "id": "Procedure.code.coding:sct",
