@@ -1,6 +1,6 @@
 ## Beschreibung Modul
 
-{{render:medizininformatikinitiative-modul-intensivmedizin/beschreibungdesmodul}}
+{{render:Image/Beschreibung_des_Modul.PNG}}
 
 Das Erweiterungsmodul Intensivmedizin spezifiziert akutmedizinische Daten für primär- und sekundär Nutzung. 
 
