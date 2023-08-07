@@ -1,5 +1,9 @@
 # Kerndatensatz Erweiterungsmodul Intensivmedizin
 
+| Hinweis | Under Construction! |
+|---------|---------------------|
+| {{render:Warning}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Intensivmedizin' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der TMF EV](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Intensivmedizin/IGMIIKDSModulICU.html).|
+
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls 'Intensivmedizin' der Medieninformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer Form beschrieben.
 
 | Veröffentlichung |            |
