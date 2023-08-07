@@ -1,6 +1,6 @@
 # Kerndatensatz Erweiterungsmodul Intensivmedizin
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls 'Intensivmedizin' der Medizinformatik-Initative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer Form beschrieben.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls 'Intensivmedizin' der Medieninformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer Form beschrieben.
 
 | Veröffentlichung |            |
 |:----------------:|:----------:|
