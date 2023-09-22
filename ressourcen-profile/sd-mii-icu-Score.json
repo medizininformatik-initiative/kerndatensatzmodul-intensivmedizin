@@ -1,7 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score",
-  "name": "Score",
+  "id": "sd-mii-icu-score-generisch",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-generisch",
+  "name": "SD_MII_ICU_Score_Generisch",
+  "title": "SD MII ICU Score Generisch",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -182,6 +184,9 @@
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
         "mustSupport": true
