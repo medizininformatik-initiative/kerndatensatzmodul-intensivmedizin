@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-mii-icu-unit-equivalent-ucum-l-per-minute",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-L-per-minute",
+  "version": "1.0.0",
+  "name": "VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute",
+  "title": "VS MII ICU Unit equivalent UCUM L per minute",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-03-31",
+  "publisher": "https://www.medizininformatik-initiative.de",
+  "description": "Dieses ValueSet enth\u00e4lt \u00e4quivalente Codes für Liter pro Minute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "L/min"
+          },
+          {
+            "code": "l/min"
+          }
+        ]
+      }
+    ]
+  }
+}
