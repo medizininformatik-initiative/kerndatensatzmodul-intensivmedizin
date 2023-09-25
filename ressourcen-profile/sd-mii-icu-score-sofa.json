@@ -159,6 +159,576 @@
         "path": "Observation.component.interpretation.coding.display",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber",
+        "path": "Observation.component",
+        "sliceName": "Leber",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation.coding:Kategorie",
+        "path": "Observation.component.interpretation.coding",
+        "sliceName": "Kategorie",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-leber"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-leber"
+        }
+      },
+      {
+        "id": "Observation.component:Leber.interpretation.coding:Kategorie.system",
+        "path": "Observation.component.interpretation.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation.coding:Kategorie.code",
+        "path": "Observation.component.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation.coding:Kategorie.display",
+        "path": "Observation.component.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere",
+        "path": "Observation.component",
+        "sliceName": "Niere",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation.coding:Kategorie",
+        "path": "Observation.component.interpretation.coding",
+        "sliceName": "Kategorie",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-niere"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-niere"
+        }
+      },
+      {
+        "id": "Observation.component:Niere.interpretation.coding:Kategorie.system",
+        "path": "Observation.component.interpretation.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation.coding:Kategorie.code",
+        "path": "Observation.component.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation.coding:Kategorie.display",
+        "path": "Observation.component.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem",
+        "path": "Observation.component",
+        "sliceName": "Nervensystem",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation.coding:Kategorie",
+        "path": "Observation.component.interpretation.coding",
+        "sliceName": "Kategorie",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-nervensystem"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-nervensystem"
+        }
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation.coding:Kategorie.system",
+        "path": "Observation.component.interpretation.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation.coding:Kategorie.code",
+        "path": "Observation.component.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation.coding:Kategorie.display",
+        "path": "Observation.component.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung",
+        "path": "Observation.component",
+        "sliceName": "Gerinnung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation.coding:Kategorie",
+        "path": "Observation.component.interpretation.coding",
+        "sliceName": "Kategorie",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-gerinnung"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-gerinnung"
+        }
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation.coding:Kategorie.system",
+        "path": "Observation.component.interpretation.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation.coding:Kategorie.code",
+        "path": "Observation.component.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation.coding:Kategorie.display",
+        "path": "Observation.component.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System",
+        "path": "Observation.component",
+        "sliceName": "Herz-Kreislauf-System",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation.coding:Kategorie",
+        "path": "Observation.component.interpretation.coding",
+        "sliceName": "Kategorie",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-herz-kreislauf-system"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-herz-kreislauf-system"
+        }
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation.coding:Kategorie.system",
+        "path": "Observation.component.interpretation.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation.coding:Kategorie.code",
+        "path": "Observation.component.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation.coding:Kategorie.display",
+        "path": "Observation.component.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }
