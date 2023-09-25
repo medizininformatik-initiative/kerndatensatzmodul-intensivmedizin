@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanzen-ausfuhr-drainage-op",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-ausfuhr-drainage-op",
-  "name": "SD_MII_ICU_Bilanzen_Ausfuhr_Drainage_OP",
-  "title": "SD MII ICU Bilanzen Ausfuhr Drainage OP",
+  "id": "sd-mii-icu-bilanz-summe-ausfuhr-urin",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-summe-ausfuhr-urin",
+  "name": "SD_MII_ICU_Bilanz_Summe-Ausfuhr-Urin",
+  "title": "SD MII ICU Bilanz Summe Ausfuhr Urin",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-generisch",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -18,7 +18,7 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "exam"
+          "code": "vital-sign"
         }
       },
       {
@@ -26,7 +26,6 @@
         "path": "Observation.category.coding",
         "sliceName": "kdsicu-category",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "code": "364396009"
         }
       },
@@ -35,7 +34,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251844004"
+          "code": "364202003"
         }
       },
       {
@@ -43,7 +42,15 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "9203-1"
+          "code": "9187-6"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "code": "26672"
         }
       }
     ]

@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanzen-ausfuhr-magensonde",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-ausfuhr-magensonde",
-  "name": "SD_MII_ICU_Bilanzen_Ausfuhr_Magensonde",
-  "title": "SD MII ICU Bilanzen Ausfuhr Magensonde",
+  "id": "sd-mii-icu-bilanz-ausfuhr-drainage-wund",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-wund",
+  "name": "SD_MII_ICU_Bilanz_Ausfuhr_Drainage_Wund",
+  "title": "SD MII ICU Bilanz Ausfuhr Drainage Wund",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-generisch",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -26,7 +26,8 @@
         "path": "Observation.category.coding",
         "sliceName": "kdsicu-category",
         "patternCoding": {
-          "code": "364396009"
+          "system": "http://snomed.info/sct",
+          "code": "251845003"
         }
       },
       {
@@ -34,7 +35,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251848001"
+          "code": "251845003"
         }
       },
       {
@@ -42,7 +43,7 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "79561-7"
+          "code": "9203-1"
         }
       }
     ]

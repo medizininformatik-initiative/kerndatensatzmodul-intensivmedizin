@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanzen-gesamte-ausfuhr",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-gesamte-ausfuhr",
-  "name": "SD_MII_ICU_Bilanzen_Gesamte_Ausfuhr",
-  "title": "SD MII ICU Bilanzen Gesamte Ausfuhr",
+  "id": "sd-mii-icu-bilanz-ausfuhr-stuhlgang",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-stuhlgang",
+  "name": "SD_MII_ICU_Bilanz_Ausfuhr_Stuhlgang",
+  "title": "SD MII ICU Bilanz Ausfuhr Stuhlgang",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-generisch",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -34,7 +34,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251841007"
+          "code": "251849009"
         }
       },
       {
@@ -42,7 +42,7 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "9257-7"
+          "code": "9167-8"
         }
       }
     ]

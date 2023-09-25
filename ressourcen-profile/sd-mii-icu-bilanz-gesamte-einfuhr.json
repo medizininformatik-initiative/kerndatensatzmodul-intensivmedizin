@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanzen-ausfuhr-drainage",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-ausfuhr-drainage",
-  "name": "SD_MII_ICU_Bilanzen_Ausfuhr_Drainage",
-  "title": "SD MII ICU Bilanzen Ausfuhr Drainage",
+  "id": "sd-mii-icu-bilanz-gesamte-einfuhr",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz_gesamte_einfuhr",
+  "name": "SD_MII_ICU_Bilanz_Gesamte_Einfuhr",
+  "title": "SD MII ICU Bilanz Gesamte Einfuhr",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanzen-generisch",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-generisch",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -18,7 +18,7 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "vital-sign"
+          "code": "therapy"
         }
       },
       {
@@ -26,8 +26,7 @@
         "path": "Observation.category.coding",
         "sliceName": "kdsicu-category",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "251847006"
+          "code": "364396009"
         }
       },
       {
@@ -35,7 +34,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251847006"
+          "code": "1179057001"
         }
       },
       {
@@ -43,7 +42,7 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "9257-7"
+          "code": "9103-3"
         }
       }
     ]
