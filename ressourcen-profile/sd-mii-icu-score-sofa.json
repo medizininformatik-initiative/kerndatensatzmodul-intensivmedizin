@@ -194,7 +194,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "code": "96825-5"
         },
         "mustSupport": true
       },
@@ -308,7 +309,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "code": "96828-9"
         },
         "mustSupport": true
       },
@@ -422,7 +424,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "code": "96827-1"
         },
         "mustSupport": true
       },
@@ -536,7 +539,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "code": "96824-8"
         },
         "mustSupport": true
       },
@@ -650,7 +654,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "code": "96826-3"
         },
         "mustSupport": true
       },
