@@ -50,10 +50,13 @@
         "id": "Observation.category.coding:hl7-survey",
         "path": "Observation.category.coding",
         "sliceName": "hl7-survey",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "survey"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.category.coding:hl7-survey.system",
@@ -95,6 +98,18 @@
       {
         "id": "Observation.category.coding:fixedCategoryScore.display",
         "path": "Observation.category.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:sct",
+        "path": "Observation.category.coding",
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "273249006"
+        },
         "mustSupport": true
       },
       {
@@ -189,6 +204,12 @@
             "code": "Period"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "min": 1,
         "mustSupport": true
       },
       {
