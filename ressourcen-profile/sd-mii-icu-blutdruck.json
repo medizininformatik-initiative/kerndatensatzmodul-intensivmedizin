@@ -47,12 +47,22 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        }
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
       },
       {
         "id": "Observation.component",
@@ -69,7 +79,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "code": "271649006"
         }
       },
@@ -78,7 +87,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150017"
         }
       },
@@ -92,7 +100,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "code": "271650006"
         }
       },
@@ -101,7 +108,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150018"
         }
       },
@@ -115,7 +121,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "code": "6797001"
         }
       },
@@ -124,7 +129,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150019"
         }
       }
