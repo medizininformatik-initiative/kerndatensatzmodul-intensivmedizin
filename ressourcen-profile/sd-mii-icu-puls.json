@@ -15,18 +15,36 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "8499008"
         }
       },
       {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "max": "0",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        }
+      },
+      {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
           "code": "149514"

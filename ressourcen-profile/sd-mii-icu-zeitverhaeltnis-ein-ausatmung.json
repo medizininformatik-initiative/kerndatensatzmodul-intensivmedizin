@@ -15,11 +15,17 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 3
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "code": "250822000"
         }
       },
@@ -27,8 +33,9 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org",
           "code": "75931-6"
         }
       },
@@ -36,8 +43,9 @@
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "151832"
         }
       },
@@ -47,36 +55,31 @@
         "min": 1
       },
       {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.valueQuantity",
-        "sliceName": "valueQuantity",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "{ratio}"
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
         }
       },
       {
-        "id": "Observation.value[x]:valueQuantity.value",
-        "path": "Observation.valueQuantity.value",
-        "min": 1,
-        "mustSupport": true
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity"
       },
       {
-        "id": "Observation.value[x]:valueQuantity.unit",
-        "path": "Observation.valueQuantity.unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.system",
-        "path": "Observation.valueQuantity.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
-        "min": 1,
-        "mustSupport": true
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "code": "{ratio}"
+        }
       }
     ]
   }

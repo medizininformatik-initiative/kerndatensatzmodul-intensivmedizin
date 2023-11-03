@@ -15,19 +15,22 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.category",
-        "path": "Observation.category"
-      },
-      {
         "id": "Observation.category:vs-cat",
         "path": "Observation.category",
         "sliceName": "vs-cat",
         "min": 1
       },
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 3
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "364075005"
@@ -37,28 +40,19 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
           "code": "8867-4"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
           "code": "147842"
@@ -68,7 +62,6 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
           "code": "/min"
         }
       },

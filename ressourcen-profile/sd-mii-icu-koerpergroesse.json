@@ -263,10 +263,6 @@
         "id": "Observation.referenceRange",
         "path": "Observation.referenceRange",
         "mustSupport": false
-      },
-      {
-        "id": "Observation.component.value[x]",
-        "path": "Observation.component.value[x]"
       }
     ]
   }

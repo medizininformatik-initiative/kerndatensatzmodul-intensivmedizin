@@ -15,13 +15,25 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "code": "276762004"
         }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
       },
       {
         "id": "Observation.component:SystolicBP",
@@ -33,7 +45,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150065"
         }
       },
@@ -56,7 +67,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150066"
         }
       },
@@ -79,7 +89,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150067"
         }
       },

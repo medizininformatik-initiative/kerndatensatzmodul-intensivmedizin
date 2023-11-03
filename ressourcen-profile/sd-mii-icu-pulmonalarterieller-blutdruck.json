@@ -15,6 +15,24 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
+      },
+      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
@@ -32,7 +50,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150045"
         }
       },
@@ -55,7 +72,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150046"
         }
       },
@@ -78,7 +94,6 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "150047"
         }
       },

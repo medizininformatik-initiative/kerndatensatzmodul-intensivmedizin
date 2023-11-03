@@ -27,19 +27,38 @@
             "key": "obs-loinc-sct",
             "severity": "error",
             "human": "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein",
-            "expression": "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren"
+            "expression": "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()"
           }
         ]
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "max": "0"
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org",
           "code": "83064-6"
         }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
       },
       {
         "id": "Observation.effective[x]",
@@ -50,7 +69,6 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
           "code": "mmol/L"
         }
       }
