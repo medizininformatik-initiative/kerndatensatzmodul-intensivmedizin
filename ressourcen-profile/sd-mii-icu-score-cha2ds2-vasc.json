@@ -366,6 +366,55 @@
           ],
           "rules": "open"
         },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Diabetes.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "33248-6"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Diabetes.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Diabetes.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Diabetes.code.coding:snomed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "73211009"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Diabetes.code.coding:snomed.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Diabetes.code.coding:snomed.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -449,7 +498,7 @@
           }
         ],
         "minValueInteger": 0,
-        "maxValueInteger": 1,
+        "maxValueInteger": 2,
         "mustSupport": true
       },
       {
