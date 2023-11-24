@@ -1,0 +1,468 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-score-apgar-5-min",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-apgar-5-min",
+  "name": "SD_MII_ICU_Score_Apgar_5_Min",
+  "title": "SD MII ICU Score SOFA",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "1187491009"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "96790-1"
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe",
+        "path": "Observation.component",
+        "sliceName": "Hautfarbe",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "32411-1"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding:snomed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249227004"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding:snomed.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.code.coding:snomed.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Hautfarbe.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet",
+        "path": "Observation.component",
+        "sliceName": "Herzaktivitaet",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding:snomed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249223000"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding:snomed.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding:snomed.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "32412-9"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herzaktivitaet.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe",
+        "path": "Observation.component",
+        "sliceName": "Absaugreflexe",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "32414-5"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding:snomed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249226008"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding:snomed.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code.coding:snomed.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus",
+        "path": "Observation.component",
+        "sliceName": "Muskeltonus",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "32413-7"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding:snomed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249225007"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding:snomed.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.code.coding:snomed.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Muskeltonus.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung",
+        "path": "Observation.component",
+        "sliceName": "Atmung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "32415-2"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:snomed",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "249224006"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:snomed.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:snomed.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 2,
+        "mustSupport": true
+      }
+    ]
+  }
+}
