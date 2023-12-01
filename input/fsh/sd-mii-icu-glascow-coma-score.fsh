@@ -71,3 +71,23 @@ Title: "SD MII ICU Glascow Coma Score"
 * component[motor].value[x] only integer
 * component[motor].value[x] ^minValueInteger = 1
 * component[motor].value[x] ^maxValueInteger = 6
+
+Instance: Instance-of-glascow-coma-score
+InstanceOf: SD_MII_ICU_Glascow_Coma_Score
+Usage: #example
+* status = #final
+* code.coding[sct] = $sct#248241002
+* code.coding[loinc] = $loinc#9269-2
+* subject = Reference(Patient/example)
+* effectiveDateTime = "2023-12-01"
+* issued = "2023-12-01T17:00:00.000+01:00"
+* component[eye].code.coding[loinc] = $loinc#9267-6
+* component[eye].code.coding[snomed] = $sct#281395000
+* component[eye].valueInteger = 2
+* component[verbal].code.coding[loinc] = $loinc#9270-0
+* component[verbal].code.coding[snomed] = $sct#281397008
+* component[verbal].valueInteger = 3
+* component[motor].code.coding[loinc] = $loinc#9268-4
+* component[motor].code.coding[snomed] = $sct#281396004
+* component[motor].valueInteger = 4
+* valueQuantity =  9 $ucum#{score}
