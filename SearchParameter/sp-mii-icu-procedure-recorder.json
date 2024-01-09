@@ -23,6 +23,6 @@
     "base":  [
         "Procedure"
     ],
-    "type": "token",
+    "type": "reference",
     "expression": "Procedure.recorder"
 }

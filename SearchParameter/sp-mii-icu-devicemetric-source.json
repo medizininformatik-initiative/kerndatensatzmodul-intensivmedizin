@@ -23,6 +23,6 @@
     "base":  [
         "DeviceMetric"
     ],
-    "type": "token",
+    "type": "reference",
     "expression": "DeviceMetric.source"
 }

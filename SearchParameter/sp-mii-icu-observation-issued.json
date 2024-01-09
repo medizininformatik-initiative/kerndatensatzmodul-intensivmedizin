@@ -23,6 +23,6 @@
     "base":  [
         "Observation"
     ],
-    "type": "token",
+    "type": "date",
     "expression": "Observation.issued"
 }
