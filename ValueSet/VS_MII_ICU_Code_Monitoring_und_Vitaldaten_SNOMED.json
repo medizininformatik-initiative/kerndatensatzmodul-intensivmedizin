@@ -160,8 +160,12 @@
             "display": "Temperature of thoracic spine (observable entity)"
           },
 		  {
-			  "code": "8499008",
-			  "display": "Pulse, function (observable entity)"
+			"code": "8499008",
+			"display": "Pulse, function (observable entity)"
+		  },
+		  {
+			"code": "442476006",
+			"display": "Arterial oxygen saturation (observable entity)"
 		  }
         ]
       }
