@@ -158,6 +158,18 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding:sct.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "type": [
