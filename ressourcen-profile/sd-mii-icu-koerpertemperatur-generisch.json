@@ -37,28 +37,6 @@
         "patternCoding": {
           "system": "urn:std:iso:11073:10101"
         }
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc-fhir-core",
-        "patternCoding": {
-          "system": "http://loinc.org",
-          "code": "8310-5"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
       }
     ]
   }
