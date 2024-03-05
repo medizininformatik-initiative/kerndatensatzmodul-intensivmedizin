@@ -54,8 +54,14 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
+          "unit": "milliliter per square meter",
           "code": "mL/m2"
         }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
       }
     ]
   }

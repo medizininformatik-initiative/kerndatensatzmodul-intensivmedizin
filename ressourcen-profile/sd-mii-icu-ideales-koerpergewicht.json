@@ -56,7 +56,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "type",
+              "type": "pattern",
               "path": "$this"
             }
           ],
@@ -67,15 +67,16 @@
       {
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity"
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
+          "unit": "kilogram",
           "code": "kg"
         }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
       }
     ]
   }

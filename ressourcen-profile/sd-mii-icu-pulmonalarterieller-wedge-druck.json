@@ -70,8 +70,14 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
+          "unit": "millimeter Mercury column",
           "code": "mm[Hg]"
         }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
       }
     ]
   }

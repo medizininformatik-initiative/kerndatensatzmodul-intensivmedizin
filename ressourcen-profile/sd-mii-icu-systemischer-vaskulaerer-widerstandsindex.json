@@ -58,20 +58,25 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "type",
+              "type": "pattern",
               "path": "$this"
             }
           ],
           "rules": "open"
-        },
-        "patternQuantity": {
-          "code": "dyn.s/(cm5.m2)"
         }
       },
       {
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity"
+        "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "unit": "dyne second per centimeter5 and square meter"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
       },
       {
         "id": "Observation.value[x]:valueQuantity.code",
