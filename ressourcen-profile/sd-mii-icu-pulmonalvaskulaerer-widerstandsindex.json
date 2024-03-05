@@ -68,7 +68,23 @@
       {
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity"
+        "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "unit": "dyne second per centimeter5 and square meter"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-dyn-s-cm5-m2"
+        }
       }
     ]
   }

@@ -93,7 +93,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "386534000"
+          "code": "364090009"
         },
         "mustSupport": true
       },
@@ -189,6 +189,15 @@
         "sliceName": "SystolicBP",
         "min": 1,
         "max": "1",
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no a value a data absent reason must be present",
+            "expression": "value.exists() or dataAbsentReason.exists()",
+            "source": "http://fhir.de/StructureDefinition/observation-de-vitalsign"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -308,6 +317,15 @@
         "sliceName": "DiastolicBP",
         "min": 1,
         "max": "1",
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no a value a data absent reason must be present",
+            "expression": "value.exists() or dataAbsentReason.exists()",
+            "source": "http://fhir.de/StructureDefinition/observation-de-vitalsign"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -426,6 +444,15 @@
         "path": "Observation.component",
         "sliceName": "meanBP",
         "max": "1",
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no a value a data absent reason must be present",
+            "expression": "value.exists() or dataAbsentReason.exists()",
+            "source": "http://fhir.de/StructureDefinition/observation-de-vitalsign"
+          }
+        ],
         "mustSupport": true
       },
       {
