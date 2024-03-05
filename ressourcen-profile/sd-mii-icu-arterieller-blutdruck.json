@@ -132,11 +132,13 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "max": "0",
         "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
+        "max": "0",
         "mustSupport": true
       },
       {
