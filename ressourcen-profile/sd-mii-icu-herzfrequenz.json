@@ -15,12 +15,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.category:vs-cat",
-        "path": "Observation.category",
-        "sliceName": "vs-cat",
-        "min": 1
-      },
-      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 3
@@ -62,8 +56,14 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
+          "unit": "beats per minute",
           "code": "/min"
         }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
       },
       {
         "id": "Observation.value[x].code",

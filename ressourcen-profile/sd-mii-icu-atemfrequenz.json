@@ -187,7 +187,10 @@
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
-        "min": 1
+        "min": 1,
+        "patternQuantity": {
+          "unit": "breaths per minute"
+        }
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",

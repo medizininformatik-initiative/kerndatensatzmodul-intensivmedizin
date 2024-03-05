@@ -295,6 +295,9 @@
         "id": "Observation.component:SystolicBP.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "unit": "millimeter Mercury column"
+        },
         "mustSupport": true
       },
       {
@@ -411,6 +414,9 @@
         "id": "Observation.component:DiastolicBP.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "unit": "millimeter Mercury column"
+        },
         "mustSupport": true
       },
       {
@@ -527,6 +533,9 @@
         "id": "Observation.component:meanBP.value[x]:valueQuantity",
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
+        "patternQuantity": {
+          "unit": "millimeter Mercury column"
+        },
         "mustSupport": true
       },
       {

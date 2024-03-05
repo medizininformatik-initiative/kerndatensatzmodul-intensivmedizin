@@ -92,8 +92,14 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
+          "unit": "percent",
           "code": "%"
         }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1
       },
       {
         "id": "Observation.bodySite",

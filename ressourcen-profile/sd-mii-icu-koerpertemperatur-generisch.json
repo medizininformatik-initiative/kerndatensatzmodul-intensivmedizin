@@ -37,6 +37,22 @@
         "patternCoding": {
           "system": "urn:std:iso:11073:10101"
         }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1,
+        "patternString": "degree Celsius"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "Cel"
       }
     ]
   }
