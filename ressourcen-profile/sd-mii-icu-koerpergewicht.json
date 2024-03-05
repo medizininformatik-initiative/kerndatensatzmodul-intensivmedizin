@@ -222,7 +222,6 @@
       {
         "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
-        "patternCode": "kg",
         "mustSupport": true
       },
       {

@@ -39,20 +39,17 @@
         }
       },
       {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "unit": "degree Celsius",
+          "code": "Cel"
+        }
+      },
+      {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "min": 1,
-        "patternString": "degree Celsius"
-      },
-      {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
-        "patternCode": "Cel"
+        "min": 1
       }
     ]
   }
