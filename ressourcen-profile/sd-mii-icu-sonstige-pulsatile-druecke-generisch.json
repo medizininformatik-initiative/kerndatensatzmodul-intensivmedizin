@@ -194,15 +194,6 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "code.coding.code"
-            }
-          ],
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {
