@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "Blutdruck-Generisch",
+	"id": "sonstige-pulsatile-druecke-generisch",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck-generisch"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sonstige-pulsatile-druecke-generisch"
 		]
 	},
 	"status": "final",
@@ -58,7 +58,7 @@
 			},
 			"valueQuantity": {
 				"value": 120.0,
-				"unit": "millimeter of mercury",
+				"unit": "millimeter Mercury column",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
 			}
@@ -85,7 +85,7 @@
 			},
 			"valueQuantity": {
 				"value": 90.0,
-				"unit": "millimeter of mercury",
+				"unit": "millimeter Mercury column",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
 			}
@@ -112,7 +112,7 @@
 			},
 			"valueQuantity": {
 				"value": 80.0,
-				"unit": "millimeter of mercury",
+				"unit": "millimeter Mercury column",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
 			}

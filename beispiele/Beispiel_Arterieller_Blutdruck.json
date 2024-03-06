@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "Blutdruck",
+	"id": "arterieller-blutdruck",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck"
 		]
 	},
 	"status": "final",
@@ -21,8 +21,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "75367002",
-				"display": "Blood pressure (observable entity)"
+				"code": "386534000",
+				"display": "Systemic arterial pressure (observable entity)"
 			},
 			{
 				"system": "http://loinc.org",
@@ -57,7 +57,7 @@
 			},
 			"valueQuantity": {
 				"value": 120.0,
-				"unit": "millimeter of mercury",
+				"unit": "millimeter Mercury column",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
 			}
@@ -84,7 +84,7 @@
 			},
 			"valueQuantity": {
 				"value": 90.0,
-				"unit": "millimeter of mercury",
+				"unit": "millimeter Mercury column",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
 			}
@@ -111,7 +111,7 @@
 			},
 			"valueQuantity": {
 				"value": 80.0,
-				"unit": "millimeter of mercury",
+				"unit": "millimeter Mercury column",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
 			}
