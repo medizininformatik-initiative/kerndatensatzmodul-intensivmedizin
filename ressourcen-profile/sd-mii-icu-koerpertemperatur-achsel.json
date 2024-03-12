@@ -57,6 +57,7 @@
         "path": "Observation.value[x]",
         "patternQuantity": {
           "unit": "Celsius",
+          "system": "http://unitsofmeasure.org",
           "code": "Cel"
         }
       },
