@@ -43,7 +43,8 @@
         "path": "Observation.value[x]",
         "patternQuantity": {
           "unit": "degree Celsius",
-          "code": "Cel"
+          "system": "http://unitsofmeasure.org",
+		  "code": "Cel"
         }
       },
       {

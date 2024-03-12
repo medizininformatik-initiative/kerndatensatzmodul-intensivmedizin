@@ -55,7 +55,8 @@
         "path": "Observation.value[x]",
         "min": 1,
         "patternQuantity": {
-          "unit": "beats per minute"
+          "unit": "beats per minute",
+		  "system": "http://unitsofmeasure.org"
         }
       },
       {

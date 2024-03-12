@@ -62,7 +62,9 @@
         "sliceName": "valueQuantity",
         "min": 1,
         "patternQuantity": {
-          "unit": "liter per minute and square meter"
+          "unit": "liter per minute and square meter",
+		  "system": "http://unitsofmeasure.org"
+
         }
       },
       {

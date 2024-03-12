@@ -296,7 +296,8 @@
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "millimeter Mercury column"
+          "unit": "millimeter Mercury column",
+		  "system": "http://unitsofmeasure.org"
         },
         "mustSupport": true
       },
@@ -415,7 +416,8 @@
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "millimeter Mercury column"
+          "unit": "millimeter Mercury column",
+		  "system": "http://unitsofmeasure.org"
         },
         "mustSupport": true
       },
@@ -534,7 +536,8 @@
         "path": "Observation.component.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "millimeter Mercury column"
+          "unit": "millimeter Mercury column",
+		  "system": "http://unitsofmeasure.org"
         },
         "mustSupport": true
       },

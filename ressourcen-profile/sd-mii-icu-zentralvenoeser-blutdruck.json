@@ -72,6 +72,7 @@
         "sliceName": "valueQuantity",
         "patternQuantity": {
           "unit": "millimeter Mercury column",
+		  "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
       },

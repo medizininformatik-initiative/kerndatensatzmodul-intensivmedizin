@@ -92,7 +92,8 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "code": "Cel"
+          "system": "http://unitsofmeasure.org",
+		  "code": "Cel"
         }
       }
     ]
