@@ -41,7 +41,7 @@ jobs:
           java-version: '17'
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.4.0-alpha1
+        uses: FirelyTeam/firely-terminal-pipeline@v0.4.0
         with:
           PATH_TO_CONFORMANCE_RESOURCES: ressourcen-profile ValueSet logical-models
           PATH_TO_EXAMPLES: beispiele
