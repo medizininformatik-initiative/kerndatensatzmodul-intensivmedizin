@@ -91,6 +91,7 @@
         "sliceName": "valueQuantity",
         "patternQuantity": {
           "unit": "percent",
+          "system": "http://unitsofmeasure.org",
           "code": "%"
         }
       },
