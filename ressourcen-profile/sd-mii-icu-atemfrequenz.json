@@ -189,7 +189,8 @@
         "sliceName": "valueQuantity",
         "min": 1,
         "patternQuantity": {
-          "unit": "breaths per minute"
+          "unit": "breaths per minute",
+          "system": "http://unitsofmeasure.org"
         }
       },
       {
