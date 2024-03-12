@@ -55,6 +55,7 @@
         "path": "Observation.value[x]",
         "patternQuantity": {
           "unit": "milliliter per square meter",
+          "system": "http://unitsofmeasure.org",
           "code": "mL/m2"
         }
       },
