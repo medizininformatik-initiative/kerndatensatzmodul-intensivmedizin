@@ -70,7 +70,8 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "dyne second per centimeter5 and square meter"
+          "unit": "dyne second per centimeter5 and square meter",
+          "system": "http://unitsofmeasure.org"
         }
       },
       {
