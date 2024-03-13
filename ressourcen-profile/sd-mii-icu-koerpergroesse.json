@@ -125,6 +125,11 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8302-2"
+        },
         "mustSupport": true
       },
       {
@@ -157,28 +162,6 @@
       },
       {
         "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc-fhir-core",
-        "patternCoding": {
-          "system": "http://loinc.org",
-          "code": "8302-2"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core.code",
         "path": "Observation.code.coding.code",
         "min": 1,
         "mustSupport": true
