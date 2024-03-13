@@ -173,8 +173,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "code"
+              "type": "pattern",
+              "path": "code.coding"
             }
           ],
           "rules": "open"
