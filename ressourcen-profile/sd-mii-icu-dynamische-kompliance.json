@@ -73,7 +73,8 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "code": "mL/cm[H2O]"
+          "system": "http://unitsofmeasure.org",
+		  "code": "mL/cm[H2O]"
         }
       }
     ]

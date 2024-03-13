@@ -69,7 +69,8 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "code": "s"
+          "system": "http://unitsofmeasure.org",
+		  "code": "s"
         }
       }
     ]

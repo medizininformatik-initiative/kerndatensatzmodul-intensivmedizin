@@ -58,7 +58,8 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "/min"
+          "system": "http://unitsofmeasure.org",
+		  "code": "/min"
         }
       }
     ]
