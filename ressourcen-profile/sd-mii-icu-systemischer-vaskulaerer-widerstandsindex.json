@@ -58,7 +58,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "pattern",
+              "type": "type",
               "path": "$this"
             }
           ],
@@ -70,8 +70,7 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "dyne second per centimeter5 and square meter",
-          "system": "http://unitsofmeasure.org"
+          "unit": "dyne second per centimeter5 and square meter"
         }
       },
       {
