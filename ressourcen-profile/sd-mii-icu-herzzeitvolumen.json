@@ -70,9 +70,7 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "litre per minute",
-		  "system": "http://unitsofmeasure.org"
-
+          "unit": "liter per minute"
         },
         "binding": {
           "strength": "required",
