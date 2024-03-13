@@ -15,6 +15,10 @@
 	}],
 	"code": {
 		"coding": [{
+				"system": "http://snomed.info/sct",
+				"code": "442476006",
+				"display": "Arterial oxygen saturation (observable entity)"
+			},{
 				"system": "http://loinc.org",
 				"code": "59408-5",
 				"display": "Oxygen saturation in Arterial blood by Pulse oximetry"
