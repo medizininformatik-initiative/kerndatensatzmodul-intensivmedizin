@@ -181,15 +181,14 @@
         },
         "min": 2,
         "max": "3",
-		"constraint":  [
-			{
-				"key": "vs-de-3",
-				"severity": "error",
-				"human": "If there is no a value a data absent reason must be present",
-				"expression": "value.exists() xor dataAbsentReason.exists()",
-				"source": "http://fhir.de/StructureDefinition/observation-de-vitalsign"
-			}
-		],
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no a value a data absent reason must be present",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ],
         "mustSupport": true
       },
       {
