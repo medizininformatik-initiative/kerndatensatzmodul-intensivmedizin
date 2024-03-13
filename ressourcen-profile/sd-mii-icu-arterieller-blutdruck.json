@@ -174,7 +174,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code.coding"
+              "path": "code.coding.code"
             }
           ],
           "rules": "open"
