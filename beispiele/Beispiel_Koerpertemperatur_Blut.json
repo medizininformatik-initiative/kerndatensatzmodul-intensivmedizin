@@ -21,8 +21,8 @@
 			},
 			{
 				"system": "http://snomed.info/sct",
-				"code": "860958002",
-				"display": "Temperature of blood (observable entity)"
+				"code": "1222808002",
+				"display": "Core body temperature measured in blood (observable entity)"
 			},
 			{
 				"system": "urn:iso:std:iso:11073:10101",
@@ -47,6 +47,6 @@
 		"value": 37,
 		"system": "http://unitsofmeasure.org",
 		"code": "Cel",
-		"unit": "Celsius"
+		"unit": "degree Celsius"
 	}
 }
