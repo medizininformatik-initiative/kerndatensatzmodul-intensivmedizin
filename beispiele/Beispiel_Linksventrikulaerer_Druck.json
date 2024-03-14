@@ -48,7 +48,7 @@
 						"display": "Left ventricular Intrachamber mean pressure"
 					},
 					{
-						"system": "urn:std:iso:11073:10101",
+						"system": "urn:iso:std:iso:11073:10101",
 						"code": "150103",
 						"display": "Mean left ventricular pressure"
 					}
@@ -74,7 +74,7 @@
 						"display": "Left ventricular Intrachamber systolic pressure"
 					},
 					{
-						"system": "urn:std:iso:11073:10101",
+						"system": "urn:iso:std:iso:11073:10101",
 						"code": "150101",
 						"display": "Systolic left ventricular pressure"
 					}
@@ -100,7 +100,7 @@
 						"display": "Left ventricular Intrachamber diastolic pressure"
 					},
 					{
-						"system": "urn:std:iso:11073:10101",
+						"system": "urn:iso:std:iso:11073:10101",
 						"code": "150102",
 						"display": "Diastolic left ventricular pressure"
 					}
