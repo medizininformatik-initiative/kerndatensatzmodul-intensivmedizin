@@ -42,35 +42,22 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "75367002"
@@ -92,27 +79,6 @@
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073",
-        "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073",
-        "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -194,12 +160,32 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
         "mustSupport": true
       },
       {
         "id": "Observation.component:SystolicBP",
         "path": "Observation.component",
         "sliceName": "SystolicBP",
+        "min": 1,
+        "max": "1",
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no value a data absent reason must be present",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -210,12 +196,27 @@
       {
         "id": "Observation.component:SystolicBP.code.coding",
         "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.component:SystolicBP.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8480-6"
+        },
         "mustSupport": true
       },
       {
@@ -239,8 +240,10 @@
         "id": "Observation.component:SystolicBP.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
+        "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "code": "271649006"
         },
         "mustSupport": true
       },
@@ -266,7 +269,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:std:iso:11073:10101",
+          "code": "150017"
         },
         "mustSupport": true
       },
@@ -283,22 +287,19 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:SystolicBP.value[x]",
-        "path": "Observation.component.value[x]",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        },
+        "id": "Observation.component:SystolicBP.code.coding:IEEE-11073.display",
+        "path": "Observation.component.code.coding.display",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:SystolicBP.value[x]:valueQuantity",
+        "id": "Observation.component:SystolicBP.value[x]",
         "path": "Observation.component.value[x]",
-        "sliceName": "valueQuantity",
-        "patternQuantity": {
-          "unit": "millimeter Mercury column",
-		  "system": "http://unitsofmeasure.org"
-        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -307,19 +308,19 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:SystolicBP.interpretation",
-        "path": "Observation.component.interpretation",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:SystolicBP.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.component:DiastolicBP",
         "path": "Observation.component",
         "sliceName": "DiastolicBP",
+        "min": 1,
+        "max": "1",
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no value a data absent reason must be present",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -330,12 +331,27 @@
       {
         "id": "Observation.component:DiastolicBP.code.coding",
         "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.component:DiastolicBP.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8462-4"
+        },
         "mustSupport": true
       },
       {
@@ -359,8 +375,10 @@
         "id": "Observation.component:DiastolicBP.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
+        "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "code": "271650006"
         },
         "mustSupport": true
       },
@@ -386,7 +404,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:std:iso:11073:10101",
+          "code": "150018"
         },
         "mustSupport": true
       },
@@ -403,22 +422,19 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:DiastolicBP.value[x]",
-        "path": "Observation.component.value[x]",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        },
+        "id": "Observation.component:DiastolicBP.code.coding:IEEE-11073.display",
+        "path": "Observation.component.code.coding.display",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:DiastolicBP.value[x]:valueQuantity",
+        "id": "Observation.component:DiastolicBP.value[x]",
         "path": "Observation.component.value[x]",
-        "sliceName": "valueQuantity",
-        "patternQuantity": {
-          "unit": "millimeter Mercury column",
-		  "system": "http://unitsofmeasure.org"
-        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -427,19 +443,18 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:DiastolicBP.interpretation",
-        "path": "Observation.component.interpretation",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:DiastolicBP.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.component:meanBP",
         "path": "Observation.component",
         "sliceName": "meanBP",
+        "max": "1",
+        "constraint": [
+          {
+            "key": "vs-de-3",
+            "severity": "error",
+            "human": "If there is no value a data absent reason must be present",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -450,12 +465,27 @@
       {
         "id": "Observation.component:meanBP.code.coding",
         "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.component:meanBP.code.coding:loinc",
         "path": "Observation.component.code.coding",
         "sliceName": "loinc",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8478-0"
+        },
         "mustSupport": true
       },
       {
@@ -479,8 +509,10 @@
         "id": "Observation.component:meanBP.code.coding:sct",
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
+        "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "code": "6797001"
         },
         "mustSupport": true
       },
@@ -506,7 +538,8 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:std:iso:11073:10101",
+          "code": "150019"
         },
         "mustSupport": true
       },
@@ -523,37 +556,24 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:meanBP.value[x]",
-        "path": "Observation.component.value[x]",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        },
+        "id": "Observation.component:meanBP.code.coding:IEEE-11073.display",
+        "path": "Observation.component.code.coding.display",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:meanBP.value[x]:valueQuantity",
+        "id": "Observation.component:meanBP.value[x]",
         "path": "Observation.component.value[x]",
-        "sliceName": "valueQuantity",
-        "patternQuantity": {
-          "unit": "millimeter Mercury column",
-		  "system": "http://unitsofmeasure.org"
-        },
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "Observation.component:meanBP.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:meanBP.interpretation",
-        "path": "Observation.component.interpretation",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:meanBP.referenceRange",
-        "path": "Observation.component.referenceRange",
         "mustSupport": true
       }
     ]
