@@ -191,6 +191,14 @@
       {
         "id": "Observation.component:SystolicBP.code",
         "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
@@ -332,14 +340,6 @@
             {
               "system": "http://loinc.org",
               "code": "8462-4"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "271650006"
-            },
-            {
-              "system": "urn:std:iso:11073:10101",
-              "code": "150018"
             }
           ]
         },
@@ -366,6 +366,10 @@
         "sliceName": "loinc",
         "min": 1,
         "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8462-4"
+        },
         "mustSupport": true
       },
       {
@@ -390,6 +394,10 @@
         "path": "Observation.component.code.coding",
         "sliceName": "sct",
         "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "271650006"
+        },
         "mustSupport": true
       },
       {
@@ -413,6 +421,10 @@
         "id": "Observation.component:DiastolicBP.code.coding:IEEE-11073",
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
+        "patternCoding": {
+          "system": "urn:std:iso:11073:10101",
+          "code": "150018"
+        },
         "mustSupport": true
       },
       {
@@ -466,6 +478,14 @@
       {
         "id": "Observation.component:meanBP.code",
         "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8478-0"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
