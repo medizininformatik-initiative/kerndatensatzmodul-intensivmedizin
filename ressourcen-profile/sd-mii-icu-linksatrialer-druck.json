@@ -40,7 +40,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code.coding.code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
