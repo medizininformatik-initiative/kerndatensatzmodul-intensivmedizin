@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
   "derivation": "constraint",
   "differential": {
     "element": [
