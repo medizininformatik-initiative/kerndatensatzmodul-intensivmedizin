@@ -34,19 +34,6 @@
         "max": "0"
       },
       {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "code.coding"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.component:SystolicBP",
         "path": "Observation.component",
         "sliceName": "SystolicBP"
