@@ -28,6 +28,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
+		  "system": "http://snomed.info/sct",
           "code": "276756009"
         }
       },
