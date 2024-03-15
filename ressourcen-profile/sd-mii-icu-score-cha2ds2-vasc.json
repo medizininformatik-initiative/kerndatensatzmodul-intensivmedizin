@@ -1,6 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-score-cha2ds2-vasc",
+   "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+  },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-cha2ds2-vasc",
   "name": "SD_MII_ICU_Score_CHA2DS2_VASc",
   "title": "SD MII ICU Score CHA2DS2-VASc",

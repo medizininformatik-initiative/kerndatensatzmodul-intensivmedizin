@@ -1,6 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-score-glasgow-coma",
+   "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+  },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-glasgow-coma",
   "name": "SD_MII_ICU_Score_Glasgow_Coma",
   "title": "SD MII ICU Score Glasgow Coma",
