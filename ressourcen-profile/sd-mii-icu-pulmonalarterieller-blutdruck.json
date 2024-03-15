@@ -63,6 +63,7 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
+		  "system": "urn:iso:std:iso:11073:10101",
           "code": "150045"
         }
       },
@@ -85,6 +86,7 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
+		  "system": "urn:iso:std:iso:11073:10101",
           "code": "150046"
         }
       },
@@ -107,6 +109,7 @@
         "path": "Observation.component.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
+		  "system": "urn:iso:std:iso:11073:10101",
           "code": "150047"
         }
       },
