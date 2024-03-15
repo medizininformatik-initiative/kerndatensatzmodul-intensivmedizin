@@ -276,6 +276,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:SystolicBP.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:DiastolicBP",
         "path": "Observation.component",
         "sliceName": "DiastolicBP",
@@ -388,6 +393,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:DiastolicBP.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:meanBP",
         "path": "Observation.component",
         "sliceName": "meanBP",
@@ -497,6 +507,11 @@
         "id": "Observation.component:meanBP.value[x].code",
         "path": "Observation.component.value[x].code",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:meanBP.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
         "mustSupport": true
       }
     ]
