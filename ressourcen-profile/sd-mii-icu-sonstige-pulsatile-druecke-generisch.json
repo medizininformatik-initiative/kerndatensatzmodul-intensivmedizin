@@ -99,6 +99,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "max": "0",
         "mustSupport": true
       },
       {
@@ -303,12 +304,40 @@
       {
         "id": "Observation.component:SystolicBP.value[x]",
         "path": "Observation.component.value[x]",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"
           }
         ],
+        "patternQuantity": {
+          "unit": "millimeter Mercury column",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -447,12 +476,40 @@
       {
         "id": "Observation.component:DiastolicBP.value[x]",
         "path": "Observation.component.value[x]",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"
           }
         ],
+        "patternQuantity": {
+          "unit": "millimeter Mercury column",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:DiastolicBP.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -590,17 +647,40 @@
       {
         "id": "Observation.component:meanBP.value[x]",
         "path": "Observation.component.value[x]",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"
           }
         ],
+        "patternQuantity": {
+          "unit": "millimeter Mercury column",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        },
         "mustSupport": true
       },
       {
-        "id": "Observation.component:meanBP.dataAbsentReason",
-        "path": "Observation.component.dataAbsentReason",
+        "id": "Observation.component:meanBP.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:meanBP.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:meanBP.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:meanBP.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
         "mustSupport": true
       }
     ]

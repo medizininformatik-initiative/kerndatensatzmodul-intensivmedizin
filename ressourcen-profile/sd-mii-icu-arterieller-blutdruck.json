@@ -244,12 +244,12 @@
       {
         "id": "Observation.component:SystolicBP.value[x]",
         "path": "Observation.component.value[x]",
-        "min": 1,
         "patternQuantity": {
           "unit": "millimeter Mercury column",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.component:SystolicBP.value[x].value",
@@ -356,12 +356,12 @@
       {
         "id": "Observation.component:DiastolicBP.value[x]",
         "path": "Observation.component.value[x]",
-        "min": 1,
         "patternQuantity": {
           "unit": "millimeter Mercury column",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.component:DiastolicBP.value[x].value",
@@ -468,12 +468,12 @@
       {
         "id": "Observation.component:meanBP.value[x]",
         "path": "Observation.component.value[x]",
-        "min": 1,
         "patternQuantity": {
           "unit": "millimeter Mercury column",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.component:meanBP.value[x].value",
