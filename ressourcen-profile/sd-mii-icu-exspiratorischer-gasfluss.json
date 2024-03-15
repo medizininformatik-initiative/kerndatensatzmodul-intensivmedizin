@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-exspiratorischer-gasfluss",
-   "text": {
+  "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
@@ -18,6 +18,19 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
       {
         "id": "Observation.category:Beatmung",
         "path": "Observation.category",
@@ -41,6 +54,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
+		  "system": "http://loinc.org",
           "code": "60792-9"
         }
       },
@@ -51,6 +65,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
+		  "system": "urn:iso:std:iso:11073:10101",
           "code": "151944"
         }
       },
@@ -73,8 +88,8 @@
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
-		  "code": "L/min"
+		  "system": "http://unitsofmeasure.org",
+          "code": "L/min"
         }
       }
     ]
