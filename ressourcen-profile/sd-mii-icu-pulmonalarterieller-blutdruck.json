@@ -17,12 +17,6 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 2
-      },
-      {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
         "min": 1,
         "max": "1"
       },
@@ -31,14 +25,6 @@
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
         "max": "0"
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
       },
       {
         "id": "Observation.component:SystolicBP",
