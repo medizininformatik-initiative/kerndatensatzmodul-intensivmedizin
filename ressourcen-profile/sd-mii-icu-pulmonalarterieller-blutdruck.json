@@ -21,12 +21,6 @@
         "max": "1"
       },
       {
-        "id": "Observation.code.coding:IEEE-11073",
-        "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073",
-        "max": "0"
-      },
-      {
         "id": "Observation.component:SystolicBP",
         "path": "Observation.component",
         "sliceName": "SystolicBP"
