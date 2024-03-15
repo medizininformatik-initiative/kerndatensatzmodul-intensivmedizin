@@ -71,11 +71,6 @@
       {
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.value[x]",
-        "sliceName": "valueQuantity"
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
         "patternQuantity": {
           "system": "http://unitsofmeasure.org",
