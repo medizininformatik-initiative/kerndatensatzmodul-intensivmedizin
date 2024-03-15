@@ -49,7 +49,7 @@
 						"display": "Systolic blood pressure (observable entity)"
 					},
 					{
-						"system": "urn:std:iso:11073:10101",
+						"system": "urn:iso:std:iso:11073:10101",
 						"code": "150017",
 						"display": "Systolic blood pressure"
 					}
@@ -76,7 +76,7 @@
 						"display": "Mean blood pressure (observable entity)"
 					},
 					{
-						"system": "urn:std:iso:11073:10101",
+						"system": "urn:iso:std:iso:11073:10101",
 						"code": "150019",
 						"display": "Mean blood pressure"
 					}
@@ -103,7 +103,7 @@
 						"display": "Diastolic blood pressure (observable entity)"
 					},
 					{
-						"system": "urn:std:iso:11073:10101",
+						"system": "urn:iso:std:iso:11073:10101",
 						"code": "150018",
 						"display": "Diastolic blood pressure"
 					}
