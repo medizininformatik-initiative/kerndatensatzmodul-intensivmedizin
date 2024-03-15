@@ -23,6 +23,11 @@
 				"system": "http://snomed.info/sct",
 				"code": "276762004",
 				"display": "Direct left atrial pressure (observable entity)"
+			},
+			{
+				"system": "http://loinc.org",
+				"code": "60988-3",
+				"display": "Left atrial pressure"
 			}
 		]
 	},
