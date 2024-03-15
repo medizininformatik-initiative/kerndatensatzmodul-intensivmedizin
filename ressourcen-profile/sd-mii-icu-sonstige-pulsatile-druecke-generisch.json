@@ -304,6 +304,15 @@
       {
         "id": "Observation.component:SystolicBP.value[x]",
         "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -476,6 +485,15 @@
       {
         "id": "Observation.component:DiastolicBP.value[x]",
         "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
@@ -647,6 +665,15 @@
       {
         "id": "Observation.component:meanBP.value[x]",
         "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Quantity"
