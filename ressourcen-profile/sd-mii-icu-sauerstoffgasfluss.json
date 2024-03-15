@@ -18,6 +18,12 @@
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
+		  "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
           "rules": "open"
         },
         "min": 2
