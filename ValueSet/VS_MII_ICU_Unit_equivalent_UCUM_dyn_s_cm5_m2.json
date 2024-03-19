@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "vs-mii-icu-unit-equivalent-ucum-dyn-s-cm5-m2",
-   "text": {
+  "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
@@ -22,7 +22,7 @@
           {
             "code": "dyn.s/(cm5.m2)"
           },
-		  {
+          {
             "code": "(dyn.s)/(cm5.m2)"
           },
           {
