@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Eingestellter-inspiratorischer-Gasfluss-",
+  "id": "eingestellter-inspiratorischer-gasfluss",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorischer-gasfluss"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/eingestellter-inspiratorischer-gasfluss"
     ]
   },
   "partOf": [
