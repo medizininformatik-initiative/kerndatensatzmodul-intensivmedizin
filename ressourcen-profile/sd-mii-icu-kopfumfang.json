@@ -129,6 +129,15 @@
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 2,
+		"slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
