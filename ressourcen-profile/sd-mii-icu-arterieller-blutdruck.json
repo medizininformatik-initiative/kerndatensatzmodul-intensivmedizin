@@ -32,7 +32,7 @@
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 2,
-		"slicing": {
+        "slicing": {
           "discriminator": [
             {
               "type": "pattern",
@@ -159,7 +159,7 @@
         "id": "Observation.component",
         "path": "Observation.component",
         "max": "3",
-		"slicing": {
+        "slicing": {
           "discriminator": [
             {
               "type": "pattern",
@@ -179,7 +179,7 @@
       {
         "id": "Observation.component:SystolicBP.code.coding",
         "path": "Observation.component.code.coding",
-		"slicing": {
+        "slicing": {
           "discriminator": [
             {
               "type": "pattern",
@@ -319,7 +319,7 @@
       {
         "id": "Observation.component:DiastolicBP.code.coding",
         "path": "Observation.component.code.coding",
-		"slicing": {
+        "slicing": {
           "discriminator": [
             {
               "type": "pattern",
@@ -459,7 +459,7 @@
       {
         "id": "Observation.component:meanBP.code.coding",
         "path": "Observation.component.code.coding",
-		"slicing": {
+        "slicing": {
           "discriminator": [
             {
               "type": "pattern",

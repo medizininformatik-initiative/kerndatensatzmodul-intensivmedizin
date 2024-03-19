@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-puls",
-   "text": {
+  "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
@@ -60,7 +60,7 @@
         "min": 1,
         "patternQuantity": {
           "unit": "beats per minute",
-		  "system": "http://unitsofmeasure.org"
+          "system": "http://unitsofmeasure.org"
         }
       },
       {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-atemfrequenz",
-   "text": {
+  "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
@@ -107,7 +107,7 @@
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 2,
-		"slicing": {
+        "slicing": {
           "discriminator": [
             {
               "type": "pattern",

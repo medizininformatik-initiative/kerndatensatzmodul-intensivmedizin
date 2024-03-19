@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-mechanische-atemfrequenz-beatmet",
-   "text": {
+  "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
@@ -77,7 +77,7 @@
         "sliceName": "valueQuantity",
         "patternQuantity": {
           "system": "http://unitsofmeasure.org",
-		  "code": "{Breaths}/min"
+          "code": "{Breaths}/min"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-bilanz-ausfuhr-urin",
-   "text": {
+  "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
@@ -37,7 +37,7 @@
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
-		  "discriminator": [
+          "discriminator": [
             {
               "type": "pattern",
               "path": "$this"
