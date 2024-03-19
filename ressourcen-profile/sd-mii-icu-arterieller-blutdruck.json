@@ -32,6 +32,15 @@
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 2,
+		"slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -150,6 +159,15 @@
         "id": "Observation.component",
         "path": "Observation.component",
         "max": "3",
+		"slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -161,6 +179,15 @@
       {
         "id": "Observation.component:SystolicBP.code.coding",
         "path": "Observation.component.code.coding",
+		"slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 3
       },
       {
@@ -292,6 +319,15 @@
       {
         "id": "Observation.component:DiastolicBP.code.coding",
         "path": "Observation.component.code.coding",
+		"slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 3
       },
       {
@@ -423,6 +459,15 @@
       {
         "id": "Observation.component:meanBP.code.coding",
         "path": "Observation.component.code.coding",
+		"slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 3
       },
       {
