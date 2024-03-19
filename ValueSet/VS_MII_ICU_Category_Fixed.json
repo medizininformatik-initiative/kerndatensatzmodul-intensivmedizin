@@ -19,6 +19,11 @@
 				"system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed",
 				"code": "score",
 				"display": "Score"
+			},
+			{
+				"system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed",
+				"code": "bilanz",
+				"display": "Bilanz"
 			}
 		]
 	}

@@ -104,8 +104,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-bilanz-fixed",
-          "code": "Bilanz"
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed",
+          "code": "bilanz"
         }
       },
       {
