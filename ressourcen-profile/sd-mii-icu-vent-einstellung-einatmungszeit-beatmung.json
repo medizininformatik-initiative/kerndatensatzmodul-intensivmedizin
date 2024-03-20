@@ -30,6 +30,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
+          "system": "http://snomed.info/sct",
           "code": "250819002"
         }
       },
@@ -40,6 +41,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
+          "system": "http://loinc.org",
           "code": "76334-2"
         }
       },
@@ -50,6 +52,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
+          "system": "urn:std:iso:11073:10101",
           "code": "16929632"
         }
       },
