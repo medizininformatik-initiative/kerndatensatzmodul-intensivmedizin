@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "Instance-of-glascow-coma-score",
+  "id": "Instance-of-glascow-coma-score-fsh",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-glascow-coma-score"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-glascow-coma-score-fsh"
     ]
   },
   "code": {
