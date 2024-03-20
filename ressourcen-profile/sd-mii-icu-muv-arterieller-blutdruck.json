@@ -31,7 +31,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 2,
+        "min": 1,
         "slicing": {
           "discriminator": [
             {
