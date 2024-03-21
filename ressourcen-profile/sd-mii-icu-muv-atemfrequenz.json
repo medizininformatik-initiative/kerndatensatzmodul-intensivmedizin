@@ -76,29 +76,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category:vs-cat",
-        "path": "Observation.category",
-        "sliceName": "vs-cat",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:vs-cat.coding",
-        "path": "Observation.category.coding",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:vs-cat.coding.system",
-        "path": "Observation.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:vs-cat.coding.code",
-        "path": "Observation.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
@@ -106,15 +83,6 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 2,
         "mustSupport": true
       },
@@ -122,21 +90,16 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        },
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -166,14 +129,6 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -184,14 +139,6 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "type": [
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
-          }
-        ],
         "mustSupport": true
       },
       {
