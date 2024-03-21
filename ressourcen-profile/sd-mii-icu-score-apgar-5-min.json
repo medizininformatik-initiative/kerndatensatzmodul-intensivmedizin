@@ -22,7 +22,8 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "1187491009"
+          "code": "1187491009",
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -30,7 +31,8 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "96790-1"
+          "code": "96790-1",
+          "system": "http://loinc.org"
         }
       },
       {

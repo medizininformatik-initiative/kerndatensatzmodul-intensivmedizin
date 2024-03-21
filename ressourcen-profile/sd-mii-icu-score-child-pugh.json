@@ -30,7 +30,8 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "96790-1"
+          "code": "96790-1",
+          "system": "http://loinc.org"
         }
       },
       {

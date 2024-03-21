@@ -27,7 +27,10 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "max": "0"
+        "max": "0",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",

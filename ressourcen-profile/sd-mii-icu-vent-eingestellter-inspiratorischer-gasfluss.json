@@ -40,7 +40,10 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "max": "0"
+        "max": "0",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
@@ -57,7 +60,10 @@
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "max": "0"
+        "max": "0",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101"
+        }
       },
       {
         "id": "Observation.value[x]",
