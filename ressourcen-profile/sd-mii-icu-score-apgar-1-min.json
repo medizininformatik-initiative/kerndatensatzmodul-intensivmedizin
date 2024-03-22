@@ -32,8 +32,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "1187491009",
-          "system": "http://snomed.info/sct"
+          "code": "1187491009"
         }
       },
       {
@@ -41,8 +40,7 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "patternCoding": {
-          "code": "96790-1",
-          "system": "http://loinc.org"
+          "code": "96790-1"
         }
       },
       {
@@ -52,7 +50,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code.coding.code"
+              "path": "code"
             }
           ],
           "rules": "open"
@@ -67,6 +65,14 @@
       {
         "id": "Observation.component:Hautfarbe.code",
         "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32406-1"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
@@ -152,6 +158,18 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:Herzaktivitaet.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32407-9"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:Herzaktivitaet.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
@@ -232,6 +250,18 @@
         "path": "Observation.component",
         "sliceName": "Absaugreflexe",
         "max": "1"
+      },
+      {
+        "id": "Observation.component:Absaugreflexe.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32409-5"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:Absaugreflexe.code.coding",
@@ -316,6 +346,18 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:Muskeltonus.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32408-7"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:Muskeltonus.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
@@ -396,6 +438,18 @@
         "path": "Observation.component",
         "sliceName": "Atmung",
         "max": "1"
+      },
+      {
+        "id": "Observation.component:Atmung.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32410-3"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:Atmung.code.coding",
