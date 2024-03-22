@@ -228,7 +228,6 @@
           }
         ],
         "patternQuantity": {
-          "unit": "Score",
           "system": "http://unitsofmeasure.org",
           "code": "{score}"
         },
@@ -243,6 +242,7 @@
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
+        "patternString": "Score",
         "mustSupport": true
       },
       {
