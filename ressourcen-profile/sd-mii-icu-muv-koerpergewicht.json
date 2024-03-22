@@ -112,28 +112,15 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:sct",
+        "id": "Observation.code.coding:snomed",
         "path": "Observation.code.coding",
-        "sliceName": "sct",
+        "sliceName": "snomed",
         "min": 1,
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "27113001"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.subject",
