@@ -17,6 +17,16 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+	  {
+        "id": "Observation.category.coding:fixedCategoryScore",
+        "path": "Observation.category.coding",
+        "sliceName": "fixedCategoryScore",
+        "binding": {
+          "strength": "required",
+          "description": "Fixed Value for Search",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed"
+        }
+      },
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
