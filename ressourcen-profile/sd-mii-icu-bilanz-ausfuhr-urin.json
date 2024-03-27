@@ -30,7 +30,8 @@
         "path": "Observation.category.coding",
         "sliceName": "kdsicu-category",
         "patternCoding": {
-          "code": "364201005"
+          "code": "364201005",
+          "system": "http://snomed.info/sct"
         }
       },
       {
