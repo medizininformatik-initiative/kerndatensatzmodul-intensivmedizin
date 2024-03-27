@@ -22,7 +22,8 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "vital-sign"
+          "code": "vital-sign",
+          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
         }
       },
       {
