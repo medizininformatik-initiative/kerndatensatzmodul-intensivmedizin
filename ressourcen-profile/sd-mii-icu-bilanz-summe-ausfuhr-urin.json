@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-summe-ausfuhr-urin",
-  "name": "SD_MII_ICU_Bilanz_Summe-Ausfuhr-Urin",
+  "name": "SD_MII_ICU_Bilanz_Summe_Ausfuhr_Urin",
   "title": "SD MII ICU Bilanz Summe Ausfuhr Urin",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -30,7 +30,8 @@
         "path": "Observation.category.coding",
         "sliceName": "kdsicu-category",
         "patternCoding": {
-          "code": "364396009"
+          "code": "364396009",
+		  "system": "http://snomed.info/sct"
         }
       },
       {

@@ -1,10 +1,10 @@
 {
-  "updated": "2024-03-15T14:36:25.7565836+01:00",
+  "updated": "2024-03-27T11:18:13.8882429+01:00",
   "dependencies": {
     "de.medizininformatikinitiative.kerndatensatz.prozedur": "2024.0.0-ballot",
-    "de.basisprofil.r4": "1.5.0-ballot2",
     "hl7.fhir.r4.core": "4.0.1",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3"
+    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3",
+    "de.basisprofil.r4": "1.5.0-ballot2"
   },
   "missing": {}
 }
