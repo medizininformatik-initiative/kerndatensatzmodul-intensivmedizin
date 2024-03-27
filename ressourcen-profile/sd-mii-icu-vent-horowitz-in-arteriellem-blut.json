@@ -19,6 +19,19 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.category:vs-cat",
         "path": "Observation.category",
         "sliceName": "vs-cat"
