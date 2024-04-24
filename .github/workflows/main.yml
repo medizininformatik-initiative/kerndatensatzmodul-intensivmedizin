@@ -53,4 +53,4 @@ jobs:
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
-          JAVA_VALIDATOR_VERSION: 6.3.1
+          JAVA_VALIDATOR_VERSION: 6.3.6
