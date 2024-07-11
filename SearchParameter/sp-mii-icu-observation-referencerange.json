@@ -23,6 +23,16 @@
     "base":  [
         "Observation"
     ],
-    "type": "token",
-    "expression": "Observation.referenceRange"
+    "type": "composite",
+    "expression": "Observation.referenceRange",
+    "component": [
+        {
+          "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/observation-referencerange-high",
+          "expression": "high"
+        },
+        {
+          "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/observation-referencerange-low",
+          "expression": "low"
+        }
+    ]
 }
