@@ -19,10 +19,10 @@
     "experimental": false,
     "date": "2024-01-02",
     "description": "Suchparameter für Observation.referenceRange.high",
-    "code": "referenceRange-high",
+    "code": "reference-range-high",
     "base":  [
         "Observation"
     ],
     "type": "quantity",
-    "expression": "Observation.referenceRange.high"
+    "expression": "Observation.referenceRange.high | Observation.component.referenceRange.high"
 }
