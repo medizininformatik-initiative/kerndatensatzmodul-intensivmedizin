@@ -46,7 +46,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang",
   "derivation": "constraint",
   "differential": {
     "element": [
