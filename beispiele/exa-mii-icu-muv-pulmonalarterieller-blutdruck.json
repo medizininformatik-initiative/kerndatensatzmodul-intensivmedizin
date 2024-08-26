@@ -25,9 +25,17 @@
         "display": "Blood pressure (observable entity)"
       },
       {
+        "system": "http://snomed.info/sct",
+        "code": "250767002"
+      },
+      {
         "system": "http://loinc.org",
         "code": "76284-9",
         "display": "Pulmonary artery Blood pressure"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150044"
       }
     ]
   },
