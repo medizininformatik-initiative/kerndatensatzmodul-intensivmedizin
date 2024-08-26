@@ -14,7 +14,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell",
   "derivation": "constraint",
   "differential": {
     "element": [
