@@ -26,11 +26,13 @@
       },
       {
         "system": "http://loinc.org",
-        "code": "60838-0"
+        "code": "60838-0",
+        "display": "Body temperature"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150380"
+        "code": "150380",
+        "display": "Nasopharynx temperature"
       }
     ]
   },
