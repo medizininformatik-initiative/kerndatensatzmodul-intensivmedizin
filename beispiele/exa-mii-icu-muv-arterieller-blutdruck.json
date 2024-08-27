@@ -24,7 +24,7 @@
         "code": "364090009",
         "display": "Systemic arterial pressure (observable entity)"
       },
-	  {
+      {
         "system": "http://loinc.org",
         "code": "85354-9",
         "display": "Blood pressure panel with all children optional"
@@ -57,7 +57,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 120.0,
+        "value": 120,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -84,7 +84,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 90.0,
+        "value": 90,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -111,7 +111,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 80.0,
+        "value": 80,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
