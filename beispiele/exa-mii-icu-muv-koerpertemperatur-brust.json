@@ -20,20 +20,9 @@
   "code": {
     "coding": [
       {
-        "system": "urn:iso:std:iso:11073:10101"
-      },
-      {
-        "system": "http://loinc.org"
-      },
-      {
         "system": "http://snomed.info/sct",
         "code": "248835004",
         "display": "Temperature of breast (observable entity)"
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature"
       }
     ]
   },
