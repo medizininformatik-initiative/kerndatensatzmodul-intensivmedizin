@@ -46,7 +46,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
   "derivation": "constraint",
   "differential": {
     "element": [

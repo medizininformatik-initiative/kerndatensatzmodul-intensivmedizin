@@ -46,7 +46,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht",
   "derivation": "constraint",
   "differential": {
     "element": [
