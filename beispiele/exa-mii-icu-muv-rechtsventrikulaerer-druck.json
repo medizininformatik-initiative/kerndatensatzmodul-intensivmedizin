@@ -21,8 +21,16 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
+        "code": "75367002"
+      },
+      {
+        "system": "http://snomed.info/sct",
         "code": "276756009",
         "display": "Right ventricular pressure (observable entity)"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150104"
       }
     ]
   },
