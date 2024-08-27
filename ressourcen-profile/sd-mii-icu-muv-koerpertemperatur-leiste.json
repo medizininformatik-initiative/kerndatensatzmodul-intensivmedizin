@@ -15,5 +15,6 @@
   "abstract": false,
   "type": "Observation",
   "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste",
-  "derivation": "constraint"
+  "derivation": "constraint",
+  "differential": {}
 }
