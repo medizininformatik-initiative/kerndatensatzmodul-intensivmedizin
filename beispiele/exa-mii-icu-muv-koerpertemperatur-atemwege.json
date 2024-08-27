@@ -25,9 +25,8 @@
         "display": "Airway temperature"
       },
       {
-        "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature"
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150356"
       }
     ]
   },

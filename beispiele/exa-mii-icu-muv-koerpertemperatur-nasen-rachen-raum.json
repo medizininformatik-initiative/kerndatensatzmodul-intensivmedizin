@@ -11,7 +11,7 @@
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "system": "http://hl7.org/fhir/secondary-finding",
           "code": "vital-signs"
         }
       ]
@@ -26,8 +26,7 @@
       },
       {
         "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature"
+        "code": "60838-0"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
