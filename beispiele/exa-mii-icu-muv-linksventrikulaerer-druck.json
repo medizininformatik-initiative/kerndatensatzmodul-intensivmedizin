@@ -44,17 +44,18 @@
       "code": {
         "coding": [
           {
-            "system": "http://snomed.info/sct",
-            "code": "75367002"
+            "system": "http://loinc.org",
+            "code": "8478-0"
           },
           {
-            "system": "http://snomed.info/sct",
-            "code": "276769008"
+            "system": "http://loinc.org",
+            "code": "8404-6",
+            "display": "Left ventricular Intrachamber mean pressure"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
-            "code": "150100",
-            "display": "Pressure of the blood in the left ventricle of the heart"
+            "code": "150103",
+            "display": "Mean left ventricular pressure"
           }
         ]
       },
