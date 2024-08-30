@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "exa-mii-icu-bilanz-ausfuhr-drainage-generisch",
+	"id": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-generisch"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
 		]
 	},
 	"status": "final",
@@ -12,7 +12,7 @@
 			"coding": [
 				{
 					"system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
-					"code": "exam"
+					"code": "vital-sign"
 				},
 				{
 					"system": "http://snomed.info/sct",
@@ -30,12 +30,12 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "251843005",
-				"display": "Fluid output from drain (observable entity)"
+				"code": "251850009",
+				"display": "Ultrafiltrate fluid loss (observable entity)"
 			},
 			{
-				"system": "urn:iso:std:iso:11073:10101",
-				"code": "26668"
+				"system": "http://loinc.org",
+				"code": "99741-1"
 			}
 		]
 	},

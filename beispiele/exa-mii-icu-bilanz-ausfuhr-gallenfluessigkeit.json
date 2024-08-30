@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "exa-mii-icu-bilanz-ausfuhr-drainage-generisch",
+	"id": "exa-mii-icu-bilanz-ausfuhr-gallenfluessigkeit",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-generisch"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-gallenfluessigkeit"
 		]
 	},
 	"status": "final",
@@ -30,12 +30,12 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "251843005",
-				"display": "Fluid output from drain (observable entity)"
+				"code": "1162670008",
+				"display": "Volume of drainage of chyle (observable entity)"
 			},
 			{
-				"system": "urn:iso:std:iso:11073:10101",
-				"code": "26668"
+				"system": "http://loinc.org",
+				"code": "9113-2"
 			}
 		]
 	},
