@@ -22,30 +22,7 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "exam",
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
-        }
-      },
-      {
-        "id": "Observation.category.coding:kdsicu-category",
-        "path": "Observation.category.coding",
-        "sliceName": "kdsicu-category",
-        "patternCoding": {
-          "code": "1162668004",
-          "system": "http://snomed.info/sct"
-        }
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
+          "code": "exam"
         }
       },
       {
@@ -53,27 +30,20 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "1162668004",
-          "system": "http://snomed.info/sct"
+          "code": "1162668004"
         }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "max": "0",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        }
+        "max": "0"
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "max": "0",
-        "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
-        }
+        "max": "0"
       }
     ]
   }
