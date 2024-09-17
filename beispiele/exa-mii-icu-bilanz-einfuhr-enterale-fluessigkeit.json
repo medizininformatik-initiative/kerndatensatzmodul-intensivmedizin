@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "exa-mii-icu-bilanz-einfuhr-enterale-fluesse",
+	"id": "exa-mii-icu-bilanz-einfuhr-enterale-fluessigkeit",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-enterale-fluesse"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-enterale-fluessigkeit"
 		]
 	},
 	"status": "final",

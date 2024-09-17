@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "exa-mii-icu-bilanz-ausfuhr-drainage-op",
+	"id": "exa-mii-icu-bilanz-ausfuhr-opdrainage",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-op"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-opdrainage"
 		]
 	},
 	"status": "final",

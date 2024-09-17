@@ -1,9 +1,9 @@
 {
 	"resourceType": "Observation",
-	"id": "exa-mii-icu-bilanz-einfuhr-oraler-fluesse",
+	"id": "exa-mii-icu-bilanz-einfuhr-oraler-fluessigkeit",
 	"meta": {
 		"profile": [
-			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-oraler-fluesse"
+			"https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-oraler-fluessigkeit"
 		]
 	},
 	"status": "final",
