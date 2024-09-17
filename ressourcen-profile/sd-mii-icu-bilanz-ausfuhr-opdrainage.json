@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanz-einfuhr-enterale-fluesse",
+  "id": "sd-mii-icu-bilanz-ausfuhr-opdrainage",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-enterale-fluesse",
-  "name": "SD_MII_ICU_Bilanz_Einfuhr_Enterale_Fluesse",
-  "title": "SD MII ICU Bilanz Einfuhr Enterale Fluesse",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-opdrainage",
+  "name": "SD_MII_ICU_Bilanz_Ausfuhr_Opdrainage",
+  "title": "SD MII ICU Bilanz Ausfuhr Opdrainage",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -22,7 +22,7 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "therapy",
+          "code": "exam",
           "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
         }
       },
@@ -54,7 +54,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251854000",
+          "code": "251844004",
           "system": "http://snomed.info/sct"
         }
       },
@@ -65,7 +65,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "8953-2",
+          "code": "9203-1",
           "system": "http://loinc.org"
         }
       },

@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanz-ausfuhr-drainage-wund",
+  "id": "sd-mii-icu-bilanz-ausfuhr-wunddrainage",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-wund",
-  "name": "SD_MII_ICU_Bilanz_Ausfuhr_Drainage_Wund",
-  "title": "SD MII ICU Bilanz Ausfuhr Drainage Wund",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-wunddrainage",
+  "name": "SD_MII_ICU_Bilanz_Ausfuhr_Wunddrainage",
+  "title": "SD MII ICU Bilanz Ausfuhr Wunddrainage",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
