@@ -9,7 +9,7 @@ name: MII_IG_ICU
 title: MII IG ICU
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: "2025.0.0-ballot""
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -26,7 +26,10 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.icu: 1.0.0
+  de.gematik.isik-vitalparameter: 4.0.0-rc2
+  h77.fhir.r4.core: 4.0.1
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2024.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3  
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
