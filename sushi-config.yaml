@@ -3,10 +3,10 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.example
-canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores
-name: Scores
-# title: Example Title
+id: mii-ig-icu-de-v2024
+canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu
+name: MII_IG_ICU
+title: MII IG ICU
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -16,9 +16,10 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
+  name: Medizininformatik Initiative
+  url: https://www.medizininformatik-initiative.de/
   # email: test@example.org
+# language: "de-DE"
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -43,9 +44,9 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
+pages:
+  index.md:
+    title: Home
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -196,11 +197,11 @@ menu:
 # The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
 # See the individual option definitions below for more detail.
 #
-instanceOptions:
+# instanceOptions:
   # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
   # in an Instance's assignment rule. All slices appear in the order in which they are specified in FSH rules.
   # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for new projects.
-  manualSliceOrdering: true # true | false
+  # manualSliceOrdering: true # true | false
   # Determines for which types of Instances SUSHI will automatically set meta.profile
   # if InstanceOf references a profile:
   #
