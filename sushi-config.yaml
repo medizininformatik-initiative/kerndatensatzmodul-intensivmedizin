@@ -26,10 +26,11 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  de.gematik.isik-vitalparameter: 4.0.0-rc2
-  h77.fhir.r4.core: 4.0.1
-  de.medizininformatikinitiative.kerndatensatz.prozedur: 2024.0.0-ballot
+  de.basisprofil.r4: 1.4.0
+  de.gematik.isik-vitalparameter: 4.0.0
   de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3  
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2024.0.0-ballot
+  hl7.fhir.r4.core: 4.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
