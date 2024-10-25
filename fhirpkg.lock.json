@@ -1,10 +1,11 @@
 {
-  "updated": "2024-03-27T11:18:13.8882429+01:00",
-  "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2024.0.0-ballot",
-    "hl7.fhir.r4.core": "4.0.1",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3",
-    "de.basisprofil.r4": "1.4.0"
-  },
-  "missing": {}
+    "updated": "2024-03-27T11:18:13.8882429+01:00",
+    "dependencies": {
+        "de.medizininformatikinitiative.kerndatensatz.prozedur": "2024.0.0-ballot",
+        "hl7.fhir.r4.core": "4.0.1",
+        "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3",
+        "de.basisprofil.r4": "1.4.0"
+    },
+    "missing": {
+    }
 }

@@ -1,15 +1,15 @@
 {
-  "name": "de.medizininformatikinitiative.kerndatensatz.icu",
-  "version": "2024.0.0-alpha1",
-  "description": "Medizininformatik Initiative - Modul Intensivmedizin PDMS-Daten und hochauflösende Biosignaldaten",
-  "author": "alexanderzautke",
-  "fhirVersions": [
-    "4.0.1"
-  ],
-  "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2024.0.0-ballot",
-    "de.basisprofil.r4": "1.4.0",
-    "hl7.fhir.r4.core": "4.0.1",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3"
-  }
+    "name": "de.medizininformatikinitiative.kerndatensatz.icu",
+    "version": "2024.0.0-alpha3",
+    "description": "Medizininformatik Initiative - Modul Intensivmedizin PDMS-Daten und hochauflösende Biosignaldaten",
+    "author": "KDS ICU Team",
+    "fhirVersions": [
+        "4.0.1"
+    ],
+    "dependencies": {
+        "de.medizininformatikinitiative.kerndatensatz.prozedur": "2024.0.0-ballot",
+        "de.basisprofil.r4": "1.4.0",
+        "hl7.fhir.r4.core": "4.0.1",
+        "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3"
+    }
 }
