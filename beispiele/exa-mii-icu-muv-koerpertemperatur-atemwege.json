@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-koerpertemperatur-atemwege",
+  "id": "mii-icu-koerpertemperatur-atemwege",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-atemwege"
     ]
   },
   "status": "final",
@@ -25,9 +25,9 @@
         "display": "Airway temperature"
       },
       {
-        "system": "urn:iso:std:iso:11073:10101",
-        "code": "150356",
-        "display": "Airway temperature"
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature"
       }
     ]
   },

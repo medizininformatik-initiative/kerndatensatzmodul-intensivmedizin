@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-intrakranieller-druck-icp",
+  "id": "mii-icu-intrakranieller-druck-icp",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/intrakranieller-druck-icp"
     ]
   },
   "status": "final",
@@ -44,7 +44,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 10,
+    "value": 10.0,
     "unit": "millimeter Mercury column",
     "system": "http://unitsofmeasure.org",
     "code": "mm[Hg]"

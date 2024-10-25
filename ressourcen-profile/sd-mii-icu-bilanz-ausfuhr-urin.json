@@ -22,12 +22,31 @@
         "path": "Observation.category.coding",
         "sliceName": "hl7-category",
         "patternCoding": {
-          "code": "vital-sign"
+          "code": "vital-sign",
+          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
+        }
+      },
+      {
+        "id": "Observation.category.coding:kdsicu-category",
+        "path": "Observation.category.coding",
+        "sliceName": "kdsicu-category",
+        "patternCoding": {
+          "code": "364201005",
+          "system": "http://snomed.info/sct"
         }
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
         "min": 2
       },
       {
@@ -35,7 +54,8 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "364201005"
+          "code": "364201005",
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -45,14 +65,18 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "9187-6"
+          "code": "9187-6",
+          "system": "http://loinc.org"
         }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "max": "0"
+        "max": "0",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101"
+        }
       }
     ]
   }

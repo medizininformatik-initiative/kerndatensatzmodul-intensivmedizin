@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-linksventrikulaeres-herzzeitvolumen-durch-indikatorverduennung",
+  "id": "mii-icu-linksventrikulaeres-herzzeitvolumen-durch-indikatorverduennung",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaeres-herzzeitvolumen-durch-indikatorverduennung"
     ]
   },
   "status": "final",
@@ -34,7 +34,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 5,
+    "value": 5.0,
     "unit": "liter per minute",
     "system": "http://unitsofmeasure.org",
     "code": "L/min"

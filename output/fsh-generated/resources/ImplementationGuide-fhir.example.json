@@ -1,0 +1,790 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.example",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/ImplementationGuide/fhir.example",
+  "version": "0.1.0",
+  "name": "Scores",
+  "status": "draft",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.example",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
+      "version": "1.0.0",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
+      "id": "de_medizininformatikinitiative_kerndatensatz_icu"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Observation/Herzzeitvolumen"
+        },
+        "name": "Herzzeitvolumen",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-herzzeitvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Ideales-Koerpergewicht"
+        },
+        "name": "Ideales-Koerpergewicht",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-ideales-koerpergewicht"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Intrakranieller-Druck-ICP"
+        },
+        "name": "Intrakranieller-Druck-ICP",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpergewicht-Percentile-altersabhaengig"
+        },
+        "name": "Koerpergewicht-Percentile-altersabhaengig",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpergroesse-Percentil"
+        },
+        "name": "Koerpergroesse-Percentil",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpergroesse-percentil"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Achsel"
+        },
+        "name": "Koerpertemperatur-Achsel",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Atemwege"
+        },
+        "name": "Koerpertemperatur-Atemwege",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Blut"
+        },
+        "name": "Koerpertemperatur-Blut",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-blut"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Brust"
+        },
+        "name": "Koerpertemperatur-Brust",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-brust"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Brustwirbelsaeule"
+        },
+        "name": "Koerpertemperatur-Brustwirbelsaeule",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Gelenk"
+        },
+        "name": "Koerpertemperatur-Gelenk",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Halswirbelsaeule"
+        },
+        "name": "Koerpertemperatur-Halswirbelsaeule",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Harnblase"
+        },
+        "name": "Koerpertemperatur-Harnblase",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Kern"
+        },
+        "name": "Koerpertemperatur-Kern",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-kern"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Leiste"
+        },
+        "name": "Koerpertemperatur-Leiste",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Lendenwirbelsaeule"
+        },
+        "name": "Koerpertemperatur-Lendenwirbelsaeule",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Myokard"
+        },
+        "name": "Koerpertemperatur-Myokard",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-nasal"
+        },
+        "name": "Koerpertemperatur-nasal",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Nasen-Rachen-Raum"
+        },
+        "name": "Koerpertemperatur-Nasen-Rachen-Raum",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-rektal"
+        },
+        "name": "Koerpertemperatur-rektal",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Speiseroehre"
+        },
+        "name": "Koerpertemperatur-Speiseroehre",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Stirn"
+        },
+        "name": "Koerpertemperatur-Stirn",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-Trommelfell"
+        },
+        "name": "Koerpertemperatur-Trommelfell",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-unter-der-Zunge"
+        },
+        "name": "Koerpertemperatur-unter-der-Zunge",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Koerpertemperatur-vaginal"
+        },
+        "name": "Koerpertemperatur-vaginal",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksatrialer-Druck"
+        },
+        "name": "Linksatrialer-Druck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksatrialer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung"
+        },
+        "name": "Linksvent-Schlagvolumenindex-Durch-Indikatorverduennung",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaerer-Druck"
+        },
+        "name": "Linksventrikulaerer-Druck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaerer-Herzindex"
+        },
+        "name": "Linksventrikulaerer-Herzindex",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung"
+        },
+        "name": "Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung"
+        },
+        "name": "Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaeres-Schlagvolumen"
+        },
+        "name": "Linksventrikulaeres-Schlagvolumen",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaeres-schlagvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung"
+        },
+        "name": "Linksventrikulaeres-Schlagvolumen-Durch-Indikatorverduennung",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Linksventrikulaeres-Schlagvolumenindex"
+        },
+        "name": "Linksventrikulaeres-Schlagvolumenindex",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Pulmonalarterieller-Blutdruck"
+        },
+        "name": "Pulmonalarterieller-Blutdruck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Pulmonalarterieller-wedge-Blutdruck"
+        },
+        "name": "Pulmonalarterieller-wedge-Blutdruck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Pulmonalvaskulaerer-Widerstandsindex"
+        },
+        "name": "Pulmonalvaskulaerer-Widerstandsindex",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Puls"
+        },
+        "name": "Puls",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-puls"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Rechtsatrialer-Druck"
+        },
+        "name": "Rechtsatrialer-Druck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-rechtsatrialer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Rechtsventrikulaerer-Druck"
+        },
+        "name": "Rechtsventrikulaerer-Druck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie"
+        },
+        "name": "Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie"
+        },
+        "name": "Sauerstoffsaettigung-im-Blut-Postduktal-durch-Pulsoxymetrie",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/Sauerstoffsaettigung-im-Blut-Preduktal-durch-Pulsoxymetrie"
+        },
+        "name": "Sauerstoffsaettigung-im-Blut-Preduktal-durch-Pulsoxymetrie",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-bilanz"
+        },
+        "name": "SD MII ICU Bilanz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-herzzeitvolumen"
+        },
+        "name": "SD MII ICU Herzzeitvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-ideales-koerpergewicht"
+        },
+        "name": "SD MII ICU Ideales Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"
+        },
+        "name": "SD MII ICU Intrakranieller Druck ICP",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig"
+        },
+        "name": "SD MII ICU Koerpergewicht Percentil Altersabhaengig",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpergroesse-percentil"
+        },
+        "name": "SD MII ICU Koerpergroesse Percentil",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-achsel"
+        },
+        "name": "SD MII ICU Koerpertemperatur Achsel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege"
+        },
+        "name": "SD MII ICU Koerpertemperatur Atemwege",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-blut"
+        },
+        "name": "SD MII ICU Koerpertemperatur Blut",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-brust"
+        },
+        "name": "SD MII ICU Koerpertemperatur Brust",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule"
+        },
+        "name": "SD MII ICU Koerpertemperatur Brustwirbelsaeule",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk"
+        },
+        "name": "SD MII ICU Koerpertemperatur Gelenk",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-generisch"
+        },
+        "name": "SD MII ICU Koerpertemperatur Generisch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule"
+        },
+        "name": "SD MII ICU Koerpertemperatur Halswirbelsaeule",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase"
+        },
+        "name": "SD MII ICU Koerpertemperatur Harnblase",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-kern"
+        },
+        "name": "SD MII ICU Koerpertemperatur Kern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-leiste"
+        },
+        "name": "SD MII ICU Koerpertemperatur Leiste",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule"
+        },
+        "name": "SD MII ICU Koerpertemperatur Lendenwirbelsaeule",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-myokard"
+        },
+        "name": "SD MII ICU Koerpertemperatur Myokard",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-nasal"
+        },
+        "name": "SD MII ICU Koerpertemperatur nasal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum"
+        },
+        "name": "SD MII ICU Koerpertemperatur Nasen-Rachen-Raum",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-rektal"
+        },
+        "name": "SD MII ICU Koerpertemperatur rektal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre"
+        },
+        "name": "SD MII ICU Koerpertemperatur Speiseroehre",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-stirn"
+        },
+        "name": "SD MII ICU Koerpertemperatur Stirn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell"
+        },
+        "name": "SD MII ICU Koerpertemperatur Trommelfell",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge"
+        },
+        "name": "SD MII ICU Koerpertemperatur unter der Zunge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal"
+        },
+        "name": "SD MII ICU Koerpertemperatur vaginal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksatrialer-druck"
+        },
+        "name": "SD MII ICU Linksatrialer Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventrikulaerer-druck"
+        },
+        "name": "SD MII ICU Linksventrikulaerer Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex"
+        },
+        "name": "SD MII ICU Linksventrikulaerer Herzindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung"
+        },
+        "name": "SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"
+        },
+        "name": "SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd"
+        },
+        "name": "SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen"
+        },
+        "name": "SD MII ICU Linksventrikulaeres Schlagvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung"
+        },
+        "name": "SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex"
+        },
+        "name": "SD MII ICU Linksventrikulaeres Schlagvolumenindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten"
+        },
+        "name": "SD MII ICU Monitoring und Vitaldaten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck"
+        },
+        "name": "SD MII ICU Pulmonalarterieller Blutdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck"
+        },
+        "name": "SD MII ICU Pulmonalarterieller Wedge Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "name": "SD MII ICU Pulmonalvaskulaerer Widerstandsindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-puls"
+        },
+        "name": "SD MII ICU Puls",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-rechtsatrialer-druck"
+        },
+        "name": "SD MII ICU Rechtsatrialer Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck"
+        },
+        "name": "SD MII ICU Rechtsventrikulaerer Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie"
+        },
+        "name": "SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie"
+        },
+        "name": "SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie"
+        },
+        "name": "SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch"
+        },
+        "name": "SD MII ICU Sonstige pulsatile Druecke Generisch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex"
+        },
+        "name": "SD MII ICU Systemischer Vaskulaerer Widerstandsindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck"
+        },
+        "name": "SD MII ICU Zentralvenoeser Blutdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/Systemischer-vaskulaerer-Widerstandsindex"
+        },
+        "name": "Systemischer-vaskulaerer-Widerstandsindex",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-bodysite-observation-blutdruck"
+        },
+        "name": "VS MII ICU BodySite Observation Blutdruck",
+        "description": "Dieses ValueSet enthält Codes für bodySites von Blutdrücken (pulsatilen Drücken).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten"
+        },
+        "name": "VS MII ICU BodySite Observation Monitoring und Vitaldaten",
+        "description": "Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073"
+        },
+        "name": "VS MII ICU Code Monitoring und Vitaldaten [ISO11073]",
+        "description": "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc"
+        },
+        "name": "VS MII ICU Code Monitoring und Vitaldaten [LOINC]",
+        "description": "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed"
+        },
+        "name": "VS MII ICU Code Monitoring und Vitaldaten [sct]",
+        "description": "Dieses ValueSet enthaelt Codes fuer Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-method-observation-blutdruck"
+        },
+        "name": "VS MII ICU Method Observation Blutdruck",
+        "description": "Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-unit-equivalent-ucum-beats-per-minute"
+        },
+        "name": "VS MII ICU Unit equivalent UCUM beats per minute",
+        "description": "Dieses ValueSet enthält äquivalente Codes für Herzschläge pro Minute.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-unit-equivalent-ucum-dyn-s-cm5-m2"
+        },
+        "name": "VS MII ICU Unit equivalent UCUM dyn and s per cm^5 and squaremeter",
+        "description": "Dieses ValueSet enthält äquivalente Codes für dyn.s/cm5/m2.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-unit-equivalent-ucum-l-per-minute"
+        },
+        "name": "VS MII ICU Unit equivalent UCUM L per minute",
+        "description": "Dieses ValueSet enthält äquivalente Codes für Liter pro Minute.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter"
+        },
+        "name": "VS MII ICU Unit equivalent UCUM L per minute and squaremeter",
+        "description": "Dieses ValueSet enthält äquivalente Codes für Volumen pro Zeit und Körperoberfläche",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/Zentralvenoeser-Blutdruck"
+        },
+        "name": "Zentralvenoeser-Blutdruck",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

@@ -19,20 +19,10 @@
     "experimental": false,
     "date": "2024-01-02",
     "description": "Suchparameter für Observation.referenceRange",
-    "code": "reference-range",
+    "code": "referenceRange",
     "base":  [
         "Observation"
     ],
-    "type": "composite",
-    "expression": "Observation.referenceRange | Observation.component.referenceRange",
-    "component": [
-        {
-          "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-high",
-          "expression": "high"
-        },
-        {
-          "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-low",
-          "expression": "low"
-        }
-    ]
+    "type": "token",
+    "expression": "Observation.referenceRange"
 }

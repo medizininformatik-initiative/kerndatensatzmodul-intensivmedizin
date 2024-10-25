@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-zentralvenoeser-blutdruck",
+  "id": "mii-icu-zentralvenoeser-blutdruck",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/zentralvenoeser-blutdruck"
     ]
   },
   "status": "final",
@@ -44,7 +44,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 12,
+    "value": 12.0,
     "unit": "millimeter Mercury column",
     "system": "http://unitsofmeasure.org",
     "code": "mm[Hg]"

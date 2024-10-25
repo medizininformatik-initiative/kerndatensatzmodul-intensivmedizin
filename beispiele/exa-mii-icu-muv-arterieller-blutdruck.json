@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-arterieller-blutdruck",
+  "id": "mii-icu-arterieller-blutdruck",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck"
@@ -24,7 +24,7 @@
         "code": "364090009",
         "display": "Systemic arterial pressure (observable entity)"
       },
-      {
+	  {
         "system": "http://loinc.org",
         "code": "85354-9",
         "display": "Blood pressure panel with all children optional"
@@ -57,7 +57,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 120,
+        "value": 120.0,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -84,7 +84,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 90,
+        "value": 90.0,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -111,7 +111,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 80,
+        "value": 80.0,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

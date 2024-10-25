@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-systemischer-vaskulaerer-widerstandsindex",
+  "id": "mii-icu-systemischer-vaskulaerer-widerstandsindex",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/systemischer-vaskulaerer-widerstandsindex"
     ]
   },
   "status": "final",
@@ -44,7 +44,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 2000,
+    "value": 2000.0,
     "unit": "dyne second per centimeter5 and square meter",
     "system": "http://unitsofmeasure.org",
     "code": "dyn.s/(cm5.m2)"

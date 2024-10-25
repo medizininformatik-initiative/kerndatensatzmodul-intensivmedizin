@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_MII_ICU_Method_Observation_Blutdruck",
+  "id": "vs-mii-icu-method-observation-blutdruck",
+  "title": "VS MII ICU Method Observation Blutdruck",
+  "description": "Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. ",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/ValueSet/vs-mii-icu-method-observation-blutdruck",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10179008"
+          },
+          {
+            "code": "22762002"
+          }
+        ]
+      }
+    ]
+  }
+}

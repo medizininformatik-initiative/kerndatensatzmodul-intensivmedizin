@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "Intrakranieller-Druck-ICP",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "60956-0",
+        "system": "http://loinc.org",
+        "display": "Intracranial pressure (ICP)"
+      },
+      {
+        "code": "250844005",
+        "system": "http://snomed.info/sct",
+        "display": "Intracranial pressure (observable entity)"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 10,
+    "code": "mm[Hg]",
+    "unit": "millimeter Mercury column"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "PatientinMusterfrau"
+  }
+}

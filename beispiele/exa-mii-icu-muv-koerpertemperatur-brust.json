@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-muv-koerpertemperatur-brust",
+  "id": "mii-icu-koerpertemperatur-brust",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-brust"
     ]
   },
   "status": "final",
@@ -20,9 +20,20 @@
   "code": {
     "coding": [
       {
+        "system": "urn:iso:std:iso:11073:10101"
+      },
+      {
+        "system": "http://loinc.org"
+      },
+      {
         "system": "http://snomed.info/sct",
         "code": "248835004",
         "display": "Temperature of breast (observable entity)"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature"
       }
     ]
   },

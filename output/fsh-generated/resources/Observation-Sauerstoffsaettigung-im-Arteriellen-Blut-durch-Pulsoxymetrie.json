@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "Sauerstoffsaettigung-im-Arteriellen-Blut-durch-Pulsoxymetrie",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/scores/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "442476006",
+        "system": "http://snomed.info/sct",
+        "display": "Arterial oxygen saturation (observable entity)"
+      },
+      {
+        "code": "59408-5",
+        "system": "http://loinc.org",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+      }
+    ]
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 98,
+    "code": "%",
+    "unit": "percent"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "11527006",
+        "system": "http://snomed.info/sct",
+        "display": "Arterial system structure (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "PatientinMusterfrau"
+  }
+}

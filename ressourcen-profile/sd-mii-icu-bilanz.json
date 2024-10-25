@@ -78,10 +78,13 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "364396009"
+          "system": "http://snomed.info/sct"
         },
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-observation-bilanzen"
+        }
       },
       {
         "id": "Observation.category.coding:kdsicu-category.system",
@@ -102,7 +105,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-category-fixed",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed",
           "code": "bilanz"
         }
       },

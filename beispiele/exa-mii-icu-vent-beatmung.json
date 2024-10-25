@@ -1,6 +1,6 @@
 {
   "resourceType": "Procedure",
-  "id": "exa-mii-icu-vent-beatmung",
+  "id": "mii-icu-beatmung",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung"
@@ -20,8 +20,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1149092001",
-        "display": "Positive pressure airway ventilation (regime/therapy)"
+        "code": "26763009",
+        "display": "Controlled ventilation procedure and therapy, initiation and management (procedure)"
       }
     ]
   },

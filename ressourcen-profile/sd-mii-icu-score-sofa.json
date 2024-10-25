@@ -1,0 +1,528 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-score-sofa",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-sofa",
+  "name": "SD_MII_ICU_Score_SOFA",
+  "title": "SD MII ICU Score SOFA",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+	  {
+        "id": "Observation.category.coding:fixedCategoryScore",
+        "path": "Observation.category.coding",
+        "sliceName": "fixedCategoryScore",
+        "binding": {
+          "strength": "required",
+          "description": "Fixed Value for Search",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "1187491009",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "96790-1",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung",
+        "path": "Observation.component",
+        "sliceName": "Atmung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "96823-0"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "minValueInteger": 0,
+        "maxValueInteger": 4,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Atmung.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Atmung.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber",
+        "path": "Observation.component",
+        "sliceName": "Leber",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "96825-5"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Leber.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Leber.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere",
+        "path": "Observation.component",
+        "sliceName": "Niere",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "96828-9"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Niere.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Niere.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem",
+        "path": "Observation.component",
+        "sliceName": "Nervensystem",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "96827-1"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Nervensystem.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Nervensystem.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung",
+        "path": "Observation.component",
+        "sliceName": "Gerinnung",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "96824-8"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Gerinnung.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Gerinnung.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System",
+        "path": "Observation.component",
+        "sliceName": "Herz-Kreislauf-System",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code",
+        "path": "Observation.component.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding:loinc",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "96826-3"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding:loinc.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.code.coding:loinc.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation",
+        "path": "Observation.component.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.interpretation.coding",
+        "path": "Observation.component.interpretation.coding",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.component:Herz-Kreislauf-System.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "mustSupport": true
+      }
+    ]
+  }
+}
