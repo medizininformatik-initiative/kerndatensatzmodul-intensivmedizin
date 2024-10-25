@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-koerpertemperatur-leiste",
+  "id": "exa-mii-icu-muv-koerpertemperatur-leiste",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-leiste"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste"
     ]
   },
   "status": "final",
@@ -26,8 +26,8 @@
       },
       {
         "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature"
+        "code": "104063-3",
+		"display": "Body temperature"
       }
     ]
   },

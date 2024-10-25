@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-koerpertemperatur-speiseroehre",
+  "id": "exa-mii-icu-muv-koerpertemperatur-speiseroehre",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-speiseroehre"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre"
     ]
   },
   "status": "final",
@@ -30,9 +30,8 @@
         "display": "Core body temperature measured in esophagus (observable entity)"
       },
       {
-        "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature"
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150372"
       }
     ]
   },

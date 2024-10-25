@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-linksventrikulaerer-schlagvolumenindex-durch-indikatorverduennung",
+  "id": "exa-mii-icu-muv-linksventrikulaerer-schlagvolumenindex-durch-indikatorverduennung",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaerer-schlagvolumenindex-durch-indikatorverduennung"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"
     ]
   },
   "status": "final",
@@ -34,9 +34,9 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 1.0,
-    "unit": "liter per minute and square meter",
+    "value": 1,
+    "unit": "milliliter per square meter",
     "system": "http://unitsofmeasure.org",
-    "code": "L/min/m2"
+    "code": "mL/m2"
   }
 }

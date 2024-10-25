@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-koerpertemperatur-lendenwirbelsaeule",
+  "id": "exa-mii-icu-muv-koerpertemperatur-lendenwirbelsaeule",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-lendenwirbelsaeule"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule"
     ]
   },
   "status": "final",
@@ -23,11 +23,6 @@
         "system": "http://snomed.info/sct",
         "code": "364429006",
         "display": "Temperature of lumbar spine (observable entity)"
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "8310-5",
-        "display": "Body temperature"
       }
     ]
   },

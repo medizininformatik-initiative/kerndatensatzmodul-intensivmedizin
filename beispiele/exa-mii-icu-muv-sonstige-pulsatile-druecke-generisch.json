@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-sonstige-pulsatile-druecke-generisch",
+  "id": "exa-mii-icu-muv-sonstige-pulsatile-druecke-generisch",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sonstige-pulsatile-druecke-generisch"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch"
     ]
   },
   "status": "final",
@@ -23,6 +23,9 @@
         "system": "http://snomed.info/sct",
         "code": "75367002",
         "display": "Blood pressure (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct"
       }
     ]
   },
@@ -52,7 +55,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 120.0,
+        "value": 120,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -79,7 +82,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 90.0,
+        "value": 90,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -106,7 +109,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 80.0,
+        "value": 80,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-rechtsventrikulaerer-druck",
+  "id": "exa-mii-icu-muv-rechtsventrikulaerer-druck",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/rechtsventrikulaerer-druck"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "system": "http://hl7.org/fhir/secondary-finding",
           "code": "vital-signs"
         }
       ]
@@ -21,8 +21,16 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
+        "code": "75367002"
+      },
+      {
+        "system": "http://snomed.info/sct",
         "code": "276756009",
         "display": "Right ventricular pressure (observable entity)"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150104"
       }
     ]
   },
@@ -51,7 +59,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 10.0,
+        "value": 10,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -77,7 +85,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 25.0,
+        "value": 25,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -103,7 +111,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 5.0,
+        "value": 5,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

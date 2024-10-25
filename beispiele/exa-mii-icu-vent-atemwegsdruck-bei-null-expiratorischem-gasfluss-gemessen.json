@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss-gemessen",
+  "id": "exa-mii-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss-gemessen",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-expiratorischem-gasfluss"
@@ -45,6 +45,6 @@
     "code": "cm[H2O]"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
+    "reference": "DeviceMetric/exa-mii-icu-vent-gemessene-parameter-beatmung"
   }
 }

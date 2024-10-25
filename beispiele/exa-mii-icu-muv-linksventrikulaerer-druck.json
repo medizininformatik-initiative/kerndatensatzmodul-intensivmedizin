@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-linksventrikulaerer-druck",
+  "id": "exa-mii-icu-muv-linksventrikulaerer-druck",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaerer-druck"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "system": "http://hl7.org/fhir/secondary-finding",
           "code": "vital-signs"
         }
       ]
@@ -21,8 +21,17 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
+        "code": "75367002"
+      },
+      {
+        "system": "http://snomed.info/sct",
         "code": "276769008",
         "display": "Left ventricular pressure (observable entity)"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "150100",
+        "display": "Pressure of the blood in the left ventricle of the heart"
       }
     ]
   },
@@ -51,7 +60,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 40.0,
+        "value": 40,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -77,7 +86,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 120.0,
+        "value": 120,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -103,7 +112,7 @@
         ]
       },
       "valueQuantity": {
-        "value": 10.0,
+        "value": 10,
         "unit": "millimeter Mercury column",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

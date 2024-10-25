@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-linksventrikulaeres-schlagvolumen",
+  "id": "exa-mii-icu-muv-linksventrikulaeres-schlagvolumen",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaeres-schlagvolumen"
@@ -44,7 +44,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 70.0,
+    "value": 70,
     "unit": "milliliter",
     "system": "http://unitsofmeasure.org",
     "code": "mL"

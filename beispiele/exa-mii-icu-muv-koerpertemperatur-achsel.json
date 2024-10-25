@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-icu-koerpertemperatur-achsel",
+  "id": "exa-mii-icu-muv-koerpertemperatur-achsel",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpertemperatur-achsel"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel"
     ]
   },
   "status": "final",
@@ -31,8 +31,8 @@
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "188496",
-        "display": "Axillary temperature"
+        "code": "188452",
+        "display": "Axillary (armpit) temperature"
       },
       {
         "system": "http://loinc.org",
