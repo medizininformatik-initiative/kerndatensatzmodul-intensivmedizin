@@ -51,8 +51,8 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-	"value": 1,
-	"unit": "Score",
+    "value": 1,
+    "unit": "Score",
     "system": "http://unitsofmeasure.org",
     "code": "{score}"
   },
@@ -72,7 +72,7 @@
       },
       "valueInteger": 1
     },
-	{
+    {
       "code": {
         "coding": [
           {
@@ -87,7 +87,7 @@
       },
       "valueInteger": 0
     },
-	{
+    {
       "code": {
         "coding": [
           {
@@ -102,7 +102,7 @@
       },
       "valueInteger": 0
     },
-	{
+    {
       "code": {
         "coding": [
           {
@@ -117,7 +117,7 @@
       },
       "valueInteger": 0
     },
-	{
+    {
       "code": {
         "coding": [
           {
