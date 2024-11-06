@@ -22,11 +22,13 @@
       {
         "system": "http://snomed.info/sct",
         "code": "75367002",
-        "display": "Blood pressure (observable entity)"
+        "display": "Blood pressure (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "250767002"
+        "code": "250767002",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "system": "http://loinc.org",
