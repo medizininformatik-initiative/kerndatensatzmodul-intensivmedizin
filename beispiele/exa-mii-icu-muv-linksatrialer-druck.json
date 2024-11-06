@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "75367002"
+        "code": "75367002",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "276760007"
+        "code": "276760007",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "system": "http://loinc.org",

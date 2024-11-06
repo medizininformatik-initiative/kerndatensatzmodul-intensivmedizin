@@ -28,12 +28,14 @@
       {
         "system": "http://snomed.info/sct",
         "code": "27913002",
-        "display": "Maximum inspiratory pressure (observable entity)"
+        "display": "Maximum inspiratory pressure (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "250774007",
-        "display": "Inspired oxygen concentration (observable entity)"
+        "display": "Inspired oxygen concentration (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "system": "http://loinc.org",
