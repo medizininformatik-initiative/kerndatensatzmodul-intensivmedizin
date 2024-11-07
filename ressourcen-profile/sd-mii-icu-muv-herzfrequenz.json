@@ -1,20 +1,20 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-linksventrikulaeres-schlagvolumen",
+  "id": "sd-mii-icu-herzfrequenz",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/linksventrikulaeres-schlagvolumen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz",
   "version": "1.0.0",
-  "name": "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen",
-  "title": "SD MII ICU Linksventrikulaeres Schlagvolumen",
+  "name": "SD_MII_ICU_Herzfrequenz",
+  "title": "SD MII ICU Herzfrequenz",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -31,7 +31,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "90096001",
+          "code": "364075005",
           "version": "http://snomed.info/sct/900000000000207008/version/20241101"
         }
       },
@@ -43,7 +43,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "20562-5"
+          "code": "8867-4"
         }
       },
       {
@@ -54,36 +54,30 @@
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
-          "code": "150428"
+          "code": "147842"
         }
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
         "patternQuantity": {
-          "unit": "milliliter",
+          "unit": "beats per minute",
           "system": "http://unitsofmeasure.org",
-          "code": "mL"
+          "code": "/min"
         }
       },
       {
-        "id": "Observation.value[x]:valueQuantity.unit",
+        "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "min": 1
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-beats_per-minute"
+        }
       }
     ]
   }
