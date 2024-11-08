@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-icu-ect-dm-eingest-gem-parameter-extrakorporale-verfahren",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren",
+  "version": "2025.0.0",
+  "name": "SD_MII_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
+  "title": "SD MII ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceMetric",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceMetric.type",
+        "path": "DeviceMetric.type",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII-DeviceMetric-Extrakorporale-Verfahren"
+        }
+      },
+      {
+        "id": "DeviceMetric.type.coding",
+        "path": "DeviceMetric.type.coding",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "182744004"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceMetric.type.coding.system",
+        "path": "DeviceMetric.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceMetric.type.coding.code",
+        "path": "DeviceMetric.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceMetric.source",
+        "path": "DeviceMetric.source",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceMetric.category",
+        "path": "DeviceMetric.category",
+        "mustSupport": true
+      }
+    ]
+  }
+}
