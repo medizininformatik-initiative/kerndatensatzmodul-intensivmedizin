@@ -2,11 +2,6 @@ Profile: SD_MII_ICU_Beatmung
 Parent: $Procedure
 Id: sd-mii-icu-beatmung
 Title: "SD MII ICU Beatmung"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
-* ^contact.name = "Müller, Christoph"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "christmueller@ukaachen.de"
 * partOf only Reference(Procedure or Observation)
 * partOf ^type.profile = "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
 * category 1..
