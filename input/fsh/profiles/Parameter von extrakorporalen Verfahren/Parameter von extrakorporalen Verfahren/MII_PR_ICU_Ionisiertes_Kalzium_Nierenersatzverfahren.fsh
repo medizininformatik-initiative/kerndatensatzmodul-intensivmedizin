@@ -1,10 +1,12 @@
-Profile: SD_MII_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
-Parent: SD_MII_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: sd-mii-icu-ionisiertes-kalzium-nierenersatzverfahren
-Title: "SD MII ICU Ionisiertes Kalzium Nierenersatzverfahren"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Profile: MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
+Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Id: mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren
+Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren"
+* ^status = #active
+
 * category 1..
 * code obeys obs-loinc-sct
 * code.coding ^slicing.discriminator.type = #pattern

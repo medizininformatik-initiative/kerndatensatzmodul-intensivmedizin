@@ -1,10 +1,12 @@
-Profile: SD_MII_ICU_Blutfluss_Cardiovasculaeres_Geraet
-Parent: SD_MII_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: sd-mii-icu-blutfluss-cardiovasculaeres-geraet
-Title: "SD MII ICU Blutfluss Cardiovasculaeres Geraet"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Profile: MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet
+Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Id: mii-pr-icu-blutfluss-cardiovasculaeres-geraet
+Title: "MII PR ICU Blutfluss Cardiovasculaeres Geraet"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-cardiovasculaeres-geraet"
+* ^status = #active
+
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed

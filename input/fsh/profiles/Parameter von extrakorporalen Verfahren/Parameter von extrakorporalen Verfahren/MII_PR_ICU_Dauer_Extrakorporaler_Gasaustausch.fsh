@@ -1,16 +1,18 @@
-Profile: SD_MII_ICU_Dauer_Haemodialysesitzung
-Parent: SD_MII_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: sd-mii-icu-dauer-haemodialysesitzung
-Title: "SD MII ICU Dauer Haemodialysesitzung"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-haemodialysesitzung"
+Profile: MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch
+Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Id: mii-pr-icu-dauer-extrakorporaler-gasaustausch
+Title: "MII PR ICU Dauer Extrakorporaler Gasaustausch"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
+* ^status = #active
+
 * category 1..
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#445940005
+* code.coding[sct] = $sct#251286000
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] ..0
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"

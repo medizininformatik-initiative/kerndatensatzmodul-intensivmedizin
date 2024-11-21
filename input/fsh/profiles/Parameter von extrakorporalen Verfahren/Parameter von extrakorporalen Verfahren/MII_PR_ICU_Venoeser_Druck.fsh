@@ -3,9 +3,9 @@ Parent: Observation
 Id: mii-pr-icu-venoeser-druck
 Title: "MII PR ICU Venous Pressure"
 Description: "Profile for documenting venous pressure."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/venoeser-druck"
 * insert PR_CS_VS_Version
 * insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/venoeser-druck"
 * ^status = #active
 
 * code MS

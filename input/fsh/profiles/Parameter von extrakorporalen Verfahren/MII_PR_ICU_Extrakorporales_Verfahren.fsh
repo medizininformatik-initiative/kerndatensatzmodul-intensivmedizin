@@ -4,6 +4,7 @@ Id: mii-pr-icu-extrakorporales-verfahren
 Title: "MII PR ICU Extrakorporales Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
 * ^status = #active
 
 * category 1..

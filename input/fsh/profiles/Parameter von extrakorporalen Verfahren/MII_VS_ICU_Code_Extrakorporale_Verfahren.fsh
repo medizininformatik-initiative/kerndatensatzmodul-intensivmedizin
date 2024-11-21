@@ -2,12 +2,13 @@ ValueSet: MII_VS_ICU_Code_Extrakorporale_Verfahren
 Id: mii-vs-icu-code-extrakorporale-verfahren
 Title: "MII VS Code Extrakorporale Verfahren"
 Description: "Mögliche Codes für extrakorporale Verfahren. Für die Einteilung und Interpretation in Bezug auf unterschiedliche Detail-Level beachte den zugehörigen implementationguide."
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII_Code_Extrakorporale_Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/MII_Code_Extrakorporale_Verfahren"
 * ^date = "2021-01-11"
 * ^experimental = false
 * ^status = #active
+
 * $sct#265764009 "Renal dialysis (procedure)"
 * $sct#341939001 "Extracorporeal hemofiltration (procedure)"
 * $sct#127788007 "Apheresis (procedure)"

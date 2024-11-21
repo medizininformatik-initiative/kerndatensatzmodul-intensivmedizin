@@ -1,10 +1,12 @@
-Profile: SD_MII_ICU_Blutfluss_Extrakorporaler_Gasaustausch
-Parent: SD_MII_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: sd-mii-icu-blutfluss-extrakorporaler-gasaustausch
-Title: "SD MII ICU Blutfluss Extrakorporaler Gasaustausch"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Profile: MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch
+Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Id: mii-pr-icu-blutfluss-extrakorporaler-gasaustausch
+Title: "MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-extrakorporaler-gasaustausch"
+* ^status = #active
+
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
