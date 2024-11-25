@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
+  "id": "exa-mii-icu-vent-endexspiratorischer-kohlendioxidpartialdruck",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/endexpiratorischer-kohlendioxidpartialdruck"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/endexspiratorischer-kohlendioxidpartialdruck"
     ]
   },
   "partOf": [
