@@ -211,11 +211,48 @@
         "id": "Observation.effective[x]:effectiveDateTime",
         "path": "Observation.effective[x]",
         "sliceName": "effectiveDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]:effectivePeriod",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectivePeriod",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]:effectivePeriod.start",
+        "path": "Observation.effective[x].start",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]:effectivePeriod.end",
+        "path": "Observation.effective[x].end",
         "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
