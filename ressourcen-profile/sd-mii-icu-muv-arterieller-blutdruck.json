@@ -31,37 +31,22 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        },
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -77,8 +62,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "364090009",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "code": "364090009"
         },
         "mustSupport": true
       },
@@ -87,6 +71,11 @@
         "path": "Observation.code.coding.system",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.version",
+        "path": "Observation.code.coding.version",
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
       {
         "id": "Observation.code.coding:sct.code",
@@ -112,14 +101,6 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "type": [
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "Period"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -222,8 +203,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "271649006",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20241101",
+          "code": "271649006"
         },
         "mustSupport": true
       },
@@ -369,8 +350,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "271650006",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20241101",
+          "code": "271650006"
         },
         "mustSupport": true
       },
@@ -516,8 +497,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "6797001",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20241101",
+          "code": "6797001"
         },
         "mustSupport": true
       },
