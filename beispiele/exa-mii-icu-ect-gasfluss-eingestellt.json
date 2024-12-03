@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-ect-sauerstoffgasfluss",
+  "id": "exa-mii-icu-ect-gasfluss-eingestellt",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffgasfluss"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/gasfluss"
     ]
   },
   "partOf": [
