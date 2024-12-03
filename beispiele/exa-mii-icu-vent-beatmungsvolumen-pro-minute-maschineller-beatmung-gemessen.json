@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung",
+  "id": "exa-mii-icu-vent-beatmungsvolumen-pro-minute-maschineller",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller-beatmung"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller"
     ]
   },
   "partOf": [
