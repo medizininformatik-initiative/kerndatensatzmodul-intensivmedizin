@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-vent-spontanes-mechanisches-atemzugvol-waehrend-beatmung",
+  "id": "sd-mii-icu-vent-spontanes-mechanisches-atemzugvol-waehrend",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-mechanisches-atemzugvolumen-waehrend-beatmung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-mechanisches-atemzugvolumen-waehrend",
   "version": "2025.0.0",
-  "name": "SD_MII_ICU_Spontanes_Mechanisches_Atemzugvolumen_Waehrend_Beatmung",
-  "title": "SD MII ICU Spontanes Mechanisches Atemzugvolumen Waehrend Beatmung",
+  "name": "SD_MII_ICU_Spontanes_Mechanisches_Atemzugvolumen_Waehrend",
+  "title": "SD MII ICU Spontanes Mechanisches Atemzugvolumen Waehrend",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",
