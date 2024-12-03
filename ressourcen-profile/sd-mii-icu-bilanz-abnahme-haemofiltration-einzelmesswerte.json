@@ -35,8 +35,8 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101",
-          "code": "251850009"
+          "code": "251850009",
+          "system": "http://snomed.info/sct"
         }
       },
       {
