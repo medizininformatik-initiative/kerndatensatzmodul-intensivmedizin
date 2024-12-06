@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "exa-mii-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss-eingestellt",
+  "id": "exa-mii-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss-eingestellt",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-expiratorischem-gasfluss"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-exspiratorischem-gasfluss"
     ]
   },
   "partOf": [
