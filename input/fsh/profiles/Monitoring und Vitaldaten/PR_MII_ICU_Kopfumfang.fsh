@@ -1,9 +1,12 @@
-Profile: SD_MII_ICU_Kopfumfang
+Profile: MII_PR_ICU_Kopfumfang
 Parent: $observation-de-vitalsign-kopfumfang
-Id: sd-mii-icu-kopfumfang
-Title: "SD MII ICU Kopfumfang"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Id: mii-pr-icu-kopfumfang
+Title: "MII PR ICU Kopfumfang"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang"
+* ^status = #active
+
 * status MS
 * category contains sct 0..1 MS
 * category[sct] = $sct#248326004
