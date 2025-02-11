@@ -107,7 +107,7 @@
         "binding": {
           "strength": "required",
           "description": "Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004)",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-mii_code_extrakorporale_verfahren"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-extrakorporale-verfahren"
         }
       },
       {
