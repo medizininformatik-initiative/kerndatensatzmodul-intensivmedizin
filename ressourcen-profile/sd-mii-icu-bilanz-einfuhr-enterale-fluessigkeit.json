@@ -23,7 +23,7 @@
         "sliceName": "hl7-category",
         "patternCoding": {
           "code": "therapy",
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
         }
       },
       {
