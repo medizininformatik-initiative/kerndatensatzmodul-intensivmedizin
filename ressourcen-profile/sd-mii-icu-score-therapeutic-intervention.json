@@ -24,7 +24,7 @@
         "binding": {
           "strength": "required",
           "description": "Fixed Value for Search",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-fixed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-fixed"
         }
       },
       {
@@ -155,7 +155,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/observation-component-interpretation-score-sofa-atmung"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-observation-component-interpretation-score-sofa-atmung"
         }
       },
       {
