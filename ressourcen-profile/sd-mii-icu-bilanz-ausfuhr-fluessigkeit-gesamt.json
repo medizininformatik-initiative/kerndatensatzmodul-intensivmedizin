@@ -86,7 +86,7 @@
         "binding": {
           "strength": "required",
           "description": "equivalent codes for milliliter",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/ValueSet-Unit-equivalent-UCUM-milliliter"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-milliliter"
         }
       }
     ]
