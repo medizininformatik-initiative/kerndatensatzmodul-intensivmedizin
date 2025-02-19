@@ -57,9 +57,6 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Procedure",
               "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -128,10 +125,7 @@
         "path": "Procedure.encounter",
         "type": [
           {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ]
+            "code": "Reference"
           }
         ],
         "mustSupport": true
@@ -150,10 +144,7 @@
         "path": "Procedure.recorder",
         "type": [
           {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ]
+            "code": "Reference"
           }
         ],
         "mustSupport": true

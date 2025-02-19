@@ -96,9 +96,6 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
             "targetProfile": [
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
             ]
@@ -271,9 +268,6 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Patient",
               "http://hl7.org/fhir/StructureDefinition/Device"
@@ -287,10 +281,7 @@
         "path": "Observation.encounter",
         "type": [
           {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ]
+            "code": "Reference"
           }
         ],
         "mustSupport": true
@@ -374,9 +365,6 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
             "targetProfile": [
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
             ]
