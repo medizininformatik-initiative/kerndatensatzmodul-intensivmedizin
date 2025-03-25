@@ -18,12 +18,12 @@ Title: "MII PR ICU Kopfumfang"
 * code MS
 * code.coding 2.. MS
 * code.coding[loinc] = $loinc#9843-4
-* code.coding[loinc].system MS
-* code.coding[loinc].code MS
-* code.coding[sct] = $sct#363811000
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
-* code.coding[sct].system 1.. MS
-* code.coding[sct].code 1.. MS
+* code.coding[loinc].system 1..1 MS
+* code.coding[loinc].code 1..1 MS
+* code.coding[snomed] 1..1 MS
+* code.coding[snomed] = $sct#363812007
+* code.coding[snomed].system 1..1 MS
+* code.coding[snomed].code 1..1 MS
 * subject MS
 * effective[x] MS
 * effectiveDateTime MS
