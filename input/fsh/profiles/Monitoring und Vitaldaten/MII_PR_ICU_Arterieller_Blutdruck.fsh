@@ -1,18 +1,20 @@
-Profile: SD_MII_ICU_Arterieller_Blutdruck
+Profile: MII_PR_ICU_Arterieller_Blutdruck
 Parent: $observation-de-vitalsign-blutdruck
-Id: sd-mii-icu-arterieller-blutdruck
-Title: "SD MII ICU Arterieller Blutdruck"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Id: mii-pr-icu-arterieller-blutdruck
+Title: "MII PR ICU Arterieller Blutdruck"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck"
+* ^status = #active
+
 * category MS
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
-* code.coding[loinc] ^sliceName = "loinc"
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
-* code.coding[loinc] ^mustSupport = true
+* code.coding[loinc] MS
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding[loinc].display MS
@@ -34,9 +36,7 @@ Title: "SD MII ICU Arterieller Blutdruck"
 * device MS
 * referenceRange ..1 MS
 * component ..3 MS
-* component[SystolicBP] ^sliceName = "SystolicBP"
-* component[SystolicBP] ^mustSupport = true
-* component[SystolicBP].code.coding 3..
+* component[SystolicBP] MS
 * component[SystolicBP].code.coding ^slicing.discriminator.type = #pattern
 * component[SystolicBP].code.coding ^slicing.discriminator.path = "$this"
 * component[SystolicBP].code.coding ^slicing.rules = #open
@@ -64,8 +64,7 @@ Title: "SD MII ICU Arterieller Blutdruck"
 * component[SystolicBP].value[x].system 1.. MS
 * component[SystolicBP].value[x].code 1.. MS
 * component[SystolicBP].dataAbsentReason MS
-* component[DiastolicBP] ^sliceName = "DiastolicBP"
-* component[DiastolicBP] ^mustSupport = true
+* component[DiastolicBP] MS
 * component[DiastolicBP].code.coding 3..
 * component[DiastolicBP].code.coding ^slicing.discriminator.type = #pattern
 * component[DiastolicBP].code.coding ^slicing.discriminator.path = "$this"
@@ -94,8 +93,7 @@ Title: "SD MII ICU Arterieller Blutdruck"
 * component[DiastolicBP].value[x].system 1.. MS
 * component[DiastolicBP].value[x].code 1.. MS
 * component[DiastolicBP].dataAbsentReason MS
-* component[meanBP] ^sliceName = "meanBP"
-* component[meanBP] ^mustSupport = true
+* component[meanBP] MS
 * component[meanBP].code.coding 3..
 * component[meanBP].code.coding ^slicing.discriminator.type = #pattern
 * component[meanBP].code.coding ^slicing.discriminator.path = "$this"
