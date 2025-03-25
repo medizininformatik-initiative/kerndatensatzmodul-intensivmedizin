@@ -14,8 +14,8 @@ Title: "MII PR ICU Atemfrequenz"
 * category MS
 * code MS
 * code.coding 2.. MS
-* code.coding[loinc] ^sliceName = "loinc"
-* code.coding[loinc] ^mustSupport = true
+* code.coding[loinc]
+* code.coding[loinc] MS
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[snomed] 1..1
@@ -25,7 +25,6 @@ Title: "MII PR ICU Atemfrequenz"
 * effective[x] MS
 * value[x] MS
 * valueQuantity 1..
-* valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity ^patternQuantity.unit = "breaths per minute"
 * valueQuantity.value MS
 * valueQuantity.unit MS

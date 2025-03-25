@@ -27,11 +27,9 @@ Title: "MII PR ICU Kopfumfang"
 * subject MS
 * effective[x] MS
 * effectiveDateTime MS
-* effectiveDateTime ^sliceName = "effectiveDateTime"
 * value[x] MS
 * valueQuantity = $unitsofmeasure#cm "centimeter"
 * valueQuantity MS
-* valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.value MS
 * valueQuantity.unit MS
 * valueQuantity.system MS
