@@ -17,7 +17,7 @@ Title: "MII PR ICU Kopfumfang"
 * category[sct].coding.display 1.. MS
 * code MS
 * code.coding 2.. MS
-* code.coding[loinc] = $loinc#9843-4 MS
+* code.coding[loinc] = $loinc#9843-4
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[sct] = $sct#363811000
