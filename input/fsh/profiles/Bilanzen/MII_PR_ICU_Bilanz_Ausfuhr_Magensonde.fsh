@@ -1,18 +1,20 @@
-Profile: SD_MII_ICU_Bilanz_Ausfuhr_Magensonde
-Parent: SD_MII_ICU_Bilanz
-Id: sd-mii-icu-bilanz-ausfuhr-magensonde
-Title: "SD MII ICU Bilanz Ausfuhr Magensonde"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Profile: MII_PR_ICU_Bilanz_Ausfuhr_Magensonde
+Parent: MII_PR_ICU_Bilanz
+Id: mii-pr-icu-bilanz-ausfuhr-magensonde
+Title: "MII PR ICU Bilanz Ausfuhr Magensonde"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-magensonde"
-* category.coding[hl7-category] = $CodeSystem-observation-category.html#exam
-* category.coding[kdsicu-category] = $sct#364396009
+* ^status = #active
+
+* category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
+* category.coding[kdsicu-category].code = #364396009
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
-* code.coding[sct] = $sct#251848001
+* code.coding[sct].code = #251848001
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#79561-7
+* code.coding[loinc].code = #79561-7
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
