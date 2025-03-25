@@ -1,10 +1,12 @@
-Profile: SD_MII_ICU_Bilanz_Gesamte_Tages_Bilanz
-Parent: SD_MII_ICU_Bilanz
-Id: sd-mii-icu-bilanz-gesamte-tages-bilanz
-Title: "SD MII ICU Bilanz Gesamte Tages Bilanz"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Profile: MII_PR_ICU_Bilanz_
+Parent: MII_PR_ICU_Bilanz
+Id: mii-pr-icu-bilanz-gesamte-tages-bilanz
+Title: "MII PR ICU Bilanz Gesamte Tages Bilanz"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-gesamte-tages-bilanz"
+* ^status = #active
+
 * category.coding[hl7-category] = $CodeSystem-observation-category.html#vital-sign
 * category.coding[kdsicu-category] = $sct#364396009
 * code.coding ^slicing.discriminator.type = #pattern

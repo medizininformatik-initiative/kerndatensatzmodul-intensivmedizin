@@ -1,11 +1,12 @@
-Profile: SD_MII_ICU_Bilanz
+Profile: MII_PR_ICU_Bilanz
 Parent: Observation
-Id: sd-mii-icu-bilanz
-Title: "SD MII ICU Bilanz"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Id: mii-pr-icu-bilanz
+Title: "MII PR ICU Bilanz"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz"
-* ^version = "2025.0.0"
+* ^status = #active
+
 * identifier MS
 * category 1.. MS
 * category.coding MS
@@ -32,23 +33,21 @@ Title: "SD MII ICU Bilanz"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
-* code.coding contains sct 1..1 MS
+* code.coding contains sct 1..1 MS and 
+    loinc 0.. MS and 
+    IEEE-11073 0.. MS
 * code.coding[sct] from $code-observation-bilanzen-snomed (required)
 * code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
 * code.coding[sct].display MS
 * code.coding[loinc] from $code-observation-bilanzen-loinc (required)
-* code.coding[loinc] ^sliceName = "loinc"
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
-* code.coding[loinc] ^mustSupport = true
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding[loinc].display MS
 * code.coding[IEEE-11073] from $code-observation-bilanzen-iso11073 (required)
-* code.coding[IEEE-11073] ^sliceName = "IEEE-11073"
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
-* code.coding[IEEE-11073] ^mustSupport = true
 * code.coding[IEEE-11073].system 1.. MS
 * code.coding[IEEE-11073].code 1.. MS
 * subject 1.. MS
