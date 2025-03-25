@@ -1,9 +1,12 @@
-Profile: SD_MII_ICU_Atemfrequenz
+Profile: MII_PR_ICU_Atemfrequenz
 Parent: $observation-de-vitalsign-atemfrequenz
-Id: sd-mii-icu-atemfrequenz
-Title: "SD MII ICU Atemfrequenz"
-* ^text.status = #empty
-* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
+Id: mii-pr-icu-atemfrequenz
+Title: "MII PR ICU Atemfrequenz"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+* ^status = #active
+
 * id MS
 * meta MS
 * identifier MS
@@ -15,7 +18,7 @@ Title: "SD MII ICU Atemfrequenz"
 * code.coding[loinc] ^mustSupport = true
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
-* code.coding contains snomed 1..1
+* code.coding[snomed] 1..1
 * code.coding[snomed] = $sct#86290005
 * subject MS
 * encounter MS
