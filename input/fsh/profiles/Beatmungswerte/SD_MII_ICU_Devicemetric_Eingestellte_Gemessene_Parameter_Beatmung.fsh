@@ -13,7 +13,7 @@ Title: "SD MII ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
 * type.coding ^patternCoding.system = "http://snomed.info/sct"
 * type.coding.system 1.. MS
 * type.coding.code 1.. MS
-* source only Reference(SD_MII_ICU_Icu_Device)
+* source only Reference(MII_PR_ICU_Device)
 * source MS
 * source ^type.profile = "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
 * category MS
