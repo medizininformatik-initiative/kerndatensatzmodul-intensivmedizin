@@ -14,7 +14,6 @@ Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/Stru
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
 Alias: $observation-de-vitalsign-koerpergroesse = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
 Alias: $observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang
-Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $category-observation-bilanzen-hl7 = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/category-observation-bilanzen-hl7
 Alias: $code-observation-bilanzen-snomed = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/code-observation-bilanzen-snomed
 Alias: $code-observation-bilanzen-loinc = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/code-observation-bilanzen-loinc
