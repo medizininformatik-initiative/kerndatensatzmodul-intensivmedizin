@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-spontanes-plus-mechanisches_atemzugvolumen
+Id: mii-pr-icu-spontanes-plus-mechanisches-atemzugvolumen
 Title: "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 * insert PR_CS_VS_Version
 * insert Publisher

@@ -7,7 +7,7 @@ Title: "MII PR ICU Einstellung Ausatmungszeit Beatmung"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/einstellung-ausatmungszeit-beatmung"
 * ^status = #active
 
-*code.coding 2..
+* code.coding 2..
 * code.coding[sct] 1..1
 * code.coding[sct].code = #250820008
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
