@@ -8,7 +8,7 @@ Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
 * ^status = #active
 
 * type MS
-* type from $Category-Procedure-Beatmung-SNOMED (required)
+* type from mii-vs-icu-category-procedure-beatmung-snomed (required)
 * type.coding MS
 * type.coding ^patternCoding.system = "http://snomed.info/sct"
 * type.coding.system 1.. MS

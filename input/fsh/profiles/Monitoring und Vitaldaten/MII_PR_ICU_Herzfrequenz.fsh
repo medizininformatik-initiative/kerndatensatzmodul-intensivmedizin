@@ -17,4 +17,4 @@ Title: "MII SD ICU Herzfrequenz"
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#147842
 * value[x] = $unitsofmeasure#/min "beats per minute"
 * value[x].unit 1..
-* value[x].code from $ValueSet-Unit-equivalent-UCUM-beats_per-minute (required)
+* value[x].code from mii-vs-icu-unit-equivalent-ucum-beats-per-minute (required)

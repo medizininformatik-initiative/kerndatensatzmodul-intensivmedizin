@@ -35,7 +35,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * code.coding ^slicing.rules = #closed
 
 * code.coding contains sct 0..
-* code.coding[sct] from $Code-Observation-extrakorporale-Verfahren-SNOMED (extensible)
+* code.coding[sct] from mii-vs-icu-code-observation-extrakorporale-verfahren-snomed (extensible)
 * code.coding[sct] ^sliceName = "sct"
 * code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
 * code.coding[sct] ^mustSupport = true
@@ -44,7 +44,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * code.coding[sct].display MS
 
 * code.coding contains loinc 0..
-* code.coding[loinc] from $Code-Observation-extrakorporale-Verfahren-LOINC (extensible)
+* code.coding[loinc] from mii-vs-icu-code-observation-extrakorporale-verfahren-loinc (extensible)
 * code.coding[loinc] ^sliceName = "loinc"
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[loinc] ^mustSupport = true
@@ -53,7 +53,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * code.coding[loinc].display MS
 
 * code.coding contains IEEE-11073 0..
-* code.coding[IEEE-11073] from $code-observation-extrakorporale-verfahren-iso11073 (extensible)
+* code.coding[IEEE-11073] from mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073 (extensible)
 * code.coding[IEEE-11073] ^sliceName = "IEEE-11073"
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073] ^mustSupport = true
@@ -61,7 +61,6 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * code.coding[IEEE-11073].code 1.. MS
 * subject 1.. MS
 * subject only Reference(Patient or Device)
-* subject ^type.profile = "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
 * encounter only Reference(Encounter) 
 * encounter MS
 * effective[x] only dateTime or Period
@@ -74,7 +73,6 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * value[x].unit MS
 * value[x].system 1.. MS
 * value[x].code 1.. MS
-* bodySite from $BodySite-Observation-extrakorporale-Verfahren (extensible)
+* bodySite from mii-vs-icu-body-site-observation-extrakorporale-verfahren (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren)
 * device MS
-* device ^type.profile = "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"

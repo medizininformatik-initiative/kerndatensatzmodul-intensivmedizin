@@ -14,4 +14,4 @@ Title: "MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * code.coding[loinc].code = #9167-8
 * code.coding[IEEE-11073] ..0
 * valueQuantity.code 1.. MS 
-* valueQuantity.code from MII_VS_ICU_Unit_equivalent_UCUM_milliliter (required)
+* valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)

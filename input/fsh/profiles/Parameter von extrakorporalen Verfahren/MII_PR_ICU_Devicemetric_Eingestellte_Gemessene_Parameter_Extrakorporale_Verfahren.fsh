@@ -8,12 +8,11 @@ Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale 
 * ^status = #active
 
 * type MS
-* type from $MII-DeviceMetric-Extrakorporale-Verfahren (required)
+* type from mii-vs-icu-devicemetric-extrakorporale-verfahren (required)
 * type.coding = $sct#182744004
 * type.coding MS
 * type.coding.system 1.. MS
 * type.coding.code 1.. MS
 * source only Reference(MII_PR_ICU_Device)
 * source MS
-* source ^type.profile = "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
 * category MS

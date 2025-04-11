@@ -30,5 +30,5 @@ Title: "MII PR ICU Atemfrequenz"
 * valueQuantity.unit MS
 * valueQuantity.system MS
 * valueQuantity.code MS
-* valueQuantity.code from $ValueSet-Unit-equivalent-UCUM-breaths_per-minute (required)
+* valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-breaths-per-minute (required)
 * dataAbsentReason MS

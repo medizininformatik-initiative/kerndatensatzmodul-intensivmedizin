@@ -8,7 +8,6 @@ Title: "MII PR ICU Arterieller Druck"
 * ^status = #active
 
 * code.coding[sct] = $sct#386534000
-* code.coding[sct] ^sliceName = "sct"
 * code.coding[sct] ^patternCoding.system = "http://snomed.info/sct",
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[sct].system 1..1 MS
