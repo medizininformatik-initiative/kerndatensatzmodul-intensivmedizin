@@ -1,6 +1,6 @@
-ValueSet: MII_VS_ICU_Category_Procedure_Beatmung_SNOMED
-Id: mii-vs-icu-category-procedure-beatmung-snomed
-Title: "MII VS ICU Category Procedure Beatmung SNOMED"
+ValueSet: MII_VS_ICU_Code_Procedure_Beatmung_SNOMED
+Id: mii-vs-icu-code-procedure-beatmung-snomed
+Title: "MII VS ICU Code Procedure Beatmung SNOMED"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-procedure-beatmung-snomed"
