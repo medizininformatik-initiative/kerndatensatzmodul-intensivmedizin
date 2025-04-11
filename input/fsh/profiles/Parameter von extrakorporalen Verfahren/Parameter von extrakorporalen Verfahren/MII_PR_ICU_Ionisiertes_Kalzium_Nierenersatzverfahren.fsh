@@ -20,8 +20,3 @@ Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
 * value[x] = $unitsofmeasure#mmol/L
-
-Invariant: obs-loinc-sct
-Description: "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein"
-* severity = #error
-* expression = "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()"
