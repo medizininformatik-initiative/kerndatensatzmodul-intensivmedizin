@@ -1,5 +1,5 @@
 ValueSet: MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute
-Id: mii-vs-icu-unit-equivalent_ucum_l_per_minute
+Id: mii-vs-icu-unit-equivalent-ucum-l-per-minute
 Title: "MII VS ICU Unit equivalent UCUM L per minute"
 Description: "Dieses ValueSet enthält äquivalente Codes für Liter pro Minute."
 * insert PR_CS_VS_Version
