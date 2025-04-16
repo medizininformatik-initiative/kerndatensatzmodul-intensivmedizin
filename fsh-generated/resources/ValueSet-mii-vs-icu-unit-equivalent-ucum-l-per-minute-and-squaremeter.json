@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter",
+  "id": "mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter",
+  "title": "MII VS ICU Unit equivalent UCUM L per minute and squaremeter",
+  "description": "Dieses ValueSet enthält äquivalente Codes für Liter pro Minute .",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter",
+  "version": "2025.0.4",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-02-11",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "L/min7m2"
+          },
+          {
+            "code": "l/min7m2"
+          },
+          {
+            "code": "L/(min.m2)"
+          },
+          {
+            "code": "l/(min.m2)"
+          }
+        ]
+      }
+    ]
+  }
+}
