@@ -14,4 +14,4 @@ Description: "Profile for documenting venous pressure."
 * code.coding[sct].code 1..
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
-* value[x] = $unitsofmeasure#mm[Hg]
+* value[x] = $ucum#mm[Hg]

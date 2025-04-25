@@ -15,4 +15,4 @@ Title: "MII PR ICU Inspiratorischer Gasfluss"
 * code.coding[loinc].code = #60794-5
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151948
-* valueQuantity = $unitsofmeasure#L/min
+* valueQuantity = $ucum#L/min

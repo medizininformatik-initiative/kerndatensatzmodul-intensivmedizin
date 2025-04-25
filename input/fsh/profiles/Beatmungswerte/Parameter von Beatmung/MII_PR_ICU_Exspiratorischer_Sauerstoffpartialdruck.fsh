@@ -16,4 +16,4 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * code.coding[loinc].code = #3147-6
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#153132
-* value[x] = $unitsofmeasure#mm[Hg]
+* value[x] = $ucum#mm[Hg]

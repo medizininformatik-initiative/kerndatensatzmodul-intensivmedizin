@@ -16,4 +16,4 @@ Title: "MII PR ICU Dynamische Kompliance"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151692
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#mL/cm[H2O]
+* valueQuantity = $ucum#mL/cm[H2O]

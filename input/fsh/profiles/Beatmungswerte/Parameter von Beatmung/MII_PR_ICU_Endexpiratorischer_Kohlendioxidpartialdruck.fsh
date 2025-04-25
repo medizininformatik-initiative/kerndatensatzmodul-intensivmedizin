@@ -19,4 +19,4 @@ Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * code.coding[loinc].code = #19891-1
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151708
-* value[x] = $unitsofmeasure#mm[Hg]
+* value[x] = $ucum#mm[Hg]

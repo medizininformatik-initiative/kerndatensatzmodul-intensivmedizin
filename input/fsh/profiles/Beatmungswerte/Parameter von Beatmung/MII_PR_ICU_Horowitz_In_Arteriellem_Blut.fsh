@@ -15,5 +15,4 @@ Title: "MII PR ICU Horowitz In Arteriellem Blut"
 * code.coding[loinc].code = #50984-4
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#150656
-* valueQuantity = $unitsofmeasure#mm[Hg]
-* valueQuantity ^sliceName = "valueQuantity"
+* valueQuantity = $ucum#mm[Hg]

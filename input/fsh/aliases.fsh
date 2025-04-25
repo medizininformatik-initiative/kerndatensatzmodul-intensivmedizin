@@ -4,7 +4,6 @@ Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $ieee-11073 = http://example.org/CodeSystem/IEEE-11073
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $unitsofmeasure = http://unitsofmeasure.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 // MII KDS

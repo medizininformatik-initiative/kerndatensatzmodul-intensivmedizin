@@ -17,4 +17,4 @@ Title: "MII PR ICU Atemzugvolumen Einstellung"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#16929196
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#mL
+* valueQuantity = $ucum#mL

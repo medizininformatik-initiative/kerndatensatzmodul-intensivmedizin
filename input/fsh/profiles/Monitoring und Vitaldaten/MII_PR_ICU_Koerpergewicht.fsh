@@ -41,7 +41,7 @@ Title: "MII PR ICU Koerpergewicht"
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
 * value[x] MS
-* valueQuantity = $unitsofmeasure#kg "kilogram"
+* valueQuantity = $ucum#kg "kilogram"
 * valueQuantity MS
 * valueQuantity.value MS
 * valueQuantity.unit MS

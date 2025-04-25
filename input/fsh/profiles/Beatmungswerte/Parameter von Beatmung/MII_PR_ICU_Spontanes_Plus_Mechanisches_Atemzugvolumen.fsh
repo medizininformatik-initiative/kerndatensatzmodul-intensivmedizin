@@ -12,4 +12,4 @@ Title: "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 * code.coding[loinc].code = #20118-6
 * code.coding[IEEE-11073] ..0
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#mL
+* valueQuantity = $ucum#mL

@@ -16,4 +16,4 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073].code = #152490
 * effective[x] 1..
-* value[x] = $unitsofmeasure#/min
+* value[x] = $ucum#/min

@@ -14,4 +14,4 @@ Title: "MII PR ICU Spontane Atemfrequenz Beatmet"
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[IEEE-11073].code = #152498
 * effective[x] 1..
-* value[x] = $unitsofmeasure#/min
+* value[x] = $ucum#/min

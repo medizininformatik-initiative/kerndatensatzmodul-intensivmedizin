@@ -17,4 +17,4 @@ Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * code.coding[IEEE-11073].system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073].code = #151832
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#{ratio}
+* valueQuantity = $ucum#{ratio}

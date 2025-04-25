@@ -13,4 +13,4 @@ Title: "MII PR ICU Positiv Endexpiratorischer Druck"
 * code.coding[loinc].code = #76248-4
 * code.coding[IEEE-11073].code = #151976
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#cm[H2O]
+* valueQuantity = $ucum#cm[H2O]

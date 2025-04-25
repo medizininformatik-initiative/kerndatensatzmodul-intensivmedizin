@@ -13,4 +13,4 @@ Title: "MII PR ICU Arterieller Druck"
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 
-* value[x] = $unitsofmeasure#mm[Hg]
+* value[x] = $ucum#mm[Hg]

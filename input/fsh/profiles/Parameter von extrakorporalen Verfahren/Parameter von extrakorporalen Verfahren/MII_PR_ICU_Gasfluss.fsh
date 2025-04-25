@@ -15,4 +15,4 @@ Title: "MII PR ICU Gasfluss"
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
-* value[x] = $unitsofmeasure#L/min
+* value[x] = $ucum#L/min

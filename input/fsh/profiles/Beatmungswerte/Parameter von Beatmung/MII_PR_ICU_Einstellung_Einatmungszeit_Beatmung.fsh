@@ -16,4 +16,4 @@ Title: "MII PR ICU Einstellung Einatmungszeit Beatmung"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#16929632
 * effective[x] 1..
-* value[x] = $unitsofmeasure#s
+* value[x] = $ucum#s

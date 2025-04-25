@@ -15,4 +15,4 @@ Title: "MII ICU Beatmungszeit Hohem Druck"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#16929860
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#s
+* valueQuantity = $ucum#s

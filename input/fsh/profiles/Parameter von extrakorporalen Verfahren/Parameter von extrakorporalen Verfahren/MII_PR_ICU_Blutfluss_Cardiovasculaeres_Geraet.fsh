@@ -17,4 +17,4 @@ Title: "MII PR ICU Blutfluss Cardiovasculaeres Geraet"
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
-* value[x] = $unitsofmeasure#L/min
+* value[x] = $ucum#L/min

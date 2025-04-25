@@ -15,4 +15,4 @@ Title: "MII PR ICU Beatmungszeit Niedrigem Druck"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#16929864
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#s
+* valueQuantity = $ucum#s

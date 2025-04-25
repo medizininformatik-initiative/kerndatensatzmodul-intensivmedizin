@@ -39,7 +39,7 @@ Title: "MII PR ICU Koerpergroesse"
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
 * value[x] MS
-* valueQuantity = $unitsofmeasure#cm "centimeter"
+* valueQuantity = $ucum#cm "centimeter"
 * valueQuantity MS
 * valueQuantity.value MS
 * valueQuantity.code = #cm

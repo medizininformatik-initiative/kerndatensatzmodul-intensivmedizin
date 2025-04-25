@@ -16,4 +16,4 @@ Title: "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073].code = #152004
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#L/min
+* valueQuantity = $ucum#L/min

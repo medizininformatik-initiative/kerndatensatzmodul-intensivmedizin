@@ -14,5 +14,5 @@ Title: "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#cm[H2O]
+* valueQuantity = $ucum#cm[H2O]
 * valueQuantity ^sliceName = "valueQuantity"

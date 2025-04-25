@@ -52,7 +52,7 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[SystolicBP].code.coding[IEEE-11073].system 1.. MS
 * component[SystolicBP].code.coding[IEEE-11073].code 1.. MS
 * component[SystolicBP].code.coding[IEEE-11073].display MS
-* component[SystolicBP].value[x] = $unitsofmeasure#mm[Hg] "millimeter Mercury column"
+* component[SystolicBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[SystolicBP].value[x] MS
 * component[SystolicBP].dataAbsentReason MS
 * component[DiastolicBP] MS
@@ -77,7 +77,7 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[DiastolicBP].code.coding[IEEE-11073].system 1.. MS
 * component[DiastolicBP].code.coding[IEEE-11073].code 1.. MS
 * component[DiastolicBP].code.coding[IEEE-11073].display MS
-* component[DiastolicBP].value[x] = $unitsofmeasure#mm[Hg] "millimeter Mercury column"
+* component[DiastolicBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[DiastolicBP].value[x] MS
 * component[DiastolicBP].dataAbsentReason MS
 * component[meanBP] MS
@@ -102,6 +102,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[meanBP].code.coding[IEEE-11073].system 1.. MS
 * component[meanBP].code.coding[IEEE-11073].code 1.. MS
 * component[meanBP].code.coding[IEEE-11073].display MS
-* component[meanBP].value[x] = $unitsofmeasure#mm[Hg] "millimeter Mercury column"
+* component[meanBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[meanBP].value[x] MS
 * component[meanBP].dataAbsentReason MS

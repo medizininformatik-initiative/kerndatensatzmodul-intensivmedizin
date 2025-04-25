@@ -16,4 +16,4 @@ Title: "MII PR ICU Spontanes Atemzugvolumen"
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
-* valueQuantity = $unitsofmeasure#mL
+* valueQuantity = $ucum#mL
