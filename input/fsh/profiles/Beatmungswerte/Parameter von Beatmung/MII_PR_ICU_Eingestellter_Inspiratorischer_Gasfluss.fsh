@@ -7,10 +7,7 @@ Title: "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/eingestellter-inspiratorischer-gasfluss"
 * ^status = #active
 
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
-* category contains Beatmung 0..1 // no more constraints?
+* category contains Beatmung 0..1 
 * code.coding[sct] ..0
 * code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
 * code.coding[loinc] 1..1

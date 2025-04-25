@@ -7,9 +7,6 @@ Title: "MII PR ICU Horowitz In Arteriellem Blut"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/horowitz-in-arteriellem-blut"
 * ^status = #active
 
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
 * category contains vs-cat 0..1
 * code.coding 2..
 * code.coding[sct] ..0

@@ -7,9 +7,6 @@ Title: "MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-eingestellt"
 * ^status = #active
 
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
 * category contains Beatmung 0..1
 * code.coding 2..
 * code.coding[sct] 1..1

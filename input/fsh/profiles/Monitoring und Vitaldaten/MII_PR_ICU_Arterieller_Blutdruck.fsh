@@ -10,13 +10,9 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * category MS
 * code MS
 * code.coding MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[loinc] MS
-* code.coding[loinc].system 1.. MS
-* code.coding[loinc].code 1.. MS
+* code.coding[loinc].system MS
+* code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding contains sct 1..1 MS
 * code.coding[sct] = $sct#364090009
@@ -26,9 +22,8 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * code.coding[sct].display MS
 * subject MS
 * encounter MS
-* effective[x] only dateTime or Period
 * effective[x] MS
-* value[x] MS
+* value[x] ..0 MS
 * dataAbsentReason ..0 MS
 * interpretation MS
 * bodySite MS
@@ -59,10 +54,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[SystolicBP].code.coding[IEEE-11073].display MS
 * component[SystolicBP].value[x] = $unitsofmeasure#mm[Hg] "millimeter Mercury column"
 * component[SystolicBP].value[x] MS
-* component[SystolicBP].value[x].value 1.. MS
-* component[SystolicBP].value[x].unit 1.. MS
-* component[SystolicBP].value[x].system 1.. MS
-* component[SystolicBP].value[x].code 1.. MS
 * component[SystolicBP].dataAbsentReason MS
 * component[DiastolicBP] MS
 * component[DiastolicBP].code.coding 3..
@@ -88,10 +79,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[DiastolicBP].code.coding[IEEE-11073].display MS
 * component[DiastolicBP].value[x] = $unitsofmeasure#mm[Hg] "millimeter Mercury column"
 * component[DiastolicBP].value[x] MS
-* component[DiastolicBP].value[x].value 1.. MS
-* component[DiastolicBP].value[x].unit 1.. MS
-* component[DiastolicBP].value[x].system 1.. MS
-* component[DiastolicBP].value[x].code 1.. MS
 * component[DiastolicBP].dataAbsentReason MS
 * component[meanBP] MS
 * component[meanBP].code.coding 3..
@@ -117,8 +104,4 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[meanBP].code.coding[IEEE-11073].display MS
 * component[meanBP].value[x] = $unitsofmeasure#mm[Hg] "millimeter Mercury column"
 * component[meanBP].value[x] MS
-* component[meanBP].value[x].value 1.. MS
-* component[meanBP].value[x].unit 1.. MS
-* component[meanBP].value[x].system 1.. MS
-* component[meanBP].value[x].code 1.. MS
 * component[meanBP].dataAbsentReason MS

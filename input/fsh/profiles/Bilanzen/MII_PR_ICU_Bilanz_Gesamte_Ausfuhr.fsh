@@ -8,13 +8,13 @@ Title: "MII PR ICU Bilanz Gesamte Ausfuhr"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
-* category.coding[kdsicu-category].code = #364396009
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #closed
+* code.coding 2.. MS
 * code.coding[sct].code = #251841007
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = #9257-7
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* valueQuantity.code 1.. MS
+* valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
+* valueQuantity.code ^binding.description = "equivalent codes for milliliter"

@@ -7,8 +7,11 @@ Title: "MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-pankreasdrainage"
 * ^status = #active
 
-* category.coding[hl7-category].code = #exam
+* category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding[sct].code = #1162668004
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
+* valueQuantity.code 1.. MS
+* valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
+* valueQuantity.code ^binding.description = "equivalent codes for milliliter"

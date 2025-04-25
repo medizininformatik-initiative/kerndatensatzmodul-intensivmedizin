@@ -7,9 +7,6 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/exspiratorischer-sauerstoffpartialdruck"
 * ^status = #active
 
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
 * category contains Beatmung 0..1
 * code.coding 3..
 * code.coding[sct] 1..1

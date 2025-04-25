@@ -37,6 +37,9 @@ Title: "MII PR ICU Koerpergewicht"
 * subject MS
 * effective[x] MS
 * effectiveDateTime MS
+* effectivePeriod MS
+* effectivePeriod.start 1.. MS
+* effectivePeriod.end MS
 * value[x] MS
 * valueQuantity = $unitsofmeasure#kg "kilogram"
 * valueQuantity MS

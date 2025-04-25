@@ -9,7 +9,7 @@ Title: "MII PR ICU Koerpergroesse"
 
 * status MS
 * category MS
-* category[VSCat] 1..1 MS
+* category[VSCat] MS
 * category[VSCat].coding MS
 * category[VSCat].coding.system 1.. MS
 * category[VSCat].coding.code 1.. MS
@@ -35,6 +35,9 @@ Title: "MII PR ICU Koerpergroesse"
 * subject MS
 * effective[x] MS
 * effectiveDateTime MS
+* effectivePeriod MS
+* effectivePeriod.start 1.. MS
+* effectivePeriod.end MS
 * value[x] MS
 * valueQuantity = $unitsofmeasure#cm "centimeter"
 * valueQuantity MS

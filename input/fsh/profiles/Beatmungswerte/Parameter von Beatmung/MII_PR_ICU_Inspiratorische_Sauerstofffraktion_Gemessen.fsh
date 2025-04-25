@@ -7,9 +7,6 @@ Title: "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-gemessen"
 * ^status = #active
 
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
 * category contains Beatmung 0..1
 * code.coding 2..
 * code.coding[sct] 1..1

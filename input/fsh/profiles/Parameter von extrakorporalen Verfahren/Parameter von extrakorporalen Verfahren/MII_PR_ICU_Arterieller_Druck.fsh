@@ -7,11 +7,10 @@ Title: "MII PR ICU Arterieller Druck"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck"
 * ^status = #active
 
+* code.coding[sct] 1..1 MS
 * code.coding[sct] = $sct#386534000
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct",
 * code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
-* code.coding[sct].system 1..1 MS
-* code.coding[sct].code 1..1 MS
-* code.coding[sct].display 0..1 MS
+* code.coding[loinc] ..0
+* code.coding[IEEE-11073] ..0
 
 * value[x] = $unitsofmeasure#mm[Hg]

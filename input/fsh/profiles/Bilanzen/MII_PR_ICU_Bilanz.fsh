@@ -15,19 +15,15 @@ Title: "MII PR ICU Bilanz"
 * category.coding ^slicing.rules = #open
 * category.coding contains
     hl7-category 0..1 MS and
-    kdsicu-category 1..1 MS and
-    fixedCategoryBilanz 1..1
+    kdsicu-category 1..1 MS
 * category.coding[hl7-category] from mii-vs-icu-category-observation-bilanzen-hl7 (required)
 * category.coding[hl7-category] ^patternCoding.system = "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
 * category.coding[hl7-category] ^binding.description = "A Code of the following value set is required. Only relevant codes for balances should be vital-signs, exam and therapy."
 * category.coding[hl7-category].system 1.. MS
 * category.coding[hl7-category].code 1.. MS
-* category.coding[kdsicu-category].code = #364396009
+* category.coding[kdsicu-category].code = $sct#364396009
 * category.coding[kdsicu-category].system 1.. MS
 * category.coding[kdsicu-category].code 1.. MS
-* category.coding[fixedCategoryBilanz] = $observation-category-fixed#bilanz
-* category.coding[fixedCategoryBilanz].system 1.. MS
-* category.coding[fixedCategoryBilanz].code 1.. MS
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern

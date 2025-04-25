@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
 Parent: DeviceMetric
-Id: mii--pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren
+Id: mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren
 Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
