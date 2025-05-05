@@ -19,4 +19,4 @@ Title: "MII PR ICU Substituatvolumen"
 * code.coding[IEEE-11073] 0..0
 * code.coding[IEEE-11073].system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
-* value[x] = $unitsofmeasure#L
+* value[x] = $ucum#L
