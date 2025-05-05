@@ -16,3 +16,6 @@ Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/Stru
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
 Alias: $observation-de-vitalsign-koerpergroesse = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
 Alias: $observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang
+
+// licenses
+Alias: $spdx-license = http://hl7.org/fhir/spdx-license
