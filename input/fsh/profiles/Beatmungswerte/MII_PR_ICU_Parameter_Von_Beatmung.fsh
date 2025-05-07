@@ -56,7 +56,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * effective[x] MS
 * issued MS
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
-* value[x] 1.. MS
+* value[x] 0..1 MS
 * value[x] only Quantity
 * value[x] ^patternQuantity.system = "http://unitsofmeasure.org"
 * value[x].value 1.. MS
