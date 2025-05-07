@@ -24,4 +24,5 @@ Technische Umsetzung:
 
 * Christoph Müller
 * Tim Steinbach
+* Margaux Gatrio
 * Alexander Zautke

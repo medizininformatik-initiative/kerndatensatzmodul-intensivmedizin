@@ -1,0 +1,4 @@
+---
+parent: 
+---
+# Kerndatensatz Erweiterungsmodul Intensivmedizin

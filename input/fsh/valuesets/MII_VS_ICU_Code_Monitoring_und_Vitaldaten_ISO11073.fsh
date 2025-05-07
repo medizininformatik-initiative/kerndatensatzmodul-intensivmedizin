@@ -1,0 +1,58 @@
+ValueSet: MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073
+Id: mii-vs-icu-code-monitoring-und-vitaldaten-iso11073
+Title: "MII VS ICU Code Monitoring und Vitaldaten ISO11073"
+Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring."
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073"
+* ^version = "2025.0.4"
+* ^status = #active
+* ^date = "2025-02-11"
+* ^experimental = false
+
+* include $ieee-11073#150017 "Systolic blood pressure"
+* include $ieee-11073#150019 "Mean blood pressure"
+* include $ieee-11073#150018 "Diastolic blood pressure"
+* include $ieee-11073#150084 "Central venous pressure"
+* include $ieee-11073#150045 "Systolic pulmonary arterial pressure"
+* include $ieee-11073#150047 "Mean pulmonary arterial pressure"
+* include $ieee-11073#150046 "Diastolic pulmonary arterial pressure"
+* include $ieee-11073#150052 "Pulmonary artery wedge pressure"
+* include $ieee-11073#150276 "Cardiac output"
+* include $ieee-11073#149772 "Cardiac index"
+* include $ieee-11073#149760 "Systemic vascular resistance indexed"
+* include $ieee-11073#152852 "Pulmonary Vascular Resistance Index"
+* include $ieee-11073#150428 "Ventricular stroke"
+* include $ieee-11073#149764 "Left Ventricular Stroke Work Index"
+* include $ieee-11073#150368 "Body temperature - Core"
+* include $ieee-11073#150456 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* include $ieee-11073#160300 "Postductal SpO2"
+* include $ieee-11073#160296 "Preductal SpO2"
+* include $ieee-11073#153608 "Intracranial pressure"
+* include $ieee-11073#150103 "Mean left ventricular pressure"
+* include $ieee-11073#150107 "Mean right ventricular pressure"
+* include $ieee-11073#150101 "Systolic left ventricular pressure"
+* include $ieee-11073#150105 "Systolic right ventricular pressure"
+* include $ieee-11073#150102 "Diastolic left ventricular pressure"
+* include $ieee-11073#150106 "Diastolic right ventricular pressure"
+* include $ieee-11073#150069 "Systolic right atrial pressure"
+* include $ieee-11073#150065 "Systolic left atrial pressure"
+* include $ieee-11073#150067 "Mean left atrial pressure"
+* include $ieee-11073#150071 "Mean right atrial pressure"
+* include $ieee-11073#150066 "Diastolic left atrial pressure"
+* include $ieee-11073#150070 "Diastolic right atrial pressure"
+* include $ieee-11073#188420 "Rectal temperature"
+* include $ieee-11073#188496 "Axillary temperature"
+* include $ieee-11073#188424 "Oral temperature"
+* include $ieee-11073#188436 "Blood temperature"
+* include $ieee-11073#188500 "Myocardial temperature"
+* include $ieee-11073#147842 "Heart Rate"
+* include $ieee-11073#188504 "Nasal temperature"
+* include $ieee-11073#149514 "Pulse rate"
+* include $ieee-11073#150380 "Nasopharynx temperature"
+* include $ieee-11073#188452 "Axillary (armpit) temperature"
+* include $ieee-11073#150324
+* include $ieee-11073#150372
+* include $ieee-11073#188796 "Ideal body weight (IBW)"
+* include $ieee-11073#150392
+* include $ieee-11073#150356 "Airway temperature"
