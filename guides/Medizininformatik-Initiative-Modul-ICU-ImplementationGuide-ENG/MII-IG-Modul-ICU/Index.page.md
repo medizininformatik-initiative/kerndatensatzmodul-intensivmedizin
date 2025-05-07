@@ -4,7 +4,7 @@ This specification describes the FHIR representation of the core dataset extensi
 
 | Publication | |
 |-------------|------------|
-| Date        | 11.02.2025 |
+| Date        | 07.05.2025 |
 | Version     | 2025.0.2   |
 | Status      | Active     |
 | Realm       | DE         |
