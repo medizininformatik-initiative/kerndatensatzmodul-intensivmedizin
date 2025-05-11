@@ -9,7 +9,6 @@ Title: "MII PR ICU Positiv Endexpiratorischer Druck"
 
 * code.coding 3..
 * code.coding[sct].code = #250854009
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc].code = #76248-4
 * code.coding[IEEE-11073].code = #151976
 * effective[x] 1..

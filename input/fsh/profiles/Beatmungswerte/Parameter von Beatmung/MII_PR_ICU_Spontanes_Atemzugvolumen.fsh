@@ -10,7 +10,6 @@ Title: "MII PR ICU Spontanes Atemzugvolumen"
 * code.coding 2..
 * code.coding[sct] 1..1
 * code.coding[sct].code = #250816009
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = #20116-0
 * code.coding[IEEE-11073] ..0

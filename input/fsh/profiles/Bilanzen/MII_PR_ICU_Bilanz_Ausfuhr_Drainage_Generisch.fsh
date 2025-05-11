@@ -9,7 +9,6 @@ Title: "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding[sct].code = $sct#251843005
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#26668
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)

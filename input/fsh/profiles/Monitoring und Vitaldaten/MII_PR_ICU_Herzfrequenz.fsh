@@ -10,7 +10,6 @@ Title: "MII SD ICU Herzfrequenz"
 * code.coding 3..
 * code.coding[sct] 1..1
 * code.coding[sct] = $sct#364075005
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#8867-4
 * code.coding[IEEE-11073] 1..1

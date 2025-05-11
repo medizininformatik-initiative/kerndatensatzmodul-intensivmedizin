@@ -9,7 +9,6 @@ Title: "MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding[sct].code = #1162668004
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity.code 1.. MS

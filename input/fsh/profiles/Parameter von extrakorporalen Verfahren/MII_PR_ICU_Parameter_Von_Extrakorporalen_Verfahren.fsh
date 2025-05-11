@@ -21,7 +21,6 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * category.coding ^slicing.rules = #closed
 * category.coding contains sct 1..1
 * category.coding[sct] = $sct#182744004
-* category.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * category.coding[sct] MS
 * category.coding[sct].system 1.. MS
 * category.coding[sct].code 1.. MS
