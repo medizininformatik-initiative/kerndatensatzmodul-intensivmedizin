@@ -23,7 +23,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://example.org/CodeSystem/IEEE-11073",
+        "system": "urn:iso:std:iso:11073:10101",
         "concept": [
           {
             "code": "150017",
