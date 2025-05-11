@@ -291,9 +291,6 @@
             "code": "Quantity"
           }
         ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -311,6 +308,7 @@
         "id": "Observation.value[x].system",
         "path": "Observation.value[x].system",
         "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
         "mustSupport": true
       },
       {
