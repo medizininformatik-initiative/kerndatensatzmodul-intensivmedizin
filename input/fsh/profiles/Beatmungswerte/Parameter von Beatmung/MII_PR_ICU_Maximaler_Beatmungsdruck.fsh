@@ -15,5 +15,4 @@ Title: "MII PR ICU Maximaler Beatmungsdruck"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151973
 * effective[x] 1..
-* value[x] only Quantity
 * valueQuantity = $ucum#cm[H2O]
