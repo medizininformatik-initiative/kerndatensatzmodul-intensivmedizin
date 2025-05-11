@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-oraler-fluessigkeit",
+  "id": "mii-icu-atemzugvolumen-einstellung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung",
   "version": "2025.0.0",
-  "name": "MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit",
-  "title": "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+  "name": "MII_PR_ICU_Atemzugvolumen_Einstellung",
+  "title": "MII PR ICU Atemzugvolumen Einstellung",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -21,38 +21,35 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.category.coding:hl7-category",
+        "id": "Observation.category.coding",
         "path": "Observation.category.coding",
-        "sliceName": "hl7-category"
-      },
-      {
-        "id": "Observation.category.coding:hl7-category.code",
-        "path": "Observation.category.coding.code",
-        "patternCode": "therapy"
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 2
+        "min": 3
       },
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "http://snomed.info/sct",
           "version": "http://snomed.info/sct/900000000000207008/version/20241101"
         }
       },
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "251853006"
+        "patternCode": "416811008"
       },
       {
         "id": "Observation.code.coding:loinc",
@@ -64,23 +61,30 @@
       {
         "id": "Observation.code.coding:loinc.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "9000-1"
+        "patternCode": "20112-9"
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "max": "0"
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "16929196",
+          "system": "urn:iso:std:iso:11073:10101"
+        }
       },
       {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
-        "min": 1,
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-milliliter",
-          "description": "equivalent codes for milliliter"
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "code": "mL",
+          "system": "http://unitsofmeasure.org"
         }
       }
     ]

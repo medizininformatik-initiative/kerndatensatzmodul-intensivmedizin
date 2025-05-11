@@ -31,37 +31,45 @@
     },
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.0",
+      "version": "1.5.x",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
     {
       "packageId": "de.gematik.isik-vitalparameter",
-      "version": "4.0.0",
+      "version": "4.0.x",
       "uri": "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
       "id": "de_gematik_isik_vitalparameter"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.0-alpha1",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
-      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
-      "version": "2025.0.0-alpha1",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.prozedur/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.prozedur",
-      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
     },
     {
       "packageId": "de.gematik.isik-basismodul",
       "version": "4.0.1",
       "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
       "id": "de_gematik_isik_basismodul"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2025.0.0",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
+      "version": "2025.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ImplementationGuide/mii-ig-prozedur",
+      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
     }
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
+        },
+        "name": "MII CPS Intensivmedizin CapabilityStatement",
+        "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Intensivmedizin der Medizininformatik Initiative zu implementieren.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/mii-pr-icu-beatmungszeit-hohem-druck"
@@ -74,6 +82,14 @@
           "reference": "StructureDefinition/mii-pr-icu-dauer-haemodialysesitzung"
         },
         "name": "MII ICU Dauer Haemodialysesitzung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-lm-intensivmedizin"
+        },
+        "name": "MII Logical Model Intensivmedizin",
+        "description": "Logische Repräsentation des Erweiterungsmodul Intensivmedizin",
         "exampleBoolean": false
       },
       {
@@ -316,7 +332,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii--pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"
+          "reference": "StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"
         },
         "name": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
         "exampleBoolean": false
@@ -800,6 +816,94 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
         },
         "name": "SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-device-property-type"
+        },
+        "name": "sp-mii-icu-device-property-type",
+        "description": "Suchparameter für Device.property.type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-devicemetric-source"
+        },
+        "name": "sp-mii-icu-devicemetric-source",
+        "description": "Suchparameter für DeviceMetric.source",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-bodysite"
+        },
+        "name": "sp-mii-icu-observation-bodysite",
+        "description": "Suchparameter für Observation.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-component-interpretation"
+        },
+        "name": "sp-mii-icu-observation-component-interpretation",
+        "description": "Suchparameter für Observation.component.interpretation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-component-referencerange"
+        },
+        "name": "sp-mii-icu-observation-component-referencerange",
+        "description": "Suchparameter für Observation.component.referenceRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-interpretation"
+        },
+        "name": "sp-mii-icu-observation-interpretation",
+        "description": "Suchparameter für Observation.interpretation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-issued"
+        },
+        "name": "sp-mii-icu-observation-issued",
+        "description": "Suchparameter für Observation.issued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-referencerange"
+        },
+        "name": "sp-mii-icu-observation-referencerange",
+        "description": "Suchparameter für Observation.referenceRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-referencerange-high"
+        },
+        "name": "sp-mii-icu-observation-referencerange-high",
+        "description": "Suchparameter für Observation.referenceRange.high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-observation-referencerange-low"
+        },
+        "name": "sp-mii-icu-observation-referencerange-low",
+        "description": "Suchparameter für Observation.referenceRange.low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-icu-procedure-recorder"
+        },
+        "name": "sp-mii-icu-procedure-recorder",
+        "description": "Suchparameter für Procedure.recorder",
         "exampleBoolean": false
       }
     ],
