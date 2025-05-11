@@ -62,11 +62,11 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
 * value[x] 1.. MS
 * value[x] only Quantity
-* value[x] ^patternQuantity.system = "http://unitsofmeasure.org"
-* value[x].value 1.. MS
-* value[x].unit MS
-* value[x].system 1.. MS
-* value[x].code 1.. MS
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.value 1.. MS
+* valueQuantity.code 1.. MS
+* valueQuantity.unit MS
+* valueQuantity.system 1.. MS
 * bodySite from mii-vs-icu-body-site-observation-extrakorporale-verfahren (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren)
 * device MS
