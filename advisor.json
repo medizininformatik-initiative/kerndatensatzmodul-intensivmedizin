@@ -1,6 +1,7 @@
 { 
   "suppress" : [
     "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.compose.include.concept",
-    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    "http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1"
   ]
 }
