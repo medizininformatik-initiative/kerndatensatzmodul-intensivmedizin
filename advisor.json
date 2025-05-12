@@ -2,6 +2,11 @@
   "suppress" : [
     "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.compose.include.concept",
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
-    "http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1"
+    // Fehler bei ImplementationGuide.parameter.code: ungültiger Wert (copyrightyear, releaselabel)
+    "CODE_VALUE_NOT_IN_VALUESET@ImplementationGuide.definition.parameter.code",
+    // dependsOn[x] ohne direkten /ImplementationGuide/ Pfad
+    "IG_DEPENDSON_REFERENCE_INVALID@ImplementationGuide.dependsOn",
+    // canonical vs. packageId Inkonsistenz
+    "IG_DEPENDSON_CANONICAL_MISMATCH@ImplementationGuide.dependsOn"
   ]
 }
