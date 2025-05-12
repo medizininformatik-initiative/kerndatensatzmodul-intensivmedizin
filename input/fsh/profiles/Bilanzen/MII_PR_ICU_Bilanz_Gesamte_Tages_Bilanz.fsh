@@ -10,7 +10,6 @@ Title: "MII PR ICU Bilanz Gesamte Tages Bilanz"
 * category.coding[hl7-category] = $CodeSystem-observation-category.html#vital-sign
 * code.coding 3.. MS
 * code.coding[sct] = $sct#251856003
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = #9097-7
 * code.coding[IEEE-11073] 1..1

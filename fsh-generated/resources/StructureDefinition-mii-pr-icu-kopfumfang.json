@@ -86,11 +86,7 @@
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "9843-4",
-          "system": "http://loinc.org"
-        }
+        "sliceName": "loinc"
       },
       {
         "id": "Observation.code.coding:loinc.system",
@@ -160,6 +156,17 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "patternQuantity": {
           "code": "cm",
           "system": "http://unitsofmeasure.org",
@@ -168,22 +175,22 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].value",
+        "id": "Observation.value[x]:valueQuantity.value",
         "path": "Observation.value[x].value",
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].unit",
+        "id": "Observation.value[x]:valueQuantity.unit",
         "path": "Observation.value[x].unit",
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].system",
+        "id": "Observation.value[x]:valueQuantity.system",
         "path": "Observation.value[x].system",
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].code",
+        "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
         "mustSupport": true
       },

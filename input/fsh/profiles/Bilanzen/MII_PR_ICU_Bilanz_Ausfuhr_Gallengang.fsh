@@ -10,7 +10,6 @@ Title: "MII PR ICU Bilanz Ausfuhr Gallengang"
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding 2..
 * code.coding[sct] = $sct#1162667009
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = $loinc#9113-2
 * code.coding[IEEE-11073] ..0

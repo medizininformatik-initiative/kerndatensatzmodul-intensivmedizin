@@ -29,11 +29,24 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "386534000",
-          "system": "\"http://snomed.info/sct\",",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "system": "http://snomed.info/sct"
         }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "max": "0"
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
       },
       {
         "id": "Observation.value[x]",

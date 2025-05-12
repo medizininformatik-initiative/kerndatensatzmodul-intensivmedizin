@@ -60,9 +60,6 @@
         "type": [
           {
             "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
             "targetProfile": [
               "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
             ]
@@ -105,8 +102,7 @@
         "max": "1",
         "patternCoding": {
           "code": "182744004",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "system": "http://snomed.info/sct"
         },
         "mustSupport": true
       },
@@ -295,9 +291,6 @@
             "code": "Quantity"
           }
         ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -315,6 +308,7 @@
         "id": "Observation.value[x].system",
         "path": "Observation.value[x].system",
         "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
         "mustSupport": true
       },
       {

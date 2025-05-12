@@ -10,7 +10,6 @@ Title: "MII PR ICU Bilanz Blutverlust"
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#vital-sign
 * code.coding 2..
 * code.coding[sct].code = #250771004
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = #81661-1
 * code.coding[IEEE-11073] ..0

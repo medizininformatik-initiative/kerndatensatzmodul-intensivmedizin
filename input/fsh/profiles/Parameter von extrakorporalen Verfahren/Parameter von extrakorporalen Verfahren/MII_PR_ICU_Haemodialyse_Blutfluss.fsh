@@ -13,7 +13,6 @@ Title: "MII PR ICU Haemodialyse Blutfluss"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
 * code.coding[sct] = $sct#401000124105
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] ..0
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[IEEE-11073] ..0

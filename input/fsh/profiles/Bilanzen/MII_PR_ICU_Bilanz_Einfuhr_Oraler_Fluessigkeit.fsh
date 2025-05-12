@@ -9,7 +9,6 @@ Title: "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#therapy
 * code.coding[sct].code = #251853006
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = #9000-1
 * code.coding[IEEE-11073] ..0

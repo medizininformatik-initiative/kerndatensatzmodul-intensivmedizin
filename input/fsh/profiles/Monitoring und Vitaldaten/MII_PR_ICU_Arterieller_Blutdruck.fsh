@@ -16,7 +16,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * code.coding[loinc].display MS
 * code.coding contains sct 1..1 MS
 * code.coding[sct] = $sct#364090009
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
 * code.coding[sct].display MS
@@ -44,7 +43,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[SystolicBP].code.coding[loinc].code 1.. MS
 * component[SystolicBP].code.coding[loinc].display MS
 * component[SystolicBP].code.coding[sct] = $sct#271649006
-* component[SystolicBP].code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * component[SystolicBP].code.coding[sct].system 1.. MS
 * component[SystolicBP].code.coding[sct].code 1.. MS
 * component[SystolicBP].code.coding[sct].display MS
@@ -69,7 +67,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[DiastolicBP].code.coding[loinc].code 1.. MS
 * component[DiastolicBP].code.coding[loinc].display MS
 * component[DiastolicBP].code.coding[sct] = $sct#271650006
-* component[DiastolicBP].code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * component[DiastolicBP].code.coding[sct].system 1.. MS
 * component[DiastolicBP].code.coding[sct].code 1.. MS
 * component[DiastolicBP].code.coding[sct].display MS
@@ -94,7 +91,6 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[meanBP].code.coding[loinc].code 1.. MS
 * component[meanBP].code.coding[loinc].display MS
 * component[meanBP].code.coding[sct] = $sct#6797001
-* component[meanBP].code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * component[meanBP].code.coding[sct].system 1.. MS
 * component[meanBP].code.coding[sct].code 1.. MS
 * component[meanBP].code.coding[sct].display MS

@@ -58,11 +58,11 @@ Title: "MII PR ICU Parameter von Beatmung"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
 * value[x] 0..1 MS
 * value[x] only Quantity
-* value[x] ^patternQuantity.system = "http://unitsofmeasure.org"
-* value[x].value 1.. MS
-* value[x].unit MS
-* value[x].system 1.. MS
-* value[x].code 1.. MS
+* valueQuantity 1.. MS
+* valueQuantity MS
+* valueQuantity.unit 1.. MS
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code 1.. MS
 * dataAbsentReason MS
 * bodySite from mii-vs-icu-body-site-observation-beatmung (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung)

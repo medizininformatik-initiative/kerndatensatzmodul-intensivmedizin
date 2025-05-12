@@ -11,7 +11,6 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * code.coding 3..
 * code.coding[sct] 1..1
 * code.coding[sct].code = #442720002
-* code.coding[sct] ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20241101"
 * code.coding[loinc] 1..1
 * code.coding[loinc].code = #3147-6
 * code.coding[IEEE-11073] 1..1
