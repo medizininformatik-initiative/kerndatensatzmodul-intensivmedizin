@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mi-pri-icu-beatmungsvolumen-pro-minute-maschineller-beatmung
+Id: mii-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung
 Title: "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
