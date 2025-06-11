@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-ect-dauer-extrakorporaler-gasaustausch",
+  "id": "mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch",
   "version": "2025.0.4",
-  "name": "SD_MII_ICU_Dauer_Extrakorporaler_Gasaustausch",
-  "title": "SD MII ICU Dauer Extrakorporaler Gasaustausch",
+  "name": "MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch",
+  "title": "MII PR ICU Dauer Extrakorporaler Gasaustausch",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",

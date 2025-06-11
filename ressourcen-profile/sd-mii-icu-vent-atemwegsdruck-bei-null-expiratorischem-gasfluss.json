@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss",
+  "id": "mii-pr-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-exspiratorischem-gasfluss",
   "version": "2025.0.4",
-  "name": "SD_MII_ICU_Atemwegsdruck_Bei_Null_Exspiratorischem_Gasfluss",
-  "title": "SD MII ICU Atemwegsdruck Bei Null Exspiratorischem Gasfluss",
+  "name": "MII_PR_ICU_Atemwegsdruck_Bei_Null_Exspiratorischem_Gasfluss",
+  "title": "MII PR ICU Atemwegsdruck Bei Null Exspiratorischem Gasfluss",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",

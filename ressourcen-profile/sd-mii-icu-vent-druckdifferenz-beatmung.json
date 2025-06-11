@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-vent-druckdifferenz-beatmung",
+  "id": "mii-pr-icu-vent-druckdifferenz-beatmung",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/druckdifferenz-beatmung",
   "version": "2025.0.4",
-  "name": "SD_MII_ICU_Druckdifferenz_Beatmung",
-  "title": "SD MII ICU Druckdifferenz Beatmung",
+  "name": "MII_PR_ICU_Druckdifferenz_Beatmung",
+  "title": "MII PR ICU Druckdifferenz Beatmung",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",
