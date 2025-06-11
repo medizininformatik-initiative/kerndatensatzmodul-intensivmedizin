@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-bilanz-gesamte-tages-bilanz",
+  "id": "mii-pr-icu-bilanz-gesamte-tages-bilanz",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-gesamte-tages-bilanz",
-  "name": "SD_MII_ICU_Bilanz_Gesamte_Tages_Bilanz",
-  "title": "SD MII ICU Bilanz Gesamte Tages Bilanz",
+  "name": "MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz",
+  "title": "MII PR ICU Bilanz Gesamte Tages Bilanz",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",

@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-vent-beatmungsvolumen-pro-minute-maschineller",
+  "id": "mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungsvolumen-pro-minute-maschineller",
   "version": "2025.0.4",
-  "name": "SD_MII_ICU_Beatmungsvolumen_Pro_Minute_Maschineller",
-  "title": "SD MII ICU Beatmungsvolumen Pro Minute Maschineller",
+  "name": "MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller",
+  "title": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",

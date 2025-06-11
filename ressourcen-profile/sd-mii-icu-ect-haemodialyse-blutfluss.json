@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-ect-haemodialyse-blutfluss",
+  "id": "mii-pr-icu-ect-haemodialyse-blutfluss",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/haemodialyse-blutfluss",
   "version": "2025.0.4",
-  "name": "SD_MII_ICU_Haemodialyse_Blutfluss",
-  "title": "SD MII ICU Haemodialyse Blutfluss",
+  "name": "MII_PR_ICU_Haemodialyse_Blutfluss",
+  "title": "MII PR ICU Haemodialyse Blutfluss",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",

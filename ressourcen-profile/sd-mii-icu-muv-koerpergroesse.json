@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-mii-icu-muv-koerpergroesse",
+  "id": "mii-pr-icu-muv-koerpergroesse",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse",
   "version": "2025.0.4",
-  "name": "SD_MII_ICU_Koerpergroesse",
-  "title": "SD MII ICU Koerpergroesse",
+  "name": "MII_PR_ICU_Koerpergroesse",
+  "title": "MII PR ICU Koerpergroesse",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
