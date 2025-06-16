@@ -20,7 +20,8 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #closed
 * category.coding contains sct 1..1
-* category.coding[sct] = $sct#182744004
+* category.coding[sct] ^patternCoding.system = $sct
+* category.coding[sct] ^patternCoding.code = #182744004
 * category.coding[sct] MS
 * category.coding[sct].system 1.. MS
 * category.coding[sct].code 1.. MS

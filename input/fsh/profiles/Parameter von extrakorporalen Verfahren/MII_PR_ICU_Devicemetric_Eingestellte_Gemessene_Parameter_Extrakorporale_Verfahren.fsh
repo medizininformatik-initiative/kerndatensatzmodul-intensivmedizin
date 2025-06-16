@@ -9,7 +9,8 @@ Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale 
 
 * type MS
 * type from mii-vs-icu-devicemetric-extrakorporale-verfahren (required)
-* type.coding = $sct#182744004
+* type.coding ^patternCoding.system = $sct
+* type.coding ^patternCoding.code = #182744004
 * type.coding MS
 * type.coding.system 1.. MS
 * type.coding.code 1.. MS

@@ -15,7 +15,8 @@ Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * code.coding[sct] ..0
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#83064-6
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #83064-6
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..

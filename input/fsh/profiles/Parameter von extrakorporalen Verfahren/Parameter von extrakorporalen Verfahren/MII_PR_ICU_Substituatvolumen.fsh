@@ -12,7 +12,8 @@ Title: "MII PR ICU Substituatvolumen"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#708514004
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #708514004
 * code.coding[loinc] 0..0
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[IEEE-11073] 0..0

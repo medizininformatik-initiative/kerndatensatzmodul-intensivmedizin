@@ -9,7 +9,8 @@ Title: "MII PR ICU Extrakorporales Verfahren"
 
 * category 1..
 * category.coding 1..1
-* category.coding[sct] = $sct#182744004
+* category.coding[sct]  ^patternCoding.system = $sct
+* category.coding[sct]  ^patternCoding.code = #182744004
 * category.coding[sct].system = "http://snomed.info/sct"
 * category.coding[sct].display MS
 

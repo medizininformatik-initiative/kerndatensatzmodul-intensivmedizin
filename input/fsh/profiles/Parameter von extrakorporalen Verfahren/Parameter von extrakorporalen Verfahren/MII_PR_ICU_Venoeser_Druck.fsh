@@ -9,7 +9,8 @@ Description: "Profile for documenting venous pressure."
 * ^status = #active
 
 * code.coding[sct] 1..1 MS
-* code.coding[sct] = $sct#252076005
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #252076005
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
 * code.coding[loinc] ..0

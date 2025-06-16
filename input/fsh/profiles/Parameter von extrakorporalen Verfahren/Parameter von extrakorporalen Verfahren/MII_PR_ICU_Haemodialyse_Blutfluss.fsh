@@ -12,7 +12,8 @@ Title: "MII PR ICU Haemodialyse Blutfluss"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#401000124105
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #401000124105
 * code.coding[loinc] ..0
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[IEEE-11073] ..0

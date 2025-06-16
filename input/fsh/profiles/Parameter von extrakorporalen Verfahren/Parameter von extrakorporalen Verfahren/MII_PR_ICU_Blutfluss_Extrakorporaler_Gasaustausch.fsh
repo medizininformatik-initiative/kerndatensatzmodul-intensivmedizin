@@ -11,7 +11,8 @@ Title: "MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#251288004
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #251288004
 * code.coding[loinc] ..0
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[IEEE-11073] ..0

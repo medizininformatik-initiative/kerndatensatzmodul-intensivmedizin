@@ -12,7 +12,8 @@ Title: "MII ICU Dauer Haemodialysesitzung"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#445940005
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #445940005
 * code.coding[loinc] ..0
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[IEEE-11073] ..0
