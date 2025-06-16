@@ -14,7 +14,7 @@ Title: "MII PR ICU Extrakorporales Verfahren"
 * category.coding[sct].display MS
 
 * code.coding[sct] from mii-vs-icu-code-extrakorporale-verfahren (required)
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^binding.description = "Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004)"
 * code.coding[sct].system 1..1 MS
 * code.coding[sct].code 1..1 MS

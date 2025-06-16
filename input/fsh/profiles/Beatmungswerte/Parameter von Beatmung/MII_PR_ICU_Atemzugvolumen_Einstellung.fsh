@@ -10,10 +10,10 @@ Title: "MII PR ICU Atemzugvolumen Einstellung"
 * category.coding 1..1
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #416811008
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #20112-9
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"

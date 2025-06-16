@@ -13,7 +13,7 @@ Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] ..0
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#83064-6
 * code.coding[IEEE-11073] ..0

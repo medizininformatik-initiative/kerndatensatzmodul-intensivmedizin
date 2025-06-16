@@ -33,7 +33,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 
 * code.coding contains sct 0..
 * code.coding[sct] from mii-vs-icu-code-observation-extrakorporale-verfahren-snomed (extensible)
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] MS
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
@@ -41,7 +41,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 
 * code.coding contains loinc 0..
 * code.coding[loinc] from mii-vs-icu-code-observation-extrakorporale-verfahren-loinc (extensible)
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] MS
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS

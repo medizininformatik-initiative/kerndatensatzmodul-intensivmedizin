@@ -8,9 +8,9 @@ Title: "MII PR ICU Unterstuezungsdruck Beatmung"
 * ^status = #active
 
 * code.coding[sct] ..0
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #20079-0
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"

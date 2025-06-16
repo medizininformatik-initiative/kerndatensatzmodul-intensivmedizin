@@ -14,7 +14,7 @@ Title: "MII ICU Dauer Haemodialysesitzung"
 * code.coding[sct] 1..1
 * code.coding[sct] = $sct#445940005
 * code.coding[loinc] ..0
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
