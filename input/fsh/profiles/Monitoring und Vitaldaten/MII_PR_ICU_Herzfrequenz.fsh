@@ -9,11 +9,14 @@ Title: "MII SD ICU Herzfrequenz"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#364075005
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #364075005
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#8867-4
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #8867-4
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#147842
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #147842
 * value[x] = $ucum#/min "beats per minute"
 * value[x].unit 1..
 * value[x].code from mii-vs-icu-unit-equivalent-ucum-beats-per-minute (required)

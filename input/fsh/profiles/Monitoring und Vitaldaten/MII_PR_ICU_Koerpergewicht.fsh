@@ -25,12 +25,14 @@ Title: "MII PR ICU Koerpergewicht"
 * code MS
 * code.coding 2..2 MS
 * code.coding[loinc] 1..1 MS
-* code.coding[loinc] = $loinc#29463-7
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #29463-7
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[snomed] 1..1 MS
-* code.coding[snomed] = $sct#27113001
+* code.coding[snomed] ^patternCoding.system = $sct
+* code.coding[snomed] ^patternCoding.code = #27113001
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
