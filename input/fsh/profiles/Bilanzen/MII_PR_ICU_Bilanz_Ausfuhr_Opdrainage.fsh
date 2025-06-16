@@ -9,9 +9,11 @@ Title: "MII PR ICU Bilanz Ausfuhr Opdrainage"
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding 2..
-* code.coding[sct].code = #251844004
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #251844004
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #9203-1
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #9203-1
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * valueQuantity.code 1.. MS

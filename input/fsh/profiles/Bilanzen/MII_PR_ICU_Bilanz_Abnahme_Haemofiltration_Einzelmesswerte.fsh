@@ -9,9 +9,11 @@ Title: "MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#vital-sign
 * code.coding 2..
-* code.coding[sct] = $sct#251850009
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #251850009
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = $loinc#99741-1
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #99741-1
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * valueQuantity.code 1.. MS

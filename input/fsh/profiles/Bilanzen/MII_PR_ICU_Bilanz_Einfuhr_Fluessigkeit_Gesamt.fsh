@@ -8,7 +8,8 @@ Title: "SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#therapy
-* code.coding[sct].code = #251855004
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #251855004
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity.code 1.. MS

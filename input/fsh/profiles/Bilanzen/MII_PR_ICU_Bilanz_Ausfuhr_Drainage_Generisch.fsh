@@ -8,8 +8,10 @@ Title: "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
-* code.coding[sct].code = $sct#251843005
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#26668
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #251843005
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #26668
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
 * valueQuantity.code ^binding.description = "equivalent codes for milliliter"
