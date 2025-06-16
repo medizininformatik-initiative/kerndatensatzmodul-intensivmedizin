@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Koerpergroesse
 Parent: $observation-de-vitalsign-koerpergroesse
-Id: mii-pr-icu-koerpergroesse
+Id: mii-pr-icu-muv-koerpergroesse
 Title: "MII PR ICU Koerpergroesse"
 * insert PR_CS_VS_Version
 * insert Publisher

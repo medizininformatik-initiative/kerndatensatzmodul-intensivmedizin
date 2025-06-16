@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Dauer_Haemodialysesitzung
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-dauer-haemodialysesitzung
+Id: mii-pr-icu-ect-dauer-haemodialysesitzung
 Title: "MII ICU Dauer Haemodialysesitzung"
 * insert PR_CS_VS_Version
 * insert Publisher

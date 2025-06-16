@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Haemodialyse_Blutfluss
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-haemodialyse-blutfluss
+Id: mii-pr-icu-ect-haemodialyse-blutfluss
 Title: "MII PR ICU Haemodialyse Blutfluss"
 * insert PR_CS_VS_Version
 * insert Publisher

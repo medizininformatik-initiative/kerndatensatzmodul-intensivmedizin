@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss
+Id: mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss
 Title: "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
 * insert PR_CS_VS_Version
 * insert Publisher

@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-endexpiratorischer-kohlendioxidpartialdruck
+Id: mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck
 Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * insert PR_CS_VS_Version
 * insert Publisher

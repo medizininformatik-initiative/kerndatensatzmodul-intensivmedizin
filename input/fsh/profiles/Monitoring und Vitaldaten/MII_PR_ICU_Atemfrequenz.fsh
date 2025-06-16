@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Atemfrequenz
 Parent: $observation-de-vitalsign-atemfrequenz
-Id: mii-pr-icu-atemfrequenz
+Id: mii-pr-icu-muv-atemfrequenz
 Title: "MII PR ICU Atemfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher

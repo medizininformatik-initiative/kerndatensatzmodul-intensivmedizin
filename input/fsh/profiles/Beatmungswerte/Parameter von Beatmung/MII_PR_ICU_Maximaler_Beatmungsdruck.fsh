@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Maximaler_Beatmungsdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-maximaler-beatmungsdruck
+Id: mii-pr-icu-vent-maximaler-beatmungsdruck
 Title: "MII PR ICU Maximaler Beatmungsdruck"
 * insert PR_CS_VS_Version
 * insert Publisher

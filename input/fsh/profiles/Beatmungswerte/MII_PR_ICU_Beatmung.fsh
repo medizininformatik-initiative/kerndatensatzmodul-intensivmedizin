@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Beatmung
 Parent: $mii-procedure 
-Id: mii-pr-icu-beatmung
+Id: mii-pr-icu-vent-beatmung
 Title: "MII PR ICU Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher

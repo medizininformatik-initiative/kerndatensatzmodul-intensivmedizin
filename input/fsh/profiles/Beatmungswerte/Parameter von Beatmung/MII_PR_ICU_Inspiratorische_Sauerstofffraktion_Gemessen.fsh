@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen
+Id: mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen
 Title: "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
 * insert PR_CS_VS_Version
 * insert Publisher

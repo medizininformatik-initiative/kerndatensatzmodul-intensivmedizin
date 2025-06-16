@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Herzfrequenz
 Parent: $sd-mii-icu-monitoring-und-vitaldaten
-Id: mii-pr-icu-herzfrequenz
+Id: mii-pr-icu-muv-herzfrequenz
 Title: "MII SD ICU Herzfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher

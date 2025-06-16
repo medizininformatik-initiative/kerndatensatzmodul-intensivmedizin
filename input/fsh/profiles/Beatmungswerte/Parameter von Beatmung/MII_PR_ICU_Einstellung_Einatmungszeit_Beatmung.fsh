@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-einstellung-einatmungszeit-beatmung
+Id: mii-pr-icu-vent-einstellung-einatmungszeit-beatmung
 Title: "MII PR ICU Einstellung Einatmungszeit Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher

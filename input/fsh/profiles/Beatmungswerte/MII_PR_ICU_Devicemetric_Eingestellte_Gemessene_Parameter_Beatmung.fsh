@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung
 Parent: DeviceMetric
-Id: mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung
+Id: mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung
 Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher

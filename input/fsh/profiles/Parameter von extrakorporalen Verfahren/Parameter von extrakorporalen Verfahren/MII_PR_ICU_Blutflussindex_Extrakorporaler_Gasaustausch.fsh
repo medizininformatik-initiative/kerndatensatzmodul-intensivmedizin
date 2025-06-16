@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-blutflussindex-extrakorporaler-gasaustausch
+Id: mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch
 Title: "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"
 * insert PR_CS_VS_Version
 * insert Publisher

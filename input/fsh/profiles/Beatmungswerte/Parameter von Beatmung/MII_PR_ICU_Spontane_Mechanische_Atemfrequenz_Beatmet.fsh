@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-spontane-mechanische-atemfrequenz-beatmet
+Id: mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet
 Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * insert PR_CS_VS_Version
 * insert Publisher

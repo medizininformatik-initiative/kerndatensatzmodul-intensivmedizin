@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Substituatfluss
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-substituatfluss
+Id: mii-pr-icu-ect-substituatfluss
 Title: "MII PR ICU Substituatfluss"
 * insert PR_CS_VS_Version
 * insert Publisher

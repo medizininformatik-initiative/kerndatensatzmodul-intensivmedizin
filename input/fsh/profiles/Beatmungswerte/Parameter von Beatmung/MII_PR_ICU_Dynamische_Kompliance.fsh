@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Dynamische_Kompliance
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-dynamische-kompliance
+Id: mii-pr-vent-icu-dynamische-kompliance
 Title: "MII PR ICU Dynamische Kompliance"
 * insert PR_CS_VS_Version
 * insert Publisher

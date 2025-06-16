@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Koerpergewicht
 Parent: $observation-de-vitalsign-koerpergewicht
-Id: mii-pr-icu-koerpergewicht
+Id: mii-pr-icu-muv-koerpergewicht
 Title: "MII PR ICU Koerpergewicht"
 * insert PR_CS_VS_Version
 * insert Publisher

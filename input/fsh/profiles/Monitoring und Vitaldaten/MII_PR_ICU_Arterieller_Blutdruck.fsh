@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Arterieller_Blutdruck
 Parent: $observation-de-vitalsign-blutdruck
-Id: mii-pr-icu-arterieller-blutdruck
+Id: mii-pr-icu-muv-arterieller-blutdruck
 Title: "MII PR ICU Arterieller Blutdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
