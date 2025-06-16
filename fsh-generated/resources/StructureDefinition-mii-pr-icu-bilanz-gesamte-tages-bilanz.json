@@ -44,8 +44,8 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "251856003",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "code": "251856003"
         }
       },
       {
@@ -53,12 +53,11 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "9097-7"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "9097-7"
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
@@ -67,8 +66,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "26684",
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "26684"
         }
       },
       {

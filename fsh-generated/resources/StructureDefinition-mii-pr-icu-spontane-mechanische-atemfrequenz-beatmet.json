@@ -35,36 +35,33 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "250810003"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "250810003"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "19840-8"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "19840-8"
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "152490"
+        "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "152490"
+        }
       },
       {
         "id": "Observation.effective[x]",

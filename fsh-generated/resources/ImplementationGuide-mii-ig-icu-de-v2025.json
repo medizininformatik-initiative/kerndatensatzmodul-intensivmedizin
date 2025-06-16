@@ -129,7 +129,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-icu-atemzugvolumen-einstellung"
+          "reference": "StructureDefinition/mii-pr-icu-atemzugvolumen-einstellung"
         },
         "name": "MII PR ICU Atemzugvolumen Einstellung",
         "exampleBoolean": false
@@ -339,7 +339,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-provided-icu-druckdifferenz-beatmung"
+          "reference": "StructureDefinition/mii-pr-provided-icu-druckdifferenz-beatmung"
         },
         "name": "MII PR ICU Druckdifferenz Beatmung",
         "exampleBoolean": false
@@ -367,7 +367,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-icu-einstellung-einatmungszeit-beatmung"
+          "reference": "StructureDefinition/mii-pr-icu-einstellung-einatmungszeit-beatmung"
         },
         "name": "MII PR ICU Einstellung Einatmungszeit Beatmung",
         "exampleBoolean": false

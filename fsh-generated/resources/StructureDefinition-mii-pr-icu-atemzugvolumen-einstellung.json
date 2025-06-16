@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-icu-atemzugvolumen-einstellung",
+  "id": "mii-pr-icu-atemzugvolumen-einstellung",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung",
   "version": "2025.0.4",
   "name": "MII_PR_ICU_Atemzugvolumen_Einstellung",
@@ -41,24 +41,22 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "416811008"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "416811008"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "20112-9"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "20112-9"
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
@@ -67,8 +65,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "16929196",
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "16929196"
         }
       },
       {

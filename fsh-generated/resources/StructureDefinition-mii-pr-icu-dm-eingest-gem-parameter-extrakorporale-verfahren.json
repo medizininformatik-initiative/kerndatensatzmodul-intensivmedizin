@@ -38,8 +38,8 @@
         "id": "DeviceMetric.type.coding",
         "path": "DeviceMetric.type.coding",
         "patternCoding": {
-          "code": "182744004",
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "code": "182744004"
         },
         "mustSupport": true
       },

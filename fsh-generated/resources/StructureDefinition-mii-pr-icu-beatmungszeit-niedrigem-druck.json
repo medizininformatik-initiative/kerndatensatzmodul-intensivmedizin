@@ -44,12 +44,11 @@
         "path": "Observation.code.coding",
         "sliceName": "loinc",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "76229-4"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "76229-4"
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
@@ -58,8 +57,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "16929864",
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "16929864"
         }
       },
       {

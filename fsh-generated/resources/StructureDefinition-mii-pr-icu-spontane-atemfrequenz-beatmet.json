@@ -33,7 +33,9 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.code.coding:sct.code",
@@ -52,12 +54,13 @@
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073"
-      },
-      {
-        "id": "Observation.code.coding:IEEE-11073.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "152498"
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "152498"
+        }
       },
       {
         "id": "Observation.effective[x]",
