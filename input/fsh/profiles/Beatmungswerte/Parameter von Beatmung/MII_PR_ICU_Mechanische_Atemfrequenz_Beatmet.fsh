@@ -9,10 +9,13 @@ Title: "MII PR ICU Mechanische Atemfrequenz Beatmet"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #250876000
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #250876000
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #33438-3
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #33438-3
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073].code = #151586
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #151586
 * effective[x] 1..
 * valueQuantity = $ucum#{Breaths}/min

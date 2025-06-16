@@ -10,9 +10,12 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * category contains Beatmung 0..1
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #442720002
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #442720002
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #3147-6
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #3147-6
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#153132
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #153132
 * value[x] = $ucum#mm[Hg]

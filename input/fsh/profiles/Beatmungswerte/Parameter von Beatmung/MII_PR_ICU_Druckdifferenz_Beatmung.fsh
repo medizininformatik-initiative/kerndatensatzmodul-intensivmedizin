@@ -11,8 +11,10 @@ Title: "MII PR ICU Druckdifferenz Beatmung"
 * code.coding[sct] ..0
 * code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #76154-4
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #76154-4
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#152720
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #152720
 * effective[x] 1..
 * valueQuantity = $ucum#cm[H2O]

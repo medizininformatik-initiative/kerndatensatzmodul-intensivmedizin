@@ -9,9 +9,11 @@ Title: "MII PR ICU Einstellung Ausatmungszeit Beatmung"
 
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #250820008
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #250820008
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #76187-4
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #76187-4
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..

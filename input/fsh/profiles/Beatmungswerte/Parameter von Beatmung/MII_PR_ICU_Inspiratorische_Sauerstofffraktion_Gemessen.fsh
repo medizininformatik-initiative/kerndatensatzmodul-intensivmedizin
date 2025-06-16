@@ -10,8 +10,10 @@ Title: "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
 * category contains Beatmung 0..1
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #250774007
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #250774007
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #71835-3
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #71835-3
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"

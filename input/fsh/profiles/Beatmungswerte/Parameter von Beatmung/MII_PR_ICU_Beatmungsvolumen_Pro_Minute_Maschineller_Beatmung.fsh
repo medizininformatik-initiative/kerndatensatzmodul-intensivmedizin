@@ -9,10 +9,13 @@ Title: "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #250875001
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #250875001
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #76009-0
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #76009-0
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073].code = #152004
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #152004
 * effective[x] 1..
 * valueQuantity = $ucum#L/min

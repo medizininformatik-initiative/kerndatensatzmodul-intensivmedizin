@@ -9,10 +9,13 @@ Title: "MII PR ICU Maximaler Beatmungsdruck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #27913002
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #27913002
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #76531-3
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #76531-3
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151973
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #151973
 * effective[x] 1..
 * valueQuantity = $ucum#cm[H2O]

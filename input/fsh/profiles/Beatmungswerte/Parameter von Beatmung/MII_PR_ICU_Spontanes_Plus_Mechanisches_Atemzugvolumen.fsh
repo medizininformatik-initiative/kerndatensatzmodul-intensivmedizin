@@ -8,8 +8,12 @@ Title: "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 * ^status = #active
 
 * code.coding[sct] ..0
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #20118-6
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #20118-6
 * code.coding[IEEE-11073] ..0
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
 * valueQuantity = $ucum#mL

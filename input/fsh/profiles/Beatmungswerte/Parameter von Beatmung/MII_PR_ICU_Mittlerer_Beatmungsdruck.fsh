@@ -9,10 +9,13 @@ Title: "MII PR ICU Mittlerer Beatmungsdruck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #698821009
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #698821009
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #76530-5
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #76530-5
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151975
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #151975
 * effective[x] 1..
 * valueQuantity = $ucum#cm[H2O]

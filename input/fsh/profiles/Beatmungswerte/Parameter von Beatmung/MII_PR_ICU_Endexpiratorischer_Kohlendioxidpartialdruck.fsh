@@ -13,9 +13,12 @@ Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * category contains Beatmung 0..1
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #250790007
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.code = #250790007
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #19891-1
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.code = #19891-1
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151708
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #151708
 * value[x] = $ucum#mm[Hg]
