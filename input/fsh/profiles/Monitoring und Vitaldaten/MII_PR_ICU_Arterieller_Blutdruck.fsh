@@ -55,8 +55,12 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * component[SystolicBP].code.coding[IEEE-11073].system 1.. MS
 * component[SystolicBP].code.coding[IEEE-11073].code 1.. MS
 * component[SystolicBP].code.coding[IEEE-11073].display MS
-* component[SystolicBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[SystolicBP].value[x] MS
+* component[SystolicBP].value[x].unit 1.. MS
+* component[SystolicBP].value[x].value 1.. MS
+* component[SystolicBP].value[x].system 1.. MS
+* component[SystolicBP].value[x].code 1.. MS
+* component[SystolicBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[SystolicBP].dataAbsentReason MS
 
 * component[DiastolicBP] MS
