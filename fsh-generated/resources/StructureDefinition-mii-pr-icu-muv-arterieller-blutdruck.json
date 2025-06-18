@@ -265,6 +265,60 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:SystolicBP.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x]:valueQuantity.value",
+        "path": "Observation.component.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x]:valueQuantity.unit",
+        "path": "Observation.component.value[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x]:valueQuantity.system",
+        "path": "Observation.component.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:SystolicBP.value[x]:valueQuantity.code",
+        "path": "Observation.component.value[x].code",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component:SystolicBP.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "mustSupport": true
