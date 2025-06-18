@@ -38,20 +38,19 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "251843005"
+        "sliceName": "sct",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "251843005"
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
         "patternCoding": {
-          "code": "26668",
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "26668"
         }
       },
       {

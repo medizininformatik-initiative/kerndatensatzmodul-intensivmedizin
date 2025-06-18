@@ -33,12 +33,12 @@ Title: "MII PR ICU Bilanz"
     loinc 0.. MS and 
     IEEE-11073 0.. MS
 * code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed (required)
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
 * code.coding[sct].display MS
 * code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc (required)
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding[loinc].display MS

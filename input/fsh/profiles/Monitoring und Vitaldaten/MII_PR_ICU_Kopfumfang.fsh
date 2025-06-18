@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Kopfumfang
 Parent: $observation-de-vitalsign-kopfumfang
-Id: mii-pr-icu-kopfumfang
+Id: mii-pr-icu-muv-kopfumfang
 Title: "MII PR ICU Kopfumfang"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -20,7 +20,8 @@ Title: "MII PR ICU Kopfumfang"
 * code.coding[loinc].system 1..1 MS
 * code.coding[loinc].code 1..1 MS
 * code.coding[snomed] 1..1 MS
-* code.coding[snomed] = $sct#363812007
+* code.coding[snomed] ^patternCoding.system = $sct
+* code.coding[snomed] ^patternCoding.code = #363812007
 * code.coding[snomed].system 1..1 MS
 * code.coding[snomed].code 1..1 MS
 * subject MS
@@ -34,8 +35,9 @@ Title: "MII PR ICU Kopfumfang"
 * valueQuantity.system MS
 * valueQuantity.code MS
 * dataAbsentReason MS
-* bodySite = $sct#69536005
 * bodySite MS
+* bodySite ^patternCoding.system = $sct
+* bodySite ^patternCoding.code = #69536005
 * bodySite.coding MS
 * bodySite.coding.system 1.. MS
 * bodySite.coding.code 1.. MS

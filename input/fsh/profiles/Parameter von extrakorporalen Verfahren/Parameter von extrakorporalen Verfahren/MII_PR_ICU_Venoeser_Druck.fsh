@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Venoeser_Druck
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-venoeser-druck
+Id: mii-pr-icu-ect-venoeser-druck
 Title: "MII PR ICU Venous Pressure"
 Description: "Profile for documenting venous pressure."
 * insert PR_CS_VS_Version
@@ -9,7 +9,8 @@ Description: "Profile for documenting venous pressure."
 * ^status = #active
 
 * code.coding[sct] 1..1 MS
-* code.coding[sct] = $sct#252076005
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #252076005
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
 * code.coding[loinc] ..0

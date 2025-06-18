@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Atemfrequenz
 Parent: $observation-de-vitalsign-atemfrequenz
-Id: mii-pr-icu-atemfrequenz
+Id: mii-pr-icu-muv-atemfrequenz
 Title: "MII PR ICU Atemfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -19,7 +19,8 @@ Title: "MII PR ICU Atemfrequenz"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[snomed] 1..1
-* code.coding[snomed] = $sct#86290005
+* code.coding[snomed] ^patternCoding.system = $sct
+* code.coding[snomed] ^patternCoding.code = #86290005
 * subject MS
 * encounter MS
 * effective[x] MS

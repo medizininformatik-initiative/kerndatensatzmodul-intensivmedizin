@@ -38,12 +38,11 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "1162668004"
+        "sliceName": "sct",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "1162668004"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",

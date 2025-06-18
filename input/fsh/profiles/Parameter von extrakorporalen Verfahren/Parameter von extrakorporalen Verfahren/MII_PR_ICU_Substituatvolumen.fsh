@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Substituatvolumen
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-substituatvolumen
+Id: mii-pr-icu-ect-substituatvolumen
 Title: "MII PR ICU Substituatvolumen"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -12,7 +12,8 @@ Title: "MII PR ICU Substituatvolumen"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#708514004
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #708514004
 * code.coding[loinc] 0..0
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[IEEE-11073] 0..0

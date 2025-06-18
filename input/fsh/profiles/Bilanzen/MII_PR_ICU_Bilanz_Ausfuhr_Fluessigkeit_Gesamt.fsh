@@ -9,9 +9,11 @@ Title: "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#vital-sign
 * code.coding 2..
-* code.coding[sct].code = #251847006
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #251847006
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #9257-7
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #9257-7
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * valueQuantity.code 1.. MS

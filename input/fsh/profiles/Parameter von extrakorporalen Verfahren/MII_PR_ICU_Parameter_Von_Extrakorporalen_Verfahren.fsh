@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Parent: Observation
-Id: mii-pr-icu-parameter-von-extrakorporalen-verfahren
+Id: mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren
 Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -20,7 +20,8 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #closed
 * category.coding contains sct 1..1
-* category.coding[sct] = $sct#182744004
+* category.coding[sct] ^patternCoding.system = $sct
+* category.coding[sct] ^patternCoding.code = #182744004
 * category.coding[sct] MS
 * category.coding[sct].system 1.. MS
 * category.coding[sct].code 1.. MS
@@ -33,7 +34,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 
 * code.coding contains sct 0..
 * code.coding[sct] from mii-vs-icu-code-observation-extrakorporale-verfahren-snomed (extensible)
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] MS
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
@@ -41,7 +42,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 
 * code.coding contains loinc 0..
 * code.coding[loinc] from mii-vs-icu-code-observation-extrakorporale-verfahren-loinc (extensible)
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] MS
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS

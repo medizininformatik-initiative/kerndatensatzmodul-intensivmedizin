@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-Id: mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren
+Id: mii-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren
 Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -13,9 +13,10 @@ Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding[sct] ..0
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#83064-6
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #83064-6
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..

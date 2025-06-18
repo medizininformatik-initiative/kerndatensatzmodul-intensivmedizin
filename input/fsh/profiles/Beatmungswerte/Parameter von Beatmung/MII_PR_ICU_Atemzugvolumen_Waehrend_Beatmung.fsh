@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-atemzugvolumen-waehrend-beatmung
+Id: mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung
 Title: "MII PR ICU Atemzugvolumen Waehrend Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -9,10 +9,13 @@ Title: "MII PR ICU Atemzugvolumen Waehrend Beatmung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #250874002
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct] ^patternCoding.code = #250874002
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #76222-9
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #76222-9
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = urn:iso:std:iso:11073:10101#151980
+* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073] ^patternCoding.code = #151980
 * effective[x] 1..
 * valueQuantity = $ucum#mL

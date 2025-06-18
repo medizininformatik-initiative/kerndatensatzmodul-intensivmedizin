@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_Unterstuezungsdruck_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-unterstuezungsdruck-beatmung
+Id: mii-pr-icu-vent-unterstuezungsdruck-beatmung
 Title: "MII PR ICU Unterstuezungsdruck Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -8,9 +8,10 @@ Title: "MII PR ICU Unterstuezungsdruck Beatmung"
 * ^status = #active
 
 * code.coding[sct] ..0
-* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #20079-0
+* code.coding[loinc] ^patternCoding.system = $loinc
+* code.coding[loinc] ^patternCoding.code = #20079-0
 * code.coding[IEEE-11073] ..0
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * effective[x] 1..
