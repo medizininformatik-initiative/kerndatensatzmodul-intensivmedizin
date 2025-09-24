@@ -1,4 +1,4 @@
-[exa-mii-icu-icu-device]: Device-exa-mii-icu-icu-device.html
+[exa-mii-icu-ecmo-device]: Device-exa-mii-icu-ecmo-device.html
 [exa-mii-icu-patient]: Patient-exa-mii-icu-patient.html
 [mii-cps-icu-capabilitystatement]: CapabilityStatement-mii-cps-icu-capabilitystatement.html
 [MII_PR_ICU_Beatmungszeit_Hohem_Druck]: StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html
