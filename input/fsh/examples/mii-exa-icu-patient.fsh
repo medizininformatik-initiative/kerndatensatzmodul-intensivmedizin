@@ -1,4 +1,4 @@
-Instance: mii-exa-icu-patient
+Instance: exa-mii-icu-patient
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
 Usage: #example
 Description: "Patient: ICU Patient"

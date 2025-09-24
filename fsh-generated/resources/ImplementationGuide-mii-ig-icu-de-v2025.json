@@ -58,6 +58,22 @@
     "resource": [
       {
         "reference": {
+          "reference": "Device/exa-mii-icu-icu-device"
+        },
+        "name": "exa-mii-icu-icu-device",
+        "description": "Device: ICU Device",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+      },
+      {
+        "reference": {
+          "reference": "Patient/exa-mii-icu-patient"
+        },
+        "name": "exa-mii-icu-patient",
+        "description": "Patient: ICU Patient",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
         },
         "name": "MII CPS Intensivmedizin CapabilityStatement",
@@ -1002,6 +1018,53 @@
         "name": "mii-sp-icu-procedure-recorder",
         "description": "Suchparameter für Procedure.recorder",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"
+        },
+        "name": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/mii-exa-icu-encounter"
+        },
+        "name": "mii-exa-icu-encounter",
+        "description": "Encounter: ICU Abteilungskontakt Encounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-beatmung"
+        },
+        "name": "mii-exa-icu-gemessene-parameter-beatmung",
+        "description": "DeviceMetric: Gemessene Parameter Beatmung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren"
+        },
+        "name": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+        "description": "DeviceMetric: Gemessene Parameter extrakorporale Verfahren",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
+        },
+        "name": "mii-exa-icu-procedure-extrakorporales-verfahren",
+        "description": "Procedure: ICU Procedure",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch"
+        },
+        "name": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",
+        "description": "Bundle: Example ECT Dauer extrakorporaler Gasaustausch",
+        "exampleBoolean": true
       },
       {
         "reference": {
