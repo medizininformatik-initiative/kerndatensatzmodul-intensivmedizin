@@ -1,0 +1,16 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "mii-exa-icu-gemessene-parameter-beatmung",
+  "type": {
+    "coding": [
+      {
+        "code": "1234",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "source": {
+    "reference": "mii-exa-icu-icu-device"
+  },
+  "category": "measurement"
+}

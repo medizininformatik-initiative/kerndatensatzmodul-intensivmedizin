@@ -1,0 +1,16 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+  "type": {
+    "coding": [
+      {
+        "code": "182744004",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "source": {
+    "reference": "mii-exa-icu-icu-device"
+  },
+  "category": "measurement"
+}

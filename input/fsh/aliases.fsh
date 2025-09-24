@@ -4,7 +4,12 @@ Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $ieee-11073 = urn:iso:std:iso:11073:10101
 Alias: $ucum = http://unitsofmeasure.org
+Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-basis
+Alias: $icd-seitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
+Alias: $Kontaktart = http://fhir.de/CodeSystem/kontaktart-de
+Alias: $Kontaktebene = http://fhir.de/CodeSystem/Kontaktebene
 
 // MII KDS
 Alias: $mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
@@ -19,3 +24,4 @@ Alias: $observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition
 
 // licenses
 Alias: $spdx-license = http://hl7.org/fhir/spdx-license
+
