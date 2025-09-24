@@ -1,6 +1,6 @@
 {
   "resourceType": "Device",
-  "id": "exa-mii-icu-icu-device",
+  "id": "exa-mii-icu-ecmo-device",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
@@ -9,13 +9,13 @@
   "identifier": [
     {
       "system": "https://www.charite.de/fhir/sid/icu-device-identifier",
-      "value": "ICUDevice-12345"
+      "value": "ECMODevice-12345"
     }
   ],
   "status": "active",
   "deviceName": [
     {
-      "name": "ICU Device Model X",
+      "name": "Ecmo Device Model X",
       "type": "user-friendly"
     }
   ],

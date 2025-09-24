@@ -58,10 +58,10 @@
     "resource": [
       {
         "reference": {
-          "reference": "Device/exa-mii-icu-icu-device"
+          "reference": "Device/exa-mii-icu-ecmo-device"
         },
-        "name": "exa-mii-icu-icu-device",
-        "description": "Device: ICU Device",
+        "name": "exa-mii-icu-ecmo-device",
+        "description": "Device: ICU ECMO Device",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
       },
       {
