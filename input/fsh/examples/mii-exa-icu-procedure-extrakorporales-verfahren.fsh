@@ -16,7 +16,8 @@ Description: "Procedure: ICU Procedure"
 * code.coding[ops].version = "2023"
 * code.coding[ops].extension[+].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[ops].extension[=].valueCoding = $icd-seitenlokalisation#L "links"
-* code.coding[sct] = $sct#1234 "" // Welcher Code ist hier passend? 
+* code.coding[sct] = $sct#786453001 "Venovenous extracorporeal membrane oxygenation (procedure)"
+* code.coding[sct].version = "2023"
 * subject = Reference(exa-mii-icu-patient)
 * encounter = Reference(mii-exa-icu-icu-encounter)
 * performedPeriod.start = "2023-08-23T10:30:10+01:00"
