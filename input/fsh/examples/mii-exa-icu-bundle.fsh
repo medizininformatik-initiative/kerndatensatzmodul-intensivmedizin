@@ -22,11 +22,10 @@ Description: "Bundle: Example ECT Dauer extrakorporaler Gasaustausch"
 * type = #transaction
 * timestamp = "2025-09-24T13:51:00+02:00"
 * insert AddBundleEntry(mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch, Observation)
-* insert AddBundleEntry(exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte, Observation)
 * insert AddBundleEntry(mii-exa-icu-patient, Patient)
 * insert AddBundleEntry(mii-exa-icu-procedure-extrakorporales-verfahren, Procedure)
 * insert AddBundleEntry(mii-exa-icu-encounter, Encounter)
-* insert AddBundleEntry(exa-mii-icu-ecmo-device, Device)
+* insert AddBundleEntry(mii-exa-icu-ecmo-device, Device)
 * insert AddBundleEntry(mii-exa-icu-gemessene-parameter-extrakorporale-verfahren, DeviceMetric)
 * insert AddBundleEntry(mii-exa-icu-specimen-bilanz, Specimen)
 * insert AddBundleEntry(mii-exa-icu-muv-atemfrequenz, Observation)

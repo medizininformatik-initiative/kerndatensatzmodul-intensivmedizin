@@ -25,7 +25,7 @@
         },
         "partOf": [
           {
-            "reference": "mii-exa-icu-extrakorporales-verfahren"
+            "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
           }
         ],
         "status": "final",
@@ -35,8 +35,7 @@
               {
                 "code": "182744004",
                 "system": "http://snomed.info/sct",
-                "display": "Extracorporeal circulation procedure (procedure)",
-                "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+                "display": "Extracorporeal circulation procedure (procedure)"
               }
             ]
           }
@@ -46,13 +45,12 @@
             {
               "code": "251286000",
               "system": "http://snomed.info/sct",
-              "display": "Extracorporeal gas exchange duration (observable entity)",
-              "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+              "display": "Extracorporeal gas exchange duration (observable entity)"
             }
           ]
         },
         "subject": {
-          "reference": "mii-exa-icu-patient"
+          "reference": "Patient/mii-exa-icu-patient"
         },
         "effectivePeriod": {
           "start": "2019-12-23T09:30:10+01:00",
@@ -73,10 +71,10 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/exa-mii-icu-patient",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-icu-patient",
       "resource": {
         "resourceType": "Patient",
-        "id": "exa-mii-icu-patient",
+        "id": "mii-exa-icu-patient",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
@@ -176,7 +174,7 @@
         ],
         "status": "completed",
         "subject": {
-          "reference": "Patient/exa-mii-icu-patient"
+          "reference": "exa-mii-icu-patient"
         },
         "encounter": {
           "reference": "mii-exa-icu-icu-encounter"
@@ -186,7 +184,7 @@
           "end": "2023-09-22T10:30:10+01:00"
         },
         "recorder": {
-          "reference": "Patient/exa-mii-icu-patient"
+          "reference": "exa-mii-icu-patient"
         },
         "bodySite": [
           {
@@ -230,7 +228,7 @@
           }
         ],
         "subject": {
-          "reference": "mii-exa-icu-patient"
+          "reference": "Patient/mii-exa-icu-patient"
         },
         "period": {
           "start": "2023-08-23",
@@ -243,10 +241,10 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/Device/exa-mii-icu-ecmo-device",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-icu-ecmo-device",
       "resource": {
         "resourceType": "Device",
-        "id": "exa-mii-icu-ecmo-device",
+        "id": "mii-exa-icu-ecmo-device",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
