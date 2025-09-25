@@ -16,8 +16,8 @@
     "endLine": 52
   },
   {
-    "outputFile": "Device-exa-mii-icu-ecmo-device.json",
-    "fshName": "exa-mii-icu-ecmo-device",
+    "outputFile": "Device-mii-exa-icu-ecmo-device.json",
+    "fshName": "mii-exa-icu-ecmo-device",
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-ecmo-device.fsh",
     "startLine": 1,
@@ -27,7 +27,7 @@
     "outputFile": "DeviceMetric-mii-exa-icu-gemessene-parameter-beatmung.json",
     "fshName": "mii-exa-icu-gemessene-parameter-beatmung",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-icu-gemessene-parameter-beatmung.fsh",
+    "fshFile": "examples/mii-exa-icu-dm-gemessene-parameter-beatmung.fsh",
     "startLine": 1,
     "endLine": 7
   },
@@ -35,7 +35,7 @@
     "outputFile": "DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.json",
     "fshName": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.fsh",
+    "fshFile": "examples/mii-exa-icu-dm-gemessene-parameter-extrakorporale-verfahren.fsh",
     "startLine": 1,
     "endLine": 7
   },
@@ -48,16 +48,24 @@
     "endLine": 11
   },
   {
+    "outputFile": "Observation-mii-exa-icu-ect-arterieller-druck-gemessen.json",
+    "fshName": "mii-exa-icu-ect-arterieller-druck-gemessen",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-ect-arterieller-druck-gemessen.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
     "outputFile": "Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.json",
     "fshName": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 13
   },
   {
-    "outputFile": "Patient-exa-mii-icu-patient.json",
-    "fshName": "exa-mii-icu-patient",
+    "outputFile": "Patient-mii-exa-icu-patient.json",
+    "fshName": "mii-exa-icu-patient",
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-patient.fsh",
     "startLine": 1,

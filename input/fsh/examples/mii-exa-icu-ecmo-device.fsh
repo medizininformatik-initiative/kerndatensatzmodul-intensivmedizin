@@ -1,4 +1,4 @@
-Instance: exa-mii-icu-ecmo-device
+Instance: mii-exa-icu-ecmo-device
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Usage: #example
 Description: "Device: ICU ECMO Device"
