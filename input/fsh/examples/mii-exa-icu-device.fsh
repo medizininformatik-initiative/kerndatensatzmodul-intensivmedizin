@@ -1,12 +1,12 @@
-Instance: mii-exa-icu-ecmo-device
+Instance: mii-exa-icu-device
 InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
 Usage: #example
-Description: "Device: ICU ECMO Device"
+Description: "Device: ICU  Device"
 
 * identifier.system = "https://www.charite.de/fhir/sid/icu-device-identifier"
-* identifier.value = "ECMODevice-12345"
+* identifier.value = "Device-12345"
 * status = #active
-* deviceName.name = "Ecmo Device Model X"
+* deviceName.name = "Device Model X"
 * deviceName.type = #user-friendly
 * type.coding = $sct#49062001
 * version.value = "1.0.0"
