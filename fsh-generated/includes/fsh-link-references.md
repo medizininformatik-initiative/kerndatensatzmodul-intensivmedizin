@@ -1,3 +1,4 @@
+[exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte]: Observation-exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.html
 [mii-cps-icu-capabilitystatement]: CapabilityStatement-mii-cps-icu-capabilitystatement.html
 [MII_PR_ICU_Beatmungszeit_Hohem_Druck]: StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html
 [MII_PR_ICU_Dauer_Haemodialysesitzung]: StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.html
