@@ -16,10 +16,10 @@
     "endLine": 52
   },
   {
-    "outputFile": "Device-mii-exa-icu-ecmo-device.json",
-    "fshName": "mii-exa-icu-ecmo-device",
+    "outputFile": "Device-mii-exa-icu-device.json",
+    "fshName": "mii-exa-icu-device",
     "fshType": "Instance",
-    "fshFile": "examples/mii-exa-icu-ecmo-device.fsh",
+    "fshFile": "examples/mii-exa-icu-device.fsh",
     "startLine": 1,
     "endLine": 13
   },
@@ -46,6 +46,14 @@
     "fshFile": "examples/mii-exa-icu-encounter.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "Observation-exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.json",
+    "fshName": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "Observation-mii-exa-icu-ect-arterieller-druck-gemessen.json",
@@ -333,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/Bilanzen/MII_PR_ICU_Bilanz.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-device.json",

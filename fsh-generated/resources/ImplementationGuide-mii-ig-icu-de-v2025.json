@@ -70,6 +70,13 @@
     "resource": [
       {
         "reference": {
+          "reference": "Observation/exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+        },
+        "name": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
         },
         "name": "MII CPS Intensivmedizin CapabilityStatement",
@@ -812,10 +819,10 @@
       },
       {
         "reference": {
-          "reference": "Device/mii-exa-icu-ecmo-device"
+          "reference": "Device/mii-exa-icu-device"
         },
-        "name": "mii-exa-icu-ecmo-device",
-        "description": "Device: ICU ECMO Device",
+        "name": "mii-exa-icu-device",
+        "description": "Device: ICU  Device",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
       },
       {
