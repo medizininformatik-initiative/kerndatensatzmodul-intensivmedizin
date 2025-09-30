@@ -22,15 +22,11 @@ Title: "MII PR ICU Bilanz"
 * category.coding[hl7-category] ^binding.description = "A Code of the following value set is required. Only relevant codes for balances should be vital-signs, exam and therapy."
 * category.coding[hl7-category].system 1.. MS
 * category.coding[hl7-category].code 1.. MS
- 
 * category.coding[sct] ^patternCoding.system = $sct
 * category.coding[sct] ^patternCoding.code = #364396009
 * category.coding[sct] ^binding.description = "A Code of the following value set is required. Only relevant codes for b"
-// * category.coding[sct] = $sct#364396009
 * category.coding[sct].system 1.. MS
 * category.coding[sct].code 1.. MS
-//* category.coding[kdsicu-category].system 1.. MS
-//* category.coding[kdsicu-category].code 1.. MS
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
