@@ -6,7 +6,7 @@ Title: "MII PR ICU Bilanz"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz"
 * ^status = #active
-
+ 
 * identifier MS
 * category 1.. MS
 * category.coding MS
@@ -15,22 +15,29 @@ Title: "MII PR ICU Bilanz"
 * category.coding ^slicing.rules = #open
 * category.coding contains
     hl7-category 0..1 MS and
+    sct 0..1 MS and
     kdsicu-category 1..1 MS
 * category.coding[hl7-category] from mii-vs-icu-category-observation-bilanzen-hl7 (required)
 * category.coding[hl7-category] ^patternCoding.system = "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
 * category.coding[hl7-category] ^binding.description = "A Code of the following value set is required. Only relevant codes for balances should be vital-signs, exam and therapy."
 * category.coding[hl7-category].system 1.. MS
 * category.coding[hl7-category].code 1.. MS
-* category.coding[kdsicu-category].code = $sct#364396009
-* category.coding[kdsicu-category].system 1.. MS
-* category.coding[kdsicu-category].code 1.. MS
+ 
+* category.coding[sct] ^patternCoding.system = $sct
+* category.coding[sct] ^patternCoding.code = #364396009
+* category.coding[sct] ^binding.description = "A Code of the following value set is required. Only relevant codes for b"
+// * category.coding[sct] = $sct#364396009
+* category.coding[sct].system 1.. MS
+* category.coding[sct].code 1.. MS
+//* category.coding[kdsicu-category].system 1.. MS
+//* category.coding[kdsicu-category].code 1.. MS
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
-* code.coding contains sct 1..1 MS and 
-    loinc 0.. MS and 
+* code.coding contains sct 1..1 MS and
+    loinc 0.. MS and
     IEEE-11073 0.. MS
 * code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed (required)
 * code.coding[sct] ^patternCoding.system = $sct
