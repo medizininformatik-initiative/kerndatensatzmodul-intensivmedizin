@@ -6,7 +6,7 @@ Description: "Confusion Assessment Method for the ICU (CAM-ICU) for delirium ass
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-cam-icu"
-* ^status = #active
+* ^status = #draft
 
 * code.coding[sct] = $sct#450740000 "Confusion Assessment Method for the intensive care unit score"
 * code.coding[loinc] 1..1
