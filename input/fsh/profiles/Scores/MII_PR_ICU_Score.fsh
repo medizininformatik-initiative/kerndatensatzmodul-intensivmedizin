@@ -13,6 +13,11 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
  // value or dataAbsentReason must be present (in Observation and components)
 * obeys obs-10 and vs-de-2
 
+// Identifier for tracking specific assessments
+* identifier MS
+* identifier ^short = "Unique identifier for this score observation"
+* identifier ^definition = "Business identifier for this particular score assessment"
+
 * status MS
 * status ^short = "Status of the observation"
 * status ^comment = "Typically 'final' for completed scores, 'preliminary' for incomplete assessments"
