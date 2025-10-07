@@ -13,8 +13,6 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 // Total value is integer between 0 and 8
 * valueInteger 1..1
 * valueInteger obeys icdsc-score-range
-* valueQuantity 0..0
-* valueCodeableConcept 0..0
 
 // Interpretation: delirium status categories
 * interpretation from mii-vs-icu-delirium-interpretation (extensible)

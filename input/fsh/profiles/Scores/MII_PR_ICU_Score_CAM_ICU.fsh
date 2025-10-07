@@ -14,8 +14,6 @@ Description: "Confusion Assessment Method for the ICU (CAM-ICU) for delirium ass
 
 * valueCodeableConcept 1..1
 * valueCodeableConcept from mii-vs-icu-cam-icu-result (required)
-* valueInteger 0..0
-* valueQuantity 0..0
 
 // Interpretation
 * interpretation from mii-vs-icu-delirium-interpretation (extensible)
