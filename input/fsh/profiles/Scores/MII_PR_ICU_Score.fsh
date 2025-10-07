@@ -128,3 +128,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * hasMember ^short = "Related observations (e.g., individual assessment items)"
 * derivedFrom MS
 * derivedFrom ^short = "Source observations used to calculate score"
+
+
+RuleSet: item-weight(weight)
+* extension[http://hl7.org/fhir/StructureDefinition/itemWeight].valueDecimal = {weight}
