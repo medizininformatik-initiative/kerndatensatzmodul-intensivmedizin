@@ -1,7 +1,7 @@
 ValueSet: MII_VS_ICU_Score_LOINC
 Id: mii-vs-icu-score-loinc
 Title: "MII VS ICU Score LOINC"
-Description: "Value set for ICU scores - LOINC codes"
+Description: "Value set for scores - LOINC codes"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"

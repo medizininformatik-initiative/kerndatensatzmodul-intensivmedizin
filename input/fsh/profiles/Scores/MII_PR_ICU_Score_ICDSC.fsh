@@ -6,7 +6,7 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-icdsc"
-* ^status = #active
+* ^status = #draft
 
 * code.coding[sct] = $sct#1351995008 "Intensive Care Delirium Screening Checklist score (observable entity)"
 

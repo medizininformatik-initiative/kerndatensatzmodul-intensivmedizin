@@ -6,17 +6,12 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score"
-* ^status = #active
+* ^status = #draft
+* ^abstract = true
 
  // value or dataAbsentReason must be present (in Observation and components)
 * obeys obs-10 and vs-de-2
 
-// Identifier for tracking specific assessments
-* identifier MS
-* identifier ^short = "Unique identifier for this score observation"
-* identifier ^definition = "Business identifier for this particular score assessment"
-
-// Status is required
 * status MS
 * status ^short = "Status of the observation"
 * status ^comment = "Typically 'final' for completed scores, 'preliminary' for incomplete assessments"
@@ -35,7 +30,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
   * system 1..1 MS
   * code 1..1 MS
 * category[assessment-scale] = $sct#273249006 "Assessment scales (assessment scale)"
-* category[assessment-scale] ^short = "ICU assessment scale category"
+* category[assessment-scale] ^short = "Assessment scale category"
 * category[assessment-scale].coding 1..1 MS
   * system 1..1 MS
   * code 1..1 MS
@@ -45,19 +40,20 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code MS
 * code ^short = "Type of score"
 * code ^definition = "Identifies which score is being represented"
+* code obeys obs-loinc-sct
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    sct 1..1 MS and
-    loinc 0..1 MS
-* code.coding[sct] from mii-vs-icu-score-snomed (required)
+    sct 0..1 MS and
+    loinc 0..1 MS // TODO: add ISO 11073 slice
+* code.coding[sct] from mii-vs-icu-score-snomed (extensible)
 * code.coding[sct] ^short = "SNOMED CT code for the score"
 * code.coding[sct] ^patternCoding.system = $sct
   * system 1.. MS
   * code 1.. MS
-* code.coding[loinc] from mii-vs-icu-score-loinc (required)
+* code.coding[loinc] from mii-vs-icu-score-loinc (extensible)
 * code.coding[loinc] ^short = "LOINC code for the score"
 * code.coding[loinc] ^patternCoding.system = $loinc
   * system 1.. MS
@@ -71,7 +67,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 // Encounter context
 * encounter 1.. MS
 * encounter only Reference(Encounter)
-* encounter ^short = "ICU encounter during which score was assessed"
+* encounter ^short = "Encounter during which score was assessed"
 * encounter ^definition = "The encounter context in which the score was determined"
 
 // Timing of the assessment

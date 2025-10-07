@@ -6,8 +6,7 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-sofa"
-* ^status = #active
-* ^abstract = true
+* ^status = #draft
 
 * code.coding[sct] = $sct#1187491009 "Sequential Organ Failure Assessment score (observable entity)"
 * code.coding[loinc] 1..1
@@ -110,12 +109,12 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 Invariant: sofa-score-range
 Description: "SOFA total score must be between 0 and 24"
 Severity: #error
-Expression: "value >= 0 and value <= 24"
+Expression: "valueInteger >= 0 and valueInteger <= 24" // TODO: test invariant
 
 Invariant: sofa-component-range
 Description: "SOFA component score must be between 0 and 4"
 Severity: #error
-Expression: "value >= 0 and value <= 4"
+Expression: "valueInteger >= 0 and valueInteger <= 4" // TODO: test invariant
 
 RuleSet: sofa-component-coding-slicing
 * coding ^slicing.discriminator.type = #pattern
