@@ -8,6 +8,9 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score"
 * ^status = #active
 
+ // value or dataAbsentReason must be present (in Observation and components)
+* obeys obs-10 and vs-de-2
+
 // Identifier for tracking specific assessments
 * identifier MS
 * identifier ^short = "Unique identifier for this score observation"
@@ -86,10 +89,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * performer ^short = "Who performed the score assessment"
 
 // Total score value
-* value[x] 1.. MS
+* value[x] 0.. MS
 * value[x] only integer or Quantity or CodeableConcept
 * value[x] ^short = "Total score value"
-* value[x] ^definition = "The total score calculated. For numeric scores use integer or Quantity. For categorical results (e.g., CAM-ICU positive/negative) use CodeableConcept."
+* value[x] ^definition = "The total score calculated. For numeric scores use integer or Quantity. For categorical results (e.g., positive/negative) use CodeableConcept."
 * value[x] ^comment = "Child profiles should constrain this further based on the specific score type"
 
 // Data absent reason for missing values
