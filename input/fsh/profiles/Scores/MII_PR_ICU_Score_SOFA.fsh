@@ -7,6 +7,7 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score-sofa"
 * ^status = #active
+* ^abstract = true
 
 * code.coding[sct] = $sct#1187491009 "Sequential Organ Failure Assessment score (observable entity)"
 * code.coding[loinc] 1..1
