@@ -16,6 +16,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 // Total value is integer between 0 and 24
 * valueInteger 1..1
 * valueInteger obeys sofa-score-range
+* valueQuantity 0..0
+* valueCodeableConcept 0..0
 
 // Interpretation: severity of organ dysfunction
 * interpretation ^short = "Organ dysfunction severity"
