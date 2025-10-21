@@ -6,6 +6,28 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+          "code": "vital-sign"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "251850009"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "99741-1"
+      }
+    ]
+  },
   "identifier": [
     {
       "system": "https://simplifier.net/medizininformatikinitiative-modul-intensivmedizin/example-identifier",
@@ -23,6 +45,7 @@
     "start": "2019-12-23T09:30:10+01:00",
     "end": "2019-12-24T09:30:10+01:00"
   },
+  "issued": "2019-12-20T09:30:10+01:00",
   "valueQuantity": {
     "value": 200,
     "code": "ml",
