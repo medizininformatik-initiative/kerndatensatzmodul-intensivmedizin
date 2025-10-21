@@ -241,7 +241,54 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-icu-ecmo-device",
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-icu-device",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-icu-device",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/icu-device-identifier",
+            "value": "Device-12345"
+          }
+        ],
+        "status": "active",
+        "deviceName": [
+          {
+            "name": "Device Model X",
+            "type": "user-friendly"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "49062001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "version": [
+          {
+            "value": "1.0.0"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "1234",
+                  "system": "http://snomed.info/sct"
+                }
+              ]
+            }
+          }
+        ]
+      },
       "request": {
         "method": "POST",
         "url": "Device"

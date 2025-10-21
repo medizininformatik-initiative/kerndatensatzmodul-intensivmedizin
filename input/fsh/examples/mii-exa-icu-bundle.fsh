@@ -25,5 +25,5 @@ Description: "Bundle: Example ECT Dauer extrakorporaler Gasaustausch"
 * insert AddBundleEntry(mii-exa-icu-patient, Patient)
 * insert AddBundleEntry(mii-exa-icu-procedure-extrakorporales-verfahren, Procedure)
 * insert AddBundleEntry(mii-exa-icu-encounter, Encounter)
-* insert AddBundleEntry(mii-exa-icu-ecmo-device, Device)
+* insert AddBundleEntry(mii-exa-icu-device, Device)
 * insert AddBundleEntry(mii-exa-icu-gemessene-parameter-extrakorporale-verfahren, DeviceMetric)
