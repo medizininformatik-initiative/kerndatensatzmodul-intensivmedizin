@@ -109,6 +109,7 @@
 [mii-exa-icu-gemessene-parameter-extrakorporale-verfahren]: DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.html
 [mii-exa-icu-patient]: Patient-mii-exa-icu-patient.html
 [mii-exa-icu-procedure-extrakorporales-verfahren]: Procedure-mii-exa-icu-procedure-extrakorporales-verfahren.html
+[mii-exa-icu-specimen-bilanz]: Specimen-mii-exa-icu-specimen-bilanz.html
 [mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch]: Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.html
 [MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html
 [MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html

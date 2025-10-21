@@ -19,10 +19,15 @@ Usage: #example
 * effectivePeriod.end = "2019-12-24T09:30:10+01:00"
 * issued = "2019-12-20T09:30:10+01:00"
 * valueQuantity = 200 'ml'
-// * dataAbsentReason = 
-// * interpretation =
-// * bodySite = // MS macht hier vllt keinen Sinn, evtl. umprofilieren (aus Bilanz entfernen und in unter Profile spezifizieren)
-// * method =
-// * specimen =
-// * device = Reference(mii-exa-icu-device)
-// * referenceRange
+* dataAbsentReason.coding.system = $data-absent-reason
+* dataAbsentReason.coding.code = #not-applicable
+* interpretation.coding.system = $v3-observation-interpretation 
+* interpretation.coding.code = #EXP "Expected"
+* bodySite.coding.system = $sct // MS macht hier vllt keinen Sinn, evtl. umprofilieren (aus Bilanz entfernen und in unter Profile spezifizieren)
+* bodySite.coding.code = #368209003 // the example codesystem should be checked
+* method.coding.system = $sct
+* method.coding.code = #251850009 // Only used if not implicit in code for Observation.code but MS requires it for the example
+* specimen = Reference(mii-exa-icu-specimen-bilanz)
+* device = Reference(mii-exa-icu-device)
+* referenceRange.low = 150 'ml'
+* referenceRange.high = 250 'ml'

@@ -10,6 +10,8 @@ Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-
 Alias: $icd-seitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
 Alias: $Kontaktart = http://fhir.de/CodeSystem/kontaktart-de
 Alias: $Kontaktebene = http://fhir.de/CodeSystem/Kontaktebene
+Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $v3-observation-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 // MII KDS
 Alias: $mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure

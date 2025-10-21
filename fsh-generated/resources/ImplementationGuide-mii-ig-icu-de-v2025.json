@@ -881,6 +881,14 @@
       },
       {
         "reference": {
+          "reference": "Specimen/mii-exa-icu-specimen-bilanz"
+        },
+        "name": "mii-exa-icu-specimen-bilanz",
+        "description": "Specimen: ICU Specimen Example for Bilanz",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch"
         },
         "name": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",

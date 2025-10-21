@@ -12,6 +12,10 @@
         {
           "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
           "code": "vital-sign"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "11111"
         }
       ]
     }
@@ -50,5 +54,59 @@
     "value": 200,
     "code": "ml",
     "system": "http://unitsofmeasure.org"
-  }
+  },
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code": "not-applicable"
+      }
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "EXP"
+        }
+      ]
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "368209003"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "251850009"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/mii-exa-icu-specimen-bilanz"
+  },
+  "device": {
+    "reference": "Device/mii-exa-icu-device"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 150,
+        "code": "ml",
+        "system": "http://unitsofmeasure.org"
+      },
+      "high": {
+        "value": 250,
+        "code": "ml",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
 }
