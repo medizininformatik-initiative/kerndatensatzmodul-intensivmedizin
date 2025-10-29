@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-bundle.fsh",
     "startLine": 17,
-    "endLine": 29
+    "endLine": 31
   },
   {
     "outputFile": "CapabilityStatement-mii-cps-icu-capabilitystatement.json",
@@ -70,6 +70,14 @@
     "fshFile": "examples/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-muv-atemfrequenz.json",
+    "fshName": "mii-exa-icu-muv-atemfrequenz",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-muv-atemfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "Patient-mii-exa-icu-patient.json",

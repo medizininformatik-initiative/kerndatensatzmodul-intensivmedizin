@@ -107,6 +107,7 @@
 [mii-exa-icu-encounter]: Encounter-mii-exa-icu-encounter.html
 [mii-exa-icu-gemessene-parameter-beatmung]: DeviceMetric-mii-exa-icu-gemessene-parameter-beatmung.html
 [mii-exa-icu-gemessene-parameter-extrakorporale-verfahren]: DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.html
+[mii-exa-icu-muv-atemfrequenz]: Observation-mii-exa-icu-muv-atemfrequenz.html
 [mii-exa-icu-patient]: Patient-mii-exa-icu-patient.html
 [mii-exa-icu-procedure-extrakorporales-verfahren]: Procedure-mii-exa-icu-procedure-extrakorporales-verfahren.html
 [mii-exa-icu-specimen-bilanz]: Specimen-mii-exa-icu-specimen-bilanz.html

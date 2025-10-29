@@ -18,10 +18,10 @@ Description: "Procedure: ICU Procedure"
 * code.coding[ops].extension[=].valueCoding = $icd-seitenlokalisation#L "links"
 * code.coding[sct] = $sct#786453001 "Venovenous extracorporeal membrane oxygenation (procedure)"
 * code.coding[sct].version = "2023"
-* subject = Reference(exa-mii-icu-patient)
-* encounter = Reference(mii-exa-icu-icu-encounter)
+* subject = Reference(mii-exa-icu-patient)
+* encounter = Reference(mii-exa-icu-encounter)
 * performedPeriod.start = "2023-08-23T10:30:10+01:00"
 * performedPeriod.end = "2023-09-22T10:30:10+01:00"
-* recorder = Reference(exa-mii-icu-patient) // Sinnvoller wäre hier ein Practitioner?
+* recorder = Reference(mii-exa-icu-patient) // Sinnvoller wäre hier ein Practitioner?
 * bodySite.coding = $sct#1234 // Welcher Code ist hier passend?
 * note.text = "Beispielhafte Notiz zum extrakorporalen Verfahren."
