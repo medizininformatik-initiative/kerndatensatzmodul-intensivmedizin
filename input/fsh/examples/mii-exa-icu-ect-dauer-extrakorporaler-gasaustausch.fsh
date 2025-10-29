@@ -10,4 +10,4 @@ Usage: #example
 * effectivePeriod.start = "2019-12-23T09:30:10+01:00"
 * effectivePeriod.end = "2019-12-23T10:30:10+01:00"
 * valueQuantity = 72 'h'
-* device = Reference(mii-exa-icu-gemessene_parameter_extrakorporale_verfahren)
+* device = Reference(mii-exa-icu-gemessene-parameter-extrakorporale-verfahren)

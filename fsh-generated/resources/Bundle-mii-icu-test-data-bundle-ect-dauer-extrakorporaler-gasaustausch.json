@@ -62,8 +62,127 @@
           "system": "http://unitsofmeasure.org"
         },
         "device": {
-          "reference": "mii-exa-icu-gemessene_parameter_extrakorporale_verfahren"
+          "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren"
         }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+                "code": "vital-sign"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "11111"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251850009"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "99741-1"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://simplifier.net/medizininformatikinitiative-modul-intensivmedizin/example-identifier",
+            "value": "bilanz-abnahme-haemofiltration-einzelmesswerte"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-icu-encounter"
+        },
+        "effectivePeriod": {
+          "start": "2019-12-23T09:30:10+01:00",
+          "end": "2019-12-24T09:30:10+01:00"
+        },
+        "issued": "2019-12-20T09:30:10+01:00",
+        "valueQuantity": {
+          "value": 200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "not-applicable"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "EXP"
+              }
+            ]
+          }
+        ],
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251850009"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-icu-specimen-bilanz"
+        },
+        "device": {
+          "reference": "Device/mii-exa-icu-device"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 150,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            },
+            "high": {
+              "value": 250,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ]
       },
       "request": {
         "method": "POST",
@@ -174,17 +293,17 @@
         ],
         "status": "completed",
         "subject": {
-          "reference": "exa-mii-icu-patient"
+          "reference": "Patient/mii-exa-icu-patient"
         },
         "encounter": {
-          "reference": "mii-exa-icu-icu-encounter"
+          "reference": "Encounter/mii-exa-icu-encounter"
         },
         "performedPeriod": {
           "start": "2023-08-23T10:30:10+01:00",
           "end": "2023-09-22T10:30:10+01:00"
         },
         "recorder": {
-          "reference": "exa-mii-icu-patient"
+          "reference": "Patient/mii-exa-icu-patient"
         },
         "bodySite": [
           {
@@ -309,13 +428,28 @@
           ]
         },
         "source": {
-          "reference": "mii-exa-icu-icu-device"
+          "reference": "Device/mii-exa-icu-device"
         },
         "category": "measurement"
       },
       "request": {
         "method": "POST",
         "url": "DeviceMetric"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-icu-specimen-bilanz",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-icu-specimen-bilanz",
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
       }
     }
   ]
