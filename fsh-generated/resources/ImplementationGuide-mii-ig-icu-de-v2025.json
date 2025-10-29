@@ -865,6 +865,13 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-atemfrequenz"
+        },
+        "name": "mii-exa-icu-muv-atemfrequenz",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+      },
+      {
+        "reference": {
           "reference": "Patient/mii-exa-icu-patient"
         },
         "name": "mii-exa-icu-patient",
