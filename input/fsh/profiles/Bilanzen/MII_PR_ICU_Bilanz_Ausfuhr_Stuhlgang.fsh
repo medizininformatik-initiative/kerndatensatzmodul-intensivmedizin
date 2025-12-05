@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-ausfuhr-stuhlgang
 Title: "MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-stuhlgang"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam

@@ -4,7 +4,7 @@ Id: mii-pr-vent-icu-dynamische-kompliance
 Title: "MII PR ICU Dynamische Kompliance"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dynamische-kompliance"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dynamische-kompliance"
 * ^status = #active
 
 * code.coding 3..

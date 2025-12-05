@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-maximaler-beatmungsdruck
 Title: "MII PR ICU Maximaler Beatmungsdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/maximaler-beatmungsdruck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-maximaler-beatmungsdruck"
 * ^status = #active
 
 * code.coding 3..

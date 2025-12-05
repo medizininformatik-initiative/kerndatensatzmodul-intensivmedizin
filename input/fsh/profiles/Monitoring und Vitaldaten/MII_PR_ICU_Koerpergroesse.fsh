@@ -4,7 +4,7 @@ Id: mii-pr-icu-muv-koerpergroesse
 Title: "MII PR ICU Koerpergroesse"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergroesse"
 * ^status = #active
 
 * status MS

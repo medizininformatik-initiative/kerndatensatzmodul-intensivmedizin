@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-substituatvolumen
 Title: "MII PR ICU Substituatvolumen"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/substituatvolumen"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatvolumen"
 * ^status = #active
 
 * category 1..

@@ -3,8 +3,8 @@ Id: mii-vs-icu-category-observation-bilanzen-hl7
 Title: "MII VS ICU Category Observation Bilanzen HL7"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-observation-bilanzen-hl7"
-* ^version = "2025.0.4"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"
+* ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-02-11"
 * ^experimental = false

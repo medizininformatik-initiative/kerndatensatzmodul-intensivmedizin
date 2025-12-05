@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-ausfuhr-drainage-generisch
 Title: "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-drainage-generisch"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam

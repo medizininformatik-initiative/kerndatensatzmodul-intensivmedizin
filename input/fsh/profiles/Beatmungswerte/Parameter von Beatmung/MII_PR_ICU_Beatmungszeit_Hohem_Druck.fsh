@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-beatmungszeit-hohem-druck
 Title: "MII ICU Beatmungszeit Hohem Druck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungszeit-hohem-druck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-hohem-druck"
 * ^status = #active
 
 * code.coding 2..

@@ -4,7 +4,7 @@ Id: mii-pr-icu-muv-arterieller-blutdruck
 Title: "MII PR ICU Arterieller Blutdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-arterieller-blutdruck"
 * ^status = #active
 
 * category MS

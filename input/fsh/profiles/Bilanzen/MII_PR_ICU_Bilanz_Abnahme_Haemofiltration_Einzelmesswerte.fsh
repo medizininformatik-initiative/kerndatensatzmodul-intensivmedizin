@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte
 Title: "MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#vital-sign
