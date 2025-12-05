@@ -1,11 +1,11 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "mii-ig-icu-de-v2025",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2025",
-  "version": "2025.0.0-ballot",
+  "id": "mii-ig-icu-de-v2026",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
+  "version": "2026.0.0",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
-  "status": "draft",
+  "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "packageId": "mii-ig-icu-de-v2025",
+  "packageId": "mii-ig-icu-de-v2026",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -37,25 +37,19 @@
     },
     {
       "packageId": "de.gematik.isik-vitalparameter",
-      "version": "4.0.x",
+      "version": "5.0.x",
       "uri": "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
       "id": "de_gematik_isik_vitalparameter"
     },
     {
       "packageId": "de.gematik.isik-basismodul",
-      "version": "4.0.1",
+      "version": "4.0.3",
       "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
       "id": "de_gematik_isik_basismodul"
     },
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.0",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
-      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
-    },
-    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
-      "version": "2025.0.0",
+      "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ImplementationGuide/mii-ig-prozedur",
       "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
     }
