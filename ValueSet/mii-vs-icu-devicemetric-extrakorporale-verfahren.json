@@ -1,29 +1,26 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-mii-icu-method-observation-blutdruck",
+  "id": "mii-vs-icu-devicemetric-extrakorporale-verfahren-snomed",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-method-observation-blutdruck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren",
   "version": "2026.0.0",
-  "name": "VS_MII_ICU_Method_Observation_Blutdruck",
-  "title": "VS MII ICU Method Observation Blutdruck",
+  "name": "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED",
+  "title": "MII VS ICU Category Procedure Beatmung [SNOMED]",
   "status": "active",
   "experimental": false,
   "date": "2025-02-11",
   "publisher": "https://www.medizininformatik-initiative.de",
-  "description": "Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. ",
   "compose": {
     "include": [
       {
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "10179008"
-          },
-          {
-            "code": "22762002"
+            "code": "182744004",
+            "display": "Extracorporeal circulation procedure (procedure)"
           }
         ]
       }

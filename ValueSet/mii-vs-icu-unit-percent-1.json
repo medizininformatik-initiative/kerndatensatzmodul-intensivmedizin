@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-mii-icu-unit-equivalent-ucum-percent-1",
+  "id": "mii-vs-icu-unit-equivalent-ucum-percent-1",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-percent-1",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-percent-1",
   "version": "2026.0.0",
-  "name": "VS_MII_ICU_Unit_equivalent_percent_1",
-  "title": "VS MII ICU Unit equivalent UCUM percent and 1",
+  "name": "MII_VS_ICU_Unit_equivalent_percent_1",
+  "title": "MII VS ICU Unit equivalent UCUM percent and 1",
   "status": "active",
   "experimental": false,
   "date": "2025-02-11",

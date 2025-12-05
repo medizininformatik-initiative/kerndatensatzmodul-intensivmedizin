@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-snomed",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "id": "vs-mii-icu-code-observation-extrakorporale-verfahren-snomed",
+  "id": "mii-vs-icu-code-observation-extrakorporale-verfahren-snomed",
   "version": "2026.0.0",
-  "name": "VS_MII_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED",
-  "title": "VS MII ICU Code Observation extrakorporale Verfahren [SNOMED]",
+  "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED",
+  "title": "MII VS ICU Code Observation extrakorporale Verfahren [SNOMED]",
   "status": "active",
   "experimental": false,
   "date": "2025-02-11",

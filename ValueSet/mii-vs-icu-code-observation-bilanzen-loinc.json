@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-mii-icu-code-observation-bilanzen-loinc",
+  "id": "mii-vs-icu-code-observation-bilanzen-loinc",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No human-readable text provided in this case.</div>"
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-bilanzen-loinc",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc",
   "version": "2026.0.0",
-  "name": "VS_MII_ICU_Code_Observation_Bilanzen_LOINC",
-  "title": "VS MII ICU Code Observation Bilanzen [LOINC]",
+  "name": "MII_VS_ICU_Code_Observation_Bilanzen_LOINC",
+  "title": "MII VS ICU Code Observation Bilanzen [LOINC]",
   "status": "active",
   "experimental": false,
   "date": "2025-02-11",
