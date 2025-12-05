@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-icu-muv-koerpertemperatur-harnblase",
+  "meta": {
+    "profile": [
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8334-5",
+        "display": "Body temperature - Urinary bladder"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "698832009",
+        "display": "Core body temperature measured at urinary bladder (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature"
+      },
+	  {
+        "system": "http://loinc.org",
+        "code": "8329-5",
+        "display": "Body temperature - Core"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/111"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity": {
+    "value": 37,
+    "system": "http://unitsofmeasure.org",
+    "code": "Cel",
+    "unit": "degree Celsius"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "89837001",
+        "display": "Urinary bladder structure (body structure)"
+      }
+    ]
+  }
+}

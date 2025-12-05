@@ -1,0 +1,29 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "mii-sp-icu-observation-component-referencerange",
+    "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-component-referencerange",
+    "version": "2026.0.0",
+    "publisher": "Medizininformatik Initiative",
+    "contact":  [
+        {
+            "telecom":  [
+                {
+                    "system": "url",
+                    "value": "https://www.medizininformatik-initiative.de"
+                }
+            ]
+        }
+    ],
+    "name": "MII_SP_ICU_Observation_Component_ReferenceRange",
+	"title": "MII SP ICU Observation Component ReferenceRange",
+    "status": "active",
+    "experimental": false,
+    "date": "2025-02-11",
+    "description": "Suchparameter für Observation.component.referenceRange",
+    "code": "component.referenceRange",
+    "base":  [
+        "Observation"
+    ],
+    "type": "token",
+    "expression": "Observation.component.referenceRange"
+}
