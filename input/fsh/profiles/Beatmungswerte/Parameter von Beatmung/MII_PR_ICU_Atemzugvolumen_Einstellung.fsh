@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-atemzugvolumen-einstellung
 Title: "MII PR ICU Atemzugvolumen Einstellung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-einstellung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-einstellung"
 * ^status = #active
 
 * category.coding 1..1

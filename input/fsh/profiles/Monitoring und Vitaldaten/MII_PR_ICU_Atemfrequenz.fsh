@@ -4,7 +4,7 @@ Id: mii-pr-icu-muv-atemfrequenz
 Title: "MII PR ICU Atemfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
 * ^status = #active
 
 * id MS

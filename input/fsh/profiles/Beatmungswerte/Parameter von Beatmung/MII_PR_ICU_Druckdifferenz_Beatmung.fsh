@@ -4,7 +4,7 @@ Id: mii-pr-vent-provided-icu-druckdifferenz-beatmung
 Title: "MII PR ICU Druckdifferenz Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/druckdifferenz-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-druckdifferenz-beatmung"
 * ^status = #active
 
 * code.coding 2..

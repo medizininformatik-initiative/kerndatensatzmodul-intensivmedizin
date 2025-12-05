@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen
 Title: "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-gemessen"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen"
 * ^status = #active
 
 * category contains Beatmung 0..1

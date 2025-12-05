@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet
 Title: "MII PR ICU Blutfluss Cardiovasculaeres Geraet"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-cardiovasculaeres-geraet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-cardiovasculaeres-geraet"
 * ^status = #active
 
 * code.coding ^slicing.discriminator.type = #pattern

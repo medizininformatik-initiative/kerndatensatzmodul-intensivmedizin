@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung
 Title: "MII PR ICU Atemzugvolumen Waehrend Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemzugvolumen-waehrend-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemzugvolumen-waehrend-beatmung"
 * ^status = #active
 
 * code.coding 3..

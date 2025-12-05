@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-ausfuhr-urin
 Title: "MII PR ICU Bilanz Ausfuhr Urin"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-urin"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#vital-sign

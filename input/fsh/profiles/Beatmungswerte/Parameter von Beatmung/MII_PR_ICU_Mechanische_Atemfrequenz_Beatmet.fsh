@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-mechanische-atemfrequenz-beatmet
 Title: "MII PR ICU Mechanische Atemfrequenz Beatmet"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mechanische-atemfrequenz-beatmet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mechanische-atemfrequenz-beatmet"
 * ^status = #active
 
 * code.coding 3..

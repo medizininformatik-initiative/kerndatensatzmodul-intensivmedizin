@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung
 Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung"
 * ^status = #active
 
 * type MS

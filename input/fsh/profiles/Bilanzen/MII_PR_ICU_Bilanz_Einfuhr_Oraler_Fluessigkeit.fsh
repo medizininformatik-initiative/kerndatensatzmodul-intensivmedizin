@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit
 Title: "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-oraler-fluessigkeit"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#therapy

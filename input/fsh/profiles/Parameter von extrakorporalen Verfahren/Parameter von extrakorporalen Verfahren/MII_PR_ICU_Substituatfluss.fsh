@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-substituatfluss
 Title: "MII PR ICU Substituatfluss"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/substituatfluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-substituatfluss"
 * ^status = #active
 
 * category 1..

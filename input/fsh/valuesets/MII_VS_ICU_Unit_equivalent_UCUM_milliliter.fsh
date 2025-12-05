@@ -4,8 +4,8 @@ Title: "MII VS ICU Unit equivalent UCUM milliliter"
 Description: "Dieses ValueSet enthält äquivalente Codes für Milliliter."
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-milliliter"
-* ^version = "2025.0.4"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter"
+* ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-02-11"
 * ^experimental = false

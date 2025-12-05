@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-unterstuezungsdruck-beatmung
 Title: "MII PR ICU Unterstuezungsdruck Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/unterstuetzungsdruck-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-unterstuetzungsdruck-beatmung"
 * ^status = #active
 
 * code.coding[sct] ..0

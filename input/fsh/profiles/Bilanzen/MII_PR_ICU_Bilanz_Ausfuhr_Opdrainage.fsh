@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-ausfuhr-opdrainage
 Title: "MII PR ICU Bilanz Ausfuhr Opdrainage"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-opdrainage"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam

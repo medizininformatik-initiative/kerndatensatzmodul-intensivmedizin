@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-spontane-atemfrequenz-beatmet
 Title: "MII PR ICU Spontane Atemfrequenz Beatmet"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontane-atemfrequenz-beatmet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontane-atemfrequenz-beatmet"
 * ^status = #active
 
 * code.coding 2..

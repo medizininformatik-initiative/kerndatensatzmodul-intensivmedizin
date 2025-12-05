@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-gesamte-ausfuhr
 Title: "MII PR ICU Bilanz Gesamte Ausfuhr"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-gesamte-ausfuhr"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-gesamte-ausfuhr"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam

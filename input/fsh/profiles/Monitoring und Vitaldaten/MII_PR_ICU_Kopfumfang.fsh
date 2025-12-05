@@ -4,7 +4,7 @@ Id: mii-pr-icu-muv-kopfumfang
 Title: "MII PR ICU Kopfumfang"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/kopfumfang"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kopfumfang"
 * ^status = #active
 
 * status MS

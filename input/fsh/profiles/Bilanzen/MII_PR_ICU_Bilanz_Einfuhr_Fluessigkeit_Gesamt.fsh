@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt
 Title: "SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-einfuhr-fluessigkeit-gesamt"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#therapy

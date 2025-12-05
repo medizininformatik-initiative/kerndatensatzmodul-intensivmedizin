@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch
 Title: "MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-extrakorporaler-gasaustausch"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-extrakorporaler-gasaustausch"
 * ^status = #active
 
 * code.coding ^slicing.discriminator.type = #pattern
