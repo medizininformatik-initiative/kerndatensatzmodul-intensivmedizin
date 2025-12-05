@@ -33,6 +33,11 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "150392"
+      },
+	  {
+        "system": "http://loinc.org",
+        "code": "8329-5",
+        "display": "Body temperature - Core"
       }
     ]
   },
