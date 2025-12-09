@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-fluessigkeit-gesamt",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
   "title": "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
   "status": "active",
@@ -21,7 +21,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -73,7 +73,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-unit-equivalent-ucum-milliliter",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter",
           "description": "equivalent codes for milliliter"
         }
       }

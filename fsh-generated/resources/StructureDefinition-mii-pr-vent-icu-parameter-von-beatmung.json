@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-vent-icu-parameter-von-beatmung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Parameter_Von_Beatmung",
   "title": "MII PR ICU Parameter von Beatmung",
   "status": "active",
@@ -32,14 +32,14 @@
           {
             "key": "obs-10",
             "human": "Either subject XOR encounter exists",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
             "expression": "$this.encounter.exists() xor $this.subject.exists()"
           },
           {
             "key": "vs-de-2",
             "human": "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
             "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
           }
@@ -89,7 +89,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
         }
       },
       {
@@ -139,7 +139,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed"
         }
       },
       {
@@ -169,7 +169,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-loinc"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"
         }
       },
       {
@@ -199,7 +199,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-beatmung-iso11073"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"
         }
       },
       {
@@ -306,7 +306,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-beatmung"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung"
         }
       },
       {
@@ -316,7 +316,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-beatmung"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung"
             ]
           }
         ],

@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/inspiratorische-sauerstofffraktion-gemessen",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-gemessen",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen",
   "title": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
   "status": "active",
@@ -21,7 +21,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
   "derivation": "constraint",
   "differential": {
     "element": [

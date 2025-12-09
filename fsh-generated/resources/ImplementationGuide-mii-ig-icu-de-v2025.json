@@ -1,11 +1,11 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "mii-ig-icu-de-v2026",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
-  "version": "2026.0.0",
+  "id": "mii-ig-icu-de-v2025",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2025",
+  "version": "2025.0.0-ballot",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
-  "status": "active",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "packageId": "mii-ig-icu-de-v2026",
+  "packageId": "mii-ig-icu-de-v2025",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -37,19 +37,25 @@
     },
     {
       "packageId": "de.gematik.isik-vitalparameter",
-      "version": "5.0.x",
+      "version": "4.0.x",
       "uri": "http://fhir.org/packages/de.gematik.isik-vitalparameter/ImplementationGuide/de.gematik.isik-vitalparameter",
       "id": "de_gematik_isik_vitalparameter"
     },
     {
       "packageId": "de.gematik.isik-basismodul",
-      "version": "4.0.3",
+      "version": "4.0.1",
       "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
       "id": "de_gematik_isik_basismodul"
     },
     {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2025.0.0",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
-      "version": "2026.0.0",
+      "version": "2025.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ImplementationGuide/mii-ig-prozedur",
       "id": "de_medizininformatikinitiative_kerndatensatz_prozedur"
     },
@@ -62,13 +68,6 @@
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "Observation/exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
-        },
-        "name": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
-      },
       {
         "reference": {
           "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
@@ -813,25 +812,17 @@
       },
       {
         "reference": {
-          "reference": "Device/mii-exa-icu-device"
-        },
-        "name": "mii-exa-icu-device",
-        "description": "Device: ICU  Device",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-icu-ect-arterieller-druck-gemessen"
         },
         "name": "mii-exa-icu-ect-arterieller-druck-gemessen",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck"
+        "exampleBoolean": true
       },
       {
         "reference": {
           "reference": "Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"
         },
         "name": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -859,13 +850,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-icu-muv-atemfrequenz"
-        },
-        "name": "mii-exa-icu-muv-atemfrequenz",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
-      },
-      {
-        "reference": {
           "reference": "Patient/mii-exa-icu-patient"
         },
         "name": "mii-exa-icu-patient",
@@ -874,26 +858,10 @@
       },
       {
         "reference": {
-          "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
-        },
-        "name": "mii-exa-icu-procedure-extrakorporales-verfahren",
-        "description": "Procedure: ICU Procedure",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
-      },
-      {
-        "reference": {
           "reference": "Specimen/mii-exa-icu-specimen-bilanz"
         },
         "name": "mii-exa-icu-specimen-bilanz",
         "description": "Specimen: ICU Specimen Example for Bilanz",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch"
-        },
-        "name": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",
-        "description": "Bundle: Example ECT Dauer extrakorporaler Gasaustausch",
         "exampleBoolean": true
       },
       {

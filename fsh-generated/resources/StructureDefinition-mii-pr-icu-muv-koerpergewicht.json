@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-muv-koerpergewicht",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergewicht",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Koerpergewicht",
   "title": "MII PR ICU Koerpergewicht",
   "status": "active",
@@ -261,7 +261,7 @@
           {
             "key": "mii-icu-1",
             "human": "If there is no Observation.value, a dataAbsentReason must be given.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergewicht",
             "severity": "error",
             "expression": "value.exists().not() implies dataAbsentReason.exists()"
           }

@@ -15,8 +15,8 @@
       }
     }
   ],
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Extrakorporales_Verfahren",
   "title": "MII PR ICU Extrakorporales Verfahren",
   "status": "active",
@@ -75,7 +75,7 @@
         "sliceName": "sct",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-extrakorporale-verfahren",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren",
           "description": "Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004)"
         }
       },

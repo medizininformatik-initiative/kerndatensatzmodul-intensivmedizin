@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title": "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status": "active",
@@ -21,7 +21,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -37,7 +37,7 @@
           {
             "key": "obs-loinc-sct",
             "human": "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
             "severity": "error",
             "expression": "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()"
           }

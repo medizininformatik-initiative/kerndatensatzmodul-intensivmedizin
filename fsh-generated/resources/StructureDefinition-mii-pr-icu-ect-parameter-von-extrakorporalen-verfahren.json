@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
-  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
+  "version": "2025.0.4",
   "name": "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title": "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status": "active",
@@ -32,14 +32,14 @@
           {
             "key": "obs-10",
             "human": "Either subject XOR encounter exists",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
             "severity": "error",
             "expression": "$this.encounter.exists() xor $this.subject.exists()"
           },
           {
             "key": "vs-de-2",
             "human": "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
             "severity": "error",
             "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
           }
@@ -61,7 +61,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
             ]
           }
         ],
@@ -155,7 +155,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed"
         }
       },
       {
@@ -187,7 +187,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-loinc"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
         }
       },
       {
@@ -219,7 +219,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-loinc"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
         }
       },
       {
@@ -322,7 +322,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-extrakorporale-verfahren"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
         }
       },
       {
@@ -332,7 +332,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
             ]
           }
         ],
