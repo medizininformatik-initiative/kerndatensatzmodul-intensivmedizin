@@ -1,4 +1,0 @@
----
-topic: Beatmungswerte
----
-#### {{page-title}}
