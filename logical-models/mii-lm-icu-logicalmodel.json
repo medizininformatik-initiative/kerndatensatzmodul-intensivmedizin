@@ -11,7 +11,7 @@
     "kind": "logical",
     "abstract": false,
     "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/LogicalModel/Intensivmedizin",
-    "baseDefinition": "http://hl7.org/fhir/LogicalModel/Element",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
     "derivation": "specialization",
     "differential": {
         "element": [
