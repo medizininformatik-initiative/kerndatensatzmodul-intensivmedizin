@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-muv-linksventrikulaerer-schlagvolindex-durch-indikatorverduennung",
+  "id": "mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduennung",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung"
     ]
   },
   "status": "final",
@@ -21,8 +21,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8791-6",
-        "display": "Left ventricular Stroke volume index by Indicator dilution"
+        "code": "8771-8",
+        "display": "Left ventricular Stroke volume by Indicator dilution"
       }
     ]
   },
@@ -34,9 +34,9 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 1,
-    "unit": "milliliter per square meter",
+    "value": 40,
+    "unit": "milliliter",
     "system": "http://unitsofmeasure.org",
-    "code": "mL/m2"
+    "code": "mL"
   }
 }
