@@ -5,7 +5,7 @@ Description: "Value set for scores - LOINC codes"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 // RSS
 // CAM-ICU
