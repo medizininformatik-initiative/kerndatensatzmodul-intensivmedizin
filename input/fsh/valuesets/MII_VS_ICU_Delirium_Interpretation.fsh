@@ -5,7 +5,7 @@ Description: "Delirium status interpretations"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * $sct#2776000 "Delirium (disorder)"
 * $sct#191507002 "Subacute delirium (disorder)"

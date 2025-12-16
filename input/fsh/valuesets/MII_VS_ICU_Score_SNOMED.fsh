@@ -5,7 +5,7 @@ Description: "Value set for cores - SNOMED CT codes"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * $sct#1345050000 "Richmond Agitation Sedation Scale score (observable entity)"
 // CAM ICU
