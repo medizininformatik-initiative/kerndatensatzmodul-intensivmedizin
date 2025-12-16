@@ -1,10 +1,10 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "mii-pr-icu-zerebraler-perfusionsdruck",
-    "url": "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-zerebraler-perfusionsdruck",
-    "version": "0.0.1",
-    "name": "MII_PR_ICU_zerebraler_Perfusionsdruck",
-    "title": "MII PR ICU zerebraler Perfusionsdruck",
+    "id": "mii-pr-icu-muv-zerebraler-perfusionsdruck",
+    "url": "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck",
+    "version": "2026.0.0",
+    "name": "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+    "title": "MII PR ICU MUV zerebraler Perfusionsdruck",
     "status": "draft",
     "experimental": false,
     "date": "2025-11-18",
@@ -14,7 +14,7 @@
     "kind": "resource",
     "abstract": false,
     "type": "Observation",
-    "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/mii-sd-icu-monitoring-und-vitaldaten",
+    "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
     "derivation": "constraint",
     "differential": {
         "element": [
