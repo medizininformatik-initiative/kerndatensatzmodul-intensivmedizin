@@ -3,14 +3,14 @@ SearchParameters can be found at https://www.medizininformatik-initiative.de/fhi
 The SearchParameters listed here are only specific for the extensions used in ICU. 
 */
 
-Instance: sp-mii-icu-device-property-type
+Instance: mii-sp-icu-device-property-type
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Device_Property_Type"
+* name = "MII_SP_ICU_Device_Property_Type"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -20,14 +20,14 @@ Usage: #definition
 * type = #token
 * expression = "Device.property.type"
 
-Instance: sp-mii-icu-devicemetric-source
+Instance: mii-sp-icu-devicemetric-source
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_DeviceMetric_Source"
+* name = "MII_SP_ICU_DeviceMetric_Source"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -37,14 +37,14 @@ Usage: #definition
 * type = #reference
 * expression = "DeviceMetric.source"
 
-Instance: sp-mii-icu-observation-bodysite
+Instance: mii-sp-icu-observation-bodysite
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_BodySite"
+* name = "MII_SP_ICU_Observation_BodySite"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -54,14 +54,14 @@ Usage: #definition
 * type = #token
 * expression = "Observation.bodySite"
 
-Instance: sp-mii-icu-observation-component-interpretation
+Instance: mii-sp-icu-observation-component-interpretation
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_Component_Interpretation"
+* name = "MII_SP_ICU_Observation_Component_Interpretation"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -71,14 +71,14 @@ Usage: #definition
 * type = #token
 * expression = "Observation.component.interpretation"
 
-Instance: sp-mii-icu-observation-component-referencerange
+Instance: mii-sp-icu-observation-component-referencerange
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_Component_ReferenceRange"
+* name = "MII_SP_ICU_Observation_Component_ReferenceRange"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -88,14 +88,14 @@ Usage: #definition
 * type = #token
 * expression = "Observation.component.referenceRange"
 
-Instance: sp-mii-icu-observation-interpretation
+Instance: mii-sp-icu-observation-interpretation
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_Interpretation"
+* name = "MII_SP_ICU_Observation_Interpretation"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -105,14 +105,14 @@ Usage: #definition
 * type = #token
 * expression = "Observation.interpretation | Observation.component.interpretation"
 
-Instance: sp-mii-icu-observation-issued
+Instance: mii-sp-icu-observation-issued
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_Issued"
+* name = "MII_SP_ICU_Observation_Issued"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -122,14 +122,14 @@ Usage: #definition
 * type = #date
 * expression = "Observation.issued"
 
-Instance: sp-mii-icu-observation-referencerange-high
+Instance: mii-sp-icu-observation-referencerange-high
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_ReferenceRange_High"
+* name = "MII_SP_ICU_Observation_ReferenceRange_High"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -139,14 +139,14 @@ Usage: #definition
 * type = #quantity
 * expression = "Observation.referenceRange.high | Observation.component.referenceRange.high"
 
-Instance: sp-mii-icu-observation-referencerange-low
+Instance: mii-sp-icu-observation-referencerange-low
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_ReferenceRange_Low"
+* name = "MII_SP_ICU_Observation_ReferenceRange_Low"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -156,14 +156,14 @@ Usage: #definition
 * type = #quantity
 * expression = "Observation.referenceRange.low | Observation.component.referenceRange.low"
 
-Instance: sp-mii-icu-observation-referencerange
+Instance: mii-sp-icu-observation-referencerange
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Observation_ReferenceRange"
+* name = "MII_SP_ICU_Observation_ReferenceRange"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
@@ -177,14 +177,14 @@ Usage: #definition
 * component[+].definition = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-low"
 * component[=].expression = "low"
 
-Instance: sp-mii-icu-procedure-recorder
+Instance: mii-sp-icu-procedure-recorder
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* name = "SP_MII_ICU_Procedure_Recorder"
+* name = "MII_SP_ICU_Procedure_Recorder"
 * status = #active
 * experimental = false
 * date = "2025-02-11"
