@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-vent-spontanes-atemzugvolumen",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-atemzugvolumen",
-  "version": "2025.0.4",
-  "name": "MII_PR_ICU_Spontanes_Atemzugvolumen",
-  "title": "MII PR ICU Spontanes Atemzugvolumen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
+  "title": "MII PR ICU VENT Spontanes Atemzugvolumen",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -21,7 +21,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-parameter-von-beatmung",
   "derivation": "constraint",
   "differential": {
     "element": [

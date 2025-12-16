@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-spontanes-atemzugvolumen
 Title: "MII PR ICU Spontanes Atemzugvolumen"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-atemzugvolumen"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-atemzugvolumen"
 * ^status = #active
 
 * code.coding 2..

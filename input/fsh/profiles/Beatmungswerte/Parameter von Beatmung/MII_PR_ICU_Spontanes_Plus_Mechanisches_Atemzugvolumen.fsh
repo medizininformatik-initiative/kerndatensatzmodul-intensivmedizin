@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen
 Title: "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
 * ^status = #active
 
 * code.coding[sct] ..0

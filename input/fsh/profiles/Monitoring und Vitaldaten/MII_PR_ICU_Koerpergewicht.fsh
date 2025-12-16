@@ -4,7 +4,7 @@ Id: mii-pr-icu-muv-koerpergewicht
 Title: "MII PR ICU Koerpergewicht"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergewicht"
 * ^status = #active
 
 * status MS

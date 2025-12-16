@@ -4,7 +4,7 @@ Id: mii-pr-icu-device
 Title: "MII PR ICU Device"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
 * ^status = #active
 
 * identifier MS

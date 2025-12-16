@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-gesamte-tages-bilanz
 Title: "MII PR ICU Bilanz Gesamte Tages Bilanz"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-gesamte-tages-bilanz"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-gesamte-tages-bilanz"
 * ^status = #active
 
 * category.coding[hl7-category] = $CodeSystem-observation-category.html#vital-sign

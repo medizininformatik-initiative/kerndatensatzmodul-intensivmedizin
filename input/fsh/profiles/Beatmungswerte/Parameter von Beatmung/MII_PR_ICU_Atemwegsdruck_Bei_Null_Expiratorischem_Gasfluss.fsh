@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss
 Title: "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemwegsdruck-bei-null-expiratorischem-gasfluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss"
 * ^status = #active
 
 * code.coding[sct] ..0

@@ -4,7 +4,7 @@ Id: mii-pr-icu-event-xspiratorischer-sauerstoffpartialdruck
 Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/exspiratorischer-sauerstoffpartialdruck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-sauerstoffpartialdruck"
 * ^status = #active
 
 * category contains Beatmung 0..1

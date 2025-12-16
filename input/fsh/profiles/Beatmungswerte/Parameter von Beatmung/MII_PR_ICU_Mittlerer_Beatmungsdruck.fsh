@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-mittlerer-beatmungsdruck
 Title: "MII PR ICU Mittlerer Beatmungsdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mittlerer-beatmungsdruck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-mittlerer-beatmungsdruck"
 * ^status = #active
 
 * code.coding 3..

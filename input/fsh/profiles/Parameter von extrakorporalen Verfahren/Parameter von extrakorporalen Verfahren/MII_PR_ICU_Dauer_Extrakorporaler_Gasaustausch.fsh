@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch
 Title: "MII PR ICU Dauer Extrakorporaler Gasaustausch"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-extrakorporaler-gasaustausch"
 * ^status = #active
 
 * category 1..

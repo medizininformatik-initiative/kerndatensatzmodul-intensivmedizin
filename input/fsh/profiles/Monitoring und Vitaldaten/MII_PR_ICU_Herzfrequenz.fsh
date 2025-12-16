@@ -4,7 +4,7 @@ Id: mii-pr-icu-muv-herzfrequenz
 Title: "MII SD ICU Herzfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-herzfrequenz"
 * ^status = #active
 
 * code.coding 3..

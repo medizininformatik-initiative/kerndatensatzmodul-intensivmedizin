@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung
 Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/zeitverhaeltnis-ein-ausatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-zeitverhaeltnis-ein-ausatmung"
 * ^status = #active
 
 * code.coding 3..

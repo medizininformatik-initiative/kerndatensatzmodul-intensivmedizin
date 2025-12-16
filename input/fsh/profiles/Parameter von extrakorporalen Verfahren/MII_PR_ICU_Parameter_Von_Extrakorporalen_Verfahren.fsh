@@ -5,7 +5,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
 
 * obeys obs-10 and vs-de-2
 * identifier MS

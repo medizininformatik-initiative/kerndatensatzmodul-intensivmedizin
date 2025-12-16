@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren
 Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/ionisiertes-kalzium-nierenersatzverfahren"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren"
 * ^status = #active
 
 * category 1..

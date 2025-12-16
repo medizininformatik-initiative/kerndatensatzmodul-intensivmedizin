@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz
 Title: "MII PR ICU Bilanz"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz"
 * ^status = #active
 
 * identifier MS

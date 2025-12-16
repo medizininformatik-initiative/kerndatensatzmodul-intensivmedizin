@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutfluss-cardiovasculaeres-geraet",
-  "version": "2025.0.4",
-  "name": "MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet",
-  "title": "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
+  "title": "MII PR ICU ECT Blutfluss Cardiovasculaeres Geraet",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -21,7 +21,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
   "derivation": "constraint",
   "differential": {
     "element": [

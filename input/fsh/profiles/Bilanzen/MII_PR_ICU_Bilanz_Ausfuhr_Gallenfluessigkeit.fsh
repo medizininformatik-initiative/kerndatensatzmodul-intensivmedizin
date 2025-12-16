@@ -4,7 +4,7 @@ Id: mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit
 Title: "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-ausfuhr-gallenfluessigkeit"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
 * ^status = #active
 
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam

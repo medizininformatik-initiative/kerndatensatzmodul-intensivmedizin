@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-beatmung
 Title: "MII PR ICU Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
 * ^status = #active
 
 * partOf only Reference(Procedure or Observation)

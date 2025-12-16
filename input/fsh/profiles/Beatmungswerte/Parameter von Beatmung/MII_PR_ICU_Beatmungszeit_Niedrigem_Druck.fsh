@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-beatmungszeit-niedrigem-druck
 Title: "MII PR ICU Beatmungszeit Niedrigem Druck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmungszeit-niedrigem-druck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmungszeit-niedrigem-druck"
 * ^status = #active
 
 * code.coding 2..

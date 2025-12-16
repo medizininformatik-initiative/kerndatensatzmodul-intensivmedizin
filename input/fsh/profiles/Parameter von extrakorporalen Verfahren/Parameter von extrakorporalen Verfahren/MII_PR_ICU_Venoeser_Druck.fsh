@@ -5,7 +5,7 @@ Title: "MII PR ICU Venous Pressure"
 Description: "Profile for documenting venous pressure."
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/venoeser-druck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-venoeser-druck"
 * ^status = #active
 
 * code.coding[sct] 1..1 MS

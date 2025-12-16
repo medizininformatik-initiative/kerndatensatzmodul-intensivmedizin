@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-vent-beatmung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung",
-  "version": "2025.0.4",
-  "name": "MII_PR_ICU_Beatmung",
-  "title": "MII PR ICU Beatmung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmung",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_VENT_Beatmung",
+  "title": "MII PR ICU VENT Beatmung",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -71,7 +71,7 @@
         "sliceName": "sct",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-category-procedure-beatmung-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
         }
       },
       {
@@ -96,7 +96,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-procedure-beatmung-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed"
         }
       },
       {

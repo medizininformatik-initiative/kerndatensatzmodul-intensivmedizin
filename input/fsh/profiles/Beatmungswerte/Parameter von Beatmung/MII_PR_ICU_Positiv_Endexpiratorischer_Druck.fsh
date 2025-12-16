@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-positiv-endexpiratorischer-druck
 Title: "MII PR ICU Positiv Endexpiratorischer Druck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/positiv-endexpiratorischer-druck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-positiv-endexpiratorischer-druck"
 * ^status = #active
 
 * code.coding 3..

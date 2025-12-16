@@ -4,7 +4,7 @@ Id: mii-pr-vent-icu-parameter-von-beatmung
 Title: "MII PR ICU Parameter von Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
 * ^status = #active
 
 * obeys obs-10 and vs-de-2

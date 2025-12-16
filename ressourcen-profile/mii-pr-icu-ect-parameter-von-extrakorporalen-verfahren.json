@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/parameter-von-extrakorporalen-verfahren",
-  "version": "2025.0.4",
-  "name": "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
-  "title": "MII PR ICU Parameter von Extrakorporalen Verfahren",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren",
+  "title": "MII PR ICU ECT Parameter von Extrakorporalen Verfahren",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -182,7 +182,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed"
         }
       },
       {
@@ -212,7 +212,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-loinc"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
         }
       },
       {
@@ -242,7 +242,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-code-observation-extrakorporale-verfahren-iso11073"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073"
         }
       },
       {
@@ -352,7 +352,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/vs-mii-icu-bodysite-observation-extrakorporale-verfahren"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
         }
       },
       {

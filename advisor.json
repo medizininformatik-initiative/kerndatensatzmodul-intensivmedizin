@@ -1,12 +1,16 @@
-{ 
-  "suppress" : [
-    "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.compose.include.concept",
-    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
-    // Fehler bei ImplementationGuide.parameter.code: ungültiger Wert (copyrightyear, releaselabel)
-    "CODE_VALUE_NOT_IN_VALUESET@ImplementationGuide.definition.parameter.code",
-    // dependsOn[x] ohne direkten /ImplementationGuide/ Pfad
-    "IG_DEPENDSON_REFERENCE_INVALID@ImplementationGuide.dependsOn",
-    // canonical vs. packageId Inkonsistenz
-    "IG_DEPENDSON_CANONICAL_MISMATCH@ImplementationGuide.dependsOn"
-  ]
+{
+    "suppress": [
+        "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.compose.include.concept",
+        "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+        "CODE_VALUE_NOT_IN_VALUESET@ImplementationGuide.definition.parameter.code",
+        "IG_DEPENDSON_REFERENCE_INVALID@ImplementationGuide.dependsOn",
+        "IG_DEPENDSON_CANONICAL_MISMATCH@ImplementationGuide.dependsOn"
+    ],
+    "_comments": [
+        "",
+        "",
+        "Fehler bei ImplementationGuide.parameter.code: ungültiger Wert (copyrightyear, releaselabel)",
+        "dependsOn[x] ohne direkten /ImplementationGuide/ Pfad",
+        "canonical vs. packageId Inkonsistenz"
+    ]
 }

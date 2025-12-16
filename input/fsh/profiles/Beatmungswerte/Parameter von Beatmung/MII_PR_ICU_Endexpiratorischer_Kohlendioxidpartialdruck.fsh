@@ -4,7 +4,7 @@ Id: mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck
 Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/endexpiratorischer-kohlendioxidpartialdruck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-endexpiratorischer-kohlendioxidpartialdruck"
 * ^status = #active
 
 * category ^slicing.discriminator.type = #pattern
