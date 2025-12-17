@@ -11,7 +11,7 @@ Title: "MII PR ICU Kopfumfang"
 * category contains sct 0..1 MS
 * category[sct] = $sct#248326004
 * category[sct].coding MS
-* category[sct].coding ^patternCodeableConcept.coding.system = "http://snomed.info/sct"
+* category[sct].coding ^patternCoding.system = "http://snomed.info/sct"
 * category[sct].coding.system 1.. MS
 * category[sct].coding.code 1.. MS
 * category[sct].coding.display 1.. MS
@@ -36,8 +36,8 @@ Title: "MII PR ICU Kopfumfang"
 * valueQuantity.code MS
 * dataAbsentReason MS
 * bodySite MS
-* bodySite ^patternCoding.system = $sct
-* bodySite ^patternCoding.code = #69536005
+* bodySite ^patternCodeableConcept.coding.system = $sct
+* bodySite ^patternCodeableConcept.coding.code = #69536005
 * bodySite.coding MS
 * bodySite.coding.system 1.. MS
 * bodySite.coding.code 1.. MS

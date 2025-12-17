@@ -49,12 +49,8 @@
       {
         "id": "Observation.category:sct.coding",
         "path": "Observation.category.coding",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct"
-            }
-          ]
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
         },
         "mustSupport": true
       },
@@ -202,9 +198,13 @@
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "69536005"
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "69536005"
+            }
+          ]
         },
         "mustSupport": true
       },
