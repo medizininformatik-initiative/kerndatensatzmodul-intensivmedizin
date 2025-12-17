@@ -69,9 +69,13 @@
         "sliceName": "sct",
         "min": 0,
         "max": "*",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "248326004"
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248326004"
+            }
+          ]
         },
         "mustSupport": true
       },
