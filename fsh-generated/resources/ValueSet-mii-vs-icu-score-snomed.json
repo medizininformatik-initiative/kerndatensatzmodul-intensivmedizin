@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Score_SNOMED",
+  "id": "mii-vs-icu-score-snomed",
+  "title": "MII VS Score SNOMED CT",
+  "description": "Value set for cores - SNOMED CT codes",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed",
+  "version": "2025.0.4",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1345050000",
+            "display": "Richmond Agitation Sedation Scale score (observable entity)"
+          },
+          {
+            "code": "1351995008",
+            "display": "Intensive Care Delirium Screening Checklist score (observable entity)"
+          },
+          {
+            "code": "1187491009",
+            "display": "Sequential Organ Failure Assessment score (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

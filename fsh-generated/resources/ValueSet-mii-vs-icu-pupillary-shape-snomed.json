@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_Pupillary_Shape_SNOMED",
+  "id": "mii-vs-icu-pupillary-shape-snomed",
+  "title": "MII VS ICU Pupillary Shape SNOMED",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-shape-snomed",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-12-16",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "421356009",
+            "display": "Pupil round"
+          },
+          {
+            "code": "271732006",
+            "display": "Pupil irregular"
+          }
+        ]
+      }
+    ]
+  }
+}
