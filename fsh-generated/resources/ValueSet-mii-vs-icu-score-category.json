@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_Score_Category",
+  "id": "mii-vs-icu-score-category",
+  "title": "MII VS ICU Score Category",
+  "description": "Value set for ICU score observation categories",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-category",
+  "version": "2025.0.4",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "273249006",
+            "display": "Assessment scales (assessment scale)"
+          }
+        ]
+      }
+    ]
+  }
+}

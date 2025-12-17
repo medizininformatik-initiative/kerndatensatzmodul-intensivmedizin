@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_Code_Observation_Bilanzen_LOINC",
+  "id": "mii-vs-icu-code-observation-bilanzen-loinc",
+  "title": "MII VS ICU Code Observation Bilanzen LOINC",
+  "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-02-11",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "99741-1"
+          },
+          {
+            "code": "9203-1"
+          },
+          {
+            "code": "9257-7"
+          },
+          {
+            "code": "9113-2"
+          },
+          {
+            "code": "79561-7"
+          },
+          {
+            "code": "9167-8"
+          },
+          {
+            "code": "9187-6"
+          },
+          {
+            "code": "81661-1"
+          },
+          {
+            "code": "8953-2"
+          },
+          {
+            "code": "9000-1"
+          },
+          {
+            "code": "9103-3"
+          },
+          {
+            "code": "9097-7"
+          }
+        ]
+      }
+    ]
+  }
+}

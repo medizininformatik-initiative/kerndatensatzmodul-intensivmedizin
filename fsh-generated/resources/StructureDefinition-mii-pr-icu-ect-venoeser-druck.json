@@ -1,0 +1,62 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-ect-venoeser-druck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-venoeser-druck",
+  "version": "2025.0.4",
+  "name": "MII_PR_ICU_Venoeser_Druck",
+  "title": "MII PR ICU Venous Pressure",
+  "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Profile for documenting venous pressure.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "252076005"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "max": "0"
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "max": "0"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "code": "mm[Hg]",
+          "system": "http://unitsofmeasure.org"
+        }
+      }
+    ]
+  }
+}
