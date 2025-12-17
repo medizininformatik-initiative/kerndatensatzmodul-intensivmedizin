@@ -30,7 +30,7 @@
 [MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.html
 [MII_PR_ICU_Bilanz_Gesamte_Ausfuhr]: StructureDefinition-mii-pr-icu-bilanz-gesamte-ausfuhr.html
 [MII_PR_ICU_Bilanz_Gesamte_Einfuhr]: StructureDefinition-mii-pr-icu-bilanz-gesamte-einfuhr.html
-[MII_PR_ICU_Bilanz_]: StructureDefinition-mii-pr-icu-bilanz-gesamte-tages-bilanz.html
+[MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz]: StructureDefinition-mii-pr-icu-bilanz-gesamte-tages-bilanz.html
 [MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet]: StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html
 [MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html
 [MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html

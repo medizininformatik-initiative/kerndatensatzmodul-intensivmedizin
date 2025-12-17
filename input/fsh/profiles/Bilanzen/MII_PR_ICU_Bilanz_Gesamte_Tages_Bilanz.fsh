@@ -1,4 +1,4 @@
-Profile: MII_PR_ICU_Bilanz_
+Profile: MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz
 Parent: MII_PR_ICU_Bilanz
 Id: mii-pr-icu-bilanz-gesamte-tages-bilanz
 Title: "MII PR ICU Bilanz Gesamte Tages Bilanz"
