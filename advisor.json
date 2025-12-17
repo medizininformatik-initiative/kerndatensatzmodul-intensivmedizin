@@ -3,7 +3,7 @@
         "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.compose.include.concept",
         "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
         "CODE_VALUE_NOT_IN_VALUESET@ImplementationGuide.definition.parameter.code",
-        "UNKNOWN_CODE_SYSTEM@ImplementationGuide.definition.parameter.code",
+        "VALUESET_NO_SYSTEM_VALUE@ImplementationGuide.definition.parameter.code",
         "IG_DEPENDSON_REFERENCE_INVALID@ImplementationGuide.dependsOn",
         "IG_DEPENDSON_CANONICAL_MISMATCH@ImplementationGuide.dependsOn"
     ],
