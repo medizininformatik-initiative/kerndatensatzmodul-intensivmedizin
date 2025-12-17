@@ -49,8 +49,12 @@
       {
         "id": "Observation.category:sct.coding",
         "path": "Observation.category.coding",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct"
+            }
+          ]
         },
         "mustSupport": true
       },
