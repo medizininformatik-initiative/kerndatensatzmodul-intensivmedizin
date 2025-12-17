@@ -27,9 +27,7 @@ Title: "MII PR ICU Score RASS"
 * valueCodeableConcept.extension ^slicing.discriminator.type = #value
 * valueCodeableConcept.extension ^slicing.discriminator.path = "url"
 * valueCodeableConcept.extension ^slicing.rules = #open
-* valueCodeableConcept.extension contains ordinalValue 1..1
-* valueCodeableConcept.extension[ordinalValue] only Extension
-* valueCodeableConcept.extension[ordinalValue] = "http://hl7.org/fhir/StructureDefinition/ordinalValue" (exactly)
+* valueCodeableConcept.extension contains http://hl7.org/fhir/StructureDefinition/ordinalValue named ordinalValue 1..1
 * valueCodeableConcept.extension[ordinalValue] obeys rass-ordinal-range
 * valueCodeableConcept.extension[ordinalValue].valueDecimal 1..1
 

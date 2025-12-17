@@ -20,8 +20,8 @@ Title: "MII PR ICU Kopfumfang"
 * code.coding[loinc].system 1..1 MS
 * code.coding[loinc].code 1..1 MS
 * code.coding[snomed] 1..1 MS
-* code.coding[snomed] ^patternCoding.system = $sct
-* code.coding[snomed] ^patternCoding.code = #363812007
+* code.coding[snomed] ^patternCodeableConcept.coding.system = $sct
+* code.coding[snomed] ^patternCodeableConcept.coding.code = #363812007
 * code.coding[snomed].system 1..1 MS
 * code.coding[snomed].code 1..1 MS
 * subject MS
@@ -36,8 +36,8 @@ Title: "MII PR ICU Kopfumfang"
 * valueQuantity.code MS
 * dataAbsentReason MS
 * bodySite MS
-* bodySite ^patternCoding.system = $sct
-* bodySite ^patternCoding.code = #69536005
+* bodySite ^patternCodeableConcept.coding.system = $sct
+* bodySite ^patternCodeableConcept.coding.code = #69536005
 * bodySite.coding MS
 * bodySite.coding.system 1.. MS
 * bodySite.coding.code 1.. MS

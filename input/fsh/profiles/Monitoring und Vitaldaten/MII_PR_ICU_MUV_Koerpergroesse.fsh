@@ -15,8 +15,8 @@ Title: "MII PR ICU Koerpergroesse"
 * category[VSCat].coding.code 1.. MS
 * category[VSCat].coding.display MS
 * category contains sct 0.. MS
-* category[sct] ^patternCoding.system = $sct
-* category[sct] ^patternCoding.code = #248326004
+* category[sct] ^patternCodeableConcept.coding.system = $sct
+* category[sct] ^patternCodeableConcept.coding.code = #248326004
 * category[sct].coding MS
 * category[sct].coding.system 1.. MS
 * category[sct].coding.code 1.. MS

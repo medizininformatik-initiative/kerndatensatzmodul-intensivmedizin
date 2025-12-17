@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_Present_Absent",
+  "id": "mii-vs-icu-present-absent",
+  "title": "MII VS ICU Present Absent",
+  "description": "Present or absent findings",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent",
+  "version": "2025.0.4",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "52101004",
+            "display": "Present (qualifier value)"
+          },
+          {
+            "code": "2667000",
+            "display": "Absent (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}
