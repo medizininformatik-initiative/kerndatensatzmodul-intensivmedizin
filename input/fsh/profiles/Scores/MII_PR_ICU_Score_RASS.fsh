@@ -13,7 +13,7 @@ Title: "MII PR ICU Score RASS"
 * category = $observation-category#survey
 * code 1..
 * code = $sct#1345050000 "Richmond Agitation Sedation Scale score (observable entity)"
-* code ^comment = "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8."
+* code ^comment = "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8. Ordinal score is not exchanged; implementers may derive it internally."
 * subject 1..
 * effective[x] 1..
 * valueCodeableConcept 1..
@@ -24,14 +24,3 @@ Title: "MII PR ICU Score RASS"
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains loinc 1..1
 * valueCodeableConcept.coding[loinc] ^patternCoding.system = $loinc
-* valueCodeableConcept.extension ^slicing.discriminator.type = #value
-* valueCodeableConcept.extension ^slicing.discriminator.path = "url"
-* valueCodeableConcept.extension ^slicing.rules = #open
-* valueCodeableConcept.extension contains http://hl7.org/fhir/StructureDefinition/ordinalValue named ordinalValue 1..1
-* valueCodeableConcept.extension[ordinalValue] obeys rass-ordinal-range
-* valueCodeableConcept.extension[ordinalValue].valueDecimal 1..1
-
-Invariant: rass-ordinal-range
-Description: "RASS ordinal score must be between -5 and +4."
-* severity = #error
-* expression = "%resource.valueCodeableConcept.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.as(Decimal) >= -5 and %resource.valueCodeableConcept.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.as(Decimal) <= 4"
