@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratorischem-gasfluss",
+  "id": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mitl-exspiratorischem-gasfluss"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss"
     ]
   },
   "partOf": [
@@ -28,8 +28,8 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "20056-8",
-        "display": "Airway pressure --at mean expiratory flow on ventilator"
+        "code": "20060-0",
+        "display": "Airway pressure --at zero inspiratory flow on ventilator"
       }
     ]
   },
@@ -41,11 +41,11 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 14.0,
+    "value": 10.0,
     "system": "http://unitsofmeasure.org",
     "code": "cm[H2O]"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
+    "reference": "DeviceMetric/exa-mii-icu-vent-eingestellte-parameter-beatmung"
   }
 }

@@ -1,14 +1,15 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-eingestellt",
+  "id": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
     ]
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/310",
+      "display": "Example_extrakorporales_Verfahren"
     }
   ],
   "status": "final",
@@ -28,8 +29,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "251288004",
-        "display": "Extracorporeal gas exchange flow rate (observable entity)",
+        "code": "444479000",
+        "display": "Rate of blood flow through cardiovascular device (observable entity)",
         "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       }
     ]
@@ -42,11 +43,12 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 3.0,
+    "value": 2.0,
     "system": "http://unitsofmeasure.org",
     "code": "L/min"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/311",
+    "display": "Example_Eingestellte_Parameter_extrakorporale_Verfahren"
   }
 }

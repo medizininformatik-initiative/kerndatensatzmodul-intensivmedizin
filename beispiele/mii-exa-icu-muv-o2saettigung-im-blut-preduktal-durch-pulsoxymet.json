@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-muv-linksventrikulaerer-herzindex-durch-indikatorverduennung",
+  "id": "mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie"
     ]
   },
   "status": "final",
@@ -21,8 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8751-0",
-        "display": "Left ventricular Cardiac index by Indicator dilution"
+        "code": "59407-7",
+        "display": "Oxygen saturation in Blood Preductal by Pulse oximetry"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "160296",
+        "display": "Preductal SpO2"
       }
     ]
   },
@@ -34,9 +39,9 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 3,
-    "unit": "liter per minute and square meter",
+    "value": 96,
+    "unit": "percent",
     "system": "http://unitsofmeasure.org",
-    "code": "L/min/m2"
+    "code": "%"
   }
 }
