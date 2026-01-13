@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie",
+  "id": "mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie"
+      "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie"
     ]
   },
   "status": "final",
@@ -21,13 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "59407-7",
-        "display": "Oxygen saturation in Blood Preductal by Pulse oximetry"
+        "code": "59418-4",
+        "display": "Oxygen saturation in Blood Postductal by Pulse oximetry"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "160296",
-        "display": "Preductal SpO2"
+        "code": "160300",
+        "display": "Postductal SpO2"
       }
     ]
   },
@@ -39,7 +39,7 @@
     "end": "2019-12-23T10:30:10+01:00"
   },
   "valueQuantity": {
-    "value": 96,
+    "value": 91,
     "unit": "percent",
     "system": "http://unitsofmeasure.org",
     "code": "%"
