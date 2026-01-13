@@ -22,8 +22,12 @@
       {
         "system": "http://snomed.info/sct",
         "code": "364429006",
-        "display": "Temperature of lumbar spine (observable entity)",
+        "display": "Temperature of lumbar spine",
         "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5"
       }
     ]
   },
