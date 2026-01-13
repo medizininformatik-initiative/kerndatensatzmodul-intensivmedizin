@@ -22,13 +22,17 @@
       {
         "system": "http://snomed.info/sct",
         "code": "364246006",
-        "display": "Core body temperature measured vaginally (observable entity)",
+        "display": "Core body temperature measured vaginally",
         "version": "http://snomed.info/sct/900000000000207008/version/20241101"
       },
-	  {
+      {
         "system": "http://loinc.org",
         "code": "8329-5",
         "display": "Body temperature - Core"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5"
       }
     ]
   },

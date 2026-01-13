@@ -28,6 +28,10 @@
         "system": "urn:iso:std:iso:11073:10101",
         "code": "150356",
         "display": "Airway temperature"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "8310-5"
       }
     ]
   },
