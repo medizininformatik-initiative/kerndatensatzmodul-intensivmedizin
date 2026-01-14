@@ -1,9 +1,9 @@
 Instance: mii-exa-icu-muv-atemfrequenz
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz
 Usage: #example
 
 * id = "mii-exa-icu-muv-atemfrequenz"
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
 * identifier.system = "https://www.charite.de/fhir/sid/icu-identifier"
 * identifier.value = "234567890"
 * status = #final

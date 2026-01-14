@@ -1,5 +1,5 @@
 Instance: exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
 * identifier.system = "https://simplifier.net/medizininformatikinitiative-modul-intensivmedizin/example-identifier"

@@ -1,5 +1,5 @@
 Instance: mii-exa-icu-procedure-extrakorporales-verfahren
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren
 Usage: #example
 Description: "Procedure: ICU Procedure"
 

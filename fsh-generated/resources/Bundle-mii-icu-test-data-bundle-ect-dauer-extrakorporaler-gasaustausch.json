@@ -77,6 +77,7 @@
         "id": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
         "meta": {
           "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
             "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
           ]
         },
@@ -240,7 +241,7 @@
         "id": "mii-exa-icu-procedure-extrakorporales-verfahren",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
           ]
         },
         "category": {
@@ -366,7 +367,7 @@
         "id": "mii-exa-icu-device",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
           ]
         },
         "identifier": [
@@ -459,7 +460,7 @@
         "id": "mii-exa-icu-muv-atemfrequenz",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
           ]
         },
         "category": [

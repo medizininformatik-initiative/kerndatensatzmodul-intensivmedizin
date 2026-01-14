@@ -47,6 +47,13 @@
         ]
       },
       {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "short": "Unique identifier for this score observation",
+        "definition": "Business identifier for this particular score assessment",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "short": "Status of the observation",

@@ -1,5 +1,5 @@
 Instance: mii-exa-icu-device
-InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/icu-device
+InstanceOf: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device
 Usage: #example
 Description: "Device: ICU  Device"
 

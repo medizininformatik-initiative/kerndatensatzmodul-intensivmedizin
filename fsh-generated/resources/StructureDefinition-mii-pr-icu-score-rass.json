@@ -47,7 +47,7 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "comment": "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8.",
+        "comment": "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8. Ordinal score is not exchanged; implementers may derive it internally.",
         "patternCodeableConcept": {
           "coding": [
             {
@@ -89,35 +89,6 @@
           "strength": "required",
           "valueSet": "http://loinc.org/vs/LL6536-8"
         }
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.extension",
-        "path": "Observation.value[x].extension",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.extension:ordinalValue",
-        "path": "Observation.value[x].extension",
-        "sliceName": "ordinalValue",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "rass-ordinal-range",
-            "human": "RASS ordinal score must be between -5 and +4.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
-            "severity": "error",
-            "expression": "%resource.valueCodeableConcept.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.as(Decimal) >= -5 and %resource.valueCodeableConcept.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.as(Decimal) <= 4"
-          }
-        ]
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept.coding",

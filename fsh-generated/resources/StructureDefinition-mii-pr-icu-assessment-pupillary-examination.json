@@ -48,12 +48,499 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "comment": "Vorlaeufig auf exam gesetzt; Diskussion offen.",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "exam",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-exam-mono",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupillary examination (mono)"
+            }
+          ]
+        },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "constraint": [
+          {
+            "key": "pupil-comp-val-or-dar",
+            "severity": "error",
+            "human": "Component must have either value or dataAbsentReason.",
+            "expression": "value.exists() xor dataAbsentReason.exists()",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:eye-assessment-possible-right-eye",
+        "path": "Observation.component",
+        "sliceName": "eye-assessment-possible-right-eye",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:eye-assessment-possible-right-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "eye-assessment-possible-right-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Eye assessment possible right eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:eye-assessment-possible-right-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:eye-assessment-possible-left-eye",
+        "path": "Observation.component",
+        "sliceName": "eye-assessment-possible-left-eye",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:eye-assessment-possible-left-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "eye-assessment-possible-left-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Eye assessment possible left eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:eye-assessment-possible-left-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:pupil-symmetry-base",
+        "path": "Observation.component",
+        "sliceName": "pupil-symmetry-base",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:pupil-symmetry-base.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-symmetry-base",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupil symmetry (base)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:pupil-symmetry-base.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-symmetry-snomed"
+        }
+      },
+      {
+        "id": "Observation.component:pupil-larger-eye",
+        "path": "Observation.component",
+        "sliceName": "pupil-larger-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:pupil-larger-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-larger-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupil larger eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:pupil-larger-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupil-larger-eye-snomed"
+        }
+      },
+      {
+        "id": "Observation.component:pupil-size-right-eye",
+        "path": "Observation.component",
+        "sliceName": "pupil-size-right-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:pupil-size-right-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-size-right-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupil size right eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:pupil-size-right-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupilsize-qualitative-snomed"
+        }
+      },
+      {
+        "id": "Observation.component:pupil-size-left-eye",
+        "path": "Observation.component",
+        "sliceName": "pupil-size-left-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:pupil-size-left-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-size-left-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupil size left eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:pupil-size-left-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupilsize-qualitative-snomed"
+        }
+      },
+      {
+        "id": "Observation.component:pupil-shape-right-eye",
+        "path": "Observation.component",
+        "sliceName": "pupil-shape-right-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:pupil-shape-right-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-shape-right-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupil shape right eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:pupil-shape-right-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-shape-snomed"
+        }
+      },
+      {
+        "id": "Observation.component:pupil-shape-left-eye",
+        "path": "Observation.component",
+        "sliceName": "pupil-shape-left-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:pupil-shape-left-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pupil-shape-left-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Pupil shape left eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:pupil-shape-left-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-shape-snomed"
+        }
+      },
+      {
+        "id": "Observation.component:direct-light-reflex-right-eye",
+        "path": "Observation.component",
+        "sliceName": "direct-light-reflex-right-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:direct-light-reflex-right-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "direct-light-reflex-right-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Direct light reflex right eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:direct-light-reflex-right-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:direct-light-reflex-left-eye",
+        "path": "Observation.component",
+        "sliceName": "direct-light-reflex-left-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:direct-light-reflex-left-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "direct-light-reflex-left-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Direct light reflex left eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:direct-light-reflex-left-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:consensual-light-reflex-right-eye",
+        "path": "Observation.component",
+        "sliceName": "consensual-light-reflex-right-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:consensual-light-reflex-right-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "consensual-light-reflex-right-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Consensual light reflex right eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:consensual-light-reflex-right-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:consensual-light-reflex-left-eye",
+        "path": "Observation.component",
+        "sliceName": "consensual-light-reflex-left-eye",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:consensual-light-reflex-left-eye.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "consensual-light-reflex-left-eye",
+              "system": "http://example.org/fhir/CodeSystem/pupil",
+              "display": "Consensual light reflex left eye"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:consensual-light-reflex-left-eye.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
       }
     ]
   }
