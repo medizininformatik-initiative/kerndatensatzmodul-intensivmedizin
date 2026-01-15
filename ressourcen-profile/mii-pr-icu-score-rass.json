@@ -1,143 +1,119 @@
 {
-    "resourceType": "StructureDefinition",
-    "id": "mii-pr-icu-score-rass",
-    "url": "https://example.org/fhir/StructureDefinition/mii-pr-icu-score-rass",
-    "version": "2026.0.0",
-    "name": "MII_PR_ICU_Score_RASS",
-    "title": "MII PR ICU Score RASS",
-    "status": "draft",
-    "experimental": true,
-    "date": "2025-12-15",
-    "publisher": "MII KDS ICU",
-    "fhirVersion": "4.0.1",
-    "kind": "resource",
-    "abstract": false,
-    "type": "Observation",
-    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
-    "derivation": "constraint",
-    "differential": {
-        "element": [
-            {
-                "id": "Observation",
-                "path": "Observation",
-                "short": "RASS score (SNOMED observation type; LOINC answers)"
-            },
-            {
-                "id": "Observation.status",
-                "path": "Observation.status",
-                "min": 1
-            },
-            {
-                "id": "Observation.category",
-                "path": "Observation.category",
-                "min": 1,
-                "patternCodeableConcept": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                            "code": "survey"
-                        }
-                    ]
-                }
-            },
-            {
-                "id": "Observation.code",
-                "path": "Observation.code",
-                "min": 1,
-                "patternCodeableConcept": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "1345050000",
-                            "display": "Richmond Agitation Sedation Scale score (observable entity)"
-                        }
-                    ]
-                },
-                "comment": "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8."
-            },
-            {
-                "id": "Observation.subject",
-                "path": "Observation.subject",
-                "min": 1
-            },
-            {
-                "id": "Observation.effective[x]",
-                "path": "Observation.effective[x]",
-                "min": 1
-            },
-            {
-                "id": "Observation.valueCodeableConcept",
-                "path": "Observation.valueCodeableConcept",
-                "min": 1,
-                "binding": {
-                    "strength": "required",
-                    "valueSet": "http://loinc.org/vs/LL6536-8"
-                },
-                "comment": "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8)."
-            },
-            {
-                "id": "Observation.valueCodeableConcept.coding",
-                "path": "Observation.valueCodeableConcept.coding",
-                "slicing": {
-                    "discriminator": [
-                        {
-                            "type": "value",
-                            "path": "system"
-                        }
-                    ],
-                    "rules": "open"
-                }
-            },
-            {
-                "id": "Observation.valueCodeableConcept.coding:loinc",
-                "path": "Observation.valueCodeableConcept.coding",
-                "sliceName": "loinc",
-                "min": 1,
-                "max": "1",
-                "patternCoding": {
-                    "system": "http://loinc.org"
-                }
-            },
-            {
-                "id": "Observation.valueCodeableConcept.extension",
-                "path": "Observation.valueCodeableConcept.extension",
-                "slicing": {
-                    "discriminator": [
-                        {
-                            "type": "value",
-                            "path": "url"
-                        }
-                    ],
-                    "rules": "open"
-                }
-            },
-            {
-                "id": "Observation.valueCodeableConcept.extension:ordinalValue",
-                "path": "Observation.valueCodeableConcept.extension",
-                "sliceName": "ordinalValue",
-                "min": 1,
-                "max": "1",
-                "type": [
-                    {
-                        "code": "Extension"
-                    }
-                ],
-                "fixedUri": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-                "constraint": [
-                    {
-                        "key": "rass-ordinal-range",
-                        "severity": "error",
-                        "human": "RASS ordinal score must be between -5 and +4.",
-                        "expression": "%resource.valueCodeableConcept.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.as(Decimal) >= -5 and %resource.valueCodeableConcept.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.as(Decimal) <= 4"
-                    }
-                ]
-            },
-            {
-                "id": "Observation.valueCodeableConcept.extension:ordinalValue.valueDecimal",
-                "path": "Observation.valueCodeableConcept.extension.valueDecimal",
-                "min": 1,
-                "max": "1"
-            }
-        ]
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-score-rass",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_Score_RASS",
+  "title": "MII PR ICU Score RASS",
+  "status": "draft",
+  "experimental": true,
+  "date": "2025-12-15",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
     }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "RASS score (SNOMED observation type; LOINC answers)"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "survey",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "comment": "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8. Ordinal score is not exchanged; implementers may derive it internally.",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "1345050000",
+              "system": "http://snomed.info/sct",
+              "display": "Richmond Agitation Sedation Scale score (observable entity)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "comment": "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://loinc.org/vs/LL6536-8"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "path": "Observation.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc",
+        "path": "Observation.value[x].coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        }
+      }
+    ]
+  }
 }
