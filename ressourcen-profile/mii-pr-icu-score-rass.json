@@ -23,7 +23,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -35,6 +35,7 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "min": 1,
         "patternCodeableConcept": {
           "coding": [
             {
@@ -59,39 +60,71 @@
         }
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Patient being assessed",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept",
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "short": "Encounter during which score was assessed",
+        "definition": "The encounter context in which the score was determined",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Time of score assessment",
+        "definition": "The time or time period when the score was assessed",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "short": "Date/Time this observation was made available",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Who performed the score assessment",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "sliceName": "valueCodeableConcept",
+        "short": "RASS value",
         "comment": "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8).",
         "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://loinc.org/vs/LL6536-8"
         }
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "id": "Observation.value[x].coding",
         "path": "Observation.value[x].coding",
         "slicing": {
           "discriminator": [
@@ -105,14 +138,36 @@
         "min": 1
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc",
+        "id": "Observation.value[x].coding:loinc",
         "path": "Observation.value[x].coding",
         "sliceName": "loinc",
         "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        }
+        "max": "1"
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "max": "0"
       }
     ]
   }
