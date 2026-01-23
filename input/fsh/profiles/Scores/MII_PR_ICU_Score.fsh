@@ -36,7 +36,6 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
   * system 1..1 MS
   * code 1..1 MS
 
-
 // Code identifies the specific score
 * code MS
 * code ^short = "Type of score"
@@ -66,7 +65,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * subject ^short = "Patient being assessed"
 
 // Encounter context
-* encounter 1.. MS
+* encounter 0.. MS
 * encounter only Reference(Encounter)
 * encounter ^short = "Encounter during which score was assessed"
 * encounter ^definition = "The encounter context in which the score was determined"
@@ -128,7 +127,6 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * hasMember ^short = "Related observations (e.g., individual assessment items)"
 * derivedFrom MS
 * derivedFrom ^short = "Source observations used to calculate score"
-
 
 RuleSet: item-weight(weight)
 * extension[http://hl7.org/fhir/StructureDefinition/itemWeight].valueDecimal = {weight}

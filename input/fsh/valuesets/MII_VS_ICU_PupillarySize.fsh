@@ -1,6 +1,6 @@
-ValueSet: MII_VS_ICU_Pupilsize_Qualitative_SNOMED
-Id: mii-vs-icu-pupilsize-qualitative-snomed
-Title: "MII VS ICU Pupilsize Qualitative SNOMED"
+ValueSet: MII_VS_ICU_PupillarySize
+Id: mii-vs-icu-pupillary-size
+Title: "MII VS ICU Pupillary Size (categorial)"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupilsize-qualitative-snomed"

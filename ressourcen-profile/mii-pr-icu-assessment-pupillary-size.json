@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-assessment-pupillary-size",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-assessment-pupillary-size",
+  "version": "2025.0.4",
+  "name": "MII_PR_ICU_Assessment_Pupillary_Size",
+  "title": "MII PR ICU Assessment Pupillary Size",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "363953003"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "patternString": "Size of pupil"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "bodySite"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "2",
+        "constraint": [
+          {
+            "key": "pupil-comp-val-or-dar",
+            "severity": "error",
+            "human": "Component must have either value or dataAbsentReason.",
+            "expression": "value.exists() xor dataAbsentReason.exists()",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "pupil-comp-val-or-dar",
+            "severity": "error",
+            "human": "Component must have either value or dataAbsentReason.",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Left",
+        "path": "Observation.component",
+        "sliceName": "Left",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Left.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:Left.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "patternCode": "363953003"
+      },
+      {
+        "id": "Observation.component:Left.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "patternString": "Size of pupil"
+      },
+      {
+        "id": "Observation.component:Left.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:Left.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Left.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Right",
+        "path": "Observation.component",
+        "sliceName": "Right",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Right.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:Right.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "patternCode": "363953003"
+      },
+      {
+        "id": "Observation.component:Right.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "patternString": "Size of pupil"
+      },
+      {
+        "id": "Observation.component:Right.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:Right.value[x]:valueCodeableConcept",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Right.dataAbsentReason",
+        "path": "Observation.component.dataAbsentReason",
+        "mustSupport": true
+      }
+    ]
+  }
+}
