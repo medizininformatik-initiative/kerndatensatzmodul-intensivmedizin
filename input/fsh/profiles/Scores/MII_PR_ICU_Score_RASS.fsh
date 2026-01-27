@@ -2,12 +2,14 @@ Profile: MII_PR_ICU_Score_RASS
 Parent: Observation
 Id: mii-pr-icu-score-rass
 Title: "MII PR ICU Score RASS"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"
 * ^version = "2026.0.0"
 * ^status = #draft
 * ^experimental = true
 * ^date = "2025-12-15"
-* insert Publisher
-* . ^short = "RASS score (SNOMED observation type; LOINC answers)"
+
 * status 1..
 * category 1..
 * category = $observation-category#survey
@@ -59,7 +61,7 @@ Title: "MII PR ICU Score RASS"
 
 * valueCodeableConcept 1..1 MS
 //* valueCodeableConcept from http://loinc.org/vs/LL6536-8 (required)
-* valueCodeableConcept from MII_PR_ICU_Score_RASS (required)
+* valueCodeableConcept from MII_VS_ICU_Score_RASS (required)
 * valueCodeableConcept ^comment = "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8)."
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
