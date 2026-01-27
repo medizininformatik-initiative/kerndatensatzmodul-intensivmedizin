@@ -3,7 +3,7 @@ Id: mii-vs-icu-pupillary-size
 Title: "MII VS ICU Pupillary Size (categorial)"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupilsize-qualitative-snomed"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-size"
 * ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-12-16"
