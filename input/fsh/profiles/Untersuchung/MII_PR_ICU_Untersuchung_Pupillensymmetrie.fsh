@@ -8,10 +8,10 @@
 // - value[x] xor dataAbsentReason (Grundregel)
 // ============================================================
 
-Profile: MII_PR_ICU_Assessment_Pupillary_Symmetry
+Profile: MII_PR_ICU_Untersuchung_Pupillensymmetrie
 Parent: Observation
-Id: mii-pr-icu-assessment-pupillary-symmetry
-Title: "MII PR ICU Assessment Pupillary Symmetry"
+Id: mii-pr-icu-untersuchung-pupillensymmetrie
+Title: "MII PR ICU Untersuchung Pupillensymmetrie"
 
 // ------------------------------------------------------------
 // Konditionale Pflicht von bodySite:
@@ -26,7 +26,7 @@ Severity: #error
 
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-assessment-pupillary-symmetry"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"
 * ^status = #draft
 
 * id MS
@@ -51,6 +51,8 @@ Severity: #error
 * code.coding.system = $sct (exactly)
 * code.coding.code = #301942005 (exactly)
 * code.coding.display = "Finding of proportion of pupil (finding)"
+
+//* value only Reference(valueCodeableConcept)
 
 * valueCodeableConcept from MII_VS_ICU_PupillarySymmetry (required)
 

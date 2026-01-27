@@ -7,13 +7,13 @@
 // - value[x] xor dataAbsentReason je Komponente
 // ============================================================
 
-Profile: MII_PR_ICU_Assessment_Pupil_Shape
+Profile: MII_PR_ICU_Untersuchung_Pupillenform
 Parent: Observation
-Id: mii-pr-icu-assessment-pupil-shape
-Title: "MII PR ICU Assessment Pupil Shape"
+Id: mii-pr-icu-untersuchung-pupillenform
+Title: "MII PR ICU Untersuchung Pupillenform"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-pupille-form"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"
 * ^status = #draft
 
 * id MS

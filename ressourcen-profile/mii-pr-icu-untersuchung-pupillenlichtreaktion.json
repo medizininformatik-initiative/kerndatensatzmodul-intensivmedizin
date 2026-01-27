@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-assessment-pupillary-size",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-assessment-pupillary-size",
+  "id": "mii-pr-icu-untersuchung-pupillenlichtreaktion",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion",
   "version": "2025.0.4",
-  "name": "MII_PR_ICU_Assessment_Pupillary_Size",
-  "title": "MII PR ICU Assessment Pupillary Size",
+  "name": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion",
+  "title": "MII PR ICU Untersuchung Pupillenlichtreaktion",
   "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -58,8 +58,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "Observation.code.coding.system",
@@ -69,12 +68,22 @@
       {
         "id": "Observation.code.coding.code",
         "path": "Observation.code.coding.code",
-        "fixedCode": "363953003"
+        "fixedCode": "113147002"
       },
       {
         "id": "Observation.code.coding.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Size of pupil"
+        "patternString": "Pupil reaction to light"
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupil-bodysite-lr"
+        }
       },
       {
         "id": "Observation.component",
@@ -83,7 +92,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "bodySite"
+              "path": "code"
             }
           ],
           "rules": "closed"
@@ -109,30 +118,36 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:Left",
+        "id": "Observation.component:Direct",
         "path": "Observation.component",
-        "sliceName": "Left",
+        "sliceName": "Direct",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:Left.code.coding.system",
+        "id": "Observation.component:Direct.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Direct.code.coding.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.component:Left.code.coding.code",
+        "id": "Observation.component:Direct.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "patternCode": "363953003"
+        "fixedCode": "45832002"
       },
       {
-        "id": "Observation.component:Left.code.coding.display",
+        "id": "Observation.component:Direct.code.coding.display",
         "path": "Observation.component.code.coding.display",
-        "patternString": "Size of pupil"
+        "patternString": "Direct pupillary light reflex"
       },
       {
-        "id": "Observation.component:Left.value[x]",
+        "id": "Observation.component:Direct.value[x]",
         "path": "Observation.component.value[x]",
         "slicing": {
           "discriminator": [
@@ -146,7 +161,7 @@
         }
       },
       {
-        "id": "Observation.component:Left.value[x]:valueCodeableConcept",
+        "id": "Observation.component:Direct.value[x]:valueCodeableConcept",
         "path": "Observation.component.value[x]",
         "sliceName": "valueCodeableConcept",
         "min": 0,
@@ -156,38 +171,48 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://loinc.org/LL3762-3"
+        }
       },
       {
-        "id": "Observation.component:Left.dataAbsentReason",
+        "id": "Observation.component:Direct.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:Right",
+        "id": "Observation.component:Indirect",
         "path": "Observation.component",
-        "sliceName": "Right",
+        "sliceName": "Indirect",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.component:Right.code.coding.system",
+        "id": "Observation.component:Indirect.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Indirect.code.coding.system",
         "path": "Observation.component.code.coding.system",
         "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.component:Right.code.coding.code",
+        "id": "Observation.component:Indirect.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "patternCode": "363953003"
+        "fixedCode": "4917001"
       },
       {
-        "id": "Observation.component:Right.code.coding.display",
+        "id": "Observation.component:Indirect.code.coding.display",
         "path": "Observation.component.code.coding.display",
-        "patternString": "Size of pupil"
+        "patternString": "Indirect light pupillary reflex"
       },
       {
-        "id": "Observation.component:Right.value[x]",
+        "id": "Observation.component:Indirect.value[x]",
         "path": "Observation.component.value[x]",
         "slicing": {
           "discriminator": [
@@ -201,7 +226,7 @@
         }
       },
       {
-        "id": "Observation.component:Right.value[x]:valueCodeableConcept",
+        "id": "Observation.component:Indirect.value[x]:valueCodeableConcept",
         "path": "Observation.component.value[x]",
         "sliceName": "valueCodeableConcept",
         "min": 0,
@@ -211,10 +236,14 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://loinc.org/LL3762-3"
+        }
       },
       {
-        "id": "Observation.component:Right.dataAbsentReason",
+        "id": "Observation.component:Indirect.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
         "mustSupport": true
       }

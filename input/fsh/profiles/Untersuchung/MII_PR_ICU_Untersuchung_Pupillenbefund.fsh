@@ -3,13 +3,13 @@
 // - Keine eigene Mess-/Befundaussage im value[x]
 // - Semantische Annotation über SNOMED + LOINC im Observation.code
 
-Profile: MII_PR_ICU_Assessment_Pupillary_Examination
+Profile: MII_PR_ICU_Untersuchung_Pupillenbefund
 Parent: Observation
-Id: mii-pr-icu-assessment-pupillary-examination
-Title: "MII PR ICU Assessment Pupillary Examination"
+Id: mii-pr-icu-untersuchung-pupillenbefund
+Title: "MII PR ICU Untersuchung Pupillenbefund"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-assessment-pupillary-examination"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund"
 * ^status = #draft
 
 * id MS

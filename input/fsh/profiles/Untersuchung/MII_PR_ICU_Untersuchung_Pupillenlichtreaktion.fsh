@@ -8,13 +8,13 @@
 // - XOR-Regel je Komponente: value[x] xor dataAbsentReason
 // ============================================================
 
-Profile: MII_PR_ICU_Assessment_Pupillary_Light_Reaction_Eye
+Profile: MII_PR_ICU_Untersuchung_Pupillenlichtreaktion
 Parent: Observation
-Id: mii-pr-icu-assessment-pupillary-light-reaction-eye
-Title: "MII PR ICU Assessment Pupillary Light Reaction (per Eye)"
+Id: mii-pr-icu-untersuchung-pupillenlichtreaktion
+Title: "MII PR ICU Untersuchung Pupillenlichtreaktion"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-assessment-pupillary-light-reaction-eye"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion"
 * ^status = #draft
 
 * id MS

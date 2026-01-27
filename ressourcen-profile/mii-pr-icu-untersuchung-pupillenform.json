@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-assessment-pupil-shape",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-pupille-form",
+  "id": "mii-pr-icu-untersuchung-pupillenform",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
   "version": "2025.0.4",
-  "name": "MII_PR_ICU_Assessment_Pupil_Shape",
-  "title": "MII PR ICU Assessment Pupil Shape",
+  "name": "MII_PR_ICU_Untersuchung_Pupillenform",
+  "title": "MII PR ICU Untersuchung Pupillenform",
   "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
