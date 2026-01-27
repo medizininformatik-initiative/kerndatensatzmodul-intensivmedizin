@@ -30,10 +30,12 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * code.coding.code = #363953003 (exactly)
 * code.coding.display = "Size of pupil"
 
+* bodySite 1..1 MS
+* bodySite from MII_VS_ICU_Pupille_BodySite (required)
+* dataAbsentReason 0..1 MS
+
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept.bodySite from MII_VS_ICU_PupilBodySiteLR (required)
-* valueCodeableConcept.dataAbsentReason 0..1 MS
-* valueCodeableConcept from MII_VS_ICU_Pupil_Size (required)
+* valueCodeableConcept from MII_VS_ICU_Pupillengroesse (required)
 
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
 * valueCodeableConcept ^constraint[=].severity = #error

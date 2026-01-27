@@ -32,7 +32,8 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion"
 * code.coding.code = #113147002 (exactly)
 * code.coding.display = "Pupil reaction to light"
 
-* bodySite from MII_VS_ICU_PupilBodySiteLR (required)
+* bodySite 1..1 MS
+* bodySite from MII_VS_ICU_Pupille_BodySite (required)
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

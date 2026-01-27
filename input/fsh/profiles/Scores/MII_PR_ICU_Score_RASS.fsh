@@ -12,7 +12,7 @@ Title: "MII PR ICU Score RASS"
 * category 1..
 * category = $observation-category#survey
 
-* code 1..1
+* code 1..1 MS
 * code = $sct#1345050000 "Richmond Agitation Sedation Scale score (observable entity)"
 * code ^comment = "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8. Ordinal score is not exchanged; implementers may derive it internally."
 
@@ -54,9 +54,12 @@ Title: "MII PR ICU Score RASS"
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * value[x] ^short = "RASS value"
+* value[x].coding.code 1..1 MS
+* value[x].coding.system 1..1 MS
 
 * valueCodeableConcept 1..1 MS
-* valueCodeableConcept from http://loinc.org/vs/LL6536-8 (required)
+//* valueCodeableConcept from http://loinc.org/vs/LL6536-8 (required)
+* valueCodeableConcept from MII_PR_ICU_Score_RASS (required)
 * valueCodeableConcept ^comment = "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8)."
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"

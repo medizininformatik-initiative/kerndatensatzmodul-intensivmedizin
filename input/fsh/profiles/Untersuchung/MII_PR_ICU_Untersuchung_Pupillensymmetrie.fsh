@@ -52,9 +52,8 @@ Severity: #error
 * code.coding.code = #301942005 (exactly)
 * code.coding.display = "Finding of proportion of pupil (finding)"
 
-//* value only Reference(valueCodeableConcept)
-
-* valueCodeableConcept from MII_VS_ICU_PupillarySymmetry (required)
+* value[x] only CodeableConcept
+* valueCodeableConcept from MII_VS_ICU_Pupillensymmetrie (required)
 
 // ------------------------------------------------------------
 // Lateralisierung (nur bei Anisokor)
@@ -62,4 +61,4 @@ Severity: #error
 // Hinweis für Implementierer: Bei Anisokorie ist bodySite verpflichtend und gibt an,
 // welche Pupille größer ist. Bei Isokorie darf bodySite nicht gesetzt werden.
 // ------------------------------------------------------------
-* bodySite from MII_VS_ICU_PupilBodySiteLR (required)
+* bodySite from MII_VS_ICU_Pupille_BodySite (required)

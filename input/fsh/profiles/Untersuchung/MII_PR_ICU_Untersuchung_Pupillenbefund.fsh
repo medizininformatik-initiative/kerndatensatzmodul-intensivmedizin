@@ -48,10 +48,10 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 // ------------------------------------------------------------
 
 // Erwartete Members (Guidance):
-// - MII_PR_ICU_Assessment_Pupillary_Light_Reaction_Eye (mind. 2 Instanzen: links & rechts)
-// - MII_PR_ICU_Assessment_Pupillary_Size
-// - MII_PR_ICU_Assessment_Pupil_Shape
-// - MII_PR_ICU_Assessment_Pupillary_Symmetry
+// - MII_PR_ICU_Untersuchung_Pupillenlichtreaktion (mind. 2 Instanzen: links & rechts)
+// - MII_PR_ICU_Untersuchung_Pupillengroesse
+// - MII_PR_ICU_Untersuchung_Pupillenform
+// - MII_PR_ICU_Untersuchung_Pupillensymmetrie
 
 * hasMember 1..5 MS
 
@@ -66,19 +66,19 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
     PupillarySymmetry 1..1 MS
 
 // --- Light Reaction (per eye) ---
-* hasMember[PupillaryLightReaction] only Reference(MII_PR_ICU_Assessment_Pupillary_Light_Reaction_Eye)
+* hasMember[PupillaryLightReaction] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion)
 * hasMember[PupillaryLightReaction] ^short = "Member observations: pupillary light reaction per eye (1..2)."
 
 // --- Pupillary Size ---
-* hasMember[PupillarySize] only Reference(MII_PR_ICU_Assessment_Pupillary_Size)
+* hasMember[PupillarySize] only Reference(MII_PR_ICU_Untersuchung_Pupillengroesse)
 * hasMember[PupillarySize] ^short = "Member observation: categorical pupillary size (both pupils)."
 
 // --- Pupil Shape ---
-* hasMember[PupilShape] only Reference(MII_PR_ICU_Assessment_Pupil_Shape)
+* hasMember[PupilShape] only Reference(MII_PR_ICU_Untersuchung_Pupillenform)
 * hasMember[PupilShape] ^short = "Member observation: pupil shape/regularity (both pupils)."
 
 // --- Pupillary Symmetry ---
-* hasMember[PupillarySymmetry] only Reference(MII_PR_ICU_Assessment_Pupillary_Symmetry)
+* hasMember[PupillarySymmetry] only Reference(MII_PR_ICU_Untersuchung_Pupillensymmetrie)
 * hasMember[PupillarySymmetry] ^short = "Member observation: pupillary symmetry (isocoria/anisocoria)."
 * hasMember ^short = "References to member observations forming the pupillary examination panel."
 * hasMember ^comment = "Dieses Panel bündelt die Einzelbefunde zur Pupillenuntersuchung via hasMember. Erwartet werden: (1) Pupillary Light Reaction (per eye) - i.d.R. 2 Instanzen (links/rechts), (2) Pupillary Size, (3) Pupil Shape/Regularity, (4) Pupillary Symmetry. Keine zusätzliche Interpretation im Panel selbst."

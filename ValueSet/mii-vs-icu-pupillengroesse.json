@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MII_VS_ICU_PupillarySize",
-  "id": "mii-vs-icu-pupillary-size",
-  "title": "MII VS ICU Pupillary Size (categorial)",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupilsize-qualitative-snomed",
+  "name": "MII_VS_ICU_Pupillengroesse",
+  "id": "mii-vs-icu-pupillengroesse",
+  "title": "MII VS ICU Pupillengroesse",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillengroesse",
   "version": "2026.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [

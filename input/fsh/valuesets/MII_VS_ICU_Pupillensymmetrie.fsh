@@ -1,9 +1,9 @@
-ValueSet: MII_VS_ICU_PupillarySymmetry
-Id: mii-vs-icu-pupillarysymmetry
-Title: "MII VS ICU Pupillary Symmetry"
+ValueSet: MII_VS_ICU_Pupillensymmetrie
+Id: mii-vs-icu-pupillensymmetrie
+Title: "MII VS ICU Pupillensymmetrie"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-symmetry"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillensymmetrie"
 * ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-12-16"

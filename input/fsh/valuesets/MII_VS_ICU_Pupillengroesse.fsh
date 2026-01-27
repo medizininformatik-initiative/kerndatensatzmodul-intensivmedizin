@@ -1,9 +1,9 @@
-ValueSet: MII_VS_ICU_PupillarySize
-Id: mii-vs-icu-pupillary-size
-Title: "MII VS ICU Pupillary Size (categorial)"
+ValueSet: MII_VS_ICU_Pupillengroesse
+Id: mii-vs-icu-pupillengroesse
+Title: "MII VS ICU Pupillengroesse"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillary-size"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillengroesse"
 * ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-12-16"

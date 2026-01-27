@@ -7,15 +7,16 @@
 // - System: http://loinc.org (LA-Antwortcodes)
 // ============================================================
 
-ValueSet: MII_VS_ICU_PupillaryResponse_LL3762_Top3
-Id: mii-vs-icu-pupillaryresponse-ll3762-top3
-Title: "Pupillary response to light (LL3762-3 Top 3)"
+ValueSet: MII_VS_ICU_Pupillenlichtreaktion
+Id: mii-vs-icu-pupillenlichtreaktion
+Title: "MII_VS_ICU_Pupillenlichtreaktion"
 Description: "Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv."
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillenlichtreaktion"
+* ^version = "2026.0.0"
 * ^status = #draft
 
-// LA25441-9 |Reactive to light|
-// LA24899-9 |Sluggishly reactive to light|
-// LA25442-7 |Not reactive to light|
 * include $loinc#LA25441-9 "Reactive to light"
 * include $loinc#LA24899-9 "Sluggishly reactive to light"
 * include $loinc#LA25442-7 "Not reactive to light"

@@ -1,11 +1,23 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "MII_VS_ICU_PupilShape_Regularity",
-  "id": "mii-vs-icu-pupil-shape-regularity",
-  "title": "Pupil shape / regularity (SNOMED + LOINC answers)",
-  "description": "Kategoriale Beurteilung der Pupillenform/Regularität: regelmäßig (rund) oder unregelmäßig. Zulässig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupil-shape-regularity",
+  "name": "MII_VS_ICU_Pupillenform_Regularitaet",
+  "id": "mii-vs-icu-pupillenform-regularitaet",
+  "title": "MII VS ICU Pupillenform Regularitaet",
+  "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillenform-regularitaet",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {
