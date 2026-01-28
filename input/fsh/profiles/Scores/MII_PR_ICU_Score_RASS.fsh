@@ -11,12 +11,23 @@ Title: "MII PR ICU Score RASS"
 * ^date = "2025-12-15"
 
 * status 1..
+
 * category 1..
-* category = $observation-category#survey
+* category.coding contains hl7-category 0..1 MS
+* category.coding[hl7-category] = $observation-category#survey
+* category.coding[hl7-category].display MS
 
 * code 1..1 MS
-* code = $sct#1345050000 "Richmond Agitation Sedation Scale score (observable entity)"
-* code ^comment = "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8. Ordinal score is not exchanged; implementers may derive it internally."
+* code.coding MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #closed
+* code.coding contains sct 1..1 MS
+* code.coding[sct] ^patternCoding.system = $sct
+* code.coding[sct].system 1.. MS
+* code.coding[sct].code 1.. MS
+* code.coding[sct].display MS
+* code.coding[sct] = $sct#1345050000
 
 // Subject must be a patient
 * subject 1.. MS
@@ -32,6 +43,7 @@ Title: "MII PR ICU Score RASS"
 // Issued timestamp
 * issued 0..1 MS
 * issued ^short = "Date/Time this observation was made available"
+// sonst performedPeriod
 
 // Performer: who performed the assessment
 * performer 0.. MS
@@ -70,3 +82,6 @@ Title: "MII PR ICU Score RASS"
 
 * bodySite 0..0
 * specimen 0..0
+
+//* component.value[x] 1..1 MS
+//* component.value[x] only CodeableConcept
