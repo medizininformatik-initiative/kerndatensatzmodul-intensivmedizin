@@ -102,13 +102,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-assessment-pupillary-examination"
-        },
-        "name": "MII PR ICU Assessment Pupillary Examination",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
         },
         "name": "MII PR ICU Atemfrequenz",
@@ -487,14 +480,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
-        },
-        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
-        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung"
         },
         "name": "MII PR ICU Parameter von Beatmung",
@@ -604,6 +589,41 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund"
+        },
+        "name": "MII PR ICU Untersuchung Pupillenbefund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillenform"
+        },
+        "name": "MII PR ICU Untersuchung Pupillenform",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"
+        },
+        "name": "MII PR ICU Untersuchung Pupillengroesse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion"
+        },
+        "name": "MII PR ICU Untersuchung Pupillenlichtreaktion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"
+        },
+        "name": "MII PR ICU Untersuchung Pupillensymmetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-ect-venoeser-druck"
         },
         "name": "MII PR ICU Venous Pressure",
@@ -615,13 +635,6 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
         },
         "name": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
-        },
-        "name": "MII SD ICU Herzfrequenz",
         "exampleBoolean": false
       },
       {
@@ -823,16 +836,32 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupillary-shape-snomed"
+          "reference": "ValueSet/mii-vs-icu-pupille-bodysite"
         },
-        "name": "MII VS ICU Pupillary Shape SNOMED",
+        "name": "MII VS ICU Pupille BodySite",
+        "description": "Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupilsize-qualitative-snomed"
+          "reference": "ValueSet/mii-vs-icu-pupillenform-regularitaet"
         },
-        "name": "MII VS ICU Pupilsize Qualitative SNOMED",
+        "name": "MII VS ICU Pupillenform Regularitaet",
+        "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-pupillengroesse"
+        },
+        "name": "MII VS ICU Pupillengroesse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-pupillensymmetrie"
+        },
+        "name": "MII VS ICU Pupillensymmetrie",
         "exampleBoolean": false
       },
       {
@@ -849,6 +878,14 @@
         },
         "name": "MII VS ICU Score LOINC",
         "description": "Value set for scores - LOINC codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-score-rass"
+        },
+        "name": "MII VS ICU Score RASS",
+        "description": "Value set for RASS Score",
         "exampleBoolean": false
       },
       {
@@ -1008,6 +1045,14 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
         },
         "name": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-pupillenlichtreaktion"
+        },
+        "name": "MII_VS_ICU_Pupillenlichtreaktion",
+        "description": "Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv.",
         "exampleBoolean": false
       },
       {

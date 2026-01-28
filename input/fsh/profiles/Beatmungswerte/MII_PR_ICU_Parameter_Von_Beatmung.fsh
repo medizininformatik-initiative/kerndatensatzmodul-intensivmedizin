@@ -1,10 +1,10 @@
 Profile: MII_PR_ICU_Parameter_Von_Beatmung
 Parent: Observation
-Id: mii-pr-vent-icu-parameter-von-beatmung
+Id: mii-pr-icu-vent-parameter-von-beatmung
 Title: "MII PR ICU Parameter von Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-parameter-von-beatmung"
 * ^status = #active
 
 * obeys obs-10 and vs-de-2
