@@ -18,4 +18,3 @@ Description: "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessi
 // SNOMED CT
 * include $sct#823997007 "Normal regularity of pupil (finding)"
 * include $sct#271732006 "Pupil irregular (finding)"
-* include $sct#366020001 "Finding of regularity of pupil (finding)"
