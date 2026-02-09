@@ -1,3 +1,4 @@
+[exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte]: Observation-exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.html
 [mii-cps-icu-capabilitystatement]: CapabilityStatement-mii-cps-icu-capabilitystatement.html
 [MII_PR_ICU_Beatmungszeit_Hohem_Druck]: StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html
 [MII_PR_ICU_Dauer_Haemodialysesitzung]: StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.html
@@ -122,6 +123,18 @@
 [MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter]: ValueSet-mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.html
 [MII_VS_ICU_Unit_equivalent_UCUM_milliliter]: ValueSet-mii-vs-icu-unit-equivalent-ucum-milliliter.html
 [MII_VS_ICU_Score_SNOMED]: ValueSet-mii-vs-icu-score-snomed.html
+[mii-exa-icu-device]: Device-mii-exa-icu-device.html
+[mii-exa-icu-ecmo-device]: Device-mii-exa-icu-ecmo-device.html
+[mii-exa-icu-ect-arterieller-druck-gemessen]: Observation-mii-exa-icu-ect-arterieller-druck-gemessen.html
+[mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch]: Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.html
+[mii-exa-icu-encounter]: Encounter-mii-exa-icu-encounter.html
+[mii-exa-icu-gemessene-parameter-beatmung]: DeviceMetric-mii-exa-icu-gemessene-parameter-beatmung.html
+[mii-exa-icu-gemessene-parameter-extrakorporale-verfahren]: DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.html
+[mii-exa-icu-muv-atemfrequenz]: Observation-mii-exa-icu-muv-atemfrequenz.html
+[mii-exa-icu-patient]: Patient-mii-exa-icu-patient.html
+[mii-exa-icu-procedure-extrakorporales-verfahren]: Procedure-mii-exa-icu-procedure-extrakorporales-verfahren.html
+[mii-exa-icu-specimen-bilanz]: Specimen-mii-exa-icu-specimen-bilanz.html
+[mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch]: Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.html
 [mii-sp-icu-device-property-type]: SearchParameter-mii-sp-icu-device-property-type.html
 [mii-sp-icu-devicemetric-source]: SearchParameter-mii-sp-icu-devicemetric-source.html
 [mii-sp-icu-observation-bodysite]: SearchParameter-mii-sp-icu-observation-bodysite.html

@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "182744004",
+          "system": "http://snomed.info/sct",
+          "display": "Extracorporeal circulation procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "251286000",
+        "system": "http://snomed.info/sct",
+        "display": "Extracorporeal gas exchange duration (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-icu-patient"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity": {
+    "value": 72,
+    "code": "h",
+    "system": "http://unitsofmeasure.org"
+  },
+  "device": {
+    "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren"
+  }
+}

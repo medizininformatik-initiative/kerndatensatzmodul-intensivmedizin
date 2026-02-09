@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-icu-ect-arterieller-druck-gemessen",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/icu-identifier",
+      "value": "123456789"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "182744004",
+          "system": "http://snomed.info/sct",
+          "display": "Extracorporeal circulation procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "386534000",
+        "system": "http://snomed.info/sct",
+        "display": "Arterial blood pressure (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-icu-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/mii-exa-icu-encounter"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity": {
+    "value": 20,
+    "code": "mm[Hg]",
+    "system": "http://unitsofmeasure.org"
+  },
+  "device": {
+    "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren"
+  }
+}

@@ -1,11 +1,107 @@
 [
   {
+    "outputFile": "Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.json",
+    "fshName": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-bundle.fsh",
+    "startLine": 17,
+    "endLine": 32
+  },
+  {
     "outputFile": "CapabilityStatement-mii-cps-icu-capabilitystatement.json",
     "fshName": "mii-cps-icu-capabilitystatement",
     "fshType": "Instance",
     "fshFile": "capability-statement.fsh",
     "startLine": 33,
     "endLine": 52
+  },
+  {
+    "outputFile": "Device-mii-exa-icu-device.json",
+    "fshName": "mii-exa-icu-device",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-device.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Device-mii-exa-icu-ecmo-device.json",
+    "fshName": "mii-exa-icu-ecmo-device",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-ecmo-device.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-icu-gemessene-parameter-beatmung.json",
+    "fshName": "mii-exa-icu-gemessene-parameter-beatmung",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-dm-gemessene-parameter-beatmung.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.json",
+    "fshName": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-dm-gemessene-parameter-extrakorporale-verfahren.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "Encounter-mii-exa-icu-encounter.json",
+    "fshName": "mii-exa-icu-encounter",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-encounter.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.json",
+    "fshName": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-ect-arterieller-druck-gemessen.json",
+    "fshName": "mii-exa-icu-ect-arterieller-druck-gemessen",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-ect-arterieller-druck-gemessen.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.json",
+    "fshName": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-muv-atemfrequenz.json",
+    "fshName": "mii-exa-icu-muv-atemfrequenz",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-muv-atemfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Patient-mii-exa-icu-patient.json",
+    "fshName": "mii-exa-icu-patient",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-patient.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Procedure-mii-exa-icu-procedure-extrakorporales-verfahren.json",
+    "fshName": "mii-exa-icu-procedure-extrakorporales-verfahren",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-procedure-extrakorporales-verfahren.fsh",
+    "startLine": 1,
+    "endLine": 27
   },
   {
     "outputFile": "SearchParameter-mii-sp-icu-device-property-type.json",
@@ -94,6 +190,14 @@
     "fshFile": "searchParameter.fsh",
     "startLine": 180,
     "endLine": 195
+  },
+  {
+    "outputFile": "Specimen-mii-exa-icu-specimen-bilanz.json",
+    "fshName": "mii-exa-icu-specimen-bilanz",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-specimen-bilanz.fsh",
+    "startLine": 1,
+    "endLine": 7
   },
   {
     "outputFile": "StructureDefinition-mii-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.json",

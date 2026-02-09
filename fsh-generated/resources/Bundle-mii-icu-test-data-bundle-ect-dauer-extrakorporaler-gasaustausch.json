@@ -1,0 +1,526 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "transaction",
+  "timestamp": "2025-09-24T13:51:00+02:00",
+  "entry": [
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/dauer-extrakorporaler-gasaustausch"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "182744004",
+                "system": "http://snomed.info/sct",
+                "display": "Extracorporeal circulation procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "251286000",
+              "system": "http://snomed.info/sct",
+              "display": "Extracorporeal gas exchange duration (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "effectivePeriod": {
+          "start": "2019-12-23T09:30:10+01:00",
+          "end": "2019-12-23T10:30:10+01:00"
+        },
+        "valueQuantity": {
+          "value": 72,
+          "code": "h",
+          "system": "http://unitsofmeasure.org"
+        },
+        "device": {
+          "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/bilanz-abnahme-haemofiltration-einzelmesswerte"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+                "code": "vital-sign"
+              },
+              {
+                "code": "364396009",
+                "system": "http://snomed.info/sct"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251850009"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "99741-1"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://simplifier.net/medizininformatikinitiative-modul-intensivmedizin/example-identifier",
+            "value": "bilanz-abnahme-haemofiltration-einzelmesswerte"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-icu-encounter"
+        },
+        "effectivePeriod": {
+          "start": "2019-12-23T09:30:10+01:00",
+          "end": "2019-12-24T09:30:10+01:00"
+        },
+        "issued": "2019-12-20T09:30:10+01:00",
+        "valueQuantity": {
+          "value": 200,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "not-applicable"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "EXP"
+              }
+            ]
+          }
+        ],
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "251850009"
+            }
+          ]
+        },
+        "specimen": {
+          "reference": "Specimen/mii-exa-icu-specimen-bilanz"
+        },
+        "device": {
+          "reference": "Device/mii-exa-icu-device"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 150,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            },
+            "high": {
+              "value": 250,
+              "code": "ml",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Patient/mii-exa-icu-patient",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-icu-patient",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
+            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+          ]
+        },
+        "name": [
+          {
+            "use": "official",
+            "family": "Doe",
+            "given": [
+              "John"
+            ]
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "type": {
+              "coding": [
+                {
+                  "code": "KVZ10",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "D12345678"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1982-02-27",
+        "deceasedBoolean": false
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Procedure/mii-exa-icu-procedure-extrakorporales-verfahren",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "mii-exa-icu-procedure-extrakorporales-verfahren",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "182744004",
+              "display": "Extracorporeal circulation procedure (procedure)"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/ops",
+              "code": "5-470",
+              "version": "2023",
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "code": "L",
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                    "display": "links"
+                  }
+                }
+              ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "786453001",
+              "display": "Venovenous extracorporeal membrane oxygenation (procedure)",
+              "version": "2023"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum",
+            "valueDateTime": "2023-09-23T10:30:00+02:00"
+          },
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht",
+            "valueCoding": {
+              "code": "262202000",
+              "system": "http://snomed.info/sct",
+              "display": "Therapeutic"
+            }
+          }
+        ],
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-icu-encounter"
+        },
+        "performedPeriod": {
+          "start": "2023-08-23T10:30:10+01:00",
+          "end": "2023-09-22T10:30:10+01:00"
+        },
+        "recorder": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "1234",
+                "system": "http://snomed.info/sct"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Beispielhafte Notiz zum extrakorporalen Verfahren."
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Encounter/mii-exa-icu-encounter",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "mii-exa-icu-encounter",
+        "status": "finished",
+        "class": {
+          "code": "IMP",
+          "display": "inpatient encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "intensivstationaer",
+                "system": "http://fhir.de/CodeSystem/kontaktart-de"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "period": {
+          "start": "2023-08-23",
+          "end": "2023-09-23"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Device/mii-exa-icu-device",
+      "resource": {
+        "resourceType": "Device",
+        "id": "mii-exa-icu-device",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/icu-device-identifier",
+            "value": "Device-12345"
+          }
+        ],
+        "status": "active",
+        "deviceName": [
+          {
+            "name": "Device Model X",
+            "type": "user-friendly"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "49062001",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "version": [
+          {
+            "value": "1.0.0"
+          }
+        ],
+        "property": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "1234",
+                  "system": "http://snomed.info/sct"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Device"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+        "type": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "display": "Extracorporeal circulation procedure (procedure)"
+            }
+          ]
+        },
+        "source": {
+          "reference": "Device/mii-exa-icu-device"
+        },
+        "category": "measurement"
+      },
+      "request": {
+        "method": "POST",
+        "url": "DeviceMetric"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Specimen/mii-exa-icu-specimen-bilanz",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "mii-exa-icu-specimen-bilanz",
+        "status": "available",
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Specimen"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-icu-muv-atemfrequenz",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-icu-muv-atemfrequenz",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "system": "http://unitsofmeasure.org",
+          "code": "/min",
+          "unit": "breaths per minute",
+          "value": 18
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "86290005"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://www.charite.de/fhir/sid/icu-identifier",
+            "value": "234567890"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/mii-exa-icu-encounter"
+        },
+        "effectivePeriod": {
+          "start": "2019-12-23T09:30:10+01:00",
+          "end": "2019-12-23T10:30:10+01:00"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "not-applicable"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}
