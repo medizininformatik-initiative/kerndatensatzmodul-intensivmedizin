@@ -4,7 +4,6 @@
 [MII_LM_ICU]: StructureDefinition-mii-lm-intensivmedizin.html
 [MII_PR_ICU_Arterieller_Blutdruck]: StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html
 [MII_PR_ICU_Arterieller_Druck]: StructureDefinition-mii-pr-icu-ect-arterieller-druck.html
-[MII_PR_ICU_Assessment_Pupillary_Examination]: StructureDefinition-mii-pr-icu-assessment-pupillary-examination.html
 [MII_PR_ICU_Atemfrequenz]: StructureDefinition-mii-pr-icu-muv-atemfrequenz.html
 [MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss]: StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.html
 [MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss]: StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html
@@ -75,6 +74,11 @@
 [MII_PR_ICU_Substituatfluss]: StructureDefinition-mii-pr-icu-ect-substituatfluss.html
 [MII_PR_ICU_Substituatvolumen]: StructureDefinition-mii-pr-icu-ect-substituatvolumen.html
 [MII_PR_ICU_Unterstuezungsdruck_Beatmung]: StructureDefinition-mii-pr-icu-vent-unterstuezungsdruck-beatmung.html
+[MII_PR_ICU_Untersuchung_Pupillenbefund]: StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.html
+[MII_PR_ICU_Untersuchung_Pupillenform]: StructureDefinition-mii-pr-icu-untersuchung-pupillenform.html
+[MII_PR_ICU_Untersuchung_Pupillengroesse]: StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.html
+[MII_PR_ICU_Untersuchung_Pupillenlichtreaktion]: StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion.html
+[MII_PR_ICU_Untersuchung_Pupillensymmetrie]: StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.html
 [MII_PR_ICU_Venoeser_Druck]: StructureDefinition-mii-pr-icu-ect-venoeser-druck.html
 [MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung]: StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html
 [MII_PR_ICU_Herzfrequenz]: StructureDefinition-mii-pr-icu-muv-herzfrequenz.html
@@ -103,10 +107,13 @@
 [MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.html
 [MII_VS_ICU_Method_Observation_Blutdruck]: ValueSet-mii-vs-icu-method-observation-blutdruck.html
 [MII_VS_ICU_Present_Absent]: ValueSet-mii-vs-icu-present-absent.html
-[MII_VS_ICU_Pupillary_Shape_SNOMED]: ValueSet-mii-vs-icu-pupillary-shape-snomed.html
-[MII_VS_ICU_Pupilsize_Qualitative_SNOMED]: ValueSet-mii-vs-icu-pupilsize-qualitative-snomed.html
+[MII_VS_ICU_Pupille_BodySite]: ValueSet-mii-vs-icu-pupille-bodysite.html
+[MII_VS_ICU_Pupillenform_Regularitaet]: ValueSet-mii-vs-icu-pupillenform-regularitaet.html
+[MII_VS_ICU_Pupillengroesse]: ValueSet-mii-vs-icu-pupillengroesse.html
+[MII_VS_ICU_Pupillensymmetrie]: ValueSet-mii-vs-icu-pupillensymmetrie.html
 [MII_VS_ICU_Score_Category]: ValueSet-mii-vs-icu-score-category.html
 [MII_VS_ICU_Score_LOINC]: ValueSet-mii-vs-icu-score-loinc.html
+[MII_VS_ICU_Score_RASS]: ValueSet-mii-vs-icu-score-rass.html
 [MII_VS_ICU_Unit_equivalent_percent_1]: ValueSet-mii-vs-icu-unit-equivalent-percent-1.html
 [MII_VS_ICU_Unit_equivalent_UCUM_beats_per_minute]: ValueSet-mii-vs-icu-unit-equivalent-ucum-beats-per-minute.html
 [MII_VS_ICU_Unit_equivalent_UCUM_breaths_per_minute]: ValueSet-mii-vs-icu-unit-equivalent-ucum-breaths-per-minute.html
@@ -127,4 +134,5 @@
 [mii-sp-icu-observation-referencerange-low]: SearchParameter-mii-sp-icu-observation-referencerange-low.html
 [mii-sp-icu-procedure-recorder]: SearchParameter-mii-sp-icu-procedure-recorder.html
 [MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html
+[MII_VS_ICU_Pupillenlichtreaktion]: ValueSet-mii-vs-icu-pupillenlichtreaktion.html
 [MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html

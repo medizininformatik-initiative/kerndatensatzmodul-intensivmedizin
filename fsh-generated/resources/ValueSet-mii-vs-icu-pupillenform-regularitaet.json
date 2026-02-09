@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Pupillenform_Regularitaet",
+  "id": "mii-vs-icu-pupillenform-regularitaet",
+  "title": "MII VS ICU Pupillenform Regularitaet",
+  "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillenform-regularitaet",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "823997007",
+            "display": "Normal regularity of pupil (finding)"
+          },
+          {
+            "code": "271732006",
+            "display": "Pupil irregular (finding)"
+          },
+          {
+            "code": "366020001",
+            "display": "Finding of regularity of pupil (finding)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA24884-1",
+            "display": "Round"
+          },
+          {
+            "code": "LA19583-6",
+            "display": "Irregular"
+          }
+        ]
+      }
+    ]
+  }
+}
