@@ -47,7 +47,7 @@ Severity: #error
 * component ^constraint[=].expression = "(value.coding.where(system='http://snomed.info/sct' and code='13045009').exists() implies bodySite.exists()) and (value.coding.where(system='http://snomed.info/sct' and code='301943000').exists() implies bodySite.empty())"
 */
 
-* code.coding 1..*
+* code.coding 1..1
 * code.coding.system = $sct (exactly)
 * code.coding.code = #301942005 (exactly)
 * code.coding.display = "Finding of proportion of pupil (finding)"
