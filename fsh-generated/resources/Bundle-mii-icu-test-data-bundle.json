@@ -267,6 +267,54 @@
       }
     },
     {
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
+        "type": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "display": "Extracorporeal circulation procedure (procedure)"
+            }
+          ]
+        },
+        "source": {
+          "reference": "Device/mii-exa-icu-device"
+        },
+        "category": "measurement"
+      },
+      "request": {
+        "method": "POST",
+        "url": "DeviceMetric"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren",
+        "type": {
+          "coding": [
+            {
+              "code": "182744004",
+              "system": "http://snomed.info/sct",
+              "display": "Extracorporeal circulation procedure (procedure)"
+            }
+          ]
+        },
+        "source": {
+          "reference": "Device/mii-exa-icu-device"
+        },
+        "category": "measurement"
+      },
+      "request": {
+        "method": "POST",
+        "url": "DeviceMetric"
+      }
+    },
+    {
       "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
       "resource": {
         "resourceType": "Observation",
@@ -312,6 +360,122 @@
         "valueQuantity": {
           "value": 72,
           "code": "h",
+          "system": "http://unitsofmeasure.org"
+        },
+        "device": {
+          "reference": "DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren",
+            "display": "Example_extrakorporales_Verfahren"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "182744004",
+                "system": "http://snomed.info/sct",
+                "display": "Extracorporeal circulation procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "444479000",
+              "system": "http://snomed.info/sct",
+              "display": "Rate of blood flow through cardiovascular device (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "effectivePeriod": {
+          "start": "2019-12-23T09:30:10+01:00",
+          "end": "2019-12-23T10:30:10+01:00"
+        },
+        "valueQuantity": {
+          "value": 2,
+          "code": "L/min",
+          "system": "http://unitsofmeasure.org"
+        },
+        "device": {
+          "reference": "DeviceMetric/mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren",
+          "display": "Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
+          ]
+        },
+        "partOf": [
+          {
+            "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "182744004",
+                "system": "http://snomed.info/sct",
+                "display": "Extracorporeal circulation procedure (procedure)"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "444479000",
+              "system": "http://snomed.info/sct",
+              "display": "Rate of blood flow through cardiovascular device (observable entity)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "effectivePeriod": {
+          "start": "2019-12-23T09:30:10+01:00",
+          "end": "2019-12-23T10:30:10+01:00"
+        },
+        "valueQuantity": {
+          "value": 2,
+          "code": "L/min",
           "system": "http://unitsofmeasure.org"
         },
         "device": {
@@ -441,30 +605,6 @@
       "request": {
         "method": "POST",
         "url": "Observation"
-      }
-    },
-    {
-      "fullUrl": "https://www.medizininformatik-initiative.de/DeviceMetric/mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
-      "resource": {
-        "resourceType": "DeviceMetric",
-        "id": "mii-exa-icu-gemessene-parameter-extrakorporale-verfahren",
-        "type": {
-          "coding": [
-            {
-              "code": "182744004",
-              "system": "http://snomed.info/sct",
-              "display": "Extracorporeal circulation procedure (procedure)"
-            }
-          ]
-        },
-        "source": {
-          "reference": "Device/mii-exa-icu-device"
-        },
-        "category": "measurement"
-      },
-      "request": {
-        "method": "POST",
-        "url": "DeviceMetric"
       }
     },
     {

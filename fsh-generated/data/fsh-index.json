@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-bundle.fsh",
     "startLine": 17,
-    "endLine": 33
+    "endLine": 39
   },
   {
     "outputFile": "CapabilityStatement-mii-cps-icu-capabilitystatement.json",
@@ -84,6 +84,14 @@
     "fshName": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen.json",
+    "fshName": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen.fsh",
     "startLine": 1,
     "endLine": 13
   },

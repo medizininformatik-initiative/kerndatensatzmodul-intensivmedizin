@@ -25,9 +25,15 @@ Description: "Bundle: Example ECT Dauer extrakorporaler Gasaustausch"
 * insert AddBundleEntry(mii-exa-icu-encounter, Encounter)
 * insert AddBundleEntry(mii-exa-icu-device, Device)
 * insert AddBundleEntry(mii-exa-icu-practitioner, Practitioner)
+
 * insert AddBundleEntry(mii-exa-icu-procedure-extrakorporales-verfahren, Procedure)
-* insert AddBundleEntry(mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch, Observation)
-* insert AddBundleEntry(exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte, Observation)
 * insert AddBundleEntry(mii-exa-icu-gemessene-parameter-extrakorporale-verfahren, DeviceMetric)
+* insert AddBundleEntry(mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren, DeviceMetric)
+* insert AddBundleEntry(mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch, Observation)
+* insert AddBundleEntry(mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel, Observation)
+* insert AddBundleEntry(mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen, Observation)
+
+* insert AddBundleEntry(exa-mii-icu-bilanz-abnahme-haemofiltration-einzelmesswerte, Observation)
+
 * insert AddBundleEntry(mii-exa-icu-specimen-bilanz, Specimen)
 * insert AddBundleEntry(mii-exa-icu-muv-atemfrequenz, Observation)
