@@ -123,6 +123,7 @@
 [MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter]: ValueSet-mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.html
 [MII_VS_ICU_Unit_equivalent_UCUM_milliliter]: ValueSet-mii-vs-icu-unit-equivalent-ucum-milliliter.html
 [MII_VS_ICU_Score_SNOMED]: ValueSet-mii-vs-icu-score-snomed.html
+[mii-exa-icu-bilanz-gesamte-tages-bilanz]: Observation-mii-exa-icu-bilanz-gesamte-tages-bilanz.html
 [mii-exa-icu-device]: Device-mii-exa-icu-device.html
 [mii-exa-icu-ecmo-device]: Device-mii-exa-icu-ecmo-device.html
 [mii-exa-icu-ect-arterieller-druck-gemessen]: Observation-mii-exa-icu-ect-arterieller-druck-gemessen.html

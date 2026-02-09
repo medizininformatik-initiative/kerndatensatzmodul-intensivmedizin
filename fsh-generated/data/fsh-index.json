@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-bundle.fsh",
     "startLine": 17,
-    "endLine": 39
+    "endLine": 40
   },
   {
     "outputFile": "CapabilityStatement-mii-cps-icu-capabilitystatement.json",
@@ -70,6 +70,14 @@
     "fshFile": "examples/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.fsh",
     "startLine": 1,
     "endLine": 33
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-bilanz-gesamte-tages-bilanz.json",
+    "fshName": "mii-exa-icu-bilanz-gesamte-tages-bilanz",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-bilanz-gesamte-tages-bilanz.fsh",
+    "startLine": 1,
+    "endLine": 16
   },
   {
     "outputFile": "Observation-mii-exa-icu-ect-arterieller-druck-gemessen.json",

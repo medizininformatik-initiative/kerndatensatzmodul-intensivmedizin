@@ -976,6 +976,13 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-gesamte-tages-bilanz"
+        },
+        "name": "mii-exa-icu-bilanz-gesamte-tages-bilanz",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz"
+      },
+      {
+        "reference": {
           "reference": "Device/mii-exa-icu-device"
         },
         "name": "mii-exa-icu-device",
