@@ -1,0 +1,17 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren",
+  "type": {
+    "coding": [
+      {
+        "code": "182744004",
+        "system": "http://snomed.info/sct",
+        "display": "Extracorporeal circulation procedure (procedure)"
+      }
+    ]
+  },
+  "source": {
+    "reference": "Device/mii-exa-icu-device"
+  },
+  "category": "measurement"
+}

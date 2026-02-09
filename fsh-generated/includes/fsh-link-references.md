@@ -126,7 +126,9 @@
 [mii-exa-icu-device]: Device-mii-exa-icu-device.html
 [mii-exa-icu-ecmo-device]: Device-mii-exa-icu-ecmo-device.html
 [mii-exa-icu-ect-arterieller-druck-gemessen]: Observation-mii-exa-icu-ect-arterieller-druck-gemessen.html
+[mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel]: Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.html
 [mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch]: Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.html
+[mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren]: DeviceMetric-mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren.html
 [mii-exa-icu-encounter]: Encounter-mii-exa-icu-encounter.html
 [mii-exa-icu-gemessene-parameter-beatmung]: DeviceMetric-mii-exa-icu-gemessene-parameter-beatmung.html
 [mii-exa-icu-gemessene-parameter-extrakorporale-verfahren]: DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.html

@@ -32,6 +32,14 @@
     "endLine": 13
   },
   {
+    "outputFile": "DeviceMetric-mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren.json",
+    "fshName": "mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-dm-eingestellte-parameter-extrakorporale-verfahren.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
     "outputFile": "DeviceMetric-mii-exa-icu-gemessene-parameter-beatmung.json",
     "fshName": "mii-exa-icu-gemessene-parameter-beatmung",
     "fshType": "Instance",
@@ -70,6 +78,14 @@
     "fshFile": "examples/mii-exa-icu-ect-arterieller-druck-gemessen.fsh",
     "startLine": 1,
     "endLine": 16
+  },
+  {
+    "outputFile": "Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.json",
+    "fshName": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.fsh",
+    "startLine": 1,
+    "endLine": 13
   },
   {
     "outputFile": "Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.json",

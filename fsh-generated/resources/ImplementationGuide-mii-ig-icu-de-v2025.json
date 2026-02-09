@@ -999,9 +999,24 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"
+        },
+        "name": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"
         },
         "name": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren"
+        },
+        "name": "mii-exa-icu-eingestellte-parameter-extrakorporale-verfahren",
+        "description": "DeviceMetric: Eingestellte Parameter extrakorporale Verfahren",
         "exampleBoolean": true
       },
       {
