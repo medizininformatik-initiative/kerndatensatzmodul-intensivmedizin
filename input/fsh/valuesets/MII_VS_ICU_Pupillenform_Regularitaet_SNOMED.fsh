@@ -19,7 +19,3 @@ Description: "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessi
 * include $sct#823997007 "Normal regularity of pupil (finding)"
 * include $sct#271732006 "Pupil irregular (finding)"
 * include $sct#366020001 "Finding of regularity of pupil (finding)"
-
-// LOINC Answer codes
-* include $loinc#LA24884-1 "Round"
-* include $loinc#LA19583-6 "Irregular"
