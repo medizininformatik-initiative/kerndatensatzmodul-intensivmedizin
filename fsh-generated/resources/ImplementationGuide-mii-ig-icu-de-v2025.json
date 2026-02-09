@@ -1045,6 +1045,14 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/mii-exa-icu-practitioner"
+        },
+        "name": "mii-exa-icu-practitioner",
+        "description": "Practitioner: Dr. Rahel Hirsch",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-icu-procedure-extrakorporales-verfahren"
         },
         "name": "mii-exa-icu-procedure-extrakorporales-verfahren",
@@ -1061,9 +1069,9 @@
       },
       {
         "reference": {
-          "reference": "Bundle/mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch"
+          "reference": "Bundle/mii-icu-test-data-bundle"
         },
-        "name": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",
+        "name": "mii-icu-test-data-bundle",
         "description": "Bundle: Example ECT Dauer extrakorporaler Gasaustausch",
         "exampleBoolean": true
       },

@@ -1,11 +1,11 @@
 [
   {
-    "outputFile": "Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.json",
-    "fshName": "mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch",
+    "outputFile": "Bundle-mii-icu-test-data-bundle.json",
+    "fshName": "mii-icu-test-data-bundle",
     "fshType": "Instance",
     "fshFile": "examples/mii-exa-icu-bundle.fsh",
     "startLine": 17,
-    "endLine": 32
+    "endLine": 33
   },
   {
     "outputFile": "CapabilityStatement-mii-cps-icu-capabilitystatement.json",
@@ -94,6 +94,14 @@
     "fshFile": "examples/mii-exa-icu-patient.fsh",
     "startLine": 1,
     "endLine": 15
+  },
+  {
+    "outputFile": "Practitioner-mii-exa-icu-practitioner.json",
+    "fshName": "mii-exa-icu-practitioner",
+    "fshType": "Instance",
+    "fshFile": "examples/mii-exa-icu-practitioner.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "Procedure-mii-exa-icu-procedure-extrakorporales-verfahren.json",

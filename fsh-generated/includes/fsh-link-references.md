@@ -132,9 +132,10 @@
 [mii-exa-icu-gemessene-parameter-extrakorporale-verfahren]: DeviceMetric-mii-exa-icu-gemessene-parameter-extrakorporale-verfahren.html
 [mii-exa-icu-muv-atemfrequenz]: Observation-mii-exa-icu-muv-atemfrequenz.html
 [mii-exa-icu-patient]: Patient-mii-exa-icu-patient.html
+[mii-exa-icu-practitioner]: Practitioner-mii-exa-icu-practitioner.html
 [mii-exa-icu-procedure-extrakorporales-verfahren]: Procedure-mii-exa-icu-procedure-extrakorporales-verfahren.html
 [mii-exa-icu-specimen-bilanz]: Specimen-mii-exa-icu-specimen-bilanz.html
-[mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch]: Bundle-mii-icu-test-data-bundle-ect-dauer-extrakorporaler-gasaustausch.html
+[mii-icu-test-data-bundle]: Bundle-mii-icu-test-data-bundle.html
 [mii-sp-icu-device-property-type]: SearchParameter-mii-sp-icu-device-property-type.html
 [mii-sp-icu-devicemetric-source]: SearchParameter-mii-sp-icu-devicemetric-source.html
 [mii-sp-icu-observation-bodysite]: SearchParameter-mii-sp-icu-observation-bodysite.html

@@ -22,6 +22,6 @@ Description: "Procedure: ICU Procedure"
 * encounter = Reference(mii-exa-icu-encounter)
 * performedPeriod.start = "2023-08-23T10:30:10+01:00"
 * performedPeriod.end = "2023-09-22T10:30:10+01:00"
-* recorder = Reference(mii-exa-icu-patient) // Sinnvoller wäre hier ein Practitioner?
+* recorder = Reference(mii-exa-icu-practitioner)
 * bodySite.coding = $sct#1234 // Welcher Code ist hier passend?
 * note.text = "Beispielhafte Notiz zum extrakorporalen Verfahren."
