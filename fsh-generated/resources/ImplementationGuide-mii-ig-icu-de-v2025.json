@@ -496,6 +496,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung"
         },
         "name": "MII PR ICU Parameter von Beatmung",
@@ -667,6 +675,13 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
         },
         "name": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII SD ICU Herzfrequenz",
         "exampleBoolean": false
       },
       {
