@@ -256,20 +256,12 @@
     "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-peds-babymilkintake.json",
-    "fshName": "MII_PR_ICU_Bilanz_PEDS_BabyMilkIntake",
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-milch-einfuhr.json",
+    "fshName": "MII_PR_ICU_Bilanz_Milch_Einfuhr",
     "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_PEDS_BabyMilkIntake.fsh",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Milch_Einfuhr.fsh",
     "startLine": 6,
-    "endLine": 40
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-peds-specimen-milkintake.json",
-    "fshName": "MII_PR_ICU_Bilanz_PEDS_Specimen_MilkIntake",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_PEDS_Specimen_MilkIntake.fsh",
-    "startLine": 1,
-    "endLine": 14
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz.json",
@@ -472,6 +464,14 @@
     "endLine": 116
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-score-numerische-ratingskala.json",
+    "fshName": "MII_PR_ICU_Score_Numerische_Ratingskala",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Numerische_Ratingskala.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-score-rass.json",
     "fshName": "MII_PR_ICU_Score_RASS",
     "fshType": "Profile",
@@ -480,28 +480,20 @@
     "endLine": 72
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-schmerz-nrs.json",
-    "fshName": "MII_PR_ICU_Score_Schmerz_NRS",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Schmerz_NRS.fsh",
-    "startLine": 1,
-    "endLine": 46
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-schmerz-vas.json",
-    "fshName": "MII_PR_ICU_Score_Schmerz_VAS",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Schmerz_VAS.fsh",
-    "startLine": 1,
-    "endLine": 47
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-score-sofa.json",
     "fshName": "MII_PR_ICU_Score_SOFA",
     "fshType": "Profile",
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_SOFA.fsh",
     "startLine": 1,
     "endLine": 104
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-score-visuelle-analogskala.json",
+    "fshName": "MII_PR_ICU_Score_Visuelle_Analogskala",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Visuelle_Analogskala.fsh",
+    "startLine": 1,
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-score.json",
@@ -525,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenform.fsh",
     "startLine": 10,
-    "endLine": 41
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.json",
@@ -984,8 +976,8 @@
     "endLine": 14
   },
   {
-    "outputFile": "ValueSet-mii-vs-icu-peds-milkbase.json",
-    "fshName": "MII_VS_ICU_PEDS_MilkBase",
+    "outputFile": "ValueSet-mii-vs-icu-milchart.json",
+    "fshName": "MII_VS_ICU_Milchart",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_PEDS_MilkBase.fsh",
     "startLine": 1,

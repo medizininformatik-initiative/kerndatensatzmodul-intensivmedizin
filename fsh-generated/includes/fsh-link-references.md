@@ -30,8 +30,7 @@
 [MII_PR_ICU_Bilanz_Gesamte_Ausfuhr]: StructureDefinition-mii-pr-icu-bilanz-gesamte-ausfuhr.html
 [MII_PR_ICU_Bilanz_Gesamte_Einfuhr]: StructureDefinition-mii-pr-icu-bilanz-gesamte-einfuhr.html
 [MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz]: StructureDefinition-mii-pr-icu-bilanz-gesamte-tages-bilanz.html
-[MII_PR_ICU_Bilanz_PEDS_BabyMilkIntake]: StructureDefinition-mii-pr-icu-bilanz-peds-babymilkintake.html
-[MII_PR_ICU_Bilanz_PEDS_Specimen_MilkIntake]: StructureDefinition-mii-pr-icu-bilanz-peds-specimen-milkintake.html
+[MII_PR_ICU_Bilanz_Milch_Einfuhr]: StructureDefinition-mii-pr-icu-bilanz-milch-einfuhr.html
 [MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet]: StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html
 [MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html
 [MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html
@@ -63,13 +62,13 @@
 [MII_PR_ICU_Parameter_Von_Beatmung]: StructureDefinition-mii-pr-vent-icu-parameter-von-beatmung.html
 [MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren]: StructureDefinition-mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren.html
 [MII_PR_ICU_Positiv_Endexpiratorischer_Druck]: StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.html
-[MII_PR_ICU_Score_Schmerz_NRS]: StructureDefinition-mii-pr-icu-score-schmerz-nrs.html
-[MII_PR_ICU_Score_Schmerz_VAS]: StructureDefinition-mii-pr-icu-score-schmerz-vas.html
 [MII_PR_ICU_Score]: StructureDefinition-mii-pr-icu-score.html
 [MII_PR_ICU_Score_CAM_ICU]: StructureDefinition-mii-pr-icu-score-cam-icu.html
 [MII_PR_ICU_Score_ICDSC]: StructureDefinition-mii-pr-icu-score-icdsc.html
+[MII_PR_ICU_Score_Numerische_Ratingskala]: StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html
 [MII_PR_ICU_Score_RASS]: StructureDefinition-mii-pr-icu-score-rass.html
 [MII_PR_ICU_Score_SOFA]: StructureDefinition-mii-pr-icu-score-sofa.html
+[MII_PR_ICU_Score_Visuelle_Analogskala]: StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html
 [MII_PR_ICU_Spontane_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.html
 [MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html
 [MII_PR_ICU_Spontanes_Atemzugvolumen]: StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.html
@@ -108,7 +107,7 @@
 [MII_VS_ICU_Delirium_Interpretation]: ValueSet-mii-vs-icu-delirium-interpretation.html
 [MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.html
 [MII_VS_ICU_Method_Observation_Blutdruck]: ValueSet-mii-vs-icu-method-observation-blutdruck.html
-[MII_VS_ICU_PEDS_MilkBase]: ValueSet-mii-vs-icu-peds-milkbase.html
+[MII_VS_ICU_Milchart]: ValueSet-mii-vs-icu-milchart.html
 [MII_VS_ICU_Present_Absent]: ValueSet-mii-vs-icu-present-absent.html
 [MII_VS_ICU_Pupille_BodySite]: ValueSet-mii-vs-icu-pupille-bodysite.html
 [MII_VS_ICU_Pupillenform_Regularitaet_LOINC]: ValueSet-mii-vs-icu-pupillenform-regularitaet-loinc.html

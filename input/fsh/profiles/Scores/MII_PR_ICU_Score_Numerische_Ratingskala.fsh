@@ -1,14 +1,14 @@
-Profile: MII_PR_ICU_Score_Schmerz_NRS
+Profile: MII_PR_ICU_Score_Numerische_Ratingskala
 Parent: Observation
-Id: mii-pr-icu-score-schmerz-nrs
-Title: "MII PR ICU Schmerzscore - Numerische Ratingskala (NRS)"
+Id: mii-pr-icu-score-numerische-ratingskala
+Title: "MII PR ICU Score Numerische Ratingskala"
 Description: "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.
 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.
 Der Score wird als ganzzahliger Wert dokumentiert."
 
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-schmerz-nrs"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
 * ^version = "2026.0.0"
 * ^status = #draft
 
@@ -43,8 +43,8 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 
 * value[x] 1..1 MS
 * value[x] only integer
-* valueInteger >= 0
-* valueInteger <= 10
+//* valueInteger >= 0
+//* valueInteger <= 10
 * valueInteger ^short = "NRS-Wert (0-10)"
 * valueInteger ^definition = "Ganzzahliger NRS-Score im Bereich 0-10.
 

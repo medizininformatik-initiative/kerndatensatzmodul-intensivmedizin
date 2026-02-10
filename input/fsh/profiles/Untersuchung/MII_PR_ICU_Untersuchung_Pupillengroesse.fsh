@@ -34,8 +34,8 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * bodySite from MII_VS_ICU_Pupille_BodySite (required)
 * dataAbsentReason 0..1 MS
 
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept only integer or CodeableConcept
+* value[x] 1..1 MS
+* value[x] only integer or CodeableConcept
 * valueCodeableConcept from MII_VS_ICU_Pupillengroesse (required)
 
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"

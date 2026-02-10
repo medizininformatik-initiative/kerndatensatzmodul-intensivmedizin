@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Milchart",
+  "id": "mii-vs-icu-milchart",
+  "title": "MII VS ICU Milchart",
+  "description": "ValueSet zur Kodierung des Basisprodukts der Milchaufnahme in der Paediatrie (ohne Additive).",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-milchart",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "226789007",
+            "display": "Breast milk (substance)"
+          },
+          {
+            "code": "226790003",
+            "display": "Expressed breast milk (substance)"
+          },
+          {
+            "code": "1303524006",
+            "display": "Pasteurized maternal milk (substance)"
+          },
+          {
+            "code": "819974004",
+            "display": "Donor breast milk (substance)"
+          },
+          {
+            "code": "386127005",
+            "display": "Formula milk (substance)"
+          },
+          {
+            "code": "284458003",
+            "display": "Casein-based baby milk (substance)"
+          },
+          {
+            "code": "284459006",
+            "display": "Low birth weight baby milk (substance)"
+          },
+          {
+            "code": "284461002",
+            "display": "Whey-based baby milk (substance)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -89,13 +89,22 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",
         "path": "Observation.value[x]",
         "sliceName": "valueCodeableConcept",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -112,7 +121,6 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
-        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillengroesse"

@@ -3,14 +3,14 @@ Description: "Entweder valueQuantity oder dataAbsentReason MUSS vorhanden sein, 
 Expression: "value.exists() xor dataAbsentReason.exists()"
 Severity: #error
 
-Profile: MII_PR_ICU_Bilanz_PEDS_BabyMilkIntake
+Profile: MII_PR_ICU_Bilanz_Milch_Einfuhr
 Parent: Observation
-Id: mii-pr-icu-bilanz-peds-babymilkintake
-Title: "MII PR ICU Bilanz PEDS Baby Milk Intake"
+Id: mii-pr-icu-bilanz-milch-einfuhr
+Title: "MII PR ICU Bilanz Milch Einfuhr"
 Description: "Bilanz-Observation zur Dokumentation der Milchaufnahme bei Saeuglingen. Die Art der Aufnahme wird ueber ein referenziertes Specimen abgebildet."
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-peds-babymilkintake"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-milch-einfuhr"
 * ^version = "2026.0.0"
 * ^status = #draft
 * ^experimental = false
@@ -33,8 +33,5 @@ Description: "Bilanz-Observation zur Dokumentation der Milchaufnahme bei Saeugli
 * valueQuantity.code = #mL
 * valueQuantity.unit = "mL"
 * dataAbsentReason 0..1 MS
-
-* specimen 0..1 MS
-* specimen only Reference(MII_PR_ICU_Bilanz_PEDS_Specimen_MilkIntake)
 
 * obeys mii-peds-milk-intake-1

@@ -1,13 +1,13 @@
-Profile: MII_PR_ICU_Score_Schmerz_VAS
+Profile: MII_PR_ICU_Score_Visuelle_Analogskala
 Parent: Observation
-Id: mii-pr-icu-score-schmerz-vas
-Title: "MII PR ICU Schmerzscore - Visuelle Analogskala (VAS)"
+Id: mii-pr-icu-score-visuelle-analogskala
+Title: "MII PR ICU Score Visuelle Analogskala"
 Description: "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).
 Der Score wird als quantitativer Wert dokumentiert."
 
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-schmerz-vas"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
 * ^version = "2026.0.0"
 * ^status = #draft
 
@@ -44,8 +44,8 @@ Der Score wird als quantitativer Wert dokumentiert."
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.value 1..1
-* valueQuantity.value >= 0
-* valueQuantity.value <= 10
+//* valueQuantity.value >= 0
+//* valueQuantity.value <= 10
 * valueQuantity.system 1..1
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1
@@ -53,10 +53,12 @@ Der Score wird als quantitativer Wert dokumentiert."
 * valueQuantity.unit 1..1
 * valueQuantity.unit = "{score}"
 * valueQuantity ^short = "VAS-Wert als Score (0-10)"
-* valueQuantity ^definition = "VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).\n
+* valueQuantity ^definition = "VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).
+
 Semantik:
 - Beobachteter Wert: Visual analog scale score (SNOMED CT 446661009)
-- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)\n
+- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)
+
 Hinweis:
 In der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert."
 

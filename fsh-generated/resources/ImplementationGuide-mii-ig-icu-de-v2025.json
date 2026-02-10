@@ -284,18 +284,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-peds-babymilkintake"
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-milch-einfuhr"
         },
-        "name": "MII PR ICU Bilanz PEDS Baby Milk Intake",
+        "name": "MII PR ICU Bilanz Milch Einfuhr",
         "description": "Bilanz-Observation zur Dokumentation der Milchaufnahme bei Saeuglingen. Die Art der Aufnahme wird ueber ein referenziertes Specimen abgebildet.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-peds-specimen-milkintake"
-        },
-        "name": "MII PR ICU Bilanz PEDS Specimen Milk Intake",
-        "description": "Specimen zur Charakterisierung des Basisprodukts der Milchaufnahme; optionale Additive werden ueber eine Extension abgebildet.",
         "exampleBoolean": false
       },
       {
@@ -517,22 +509,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-schmerz-nrs"
-        },
-        "name": "MII PR ICU Schmerzscore - Numerische Ratingskala (NRS)",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-schmerz-vas"
-        },
-        "name": "MII PR ICU Schmerzscore - Visuelle Analogskala (VAS)",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Score wird als quantitativer Wert dokumentiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score"
         },
         "name": "MII PR ICU Score",
@@ -557,6 +533,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
+        },
+        "name": "MII PR ICU Score Numerische Ratingskala",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-rass"
         },
         "name": "MII PR ICU Score RASS",
@@ -568,6 +552,14 @@
         },
         "name": "MII PR ICU Score SOFA",
         "description": "Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
+        },
+        "name": "MII PR ICU Score Visuelle Analogskala",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Score wird als quantitativer Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -860,9 +852,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-peds-milkbase"
+          "reference": "ValueSet/mii-vs-icu-milchart"
         },
-        "name": "MII VS ICU PEDS Milk Base",
+        "name": "MII VS ICU Milchart",
         "description": "ValueSet zur Kodierung des Basisprodukts der Milchaufnahme in der Paediatrie (ohne Additive).",
         "exampleBoolean": false
       },

@@ -115,7 +115,6 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
   * ^short = "Symptom fluctuation"
   * ^definition = "Fluctuation of manifestation of any item or symptom over 24 hours"
 
-
 // Invariants
 Invariant: icdsc-score-range
 Description: "ICDSC total score must be between 0 and 8"
