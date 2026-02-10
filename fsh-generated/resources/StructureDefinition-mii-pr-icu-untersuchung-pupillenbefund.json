@@ -1,0 +1,214 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-untersuchung-pupillenbefund",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
+  "version": "2025.0.4",
+  "name": "MII_PR_ICU_Untersuchung_Pupillenbefund",
+  "title": "MII PR ICU Untersuchung Pupillenbefund",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:Snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "Snomed",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:Snomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:Snomed.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "247010007"
+      },
+      {
+        "id": "Observation.code.coding:Snomed.display",
+        "path": "Observation.code.coding.display",
+        "patternString": "Pupil finding (finding)"
+      },
+      {
+        "id": "Observation.code.coding:Loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "Loinc",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:Loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:Loinc.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "80310-6"
+      },
+      {
+        "id": "Observation.code.coding:Loinc.display",
+        "path": "Observation.code.coding.display",
+        "patternString": "Pupil assessment panel"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "closed"
+        },
+        "short": "References to member observations forming the pupillary examination panel.",
+        "comment": "Dieses Panel bündelt die Einzelbefunde zur Pupillenuntersuchung via hasMember. Erwartet werden: (1) Pupillary Light Reaction (per eye) - i.d.R. 2 Instanzen (links/rechts), (2) Pupillary Size, (3) Pupil Shape/Regularity, (4) Pupillary Symmetry. Keine zusätzliche Interpretation im Panel selbst.",
+        "min": 4,
+        "max": "5",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:PupillaryLightReaction",
+        "path": "Observation.hasMember",
+        "sliceName": "PupillaryLightReaction",
+        "short": "Member observations: pupillary light reaction per eye (1..2).",
+        "min": 1,
+        "max": "2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:PupillarySize",
+        "path": "Observation.hasMember",
+        "sliceName": "PupillarySize",
+        "short": "Member observation: categorical pupillary size (both pupils).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:PupilShape",
+        "path": "Observation.hasMember",
+        "sliceName": "PupilShape",
+        "short": "Member observation: pupil shape/regularity (both pupils).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:PupillarySymmetry",
+        "path": "Observation.hasMember",
+        "sliceName": "PupillarySymmetry",
+        "short": "Member observation: pupillary symmetry (isocoria/anisocoria).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

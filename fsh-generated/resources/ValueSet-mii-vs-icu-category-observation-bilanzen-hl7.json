@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_Category_Observation_Bilanzen_HL7",
+  "id": "mii-vs-icu-category-observation-bilanzen-hl7",
+  "title": "MII VS ICU Category Observation Bilanzen HL7",
+  "description": "ValueSet defining HL7 observation categories for ICU Bilanzen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-02-11",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "concept": [
+          {
+            "code": "vital-signs",
+            "display": "Vital-Signs"
+          },
+          {
+            "code": "exam",
+            "display": "Exam"
+          },
+          {
+            "code": "therapy",
+            "display": "Therapy"
+          }
+        ]
+      }
+    ]
+  }
+}

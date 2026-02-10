@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Delirium_Interpretation",
+  "id": "mii-vs-icu-delirium-interpretation",
+  "title": "MII VS ICU Delirium Interpretation",
+  "description": "Delirium status interpretations",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation",
+  "version": "2025.0.4",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "2776000",
+            "display": "Delirium (disorder)"
+          },
+          {
+            "code": "191507002",
+            "display": "Subacute delirium (disorder)"
+          },
+          {
+            "code": "xxx",
+            "display": "No delirium (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

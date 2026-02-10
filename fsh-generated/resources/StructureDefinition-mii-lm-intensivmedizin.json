@@ -1,0 +1,629 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-lm-intensivmedizin",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin",
+  "version": "2025.0.4",
+  "name": "MII_LM_ICU",
+  "title": "MII Logical Model Intensivmedizin",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Logische Repräsentation des Erweiterungsmodul Intensivmedizin",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Intensivmedizin",
+        "path": "Intensivmedizin",
+        "short": "MII Logical Model Intensivmedizin",
+        "definition": "Logische Repräsentation des Erweiterungsmodul Intensivmedizin"
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten",
+        "short": "Allgemeine Gruppe für die Überwachungs- und Messdaten der mit dem Patienten verbundenen Geräte, insbesondere Vitaldaten und Beatmungswerte, aber auch z.B. die 24h-Flüssigkeitsbilanz. Hinweis: Blutgaswerte werden wie Laborwerte behandelt.",
+        "definition": "Allgemeine Gruppe für die Überwachungs- und Messdaten der mit dem Patienten verbundenen Geräte, insbesondere Vitaldaten und Beatmungswerte, aber auch z.B. die 24h-Flüssigkeitsbilanz. Hinweis: Blutgaswerte werden wie Laborwerte behandelt.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Parameter",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Parameter",
+        "short": "Parameter wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "definition": "Parameter wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Parameter.ParameterCode",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Parameter.ParameterCode",
+        "short": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "definition": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Parameter.ParameterName",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Parameter.ParameterName",
+        "short": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "definition": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.KlinischRelevanteZeit",
+        "short": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "definition": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.KlinischRelevanteZeit"
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Messwert",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Messwert",
+        "short": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "definition": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich",
+        "short": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "definition": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich.Typ",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich.Typ",
+        "short": "Typ des Referenzbereichs",
+        "definition": "Typ des Referenzbereichs",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich.Obergrenze",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich.Obergrenze",
+        "short": "Obergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Obergrenze)",
+        "definition": "Obergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Obergrenze)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich.Untergrenze",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Referenzbereich.Untergrenze",
+        "short": "Untergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Untergrenze)",
+        "definition": "Untergrenze des Referenzbereichs (optional, bei Referenzbereichen ohne Untergrenze)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Interpretation",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Interpretation",
+        "short": "Interpretations des Messwerts (Kennzeichen). Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet.",
+        "definition": "Interpretations des Messwerts (Kennzeichen). Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.MonitoringUndVitaldaten.Messmethode",
+        "path": "Intensivmedizin.MonitoringUndVitaldaten.Messmethode",
+        "short": "Siehe Intensivmedizin.Messmethode",
+        "definition": "Siehe Intensivmedizin.Messmethode",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.Messmethode"
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren",
+        "short": "Strukturelement. In der untergeordneten Struktur sind alle Daten modiliert, die im Rahmen eines extrakorporalen Verfahrens anfallen.",
+        "definition": "Strukturelement. In der untergeordneten Struktur sind alle Daten modiliert, die im Rahmen eines extrakorporalen Verfahrens anfallen.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren",
+        "short": "Art bzw. Bezeichnung des extrakorporalen Verfahrens",
+        "definition": "Art bzw. Bezeichnung des extrakorporalen Verfahrens",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren.VerfahrenName",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren.VerfahrenName",
+        "short": "Name bzw. Bezeichnung des Verfahrens",
+        "definition": "Name bzw. Bezeichnung des Verfahrens",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren.VerfahrenCode",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren.VerfahrenCode",
+        "short": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend): ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "definition": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend): ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.Verfahren.KlinischRelevanteZeit",
+        "short": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "definition": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.KlinischRelevanteZeit"
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.ParameterGemessen",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.ParameterGemessen",
+        "short": "Siehe Intensivmedizin.ParameterGemessen",
+        "definition": "Siehe Intensivmedizin.ParameterGemessen",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.ParameterGemessen"
+      },
+      {
+        "id": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.ParameterEingestellt",
+        "path": "Intensivmedizin.ParameterVonExtrakorporalenVerfahren.ParameterEingestellt",
+        "short": "Siehe Intensivmedizin.ParameterEingestellt",
+        "definition": "Siehe Intensivmedizin.ParameterEingestellt",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.ParameterEingestellt"
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte",
+        "path": "Intensivmedizin.Beatmungswerte",
+        "short": "Strukturelement. In der untergeordneten Struktur sind alle Daten modiliert, die im Rahmen eines extrakorporalen Verfahrens anfallen.",
+        "definition": "Strukturelement. In der untergeordneten Struktur sind alle Daten modiliert, die im Rahmen eines extrakorporalen Verfahrens anfallen.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Atemweg",
+        "path": "Intensivmedizin.Beatmungswerte.Atemweg",
+        "short": "Physischer Weg, über den die Beatmung erfolgt.",
+        "definition": "Physischer Weg, über den die Beatmung erfolgt.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Atemweg.AtemwegName",
+        "path": "Intensivmedizin.Beatmungswerte.Atemweg.AtemwegName",
+        "short": "Bezeichnung des Atemweges z.B. \"Endotracheal tube\"",
+        "definition": "Bezeichnung des Atemweges z.B. \"Endotracheal tube\"",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Atemweg.AtemwegCode",
+        "path": "Intensivmedizin.Beatmungswerte.Atemweg.AtemwegCode",
+        "short": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "definition": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Atemweg.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.Beatmungswerte.Atemweg.KlinischRelevanteZeit",
+        "short": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "definition": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.KlinischRelevanteZeit"
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Beatmungsart",
+        "path": "Intensivmedizin.Beatmungswerte.Beatmungsart",
+        "short": "Art bzw. Bezeichnung der Beatmung",
+        "definition": "Art bzw. Bezeichnung der Beatmung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Beatmungsart.BeatmungsartName",
+        "path": "Intensivmedizin.Beatmungswerte.Beatmungsart.BeatmungsartName",
+        "short": "Name bzw. Bezeichnung der Beatmungsmethode",
+        "definition": "Name bzw. Bezeichnung der Beatmungsmethode",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Beatmungsart.BeatmungsartCode",
+        "path": "Intensivmedizin.Beatmungswerte.Beatmungsart.BeatmungsartCode",
+        "short": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "definition": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Beatmungswerte.Beatmungsart.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.Beatmungswerte.Beatmungsart.KlinischRelevanteZeit",
+        "short": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "definition": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.KlinischRelevanteZeit"
+      },
+      {
+        "id": "Intensivmedizin.Messmethode",
+        "path": "Intensivmedizin.Messmethode",
+        "short": "Methode der Messung",
+        "definition": "Methode der Messung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Messmethode.Methode",
+        "path": "Intensivmedizin.Messmethode.Methode",
+        "short": "Methode der Messung",
+        "definition": "Methode der Messung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Messmethode.Geraet",
+        "path": "Intensivmedizin.Messmethode.Geraet",
+        "short": "Einstellungen und Bezeichnung des Geräts mit dem die Messung durchgeführt wird.",
+        "definition": "Einstellungen und Bezeichnung des Geräts mit dem die Messung durchgeführt wird.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Messmethode.Geraet.Geraetebezeichnung",
+        "path": "Intensivmedizin.Messmethode.Geraet.Geraetebezeichnung",
+        "short": "Bezeichnung ggf. Handelsname des medizinischen Gerätes",
+        "definition": "Bezeichnung ggf. Handelsname des medizinischen Gerätes",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Messmethode.Geraet.Geraeteversion",
+        "path": "Intensivmedizin.Messmethode.Geraet.Geraeteversion",
+        "short": "Version des Gerätebezeichners z.B. Firmware-Version",
+        "definition": "Version des Gerätebezeichners z.B. Firmware-Version",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.Messmethode.Geraet.Geraetekonfiguration",
+        "path": "Intensivmedizin.Messmethode.Geraet.Geraetekonfiguration",
+        "short": "Version des Gerätebezeichners z.B. Firmware-Version",
+        "definition": "Version des Gerätebezeichners z.B. Firmware-Version",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.KlinischRelevanteZeit",
+        "short": "relevanter Zeitpunkt und/oder relevanter Zeitraum",
+        "definition": "relevanter Zeitpunkt und/oder relevanter Zeitraum",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.KlinischRelevanteZeit.ZeitraumDerWertermittlung",
+        "path": "Intensivmedizin.KlinischRelevanteZeit.ZeitraumDerWertermittlung",
+        "short": "Zeitraum über den ein Wert generiert oder argregiert wurde. Beispiele: periphere Sauerstoffmessung gemittelt über 8 Sekunden, Kristalloide Bilanz über 24h, Ausfuhr Urin über 24h, Liegedauer Eines Endotrachealtubus",
+        "definition": "Zeitraum über den ein Wert generiert oder argregiert wurde. Beispiele: periphere Sauerstoffmessung gemittelt über 8 Sekunden, Kristalloide Bilanz über 24h, Ausfuhr Urin über 24h, Liegedauer Eines Endotrachealtubus",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.KlinischRelevanteZeit.ZeitpunktDerWertermittlung",
+        "path": "Intensivmedizin.KlinischRelevanteZeit.ZeitpunktDerWertermittlung",
+        "short": "Zeitstempel der Messung bzw. Zeitpunkt der klinischen Wertermittlung",
+        "definition": "Zeitstempel der Messung bzw. Zeitpunkt der klinischen Wertermittlung",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterGemessen",
+        "path": "Intensivmedizin.ParameterGemessen",
+        "short": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "definition": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterGemessen.ParameterName",
+        "path": "Intensivmedizin.ParameterGemessen.ParameterName",
+        "short": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "definition": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterGemessen.ParameterCode",
+        "path": "Intensivmedizin.ParameterGemessen.ParameterCode",
+        "short": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "definition": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterGemessen.Messwert",
+        "path": "Intensivmedizin.ParameterGemessen.Messwert",
+        "short": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "definition": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterGemessen.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.ParameterGemessen.KlinischRelevanteZeit",
+        "short": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "definition": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterGemessen.Messmethode",
+        "path": "Intensivmedizin.ParameterGemessen.Messmethode",
+        "short": "Siehe Intensivmedizin.Messmethode",
+        "definition": "Siehe Intensivmedizin.Messmethode",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#Intensivmedizin.Messmethode"
+      },
+      {
+        "id": "Intensivmedizin.ParameterEingestellt",
+        "path": "Intensivmedizin.ParameterEingestellt",
+        "short": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "definition": "Wert der Analyse. Verschiedene Datentypen wie Quantität, Proportion, Ordinalskala oder Freitext möglich, auch in Kombination mit Einheiten.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterEingestellt.ParameterName",
+        "path": "Intensivmedizin.ParameterEingestellt.ParameterName",
+        "short": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "definition": "Parametername wie z.B. Herzfrequenz oder Pulsfrequenz",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterEingestellt.ParameterCode",
+        "path": "Intensivmedizin.ParameterEingestellt.ParameterCode",
+        "short": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "definition": "Semantische Annotation. Primärcodes (mindestens einer sollte immer vorhanden sein): LOINC, SNOMED CT, Arzneimittel-Stoffkatalog-Nummer (ASK). Sekundärcodes (sollten vorhanden sein, wenn zutreffend):  ISO/IEEE 11073-10101 ( BMBF-Projekt OR.NET 1), DIVI Kerndatensatz Intensivmedizin (2010) 2, ggf. Referenz DIVI-Register Intensivmedizin, AKTIN-Codierung/Referenz 3, ggf. Referenz Kerndatensatz Anästhesiologie, ggf. Referenz MPOG",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterEingestellt.Wert",
+        "path": "Intensivmedizin.ParameterEingestellt.Wert",
+        "short": "Eingestellter Wert, Gerätekonfiguration",
+        "definition": "Eingestellter Wert, Gerätekonfiguration",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Intensivmedizin.ParameterEingestellt.KlinischRelevanteZeit",
+        "path": "Intensivmedizin.ParameterEingestellt.KlinischRelevanteZeit",
+        "short": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "definition": "Siehe Intensivmedizin.KlinischRelevanteZeit",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

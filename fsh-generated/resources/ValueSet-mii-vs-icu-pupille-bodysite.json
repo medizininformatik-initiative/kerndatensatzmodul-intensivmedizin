@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Pupille_BodySite",
+  "id": "mii-vs-icu-pupille-bodysite",
+  "title": "MII VS ICU Pupille BodySite",
+  "description": "Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupille-bodysite",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "16089004",
+            "display": "Structure of pupil of left eye"
+          },
+          {
+            "code": "52378001",
+            "display": "Structure of pupil of right eye"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Score_RASS",
+  "id": "mii-vs-icu-score-rass",
+  "title": "MII VS ICU Score RASS",
+  "description": "Value set for RASS Score",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass",
+  "version": "2025.0.4",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA17287-6",
+            "display": "Combative +4"
+          },
+          {
+            "code": "LA33959-0",
+            "display": "Very agitated +3"
+          },
+          {
+            "code": "LA33960-8",
+            "display": "Agitated +2"
+          },
+          {
+            "code": "LA16474-1",
+            "display": "Restless +1"
+          },
+          {
+            "code": "LA33962-4",
+            "display": "Alert and calm 0"
+          },
+          {
+            "code": "LA33963-2",
+            "display": "Drowsy -1"
+          },
+          {
+            "code": "LA33964-0",
+            "display": "Light sedation -2"
+          },
+          {
+            "code": "LA33965-7",
+            "display": "Moderate sedation -3"
+          },
+          {
+            "code": "LA33966-5",
+            "display": "Deep sedation -4"
+          },
+          {
+            "code": "LA33967-3",
+            "display": "Unarousable -5"
+          }
+        ]
+      }
+    ]
+  }
+}
