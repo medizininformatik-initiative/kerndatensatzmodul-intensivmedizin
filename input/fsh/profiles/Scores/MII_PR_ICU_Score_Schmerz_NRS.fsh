@@ -43,8 +43,6 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 
 * value[x] 1..1 MS
 * value[x] only integer
-* valueInteger >= 0
-* valueInteger <= 10
 * valueInteger ^short = "NRS-Wert (0-10)"
 * valueInteger ^definition = "Ganzzahliger NRS-Score im Bereich 0-10.
 

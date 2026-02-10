@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\nDer Score wird als ganzzahliger Wert dokumentiert.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -141,8 +141,15 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "short": "NRS-Wert (0-10)",
+        "definition": "Ganzzahliger NRS-Score im Bereich 0-10.\n\nDer Wertebereich entspricht den LOINC Preferred Answer Lists für LOINC 72514-3:\n- LL2335-9 „Numeric rating scale from 0-10“\n- LL5812-4 „Pain severity 0-10 verbal numeric rating scale“",
         "min": 1,
         "type": [
           {
@@ -150,6 +157,32 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.method.coding.system",
+        "path": "Observation.method.coding.system",
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.method.coding.code",
+        "path": "Observation.method.coding.code",
+        "patternCode": "1284852002"
+      },
+      {
+        "id": "Observation.method.coding.display",
+        "path": "Observation.method.coding.display",
+        "patternString": "Numeric Pain Rating Scale (assessment scale)"
       }
     ]
   }

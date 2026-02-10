@@ -33,7 +33,16 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * dataAbsentReason 0..1 MS
 
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept from MII_VS_ICU_Pupillenform_Regularitaet (required)
+
+* valueCodeableConcept.coding ^slicing.discriminator.type = #value
+* valueCodeableConcept.coding ^slicing.discriminator.path = "system"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    Snomed 1..1 MS and
+    Loinc  1..1 MS
+
+* valueCodeableConcept.coding[Snomed] from MII_VS_ICU_Pupillenform_Regularitaet_SNOMED (required)
+* valueCodeableConcept.coding[Loinc] from MII_VS_ICU_Pupillenform_Regularitaet_LOINC (required)
 
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
 * valueCodeableConcept ^constraint[=].severity = #error

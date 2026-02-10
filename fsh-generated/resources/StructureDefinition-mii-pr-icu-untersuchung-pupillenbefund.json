@@ -119,6 +119,11 @@
         "patternString": "Pupil assessment panel"
       },
       {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "max": "0"
+      },
+      {
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
         "slicing": {

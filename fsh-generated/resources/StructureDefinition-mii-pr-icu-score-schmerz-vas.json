@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Score wird als quantitativer Wert dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Score wird als quantitativer Wert dokumentiert.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -138,8 +138,15 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "short": "VAS-Wert als Score (0-10)",
+        "definition": "VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).\n\nSemantik:\n- Beobachteter Wert: Visual analog scale score (SNOMED CT 446661009)\n- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)\n\nHinweis:\nIn der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert.",
         "min": 1,
         "type": [
           {
@@ -152,6 +159,50 @@
         "id": "Observation.value[x].value",
         "path": "Observation.value[x].value",
         "min": 1
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1,
+        "patternString": "{score}"
+      },
+      {
+        "id": "Observation.value[x].system",
+        "path": "Observation.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "min": 1,
+        "patternCode": "{score}"
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.method.coding.system",
+        "path": "Observation.method.coding.system",
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.method.coding.code",
+        "path": "Observation.method.coding.code",
+        "patternCode": "273903006"
+      },
+      {
+        "id": "Observation.method.coding.display",
+        "path": "Observation.method.coding.display",
+        "patternString": "Visual analog scale (assessment scale)"
       }
     ]
   }

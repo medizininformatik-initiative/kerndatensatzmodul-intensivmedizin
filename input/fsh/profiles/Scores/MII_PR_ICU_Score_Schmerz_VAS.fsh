@@ -44,8 +44,6 @@ Der Score wird als quantitativer Wert dokumentiert."
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.value 1..1
-* valueQuantity.value >= 0
-* valueQuantity.value <= 10
 * valueQuantity.system 1..1
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1

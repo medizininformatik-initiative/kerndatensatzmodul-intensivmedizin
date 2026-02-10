@@ -496,6 +496,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung"
         },
         "name": "MII PR ICU Parameter von Beatmung",
@@ -520,7 +528,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-schmerz-nrs"
         },
         "name": "MII PR ICU Schmerzscore - Numerische Ratingskala (NRS)",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\nDer Score wird als ganzzahliger Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -528,7 +536,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-schmerz-vas"
         },
         "name": "MII PR ICU Schmerzscore - Visuelle Analogskala (VAS)",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Score wird als quantitativer Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Score wird als quantitativer Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -667,6 +675,13 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
         },
         "name": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII SD ICU Herzfrequenz",
         "exampleBoolean": false
       },
       {
