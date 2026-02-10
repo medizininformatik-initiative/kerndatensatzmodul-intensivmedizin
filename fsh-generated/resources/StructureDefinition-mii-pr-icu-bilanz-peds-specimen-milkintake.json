@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-bilanz-peds-specimen-milkintake",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-peds-specimen-milkintake",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_Bilanz_PEDS_Specimen_MilkIntake",
+  "title": "MII PR ICU Bilanz PEDS Specimen Milk Intake",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Specimen zur Charakterisierung des Basisprodukts der Milchaufnahme; optionale Additive werden ueber eine Extension abgebildet.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-peds-milkbase"
+        }
+      }
+    ]
+  }
+}

@@ -8,10 +8,12 @@ Parent: Observation
 Id: mii-pr-icu-bilanz-peds-babymilkintake
 Title: "MII PR ICU Bilanz PEDS Baby Milk Intake"
 Description: "Bilanz-Observation zur Dokumentation der Milchaufnahme bei Saeuglingen. Die Art der Aufnahme wird ueber ein referenziertes Specimen abgebildet."
-* ^publisher = "Medizininformatik Initiative"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-peds-babymilkintake"
+* ^version = "2026.0.0"
 * ^status = #draft
 * ^experimental = false
-* ^version = "2026.0.0"
 
 * code 1..1 MS
 * code.coding 1..1 MS

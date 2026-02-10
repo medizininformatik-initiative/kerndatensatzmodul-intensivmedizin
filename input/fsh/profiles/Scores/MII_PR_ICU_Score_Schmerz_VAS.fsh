@@ -7,7 +7,7 @@ Der Score wird als quantitativer Wert dokumentiert."
 
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.pfad-fehlt-no.ch"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-schmerz-vas"
 * ^version = "2026.0.0"
 * ^status = #draft
 
@@ -53,16 +53,12 @@ Der Score wird als quantitativer Wert dokumentiert."
 * valueQuantity.unit 1..1
 * valueQuantity.unit = "{score}"
 * valueQuantity ^short = "VAS-Wert als Score (0-10)"
-* valueQuantity ^definition = """
-VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).
-
+* valueQuantity ^definition = "VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).\n
 Semantik:
 - Beobachteter Wert: Visual analog scale score (SNOMED CT 446661009)
-- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)
-
+- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)\n
 Hinweis:
-In der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert.
-"""
+In der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert."
 
 * method 0..1 MS
 * method.coding 1..1

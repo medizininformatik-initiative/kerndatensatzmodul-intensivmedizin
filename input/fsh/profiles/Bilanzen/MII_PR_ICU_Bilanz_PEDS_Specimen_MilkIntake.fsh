@@ -3,10 +3,12 @@ Parent: Specimen
 Id: mii-pr-icu-bilanz-peds-specimen-milkintake
 Title: "MII PR ICU Bilanz PEDS Specimen Milk Intake"
 Description: "Specimen zur Charakterisierung des Basisprodukts der Milchaufnahme; optionale Additive werden ueber eine Extension abgebildet."
-* ^publisher = "Medizininformatik Initiative"
+* insert PR_CS_VS_Version
+* insert Publisher
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-peds-specimen-milkintake"
+* ^version = "2026.0.0"
 * ^status = #draft
 * ^experimental = false
-* ^version = "2026.0.0"
 
 * type 1..1 MS
 * type from MII_VS_ICU_PEDS_MilkBase (required)

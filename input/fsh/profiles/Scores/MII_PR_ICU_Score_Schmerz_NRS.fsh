@@ -8,7 +8,7 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.pfad-fehlt-no.ch"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-schmerz-nrs"
 * ^version = "2026.0.0"
 * ^status = #draft
 
@@ -46,13 +46,11 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 * valueInteger >= 0
 * valueInteger <= 10
 * valueInteger ^short = "NRS-Wert (0-10)"
-* valueInteger ^definition = """
-Ganzzahliger NRS-Score im Bereich 0-10.
+* valueInteger ^definition = "Ganzzahliger NRS-Score im Bereich 0-10.
 
 Der Wertebereich entspricht den LOINC Preferred Answer Lists für LOINC 72514-3:
 - LL2335-9 „Numeric rating scale from 0-10“
-- LL5812-4 „Pain severity 0-10 verbal numeric rating scale“
-"""
+- LL5812-4 „Pain severity 0-10 verbal numeric rating scale“"
 
 * method 0..1 MS
 * method.coding 1..1
