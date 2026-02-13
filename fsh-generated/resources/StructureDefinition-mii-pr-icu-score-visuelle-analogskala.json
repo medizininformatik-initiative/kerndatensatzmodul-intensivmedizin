@@ -158,7 +158,9 @@
       {
         "id": "Observation.value[x].value",
         "path": "Observation.value[x].value",
-        "min": 1
+        "min": 1,
+        "minValueDecimal": 0,
+        "maxValueDecimal": 10
       },
       {
         "id": "Observation.value[x].unit",
