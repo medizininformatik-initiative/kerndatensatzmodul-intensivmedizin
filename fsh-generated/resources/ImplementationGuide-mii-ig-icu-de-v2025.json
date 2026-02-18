@@ -249,6 +249,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
         },
         "name": "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
@@ -256,9 +263,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Muttermilch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
         },
         "name": "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Spendermilch",
         "exampleBoolean": false
       },
       {
@@ -280,14 +308,6 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-gesamte-tages-bilanz"
         },
         "name": "MII PR ICU Bilanz Gesamte Tages Bilanz",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-milch-einfuhr"
-        },
-        "name": "MII PR ICU Bilanz Milch Einfuhr",
-        "description": "Bilanz-Observation zur Dokumentation der Milchaufnahme bei Saeuglingen. Die Art der Aufnahme wird ueber ein referenziertes Specimen abgebildet.",
         "exampleBoolean": false
       },
       {
@@ -536,7 +556,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
         },
         "name": "MII PR ICU Score Numerische Ratingskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\nDer Score wird als ganzzahliger Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -559,7 +579,15 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Score wird als quantitativer Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Score wird als quantitativer Wert dokumentiert.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
+        },
+        "name": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\r\nDer Score wird als quantitativer Wert dokumentiert.",
         "exampleBoolean": false
       },
       {

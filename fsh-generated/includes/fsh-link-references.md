@@ -25,12 +25,15 @@
 [MII_PR_ICU_Bilanz_Ausfuhr_Urin]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.html
 [MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html
 [MII_PR_ICU_Bilanz_Blutverlust]: StructureDefinition-mii-pr-icu-bilanz-blutverlust.html
+[MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html
 [MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html
+[MII_PR_ICU_Bilanz_Einfuhr_Muttermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.html
 [MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.html
+[MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html
+[MII_PR_ICU_Bilanz_Einfuhr_Spendermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.html
 [MII_PR_ICU_Bilanz_Gesamte_Ausfuhr]: StructureDefinition-mii-pr-icu-bilanz-gesamte-ausfuhr.html
 [MII_PR_ICU_Bilanz_Gesamte_Einfuhr]: StructureDefinition-mii-pr-icu-bilanz-gesamte-einfuhr.html
 [MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz]: StructureDefinition-mii-pr-icu-bilanz-gesamte-tages-bilanz.html
-[MII_PR_ICU_Bilanz_Milch_Einfuhr]: StructureDefinition-mii-pr-icu-bilanz-milch-einfuhr.html
 [MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet]: StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html
 [MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html
 [MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html
@@ -69,6 +72,7 @@
 [MII_PR_ICU_Score_RASS]: StructureDefinition-mii-pr-icu-score-rass.html
 [MII_PR_ICU_Score_SOFA]: StructureDefinition-mii-pr-icu-score-sofa.html
 [MII_PR_ICU_Score_Visuelle_Analogskala]: StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html
+[MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala]: StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html
 [MII_PR_ICU_Spontane_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.html
 [MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html
 [MII_PR_ICU_Spontanes_Atemzugvolumen]: StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.html

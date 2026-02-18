@@ -19,7 +19,7 @@ Der Score wird als quantitativer Wert dokumentiert."
 * category.coding.display = "Assessment"
 
 * code 1..1 MS
-* code.coding 1..* MS
+* code.coding 2..2 MS
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -32,8 +32,8 @@ Der Score wird als quantitativer Wert dokumentiert."
 * code.coding[Loinc].display = "Pain severity [Score] Visual analog score"
 
 * code.coding[Snomed].system = $sct
-* code.coding[Snomed].code = #446661009
-* code.coding[Snomed].display = "Visual analog scale score (observable entity)"
+* code.coding[Snomed].code = #273903006
+* code.coding[Snomed].display = "Visual analog scale (assessment scale) "
 
 * subject 1..1 MS
 
@@ -61,11 +61,5 @@ Semantik:
 
 Hinweis:
 In der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert."
-
-* method 0..1 MS
-* method.coding 1..1
-* method.coding.system = $sct
-* method.coding.code = #273903006
-* method.coding.display = "Visual analog scale (assessment scale)"
 
 * performer 0..* MS

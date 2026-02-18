@@ -20,7 +20,7 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 * category.coding.display = "Assessment"
 
 * code 1..1 MS
-* code.coding 1..* MS
+* code.coding 2..2 MS
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -29,12 +29,12 @@ Der Score wird als ganzzahliger Wert dokumentiert."
     Snomed 1..1 MS
 
 * code.coding[Loinc].system = $loinc
-* code.coding[Loinc].code = #72514-3
-* code.coding[Loinc].display = "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* code.coding[Loinc].code = #LP157783-4
+* code.coding[Loinc].display = "Pain severity - 0-10 verbal numeric rating"
 
 * code.coding[Snomed].system = $sct
-* code.coding[Snomed].code = #1172399009
-* code.coding[Snomed].display = "Numeric rating scale score (observable entity)"
+* code.coding[Snomed].code = #1284852002
+* code.coding[Snomed].display = "Numeric Pain Rating Scale (assessment scale)"
 
 * subject 1..1 MS
 
@@ -51,11 +51,5 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 Der Wertebereich entspricht den LOINC Preferred Answer Lists für LOINC 72514-3:
 - LL2335-9 „Numeric rating scale from 0-10“
 - LL5812-4 „Pain severity 0-10 verbal numeric rating scale“"
-
-* method 0..1 MS
-* method.coding 1..1
-* method.coding.system = $sct
-* method.coding.code = #1284852002
-* method.coding.display = "Numeric Pain Rating Scale (assessment scale)"
 
 * performer 0..* MS
