@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Score wird als quantitativer Wert dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -146,8 +146,8 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "VAS-Wert als Score (0-10)",
-        "definition": "VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).\n\nSemantik:\n- Beobachteter Wert: Visual analog scale score (SNOMED CT 446661009)\n- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)\n\nHinweis:\nIn der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert.",
+        "short": "VAS-Wert als Distanz in Millimeter (0-100 mm)",
+        "definition": "VAS-Wert als quantitative Distanz im Bereich 0-100 mm (UCUM: mm).\r\n\r\nHinweis:\r\nIn der Praxis wird die VAS als 10-cm-Skala erhoben; dokumentiert wird die gemessene Distanz in Millimeter.",
         "min": 1,
         "type": [
           {
@@ -161,13 +161,13 @@
         "path": "Observation.value[x].value",
         "min": 1,
         "minValueDecimal": 0,
-        "maxValueDecimal": 10
+        "maxValueDecimal": 100
       },
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "min": 1,
-        "patternString": "{score}"
+        "patternString": "mm"
       },
       {
         "id": "Observation.value[x].system",
@@ -179,7 +179,7 @@
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "min": 1,
-        "patternCode": "{score}"
+        "patternCode": "mm"
       }
     ]
   }

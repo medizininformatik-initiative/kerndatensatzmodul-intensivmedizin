@@ -11,6 +11,7 @@ Title: "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1204305004
 * code.coding[sct] ^patternCoding.display = "Measured volume of intake of infant formula"
+* code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)

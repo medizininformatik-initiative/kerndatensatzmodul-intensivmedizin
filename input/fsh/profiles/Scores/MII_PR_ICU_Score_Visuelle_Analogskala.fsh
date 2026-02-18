@@ -3,7 +3,7 @@ Parent: Observation
 Id: mii-pr-icu-score-visuelle-analogskala
 Title: "MII PR ICU Score Visuelle Analogskala"
 Description: "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).
-Der Score wird als quantitativer Wert dokumentiert."
+Der Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert."
 
 * insert PR_CS_VS_Version
 * insert Publisher
@@ -45,21 +45,17 @@ Der Score wird als quantitativer Wert dokumentiert."
 * valueQuantity 1..1
 * valueQuantity.value 1..1
 * valueQuantity.value ^minValueDecimal = 0
-* valueQuantity.value ^maxValueDecimal = 10
+* valueQuantity.value ^maxValueDecimal = 100
 * valueQuantity.system 1..1
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1
-* valueQuantity.code = #{score}
+* valueQuantity.code = #mm
 * valueQuantity.unit 1..1
-* valueQuantity.unit = "{score}"
-* valueQuantity ^short = "VAS-Wert als Score (0-10)"
-* valueQuantity ^definition = "VAS-Score als quantitativer Wert im Bereich 0-10 ({score}).
-
-Semantik:
-- Beobachteter Wert: Visual analog scale score (SNOMED CT 446661009)
-- Instrument: Visual analog scale (assessment scale, SNOMED CT 273903006)
+* valueQuantity.unit = "mm"
+* valueQuantity ^short = "VAS-Wert als Distanz in Millimeter (0-100 mm)"
+* valueQuantity ^definition = "VAS-Wert als quantitative Distanz im Bereich 0-100 mm (UCUM: mm).
 
 Hinweis:
-In der Praxis wird die VAS haeufig als 10-cm-Skala erhoben und anschließend als Score 0-10 dokumentiert."
+In der Praxis wird die VAS als 10-cm-Skala erhoben; dokumentiert wird die gemessene Distanz in Millimeter."
 
 * performer 0..* MS

@@ -11,6 +11,7 @@ Title: "MII PR ICU Bilanz Einfuhr Spendermilch"
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #819973005
 * code.coding[sct] ^patternCoding.display = "Measured volume of intake of donor breast milk"
+* code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
