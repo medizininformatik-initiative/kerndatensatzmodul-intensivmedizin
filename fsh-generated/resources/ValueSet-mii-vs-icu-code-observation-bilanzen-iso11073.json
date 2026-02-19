@@ -4,7 +4,7 @@
   "name": "MII_VS_ICU_Code_Observation_Bilanzen_ISO11073",
   "id": "mii-vs-icu-code-observation-bilanzen-iso11073",
   "title": "MII VS ICU Code Observation Bilanzen ISO11073",
-  "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+  "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten ISO/IEEE 11073-Parameter.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073",
   "version": "2026.0.0",
   "publisher": "Medizininformatik Initiative",
@@ -27,12 +27,6 @@
         "concept": [
           {
             "code": "26668"
-          },
-          {
-            "code": "26672"
-          },
-          {
-            "code": "26684"
           }
         ]
       }

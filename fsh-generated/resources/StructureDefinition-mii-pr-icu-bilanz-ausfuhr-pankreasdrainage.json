@@ -41,7 +41,8 @@
         "sliceName": "sct",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "1162668004"
+          "code": "1162668004",
+          "display": "Volume of drainage of pancreatic fluid (observable entity)"
         }
       },
       {
@@ -55,6 +56,21 @@
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
         "max": "0"
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "short": "Display unit (SI)",
+        "definition": "Human-readable display for the unit. SI display unit SHALL be 'ml', independent of whether code is 'mL' or 'ml'.",
+        "min": 1,
+        "patternString": "ml",
+        "example": [
+          {
+            "label": "Preferred display",
+            "valueString": "ml"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x].code",

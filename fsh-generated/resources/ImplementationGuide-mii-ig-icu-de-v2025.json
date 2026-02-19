@@ -172,6 +172,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
+        },
+        "name": "MII PR ICU Bilanz Ausfuhr Blutverlust",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
         },
         "name": "MII PR ICU Bilanz Ausfuhr Drainage Generisch",
@@ -200,9 +207,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gesamt"
+        },
+        "name": "MII PR ICU Bilanz Ausfuhr Gesamt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
+        },
+        "name": "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
         },
         "name": "MII PR ICU Bilanz Ausfuhr Magensonde",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
+        },
+        "name": "MII PR ICU Bilanz Ausfuhr OP Drainage",
         "exampleBoolean": false
       },
       {
@@ -263,9 +291,23 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-gesamt"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Gesamt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
         },
         "name": "MII PR ICU Bilanz Einfuhr Muttermilch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
         "exampleBoolean": false
       },
       {
@@ -308,6 +350,13 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-gesamte-tages-bilanz"
         },
         "name": "MII PR ICU Bilanz Gesamte Tages Bilanz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-gesamt"
+        },
+        "name": "MII PR ICU Bilanz Tagesbilanz Gesamt",
         "exampleBoolean": false
       },
       {
@@ -805,7 +854,7 @@
           "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"
         },
         "name": "MII VS ICU Code Observation Bilanzen ISO11073",
-        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten ISO/IEEE 11073-Parameter.",
         "exampleBoolean": false
       },
       {
@@ -813,7 +862,7 @@
           "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"
         },
         "name": "MII VS ICU Code Observation Bilanzen LOINC",
-        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOINC-Parameter.",
         "exampleBoolean": false
       },
       {
@@ -821,7 +870,7 @@
           "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-snomed"
         },
         "name": "MII VS ICU Code Observation Bilanzen SNOMED",
-        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten SNOMED-Parameter.",
         "exampleBoolean": false
       },
       {

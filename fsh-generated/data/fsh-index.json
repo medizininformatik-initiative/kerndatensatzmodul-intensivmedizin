@@ -120,12 +120,20 @@
     "endLine": 21
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.json",
+    "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.json",
     "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.json",
@@ -133,7 +141,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.json",
@@ -141,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallengang.json",
@@ -152,12 +160,36 @@
     "endLine": 21
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gesamt.json",
+    "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Gesamt",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Gesamt.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.json",
+    "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.json",
     "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Magensonde.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.json",
+    "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-opdrainage.json",
@@ -173,7 +205,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.json",
@@ -181,7 +213,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.json",
@@ -189,7 +221,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Urin.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.json",
@@ -197,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-blutverlust.json",
@@ -213,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
@@ -221,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.json",
@@ -229,7 +261,15 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-gesamt.json",
+    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Gesamt",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Gesamt.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.json",
@@ -237,7 +277,15 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Muttermilch.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.json",
+    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.json",
@@ -253,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.json",
@@ -261,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Spendermilch.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-gesamte-ausfuhr.json",
@@ -286,6 +334,14 @@
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-gesamt.json",
+    "fshName": "MII_PR_ICU_Bilanz_Tagesbilanz_Gesamt",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Tagesbilanz_Gesamt.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz.json",
@@ -933,7 +989,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Bilanzen_ISO11073.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 13
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-bilanzen-loinc.json",
@@ -949,7 +1005,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Bilanzen_SNOMED.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 31
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073.json",
