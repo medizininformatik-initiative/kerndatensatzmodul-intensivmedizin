@@ -36,9 +36,15 @@
         "patternCode": "exam"
       },
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "1204299001",

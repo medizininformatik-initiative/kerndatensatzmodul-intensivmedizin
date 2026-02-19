@@ -44,6 +44,7 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "251854000",

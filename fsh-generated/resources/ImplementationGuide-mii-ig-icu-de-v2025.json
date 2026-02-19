@@ -165,13 +165,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
-        },
-        "name": "MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
         },
         "name": "MII PR ICU Bilanz Ausfuhr Blutverlust",
@@ -235,13 +228,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Opdrainage",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
         },
         "name": "MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
@@ -266,13 +252,6 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
         },
         "name": "MII PR ICU Bilanz Ausfuhr Wunddrainage",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-blutverlust"
-        },
-        "name": "MII PR ICU Bilanz Blutverlust",
         "exampleBoolean": false
       },
       {
@@ -312,13 +291,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
-        },
-        "name": "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"
         },
         "name": "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
@@ -329,27 +301,6 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"
         },
         "name": "MII PR ICU Bilanz Einfuhr Spendermilch",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-gesamte-ausfuhr"
-        },
-        "name": "MII PR ICU Bilanz Gesamte Ausfuhr",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-gesamte-einfuhr"
-        },
-        "name": "MII PR ICU Bilanz Gesamte Einfuhr",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-gesamte-tages-bilanz"
-        },
-        "name": "MII PR ICU Bilanz Gesamte Tages Bilanz",
         "exampleBoolean": false
       },
       {

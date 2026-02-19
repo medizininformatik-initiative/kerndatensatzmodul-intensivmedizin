@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit",
+  "id": "mii-pr-icu-bilanz-tagesbilanz-gesamt",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-gesamt",
   "version": "2025.0.4",
-  "name": "MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit",
-  "title": "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+  "name": "MII_PR_ICU_Bilanz_Tagesbilanz_Gesamt",
+  "title": "MII PR ICU Bilanz Tagesbilanz Gesamt",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -28,12 +28,11 @@
       {
         "id": "Observation.category.coding:hl7-category",
         "path": "Observation.category.coding",
-        "sliceName": "hl7-category"
-      },
-      {
-        "id": "Observation.category.coding:hl7-category.code",
-        "path": "Observation.category.coding.code",
-        "patternCode": "therapy"
+        "sliceName": "hl7-category",
+        "patternCoding": {
+          "code": "exam",
+          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
+        }
       },
       {
         "id": "Observation.code.coding",
@@ -44,9 +43,11 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "251853006"
+          "code": "251856003",
+          "display": "Fluid balance status (observable entity)"
         }
       },
       {
@@ -57,7 +58,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "9000-1"
+          "code": "9097-7",
+          "display": "Fluid balance 24 hour"
         }
       },
       {
@@ -65,6 +67,21 @@
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
         "max": "0"
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "short": "Display unit (SI)",
+        "definition": "Human-readable display for the unit. SI display unit SHALL be 'ml', independent of whether code is 'mL' or 'ml'.",
+        "min": 1,
+        "patternString": "ml",
+        "example": [
+          {
+            "label": "Preferred display",
+            "valueString": "ml"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x].code",

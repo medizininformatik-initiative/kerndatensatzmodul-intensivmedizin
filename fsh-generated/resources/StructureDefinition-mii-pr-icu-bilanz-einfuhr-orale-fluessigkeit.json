@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-bilanz-gesamte-tages-bilanz",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-gesamte-tages-bilanz",
+  "id": "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit",
   "version": "2025.0.4",
-  "name": "MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz",
-  "title": "MII PR ICU Bilanz Gesamte Tages Bilanz",
-  "status": "active",
+  "name": "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
+  "title": "MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -28,24 +28,27 @@
       {
         "id": "Observation.category.coding:hl7-category",
         "path": "Observation.category.coding",
-        "sliceName": "hl7-category",
-        "patternCoding": {
-          "code": "vital-sign",
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
-        }
+        "sliceName": "hl7-category"
+      },
+      {
+        "id": "Observation.category.coding:hl7-category.code",
+        "path": "Observation.category.coding.code",
+        "patternCode": "exam"
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 3
+        "min": 2
       },
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
+        "min": 1,
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "251856003"
+          "code": "251853006",
+          "display": "Oral fluid input (observable entity)"
         }
       },
       {
@@ -56,19 +59,30 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "9097-7"
+          "code": "9000-1",
+          "display": "Fluid intake oral Measured"
         }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
+        "max": "0"
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "short": "Display unit (SI)",
+        "definition": "Human-readable display for the unit. SI display unit SHALL be 'ml', independent of whether code is 'mL' or 'ml'.",
         "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
-          "code": "26684"
-        }
+        "patternString": "ml",
+        "example": [
+          {
+            "label": "Preferred display",
+            "valueString": "ml"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x].code",
