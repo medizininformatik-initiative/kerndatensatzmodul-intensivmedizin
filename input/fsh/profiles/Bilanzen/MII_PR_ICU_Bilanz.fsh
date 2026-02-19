@@ -29,7 +29,7 @@ Title: "MII PR ICU Bilanz"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
-* code.coding contains sct 1..1 MS and 
+* code.coding contains sct 0..1 MS and 
     loinc 0.. MS and 
     IEEE-11073 0.. MS
 * code.coding[sct] from mii-vs-icu-code-observation-bilanzen-snomed (required)
