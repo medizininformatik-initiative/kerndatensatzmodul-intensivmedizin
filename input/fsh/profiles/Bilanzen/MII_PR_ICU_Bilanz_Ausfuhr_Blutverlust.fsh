@@ -8,17 +8,17 @@ Title: "MII PR ICU Bilanz Ausfuhr Blutverlust"
 * ^status = #active
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding 2.. MS
-* code.coding[sct] 1..1
+* code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #250771004
 * code.coding[sct] ^patternCoding.display = "Actual blood loss"
 * code.coding[sct].code MS
-* code.coding[loinc] 1..1
+* code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #81661-1
 * code.coding[loinc] ^patternCoding.display = "Blood loss [Volume] Measured"
 * code.coding[loinc].code MS
-* code.coding[IEEE-11073] ..0
+* code.coding[IEEE-11073] ..0 MS
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
 * valueQuantity.code ^binding.description = "equivalent codes for milliliter"

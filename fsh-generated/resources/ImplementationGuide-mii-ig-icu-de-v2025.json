@@ -193,20 +193,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallengang"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Gallengang",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gesamt"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Gesamt",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
         },
         "name": "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
@@ -270,13 +256,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-gesamt"
-        },
-        "name": "MII PR ICU Bilanz Einfuhr Gesamt",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
         },
         "name": "MII PR ICU Bilanz Einfuhr Muttermilch",
@@ -305,9 +284,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-gesamt"
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
         },
-        "name": "MII PR ICU Bilanz Tagesbilanz Gesamt",
+        "name": "MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
         "exampleBoolean": false
       },
       {

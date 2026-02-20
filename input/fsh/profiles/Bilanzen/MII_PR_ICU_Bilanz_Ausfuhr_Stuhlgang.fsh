@@ -8,13 +8,13 @@ Title: "MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * ^status = #active
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding 1.. MS
-* code.coding[sct] ..0
-* code.coding[loinc] 1..1
+* code.coding[sct] ..0 MS
+* code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #9217-1
 * code.coding[loinc] ^patternCoding.display = "Output.stool [Volume]"
 * code.coding[loinc].code MS
-* code.coding[IEEE-11073] ..0
+* code.coding[IEEE-11073] ..0 MS
 * valueQuantity.code 1.. MS 
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
 * valueQuantity.code ^binding.description = "equivalent codes for milliliter"

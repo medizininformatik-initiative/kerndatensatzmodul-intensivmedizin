@@ -144,22 +144,6 @@
     "endLine": 30
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallengang.json",
-    "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Gallengang",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Gallengang.fsh",
-    "startLine": 1,
-    "endLine": 21
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gesamt.json",
-    "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Gesamt",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_Gesamt.fsh",
-    "startLine": 1,
-    "endLine": 30
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.json",
     "fshName": "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
     "fshType": "Profile",
@@ -181,7 +165,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.json",
@@ -240,14 +224,6 @@
     "endLine": 30
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-gesamt.json",
-    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Gesamt",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Gesamt.fsh",
-    "startLine": 1,
-    "endLine": 30
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.json",
     "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Muttermilch",
     "fshType": "Profile",
@@ -280,10 +256,10 @@
     "endLine": 26
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-gesamt.json",
-    "fshName": "MII_PR_ICU_Bilanz_Tagesbilanz_Gesamt",
+    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.json",
+    "fshName": "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
     "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Tagesbilanz_Gesamt.fsh",
+    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit.fsh",
     "startLine": 1,
     "endLine": 30
   },

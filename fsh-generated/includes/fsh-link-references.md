@@ -17,8 +17,6 @@
 [MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html
 [MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html
 [MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html
-[MII_PR_ICU_Bilanz_Ausfuhr_Gallengang]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallengang.html
-[MII_PR_ICU_Bilanz_Ausfuhr_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gesamt.html
 [MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html
 [MII_PR_ICU_Bilanz_Ausfuhr_Magensonde]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.html
 [MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.html
@@ -28,12 +26,11 @@
 [MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html
 [MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html
 [MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html
-[MII_PR_ICU_Bilanz_Einfuhr_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-gesamt.html
 [MII_PR_ICU_Bilanz_Einfuhr_Muttermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.html
 [MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html
 [MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html
 [MII_PR_ICU_Bilanz_Einfuhr_Spendermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.html
-[MII_PR_ICU_Bilanz_Tagesbilanz_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-gesamt.html
+[MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html
 [MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet]: StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html
 [MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html
 [MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch]: StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html

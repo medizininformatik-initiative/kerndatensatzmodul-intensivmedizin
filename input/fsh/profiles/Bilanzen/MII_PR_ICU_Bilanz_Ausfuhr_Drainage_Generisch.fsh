@@ -8,13 +8,13 @@ Title: "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * ^status = #active
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
 * code.coding 2.. MS
-* code.coding[sct] 1..1
+* code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #251843005
 * code.coding[sct] ^patternCoding.display = "Fluid output from drain"
 * code.coding[sct].code MS
-* code.coding[loinc] ..0
-* code.coding[IEEE-11073] 1..1
+* code.coding[loinc] ..0 MS
+* code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073] ^patternCoding.code = #26668
 * code.coding[IEEE-11073].code MS
