@@ -136,11 +136,22 @@
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupille-bodysite"
-        }
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.coding.system",
+        "path": "Observation.bodySite.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.bodySite.coding.code",
+        "path": "Observation.bodySite.coding.code",
+        "fixedCode": "67019001"
+      },
+      {
+        "id": "Observation.bodySite.coding.display",
+        "path": "Observation.bodySite.coding.display",
+        "patternString": "Structure of pupil of both eyes (body structure)"
       }
     ]
   }

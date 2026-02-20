@@ -108,12 +108,38 @@
         "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Quantity"
           },
           {
-            "code": "integer"
+            "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1,
+        "patternString": "mm",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "min": 1,
+        "patternCode": "mm",
         "mustSupport": true
       },
       {
