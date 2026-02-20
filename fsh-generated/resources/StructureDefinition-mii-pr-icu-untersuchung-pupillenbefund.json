@@ -48,7 +48,23 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.system",
+        "path": "Observation.category.coding.system",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/observation-category"
+      },
+      {
+        "id": "Observation.category.coding.code",
+        "path": "Observation.category.coding.code",
+        "patternCode": "exam"
+      },
+      {
+        "id": "Observation.category.coding.display",
+        "path": "Observation.category.coding.display",
+        "patternString": "Exam"
       },
       {
         "id": "Observation.code",
@@ -137,16 +153,16 @@
         },
         "short": "References to member observations forming the pupillary examination panel.",
         "comment": "Dieses Panel bündelt die Einzelbefunde zur Pupillenuntersuchung via hasMember. Erwartet werden: (1) Pupillary Light Reaction (per eye) - i.d.R. 2 Instanzen (links/rechts), (2) Pupillary Size, (3) Pupil Shape/Regularity, (4) Pupillary Symmetry. Keine zusätzliche Interpretation im Panel selbst.",
-        "min": 4,
-        "max": "5",
+        "min": 7,
+        "max": "7",
         "mustSupport": true
       },
       {
         "id": "Observation.hasMember:PupillaryLightReaction",
         "path": "Observation.hasMember",
         "sliceName": "PupillaryLightReaction",
-        "short": "Member observations: pupillary light reaction per eye (1..2).",
-        "min": 1,
+        "short": "Member observations: pupillary light reaction per eye.",
+        "min": 2,
         "max": "2",
         "type": [
           {
@@ -163,8 +179,8 @@
         "path": "Observation.hasMember",
         "sliceName": "PupillarySize",
         "short": "Member observation: categorical pupillary size (both pupils).",
-        "min": 1,
-        "max": "1",
+        "min": 2,
+        "max": "2",
         "type": [
           {
             "code": "Reference",
@@ -176,12 +192,12 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupilShape",
+        "id": "Observation.hasMember:PupillaryShape",
         "path": "Observation.hasMember",
-        "sliceName": "PupilShape",
+        "sliceName": "PupillaryShape",
         "short": "Member observation: pupil shape/regularity (both pupils).",
-        "min": 1,
-        "max": "1",
+        "min": 2,
+        "max": "2",
         "type": [
           {
             "code": "Reference",

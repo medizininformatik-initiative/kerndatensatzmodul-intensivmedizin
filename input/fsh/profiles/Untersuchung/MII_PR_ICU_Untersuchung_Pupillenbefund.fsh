@@ -16,7 +16,11 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * meta MS
 * identifier MS
 * status 1..1 MS
-* category MS
+
+* category 1..* MS
+* category.coding.system = $observation-category
+* category.coding.code = #exam
+* category.coding.display = "Exam"
 
 * code 1..1 MS
 * hasMember 1..* MS
@@ -55,29 +59,29 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 // - MII_PR_ICU_Untersuchung_Pupillenform
 // - MII_PR_ICU_Untersuchung_Pupillensymmetrie
 
-* hasMember 1..5 MS
+* hasMember 7..7 MS
 
 * hasMember ^slicing.discriminator.type = #profile
 * hasMember ^slicing.discriminator.path = "resolve()"
 * hasMember ^slicing.rules = #closed
 
 * hasMember contains
-    PupillaryLightReaction 1..2 MS and
-    PupillarySize 1..1 MS and
-    PupilShape 1..1 MS and
+    PupillaryLightReaction 2..2 MS and
+    PupillarySize 2..2 MS and
+    PupillaryShape 2..2 MS and
     PupillarySymmetry 1..1 MS
 
 // --- Light Reaction (per eye) ---
 * hasMember[PupillaryLightReaction] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion)
-* hasMember[PupillaryLightReaction] ^short = "Member observations: pupillary light reaction per eye (1..2)."
+* hasMember[PupillaryLightReaction] ^short = "Member observations: pupillary light reaction per eye."
 
 // --- Pupillary Size ---
 * hasMember[PupillarySize] only Reference(MII_PR_ICU_Untersuchung_Pupillengroesse)
 * hasMember[PupillarySize] ^short = "Member observation: categorical pupillary size (both pupils)."
 
 // --- Pupil Shape ---
-* hasMember[PupilShape] only Reference(MII_PR_ICU_Untersuchung_Pupillenform)
-* hasMember[PupilShape] ^short = "Member observation: pupil shape/regularity (both pupils)."
+* hasMember[PupillaryShape] only Reference(MII_PR_ICU_Untersuchung_Pupillenform)
+* hasMember[PupillaryShape] ^short = "Member observation: pupil shape/regularity (both pupils)."
 
 // --- Pupillary Symmetry ---
 * hasMember[PupillarySymmetry] only Reference(MII_PR_ICU_Untersuchung_Pupillensymmetrie)

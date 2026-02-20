@@ -33,7 +33,11 @@ Severity: #error
 * meta MS
 * identifier MS
 * status 1..1 MS
-* category MS
+
+* category 1..* MS
+* category.coding.system = $observation-category
+* category.coding.code = #exam
+* category.coding.display = "Exam"
 
 * code 1..1 MS
 * valueCodeableConcept 0..1 MS

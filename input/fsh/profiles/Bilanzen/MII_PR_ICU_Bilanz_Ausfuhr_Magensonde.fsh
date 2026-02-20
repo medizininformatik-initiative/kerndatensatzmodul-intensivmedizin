@@ -12,8 +12,8 @@ Title: "MII PR ICU Bilanz Ausfuhr Magensonde"
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1162665001
 * code.coding[sct] ^patternCoding.display = "Volume of drainage of gastric contents (observable entity)"
-* code.coding[sct].code MS MS
-* code.coding[loinc] 1..1
+* code.coding[sct].code MS
+* code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #79561-7
 * code.coding[loinc] ^patternCoding.display = "Fluid output enteral tube [Volume] Measured"

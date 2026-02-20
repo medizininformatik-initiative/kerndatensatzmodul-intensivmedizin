@@ -20,7 +20,11 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * meta MS
 * identifier MS
 * status 1..1 MS
-* category MS
+
+* category 1..* MS
+* category.coding.system = $observation-category
+* category.coding.code = #exam
+* category.coding.display = "Exam"
 
 * code 1..1 MS
 * code.coding 1..*

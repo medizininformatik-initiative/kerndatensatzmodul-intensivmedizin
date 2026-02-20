@@ -22,7 +22,11 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * meta MS
 * identifier MS
 * status 1..1 MS
-* category MS
+
+* category 1..* MS
+* category.coding.system = $observation-category
+* category.coding.code = #exam
+* category.coding.display = "Exam"
 
 * code 1..1 MS
 * code.coding 1..1
@@ -36,8 +40,15 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 
 * value[x] 1..1 MS
 * value[x] only integer or CodeableConcept
-* valueCodeableConcept from MII_VS_ICU_Pupillengroesse (required)
 
+/* * valueQuantity.code 1.. MS
+* valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
+* valueQuantity.code ^binding.description = "equivalent codes for milliliter"
+* valueQuantity.unit 1..1 MS
+* valueQuantity.unit = "mm"
+*/
+
+* valueCodeableConcept from MII_VS_ICU_Pupillengroesse (required)
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
 * valueCodeableConcept ^constraint[=].severity = #error
 * valueCodeableConcept ^constraint[=].human = "Component must have either value or dataAbsentReason."
