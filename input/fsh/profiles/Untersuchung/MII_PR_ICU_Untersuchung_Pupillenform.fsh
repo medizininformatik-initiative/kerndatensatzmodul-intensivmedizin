@@ -27,7 +27,7 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * category.coding.display = "Exam"
 
 * code 1..1 MS
-* code.coding 1..*
+* code.coding 1..1 MS
 * code.coding.system = $sct (exactly)
 * code.coding.code = #363954009 (exactly)
 * code.coding.display = "Pupil shape"

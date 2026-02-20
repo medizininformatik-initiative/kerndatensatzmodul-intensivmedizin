@@ -42,7 +42,7 @@ Severity: #error
 * code 1..1 MS
 * valueCodeableConcept 0..1 MS
 * dataAbsentReason 0..1 MS
-* bodySite 0..1 MS
+* bodySite 1..1 MS
 
 /*
 * component ^constraint[+].key = "mii-icu-psym-2"
@@ -51,11 +51,12 @@ Severity: #error
 * component ^constraint[=].expression = "(value.coding.where(system='http://snomed.info/sct' and code='13045009').exists() implies bodySite.exists()) and (value.coding.where(system='http://snomed.info/sct' and code='301943000').exists() implies bodySite.empty())"
 */
 
-* code.coding 1..1
+* code.coding 1..1 MS
 * code.coding.system = $sct (exactly)
 * code.coding.code = #301942005 (exactly)
 * code.coding.display = "Finding of proportion of pupil (finding)"
 
+* bodySite.coding 1..1 MS
 * bodySite.coding.system = $sct (exactly)
 * bodySite.coding.code = #67019001 (exactly)
 * bodySite.coding.display = "Structure of pupil of both eyes (body structure)"

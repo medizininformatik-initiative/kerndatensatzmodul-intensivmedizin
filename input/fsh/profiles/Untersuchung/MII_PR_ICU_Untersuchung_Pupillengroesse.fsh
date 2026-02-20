@@ -29,7 +29,7 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * category.coding.display = "Exam"
 
 * code 1..1 MS
-* code.coding 1..1
+* code.coding 1..1 MS
 * code.coding.system = $sct (exactly)
 * code.coding.code = #363953003 (exactly)
 * code.coding.display = "Size of pupil"
@@ -45,11 +45,6 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * valueQuantity.code = #mm
 * valueQuantity.unit 1..1 MS
 * valueQuantity.unit = "mm"
-/* * valueQuantity.code 1.. MS
-* valueQuantity.code from mii-vs-icu-unit-equivalent-ucum (required)
-* valueQuantity.code ^binding.description = "equivalent codes for "
-* valueQuantity.unit 1..1 MS
-* valueQuantity.unit = "mm" */
 
 * valueCodeableConcept from MII_VS_ICU_Pupillengroesse (required)
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"

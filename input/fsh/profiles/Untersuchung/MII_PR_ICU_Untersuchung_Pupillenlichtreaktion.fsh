@@ -47,7 +47,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion"
     Indirect 1..1 MS
 
 // --- Direct: direkte Lichtreaktion (ipsilateraler Stimulus implizit)
-* component[Direct].code.coding 1..1
+* component[Direct].code.coding 1..1 MS
 * component[Direct].code.coding.system = $sct (exactly)
 * component[Direct].code.coding.code = #45832002 (exactly)
 * component[Direct].code.coding.display = "Direct pupillary light reflex"
