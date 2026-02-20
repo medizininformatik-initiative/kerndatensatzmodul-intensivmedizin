@@ -26,40 +26,52 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "79561-7"
+            "code": "79561-7",
+            "display": "Fluid output enteral tube [Volume] Measured"
           },
           {
-            "code": "81661-1"
+            "code": "81661-1",
+            "display": "Blood loss [Volume] Measured"
           },
           {
-            "code": "8953-2"
+            "code": "8953-2",
+            "display": "Fluid intake enteral tube Measured"
           },
           {
-            "code": "9000-1"
+            "code": "9000-1",
+            "display": "Fluid intake oral Measured"
           },
           {
-            "code": "9097-7"
+            "code": "9097-7",
+            "display": "Fluid balance 24 hour"
           },
           {
-            "code": "9103-3"
+            "code": "9103-3",
+            "display": "Fluid intake total Measured"
           },
           {
-            "code": "9113-2"
+            "code": "9113-2",
+            "display": "Fluid output biliary drain"
           },
           {
-            "code": "9187-6"
+            "code": "9187-6",
+            "display": "Urine output"
           },
           {
-            "code": "9203-1"
+            "code": "9203-1",
+            "display": "Fluid output wound drain"
           },
           {
-            "code": "9217-1"
+            "code": "9217-1",
+            "display": "Output.stool [Volume]"
           },
           {
-            "code": "9257-7"
+            "code": "9257-7",
+            "display": "Fluid output total Measured"
           },
           {
-            "code": "99741-1"
+            "code": "99741-1",
+            "display": "Ultrafiltrate volume removed"
           }
         ]
       }

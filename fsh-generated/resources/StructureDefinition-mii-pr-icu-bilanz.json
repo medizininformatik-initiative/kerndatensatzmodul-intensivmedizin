@@ -117,6 +117,7 @@
           ],
           "rules": "closed"
         },
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -124,7 +125,7 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "patternCoding": {
           "system": "http://snomed.info/sct"
         },

@@ -25,11 +25,11 @@ Title: "MII PR ICU Bilanz"
 * category.coding[kdsicu-category].system 1.. MS
 * category.coding[kdsicu-category].code 1.. MS
 * code MS
-* code.coding MS
+* code.coding 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
-* code.coding contains sct 0..1 MS and 
+* code.coding contains sct 0.. MS and 
     loinc 0.. MS and 
     IEEE-11073 0.. MS
 * code.coding[sct] from mii-vs-icu-code-observation-bilanzen-snomed (required)
