@@ -5,13 +5,13 @@
 // - bodySite bezieht sich explizit auf die Pupille, nicht das Auge
 // ============================================================
 
-ValueSet: MII_VS_ICU_Pupille_BodySite
-Id: mii-vs-icu-pupille-bodysite
-Title: "MII VS ICU Pupille BodySite"
+ValueSet: MII_VS_ICU_BodySite_Observation_Pupillenbefund
+Id: mii-vs-icu-bodysite-observation-pupillenbefund
+Title: "MII VS ICU BodySite Observation Pupillenbefund"
 Description: "Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille."
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupille-bodysite"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"
 * ^version = "2026.0.0"
 * ^status = #draft
 
