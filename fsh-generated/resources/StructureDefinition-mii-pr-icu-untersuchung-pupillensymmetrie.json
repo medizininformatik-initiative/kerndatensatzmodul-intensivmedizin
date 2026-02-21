@@ -123,10 +123,20 @@
             "code": "CodeableConcept"
           }
         ],
+        "constraint": [
+          {
+            "key": "pupil-symm-val-or-dar",
+            "severity": "error",
+            "human": "Component must have either value or dataAbsentReason.",
+            "expression": "value.exists() xor dataAbsentReason.exists()",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillensymmetrie"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie"
         }
       },
       {

@@ -37,7 +37,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion"
 * code.coding.display = "Pupil reaction to light"
 
 * bodySite 1..1 MS
-* bodySite from MII_VS_ICU_Pupille_BodySite (required)
+* bodySite from MII_VS_ICU_BodySite_Observation_Pupillenbefund (required)
 
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -53,7 +53,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion"
 * component[Direct].code.coding.display = "Direct pupillary light reflex"
 * component[Direct].valueCodeableConcept 0..1 MS
 * component[Direct].dataAbsentReason 0..1 MS
-* component[Direct].valueCodeableConcept from https://loinc.org/LL3762-3 (required)
+* component[Direct].valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillenlichtreaktion (required)
 
 * component ^constraint[+].key = "pupil-comp-val-or-dar"
 * component ^constraint[=].severity = #error
@@ -67,7 +67,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion"
 * component[Indirect].code.coding.display = "Indirect light pupillary reflex"
 * component[Indirect].valueCodeableConcept 0..1 MS
 * component[Indirect].dataAbsentReason 0..1 MS
-* component[Indirect].valueCodeableConcept from https://loinc.org/LL3762-3 (required)
+* component[Indirect].valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillenlichtreaktion (required)
 
 * component ^constraint[+].key = "pupil-comp-val-or-dar"
 * component ^constraint[=].severity = #error

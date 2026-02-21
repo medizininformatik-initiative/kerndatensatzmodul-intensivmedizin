@@ -702,6 +702,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"
+        },
+        "name": "MII VS ICU BodySite Observation Pupillenbefund",
+        "description": "Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-icu-cam-icu-result"
         },
         "name": "MII VS ICU CAM-ICU Result",
@@ -829,6 +837,44 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"
+        },
+        "name": "MII VS ICU Code Observation Pupillenform LOINC",
+        "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-code-oservation-pupillenform-snomed"
+        },
+        "name": "MII VS ICU Code Observation Pupillenform SNOMED",
+        "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-code-observation-pupillengroesse"
+        },
+        "name": "MII VS ICU Code Observation Pupillengroesse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"
+        },
+        "name": "MII VS ICU Code Observation Pupillenlichtreaktion",
+        "description": "Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-code-observation-pupillensymmetrie"
+        },
+        "name": "MII VS ICU Code Observation Pupillensymmetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-icu-code-procedure-beatmung-snomed"
         },
         "name": "MII VS ICU Code Procedure Beatmung SNOMED",
@@ -855,60 +901,6 @@
         },
         "name": "MII VS ICU Method Observation Blutdruck",
         "description": "Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-milchart"
-        },
-        "name": "MII VS ICU Milchart",
-        "description": "ValueSet zur Kodierung des Basisprodukts der Milchaufnahme in der Paediatrie (ohne Additive).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-present-absent"
-        },
-        "name": "MII VS ICU Present Absent",
-        "description": "Present or absent findings",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupille-bodysite"
-        },
-        "name": "MII VS ICU Pupille BodySite",
-        "description": "Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupillenform-regularitaet-loinc"
-        },
-        "name": "MII VS ICU Pupillenform Regularitaet LOINC",
-        "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupillenform-regularitaet-snomed"
-        },
-        "name": "MII VS ICU Pupillenform Regularitaet SNOMED",
-        "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupillengroesse"
-        },
-        "name": "MII VS ICU Pupillengroesse",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupillensymmetrie"
-        },
-        "name": "MII VS ICU Pupillensymmetrie",
         "exampleBoolean": false
       },
       {
@@ -1092,14 +1084,6 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
         },
         "name": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-pupillenlichtreaktion"
-        },
-        "name": "MII_VS_ICU_Pupillenlichtreaktion",
-        "description": "Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv.",
         "exampleBoolean": false
       },
       {

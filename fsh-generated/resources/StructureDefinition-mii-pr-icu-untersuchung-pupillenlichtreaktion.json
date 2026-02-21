@@ -98,7 +98,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupille-bodysite"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"
         }
       },
       {
@@ -191,7 +191,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://loinc.org/LL3762-3"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"
         }
       },
       {
@@ -256,7 +256,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://loinc.org/LL3762-3"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"
         }
       },
       {

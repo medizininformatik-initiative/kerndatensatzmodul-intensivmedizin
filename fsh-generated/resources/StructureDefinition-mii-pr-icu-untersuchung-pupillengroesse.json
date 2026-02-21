@@ -137,6 +137,13 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
         "min": 1,
@@ -166,7 +173,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupillengroesse"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse"
         }
       },
       {
@@ -181,7 +188,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-pupille-bodysite"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"
         }
       }
     ]

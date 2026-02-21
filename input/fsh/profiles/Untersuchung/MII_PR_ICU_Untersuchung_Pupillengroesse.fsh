@@ -35,18 +35,19 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * code.coding.display = "Size of pupil"
 
 * bodySite 1..1 MS
-* bodySite from MII_VS_ICU_Pupille_BodySite (required)
+* bodySite from MII_VS_ICU_BodySite_Observation_Pupillenbefund (required)
 * dataAbsentReason 0..1 MS
 
 * value[x] 1..1 MS
 * value[x] only Quantity or CodeableConcept
-
+* valueQuantity.system 1..1 MS
+* valueQuantity.system = $ucum
 * valueQuantity.code 1..1 MS
 * valueQuantity.code = #mm
 * valueQuantity.unit 1..1 MS
 * valueQuantity.unit = "mm"
 
-* valueCodeableConcept from MII_VS_ICU_Pupillengroesse (required)
+* valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillengroesse (required)
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
 * valueCodeableConcept ^constraint[=].severity = #error
 * valueCodeableConcept ^constraint[=].human = "Component must have either value or dataAbsentReason."

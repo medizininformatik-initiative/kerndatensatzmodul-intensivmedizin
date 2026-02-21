@@ -33,7 +33,7 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * code.coding.display = "Pupil shape"
 
 * bodySite 1..1 MS
-* bodySite from MII_VS_ICU_Pupille_BodySite (required)
+* bodySite from MII_VS_ICU_BodySite_Observation_Pupillenbefund (required)
 * dataAbsentReason 0..1 MS
 
 * valueCodeableConcept 0..1 MS
@@ -44,8 +44,8 @@ Title: "MII PR ICU Untersuchung Pupillenform"
     Snomed 1..1 MS and
     Loinc  1..1 MS
 
-* valueCodeableConcept.coding[Snomed] from MII_VS_ICU_Pupillenform_Regularitaet_SNOMED (required)
-* valueCodeableConcept.coding[Loinc] from MII_VS_ICU_Pupillenform_Regularitaet_LOINC (required)
+* valueCodeableConcept.coding[Snomed] from MII_VS_ICU_Code_Observation_Pupillenform_SNOMED (required)
+* valueCodeableConcept.coding[Loinc] from MII_VS_ICU_Code_Observation_Pupillenform_LOINC (required)
 
 * valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
 * valueCodeableConcept ^constraint[=].severity = #error

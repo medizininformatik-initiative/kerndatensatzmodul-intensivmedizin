@@ -88,6 +88,7 @@
 [MII_VS_ICU_BodySite_Observation_Blutdruck]: ValueSet-mii-vs-icu-body-site-observation-blutdruck.html
 [MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-body-site-observation-extrakorporale-verfahren.html
 [MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten]: ValueSet-mii-vs-icu-body-site-observation-monitoring-und-vitaldaten.html
+[MII_VS_ICU_BodySite_Observation_Pupillenbefund]: ValueSet-mii-vs-icu-bodysite-observation-pupillenbefund.html
 [MII_VS_ICU_CAM_ICU_Result]: ValueSet-mii-vs-icu-cam-icu-result.html
 [MII_VS_ICU_Category_Observation_Bilanzen_HL7]: ValueSet-mii-vs-icu-category-observation-bilanzen-hl7.html
 [MII_VS_ICU_Category_Procedure_Beatmung_SNOMED]: ValueSet-mii-vs-icu-category-procedure-beatmung-snomed.html
@@ -104,17 +105,15 @@
 [MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073]: ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073.html
 [MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC]: ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-loinc.html
 [MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED]: ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-snomed.html
+[MII_VS_ICU_Code_Observation_Pupillenform_LOINC]: ValueSet-mii-vs-icu-code-oservation-pupillenform-loinc.html
+[MII_VS_ICU_Code_Observation_Pupillenform_SNOMED]: ValueSet-mii-vs-icu-code-oservation-pupillenform-snomed.html
+[MII_VS_ICU_Code_Observation_Pupillengroesse]: ValueSet-mii-vs-icu-code-observation-pupillengroesse.html
+[MII_VS_ICU_Code_Observation_Pupillenlichtreaktion]: ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.html
+[MII_VS_ICU_Code_Observation_Pupillensymmetrie]: ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.html
 [MII_VS_ICU_Code_Procedure_Beatmung_SNOMED]: ValueSet-mii-vs-icu-code-procedure-beatmung-snomed.html
 [MII_VS_ICU_Delirium_Interpretation]: ValueSet-mii-vs-icu-delirium-interpretation.html
 [MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.html
 [MII_VS_ICU_Method_Observation_Blutdruck]: ValueSet-mii-vs-icu-method-observation-blutdruck.html
-[MII_VS_ICU_Milchart]: ValueSet-mii-vs-icu-milchart.html
-[MII_VS_ICU_Present_Absent]: ValueSet-mii-vs-icu-present-absent.html
-[MII_VS_ICU_Pupille_BodySite]: ValueSet-mii-vs-icu-pupille-bodysite.html
-[MII_VS_ICU_Pupillenform_Regularitaet_LOINC]: ValueSet-mii-vs-icu-pupillenform-regularitaet-loinc.html
-[MII_VS_ICU_Pupillenform_Regularitaet_SNOMED]: ValueSet-mii-vs-icu-pupillenform-regularitaet-snomed.html
-[MII_VS_ICU_Pupillengroesse]: ValueSet-mii-vs-icu-pupillengroesse.html
-[MII_VS_ICU_Pupillensymmetrie]: ValueSet-mii-vs-icu-pupillensymmetrie.html
 [MII_VS_ICU_Score_Category]: ValueSet-mii-vs-icu-score-category.html
 [MII_VS_ICU_Score_LOINC]: ValueSet-mii-vs-icu-score-loinc.html
 [MII_VS_ICU_Score_RASS]: ValueSet-mii-vs-icu-score-rass.html
@@ -138,5 +137,4 @@
 [mii-sp-icu-observation-referencerange-low]: SearchParameter-mii-sp-icu-observation-referencerange-low.html
 [mii-sp-icu-procedure-recorder]: SearchParameter-mii-sp-icu-procedure-recorder.html
 [MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html
-[MII_VS_ICU_Pupillenlichtreaktion]: ValueSet-mii-vs-icu-pupillenlichtreaktion.html
 [MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html

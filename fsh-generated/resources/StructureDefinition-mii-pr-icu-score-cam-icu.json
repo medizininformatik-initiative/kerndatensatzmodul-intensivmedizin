@@ -146,11 +146,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
-        }
+        ]
       },
       {
         "id": "Observation.component:feature2-inattention",
@@ -192,11 +188,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
-        }
+        ]
       },
       {
         "id": "Observation.component:feature3-altered-loc",
@@ -238,11 +230,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
-        }
+        ]
       },
       {
         "id": "Observation.component:feature4-disorganized-thinking",
@@ -284,11 +272,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
-        }
+        ]
       }
     ]
   }

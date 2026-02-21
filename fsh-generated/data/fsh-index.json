@@ -533,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillengroesse.fsh",
     "startLine": 12,
-    "endLine": 53
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion.json",
@@ -549,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillensymmetrie.fsh",
     "startLine": 11,
-    "endLine": 65
+    "endLine": 51
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.json",
@@ -824,6 +824,14 @@
     "endLine": 42
   },
   {
+    "outputFile": "ValueSet-mii-vs-icu-bodysite-observation-pupillenbefund.json",
+    "fshName": "MII_VS_ICU_BodySite_Observation_Pupillenbefund",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_BodySite_Observation_Pupillenbefund.fsh",
+    "startLine": 8,
+    "endLine": 19
+  },
+  {
     "outputFile": "ValueSet-mii-vs-icu-cam-icu-result.json",
     "fshName": "MII_VS_ICU_CAM_ICU_Result",
     "fshType": "ValueSet",
@@ -952,6 +960,46 @@
     "endLine": 23
   },
   {
+    "outputFile": "ValueSet-mii-vs-icu-code-observation-pupillengroesse.json",
+    "fshName": "MII_VS_ICU_Code_Observation_Pupillengroesse",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillengroesse.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.json",
+    "fshName": "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillenlichtreaktion.fsh",
+    "startLine": 10,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.json",
+    "fshName": "MII_VS_ICU_Code_Observation_Pupillensymmetrie",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillensymmetrie.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-code-oservation-pupillenform-loinc.json",
+    "fshName": "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillenform_LOINC.fsh",
+    "startLine": 8,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-code-oservation-pupillenform-snomed.json",
+    "fshName": "MII_VS_ICU_Code_Observation_Pupillenform_SNOMED",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillenform_SNOMED.fsh",
+    "startLine": 8,
+    "endLine": 20
+  },
+  {
     "outputFile": "ValueSet-mii-vs-icu-code-procedure-beatmung-snomed.json",
     "fshName": "MII_VS_ICU_Code_Procedure_Beatmung_SNOMED",
     "fshType": "ValueSet",
@@ -982,70 +1030,6 @@
     "fshFile": "valuesets\\MII_VS_ICU_Method_Oberservation_Blutdruck.fsh",
     "startLine": 1,
     "endLine": 14
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-milchart.json",
-    "fshName": "MII_VS_ICU_Milchart",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_PEDS_MilkBase.fsh",
-    "startLine": 1,
-    "endLine": 19
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-present-absent.json",
-    "fshName": "MII_VS_ICU_Present_Absent",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Present_Absent.fsh",
-    "startLine": 1,
-    "endLine": 11
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-pupille-bodysite.json",
-    "fshName": "MII_VS_ICU_Pupille_BodySite",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Pupille_BodySite.fsh",
-    "startLine": 8,
-    "endLine": 19
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-pupillenform-regularitaet-loinc.json",
-    "fshName": "MII_VS_ICU_Pupillenform_Regularitaet_LOINC",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Pupillenform_Regularitaet_LOINC.fsh",
-    "startLine": 8,
-    "endLine": 20
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-pupillenform-regularitaet-snomed.json",
-    "fshName": "MII_VS_ICU_Pupillenform_Regularitaet_SNOMED",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Pupillenform_Regularitaet_SNOMED.fsh",
-    "startLine": 8,
-    "endLine": 20
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-pupillengroesse.json",
-    "fshName": "MII_VS_ICU_Pupillengroesse",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Pupillengroesse.fsh",
-    "startLine": 1,
-    "endLine": 14
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-pupillenlichtreaktion.json",
-    "fshName": "MII_VS_ICU_Pupillenlichtreaktion",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Pupillenlichtreaktion.fsh",
-    "startLine": 10,
-    "endLine": 22
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-pupillensymmetrie.json",
-    "fshName": "MII_VS_ICU_Pupillensymmetrie",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Pupillensymmetrie.fsh",
-    "startLine": 1,
-    "endLine": 13
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-score-category.json",
