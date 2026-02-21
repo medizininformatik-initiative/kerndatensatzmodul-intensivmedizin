@@ -905,6 +905,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-icu-present-absent"
+        },
+        "name": "MII VS ICU Present Absent",
+        "description": "Present or absent findings",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-icu-score-category"
         },
         "name": "MII VS ICU Score Category",

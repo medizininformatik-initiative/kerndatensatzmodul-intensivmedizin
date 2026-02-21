@@ -114,6 +114,7 @@
 [MII_VS_ICU_Delirium_Interpretation]: ValueSet-mii-vs-icu-delirium-interpretation.html
 [MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.html
 [MII_VS_ICU_Method_Observation_Blutdruck]: ValueSet-mii-vs-icu-method-observation-blutdruck.html
+[MII_VS_ICU_Present_Absent]: ValueSet-mii-vs-icu-present-absent.html
 [MII_VS_ICU_Score_Category]: ValueSet-mii-vs-icu-score-category.html
 [MII_VS_ICU_Score_LOINC]: ValueSet-mii-vs-icu-score-loinc.html
 [MII_VS_ICU_Score_RASS]: ValueSet-mii-vs-icu-score-rass.html

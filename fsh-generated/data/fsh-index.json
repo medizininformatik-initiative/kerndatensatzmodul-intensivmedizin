@@ -1032,6 +1032,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "ValueSet-mii-vs-icu-present-absent.json",
+    "fshName": "MII_VS_ICU_Present_Absent",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\MII_VS_ICU_Present_Absent.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "ValueSet-mii-vs-icu-score-category.json",
     "fshName": "MII_VS_ICU_Score_Category",
     "fshType": "ValueSet",
