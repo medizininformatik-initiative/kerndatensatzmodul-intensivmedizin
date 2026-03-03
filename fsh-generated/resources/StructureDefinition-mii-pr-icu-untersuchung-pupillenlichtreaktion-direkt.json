@@ -121,11 +121,11 @@
         "constraint": [
           {
             "key": "pupil-comp-val-or-dar",
-            "severity": "error",
             "human": "Component must have either value or dataAbsentReason.",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element",
+            "severity": "error",
             "expression": "value.exists() xor dataAbsentReason.exists()",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mustSupport": true
@@ -136,15 +136,14 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
+              "type": "pattern",
+              "path": "code"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
         "min": 1
       },
-      
       {
         "id": "Observation.value[x]:valueCodeableConcept.coding:Loinc",
         "path": "Observation.value[x].coding",

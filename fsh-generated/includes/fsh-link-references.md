@@ -80,7 +80,8 @@
 [MII_PR_ICU_Untersuchung_Pupillenbefund]: StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.html
 [MII_PR_ICU_Untersuchung_Pupillenform]: StructureDefinition-mii-pr-icu-untersuchung-pupillenform.html
 [MII_PR_ICU_Untersuchung_Pupillengroesse]: StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.html
-[MII_PR_ICU_Untersuchung_Pupillenlichtreaktion]: StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion.html
+[MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt]: StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html
+[MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt]: StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html
 [MII_PR_ICU_Untersuchung_Pupillensymmetrie]: StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.html
 [MII_PR_ICU_Venoeser_Druck]: StructureDefinition-mii-pr-icu-ect-venoeser-druck.html
 [MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung]: StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html

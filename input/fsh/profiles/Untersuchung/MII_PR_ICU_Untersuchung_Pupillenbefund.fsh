@@ -66,14 +66,17 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * hasMember ^slicing.rules = #closed
 
 * hasMember contains
-    PupillaryLightReaction 2..2 MS and
+    PupillaryLightReactionDirect 1..1 MS and
+    PupillaryLightReactionIndirect 1..1 MS and
     PupillarySize 2..2 MS and
     PupillaryShape 2..2 MS and
     PupillarySymmetry 1..1 MS
 
 // --- Light Reaction (per eye) ---
-* hasMember[PupillaryLightReaction] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion)
-* hasMember[PupillaryLightReaction] ^short = "Member observations: pupillary light reaction per eye."
+* hasMember[PupillaryLightReactionDirect] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt)
+* hasMember[PupillaryLightReactionDirect] ^short = "Member observations: direct pupillary light reaction."
+* hasMember[PupillaryLightReactionIndirect] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt)
+* hasMember[PupillaryLightReactionIndirect] ^short = "Member observations: indirect pupillary light reaction."
 
 // --- Pupillary Size ---
 * hasMember[PupillarySize] only Reference(MII_PR_ICU_Untersuchung_Pupillengroesse)

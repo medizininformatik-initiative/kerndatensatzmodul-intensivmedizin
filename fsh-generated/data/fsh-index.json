@@ -517,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenbefund.fsh",
     "startLine": 6,
-    "endLine": 90
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenform.json",
@@ -536,12 +536,20 @@
     "endLine": 54
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion",
+    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.json",
+    "fshName": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt",
     "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenlichtreaktion.fsh",
-    "startLine": 11,
-    "endLine": 75
+    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.json",
+    "fshName": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt.fsh",
+    "startLine": 1,
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.json",

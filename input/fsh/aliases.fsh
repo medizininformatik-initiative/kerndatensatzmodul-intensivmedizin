@@ -7,7 +7,11 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 // MII KDS
+// SD
 Alias: $mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
+// VS
+Alias: $mii-vs-icu-code-observation-pupillenlichtreaktion = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion
+Alias: $mii-vs-icu-bodysite-observation-pupillenbefund = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund
 
 // ISiK Profiles
 Alias: $observation-de-vitalsign-blutdruck = http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck

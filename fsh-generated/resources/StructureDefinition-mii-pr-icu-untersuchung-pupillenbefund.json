@@ -158,17 +158,34 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupillaryLightReaction",
+        "id": "Observation.hasMember:PupillaryLightReactionDirect",
         "path": "Observation.hasMember",
-        "sliceName": "PupillaryLightReaction",
-        "short": "Member observations: pupillary light reaction per eye.",
-        "min": 2,
-        "max": "2",
+        "sliceName": "PupillaryLightReactionDirect",
+        "short": "Member observations: direct pupillary light reaction.",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:PupillaryLightReactionIndirect",
+        "path": "Observation.hasMember",
+        "sliceName": "PupillaryLightReactionIndirect",
+        "short": "Member observations: indirect pupillary light reaction.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt"
             ]
           }
         ],

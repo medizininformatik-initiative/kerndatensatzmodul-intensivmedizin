@@ -641,9 +641,16 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion"
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"
         },
-        "name": "MII PR ICU Untersuchung Pupillenlichtreaktion",
+        "name": "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt"
+        },
+        "name": "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt",
         "exampleBoolean": false
       },
       {
