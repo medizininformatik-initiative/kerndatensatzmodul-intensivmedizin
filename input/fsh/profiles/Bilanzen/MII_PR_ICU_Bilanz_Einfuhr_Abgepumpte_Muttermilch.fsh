@@ -6,7 +6,9 @@ Title: "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"
 * ^status = #draft
+
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
+
 * code.coding 1.. MS
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
@@ -15,6 +17,7 @@ Title: "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"
 * code.coding[sct].code MS
 * code.coding[loinc] ..0 MS
 * code.coding[IEEE-11073] ..0 MS
+
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
 * valueQuantity.code ^binding.description = "equivalent codes for milliliter"

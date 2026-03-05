@@ -6,7 +6,9 @@ Title: "MII PR ICU Bilanz Ausfuhr Wunddrainage"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
 * ^status = #active
+
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
+
 * code.coding 2.. MS
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
@@ -19,6 +21,7 @@ Title: "MII PR ICU Bilanz Ausfuhr Wunddrainage"
 * code.coding[loinc] ^patternCoding.display = "Fluid output wound drain"
 * code.coding[loinc].code MS
 * code.coding[IEEE-11073] ..0 MS
+
 * valueQuantity.code 1.. MS
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
 * valueQuantity.code ^binding.description = "equivalent codes for milliliter"

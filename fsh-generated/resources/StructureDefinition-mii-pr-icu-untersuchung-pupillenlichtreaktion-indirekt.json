@@ -96,7 +96,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "sliceName": "valueCodeableConcept",
         "type": [
           {
             "code": "CodeableConcept"
@@ -121,9 +120,10 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "$this"
             }
           ],
+          "ordered": false,
           "rules": "closed"
         },
         "min": 1

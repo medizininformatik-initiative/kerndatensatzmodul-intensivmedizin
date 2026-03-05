@@ -26,10 +26,11 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
 
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
+* valueCodeableConcept 0..1 MS
 * valueCodeableConcept obeys pupil-comp-val-or-dar
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "code"
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* valueCodeableConcept.coding ^slicing.ordered = false
 * valueCodeableConcept.coding ^slicing.rules = #closed
 * valueCodeableConcept.coding contains Loinc 1..1 MS
 * valueCodeableConcept.coding[Loinc] from $mii-vs-icu-code-observation-pupillenlichtreaktion (required)
