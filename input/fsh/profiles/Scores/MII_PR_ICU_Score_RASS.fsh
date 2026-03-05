@@ -65,7 +65,7 @@ Title: "MII PR ICU Score RASS"
 * valueCodeableConcept ^comment = "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8)."
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
-* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding ^slicing.rules = #closed
 * valueCodeableConcept.coding contains loinc 1..1
 
 * bodySite 0..0

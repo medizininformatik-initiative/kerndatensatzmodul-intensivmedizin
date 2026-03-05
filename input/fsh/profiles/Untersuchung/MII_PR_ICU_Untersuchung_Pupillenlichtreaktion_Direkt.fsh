@@ -24,8 +24,8 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
 * code.coding.code = #45832002 (exactly)
 * code.coding.display = "Pupil afferent light reaction"
 
-* valueCodeableConcept 0..1 MS
-* valueCodeableConcept only CodeableConcept
+* value[x] 0..1 MS
+* value[x] only CodeableConcept
 * valueCodeableConcept obeys pupil-comp-val-or-dar
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern

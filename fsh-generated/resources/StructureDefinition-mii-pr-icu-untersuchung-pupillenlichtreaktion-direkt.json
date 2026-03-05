@@ -96,23 +96,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept",
-        "path": "Observation.value[x]",
         "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -131,7 +115,7 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "id": "Observation.value[x].coding",
         "path": "Observation.value[x].coding",
         "slicing": {
           "discriminator": [
@@ -145,7 +129,7 @@
         "min": 1
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:Loinc",
+        "id": "Observation.value[x].coding:Loinc",
         "path": "Observation.value[x].coding",
         "sliceName": "Loinc",
         "min": 1,
