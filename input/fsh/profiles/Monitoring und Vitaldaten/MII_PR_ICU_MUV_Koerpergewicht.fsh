@@ -36,12 +36,15 @@ Title: "MII PR ICU Koerpergewicht"
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
+
 * subject MS
+
 * effective[x] MS
 * effectiveDateTime MS
 * effectivePeriod MS
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
+
 * value[x] MS
 * valueQuantity = $ucum#kg "kilogram"
 * valueQuantity MS
@@ -49,5 +52,6 @@ Title: "MII PR ICU Koerpergewicht"
 * valueQuantity.unit MS
 * valueQuantity.system MS
 * valueQuantity.code MS
+
 * dataAbsentReason obeys mii-icu-1
 * component MS

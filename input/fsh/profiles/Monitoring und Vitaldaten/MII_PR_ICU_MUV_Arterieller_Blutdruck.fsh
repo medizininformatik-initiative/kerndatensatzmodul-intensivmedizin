@@ -8,6 +8,7 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * ^status = #active
 
 * category MS
+
 * code MS
 * code.coding MS
 * code.coding[loinc] MS
@@ -17,10 +18,10 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * code.coding contains sct 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #364090009
-
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
 * code.coding[sct].display MS
+
 * subject MS
 * encounter MS
 * effective[x] MS
@@ -31,6 +32,7 @@ Title: "MII PR ICU Arterieller Blutdruck"
 * method MS
 * device MS
 * referenceRange ..1 MS
+
 * component ..3 MS
 * component[SystolicBP] MS
 * component[SystolicBP].code.coding ^slicing.discriminator.type = #pattern

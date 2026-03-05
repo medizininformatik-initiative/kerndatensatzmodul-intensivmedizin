@@ -8,6 +8,7 @@ Title: "MII PR ICU Koerpergroesse"
 * ^status = #active
 
 * status MS
+
 * category MS
 * category[VSCat] MS
 * category[VSCat].coding MS
@@ -21,6 +22,7 @@ Title: "MII PR ICU Koerpergroesse"
 * category[sct].coding.system 1.. MS
 * category[sct].coding.code 1.. MS
 * category[sct].coding.display MS
+
 * code MS
 * code.coding 2.. MS
 * code.coding[loinc] 1..1 MS
@@ -35,12 +37,15 @@ Title: "MII PR ICU Koerpergroesse"
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
+
 * subject MS
+
 * effective[x] MS
 * effectiveDateTime MS
 * effectivePeriod MS
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
+
 * value[x] MS
 * valueQuantity = $ucum#cm "centimeter"
 * valueQuantity MS
@@ -50,6 +55,7 @@ Title: "MII PR ICU Koerpergroesse"
 * valueQuantity.unit MS
 * valueQuantity.system MS
 * valueQuantity.code MS
+
 * dataAbsentReason MS
 * interpretation
 * referenceRange

@@ -8,6 +8,7 @@ Title: "MII PR ICU Kopfumfang"
 * ^status = #active
 
 * status MS
+
 * category contains sct 0..1 MS
 * category[sct] = $sct#248326004
 * category[sct].coding MS
@@ -15,6 +16,7 @@ Title: "MII PR ICU Kopfumfang"
 * category[sct].coding.system 1.. MS
 * category[sct].coding.code 1.. MS
 * category[sct].coding.display 1.. MS
+
 * code MS
 * code.coding 2.. MS
 * code.coding[loinc].system 1..1 MS
@@ -24,9 +26,11 @@ Title: "MII PR ICU Kopfumfang"
 * code.coding[snomed] ^patternCodeableConcept.coding.code = #363812007
 * code.coding[snomed].system 1..1 MS
 * code.coding[snomed].code 1..1 MS
+
 * subject MS
 * effective[x] MS
 * effectiveDateTime MS
+
 * value[x] MS
 * valueQuantity = $ucum#cm "centimeter"
 * valueQuantity MS
@@ -34,7 +38,9 @@ Title: "MII PR ICU Kopfumfang"
 * valueQuantity.unit MS
 * valueQuantity.system MS
 * valueQuantity.code MS
+
 * dataAbsentReason MS
+
 * bodySite MS
 * bodySite ^patternCodeableConcept.coding.system = $sct
 * bodySite ^patternCodeableConcept.coding.code = #69536005

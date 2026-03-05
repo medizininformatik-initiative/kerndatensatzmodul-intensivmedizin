@@ -6,7 +6,9 @@ Title: "MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
 * ^status = #active
+
 * category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
+
 * code.coding 1.. MS
 * code.coding[sct] ..0 MS
 * code.coding[loinc] 1..1 MS
@@ -15,6 +17,7 @@ Title: "MII PR ICU Bilanz Ausfuhr Stuhlgang"
 * code.coding[loinc] ^patternCoding.display = "Output.stool [Volume]"
 * code.coding[loinc].code MS
 * code.coding[IEEE-11073] ..0 MS
+
 * valueQuantity.code 1.. MS 
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-milliliter (required)
 * valueQuantity.code ^binding.description = "equivalent codes for milliliter"

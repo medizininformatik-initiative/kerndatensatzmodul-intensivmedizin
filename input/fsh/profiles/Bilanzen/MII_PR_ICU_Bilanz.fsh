@@ -8,6 +8,7 @@ Title: "MII PR ICU Bilanz"
 * ^status = #active
 
 * identifier MS
+
 * category 1.. MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -24,6 +25,7 @@ Title: "MII PR ICU Bilanz"
 * category.coding[kdsicu-category].code = $sct#364396009
 * category.coding[kdsicu-category].system 1.. MS
 * category.coding[kdsicu-category].code 1.. MS
+
 * code MS
 * code.coding 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -46,14 +48,20 @@ Title: "MII PR ICU Bilanz"
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073].system 1.. MS
 * code.coding[IEEE-11073].code 1.. MS
+
 * subject 1.. MS
 * subject only Reference(Patient)
+
 * encounter MS
+
 * effective[x] 1.. MS
 * effective[x] only dateTime or Period
+
 * issued MS
+
 * value[x] 1.. MS
 * value[x] only Quantity
+
 * dataAbsentReason MS
 * interpretation MS
 * bodySite MS
