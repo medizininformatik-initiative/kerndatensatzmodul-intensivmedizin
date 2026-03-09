@@ -39,7 +39,7 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
-* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding ^slicing.rules = #closed
 * valueCodeableConcept.coding contains
     Snomed 1..1 MS and
     Loinc  1..1 MS
