@@ -40,15 +40,16 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 
 * value[x] 1..1 MS
 * value[x] only Quantity or CodeableConcept
+* value[x] ^constraint[+].key = "pupil-comp-val-or-dar"
+* value[x] ^constraint[=].severity = #error
+* value[x] ^constraint[=].human = "Component must have either value or dataAbsentReason."
+* value[x] ^constraint[=].expression = "value.exists() xor dataAbsentReason.exists()"
+
+* valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillengroesse (required)
+
 * valueQuantity.system 1..1 MS
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1 MS
 * valueQuantity.code = #mm
 * valueQuantity.unit 1..1 MS
 * valueQuantity.unit = "mm"
-
-* valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillengroesse (required)
-* valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
-* valueCodeableConcept ^constraint[=].severity = #error
-* valueCodeableConcept ^constraint[=].human = "Component must have either value or dataAbsentReason."
-* valueCodeableConcept ^constraint[=].expression = "value.exists() xor dataAbsentReason.exists()"
