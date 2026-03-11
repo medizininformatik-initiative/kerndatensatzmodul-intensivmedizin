@@ -20,6 +20,7 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * meta MS
 * identifier MS
 * status 1..1 MS
+* obeys obs-value-or-dataAbsentReason
 
 * category 1..* MS
 * category.coding.system = $observation-category
@@ -37,10 +38,7 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * dataAbsentReason 0..1 MS
 
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept ^constraint[+].key = "pupil-comp-val-or-dar"
-* valueCodeableConcept ^constraint[=].severity = #error
-* valueCodeableConcept ^constraint[=].human = "Component must have either value or dataAbsentReason."
-* valueCodeableConcept ^constraint[=].expression = "value.exists() xor dataAbsentReason.exists()"
+* valueCodeableConcept obeys pupil-form-code-consistency
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #closed

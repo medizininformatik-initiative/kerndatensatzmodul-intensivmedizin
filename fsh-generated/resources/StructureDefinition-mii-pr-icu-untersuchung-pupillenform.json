@@ -26,6 +26,19 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "obs-value-or-dataAbsentReason",
+            "human": "Observation must have either value or dataAbsentReason.",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
+            "severity": "error",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ]
+      },
+      {
         "id": "Observation.id",
         "path": "Observation.id",
         "mustSupport": true
@@ -120,12 +133,11 @@
         ],
         "constraint": [
           {
-            "key": "pupil-comp-val-or-dar",
+            "key": "pupil-form-code-consistency",
+            "human": "SNOMED- und LOINC-Code muessen semantisch zusammenpassen (regular/rund oder irregulaer/irregulaer).",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
             "severity": "error",
-            "human": "Component must have either value or dataAbsentReason.",
-            "expression": "value.exists() xor dataAbsentReason.exists()",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+            "expression": "(coding.where(system='http://snomed.info/sct' and code='823997007').exists() and coding.where(system='http://loinc.org' and code='LA24884-1').exists()) or (coding.where(system='http://snomed.info/sct' and code='271732006').exists() and coding.where(system='http://loinc.org' and code='LA19583-6').exists())"
           }
         ],
         "mustSupport": true

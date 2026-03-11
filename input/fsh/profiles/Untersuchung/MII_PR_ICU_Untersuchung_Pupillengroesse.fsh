@@ -22,6 +22,7 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * meta MS
 * identifier MS
 * status 1..1 MS
+* obeys obs-value-or-dataAbsentReason
 
 * category 1..* MS
 * category.coding.system = $observation-category
@@ -40,10 +41,6 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 
 * value[x] 1..1 MS
 * value[x] only Quantity or CodeableConcept
-* value[x] ^constraint[+].key = "pupil-comp-val-or-dar"
-* value[x] ^constraint[=].severity = #error
-* value[x] ^constraint[=].human = "Component must have either value or dataAbsentReason."
-* value[x] ^constraint[=].expression = "value.exists() xor dataAbsentReason.exists()"
 
 * valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillengroesse (required)
 

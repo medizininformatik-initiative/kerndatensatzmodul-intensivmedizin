@@ -42,10 +42,6 @@ Title: "MII PR ICU Untersuchung Pupillensymmetrie"
 * bodySite.coding.code = #67019001 (exactly)
 * bodySite.coding.display = "Structure of pupil of both eyes (body structure)"
 
+* obeys obs-value-or-dataAbsentReason
 * value[x] only CodeableConcept
 * valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillensymmetrie (required)
-
-* valueCodeableConcept ^constraint[+].key = "pupil-symm-val-or-dar"
-* valueCodeableConcept ^constraint[=].severity = #error
-* valueCodeableConcept ^constraint[=].human = "Component must have either value or dataAbsentReason."
-* valueCodeableConcept ^constraint[=].expression = "value.exists() xor dataAbsentReason.exists()"

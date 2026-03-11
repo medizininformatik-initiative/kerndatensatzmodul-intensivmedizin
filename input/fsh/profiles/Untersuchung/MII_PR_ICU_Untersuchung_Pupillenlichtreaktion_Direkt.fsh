@@ -24,10 +24,10 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
 * code.coding.code = #45832002 (exactly)
 * code.coding.display = "Pupil afferent light reaction"
 
+* obeys obs-value-or-dataAbsentReason
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept obeys pupil-comp-val-or-dar
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.ordered = false
@@ -39,10 +39,3 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
 
 * bodySite 1..1 MS
 * bodySite from $mii-vs-icu-bodysite-observation-pupillenbefund (required)
-
-Invariant: pupil-comp-val-or-dar
-Description: "Component must have either value or dataAbsentReason."
-* severity = #error
-* expression = "value.exists() xor dataAbsentReason.exists()"
-* xpath = "@value|f:*|h:div"
-* source = "http://hl7.org/fhir/StructureDefinition/Element"

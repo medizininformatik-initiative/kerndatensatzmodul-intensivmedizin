@@ -16,6 +16,7 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * meta MS
 * identifier MS
 * status 1..1 MS
+* obeys obs-value-or-dataAbsentReason
 
 * category 1..* MS
 * category.coding.system = $observation-category
@@ -60,35 +61,35 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 // - MII_PR_ICU_Untersuchung_Pupillenform
 // - MII_PR_ICU_Untersuchung_Pupillensymmetrie
 
-* hasMember 7..7 MS
+* hasMember 9..9 MS
 
 * hasMember ^slicing.discriminator.type = #profile
 * hasMember ^slicing.discriminator.path = "resolve()"
 * hasMember ^slicing.rules = #closed
 
 * hasMember contains
-    PupillaryLightReactionDirect 1..1 MS and
-    PupillaryLightReactionIndirect 1..1 MS and
+    PupillaryLightReactionDirect 2..2 MS and
+    PupillaryLightReactionIndirect 2..2 MS and
     PupillarySize 2..2 MS and
     PupillaryShape 2..2 MS and
     PupillarySymmetry 1..1 MS
 
 // --- Light Reaction (per eye) ---
 * hasMember[PupillaryLightReactionDirect] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt)
-* hasMember[PupillaryLightReactionDirect] ^short = "Member observations: direct pupillary light reaction."
+* hasMember[PupillaryLightReactionDirect] ^short = "Mitgliedsbeobachtung: direkte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts)."
 * hasMember[PupillaryLightReactionIndirect] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt)
-* hasMember[PupillaryLightReactionIndirect] ^short = "Member observations: indirect pupillary light reaction."
+* hasMember[PupillaryLightReactionIndirect] ^short = "Mitgliedsbeobachtung: indirekte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts)."
 
 // --- Pupillary Size ---
 * hasMember[PupillarySize] only Reference(MII_PR_ICU_Untersuchung_Pupillengroesse)
-* hasMember[PupillarySize] ^short = "Member observation: categorical pupillary size (both pupils)."
+* hasMember[PupillarySize] ^short = "Mitgliedsbeobachtung: Pupillengroesse (beide Pupillen)."
 
 // --- Pupil Shape ---
 * hasMember[PupillaryShape] only Reference(MII_PR_ICU_Untersuchung_Pupillenform)
-* hasMember[PupillaryShape] ^short = "Member observation: pupil shape/regularity (both pupils)."
+* hasMember[PupillaryShape] ^short = "Mitgliedsbeobachtung: Pupillenform/Regularitaet (beide Pupillen)."
 
 // --- Pupillary Symmetry ---
 * hasMember[PupillarySymmetry] only Reference(MII_PR_ICU_Untersuchung_Pupillensymmetrie)
-* hasMember[PupillarySymmetry] ^short = "Member observation: pupillary symmetry (isocoria/anisocoria)."
-* hasMember ^short = "References to member observations forming the pupillary examination panel."
-* hasMember ^comment = "Dieses Panel bündelt die Einzelbefunde zur Pupillenuntersuchung via hasMember. Erwartet werden: (1) Pupillary Light Reaction (per eye) - i.d.R. 2 Instanzen (links/rechts), (2) Pupillary Size, (3) Pupil Shape/Regularity, (4) Pupillary Symmetry. Keine zusätzliche Interpretation im Panel selbst."
+* hasMember[PupillarySymmetry] ^short = "Mitgliedsbeobachtung: Pupillensymmetrie (isokor/anisokor)."
+* hasMember ^short = "Referenzen auf die Mitgliedsbeobachtungen der Pupillenuntersuchung."
+* hasMember ^comment = "Dieses Panel bündelt die Einzelbefunde zur Pupillenuntersuchung via hasMember. Erwartet werden genau 9 Members: direkte und indirekte Lichtreaktion (je 2, links/rechts), Pupillengroesse (2), Pupillenform (2) und Pupillensymmetrie (1). Keine zusätzliche Interpretation im Panel selbst."
