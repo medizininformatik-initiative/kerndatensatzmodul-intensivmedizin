@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_ICU_BodySite_Observation_Beatmung",
+  "id": "mii-vs-icu-body-site-observation-beatmung",
+  "title": "MII VS ICU BodySite Observation Beatmung",
+  "description": "Dieses ValueSet enthält Codes für bodySites für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung",
+  "version": "2026.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-02-11",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "11527006"
+          },
+          {
+            "code": "89187006"
+          },
+          {
+            "code": "181216001"
+          }
+        ]
+      }
+    ]
+  }
+}
