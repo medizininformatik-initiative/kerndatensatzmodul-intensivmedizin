@@ -7,7 +7,7 @@ Title: "MII PR ICU Bilanz Einfuhr Muttermilch"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
 * ^status = #draft
 
-* category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
+* category.coding[hl7-category].code = $observation-category#exam
 
 * code.coding 1.. MS
 * code.coding[sct] 1..1 MS

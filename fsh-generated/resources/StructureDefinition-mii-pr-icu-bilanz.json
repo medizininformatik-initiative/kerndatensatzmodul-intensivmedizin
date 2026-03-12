@@ -58,7 +58,7 @@
         "min": 0,
         "max": "1",
         "patternCoding": {
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"
+          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category"
         },
         "mustSupport": true,
         "binding": {
@@ -117,7 +117,6 @@
           ],
           "rules": "closed"
         },
-        "min": 1,
         "mustSupport": true
       },
       {

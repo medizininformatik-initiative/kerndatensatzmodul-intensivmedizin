@@ -1,10 +1,9 @@
 // Code Systems
-Alias: $CodeSystem-observation-category.html = https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $ieee-11073 = urn:iso:std:iso:11073:10101
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $observation-category = https://terminology.hl7.org/4.0.0/CodeSystem-observation-category
 
 // MII KDS
 // SD

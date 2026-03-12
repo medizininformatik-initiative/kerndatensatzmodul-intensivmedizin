@@ -26,8 +26,8 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * code 1..1 MS
 * hasMember 1..* MS
 
-* value[x] 0..0
-* dataAbsentReason 0..0
+* value[x] 0..1 MS
+* dataAbsentReason 0..1 MS
 
 // Observation.code = Panel-Semantik (SNOMED + LOINC)
 // - SNOMED: 247010007 |Pupil finding (finding)|

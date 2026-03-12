@@ -7,7 +7,7 @@ Title: "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
 * ^status = #active
 
-* category.coding[hl7-category].code = $CodeSystem-observation-category.html#exam
+* category.coding[hl7-category].code = $observation-category#exam
 
 * code.coding 2.. MS
 * code.coding[sct] 1..1 MS

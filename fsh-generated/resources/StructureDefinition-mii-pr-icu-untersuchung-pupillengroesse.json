@@ -67,7 +67,7 @@
       {
         "id": "Observation.category.coding.system",
         "path": "Observation.category.coding.system",
-        "patternUri": "http://terminology.hl7.org/CodeSystem/observation-category"
+        "patternUri": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category"
       },
       {
         "id": "Observation.category.coding.code",
