@@ -15,10 +15,10 @@ Alias: $mii-vs-icu-bodysite-observation-pupillenbefund = https://www.medizininfo
 // ISiK Profiles
 Alias: $observation-de-vitalsign-blutdruck = http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck
 Alias: $observation-de-vitalsign-atemfrequenz = http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz
-Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
 Alias: $observation-de-vitalsign-koerpergroesse = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
 Alias: $observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang
+Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten
 
 // licenses
 Alias: $spdx-license = http://hl7.org/fhir/spdx-license
