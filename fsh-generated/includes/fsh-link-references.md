@@ -24,6 +24,7 @@
 [MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage]: StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html
 [MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html
 [MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html
+[MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html
 [MII_PR_ICU_Bilanz_Einfuhr_Muttermilch]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.html
 [MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html
 [MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html
@@ -138,4 +139,3 @@
 [mii-sp-icu-observation-referencerange-low]: SearchParameter-mii-sp-icu-observation-referencerange-low.html
 [mii-sp-icu-procedure-recorder]: SearchParameter-mii-sp-icu-procedure-recorder.html
 [MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html
-[MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt]: StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html

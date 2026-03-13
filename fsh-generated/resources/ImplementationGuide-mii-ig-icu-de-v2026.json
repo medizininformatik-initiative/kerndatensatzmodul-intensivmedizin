@@ -236,6 +236,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
         },
         "name": "MII PR ICU Bilanz Einfuhr Muttermilch",
@@ -1085,13 +1092,6 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
         },
         "name": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
-        },
-        "name": "SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt",
         "exampleBoolean": false
       }
     ],
