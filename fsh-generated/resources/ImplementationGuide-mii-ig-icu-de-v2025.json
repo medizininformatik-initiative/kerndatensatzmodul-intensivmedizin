@@ -88,23 +88,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
-        },
-        "name": "MII PR ICU Arterieller Blutdruck",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-ect-arterieller-druck"
         },
         "name": "MII PR ICU Arterieller Druck",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
-        },
-        "name": "MII PR ICU Atemfrequenz",
         "exampleBoolean": false
       },
       {
@@ -445,27 +431,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
-        },
-        "name": "MII PR ICU Koerpergewicht",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse"
-        },
-        "name": "MII PR ICU Koerpergroesse",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
-        },
-        "name": "MII PR ICU Kopfumfang",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
         },
         "name": "MII PR ICU Maximaler Beatmungsdruck",
@@ -483,6 +448,41 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
         },
         "name": "MII PR ICU Mittlerer Beatmungsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
+        },
+        "name": "MII PR ICU MUV Arterieller Blutdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
+        },
+        "name": "MII PR ICU MUV Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
+        },
+        "name": "MII PR ICU MUV Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+        },
+        "name": "MII PR ICU MUV Koerpergroesse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
+        },
+        "name": "MII PR ICU MUV Kopfumfang",
         "exampleBoolean": false
       },
       {

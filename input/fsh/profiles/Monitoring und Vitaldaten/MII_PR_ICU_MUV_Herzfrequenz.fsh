@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Herzfrequenz
+Profile: MII_PR_ICU_MUV_Herzfrequenz
 Parent: $sd-mii-icu-monitoring-und-vitaldaten
 Id: mii-pr-icu-muv-herzfrequenz
-Title: "MII SD ICU Herzfrequenz"
+Title: "MII SD ICU MUV Herzfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-herzfrequenz"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
 * ^status = #active
 
 * code.coding 3..

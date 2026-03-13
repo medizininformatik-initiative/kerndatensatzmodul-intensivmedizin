@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Koerpergroesse
+Profile: MII_PR_ICU_MUV_Koerpergroesse
 Parent: $observation-de-vitalsign-koerpergroesse
 Id: mii-pr-icu-muv-koerpergroesse
-Title: "MII PR ICU Koerpergroesse"
+Title: "MII PR ICU MUV Koerpergroesse"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergroesse"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
 * ^status = #active
 
 * status MS

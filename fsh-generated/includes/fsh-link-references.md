@@ -2,9 +2,7 @@
 [MII_PR_ICU_Beatmungszeit_Hohem_Druck]: StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html
 [MII_PR_ICU_Dauer_Haemodialysesitzung]: StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.html
 [MII_LM_ICU]: StructureDefinition-mii-lm-intensivmedizin.html
-[MII_PR_ICU_Arterieller_Blutdruck]: StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html
 [MII_PR_ICU_Arterieller_Druck]: StructureDefinition-mii-pr-icu-ect-arterieller-druck.html
-[MII_PR_ICU_Atemfrequenz]: StructureDefinition-mii-pr-icu-muv-atemfrequenz.html
 [MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss]: StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.html
 [MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss]: StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html
 [MII_PR_ICU_Atemzugvolumen_Einstellung]: StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.html
@@ -53,12 +51,14 @@
 [MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt]: StructureDefinition-mii-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.html
 [MII_PR_ICU_Inspiratorischer_Gasfluss]: StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.html
 [MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren]: StructureDefinition-mii-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren.html
-[MII_PR_ICU_Koerpergewicht]: StructureDefinition-mii-pr-icu-muv-koerpergewicht.html
-[MII_PR_ICU_Koerpergroesse]: StructureDefinition-mii-pr-icu-muv-koerpergroesse.html
-[MII_PR_ICU_Kopfumfang]: StructureDefinition-mii-pr-icu-muv-kopfumfang.html
 [MII_PR_ICU_Maximaler_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.html
 [MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.html
 [MII_PR_ICU_Mittlerer_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.html
+[MII_PR_ICU_MUV_Arterieller_Blutdruck]: StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html
+[MII_PR_ICU_MUV_Atemfrequenz]: StructureDefinition-mii-pr-icu-muv-atemfrequenz.html
+[MII_PR_ICU_MUV_Koerpergewicht]: StructureDefinition-mii-pr-icu-muv-koerpergewicht.html
+[MII_PR_ICU_MUV_Koerpergroesse]: StructureDefinition-mii-pr-icu-muv-koerpergroesse.html
+[MII_PR_ICU_MUV_Kopfumfang]: StructureDefinition-mii-pr-icu-muv-kopfumfang.html
 [MII_PR_ICU_Parameter_Von_Beatmung]: StructureDefinition-mii-pr-vent-icu-parameter-von-beatmung.html
 [MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren]: StructureDefinition-mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren.html
 [MII_PR_ICU_Positiv_Endexpiratorischer_Druck]: StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.html

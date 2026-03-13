@@ -1,14 +1,15 @@
-Profile: MII_PR_ICU_Koerpergewicht
+Profile: MII_PR_ICU_MUV_Koerpergewicht
 Parent: $observation-de-vitalsign-koerpergewicht
 Id: mii-pr-icu-muv-koerpergewicht
-Title: "MII PR ICU Koerpergewicht"
+Title: "MII PR ICU MUV Koerpergewicht"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-koerpergewicht"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
 * ^status = #active
 
 * status MS
 * category MS
+* obeys obs-value-or-dataAbsentReason
 
 * category[VSCat].coding 0.. MS
 * category[VSCat].coding.system 1..1 MS
@@ -53,5 +54,4 @@ Title: "MII PR ICU Koerpergewicht"
 * valueQuantity.system MS
 * valueQuantity.code MS
 
-* dataAbsentReason obeys mii-icu-1
 * component MS

@@ -8,11 +8,6 @@ Description: "If there is no component or hasMember element then either a value[
 * severity = #error
 * expression = "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
 
-Invariant: mii-icu-1
-Description: "If there is no Observation.value, a dataAbsentReason must be given."
-* severity = #error
-* expression = "value.exists().not() implies dataAbsentReason.exists()"
-
 Invariant: obs-loinc-sct
 Description: "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein"
 * severity = #error

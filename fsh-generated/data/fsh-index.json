@@ -409,7 +409,7 @@
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.json",
-    "fshName": "MII_PR_ICU_Arterieller_Blutdruck",
+    "fshName": "MII_PR_ICU_MUV_Arterieller_Blutdruck",
     "fshType": "Profile",
     "fshFile": "profiles\\Monitoring und Vitaldaten\\MII_PR_ICU_MUV_Arterieller_Blutdruck.fsh",
     "startLine": 1,
@@ -417,7 +417,7 @@
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-atemfrequenz.json",
-    "fshName": "MII_PR_ICU_Atemfrequenz",
+    "fshName": "MII_PR_ICU_MUV_Atemfrequenz",
     "fshType": "Profile",
     "fshFile": "profiles\\Monitoring und Vitaldaten\\MII_PR_ICU_MUV_Atemfrequenz.fsh",
     "startLine": 1,
@@ -425,7 +425,7 @@
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-koerpergewicht.json",
-    "fshName": "MII_PR_ICU_Koerpergewicht",
+    "fshName": "MII_PR_ICU_MUV_Koerpergewicht",
     "fshType": "Profile",
     "fshFile": "profiles\\Monitoring und Vitaldaten\\MII_PR_ICU_MUV_Koerpergewicht.fsh",
     "startLine": 1,
@@ -433,7 +433,7 @@
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-koerpergroesse.json",
-    "fshName": "MII_PR_ICU_Koerpergroesse",
+    "fshName": "MII_PR_ICU_MUV_Koerpergroesse",
     "fshType": "Profile",
     "fshFile": "profiles\\Monitoring und Vitaldaten\\MII_PR_ICU_MUV_Koerpergroesse.fsh",
     "startLine": 1,
@@ -441,7 +441,7 @@
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-kopfumfang.json",
-    "fshName": "MII_PR_ICU_Kopfumfang",
+    "fshName": "MII_PR_ICU_MUV_Kopfumfang",
     "fshType": "Profile",
     "fshFile": "profiles\\Monitoring und Vitaldaten\\MII_PR_ICU_MUV_Kopfumfang.fsh",
     "startLine": 1,

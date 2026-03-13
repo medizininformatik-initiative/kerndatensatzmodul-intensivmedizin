@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Atemfrequenz
+Profile: MII_PR_ICU_MUV_Atemfrequenz
 Parent: $observation-de-vitalsign-atemfrequenz
 Id: mii-pr-icu-muv-atemfrequenz
-Title: "MII PR ICU Atemfrequenz"
+Title: "MII PR ICU MUV Atemfrequenz"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemfrequenz"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
 * ^status = #active
 
 * id MS

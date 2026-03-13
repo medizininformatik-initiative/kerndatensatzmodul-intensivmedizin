@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Kopfumfang
+Profile: MII_PR_ICU_MUV_Kopfumfang
 Parent: $observation-de-vitalsign-kopfumfang
 Id: mii-pr-icu-muv-kopfumfang
-Title: "MII PR ICU Kopfumfang"
+Title: "MII PR ICU MUV Kopfumfang"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kopfumfang"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
 * ^status = #active
 
 * status MS
