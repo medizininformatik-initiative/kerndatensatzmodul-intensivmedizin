@@ -26,7 +26,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
 * code.coding.display = "Indirect light pupillary reflex"
 
 * obeys obs-value-or-dataAbsentReason
-* value[x] 1..1 MS
+* value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
@@ -36,7 +36,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
 * valueCodeableConcept.coding contains Loinc 1..1 MS
 * valueCodeableConcept.coding[Loinc] from $mii-vs-icu-code-observation-pupillenlichtreaktion (required)
 
-* dataAbsentReason MS
+* dataAbsentReason 0..1 MS
 
 * bodySite 1..1 MS
 * bodySite from $mii-vs-icu-bodysite-observation-pupillenbefund (required)

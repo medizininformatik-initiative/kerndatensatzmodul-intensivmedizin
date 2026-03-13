@@ -7,7 +7,7 @@ Title: "MII PR ICU Bilanz Tagesbilanz Fluessigkeit"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
 * ^status = #active
 
-* category.coding[hl7-category] = $observation-category#exam
+* category.coding[hl7-category].code = #exam
 
 * code.coding 2.. MS
 * code.coding[sct] 1..1 MS

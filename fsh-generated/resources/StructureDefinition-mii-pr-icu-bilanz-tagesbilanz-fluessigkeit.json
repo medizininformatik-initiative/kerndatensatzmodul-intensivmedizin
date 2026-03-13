@@ -28,11 +28,12 @@
       {
         "id": "Observation.category.coding:hl7-category",
         "path": "Observation.category.coding",
-        "sliceName": "hl7-category",
-        "patternCoding": {
-          "code": "exam",
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-        }
+        "sliceName": "hl7-category"
+      },
+      {
+        "id": "Observation.category.coding:hl7-category.code",
+        "path": "Observation.category.coding.code",
+        "patternCode": "exam"
       },
       {
         "id": "Observation.code.coding",

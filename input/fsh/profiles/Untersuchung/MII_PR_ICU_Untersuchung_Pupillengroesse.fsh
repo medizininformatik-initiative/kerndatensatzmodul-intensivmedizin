@@ -22,7 +22,6 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * meta MS
 * identifier MS
 * status 1..1 MS
-* obeys obs-value-or-dataAbsentReason
 
 * category 1..* MS
 * category.coding.system = $observation-category
@@ -39,7 +38,8 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * bodySite from MII_VS_ICU_BodySite_Observation_Pupillenbefund (required)
 * dataAbsentReason 0..1 MS
 
-* value[x] 1..1 MS
+* obeys obs-value-or-dataAbsentReason
+* value[x] 0..1 MS
 * value[x] only Quantity or CodeableConcept
 
 * valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillengroesse (required)

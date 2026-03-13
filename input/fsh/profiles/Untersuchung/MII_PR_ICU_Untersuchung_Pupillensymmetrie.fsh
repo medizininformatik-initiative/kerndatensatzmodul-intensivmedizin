@@ -43,5 +43,6 @@ Title: "MII PR ICU Untersuchung Pupillensymmetrie"
 * bodySite.coding.display = "Structure of pupil of both eyes (body structure)"
 
 * obeys obs-value-or-dataAbsentReason
+* value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillensymmetrie (required)

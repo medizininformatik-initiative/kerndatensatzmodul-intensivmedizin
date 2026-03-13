@@ -20,7 +20,6 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * meta MS
 * identifier MS
 * status 1..1 MS
-* obeys obs-value-or-dataAbsentReason
 
 * category 1..* MS
 * category.coding.system = $observation-category
@@ -37,9 +36,9 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * bodySite from MII_VS_ICU_BodySite_Observation_Pupillenbefund (required)
 * dataAbsentReason 0..1 MS
 
+* obeys obs-value-or-dataAbsentReason
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
-* valueCodeableConcept 0..1 MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #closed

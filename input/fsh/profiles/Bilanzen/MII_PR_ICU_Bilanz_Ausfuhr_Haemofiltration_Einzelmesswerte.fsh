@@ -7,7 +7,7 @@ Title: "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
 * ^status = #active
 
-* category.coding[hl7-category].code = $observation-category#exam
+* category.coding[hl7-category].code = #exam
 
 * code.coding 2.. MS
 * code.coding[sct] 1..1 MS

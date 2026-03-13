@@ -7,7 +7,7 @@ Title: "MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
 * ^status = #active
 
-* category.coding[hl7-category].code = $observation-category#exam
+* category.coding[hl7-category].code = #exam
 
 * code.coding 1.. MS
 * code.coding[sct] 1..1 MS
