@@ -43,7 +43,12 @@ Title: "MII PR ICU Untersuchung Pupillengroesse"
 * value[x] only Quantity or CodeableConcept
 
 * valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillengroesse (required)
+* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* valueCodeableConcept.coding ^slicing.ordered = false
+* valueCodeableConcept.coding ^slicing.rules = #closed
 
+* valueQuantity.value MS
 * valueQuantity.system 1..1 MS
 * valueQuantity.system = $ucum
 * valueQuantity.code 1..1 MS
