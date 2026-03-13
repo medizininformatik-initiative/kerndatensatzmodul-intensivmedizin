@@ -144,6 +144,20 @@
         }
       },
       {
+        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "path": "Observation.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        }
+      },
+      {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "mustSupport": true

@@ -46,3 +46,7 @@ Title: "MII PR ICU Untersuchung Pupillensymmetrie"
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from MII_VS_ICU_Code_Observation_Pupillensymmetrie (required)
+* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* valueCodeableConcept.coding ^slicing.ordered = false
+* valueCodeableConcept.coding ^slicing.rules = #closed
