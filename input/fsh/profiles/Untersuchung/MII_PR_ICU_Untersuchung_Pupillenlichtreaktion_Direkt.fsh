@@ -28,7 +28,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
 * obeys obs-value-or-dataAbsentReason
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
-* valueCodeableConcept 0..1 MS
+* valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.ordered = false
