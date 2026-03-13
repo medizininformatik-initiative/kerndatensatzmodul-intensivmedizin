@@ -114,15 +114,6 @@
             "code": "CodeableConcept"
           }
         ],
-        "constraint": [
-          {
-            "key": "pupil-form-code-consistency",
-            "human": "SNOMED- und LOINC-Code muessen semantisch zusammenpassen (regular/rund oder irregulaer/irregulaer).",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
-            "severity": "error",
-            "expression": "(valueCodeableConcept.coding.where(system='http://snomed.info/sct' and code='823997007').exists() and valueCodeableConcept.coding.where(system='http://loinc.org' and code='LA24884-1').exists()) or (valueCodeableConcept.coding.where(system='http://snomed.info/sct' and code='271732006').exists() and valueCodeableConcept.coding.where(system='http://loinc.org' and code='LA19583-6').exists())"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -131,25 +122,13 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
+              "type": "pattern",
+              "path": "$this"
             }
           ],
           "rules": "closed"
         },
-        "min": 2
-      },
-      {
-        "id": "Observation.value[x].coding:Snomed",
-        "path": "Observation.value[x].coding",
-        "sliceName": "Snomed",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-snomed"
-        }
+        "min": 1
       },
       {
         "id": "Observation.value[x].coding:Loinc",

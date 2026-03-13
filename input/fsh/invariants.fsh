@@ -22,8 +22,3 @@ Invariant: obs-value-or-dataAbsentReason
 Description: "Observation must have either value or dataAbsentReason."
 * severity = #error
 * expression = "value.exists() xor dataAbsentReason.exists()"
-
-Invariant: pupil-form-code-consistency
-Description: "SNOMED- und LOINC-Code muessen semantisch zusammenpassen (regular/rund oder irregulaer/irregulaer)."
-* severity = #error
-* expression = "(valueCodeableConcept.coding.where(system='http://snomed.info/sct' and code='823997007').exists() and valueCodeableConcept.coding.where(system='http://loinc.org' and code='LA24884-1').exists()) or (valueCodeableConcept.coding.where(system='http://snomed.info/sct' and code='271732006').exists() and valueCodeableConcept.coding.where(system='http://loinc.org' and code='LA19583-6').exists())"

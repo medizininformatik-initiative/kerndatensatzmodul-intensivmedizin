@@ -16,7 +16,6 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * meta MS
 * identifier MS
 * status 1..1 MS
-* obeys obs-value-or-dataAbsentReason
 
 * category 1..* MS
 * category.coding.system = $observation-category
@@ -26,8 +25,8 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * code 1..1 MS
 * hasMember 1..* MS
 
-* value[x] 0..1 MS
-* dataAbsentReason 0..1 MS
+* value[x] 0..0 MS
+* dataAbsentReason 0..0 MS
 
 // Observation.code = Panel-Semantik (SNOMED + LOINC)
 // - SNOMED: 247010007 |Pupil finding (finding)|
@@ -35,8 +34,8 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 
 * code.coding 2..* MS
 
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding contains
     Snomed 1..1 MS and
@@ -68,28 +67,28 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 * hasMember ^slicing.rules = #closed
 
 * hasMember contains
-    PupillaryLightReactionDirect 2..2 MS and
-    PupillaryLightReactionIndirect 2..2 MS and
-    PupillarySize 2..2 MS and
-    PupillaryShape 2..2 MS and
-    PupillarySymmetry 1..1 MS
+    PupillenlichtreaktionDirekt 2..2 MS and
+    PupillenlichtreaktionIndirekt 2..2 MS and
+    Pupillengroesse 2..2 MS and
+    Pupillenform 2..2 MS and
+    Pupillensymmetrie 1..1 MS
 
 // --- Light Reaction (per eye) ---
-* hasMember[PupillaryLightReactionDirect] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt)
-* hasMember[PupillaryLightReactionDirect] ^short = "Mitgliedsbeobachtung: direkte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts)."
-* hasMember[PupillaryLightReactionIndirect] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt)
-* hasMember[PupillaryLightReactionIndirect] ^short = "Mitgliedsbeobachtung: indirekte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts)."
+* hasMember[PupillenlichtreaktionDirekt] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt)
+* hasMember[PupillenlichtreaktionDirekt] ^short = "Mitgliedsbeobachtung: direkte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts)."
+* hasMember[PupillenlichtreaktionIndirekt] only Reference(MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt)
+* hasMember[PupillenlichtreaktionIndirekt] ^short = "Mitgliedsbeobachtung: indirekte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts)."
 
 // --- Pupillary Size ---
-* hasMember[PupillarySize] only Reference(MII_PR_ICU_Untersuchung_Pupillengroesse)
-* hasMember[PupillarySize] ^short = "Mitgliedsbeobachtung: Pupillengroesse (beide Pupillen)."
+* hasMember[Pupillengroesse] only Reference(MII_PR_ICU_Untersuchung_Pupillengroesse)
+* hasMember[Pupillengroesse] ^short = "Mitgliedsbeobachtung: Pupillengroesse (beide Pupillen)."
 
 // --- Pupil Shape ---
-* hasMember[PupillaryShape] only Reference(MII_PR_ICU_Untersuchung_Pupillenform)
-* hasMember[PupillaryShape] ^short = "Mitgliedsbeobachtung: Pupillenform/Regularitaet (beide Pupillen)."
+* hasMember[Pupillenform] only Reference(MII_PR_ICU_Untersuchung_Pupillenform)
+* hasMember[Pupillenform] ^short = "Mitgliedsbeobachtung: Pupillenform/Regularitaet (beide Pupillen)."
 
 // --- Pupillary Symmetry ---
-* hasMember[PupillarySymmetry] only Reference(MII_PR_ICU_Untersuchung_Pupillensymmetrie)
-* hasMember[PupillarySymmetry] ^short = "Mitgliedsbeobachtung: Pupillensymmetrie (isokor/anisokor)."
+* hasMember[Pupillensymmetrie] only Reference(MII_PR_ICU_Untersuchung_Pupillensymmetrie)
+* hasMember[Pupillensymmetrie] ^short = "Mitgliedsbeobachtung: Pupillensymmetrie (isokor/anisokor)."
 * hasMember ^short = "Referenzen auf die Mitgliedsbeobachtungen der Pupillenuntersuchung."
 * hasMember ^comment = "Dieses Panel bündelt die Einzelbefunde zur Pupillenuntersuchung via hasMember. Erwartet werden genau 9 Members: direkte und indirekte Lichtreaktion (je 2, links/rechts), Pupillengroesse (2), Pupillenform (2) und Pupillensymmetrie (1). Keine zusätzliche Interpretation im Panel selbst."

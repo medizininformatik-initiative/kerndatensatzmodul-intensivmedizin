@@ -26,19 +26,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation",
-        "path": "Observation",
-        "constraint": [
-          {
-            "key": "obs-value-or-dataAbsentReason",
-            "human": "Observation must have either value or dataAbsentReason.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
-            "severity": "error",
-            "expression": "value.exists() xor dataAbsentReason.exists()"
-          }
-        ]
-      },
-      {
         "id": "Observation.id",
         "path": "Observation.id",
         "mustSupport": true
@@ -90,8 +77,8 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "value",
-              "path": "system"
+              "type": "pattern",
+              "path": "$this"
             }
           ],
           "rules": "closed"
@@ -110,7 +97,6 @@
       {
         "id": "Observation.code.coding:Snomed.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
         "fixedUri": "http://snomed.info/sct"
       },
       {
@@ -134,7 +120,6 @@
       {
         "id": "Observation.code.coding:Loinc.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
         "fixedUri": "http://loinc.org"
       },
       {
@@ -150,11 +135,13 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "max": "0",
         "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
+        "max": "0",
         "mustSupport": true
       },
       {
@@ -176,9 +163,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupillaryLightReactionDirect",
+        "id": "Observation.hasMember:PupillenlichtreaktionDirekt",
         "path": "Observation.hasMember",
-        "sliceName": "PupillaryLightReactionDirect",
+        "sliceName": "PupillenlichtreaktionDirekt",
         "short": "Mitgliedsbeobachtung: direkte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts).",
         "min": 2,
         "max": "2",
@@ -193,9 +180,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupillaryLightReactionIndirect",
+        "id": "Observation.hasMember:PupillenlichtreaktionIndirekt",
         "path": "Observation.hasMember",
-        "sliceName": "PupillaryLightReactionIndirect",
+        "sliceName": "PupillenlichtreaktionIndirekt",
         "short": "Mitgliedsbeobachtung: indirekte Pupillenlichtreaktion pro Auge (2 Instanzen: links/rechts).",
         "min": 2,
         "max": "2",
@@ -210,9 +197,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupillarySize",
+        "id": "Observation.hasMember:Pupillengroesse",
         "path": "Observation.hasMember",
-        "sliceName": "PupillarySize",
+        "sliceName": "Pupillengroesse",
         "short": "Mitgliedsbeobachtung: Pupillengroesse (beide Pupillen).",
         "min": 2,
         "max": "2",
@@ -227,9 +214,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupillaryShape",
+        "id": "Observation.hasMember:Pupillenform",
         "path": "Observation.hasMember",
-        "sliceName": "PupillaryShape",
+        "sliceName": "Pupillenform",
         "short": "Mitgliedsbeobachtung: Pupillenform/Regularitaet (beide Pupillen).",
         "min": 2,
         "max": "2",
@@ -244,9 +231,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.hasMember:PupillarySymmetry",
+        "id": "Observation.hasMember:Pupillensymmetrie",
         "path": "Observation.hasMember",
-        "sliceName": "PupillarySymmetry",
+        "sliceName": "Pupillensymmetrie",
         "short": "Mitgliedsbeobachtung: Pupillensymmetrie (isokor/anisokor).",
         "min": 1,
         "max": "1",

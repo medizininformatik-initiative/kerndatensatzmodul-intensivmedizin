@@ -852,14 +852,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-oservation-pupillenform-snomed"
-        },
-        "name": "MII VS ICU Code Observation Pupillenform SNOMED",
-        "description": "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/mii-vs-icu-code-observation-pupillengroesse"
         },
         "name": "MII VS ICU Code Observation Pupillengroesse",

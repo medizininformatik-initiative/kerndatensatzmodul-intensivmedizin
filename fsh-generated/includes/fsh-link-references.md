@@ -107,7 +107,6 @@
 [MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC]: ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-loinc.html
 [MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED]: ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-snomed.html
 [MII_VS_ICU_Code_Observation_Pupillenform_LOINC]: ValueSet-mii-vs-icu-code-oservation-pupillenform-loinc.html
-[MII_VS_ICU_Code_Observation_Pupillenform_SNOMED]: ValueSet-mii-vs-icu-code-oservation-pupillenform-snomed.html
 [MII_VS_ICU_Code_Observation_Pupillengroesse]: ValueSet-mii-vs-icu-code-observation-pupillengroesse.html
 [MII_VS_ICU_Code_Observation_Pupillenlichtreaktion]: ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.html
 [MII_VS_ICU_Code_Observation_Pupillensymmetrie]: ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.html

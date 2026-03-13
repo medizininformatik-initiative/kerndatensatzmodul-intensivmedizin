@@ -40,12 +40,8 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept 0..1 MS
-* valueCodeableConcept obeys pupil-form-code-consistency
-* valueCodeableConcept.coding ^slicing.discriminator.type = #value
-* valueCodeableConcept.coding ^slicing.discriminator.path = "system"
+* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #closed
-* valueCodeableConcept.coding contains
-    Snomed 1..1 MS and
-    Loinc  1..1 MS
-* valueCodeableConcept.coding[Snomed] from MII_VS_ICU_Code_Observation_Pupillenform_SNOMED (required)
+* valueCodeableConcept.coding contains Loinc 1..1 MS
 * valueCodeableConcept.coding[Loinc] from MII_VS_ICU_Code_Observation_Pupillenform_LOINC (required)
