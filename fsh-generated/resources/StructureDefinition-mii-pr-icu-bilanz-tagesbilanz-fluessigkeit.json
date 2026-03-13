@@ -26,15 +26,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.category.coding:hl7-category",
-        "path": "Observation.category.coding",
-        "sliceName": "hl7-category",
-        "patternCoding": {
-          "code": "exam",
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category"
-        }
-      },
-      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 2

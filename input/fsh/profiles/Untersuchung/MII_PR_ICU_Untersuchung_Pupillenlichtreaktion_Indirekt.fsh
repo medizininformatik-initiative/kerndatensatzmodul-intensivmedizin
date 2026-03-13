@@ -15,18 +15,18 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
 * status 1..1 MS
 
 * category 1.. MS
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
+* category.coding.system = $observation-category
 * category.coding.code = #exam
 * category.coding.display = "Exam"
 
 * code 1..1 MS
 * code.coding 1..1 MS
-* code.coding.system = "http://snomed.info/sct" (exactly)
+* code.coding.system = $sct (exactly)
 * code.coding.code = #84917001 (exactly)
 * code.coding.display = "Indirect light pupillary reflex"
 
 * obeys obs-value-or-dataAbsentReason
-* value[x] 0..1 MS
+* value[x] 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept 0..1 MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern

@@ -37,7 +37,7 @@ Title: "MII PR ICU Untersuchung Pupillenbefund"
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
+* code.coding ^slicing.rules = #closed
 * code.coding contains
     Snomed 1..1 MS and
     Loinc  1..1 MS
