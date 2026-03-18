@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-icu-de-v2026",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
-  "version": "2026.0.1",
+  "version": "2026.0.2-rc.1",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
   "status": "draft",
@@ -488,6 +488,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung"
         },
         "name": "MII PR ICU Parameter von Beatmung",
@@ -674,6 +682,13 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
         },
         "name": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII SD ICU MUV Herzfrequenz",
         "exampleBoolean": false
       },
       {
