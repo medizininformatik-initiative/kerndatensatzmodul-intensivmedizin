@@ -18,7 +18,7 @@ Title: "MII PR ICU Score RASS"
 * category contains exam 1..1 MS
 * category[exam] = $observation-category#exam "Exam"
 
-* obeys obs-value-or-dataAbsentReason
+* obeys mii-icu-val-xor-dar
 
 * code 1..1 MS
 * code.coding 1..1 MS

@@ -7,7 +7,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * ^status = #active
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
 
-* obeys obs-10 and vs-de-2
+* obeys mii-icu-enc-or-sub and mii-icu-comp-xor-val
 * identifier MS
 * partOf 1..1 MS
 * partOf only Reference(MII_PR_ICU_Extrakorporales_Verfahren)

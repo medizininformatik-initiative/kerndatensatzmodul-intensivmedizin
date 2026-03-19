@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and subscores as components. This profile defines common constraints for all ICU scores including sedation scores (RASS), pain scores (NRS, BPS), delirium assessments (CAM-ICU, ICDSC), and severity scores (SOFA, qSOFA).",
+  "description": "Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": true,
@@ -31,27 +31,32 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "obs-10",
-            "human": "Either subject XOR encounter exists",
+            "key": "mii-icu-val-xor-dar",
+            "human": "Resource must have either value or dataAbsentReason.",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
             "severity": "error",
-            "expression": "$this.encounter.exists() xor $this.subject.exists()"
+            "expression": "value.exists() xor dataAbsentReason.exists()"
           },
           {
-            "key": "vs-de-2",
+            "key": "mii-icu-enc-or-sub",
+            "human": "Either subject OR encounter exists",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+            "severity": "error",
+            "expression": "$this.encounter.exists() or $this.subject.exists()"
+          },
+          {
+            "key": "mii-icu-comp-xor-val",
             "human": "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
             "severity": "error",
-            "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
+            "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() xor value.exists())"
           }
         ]
       },
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "short": "Status of the observation",
-        "comment": "Typically 'final' for completed scores, 'preliminary' for incomplete assessments",
-        "mustSupport": true
+        "comment": "Typically 'final' for completed scores, 'preliminary' for incomplete assessments"
       },
       {
         "id": "Observation.category",
@@ -79,7 +84,8 @@
           "coding": [
             {
               "code": "survey",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "display": "Survey"
             }
           ]
         },
@@ -93,22 +99,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category:survey.coding.system",
-        "path": "Observation.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:survey.coding.code",
-        "path": "Observation.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Observation.category:assessment-scale",
         "path": "Observation.category",
         "sliceName": "assessment-scale",
-        "short": "Assessment scale category",
         "min": 1,
         "max": "1",
         "patternCodeableConcept": {
@@ -130,32 +123,18 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.category:assessment-scale.coding.system",
-        "path": "Observation.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:assessment-scale.coding.code",
-        "path": "Observation.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Type of score",
-        "definition": "Identifies which score is being represented",
+        "definition": "Identifies which score/scale is being represented",
         "constraint": [
           {
-            "key": "obs-loinc-sct",
-            "human": "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein",
+            "key": "mii-icu-loinc-sct-dgai-ieee11073",
+            "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
             "severity": "error",
-            "expression": "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()"
+            "expression": "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.code.coding",
@@ -172,57 +151,47 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "short": "SNOMED CT code for the score",
-        "min": 0,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        },
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"
-        }
-      },
-      {
-        "id": "Observation.code.coding:sct.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "short": "LOINC code for the score",
         "min": 0,
         "max": "1",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        },
-        "mustSupport": true,
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "mustSupport": true
+        "patternUri": "http://loinc.org"
       },
       {
         "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:sct.version",
+        "path": "Observation.code.coding.version",
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20260301",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
         "min": 1,
         "mustSupport": true
@@ -245,19 +214,18 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
-        "short": "Encounter during which score was assessed",
-        "definition": "The encounter context in which the score was determined",
         "mustSupport": true
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Time of score assessment",
-        "definition": "The time or time period when the score was assessed",
         "min": 1,
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ],
         "mustSupport": true
@@ -265,21 +233,16 @@
       {
         "id": "Observation.issued",
         "path": "Observation.issued",
-        "short": "Date/Time this observation was made available",
         "mustSupport": true
       },
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Who performed the score assessment",
         "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Total score value",
-        "definition": "The total score calculated. For numeric scores use integer or Quantity. For categorical results (e.g., positive/negative) use CodeableConcept.",
-        "comment": "Child profiles should constrain this further based on the specific score type",
         "type": [
           {
             "code": "Quantity"
@@ -296,26 +259,13 @@
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
-        "short": "Why the score value is missing",
         "mustSupport": true
       },
       {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
-        "short": "Clinical interpretation of the score",
-        "definition": "Categorization of the score (e.g., mild, moderate, severe sedation for RASS)",
+        "max": "1",
         "mustSupport": true
-      },
-      {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "short": "Comments about the score",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.bodySite",
-        "path": "Observation.bodySite",
-        "max": "0"
       },
       {
         "id": "Observation.specimen",
@@ -325,44 +275,50 @@
       {
         "id": "Observation.device",
         "path": "Observation.device",
-        "short": "Device used for automated score calculation (if applicable)",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.referenceRange",
-        "path": "Observation.referenceRange",
-        "short": "Reference range for score interpretation",
         "mustSupport": true
       },
       {
         "id": "Observation.hasMember",
         "path": "Observation.hasMember",
-        "short": "Related observations (e.g., individual assessment items)",
         "mustSupport": true
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "Source observations used to calculate score",
+        "comment": "Source observations used to calculate score",
         "mustSupport": true
       },
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "short": "Subscore components",
-        "definition": "Individual components or subscores that contribute to the total score. Child profiles should define specific components.",
+        "constraint": [
+          {
+            "key": "mii-icu-val-xor-dar",
+            "human": "Resource must have either value or dataAbsentReason.",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+            "severity": "error",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "Observation.component.code",
         "path": "Observation.component.code",
-        "short": "Type of component/subscore",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
         "id": "Observation.component.value[x]",
         "path": "Observation.component.value[x]",
-        "short": "Subscore value",
         "type": [
           {
             "code": "Quantity"
@@ -379,11 +335,6 @@
       {
         "id": "Observation.component.dataAbsentReason",
         "path": "Observation.component.dataAbsentReason",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.interpretation",
-        "path": "Observation.component.interpretation",
         "mustSupport": true
       }
     ]

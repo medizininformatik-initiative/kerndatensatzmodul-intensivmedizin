@@ -30,18 +30,18 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "obs-10",
-            "human": "Either subject XOR encounter exists",
+            "key": "mii-icu-enc-or-sub",
+            "human": "Either subject OR encounter exists",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
-            "expression": "$this.encounter.exists() xor $this.subject.exists()"
+            "expression": "$this.encounter.exists() or $this.subject.exists()"
           },
           {
-            "key": "vs-de-2",
+            "key": "mii-icu-comp-xor-val",
             "human": "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
-            "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
+            "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() xor value.exists())"
           }
         ]
       },

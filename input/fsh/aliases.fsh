@@ -2,8 +2,14 @@
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $ieee-11073 = urn:iso:std:iso:11073:10101
+Alias: $dgai = http://dgai.de // ist ein Platzhalter, aktualisieren bei Bedarf
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+
+// SNOMED-CT-Version
+// ggf für Versionierung von SNOMED verwenden
+// letzten 8 Stellen YYYYMMDD, verweist auf internationale Edition, deren sct: 900000000000445007
+Alias: $sct-international-version = http://snomed.info/sct/900000000000207008/version/20260301
 
 // MII KDS
 // SD

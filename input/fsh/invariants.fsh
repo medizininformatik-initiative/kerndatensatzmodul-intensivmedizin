@@ -1,19 +1,40 @@
-Invariant: obs-10
-Description: "Either subject XOR encounter exists"
-* severity = #error
-* expression = "$this.encounter.exists() xor $this.subject.exists()"
-
-Invariant: vs-de-2
-Description: "If there is no component or hasMember element then either a value[x] or a data absent reason must be present"
-* severity = #error
-* expression = "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
-
-Invariant: obs-loinc-sct
-Description: "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein"
-* severity = #error
-* expression = "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()"
-
-Invariant: obs-value-or-dataAbsentReason
-Description: "Observation must have either value or dataAbsentReason."
+Invariant: mii-icu-val-xor-dar
+Description: "Resource must have either value or dataAbsentReason."
 * severity = #error
 * expression = "value.exists() xor dataAbsentReason.exists()"
+
+Invariant: mii-icu-enc-or-sub
+Description: "Either subject OR encounter exists"
+* severity = #error
+* expression = "$this.encounter.exists() or $this.subject.exists()"
+
+Invariant: mii-icu-comp-xor-val
+Description: "If there is no component or hasMember element then either a value[x] or a data absent reason must be present"
+* severity = #error
+* expression = "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() xor value.exists())"
+
+Invariant: mii-icu-loinc-sct-dgai-ieee11073
+Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"
+* severity = #error
+* expression = "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
+
+// Score ranges
+Invariant: flacc-total-range
+Description: "FLACC Gesamtscore muss zwischen 0 und 10 liegen."
+* severity = #error
+* expression = "value.ofType(integer) >= 0 and value.ofType(integer) <= 10"
+
+Invariant: nips-total-range
+Description: "NIPS Gesamtscore muss zwischen 0 und 7 liegen."
+* severity = #error
+* expression = "value.ofType(integer) >= 0 and value.ofType(integer) <= 7"
+
+Invariant: npass-pain-total-range
+Description: "NPASS Schmerz/Agitation Gesamtscore muss zwischen 0 und 11 liegen."
+* severity = #error
+* expression = "value.ofType(integer) >= 0 and value.ofType(integer) <= 11"
+
+Invariant: npass-sedation-total-range
+Description: "NPASS Sedierungs-Gesamtscore muss zwischen -10 und 0 liegen."
+* severity = #error
+* expression = "value.ofType(integer) >= -10 and value.ofType(integer) <= 0"

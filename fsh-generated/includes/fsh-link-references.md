@@ -60,7 +60,6 @@
 [MII_PR_ICU_MUV_Koerpergewicht]: StructureDefinition-mii-pr-icu-muv-koerpergewicht.html
 [MII_PR_ICU_MUV_Koerpergroesse]: StructureDefinition-mii-pr-icu-muv-koerpergroesse.html
 [MII_PR_ICU_MUV_Kopfumfang]: StructureDefinition-mii-pr-icu-muv-kopfumfang.html
-[MII_PR_ICU_MUV_zerebraler_Perfusionsdruck]: StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.html
 [MII_PR_ICU_Parameter_Von_Beatmung]: StructureDefinition-mii-pr-vent-icu-parameter-von-beatmung.html
 [MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren]: StructureDefinition-mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren.html
 [MII_PR_ICU_Positiv_Endexpiratorischer_Druck]: StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.html
@@ -87,7 +86,6 @@
 [MII_PR_ICU_Untersuchung_Pupillensymmetrie]: StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.html
 [MII_PR_ICU_Venoeser_Druck]: StructureDefinition-mii-pr-icu-ect-venoeser-druck.html
 [MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung]: StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html
-[MII_PR_ICU_MUV_Herzfrequenz]: StructureDefinition-mii-pr-icu-muv-herzfrequenz.html
 [MII_VS_ICU_BodySite_Observation_Beatmung]: ValueSet-mii-vs-icu-body-site-observation-beatmung.html
 [MII_VS_ICU_BodySite_Observation_Blutdruck]: ValueSet-mii-vs-icu-body-site-observation-blutdruck.html
 [MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-body-site-observation-extrakorporale-verfahren.html

@@ -25,7 +25,7 @@ Title: "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
 * code.coding.code = #84917001 (exactly)
 * code.coding.display = "Indirect light pupillary reflex"
 
-* obeys obs-value-or-dataAbsentReason
+* obeys mii-icu-val-xor-dar
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern

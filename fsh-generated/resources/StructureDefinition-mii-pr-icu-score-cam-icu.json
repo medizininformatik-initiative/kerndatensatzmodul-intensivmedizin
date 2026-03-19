@@ -32,16 +32,6 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "patternCoding": {
-          "code": "450740000",
-          "system": "http://snomed.info/sct",
-          "display": "Confusion Assessment Method for the intensive care unit score"
-        }
-      },
-      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
@@ -50,6 +40,16 @@
           "code": "99844-5",
           "system": "http://loinc.org",
           "display": "Confusion Assessment Method for the ICU"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "450740000",
+          "system": "http://snomed.info/sct",
+          "display": "Confusion Assessment Method for the intensive care unit score"
         }
       },
       {

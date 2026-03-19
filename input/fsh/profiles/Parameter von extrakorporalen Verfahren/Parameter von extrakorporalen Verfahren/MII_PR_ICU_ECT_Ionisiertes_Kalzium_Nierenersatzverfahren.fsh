@@ -8,7 +8,7 @@ Title: "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 * ^status = #active
 
 * category 1..
-* code obeys obs-loinc-sct
+* code obeys mii-icu-loinc-sct-dgai-ieee11073
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed

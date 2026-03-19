@@ -9,7 +9,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 
 * status MS
 * category MS
-* obeys obs-value-or-dataAbsentReason
+* obeys mii-icu-val-xor-dar
 
 * category[VSCat].coding 0.. MS
 * category[VSCat].coding.system 1..1 MS

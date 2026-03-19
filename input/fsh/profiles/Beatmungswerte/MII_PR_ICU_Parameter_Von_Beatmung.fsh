@@ -7,7 +7,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
 * ^status = #active
 
-* obeys obs-10 and vs-de-2
+* obeys mii-icu-enc-or-sub and mii-icu-comp-xor-val
 * identifier MS
 * partOf 1..1 MS
 * partOf only Reference(Procedure)

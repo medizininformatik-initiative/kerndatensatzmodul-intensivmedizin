@@ -35,11 +35,11 @@
         "path": "Observation.code",
         "constraint": [
           {
-            "key": "obs-loinc-sct",
-            "human": "Es muss mindestens ein LOINC oder SnomedCT Code vorhanden sein",
+            "key": "mii-icu-loinc-sct-dgai-ieee11073",
+            "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
             "severity": "error",
-            "expression": "coding.where(system='http://loinc.org').exists().not() implies coding.where(system='http://snomed.info/sct').exists()"
+            "expression": "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
           }
         ]
       },

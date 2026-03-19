@@ -36,7 +36,7 @@ Title: "MII PR ICU Untersuchung Pupillenform"
 * bodySite from MII_VS_ICU_BodySite_Observation_Pupillenbefund (required)
 * dataAbsentReason 0..1 MS
 
-* obeys obs-value-or-dataAbsentReason
+* obeys mii-icu-val-xor-dar
 * value[x] 0..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern

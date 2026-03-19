@@ -488,14 +488,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
-        },
-        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
-        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung"
         },
         "name": "MII PR ICU Parameter von Beatmung",
@@ -520,7 +512,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score"
         },
         "name": "MII PR ICU Score",
-        "description": "Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and subscores as components. This profile defines common constraints for all ICU scores including sedation scores (RASS), pain scores (NRS, BPS), delirium assessments (CAM-ICU, ICDSC), and severity scores (SOFA, qSOFA).",
+        "description": "Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments.",
         "exampleBoolean": false
       },
       {
@@ -682,13 +674,6 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
         },
         "name": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
-        },
-        "name": "MII SD ICU MUV Herzfrequenz",
         "exampleBoolean": false
       },
       {

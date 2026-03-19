@@ -30,8 +30,8 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "obs-value-or-dataAbsentReason",
-            "human": "Observation must have either value or dataAbsentReason.",
+            "key": "mii-icu-val-xor-dar",
+            "human": "Resource must have either value or dataAbsentReason.",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht",
             "severity": "error",
             "expression": "value.exists() xor dataAbsentReason.exists()"
