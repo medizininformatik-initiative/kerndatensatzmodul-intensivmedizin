@@ -525,6 +525,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
+        },
+        "name": "MII PR ICU Score Faces Pain Scale Revised",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Die FPS-R verwendet sechs Gesichter, die den Skalenpunkten 0, 2, 4, 6, 8 und 10 entsprechen.\nIm interdisziplinaeren Konsens werden auch die ungeraden Zwischenwerte (1, 3, 5, 7, 9) zugelassen,\nda diese in der klinischen Praxis als Entscheidungstrigger fuer Interventionen (z. B. Schmerztherapie)\nverwendet werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-icdsc"
         },
         "name": "MII PR ICU Score ICDSC",
@@ -536,7 +544,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
         },
         "name": "MII PR ICU Score Numerische Ratingskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\nDer Score wird als ganzzahliger Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -559,7 +567,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -568,6 +576,14 @@
         },
         "name": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
         "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\nDer Score wird als quantitativer Wert dokumentiert.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-zopa"
+        },
+        "name": "MII PR ICU Score ZOPA",
+        "description": "Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis.",
         "exampleBoolean": false
       },
       {

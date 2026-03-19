@@ -456,6 +456,14 @@
     "endLine": 76
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.json",
+    "fshName": "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Faces_Pain_Scale_Revised.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-score-icdsc.json",
     "fshName": "MII_PR_ICU_Score_ICDSC",
     "fshType": "Profile",
@@ -469,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Numerische_Ratingskala.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-score-rass.json",
@@ -493,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Visuelle_Analogskala.fsh",
     "startLine": 1,
-    "endLine": 61
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.json",
@@ -502,6 +510,14 @@
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala.fsh",
     "startLine": 6,
     "endLine": 70
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-score-zopa.json",
+    "fshName": "MII_PR_ICU_Score_ZOPA",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_ZOPA.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-score.json",

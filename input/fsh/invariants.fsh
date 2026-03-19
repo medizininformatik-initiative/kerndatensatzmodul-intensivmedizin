@@ -19,6 +19,16 @@ Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code 
 * expression = "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
 
 // Score ranges
+Invariant: mii-icu-painscale-vas
+Description: "VAS value must be between 0 and 100 mm"
+* severity = #error
+* expression = "value.exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 100)"
+
+Invariant: mii-icu-painscale-0-10
+Description: "Wertebereich für Schmerzskalen 0 - 10, z.B. NRS oder FPS-R"
+* severity = #error
+* expression = "value.exists() implies ((value.ofType(integer) >= 0 and value.ofType(integer) <= 10) or (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10))"
+
 Invariant: flacc-total-range
 Description: "FLACC Gesamtscore muss zwischen 0 und 10 liegen."
 * severity = #error

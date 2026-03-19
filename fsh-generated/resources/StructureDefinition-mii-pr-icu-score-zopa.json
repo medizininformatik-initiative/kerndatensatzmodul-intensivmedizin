@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-score-zopa",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa",
+  "version": "2026.0.0",
+  "name": "MII_PR_ICU_Score_ZOPA",
+  "title": "MII PR ICU Score ZOPA",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:dgai",
+        "path": "Observation.code.coding",
+        "sliceName": "dgai",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "DGAI-ZOPA",
+          "system": "http://dgai.de",
+          "display": "Zuerich Observation Pain Assessment (ZOPA)"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:dgai.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:dgai.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
+        }
+      }
+    ]
+  }
+}

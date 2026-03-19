@@ -65,12 +65,14 @@
 [MII_PR_ICU_Positiv_Endexpiratorischer_Druck]: StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.html
 [MII_PR_ICU_Score]: StructureDefinition-mii-pr-icu-score.html
 [MII_PR_ICU_Score_CAM_ICU]: StructureDefinition-mii-pr-icu-score-cam-icu.html
+[MII_PR_ICU_Score_Faces_Pain_Scale_Revised]: StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html
 [MII_PR_ICU_Score_ICDSC]: StructureDefinition-mii-pr-icu-score-icdsc.html
 [MII_PR_ICU_Score_Numerische_Ratingskala]: StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html
 [MII_PR_ICU_Score_RASS]: StructureDefinition-mii-pr-icu-score-rass.html
 [MII_PR_ICU_Score_SOFA]: StructureDefinition-mii-pr-icu-score-sofa.html
 [MII_PR_ICU_Score_Visuelle_Analogskala]: StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html
 [MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala]: StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html
+[MII_PR_ICU_Score_ZOPA]: StructureDefinition-mii-pr-icu-score-zopa.html
 [MII_PR_ICU_Spontane_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.html
 [MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html
 [MII_PR_ICU_Spontanes_Atemzugvolumen]: StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.html

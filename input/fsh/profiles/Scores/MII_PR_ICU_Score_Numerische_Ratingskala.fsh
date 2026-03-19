@@ -1,55 +1,24 @@
 Profile: MII_PR_ICU_Score_Numerische_Ratingskala
-Parent: Observation
+Parent: MII_PR_ICU_Score
 Id: mii-pr-icu-score-numerische-ratingskala
 Title: "MII PR ICU Score Numerische Ratingskala"
 Description: "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.
 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.
 Der Score wird als ganzzahliger Wert dokumentiert."
-
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
 * ^version = "2026.0.0"
 * ^status = #draft
 
-* status 1..1 MS
+* obeys mii-icu-painscale-0-10 
 
-* category 1..* MS
-* category.coding.system = $observation-category
-* category.coding.code = #survey
-* category.coding.display = "Assessment"
+* code.coding[loinc] 1..1
+* code.coding[loinc].code = #LP157783-4
+* code.coding[loinc].display = "Pain severity - 0-10 verbal numeric rating"
 
-* code 1..1 MS
-* code.coding 2..2 MS
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    Loinc 1..1 MS and
-    Snomed 1..1 MS
+* code.coding[sct] 1..1
+* code.coding[sct].code = #1284852002
+* code.coding[sct].display = "Numeric Pain Rating Scale (assessment scale)"
 
-* code.coding[Loinc].system = $loinc
-* code.coding[Loinc].code = #LP157783-4
-* code.coding[Loinc].display = "Pain severity - 0-10 verbal numeric rating"
-
-* code.coding[Snomed].system = $sct
-* code.coding[Snomed].code = #1284852002
-* code.coding[Snomed].display = "Numeric Pain Rating Scale (assessment scale)"
-
-* subject 1..1 MS
-
-* effective[x] 1..1 MS
-* effective[x] only dateTime or Period
-
-* value[x] 1..1 MS
 * value[x] only integer
-* valueInteger ^minValueInteger = 0
-* valueInteger ^maxValueInteger = 10
-* valueInteger ^short = "NRS-Wert (0-10)"
-* valueInteger ^definition = "Ganzzahliger NRS-Score im Bereich 0-10.
-
-Der Wertebereich entspricht den LOINC Preferred Answer Lists für LOINC 72514-3:
-- LL2335-9 „Numeric rating scale from 0-10“
-- LL5812-4 „Pain severity 0-10 verbal numeric rating scale“"
-
-* performer 0..* MS

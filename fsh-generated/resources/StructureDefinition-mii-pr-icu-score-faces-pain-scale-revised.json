@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-score-visuelle-analogskala",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
+  "id": "mii-pr-icu-score-faces-pain-scale-revised",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
   "version": "2026.0.0",
-  "name": "MII_PR_ICU_Score_Visuelle_Analogskala",
-  "title": "MII PR ICU Score Visuelle Analogskala",
+  "name": "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
+  "title": "MII PR ICU Score Faces Pain Scale Revised",
   "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Die FPS-R verwendet sechs Gesichter, die den Skalenpunkten 0, 2, 4, 6, 8 und 10 entsprechen.\nIm interdisziplinaeren Konsens werden auch die ungeraden Zwischenwerte (1, 3, 5, 7, 9) zugelassen,\nda diese in der klinischen Praxis als Entscheidungstrigger fuer Interventionen (z. B. Schmerztherapie)\nverwendet werden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -31,43 +31,33 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "mii-icu-painscale-vas",
-            "human": "VAS value must be between 0 and 100 mm",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
+            "key": "mii-icu-painscale-0-10",
+            "human": "Wertebereich für Schmerzskalen 0 - 10, z.B. NRS oder FPS-R",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
             "severity": "error",
-            "expression": "value.exists() implies (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 100)"
+            "expression": "value.exists() implies ((value.ofType(integer) >= 0 and value.ofType(integer) <= 10) or (value.ofType(Quantity).value >= 0 and value.ofType(Quantity).value <= 10))"
           }
         ]
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc"
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "38214-3"
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Pain severity [Score] Visual analog score"
+        "sliceName": "loinc",
+        "patternCoding": {
+          "code": "57696-7",
+          "system": "http://loinc.org",
+          "display": "Pain severity FPS-R"
+        }
       },
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "273903006"
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Visual analog scale (assessment scale)"
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "1284908006",
+          "system": "http://snomed.info/sct",
+          "display": "Faces pain scale revised (assessment scale)"
+        }
       },
       {
         "id": "Observation.value[x]",
@@ -88,7 +78,7 @@
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "min": 1,
-        "patternString": "mm"
+        "patternString": "{score}"
       },
       {
         "id": "Observation.value[x].system",
@@ -100,7 +90,7 @@
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "min": 1,
-        "patternCode": "mm"
+        "patternCode": "{score}"
       }
     ]
   }
