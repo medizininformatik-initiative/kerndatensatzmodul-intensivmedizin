@@ -18,7 +18,7 @@ Title: "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
 * code.coding[loinc] ..0 MS
 * code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
-* code.coding[IEEE-11073] ^patternCoding.code = #26668
+* code.coding[IEEE-11073] ^patternCoding.code = #157740
 * code.coding[IEEE-11073].code MS
 
 * valueQuantity.code 1.. MS

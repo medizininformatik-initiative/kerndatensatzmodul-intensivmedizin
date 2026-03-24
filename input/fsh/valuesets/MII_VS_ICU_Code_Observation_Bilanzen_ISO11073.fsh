@@ -10,4 +10,4 @@ Description: "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz ve
 * ^date = "2025-02-11"
 * ^experimental = false
 
-* include $ieee-11073#26668 "Drainage volume in bag"
+* include $ieee-11073#157740 "Drainage volume in bag"
