@@ -14,7 +14,6 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 
 * obeys mii-icu-val-xor-dar and mii-icu-enc-or-sub and mii-icu-comp-xor-val
 * component obeys mii-icu-val-xor-dar
-* insert ItemWeight
 
 * specimen 0..0
 * status ^comment = "Typically 'final' for completed scores, 'preliminary' for incomplete assessments"
