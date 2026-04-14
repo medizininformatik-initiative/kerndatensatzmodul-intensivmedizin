@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Inspiratorischer_Gasfluss
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Inspiratorischer_Gasfluss
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-inspiratorischer-gasfluss
 Title: "MII PR ICU Inspiratorischer Gasfluss"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorischer-gasfluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"
 * ^status = #active
 
 * category contains Beatmung 0..1

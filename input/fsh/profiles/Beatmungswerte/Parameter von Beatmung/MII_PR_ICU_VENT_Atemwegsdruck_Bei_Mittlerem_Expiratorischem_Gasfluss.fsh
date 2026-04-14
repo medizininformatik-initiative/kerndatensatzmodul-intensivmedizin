@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss
 Title: "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
 * ^status = #active
 
 * code.coding[sct] ..0

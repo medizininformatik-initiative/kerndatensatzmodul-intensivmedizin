@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Beatmung
+Profile: MII_PR_ICU_VENT_Beatmung
 Parent: $mii-procedure 
 Id: mii-pr-icu-vent-beatmung
 Title: "MII PR ICU Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmung"
 * ^status = #active
 
 * partOf only Reference(Procedure or Observation)

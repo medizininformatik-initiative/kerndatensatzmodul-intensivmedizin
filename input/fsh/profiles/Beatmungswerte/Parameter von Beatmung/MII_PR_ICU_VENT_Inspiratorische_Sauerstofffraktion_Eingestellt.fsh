@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion_Eingestellt
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-icu-vent-inspiratorische-sauerstofffraktion-eingestellt
 Title: "MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-inspiratorische-sauerstofffraktion-eingestellt"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
 * ^status = #active
 
 * category contains Beatmung 0..1

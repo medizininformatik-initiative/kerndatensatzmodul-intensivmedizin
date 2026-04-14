@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Dynamische_Kompliance
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Dynamische_Kompliance
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-pr-vent-icu-dynamische-kompliance
 Title: "MII PR ICU Dynamische Kompliance"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dynamische-kompliance"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
 * ^status = #active
 
 * code.coding 3..

@@ -1,10 +1,10 @@
-Profile: MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung
 Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-zeitverhaeltnis-ein-ausatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
 * ^status = #active
 
 * code.coding 3..

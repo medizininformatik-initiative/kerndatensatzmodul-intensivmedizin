@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-einstellung-einatmungszeit-beatmung
 Title: "MII PR ICU Einstellung Einatmungszeit Beatmung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-einstellung-einatmungszeit-beatmung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"
 * ^status = #active
 
 * code.coding 3..

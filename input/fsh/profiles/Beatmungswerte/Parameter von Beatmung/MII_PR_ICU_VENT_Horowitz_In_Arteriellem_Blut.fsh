@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Horowitz_In_Arteriellem_Blut
-Parent: MII_PR_ICU_Parameter_Von_Beatmung
+Profile: MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut
+Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-horowitz-in-arteriellem-blut
 Title: "MII PR ICU Horowitz In Arteriellem Blut"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-horowitz-in-arteriellem-blut"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut"
 * ^status = #active
 
 * category contains vs-cat 0..1
