@@ -1,11 +1,11 @@
-Profile: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
+Profile: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Parent: Observation
-Id: mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren
+Id: mii-pr-icu-parameter-von-extrakorporalen-verfahren
 Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
 
 * obeys mii-icu-enc-or-sub and mii-icu-comp-xor-val
 * identifier MS

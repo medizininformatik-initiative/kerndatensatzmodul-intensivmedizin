@@ -117,7 +117,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-beatmung"
+          "reference": "StructureDefinition/mii-pr-icu-beatmung"
         },
         "name": "MII PR ICU Beatmung",
         "exampleBoolean": false
@@ -313,14 +313,14 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung"
+          "reference": "StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"
         },
         "name": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-ect-dm-eingest-gem-parameter-extrakorporale-verfahren"
+          "reference": "StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"
         },
         "name": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
         "exampleBoolean": false
@@ -383,7 +383,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren"
+          "reference": "StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
         },
         "name": "MII PR ICU Extrakorporales Verfahren",
         "exampleBoolean": false
@@ -488,14 +488,14 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung"
+          "reference": "StructureDefinition/mii-pr-icu-parameter-von-beatmung"
         },
         "name": "MII PR ICU Parameter von Beatmung",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren"
+          "reference": "StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
         },
         "name": "MII PR ICU Parameter von Extrakorporalen Verfahren",
         "exampleBoolean": false

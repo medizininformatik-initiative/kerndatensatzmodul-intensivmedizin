@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Unterstuezungsdruck_Beatmung
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-unterstuezungsdruck-beatmung
 Title: "MII PR ICU Unterstuezungsdruck Beatmung"
 * insert PR_CS_VS_Version

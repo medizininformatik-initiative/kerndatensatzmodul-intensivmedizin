@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Druckdifferenz_Beatmung
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-vent-provided-icu-druckdifferenz-beatmung
 Title: "MII PR ICU Druckdifferenz Beatmung"
 * insert PR_CS_VS_Version

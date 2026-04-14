@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_ECT_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
+Profile: MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
 Parent: DeviceMetric
-Id: mii-pr-icu-ect-dm-eingest-gem-parameter-extrakorporale-verfahren
+Id: mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren
 Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"
 * ^status = #active
 
 * type MS

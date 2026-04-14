@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung
 Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * insert PR_CS_VS_Version

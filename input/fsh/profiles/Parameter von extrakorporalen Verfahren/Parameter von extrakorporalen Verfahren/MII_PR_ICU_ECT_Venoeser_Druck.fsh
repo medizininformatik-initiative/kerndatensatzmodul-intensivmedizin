@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_ECT_Venoeser_Druck
-Parent: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
+Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-venoeser-druck
 Title: "MII PR ICU Venous Pressure"
 Description: "Profile for documenting venous pressure."

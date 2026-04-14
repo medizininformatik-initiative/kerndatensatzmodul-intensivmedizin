@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
+  "id": "mii-pr-icu-parameter-von-beatmung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren",
-  "title": "MII PR ICU Parameter von Extrakorporalen Verfahren",
+  "name": "MII_PR_ICU_Parameter_Von_Beatmung",
+  "title": "MII PR ICU Parameter von Beatmung",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -32,14 +32,14 @@
           {
             "key": "mii-icu-enc-or-sub",
             "human": "Either subject OR encounter exists",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
             "expression": "$this.encounter.exists() or $this.subject.exists()"
           },
           {
             "key": "mii-icu-comp-xor-val",
             "human": "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
             "expression": "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() xor value.exists())"
           }
@@ -57,6 +57,14 @@
         "definition": "Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden.",
         "min": 1,
         "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -67,12 +75,6 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category.coding",
-        "path": "Observation.category.coding",
         "slicing": {
           "discriminator": [
             {
@@ -80,39 +82,31 @@
               "path": "$this"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "min": 1,
         "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
+        }
       },
       {
-        "id": "Observation.category.coding:sct",
+        "id": "Observation.category.coding",
         "path": "Observation.category.coding",
-        "sliceName": "sct",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "182744004"
-        },
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:sct.system",
+        "id": "Observation.category.coding.system",
         "path": "Observation.category.coding.system",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Observation.category.coding:sct.code",
+        "id": "Observation.category.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category.coding:sct.display",
-        "path": "Observation.category.coding.display",
         "mustSupport": true
       },
       {
@@ -130,7 +124,8 @@
               "path": "$this"
             }
           ],
-          "rules": "closed"
+          "ordered": false,
+          "rules": "open"
         },
         "min": 1,
         "mustSupport": true
@@ -141,19 +136,17 @@
         "sliceName": "sct",
         "min": 0,
         "max": "*",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        },
         "mustSupport": true,
         "binding": {
-          "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed"
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed"
         }
       },
       {
         "id": "Observation.code.coding:sct.system",
         "path": "Observation.code.coding.system",
         "min": 1,
+        "patternUri": "http://snomed.info/sct",
         "mustSupport": true
       },
       {
@@ -173,19 +166,17 @@
         "sliceName": "loinc",
         "min": 0,
         "max": "*",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        },
         "mustSupport": true,
         "binding": {
-          "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"
         }
       },
       {
         "id": "Observation.code.coding:loinc.system",
         "path": "Observation.code.coding.system",
         "min": 1,
+        "patternUri": "http://loinc.org",
         "mustSupport": true
       },
       {
@@ -205,19 +196,17 @@
         "sliceName": "IEEE-11073",
         "min": 0,
         "max": "*",
-        "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
-        },
         "mustSupport": true,
         "binding": {
-          "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"
         }
       },
       {
         "id": "Observation.code.coding:IEEE-11073.system",
         "path": "Observation.code.coding.system",
         "min": 1,
+        "patternUri": "urn:iso:std:iso:11073:10101",
         "mustSupport": true
       },
       {
@@ -260,6 +249,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "type": [
@@ -286,22 +280,15 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x].value",
-        "path": "Observation.value[x].value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
+        "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.value[x].system",
         "path": "Observation.value[x].system",
-        "min": 1,
-        "patternUri": "http://unitsofmeasure.org",
-        "mustSupport": true
+        "patternUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Observation.value[x].code",
@@ -310,16 +297,29 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung"
         }
       },
       {
         "id": "Observation.device",
         "path": "Observation.device",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

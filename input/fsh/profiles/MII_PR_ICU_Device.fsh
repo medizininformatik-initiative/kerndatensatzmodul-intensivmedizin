@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_ICU_Device
+Profile: MII_PR_ICU_Device
 Parent: Device
-Id: mii-pr-icu-icu-device
+Id: mii-pr-icu-device
 Title: "MII PR ICU Device"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device"
 * ^status = #active
 
 * identifier MS

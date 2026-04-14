@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-event-xspiratorischer-sauerstoffpartialdruck",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-exspiratorischer-sauerstoffpartialdruck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck",
+  "name": "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
   "title": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
   "status": "active",
   "publisher": "Medizininformatik Initiative",

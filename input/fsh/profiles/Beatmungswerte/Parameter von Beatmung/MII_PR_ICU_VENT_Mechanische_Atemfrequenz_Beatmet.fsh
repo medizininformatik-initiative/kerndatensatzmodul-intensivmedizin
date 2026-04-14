@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-mechanische-atemfrequenz-beatmet
 Title: "MII PR ICU Mechanische Atemfrequenz Beatmet"
 * insert PR_CS_VS_Version

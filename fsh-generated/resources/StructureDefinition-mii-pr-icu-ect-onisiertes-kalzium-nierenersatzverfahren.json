@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-ionisiertes-kalzium-nierenersatzverfahren",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren",
+  "name": "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title": "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
@@ -37,7 +37,7 @@
           {
             "key": "mii-icu-loinc-sct-dgai-ieee11073",
             "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-ionisiertes-kalzium-nierenersatzverfahren",
             "severity": "error",
             "expression": "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
           }

@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet
-Parent: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
+Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet
 Title: "MII PR ICU Blutfluss Cardiovasculaeres Geraet"
 * insert PR_CS_VS_Version

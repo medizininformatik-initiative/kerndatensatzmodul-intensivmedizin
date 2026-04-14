@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-mittlerer-beatmungsdruck
 Title: "MII PR ICU Mittlerer Beatmungsdruck"
 * insert PR_CS_VS_Version

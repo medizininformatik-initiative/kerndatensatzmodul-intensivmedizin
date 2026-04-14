@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-positiv-endexpiratorischer-druck
 Title: "MII PR ICU Positiv Endexpiratorischer Druck"
 * insert PR_CS_VS_Version

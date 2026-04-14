@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung",
+  "id": "mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
-  "title": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+  "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
+  "title": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -31,14 +31,15 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"
         }
       },
       {
         "id": "DeviceMetric.type.coding",
         "path": "DeviceMetric.type.coding",
         "patternCoding": {
-          "system": "http://snomed.info/sct"
+          "system": "http://snomed.info/sct",
+          "code": "182744004"
         },
         "mustSupport": true
       },
@@ -57,6 +58,14 @@
       {
         "id": "DeviceMetric.source",
         "path": "DeviceMetric.source",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_VENT_Atemzugvolumen_Einstellung
-Parent: MII_PR_ICU_VENT_Parameter_Von_Beatmung
+Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-atemzugvolumen-einstellung
 Title: "MII PR ICU Atemzugvolumen Einstellung"
 * insert PR_CS_VS_Version
