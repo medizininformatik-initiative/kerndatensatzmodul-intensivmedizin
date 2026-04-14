@@ -1,6 +1,6 @@
-Profile: MII_PR_ICU_Device
+Profile: MII_PR_ICU_ICU_Device
 Parent: Device
-Id: mii-pr-icu-device
+Id: mii-pr-icu-icu-device
 Title: "MII PR ICU Device"
 * insert PR_CS_VS_Version
 * insert Publisher

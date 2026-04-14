@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Gasfluss
-Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Profile: MII_PR_ICU_ECT_Gasfluss
+Parent: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-gasfluss
 Title: "MII PR ICU Gasfluss"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-gasfluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-gasfluss"
 * ^status = #active
 
 * code.coding ^slicing.discriminator.type = #pattern

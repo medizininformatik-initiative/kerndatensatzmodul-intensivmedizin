@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet
-Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Profile: MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet
+Parent: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet
 Title: "MII PR ICU Blutfluss Cardiovasculaeres Geraet"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-blutfluss-cardiovasculaeres-geraet"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-blutfluss-cardiovasculaeres-geraet"
 * ^status = #active
 
 * code.coding ^slicing.discriminator.type = #pattern

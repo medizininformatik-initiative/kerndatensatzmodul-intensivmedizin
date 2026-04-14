@@ -1,11 +1,11 @@
-Profile: MII_PR_ICU_Venoeser_Druck
-Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Profile: MII_PR_ICU_ECT_Venoeser_Druck
+Parent: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-venoeser-druck
 Title: "MII PR ICU Venous Pressure"
 Description: "Profile for documenting venous pressure."
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-venoeser-druck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-venoeser-druck"
 * ^status = #active
 
 * code.coding[sct] 1..1 MS

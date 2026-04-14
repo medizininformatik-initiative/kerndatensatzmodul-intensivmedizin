@@ -1,10 +1,10 @@
-Profile: MII_PR_ICU_Dauer_Haemodialysesitzung
-Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
+Profile: MII_PR_ICU_ECT_Dauer_Haemodialysesitzung
+Parent: MII_PR_ICU_ECT_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-dauer-haemodialysesitzung
 Title: "MII ICU Dauer Haemodialysesitzung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dauer-haemodialysesitzung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-dauer-haemodialysesitzung"
 * ^status = #active
 
 * category 1..
