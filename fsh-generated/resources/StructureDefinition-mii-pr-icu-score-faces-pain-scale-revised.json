@@ -40,23 +40,13 @@
         ]
       },
       {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "patternCoding": {
-          "code": "57696-7",
-          "system": "http://loinc.org",
-          "display": "Pain severity FPS-R"
-        }
-      },
-      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "patternCoding": {
-          "code": "1284908006",
+          "code": "1284909003",
           "system": "http://snomed.info/sct",
-          "display": "Faces pain scale revised (assessment scale)"
+          "display": "Faces Pain Scale - Revised score (observable entity)"
         }
       },
       {

@@ -7,6 +7,7 @@ Der Score wird als quantitativer Wert dokumentiert. Die FPS-R verwendet sechs Ge
 Im interdisziplinaeren Konsens werden auch die ungeraden Zwischenwerte (1, 3, 5, 7, 9) zugelassen,
 da diese in der klinischen Praxis als Entscheidungstrigger fuer Interventionen (z. B. Schmerztherapie)
 verwendet werden." // Description verlagern ins Narrativ des IG?
+
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
@@ -15,8 +16,7 @@ verwendet werden." // Description verlagern ins Narrativ des IG?
 
 * obeys mii-icu-painscale-0-10
 
-* code.coding[loinc] = $loinc#57696-7 "Pain severity FPS-R"
-* code.coding[sct] = $sct#1284908006 "Faces pain scale revised (assessment scale)"
+* code.coding[sct] = $sct#1284909003 "Faces Pain Scale - Revised score (observable entity)"
 
 * value[x] only Quantity
 * valueQuantity 1..1

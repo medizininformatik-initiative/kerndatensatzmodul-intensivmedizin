@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -62,12 +62,12 @@
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "273903006"
+        "patternCode": "446661009"
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Visual analog scale (assessment scale)"
+        "patternString": "Visual analog scale score (observable entity)"
       },
       {
         "id": "Observation.value[x]",

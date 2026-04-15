@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\nDer Score wird als ganzzahliger Wert dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -53,12 +53,12 @@
       {
         "id": "Observation.code.coding:loinc.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "LP157783-4"
+        "patternCode": "72514-3"
       },
       {
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Pain severity - 0-10 verbal numeric rating"
+        "patternString": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
       },
       {
         "id": "Observation.code.coding:sct",
@@ -69,12 +69,12 @@
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "1284852002"
+        "patternCode": "1284857008"
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Numeric Pain Rating Scale (assessment scale)"
+        "patternString": "Numeric Pain Rating Scale score (observable entity)"
       },
       {
         "id": "Observation.value[x]",

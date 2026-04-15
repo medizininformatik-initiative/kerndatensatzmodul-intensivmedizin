@@ -3,7 +3,8 @@ Parent: MII_PR_ICU_Score
 Id: mii-pr-icu-score-visuelle-analogskala
 Title: "MII PR ICU Score Visuelle Analogskala"
 Description: "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).
-Der Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert."
+Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert."
+
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
@@ -17,8 +18,8 @@ Der Messwert wird als Distanz in Millimeter auf einer 100-mm-Skala dokumentiert.
 * code.coding[loinc].display = "Pain severity [Score] Visual analog score"
 
 * code.coding[sct].system = $sct
-* code.coding[sct].code = #273903006
-* code.coding[sct].display = "Visual analog scale (assessment scale)"
+* code.coding[sct].code = #446661009
+* code.coding[sct].display = "Visual analog scale score (observable entity)"
 
 * value[x] only Quantity
 * valueQuantity 1..1

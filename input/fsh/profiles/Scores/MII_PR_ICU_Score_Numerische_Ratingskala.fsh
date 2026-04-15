@@ -5,6 +5,7 @@ Title: "MII PR ICU Score Numerische Ratingskala"
 Description: "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.
 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.
 Der Score wird als ganzzahliger Wert dokumentiert."
+
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
@@ -14,11 +15,11 @@ Der Score wird als ganzzahliger Wert dokumentiert."
 * obeys mii-icu-painscale-0-10 
 
 * code.coding[loinc] 1..1
-* code.coding[loinc].code = #LP157783-4
-* code.coding[loinc].display = "Pain severity - 0-10 verbal numeric rating"
+* code.coding[loinc].code = #72514-3
+* code.coding[loinc].display = "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 
 * code.coding[sct] 1..1
-* code.coding[sct].code = #1284852002
-* code.coding[sct].display = "Numeric Pain Rating Scale (assessment scale)"
+* code.coding[sct].code = #1284857008
+* code.coding[sct].display = "Numeric Pain Rating Scale score (observable entity)"
 
 * value[x] only integer
