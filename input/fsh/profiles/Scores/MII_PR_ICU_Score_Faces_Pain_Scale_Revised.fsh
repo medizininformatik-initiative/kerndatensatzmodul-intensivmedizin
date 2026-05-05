@@ -16,6 +16,7 @@ verwendet werden." // Description verlagern ins Narrativ des IG?
 
 * obeys mii-icu-painscale-0-10
 
+* code.coding[sct] 1..1
 * code.coding[sct] = $sct#1284909003 "Faces Pain Scale - Revised score (observable entity)"
 
 * value[x] only Quantity

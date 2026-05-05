@@ -40,9 +40,15 @@
         ]
       },
       {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 2
+      },
+      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
-        "sliceName": "loinc"
+        "sliceName": "loinc",
+        "min": 1
       },
       {
         "id": "Observation.code.coding:loinc.code",
@@ -57,7 +63,8 @@
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "min": 1
       },
       {
         "id": "Observation.code.coding:sct.code",

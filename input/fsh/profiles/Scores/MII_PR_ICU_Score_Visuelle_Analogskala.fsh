@@ -13,10 +13,12 @@ Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.
 
 * obeys mii-icu-painscale-vas
 
+* code.coding[loinc] 1..1
 * code.coding[loinc].system = $loinc
 * code.coding[loinc].code = #38214-3
 * code.coding[loinc].display = "Pain severity [Score] Visual analog score"
 
+* code.coding[sct] 1..1
 * code.coding[sct].system = $sct
 * code.coding[sct].code = #443394008
 * code.coding[sct].display = "Visual analog scale pain score (observable entity)"
