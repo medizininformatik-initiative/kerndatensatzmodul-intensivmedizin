@@ -62,12 +62,12 @@
       {
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
-        "patternCode": "446661009"
+        "patternCode": "443394008"
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Visual analog scale score (observable entity)"
+        "patternString": "Visual analog scale pain score (observable entity)"
       },
       {
         "id": "Observation.value[x]",

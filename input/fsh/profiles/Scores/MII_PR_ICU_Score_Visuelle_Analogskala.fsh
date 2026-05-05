@@ -18,8 +18,8 @@ Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.
 * code.coding[loinc].display = "Pain severity [Score] Visual analog score"
 
 * code.coding[sct].system = $sct
-* code.coding[sct].code = #446661009
-* code.coding[sct].display = "Visual analog scale score (observable entity)"
+* code.coding[sct].code = #443394008
+* code.coding[sct].display = "Visual analog scale pain score (observable entity)"
 
 * value[x] only Quantity
 * valueQuantity 1..1
