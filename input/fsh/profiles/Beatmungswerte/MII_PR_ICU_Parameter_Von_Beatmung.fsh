@@ -52,6 +52,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding[IEEE-11073] MS
 * code.coding[IEEE-11073].system 1..1 MS
 * code.coding[IEEE-11073].code 1..1 MS
+
 * subject 1.. MS
 * subject only Reference(Patient or Device)
 * encounter only Reference(Encounter)
@@ -60,6 +61,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * effective[x] MS
 * issued MS
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
+
 * value[x] 0..1 MS
 * value[x] only Quantity
 * valueQuantity 1.. MS
