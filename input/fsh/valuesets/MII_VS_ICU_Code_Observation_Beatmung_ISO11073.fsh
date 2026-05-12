@@ -1,11 +1,10 @@
 ValueSet: MII_VS_ICU_Code_Observation_Beatmung_ISO11073
-Id: mii-vs-icu-code-observation-beatmung-loinc-iso11073
+Id: mii-vs-icu-code-observation-beatmung-iso11073
 Title: "MII VS ICU Code Observation Beatmung ISO11073"
-Description: "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter."
+Description: "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Parameter."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"
-* ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-02-11"
 * ^experimental = false

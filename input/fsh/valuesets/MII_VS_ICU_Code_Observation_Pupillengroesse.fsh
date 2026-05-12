@@ -4,7 +4,6 @@ Title: "MII VS ICU Code Observation Pupillengroesse"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse"
-* ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-12-16"
 * ^experimental = false

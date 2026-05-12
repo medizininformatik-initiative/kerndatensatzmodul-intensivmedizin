@@ -14,7 +14,6 @@ Description: "Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreakti
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"
-* ^version = "2026.0.0"
 * ^status = #draft
 
 * include $loinc#LA25441-9 "Reactive to light"

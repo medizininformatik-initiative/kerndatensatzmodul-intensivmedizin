@@ -5,7 +5,6 @@ Description: "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz ve
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"
-* ^version = "2026.0.0"
 * ^status = #active
 * ^date = "2025-02-11"
 * ^experimental = false

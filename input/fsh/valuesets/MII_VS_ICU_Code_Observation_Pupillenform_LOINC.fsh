@@ -12,7 +12,6 @@ Description: "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessi
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"
-* ^version = "2026.0.0"
 * ^status = #draft
 
 // LOINC Answer codes
