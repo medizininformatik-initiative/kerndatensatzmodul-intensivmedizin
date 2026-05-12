@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-vent-provided-icu-druckdifferenz-beatmung",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung",
+  "id": "mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Druckdifferenz_Beatmung",
-  "title": "MII PR ICU Druckdifferenz Beatmung",
-  "status": "active",
+  "name": "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
+  "title": "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -34,20 +34,11 @@
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "max": "0",
-        "patternCoding": {
-          "system": "http://snomed.info/sct"
-        }
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "http://loinc.org",
-          "code": "76154-4"
+          "system": "http://snomed.info/sct",
+          "code": "27913002"
         }
       },
       {
@@ -58,7 +49,7 @@
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
-          "code": "152720"
+          "code": "151973"
         }
       },
       {

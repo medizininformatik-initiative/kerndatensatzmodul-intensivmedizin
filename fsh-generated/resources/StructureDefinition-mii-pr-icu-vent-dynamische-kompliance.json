@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-event-xspiratorischer-sauerstoffpartialdruck",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
+  "id": "mii-pr-icu-vent-dynamische-kompliance",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
-  "title": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
+  "name": "MII_PR_ICU_VENT_Dynamische_Kompliance",
+  "title": "MII PR ICU Dynamische Kompliance",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -26,13 +26,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.category:Beatmung",
-        "path": "Observation.category",
-        "sliceName": "Beatmung",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 3
@@ -45,7 +38,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "442720002"
+          "code": "250823005"
         }
       },
       {
@@ -56,7 +49,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "3147-6"
+          "code": "0827-3"
         }
       },
       {
@@ -67,14 +60,19 @@
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
-          "code": "153132"
+          "code": "151692"
         }
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "mm[Hg]",
+          "code": "mL/cm[H2O]",
           "system": "http://unitsofmeasure.org"
         }
       }

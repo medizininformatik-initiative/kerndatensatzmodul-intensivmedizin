@@ -30,11 +30,11 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "mii-icu-enc-or-sub",
-            "human": "Either subject OR encounter exists",
+            "key": "mii-icu-loinc-sct-dgai-ieee11073",
+            "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
-            "expression": "$this.encounter.exists() or $this.subject.exists()"
+            "expression": "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
           },
           {
             "key": "mii-icu-comp-xor-val",
@@ -53,15 +53,15 @@
       {
         "id": "Observation.partOf",
         "path": "Observation.partOf",
-        "short": "Observation belongs to a specific extracorporeal procedure.",
-        "definition": "Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden.",
+        "short": "Observation belongs to a specific ventilation procedure.",
+        "definition": "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden.",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Procedure"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"
             ]
           }
         ],

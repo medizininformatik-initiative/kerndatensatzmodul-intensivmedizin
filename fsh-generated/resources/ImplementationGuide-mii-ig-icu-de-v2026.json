@@ -60,20 +60,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck"
-        },
-        "name": "MII ICU Beatmungszeit Hohem Druck",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"
-        },
-        "name": "MII ICU Dauer Haemodialysesitzung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-lm-intensivmedizin"
         },
         "name": "MII Logical Model Intensivmedizin",
@@ -127,6 +113,13 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung"
         },
         "name": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck"
+        },
+        "name": "MII PR ICU Beatmungszeit Hohem Druck",
         "exampleBoolean": false
       },
       {
@@ -306,6 +299,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"
+        },
+        "name": "MII PR ICU Dauer Haemodialysesitzung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-device"
         },
         "name": "MII PR ICU Device",
@@ -327,14 +327,14 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-vent-provided-icu-druckdifferenz-beatmung"
+          "reference": "StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"
         },
         "name": "MII PR ICU Druckdifferenz Beatmung",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-vent-icu-dynamische-kompliance"
+          "reference": "StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
         },
         "name": "MII PR ICU Dynamische Kompliance",
         "exampleBoolean": false
@@ -376,7 +376,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-event-xspiratorischer-sauerstoffpartialdruck"
+          "reference": "StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"
         },
         "name": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
         "exampleBoolean": false
@@ -411,9 +411,16 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
+          "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
         },
         "name": "MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
+        },
+        "name": "MII PR ICU Inspiratorische Sauerstofffraktion Gemessen",
         "exampleBoolean": false
       },
       {
@@ -425,7 +432,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren"
+          "reference": "StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
         },
         "name": "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
         "exampleBoolean": false
@@ -435,6 +442,13 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
         },
         "name": "MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"
+        },
+        "name": "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
         "exampleBoolean": false
       },
       {
@@ -544,7 +558,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
         },
         "name": "MII PR ICU Score Numerische Ratingskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\nDer Score wird als ganzzahliger Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -567,7 +581,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -681,8 +695,7 @@
         "reference": {
           "reference": "StructureDefinition/mii-pr-icu-ect-venoeser-druck"
         },
-        "name": "MII PR ICU Venous Pressure",
-        "description": "Profile for documenting venous pressure.",
+        "name": "MII PR ICU Venoeser Druck",
         "exampleBoolean": false
       },
       {
@@ -789,10 +802,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-beatmung-loinc-iso11073"
+          "reference": "ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"
         },
         "name": "MII VS ICU Code Observation Beatmung ISO11073",
-        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Parameter.",
         "exampleBoolean": false
       },
       {
@@ -800,7 +813,7 @@
           "reference": "ValueSet/mii-vs-icu-code-observation-beatmung-loinc"
         },
         "name": "MII VS ICU Code Observation Beatmung LOINC",
-        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Parameter.",
         "exampleBoolean": false
       },
       {
@@ -808,7 +821,7 @@
           "reference": "ValueSet/mii-vs-icu-code-observation-beatmung-snomed"
         },
         "name": "MII VS ICU Code Observation Beatmung SNOMED",
-        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Bilanz verwendeten Parameter.",
+        "description": "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Parameter.",
         "exampleBoolean": false
       },
       {
@@ -1101,13 +1114,6 @@
         },
         "name": "mii-sp-icu-procedure-recorder",
         "description": "Suchparameter für Procedure.recorder",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
-        },
-        "name": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
         "exampleBoolean": false
       }
     ],

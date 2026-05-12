@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-icu-vent-inspiratorische-sauerstofffraktion-eingestellt",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt",
+  "id": "mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion_Eingestellt",
-  "title": "MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt",
+  "name": "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
+  "title": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -35,7 +35,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 2
+        "min": 3
       },
       {
         "id": "Observation.code.coding:sct",
@@ -45,7 +45,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "250774007"
+          "code": "442720002"
         }
       },
       {
@@ -56,16 +56,26 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "19994-3"
+          "code": "3147-6"
         }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101"
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "153132"
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "code": "mm[Hg]",
+          "system": "http://unitsofmeasure.org"
         }
       }
     ]
