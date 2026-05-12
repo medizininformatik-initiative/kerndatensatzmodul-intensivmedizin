@@ -47,7 +47,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding[loinc].code 1..1 MS
 * code.coding[loinc].display MS
 * code.coding contains IEEE-11073 0..
-* code.coding[IEEE-11073] from mii-vs-icu-code-observation-beatmung-loinc-iso11073 (required)
+* code.coding[IEEE-11073] from mii-vs-icu-code-observation-beatmung-iso11073 (required)
 * code.coding[IEEE-11073].system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073] MS
 * code.coding[IEEE-11073].system 1..1 MS
