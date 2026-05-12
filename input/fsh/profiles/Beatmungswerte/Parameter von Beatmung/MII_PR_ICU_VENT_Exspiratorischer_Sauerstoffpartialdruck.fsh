@@ -1,6 +1,6 @@
 Profile: MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
-Id: mii-pr-icu-event-xspiratorischer-sauerstoffpartialdruck
+Id: mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck
 Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * insert PR_CS_VS_Version
 * insert Publisher
