@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-arterieller-druck
 Title: "MII PR ICU Arterieller Druck"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-arterieller-druck"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-arterieller-druck"
 * ^status = #active
 
 * code.coding[sct] 1..1 MS

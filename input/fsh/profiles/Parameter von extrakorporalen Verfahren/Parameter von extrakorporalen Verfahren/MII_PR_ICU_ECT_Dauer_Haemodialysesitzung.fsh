@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-dauer-haemodialysesitzung
 Title: "MII PR ICU Dauer Haemodialysesitzung"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-dauer-haemodialysesitzung"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"
 * ^status = #active
 
 * category 1..

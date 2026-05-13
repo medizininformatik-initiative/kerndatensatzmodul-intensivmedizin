@@ -4,7 +4,7 @@ Id: mii-pr-icu-ect-gasfluss
 Title: "MII PR ICU Gasfluss"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-etc-gasfluss"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-gasfluss"
 * ^status = #active
 
 * code.coding ^slicing.discriminator.type = #pattern
