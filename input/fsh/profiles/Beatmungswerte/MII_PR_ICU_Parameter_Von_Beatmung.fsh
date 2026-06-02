@@ -11,7 +11,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * obeys mii-icu-comp-xor-val
 
 * identifier MS
-* partOf 1..1 MS
+* partOf 0.. MS
 * partOf only Reference(MII_PR_ICU_Beatmung)
 * partOf ^short = "Observation belongs to a specific ventilation procedure."
 * partOf ^definition = "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
@@ -33,14 +33,14 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding ^slicing.ordered = false
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 0..
-* code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed  (required)
+* code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed (required)
 * code.coding[sct].system = "http://snomed.info/sct"
 * code.coding[sct] MS
 * code.coding[sct].system 1..1 MS
 * code.coding[sct].code 1..1 MS
 * code.coding[sct].display MS
 * code.coding contains loinc 0..
-* code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc  (required)
+* code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc (required)
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc] MS
 * code.coding[loinc].system 1..1 MS
@@ -55,10 +55,13 @@ Title: "MII PR ICU Parameter von Beatmung"
 
 * subject 1.. MS
 * subject only Reference(Patient or Device)
+
 * encounter only Reference(Encounter)
 * encounter MS
+
 * effective[x] only dateTime or Period
 * effective[x] MS
+
 * issued MS
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
 
@@ -69,7 +72,9 @@ Title: "MII PR ICU Parameter von Beatmung"
 * valueQuantity.unit 1.. MS
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code 1.. MS
+
 * dataAbsentReason MS
 * bodySite from mii-vs-icu-body-site-observation-beatmung (extensible)
+
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung)
 * device MS

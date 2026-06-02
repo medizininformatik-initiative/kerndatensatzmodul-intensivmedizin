@@ -7,13 +7,15 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * ^status = #active
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
 
-* obeys mii-icu-enc-or-sub and mii-icu-comp-xor-val
+* obeys mii-icu-comp-xor-val
+
 * identifier MS
-* partOf 1..1 MS
+* partOf 0.. MS
 * partOf only Reference(MII_PR_ICU_Extrakorporales_Verfahren)
 * partOf ^short = "Observation belongs to a specific extracorporeal procedure."
 * partOf ^definition = "Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
 * status MS
+
 * category ..1 MS
 * category.coding ..1 MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -26,6 +28,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * category.coding[sct].system 1.. MS
 * category.coding[sct].code 1.. MS
 * category.coding[sct].display MS
+
 * code MS
 * code.coding 1.. MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -54,13 +57,18 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * code.coding[IEEE-11073] MS
 * code.coding[IEEE-11073].system 1.. MS
 * code.coding[IEEE-11073].code 1.. MS
+
 * subject 1.. MS
 * subject only Reference(Patient or Device)
+
 * encounter only Reference(Encounter) 
 * encounter MS
+
 * effective[x] only dateTime or Period
 * effective[x] MS
+
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
+
 * value[x] 1.. MS
 * value[x] only Quantity
 * valueQuantity.system = "http://unitsofmeasure.org"
@@ -68,6 +76,7 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * valueQuantity.code 1.. MS
 * valueQuantity.unit MS
 * valueQuantity.system 1.. MS
+
 * bodySite from mii-vs-icu-body-site-observation-extrakorporale-verfahren (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren)
 * device MS
