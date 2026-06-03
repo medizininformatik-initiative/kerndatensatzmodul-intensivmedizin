@@ -55,8 +55,6 @@
         "path": "Observation.partOf",
         "short": "Observation belongs to a specific ventilation procedure.",
         "definition": "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden.",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",

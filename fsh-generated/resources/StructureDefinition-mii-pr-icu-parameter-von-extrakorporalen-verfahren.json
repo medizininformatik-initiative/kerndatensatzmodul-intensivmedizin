@@ -30,13 +30,6 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "mii-icu-enc-or-sub",
-            "human": "Either subject OR encounter exists",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
-            "severity": "error",
-            "expression": "$this.encounter.exists() or $this.subject.exists()"
-          },
-          {
             "key": "mii-icu-comp-xor-val",
             "human": "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
@@ -55,8 +48,6 @@
         "path": "Observation.partOf",
         "short": "Observation belongs to a specific extracorporeal procedure.",
         "definition": "Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden.",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",
