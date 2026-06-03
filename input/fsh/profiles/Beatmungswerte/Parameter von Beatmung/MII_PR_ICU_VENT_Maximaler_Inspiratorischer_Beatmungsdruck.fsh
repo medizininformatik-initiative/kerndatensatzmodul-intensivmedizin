@@ -7,14 +7,12 @@ Title: "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"
 * ^status = #draft
 
+* category contains kuenstlicheBeatmung 1..1
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #27913002
-
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
-* code.coding[IEEE-11073] ^patternCoding.code = #151973 // "Maximum inspiratory airway pressure"
-
-* effective[x] 1..
+* code.coding[IEEE-11073] ^patternCoding.code = #151973
 * valueQuantity = $ucum#cm[H2O]

@@ -7,15 +7,16 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"
 * ^status = #active
 
-* category contains Beatmung 0..1
+* category contains kuenstlicheBeatmung 0..1
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category contains Sauerstofftherapie 0..1
+* category[Sauerstofftherapie] = $sct#57485005 "Oxygen therapy (procedure)"
+
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #442720002
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #3147-6
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073] ^patternCoding.code = #153132
-* value[x] = $ucum#mm[Hg]
+* valueQuantity = $ucum#mm[Hg]

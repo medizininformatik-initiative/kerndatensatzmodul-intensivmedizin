@@ -7,13 +7,13 @@ Title: "MII PR ICU Spontane Atemfrequenz Beatmet"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
 * ^status = #active
 
+* category contains kuenstlicheBeatmung 1..1
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct].code = #271625008
+* code.coding[sct] ^patternCoding.code = #271625008
 * code.coding[loinc] ..0
-* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073] ^patternCoding.code = #152498
-* effective[x] 1..
-* value[x] = $ucum#/min
+* valueQuantity = $ucum#/min

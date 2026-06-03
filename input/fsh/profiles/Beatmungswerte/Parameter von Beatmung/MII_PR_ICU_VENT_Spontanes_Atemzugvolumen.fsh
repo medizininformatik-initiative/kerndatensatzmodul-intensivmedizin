@@ -7,14 +7,13 @@ Title: "MII PR ICU Spontanes Atemzugvolumen"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen"
 * ^status = #active
 
+* category contains kuenstlicheBeatmung 1..1
+* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #250816009
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[loinc] ^patternCoding.code = #20116-0
+* code.coding[loinc] ^patternCoding.code = #20116-0 // "^on ventialtor"
 * code.coding[IEEE-11073] ..0
-* code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
-* effective[x] 1..
 * valueQuantity = $ucum#mL

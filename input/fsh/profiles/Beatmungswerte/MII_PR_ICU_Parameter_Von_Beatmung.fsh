@@ -11,9 +11,9 @@ Title: "MII PR ICU Parameter von Beatmung"
 * obeys mii-icu-comp-xor-val
 
 * identifier MS
-* partOf 0.. MS
+* partOf 0..* MS
 * partOf only Reference(MII_PR_ICU_Beatmung)
-* partOf ^short = "Observation belongs to a specific ventilation procedure."
+* partOf ^short = "Die Beobachtung gehört zu einem spezifischen Beatmungsverfahren."
 * partOf ^definition = "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
 * status MS
 
@@ -33,22 +33,22 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding ^slicing.ordered = false
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 0..
-* code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed (required)
-* code.coding[sct].system = "http://snomed.info/sct"
+* code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed  (required)
+* code.coding[sct].system = $sct
 * code.coding[sct] MS
 * code.coding[sct].system 1..1 MS
 * code.coding[sct].code 1..1 MS
 * code.coding[sct].display MS
 * code.coding contains loinc 0..
-* code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc (required)
-* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc  (required)
+* code.coding[loinc].system = $loinc
 * code.coding[loinc] MS
 * code.coding[loinc].system 1..1 MS
 * code.coding[loinc].code 1..1 MS
 * code.coding[loinc].display MS
 * code.coding contains IEEE-11073 0..
 * code.coding[IEEE-11073] from mii-vs-icu-code-observation-beatmung-iso11073 (required)
-* code.coding[IEEE-11073].system = "urn:iso:std:iso:11073:10101"
+* code.coding[IEEE-11073].system = $ieee-11073
 * code.coding[IEEE-11073] MS
 * code.coding[IEEE-11073].system 1..1 MS
 * code.coding[IEEE-11073].code 1..1 MS
@@ -59,22 +59,20 @@ Title: "MII PR ICU Parameter von Beatmung"
 * encounter only Reference(Encounter)
 * encounter MS
 
+* effective[x] 1..1 MS
 * effective[x] only dateTime or Period
-* effective[x] MS
 
 * issued MS
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
 
 * value[x] 0..1 MS
 * value[x] only Quantity
-* valueQuantity 1.. MS
 * valueQuantity MS
 * valueQuantity.unit 1.. MS
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $ucum
+* valueQuantity.system 1.. MS
 * valueQuantity.code 1.. MS
-
 * dataAbsentReason MS
 * bodySite from mii-vs-icu-body-site-observation-beatmung (extensible)
-
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung)
 * device MS
