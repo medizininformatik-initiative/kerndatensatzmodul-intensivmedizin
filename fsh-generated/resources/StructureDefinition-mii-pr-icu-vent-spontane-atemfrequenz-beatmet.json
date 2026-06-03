@@ -26,6 +26,22 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.category:kuenstlicheBeatmung",
+        "path": "Observation.category",
+        "sliceName": "kuenstlicheBeatmung",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "40617009",
+              "system": "http://snomed.info/sct",
+              "display": "Artificial ventilation (regime/therapy)"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 2
@@ -35,21 +51,16 @@
         "path": "Observation.code.coding",
         "sliceName": "sct",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "patternCode": "271625008"
+        "max": "1",
+        "patternCoding": {
+          "code": "271625008"
+        }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "max": "0",
-        "patternCoding": {
-          "system": "http://loinc.org"
-        }
+        "max": "0"
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
@@ -58,14 +69,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
           "code": "152498"
         }
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "min": 1
       },
       {
         "id": "Observation.value[x]",

@@ -49,8 +49,7 @@
 [MII_PR_ICU_ECT_Gasfluss]: StructureDefinition-mii-pr-icu-ect-gasfluss.html
 [MII_PR_ICU_ECT_Haemodialyse_Blutfluss]: StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.html
 [MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut]: StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.html
-[MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion_Eingestellt]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.html
-[MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion_Gemessen]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html
+[MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion]: StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.html
 [MII_PR_ICU_VENT_Inspiratorischer_Gasfluss]: StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.html
 [MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren]: StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.html
 [MII_PR_ICU_VENT_Maximaler_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.html
@@ -81,7 +80,7 @@
 [MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen]: StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.html
 [MII_PR_ICU_ECT_Substituatfluss]: StructureDefinition-mii-pr-icu-ect-substituatfluss.html
 [MII_PR_ICU_ECT_Substituatvolumen]: StructureDefinition-mii-pr-icu-ect-substituatvolumen.html
-[MII_PR_ICU_VENT_Unterstuezungsdruck_Beatmung]: StructureDefinition-mii-pr-icu-vent-unterstuezungsdruck-beatmung.html
+[MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung]: StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.html
 [MII_PR_ICU_Untersuchung_Pupillenbefund]: StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.html
 [MII_PR_ICU_Untersuchung_Pupillenform]: StructureDefinition-mii-pr-icu-untersuchung-pupillenform.html
 [MII_PR_ICU_Untersuchung_Pupillengroesse]: StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.html

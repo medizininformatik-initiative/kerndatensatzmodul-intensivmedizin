@@ -411,16 +411,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
+          "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"
         },
-        "name": "MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
-        },
-        "name": "MII PR ICU Inspiratorische Sauerstofffraktion Gemessen",
+        "name": "MII PR ICU Inspiratorische Sauerstofffraktion",
         "exampleBoolean": false
       },
       {
@@ -644,9 +637,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-unterstuezungsdruck-beatmung"
+          "reference": "StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung"
         },
-        "name": "MII PR ICU Unterstuezungsdruck Beatmung",
+        "name": "MII PR ICU Unterstuetzungsdruck Beatmung",
         "exampleBoolean": false
       },
       {

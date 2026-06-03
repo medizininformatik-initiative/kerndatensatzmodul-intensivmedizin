@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-vent-spontanes-atemzugvolumen",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen",
+  "id": "mii-pr-icu-vent-unterstuetzungsdruck-beatmung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
-  "title": "MII PR ICU Spontanes Atemzugvolumen",
+  "name": "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung",
+  "title": "MII PR ICU Unterstuetzungsdruck Beatmung",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -42,19 +42,10 @@
         }
       },
       {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "min": 2
-      },
-      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "250816009"
-        }
+        "max": "0"
       },
       {
         "id": "Observation.code.coding:loinc",
@@ -63,7 +54,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "20116-0"
+          "code": "20079-0"
         }
       },
       {
@@ -76,7 +67,7 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "mL",
+          "code": "cm[H2O]",
           "system": "http://unitsofmeasure.org"
         }
       }
