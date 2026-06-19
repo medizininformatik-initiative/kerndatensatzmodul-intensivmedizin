@@ -453,9 +453,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
+          "reference": "StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck"
         },
-        "name": "MII PR ICU Mittlerer Beatmungsdruck",
+        "name": "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
         "exampleBoolean": false
       },
       {
@@ -505,6 +505,13 @@
           "reference": "StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
         },
         "name": "MII PR ICU Parameter von Extrakorporalen Verfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck"
+        },
+        "name": "MII PR ICU Plateau Beatmungsdruck",
         "exampleBoolean": false
       },
       {

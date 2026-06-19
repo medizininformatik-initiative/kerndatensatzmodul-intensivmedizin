@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-vent-mittlerer-beatmungsdruck",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck",
+  "id": "mii-pr-icu-vent-plateau-beatmungsdruck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
-  "title": "MII PR ICU Mittlerer Beatmungsdruck",
+  "name": "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
+  "title": "MII PR ICU Plateau Beatmungsdruck",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -53,7 +53,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "698821009"
+          "code": "698822002"
         }
       },
       {
@@ -63,7 +63,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76530-5"
+          "code": "76259-1"
         }
       },
       {
@@ -73,7 +73,7 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "151975"
+          "code": "152424"
         }
       },
       {
