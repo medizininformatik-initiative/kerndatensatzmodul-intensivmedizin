@@ -12,9 +12,9 @@ Title: "MII PR ICU Dynamische Kompliance"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250823005
+* code.coding[sct] ^patternCoding.code = #250823005 "Total dynamic compliance (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #0827-3
+* code.coding[loinc] ^patternCoding.code = #60827-3 "Compliance.dynamic"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151692
+* code.coding[IEEE-11073] ^patternCoding.code = #151692 "Change of tidal volume per unit change of transthoracic pressure."
 * valueQuantity = $ucum#mL/cm[H2O]

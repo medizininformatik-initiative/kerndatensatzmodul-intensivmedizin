@@ -13,7 +13,7 @@ Title: "MII PR ICU Inspiratorischer Gasfluss"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #60794-5 // "^on ventilator"
+* code.coding[loinc] ^patternCoding.code = #60794-5 
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151948 // "during mechanical ventilation"
+* code.coding[IEEE-11073] ^patternCoding.code = #151948 
 * valueQuantity = $ucum#L/min

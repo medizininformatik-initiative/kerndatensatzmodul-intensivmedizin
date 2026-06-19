@@ -12,8 +12,7 @@ Title: "MII PR ICU Spontanes Atemzugvolumen"
 
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250816009
-* code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #20116-0 // "^on ventialtor"
+* code.coding[sct] ^patternCoding.code = #250816009 "Spontaneous tidal volume (observable entity)"
+* code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#mL

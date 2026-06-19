@@ -12,6 +12,6 @@ Title: "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #20056-8
+* code.coding[loinc] ^patternCoding.code = #20056-8 "Pressure.airway^at mean expiratory flow on ventilator"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#cm[H2O]

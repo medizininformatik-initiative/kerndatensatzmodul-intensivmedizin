@@ -12,9 +12,9 @@ Title: "MII PR ICU Atemzugvolumen Einstellung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #416811008
+* code.coding[sct] ^patternCoding.code = #416811008 "Tidal volume setting (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #20112-9
+* code.coding[loinc] ^patternCoding.code = #20112-9 "Tidal volume setting Ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #16929196
+* code.coding[IEEE-11073] ^patternCoding.code = #16929196 "MDC_VENT_VOL_TIDAL_SETTING"
 * valueQuantity = $ucum#mL

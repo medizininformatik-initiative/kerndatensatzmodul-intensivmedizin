@@ -12,9 +12,9 @@ Title: "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250875001
+* code.coding[sct] ^patternCoding.code = #250875001 "Ventilator delivered minute volume (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76009-0
+* code.coding[loinc] ^patternCoding.code = #76009-0 "Inspired minute Volume during Mechanical ventilation"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #152004
+* code.coding[IEEE-11073] ^patternCoding.code = #152004 "Total volume of gas breathed in during 1 min during mechanical ventilation."
 * valueQuantity = $ucum#L/min

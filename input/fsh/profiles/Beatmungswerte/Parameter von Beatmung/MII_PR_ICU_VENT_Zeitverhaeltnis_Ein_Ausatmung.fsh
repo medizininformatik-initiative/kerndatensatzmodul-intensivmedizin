@@ -12,9 +12,9 @@ Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250822000
+* code.coding[sct] ^patternCoding.code = #250822000 "Inspiration/expiration time ratio (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #75931-6
+* code.coding[loinc] ^patternCoding.code = #75931-6 "Inspiration/Expiration time Ratio"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151832
+* code.coding[IEEE-11073] ^patternCoding.code = #151832 "Ratio of durations of inspiratory and expiratory phases."
 * valueQuantity = $ucum#{ratio}

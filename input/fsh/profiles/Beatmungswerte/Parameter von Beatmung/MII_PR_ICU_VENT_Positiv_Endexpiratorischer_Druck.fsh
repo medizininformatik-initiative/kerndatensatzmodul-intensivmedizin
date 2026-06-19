@@ -12,9 +12,9 @@ Title: "MII PR ICU Positiv Endexpiratorischer Druck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250854009
+* code.coding[sct] ^patternCoding.code = #250854009 "Positive end expiratory pressure (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76248-4
+* code.coding[loinc] ^patternCoding.code = #76248-4 "PEEP Respiratory system --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151976
+* code.coding[IEEE-11073] ^patternCoding.code = #151976 "Positive end expiratory pressure applied to the airway."
 * valueQuantity = $ucum#cm[H2O]

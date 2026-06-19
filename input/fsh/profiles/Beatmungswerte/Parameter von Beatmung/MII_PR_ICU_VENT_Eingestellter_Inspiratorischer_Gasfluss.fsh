@@ -12,6 +12,6 @@ Title: "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76275-7
+* code.coding[loinc] ^patternCoding.code = #76275-7 "Inspiratory flow setting Ventilator"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#L/min

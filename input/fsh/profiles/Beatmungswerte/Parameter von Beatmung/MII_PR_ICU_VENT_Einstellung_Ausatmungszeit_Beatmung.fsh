@@ -12,8 +12,8 @@ Title: "MII PR ICU Einstellung Ausatmungszeit Beatmung"
 
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250820008
+* code.coding[sct] ^patternCoding.code = #250820008 "Expiratory time (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76187-4
+* code.coding[loinc] ^patternCoding.code = #76187-4 "Expiratory hold time setting"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#s

@@ -12,7 +12,7 @@ Title: "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"
 
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #27913002
+* code.coding[sct] ^patternCoding.code = #27913002 "Maximum inspiratory pressure (observable entity)"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151973
+* code.coding[IEEE-11073] ^patternCoding.code = #151973 "Maximum inspiratory airway pressure."
 * valueQuantity = $ucum#cm[H2O]
