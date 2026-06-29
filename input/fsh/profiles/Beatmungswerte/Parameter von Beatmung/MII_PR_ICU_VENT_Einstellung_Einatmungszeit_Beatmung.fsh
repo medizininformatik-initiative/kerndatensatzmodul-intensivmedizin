@@ -12,9 +12,12 @@ Title: "MII PR ICU Einstellung Einatmungszeit Beatmung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250819002 "Inspiratory time (observable entity)"
+* code.coding[sct] ^patternCoding.code = #250819002
+* code.coding[sct] ^patternCoding.display = "Inspiratory time (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76334-2 "Inspiratory time setting"
+* code.coding[loinc] ^patternCoding.code = #76334-2
+* code.coding[loinc] ^patternCoding.display = "Inspiratory time setting"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #16929632 "MDC_VENT_TIME_PD_INSP_SETTING"
+* code.coding[IEEE-11073] ^patternCoding.code = #16929632
+* code.coding[IEEE-11073] ^patternCoding.display = "MDC_VENT_TIME_PD_INSP_SETTING"
 * valueQuantity = $ucum#s

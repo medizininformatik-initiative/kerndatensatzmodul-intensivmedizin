@@ -59,7 +59,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76154-4"
+          "code": "76154-4",
+          "display": "Airway pressure delta^on ventilator"
         }
       },
       {
@@ -69,7 +70,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "152720"
+          "code": "152720",
+          "display": "Inspiratory airway pressure relative to PEEP or BAP."
         }
       },
       {

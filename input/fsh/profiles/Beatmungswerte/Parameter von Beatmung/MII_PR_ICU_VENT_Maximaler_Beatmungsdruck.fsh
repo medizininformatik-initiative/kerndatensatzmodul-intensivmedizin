@@ -12,7 +12,9 @@ Title: "MII PR ICU Maximaler Beatmungsdruck"
 
 * code.coding 2..
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76531-3 "Pressure.max Respiratory system airway --on ventilator"
+* code.coding[loinc] ^patternCoding.code = #76531-3
+* code.coding[loinc] ^patternCoding.display = "Pressure.max Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151957 "Maximum airway pressure during mechanical ventilation."
+* code.coding[IEEE-11073] ^patternCoding.code = #151957
+* code.coding[IEEE-11073] ^patternCoding.display = "Maximum airway pressure during mechanical ventilation."
 * valueQuantity = $ucum#cm[H2O]

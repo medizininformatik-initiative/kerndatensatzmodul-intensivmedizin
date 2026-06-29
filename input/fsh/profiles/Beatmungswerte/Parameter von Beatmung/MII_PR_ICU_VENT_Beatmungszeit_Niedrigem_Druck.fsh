@@ -13,7 +13,9 @@ Title: "MII PR ICU Beatmungszeit Niedrigem Druck"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76229-4 "Low pressure hold time setting Ventilator"
+* code.coding[loinc] ^patternCoding.code = #76229-4
+* code.coding[loinc] ^patternCoding.display = "Low pressure hold time setting Ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #16929864 "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
+* code.coding[IEEE-11073] ^patternCoding.code = #16929864
+* code.coding[IEEE-11073] ^patternCoding.display = "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
 * valueQuantity = $ucum#s

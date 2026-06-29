@@ -53,7 +53,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "250875001"
+          "code": "250875001",
+          "display": "Ventilator delivered minute volume (observable entity)"
         }
       },
       {
@@ -63,7 +64,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76009-0"
+          "code": "76009-0",
+          "display": "Inspired minute Volume during Mechanical ventilation"
         }
       },
       {
@@ -73,7 +75,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "152004"
+          "code": "152004",
+          "display": "Total volume of gas breathed in during 1 min during mechanical ventilation."
         }
       },
       {

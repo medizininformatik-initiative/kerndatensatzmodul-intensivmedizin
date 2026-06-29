@@ -53,7 +53,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76531-3"
+          "code": "76531-3",
+          "display": "Pressure.max Respiratory system airway --on ventilator"
         }
       },
       {
@@ -63,7 +64,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "151957"
+          "code": "151957",
+          "display": "Maximum airway pressure during mechanical ventilation."
         }
       },
       {

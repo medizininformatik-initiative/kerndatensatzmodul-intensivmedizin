@@ -24,6 +24,7 @@ Alias: $observation-de-vitalsign-atemfrequenz = http://fhir.de/StructureDefiniti
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
 Alias: $observation-de-vitalsign-koerpergroesse = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
 Alias: $observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang
+Alias: $observation-de-vitalsign = http://fhir.de/StructureDefinition/observation-de-vitalsign
 Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten
 
 // licenses

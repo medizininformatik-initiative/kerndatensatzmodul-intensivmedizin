@@ -12,6 +12,7 @@ Title: "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #20118-6 "Tidal volume.spontaneous+mechanical --on ventilator"
+* code.coding[loinc] ^patternCoding.code = #20118-6
+* code.coding[loinc] ^patternCoding.display = "Tidal volume.spontaneous+mechanical --on ventilator"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#mL

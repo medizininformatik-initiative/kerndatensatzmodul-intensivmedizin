@@ -57,19 +57,18 @@ Title: "MII PR ICU Parameter von Beatmung"
 * subject only Reference(Patient or Device)
 * encounter only Reference(Encounter)
 * encounter MS
-* effective[x] 1..1 MS // Core setzt ..1 ; 1..* geht also nicht.
+* effective[x] 1..1 MS 
 * effective[x] only dateTime or Period
 * issued MS
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
 
 * value[x] 0..1 MS
 * value[x] only Quantity
-// * valueQuantity 1.. MS
-* valueQuantity MS
-* valueQuantity.unit 1.. MS
+* valueQuantity.unit 1..1 MS
 * valueQuantity.system = $ucum
-* valueQuantity.system 1.. MS
-* valueQuantity.code 1.. MS
+* valueQuantity.system 1..1 MS
+* valueQuantity.code 1..1 MS
+* valueQuantity.value 1..1 MS 
 * dataAbsentReason MS
 * bodySite from mii-vs-icu-body-site-observation-beatmung (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung)

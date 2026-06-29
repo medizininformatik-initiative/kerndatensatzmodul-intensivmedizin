@@ -13,8 +13,10 @@ Title: "MII PR ICU Beatmungszeit Hohem Druck"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76190-8 "High pressure hold time setting Ventilator"
+* code.coding[loinc] ^patternCoding.code = #76190-8
+* code.coding[loinc] ^patternCoding.display = "High pressure hold time setting Ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #16929860 "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
+* code.coding[IEEE-11073] ^patternCoding.code = #16929860
+* code.coding[IEEE-11073] ^patternCoding.display = "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
 * valueQuantity = $ucum#s
 

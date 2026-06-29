@@ -53,7 +53,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "698822002"
+          "code": "698822002",
+          "display": "Airway plateau pressure (observable entity)"
         }
       },
       {
@@ -63,7 +64,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76259-1"
+          "code": "76259-1",
+          "display": "Pressure.plateau Respiratory system airway --on ventilator"
         }
       },
       {
@@ -73,7 +75,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "152424"
+          "code": "152424",
+          "display": "Pressure in airway in plateau phase during mechanical ventilation."
         }
       },
       {

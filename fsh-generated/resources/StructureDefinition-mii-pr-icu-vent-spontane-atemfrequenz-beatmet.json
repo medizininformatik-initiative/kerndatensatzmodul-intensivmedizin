@@ -59,7 +59,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "19839-0"
+          "code": "19839-0",
+          "display": "Breath rate spontaneous --on ventilator"
         }
       },
       {
@@ -69,7 +70,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "152498"
+          "code": "152498",
+          "display": "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes."
         }
       },
       {

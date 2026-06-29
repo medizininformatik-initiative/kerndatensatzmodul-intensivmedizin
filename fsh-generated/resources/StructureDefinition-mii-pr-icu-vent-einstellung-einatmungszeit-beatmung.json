@@ -53,7 +53,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "250819002"
+          "code": "250819002",
+          "display": "Inspiratory time (observable entity)"
         }
       },
       {
@@ -63,7 +64,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76334-2"
+          "code": "76334-2",
+          "display": "Inspiratory time setting"
         }
       },
       {
@@ -73,7 +75,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "16929632"
+          "code": "16929632",
+          "display": "MDC_VENT_TIME_PD_INSP_SETTING"
         }
       },
       {

@@ -14,9 +14,12 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #442720002 "Expired oxygen tension (observable entity)"
+* code.coding[sct] ^patternCoding.code = #442720002
+* code.coding[sct] ^patternCoding.display = "Expired oxygen tension (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #3147-6 "Oxygen [Partial pressure] in Exhaled gas"
+* code.coding[loinc] ^patternCoding.code = #3147-6
+* code.coding[loinc] ^patternCoding.display = "Oxygen [Partial pressure] in Exhaled gas"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #153132 "Partial pressure of oxygen in airway gas measured during expiration."
+* code.coding[IEEE-11073] ^patternCoding.code = #153132
+* code.coding[IEEE-11073] ^patternCoding.display = "Partial pressure of oxygen in airway gas measured during expiration."
 * valueQuantity = $ucum#mm[Hg]

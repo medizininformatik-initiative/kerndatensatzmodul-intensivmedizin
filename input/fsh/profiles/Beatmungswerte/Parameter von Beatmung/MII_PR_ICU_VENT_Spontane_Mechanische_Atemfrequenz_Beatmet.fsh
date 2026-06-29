@@ -12,11 +12,14 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250810003 "Total breath rate (observable entity)"
+* code.coding[sct] ^patternCoding.code = #250810003
+* code.coding[sct] ^patternCoding.display = "Total breath rate (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #19840-8 "Breath rate spontaneous and mechanical --on ventilator"
+* code.coding[loinc] ^patternCoding.code = #19840-8
+* code.coding[loinc] ^patternCoding.display = "Breath rate spontaneous and mechanical --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #152490 "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
+* code.coding[IEEE-11073] ^patternCoding.code = #152490
+* code.coding[IEEE-11073] ^patternCoding.display = "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
 * valueQuantity = $ucum#/min
 
 // verwirrende Bezeichnung des Profils. Gemeint laut Codes ist Atemfrequenz gesamt (mechanisch + spontan). 

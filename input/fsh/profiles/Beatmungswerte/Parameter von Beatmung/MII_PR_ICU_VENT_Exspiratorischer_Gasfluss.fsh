@@ -13,7 +13,9 @@ Title: "MII PR ICU Exspiratorischer Gasfluss"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #60792-9 "Expiratory gas flow Respiratory system airway --on ventilator"
+* code.coding[loinc] ^patternCoding.code = #60792-9
+* code.coding[loinc] ^patternCoding.display = "Expiratory gas flow Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151944 "Expiratory gas flow during mechanical ventilation. "
+* code.coding[IEEE-11073] ^patternCoding.code = #151944
+* code.coding[IEEE-11073] ^patternCoding.display = "Expiratory gas flow during mechanical ventilation. "
 * valueQuantity = $ucum#L/min

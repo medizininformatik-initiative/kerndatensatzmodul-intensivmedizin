@@ -15,7 +15,9 @@ Title: "MII PR ICU Horowitz In Arteriellem Blut"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #50984-4 "Horowitz index in Arterial blood"
+* code.coding[loinc] ^patternCoding.code = #50984-4
+* code.coding[loinc] ^patternCoding.display = "Horowitz index in Arterial blood"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #150656 "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21)."
+* code.coding[IEEE-11073] ^patternCoding.code = #150656
+* code.coding[IEEE-11073] ^patternCoding.display = "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21)."
 * valueQuantity = $ucum#mm[Hg]

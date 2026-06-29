@@ -59,7 +59,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "60792-9"
+          "code": "60792-9",
+          "display": "Expiratory gas flow Respiratory system airway --on ventilator"
         }
       },
       {
@@ -69,7 +70,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "151944"
+          "code": "151944",
+          "display": "Expiratory gas flow during mechanical ventilation. "
         }
       },
       {

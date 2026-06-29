@@ -53,7 +53,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "250874002"
+          "code": "250874002",
+          "display": "Ventilator delivered tidal volume (observable entity)"
         }
       },
       {
@@ -63,7 +64,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "76222-9"
+          "code": "76222-9",
+          "display": "Tidal volume Ventilator --on ventilator"
         }
       },
       {
@@ -73,7 +75,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "151980"
+          "code": "151980",
+          "display": "Volume of gas delivered through the patient-connection port during a respiratory cycle."
         }
       },
       {

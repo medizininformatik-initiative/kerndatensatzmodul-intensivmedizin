@@ -12,6 +12,7 @@ Title: "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #20060-0 "Pressure.airway^at zero inspiratory flow on ventilator"
+* code.coding[loinc] ^patternCoding.code = #20060-0
+* code.coding[loinc] ^patternCoding.display = "Pressure.airway^at zero inspiratory flow on ventilator"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#cm[H2O]

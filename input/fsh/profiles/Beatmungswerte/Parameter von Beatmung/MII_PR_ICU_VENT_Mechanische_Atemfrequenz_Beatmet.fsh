@@ -12,9 +12,12 @@ Title: "MII PR ICU Mechanische Atemfrequenz Beatmet"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250876000 "Ventilator rate (observable entity)"
+* code.coding[sct] ^patternCoding.code = #250876000
+* code.coding[sct] ^patternCoding.display = "Ventilator rate (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #33438-3 "Breath rate mechanical --on ventilator"
+* code.coding[loinc] ^patternCoding.code = #33438-3
+* code.coding[loinc] ^patternCoding.display = "Breath rate mechanical --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151586 "Rate of mechanical ventilation; method not specified."
+* code.coding[IEEE-11073] ^patternCoding.code = #151586
+* code.coding[IEEE-11073] ^patternCoding.display = "Rate of mechanical ventilation; method not specified."
 * valueQuantity = $ucum#{Breaths}/min

@@ -53,7 +53,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "250822000"
+          "code": "250822000",
+          "display": "Inspiration/expiration time ratio (observable entity)"
         }
       },
       {
@@ -63,7 +64,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "75931-6"
+          "code": "75931-6",
+          "display": "Inspiration/Expiration time Ratio"
         }
       },
       {
@@ -73,7 +75,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "151832"
+          "code": "151832",
+          "display": "Ratio of durations of inspiratory and expiratory phases."
         }
       },
       {

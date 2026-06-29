@@ -69,7 +69,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "250790007"
+          "code": "250790007",
+          "display": "End tidal carbon dioxide tension (observable entity)"
         }
       },
       {
@@ -79,7 +80,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "19891-1"
+          "code": "19891-1",
+          "display": "Carbon dioxide^at end expiration"
         }
       },
       {
@@ -89,7 +91,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "151708"
+          "code": "151708",
+          "display": "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
         }
       },
       {

@@ -69,7 +69,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "442720002"
+          "code": "442720002",
+          "display": "Expired oxygen tension (observable entity)"
         }
       },
       {
@@ -79,7 +80,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "3147-6"
+          "code": "3147-6",
+          "display": "Oxygen [Partial pressure] in Exhaled gas"
         }
       },
       {
@@ -89,7 +91,8 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "153132"
+          "code": "153132",
+          "display": "Partial pressure of oxygen in airway gas measured during expiration."
         }
       },
       {

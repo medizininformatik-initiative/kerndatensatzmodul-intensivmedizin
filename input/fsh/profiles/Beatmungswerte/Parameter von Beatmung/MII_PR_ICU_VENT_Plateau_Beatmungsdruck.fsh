@@ -12,9 +12,12 @@ Title: "MII PR ICU Plateau Beatmungsdruck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #698822002 "Airway plateau pressure (observable entity)"
+* code.coding[sct] ^patternCoding.code = #698822002
+* code.coding[sct] ^patternCoding.display = "Airway plateau pressure (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76259-1 "Pressure.plateau Respiratory system airway --on ventilator"
+* code.coding[loinc] ^patternCoding.code = #76259-1
+* code.coding[loinc] ^patternCoding.display = "Pressure.plateau Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #152424 "Pressure in airway in plateau phase during mechanical ventilation."
+* code.coding[IEEE-11073] ^patternCoding.code = #152424
+* code.coding[IEEE-11073] ^patternCoding.display = "Pressure in airway in plateau phase during mechanical ventilation."
 * valueQuantity = $ucum#cm[H2O]

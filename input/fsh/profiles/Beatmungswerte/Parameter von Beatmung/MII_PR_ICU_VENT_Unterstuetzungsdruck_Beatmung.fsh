@@ -12,6 +12,7 @@ Title: "MII PR ICU Unterstuetzungsdruck Beatmung"
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #20079-0 "Pressure support setting Ventilator"
+* code.coding[loinc] ^patternCoding.code = #20079-0
+* code.coding[loinc] ^patternCoding.display = "Pressure support setting Ventilator"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#cm[H2O]
