@@ -558,7 +558,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
         },
         "name": "MII PR ICU Score Numerische Ratingskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\r\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz.\r\nDer Score wird als ganzzahliger Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
