@@ -472,6 +472,14 @@
     "endLine": 30
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-score-gcs.json",
+    "fshName": "MII_PR_ICU_Score_GCS",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_GCS.fsh",
+    "startLine": 1,
+    "endLine": 90
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-score-icdsc.json",
     "fshName": "MII_PR_ICU_Score_ICDSC",
     "fshType": "Profile",
@@ -533,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score.fsh",
     "startLine": 1,
-    "endLine": 80
+    "endLine": 86
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.json",
@@ -1030,6 +1038,30 @@
     "fshFile": "valuesets\\MII_VS_ICU_Code_Procedure_Beatmung_SNOMED.fsh",
     "startLine": 1,
     "endLine": 92
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-component-gcs-eyes.json",
+    "fshName": "MII_VS_ICU_Component_GCS_Eyes",
+    "fshType": "ValueSet",
+    "fshFile": "profiles\\Scores\\MII_VS_ICU_Component_GCS_Eyes.fsh",
+    "startLine": 5,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-component-gcs-motor.json",
+    "fshName": "MII_VS_ICU_Component_GCS_Motor",
+    "fshType": "ValueSet",
+    "fshFile": "profiles\\Scores\\MII_VS_ICU_Component_GCS_Motor.fsh",
+    "startLine": 5,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-icu-component-gcs-verbal.json",
+    "fshName": "MII_VS_ICU_Component_GCS_Verbal",
+    "fshType": "ValueSet",
+    "fshFile": "profiles\\Scores\\MII_VS_ICU_Component_GCS_Verbal.fsh",
+    "startLine": 5,
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-delirium-interpretation.json",

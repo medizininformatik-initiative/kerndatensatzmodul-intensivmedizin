@@ -197,6 +197,26 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding:ieee11073",
+        "path": "Observation.code.coding",
+        "sliceName": "ieee11073",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:ieee11073.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:iso:std:iso:11073:10101"
+      },
+      {
+        "id": "Observation.code.coding:ieee11073.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "short": "Patient being assessed",
@@ -291,6 +311,16 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open",
+          "ordered": false
+        },
         "constraint": [
           {
             "key": "mii-icu-val-xor-dar",
@@ -305,15 +335,6 @@
       {
         "id": "Observation.component.code",
         "path": "Observation.component.code",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {

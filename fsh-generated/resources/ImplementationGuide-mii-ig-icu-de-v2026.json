@@ -547,6 +547,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-gcs"
+        },
+        "name": "MII PR ICU Score GCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-icdsc"
         },
         "name": "MII PR ICU Score ICDSC",
@@ -907,6 +914,27 @@
           "reference": "ValueSet/mii-vs-icu-code-procedure-beatmung-snomed"
         },
         "name": "MII VS ICU Code Procedure Beatmung SNOMED",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-component-gcs-eyes"
+        },
+        "name": "MII VS ICU Component GCS Eyes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-component-gcs-motor"
+        },
+        "name": "MII VS ICU Component GCS Motor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-component-gcs-verbal"
+        },
+        "name": "MII VS ICU Component GCS Verbal",
         "exampleBoolean": false
       },
       {

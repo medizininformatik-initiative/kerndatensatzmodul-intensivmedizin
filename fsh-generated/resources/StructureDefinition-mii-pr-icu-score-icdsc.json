@@ -92,7 +92,8 @@
               "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "closed",
+          "ordered": false
         },
         "min": 8,
         "max": "8"
