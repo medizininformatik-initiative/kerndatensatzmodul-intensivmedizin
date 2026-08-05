@@ -43,7 +43,8 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding ^slicing.rules = #open
 * code.coding contains 
     loinc 0..1 MS and 
-    sct 0..1 MS 
+    sct 0..1 MS and
+    ieee11073 0..1 MS
 * code.coding[loinc].system 1..1
 * code.coding[loinc].system = $loinc
 * code.coding[loinc].code 1..1 MS
@@ -52,6 +53,9 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding[sct].version 0..1 MS
 * code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
+* code.coding[ieee11073].system 1..1
+* code.coding[ieee11073].system = $ieee-11073
+* code.coding[ieee11073].code 1..1 MS
 
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -67,12 +71,14 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 
 // component-Slicing-Rahmen — Kinder fuegen contains-Slices hinzu
 * component MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
 * component.value[x] 0..1 MS
 * component.value[x] only integer or Quantity or CodeableConcept
 * component.code MS
-* component.code ^slicing.discriminator.type = #pattern
-* component.code ^slicing.discriminator.path = "$this"
-* component.code ^slicing.rules = #open
+
 * component.dataAbsentReason 0..1 MS
 * hasMember 0..* MS
 

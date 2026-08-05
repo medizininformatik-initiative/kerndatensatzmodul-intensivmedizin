@@ -34,6 +34,11 @@ Description: "FLACC Gesamtscore muss zwischen 0 und 10 liegen."
 * severity = #error
 * expression = "value.ofType(integer) >= 0 and value.ofType(integer) <= 10"
 
+Invariant: gcs-total-range
+Description: "Glasgow Coma Scale Gesamtscore muss zwischen 3 und 15 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(Quantity) >= 3 and value.ofType(Quantity) <= 15)"
+
 Invariant: nips-total-range
 Description: "NIPS Gesamtscore muss zwischen 0 und 7 liegen."
 * severity = #error
