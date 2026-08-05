@@ -50,7 +50,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding[loinc].code 1..1 MS
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
-* code.coding[sct].version 0..1 MS
+* code.coding[sct].version 1..1 MS
 * code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
 * code.coding[ieee11073].system 1..1
