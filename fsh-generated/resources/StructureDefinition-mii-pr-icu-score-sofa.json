@@ -104,7 +104,8 @@
               "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "closed",
+          "ordered": false
         },
         "min": 6,
         "max": "6"

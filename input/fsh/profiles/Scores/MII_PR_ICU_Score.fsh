@@ -50,10 +50,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding[loinc].code 1..1 MS
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
-* code.coding[sct].version 1..1 MS  // 05.08.26 - auf 1..1 gesetzt
+* code.coding[sct].version 0..1 MS
 * code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
-* code.coding[ieee11073].system 1..1  // neues IEEE-11073 Slicing hinzugefügt - Beschluss 05.08.26
+* code.coding[ieee11073].system 1..1
 * code.coding[ieee11073].system = $ieee-11073
 * code.coding[ieee11073].code 1..1 MS
 
@@ -61,9 +61,9 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * subject only Reference(Patient)
 * subject ^short = "Patient being assessed"
 * performer 0..* MS
-* encounter 0..1 MS // ursprünglich 0..; ICU_Score erbt von Observation, dort bereits auf Reference(Encounter) beschränkt. 
+* encounter 0..1 MS // ursprünglich 0..; ICU_Score erbt von Observation, dort bereits auf Reference(Encounter) beschränkt. Redundanz
 
-* effective[x] 1..1 MS  
+* effective[x] 1..1 MS
 * effective[x] only dateTime or Period
 
 * value[x] 0..1 MS
@@ -71,7 +71,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 
 // component-Slicing-Rahmen — Kinder fuegen contains-Slices hinzu
 * component MS
-* component ^slicing.discriminator.type = #pattern 
+* component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false

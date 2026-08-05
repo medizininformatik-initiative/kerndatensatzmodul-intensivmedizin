@@ -68,6 +68,7 @@
 [MII_PR_ICU_Score]: StructureDefinition-mii-pr-icu-score.html
 [MII_PR_ICU_Score_CAM_ICU]: StructureDefinition-mii-pr-icu-score-cam-icu.html
 [MII_PR_ICU_Score_Faces_Pain_Scale_Revised]: StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html
+[MII_PR_ICU_Score_GCS]: StructureDefinition-mii-pr-icu-score-gcs.html
 [MII_PR_ICU_Score_ICDSC]: StructureDefinition-mii-pr-icu-score-icdsc.html
 [MII_PR_ICU_Score_Numerische_Ratingskala]: StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html
 [MII_PR_ICU_Score_RASS]: StructureDefinition-mii-pr-icu-score-rass.html
@@ -116,6 +117,9 @@
 [MII_VS_ICU_Code_Observation_Pupillenlichtreaktion]: ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.html
 [MII_VS_ICU_Code_Observation_Pupillensymmetrie]: ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.html
 [MII_VS_ICU_Code_Procedure_Beatmung_SNOMED]: ValueSet-mii-vs-icu-code-procedure-beatmung-snomed.html
+[MII_VS_ICU_Component_GCS_Eyes]: ValueSet-mii-vs-icu-component-gcs-eyes.html
+[MII_VS_ICU_Component_GCS_Motor]: ValueSet-mii-vs-icu-component-gcs-motor.html
+[MII_VS_ICU_Component_GCS_Verbal]: ValueSet-mii-vs-icu-component-gcs-verbal.html
 [MII_VS_ICU_Delirium_Interpretation]: ValueSet-mii-vs-icu-delirium-interpretation.html
 [MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren]: ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.html
 [MII_VS_ICU_Method_Observation_Blutdruck]: ValueSet-mii-vs-icu-method-observation-blutdruck.html
