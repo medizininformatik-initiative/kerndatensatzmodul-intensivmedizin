@@ -6,6 +6,7 @@ Title: "MII PR ICU Maximaler Beatmungsdruck"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
 * ^status = #active
+* ^purpose = "Das Profil bezieht sich auf die Einstellung des maximalen Beatmungsdrucks am Beatmungsgerät als Druckbegrenzung."
 
 * category contains kuenstlicheBeatmung 1..1
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"

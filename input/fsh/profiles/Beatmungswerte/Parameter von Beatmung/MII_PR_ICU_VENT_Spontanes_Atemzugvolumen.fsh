@@ -10,7 +10,7 @@ Title: "MII PR ICU Spontanes Atemzugvolumen"
 * category contains kuenstlicheBeatmung 1..1
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
 
-* code.coding 2..
+* code.coding 1..
 * code.coding[sct] 1..1
 * code.coding[sct] ^patternCoding.code = #250816009
 * code.coding[sct] ^patternCoding.display = "Spontaneous tidal volume (observable entity)"
