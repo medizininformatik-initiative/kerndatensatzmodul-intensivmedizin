@@ -55,7 +55,8 @@
 [MII_PR_ICU_VENT_Maximaler_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.html
 [MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.html
 [MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet]: StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.html
-[MII_PR_ICU_VENT_Mittlerer_Inspiratiorischer_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.html
+[MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.html
+[MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.html
 [MII_PR_ICU_MUV_Arterieller_Blutdruck]: StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html
 [MII_PR_ICU_MUV_Atemfrequenz]: StructureDefinition-mii-pr-icu-muv-atemfrequenz.html
 [MII_PR_ICU_MUV_Koerpergewicht]: StructureDefinition-mii-pr-icu-muv-koerpergewicht.html

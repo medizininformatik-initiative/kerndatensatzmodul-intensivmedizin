@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.json",
@@ -733,7 +733,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Inspiratorischer_Gasfluss.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.json",
@@ -741,7 +741,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Maximaler_Beatmungsdruck.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.json",
@@ -760,10 +760,18 @@
     "endLine": 23
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.json",
-    "fshName": "MII_PR_ICU_VENT_Mittlerer_Inspiratiorischer_Beatmungsdruck",
+    "outputFile": "StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.json",
+    "fshName": "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
     "fshType": "Profile",
     "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck.fsh",
+    "startLine": 6,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.json",
+    "fshName": "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck.fsh",
     "startLine": 1,
     "endLine": 23
   },
@@ -797,7 +805,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.json",
