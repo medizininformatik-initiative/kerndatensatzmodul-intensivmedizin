@@ -481,9 +481,44 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII PR ICU MUV Herzfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzzeitvolumen"
+        },
+        "name": "MII PR ICU MUV Herzzeitvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"
+        },
+        "name": "MII PR ICU MUV Ideales Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-intrakranieller-druck"
+        },
+        "name": "MII PR ICU MUV Intrakranieller Druck (ICP)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
         },
         "name": "MII PR ICU MUV Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"
+        },
+        "name": "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
         "exampleBoolean": false
       },
       {
@@ -495,9 +530,45 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil"
+        },
+        "name": "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
+        },
+        "name": "MII PR ICU MUV Koerperlaenge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
         },
         "name": "MII PR ICU MUV Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck"
+        },
+        "name": "MII PR ICU MUV Pulmonalarterieller Wedge-Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "name": "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
         "exampleBoolean": false
       },
       {
@@ -595,7 +666,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
         "exampleBoolean": false
       },
       {

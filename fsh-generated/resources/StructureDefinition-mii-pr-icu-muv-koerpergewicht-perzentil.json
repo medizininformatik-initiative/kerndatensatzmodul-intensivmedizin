@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-muv-koerperlaenge",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+  "id": "mii-pr-icu-muv-koerpergewicht-perzentil",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_MUV_Koerperlaenge",
-  "title": "MII PR ICU MUV Koerperlaenge",
-  "status": "active",
+  "name": "MII_PR_ICU_MUV_Koerpergewicht_Perzentil",
+  "title": "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -32,7 +32,7 @@
           {
             "key": "mii-icu-val-xor-dar",
             "human": "Resource must have either value or dataAbsentReason.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil",
             "severity": "error",
             "expression": "value.exists() xor dataAbsentReason.exists()"
           }
@@ -143,8 +143,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "8306-3",
-          "display": "Body height --lying"
+          "code": "8336-0",
+          "display": "Body weight [Percentile] Per age"
         },
         "mustSupport": true
       },
@@ -171,8 +171,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "1149101003",
-          "display": "Recumbent body height (observable entity)"
+          "code": "1153592008",
+          "display": "Weight for age percentile (observable entity)"
         },
         "mustSupport": true
       },
@@ -268,15 +268,11 @@
           }
         ],
         "patternQuantity": {
-          "code": "cm",
+          "code": "%",
           "system": "http://unitsofmeasure.org",
-          "unit": "centimeter"
+          "unit": "percent"
         },
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",
@@ -286,7 +282,6 @@
       {
         "id": "Observation.value[x]:valueQuantity.unit",
         "path": "Observation.value[x].unit",
-        "patternString": "centimeter",
         "mustSupport": true
       },
       {
@@ -297,13 +292,21 @@
       {
         "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
-        "patternCode": "cm",
         "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
+        }
       }
     ]
   }
