@@ -1,11 +1,11 @@
-Profile: MII_PR_ICU_MUV_Koerperlaenge
+Profile: MII_PR_ICU_MUV_Herzzeitvolumen
 Parent: $observation-de-vitalsign
-Id: mii-pr-icu-muv-koerperlaenge
-Title: "MII PR ICU MUV Koerperlaenge"
+Id: mii-pr-icu-muv-herzzeitvolumen
+Title: "MII PR ICU MUV Herzzeitvolumen"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge"
-* ^status = #active
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzzeitvolumen"
+* ^status = #draft
 
 * obeys mii-icu-val-xor-dar
 
@@ -26,29 +26,36 @@ Title: "MII PR ICU MUV Koerperlaenge"
 * category[sct].coding.display MS
 
 * code MS
-* code.coding 2.. MS
+* code.coding 3.. MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     loinc 1..1 MS and
-    sct 1..1 MS
+    sct 1..1 MS and
+    IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[loinc] ^patternCoding.code = #8306-3
-* code.coding[loinc] ^patternCoding.display = "Body height --lying"
+* code.coding[loinc] ^patternCoding.code = #8741-1
+* code.coding[loinc] ^patternCoding.display = "Left ventricular Cardiac output"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
-* code.coding[sct] ^patternCoding.code = #1149101003
-* code.coding[sct] ^patternCoding.display = "Recumbent body height (observable entity)"
+* code.coding[sct] ^patternCoding.code = #82799009
+* code.coding[sct] ^patternCoding.display = "Cardiac output (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
+* code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
+* code.coding[IEEE-11073] ^patternCoding.code = #150276
+* code.coding[IEEE-11073] ^patternCoding.display = "Cardiac output"
+* code.coding[IEEE-11073].system MS
+* code.coding[IEEE-11073].code MS
+* code.coding[IEEE-11073].display MS
 
 * subject MS
 
-* effective[x] MS  // only DateTime or Period aus Parent
+* effective[x] MS
 * effectiveDateTime MS
 * effectivePeriod MS
 * effectivePeriod.start 1.. MS
@@ -56,15 +63,15 @@ Title: "MII PR ICU MUV Koerperlaenge"
 
 * value[x] MS
 * value[x] only Quantity
-* valueQuantity = $ucum#cm "centimeter"
+* valueQuantity = $ucum#L/min "liter per minute"
 * valueQuantity MS
-* valueQuantity from http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM (required)
 * valueQuantity.value 1..1 MS
-* valueQuantity.code = #cm
-* valueQuantity.unit = "centimeter"
 * valueQuantity.unit 1..1 MS
 * valueQuantity.system 1..1 MS
 * valueQuantity.code 1..1 MS
+
+* bodySite from $mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten (extensible)
+* bodySite MS
 
 * dataAbsentReason 0..1 MS
 * interpretation

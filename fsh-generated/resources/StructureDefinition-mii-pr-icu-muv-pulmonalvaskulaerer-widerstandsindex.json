@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-muv-koerperlaenge",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+  "id": "mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_MUV_Koerperlaenge",
-  "title": "MII PR ICU MUV Koerperlaenge",
-  "status": "active",
+  "name": "MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex",
+  "title": "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -32,7 +32,7 @@
           {
             "key": "mii-icu-val-xor-dar",
             "human": "Resource must have either value or dataAbsentReason.",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex",
             "severity": "error",
             "expression": "value.exists() xor dataAbsentReason.exists()"
           }
@@ -132,7 +132,7 @@
           ],
           "rules": "open"
         },
-        "min": 2,
+        "min": 3,
         "mustSupport": true
       },
       {
@@ -143,8 +143,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "8306-3",
-          "display": "Body height --lying"
+          "code": "8834-4",
+          "display": "Pulmonary vascular Resistance index"
         },
         "mustSupport": true
       },
@@ -171,8 +171,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "1149101003",
-          "display": "Recumbent body height (observable entity)"
+          "code": "276902009",
+          "display": "Pulmonary vascular Resistance index (observable entity)"
         },
         "mustSupport": true
       },
@@ -188,6 +188,34 @@
       },
       {
         "id": "Observation.code.coding:sct.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "152852",
+          "display": "Pulmonary Vascular Resistance Index"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.system",
+        "path": "Observation.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.code",
+        "path": "Observation.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.display",
         "path": "Observation.code.coding.display",
         "mustSupport": true
       },
@@ -268,15 +296,11 @@
           }
         ],
         "patternQuantity": {
-          "code": "cm",
+          "code": "dyn.s/(cm5.m2)",
           "system": "http://unitsofmeasure.org",
-          "unit": "centimeter"
+          "unit": "dyne second per centimeter5 and square meter"
         },
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",
@@ -286,7 +310,6 @@
       {
         "id": "Observation.value[x]:valueQuantity.unit",
         "path": "Observation.value[x].unit",
-        "patternString": "centimeter",
         "mustSupport": true
       },
       {
@@ -297,13 +320,21 @@
       {
         "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
-        "patternCode": "cm",
         "mustSupport": true
       },
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
+        }
       }
     ]
   }

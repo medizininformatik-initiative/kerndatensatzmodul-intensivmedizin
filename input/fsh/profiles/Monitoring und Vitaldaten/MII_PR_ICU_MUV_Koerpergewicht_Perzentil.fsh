@@ -1,11 +1,11 @@
-Profile: MII_PR_ICU_MUV_Koerperlaenge
+Profile: MII_PR_ICU_MUV_Koerpergewicht_Perzentil
 Parent: $observation-de-vitalsign
-Id: mii-pr-icu-muv-koerperlaenge
-Title: "MII PR ICU MUV Koerperlaenge"
+Id: mii-pr-icu-muv-koerpergewicht-perzentil
+Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge"
-* ^status = #active
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"
+* ^status = #draft
 
 * obeys mii-icu-val-xor-dar
 
@@ -34,21 +34,22 @@ Title: "MII PR ICU MUV Koerperlaenge"
     loinc 1..1 MS and
     sct 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
-* code.coding[loinc] ^patternCoding.code = #8306-3
-* code.coding[loinc] ^patternCoding.display = "Body height --lying"
+* code.coding[loinc] ^patternCoding.code = #8336-0
+* code.coding[loinc] ^patternCoding.display = "Body weight [Percentile] Per age"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
-* code.coding[sct] ^patternCoding.code = #1149101003
-* code.coding[sct] ^patternCoding.display = "Recumbent body height (observable entity)"
+* code.coding[sct] ^patternCoding.code = #1153592008
+* code.coding[sct] ^patternCoding.display = "Weight for age percentile (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
+// kein IEEE-11073 Code
 
 * subject MS
 
-* effective[x] MS  // only DateTime or Period aus Parent
+* effective[x] MS
 * effectiveDateTime MS
 * effectivePeriod MS
 * effectivePeriod.start 1.. MS
@@ -56,15 +57,15 @@ Title: "MII PR ICU MUV Koerperlaenge"
 
 * value[x] MS
 * value[x] only Quantity
-* valueQuantity = $ucum#cm "centimeter"
+* valueQuantity = $ucum#% "percent"
 * valueQuantity MS
-* valueQuantity from http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM (required)
 * valueQuantity.value 1..1 MS
-* valueQuantity.code = #cm
-* valueQuantity.unit = "centimeter"
 * valueQuantity.unit 1..1 MS
 * valueQuantity.system 1..1 MS
 * valueQuantity.code 1..1 MS
+
+* bodySite from $mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten (extensible)
+* bodySite MS
 
 * dataAbsentReason 0..1 MS
 * interpretation
