@@ -18,3 +18,4 @@ Title: "MII PR ICU Inspiratorische Sauerstofffraktion"
 * code.coding[sct] ^patternCoding.display = "Inspired oxygen concentration (observable entity)"
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
+* valueQuantity = $ucum#%

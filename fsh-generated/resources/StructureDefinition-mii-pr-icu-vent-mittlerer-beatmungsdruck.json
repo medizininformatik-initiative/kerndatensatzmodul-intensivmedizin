@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-vent-spontanes-atemzugvolumen",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen",
+  "id": "mii-pr-icu-vent-mittlerer-beatmungsdruck",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck",
   "version": "2026.0.2",
-  "name": "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
-  "title": "MII PR ICU Spontanes Atemzugvolumen",
-  "status": "active",
+  "name": "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
+  "title": "MII PR ICU Mittlerer Beatmungsdruck",
+  "status": "retired",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "purpose": "Ersetzt durch mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck und mii-pr-icu-vent-plateau-beatmungsdruck. Nicht fuer neue Implementierungen verwenden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -26,20 +27,9 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.category:kuenstlicheBeatmung",
-        "path": "Observation.category",
-        "sliceName": "kuenstlicheBeatmung",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
-            }
-          ]
-        }
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 3
       },
       {
         "id": "Observation.code.coding:sct",
@@ -48,27 +38,37 @@
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "250816009",
-          "display": "Spontaneous tidal volume (observable entity)"
+          "code": "698821009",
+          "display": "Mean inspiratory airway pressure (observable entity)"
         }
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "max": "0"
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "76530-5",
+          "display": "Mean pressure Respiratory system airway --on ventilator"
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "max": "0"
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "151975",
+          "display": "Mean inspiratory airway pressure."
+        }
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "mL",
+          "code": "cm[H2O]",
           "system": "http://unitsofmeasure.org"
         }
       }

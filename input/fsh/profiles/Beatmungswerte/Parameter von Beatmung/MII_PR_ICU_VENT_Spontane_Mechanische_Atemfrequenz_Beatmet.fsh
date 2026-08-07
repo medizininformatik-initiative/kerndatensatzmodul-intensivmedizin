@@ -6,6 +6,7 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
 * ^status = #active
+* ^purpose = "Das Profil übermittelt die gesamte Atemfrequenz als Summe aus mechanischer Ventilation und spontaner Atemtätigkeit."
 
 * category contains kuenstlicheBeatmung 1..1
 * category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
@@ -21,8 +22,3 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * code.coding[IEEE-11073] ^patternCoding.code = #152490
 * code.coding[IEEE-11073] ^patternCoding.display = "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
 * valueQuantity = $ucum#/min
-
-// verwirrende Bezeichnung des Profils. Gemeint laut Codes ist Atemfrequenz gesamt (mechanisch + spontan). 
-// IEEE Code gibt es nicht -> doch gibt es, man kann es nur über den Term finden: 
-// Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types.
-// kaputtes Mapping?
