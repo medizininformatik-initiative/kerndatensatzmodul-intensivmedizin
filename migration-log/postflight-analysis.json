@@ -1,0 +1,2986 @@
+{
+  "schemaVersion": "1.4",
+  "tool": "ig-stats.py",
+  "mode": "static",
+  "analyzed": {
+    "path": "/Users/thome/code/fhir-profiling/kerndatensatzmodul-intensivmedizin",
+    "label": "mii-ig-icu-de-v2026",
+    "project_root_nested": null,
+    "project_root_candidates": null,
+    "git_commit": "db37358d",
+    "timestamp": "2026-08-27T18:11:54Z"
+  },
+  "identity": {
+    "id": "mii-ig-icu-de-v2026",
+    "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu",
+    "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
+    "name": "MII_IG_ICU",
+    "title": "MII IG ICU",
+    "version": "2026.0.3",
+    "calver": true,
+    "status": "draft",
+    "fhirVersion": "4.0.1",
+    "license": "CC-BY-4.0",
+    "publisher": "Medizininformatik Initiative"
+  },
+  "artifacts": {
+    "profiles": 95,
+    "extensions": 0,
+    "valuesets": 44,
+    "codesystems": 0,
+    "logicals": 1,
+    "capabilitystatements": 1,
+    "questionnaires": 0,
+    "searchparameters": 11,
+    "operations": 0,
+    "examples": 0,
+    "rulesets": 52,
+    "invariants": 16,
+    "mappings": 0,
+    "other": {},
+    "total": 152,
+    "other_total": 0,
+    "_source": "input/fsh (FSH-Deklarationen)",
+    "generated_crosscheck": {
+      "source": "fsh-generated/resources",
+      "counts": {
+        "profiles": 95,
+        "extensions": 0,
+        "valuesets": 44,
+        "codesystems": 0,
+        "logicals": 1,
+        "capabilitystatements": 1,
+        "questionnaires": 0,
+        "searchparameters": 11,
+        "operations": 0,
+        "examples": 0
+      },
+      "other": {},
+      "mismatches": {}
+    }
+  },
+  "artifacts_detail": [
+    {
+      "type": "RuleSet",
+      "name": "SupportResource",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capability-statement.fsh",
+      "line": 3
+    },
+    {
+      "type": "RuleSet",
+      "name": "Profile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capability-statement.fsh",
+      "line": 8
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capability-statement.fsh",
+      "line": 13
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportInteraction",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capability-statement.fsh",
+      "line": 19
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportSearchParam",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capability-statement.fsh",
+      "line": 25
+    },
+    {
+      "type": "Instance",
+      "name": "mii-cps-icu-capabilitystatement",
+      "instanceOf": "CapabilityStatement",
+      "category": "capabilitystatements",
+      "path": "input/fsh/capability-statement.fsh",
+      "line": 33
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-val-xor-dar",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 1
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-enc-or-sub",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 6
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-comp-xor-val",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 11
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-loinc-sct-dgai-ieee11073",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 16
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-painscale-vas",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 22
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-painscale-0-10",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 27
+    },
+    {
+      "type": "Invariant",
+      "name": "flacc-total-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 32
+    },
+    {
+      "type": "Invariant",
+      "name": "gcs-total-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 37
+    },
+    {
+      "type": "Invariant",
+      "name": "nips-total-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 42
+    },
+    {
+      "type": "Invariant",
+      "name": "npass-pain-total-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 47
+    },
+    {
+      "type": "Invariant",
+      "name": "npass-sedation-total-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants.fsh",
+      "line": 52
+    },
+    {
+      "type": "Logical",
+      "name": "MII_LM_ICU",
+      "instanceOf": null,
+      "category": "logicals",
+      "path": "input/fsh/logical-model.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/MII_PR_ICU_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Parameter_Von_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/MII_PR_ICU_Parameter_Von_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemzugvolumen_Einstellung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Druckdifferenz_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Druckdifferenz_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Dynamische_Kompliance",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Dynamische_Kompliance.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Exspiratorischer_Gasfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Inspiratorischer_Gasfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Inspiratorischer_Gasfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Maximaler_Beatmungsdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck.fsh",
+      "line": 6
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Plateau_Beatmungsdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontanes_Atemzugvolumen.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Magensonde.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Urin.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Muttermilch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Muttermilch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Einfuhr_Spendermilch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Spendermilch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Device",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/MII_PR_ICU_Device.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Arterieller_Blutdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Arterieller_Blutdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Atemfrequenz",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Atemfrequenz.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Herzfrequenz",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Herzfrequenz.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Koerpergewicht",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerpergewicht.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Koerpergroesse",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerpergroesse.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Koerperlaenge",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerperlaenge.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_Kopfumfang",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Kopfumfang.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_zerebraler_Perfusionsdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Extrakorporales_Verfahren",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/MII_PR_ICU_Extrakorporales_Verfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Arterieller_Druck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Arterieller_Druck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Dauer_Haemodialysesitzung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Dauer_Haemodialysesitzung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Gasfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Gasfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Haemodialyse_Blutfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Haemodialyse_Blutfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Substituatfluss",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Substituatfluss.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Substituatvolumen",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Substituatvolumen.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_ECT_Venoeser_Druck",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Venoeser_Druck.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_CAM_ICU",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_CAM_ICU.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Faces_Pain_Scale_Revised.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_GCS",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_GCS.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_ICDSC",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ICDSC.fsh",
+      "line": 1
+    },
+    {
+      "type": "Invariant",
+      "name": "icdsc-score-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ICDSC.fsh",
+      "line": 124
+    },
+    {
+      "type": "Invariant",
+      "name": "icdsc-item-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ICDSC.fsh",
+      "line": 129
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_Numerische_Ratingskala",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Numerische_Ratingskala.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_RASS",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_RASS.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_SOFA",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh",
+      "line": 1
+    },
+    {
+      "type": "Invariant",
+      "name": "sofa-score-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh",
+      "line": 113
+    },
+    {
+      "type": "Invariant",
+      "name": "sofa-component-range",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh",
+      "line": 118
+    },
+    {
+      "type": "RuleSet",
+      "name": "sofa-component-coding-slicing",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh",
+      "line": 123
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_Visuelle_Analogskala",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Visuelle_Analogskala.fsh",
+      "line": 1
+    },
+    {
+      "type": "Invariant",
+      "name": "mii-icu-wbf-1",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala.fsh",
+      "line": 6
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Score_ZOPA",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ZOPA.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Component_GCS_Eyes",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/profiles/Scores/MII_VS_ICU_Component_GCS_Eyes.fsh",
+      "line": 5
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Component_GCS_Motor",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/profiles/Scores/MII_VS_ICU_Component_GCS_Motor.fsh",
+      "line": 5
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Component_GCS_Verbal",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/profiles/Scores/MII_VS_ICU_Component_GCS_Verbal.fsh",
+      "line": 5
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Untersuchung_Pupillenbefund",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenbefund.fsh",
+      "line": 6
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Untersuchung_Pupillenform",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenform.fsh",
+      "line": 10
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Untersuchung_Pupillengroesse",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillengroesse.fsh",
+      "line": 12
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_ICU_Untersuchung_Pupillensymmetrie",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillensymmetrie.fsh",
+      "line": 11
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIVersionPolicyStrict",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 25
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIVersionPolicyStrictInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 29
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMICopyrightLabel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 39
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMICopyrightLabelInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 43
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIApprovalDate",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 50
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIApprovalDateInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 54
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactTopic",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 64
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactTopicInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 68
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactContributors",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 78
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactContributorsInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 101
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableStructureDefinition",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 126
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableStructureDefinition",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 129
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesStructureDefinition",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 132
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageLogicalModel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 138
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 142
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageExtension",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 146
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 152
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 155
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 158
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 164
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableCodeSystem",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 170
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableCodeSystem",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 173
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesCodeSystem",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 176
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesCodeSystemPublishable",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 182
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 188
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 191
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIComputableValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 194
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 197
+    },
+    {
+      "type": "RuleSet",
+      "name": "ExtensionContext",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/extension-context.fsh",
+      "line": 10
+    },
+    {
+      "type": "RuleSet",
+      "name": "ItemWeight",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/extensions.fsh",
+      "line": 2
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCCBY40",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCCBY40Instance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 5
+    },
+    {
+      "type": "RuleSet",
+      "name": "SnomedLicense",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license.fsh",
+      "line": 12
+    },
+    {
+      "type": "RuleSet",
+      "name": "MetaProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/meta-profile.fsh",
+      "line": 13
+    },
+    {
+      "type": "RuleSet",
+      "name": "Publisher",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "SP_Publisher",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "line": 6
+    },
+    {
+      "type": "RuleSet",
+      "name": "SP_Profile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/searchparam-profile.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "TestDataLabel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/test-data-label.fsh",
+      "line": 14
+    },
+    {
+      "type": "RuleSet",
+      "name": "Translation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 27
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddSnomedCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 38
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddIcd10CodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 46
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddAlphaIdCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 54
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddOrphaCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 62
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddOpsCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 70
+    },
+    {
+      "type": "RuleSet",
+      "name": "Version",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 2
+    },
+    {
+      "type": "RuleSet",
+      "name": "PR_CS_VS_Version",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 5
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-device-property-type",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 6
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-devicemetric-source",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 23
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-bodysite",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 40
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-component-interpretation",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 57
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-component-referencerange",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 74
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-interpretation",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 91
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-issued",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 108
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-referencerange-high",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 125
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-referencerange-low",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 142
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-observation-referencerange",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 159
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-icu-procedure-recorder",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/searchParameter.fsh",
+      "line": 180
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_BodySite_Observation_Beatmung",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Beatmung.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_BodySite_Observation_Blutdruck",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Blutdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_BodySite_Observation_Pupillenbefund",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Pupillenbefund.fsh",
+      "line": 8
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_CAM_ICU_Result",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_CAM_ICU_Result.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Category_Observation_Bilanzen_HL7",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Category_Observation_Bilanzen_HL7.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Category_Procedure_Beatmung_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Extrakorporale_Verfahren",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Extrakorporale_Verfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Beatmung_ISO11073",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Beatmung_ISO11073.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Beatmung_LOINC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Beatmung_LOINC.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Beatmung_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Beatmung_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Bilanzen_ISO11073",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Bilanzen_ISO11073.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Bilanzen_LOINC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Bilanzen_LOINC.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Bilanzen_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Bilanzen_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillenform_LOINC.fsh",
+      "line": 8
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Pupillengroesse",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillengroesse.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillenlichtreaktion.fsh",
+      "line": 10
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_Pupillensymmetrie",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillensymmetrie.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Code_Procedure_Beatmung_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Code_Procedure_Beatmung_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Delirium_Interpretation",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Delirium_Interpretation.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Method_Observation_Blutdruck",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Method_Oberservation_Blutdruck.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Present_Absent",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Present_Absent.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Score_Category",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Score_Category.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Score_LOINC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Score_LOINC.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Score_RASS",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Score_RASS.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Score_SNOMED",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Score_SNOMED.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_UCUM_beats_per_minute",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_beats_per_minute.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_UCUM_breaths_per_minute",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_breaths_per_minute.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_UCUM_milliliter",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_milliliter.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_ICU_Unit_equivalent_percent_1",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_percent_1.fsh",
+      "line": 1
+    }
+  ],
+  "preflight": {
+    "licence": {
+      "evidence": [
+        {
+          "source": "sushi-config.yaml/package.json",
+          "value": "CC-BY-4.0"
+        }
+      ],
+      "declared_anywhere": true,
+      "contradictory": false,
+      "distinct_values": [
+        "cc-by-4.0"
+      ]
+    },
+    "canonical_space": {
+      "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu",
+      "package_json_canonical": null,
+      "config_contradiction": false,
+      "out_of_space_count": 1,
+      "out_of_space": [
+        {
+          "type": "CapabilityStatement",
+          "id": "mii-cps-icu-capabilitystatement",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata"
+        }
+      ],
+      "id_url_mismatch": [
+        {
+          "type": "StructureDefinition",
+          "id": "mii-lm-intensivmedizin",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+        },
+        {
+          "type": "ValueSet",
+          "id": "mii-vs-icu-body-site-observation-beatmung",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung"
+        },
+        {
+          "type": "ValueSet",
+          "id": "mii-vs-icu-body-site-observation-blutdruck",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-blutdruck"
+        },
+        {
+          "type": "ValueSet",
+          "id": "mii-vs-icu-body-site-observation-extrakorporale-verfahren",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
+        },
+        {
+          "type": "ValueSet",
+          "id": "mii-vs-icu-body-site-observation-monitoring-und-vitaldaten",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
+        },
+        {
+          "type": "ValueSet",
+          "id": "mii-vs-icu-cam-icu-result",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
+        },
+        {
+          "type": "ValueSet",
+          "id": "mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073",
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
+        }
+      ],
+      "special_url_prediction": 17,
+      "example_org": []
+    },
+    "dependency_health": {
+      "old_style_packages": [],
+      "tho_pinned_directly": true,
+      "extensions_pinned_directly": true,
+      "injection_risk": false,
+      "external_parents": [
+        "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
+        "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
+        "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht",
+        "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse",
+        "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang",
+        "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+        "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+      ],
+      "dependency_block_present": true,
+      "dependency_block_unparsed": false
+    },
+    "package_layout": null,
+    "narrative_sources": {
+      "pagecontent": true,
+      "intro_notes": true,
+      "implementation_guides_tree": false,
+      "dual_source": false,
+      "pagecontent_last_commit": "2026-08-27T19:51:04+02:00",
+      "implementation_guides_last_commit": null
+    },
+    "qa_baseline": {
+      "source": "output/qa.json",
+      "errs": 1207,
+      "warnings": 1472,
+      "date": "Thu, 27 Aug, 2026 20:02:03 +0200"
+    },
+    "_comment": "migration Gate-0 aspects; None = not measurable from this tree (obtain it, never assume it)"
+  },
+  "dependencies": {
+    "count": 8,
+    "pinned": 8,
+    "floating": 0,
+    "items": {
+      "de.basisprofil.r4": "1.5.4",
+      "de.gematik.isik": "5.1.0-snapshots",
+      "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.0",
+      "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
+      "hl7.fhir.uv.xver-r5.r4": "0.1.0",
+      "hl7.fhir.uv.crmi": "2.0.0",
+      "hl7.terminology.r4": "7.3.0",
+      "hl7.fhir.uv.extensions.r4": "5.3.0"
+    },
+    "floating_items": [],
+    "block_present": true,
+    "_source": "sushi-config.yaml: dependencies"
+  },
+  "narrative": {
+    "format": "target",
+    "pages": 15,
+    "pages_all": 16,
+    "translation_pages": 16,
+    "translation_words": 6120,
+    "intro_note_pages": 69,
+    "intro_note_words": 5669,
+    "words": 6608,
+    "words_all_incl_stubs": 18414,
+    "images": 5,
+    "mandatory_present": [
+      "index",
+      "guidance",
+      "implementer-guidance",
+      "uml-diagrams",
+      "profiles",
+      "capability-statements",
+      "logical-models",
+      "examples",
+      "security-and-privacy",
+      "changes",
+      "version-history",
+      "downloads",
+      "translationinfo"
+    ],
+    "mandatory_missing_in_target": [],
+    "files": [
+      {
+        "path": "input/pagecontent/ImplementationGuide-mii-ig-icu-de-v2026.md",
+        "words": 423,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/capability-statements.md",
+        "words": 45,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/changes.md",
+        "words": 187,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/downloads.md",
+        "words": 441,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/examples.md",
+        "words": 57,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/guidance.md",
+        "words": 156,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/implementer-guidance.md",
+        "words": 577,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/index.md",
+        "words": 971,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/logical-models.md",
+        "words": 62,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/profiles.md",
+        "words": 978,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/search-parameters.md",
+        "words": 75,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/security-and-privacy.md",
+        "words": 398,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/translationinfo.md",
+        "words": 99,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/uml-diagrams.md",
+        "words": 17,
+        "kind": "target",
+        "stub": true
+      },
+      {
+        "path": "input/pagecontent/value-sets.md",
+        "words": 1542,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/version-history.md",
+        "words": 597,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-beatmung-intro.md",
+        "words": 68,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust-intro.md",
+        "words": 103,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt-intro.md",
+        "words": 72,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte-intro.md",
+        "words": 75,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage-intro.md",
+        "words": 103,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch-intro.md",
+        "words": 61,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit-intro.md",
+        "words": 74,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch-intro.md",
+        "words": 61,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit-intro.md",
+        "words": 72,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung-intro.md",
+        "words": 61,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch-intro.md",
+        "words": 61,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-intro.md",
+        "words": 39,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren-intro.md",
+        "words": 273,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung-intro.md",
+        "words": 273,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-arterieller-druck-intro.md",
+        "words": 130,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet-intro.md",
+        "words": 73,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch-intro.md",
+        "words": 73,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch-intro.md",
+        "words": 74,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch-intro.md",
+        "words": 73,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung-intro.md",
+        "words": 72,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-gasfluss-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren-intro.md",
+        "words": 74,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-substituatfluss-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-substituatvolumen-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-ect-venoeser-druck-intro.md",
+        "words": 130,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-extrakorporales-verfahren-intro.md",
+        "words": 76,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck-intro.md",
+        "words": 92,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-muv-atemfrequenz-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-muv-koerpergewicht-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-muv-koerpergroesse-intro.md",
+        "words": 81,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-muv-kopfumfang-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss-intro.md",
+        "words": 106,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss-intro.md",
+        "words": 106,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung-intro.md",
+        "words": 88,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-dynamische-kompliance-intro.md",
+        "words": 68,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck-intro.md",
+        "words": 104,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss-intro.md",
+        "words": 69,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck-intro.md",
+        "words": 70,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut-intro.md",
+        "words": 67,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-intro.md",
+        "words": 102,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss-intro.md",
+        "words": 69,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck-intro.md",
+        "words": 69,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck-intro.md",
+        "words": 69,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet-intro.md",
+        "words": 71,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet-intro.md",
+        "words": 72,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen-intro.md",
+        "words": 102,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen-intro.md",
+        "words": 106,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung-intro.md",
+        "words": 78,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung-intro.md",
+        "words": 72,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/ImplementationGuide-mii-ig-icu-de-v2026.md",
+        "words": 344,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/capability-statements.md",
+        "words": 37,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/changes.md",
+        "words": 185,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/downloads.md",
+        "words": 409,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/examples.md",
+        "words": 48,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/guidance.md",
+        "words": 126,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/implementer-guidance.md",
+        "words": 506,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/index.md",
+        "words": 905,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/logical-models.md",
+        "words": 40,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/profiles.md",
+        "words": 877,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/search-parameters.md",
+        "words": 123,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/security-and-privacy.md",
+        "words": 302,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/translationinfo.md",
+        "words": 92,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/uml-diagrams.md",
+        "words": 17,
+        "kind": "translation",
+        "stub": true
+      },
+      {
+        "path": "input/translations/de/pagecontent/value-sets.md",
+        "words": 1562,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/de/pagecontent/version-history.md",
+        "words": 547,
+        "kind": "translation",
+        "stub": false
+      }
+    ]
+  },
+  "linguistics": {
+    "content_pages": 15,
+    "words_total": 6608,
+    "words_avg": 440.5,
+    "words_median": 398,
+    "words_min": 45,
+    "words_max": 1542,
+    "longest_page": "input/pagecontent/value-sets.md",
+    "shortest_page": "input/pagecontent/capability-statements.md",
+    "per_page": [
+      {
+        "path": "input/pagecontent/value-sets.md",
+        "words": 1542
+      },
+      {
+        "path": "input/pagecontent/profiles.md",
+        "words": 978
+      },
+      {
+        "path": "input/pagecontent/index.md",
+        "words": 971
+      },
+      {
+        "path": "input/pagecontent/version-history.md",
+        "words": 597
+      },
+      {
+        "path": "input/pagecontent/implementer-guidance.md",
+        "words": 577
+      },
+      {
+        "path": "input/pagecontent/downloads.md",
+        "words": 441
+      },
+      {
+        "path": "input/pagecontent/ImplementationGuide-mii-ig-icu-de-v2026.md",
+        "words": 423
+      },
+      {
+        "path": "input/pagecontent/security-and-privacy.md",
+        "words": 398
+      },
+      {
+        "path": "input/pagecontent/changes.md",
+        "words": 187
+      },
+      {
+        "path": "input/pagecontent/guidance.md",
+        "words": 156
+      },
+      {
+        "path": "input/pagecontent/translationinfo.md",
+        "words": 99
+      },
+      {
+        "path": "input/pagecontent/search-parameters.md",
+        "words": 75
+      },
+      {
+        "path": "input/pagecontent/logical-models.md",
+        "words": 62
+      },
+      {
+        "path": "input/pagecontent/examples.md",
+        "words": 57
+      },
+      {
+        "path": "input/pagecontent/capability-statements.md",
+        "words": 45
+      }
+    ]
+  },
+  "duplication": {
+    "duplicate_block_count": 1,
+    "duplicate_blocks": [
+      {
+        "snippet": "the semantic annotation references at least one primary code of the loinc and/or snomed ct",
+        "locations": [
+          "input/pagecontent/index.md",
+          "input/pagecontent/value-sets.md"
+        ]
+      }
+    ],
+    "duplicate_file_groups": []
+  },
+  "hygiene": {
+    "images_total": 5,
+    "unreferenced_images": [],
+    "examples_total": 0,
+    "examples_not_in_narrative": [],
+    "note": "Heuristik: 'nicht referenziert' = Dateiname/Artefaktname kommt in keiner Erklärseite vor. Kein Beweis für Ungenutztheit (Referenz kann über Konfiguration/Build erfolgen)."
+  },
+  "i18n": {
+    "default_lang": null,
+    "default_lang_source": null,
+    "languages": [
+      "init",
+      "progress",
+      "context",
+      "html",
+      "tx"
+    ],
+    "translation_supplements": 0,
+    "supplement_files": [],
+    "translated_pages": 0,
+    "fsh_translation_ext": true,
+    "fsh_translation_files": [
+      "input/fsh/rulesets/translation.fsh"
+    ]
+  },
+  "directives": {
+    "total": 0,
+    "by_label": {},
+    "unknown": 0,
+    "occurrences": [],
+    "unknown_occurrences": []
+  },
+  "quality": {
+    "qc_rules_defined": 12,
+    "qc_rules": [
+      {
+        "name": "parse-fhir-resources",
+        "action": "parse",
+        "status": "Checking if all FHIR resource files can be parsed",
+        "category": null
+      },
+      {
+        "name": "resource-validation",
+        "action": "validate",
+        "status": "Validating resources against the FHIR standard and their profiles",
+        "category": "Resource"
+      },
+      {
+        "name": "unique-canonicals",
+        "action": "unique",
+        "status": "Checking if all StructureDefinitions have a unique canonical",
+        "category": "StructureDefinition"
+      },
+      {
+        "name": "no-snapshot",
+        "action": null,
+        "status": "Checking that StructureDefinitions carry no pre-generated snapshot",
+        "category": "StructureDefinition"
+      },
+      {
+        "name": "valid-ids",
+        "action": null,
+        "status": "Checking for valid resource ids",
+        "category": null
+      },
+      {
+        "name": "valid-names",
+        "action": null,
+        "status": "Checking that StructureDefinition names contain no spaces",
+        "category": "StructureDefinition"
+      },
+      {
+        "name": "unique-names",
+        "action": null,
+        "status": null,
+        "category": "Conformance"
+      },
+      {
+        "name": "version-filled",
+        "action": null,
+        "status": "Checking that every conformance resource carries the release version",
+        "category": null
+      },
+      {
+        "name": "naming-convention-id",
+        "action": null,
+        "status": "Checking the id naming convention (mii-<prefix>-<module>-…)",
+        "category": null
+      },
+      {
+        "name": "naming-convention-name",
+        "action": null,
+        "status": "Checking the name naming convention (MII_<PREFIX>_<Module>_…)",
+        "category": null
+      },
+      {
+        "name": "naming-convention-title",
+        "action": null,
+        "status": "Checking the title naming convention (MII <PREFIX> <Module> …)",
+        "category": null
+      },
+      {
+        "name": "naming-convention-url",
+        "action": null,
+        "status": "Checking the canonical-URL naming convention",
+        "category": null
+      }
+    ],
+    "qc_source": "qc/custom.rules.yaml",
+    "qc_violations": null,
+    "suppressed_messages": 8,
+    "qa_errors": null,
+    "qa_warnings": null,
+    "qa_hints": null,
+    "broken_links": null,
+    "qa_categories": null
+  },
+  "maturity": {
+    "components": {
+      "Status": "draft",
+      "Doku-Vollständigkeit": 94,
+      "Beispiel-Abdeckung": 0,
+      "Governance": 100
+    },
+    "example_coverage": {
+      "profiles_total": 95,
+      "covered": 0,
+      "uncovered": [
+        "MII_PR_ICU_Beatmung",
+        "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
+        "MII_PR_ICU_Parameter_Von_Beatmung",
+        "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
+        "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
+        "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung",
+        "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
+        "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
+        "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
+        "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
+        "MII_PR_ICU_VENT_Druckdifferenz_Beatmung",
+        "MII_PR_ICU_VENT_Dynamische_Kompliance",
+        "MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss",
+        "MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung",
+        "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
+        "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
+        "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
+        "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
+        "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
+        "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
+        "MII_PR_ICU_VENT_Inspiratorischer_Gasfluss",
+        "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
+        "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
+        "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
+        "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
+        "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
+        "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
+        "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
+        "MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet",
+        "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
+        "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
+        "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen",
+        "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung",
+        "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
+        "MII_PR_ICU_Bilanz",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
+        "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
+        "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage",
+        "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch",
+        "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
+        "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt",
+        "MII_PR_ICU_Bilanz_Einfuhr_Muttermilch",
+        "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
+        "MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung",
+        "MII_PR_ICU_Bilanz_Einfuhr_Spendermilch",
+        "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
+        "MII_PR_ICU_Device",
+        "MII_PR_ICU_MUV_Arterieller_Blutdruck",
+        "MII_PR_ICU_MUV_Atemfrequenz",
+        "MII_PR_ICU_MUV_Herzfrequenz",
+        "MII_PR_ICU_MUV_Koerpergewicht",
+        "MII_PR_ICU_MUV_Koerpergroesse",
+        "MII_PR_ICU_MUV_Koerperlaenge",
+        "MII_PR_ICU_MUV_Kopfumfang",
+        "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+        "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
+        "MII_PR_ICU_Extrakorporales_Verfahren",
+        "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
+        "MII_PR_ICU_ECT_Arterieller_Druck",
+        "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
+        "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch",
+        "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
+        "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
+        "MII_PR_ICU_ECT_Dauer_Haemodialysesitzung",
+        "MII_PR_ICU_ECT_Gasfluss",
+        "MII_PR_ICU_ECT_Haemodialyse_Blutfluss",
+        "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
+        "MII_PR_ICU_ECT_Substituatfluss",
+        "MII_PR_ICU_ECT_Substituatvolumen",
+        "MII_PR_ICU_ECT_Venoeser_Druck",
+        "MII_PR_ICU_Score",
+        "MII_PR_ICU_Score_CAM_ICU",
+        "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
+        "MII_PR_ICU_Score_GCS",
+        "MII_PR_ICU_Score_ICDSC",
+        "MII_PR_ICU_Score_Numerische_Ratingskala",
+        "MII_PR_ICU_Score_RASS",
+        "MII_PR_ICU_Score_SOFA",
+        "MII_PR_ICU_Score_Visuelle_Analogskala",
+        "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
+        "MII_PR_ICU_Score_ZOPA",
+        "MII_PR_ICU_Untersuchung_Pupillenbefund",
+        "MII_PR_ICU_Untersuchung_Pupillenform",
+        "MII_PR_ICU_Untersuchung_Pupillengroesse",
+        "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt",
+        "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt",
+        "MII_PR_ICU_Untersuchung_Pupillensymmetrie"
+      ],
+      "coverage_pct": 0
+    },
+    "governance": {
+      "ci_workflows": 11,
+      "publication_request": true,
+      "ig_ini": true,
+      "devcontainer": true,
+      "governance_score": 100
+    },
+    "doc_health_pct": 94
+  },
+  "portfolio": {
+    "vendor_lockin_score": 0,
+    "vendor_lockin_band": "gering",
+    "directives_per_page": 0.0,
+    "terminology_standard_systems": [
+      "SNOMED CT",
+      "LOINC",
+      "ICD-10",
+      "UCUM",
+      "ASK"
+    ],
+    "terminology_standard_refs": 1526,
+    "local_codesystems": 0,
+    "terminology_standard_share_pct": 100,
+    "canonical_reuse_ratio_pct": 26,
+    "external_parents": 25,
+    "local_parents": 70,
+    "fhir_version_label": "R4",
+    "fhir_version_note": "aktuell verbreitet",
+    "dependency_stale_count": 0,
+    "dependency_stale": [],
+    "dependency_staleness_note": "Heuristik aus CalVer-Jahr; exakt nur via Package-Registry (extern).",
+    "release_cadence_per_year": 274.5,
+    "days_since_last_commit": 0,
+    "tags": 16
+  },
+  "risk": {
+    "terminology_license_flags": [
+      {
+        "system": "SNOMED CT",
+        "license": "lizenzpflichtig (Affiliate/Land)"
+      },
+      {
+        "system": "LOINC",
+        "license": "frei (Registrierung)"
+      },
+      {
+        "system": "ICD-10",
+        "license": "frei"
+      },
+      {
+        "system": "UCUM",
+        "license": "frei"
+      },
+      {
+        "system": "ASK",
+        "license": "frei"
+      }
+    ],
+    "terminology_license_risk": true,
+    "suppressed_total": 8,
+    "suppressed_broad": 0,
+    "suppressed_warning_risk": "gering",
+    "privacy_page_words": 0,
+    "privacy_page_substantial": false,
+    "examples_contain_pii_like": false,
+    "bus_factor_top_author_pct": 38,
+    "bus_factor_authors": 19,
+    "bus_factor_risk": "gering",
+    "breaking_change_risk": null,
+    "breaking_change_note": "Erfordert Diff gegen die publizierte Vorversion (Build/extern) — statisch nicht erhoben."
+  },
+  "git": {
+    "commits": 1548,
+    "authors": 19,
+    "top_author_share": 38,
+    "days_since_last": 0,
+    "commits_per_year": 274.5,
+    "tags": 16,
+    "first": "2021-01-07",
+    "last": "2026-08-27",
+    "history_complete": true
+  }
+}
