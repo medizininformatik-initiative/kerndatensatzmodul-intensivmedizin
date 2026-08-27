@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-referencerange",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -32,18 +31,9 @@
       }
     }
   ],
-  "version": "2026.0.3",
-  "name": "MII_SP_ICU_Observation_ReferenceRange",
-  "status": "active",
-  "experimental": false,
-  "date": "2025-02-11",
-  "description": "Suchparameter für Observation.referenceRange",
-  "code": "reference-range",
   "base": [
     "Observation"
   ],
-  "type": "composite",
-  "expression": "Observation.referenceRange | Observation.component.referenceRange",
   "component": [
     {
       "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-high",
@@ -53,5 +43,15 @@
       "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-low",
       "expression": "low"
     }
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2026.0.3",
+  "name": "MII_SP_ICU_Observation_ReferenceRange",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-02-11",
+  "description": "Suchparameter für Observation.referenceRange",
+  "code": "reference-range",
+  "type": "composite",
+  "expression": "Observation.referenceRange | Observation.component.referenceRange"
 }

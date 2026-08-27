@@ -1,0 +1,16 @@
+<!-- Harvested from https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles?version=current on 2026-08-27 by scripts/guide-harvest.sh (spec 5.1d). -->
+<!-- Source of record: the Simplifier-rendered guide. Links and images are still absolute to simplifier.net and the page is not yet mapped onto the template page set (spec 9). TODO:REVIEW -->
+
+### FHIR profiles
+
+The FHIR profiles in this project follow the following approach:
+
+There is at least one **generic profile** for each of the "structure elements" of the KDS module defined in the data model. These profiles contain ValueSets and describe the predefined **structure for groups of items in a specific intensive care category**. The generic profiles are the first in each group of the tree structure of this guide, i.e:
+
+- Parameters of extracorporeal procedures:   - [Extracorporeal procedures (Procedure)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Parameters-of-extracorporeal-procedures/Extracorporeal-procedures-Procedure.page.md?version=current)   - [Set and measured parameters (DeviceMetric)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Parameters-of-extracorporeal-procedures/Set-and-measured-parameters-DeviceMetric.page.md?version=current)   - [Parameters of extracorporeal procedures (Observation)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Parameters-of-extracorporeal-procedures/Parameters-of-extracorporeal-procedures-Observation?version=current)
+
+- Ventilation values:   - [Ventilation (Procedure)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Ventilation-values/Ventilation-Procedure.page.md?version=current)   - [Set and measured parameters (DeviceMetric)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Parameters-of-extracorporeal-procedures/Set-and-measured-parameters-DeviceMetric.page.md?version=current)   - [Ventilation parameters (Observation)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Ventilation-values/Ventilation-parameters-Observation?version=current)
+
+- Monitoring and vital data   - [Monitoring and vital data (Observation)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Monitoring-and-vital-data/Monitoring-and-vital-data-Observation?version=current)   - [Other pulsatile pressures generic (Observation)](https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Monitoring-and-vital-data/Monitoring-and-vital-data-Observation/Other-pulsatile-pressures-generic-Observation?version=current)
+
+There are also **specific profiles**, which **fix** the code and unit affiliations. These specific resources are intended, among other things, as a **handout for the implementer** and should help to reduce the hurdle of correct semantic annotation and improve interoperability. The specific profiles are all those that are connected to the above-mentioned generic profiles within a group.

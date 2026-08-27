@@ -1,11 +1,166 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-icu-de-v2026",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+      "valueDate": "2026-08-27"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "code": "package",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "de.medizininformatikinitiative.kerndatensatz.icu"
+        },
+        {
+          "url": "version",
+          "valueString": "2026.0.3"
+        },
+        {
+          "url": "uri",
+          "valueUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2026"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "thomas.debertshaeuser@charite.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters",
+      "valueReference": {
+        "reference": "Parameters/mii-param-icu-manifest"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
+      "valueMarkdown": "Provide the computable publication unit for the MII Core Dataset Intensive Care module, enabling implementers to discover, validate, version, and apply the specification consistently."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code": "C201962"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
   "version": "2026.0.3",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
   "status": "draft",
+  "experimental": false,
+  "date": "2026-08-27",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -18,17 +173,24 @@
       ]
     }
   ],
-  "packageId": "mii-ig-icu-de-v2026",
+  "description": "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
+  "license": "CC-BY-4.0",
   "fhirVersion": [
     "4.0.1"
   ],
   "dependsOn": [
-    {
-      "packageId": "hl7.fhir.r4.core",
-      "version": "4.0.1",
-      "uri": "http://hl7.org/fhir",
-      "id": "hl7_fhir_r4_core"
-    },
     {
       "packageId": "de.basisprofil.r4",
       "version": "1.5.4",
@@ -46,6 +208,36 @@
       "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
       "id": "de_medizininformatikinitiative_kerndatensatz_base"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "uri": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+      "id": "hl7_fhir_uv_xver_r5_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.crmi",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi",
+      "id": "hl7_fhir_uv_crmi"
+    },
+    {
+      "packageId": "hl7.terminology.r4",
+      "version": "7.3.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.3.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
     }
   ],
   "definition": {
@@ -595,7 +787,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -1065,6 +1257,13 @@
       },
       {
         "reference": {
+          "reference": "Parameters/mii-param-icu-manifest"
+        },
+        "exampleBoolean": false,
+        "name": "mii-param-icu-manifest"
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-icu-device-property-type"
         },
         "name": "mii-sp-icu-device-property-type",
@@ -1161,6 +1360,113 @@
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "researcher-guidance.html",
+              "title": "Guidance for Researchers",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "implementer-guidance.html",
+              "title": "Guidance for Implementers",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "uml-diagrams.html",
+              "title": "UML Diagrams",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "security-and-privacy.html",
+          "title": "Security and Privacy",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capability-statements.html",
+          "title": "Capability Statements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search-parameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operations.html",
+          "title": "Operations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logical-models.html",
+          "title": "Logical Models",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "value-sets.html",
+          "title": "Value Sets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "code-systems.html",
+          "title": "Code Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changelog",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "metadata.html",
+          "title": "Metadata Overview",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "version-history.html",
+          "title": "Versioning",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-mii-ig-icu-de-v2026.html",
+          "title": "MII ImplementationGuide Resource",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "translationinfo.html",
+          "title": "Translation Information",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "rendering-artifacts.html",
+          "title": "Rendering Artifacts (demo)",
+          "generation": "markdown"
         }
       ]
     },
@@ -1172,6 +1478,126 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/predefined-resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "de"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/de"
+      },
+      {
+        "code": "excludexml",
+        "value": "false"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
+      },
+      {
+        "code": "logging",
+        "value": "init"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      },
+      {
+        "code": "logging",
+        "value": "context"
+      },
+      {
+        "code": "logging",
+        "value": "html"
+      },
+      {
+        "code": "logging",
+        "value": "tx"
+      },
+      {
+        "code": "pin-canonicals",
+        "value": "pin-all"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/resources/Parameters-expansion-manifest.json"
+      },
+      {
+        "code": "pin-manifest",
+        "value": "mii-param-icu-manifest"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3/cda"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-blutdruck"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
       }
     ]
   }

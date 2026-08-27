@@ -136,6 +136,7 @@
 [MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter]: ValueSet-mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.html
 [MII_VS_ICU_Unit_equivalent_UCUM_milliliter]: ValueSet-mii-vs-icu-unit-equivalent-ucum-milliliter.html
 [MII_VS_ICU_Score_SNOMED]: ValueSet-mii-vs-icu-score-snomed.html
+[mii-param-icu-manifest]: Parameters-mii-param-icu-manifest.html
 [mii-sp-icu-device-property-type]: SearchParameter-mii-sp-icu-device-property-type.html
 [mii-sp-icu-devicemetric-source]: SearchParameter-mii-sp-icu-devicemetric-source.html
 [mii-sp-icu-observation-bodysite]: SearchParameter-mii-sp-icu-observation-bodysite.html

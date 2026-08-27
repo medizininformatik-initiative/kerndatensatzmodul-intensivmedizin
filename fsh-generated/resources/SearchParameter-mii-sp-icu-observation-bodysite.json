@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-bodysite",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -32,6 +31,10 @@
       }
     }
   ],
+  "base": [
+    "Observation"
+  ],
+  "publisher": "Medizininformatik Initiative",
   "version": "2026.0.3",
   "name": "MII_SP_ICU_Observation_BodySite",
   "status": "active",
@@ -39,9 +42,6 @@
   "date": "2025-02-11",
   "description": "Suchparameter für Observation.bodySite",
   "code": "body-site",
-  "base": [
-    "Observation"
-  ],
   "type": "token",
   "expression": "Observation.bodySite"
 }

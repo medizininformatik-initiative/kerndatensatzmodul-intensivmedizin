@@ -1,20 +1,10 @@
 {
-    "suppress": [
-        "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.compose.include.concept",
-        "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
-        "CODE_VALUE_NOT_IN_VALUESET@ImplementationGuide.definition.parameter.code",
-        "UNABLE_TO_INFER_CODESYSTEM@ImplementationGuide.definition.parameter.code",
-        "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
-        "IG_DEPENDSON_REFERENCE_INVALID@ImplementationGuide.dependsOn",
-        "IG_DEPENDSON_CANONICAL_MISMATCH@ImplementationGuide.dependsOn"
-    ],
-    "_comments": [
-        "",
-        "",
-        "Fehler bei ImplementationGuide.parameter.code: ungültiger Wert (copyrightyear, releaselabel)",
-        "System URI could not be determined for the code 'copyrightyear' & 'releaselabel' in the ValueSet 'http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1'",
-        "'copyrightyear' & 'releaselabel' was not found in the value set 'GuideParameterCode' ",
-        "dependsOn[x] ohne direkten /ImplementationGuide/ Pfad",
-        "canonical vs. packageId Inkonsistenz"
-    ]
+  "suppress" : [
+    "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
+    "MSG_DRAFT",
+    "TERMINOLOGY_TX_WARNING@StructureDefinition.*",
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    "UNABLE_TO_INFER_CODESYSTEM@StructureDefinition.*",
+    "Terminology_TX_NoValid_16@StructureDefinition.*"
+  ]
 }
