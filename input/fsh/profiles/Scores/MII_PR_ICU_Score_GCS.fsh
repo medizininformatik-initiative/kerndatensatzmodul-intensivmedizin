@@ -48,6 +48,11 @@ Title: "MII PR ICU Score GCS"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
+// slicing frame moved here from the parent MII_PR_ICU_Score (see MIGRATION FIX there)
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
 * component contains
     GCSeyes 0..1 MS and
     GCSmotor 0..1 MS and
