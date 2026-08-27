@@ -45,31 +45,10 @@ by the DIMP configuration, not by this guide.
 
 #### 3. Module-specific aspects
 
-This is the module's own contribution: the security and privacy properties
-that follow from the *kind of data this module carries*. **Its content is
-optional** — not every module has aspects of its own. If yours does not, the
-whole section body becomes the following default text (delete the example and
-TODO boxes below and adopt it verbatim):
 
 > Beyond the overarching framework above — the overarching data protection
 > concept, the Broad Consent it rests on, and DIMP — this module carries no
 > data category that raises security or privacy aspects of its own, and it
 > places no module-specific security or privacy requirements on implementers.
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-> **Illustrative example — remove before the first release.** How another KDS
-> module fills this section (*Person*): the patient identifiers are pseudonyms
-> from the trusted third party; systems must not let record linkage
-> re-identify a person, and the pseudonym's scope (site-wide vs
-> project-specific) must be respected when data is combined.
-{: .ig-highlight .ig-highlight-orange}
-
-> [TODO: State your module's specific aspects — the data categories it carries
-> and their sensitivity, risks that profile-level pseudonymisation does not
-> cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-> this module places on implementers, each with the risk it addresses. Name
-> residual risks that must be handled in system design, deployment or policy —
-> or adopt the default text above if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+<!-- M11 decision (migration 2026-08-27): the source guide carries NO security/privacy narrative; the default text above is adopted verbatim (run-log 5.4b). Gate B may override. -->

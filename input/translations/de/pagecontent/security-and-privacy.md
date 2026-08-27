@@ -42,12 +42,6 @@ nicht dieser Leitfaden.
 
 #### 3. Modul-spezifische Aspekte
 
-Dies ist der eigene Beitrag des Moduls: die Sicherheits- und
-Datenschutz-Eigenschaften, die aus der *Art der Daten dieses Moduls* folgen.
-**Der Inhalt dieses Abschnitts ist optional** — nicht jedes Modul hat eigene
-Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden
-Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen
-Sie ihn wörtlich):
 
 > Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende
 > Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP —
@@ -55,23 +49,4 @@ Sie ihn wörtlich):
 > Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits-
 > oder Datenschutzanforderungen an Implementierende.
 
-<!-- ILLUSTRATIVE-EXAMPLE — Abschnitt entscheiden und die Beispiel-Box unten
-     (in dieser Datei UND der englischen Quellseite) vor dem ersten Release
-     entfernen; der Konventions-Check (M11) lässt einen Release-Branch damit
-     fehlschlagen. -->
-> **Illustratives Beispiel — vor dem ersten Release entfernen.** So füllt ein
-> anderes KDS-Modul diesen Abschnitt (*Person*): die Patienten-Identifikatoren
-> sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht
-> zur Re-Identifizierung führen lassen, und der Geltungsbereich eines
-> Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von
-> Daten zu respektieren.
-{: .ig-highlight .ig-highlight-orange}
-
-> [TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten
-> Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung
-> auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene
-> SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit
-> dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im
-> Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
-> übernehmen Sie den Standardtext oben, wenn es keine gibt.]
-{: .ig-highlight .ig-highlight-grey}
+<!-- M11-Entscheidung (Migration 2026-08-27): Die Quelle enthaelt KEIN Security/Privacy-Narrativ; der Default-Text oben wird unveraendert uebernommen (Run-Log 5.4b). Gate B kann dies aendern. -->

@@ -306,8 +306,6 @@ pages:
 
   guidance.md:
     title: Guidance
-    researcher-guidance.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-      title: Guidance for Researchers
     implementer-guidance.md:
       title: Guidance for Implementers
     uml-diagrams.md:
@@ -320,20 +318,14 @@ pages:
 
   profiles.md:
     title: Profiles
-  extensions.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Extensions
   capability-statements.md:
     title: Capability Statements
   search-parameters.md: # OPTIONAL (0..1) — see docs/optional-pages.md
     title: Search Parameters
-  operations.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Operations
   logical-models.md:
     title: Logical Models
   value-sets.md: # OPTIONAL (0..1) — see docs/optional-pages.md
     title: Value Sets
-  code-systems.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Code Systems
   examples.md:
     title: Examples
 
@@ -343,8 +335,6 @@ pages:
   changes.md:
     title: Changelog
 
-  metadata.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Metadata Overview
   version-history.md:
     title: Versioning
 
@@ -366,8 +356,6 @@ pages:
 
   # DEMONSTRATION page shipped with the scaffold — delete this entry, the page
   # and its German mirror once you have taken what you need from it.
-  rendering-artifacts.md:
-    title: Rendering Artifacts (demo)
 
 #
 #

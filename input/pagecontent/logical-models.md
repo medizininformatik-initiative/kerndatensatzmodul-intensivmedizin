@@ -1,9 +1,7 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/logical-models.md.
-     German mirror: input/translations/de/pagecontent/logical-models.md. -->
-### Logical Models
+<!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Use-cases-information-model + https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Use-cases-information-model/Data-records-incl.-descriptions.page.md -->
+This page was intentionally left blank.
 
-The logical data models of the **Intensive Care** module describe the domain dataset independently of its concrete FHIR representation.
+### Data records incl. descriptions
 
-> [TODO: Add the logical models, or delete this page.]
-{: .ig-highlight .ig-highlight-grey}
+The official and approved version of the information model for the PERSON module can be found on [ART-DECOR](https://art-decor.org/ad/#/mide-/datasets/dataset/2.16.840.1.113883.3.1937.777.24.1.1/2018-06-05T12:44:12/concept/2.16.840.1.113883.3.1937.777.24.2.9/2018-06-05T16:14:53). To standardize the representation, the information model was also mapped as a FHIR Logical Model:

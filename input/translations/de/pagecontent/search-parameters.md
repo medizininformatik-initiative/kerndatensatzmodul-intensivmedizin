@@ -2,9 +2,6 @@
 <!-- Deutsche Übersetzung von input/pagecontent/search-parameters.md
      (aufgeteilt aus der früheren Kombi-Seite
      search-parameters-and-operations.md). -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
 
 > **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als
 > *optional*. Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte

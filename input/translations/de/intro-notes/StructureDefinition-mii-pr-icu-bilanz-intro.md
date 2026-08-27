@@ -1,0 +1,2 @@
+<!-- Migrated from the Simplifier guide page https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/TechnischeImplementierung/FHIR-Profile/Bilanzen/Bilanz-Observation?version=current (harvested 2026-08-27, spec 5.1d); the generated profile rendering was NOT copied - the IG Publisher regenerates it on the artifact page below. -->
+Stellt alle gemessenen Ein- und Ausfuhren von Flüssigkeiten dar.

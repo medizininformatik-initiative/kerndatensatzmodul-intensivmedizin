@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 -->
-### Logische Modelle
+<!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/AnwendungsflleInformationsmodell + https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md -->
+Diese Seite wurde absichtlich leer gelassen.
 
-Die logischen Datenmodelle des Moduls **Intensive Care** beschreiben den fachlichen Datensatz unabhängig von der konkreten FHIR-Repräsentation.
+### Datensätze inkl. Beschreibungen
 
-> [TODO: Fügen Sie die logischen Modelle ein, oder entfernen Sie diese Seite.]
-{: .ig-highlight .ig-highlight-grey}
+Zur Vereinheitlichung der Repräsentation wurde das Informationsmodell als FHIR Logical Model abgebildet:

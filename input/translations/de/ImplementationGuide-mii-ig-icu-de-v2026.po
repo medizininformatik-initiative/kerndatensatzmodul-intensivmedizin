@@ -35,10 +35,6 @@ msgstr "Anleitung"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Guidance for Researchers"
-msgstr "Anleitung für Forschende"
-
-# ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
 msgid "Guidance for Implementers"
 msgstr "Anleitung für Implementierende"
@@ -60,10 +56,6 @@ msgstr "Profile"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Extensions"
-msgstr "Extensions"
-
-# ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
 msgid "Capability Statements"
 msgstr "CapabilityStatements"
@@ -75,10 +67,6 @@ msgstr "Suchparameter"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Operations"
-msgstr "Operationen"
-
-# ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
 msgid "Logical Models"
 msgstr "Logische Modelle"
@@ -90,10 +78,6 @@ msgstr "ValueSets"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Code Systems"
-msgstr "CodeSystems"
-
-# ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
 msgid "Examples"
 msgstr "Beispiele"
@@ -110,10 +94,6 @@ msgstr "Änderungshistorie"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Metadata Overview"
-msgstr "Metadaten-Übersicht"
-
-# ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
 msgid "Versioning"
 msgstr "Versionierung"
@@ -125,13 +105,6 @@ msgstr "Hinweise zur Übersetzung"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Rendering Artifacts (demo)"
-msgstr "Artefakt-Rendering (Demo)"
-
-# ImplementationGuide.publisher — the footer's "IG © <year> <publisher>" line.
-# "NUM-DIZ" is a proper name and language-neutral, so the German "translation"
-# is identical; the unit stays so the catalogue keeps covering every
-# translatable IG field.
 #: ImplementationGuide.publisher
 msgid "NUM-DIZ"
 msgstr "NUM-DIZ"

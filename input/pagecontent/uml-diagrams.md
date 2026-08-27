@@ -1,8 +1,3 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/uml-diagrams.md.
-     German mirror: input/translations/de/pagecontent/uml-diagrams.md. -->
-
-UML overviews of the data models of the **Intensive Care** module and their relationships. Editable sources (e.g. PlantUML) belong in `input/images-source/`, the rendered images in `input/images/`.
-
-> [TODO: Add your module's UML diagrams, or delete this page if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+<!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Use-cases-information-model/UML.page.md -->
+![UML](uml-7616e80bb8.png)

@@ -1,6 +1,3 @@
 <!-- markdownlint-disable MD041 -->
-
-UML-Übersichten der Datenmodelle des Moduls **Intensive Care** und ihrer Beziehungen. Editierbare Quellen (z. B. PlantUML) gehören nach `input/images-source/`, die gerenderten Bilder nach `input/images/`.
-
-> [TODO: Fügen Sie die UML-Diagramme Ihres Moduls ein, oder entfernen Sie diese Seite, wenn keine vorhanden sind.]
-{: .ig-highlight .ig-highlight-grey}
+<!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/AnwendungsflleInformationsmodell/UML.page.md -->
+![UML](uml-7616e80bb8.png)
