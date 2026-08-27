@@ -199,7 +199,7 @@
     },
     {
       "packageId": "de.gematik.isik",
-      "version": "5.1.0",
+      "version": "5.1.0-snapshots",
       "uri": "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
       "id": "de_gematik_isik"
     },
@@ -673,6 +673,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII PR ICU MUV Herzfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
         },
         "name": "MII PR ICU MUV Koerpergewicht",
@@ -687,9 +694,24 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
+        },
+        "name": "MII PR ICU MUV Koerperlaenge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
         },
         "name": "MII PR ICU MUV Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
         "exampleBoolean": false
       },
       {
@@ -1257,6 +1279,958 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-drainage-generisch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-drainage-generisch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-magensonde"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-magensonde"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-opdrainage"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-opdrainage"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-pankreasdrainage"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-pankreasdrainage"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-stuhlgang"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-stuhlgang"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-urin"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-urin"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-wunddrainage"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-ausfuhr-wunddrainage"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-blutverlust"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-blutverlust"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-muttermilch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-muttermilch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-spendermilch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-einfuhr-spendermilch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-icu-ecmo"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ecmo"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-arterieller-druck-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-arterieller-druck-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-dauer-haemodialysesitzung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-dauer-haemodialysesitzung"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-eingestellte-parameter-ecmo"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-gasfluss-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-gasfluss-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-gemessene-parameter-ecmo"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-haemodialyse-blutfluss-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-substituatfluss"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-substituatfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-substituatvolumen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-substituatvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-venoeser-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-ect-venoeser-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-arterieller-blutdruck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-arterieller-blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-atemfrequenz"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-atemfrequenz"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-herzfrequenz"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-herzfrequenz"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-herzzeitvolumen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-herzzeitvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-ideales-koerpergewicht"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-ideales-koerpergewicht"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-intrakranieller-druck-icp"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-intrakranieller-druck-icp"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergewicht"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpergewicht"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergroesse"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpergroesse"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergroesse-percentil"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpergroesse-percentil"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-achsel"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-achsel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-atemwege"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-atemwege"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-blut"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-blut"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-brust"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-brust"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-gelenk"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-gelenk"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-generisch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-generisch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-harnblase"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-harnblase"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-kern"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-kern"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-leiste"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-leiste"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-myokard"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-myokard"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-nasal"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-nasal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-rektal"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-rektal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-speiseroehre"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-speiseroehre"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-stirn"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-stirn"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-trommelfell"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-trommelfell"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-unter-der-zunge"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-unter-der-zunge"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-vaginal"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-koerpertemperatur-vaginal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-kopfumfang"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-kopfumfang"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksatrialer-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksatrialer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaerer-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventrikulaerer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaerer-herzindex"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventrikulaerer-herzindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventrikulaeres-schlagvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-pulmonalarterieller-blutdruck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-pulmonalarterieller-blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-puls"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-puls"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-rechtsatrialer-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-rechtsatrialer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-rechtsventrikulaerer-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-rechtsventrikulaerer-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-zentralvenoeser-blutdruck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-zentralvenoeser-blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-rass"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-score-rass"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenbefund"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-untersuchung-pupillenbefund"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenform"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-untersuchung-pupillenform"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillengroesse"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-untersuchung-pupillengroesse"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillensymmetrie"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-untersuchung-pupillensymmetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemzugvolumen-einstellung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-atemzugvolumen-einstellung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-icu-vent-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-beatmungszeit-auf-hohem-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-beatmungszeit-auf-hohem-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-druckdifferenz-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-druckdifferenz-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-dynamische-kompliance"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-dynamische-kompliance"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-eingestellte-parameter-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-einstellung-einatmungszeit-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-einstellung-einatmungszeit-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-exspiratorischer-gasfluss"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-exspiratorischer-gasfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-gemessene-parameter-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-horowitz-in-arteriellem-blut"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-horowitz-in-arteriellem-blut"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-inspiratorischer-gasfluss"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-inspiratorischer-gasfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-mechanische-atemfrequenz-beatmet"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-mechanische-atemfrequenz-beatmet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-parameter-von-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-parameter-von-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontane-atemfrequenz-beatmet"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-spontane-atemfrequenz-beatmet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontanes-atemzugvolumen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-spontanes-atemzugvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-unterstuetzungsdruck-beatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-unterstuetzungsdruck-beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung"
+      },
+      {
+        "reference": {
           "reference": "Parameters/mii-param-icu-manifest"
         },
         "exampleBoolean": false,
@@ -1367,11 +2341,6 @@
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "researcher-guidance.html",
-              "title": "Guidance for Researchers",
-              "generation": "markdown"
-            },
-            {
               "nameUrl": "implementer-guidance.html",
               "title": "Guidance for Implementers",
               "generation": "markdown"
@@ -1394,11 +2363,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "extensions.html",
-          "title": "Extensions",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "capability-statements.html",
           "title": "Capability Statements",
           "generation": "markdown"
@@ -1409,11 +2373,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "operations.html",
-          "title": "Operations",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "logical-models.html",
           "title": "Logical Models",
           "generation": "markdown"
@@ -1421,11 +2380,6 @@
         {
           "nameUrl": "value-sets.html",
           "title": "Value Sets",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "code-systems.html",
-          "title": "Code Systems",
           "generation": "markdown"
         },
         {
@@ -1444,11 +2398,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "metadata.html",
-          "title": "Metadata Overview",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "version-history.html",
           "title": "Versioning",
           "generation": "markdown"
@@ -1461,11 +2410,6 @@
         {
           "nameUrl": "translationinfo.html",
           "title": "Translation Information",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "rendering-artifacts.html",
-          "title": "Rendering Artifacts (demo)",
           "generation": "markdown"
         }
       ]
@@ -1482,6 +2426,10 @@
       {
         "code": "path-resource",
         "value": "input/predefined-resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "beispiele"
       },
       {
         "code": "path-pages",

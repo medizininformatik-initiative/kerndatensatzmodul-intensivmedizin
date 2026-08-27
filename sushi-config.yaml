@@ -247,7 +247,7 @@ dependencies:
   # German base profiles (kerndatensatz-basis pins the same 1.5.4).
   de.basisprofil.r4: 1.5.4
   # Source pins carried unchanged from the pre-migration module (spec 2.1):
-  de.gematik.isik: 5.1.0
+  de.gematik.isik: 5.1.0-snapshots # LOCAL rebuild of source pin 5.1.0 (0/140 snapshots upstream; spec 5.1b.5); Gate-A: CI must reproduce or revert
   de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
   # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
@@ -494,7 +494,7 @@ instanceOptions:
   # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
   # in an Instance's assignment rule. All slices appear in the order in which they are specified in FSH rules.
   # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for new projects.
-  manualSliceOrdering: true # true | false
+  manualSliceOrdering: false # Quelle kompilierte mit SUSHI-Default false -- Migration aendert Build-Semantik nicht; Template-Empfehlung true = Folgearbeit (Queue 1)
 
 # Everything above is what this IG actually sets. SUSHI accepts further
 # properties (contact, global profiles, FSHOnly, the remaining instanceOptions,

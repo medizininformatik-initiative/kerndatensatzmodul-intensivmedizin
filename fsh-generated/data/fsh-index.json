@@ -416,6 +416,14 @@
     "endLine": 39
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-muv-herzfrequenz.json",
+    "fshName": "MII_PR_ICU_MUV_Herzfrequenz",
+    "fshType": "Profile",
+    "fshFile": "profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Herzfrequenz.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-koerpergewicht.json",
     "fshName": "MII_PR_ICU_MUV_Koerpergewicht",
     "fshType": "Profile",
@@ -432,12 +440,28 @@
     "endLine": 61
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-muv-koerperlaenge.json",
+    "fshName": "MII_PR_ICU_MUV_Koerperlaenge",
+    "fshType": "Profile",
+    "fshFile": "profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerperlaenge.fsh",
+    "startLine": 1,
+    "endLine": 48
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-kopfumfang.json",
     "fshName": "MII_PR_ICU_MUV_Kopfumfang",
     "fshType": "Profile",
     "fshFile": "profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Kopfumfang.fsh",
     "startLine": 1,
     "endLine": 49
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.json",
+    "fshName": "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+    "fshType": "Profile",
+    "fshFile": "profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_zerebraler_Perfusionsdruck.fsh",
+    "startLine": 1,
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-parameter-von-beatmung.json",

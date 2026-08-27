@@ -7,6 +7,7 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-referencerange-high",
+  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -31,10 +32,6 @@
       }
     }
   ],
-  "base": [
-    "Observation"
-  ],
-  "publisher": "Medizininformatik Initiative",
   "version": "2026.0.3",
   "name": "MII_SP_ICU_Observation_ReferenceRange_High",
   "status": "active",
@@ -42,6 +39,9 @@
   "date": "2025-02-11",
   "description": "Suchparameter für Observation.referenceRange.high",
   "code": "reference-range-high",
+  "base": [
+    "Observation"
+  ],
   "type": "quantity",
   "expression": "Observation.referenceRange.high | Observation.component.referenceRange.high"
 }

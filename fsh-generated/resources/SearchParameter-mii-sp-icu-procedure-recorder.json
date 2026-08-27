@@ -7,6 +7,7 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-procedure-recorder",
+  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -31,10 +32,6 @@
       }
     }
   ],
-  "base": [
-    "Procedure"
-  ],
-  "publisher": "Medizininformatik Initiative",
   "version": "2026.0.3",
   "name": "MII_SP_ICU_Procedure_Recorder",
   "status": "active",
@@ -42,6 +39,9 @@
   "date": "2025-02-11",
   "description": "Suchparameter für Procedure.recorder",
   "code": "recorder",
+  "base": [
+    "Procedure"
+  ],
   "type": "reference",
   "expression": "Procedure.recorder"
 }
