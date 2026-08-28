@@ -49,7 +49,7 @@ You can also create device resources according to the two fields marked "optiona
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
 > **Written during migration - review before release.** The Monitoring and
 > Vital Signs profiles of this module are published inside the ISiK package
-> `de.gematik.isik` (5.1.0) as `sd-mii-icu-*` and are therefore rendered by
+> `de.gematik.isik` (6.0.0) as `sd-mii-icu-*` and are therefore rendered by
 > that package, not by this guide. The source guide carried one page per
 > profile; those pages contained only the generic-profile reference sentence,
 > which is preserved below once, followed by the complete profile list.

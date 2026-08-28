@@ -247,10 +247,12 @@ dependencies:
   # German base profiles (kerndatensatz-basis pins the same 1.5.4).
   de.basisprofil.r4: 1.5.4
   # Source pins carried unchanged from the pre-migration module (spec 2.1):
-  # LOCAL rebuild of source pin 5.1.0 (ships 0/140 snapshots; spec 5.1b.5, official
-  # HL7 generator). Gate-A: CI must reproduce the rebuild or revert to 5.1.0.
-  # NOTE inline comments break the IG publisher sushi-config prescan (measured 2.3.2).
-  de.gematik.isik: 5.1.0-snapshots
+  # ISiK 6.0.0 per TF-Richtung (Spike 2026-08-28: SUSHI 0 Errors, qa-Delta +10 durch
+  # sct-version-de auf Koerpertemperatur-Beispielen -- Team-Entscheidung, s. Report QA-7). gematik liefert KEINE Snapshots (0/178);
+  # der Build bezieht das Paket inkl. nachgebauter Snapshots aus dem
+  # medizininformatik-initiative/fhir-package-store (cache-store-Branch, CI-Priming-Step
+  # in .github/workflows/ig-publisher.yml). Lokal: siehe README, Abschnitt Build.
+  de.gematik.isik: 6.0.0
   de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
   # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0

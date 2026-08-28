@@ -51,7 +51,7 @@ Entsprechend der beiden mit "optional\*" markierten Felder unter 1. kann man auÃ
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
 > **Written during migration - review before release.** Die Profile zu
 > Monitoring und Vitaldaten dieses Moduls sind im ISiK-Paket `de.gematik.isik`
-> (5.1.0) als `sd-mii-icu-*` veroeffentlicht und werden daher von jenem Paket
+> (6.0.0) als `sd-mii-icu-*` veroeffentlicht und werden daher von jenem Paket
 > gerendert, nicht von diesem Guide. Der Quell-Guide fuehrte je Profil eine
 > Seite; diese enthielten nur den Verweis auf das generische Profil, der unten
 > einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.
