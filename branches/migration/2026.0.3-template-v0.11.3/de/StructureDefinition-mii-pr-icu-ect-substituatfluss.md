@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Substituatfluss",
   "title" : "MII PR ICU Substituatfluss",
   "status" : "active",
-  "date" : "2026-08-28T12:09:44+00:00",
+  "date" : "2026-08-28T12:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

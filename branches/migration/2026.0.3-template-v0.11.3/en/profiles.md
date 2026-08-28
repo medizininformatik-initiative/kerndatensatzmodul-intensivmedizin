@@ -5,6 +5,193 @@
 
 ## Profiles
 
+### Interactive profile map
+
+Module-owned profiles (this package)
+
+##### Extracorporeal procedure parameters
+
+[Extrakorporales Verfahren](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md)
+[Eingestellte Gemessene Parameter Extrakorporale Verfahren](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md)
+[Parameter von Extrakorporalen Verfahren](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md)
+[Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md)
+[Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md)
+[Blutfluss Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md)
+[Blutflussindex Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md)
+[Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md)
+[Dauer Haemodialysesitzung](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md)
+[Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md)
+[Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md)
+[Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md)
+[Substituatfluss](StructureDefinition-mii-pr-icu-ect-substituatfluss.md)
+[Substituatvolumen](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md)
+[Venoeser Druck](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md)
+
+##### Ventilation values
+
+[Beatmung](StructureDefinition-mii-pr-icu-beatmung.md)
+[Eingestellte Gemessene Parameter Beatmung](StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.md)
+[Parameter von Beatmung](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md)
+[Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md)
+[Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md)
+[Atemzugvolumen Einstellung](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md)
+[Atemzugvolumen Waehrend Beatmung](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md)
+[Beatmungsvolumen Pro Minute Maschineller Beatmung](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md)
+[Beatmungszeit Hohem Druck](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md)
+[Beatmungszeit Niedrigem Druck](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md)
+[Druckdifferenz Beatmung](StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.md)
+[Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md)
+[Eingestellter Inspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md)
+[Einstellung Ausatmungszeit Beatmung](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md)
+[Einstellung Einatmungszeit Beatmung](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md)
+[Endexpiratorischer Kohlendioxidpartialdruck](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md)
+[Exspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md)
+[Exspiratorischer Sauerstoffpartialdruck](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md)
+[Horowitz In Arteriellem Blut](StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.md)
+[Inspiratorische Sauerstofffraktion](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md)
+[Inspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md)
+[Maximaler Beatmungsdruck](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md)
+[Maximaler Inspiratorischer Beatmungsdruck](StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.md)
+[Mechanische Atemfrequenz Beatmet](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md)
+[Mittlerer Beatmungsdruck](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md)
+[Mittlerer Inspiratorischer Beatmungsdruck](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md)
+[Plateau Beatmungsdruck](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md)
+[Positiv Endexpiratorischer Druck](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md)
+[Spontane Atemfrequenz Beatmet](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md)
+[Spontane Mechanische Atemfrequenz Beatmet](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md)
+[Spontanes Atemzugvolumen](StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.md)
+[Spontanes Plus Mechanisches Atemzugvolumen](StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md)
+[Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md)
+[Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md)
+
+##### Balances
+
+[Bilanz](StructureDefinition-mii-pr-icu-bilanz.md)
+[Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.md)
+[Bilanz Ausfuhr Drainage Generisch](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.md)
+[Bilanz Ausfuhr Fluessigkeit Gesamt](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.md)
+[Bilanz Ausfuhr Gallenfluessigkeit](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.md)
+[Bilanz Ausfuhr Haemofiltration Einzelmesswerte](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.md)
+[Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.md)
+[Bilanz Ausfuhr OP Drainage](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.md)
+[Bilanz Ausfuhr Pankreasdrainage](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.md)
+[Bilanz Ausfuhr Stuhlgang](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.md)
+[Bilanz Ausfuhr Urin](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.md)
+[Bilanz Ausfuhr Wunddrainage](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md)
+[Bilanz Einfuhr Abgepumpte Muttermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md)
+[Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md)
+[Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md)
+[Bilanz Einfuhr Muttermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.md)
+[Bilanz Einfuhr Orale Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md)
+[Bilanz Einfuhr Saeuglingsnahrung](StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md)
+[Bilanz Einfuhr Spendermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.md)
+[Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md)
+
+##### Monitoring and vital signs (module-owned)
+
+[MUV Arterieller Blutdruck](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md)
+[MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md)
+[MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md)
+[MUV Koerpergewicht](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md)
+[MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md)
+[MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md)
+[MUV Kopfumfang](StructureDefinition-mii-pr-icu-muv-kopfumfang.md)
+[MUV zerebraler Perfusionsdruck](StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.md)
+
+##### Examinations
+
+[Untersuchung Pupillenbefund](StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.md)
+[Untersuchung Pupillenform](StructureDefinition-mii-pr-icu-untersuchung-pupillenform.md)
+[Untersuchung Pupillengroesse](StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.md)
+[Untersuchung Pupillenlichtreaktion Direkt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.md)
+[Untersuchung Pupillenlichtreaktion Indirekt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.md)
+[Untersuchung Pupillensymmetrie](StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.md)
+
+##### Scores
+
+[Score](StructureDefinition-mii-pr-icu-score.md)
+[Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md)
+[Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md)
+[Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md)
+[Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.md)
+[Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md)
+[Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
+[Score SOFA](StructureDefinition-mii-pr-icu-score-sofa.md)
+[Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md)
+[Score Wong-Baker-FACES-Schmerzskala](StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.md)
+[Score ZOPA](StructureDefinition-mii-pr-icu-score-zopa.md)
+
+##### Device information
+
+[Device](StructureDefinition-mii-pr-icu-device.md)
+
+ISiK-hosted profiles (de.gematik.isik 6.0.0)
+
+These profiles are hosted and versioned by gematik in the de.gematik.isik package; this guide lists them as clinical content of the ICU core data set. The list is generated from the pinned package version and only changes with a deliberate pin bump.
+
+##### Generic profiles (3)
+
+[Koerpertemperatur Generisch](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch)
+[Monitoring und Vitaldaten](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten)
+[Sonstige pulsatile Druecke Generisch](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch)
+
+##### Monitoring specialisations (25)
+
+[Herzzeitvolumen](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen)
+[Ideales Koerpergewicht](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht)
+[Intrakranieller Druck ICP](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp)
+[Koerpergewicht Percentil Altersabhaengig](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig)
+[Koerpergroesse Percentil](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig)
+[Linksatrialer Druck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck)
+[Linksventrikulaerer Herzindex durch Indikatorverduennung](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung)
+[Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung)
+[Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd)
+[Linksventrikulaerer Druck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck)
+[Linksventrikulaerer Herzindex](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex)
+[Linksventrikulaeres Schlagvolumen](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen)
+[Linksventrikulaeres Schlagvolumenindex](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex)
+[Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd)
+[Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie)
+[Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie)
+[Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie)
+[Pulmonalarterieller Blutdruck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck)
+[Pulmonalarterieller Wedge Druck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck)
+[Pulmonalvaskulaerer Widerstandsindex](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex)
+[Puls](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls)
+[Rechtsatrialer Druck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck)
+[Rechtsventrikulaerer Druck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck)
+[Systemischer Vaskulaerer Widerstandsindex](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex)
+[Zentralvenoeser Blutdruck](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck)
+
+##### Body temperature (21)
+
+[Koerperkerntemperatur Stirn](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn)
+[Koerpertemperatur Achsel](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel)
+[Koerpertemperatur Atemwege](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege)
+[Koerpertemperatur Blut](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut)
+[Koerpertemperatur Brust](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust)
+[Koerpertemperatur Brustwirbelsaeule](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule)
+[Koerpertemperatur Gelenk](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk)
+[Koerpertemperatur Halswirbelsaeule](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule)
+[Koerpertemperatur Harnblase](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase)
+[Koerpertemperatur Kern](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern)
+[Koerpertemperatur Leiste](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste)
+[Koerpertemperatur Lendenwirbelsaeule](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule)
+[Koerpertemperatur Myokard](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard)
+[Koerpertemperatur nasal](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal)
+[Koerpertemperatur Nasen-Rachen-Raum](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum)
+[Koerpertemperatur rektal](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal)
+[Koerpertemperatur Speiseroehre](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre)
+[Koerpertemperatur Stirn](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn)
+[Koerpertemperatur Trommelfell](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell)
+[Koerpertemperatur unter der Zunge](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge)
+[Koerpertemperatur vaginal](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal)
+
+Observation
+Procedure
+DeviceMetric
+Device  amber = externally hosted (links open Simplifier)
+
 The FHIR profiles in this project follow the following approach:
 
 There is at least one **generic profile** for each of the "structure elements" of the KDS module defined in the data model. These profiles contain ValueSets and describe the predefined **structure for groups of items in a specific intensive care category**. The generic profiles are the first in each group of the tree structure of this guide, i.e:
@@ -59,50 +246,4 @@ You can also create device resources according to the two fields marked "optiona
 > Original wording of the source pages (per profile): ""Body weight (Observation)" is a characteristic of the generic profile for monitoring and vital data (Observation). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model."For the pulsatile pressures additionally: "This is a pulsatile pressure. In addition to the properties of the generic profile for Monitoring and vital data, the special features described on the page of the profile for other pulsatile pressures generic (Observation) also apply to this. See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model."
 
 The individual profiles are characteristics of the generic profile [Monitoring and vital data (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten). See there for details on the items and their relation to the Logical Model.
-
-* [Body weight percentile age-dependent (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig)
-* [Ideal body weight (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht)
-* [Body height percentile (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig)
-* [Oxygen saturation in preductal blood by pulse oximetry (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sauerstoffsaettigung-im-blut-preduktal-durch-pulsoxymetrie)
-* [Oxygen saturation in postductal blood by pulse oximetry (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sauerstoffsaettigung-im-blut-postduktal-durch-pulsoxymetrie)
-* [Oxygen saturation in arterial blood by pulse oximetry (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie)
-* [Left ventricular cardiac output index (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex)
-* [Left ventricular cardiac output (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen)
-* [Left ventricular cardiac output index due to indicator dilution (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd)
-* [Left ventricular cardiac output due to indicator dilution (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen-durch-indikatorverduennung)
-* [Pulmonary vascular resistance index (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex)
-* [Systemic vascular resistance index (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex)
-* [Left ventricular cardiac index (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex)
-* [Cardiac output per time period (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen)
-* [Left ventricular cardiac index due to indicator dilution (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex-durch-indikatorverduennung)
-* [Left ventricular cardiac output due to indicator dilution (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd)
-* [Pulse (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls)
-* [Pulmonary arterial wedge blood pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck)
-* [Intracranial pressure ICP (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp)
-* [Central venous pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck)
-* [Left atrial pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck)
-* [Right atrial pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck)
-* [Right ventricular pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck)
-* [Left ventricular pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck)
-* [Pulmonary arterial blood pressure (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck)
-* [Body core temperature (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern)
-* [Body temperature thoracic spine (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule)
-* [Body temperature lumbar spine (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule)
-* [Body temperature joint (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk)
-* [Body temperature forehe (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn)
-* [Body temperature cervical spine (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule)
-* [Body temperature breast (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust)
-* [Body temperature nasal (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal)
-* [Myocardial body temperature (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard)
-* [Body temperature airways (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege)
-* [Body temperature blood (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut)
-* [Inguinal body temperature (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste)
-* [Body temperature armpit (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel)
-* [Body temperature under the tongue (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge)
-* [Vaginal body temperature (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal)
-* [Body temperature urinary bladder (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase)
-* [Body temperature Nasopharynx (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum)
-* [Body temperature Oesophagus (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre)
-* [Rectal body temperature (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal)
-* [Body temperature Eardrum (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell)
 

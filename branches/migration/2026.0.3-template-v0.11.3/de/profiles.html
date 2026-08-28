@@ -291,6 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#interaktive-profilübersicht" id="markdown-toc-interaktive-profilübersicht">Interaktive Profilübersicht</a></li>
   <li><a href="#geräteinformationen" id="markdown-toc-geräteinformationen">Geräteinformationen</a></li>
   <li><a href="#1-keine-geräteinformationen" id="markdown-toc-1-keine-geräteinformationen">1. keine Geräteinformationen</a></li>
   <li><a href="#2-gerätetyp" id="markdown-toc-2-gerätetyp">2. Gerätetyp</a></li>
@@ -303,16 +304,209 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
   <!-- markdownlint-disable MD041 -->
   <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/TechnischeImplementierung/FHIR-Profile + https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/TechnischeImplementierung/FHIR-Profile/Ger-teinformationen.page.md ; plus the per-profile Monitoring/Vitaldaten pages (boilerplate, see bridge box). -->
+
+<h3 id="interaktive-profilübersicht">Interaktive Profilübersicht</h3>
+
+<style>
+.icu-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px;margin:1em 0}
+.icu-map .grp{border:1px solid #b9c4d0;border-radius:8px;padding:10px 12px;background:#fafcfe}
+.icu-map .grp h5{margin:0 0 8px 0;font-size:0.95em;color:#20456b}
+.icu-sec{border:2px solid #4a7ab5;border-radius:10px;padding:12px 14px 6px 14px;margin:1em 0;background:#f4f8fc}
+.icu-sec.isik{border-color:#c98a2b;background:#fdf8f0}
+.icu-sec>.sec-title{font-weight:bold;font-size:1.0em;color:#20456b;margin:0 0 6px 0}
+.icu-sec.isik>.sec-title{color:#7a5211}
+.icu-sec>.sec-note{font-size:0.82em;color:#555;margin:0 0 6px 0}
+.icu-sec .icu-map{margin:0.4em 0}
+.icu-sec.isik .grp{border-color:#ddc196;background:#fffdf8}
+.icu-map a.chip{display:inline-block;margin:2px;padding:3px 9px;border-radius:5px;border:1px solid rgba(0,0,0,0.18);font-size:0.82em;color:#1a1a1a;text-decoration:none;line-height:1.5}
+.icu-map a.chip.head{font-weight:bold;border-width:2px}
+.icu-map a.chip:hover{filter:brightness(0.9);text-decoration:none}
+.icu-legend{font-size:0.8em;margin:4px 0 1.5em 0}
+.icu-legend span{display:inline-block;margin-right:10px;padding:1px 8px;border-radius:4px;border:1px solid rgba(0,0,0,0.18)}
+</style>
+
+<div class="icu-sec"><div class="sec-title">Modul-eigene Profile (dieses Paket)</div>
+<div class="icu-map">
+<div class="grp"><h5>Parameter von extrakorporalen Verfahren</h5>
+<a style="background:#C9C9F5" href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html" title="Procedure" class="chip head">Extrakorporales Verfahren</a>
+<a style="background:#F8D8F0" href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html" title="DeviceMetric" class="chip head">Eingestellte Gemessene Parameter Extrakorporale Verfahren</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.html" title="Observation" class="chip head">Parameter von Extrakorporalen Verfahren</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-arterieller-druck.html" title="Observation" class="chip">Arterieller Druck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html" title="Observation" class="chip">Blutfluss Cardiovasculaeres Geraet</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html" title="Observation" class="chip">Blutfluss Extrakorporaler Gasaustausch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html" title="Observation" class="chip">Blutflussindex Extrakorporaler Gasaustausch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.html" title="Observation" class="chip">Dauer Extrakorporaler Gasaustausch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.html" title="Observation" class="chip">Dauer Haemodialysesitzung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-gasfluss.html" title="Observation" class="chip">Gasfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.html" title="Observation" class="chip">Haemodialyse Blutfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.html" title="Observation" class="chip">Ionisiertes Kalzium Nierenersatzverfahren</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-substituatfluss.html" title="Observation" class="chip">Substituatfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-substituatvolumen.html" title="Observation" class="chip">Substituatvolumen</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-ect-venoeser-druck.html" title="Observation" class="chip">Venoeser Druck</a>
+</div>
+<div class="grp"><h5>Beatmungswerte</h5>
+<a style="background:#C9C9F5" href="StructureDefinition-mii-pr-icu-beatmung.html" title="Procedure" class="chip head">Beatmung</a>
+<a style="background:#F8D8F0" href="StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.html" title="DeviceMetric" class="chip head">Eingestellte Gemessene Parameter Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-parameter-von-beatmung.html" title="Observation" class="chip head">Parameter von Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html" title="Observation" class="chip">Atemwegsdruck Bei Null Expiratorischem Gasfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.html" title="Observation" class="chip">Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.html" title="Observation" class="chip">Atemzugvolumen Einstellung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.html" title="Observation" class="chip">Atemzugvolumen Waehrend Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.html" title="Observation" class="chip">Beatmungsvolumen Pro Minute Maschineller Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html" title="Observation" class="chip">Beatmungszeit Hohem Druck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.html" title="Observation" class="chip">Beatmungszeit Niedrigem Druck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.html" title="Observation" class="chip">Druckdifferenz Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.html" title="Observation" class="chip">Dynamische Kompliance</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html" title="Observation" class="chip">Eingestellter Inspiratorischer Gasfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html" title="Observation" class="chip">Einstellung Ausatmungszeit Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.html" title="Observation" class="chip">Einstellung Einatmungszeit Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html" title="Observation" class="chip">Endexpiratorischer Kohlendioxidpartialdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.html" title="Observation" class="chip">Exspiratorischer Gasfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.html" title="Observation" class="chip">Exspiratorischer Sauerstoffpartialdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.html" title="Observation" class="chip">Horowitz In Arteriellem Blut</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.html" title="Observation" class="chip">Inspiratorische Sauerstofffraktion</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.html" title="Observation" class="chip">Inspiratorischer Gasfluss</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.html" title="Observation" class="chip">Maximaler Beatmungsdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.html" title="Observation" class="chip">Maximaler Inspiratorischer Beatmungsdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.html" title="Observation" class="chip">Mechanische Atemfrequenz Beatmet</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.html" title="Observation" class="chip">Mittlerer Beatmungsdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.html" title="Observation" class="chip">Mittlerer Inspiratorischer Beatmungsdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.html" title="Observation" class="chip">Plateau Beatmungsdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.html" title="Observation" class="chip">Positiv Endexpiratorischer Druck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.html" title="Observation" class="chip">Spontane Atemfrequenz Beatmet</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html" title="Observation" class="chip">Spontane Mechanische Atemfrequenz Beatmet</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.html" title="Observation" class="chip">Spontanes Atemzugvolumen</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.html" title="Observation" class="chip">Spontanes Plus Mechanisches Atemzugvolumen</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.html" title="Observation" class="chip">Unterstuetzungsdruck Beatmung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html" title="Observation" class="chip">Zeitverhaeltnis Ein Ausatmung</a>
+</div>
+<div class="grp"><h5>Bilanzen</h5>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz.html" title="Observation" class="chip head">Bilanz</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.html" title="Observation" class="chip">Bilanz Ausfuhr Blutverlust</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html" title="Observation" class="chip">Bilanz Ausfuhr Drainage Generisch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html" title="Observation" class="chip">Bilanz Ausfuhr Fluessigkeit Gesamt</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html" title="Observation" class="chip">Bilanz Ausfuhr Gallenfluessigkeit</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html" title="Observation" class="chip">Bilanz Ausfuhr Haemofiltration Einzelmesswerte</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.html" title="Observation" class="chip">Bilanz Ausfuhr Magensonde</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.html" title="Observation" class="chip">Bilanz Ausfuhr OP Drainage</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.html" title="Observation" class="chip">Bilanz Ausfuhr Pankreasdrainage</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.html" title="Observation" class="chip">Bilanz Ausfuhr Stuhlgang</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.html" title="Observation" class="chip">Bilanz Ausfuhr Urin</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html" title="Observation" class="chip">Bilanz Ausfuhr Wunddrainage</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html" title="Observation" class="chip">Bilanz Einfuhr Abgepumpte Muttermilch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html" title="Observation" class="chip">Bilanz Einfuhr Enterale Fluessigkeit</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html" title="Observation" class="chip">Bilanz Einfuhr Fluessigkeit Gesamt</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.html" title="Observation" class="chip">Bilanz Einfuhr Muttermilch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html" title="Observation" class="chip">Bilanz Einfuhr Orale Fluessigkeit</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html" title="Observation" class="chip">Bilanz Einfuhr Saeuglingsnahrung</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.html" title="Observation" class="chip">Bilanz Einfuhr Spendermilch</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html" title="Observation" class="chip">Bilanz Tagesbilanz Fluessigkeit</a>
+</div>
+<div class="grp"><h5>Monitoring und Vitaldaten (modul-eigen)</h5>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html" title="Observation" class="chip">MUV Arterieller Blutdruck</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html" title="Observation" class="chip">MUV Atemfrequenz</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html" title="Observation" class="chip">MUV Herzfrequenz</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html" title="Observation" class="chip">MUV Koerpergewicht</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html" title="Observation" class="chip">MUV Koerpergroesse</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html" title="Observation" class="chip">MUV Koerperlaenge</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html" title="Observation" class="chip">MUV Kopfumfang</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.html" title="Observation" class="chip">MUV zerebraler Perfusionsdruck</a>
+</div>
+<div class="grp"><h5>Untersuchungen</h5>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.html" title="Observation" class="chip head">Untersuchung Pupillenbefund</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-untersuchung-pupillenform.html" title="Observation" class="chip">Untersuchung Pupillenform</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.html" title="Observation" class="chip">Untersuchung Pupillengroesse</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html" title="Observation" class="chip">Untersuchung Pupillenlichtreaktion Direkt</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html" title="Observation" class="chip">Untersuchung Pupillenlichtreaktion Indirekt</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.html" title="Observation" class="chip">Untersuchung Pupillensymmetrie</a>
+</div>
+<div class="grp"><h5>Scores</h5>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score.html" title="Observation" class="chip head">Score</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-cam-icu.html" title="Observation" class="chip">Score CAM-ICU</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html" title="Observation" class="chip">Score Faces Pain Scale Revised</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-gcs.html" title="Observation" class="chip">Score GCS</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-icdsc.html" title="Observation" class="chip">Score ICDSC</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html" title="Observation" class="chip">Score Numerische Ratingskala</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-rass.html" title="Observation" class="chip">Score RASS</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-sofa.html" title="Observation" class="chip">Score SOFA</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html" title="Observation" class="chip">Score Visuelle Analogskala</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html" title="Observation" class="chip">Score Wong-Baker-FACES-Schmerzskala</a>
+<a style="background:#CDEFC0" href="StructureDefinition-mii-pr-icu-score-zopa.html" title="Observation" class="chip">Score ZOPA</a>
+</div>
+<div class="grp"><h5>Geräteinformationen</h5>
+<a style="background:#F5E1C6" href="StructureDefinition-mii-pr-icu-device.html" title="Device" class="chip">Device</a>
+</div>
+</div></div>
+<div class="icu-sec isik"><div class="sec-title">ISiK-gehostete Profile (de.gematik.isik 6.0.0)</div><div class="sec-note">Diese Profile werden im Paket de.gematik.isik von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Die Liste ist aus der gepinnten Paketversion generiert und ändert sich nur mit einem bewussten Pin-Wechsel.</div>
+<div class="icu-map">
+<div class="grp"><h5>Generische Profile (3)</h5>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch" class="chip">Koerpertemperatur Generisch</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten" class="chip">Monitoring und Vitaldaten</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch" class="chip">Sonstige pulsatile Druecke Generisch</a>
+</div>
+<div class="grp"><h5>Monitoring-Ausprägungen (25)</h5>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen" class="chip">Herzzeitvolumen</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht" class="chip">Ideales Koerpergewicht</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp" class="chip">Intrakranieller Druck ICP</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig" class="chip">Koerpergewicht Percentil Altersabhaengig</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig" class="chip">Koerpergroesse Percentil</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck" class="chip">Linksatrialer Druck</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung" class="chip">Linksventrikulaerer Herzindex durch Indikatorverduennung</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung" class="chip">Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd" class="chip">Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck" class="chip">Linksventrikulaerer Druck</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex" class="chip">Linksventrikulaerer Herzindex</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen" class="chip">Linksventrikulaeres Schlagvolumen</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex" class="chip">Linksventrikulaeres Schlagvolumenindex</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd" class="chip">Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie" class="chip">Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie" class="chip">Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie" class="chip">Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck" class="chip">Pulmonalarterieller Blutdruck</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck" class="chip">Pulmonalarterieller Wedge Druck</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex" class="chip">Pulmonalvaskulaerer Widerstandsindex</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls" class="chip">Puls</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck" class="chip">Rechtsatrialer Druck</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck" class="chip">Rechtsventrikulaerer Druck</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex" class="chip">Systemischer Vaskulaerer Widerstandsindex</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck" class="chip">Zentralvenoeser Blutdruck</a>
+</div>
+<div class="grp"><h5>Körpertemperatur (21)</h5>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn" class="chip">Koerperkerntemperatur Stirn</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel" class="chip">Koerpertemperatur Achsel</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege" class="chip">Koerpertemperatur Atemwege</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut" class="chip">Koerpertemperatur Blut</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust" class="chip">Koerpertemperatur Brust</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule" class="chip">Koerpertemperatur Brustwirbelsaeule</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk" class="chip">Koerpertemperatur Gelenk</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule" class="chip">Koerpertemperatur Halswirbelsaeule</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase" class="chip">Koerpertemperatur Harnblase</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern" class="chip">Koerpertemperatur Kern</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste" class="chip">Koerpertemperatur Leiste</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule" class="chip">Koerpertemperatur Lendenwirbelsaeule</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard" class="chip">Koerpertemperatur Myokard</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal" class="chip">Koerpertemperatur nasal</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum" class="chip">Koerpertemperatur Nasen-Rachen-Raum</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal" class="chip">Koerpertemperatur rektal</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre" class="chip">Koerpertemperatur Speiseroehre</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn" class="chip">Koerpertemperatur Stirn</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell" class="chip">Koerpertemperatur Trommelfell</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge" class="chip">Koerpertemperatur unter der Zunge</a>
+<a style="background:#CDEFC0" href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal" title="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal" class="chip">Koerpertemperatur vaginal</a>
+</div>
+</div></div>
+<div class="icu-legend"><span style="background:#CDEFC0">Observation</span><span style="background:#C9C9F5">Procedure</span><span style="background:#F8D8F0">DeviceMetric</span><span style="background:#F5E1C6">Device</span> &nbsp; amber = extern gehostet (Links öffnen Simplifier)</div>
+
 <p>Die FHIR-Profile in diesem Projekt folgen folgendem Ansatz:</p>
 
 <p>Es gibt jeweils mindestens ein <strong>generisches Profil</strong> für die im Datenmodell definierten "Struktur-Elemente" des KDS-Moduls. Diese Profile enthalten ValueSets und beschreiben die vorgegebene <strong>Struktur für Gruppen von Items einer bestimmte intensivmedizinischen Kategorie</strong>. Die generischen Profile sind die ersten in einer jeden Gruppe der Baumstruktur dieses Guides, also:</p>
 
 <ul>
   <li>
-    <p><a name="l474">​</a>Parameter von extrakorporalen Verfahren:   - <a href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html">Extrakorporale Verfahren (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von extrakorporalen Verfahren (Observation)</a></p>
+    <p><a name="l993">​</a>Parameter von extrakorporalen Verfahren:   - <a href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html">Extrakorporale Verfahren (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von extrakorporalen Verfahren (Observation)</a></p>
   </li>
   <li>
-    <p><a name="l488">​</a>Beatmungswerte:   - <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von Beatmung (Observation)</a></p>
+    <p><a name="l1007">​</a>Beatmungswerte:   - <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von Beatmung (Observation)</a></p>
   </li>
   <li>
     <p>Monitoring und Vitaldaten   - <a href="profiles.html">Monitoring und Vitaldaten (Observation)</a>   - <a href="profiles.html">Sonstige pulsatile Drücke Generisch (Observation)</a>   - <a href="profiles.html">Körpertemperatur Generisch (Observation)</a></p>
@@ -391,54 +585,6 @@ einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
 <p>Die einzelnen Profile sind Auspraegungen des generischen Profils <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten">Monitoring und Vitaldaten (Observation)</a>. Siehe dort fuer naehere Informationen zu den Items und zum Bezug auf das Logical Model.</p>
 
-<ul>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht">Ideales Körpergewicht (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie">Sauerstoffsättigung im art. Blut durch Pulsoxymetrie (Obs)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex">Linksventrikulaeres Schlagvolumenindex (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen">Linksventrikulaeres Schlagvolumen (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd">Linksv. Schlagvolumenindex durch Indikatorverd. (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-mii-linksventri-schlagvolumen-durch-indikatorverduennung">Linksv. Schlagvolumen durch Indikatorverdünnung (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex">Pulmonalvaskulärer Widerstandsindex (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex">Systemischer vaskulärer Widerstandsindex (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex">Linksventrikulärer Herzindex (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen">Herzzeitvolumen (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung">Linksv. Herzindex durch Indikatorverdünnung (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd">Linksv. Herzzeitvolumen durch Indikatorverdünnung (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls">Puls (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck">Pulmonalarterieller wedge Blutdruck (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck">Zentralvenöser Blutdruck (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp">Intrakranieller Druck ICP (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig">Körpergewicht Percentil altersabhängig (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig">Körpergrösse Percentil altersabhängig (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel">Körpertemperatur Achsel (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege">Körpertemperatur Atemwege (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut">Körpertemperatur Blut (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust">Körpertemperatur Brust (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule">Körpertemperatur Brustwirbelsaeule (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk">Körpertemperatur Gelenk (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule">Körpertemperatur Halswirbelsaeule (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase">Körpertemperatur Harnblase (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern">Körpertemperatur Kern (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste">Körpertemperatur Leiste (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule">Körpertemperatur Lendenwirbelsaeule (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard">Körpertemperatur Myokard (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum">Körpertemperatur Nasen-Rachen-Raum (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre">Körpertemperatur Speiseroehre (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn">Körpertemperatur Stirn (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell">Körpertemperatur Trommelfell (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal">Körpertemperatur nasal (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal">Körpertemperatur rektal (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge">Körpertemperatur unter der Zunge (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal">Körpertemperatur vaginal (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie">Sauerstoffsättigung im Blut postduktal durch Pulsoxymetrie (Obs)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie">Sauerstoffsättigung im Blut preduktal durch Pulsoxymetrie (Obs)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck">Linksatrialer Druck (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck">Linksventrikulärer Druck (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck">Pulmonalarterieller Blutdruck (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck">Rechtsatrialer Druck (Observation)</a></li>
-  <li><a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck">Rechtsventrikulärer Druck (Observation)</a></li>
-</ul>
-
 
 
 
@@ -464,7 +610,7 @@ einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2026.0.3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Aug 28, 2026 12:09+0000">2026-08-28</span>
+          Erstellt <span title="Fri, Aug 28, 2026 12:57+0000">2026-08-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.

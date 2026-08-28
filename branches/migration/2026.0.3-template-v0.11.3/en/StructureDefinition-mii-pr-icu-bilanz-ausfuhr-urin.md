@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
   "title" : "MII PR ICU Bilanz Ausfuhr Urin",
   "status" : "active",
-  "date" : "2026-08-28T12:09:44+00:00",
+  "date" : "2026-08-28T12:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

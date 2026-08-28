@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "title" : "MII PR ICU Score GCS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-08-28T12:09:44+00:00",
+  "date" : "2026-08-28T12:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
