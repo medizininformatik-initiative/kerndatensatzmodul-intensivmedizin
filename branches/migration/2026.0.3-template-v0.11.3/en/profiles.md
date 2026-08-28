@@ -27,13 +27,7 @@ If there is no device information available, you can limit yourself to two Devic
 
 In summary, we need one resource for each combination of Observation.type and Observation.category.
 
-| | |
-| :--- | :--- |
-| Field | Meaning |
-
-| — | — |
-
-| Observation.type | Corresponds to the Observation.category of the referencing observation. Note the corresponding ValueSets
+| Field | Meaning | | — | — | | Observation.type | Corresponds to the Observation.category of the referencing observation. Note the corresponding ValueSets
 
 * [extrakorporal procedures](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) (Snomed- [Code 182744004](https://browser.ihtsdotools.org/?perspective=full&conceptId1=182744004&edition=MAIN/2022-05-31&release=&languages=en) )
 *  

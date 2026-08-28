@@ -28,13 +28,7 @@ Sofern keine Geräteinformarmationen vorhanden sind, kann man sich pro Kategorie
 
 Zusammenfassend brauchen wir je eine Ressourcen für jede Kombination aus Observation.type und Observation.category.
 
-| | |
-| :--- | :--- |
-| Feld | Bedeutung |
-
-| — | — |
-
-| Observation.type | Enspricht der Observation.category der referenzierenden Observation. Beachte die entsprechenden ValueSets
+| Feld | Bedeutung | | — | — | | Observation.type | Enspricht der Observation.category der referenzierenden Observation. Beachte die entsprechenden ValueSets
 
 * [extrakorporale Verfahren](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) (Snomed- [Code 182744004](https://browser.ihtsdotools.org/?perspective=full&conceptId1=182744004&edition=MAIN/2022-05-31&release=&languages=en) )
 *  

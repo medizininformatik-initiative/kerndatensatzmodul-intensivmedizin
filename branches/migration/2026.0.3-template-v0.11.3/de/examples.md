@@ -11,5 +11,7 @@ Diese Seite führt die Beispielinstanzen des Moduls **Intensive Care** auf. Die 
 
 **Nur synthetische Daten** — niemals echte oder realistisch wirkende Patientendaten in Beispielen verwenden.
 
-> [TODO: Ergänzen Sie aussagekräftige Beispielinstanzen zu Ihren Profilen.]
+> **Written during migration - review before release.** Aus dem Build generierte Liste (Quelle hatte hier kein Narrativ).
+
+Das Modul liefert **136 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.md) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt **Examples**.
 
