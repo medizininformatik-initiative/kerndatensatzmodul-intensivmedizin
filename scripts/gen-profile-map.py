@@ -33,50 +33,51 @@ COLORS = {
 }
 
 CSS = '''<style>
-.icu-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px;margin:1em 0}
-.icu-map .grp{border:1px solid #b9c4d0;border-radius:8px;padding:10px 12px;background:#fafcfe}
-.icu-map .grp h5{margin:0 0 8px 0;font-size:0.95em;color:#20456b}
-.icu-sec{border:2px solid #4a7ab5;border-radius:10px;padding:12px 14px 6px 14px;margin:1em 0;background:#f4f8fc}
-.icu-sec.isik{border-color:#c98a2b;background:#fdf8f0}
-.icu-sec>.sec-title{font-weight:bold;font-size:1.0em;color:#20456b;margin:0 0 6px 0}
-.icu-sec.isik>.sec-title{color:#7a5211}
-.icu-sec>.sec-note{font-size:0.82em;color:#555;margin:0 0 6px 0}
-.icu-sec .icu-map{margin:0.4em 0}
-.icu-sec.isik .grp{border-color:#ddc196;background:#fffdf8}
-.icu-map a.chip{display:inline-block;margin:2px;padding:3px 9px;border-radius:5px;border:1px solid rgba(0,0,0,0.18);font-size:0.82em;color:#1a1a1a;text-decoration:none;line-height:1.5}
-.icu-map a.chip.head{font-weight:bold;border-width:2px}
-.icu-map a.chip:hover{filter:brightness(0.9);text-decoration:none}
-.icu-legend{font-size:0.8em;margin:4px 0 1.5em 0}
-.icu-legend span{display:inline-block;margin-right:10px;padding:1px 8px;border-radius:4px;border:1px solid rgba(0,0,0,0.18)}
+.icu-acc{margin:1em 0;overflow:hidden}
+.icu-acc details{border:1px solid #c3cedb;border-radius:7px;margin:6px 0;background:#fbfcfe}
+.icu-acc details[open]{background:#f6f9fc}
+.icu-acc summary{cursor:pointer;padding:8px 12px;font-weight:600;color:#20456b;display:flex;align-items:center;gap:10px}
+.icu-acc summary .cnt{margin-left:auto;font-weight:400;font-size:0.85em;color:#5b6b7d;background:#eaeff5;border-radius:10px;padding:1px 9px}
+.icu-acc .body{padding:2px 14px 12px 26px}
+.icu-acc .generic{margin:0 0 8px 0;font-size:0.9em}
+.icu-acc .generic b{color:#20456b}
+.icu-acc .items{columns:2;column-gap:26px;font-size:0.9em;line-height:1.75}
+.icu-acc .items a{display:block;break-inside:avoid}
+.icu-acc.isik details{border-color:#dcc39a;background:#fffdf9}
+.icu-acc.isik details[open]{background:#fdf8f0}
+.icu-acc.isik summary{color:#7a5211}
+.icu-acc.isik summary .cnt{background:#f4e6cf;color:#6b4a13}
+.icu-note{overflow:hidden;font-size:0.85em;color:#555;margin:0.6em 0 0.2em 0;padding-left:2px}
+@media (max-width:720px){.icu-acc .items{columns:1}}
 </style>'''
 
-# (id-Prädikat der Familie, Kopf-Profile in Reihenfolge, DE-Titel, EN-Titel)
+# (DE-Titel, EN-Titel, generische Kopf-Profile, id-Prädikat, Label-Präfixe zum Kürzen)
 FAMILIEN = [
     ('Parameter von extrakorporalen Verfahren', 'Extracorporeal procedure parameters',
      ['mii-pr-icu-extrakorporales-verfahren',
       'mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren',
       'mii-pr-icu-parameter-von-extrakorporalen-verfahren'],
-     lambda i: i.startswith('mii-pr-icu-ect-')),
+     lambda i: i.startswith('mii-pr-icu-ect-'), ()),
     ('Beatmungswerte', 'Ventilation values',
      ['mii-pr-icu-beatmung',
       'mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung',
       'mii-pr-icu-parameter-von-beatmung'],
-     lambda i: i.startswith('mii-pr-icu-vent-')),
+     lambda i: i.startswith('mii-pr-icu-vent-'), ()),
     ('Bilanzen', 'Balances',
      ['mii-pr-icu-bilanz'],
-     lambda i: i.startswith('mii-pr-icu-bilanz-')),
+     lambda i: i.startswith('mii-pr-icu-bilanz-'), ('Bilanz',)),
     ('Monitoring und Vitaldaten (modul-eigen)', 'Monitoring and vital signs (module-owned)',
      [],
-     lambda i: i.startswith('mii-pr-icu-muv-')),
+     lambda i: i.startswith('mii-pr-icu-muv-'), ('MUV',)),
     ('Untersuchungen', 'Examinations',
      ['mii-pr-icu-untersuchung-pupillenbefund'],
-     lambda i: i.startswith('mii-pr-icu-untersuchung-')),
+     lambda i: i.startswith('mii-pr-icu-untersuchung-'), ('Untersuchung',)),
     ('Scores', 'Scores',
      ['mii-pr-icu-score'],
-     lambda i: i.startswith('mii-pr-icu-score-')),
+     lambda i: i.startswith('mii-pr-icu-score-'), ('Score',)),
     ('Geräteinformationen', 'Device information',
      [],
-     lambda i: i in ('mii-pr-icu-device',)),
+     lambda i: i in ('mii-pr-icu-device',), ()),
 ]
 
 
@@ -118,6 +119,16 @@ def label_of(title, strip_prefixes):
     return t.strip(' -–') or title
 
 
+def short(title, extra=()):
+    """Anzeigename: MII-Präfixe und das Familienwort raus (die Gruppe sagt es)."""
+    t = label_of(title, ['MII PR ICU DeviceMetric ', 'MII PR ICU ', 'MII_PR_ICU_',
+                         'SD MII ICU '])
+    for p in extra:
+        if t.startswith(p + ' '):
+            t = t[len(p) + 1:]
+    return t or title
+
+
 def chip(href, color, label, head=False, tip=''):
     cls = 'chip head' if head else 'chip'
     return (f'<a class="{cls}" style="background:{color}" href="{href}" '
@@ -126,69 +137,70 @@ def chip(href, color, label, head=False, tip=''):
 
 def build(lang, mod, isik, pin):
     out = [CSS]
-    # ── Ebene 1: modul-eigen ────────────────────────────────────────────
-    sec_t = ('Modul-eigene Profile (dieses Paket)' if lang == 'de'
-             else 'Module-owned profiles (this package)')
-    out.append(f'<div class="icu-sec"><div class="sec-title">{sec_t}</div>')
-    out.append('<div class="icu-map">')
     covered = set()
-    for de_t, en_t, heads, pred in FAMILIEN:
+    # ── Ebene 1: modul-eigen ────────────────────────────────────────────
+    t1 = ('Modul-eigene Profile &mdash; dieses Paket' if lang == 'de'
+          else 'Module-owned profiles &mdash; this package')
+    out.append(f'<p class="icu-note"><b>{t1}</b></p>')
+    out.append('<div class="icu-acc">')
+    gen_lbl = 'Generisch:' if lang == 'de' else 'Generic:'
+    for de_t, en_t, heads, pred, drop in FAMILIEN:
         title = de_t if lang == 'de' else en_t
-        members = heads + sorted(i for i in mod if pred(i) and i not in heads)
-        out.append(f'<div class="grp"><h5>{html.escape(title)}</h5>')
-        for pid in members:
-            rt, ptitle = mod[pid]
-            lbl = label_of(ptitle, ['MII PR ICU DeviceMetric ', 'MII PR ICU ',
-                                    'MII_PR_ICU_'])
-            out.append(chip(f'StructureDefinition-{pid}.html',
-                            COLORS.get(rt, '#EDEDED'), lbl,
-                            head=pid in heads, tip=rt or ''))
-            covered.add(pid)
-        out.append('</div>')
-    out.append('</div></div>')
-    # ── Ebene 2: ISiK-gehostet (aus dem Pin generiert) ──────────────────
-    sec_t = (f'ISiK-gehostete Profile (de.gematik.isik {pin})' if lang == 'de'
-             else f'ISiK-hosted profiles (de.gematik.isik {pin})')
-    note = (('Diese Profile werden im Paket de.gematik.isik von der gematik '
-             'gehostet und versioniert; dieser Leitfaden listet sie als '
-             'fachlichen Bestandteil des KDS Intensivmedizin. Die Liste ist '
-             'aus der gepinnten Paketversion generiert und ändert sich nur '
-             'mit einem bewussten Pin-Wechsel.') if lang == 'de' else
-            ('These profiles are hosted and versioned by gematik in the '
-             'de.gematik.isik package; this guide lists them as clinical '
-             'content of the ICU core data set. The list is generated from '
-             'the pinned package version and only changes with a deliberate '
-             'pin bump.'))
-    out.append(f'<div class="icu-sec isik"><div class="sec-title">{sec_t}</div>'
-               f'<div class="sec-note">{html.escape(note)}</div>')
-    out.append('<div class="icu-map">')
-    generics = [i for i in isik if i.endswith('-generisch')
-                or i == 'sd-mii-icu-monitoring-und-vitaldaten']
-    koerpert = sorted(i for i in isik if 'koerpertemperatur' in i
-                      or 'koerperkerntemperatur' in i)
-    koerpert = [i for i in koerpert if i not in generics]
+        members = sorted(i for i in mod if pred(i) and i not in heads)
+        covered.update(members); covered.update(heads)
+        n = len(members) + len(heads)
+        out.append('<details>')
+        out.append(f'<summary>{html.escape(title)}'
+                   f'<span class="cnt">{n}</span></summary><div class="body">')
+        if heads:
+            links = ' &middot; '.join(
+                f'<a href="StructureDefinition-{p}.html">'
+                f'{html.escape(short(mod[p][1]))}</a>' for p in heads)
+            out.append(f'<p class="generic"><b>{gen_lbl}</b> {links}</p>')
+        if members:
+            out.append('<div class="items">')
+            for pid in members:
+                out.append(f'<a href="StructureDefinition-{pid}.html">'
+                           f'{html.escape(short(mod[pid][1], drop))}</a>')
+            out.append('</div>')
+        out.append('</div></details>')
+    out.append('</div>')
+    # ── Ebene 2: ISiK-gehostet ──────────────────────────────────────────
+    t2 = (f'ISiK-gehostete Profile &mdash; de.gematik.isik {pin}' if lang == 'de'
+          else f'ISiK-hosted profiles &mdash; de.gematik.isik {pin}')
+    note = (('Von der gematik gehostet und versioniert; dieser Leitfaden listet sie '
+             'als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten '
+             'Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem '
+             'bewussten Pin-Wechsel. Links &ouml;ffnen Simplifier.')
+            if lang == 'de' else
+            ('Hosted and versioned by gematik; this guide lists them as clinical '
+             'content of the ICU core data set. Generated from the pinned package '
+             'version &mdash; the list only changes with a deliberate pin bump. '
+             'Links open Simplifier.'))
+    out.append(f'<p class="icu-note"><b>{t2}</b><br>{note}</p>')
+    out.append('<div class="icu-acc isik">')
+    generics = sorted(i for i in isik if i.endswith('-generisch')
+                      or i == 'sd-mii-icu-monitoring-und-vitaldaten')
+    koerpert = sorted(i for i in isik
+                      if ('koerpertemperatur' in i or 'koerperkerntemperatur' in i)
+                      and i not in generics)
     rest = sorted(i for i in isik if i not in generics and i not in koerpert)
-    groups = [
-        ('Generische Profile', 'Generic profiles', sorted(generics)),
-        ('Monitoring-Ausprägungen', 'Monitoring specialisations', rest),
-        ('Körpertemperatur', 'Body temperature', koerpert),
-    ]
-    for de_t, en_t, members in groups:
+    groups = [('Generische Profile', 'Generic profiles', generics, ()),
+              ('Monitoring- und Vitaldaten-Auspr&auml;gungen',
+               'Monitoring and vital sign specialisations', rest, ()),
+              ('K&ouml;rpertemperatur', 'Body temperature', koerpert,
+               ('Koerpertemperatur', 'Koerperkerntemperatur'))]
+    for de_t, en_t, members, drop in groups:
         title = de_t if lang == 'de' else en_t
-        out.append(f'<div class="grp"><h5>{html.escape(title)} '
-                   f'({len(members)})</h5>')
+        out.append('<details>')
+        out.append(f'<summary>{title}<span class="cnt">{len(members)}</span>'
+                   f'</summary><div class="body"><div class="items">')
         for pid in members:
             rt, ptitle, url = isik[pid]
-            lbl = label_of(ptitle, ['SD MII ICU '])
-            href = f'https://simplifier.net/resolve?canonical={url}'
-            out.append(chip(href, COLORS.get(rt, '#EDEDED'), lbl, tip=url))
-        out.append('</div>')
-    out.append('</div></div>')
-    leg = ''.join(f'<span style="background:{c}">{t}</span>'
-                  for t, c in COLORS.items())
-    extern = ('amber = extern gehostet (Links öffnen Simplifier)'
-              if lang == 'de' else 'amber = externally hosted (links open Simplifier)')
-    out.append(f'<div class="icu-legend">{leg} &nbsp; {html.escape(extern)}</div>')
+            out.append(f'<a href="https://simplifier.net/resolve?canonical={url}">'
+                       f'{html.escape(short(ptitle, drop))}</a>')
+        out.append('</div></div></details>')
+    out.append('</div>')
     return '\n'.join(out), covered
 
 

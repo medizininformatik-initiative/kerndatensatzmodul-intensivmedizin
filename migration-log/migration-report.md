@@ -103,6 +103,9 @@ Es existiert keine publizierte Guide-Version; der Harvest lief per User-Entschei
 **REV-6 — Template-Stub-Seiten (Lücken, keine Fehler)** · Gate B
 Ohne Quell-Inhalt, Template-Scaffold mit TODO-Boxen: `capability-statements.md`, `examples.md`, `downloads.md`, `version-history.md`, `search-parameters.md` (M9 KEEP, 11 SPs — Banner entfernt, Inhalt = Scaffold), `guidance.md` (nur Szenarien-Text), `researcher-guidance` u. a. wurden entfernt (M9). Quell-Lücke, kein Migrationstask (Guardrail: keine Domäneninhalte erfinden).
 
+**REV-7 — Profiltitel in Ersatzschreibung (ae/oe/ue)** · niedrig · Gate B — **Befund, keine Änderung**
+28 der 95 Profile tragen quellseitig `Title:` ohne echte Umlaute ("Bilanz Ausfuhr Gallenfluessigkeit", "MUV Koerperlaenge", "Venoeser Druck" …); 0 Profile haben Umlaute im Titel. Ursache: die Titel wurden aus den ASCII-IDs abgeleitet. Sichtbar überall, wo der Publisher Titel rendert (Artefaktseiten, Artefakt-Übersicht, Breadcrumbs, Profilübersicht). **Die Migration ändert daran nichts** (Modul-Quellcode, User-Entscheid 2026-08-28: so belassen). Falls das Team es später korrigieren will: nur die `Title:`-Zeilen der 28 FSH-Dateien; IDs, Canonicals und Dateinamen bleiben ASCII.
+
 ## ③ QA-Triage (was der Build sagt, wessen Problem es ist)
 
 **Baseline (belegt):** Die Quelle wurde nie mit dem IG Publisher gebaut (Simplifier-only). Ersatz-Belege: (1) master-SUSHI mit identischer Toolchain = 3 Errors (gleicher ISiK-Parent), run.log `5.2 qa-baseline`; (2) **GitHub-CI „CI (FHIR Validation)" auf master = FAILURE** in allen jüngsten Läufen (05.–27.08.2026), run.log `5.6 qa-baseline-ci`; (3) die beanstandeten Artefakte liegen unverändert im publizierten Paket 2026.0.2 (`package-identity`-Lauf). **Messlatte „nicht schlechter als Quelle": erfüllt.**

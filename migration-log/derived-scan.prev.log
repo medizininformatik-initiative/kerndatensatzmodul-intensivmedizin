@@ -1,2 +1,2 @@
-2026-08-27T18:14:32Z  INFO   11  derived-scan  params  target=. out=migration-log/derived-content.tsv markdown=no
-2026-08-27T18:14:32Z  INFO   11  derived-scan  result  files=170 markers=26 gates=A:0,B:2,C:24 kinds=bridge:2,no-source:24 langs=default,de findings=0 (none) out=migration-log/derived-content.tsv exit=0
+2026-08-28T12:00:28Z  INFO   11  derived-scan  params  target=. out=migration-log/derived-content.tsv markdown=no
+2026-08-28T12:00:28Z  INFO   11  derived-scan  result  files=170 markers=34 gates=A:0,B:10,C:24 kinds=bridge:2,no-source:24,suggestion:8 langs=default,de findings=0 (none) out=migration-log/derived-content.tsv exit=0
