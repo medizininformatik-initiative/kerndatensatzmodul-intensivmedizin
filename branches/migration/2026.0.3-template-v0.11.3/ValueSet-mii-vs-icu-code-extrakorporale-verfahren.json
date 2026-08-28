@@ -1,0 +1,236 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-icu-code-extrakorporale-verfahren",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-code-extrakorporale-verfahren</b></p><a name=\"mii-vs-icu-code-extrakorporale-verfahren\"> </a><a name=\"hcmii-vs-icu-code-extrakorporale-verfahren\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/265764009\">265764009</a></td><td>Renal dialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/341939001\">341939001</a></td><td>Extracorporeal hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/127788007\">127788007</a></td><td>Apheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233572003\">233572003</a></td><td>Extracorporeal gas exchange (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/302497006\">302497006</a></td><td>Hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233586004\">233586004</a></td><td>Hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233581009\">233581009</a></td><td>Hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182750009\">182750009</a></td><td>Ultrafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/714749008\">714749008</a></td><td>Continuous renal replacement therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233573008\">233573008</a></td><td>Extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233578004\">233578004</a></td><td>Continuous hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233575001\">233575001</a></td><td>Intermittent hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233588003\">233588003</a></td><td>Continuous hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233583007\">233583007</a></td><td>Continuous hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233594006\">233594006</a></td><td>Lipopheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/72541002\">72541002</a></td><td>Plateletpheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233574002\">233574002</a></td><td>Extracorporeal carbon dioxide removal (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/786452006\">786452006</a></td><td>Arteriovenous extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/786451004\">786451004</a></td><td>Venoarterial extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/786453001\">786453001</a></td><td>Venovenous extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233579007\">233579007</a></td><td>Continuous arteriovenous hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233580005\">233580005</a></td><td>Continuous venovenous hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708932005\">708932005</a></td><td>Emergency hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/427053002\">427053002</a></td><td>Extracorporeal albumin hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/57274006\">57274006</a></td><td>Initial hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233577009\">233577009</a></td><td>Intermittent hemodialysis with continuous ultrafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233576000\">233576000</a></td><td>Intermittent hemodialysis with sequential ultrafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/11932001\">11932001</a></td><td>Stabilizing hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/698074000\">698074000</a></td><td>Sustained low-efficiency dialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233589006\">233589006</a></td><td>Continuous arteriovenous hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233590002\">233590002</a></td><td>Continuous venovenous hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708933000\">708933000</a></td><td>Emergency hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233587008\">233587008</a></td><td>Intermittent hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708930002\">708930002</a></td><td>Maintenance hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233584001\">233584001</a></td><td>Continuous arteriovenous hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233585000\">233585000</a></td><td>Continuous venovenous hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/715743002\">715743002</a></td><td>Emergency hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233582002\">233582002</a></td><td>Intermittent hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708934006\">708934006</a></td><td>Maintenance hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/14130001000004103\">14130001000004103</a></td><td>Aquapheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182749009\">182749009</a></td><td>Extracorporeal blood irradiation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/438839005\">438839005</a></td><td>Erythrocytapheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/83794005\">83794005</a></td><td>Extracorporeal photopheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/77257005\">77257005</a></td><td>Leukopheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/448955002\">448955002</a></td><td>Low density lipoprotein apheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/20720000\">20720000</a></td><td>Plasmapheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233564000\">233564000</a></td><td>Platelet apheresis using human leukocyte antigen matched donors (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233565004\">233565004</a></td><td>Platelet apheresis using random donors (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/225067007\">225067007</a></td><td>Therapeutic plasma exchange (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/19647005\">19647005</a></td><td>Therapeutic plasmapheresis using plasma as the major replacement fluid (procedure)</td></tr></table></li></ul></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-code-extrakorporale-verfahren</b></p><a name=\"de-mii-vs-icu-code-extrakorporale-verfahren\"> </a><a name=\"de-hcmii-vs-icu-code-extrakorporale-verfahren\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/265764009\">265764009</a></td><td>Renal dialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/341939001\">341939001</a></td><td>Extracorporeal hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/127788007\">127788007</a></td><td>Apheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233572003\">233572003</a></td><td>Extracorporeal gas exchange (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/302497006\">302497006</a></td><td>Hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233586004\">233586004</a></td><td>Hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233581009\">233581009</a></td><td>Hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182750009\">182750009</a></td><td>Ultrafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/714749008\">714749008</a></td><td>Continuous renal replacement therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233573008\">233573008</a></td><td>Extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233578004\">233578004</a></td><td>Continuous hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233575001\">233575001</a></td><td>Intermittent hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233588003\">233588003</a></td><td>Continuous hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233583007\">233583007</a></td><td>Continuous hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233594006\">233594006</a></td><td>Lipopheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/72541002\">72541002</a></td><td>Plateletpheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233574002\">233574002</a></td><td>Extracorporeal carbon dioxide removal (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/786452006\">786452006</a></td><td>Arteriovenous extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/786451004\">786451004</a></td><td>Venoarterial extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/786453001\">786453001</a></td><td>Venovenous extracorporeal membrane oxygenation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233579007\">233579007</a></td><td>Continuous arteriovenous hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233580005\">233580005</a></td><td>Continuous venovenous hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708932005\">708932005</a></td><td>Emergency hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/427053002\">427053002</a></td><td>Extracorporeal albumin hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/57274006\">57274006</a></td><td>Initial hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233577009\">233577009</a></td><td>Intermittent hemodialysis with continuous ultrafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233576000\">233576000</a></td><td>Intermittent hemodialysis with sequential ultrafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/11932001\">11932001</a></td><td>Stabilizing hemodialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/698074000\">698074000</a></td><td>Sustained low-efficiency dialysis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233589006\">233589006</a></td><td>Continuous arteriovenous hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233590002\">233590002</a></td><td>Continuous venovenous hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708933000\">708933000</a></td><td>Emergency hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233587008\">233587008</a></td><td>Intermittent hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708930002\">708930002</a></td><td>Maintenance hemodiafiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233584001\">233584001</a></td><td>Continuous arteriovenous hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233585000\">233585000</a></td><td>Continuous venovenous hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/715743002\">715743002</a></td><td>Emergency hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233582002\">233582002</a></td><td>Intermittent hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708934006\">708934006</a></td><td>Maintenance hemofiltration (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/14130001000004103\">14130001000004103</a></td><td>Aquapheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182749009\">182749009</a></td><td>Extracorporeal blood irradiation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/438839005\">438839005</a></td><td>Erythrocytapheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/83794005\">83794005</a></td><td>Extracorporeal photopheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/77257005\">77257005</a></td><td>Leukopheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/448955002\">448955002</a></td><td>Low density lipoprotein apheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/20720000\">20720000</a></td><td>Plasmapheresis (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233564000\">233564000</a></td><td>Platelet apheresis using human leukocyte antigen matched donors (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/233565004\">233565004</a></td><td>Platelet apheresis using random donors (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/225067007\">225067007</a></td><td>Therapeutic plasma exchange (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/19647005\">19647005</a></td><td>Therapeutic plasmapheresis using plasma as the major replacement fluid (procedure)</td></tr></table></li></ul></div></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Extrakorporale_Verfahren",
+  "title" : "MII VS ICU Code Extrakorporale Verfahren",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-11",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Mögliche Codes für extrakorporale Verfahren. Für die Einteilung und Interpretation in Bezug auf unterschiedliche Detail-Level beachte den zugehörigen implementationguide.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "265764009",
+        "display" : "Renal dialysis (procedure)"
+      },
+      {
+        "code" : "341939001",
+        "display" : "Extracorporeal hemofiltration (procedure)"
+      },
+      {
+        "code" : "127788007",
+        "display" : "Apheresis (procedure)"
+      },
+      {
+        "code" : "233572003",
+        "display" : "Extracorporeal gas exchange (procedure)"
+      },
+      {
+        "code" : "302497006",
+        "display" : "Hemodialysis (procedure)"
+      },
+      {
+        "code" : "233586004",
+        "display" : "Hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "233581009",
+        "display" : "Hemofiltration (procedure)"
+      },
+      {
+        "code" : "182750009",
+        "display" : "Ultrafiltration (procedure)"
+      },
+      {
+        "code" : "714749008",
+        "display" : "Continuous renal replacement therapy (procedure)"
+      },
+      {
+        "code" : "233573008",
+        "display" : "Extracorporeal membrane oxygenation (procedure)"
+      },
+      {
+        "code" : "233578004",
+        "display" : "Continuous hemodialysis (procedure)"
+      },
+      {
+        "code" : "233575001",
+        "display" : "Intermittent hemodialysis (procedure)"
+      },
+      {
+        "code" : "233588003",
+        "display" : "Continuous hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "233583007",
+        "display" : "Continuous hemofiltration (procedure)"
+      },
+      {
+        "code" : "233594006",
+        "display" : "Lipopheresis (procedure)"
+      },
+      {
+        "code" : "72541002",
+        "display" : "Plateletpheresis (procedure)"
+      },
+      {
+        "code" : "233574002",
+        "display" : "Extracorporeal carbon dioxide removal (procedure)"
+      },
+      {
+        "code" : "786452006",
+        "display" : "Arteriovenous extracorporeal membrane oxygenation (procedure)"
+      },
+      {
+        "code" : "786451004",
+        "display" : "Venoarterial extracorporeal membrane oxygenation (procedure)"
+      },
+      {
+        "code" : "786453001",
+        "display" : "Venovenous extracorporeal membrane oxygenation (procedure)"
+      },
+      {
+        "code" : "233579007",
+        "display" : "Continuous arteriovenous hemodialysis (procedure)"
+      },
+      {
+        "code" : "233580005",
+        "display" : "Continuous venovenous hemodialysis (procedure)"
+      },
+      {
+        "code" : "708932005",
+        "display" : "Emergency hemodialysis (procedure)"
+      },
+      {
+        "code" : "427053002",
+        "display" : "Extracorporeal albumin hemodialysis (procedure)"
+      },
+      {
+        "code" : "57274006",
+        "display" : "Initial hemodialysis (procedure)"
+      },
+      {
+        "code" : "233577009",
+        "display" : "Intermittent hemodialysis with continuous ultrafiltration (procedure)"
+      },
+      {
+        "code" : "233576000",
+        "display" : "Intermittent hemodialysis with sequential ultrafiltration (procedure)"
+      },
+      {
+        "code" : "11932001",
+        "display" : "Stabilizing hemodialysis (procedure)"
+      },
+      {
+        "code" : "698074000",
+        "display" : "Sustained low-efficiency dialysis (procedure)"
+      },
+      {
+        "code" : "233589006",
+        "display" : "Continuous arteriovenous hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "233590002",
+        "display" : "Continuous venovenous hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "708933000",
+        "display" : "Emergency hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "233587008",
+        "display" : "Intermittent hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "708930002",
+        "display" : "Maintenance hemodiafiltration (procedure)"
+      },
+      {
+        "code" : "233584001",
+        "display" : "Continuous arteriovenous hemofiltration (procedure)"
+      },
+      {
+        "code" : "233585000",
+        "display" : "Continuous venovenous hemofiltration (procedure)"
+      },
+      {
+        "code" : "715743002",
+        "display" : "Emergency hemofiltration (procedure)"
+      },
+      {
+        "code" : "233582002",
+        "display" : "Intermittent hemofiltration (procedure)"
+      },
+      {
+        "code" : "708934006",
+        "display" : "Maintenance hemofiltration (procedure)"
+      },
+      {
+        "code" : "14130001000004103",
+        "display" : "Aquapheresis (procedure)"
+      },
+      {
+        "code" : "182749009",
+        "display" : "Extracorporeal blood irradiation (procedure)"
+      },
+      {
+        "code" : "438839005",
+        "display" : "Erythrocytapheresis (procedure)"
+      },
+      {
+        "code" : "83794005",
+        "display" : "Extracorporeal photopheresis (procedure)"
+      },
+      {
+        "code" : "77257005",
+        "display" : "Leukopheresis (procedure)"
+      },
+      {
+        "code" : "448955002",
+        "display" : "Low density lipoprotein apheresis (procedure)"
+      },
+      {
+        "code" : "20720000",
+        "display" : "Plasmapheresis (procedure)"
+      },
+      {
+        "code" : "233564000",
+        "display" : "Platelet apheresis using human leukocyte antigen matched donors (procedure)"
+      },
+      {
+        "code" : "233565004",
+        "display" : "Platelet apheresis using random donors (procedure)"
+      },
+      {
+        "code" : "225067007",
+        "display" : "Therapeutic plasma exchange (procedure)"
+      },
+      {
+        "code" : "19647005",
+        "display" : "Therapeutic plasmapheresis using plasma as the major replacement fluid (procedure)"
+      }]
+    }]
+  }
+}

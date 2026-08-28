@@ -1,0 +1,1071 @@
+[{
+  "id" : "mii-ig-icu-de-v2026",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
+  "version" : "2026.0.3",
+  "name" : "MII_IG_ICU"
+},
+{
+  "id" : "mii-sp-icu-device-property-type",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-device-property-type",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Device_Property_Type"
+},
+{
+  "id" : "mii-sp-icu-devicemetric-source",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-devicemetric-source",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_DeviceMetric_Source"
+},
+{
+  "id" : "mii-sp-icu-observation-bodysite",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-bodysite",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_BodySite"
+},
+{
+  "id" : "mii-sp-icu-observation-component-interpretation",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-component-interpretation",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_Component_Interpretation"
+},
+{
+  "id" : "mii-sp-icu-observation-component-referencerange",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-component-referencerange",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_Component_ReferenceRange"
+},
+{
+  "id" : "mii-sp-icu-observation-interpretation",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-interpretation",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_Interpretation"
+},
+{
+  "id" : "mii-sp-icu-observation-issued",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-issued",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_Issued"
+},
+{
+  "id" : "mii-sp-icu-observation-referencerange",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-referencerange",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_ReferenceRange"
+},
+{
+  "id" : "mii-sp-icu-observation-referencerange-high",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-referencerange-high",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_ReferenceRange_High"
+},
+{
+  "id" : "mii-sp-icu-observation-referencerange-low",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-referencerange-low",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Observation_ReferenceRange_Low"
+},
+{
+  "id" : "mii-sp-icu-procedure-recorder",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-procedure-recorder",
+  "version" : "2026.0.3",
+  "name" : "MII_SP_ICU_Procedure_Recorder"
+},
+{
+  "id" : "mii-lm-intensivmedizin",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin",
+  "version" : "2026.0.3",
+  "name" : "MII_LM_ICU"
+},
+{
+  "id" : "mii-pr-icu-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-bilanz",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-blutverlust",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-drainage-generisch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-magensonde",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-op-drainage",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-stuhlgang",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-urin",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Urin"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ausfuhr-wunddrainage",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-muttermilch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Muttermilch"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-spendermilch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Spendermilch"
+},
+{
+  "id" : "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit"
+},
+{
+  "id" : "mii-pr-icu-device",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Device"
+},
+{
+  "id" : "mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren"
+},
+{
+  "id" : "mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-ect-arterieller-druck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-arterieller-druck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Arterieller_Druck"
+},
+{
+  "id" : "mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet"
+},
+{
+  "id" : "mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch"
+},
+{
+  "id" : "mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch"
+},
+{
+  "id" : "mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch"
+},
+{
+  "id" : "mii-pr-icu-ect-dauer-haemodialysesitzung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Dauer_Haemodialysesitzung"
+},
+{
+  "id" : "mii-pr-icu-ect-gasfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-gasfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Gasfluss"
+},
+{
+  "id" : "mii-pr-icu-ect-haemodialyse-blutfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Haemodialyse_Blutfluss"
+},
+{
+  "id" : "mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren"
+},
+{
+  "id" : "mii-pr-icu-ect-substituatfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Substituatfluss"
+},
+{
+  "id" : "mii-pr-icu-ect-substituatvolumen",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatvolumen",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Substituatvolumen"
+},
+{
+  "id" : "mii-pr-icu-ect-venoeser-druck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_ECT_Venoeser_Druck"
+},
+{
+  "id" : "mii-pr-icu-extrakorporales-verfahren",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Extrakorporales_Verfahren"
+},
+{
+  "id" : "mii-pr-icu-muv-arterieller-blutdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck"
+},
+{
+  "id" : "mii-pr-icu-muv-atemfrequenz",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Atemfrequenz"
+},
+{
+  "id" : "mii-pr-icu-muv-herzfrequenz",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Herzfrequenz"
+},
+{
+  "id" : "mii-pr-icu-muv-koerpergewicht",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Koerpergewicht"
+},
+{
+  "id" : "mii-pr-icu-muv-koerpergroesse",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Koerpergroesse"
+},
+{
+  "id" : "mii-pr-icu-muv-koerperlaenge",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Koerperlaenge"
+},
+{
+  "id" : "mii-pr-icu-muv-kopfumfang",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Kopfumfang"
+},
+{
+  "id" : "mii-pr-icu-muv-zerebraler-perfusionsdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck"
+},
+{
+  "id" : "mii-pr-icu-parameter-von-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Parameter_Von_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-parameter-von-extrakorporalen-verfahren",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren"
+},
+{
+  "id" : "mii-pr-icu-score",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score"
+},
+{
+  "id" : "mii-pr-icu-score-cam-icu",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_CAM_ICU"
+},
+{
+  "id" : "mii-pr-icu-score-faces-pain-scale-revised",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_Faces_Pain_Scale_Revised"
+},
+{
+  "id" : "mii-pr-icu-score-gcs",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_GCS"
+},
+{
+  "id" : "mii-pr-icu-score-icdsc",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_ICDSC"
+},
+{
+  "id" : "mii-pr-icu-score-numerische-ratingskala",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_Numerische_Ratingskala"
+},
+{
+  "id" : "mii-pr-icu-score-rass",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_RASS"
+},
+{
+  "id" : "mii-pr-icu-score-sofa",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_SOFA"
+},
+{
+  "id" : "mii-pr-icu-score-visuelle-analogskala",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_Visuelle_Analogskala"
+},
+{
+  "id" : "mii-pr-icu-score-wong-baker-faces-schmerzskala",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala"
+},
+{
+  "id" : "mii-pr-icu-score-zopa",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_ZOPA"
+},
+{
+  "id" : "mii-pr-icu-untersuchung-pupillenbefund",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Untersuchung_Pupillenbefund"
+},
+{
+  "id" : "mii-pr-icu-untersuchung-pupillenform",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Untersuchung_Pupillenform"
+},
+{
+  "id" : "mii-pr-icu-untersuchung-pupillengroesse",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Untersuchung_Pupillengroesse"
+},
+{
+  "id" : "mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt"
+},
+{
+  "id" : "mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt"
+},
+{
+  "id" : "mii-pr-icu-untersuchung-pupillensymmetrie",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Untersuchung_Pupillensymmetrie"
+},
+{
+  "id" : "mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss"
+},
+{
+  "id" : "mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss"
+},
+{
+  "id" : "mii-pr-icu-vent-atemzugvolumen-einstellung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung"
+},
+{
+  "id" : "mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-vent-beatmungszeit-hohem-druck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck"
+},
+{
+  "id" : "mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck"
+},
+{
+  "id" : "mii-pr-icu-vent-druckdifferenz-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Druckdifferenz_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-vent-dynamische-kompliance",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Dynamische_Kompliance"
+},
+{
+  "id" : "mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss"
+},
+{
+  "id" : "mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-vent-einstellung-einatmungszeit-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-exspiratorischer-gasfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss"
+},
+{
+  "id" : "mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-horowitz-in-arteriellem-blut",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut"
+},
+{
+  "id" : "mii-pr-icu-vent-inspiratorische-sauerstofffraktion",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion"
+},
+{
+  "id" : "mii-pr-icu-vent-inspiratorischer-gasfluss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Inspiratorischer_Gasfluss"
+},
+{
+  "id" : "mii-pr-icu-vent-maximaler-beatmungsdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet"
+},
+{
+  "id" : "mii-pr-icu-vent-mittlerer-beatmungsdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-plateau-beatmungsdruck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Plateau_Beatmungsdruck"
+},
+{
+  "id" : "mii-pr-icu-vent-positiv-endexpiratorischer-druck",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck"
+},
+{
+  "id" : "mii-pr-icu-vent-spontane-atemfrequenz-beatmet",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet"
+},
+{
+  "id" : "mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet"
+},
+{
+  "id" : "mii-pr-icu-vent-spontanes-atemzugvolumen",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen"
+},
+{
+  "id" : "mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen"
+},
+{
+  "id" : "mii-pr-icu-vent-unterstuetzungsdruck-beatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung"
+},
+{
+  "id" : "mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung"
+},
+{
+  "id" : "mii-vs-icu-cam-icu-result",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_CAM_ICU_Result"
+},
+{
+  "id" : "mii-vs-icu-delirium-interpretation",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Delirium_Interpretation"
+},
+{
+  "id" : "mii-vs-icu-body-site-observation-beatmung",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_BodySite_Observation_Beatmung"
+},
+{
+  "id" : "mii-vs-icu-body-site-observation-blutdruck",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-blutdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_BodySite_Observation_Blutdruck"
+},
+{
+  "id" : "mii-vs-icu-body-site-observation-extrakorporale-verfahren",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren"
+},
+{
+  "id" : "mii-vs-icu-body-site-observation-monitoring-und-vitaldaten",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten"
+},
+{
+  "id" : "mii-vs-icu-bodysite-observation-pupillenbefund",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_BodySite_Observation_Pupillenbefund"
+},
+{
+  "id" : "mii-vs-icu-category-observation-bilanzen-hl7",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Category_Observation_Bilanzen_HL7"
+},
+{
+  "id" : "mii-vs-icu-category-procedure-beatmung-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED"
+},
+{
+  "id" : "mii-vs-icu-code-extrakorporale-verfahren",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Extrakorporale_Verfahren"
+},
+{
+  "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073"
+},
+{
+  "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-loinc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC"
+},
+{
+  "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED"
+},
+{
+  "id" : "mii-vs-icu-code-observation-beatmung-iso11073",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Beatmung_ISO11073"
+},
+{
+  "id" : "mii-vs-icu-code-observation-beatmung-loinc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Beatmung_LOINC"
+},
+{
+  "id" : "mii-vs-icu-code-observation-beatmung-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Beatmung_SNOMED"
+},
+{
+  "id" : "mii-vs-icu-code-observation-bilanzen-iso11073",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Bilanzen_ISO11073"
+},
+{
+  "id" : "mii-vs-icu-code-observation-bilanzen-loinc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Bilanzen_LOINC"
+},
+{
+  "id" : "mii-vs-icu-code-observation-bilanzen-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Bilanzen_SNOMED"
+},
+{
+  "id" : "mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073"
+},
+{
+  "id" : "mii-vs-icu-code-observation-extrakorporale-verfahren-loinc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC"
+},
+{
+  "id" : "mii-vs-icu-code-observation-extrakorporale-verfahren-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED"
+},
+{
+  "id" : "mii-vs-icu-code-observation-pupillengroesse",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Pupillengroesse"
+},
+{
+  "id" : "mii-vs-icu-code-observation-pupillenlichtreaktion",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"
+},
+{
+  "id" : "mii-vs-icu-code-observation-pupillensymmetrie",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Pupillensymmetrie"
+},
+{
+  "id" : "mii-vs-icu-code-oservation-pupillenform-loinc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Observation_Pupillenform_LOINC"
+},
+{
+  "id" : "mii-vs-icu-code-procedure-beatmung-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Procedure_Beatmung_SNOMED"
+},
+{
+  "id" : "mii-vs-icu-component-gcs-eyes",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Component_GCS_Eyes"
+},
+{
+  "id" : "mii-vs-icu-component-gcs-motor",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Component_GCS_Motor"
+},
+{
+  "id" : "mii-vs-icu-component-gcs-verbal",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Component_GCS_Verbal"
+},
+{
+  "id" : "mii-vs-icu-devicemetric-extrakorporale-verfahren",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren"
+},
+{
+  "id" : "mii-vs-icu-method-observation-blutdruck",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-method-observation-blutdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Method_Observation_Blutdruck"
+},
+{
+  "id" : "mii-vs-icu-score-rass",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Score_RASS"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-ucum-beats-per-minute",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_UCUM_beats_per_minute"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-ucum-breaths-per-minute",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-breaths-per-minute",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_UCUM_breaths_per_minute"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-ucum-l-per-minute",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-l-per-minute",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-ucum-milliliter",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_UCUM_milliliter"
+},
+{
+  "id" : "mii-vs-icu-unit-equivalent-percent-1",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-percent-1",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Unit_equivalent_percent_1"
+},
+{
+  "id" : "mii-vs-icu-present-absent",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Present_Absent"
+},
+{
+  "id" : "mii-vs-icu-score-category",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-category",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Score_Category"
+},
+{
+  "id" : "mii-vs-icu-score-loinc",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Score_LOINC"
+},
+{
+  "id" : "mii-vs-icu-score-snomed",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Score_SNOMED"
+},
+{
+  "id" : "mii-cps-icu-capabilitystatement",
+  "type" : "CapabilityStatement",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata",
+  "version" : "2026.0.3",
+  "name" : "MII_CPS_Intensivmedizin_CapabilityStatement"
+}]

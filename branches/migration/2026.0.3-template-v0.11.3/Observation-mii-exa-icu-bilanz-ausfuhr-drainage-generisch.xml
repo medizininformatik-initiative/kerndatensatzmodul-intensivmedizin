@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-bilanz-ausfuhr-drainage-generisch"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-bilanz-ausfuhr-drainage-generisch</b></p><a name="mii-exa-icu-bilanz-ausfuhr-drainage-generisch"> </a><a name="hcmii-exa-icu-bilanz-ausfuhr-drainage-generisch"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html">MII PR ICU Bilanz Ausfuhr Drainage Generisch</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html exam}, {http://snomed.info/sct 364396009}">Fluid balance observable (observable entity)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 251843005}, {urn:iso:std:iso:11073:10101 157740}">Fluid output from drain (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>value</b>: 200.0 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeml = 'ml')</span></p></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-bilanz-ausfuhr-drainage-generisch</b></p><a name="de-mii-exa-icu-bilanz-ausfuhr-drainage-generisch"> </a><a name="de-hcmii-exa-icu-bilanz-ausfuhr-drainage-generisch"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html">MII PR ICU Bilanz Ausfuhr Drainage Generisch</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html exam}, {http://snomed.info/sct 364396009}">Fluid balance observable (observable entity)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 251843005}, {urn:iso:std:iso:11073:10101 157740}">Fluid output from drain (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>value</b>: 200.0 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeml = 'ml')</span></p></div></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"/>
+      <code value="exam"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="364396009"/>
+      <display value="Fluid balance observable (observable entity)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="251843005"/>
+      <display value="Fluid output from drain (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="157740"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2019-12-23T09:30:10+01:00"/>
+    <end value="2019-12-24T09:30:10+01:00"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="200.0"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="ml"/>
+  </valueQuantity>
+</Observation>

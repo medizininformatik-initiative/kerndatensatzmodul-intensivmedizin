@@ -1,0 +1,274 @@
+# MII PR ICU Score RASS - MII IG ICU v2026.0.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII PR ICU Score RASS**
+
+## Resource Profile: MII PR ICU Score RASS ( Experimental ) 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass | *Version*:2026.0.3 |
+| Draft as of 2025-12-15 | *Computable Name*:MII_PR_ICU_Score_RASS |
+
+**Usages:**
+
+* Examples for this Profile: [Observation/mii-exa-icu-score-rass](Observation-mii-exa-icu-score-rass.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-score-rass.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots, and their representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-rass.csv), [Excel](../StructureDefinition-mii-pr-icu-score-rass.xlsx), [Schematron](../StructureDefinition-mii-pr-icu-score-rass.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-pr-icu-score-rass",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_RASS",
+  "title" : "MII PR ICU Score RASS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-12-15",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "mii-icu-val-xor-dar",
+        "severity" : "error",
+        "human" : "Resource must have either value or dataAbsentReason.",
+        "expression" : "value.exists() xor dataAbsentReason.exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"
+      }]
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.category:exam",
+      "path" : "Observation.category",
+      "sliceName" : "exam",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "exam",
+          "display" : "Exam"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.system",
+      "path" : "Observation.code.coding.system",
+      "fixedUri" : "http://snomed.info/sct"
+    },
+    {
+      "id" : "Observation.code.coding.code",
+      "path" : "Observation.code.coding.code",
+      "comment" : "Instrument/Observation type is represented using SNOMED CT observable entity. Answer options are represented using LOINC Answer List LL6536-8. Ordinal score is not exchanged; implementers may derive it internally.",
+      "fixedCode" : "1345050000"
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "patternString" : "Richmond Agitation Sedation Scale score (observable entity)"
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "short" : "Patient being assessed",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.encounter",
+      "path" : "Observation.encounter",
+      "short" : "Encounter during which score was assessed",
+      "definition" : "The encounter context in which the score was determined",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]",
+      "path" : "Observation.effective[x]",
+      "short" : "Time of score assessment",
+      "definition" : "The time or time period when the score was assessed",
+      "min" : 1,
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.issued",
+      "path" : "Observation.issued",
+      "short" : "Date/Time this observation was made available",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.performer",
+      "path" : "Observation.performer",
+      "short" : "Who performed the score assessment",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "short" : "RASS Value",
+      "comment" : "Answer is a LOINC LA-code from the RASS Answer List (LL6536-8).",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"
+      }
+    },
+    {
+      "id" : "Observation.value[x].coding",
+      "path" : "Observation.value[x].coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.value[x].coding:Loinc",
+      "path" : "Observation.value[x].coding",
+      "sliceName" : "Loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x].coding:Loinc.system",
+      "path" : "Observation.value[x].coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x].coding:Loinc.code",
+      "path" : "Observation.value[x].coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason",
+      "path" : "Observation.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation",
+      "path" : "Observation.interpretation",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.note",
+      "path" : "Observation.note",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite",
+      "path" : "Observation.bodySite",
+      "max" : "0"
+    },
+    {
+      "id" : "Observation.specimen",
+      "path" : "Observation.specimen",
+      "max" : "0"
+    }]
+  }
+}
+
+```

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"/>
+  <meta>
+    <profile value="https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch</b></p><a name="mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"> </a><a name="hcmii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch">SD MII ICU Sonstige pulsatile Druecke Generisch</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 75367002}">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:std:iso:11073:10101 150017}">Systolic blood pressure</span></p><p><b>value</b>: 120 millimeter Mercury column<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:std:iso:11073:10101 150019}">Mean blood pressure</span></p><p><b>value</b>: 90 millimeter Mercury column<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:std:iso:11073:10101 150018}">Diastolic blood pressure</span></p><p><b>value</b>: 80 millimeter Mercury column<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch</b></p><a name="de-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"> </a><a name="de-hcmii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&amp;canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch">SD MII ICU Sonstige pulsatile Druecke Generisch</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 75367002}">Blood pressure (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 271649006}, {urn:std:iso:11073:10101 150017}">Systolic blood pressure</span></p><p><b>value</b>: 120 millimeter Mercury column<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8478-0}, {http://snomed.info/sct 6797001}, {urn:std:iso:11073:10101 150019}">Mean blood pressure</span></p><p><b>value</b>: 90 millimeter Mercury column<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 271650006}, {urn:std:iso:11073:10101 150018}">Diastolic blood pressure</span></p><p><b>value</b>: 80 millimeter Mercury column<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="75367002"/>
+      <display value="Blood pressure (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <effectiveDateTime value="2019-12-23T09:30:10+01:00"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271649006"/>
+        <display value="Systolic blood pressure (observable entity)"/>
+      </coding>
+      <coding>
+        <system value="urn:std:iso:11073:10101"/>
+        <code value="150017"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="120"/>
+      <unit value="millimeter Mercury column"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8478-0"/>
+        <display value="Mean blood pressure"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="6797001"/>
+        <display value="Mean blood pressure (observable entity)"/>
+      </coding>
+      <coding>
+        <system value="urn:std:iso:11073:10101"/>
+        <code value="150019"/>
+        <display value="Mean blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="90"/>
+      <unit value="millimeter Mercury column"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271650006"/>
+        <display value="Diastolic blood pressure (observable entity)"/>
+      </coding>
+      <coding>
+        <system value="urn:std:iso:11073:10101"/>
+        <code value="150018"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="80"/>
+      <unit value="millimeter Mercury column"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+</Observation>

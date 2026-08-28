@@ -1,0 +1,79 @@
+# mii-exa-icu-bilanz-ausfuhr-drainage-generisch - MII IG ICU v2026.0.3
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **mii-exa-icu-bilanz-ausfuhr-drainage-generisch**
+
+## Observation: mii-exa-icu-bilanz-ausfuhr-drainage-generisch
+
+-------
+
+**German**
+
+-------
+
+Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.md)
+
+**status**: Final
+
+**category**: Fluid balance observable (observable entity)
+
+**code**: Fluid output from drain (observable entity)
+
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+
+**effective**: 2019-12-23 09:30:10+0100 --> 2019-12-24 09:30:10+0100
+
+**value**: 200.0 ml (Details: UCUM codeml = 'ml')
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-bilanz-ausfuhr-drainage-generisch",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"]
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "code" : "exam"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "code" : "364396009",
+      "display" : "Fluid balance observable (observable entity)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "code" : "251843005",
+      "display" : "Fluid output from drain (observable entity)"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "157740"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/111"
+  },
+  "effectivePeriod" : {
+    "start" : "2019-12-23T09:30:10+01:00",
+    "end" : "2019-12-24T09:30:10+01:00"
+  },
+  "valueQuantity" : {
+    "value" : 200.0,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "ml"
+  }
+}
+
+```

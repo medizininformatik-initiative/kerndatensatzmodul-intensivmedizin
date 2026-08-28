@@ -1,0 +1,227 @@
+# MII VS ICU Code Monitoring und Vitaldaten SNOMED - MII IG ICU v2026.0.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII VS ICU Code Monitoring und Vitaldaten SNOMED**
+
+## ValueSet: MII VS ICU Code Monitoring und Vitaldaten SNOMED 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed | *Version*:2026.0.3 |
+| Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED |
+
+ 
+Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring. 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+No Expansion for this valueset (Unsupported Code System Version)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
+  "version" : "2026.0.3",
+  "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED",
+  "title" : "MII VS ICU Code Monitoring und Vitaldaten SNOMED",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-11",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "364075005",
+        "display" : "Heart rate (observable entity)"
+      },
+      {
+        "code" : "75367002",
+        "display" : "Blood pressure (observable entity)"
+      },
+      {
+        "code" : "271649006",
+        "display" : "Systolic blood pressure (observable entity)"
+      },
+      {
+        "code" : "6797001",
+        "display" : "Mean blood pressure (observable entity)"
+      },
+      {
+        "code" : "271650006",
+        "display" : "Diastolic blood pressure (observable entity)"
+      },
+      {
+        "code" : "71420008",
+        "display" : "Central venous pressure (observable entity)"
+      },
+      {
+        "code" : "118433006",
+        "display" : "Pulmonary artery wedge pressure (observable entity)"
+      },
+      {
+        "code" : "82799009",
+        "display" : "Cardiac output (observable entity)"
+      },
+      {
+        "code" : "54993008",
+        "display" : "Cardiac index (observable entity)"
+      },
+      {
+        "code" : "276900001",
+        "display" : "Systemic vascular Resistance index (observable entity)"
+      },
+      {
+        "code" : "276902009",
+        "display" : "Pulmonary vascular Resistance index (observable entity)"
+      },
+      {
+        "code" : "90096001",
+        "display" : "Stroke volume (observable entity)"
+      },
+      {
+        "code" : "277381004",
+        "display" : "Stroke index (observable entity)"
+      },
+      {
+        "code" : "276885007",
+        "display" : "Core body temperature (observable entity)"
+      },
+      {
+        "code" : "250844005",
+        "display" : "Intracranial pressure (observable entity)"
+      },
+      {
+        "code" : "27113001",
+        "display" : "Body weight (observable entity)"
+      },
+      {
+        "code" : "170804003",
+        "display" : "Ideal body weight (observable entity)"
+      },
+      {
+        "code" : "1153637007",
+        "display" : "Body height (observable entity)"
+      },
+      {
+        "code" : "1153605006",
+        "display" : "Body height for age percentile (observable entity)"
+      },
+      {
+        "code" : "1153592008",
+        "display" : "Weight for age percentile (observable entity)"
+      },
+      {
+        "code" : "415974002",
+        "display" : "Core body temperature measured at tympanic membrane (observable entity)"
+      },
+      {
+        "code" : "307047009",
+        "display" : "Core body temperature measured in rectum (observable entity)"
+      },
+      {
+        "code" : "431598003",
+        "display" : "Core body temperature measured in esophagus (observable entity)"
+      },
+      {
+        "code" : "698831002",
+        "display" : "Core body temperature measured in nasopharynx (observable entity)"
+      },
+      {
+        "code" : "698832009",
+        "display" : "Core body temperature measured at urinary bladder (observable entity)"
+      },
+      {
+        "code" : "364246006",
+        "display" : "Core body temperature measured vaginally (observable entity)"
+      },
+      {
+        "code" : "415882003",
+        "display" : "Estimated core body temperature measured in axillary region (observable entity)"
+      },
+      {
+        "code" : "415945006",
+        "display" : "Core body temperature measured in sublingual space (observable entity)"
+      },
+      {
+        "code" : "415929009",
+        "display" : "Estimated core body temperature measured in inguinal region (observable entity)"
+      },
+      {
+        "code" : "1222808002",
+        "display" : "Core body temperature measured in blood (observable entity)"
+      },
+      {
+        "code" : "248835004",
+        "display" : "Temperature of breast (observable entity)"
+      },
+      {
+        "code" : "364419004",
+        "display" : "Temperature of cervical spine (observable entity)"
+      },
+      {
+        "code" : "415922000",
+        "display" : "Temperature of forehead (observable entity)"
+      },
+      {
+        "code" : "250124002",
+        "display" : "Temperature of joint (observable entity)"
+      },
+      {
+        "code" : "364429006",
+        "display" : "Temperature of lumbar spine (observable entity)"
+      },
+      {
+        "code" : "364424001",
+        "display" : "Temperature of thoracic spine (observable entity)"
+      },
+      {
+        "code" : "8499008",
+        "display" : "Pulse, function (observable entity)"
+      },
+      {
+        "code" : "442476006",
+        "display" : "Arterial oxygen saturation (observable entity)"
+      },
+      {
+        "code" : "364090009",
+        "display" : "Systemic arterial pressure (observable entity)"
+      }]
+    }]
+  }
+}
+
+```

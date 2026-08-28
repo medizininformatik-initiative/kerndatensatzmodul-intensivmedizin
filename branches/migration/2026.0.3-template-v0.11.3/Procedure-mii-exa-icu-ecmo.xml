@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-ecmo"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Procedure mii-exa-icu-ecmo</b></p><a name="mii-exa-icu-ecmo"> </a><a name="hcmii-exa-icu-ecmo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 786453001}">Venovenous extracorporeal membrane oxygenation (procedure)</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>encounter</b>: Identifier: <code>http://example.com</code>/5678</p><p><b>performed</b>: 2021-12-06 00:52:00+0100 --&gt; 2021-12-06 14:34:00+0100</p></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Procedure mii-exa-icu-ecmo</b></p><a name="de-mii-exa-icu-ecmo"> </a><a name="de-hcmii-exa-icu-ecmo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 786453001}">Venovenous extracorporeal membrane oxygenation (procedure)</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>encounter</b>: Identifier: <code>http://example.com</code>/5678</p><p><b>performed</b>: 2021-12-06 00:52:00+0100 --&gt; 2021-12-06 14:34:00+0100</p></div></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+      <display value="Procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="786453001"/>
+      <display value="Venovenous extracorporeal membrane oxygenation (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <type value="Patient"/>
+    <identifier>
+      <system value="http://example.com"/>
+      <value value="1234"/>
+    </identifier>
+  </subject>
+  <encounter>
+    <type value="Encounter"/>
+    <identifier>
+      <system value="http://example.com"/>
+      <value value="5678"/>
+    </identifier>
+  </encounter>
+  <performedPeriod>
+    <start value="2021-12-06T00:52:00+01:00"/>
+    <end value="2021-12-06T14:34:00+01:00"/>
+  </performedPeriod>
+</Procedure>

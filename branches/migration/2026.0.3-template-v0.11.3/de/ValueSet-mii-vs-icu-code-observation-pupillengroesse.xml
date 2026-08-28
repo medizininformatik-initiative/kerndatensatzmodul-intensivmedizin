@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-icu-code-observation-pupillengroesse"/>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-icu-code-observation-pupillengroesse</b></p><a name="de-mii-vs-icu-code-observation-pupillengroesse"> </a><a name="de-hcmii-vs-icu-code-observation-pupillengroesse"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/420335002">420335002</a></td><td>Medium size pupil</td></tr><tr><td><a href="http://snomed.info/id/301939004">301939004</a></td><td>Constricted pupil</td></tr><tr><td><a href="http://snomed.info/id/188557000">188557000</a></td><td>Large pupil</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse"/>
+  <version value="2026.0.3"/>
+  <name value="MII_VS_ICU_Code_Observation_Pupillengroesse"/>
+  <title value="MII VS ICU Code Observation Pupillengroesse"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-16"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="420335002"/>
+        <display value="Medium size pupil"/>
+      </concept>
+      <concept>
+        <code value="301939004"/>
+        <display value="Constricted pupil"/>
+      </concept>
+      <concept>
+        <code value="188557000"/>
+        <display value="Large pupil"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

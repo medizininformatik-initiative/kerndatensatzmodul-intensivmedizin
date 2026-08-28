@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-icu-code-observation-extrakorporale-verfahren-snomed"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-icu-code-observation-extrakorporale-verfahren-snomed</b></p><a name="mii-vs-icu-code-observation-extrakorporale-verfahren-snomed"> </a><a name="hcmii-vs-icu-code-observation-extrakorporale-verfahren-snomed"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/444479000">444479000</a></td><td>Rate of blood flow through cardiovascular device (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/445940005">445940005</a></td><td>Duration of hemodialysis session (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/401000124105">401000124105</a></td><td>Duration of hemodialysis session (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/708513005">708513005</a></td><td>Substitution flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/708514004">708514004</a></td><td>Substitution volume (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/251286000">251286000</a></td><td>Extracorporeal gas exchange duration (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/251288004">251288004</a></td><td>Extracorporeal gas exchange flow rate (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/251289007">251289007</a></td><td>Extracorporeal gas exchange flow index (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/252076005">252076005</a></td><td>Venous pressure (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/386534000">386534000</a></td><td>Arterial blood pressure (observable entity)</td></tr><tr><td><a href="http://snomed.info/id/79063001">79063001</a></td><td>Gas flow rate (v) (observable entity)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed"/>
+  <version value="2026.0.3"/>
+  <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED"/>
+  <title value="MII VS ICU Code Observation extrakorporale Verfahren SNOMED"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-11"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="444479000"/>
+        <display value="Rate of blood flow through cardiovascular device (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="445940005"/>
+        <display value="Duration of hemodialysis session (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="401000124105"/>
+        <display value="Duration of hemodialysis session (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="708513005"/>
+        <display value="Substitution flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="708514004"/>
+        <display value="Substitution volume (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="251286000"/>
+        <display value="Extracorporeal gas exchange duration (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="251288004"/>
+        <display value="Extracorporeal gas exchange flow rate (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="251289007"/>
+        <display value="Extracorporeal gas exchange flow index (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="252076005"/>
+        <display value="Venous pressure (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="386534000"/>
+        <display value="Arterial blood pressure (observable entity)"/>
+      </concept>
+      <concept>
+        <code value="79063001"/>
+        <display value="Gas flow rate (v) (observable entity)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

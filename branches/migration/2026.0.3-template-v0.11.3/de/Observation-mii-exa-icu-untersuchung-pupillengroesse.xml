@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-untersuchung-pupillengroesse"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-untersuchung-pupillengroesse</b></p><a name="de-mii-exa-icu-untersuchung-pupillengroesse"> </a><a name="de-hcmii-exa-icu-untersuchung-pupillengroesse"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.html">MII PR ICU Untersuchung Pupillengroesse</a></p></div><p><b>status</b>: draft</p><p><b>category</b>: <span title="Codes:{https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html exam}">exam</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 363953003}">Size of pupil</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 16089004}">Structure of pupil of left eye</span></p></div>
+  </text>
+  <status value="draft"/>
+  <category>
+    <coding>
+      <system value="https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html"/>
+      <code value="exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363953003"/>
+      <display value="Size of pupil"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2019-12-23T09:30:10+01:00"/>
+    <end value="2019-12-24T09:30:10+01:00"/>
+  </effectivePeriod>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="16089004"/>
+      <display value="Structure of pupil of left eye"/>
+    </coding>
+  </bodySite>
+</Observation>

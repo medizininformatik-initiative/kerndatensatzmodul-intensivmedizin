@@ -1,0 +1,719 @@
+# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2026.0.3
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII PR ICU MUV Arterieller Blutdruck**
+
+## Ressourcenprofil: MII PR ICU MUV Arterieller Blutdruck 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2026.0.3 |
+| Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
+
+Es handelt sich hier um einen pulsatilen Druck. Für diesen gelten neben den Eigenschaften des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md) außerdem die Besonderheiten, die auf der Seite des Profils zu [Blutdruck (Observation)](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) beschrieben sind. Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
+
+**Usages:**
+
+* Examples for this Profile: [Observation/mii-exa-icu-muv-arterieller-blutdruck](Observation-mii-exa-icu-muv-arterieller-blutdruck.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.json)
+
+### Formale Ansichten des Profilinhalts
+
+ [Beschreibung von Profilen, Differentials, Snapshots und deren Repräsentationen](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Schlüsselelemente-Tabelle](#tabs-key) 
+*  [Differential-Tabelle](#tabs-diff) 
+*  [Snapshot-Tabelle](#tabs-snap) 
+*  [Statistiken/Referenzen](#tabs-summ) 
+*  [Alle](#tabs-all) 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+
+** Summary **
+
+Mandatory: 19 elements(17 nested mandatory elements)
+ Must-Support: 83 elements
+ Prohibited: 1 element
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Observation.component.code.coding
+
+ **Schlüsselelemente-Ansicht** 
+
+#### Terminology Bindings
+
+#### Constraints
+
+ **Differential-Ansicht** 
+
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+
+ **Snapshot-AnsichtView** 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+
+** Summary **
+
+Mandatory: 19 elements(17 nested mandatory elements)
+ Must-Support: 83 elements
+ Prohibited: 1 element
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Observation.component.code.coding
+
+ 
+
+Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.csv), [Excel](../StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.xlsx), [Schematron](../StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-pr-icu-muv-arterieller-blutdruck",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
+  "title" : "MII PR ICU MUV Arterieller Blutdruck",
+  "status" : "active",
+  "date" : "2026-08-28T08:35:29+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "min" : 2,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.system",
+      "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.code",
+      "path" : "Observation.code.coding.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct",
+      "path" : "Observation.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "364090009"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.system",
+      "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.code",
+      "path" : "Observation.code.coding.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.encounter",
+      "path" : "Observation.encounter",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]",
+      "path" : "Observation.effective[x]",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason",
+      "path" : "Observation.dataAbsentReason",
+      "max" : "0",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation",
+      "path" : "Observation.interpretation",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite",
+      "path" : "Observation.bodySite",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method",
+      "path" : "Observation.method",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.device",
+      "path" : "Observation.device",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.referenceRange",
+      "path" : "Observation.referenceRange",
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "max" : "3",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP",
+      "path" : "Observation.component",
+      "sliceName" : "SystolicBP",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 3
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "8480-6"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:loinc.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:loinc.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:loinc.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "271649006"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:sct.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:sct.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:sct.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:IEEE-11073",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "150017"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:IEEE-11073.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:IEEE-11073.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:IEEE-11073.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x]",
+      "path" : "Observation.component.value[x]",
+      "patternQuantity" : {
+        "unit" : "millimeter Mercury column",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm[Hg]"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x].value",
+      "path" : "Observation.component.value[x].value",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x].unit",
+      "path" : "Observation.component.value[x].unit",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x].system",
+      "path" : "Observation.component.value[x].system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x].code",
+      "path" : "Observation.component.value[x].code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x]:valueQuantity.value",
+      "path" : "Observation.component.value[x].value",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x]:valueQuantity.unit",
+      "path" : "Observation.component.value[x].unit",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x]:valueQuantity.system",
+      "path" : "Observation.component.value[x].system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.value[x]:valueQuantity.code",
+      "path" : "Observation.component.value[x].code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.dataAbsentReason",
+      "path" : "Observation.component.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP",
+      "path" : "Observation.component",
+      "sliceName" : "DiastolicBP",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 3
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "8462-4"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:loinc.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:loinc.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:loinc.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "271650006"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:sct.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:sct.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:sct.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:IEEE-11073",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "150018"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:IEEE-11073.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:IEEE-11073.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:IEEE-11073.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x]",
+      "path" : "Observation.component.value[x]",
+      "patternQuantity" : {
+        "unit" : "millimeter Mercury column",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm[Hg]"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x].value",
+      "path" : "Observation.component.value[x].value",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x].unit",
+      "path" : "Observation.component.value[x].unit",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x].system",
+      "path" : "Observation.component.value[x].system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x].code",
+      "path" : "Observation.component.value[x].code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity.value",
+      "path" : "Observation.component.value[x].value",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity.unit",
+      "path" : "Observation.component.value[x].unit",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity.system",
+      "path" : "Observation.component.value[x].system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity.code",
+      "path" : "Observation.component.value[x].code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.dataAbsentReason",
+      "path" : "Observation.component.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP",
+      "path" : "Observation.component",
+      "sliceName" : "meanBP",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 3
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "8478-0"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:loinc.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:loinc.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:loinc.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "6797001"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:sct.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:sct.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:sct.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:IEEE-11073",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "150019"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:IEEE-11073.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:IEEE-11073.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:IEEE-11073.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x]",
+      "path" : "Observation.component.value[x]",
+      "patternQuantity" : {
+        "unit" : "millimeter Mercury column",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mm[Hg]"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.dataAbsentReason",
+      "path" : "Observation.component.dataAbsentReason",
+      "mustSupport" : true
+    }]
+  }
+}
+
+```

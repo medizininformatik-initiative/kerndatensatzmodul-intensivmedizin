@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-bilanz-ausfuhr-opdrainage",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-bilanz-ausfuhr-opdrainage</b></p><a name=\"mii-exa-icu-bilanz-ausfuhr-opdrainage\"> </a><a name=\"hcmii-exa-icu-bilanz-ausfuhr-opdrainage\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage\">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html exam}, {http://snomed.info/sct 364396009}\">Fluid balance observable (observable entity)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 251844004}, {http://loinc.org 9203-1}\">Fluid output from surgical drain (observable entity)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111\">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-24 09:30:10+0100</p><p><b>value</b>: 200.0 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "code" : "exam"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "code" : "364396009",
+      "display" : "Fluid balance observable (observable entity)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "code" : "251844004",
+      "display" : "Fluid output from surgical drain (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9203-1"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/111"
+  },
+  "effectivePeriod" : {
+    "start" : "2019-12-23T09:30:10+01:00",
+    "end" : "2019-12-24T09:30:10+01:00"
+  },
+  "valueQuantity" : {
+    "value" : 200.0,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "ml"
+  }
+}

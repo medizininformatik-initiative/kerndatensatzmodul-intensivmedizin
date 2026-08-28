@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt</b></p><a name="mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"> </a><a name="hcmii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html">MII PR ICU Blutfluss Extrakorporaler Gasaustausch</a></p></div><p><b>partOf</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example">Procedure/example</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 182744004}">Extracorporeal circulation procedure (procedure)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 251288004}">Extracorporeal gas exchange flow rate (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 3.0 L/min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren">DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren</a></p></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt</b></p><a name="de-mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"> </a><a name="de-hcmii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html">MII PR ICU Blutfluss Extrakorporaler Gasaustausch</a></p></div><p><b>partOf</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example">Procedure/example</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 182744004}">Extracorporeal circulation procedure (procedure)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 251288004}">Extracorporeal gas exchange flow rate (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 3.0 L/min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren">DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren</a></p></div></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/example"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="182744004"/>
+      <display value="Extracorporeal circulation procedure (procedure)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="251288004"/>
+      <display value="Extracorporeal gas exchange flow rate (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2019-12-23T09:30:10+01:00"/>
+    <end value="2019-12-23T10:30:10+01:00"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="3.0"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="L/min"/>
+  </valueQuantity>
+  <device>
+    <reference value="DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"/>
+  </device>
+</Observation>

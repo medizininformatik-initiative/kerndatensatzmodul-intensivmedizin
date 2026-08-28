@@ -1,0 +1,2 @@
+<!-- Migrated from the Simplifier guide page https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Balances/Liquid-balances-Observation?version=current (harvested 2026-08-27, spec 5.1d); the generated profile rendering was NOT copied - the IG Publisher regenerates it on the artifact page below. -->
+Represents all measured imports and exports of liquids.

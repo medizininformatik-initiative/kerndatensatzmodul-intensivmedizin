@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-icu-cam-icu-result"/>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-icu-cam-icu-result</b></p><a name="de-mii-vs-icu-cam-icu-result"> </a><a name="de-hcmii-vs-icu-cam-icu-result"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/10828004">10828004</a></td><td>Positive (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/260385009">260385009</a></td><td>Negative (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"/>
+  <version value="2026.0.3"/>
+  <name value="MII_VS_ICU_CAM_ICU_Result"/>
+  <title value="MII VS ICU CAM-ICU Result"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-28T08:35:29+00:00"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="CAM-ICU assessment result: positive (delirium present) or negative (no delirium)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="10828004"/>
+        <display value="Positive (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="260385009"/>
+        <display value="Negative (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

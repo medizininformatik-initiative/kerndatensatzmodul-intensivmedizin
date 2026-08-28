@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung</b></p><a name="mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"> </a><a name="hcmii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html">MII PR ICU Einstellung Ausatmungszeit Beatmung</a></p></div><p><b>partOf</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example">Procedure/example</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 250820008}, {http://loinc.org 76187-4}">Expiratory time (observable entity)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 1.0 s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codes = 's')</span></p><p><b>device</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_Beatmung">DeviceMetric/Example_Eingestellte_Parameter_Beatmung</a></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/example"/>
+  </partOf>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="40617009"/>
+      <display value="Artificial ventilation (regime/therapy)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20241101"/>
+      <code value="250820008"/>
+      <display value="Expiratory time (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="76187-4"/>
+      <display value="Expiratory hold time setting Ventilator"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/111"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2019-12-23T09:30:10+01:00"/>
+    <end value="2019-12-23T10:30:10+01:00"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="1.0"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="s"/>
+  </valueQuantity>
+  <device>
+    <reference value="DeviceMetric/Example_Eingestellte_Parameter_Beatmung"/>
+  </device>
+</Observation>

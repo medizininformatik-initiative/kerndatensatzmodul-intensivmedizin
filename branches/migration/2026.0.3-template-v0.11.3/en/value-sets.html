@@ -1,0 +1,470 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Value Sets - MII IG ICU v2026.0.3</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Branding override for the fhir2.base.template CSS placeholder
+     (base ships includes/fragment-css.html as a single comment; it is included
+     in <head> AFTER all base stylesheets, so the linked files win the
+     cascade).
+     Load model (docs/styleguide.md §1/§10): bootstrap-accessibility.css
+     (PayPal Bootstrap Accessibility Plugin v1.0.7, vendored + pinned - §8)
+     patches Bootstrap-3 component styling for accessibility (focus outlines,
+     alert contrast) and loads FIRST so the template's own rules can override;
+     then template-base.css carries the
+     brand-INDEPENDENT rule blocks and always loads; then EXACTLY ONE palette
+     file follows - num-diz.css, the DEFAULT design, unless the consuming IG
+     ships input/data/brand.json with { "design": "mii" } (read as
+     site.data.brand.design via the base's input/data -> _data pre-process),
+     which selects mii.css instead. Only the exact value 'mii' selects the
+     MII design; anything else - including no brand.json at all and unknown
+     values - renders NUM-DIZ. Both palettes declare the same variable set
+     (scripts/brand-switch.test.mjs). -->
+<link href="assets/css/bootstrap-accessibility.css" rel="stylesheet"/>
+<link href="assets/css/template-base.css" rel="stylesheet"/>
+
+<link href="assets/css/num-diz.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Branding override for the fhir2.base.template header placeholder
+     (base ships includes/fragment-header.html as a single comment; it is included
+     inside "#segment-header > .container", before the #ig-status block).
+     Language handling: only the asset and its descriptive alt text switch on
+     include.lang (the pattern kerndatensatz-basis uses); no translatable UI
+     strings are hard-coded.
+     Brand handling: the project logo additionally switches on
+     site.data.brand.design (input/data/brand.json in the consuming IG, see
+     docs/styleguide.md §10). Only the exact value 'mii' selects the MII
+     logos - anything else, including no brand.json at all, falls through to
+     the NUM-DIZ default.
+     Two logos, mirroring kerndatensatz-basis: the HL7 FHIR logo (links to the
+     FHIR spec) in #family-nav, and the project logo in #project-nav.
+     fhir-logo-www.png is shipped by fhir2.base.template
+     (content/assets/images/), so it resolves from the inherited assets without
+     shipping it here. -->
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://hl7.org/fhir">
+    <img height="50" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/>
+  </a>
+</div>
+<div id="project-nav">
+
+  <a id="project-logo" no-external="true" href="https://www.netzwerk-universitaetsmedizin.de/forschung/num-diz">
+
+    <img height="50" alt="NUM-DIZ (Network of University Medicine — Data Integration Center)" src="assets/images/logo-num-diz-en.svg"/>
+
+  </a>
+
+</div>
+<!-- Font-size control (A / A+ / A++): three reader-selectable levels; level A
+     is the untouched default. Logic in assets/js/font-size-control.js, the
+     zoom mapping + button styling in template-base.css ("font-size control"
+     block). All three buttons read "A" — the button's own font size shows the level; labels are language-neutral; only the aria texts switch
+     on include.lang. REMOVAL: delete this block, the js file and the CSS
+     block - one commit, styleguide §5a. -->
+
+<div class="ig-fontsize" role="group" aria-label="Font size">
+  <button type="button" data-level="0" aria-pressed="true" aria-label="Font size: default">A</button>
+  <button type="button" data-level="1" aria-pressed="false" aria-label="Font size: larger">A</button>
+  <button type="button" data-level="2" aria-pressed="false" aria-label="Font size: largest">A</button>
+</div>
+
+<script src="assets/js/font-size-control.js" defer></script>
+<!-- PayPal Bootstrap Accessibility Plugin v1.0.7 (vendored + pinned, §8):
+     patches the Bootstrap-3 components the publisher renders - navbar
+     dropdowns gain ARIA menu semantics + arrow-key navigation, tab panels
+     (structure-tabs) the full ARIA tabs pattern, alerts live-region
+     announcements. `defer` guarantees it executes AFTER the parser-inserted
+     bootstrap.min.js at the end of the body. Vendored from
+     paypal/bootstrap-accessibility-plugin @ v1.0.7 (the admin-ch fork was
+     evaluated and rejected: 151 commits behind upstream, its 6 deltas are
+     site-specific tab tweaks). REMOVAL: delete this tag, both vendored
+     assets and the fragment-css link - guard test pins the hashes. -->
+<script src="assets/js/bootstrap-accessibility.min.js" defer></script>
+<!-- Back-to-top button: appears after one viewport of scrolling (logic in
+     assets/js/back-to-top.js, styling in template-base.css "back-to-top"
+     block). Rendered here inside #segment-header, which is OUTSIDE the
+     data-fontsize zoom regions, so the fixed button never scales. REMOVAL:
+     this block, the js file and the CSS block - one commit, styleguide §8. -->
+
+<button type="button" class="ig-back-to-top" aria-label="Back to top">↑</button>
+
+<script src="assets/js/back-to-top.js" defer></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">MII IG ICU</span>
+            <br/>
+            <span style="display:inline-block;">2026.0.3 - 
+
+
+
+  <img alt="Germany flag" src="assets/images/deu.svg" height="16" title="Germany"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- Menu in the IG's DEFAULT language (English).
+     The IG Publisher renders the navigation from this file. To translate it,
+     ship a per-language copy at input/translations/<lang>/includes/menu.xml —
+     this is the mechanism the HL7 reference IG FHIR/multi-lang-test-ig uses and
+     the ONLY way to get a TRANSLATED menu: the `menu:` property in
+     sushi-config.yaml generates a single menu.xml that cannot be translated.
+     Rules: keep the href targets identical across languages; dropdown parents
+     must link to a REAL page (href="#" is rejected by the template's menu QA);
+     only one sub-menu level is supported.
+
+     STRUCTURE: this menu implements the TF-KDS-agreed module menu (see
+     docs/page-structure.md for the full structure with cardinalities).
+     Entries marked OPTIONAL (0..1) below may be removed per module — the
+     removal procedure per entry is in docs/optional-pages.md in this
+     repository. Entries without a marker are mandatory (1..1).
+
+     LINK-ONLY ENTRIES (no page of their own):
+     - "Datasets and Descriptions" points at the Logical Models page
+       (logical-models.html) — the module's datasets ARE its logical models.
+       NEITHER Artifacts-Summary anchor is usable for the TF-KDS "Sec.
+       15.0.2" target: the numeric #2 is POSITIONAL (grouping index — wrong
+       section whenever the artifact mix differs from the full standard set),
+       and the browser-generated NAMED AnchorJS anchor
+       (#structures-logical-models) is invisible to the IG Publisher's link
+       validator — it injects a marker anchor into the menu (rendered as an
+       EMPTY menu entry) and logs a broken-link ERROR on every page's QA.
+       Full analysis: docs/page-structure.md, "Datasets and Descriptions".
+     - The four Conformance entries point at the KDS-wide conformance rules of
+       the Meta module (kerndatensatz-meta). INTERIM: the Meta module has no
+       published IG rendering yet (only a CI build with no conformance pages),
+       so these link to the authoritative meta-wiki sections; switch them to
+       the Meta IG's menu entries once a stable rendering exists (Gate item in
+       docs/page-structure.md). -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="guidance.html">Guidance</a></li>
+      <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
+      <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
+      <li><a href="logical-models.html">Datasets and Descriptions</a></li>
+      <li><a href="uml-diagrams.html">UML Diagrams</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <!-- The parent and the first four entries link to the KDS-wide conformance
+         rules of the Meta module (INTERIM: meta-wiki; see header note). -->
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Conformance<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Conformance</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">General Requirements</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Handling Missing Data</a></li>
+      <li><a href="security-and-privacy.html">Security and Privacy</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifacts Summary</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="capability-statements.html">Capability Statements</a></li>
+      <li><a href="search-parameters.html">Search Parameters</a></li>
+      <li><a href="logical-models.html">Logical Models</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
+      <li><a href="examples.html">Examples</a></li>
+    </ul>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Changelog</a></li>
+  <li class="dropdown">
+    <!-- The parent deliberately links the MANDATORY child (Versioning): the
+         Metadata Overview page is optional, and a parent pointing at it would
+         have to be re-targeted when that page is removed. -->
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="version-history.html">Versioning</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-en.png"/>English</div>
+
+    <div><a href="../de/value-sets.html"><img class="flag" src="assets/images/lang-de.png" alt="flag de"/>Deutsch</a></div>
+
+  </div>
+</div>
+
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Value Sets</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MII IG ICU - Local Development build (v2026.0.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Value Sets</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<!-- markdownlint-disable MD041 -->
+<!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/Terminologies.page.md -->
+<p>The semantic annotation references at least one primary code of the LOINC and/or SNOMED CT terminologies. Furthermore, a semantic annotation in accordance with ISO/IEEE 11073-10101 is added whenever possible to enable interoperability with medical device and medical product communication. Attention is also paid to semantic interoperability with the AKTIN data set.</p>
+
+<hr />
+
+<h3 id="valuesets">ValueSets</h3>
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[SNOMED\_CT](https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">265764009</a>Renal dialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">341939001</a>Extracorporeal hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">127788007</a>Apheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233572003</a>Extracorporeal gas exchange (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">302497006</a>Hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233586004</a>Hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233581009</a>Hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">182750009</a>Ultrafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">714749008</a>Continuous renal replacement therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233573008</a>Extracorporeal membrane oxygenation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233578004</a>Continuous hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233575001</a>Intermittent hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233588003</a>Continuous hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233583007</a>Continuous hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233594006</a>Lipopheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">72541002</a>Plateletpheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233574002</a>Extracorporeal carbon dioxide removal (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">786452006</a>Arteriovenous extracorporeal membrane oxygenation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">786451004</a>Venoarterial extracorporeal membrane oxygenation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">786453001</a>Venovenous extracorporeal membrane oxygenation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233579007</a>Continuous arteriovenous hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233580005</a>Continuous venovenous hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">708932005</a>Emergency hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">427053002</a>Extracorporeal albumin hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">57274006</a>Initial hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233577009</a>Intermittent hemodialysis with continuous ultrafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233576000</a>Intermittent hemodialysis with sequential ultrafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">11932001</a>Stabilizing hemodialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">698074000</a>Sustained low-efficiency dialysis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233589006</a>Continuous arteriovenous hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233590002</a>Continuous venovenous hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">708933000</a>Emergency hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233587008</a>Intermittent hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">708930002</a>Maintenance hemodiafiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233584001</a>Continuous arteriovenous hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233585000</a>Continuous venovenous hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">715743002</a>Emergency hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233582002</a>Intermittent hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">708934006</a>Maintenance hemofiltration (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">14130001000004103</a>Aquapheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">182749009</a>Extracorporeal blood irradiation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">438839005</a>Erythrocytapheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">83794005</a>Extracorporeal photopheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">77257005</a>Leukopheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">448955002</a>Low density lipoprotein apheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">20720000</a>Plasmapheresis (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233564000</a>Platelet apheresis using human leukocyte antigen matched donors (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">233565004</a>Platelet apheresis using random donors (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">225067007</a>Therapeutic plasma exchange (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">19647005</a>Therapeutic plasmapheresis using plasma as the major replacement fluid (procedure)</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[19647005](https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">40617009</a>Artificial ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">57485005</a>Oxygen therapy (procedure)</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[57485005](https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1149092001</a>Positive pressure airway ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">53950000</a>Respiratory therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243141005</a>Mechanically assisted spontaneous ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">11140008</a>Respiratory assist, manual (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">428311008</a>Non-invasive ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243160003</a>Control of end expiratory pressure (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">33050008</a>Pulmonary resuscitation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">229306004</a>Positive airway pressure therapy (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243180002</a>Expired air ventilation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243161004</a>Positive end expiratory pressure increased (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243164007</a>Positive end expiratory pressure reduced (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">59427005</a>Synchronized intermittent mandatory ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">47545007</a>Continuous positive airway pressure ventilation treatment (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243142003</a>Dual pressure spontaneous ventilation support(regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">37113006</a>Mouth-to-mouth resuscitation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243157005</a>Liquid ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243170001</a>Negative end expiratory pressure applied (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">371908008</a>Oxygen administration by mask (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243162006</a>Positive end expiratory pressure increased to optimal positive end expiratory pressure (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243166009</a>Positive end expiratory pressure reduced to optimal positive end expiratory pressure (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243168005</a>Positive end expiratory pressure withdrawn (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243150007</a>Assist control ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243154003</a>High frequency jet ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243155002</a>High frequency oscillatory ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243153009</a>High frequency positive pressure ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">448442005</a>Transtracheal jet ventilation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">4764004</a>Jet ventilation procedure (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243143008</a>Airway pressure release ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">448134000</a>Continuous positive airway pressure to nonventilated lung (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">34281000175105</a>Nocturnal continuous positive airway pressure (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">34291000175108</a>Nocturnal dual pressure spontaneous ventilation support (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">229312009</a>Nasal ventilation therapy (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243140006</a>Lung inflation by intermittent compression of reservoir bag (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">229313004</a>Manual hyperinflation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">425696007</a>Manual respiratory assistance using bag and mask (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243184006</a>Ventilation with self-inflating bag (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">74596007</a>Resuscitation with artificial ventilation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243181003</a>Expired air ventilation with airway aid (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243183000</a>Mouth to nose expired air ventilation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243182005</a>Mouth to mouth expired air ventilation with airway (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">52729008</a>Treatment by iron lung (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">76777009</a>Artificial respiration by electrophrenic stimulation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">281508008</a>Cuirasse ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">276737004</a>Domiciliary ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">276732005</a>Apneic oxygenation (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243159008</a>Intermittent negative pressure ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243158000</a>Fluorocarbon ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243172009</a>Negative end expiratory pressure decreased (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243171002</a>Negative end expiratory pressure increased (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">82433009</a>Continuous negative pressure ventilation treatment (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">447837008</a>Non-invasive positive pressure ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">870392006</a>Weaning from noninvasive ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243146000</a>Diaphragmatic augmentation by rocking bed (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">429253002</a>Oxygen administration by Venturi mask (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">371907003</a>Oxygen administration by nasal cannula (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">398077001</a>Oxygen dynamic interventions (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">182714002</a>Oxygenator therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243136002</a>Short-term oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">315041000</a>High concentration oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">426990007</a>Home oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">304577004</a>Humidified oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">870533002</a>Heated and humidified high flow oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">71786000</a>Intranasal oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1259025002</a>Heated and humidified high flow oxygen therapy using nasal cannula (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1186622005</a>Synchronized intermittent mandatory ventilation - pressure-control pressure-support inflation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1259864003</a>Pressure support ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">266700009</a>Assisted breathing (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">40617009</a>Artificial ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1186618000</a>Bilevel artificial ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1186620002</a>Minimum minute volume ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">870391004</a>Assisted ventilation in prone position (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">787180006</a>Mechanical insufflation exsufflation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">424172009</a>Dual pressure spontaneous ventilation support weaning protocol (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">182686001</a>Endotracheal respiratory assistance (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">243137006</a>Long-term oxygen therapy (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1336169000</a>Low flow oxygen delivery (procedure)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">387727008</a>Intermittent positive pressure breathing treatment (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">19861002</a>Intermittent positive pressure breathing treatment with nebulized medication (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">387726004</a>Intermittent positive pressure breathing treatment without nebulized medication (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1258985005</a>Invasive mechanical ventilation (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1297240007</a>Neurally adjusted ventilatory assist (regime/therapy)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1197610004</a>Positive pressure ventilation via bag and mask (regime/therapy)</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[Mdc](https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150017</a>Systolic blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150019</a>Mean blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150018</a>Diastolic blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150084</a>Central venous pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150045</a>Systolic pulmonary arterial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150047</a>Mean pulmonary arterial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150046</a>Diastolic pulmonary arterial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150052</a>Pulmonary artery wedge pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150276</a>Cardiac output<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">149772</a>Cardiac index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">149760</a>Systemic vascular resistance indexed<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">152852</a>Pulmonary Vascular Resistance Index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150428</a>Ventricular stroke<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">149764</a>Left Ventricular Stroke Work Index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150368</a>Body temperature - Core<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150456</a>Oxygen saturation in Arterial blood by Pulse oximetry<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">160300</a>Postductal SpO2<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">160296</a>Preductal SpO2<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">153608</a>Intracranial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150103</a>Mean left ventricular pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150107</a>Mean right ventricular pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150101</a>Systolic left ventricular pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150105</a>Systolic right ventricular pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150102</a>Diastolic left ventricular pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150106</a>Diastolic right ventricular pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150069</a>Systolic right atrial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150065</a>Systolic left atrial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150067</a>Mean left atrial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150071</a>Mean right atrial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150066</a>Diastolic left atrial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150070</a>Diastolic right atrial pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188420</a>Rectal temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188496</a>Axillary temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188424</a>Oral temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188436</a>Blood temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188500</a>Myocardial temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">147842</a>Heart Rate<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188504</a>Nasal temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">149514</a>Pulse rate<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150380</a>Nasopharynx temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188452</a>Axillary (armpit) temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150324</a><a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150372</a><a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">188796</a>Ideal body weight (IBW)<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150392</a><a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150356</a>Airway temperature</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[LOINC](https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8867-4</a>Heart Rate<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8480-6</a>Systolic blood Pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8478-0</a>Mean blood Pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8462-4</a>Diastolic blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60985-9</a>Central venous pressure (CVP)<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8440-0</a>Pulmonary artery Systolic blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8414-5</a>Pulmonary artery Mean blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8385-7</a>Pulmonary artery Diastolic blood pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">75994-4</a>Pulmonary artery wedge pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8737-9</a>Left ventricular Cardiac output by Indicator dilution<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8751-0</a>Left ventricular Cardiac index by Indicator dilution<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8741-1</a>Left ventricular Cardiac output<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">75919-1</a>Left ventricular Cardiac index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8837-7</a>Systemic vascular Resistance index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8834-4</a>Pulmonary vascular Resistance index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8771-8</a>Left ventricular Stroke volume by Indicator dilution<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8791-6</a>Left ventricular Stroke volume index by Indicator dilution<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20562-5</a>Left ventricular Stroke volume<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76297-1</a>Left ventricular Stroke volume index<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8329-5</a>Body temperature - Core<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">59408-5</a>Oxygen saturation in Arterial blood by Pulse oximetry<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">59407-7</a>Oxygen saturation in Blood Preductal by Pulse oximetry<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60956-0</a>Intracranial pressure (ICP)<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8404-6</a>Left ventricular Intrachamber mean pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8406-1</a>Right ventricular Intrachamber mean pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8430-1</a>Left ventricular Intrachamber systolic pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8432-7</a>Right ventricular Intrachamber systolic pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8375-8</a>Left ventricular Intrachamber diastolic pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8377-4</a>Right ventricular Intrachamber diastolic pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60998-2</a>Right atrial pressure Systolic<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60989-1</a>Left atrial pressure Systolic<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8399-8</a>Left atrial Intrachamber mean pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8400-4</a>Right atrial Intrachamber mean pressure<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">75933-2</a>Left atrial pressure Diastolic<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60997-4</a>Right atrial pressure Diastolic<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">29463-7</a>Body weight<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">50064-5</a>Ideal body weight<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8302-2</a>Body height<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8303-0</a>Body height [Percentile]<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8336-0</a>Body weight [Percentile] Per age<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8333-7</a>Tympanic membrane temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8332-9</a>Rectal temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60836-4</a>Esophageal temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8334-5</a>Body temperature - Urinary bladder<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8328-7</a>Axillary temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">8331-1</a>Oral temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60834-9</a>Blood temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60955-2</a>Airway temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">61009-7</a>Myocardial temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76010-8</a>Nasal temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60838-0</a>Body temperature<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">104063-3</a>Body temperature</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[1197610004](https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">364075005</a>Heart rate (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">75367002</a>Blood pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">271649006</a>Systolic blood pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">6797001</a>Mean blood pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">271650006</a>Diastolic blood pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">71420008</a>Central venous pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">118433006</a>Pulmonary artery wedge pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">82799009</a>Cardiac output (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">54993008</a>Cardiac index (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">276900001</a>Systemic vascular Resistance index (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">276902009</a>Pulmonary vascular Resistance index (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">90096001</a>Stroke volume (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">277381004</a>Stroke index (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">276885007</a>Core body temperature (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250844005</a>Intracranial pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">27113001</a>Body weight (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">170804003</a>Ideal body weight (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1153637007</a>Body height (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1153605006</a>Body height for age percentile (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1153592008</a>Weight for age percentile (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">415974002</a>Core body temperature measured at tympanic membrane (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">307047009</a>Core body temperature measured in rectum (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">431598003</a>Core body temperature measured in esophagus (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">698831002</a>Core body temperature measured in nasopharynx (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">698832009</a>Core body temperature measured at urinary bladder (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">364246006</a>Core body temperature measured vaginally (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">415882003</a>Estimated core body temperature measured in axillary region (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">415945006</a>Core body temperature measured in sublingual space (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">415929009</a>Estimated core body temperature measured in inguinal region (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">1222808002</a>Core body temperature measured in blood (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">248835004</a>Temperature of breast (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">364419004</a>Temperature of cervical spine (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">415922000</a>Temperature of forehead (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250124002</a>Temperature of joint (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">364429006</a>Temperature of lumbar spine (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">364424001</a>Temperature of thoracic spine (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">8499008</a>Pulse, function (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">442476006</a>Arterial oxygen saturation (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">364090009</a>Systemic arterial pressure (observable entity)</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[150356](https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">150656</a>Oxygenation Ratio<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151586</a>Ventilation rate<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">152498</a>Unassisted spontaneous breath rate; respiration rate<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">152490</a>Total respiratory rate; total breath rate<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">16929632</a>Inspiratory time setting<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151832</a>Ratio inspiration expiration time<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">16929196</a>Tidal volume setting<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151980</a>Ventilation tidal volume<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">152004</a>Ventilation inspiratory minute volume<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">16929860</a>High pressure hold time setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">16929864</a>Low pressure hold time setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151948</a>Ventilation inspiratory flow<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151944</a>Ventilation expiratory flow<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">153132</a>Expired oxygen concentration (or partial pressure) in airway gas<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151975</a>Mean pressure Respiratory system airway –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151973</a>Pressure.max Respiratory system airway –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151692</a>Thoracic compliance<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151976</a>Applied PEEP<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">152720</a>Inspiratory airway pressure relative to PEEP or BAP<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-mdc.json">151708</a>End tidal carbon dioxide concentration (or partial pressure) in airway gas</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[104063-3](https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">50984-4</a>Horowitz index in Arterial blood<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">33438-3</a>Breath rate mechanical –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">19839-0</a>Breath rate spontaneous –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">19840-8</a>Breath rate spontaneous and mechanical –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76334-2</a>Inspiratory time setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76187-4</a>Expiratory hold time setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">75931-6</a>Inspiration/Expiration time Ratio<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20112-9</a>Tidal volume setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76222-9</a>Tidal volume Ventilator –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20116-0</a>Tidal volume.spontaneous –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76009-0</a>Inspired minute Volume during Mechanical ventilation<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20118-6</a>Tidal volume.spontaneous+mechanical –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76190-8</a>High pressure hold time setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76229-4</a>Low pressure hold time setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76275-7</a>Inspiratory flow setting Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60794-5</a>Inspiratory gas flow Respiratory system airway –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60792-9</a>Expiratory gas flow Respiratory system airway –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">19994-3</a>Oxygen/Total gas setting [Volume Fraction] Ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">71835-3</a>Oxygen/Gas total [Pure volume fraction] Inhaled gas<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">3147-6</a>Oxygen [Partial pressure] in Exhaled gas<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76530-5</a>Mean pressure Respiratory system airway –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76531-3</a>Pressure.max Respiratory system airway –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">60827-3</a>Dynamic lung compliance<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76248-4</a>PEEP Respiratory system –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">76154-4</a>Airway pressure delta –on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20056-8</a>Airway pressure –at mean expiratory flow on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20060-0</a>Airway pressure –at zero inspiratory flow on ventilator<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">19891-1</a>Carbon dioxide [Partial pressure] in Exhaled gas –at end expiration<a href="https://simplifier.net/resolve?scope=package:hl7.terminology.r4@6.5.0&amp;filepath=package/CodeSystem-v3-loinc.json">20079-0</a>Pressure support setting Ventilator</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[364090009](https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250822000</a>Inspiration/expiration time ratio (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">416811008</a>Tidal volume setting (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250874002</a>Ventilator delivered tidal volume (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250816009</a>Spontaneous tidal volume (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">426102006</a>Inspiratory minute volume (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">442720002</a>Expired oxygen tension (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250823005</a>Total dynamic compliance (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250854009</a>Positive end expiratory pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250784008</a>End tidal carbon dioxide concentration (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250790007</a>End tidal carbon dioxide tension (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250875001</a>Ventilator delivered minute volume (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250820008</a>Expiratory time (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250819002</a>Inspiratory time (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">27913002</a>Maximum inspiratory pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250876000</a>Ventilator rate (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">698821009</a>Mean inspiratory airway pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">271625008</a>Rate of spontaneous respiration (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250810003</a>Total breath rate (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">250774007</a>Inspired oxygen concentration (observable entity)</p>
+
+<hr />
+
+<p>Could not find subject. Resource was not found for 'canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-Observation-extrakorporale-verfahren-iso11073'</p>
+
+<hr />
+
+<p>This value set is empty</p>
+
+<hr />
+
+<p>This value set includes codes from the following code systems:The following codes from system: <code class="language-plaintext highlighter-rouge">[250774007](https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json)</code>CodeDisplay<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">444479000</a>Rate of blood flow through cardiovascular device (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">445940005</a>Duration of hemodialysis session (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">401000124105</a>Duration of hemodialysis session (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">708513005</a>Substitution flow rate (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">708514004</a>Substitution volume (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">251286000</a>Extracorporeal gas exchange duration (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">251288004</a>Extracorporeal gas exchange flow rate (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">251289007</a>Extracorporeal gas exchange flow index (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">252076005</a>Venous pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">386534000</a>Arterial blood pressure (observable entity)<a href="https://simplifier.net/resolve?scope=package:hl7.fhir.r4.examples@4.0.1&amp;filepath=package/CodeSystem-snomedct.json">79063001</a>Gas flow rate (v) (observable entity)</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
+          Package de.medizininformatikinitiative.kerndatensatz.icu#2026.0.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Aug 28, 2026 08:35+0000">2026-08-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- Branding override for the fhir2.base.template footer fragment.
+     Unlike header/css, the base footer fragment is NOT an empty placeholder: it
+     renders "Links: Table of Contents | QA Report [| feedback dashboards]".
+     The base uses site.data.stringsBase[include.lang][...] for the labels. The
+     reason this override supplies its own is the Imprint label: the base ships no
+     stringsBase key for it and a child template cannot add one (docs/styleguide.md
+     section 6), and the same include.lang branch then has to carry the other
+     labels too. (The blank-label problem that first motivated this is separately
+     mitigated: this repo vendors the base's own German catalogs into
+     translations/ — see translations/README.md.) The override preserves the base
+     links (TOC, QA, feedback dashboards) and appends the project information links.
+     NUM-DIZ takes over IG development and maintenance when MII funding ends
+     (end-2026), so the NUM-DIZ website link renders BEFORE the MII website link —
+     in BOTH brand designs and both languages; the MII links stay because the
+     modules remain MII content. Both anchors are the SITE ROOTS with the bare
+     domain as anchor text (TF-KDS feedback 2026-08-14: aligned anchor style;
+     domains are language-neutral, styleguide §6).
+     Imprint: points at the NUM-DIZ website's legal pages since 2026-08-14
+     (TF-KDS: NUM-DIZ takes over from MII in 2027, so legal-aspect links use
+     the NUM-DIZ counterpart where one exists) - German /impressum and English
+     /en/legal-notice (both verified HTTP 200 on 2026-08-14). -->
+
+          Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/">netzwerk-universitaetsmedizin.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.medizininformatik-initiative.de/">medizininformatik-initiative.de</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.netzwerk-universitaetsmedizin.de/en/legal-notice">Legal notice</a>
+                 <br/>
+                 <!-- HL7 trademark attribution (required wherever the FHIR flame
+                      renders - the header shows it on every page; see HL7's
+                      trademark guidelines; permission request tracked in issue #109). The sentence is
+                      HL7's prescribed formula and stays in English on every
+                      language's pages (legal wording, styleguide §6). -->
+                 <span>HL7®, FHIR® and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7.</span>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

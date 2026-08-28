@@ -1,0 +1,370 @@
+{
+  "package": "de.medizininformatikinitiative.kerndatensatz.icu",
+  "version": "2026.0.3",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [],
+  "profiles": {
+    "Procedure": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
+        "title": "MII PR ICU Extrakorporales Verfahren"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
+        "title": "MII PR ICU MUV Arterieller Blutdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz",
+        "title": "MII PR ICU MUV Atemfrequenz"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz",
+        "title": "MII PR ICU MUV Herzfrequenz"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht",
+        "title": "MII PR ICU MUV Koerpergewicht"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse",
+        "title": "MII PR ICU MUV Koerpergroesse"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+        "title": "MII PR ICU MUV Koerperlaenge"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang",
+        "title": "MII PR ICU MUV Kopfumfang"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck",
+        "title": "MII PR ICU MUV zerebraler Perfusionsdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
+        "title": "MII PR ICU Parameter von Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
+        "title": "MII PR ICU Parameter von Extrakorporalen Verfahren"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+        "title": "MII PR ICU Score"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu",
+        "title": "MII PR ICU Score CAM-ICU"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
+        "title": "MII PR ICU Score Faces Pain Scale Revised"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs",
+        "title": "MII PR ICU Score GCS"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc",
+        "title": "MII PR ICU Score ICDSC"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala",
+        "title": "MII PR ICU Score Numerische Ratingskala"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
+        "title": "MII PR ICU Score RASS"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
+        "title": "MII PR ICU Score SOFA"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
+        "title": "MII PR ICU Score Visuelle Analogskala"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala",
+        "title": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa",
+        "title": "MII PR ICU Score ZOPA"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
+        "title": "MII PR ICU Untersuchung Pupillenbefund"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
+        "title": "MII PR ICU Untersuchung Pupillenform"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse",
+        "title": "MII PR ICU Untersuchung Pupillengroesse"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt",
+        "title": "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt",
+        "title": "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie",
+        "title": "MII PR ICU Untersuchung Pupillensymmetrie"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss",
+        "title": "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
+        "title": "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung",
+        "title": "MII PR ICU Atemzugvolumen Einstellung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung",
+        "title": "MII PR ICU Atemzugvolumen Waehrend Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung",
+        "title": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck",
+        "title": "MII PR ICU Beatmungszeit Hohem Druck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
+        "title": "MII PR ICU Beatmungszeit Niedrigem Druck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung",
+        "title": "MII PR ICU Druckdifferenz Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance",
+        "title": "MII PR ICU Dynamische Kompliance"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss",
+        "title": "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung",
+        "title": "MII PR ICU Einstellung Ausatmungszeit Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung",
+        "title": "MII PR ICU Einstellung Einatmungszeit Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
+        "title": "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss",
+        "title": "MII PR ICU Exspiratorischer Gasfluss"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck",
+        "title": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut",
+        "title": "MII PR ICU Horowitz In Arteriellem Blut"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion",
+        "title": "MII PR ICU Inspiratorische Sauerstofffraktion"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss",
+        "title": "MII PR ICU Inspiratorischer Gasfluss"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck",
+        "title": "MII PR ICU Maximaler Beatmungsdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
+        "title": "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet",
+        "title": "MII PR ICU Mechanische Atemfrequenz Beatmet"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck",
+        "title": "MII PR ICU Mittlerer Beatmungsdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck",
+        "title": "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck",
+        "title": "MII PR ICU Plateau Beatmungsdruck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck",
+        "title": "MII PR ICU Positiv Endexpiratorischer Druck"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet",
+        "title": "MII PR ICU Spontane Atemfrequenz Beatmet"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet",
+        "title": "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen",
+        "title": "MII PR ICU Spontanes Atemzugvolumen"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung",
+        "title": "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung",
+        "title": "MII PR ICU Unterstuetzungsdruck Beatmung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung",
+        "title": "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device",
+        "title": "MII PR ICU Device"
+      }
+    ],
+    "DeviceMetric": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren",
+        "title": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung",
+        "title": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
+      "Procedure"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-author": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-endorser": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-purpose": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-reviewer": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-topic": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-usage": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/package-source": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-approvalDate": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "ImplementationGuide.definition.page.page.page.title",
+      "ImplementationGuide.definition.page.page.title",
+      "ImplementationGuide.definition.page.title",
+      "StructureDefinition.snapshot.element.definition",
+      "StructureDefinition.snapshot.element.short"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable": [
+      "SearchParameter",
+      "StructureDefinition"
+    ]
+  }
+}

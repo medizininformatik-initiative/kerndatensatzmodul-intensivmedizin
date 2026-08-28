@@ -1,0 +1,342 @@
+# MII PR ICU Score CAM-ICU - MII IG ICU v2026.0.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII PR ICU Score CAM-ICU**
+
+## Resource Profile: MII PR ICU Score CAM-ICU 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu | *Version*:2026.0.3 |
+| Draft as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Score_CAM_ICU |
+
+ 
+Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent). 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-score-cam-icu.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots, and their representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-cam-icu.csv), [Excel](../StructureDefinition-mii-pr-icu-score-cam-icu.xlsx), [Schematron](../StructureDefinition-mii-pr-icu-score-cam-icu.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-pr-icu-score-cam-icu",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_CAM_ICU",
+  "title" : "MII PR ICU Score CAM-ICU",
+  "status" : "draft",
+  "date" : "2026-08-28T08:35:29+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "99844-5",
+        "display" : "Confusion Assessment Method for the ICU"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:sct",
+      "path" : "Observation.code.coding",
+      "sliceName" : "sct",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "450740000",
+        "display" : "Confusion Assessment Method for the intensive care unit score"
+      }
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.value[x]:valueCodeableConcept",
+      "path" : "Observation.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
+      }
+    },
+    {
+      "id" : "Observation.interpretation",
+      "path" : "Observation.interpretation",
+      "short" : "Delirium status",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"
+      }
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "code"
+        }],
+        "rules" : "open"
+      },
+      "max" : "4"
+    },
+    {
+      "id" : "Observation.component:feature1-acute-change",
+      "path" : "Observation.component",
+      "sliceName" : "feature1-acute-change",
+      "short" : "Acute change or fluctuating mental status",
+      "definition" : "Is there an acute change from mental status baseline? Or has the patient's mental status fluctuated during the past 24 hours?",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:feature1-acute-change.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Acute change from mental status baseline or Fluctuation in mental status in past 24 hours [CAM.ICU]"
+    },
+    {
+      "id" : "Observation.component:feature1-acute-change.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:feature1-acute-change.value[x]:valueCodeableConcept",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
+      }
+    },
+    {
+      "id" : "Observation.component:feature2-inattention",
+      "path" : "Observation.component",
+      "sliceName" : "feature2-inattention",
+      "short" : "Inattention present",
+      "definition" : "Does the patient have difficulty focusing attention (e.g., easily distracted, difficulty keeping track of conversation)?",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:feature2-inattention.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Feature 2: Inattention"
+    },
+    {
+      "id" : "Observation.component:feature2-inattention.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:feature2-inattention.value[x]:valueCodeableConcept",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
+      }
+    },
+    {
+      "id" : "Observation.component:feature3-altered-loc",
+      "path" : "Observation.component",
+      "sliceName" : "feature3-altered-loc",
+      "short" : "Current level of consciousness",
+      "definition" : "Is the patient's level of consciousness anything other than alert (e.g., vigilant, lethargic, stupor, coma)?",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:feature3-altered-loc.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Feature 3: Altered level of consciousness"
+    },
+    {
+      "id" : "Observation.component:feature3-altered-loc.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:feature3-altered-loc.value[x]:valueCodeableConcept",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
+      }
+    },
+    {
+      "id" : "Observation.component:feature4-disorganized-thinking",
+      "path" : "Observation.component",
+      "sliceName" : "feature4-disorganized-thinking",
+      "short" : "Disorganized thinking present",
+      "definition" : "Is there evidence of disorganized or incoherent thinking (e.g., rambling, irrelevant conversation, unclear flow of ideas, illogical thinking)?",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:feature4-disorganized-thinking.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Feature 4: Disorganized thinking"
+    },
+    {
+      "id" : "Observation.component:feature4-disorganized-thinking.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:feature4-disorganized-thinking.value[x]:valueCodeableConcept",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
+      }
+    }]
+  }
+}
+
+```

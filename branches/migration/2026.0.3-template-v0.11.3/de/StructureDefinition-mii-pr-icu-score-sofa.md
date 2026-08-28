@@ -1,0 +1,733 @@
+# MII PR ICU Score SOFA - MII IG ICU v2026.0.3
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII PR ICU Score SOFA**
+
+## Ressourcenprofil: MII PR ICU Score SOFA 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa | *Version*:2026.0.3 |
+| Draft Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_SOFA |
+
+ 
+Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-score-sofa.json)
+
+### Formale Ansichten des Profilinhalts
+
+ [Beschreibung von Profilen, Differentials, Snapshots und deren Repräsentationen](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Schlüsselelemente-Tabelle](#tabs-key) 
+*  [Differential-Tabelle](#tabs-diff) 
+*  [Snapshot-Tabelle](#tabs-snap) 
+*  [Statistiken/Referenzen](#tabs-summ) 
+*  [Alle](#tabs-all) 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-icu-score.md) 
+
+#### Constraints
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-icu-score.md) 
+
+** Summary **
+
+Mandatory: 4 elements(24 nested mandatory elements)
+ Must-Support: 6 elements
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Observation.value[x]
+* The element 1 is sliced based on the value of Observation.component
+* The element 1 is sliced based on the value of Observation.component.code.coding (Closed)
+* The element 1 is sliced based on the value of Observation.component.value[x]
+
+ **Schlüsselelemente-Ansicht** 
+
+#### Terminology Bindings
+
+#### Constraints
+
+ **Differential-Ansicht** 
+
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-icu-score.md) 
+
+#### Constraints
+
+ **Snapshot-AnsichtView** 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-icu-score.md) 
+
+** Summary **
+
+Mandatory: 4 elements(24 nested mandatory elements)
+ Must-Support: 6 elements
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Observation.value[x]
+* The element 1 is sliced based on the value of Observation.component
+* The element 1 is sliced based on the value of Observation.component.code.coding (Closed)
+* The element 1 is sliced based on the value of Observation.component.value[x]
+
+ 
+
+Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-score-sofa.csv), [Excel](../StructureDefinition-mii-pr-icu-score-sofa.xlsx), [Schematron](../StructureDefinition-mii-pr-icu-score-sofa.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-pr-icu-score-sofa",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
+  "version" : "2026.0.3",
+  "name" : "MII_PR_ICU_Score_SOFA",
+  "title" : "MII PR ICU Score SOFA",
+  "status" : "draft",
+  "date" : "2026-08-28T08:35:29+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96789-3",
+        "display" : "Sequential Organ Failure Assessment SOFA"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:sct",
+      "path" : "Observation.code.coding",
+      "sliceName" : "sct",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "1187491009",
+        "display" : "Sequential Organ Failure Assessment score (observable entity)"
+      }
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.value[x]:valueInteger",
+      "path" : "Observation.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-score-range",
+        "severity" : "error",
+        "human" : "SOFA total score must be between 0 and 24",
+        "expression" : "valueInteger >= 0 and valueInteger <= 24",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    },
+    {
+      "id" : "Observation.interpretation",
+      "path" : "Observation.interpretation",
+      "short" : "Organ dysfunction severity",
+      "definition" : "Clinical interpretation of SOFA score severity"
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "code"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 6,
+      "max" : "6"
+    },
+    {
+      "id" : "Observation.component:respiratory",
+      "path" : "Observation.component",
+      "sliceName" : "respiratory",
+      "short" : "Respiratory component",
+      "definition" : "0: PaO2/FiO2 ≥400 mmHg, 1: PaO2/FiO2 <400 mmHg, 2: PaO2/FiO2 <300 mmHg, 3: PaO2/FiO2 <200 mmHg with respiratory support, 4: PaO2/FiO2 <100 mmHg with respiratory support",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:respiratory.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "coding"
+        }],
+        "description" : "Component codes for SOFA score",
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.component:respiratory.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96823-0",
+        "display" : "Respiration [Score] SOFA"
+      }
+    },
+    {
+      "id" : "Observation.component:respiratory.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "xxxx",
+        "display" : "SOFA Subscore - Respiratory"
+      }
+    },
+    {
+      "id" : "Observation.component:respiratory.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:respiratory.value[x]:valueInteger",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-component-range",
+        "severity" : "error",
+        "human" : "SOFA component score must be between 0 and 4",
+        "expression" : "valueInteger >= 0 and valueInteger <= 4",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    },
+    {
+      "id" : "Observation.component:cardiovascular",
+      "path" : "Observation.component",
+      "sliceName" : "cardiovascular",
+      "short" : "Cardiovascular component",
+      "definition" : "0: MAP ≥70 mmHg, 1: MAP <70 mmHg, 2: Dopamine ≤5 or dobutamine any dose, 3: Dopamine >5 or epinephrine ≤0.1 or norepinephrine ≤0.1, 4: Dopamine >15 or epinephrine >0.1 or norepinephrine >0.1 (all vasopressor doses in µg/kg/min)",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:cardiovascular.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "coding"
+        }],
+        "description" : "Component codes for SOFA score",
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.component:cardiovascular.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96826-3",
+        "display" : "Cardiovascular [Score] SOFA"
+      }
+    },
+    {
+      "id" : "Observation.component:cardiovascular.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "xxx",
+        "display" : "SOFA Subscore - Cardiovascular"
+      }
+    },
+    {
+      "id" : "Observation.component:cardiovascular.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:cardiovascular.value[x]:valueInteger",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-component-range",
+        "severity" : "error",
+        "human" : "SOFA component score must be between 0 and 4",
+        "expression" : "valueInteger >= 0 and valueInteger <= 4",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    },
+    {
+      "id" : "Observation.component:hepatic",
+      "path" : "Observation.component",
+      "sliceName" : "hepatic",
+      "short" : "Hepatic component",
+      "definition" : "0: Bilirubin <1.2 mg/dL (<20 µmol/L), 1: Bilirubin 1.2-1.9 mg/dL (20-32 µmol/L), 2: Bilirubin 2.0-5.9 mg/dL (33-101 µmol/L), 3: Bilirubin 6.0-11.9 mg/dL (102-204 µmol/L), 4: Bilirubin ≥12.0 mg/dL (≥204 µmol/L)",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:hepatic.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "coding"
+        }],
+        "description" : "Component codes for SOFA score",
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.component:hepatic.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96825-5",
+        "display" : "Liver [Score] SOFA"
+      }
+    },
+    {
+      "id" : "Observation.component:hepatic.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "xxx",
+        "display" : "SOFA Subscore - Hepatic"
+      }
+    },
+    {
+      "id" : "Observation.component:hepatic.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Hepatic (Bilirubin)"
+    },
+    {
+      "id" : "Observation.component:hepatic.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:hepatic.value[x]:valueInteger",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-component-range",
+        "severity" : "error",
+        "human" : "SOFA component score must be between 0 and 4",
+        "expression" : "valueInteger >= 0 and valueInteger <= 4",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    },
+    {
+      "id" : "Observation.component:coagulation",
+      "path" : "Observation.component",
+      "sliceName" : "coagulation",
+      "short" : "Coagulation component",
+      "definition" : "0: Platelets ≥150 ×10³/µL, 1: Platelets <150 ×10³/µL, 2: Platelets <100 ×10³/µL, 3: Platelets <50 ×10³/µL, 4: Platelets <20 ×10³/µL",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:coagulation.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "coding"
+        }],
+        "description" : "Component codes for SOFA score",
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.component:coagulation.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96824-8",
+        "display" : "Coagulation [Score] SOFA"
+      }
+    },
+    {
+      "id" : "Observation.component:coagulation.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "xxx",
+        "display" : "SOFA Subscore - Coagulation"
+      }
+    },
+    {
+      "id" : "Observation.component:coagulation.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Coagulation (Platelets)"
+    },
+    {
+      "id" : "Observation.component:coagulation.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:coagulation.value[x]:valueInteger",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-component-range",
+        "severity" : "error",
+        "human" : "SOFA component score must be between 0 and 4",
+        "expression" : "valueInteger >= 0 and valueInteger <= 4",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    },
+    {
+      "id" : "Observation.component:renal",
+      "path" : "Observation.component",
+      "sliceName" : "renal",
+      "short" : "Renal component",
+      "definition" : "0: Creatinine <1.2 mg/dL (<110 µmol/L), 1: Creatinine 1.2-1.9 mg/dL (110-170 µmol/L), 2: Creatinine 2.0-3.4 mg/dL (171-299 µmol/L), 3: Creatinine 3.5-4.9 mg/dL (300-440 µmol/L) or urine output <500 mL/day, 4: Creatinine ≥5.0 mg/dL (≥440 µmol/L) or urine output <200 mL/day",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:renal.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "coding"
+        }],
+        "description" : "Component codes for SOFA score",
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.component:renal.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96828-9",
+        "display" : "Renal [Score] SOFA"
+      }
+    },
+    {
+      "id" : "Observation.component:renal.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "xxx",
+        "display" : "SOFA Subscore - Renal"
+      }
+    },
+    {
+      "id" : "Observation.component:renal.code.text",
+      "path" : "Observation.component.code.text",
+      "patternString" : "Renal (Creatinine or urine output)"
+    },
+    {
+      "id" : "Observation.component:renal.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:renal.value[x]:valueInteger",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-component-range",
+        "severity" : "error",
+        "human" : "SOFA component score must be between 0 and 4",
+        "expression" : "valueInteger >= 0 and valueInteger <= 4",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    },
+    {
+      "id" : "Observation.component:neurological",
+      "path" : "Observation.component",
+      "sliceName" : "neurological",
+      "short" : "Neurological component",
+      "definition" : "0: GCS 15, 1: GCS 13-14, 2: GCS 10-12, 3: GCS 6-9, 4: GCS <6",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:neurological.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "coding"
+        }],
+        "description" : "Component codes for SOFA score",
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "max" : "2"
+    },
+    {
+      "id" : "Observation.component:neurological.code.coding:loinc",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "96827-1",
+        "display" : "Central nervous system [Score] SOFA"
+      }
+    },
+    {
+      "id" : "Observation.component:neurological.code.coding:sct",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "xxxx",
+        "display" : "SOFA Subscore - Neurological"
+      }
+    },
+    {
+      "id" : "Observation.component:neurological.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component:neurological.value[x]:valueInteger",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueInteger",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }],
+      "constraint" : [{
+        "key" : "sofa-component-range",
+        "severity" : "error",
+        "human" : "SOFA component score must be between 0 and 4",
+        "expression" : "valueInteger >= 0 and valueInteger <= 4",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+      }]
+    }]
+  }
+}
+
+```

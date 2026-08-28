@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "mii-cps-icu-capabilitystatement",
+  "language" : "de",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement mii-cps-icu-capabilitystatement</b></p><a name=\"de-mii-cps-icu-capabilitystatement\"> </a><a name=\"de-hcmii-cps-icu-capabilitystatement\"> </a><h2 id=\"de-title\">MII CPS Intensivmedizin CapabilityStatement</h2><ul><li>Implementation Guide Version: 2026.0.3 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>xml</code>, <code>json</code></li><li>Published on: 2025-05-06 </li><li>Published by: Medizininformatik Initiative </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"de-rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"de-mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"/></div></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata",
+  "version" : "2026.0.3",
+  "name" : "MII_CPS_Intensivmedizin_CapabilityStatement",
+  "title" : "MII CPS Intensivmedizin CapabilityStatement",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-06",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Intensivmedizin der Medizininformatik Initiative zu implementieren.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["xml",
+  "json"],
+  "rest" : [{
+    "mode" : "server"
+  }]
+}
