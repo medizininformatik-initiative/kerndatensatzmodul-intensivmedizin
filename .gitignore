@@ -30,3 +30,8 @@ fhirpkg.lock.json
 # --- IG publisher scratch at repo root ---
 /translations/
 /Requirements-fromNarrative.json
+
+# Migrations-Evidenz: Logs unter migration-log/ sind Teil des Audit-Trails
+# (Skill mii-ig-migration: run.log committed with the branch) — Ausnahme vom *.log oben.
+!migration-log/**/*.log
+!migration-log/*.log

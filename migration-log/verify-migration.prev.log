@@ -1,0 +1,76 @@
+2026-08-27T18:12:12Z  INFO   11  verify-migration  params  target=. source=/private/tmp/claude-501/-Users-thome-code-fhir-profiling-kerndatensatzmodul-intensivmedizin/44b97ba8-984c-4bb6-888e-1abaa7e1d25a/scratchpad/src-master guide_tree=- rendered=output log=./migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C3  identisch=157 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C4  identisch=2 divergiert=19 nicht_pruefbar=136
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=19 subjects=anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdermodule.page.md.md, anwendungsflleinformationsmodell-uml.page.md.md, anwendungsflleinformationsmodell.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=136 subjects=anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.page.md.md, technischeimplementierung-fhir-profile-beatmungswerte-beatmungprocedure.page.md.md, technischeimplementierung-fhir-profile-beatmungswerte-eingestellteundgemesseneparameterdevicemetric-duplicate-2.page.md.md …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C5  identisch=4 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C6  identisch=20 divergiert=47 nicht_pruefbar=58
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: conservation C6  count=47 subjects=technischeimplementierung-fhir-profile-monitoringundvitaldaten-monitoringundvitaldatenobservation-herzfrequenzobservation.page.md.md, technischeimplementierung-fhir-profile-monitoringundvitaldaten-monitoringundvitaldatenobservation-herzzeitvolumenobservation.page.md.md, technischeimplementierung-fhir-profile-monitoringundvitaldaten-monitoringundvitaldatenobservation-idealeskrpergewichtobservation.page.md.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: conservation C6  count=58 subjects=technischeimplementierung-fhir-profile-beatmungswerte-parametervonbeatmungobservation-atemwegsdruckbeimittleremexpiratorischemgasflussobs.page.md.md, technischeimplementierung-fhir-profile-beatmungswerte-parametervonbeatmungobservation-atemzugvolumen-einstellungobservation.page.md.md, technischeimplementierung-fhir-profile-beatmungswerte-parametervonbeatmungobservation-atemzugvolumen-waehrend-beatmungobservation.page.md.md …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  conservation C7  identisch=0 divergiert=25 nicht_pruefbar=130
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: conservation C7  count=25 subjects=StructureDefinition-mii-pr-icu-beatmung-intro:2 (no-source), StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust-intro:2 (no-source), StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage-intro:2 (no-source) …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=130 subjects=anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.page.md.md, technischeimplementierung-fhir-profile-beatmungswerte-beatmungprocedure.page.md.md, technischeimplementierung-fhir-profile-beatmungswerte-eingestellteundgemesseneparameterdevicemetric-duplicate-2.page.md.md …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  fidelity F1  identisch=9 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  fidelity F2  identisch=3 divergiert=1 nicht_pruefbar=5
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: fidelity F2  count=1 subjects=de.gematik.isik
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=5 subjects=de.medizininformatikinitiative.kerndatensatz.meta, hl7.fhir.uv.crmi, hl7.fhir.uv.extensions.r4 …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  provenance P2  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: provenance P2  count=1 subjects=vendored template ref
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  provenance P3  identisch=1 divergiert=0 nicht_pruefbar=1
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=1 subjects=IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  provenance P4  identisch=0 divergiert=1 nicht_pruefbar=0
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: provenance P4  count=1 subjects=source guide version
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  rendering R1  identisch=3 divergiert=10 nicht_pruefbar=0
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: rendering R1  count=10 subjects=kontextimgesamtprojektbezgezuanderenmodulen.page.md -> implementer-guidance.html, referenzen.page.md -> implementer-guidance.html, release-notes.page.md -> changes.html …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=2 nicht_pruefbar=0
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=2 subjects=output/de id="ig-status" [{{], output/en id="ig-status" [{{]
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  rendering R4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  rendering R5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-27T18:12:32Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=1 nicht_pruefbar=0
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: log L1  count=1 subjects=5.1b.5/parent-snapshots @ 2026-08-27T17:51:48Z
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  INFO   11  verify-migration  log L2  identisch=21 divergiert=3 nicht_pruefbar=5
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: log L2  count=3 subjects=pre.2 classify-source-shape, pre.5 toolchain, 5.2 skeleton-vendored
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: log L2  count=5 subjects=5.1b.2 gofsh-input, 5.1b.2 gofsh-convert, 5.1b.3 sushi-before …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  INFO   11  verify-migration  log L3  identisch=2 divergiert=1 nicht_pruefbar=0
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: log L3  count=1 subjects=identity field title
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  INFO   11  verify-migration  log L4  identisch=1 divergiert=1 nicht_pruefbar=1
+2026-08-27T18:12:32Z  WARN   11  verify-migration  verification-divergence: log L4  count=1 subjects=page count
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-27T18:12:32Z  WARN   11  verify-migration  not-mechanisable: log L4  count=1 subjects=conversion count
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-27T18:12:32Z  WARN   11  verify-migration  result  identisch=236 divergiert=111 nicht_pruefbar=337 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.

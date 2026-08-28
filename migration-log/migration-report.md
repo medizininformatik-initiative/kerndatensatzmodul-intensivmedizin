@@ -78,6 +78,9 @@ Vorschlag aus dem Review: Die tatsächlich verwendeten SNOMED-Codes samt deutsch
 **DEC-9 — 6 Tippfehler-Canonicals im Quell-Guide** · niedrig — **Upstream (Modul-Team)**
 6 Guide-Seiten tragen falsche `Canonical:`-Zeilen (Slash statt Bindestrich, fehlendes www, veraltete IDs) — deren Simplifier-Rendering ist **selbst kaputt** („Command 'tree' could not render"). Migration hat sie per Titel-Match korrekt geankert (Log `5.4c`). Außerdem: special-url-Liste itemisiert 11 URLs, Preflight-Zähler sagte 17 — Publisher-Build lief mit 11 fehlerfrei durch (Delta = Zählerdefinition, keine fehlenden Einträge).
 
+**DEC-11 — ISiK-Profile im Modul-Guide listen (Profilkarte)** · niedrig — **angewendeter Default: Option (a)**
+Governance-Frage (User-Review 2026-08-28): Sollen die 49 ISiK-gehosteten `sd-mii-icu-*`-Profile im ICU-Guide automatisch gelistet werden, obwohl gematik sie versioniert? Optionen: (a) **generiert aus der GEPINNTEN Dependency** — Liste ändert sich nur mit bewusstem Pin-Bump; Governance-Rahmung im Block ("gehostet und versioniert von gematik") · (b) kuratierte Liste + CI-Abgleich · (c) nur Kapitelverweis auf den ISiK-IG. **Angewendet: (a)** via `scripts/gen-profile-map.py` (adaptiert aus dem Onko-Modul, agent-skills#97): interaktive Profilkarte auf profiles.md — Ebene 1 blau = 95 modul-eigene Profile in 7 Familien (Coverage-Check bricht bei Lücken), Ebene 2 amber = 49 ISiK-Profile aus `de.gematik.isik@<Pin>` (ersetzt die unvollständige 46er-Handliste, s. Protokoll). **Wer:** Modul-Team + TF KDS bestätigen die Listing-Entscheidung.
+
 ## ② Review-Queue (Gates B/C — jemand muss prüfen)
 
 **Generierte DERIVED-Tabelle:** `migration-log/derived-content.tsv` — **26 Marker**: 2× `bridge` (profiles.md MUV-Sektion, EN+DE, Gate B) · 24× `no-source` (12 Intro-Notes ohne EN-Guide-Gegenseite, EN übersetzt + DE-Zwilling, Gate C). Regenerieren: `derived-scan.py --target . --markdown`.

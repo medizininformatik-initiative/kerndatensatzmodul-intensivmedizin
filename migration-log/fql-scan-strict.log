@@ -1,0 +1,6 @@
+2026-08-27T17:50:17Z  INFO   5.4  fql-scan  params  rules=/Users/thome/code/fhir-profiling/kerndatensatzmodul-onkologie/.claude/skills/mii-ig-migration/references/fql-rules.tsv  targets= input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes  defaulted=0
+2026-08-27T17:50:17Z  INFO   5.4  fql-scan  target  path=input/pagecontent  kind=dir  files=16
+2026-08-27T17:50:17Z  INFO   5.4  fql-scan  target  path=input/translations/de/pagecontent  kind=dir  files=16
+2026-08-27T17:50:17Z  INFO   5.4  fql-scan  target  path=input/intro-notes  kind=dir  files=69
+2026-08-27T17:50:17Z  INFO   5.4  fql-scan  target  path=input/translations/de/intro-notes  kind=dir  files=69
+2026-08-27T17:50:24Z  INFO   5.4  fql-scan  result  mapped=0 unknown=0 files=170  exit=0  no directives found
