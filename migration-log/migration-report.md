@@ -2,18 +2,18 @@
 
 Branch: `migration/2026.0.3-template-v0.11.3` · Quelle: `medizininformatik-initiative/kerndatensatzmodul-intensivmedizin` master@`a7588e80` (Shape A, Hybrid: Simplifier-Projekt + Alt-IG-Publisher-Skripte + Roh-Ressourcen-Ordner) · Narrativ: Simplifier-Guide-Harvest (Current-Preview, User-Entscheid 2026-08-27 — es existiert **keine** publizierte Guide-Version) · Template: `forschungsgruppe-digital-health/mii-kds-module-template` **v0.11.3** · Datum: 2026-08-27 · Autor: Agent (Skill `mii-ig-migration`, aus Onkologie-Repo) · **Nicht publiziert** — Gates A–D stehen aus; Merge = Publikationsnähe (Gate D entscheidet).
 
-**Empfehlung:** Mit den unten gelisteten Bedingungen (①, v. a. DEC-1 ISiK-Snapshots-Pin) mergen; die QA-Befunde sind nach Beleglage quell-inhärent (master-CI ist selbst rot).
+**Empfehlung:** Mit den unten gelisteten Bedingungen mergen (Rest von DEC-1: Store-PR #13 mergen + GitHub Pages aktivieren); die QA-Befunde sind nach Beleglage quell-inhärent (master-CI ist selbst rot).
 
 ## Zusammenfassung — zuerst lesen
 
 - **Identität unverändert**: id `mii-ig-icu-de-v2026`, canonical `https://www.medizininformatik-initiative.de/fhir/ext/modul-icu`, packageId `de.medizininformatikinitiative.kerndatensatz.icu`, name `MII_IG_ICU`, title `MII IG ICU`, Version **2026.0.3** (dev; publiziert ist 2026.0.2 → DEC-4), status `draft`, releaseLabel `ci-build`, Publisher MII. Lizenz **CC-BY-4.0** — nie IG-weit deklariert, aber artefakt-seitig durchgängig gestempelt (`license-terms.fsh`) → DEC-2.
 - **Artefakte vollständig**: 152 FSH-Artefakte (95 Profile, 44 ValueSets, 11 SearchParameter, 1 LogicalModel, 1 CapabilityStatement) + **136 Roh-Beispiele** (`beispiele/`, waren im publizierten Paket, aber NICHT im SUSHI-Build — jetzt via `path-resource` strukturerhaltend eingebunden). Pfadvergleich `input/fsh` Quelle↔Ziel leer bis auf 9 gelogte Scaffold-Zugänge. `comm -23`-Beweis: run.log `5.3 transfer-artefacts`.
 - **Narrativ migriert**: **157/157 DE-Seiten** + **148/148 EN-Seiten** geharvestet (inkl. Reparatur eines Skill-Bugs: Umlaut-Slugs, 46 Seiten — s. „Abweichungen"). Routing per `page-map.tsv` (157 Zeilen, 0 ungeroutet): 69 Intro-Notes (per Canonical-Zeile geankert), 58 → profiles.md-Sektionen (48 ISiK-gehostete MUV-Seiten, Boilerplate konsolidiert mit Bridge-Box), 12 semantische Ziele, 18 RETIRED (nur generiertes Rendering, 0 Zeichen Prosa). Zweisprachig: **EN = authentischer EN-Guide** (nicht Maschinenübersetzung!), DE = Original; 12 Intro-Notes ohne EN-Gegenseite migriert-übersetzt (DERIVED:no-source, Gate C).
-- **Build**: SUSHI 3.20.1 **0 Errors** (Quelle master: **3** — snapshotloser ISiK-Parent, vorbestehend). IG Publisher **2.3.2** (SHA-256 = Workflow-Pin) exit 0, 8 min; qa: **1207 Errors / 1472 Warnungen / 0 Broken Links** → ③-Triage: Quelle hatte NIE einen Publisher-QA (Simplifier-only) und die **master-CI-Validierung ist selbst seit Wochen FAILURE** (Beleg run.log `5.6 qa-baseline-ci`).
+- **Build**: SUSHI 3.20.1 **0 Errors** (Quelle master: **3** — snapshotloser ISiK-Parent, vorbestehend). IG Publisher **2.3.2** (SHA-256 = Workflow-Pin) exit 0, 8 min; qa: **1217 Errors / 1521 Warnungen / 0 Broken Links** (Stand ISiK 6.0.0, 2026-08-28; davon +10 `sct-version-de` → QA-7) → ③-Triage: Quelle hatte NIE einen Publisher-QA (Simplifier-only) und die **master-CI-Validierung ist selbst seit Wochen FAILURE** (Beleg run.log `5.6 qa-baseline-ci`).
 - **Konventions-Check (M1–M11): PASS** — keine harte Verletzung.
 - **prepost-delta: 0 REGRESSIONEN** (28 unchanged · 1 improved · 4 expected-change; Lizenz −→CC-BY-4.0 als not-measurable → DEC-2).
 - **Verifikation (7b)**: **236 IDENTISCH · 52 DIVERGIERT (alle disponiert, s. ②/③) · 384 NICHT PRÜFBAR** (überwiegend menschliche Urteile; Checkliste unter Sign-off). Exit 1 — erwartet, Befunde sind der Output.
-- **Offen**: 9 Entscheidungen (①), 6 Review-Blöcke (②) + generierte DERIVED-Tabelle (26 Marker), 6 QA-Posten (③). **Blockierend für Publikation: DEC-1** (ISiK-Snapshot-Pin in CI).
+- **Offen**: 9 Entscheidungen (①), 6 Review-Blöcke (②) + generierte DERIVED-Tabelle (26 Marker), 6 QA-Posten (③). **Blockierend: nur noch der Rest von DEC-1** — fhir-package-store PR #13 mergen + GitHub Pages aktivieren; danach publiziert die CI die Branch-Preview selbst.
 
 ## Wo die Evidenz liegt
 
@@ -24,7 +24,7 @@ Alles unter `migration-log/` (mit dem Branch committet): `run.log` (4406 Zeilen,
 | Was | Kommando | Erwartet |
 |---|---|---|
 | FSH kompilieren | `npx --yes fsh-sushi@3.20.1 .` | `0 Errors` |
-| Guide rendern | `java -jar publisher.jar -ig .` (Publisher 2.3.2, SHA im Workflow-`env:`) | qa.txt 1207 Errors (③) |
+| Guide rendern | Cache priming (README) · `npx --yes fsh-sushi@3.20.1 .` · `java -jar publisher.jar -ig ig.ini` (Publisher 2.3.2, SHA im Workflow-`env:`; `-ig ig.ini` = ohne internen SUSHI-Lauf, sonst überschreibt der Prescan den geprimten Cache) | qa.txt 1217 Errors (③) |
 | Template-Checks M1–M11 | `node scripts/convention-check.mjs` | PASS |
 | Verifikation (7b) | `python3 <skill>/scripts/verify-migration.py --target . --source <master-checkout> --rendered output --source-lang de --template-latest v0.11.3` | exit 1, 236/52/384 |
 | Delta | `python3 <skill>/scripts/prepost-delta.py --pre migration-log/preflight-analysis.json --post migration-log/postflight-analysis.json …` | exit 0, 0 REGRESSION |
@@ -41,12 +41,15 @@ Der Verifier ist **nicht** hier vendort: Skill `mii-ig-migration` (agent-skills-
 | FIX-3 | Template-Demo `rendering-artifacts` entfernt (Seiten, Menüs, pages:, .po) | in `2e4d5ede` | M8-Verstoß auf Release-Branch | ja |
 | FIX-4 | Publikations-Box + Guide-Inhaltsverzeichnis von der Startseite entfernt (Simplifier-Plattform-Chrome, Metadaten veraltet: „2026.0.2 / 18.03.2026") | in `2e4d5ede` | veraltete Metadaten prangen auf index | ja |
 | FIX-5 | Marker-`source=`-Namen + MUV-Boilerplate wörtlich auf profiles.md (C6/C7: 111→52 Divergenzen) | `21b57d5d` | 59 Verifikations-Divergenzen kehren zurück | ja |
+| FIX-6 | **ISiK 6.0.0** statt 5.1.0 (TF-Richtung; Spike-belegt: SUSHI 0 Errors, 46/48 sd-mii-icu-Profile byte-identisch, +1 neu, 2 mit additiven Constraints) + Manifest-SCT-Pin auf **20260701** (Juli-Edition, User-Vorgabe). Der geplante Sweep über die Beispiele wurde auf User-Ansage REVERTIERT — die 10 `sct-version-de`-Befunde stehen als QA-7 beim Team | s. Branch | zurück auf 5.1.0; Spike-Evidenz verfällt | ja |
+| FIX-7 | Terminologie-Rauschen: `advisor.json` unterdrückt `VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.*` (283 Befunde = gepinnte SCT-Edition auf tx.fhir.org nicht vorhanden — KEIN Code- und kein Übersetzungsproblem; WIRKORT: das Java-Validator-Gate `validation.yml` konsumiert advisor.json via `-advisor-file` und würde sonst ROT; der Publisher-qa-Report zeigt die Befunde weiterhin — dort zählt die ③-Triage; echte Code-Prüfung gegen SU-TermServ, Step existiert im Template-Workflow) | s. Branch | das Validator-CI-Gate wird rot | ja |
+| FIX-8 | CI-Priming: `ig-publisher.yml` lädt den `.fhir`-Cache aus dem fhir-package-store (cache-store) VOR SUSHI/Publisher; README-Abschnitt für lokale Builds | s. Branch | CI-Build bricht mit 4 SUSHI-Fehlern (Parent ohne Snapshot) | ja |
 
 ## ① Entscheidungsqueue (Gate A — jemand muss wählen)
 
-**DEC-1 — ISiK-Snapshot-Pin `de.gematik.isik: 5.1.0-snapshots`** · **blockierend**
-`de.gematik.isik@5.1.0` liefert **0/140** Snapshots; SUSHI kann den Parent `sd-mii-icu-monitoring-und-vitaldaten` nicht importieren (vorbestehend: **master hat dieselben 3 SUSHI-Fehler**, Beleg run.log `5.2 qa-baseline`). Per Spec §5.1b.5 mit dem **offiziellen HL7-Generator** (validator_cli 6.10.0) neu gebaut → lokaler Cache-Eintrag `de.gematik.isik#5.1.0-snapshots` (105/139 SDs mit verifizierten Snapshots, benötigter Parent: 105 Snapshot- vs. 45 Differential-Elemente), Pin in `sushi-config.yaml:250` umgestellt.
-**Wenn niemand handelt:** CI-Builds schlagen fehl (Cache-Eintrag existiert nur lokal); das publizierte Paket würde eine Registry-unbekannte Version pinnen. **Optionen:** (a) CI-Prebuild-Step, der den Rebuild reproduziert (Skript im Skill vorhanden) · (b) Pin auf `5.1.0` zurück + die 3 SUSHI-Fehler wie bisher tolerieren · (c) Upstream (gematik) um Snapshots im Paket bitten. **Wer:** Modul-Team + TF KDS. **Aufwand:** Stunden (a) / Minuten (b). **Revertierbar:** ja (1 Zeile).
+**DEC-1 — ISiK-Snapshots für den Build** · **weitgehend gelöst (2026-08-28)** — Rest: Store-PR mergen + Pages aktivieren
+`de.gematik.isik` liefert in KEINER Version Snapshots (5.1.0: 0/140, 6.0.0: 0/178, gemessen); SUSHI kann die `sd-mii-icu-*`-Parents sonst nicht importieren (vorbestehend: master hat dieselben 3 Fehler). **Lösung umgesetzt:** (1) Modul auf **ISiK 6.0.0** gehoben (TF-Richtung; Spike: SUSHI 0 Errors, Diff 46/48 Profile byte-identisch, +1 neu, 2 mit additiven Constraints); (2) Snapshot-Rebuild (offizieller HL7-Generator, validator_cli 6.10.0; 142/178 SDs verifiziert) als `de.gematik.isik-6.0.0-snapshots.tgz` in den **fhir-package-store** ([PR #13](https://github.com/medizininformatik-initiative/fhir-package-store/pull/13)) — der cache-store-Branch liefert es als reguläres `#6.0.0` aus, der Pin bleibt registry-sauber `6.0.0` (F2-Divergenz damit aufgelöst); (3) **CI-Priming-Steps** in `ig-publisher.yml` + README-Anleitung für lokale Builds. **Wichtig für Ballot-RCs:** Das publizierte Modul-Paket referenziert nur das offizielle Registry-`de.gematik.isik@6.0.0` — die Snapshots sind reines Build-Hilfsmittel und gehören NICHT in eine Registry. **Offen:** Store-PR #13 mergen (Modul-Team hat Schreibrecht) · GitHub Pages im Repo aktivieren (Settings → Pages → Source `gh-pages`) · Priming-Steps als Upstream-Vorschlag ans Modul-Template (erben dann alle Module) · Wurzelbehandlung = DEC-8.
+
 
 **DEC-2 — Lizenz `CC-BY-4.0` bestätigen** · hoch
 Quelle deklariert IG-weit **keine** Lizenz (kein LICENSE-File, `license:` auskommentiert); artefakt-seitig stempelt `input/fsh/rulesets/license-terms.fsh` CC-BY-4.0 in jedes Artefakt; Template-Literal ist ebenfalls CC-BY-4.0 → konsistent, aber **nie ein menschlicher Beschluss**. prepost-delta meldet die Zeile als not-measurable. **Wenn niemand handelt:** Das Paket publiziert CC-BY-4.0 als IG-Lizenz. **Wer:** Modul-Team. **Revertierbar:** ja.
@@ -68,6 +71,9 @@ Template ignoriert `fsh-generated/`; die Modul-CI (`main.yml`, kerndatensatz-met
 
 **DEC-8 — Upstream-Issue HL7 ProfileUtilities** · niedrig
 FIX-1-Ursache als Issue an HL7 melden (Reproduzierer: `/tmp/snaprepro`-Rezept in run.log `5.6 profileutilities-workaround`; Minimalfall: Differential mit `slicing` ohne Slices + Kind-Constraints auf `Observation.component`).
+
+**DEC-10 — SCT-Supplement mit deutschen Designations (MII-weit)** · niedrig — **TF KDS**
+Vorschlag aus dem Review: Die tatsächlich verwendeten SNOMED-Codes samt deutscher Übersetzungen als `CodeSystem`-Supplement (`content: supplement`) mit dem Paket ausliefern — als Anzeigetext-Angebot an Implementierer (UIs). Löst bewusst NICHT die Terminologie-qa-Fehler (die brauchen die Basis-Edition, s. FIX-7) und ist als Muster MII-weit zu entscheiden, nicht ICU-spezifisch. PoC aus den 44 ICU-ValueSets jederzeit generierbar.
 
 **DEC-9 — 6 Tippfehler-Canonicals im Quell-Guide** · niedrig — **Upstream (Modul-Team)**
 6 Guide-Seiten tragen falsche `Canonical:`-Zeilen (Slash statt Bindestrich, fehlendes www, veraltete IDs) — deren Simplifier-Rendering ist **selbst kaputt** („Command 'tree' could not render"). Migration hat sie per Titel-Match korrekt geankert (Log `5.4c`). Außerdem: special-url-Liste itemisiert 11 URLs, Preflight-Zähler sagte 17 — Publisher-Build lief mit 11 fehlerfrei durch (Delta = Zählerdefinition, keine fehlenden Einträge).
@@ -105,6 +111,7 @@ Ohne Quell-Inhalt, Template-Scaffold mit TODO-Boxen: `capability-statements.md`,
 | QA-3 | 609 Fehler in Konformanz-Ressourcen (Invarianten-Expressions 10, Slicing-Auswertung 7, canonical/id-Mismatch 12 = Preflight-Klasse, Pattern-Checks …) | 609 | quell-autorisiert (identisch im publizierten Paket) | Modul-Team, priorisiert nach Klassenliste (run.log `5.6 qa-summary`) |
 | QA-4 | „Build Errors: 17/234/0" (Publisher-Sammelposten) | 17 | **unklassifiziert** | in qa.html aufschlüsseln; vor Gate D klären |
 | QA-5 | R2: `{{title}}` leakt auf `searchform.html` (EN+DE) | 2 | **Template-inhärent** (ig-template) | Issue an mii-kds-module-template |
+| QA-7 | ISiK-6-Invariante `sct-version-de`: 10 Körpertemperatur-Beispiele deklarieren die internationale SCT-Edition in `coding.version` | 10 | quell-autorisiert, durch ISiK-6-Bump sichtbar | bleibt im qa-Report | Team: DE-Edition eintragen oder `version` weglassen (0..1, Invariante hängt am Element) | Modul-Team | qa.html, Suche `sct-version-de` |
 | QA-6 | L1/L4-Log-Befunde: `parent-snapshots`-WARN zählt „0 of 140" (Skript-Zählfehler; real 105/139 installiert+verifiziert) · „148 harvested" ist die EN-Log-Zeile gegen das DE-Manifest (157) | 2 | Skill-Tooling | Upstream-Issue Skill; sachlich geklärt (run.log `5.1b.5`, `5.1d`) |
 
 **Blockierend:** keiner der ③-Posten bricht den Build; Messlatte erfüllt. QA-4 vor Gate D aufschlüsseln.
