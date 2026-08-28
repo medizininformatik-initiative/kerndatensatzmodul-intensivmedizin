@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-unters
   "name" : "MII_PR_ICU_Untersuchung_Pupillensymmetrie",
   "title" : "MII PR ICU Untersuchung Pupillensymmetrie",
   "status" : "draft",
-  "date" : "2026-08-28T08:35:29+00:00",
+  "date" : "2026-08-28T09:07:16+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
