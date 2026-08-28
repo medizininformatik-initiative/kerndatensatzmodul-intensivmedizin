@@ -2,18 +2,6 @@
 <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d; the Simplifier-generated publication box and guide table of contents were dropped as platform chrome): https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU + https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/BeschreibungModul.page.md -->
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls 'Intensivmedizin' der Medizininformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer Form beschrieben.
 
-| Veröffentlichung |  |
-
-| --- | --- |
-
-| Datum | 18.03.2026 |
-
-| Version | 2026.0.2 |
-
-| Status | Active |
-
-| Realm | DE |
-
 
 ## Impressum
 
