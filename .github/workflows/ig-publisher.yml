@@ -461,6 +461,11 @@ jobs:
           rm -rf "${branch_dir}"
           mkdir -p "${branch_dir}"
           cp -R "output/." "${branch_dir}/"
+          # GitHubs 100-MB-Dateilimit: full-ig.zip (gemessen 122 MB bei diesem
+          # Modul, 2026-08-28) bricht sonst den gh-pages-Push. Die Branch-PREVIEW
+          # braucht das Download-Zip nicht; der formale go-publish-Pfad bleibt
+          # unberuehrt. Upstream-Kandidat fuer das Modul-Template.
+          find "${branch_dir}" -name 'full-ig.zip' -size +99M -delete
           # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
           echo "${BRANCH}" > "${branch_dir}/.branch-name"
           cd gh-pages
