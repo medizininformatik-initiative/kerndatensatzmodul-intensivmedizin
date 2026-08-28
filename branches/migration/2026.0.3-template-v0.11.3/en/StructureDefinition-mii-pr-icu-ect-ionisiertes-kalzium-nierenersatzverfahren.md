@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-io
   "name" : "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status" : "active",
-  "date" : "2026-08-28T12:57:14+00:00",
+  "date" : "2026-08-28T14:34:56+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

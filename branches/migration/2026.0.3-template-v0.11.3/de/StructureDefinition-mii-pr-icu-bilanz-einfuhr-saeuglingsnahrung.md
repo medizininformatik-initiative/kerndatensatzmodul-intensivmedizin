@@ -92,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung",
   "title" : "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
   "status" : "draft",
-  "date" : "2026-08-28T12:57:14+00:00",
+  "date" : "2026-08-28T14:34:56+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-dm-ein
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
   "status" : "active",
-  "date" : "2026-08-28T12:57:14+00:00",
+  "date" : "2026-08-28T14:34:56+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
