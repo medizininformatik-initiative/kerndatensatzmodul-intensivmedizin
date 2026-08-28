@@ -118,6 +118,26 @@ jobs:
         with:
           persist-credentials: false
 
+      # de.gematik.isik liefert keine Snapshots (0/178 in 6.0.0, gemessen 2026-08-28);
+      # SUSHI kann die sd-mii-icu-*-Parents sonst nicht importieren. Der MII-weite
+      # Mechanismus dafür ist der fhir-package-store: sein cache-store-Branch traegt
+      # einen .fhir-Cache inkl. Snapshot-Rebuilds (offizieller HL7-Generator), der hier
+      # VOR SUSHI/Publisher in den Runner-Cache gelegt wird. Muster: mii-testdata/ci.yml.
+      - name: FHIR-Paket-Cache aus dem fhir-package-store laden (ISiK-Snapshots)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: cache-store
+          path: .fhir-package-store
+          persist-credentials: false
+
+      - name: Paket-Cache nach ~/.fhir übernehmen
+        run: |
+          mkdir -p ~/.fhir/packages
+          cp -r .fhir-package-store/packages/* ~/.fhir/packages/
+          rm -rf .fhir-package-store
+          ls ~/.fhir/packages | head -20
+
       - name: Set up Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
