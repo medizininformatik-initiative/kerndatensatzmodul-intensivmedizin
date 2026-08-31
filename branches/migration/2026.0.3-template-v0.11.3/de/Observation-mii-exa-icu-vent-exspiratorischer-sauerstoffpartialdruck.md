@@ -1,4 +1,4 @@
-# Vent Exspiratorischer Sauerstoffpartialdruck - MII IG ICU v2026.0.3
+# Vent Exspiratorischer Sauerstoffpartialdruck - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
 
 **code**: Oxygen [Partial pressure] in Exhaled gas
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 180.0 mm[Hg] (Details: UCUM codemm[Hg] = 'mm[Hg]')
 
-**device**: [DeviceMetric/Example_Gemessene_Parameter_Beatmung](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_Beatmung)
+**device**: [DeviceMetric/Example_Gemessene_Parameter_Beatmung](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_Beatmung)
 
 
 

@@ -1,15 +1,15 @@
-# MII PR ICU Score RASS - MII IG ICU v2026.0.3
+# MII PR ICU Score RASS - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
 * **MII PR ICU Score RASS**
 
-## Ressourcenprofil: MII PR ICU Score RASS ( Experimentell ) 
+## Ressourcenprofil: MII PR ICU Score RASS 
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass | *Version*:2026.0.3 |
-| Draft Stand: 2025-12-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_RASS |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass | *Version*:2027.0.0-ballot.rc1 |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_RASS |
 
 **Usages:**
 
@@ -106,12 +106,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-score-rass",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Score_RASS",
   "title" : "MII PR ICU Score RASS",
-  "status" : "draft",
-  "experimental" : true,
-  "date" : "2025-12-15",
+  "status" : "active",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

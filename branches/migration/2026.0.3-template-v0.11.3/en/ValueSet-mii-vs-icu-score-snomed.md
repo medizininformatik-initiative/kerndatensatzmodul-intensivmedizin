@@ -1,4 +1,4 @@
-# MII VS Score SNOMED CT - MII IG ICU v2026.0.3
+# MII VS Score SNOMED CT - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed | *Version*:2027.0.0-ballot.rc1 |
 | Draft as of 2026-08-31 | *Computable Name*:MII_VS_ICU_Score_SNOMED |
 
  
@@ -39,12 +39,12 @@ No Expansion for this valueset (Unsupported Code System Version)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-score-snomed",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Score_SNOMED",
   "title" : "MII VS Score SNOMED CT",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

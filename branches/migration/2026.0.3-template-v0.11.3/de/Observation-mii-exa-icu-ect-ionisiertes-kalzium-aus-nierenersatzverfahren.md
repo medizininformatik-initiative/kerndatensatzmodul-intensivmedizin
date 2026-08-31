@@ -1,4 +1,4 @@
-# Ect Ionisiertes Kalzium Aus Nierenersatzverfahren - MII IG ICU v2026.0.3
+# Ect Ionisiertes Kalzium Aus Nierenersatzverfahren - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md)
 
-**partOf**: [Procedure/Example_extrakorporales_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/Example_extrakorporales_Verfahren)
+**partOf**: [Procedure/Example_extrakorporales_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/Example_extrakorporales_Verfahren)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinit
 
 **code**: Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 0.2 mmol/L (Details: UCUM codemmol/L = 'mmol/L')
 
-**device**: [DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren)
+**device**: [DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren)
 
 
 

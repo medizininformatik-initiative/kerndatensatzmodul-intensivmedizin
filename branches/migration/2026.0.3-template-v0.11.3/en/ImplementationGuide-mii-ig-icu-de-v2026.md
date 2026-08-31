@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG ICU v2026.0.3
+# MII ImplementationGuide Resource - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -37,6 +37,8 @@ This IG contains the following dependencies on other IGs.
 
 
 
+
+
 > **Where the versions come from.** Every package in the table is pinned directly in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/blob/main/sushi-config.yaml) (`dependencies:`) — including `hl7.terminology.r4` (THO) and `hl7.fhir.uv.extensions.r4`, and those two deliberately so: the IG Publisher's [automatic-packages rule](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) consults only this guide's **own** dependency list, so without a direct pin every build would silently inject the latest THO/extensions release — a version pinned by the MII meta package alone cannot control the build (verified in the publisher source at the pinned release). A weekly check warns when these two pins drift from what the pinned meta package ships, and the exact versions a concrete build used are recorded in its `qa-versions.json` output.
 
 ### Global Profiles
@@ -51,7 +53,7 @@ This publication includes IP covered under the following statements.
 
 * BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)
 
-* [OPS](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.de/CodeSystem/bfarm/ops): [MII_PR_ICU_Beatmung](StructureDefinition-mii-pr-icu-beatmung.md) and [MII_PR_ICU_Extrakorporales_Verfahren](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md)
+* [OPS](https://simplifier.net/resolve?scope=de.gematik.ti@1.3.1&canonical=http://fhir.de/CodeSystem/bfarm/ops): [MII_PR_ICU_Beatmung](StructureDefinition-mii-pr-icu-beatmung.md) and [MII_PR_ICU_Extrakorporales_Verfahren](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md)
 
 
 * IEEE maintains copyright on all content from IEEE 11073 standards. All rights reserved. Implementers should obtain official copies of all applicable standards documents directly from IEEE. The inclusion of IEEE 11073 terminology codes and definitions in HL7 messages and related implementation guides is permitted under existing agreements. For permission regarding any other usage, please contact IEEE at copyrights@ieee.org.
@@ -231,7 +233,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_IG_ICU",
   "title" : "MII IG ICU",
   "status" : "draft",
@@ -260,7 +262,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "de_basisprofil_r4",
     "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
     "packageId" : "de.basisprofil.r4",
-    "version" : "1.5.4"
+    "version" : "1.6.0"
   },
   {
     "id" : "de_gematik_isik",
@@ -272,7 +274,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "de_medizininformatikinitiative_kerndatensatz_base",
     "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.base",
-    "version" : "2026.0.0"
+    "version" : "2026.0.1"
   },
   {
     "id" : "de_medizininformatikinitiative_kerndatensatz_meta",
@@ -303,6 +305,12 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "dvmd_kdl_r4",
+    "uri" : "http://fhir.org/packages/dvmd.kdl.r4/ImplementationGuide/dvmd.kdl.r4",
+    "packageId" : "dvmd.kdl.r4",
+    "version" : "2026.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -3262,7 +3270,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
       },
       "name" : "MII PR ICU Score Faces Pain Scale Revised",
-      "description" : "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Die FPS-R verwendet sechs Gesichter, die den Skalenpunkten 0, 2, 4, 6, 8 und 10 entsprechen.\nIm interdisziplinaeren Konsens werden auch die ungeraden Zwischenwerte (1, 3, 5, 7, 9) zugelassen,\nda diese in der klinischen Praxis als Entscheidungstrigger fuer Interventionen (z. B. Schmerztherapie)\nverwendet werden.",
+      "description" : "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
       "exampleBoolean" : false
     },
     {

@@ -1,4 +1,4 @@
-# MII VS ICU Code Procedure Beatmung SNOMED - MII IG ICU v2026.0.3
+# MII VS ICU Code Procedure Beatmung SNOMED - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Procedure_Beatmung_SNOMED |
 
  **References** 
@@ -36,7 +36,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-procedure-beatmung-snomed",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Code_Procedure_Beatmung_SNOMED",
   "title" : "MII VS ICU Code Procedure Beatmung SNOMED",
   "status" : "active",

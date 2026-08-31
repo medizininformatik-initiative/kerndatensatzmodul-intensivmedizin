@@ -1,4 +1,4 @@
-# Ect Haemodialyse Blutfluss Gemessen - MII IG ICU v2026.0.3
+# Ect Haemodialyse Blutfluss Gemessen - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-
 
 **code**: Hemodialysis blood flow (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 200.0 mL/min (Details: UCUM codemL/min = 'mL/min')
 
-**device**: [DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren)
+**device**: [DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren)
 
 
 

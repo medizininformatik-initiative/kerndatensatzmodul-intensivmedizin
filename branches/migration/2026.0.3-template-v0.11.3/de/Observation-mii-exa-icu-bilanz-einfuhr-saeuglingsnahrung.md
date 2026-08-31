@@ -1,4 +1,4 @@
-# Bilanz Einfuhr Saeuglingsnahrung - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Saeuglingsnahrung - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -20,7 +20,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](StructureDefinition-mii-p
 
 **code**: Measured volume of intake of infant formula
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-24 09:30:10+0100
 

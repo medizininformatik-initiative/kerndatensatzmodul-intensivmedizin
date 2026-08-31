@@ -1,4 +1,4 @@
-# Hinweise zur Übersetzung - MII IG ICU v2026.0.3
+# Hinweise zur Übersetzung - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Hinweise zur Übersetzung**

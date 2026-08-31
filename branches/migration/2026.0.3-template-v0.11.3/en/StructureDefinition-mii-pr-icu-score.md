@@ -1,4 +1,4 @@
-# MII PR ICU Score - MII IG ICU v2026.0.3
+# MII PR ICU Score - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2027.0.0-ballot.rc1 |
 | Draft as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Score |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

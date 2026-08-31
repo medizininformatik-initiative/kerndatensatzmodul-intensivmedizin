@@ -1,4 +1,4 @@
-# Muv Koerpertemperatur Brust - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Brust - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -20,7 +20,7 @@ Profile: [SD MII ICU Koerpertemperatur Brust](https://simplifier.net/resolve?sco
 
 **code**: Temperature of breast
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 

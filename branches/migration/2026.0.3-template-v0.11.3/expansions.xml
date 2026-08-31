@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="40a16e46-202b-4a11-8778-9d43e6166386"/>
+  <id value="265deafc-7d11-4712-8bcb-eb30e1efcda1"/>
   <meta>
-    <lastUpdated value="2026-08-31T19:08:04.548+00:00"/>
+    <lastUpdated value="2026-08-31T19:21:50.029+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -109,7 +109,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Category_Observation_Bilanzen_HL7"/>
         <title value="MII VS ICU Category Observation Bilanzen HL7"/>
         <status value="active"/>
@@ -123,8 +123,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d25bb302-0613-41e5-8776-c60bea0fb107"/>
-          <timestamp value="2026-08-31T19:12:07+00:00"/>
+          <identifier value="urn:uuid:3ed532ab-d2bb-4bda-930e-d779bade4cd0"/>
+          <timestamp value="2026-08-31T19:25:27+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -273,7 +273,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Category_Observation_Bilanzen_HL7"/>
         <title value="MII VS ICU Category Observation Bilanzen HL7"/>
         <status value="active"/>
@@ -287,8 +287,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d25bb302-0613-41e5-8776-c60bea0fb107"/>
-          <timestamp value="2026-08-31T19:12:07+00:00"/>
+          <identifier value="urn:uuid:3ed532ab-d2bb-4bda-930e-d779bade4cd0"/>
+          <timestamp value="2026-08-31T19:25:27+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -437,7 +437,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Category_Observation_Bilanzen_HL7"/>
         <title value="MII VS ICU Category Observation Bilanzen HL7"/>
         <status value="active"/>
@@ -451,8 +451,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e6c73bf4-1ede-410e-a624-c69c13367648"/>
-          <timestamp value="2026-08-31T19:12:08+00:00"/>
+          <identifier value="urn:uuid:e4da3135-1695-49cc-8585-fcf44eead782"/>
+          <timestamp value="2026-08-31T19:25:28+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1359,7 +1359,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073"/>
         <title value="MII VS ICU Code Monitoring und Vitaldaten ISO11073"/>
         <status value="active"/>
@@ -1373,8 +1373,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5fb33161-157d-457d-b274-35a30c700283"/>
-          <timestamp value="2026-08-31T19:13:04+00:00"/>
+          <identifier value="urn:uuid:5f12d878-f415-4883-b972-3d4671872e0d"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="46"/>
           <offset value="0"/>
           <parameter>
@@ -2503,7 +2503,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073"/>
         <title value="MII VS ICU Code Monitoring und Vitaldaten ISO11073"/>
         <status value="active"/>
@@ -2517,8 +2517,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5fb33161-157d-457d-b274-35a30c700283"/>
-          <timestamp value="2026-08-31T19:13:04+00:00"/>
+          <identifier value="urn:uuid:5f12d878-f415-4883-b972-3d4671872e0d"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="46"/>
           <offset value="0"/>
           <parameter>
@@ -3647,7 +3647,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073"/>
         <title value="MII VS ICU Code Monitoring und Vitaldaten ISO11073"/>
         <status value="active"/>
@@ -3661,8 +3661,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9ab0ea0e-909f-4ee6-8040-13ecc4553ebb"/>
-          <timestamp value="2026-08-31T19:13:04+00:00"/>
+          <identifier value="urn:uuid:551d8178-ef57-4941-89d8-d21ff8943c76"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="46"/>
           <offset value="0"/>
           <parameter>
@@ -4957,7 +4957,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC"/>
         <title value="MII VS ICU Code Monitoring und Vitaldaten LOINC"/>
         <status value="active"/>
@@ -4971,8 +4971,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9ce4620-c809-4ae8-ab6d-6ad03af803dd"/>
-          <timestamp value="2026-08-31T19:13:04+00:00"/>
+          <identifier value="urn:uuid:9ab64114-d2a1-4bc1-8d4e-4c5d9b06385d"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="52"/>
           <offset value="0"/>
           <parameter>
@@ -6343,7 +6343,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC"/>
         <title value="MII VS ICU Code Monitoring und Vitaldaten LOINC"/>
         <status value="active"/>
@@ -6357,8 +6357,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9ce4620-c809-4ae8-ab6d-6ad03af803dd"/>
-          <timestamp value="2026-08-31T19:13:04+00:00"/>
+          <identifier value="urn:uuid:9ab64114-d2a1-4bc1-8d4e-4c5d9b06385d"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="52"/>
           <offset value="0"/>
           <parameter>
@@ -7729,7 +7729,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC"/>
         <title value="MII VS ICU Code Monitoring und Vitaldaten LOINC"/>
         <status value="active"/>
@@ -7743,8 +7743,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3cb8e490-c4a2-4095-bd57-805ab48bedf3"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:7e645bf7-40d9-4ff1-b6fc-747f6802c05c"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="52"/>
           <offset value="0"/>
           <parameter>
@@ -8383,7 +8383,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Beatmung_ISO11073"/>
         <title value="MII VS ICU Code Observation Beatmung ISO11073"/>
         <status value="active"/>
@@ -8397,8 +8397,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ffb73b6e-7b27-4070-af8e-123720e61ae0"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:d464d786-1dd7-4a6e-ba89-e5f922cd2bec"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -8929,7 +8929,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Beatmung_ISO11073"/>
         <title value="MII VS ICU Code Observation Beatmung ISO11073"/>
         <status value="active"/>
@@ -8943,8 +8943,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ffb73b6e-7b27-4070-af8e-123720e61ae0"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:d464d786-1dd7-4a6e-ba89-e5f922cd2bec"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -9475,7 +9475,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Beatmung_ISO11073"/>
         <title value="MII VS ICU Code Observation Beatmung ISO11073"/>
         <status value="active"/>
@@ -9489,8 +9489,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a13e1bbb-9548-4e29-9623-6b7ba3e3f4bd"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:bcd55249-ca47-4259-8f43-ce134d598b01"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -10221,7 +10221,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Beatmung_LOINC"/>
         <title value="MII VS ICU Code Observation Beatmung LOINC"/>
         <status value="active"/>
@@ -10235,8 +10235,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f8d2e0dc-42ce-4aa7-af79-8937987c1e19"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:15048c5c-cc67-4cca-92cf-f87d2c017f1a"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -11032,7 +11032,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Beatmung_LOINC"/>
         <title value="MII VS ICU Code Observation Beatmung LOINC"/>
         <status value="active"/>
@@ -11046,8 +11046,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f8d2e0dc-42ce-4aa7-af79-8937987c1e19"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:15048c5c-cc67-4cca-92cf-f87d2c017f1a"/>
+          <timestamp value="2026-08-31T19:26:26+00:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -11843,7 +11843,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Beatmung_LOINC"/>
         <title value="MII VS ICU Code Observation Beatmung LOINC"/>
         <status value="active"/>
@@ -11857,8 +11857,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:733794a1-0059-469a-b2d5-b963253a977d"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:d7fadb1c-2940-4cc8-9063-040649412731"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -12063,7 +12063,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Bilanzen_ISO11073"/>
         <title value="MII VS ICU Code Observation Bilanzen ISO11073"/>
         <status value="active"/>
@@ -12077,8 +12077,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:befa7f84-f36c-47ea-a1ad-e3ac3861f650"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:bff05d6c-479c-4690-9643-8b4d07f6b007"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -12172,7 +12172,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Bilanzen_ISO11073"/>
         <title value="MII VS ICU Code Observation Bilanzen ISO11073"/>
         <status value="active"/>
@@ -12186,8 +12186,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:befa7f84-f36c-47ea-a1ad-e3ac3861f650"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:bff05d6c-479c-4690-9643-8b4d07f6b007"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -12281,7 +12281,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Bilanzen_ISO11073"/>
         <title value="MII VS ICU Code Observation Bilanzen ISO11073"/>
         <status value="active"/>
@@ -12295,8 +12295,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:17c7b5e8-45ea-4bd4-b086-e307bcfd2dbd"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:25697566-54fe-47a3-b24f-adbb87eb1bee"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -12611,7 +12611,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Bilanzen_LOINC"/>
         <title value="MII VS ICU Code Observation Bilanzen LOINC"/>
         <status value="active"/>
@@ -12625,8 +12625,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:116c2f92-339d-4268-ae28-c0d9fa1f83f4"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:bc80f102-b698-4a6c-bb7d-0c296ab3e803"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -12997,7 +12997,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Bilanzen_LOINC"/>
         <title value="MII VS ICU Code Observation Bilanzen LOINC"/>
         <status value="active"/>
@@ -13011,8 +13011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:116c2f92-339d-4268-ae28-c0d9fa1f83f4"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:bc80f102-b698-4a6c-bb7d-0c296ab3e803"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -13383,7 +13383,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Bilanzen_LOINC"/>
         <title value="MII VS ICU Code Observation Bilanzen LOINC"/>
         <status value="active"/>
@@ -13397,8 +13397,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:38cd0bbd-83da-4ac9-b94c-530e18a2ecff"/>
-          <timestamp value="2026-08-31T19:13:05+00:00"/>
+          <identifier value="urn:uuid:99770a3b-aad9-4003-9927-8731d1b9583e"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -13512,7 +13512,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073"/>
         <title value="MII VS ICU Code Observation extrakorporale Verfahren ISO11073"/>
         <status value="active"/>
@@ -13526,8 +13526,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cf134b8a-43a5-4915-99aa-bef4acc61db0"/>
-          <timestamp value="2026-08-31T19:13:06+00:00"/>
+          <identifier value="urn:uuid:9398bf98-a201-4b48-8c83-c721f87b9d42"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -13581,7 +13581,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073"/>
         <title value="MII VS ICU Code Observation extrakorporale Verfahren ISO11073"/>
         <status value="active"/>
@@ -13595,8 +13595,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cf134b8a-43a5-4915-99aa-bef4acc61db0"/>
-          <timestamp value="2026-08-31T19:13:06+00:00"/>
+          <identifier value="urn:uuid:9398bf98-a201-4b48-8c83-c721f87b9d42"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -13650,7 +13650,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073"/>
         <title value="MII VS ICU Code Observation extrakorporale Verfahren ISO11073"/>
         <status value="active"/>
@@ -13664,8 +13664,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eb9b15a6-d95d-494a-b328-d3d6d89a1ed1"/>
-          <timestamp value="2026-08-31T19:13:06+00:00"/>
+          <identifier value="urn:uuid:cbd5e7a6-210c-420f-8127-6cf2728e6d56"/>
+          <timestamp value="2026-08-31T19:26:27+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -13764,7 +13764,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC"/>
         <title value="MII VS ICU Code Observation extrakorporale Verfahren LOINC"/>
         <status value="active"/>
@@ -13778,8 +13778,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:30a2df64-4fc9-49eb-9a5b-b2bafcd0d20a"/>
-          <timestamp value="2026-08-31T19:12:27+00:00"/>
+          <identifier value="urn:uuid:4dd0cd4c-380f-41fa-8f27-1dc453723c5b"/>
+          <timestamp value="2026-08-31T19:25:46+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -13900,7 +13900,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC"/>
         <title value="MII VS ICU Code Observation extrakorporale Verfahren LOINC"/>
         <status value="active"/>
@@ -13914,8 +13914,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:30a2df64-4fc9-49eb-9a5b-b2bafcd0d20a"/>
-          <timestamp value="2026-08-31T19:12:27+00:00"/>
+          <identifier value="urn:uuid:4dd0cd4c-380f-41fa-8f27-1dc453723c5b"/>
+          <timestamp value="2026-08-31T19:25:46+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -14036,7 +14036,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC"/>
         <title value="MII VS ICU Code Observation extrakorporale Verfahren LOINC"/>
         <status value="active"/>
@@ -14050,8 +14050,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f5b82169-e9d6-492f-ae9a-c5e91d22e336"/>
-          <timestamp value="2026-08-31T19:12:27+00:00"/>
+          <identifier value="urn:uuid:63884805-fcc0-45bd-8eaa-5fb3fac31a86"/>
+          <timestamp value="2026-08-31T19:25:46+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -14190,11 +14190,11 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"/>
         <title value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
         <status value="draft"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14203,8 +14203,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71cdf47b-959a-43bd-86f9-7830755dd4f9"/>
-          <timestamp value="2026-08-31T19:12:45+00:00"/>
+          <identifier value="urn:uuid:ccb7dfca-0a00-4745-a340-42b3a56517fc"/>
+          <timestamp value="2026-08-31T19:26:07+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -14350,11 +14350,11 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"/>
         <title value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
         <status value="draft"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14363,8 +14363,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71cdf47b-959a-43bd-86f9-7830755dd4f9"/>
-          <timestamp value="2026-08-31T19:12:45+00:00"/>
+          <identifier value="urn:uuid:ccb7dfca-0a00-4745-a340-42b3a56517fc"/>
+          <timestamp value="2026-08-31T19:26:07+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -14510,11 +14510,11 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"/>
         <title value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
         <status value="draft"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14523,8 +14523,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d0491846-5080-4d5d-9ffd-fb8b93e102c7"/>
-          <timestamp value="2026-08-31T19:12:45+00:00"/>
+          <identifier value="urn:uuid:8bad1797-198f-4cc9-979a-43ef925350cc"/>
+          <timestamp value="2026-08-31T19:26:07+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -14647,11 +14647,11 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Pupillenform_LOINC"/>
         <title value="MII VS ICU Code Observation Pupillenform LOINC"/>
         <status value="draft"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14660,8 +14660,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84293864-7363-4bae-884b-7fc2de8e8e36"/>
-          <timestamp value="2026-08-31T19:12:44+00:00"/>
+          <identifier value="urn:uuid:68eaced0-96af-4628-8b1b-d8bb6726469e"/>
+          <timestamp value="2026-08-31T19:26:05+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -14782,11 +14782,11 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Pupillenform_LOINC"/>
         <title value="MII VS ICU Code Observation Pupillenform LOINC"/>
         <status value="draft"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14795,8 +14795,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84293864-7363-4bae-884b-7fc2de8e8e36"/>
-          <timestamp value="2026-08-31T19:12:44+00:00"/>
+          <identifier value="urn:uuid:68eaced0-96af-4628-8b1b-d8bb6726469e"/>
+          <timestamp value="2026-08-31T19:26:05+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -14917,11 +14917,11 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Code_Observation_Pupillenform_LOINC"/>
         <title value="MII VS ICU Code Observation Pupillenform LOINC"/>
         <status value="draft"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14930,8 +14930,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b24b2b43-627f-4b23-a683-b73435095b61"/>
-          <timestamp value="2026-08-31T19:12:44+00:00"/>
+          <identifier value="urn:uuid:3ca40917-899c-4f7a-882e-efbd61e7146b"/>
+          <timestamp value="2026-08-31T19:26:06+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -15090,7 +15090,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Eyes"/>
         <title value="MII VS ICU Component GCS Eyes"/>
         <status value="active"/>
@@ -15104,8 +15104,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1eb07cca-7c62-403e-a9e5-cf2cbcc1824e"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:29d26d53-b052-4309-9914-e54152c7b15d"/>
+          <timestamp value="2026-08-31T19:25:58+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -15276,7 +15276,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Eyes"/>
         <title value="MII VS ICU Component GCS Eyes"/>
         <status value="active"/>
@@ -15290,8 +15290,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1eb07cca-7c62-403e-a9e5-cf2cbcc1824e"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:29d26d53-b052-4309-9914-e54152c7b15d"/>
+          <timestamp value="2026-08-31T19:25:58+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -15462,7 +15462,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Eyes"/>
         <title value="MII VS ICU Component GCS Eyes"/>
         <status value="active"/>
@@ -15476,8 +15476,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:49f3dbd1-04d2-4840-bca4-77158c9125a5"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:cb45231f-0280-4ee3-b7f4-0f11dd993872"/>
+          <timestamp value="2026-08-31T19:25:59+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -15684,7 +15684,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Motor"/>
         <title value="MII VS ICU Component GCS Motor"/>
         <status value="active"/>
@@ -15698,8 +15698,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:292f7521-bd9d-452d-a55d-80d9c2ba045f"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:87abfbb3-813f-4375-81f4-247990a2157d"/>
+          <timestamp value="2026-08-31T19:25:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -15920,7 +15920,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Motor"/>
         <title value="MII VS ICU Component GCS Motor"/>
         <status value="active"/>
@@ -15934,8 +15934,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:292f7521-bd9d-452d-a55d-80d9c2ba045f"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:87abfbb3-813f-4375-81f4-247990a2157d"/>
+          <timestamp value="2026-08-31T19:25:58+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -16156,7 +16156,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Motor"/>
         <title value="MII VS ICU Component GCS Motor"/>
         <status value="active"/>
@@ -16170,8 +16170,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d43c447c-ca85-4af0-9634-5ea9342997d8"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:9f0f3d77-a330-48c8-91fe-39e93b34329e"/>
+          <timestamp value="2026-08-31T19:25:59+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -16366,7 +16366,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Verbal"/>
         <title value="MII VS ICU Component GCS Verbal"/>
         <status value="active"/>
@@ -16380,8 +16380,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e4755c58-3140-4091-aa10-32b8cfa9a765"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:8766903e-8e08-48d4-be12-2a92856382d2"/>
+          <timestamp value="2026-08-31T19:25:58+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -16577,7 +16577,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Verbal"/>
         <title value="MII VS ICU Component GCS Verbal"/>
         <status value="active"/>
@@ -16591,8 +16591,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e4755c58-3140-4091-aa10-32b8cfa9a765"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:8766903e-8e08-48d4-be12-2a92856382d2"/>
+          <timestamp value="2026-08-31T19:25:58+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -16788,7 +16788,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Component_GCS_Verbal"/>
         <title value="MII VS ICU Component GCS Verbal"/>
         <status value="active"/>
@@ -16802,8 +16802,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5dc6c8b1-8351-440f-8a68-bae5ea6928e5"/>
-          <timestamp value="2026-08-31T19:12:38+00:00"/>
+          <identifier value="urn:uuid:7f03b0ea-8b31-482f-8163-1f6c2b8b7621"/>
+          <timestamp value="2026-08-31T19:25:59+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -16954,12 +16954,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Score_LOINC"/>
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -16968,8 +16968,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7af9b33e-1c8b-4fcb-914b-a778680226ef"/>
-          <timestamp value="2026-08-31T19:13:07+00:00"/>
+          <identifier value="urn:uuid:02b37d70-10a5-4170-9416-6790e7f941f1"/>
+          <timestamp value="2026-08-31T19:26:29+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -17115,12 +17115,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Score_LOINC"/>
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -17129,8 +17129,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7af9b33e-1c8b-4fcb-914b-a778680226ef"/>
-          <timestamp value="2026-08-31T19:13:07+00:00"/>
+          <identifier value="urn:uuid:02b37d70-10a5-4170-9416-6790e7f941f1"/>
+          <timestamp value="2026-08-31T19:26:29+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -17276,12 +17276,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Score_LOINC"/>
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -17290,8 +17290,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21b56105-d2ba-4e5c-bbc6-7b81ecafad47"/>
-          <timestamp value="2026-08-31T19:13:07+00:00"/>
+          <identifier value="urn:uuid:8f997678-c1ad-48c3-8c14-7dd5bd659172"/>
+          <timestamp value="2026-08-31T19:26:29+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -17414,12 +17414,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Score_RASS"/>
         <title value="MII VS ICU Score RASS"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -17428,8 +17428,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:60f17a56-0d77-48e0-b7cd-41ed1b089630"/>
-          <timestamp value="2026-08-31T19:12:40+00:00"/>
+          <identifier value="urn:uuid:2e330fd2-84ed-413e-8a2a-5d15d5e20798"/>
+          <timestamp value="2026-08-31T19:26:01+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -17550,12 +17550,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Score_RASS"/>
         <title value="MII VS ICU Score RASS"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -17564,8 +17564,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:60f17a56-0d77-48e0-b7cd-41ed1b089630"/>
-          <timestamp value="2026-08-31T19:12:40+00:00"/>
+          <identifier value="urn:uuid:2e330fd2-84ed-413e-8a2a-5d15d5e20798"/>
+          <timestamp value="2026-08-31T19:26:01+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -17686,12 +17686,12 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
-        <version value="2026.0.3"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_ICU_Score_RASS"/>
         <title value="MII VS ICU Score RASS"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-08-31T19:08:04+00:00"/>
+        <date value="2026-08-31T19:21:50+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -17700,8 +17700,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:34a41fce-b1e7-4479-9c50-c25be209b2e3"/>
-          <timestamp value="2026-08-31T19:12:40+00:00"/>
+          <identifier value="urn:uuid:10b2577b-2ecc-44ec-b775-3ef767826588"/>
+          <timestamp value="2026-08-31T19:26:01+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

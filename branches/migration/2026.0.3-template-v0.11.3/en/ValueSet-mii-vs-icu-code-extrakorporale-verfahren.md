@@ -1,4 +1,4 @@
-# MII VS ICU Code Extrakorporale Verfahren - MII IG ICU v2026.0.3
+# MII VS ICU Code Extrakorporale Verfahren - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Extrakorporale_Verfahren |
 
  
@@ -39,7 +39,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-extrakorporale-verfahren",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Code_Extrakorporale_Verfahren",
   "title" : "MII VS ICU Code Extrakorporale Verfahren",
   "status" : "active",

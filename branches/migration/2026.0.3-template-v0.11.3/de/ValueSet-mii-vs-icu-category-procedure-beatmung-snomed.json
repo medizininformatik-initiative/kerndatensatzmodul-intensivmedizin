@@ -7,7 +7,7 @@
     "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-category-procedure-beatmung-snomed</b></p><a name=\"de-mii-vs-icu-category-procedure-beatmung-snomed\"> </a><a name=\"de-hcmii-vs-icu-category-procedure-beatmung-snomed\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/40617009\">40617009</a></td><td>Artificial ventilation (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/57485005\">57485005</a></td><td>Oxygen therapy (procedure)</td></tr></table></li></ul></div>"
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED",
   "title" : "MII VS ICU Category Procedure Beatmung SNOMED",
   "status" : "active",

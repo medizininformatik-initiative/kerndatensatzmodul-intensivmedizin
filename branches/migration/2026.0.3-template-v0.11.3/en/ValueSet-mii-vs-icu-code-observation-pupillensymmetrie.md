@@ -1,4 +1,4 @@
-# MII VS ICU Code Observation Pupillensymmetrie - MII IG ICU v2026.0.3
+# MII VS ICU Code Observation Pupillensymmetrie - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2025-12-16 | *Computable Name*:MII_VS_ICU_Code_Observation_Pupillensymmetrie |
 
  **References** 
@@ -36,7 +36,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-observation-pupillensymmetrie",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Code_Observation_Pupillensymmetrie",
   "title" : "MII VS ICU Code Observation Pupillensymmetrie",
   "status" : "active",

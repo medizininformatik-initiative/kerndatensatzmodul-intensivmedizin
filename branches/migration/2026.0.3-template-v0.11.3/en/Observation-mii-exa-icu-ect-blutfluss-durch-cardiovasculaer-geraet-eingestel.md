@@ -1,4 +1,4 @@
-# Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel - MII IG ICU v2026.0.3
+# Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md)
 
-**partOf**: [Example_extrakorporales_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/310)
+**partOf**: [Example_extrakorporales_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/310)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii
 
 **code**: Rate of blood flow through cardiovascular device (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 2.0 L/min (Details: UCUM codeL/min = 'L/min')
 
-**device**: [Example_Eingestellte_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/311)
+**device**: [Example_Eingestellte_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/311)
 
 
 

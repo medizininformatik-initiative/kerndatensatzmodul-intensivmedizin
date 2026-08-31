@@ -1,4 +1,4 @@
-# Ect Substituatvolumen - MII IG ICU v2026.0.3
+# Ect Substituatvolumen - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-subst
 
 **code**: Substitution volume (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 5.0 L (Details: UCUM codeL = 'L')
 
-**device**: [DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren)
+**device**: [DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren)
 
 
 

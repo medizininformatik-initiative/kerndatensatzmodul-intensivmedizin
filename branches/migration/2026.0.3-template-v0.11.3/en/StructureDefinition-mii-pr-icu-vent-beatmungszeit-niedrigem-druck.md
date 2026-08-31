@@ -1,4 +1,4 @@
-# MII PR ICU Beatmungszeit Niedrigem Druck - MII IG ICU v2026.0.3
+# MII PR ICU Beatmungszeit Niedrigem Druck - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck |
 
 "Ventilation time at low pressure" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
   "title" : "MII PR ICU Beatmungszeit Niedrigem Druck",
   "status" : "active",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

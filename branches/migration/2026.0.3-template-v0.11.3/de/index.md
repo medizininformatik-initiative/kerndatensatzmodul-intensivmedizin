@@ -1,4 +1,4 @@
-# Startseite - MII IG ICU v2026.0.3
+# Startseite - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Startseite**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026 | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026 | *Version*:2027.0.0-ballot.rc1 |
 | Draft Stand: 2026-08-27 | *Maschinenlesbarer Name*:MII_IG_ICU |
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Erweiterungsmoduls 'Intensivmedizin' der Medizininformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie Ressourcen in ihrer Form beschrieben.

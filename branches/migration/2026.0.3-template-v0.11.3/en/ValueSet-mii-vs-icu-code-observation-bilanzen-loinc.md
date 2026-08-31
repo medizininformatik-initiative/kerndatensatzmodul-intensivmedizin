@@ -1,4 +1,4 @@
-# MII VS ICU Code Observation Bilanzen LOINC - MII IG ICU v2026.0.3
+# MII VS ICU Code Observation Bilanzen LOINC - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Observation_Bilanzen_LOINC |
 
  
@@ -37,7 +37,7 @@ Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOIN
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-observation-bilanzen-loinc",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Code_Observation_Bilanzen_LOINC",
   "title" : "MII VS ICU Code Observation Bilanzen LOINC",
   "status" : "active",

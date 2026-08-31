@@ -1,4 +1,4 @@
-# MII PR ICU Score Visuelle Analogskala - MII IG ICU v2026.0.3
+# MII PR ICU Score Visuelle Analogskala - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala | *Version*:2026.0.3 |
-| Draft Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_Visuelle_Analogskala |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala | *Version*:2027.0.0-ballot.rc1 |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_Visuelle_Analogskala |
 
  
 Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. 
@@ -85,11 +85,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-score-visuelle-analogskala",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Score_Visuelle_Analogskala",
   "title" : "MII PR ICU Score Visuelle Analogskala",
-  "status" : "draft",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "status" : "active",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

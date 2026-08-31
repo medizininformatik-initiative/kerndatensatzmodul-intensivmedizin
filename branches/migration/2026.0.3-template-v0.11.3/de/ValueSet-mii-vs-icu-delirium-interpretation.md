@@ -1,4 +1,4 @@
-# MII VS ICU Delirium Interpretation - MII IG ICU v2026.0.3
+# MII VS ICU Delirium Interpretation - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation | *Version*:2027.0.0-ballot.rc1 |
 | Draft Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_VS_ICU_Delirium_Interpretation |
 
  
@@ -40,12 +40,12 @@ No Expansion for this valueset (Unsupported Code System Version)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-delirium-interpretation",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Delirium_Interpretation",
   "title" : "MII VS ICU Delirium Interpretation",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,4 +1,4 @@
-# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2026.0.3
+# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
 
 Es handelt sich hier um einen pulsatilen Druck. Für diesen gelten neben den Eigenschaften des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md) außerdem die Besonderheiten, die auf der Seite des Profils zu [Blutdruck (Observation)](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) beschrieben sind. Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -33,18 +33,18 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
 
 #### Terminology Bindings
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
 
 ** Summary **
 
-Mandatory: 19 elements(17 nested mandatory elements)
- Must-Support: 83 elements
+Mandatory: 19 elements(21 nested mandatory elements)
+ Must-Support: 91 elements
  Prohibited: 1 element
 
 **Slices**
@@ -61,7 +61,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
 
  **Snapshot-AnsichtView** 
 
@@ -69,12 +69,12 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck) 
 
 ** Summary **
 
-Mandatory: 19 elements(17 nested mandatory elements)
- Must-Support: 83 elements
+Mandatory: 19 elements(21 nested mandatory elements)
+ Must-Support: 91 elements
  Prohibited: 1 element
 
 **Slices**
@@ -96,11 +96,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-muv-arterieller-blutdruck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -706,6 +706,58 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         "system" : "http://unitsofmeasure.org",
         "code" : "mm[Hg]"
       },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x].value",
+      "path" : "Observation.component.value[x].value",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x].unit",
+      "path" : "Observation.component.value[x].unit",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x].system",
+      "path" : "Observation.component.value[x].system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x].code",
+      "path" : "Observation.component.value[x].code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x]:valueQuantity.value",
+      "path" : "Observation.component.value[x].value",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x]:valueQuantity.unit",
+      "path" : "Observation.component.value[x].unit",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x]:valueQuantity.system",
+      "path" : "Observation.component.value[x].system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.value[x]:valueQuantity.code",
+      "path" : "Observation.component.value[x].code",
       "mustSupport" : true
     },
     {

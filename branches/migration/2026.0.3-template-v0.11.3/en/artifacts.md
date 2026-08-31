@@ -1,4 +1,4 @@
-# Artifacts Summary - MII IG ICU v2026.0.3
+# Artifacts Summary - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -125,7 +125,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |  |
 | [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |  |
 | [ MII PR ICU Score CAM-ICU  ](StructureDefinition-mii-pr-icu-score-cam-icu.md) | Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent). |
-| [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. Die FPS-R verwendet sechs Gesichter, die den Skalenpunkten 0, 2, 4, 6, 8 und 10 entsprechen. Im interdisziplinaeren Konsens werden auch die ungeraden Zwischenwerte (1, 3, 5, 7, 9) zugelassen, da diese in der klinischen Praxis als Entscheidungstrigger fuer Interventionen (z. B. Schmerztherapie) verwendet werden. |
+| [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. |
 | [ MII PR ICU Score GCS  ](StructureDefinition-mii-pr-icu-score-gcs.md) |  |
 | [ MII PR ICU Score ICDSC  ](StructureDefinition-mii-pr-icu-score-icdsc.md) | Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium. |
 | [ MII PR ICU Score Numerische Ratingskala  ](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) | Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. |

@@ -7,11 +7,11 @@
     "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-code-oservation-pupillenform-loinc</b></p><a name=\"mii-vs-icu-code-oservation-pupillenform-loinc\"> </a><a name=\"hcmii-vs-icu-code-oservation-pupillenform-loinc\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA24884-1/\">LA24884-1</a></td><td>Round</td></tr><tr><td><a href=\"https://loinc.org/LA19583-6/\">LA19583-6</a></td><td>Irregular</td></tr></table></li></ul></div>"
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
   "title" : "MII VS ICU Code Observation Pupillenform LOINC",
   "status" : "draft",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

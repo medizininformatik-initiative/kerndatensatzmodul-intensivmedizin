@@ -1,4 +1,4 @@
-# MII PR ICU Parameter von Extrakorporalen Verfahren - MII IG ICU v2026.0.3
+# MII PR ICU Parameter von Extrakorporalen Verfahren - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
 
 **Usages:**
@@ -35,11 +35,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-parameter-von-extrakorporalen-verfahren",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch - MII IG ICU v2026.0.3
+# MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch | *Version*:2027.0.0-ballot.rc1 |
 | Draft as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch |
 
 Dies ist eine Ausprägung des generischen Profils zu [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch",
   "title" : "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
   "status" : "draft",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

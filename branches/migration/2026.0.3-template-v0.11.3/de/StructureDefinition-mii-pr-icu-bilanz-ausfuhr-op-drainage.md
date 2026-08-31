@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Ausfuhr OP Drainage - MII IG ICU v2026.0.3
+# MII PR ICU Bilanz Ausfuhr OP Drainage - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
@@ -90,11 +90,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-ausfuhr-op-drainage",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
   "title" : "MII PR ICU Bilanz Ausfuhr OP Drainage",
   "status" : "active",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

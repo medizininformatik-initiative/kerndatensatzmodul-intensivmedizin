@@ -1,4 +1,4 @@
-# MII PR ICU MUV zerebraler Perfusionsdruck - MII IG ICU v2026.0.3
+# MII PR ICU MUV zerebraler Perfusionsdruck - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck | *Version*:2027.0.0-ballot.rc1 |
 | Draft as of 2025-11-18 | *Computable Name*:MII_PR_ICU_MUV_zerebraler_Perfusionsdruck |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ze
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-muv-zerebraler-perfusionsdruck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
   "title" : "MII PR ICU MUV zerebraler Perfusionsdruck",
   "status" : "draft",

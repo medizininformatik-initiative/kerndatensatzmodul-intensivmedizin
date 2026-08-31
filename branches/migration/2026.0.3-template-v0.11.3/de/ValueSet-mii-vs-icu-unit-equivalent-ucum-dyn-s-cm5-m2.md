@@ -1,4 +1,4 @@
-# MII VS ICU Unit equivalent UCUM dyn.s/cm5/m2 - MII IG ICU v2026.0.3
+# MII VS ICU Unit equivalent UCUM dyn.s/cm5/m2 - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2 | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2 | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2 |
 
  
@@ -39,7 +39,7 @@ No Expansion for this valueset (Unsupported Code System Version)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2",
   "title" : "MII VS ICU Unit equivalent UCUM dyn.s/cm5/m2",
   "status" : "active",

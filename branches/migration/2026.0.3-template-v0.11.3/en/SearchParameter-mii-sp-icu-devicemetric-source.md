@@ -1,4 +1,4 @@
-# mii-sp-icu-devicemetric-source - MII IG ICU v2026.0.3
+# mii-sp-icu-devicemetric-source - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-devicemetric-source | *Version*:2026.0.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-devicemetric-source | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_SP_ICU_DeviceMetric_Source |
 
  
@@ -36,7 +36,7 @@ Suchparameter für DeviceMetric.source
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-devicemetric-source",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_SP_ICU_DeviceMetric_Source",
   "status" : "active",
   "experimental" : false,

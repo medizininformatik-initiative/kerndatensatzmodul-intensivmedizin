@@ -1,4 +1,4 @@
-# MII PR ICU Untersuchung Pupillenbefund - MII IG ICU v2026.0.3
+# MII PR ICU Untersuchung Pupillenbefund - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund | *Version*:2027.0.0-ballot.rc1 |
 | Draft Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Untersuchung_Pupillenbefund |
 
 **Usages:**
@@ -118,11 +118,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-u
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-untersuchung-pupillenbefund",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_Untersuchung_Pupillenbefund",
   "title" : "MII PR ICU Untersuchung Pupillenbefund",
   "status" : "draft",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

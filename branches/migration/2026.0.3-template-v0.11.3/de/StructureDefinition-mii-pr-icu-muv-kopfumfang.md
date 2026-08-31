@@ -1,4 +1,4 @@
-# MII PR ICU MUV Kopfumfang - MII IG ICU v2026.0.3
+# MII PR ICU MUV Kopfumfang - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang | *Version*:2026.0.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Kopfumfang |
 
 Dies ist eine Ausprägung des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -33,13 +33,13 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
 
 #### Terminology Bindings
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
 
 ** Summary **
 
@@ -60,7 +60,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
 
  **Snapshot-AnsichtView** 
 
@@ -68,7 +68,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
+Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) 
 
 ** Summary **
 
@@ -94,11 +94,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-muv-kopfumfang",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang",
-  "version" : "2026.0.3",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_ICU_MUV_Kopfumfang",
   "title" : "MII PR ICU MUV Kopfumfang",
   "status" : "active",
-  "date" : "2026-08-31T19:08:04+00:00",
+  "date" : "2026-08-31T19:21:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

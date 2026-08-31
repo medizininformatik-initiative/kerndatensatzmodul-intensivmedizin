@@ -1,4 +1,4 @@
-# mii-param-icu-manifest - MII IG ICU v2026.0.3
+# mii-param-icu-manifest - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -59,31 +59,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.0"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.1"
   },
   {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
   },
   {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/security-labels|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/common-tags|4.0.1"
-  },
-  {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -91,43 +75,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht|2026.0.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/PlanDefinition|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/ActivityDefinition|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Measure|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/OperationDefinition|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Reference|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht|2026.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-intend|2026.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -135,19 +91,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/procedure-category|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed|2026.0.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/procedure-code|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
@@ -155,7 +99,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops|2026.0.0"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops|2026.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -163,7 +107,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
@@ -186,12 +130,28 @@
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"
   },
   {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/performer-role|4.0.1"
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz|2027.0.0-ballot.rc1"
   },
   {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
@@ -199,111 +159,35 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/procedure-reason|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/body-site|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/procedure-outcome|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Composition|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/condition-code|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/procedure-followup|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/device-action|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Substance|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/device-kind|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz|2026.0.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7|2026.0.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed|2026.0.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc|2026.0.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073|2026.0.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter|2026.0.3"
-  },
-  {
-    "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/DeviceMetric|4.0.1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -311,31 +195,23 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren|2026.0.3"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2026.0.0"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2026.0.1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren|2026.0.3"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Group|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
@@ -344,6 +220,14 @@
   {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign|1.6.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/CarePlan|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -360,6 +244,18 @@
   {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/NutritionOrder|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Reference|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -403,6 +299,10 @@
   },
   {
     "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/ValueSet/body-site|4.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/ValueSet/observation-methods|4.0.1"
   },
   {
@@ -439,6 +339,10 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Media|4.0.1"
   },
   {
@@ -451,7 +355,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-breaths-per-minute|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-breaths-per-minute|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
@@ -471,7 +375,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
@@ -483,7 +387,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
@@ -507,7 +411,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
@@ -519,135 +423,135 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion|2027.0.0-ballot.rc1"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie|2026.0.3"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie|2027.0.0-ballot.rc1"
   }]
 }
 

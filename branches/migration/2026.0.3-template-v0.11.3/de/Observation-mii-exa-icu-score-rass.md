@@ -1,4 +1,4 @@
-# Score Rass - MII IG ICU v2026.0.3
+# Score Rass - MII IG ICU v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
