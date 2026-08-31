@@ -1,0 +1,2288 @@
+{
+ "generated": "2026-08-27",
+ "source_commit": "a7588e809f72e8bd8fb8678c5c18728973c0e832",
+ "shape": "A",
+ "template_state": "hybrid (Simplifier project.yaml + IG-Publisher _gen*/ig.ini fhir.base.template#current + committed fsh-generated/ + raw resource dirs)",
+ "rendered_guides": {
+  "authoritative": {
+   "platform": "simplifier",
+   "key": "MIIIGIntensivmedizin-DE",
+   "root": "MIIIGModulICU",
+   "version": "current (preview; no published guide version exists)",
+   "last_updated": "2026-08-05",
+   "pages": 139,
+   "decision": "human-confirmed 2026-08-27 (matches master 2026.0.3-dev incl. Untersuchungen/Pupillen)"
+  },
+  "translation_seed": {
+   "platform": "simplifier",
+   "key": "MIIIGIntensivecare-EN",
+   "version": "current (preview)"
+  },
+  "published_reference": {
+   "platform": "medizininformatik-initiative.de",
+   "url_de": "https://www.medizininformatik-initiative.de/Kerndatensatz/KDS_Intensivmedizin_2026_DE/MIIIGModulICU.html",
+   "version": "2026.0.1",
+   "pages": 137,
+   "note": "published export per kerndatensatz-meta wiki; lacks Untersuchungen chapter"
+  },
+  "git_history": {
+   "path": "implementation-guides/ (deleted 2025-05-07 in 99d028f6)",
+   "pages": 18,
+   "role": "secondary evidence"
+  }
+ },
+ "artefacts": {
+  "fsh": [
+   {
+    "kind": "Alias",
+    "name": "$sct = http://snomed.info/sct",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$loinc = http://loinc.org",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$ieee-11073 = urn:iso:std:iso:11073:10101",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$dgai = http://dgai.de // ist ein Platzhalter, aktualisieren bei Bedarf",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$ucum = http://unitsofmeasure.org",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-category = http://terminology.hl7.org/CodeSystem/observation-category",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$sct-international-version = http://snomed.info/sct/900000000000207008/version/20260301",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$mii-vs-icu-code-observation-pupillenlichtreaktion = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$mii-vs-icu-bodysite-observation-pupillenbefund = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-de-vitalsign-blutdruck = http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-de-vitalsign-atemfrequenz = http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-de-vitalsign-koerpergroesse = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$observation-de-vitalsign = http://fhir.de/StructureDefinition/observation-de-vitalsign",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$spdx-license = http://hl7.org/fhir/spdx-license",
+    "path": "input/fsh/aliases.fsh"
+   },
+   {
+    "kind": "Alias",
+    "name": "$exp = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "SupportResource (resource, expectation)",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "Profile (profile, expectation)",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "SupportProfile (profile, expectation)",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "SupportInteraction (interaction, expectation)",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "SupportSearchParam (name, canonical, type, expectation)",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-cps-icu-capabilitystatement",
+    "path": "input/fsh/capability-statement.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-val-xor-dar",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-enc-or-sub",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-comp-xor-val",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-loinc-sct-dgai-ieee11073",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-painscale-vas",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-painscale-0-10",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "flacc-total-range",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "gcs-total-range",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "nips-total-range",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "npass-pain-total-range",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "npass-sedation-total-range",
+    "path": "input/fsh/invariants.fsh"
+   },
+   {
+    "kind": "Logical",
+    "name": "MII_LM_ICU",
+    "path": "input/fsh/logical-model.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/MII_PR_ICU_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Parameter_Von_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/MII_PR_ICU_Parameter_Von_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemzugvolumen_Einstellung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Druckdifferenz_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Druckdifferenz_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Dynamische_Kompliance",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Dynamische_Kompliance.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Exspiratorischer_Gasfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Inspiratorischer_Gasfluss",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Inspiratorischer_Gasfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Maximaler_Beatmungsdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Plateau_Beatmungsdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontane_Atemfrequenz_Beatmet.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontanes_Atemzugvolumen.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
+    "path": "input/fsh/profiles/Beatmungswerte/Parameter von Beatmung/MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Magensonde.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Urin.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Muttermilch",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Muttermilch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Einfuhr_Spendermilch",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Einfuhr_Spendermilch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
+    "path": "input/fsh/profiles/Bilanzen/MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Device",
+    "path": "input/fsh/profiles/MII_PR_ICU_Device.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Arterieller_Blutdruck",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Arterieller_Blutdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Atemfrequenz",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Atemfrequenz.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Herzfrequenz",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Herzfrequenz.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Koerpergewicht",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerpergewicht.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Koerpergroesse",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerpergroesse.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Koerperlaenge",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Koerperlaenge.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_Kopfumfang",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_Kopfumfang.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+    "path": "input/fsh/profiles/Monitoring und Vitaldaten/MII_PR_ICU_MUV_zerebraler_Perfusionsdruck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Extrakorporales_Verfahren",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/MII_PR_ICU_Extrakorporales_Verfahren.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Arterieller_Druck",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Arterieller_Druck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Dauer_Haemodialysesitzung",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Dauer_Haemodialysesitzung.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Gasfluss",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Gasfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Haemodialyse_Blutfluss",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Haemodialyse_Blutfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Substituatfluss",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Substituatfluss.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Substituatvolumen",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Substituatvolumen.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_ECT_Venoeser_Druck",
+    "path": "input/fsh/profiles/Parameter von extrakorporalen Verfahren/Parameter von extrakorporalen Verfahren/MII_PR_ICU_ECT_Venoeser_Druck.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_CAM_ICU",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_CAM_ICU.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Faces_Pain_Scale_Revised.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_GCS",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_GCS.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_ICDSC",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ICDSC.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "icdsc-score-range",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ICDSC.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "icdsc-item-range",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ICDSC.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_Numerische_Ratingskala",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Numerische_Ratingskala.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_RASS",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_RASS.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_SOFA",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "sofa-score-range",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "sofa-component-range",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "sofa-component-coding-slicing",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_SOFA.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_Visuelle_Analogskala",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Visuelle_Analogskala.fsh"
+   },
+   {
+    "kind": "Invariant",
+    "name": "mii-icu-wbf-1",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Score_ZOPA",
+    "path": "input/fsh/profiles/Scores/MII_PR_ICU_Score_ZOPA.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Component_GCS_Eyes",
+    "path": "input/fsh/profiles/Scores/MII_VS_ICU_Component_GCS_Eyes.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Component_GCS_Motor",
+    "path": "input/fsh/profiles/Scores/MII_VS_ICU_Component_GCS_Motor.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Component_GCS_Verbal",
+    "path": "input/fsh/profiles/Scores/MII_VS_ICU_Component_GCS_Verbal.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Untersuchung_Pupillenbefund",
+    "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenbefund.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Untersuchung_Pupillenform",
+    "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenform.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Untersuchung_Pupillengroesse",
+    "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillengroesse.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt",
+    "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt",
+    "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt.fsh"
+   },
+   {
+    "kind": "Profile",
+    "name": "MII_PR_ICU_Untersuchung_Pupillensymmetrie",
+    "path": "input/fsh/profiles/Untersuchung/MII_PR_ICU_Untersuchung_Pupillensymmetrie.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "ItemWeight",
+    "path": "input/fsh/rulesets/extensions.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "LicenseCodeableCCBY40",
+    "path": "input/fsh/rulesets/license-terms.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "LicenseCodeableCCBY40Instance",
+    "path": "input/fsh/rulesets/license-terms.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "Publisher",
+    "path": "input/fsh/rulesets/publisher.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "SP_Publisher",
+    "path": "input/fsh/rulesets/publisher.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "SP_Profile",
+    "path": "input/fsh/rulesets/searchparam-profile.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "Version",
+    "path": "input/fsh/rulesets/version.fsh"
+   },
+   {
+    "kind": "RuleSet",
+    "name": "PR_CS_VS_Version",
+    "path": "input/fsh/rulesets/version.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-device-property-type",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-devicemetric-source",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-bodysite",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-component-interpretation",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-component-referencerange",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-interpretation",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-issued",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-referencerange-high",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-referencerange-low",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-observation-referencerange",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "Instance",
+    "name": "mii-sp-icu-procedure-recorder",
+    "path": "input/fsh/searchParameter.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_BodySite_Observation_Beatmung",
+    "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Beatmung.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_BodySite_Observation_Blutdruck",
+    "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Blutdruck.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten",
+    "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_BodySite_Observation_Pupillenbefund",
+    "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_Pupillenbefund.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren",
+    "path": "input/fsh/valuesets/MII_VS_ICU_BodySite_Observation_extrakorporale_Verfahren.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_CAM_ICU_Result",
+    "path": "input/fsh/valuesets/MII_VS_ICU_CAM_ICU_Result.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Category_Observation_Bilanzen_HL7",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Category_Observation_Bilanzen_HL7.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Category_Procedure_Beatmung_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Extrakorporale_Verfahren",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Extrakorporale_Verfahren.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Beatmung_ISO11073",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Beatmung_ISO11073.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Beatmung_LOINC",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Beatmung_LOINC.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Beatmung_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Beatmung_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Bilanzen_ISO11073",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Bilanzen_ISO11073.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Bilanzen_LOINC",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Bilanzen_LOINC.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Bilanzen_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Bilanzen_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillenform_LOINC.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Pupillengroesse",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillengroesse.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillenlichtreaktion.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_Pupillensymmetrie",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_Pupillensymmetrie.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_LOINC.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Code_Procedure_Beatmung_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Code_Procedure_Beatmung_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Delirium_Interpretation",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Delirium_Interpretation.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren",
+    "path": "input/fsh/valuesets/MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Method_Observation_Blutdruck",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Method_Oberservation_Blutdruck.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Present_Absent",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Present_Absent.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Score_Category",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Score_Category.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Score_LOINC",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Score_LOINC.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Score_RASS",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Score_RASS.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Score_SNOMED",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Score_SNOMED.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_UCUM_beats_per_minute",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_beats_per_minute.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_UCUM_breaths_per_minute",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_breaths_per_minute.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_UCUM_milliliter",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_UCUM_milliliter.fsh"
+   },
+   {
+    "kind": "ValueSet",
+    "name": "MII_VS_ICU_Unit_equivalent_percent_1",
+    "path": "input/fsh/valuesets/MII_VS_ICU_Unit_equivalent_percent_1.fsh"
+   }
+  ],
+  "raw_examples": [
+   {
+    "id": "mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-drainage-generisch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-drainage-generisch.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-magensonde",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-magensonde.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-opdrainage",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-opdrainage.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-pankreasdrainage",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-pankreasdrainage.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-stuhlgang",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-stuhlgang.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-urin",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-urin.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-ausfuhr-wunddrainage",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-ausfuhr-wunddrainage.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-blutverlust",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-blutverlust.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-blutverlust"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-muttermilch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-muttermilch.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-einfuhr-spendermilch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-einfuhr-spendermilch.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-bilanz-tagesbilanz-fluessigkeit",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ecmo",
+    "resourceType": "Procedure",
+    "path": "beispiele/mii-exa-icu-ecmo.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-arterieller-druck-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-arterieller-druck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-arterieller-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-dauer-haemodialysesitzung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-dauer-haemodialysesitzung-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-eingestellte-parameter-ecmo",
+    "resourceType": "DeviceMetric",
+    "path": "beispiele/mii-exa-icu-ect-dm-ecmo-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-gemessene-parameter-ecmo",
+    "resourceType": "DeviceMetric",
+    "path": "beispiele/mii-exa-icu-ect-dm-ecmo-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-devicemetric-eingestellte-gemessene-parameter-extrakorporale-verfahren"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-gasfluss-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-gasfluss-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-haemodialyse-blutfluss-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-substituatfluss",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-substituatfluss-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-substituatvolumen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-substituatvolumen-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatvolumen"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-ect-venoeser-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-ect-venoeser-druck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-arterieller-blutdruck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-arterieller-blutdruck.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-atemfrequenz",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-atemfrequenz.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-herzfrequenz",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-herzfrequenz.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-herzzeitvolumen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-herzzeitvolumen.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-ideales-koerpergewicht",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-ideales-koerpergewicht.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-intrakranieller-druck-icp",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-intrakranieller-druck-(icp).json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpergewicht",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpergewicht.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpergroesse-percentil",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpergroesse-percentile-altersabhaengig.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpergroesse",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpergroesse.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-achsel",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-achsel.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-atemwege",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-atemwege.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-blut",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-blut.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-brust",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-brust.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-gelenk",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-gelenk.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-generisch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-generisch.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-harnblase",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-harnblase.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-kern",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-kern.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-leiste",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-leiste.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-myokard",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-myokard.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-nasal",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-nasal.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-rektal",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-rektal.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-speiseroehre",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-speiseroehre.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-stirn",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-stirn.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-trommelfell",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-trommelfell.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-unter-der-zunge",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-unter-der-zunge.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-koerpertemperatur-vaginal",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-koerpertemperatur-vaginal.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-kopfumfang",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-kopfumfang.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksatrialer-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksatrialer-druck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventrikulaerer-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventrikulaerer-druck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventrikulaerer-herzindex",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventrikulaerer-herzindex.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventrikulaeres-schlagvolumen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventrikulaeres-schlagvolumen.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-pulmonalarterieller-blutdruck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-pulmonalarterieller-blutdruck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-puls",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-puls.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-rechtsatrialer-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-rechtsatrialer-druck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-rechtsventrikulaerer-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-rechtsventrikulaerer-druck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-muv-zentralvenoeser-blutdruck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-muv-zentralvenoeser-blutdruck.json",
+    "profiles": [
+     "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-score-rass",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-score-rass.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-untersuchung-pupillenbefund",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-untersuchung-pupillenbefund.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-untersuchung-pupillenform",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-untersuchung-pupillenform.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-untersuchung-pupillengroesse",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-untersuchung-pupillengroesse.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-untersuchung-pupillensymmetrie",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-untersuchung-pupillensymmetrie.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mitl-exspiratorischem-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-atemzugvolumen-einstellung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-atemzugvolumen-einstellung-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-beatmung",
+    "resourceType": "Procedure",
+    "path": "beispiele/mii-exa-icu-vent-beatmung.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-beatmungszeit-auf-hohem-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-beatmungszeit-auf-hohem-druck-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-eingestellte-parameter-beatmung",
+    "resourceType": "DeviceMetric",
+    "path": "beispiele/mii-exa-icu-vent-dm-beatmung-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-gemessene-parameter-beatmung",
+    "resourceType": "DeviceMetric",
+    "path": "beispiele/mii-exa-icu-vent-dm-beatmung-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-druckdifferenz-beatmung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-druckdifferenz-beatmung-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-dynamische-kompliance",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-dynamische-kompliance-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-einstellung-einatmungszeit-beatmung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-einstellung-einatmungszeit-beatmung-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-exspiratorischer-gasfluss",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-exspiratorischer-gasfluss-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-horowitz-in-arteriellem-blut",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-horowitz-in-arteriellem-blut-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-inspiratorischer-gasfluss",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-inspiratorischer-gasfluss-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-mechanische-atemfrequenz-beatmet",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-mechanische-atemfrequenz-beatmet-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-parameter-von-beatmung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-parameter-von-beatmung.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-parameter-von-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-positiv-endexpiratorischer-druck-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexspiratorischer-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-positiv-endexpiratorischer-druck-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexspiratorischer-druck"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-spontane-atemfrequenz-beatmet",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-spontane-atemfrequenz-beatmet-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-spontanes-atemzugvolumen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-spontanes-atemzugvolumen-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung-gemessen.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-unterstuetzungsdruck-beatmung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-unterstuetzungsdruck-beatmung-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung"
+    ]
+   },
+   {
+    "id": "mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung",
+    "resourceType": "Observation",
+    "path": "beispiele/mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung-eingestellt.json",
+    "profiles": [
+     "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
+    ]
+   }
+  ],
+  "raw_legacy": {
+   "ressourcen-profile": {
+    "count": 82,
+    "disposition": "legacy Forge/pre-FSH snapshots (2025.0.4/2026.0.0); superseded by input/fsh -> propose RETIRE after Gate D",
+    "files": [
+     "ressourcen-profile/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-drainage-generisch.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-drainage-op.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-drainage-wund.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-magensonde.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-opdrainage.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-stuhlgang.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-urin.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-ausfuhr-wunddrainage.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-blutverlust.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-einfuhr-enterale-fluesse.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-einfuhr-oraler-fluesse.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.json",
+     "ressourcen-profile/mii-pr-icu-bilanz-gesamte-tages-bilanz.json",
+     "ressourcen-profile/mii-pr-icu-bilanz.json",
+     "ressourcen-profile/mii-pr-icu-ect-arterieller-druck.json",
+     "ressourcen-profile/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.json",
+     "ressourcen-profile/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.json",
+     "ressourcen-profile/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.json",
+     "ressourcen-profile/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.json",
+     "ressourcen-profile/mii-pr-icu-ect-dauer-haemodialysesitzung.json",
+     "ressourcen-profile/mii-pr-icu-ect-dm-eingest-gem-parameter-extrakorporale-verfahren.json",
+     "ressourcen-profile/mii-pr-icu-ect-extrakorporales-verfahren.json",
+     "ressourcen-profile/mii-pr-icu-ect-gasfluss.json",
+     "ressourcen-profile/mii-pr-icu-ect-haemodialyse-blutfluss.json",
+     "ressourcen-profile/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.json",
+     "ressourcen-profile/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren.json",
+     "ressourcen-profile/mii-pr-icu-ect-substituatfluss.json",
+     "ressourcen-profile/mii-pr-icu-ect-substituatvolumen.json",
+     "ressourcen-profile/mii-pr-icu-ect-venoeser-druck.json",
+     "ressourcen-profile/mii-pr-icu-icu-device.json",
+     "ressourcen-profile/mii-pr-icu-muv-arterieller-blutdruck.json",
+     "ressourcen-profile/mii-pr-icu-muv-atemfrequenz.json",
+     "ressourcen-profile/mii-pr-icu-muv-herzfrequenz.json",
+     "ressourcen-profile/mii-pr-icu-muv-koerpergewicht.json",
+     "ressourcen-profile/mii-pr-icu-muv-koerpergroesse.json",
+     "ressourcen-profile/mii-pr-icu-muv-kopfumfang.json",
+     "ressourcen-profile/mii-pr-icu-muv-zerebraler-perfusionsdruck.json",
+     "ressourcen-profile/mii-pr-icu-score-rass.json",
+     "ressourcen-profile/mii-pr-icu-untersuchung-pupillenbefund.json",
+     "ressourcen-profile/mii-pr-icu-untersuchung-pupillenform.json",
+     "ressourcen-profile/mii-pr-icu-untersuchung-pupillengroesse.json",
+     "ressourcen-profile/mii-pr-icu-untersuchung-pupillenlichtreaktion.json",
+     "ressourcen-profile/mii-pr-icu-untersuchung-pupillensymmetrie.json",
+     "ressourcen-profile/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss.json",
+     "ressourcen-profile/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.json",
+     "ressourcen-profile/mii-pr-icu-vent-atemzugvolumen-einstellung.json",
+     "ressourcen-profile/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-beatmungszeit-hohem-druck.json",
+     "ressourcen-profile/mii-pr-icu-vent-beatmungszeit-niedrigem-druck.json",
+     "ressourcen-profile/mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-druckdifferenz-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-dynamische-kompliance.json",
+     "ressourcen-profile/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.json",
+     "ressourcen-profile/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-endexspiratorischer-kohlendioxidpartialdruck.json",
+     "ressourcen-profile/mii-pr-icu-vent-exspiratorischer-gasfluss.json",
+     "ressourcen-profile/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.json",
+     "ressourcen-profile/mii-pr-icu-vent-horowitz-in-arteriellem-blut.json",
+     "ressourcen-profile/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.json",
+     "ressourcen-profile/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.json",
+     "ressourcen-profile/mii-pr-icu-vent-inspiratorische-sauerstofffraktion.json",
+     "ressourcen-profile/mii-pr-icu-vent-inspiratorischer-gasfluss.json",
+     "ressourcen-profile/mii-pr-icu-vent-maximaler-beatmungsdruck.json",
+     "ressourcen-profile/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.json",
+     "ressourcen-profile/mii-pr-icu-vent-mittlerer-beatmungsdruck.json",
+     "ressourcen-profile/mii-pr-icu-vent-parameter-von-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-positiv-endexpiratorischer-druck.json",
+     "ressourcen-profile/mii-pr-icu-vent-spontane-atemfrequenz-beatmet.json",
+     "ressourcen-profile/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.json",
+     "ressourcen-profile/mii-pr-icu-vent-spontanes-atemzugvolumen.json",
+     "ressourcen-profile/mii-pr-icu-vent-spontanes-mechanisches-atemzugvol-waehrend-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-unterstuezungsdruck-beatmung.json",
+     "ressourcen-profile/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.json"
+    ]
+   },
+   "ValueSet": {
+    "count": 35,
+    "disposition": "legacy Forge/pre-FSH snapshots (2025.0.4/2026.0.0); superseded by input/fsh -> propose RETIRE after Gate D",
+    "files": [
+     "ValueSet/mii-vs-icu-bodysite-observation-beatmung.json",
+     "ValueSet/mii-vs-icu-bodysite-observation-blutdruck.json",
+     "ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren.json",
+     "ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten.json",
+     "ValueSet/mii-vs-icu-category-observation-bilanzen-hl7.json",
+     "ValueSet/mii-vs-icu-category-procedure-beatmung-snomed.json",
+     "ValueSet/mii-vs-icu-code-extrakorporale-verfahren.json",
+     "ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073.json",
+     "ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc.json",
+     "ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed.json",
+     "ValueSet/mii-vs-icu-code-observation-beatmung-iso11073.json",
+     "ValueSet/mii-vs-icu-code-observation-beatmung-loinc.json",
+     "ValueSet/mii-vs-icu-code-observation-beatmung-snomed.json",
+     "ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073.json",
+     "ValueSet/mii-vs-icu-code-observation-bilanzen-loinc.json",
+     "ValueSet/mii-vs-icu-code-observation-bilanzen-snomed.json",
+     "ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073.json",
+     "ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc.json",
+     "ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed.json",
+     "ValueSet/mii-vs-icu-code-procedure-beatmung-snomed.json",
+     "ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren.json",
+     "ValueSet/mii-vs-icu-method-observation-blutdruck.json",
+     "ValueSet/mii-vs-icu-pupille-bodysite.json",
+     "ValueSet/mii-vs-icu-pupillenform-regularitaet.json",
+     "ValueSet/mii-vs-icu-pupillengroesse.json",
+     "ValueSet/mii-vs-icu-pupillenlichtreaktion.json",
+     "ValueSet/mii-vs-icu-pupillensymmetrie.json",
+     "ValueSet/mii-vs-icu-score-rass.json",
+     "ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute.json",
+     "ValueSet/mii-vs-icu-unit-equivalent-ucum-breaths-per-minute.json",
+     "ValueSet/mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2.json",
+     "ValueSet/mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.json",
+     "ValueSet/mii-vs-icu-unit-equivalent-ucum-l-per-minute.json",
+     "ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter.json",
+     "ValueSet/mii-vs-icu-unit-percent-1.json"
+    ]
+   },
+   "SearchParameter": {
+    "count": 11,
+    "disposition": "legacy Forge/pre-FSH snapshots (2025.0.4/2026.0.0); superseded by input/fsh -> propose RETIRE after Gate D",
+    "files": [
+     "SearchParameter/mii-sp-icu-Observation-ReferenceRange-high.json",
+     "SearchParameter/mii-sp-icu-device-property-type.json",
+     "SearchParameter/mii-sp-icu-devicemetric-source.json",
+     "SearchParameter/mii-sp-icu-observation-bodysite.json",
+     "SearchParameter/mii-sp-icu-observation-component-interpretation.json",
+     "SearchParameter/mii-sp-icu-observation-component-referencerange.json",
+     "SearchParameter/mii-sp-icu-observation-interpretation.json",
+     "SearchParameter/mii-sp-icu-observation-issued.json",
+     "SearchParameter/mii-sp-icu-observation-referencerange-low.json",
+     "SearchParameter/mii-sp-icu-observation-referencerange.json",
+     "SearchParameter/mii-sp-icu-procedure-recorder.json"
+    ]
+   },
+   "logical-models": {
+    "count": 1,
+    "disposition": "legacy Forge/pre-FSH snapshots (2025.0.4/2026.0.0); superseded by input/fsh -> propose RETIRE after Gate D",
+    "files": [
+     "logical-models/mii-lm-icu-logicalmodel.json"
+    ]
+   }
+  }
+ }
+}

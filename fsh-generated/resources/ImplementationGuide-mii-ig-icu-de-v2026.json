@@ -1,11 +1,166 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-icu-de-v2026",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+      "valueDate": "2026-08-27"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "code": "package",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "de.medizininformatikinitiative.kerndatensatz.icu"
+        },
+        {
+          "url": "version",
+          "valueString": "2026.0.3"
+        },
+        {
+          "url": "uri",
+          "valueUri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2026"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "thomas.debertshaeuser@charite.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters",
+      "valueReference": {
+        "reference": "Parameters/mii-param-icu-manifest"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
+      "valueMarkdown": "Provide the computable publication unit for the MII Core Dataset Intensive Care module, enabling implementers to discover, validate, version, and apply the specification consistently."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code": "C201962"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
   "version": "2027.0.0-ballot.rc1",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
   "status": "draft",
+  "experimental": false,
+  "date": "2026-08-27",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -18,23 +173,24 @@
       ]
     }
   ],
-  "packageId": "mii-ig-icu-de-v2026",
+  "description": "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
+  "license": "CC-BY-4.0",
   "fhirVersion": [
     "4.0.1"
   ],
   "dependsOn": [
-    {
-      "packageId": "hl7.fhir.r4.core",
-      "version": "4.0.1",
-      "uri": "http://hl7.org/fhir",
-      "id": "hl7_fhir_r4_core"
-    },
-    {
-      "packageId": "hl7.terminology.r4",
-      "version": "7.3.0",
-      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-      "id": "hl7_terminology_r4"
-    },
     {
       "packageId": "de.basisprofil.r4",
       "version": "1.6.0",
@@ -54,6 +210,36 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_base"
     },
     {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "uri": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+      "id": "hl7_fhir_uv_xver_r5_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.crmi",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi",
+      "id": "hl7_fhir_uv_crmi"
+    },
+    {
+      "packageId": "hl7.terminology.r4",
+      "version": "7.3.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.3.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
+    },
+    {
       "packageId": "dvmd.kdl.r4",
       "version": "2026.0.0",
       "uri": "http://fhir.org/packages/dvmd.kdl.r4/ImplementationGuide/dvmd.kdl.r4",
@@ -62,6 +248,318 @@
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
+        "exampleBoolean": true,
+        "name": "Bilanz Abnahme Haemofiltration Einzelmesswerte"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-drainage-generisch"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Drainage Generisch",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Drainage Generisch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Fluessigkeit Gesamt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Gallenfluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-magensonde"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Magensonde",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Magensonde"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-opdrainage"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr OP Drainage",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Opdrainage"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-pankreasdrainage"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Pankreasdrainage"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-stuhlgang"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Stuhlgang",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Stuhlgang"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-urin"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Urin",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Urin"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-ausfuhr-wunddrainage"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Wunddrainage",
+        "exampleBoolean": true,
+        "name": "Bilanz Ausfuhr Wunddrainage"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-blutverlust"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Blutverlust",
+        "exampleBoolean": true,
+        "name": "Bilanz Blutverlust"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Abgepumpte Muttermilch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Enterale Fluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Fluessigkeit Gesamt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-muttermilch"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Muttermilch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Oraler Fluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Saeuglingsnahrung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-spendermilch"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Spendermilch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
+        "exampleBoolean": true,
+        "name": "Bilanz Tagesbilanz Fluessigkeit"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-icu-ecmo"
+        },
+        "description": "Beispiel: MII PR ICU Extrakorporales Verfahren",
+        "exampleBoolean": true,
+        "name": "Ecmo"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-arterieller-druck-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Arterieller Druck",
+        "exampleBoolean": true,
+        "name": "Ect Arterieller Druck Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"
+        },
+        "description": "Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+        "exampleBoolean": true,
+        "name": "Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+        "exampleBoolean": true,
+        "name": "Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+        "exampleBoolean": true,
+        "name": "Ect Blutfluss Extrakorporal Gasaustausch Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+        "exampleBoolean": true,
+        "name": "Ect Blutfluss Extrakorporaler Gasaustausch Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste"
+        },
+        "description": "Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+        "exampleBoolean": true,
+        "name": "Ect Blutflussind Extrakorporal Gasaustausch Eingeste"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+        "exampleBoolean": true,
+        "name": "Ect Blutflussind Extrakorporal Gasaustausch Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"
+        },
+        "description": "Beispiel: MII PR ICU Dauer Extrakorporaler Gasaustausch",
+        "exampleBoolean": true,
+        "name": "Ect Dauer Extrakorporaler Gasaustausch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-dauer-haemodialysesitzung"
+        },
+        "description": "Beispiel: MII PR ICU Dauer Haemodialysesitzung",
+        "exampleBoolean": true,
+        "name": "Ect Dauer Haemodialysesitzung"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo"
+        },
+        "description": "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+        "exampleBoolean": true,
+        "name": "Ect Eingestellte Parameter Ecmo"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-gasfluss-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Gasfluss",
+        "exampleBoolean": true,
+        "name": "Ect Gasfluss Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"
+        },
+        "description": "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+        "exampleBoolean": true,
+        "name": "Ect Gemessene Parameter Ecmo"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Haemodialyse Blutfluss",
+        "exampleBoolean": true,
+        "name": "Ect Haemodialyse Blutfluss Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Haemodialyse Blutfluss",
+        "exampleBoolean": true,
+        "name": "Ect Haemodialyse Blutfluss Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren"
+        },
+        "description": "Beispiel: MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+        "exampleBoolean": true,
+        "name": "Ect Ionisiertes Kalzium Aus Nierenersatzverfahren"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren"
+        },
+        "description": "Beispiel: MII PR ICU Parameter von Extrakorporalen Verfahren",
+        "exampleBoolean": true,
+        "name": "Ect Parameter Von Extrakorporalen Verfahren"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-substituatfluss"
+        },
+        "description": "Beispiel: MII PR ICU Substituatfluss",
+        "exampleBoolean": true,
+        "name": "Ect Substituatfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-substituatvolumen"
+        },
+        "description": "Beispiel: MII PR ICU Substituatvolumen",
+        "exampleBoolean": true,
+        "name": "Ect Substituatvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-ect-venoeser-druck"
+        },
+        "description": "Beispiel: MII PR ICU Venoeser Druck",
+        "exampleBoolean": true,
+        "name": "Ect Venoeser Druck"
+      },
       {
         "reference": {
           "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
@@ -493,6 +991,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII PR ICU MUV Herzfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
         },
         "name": "MII PR ICU MUV Koerpergewicht",
@@ -507,9 +1012,24 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
+        },
+        "name": "MII PR ICU MUV Koerperlaenge",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
         },
         "name": "MII PR ICU MUV Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
         "exampleBoolean": false
       },
       {
@@ -607,7 +1127,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -1077,6 +1597,13 @@
       },
       {
         "reference": {
+          "reference": "Parameters/mii-param-icu-manifest"
+        },
+        "exampleBoolean": false,
+        "name": "mii-param-icu-manifest"
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-icu-device-property-type"
         },
         "name": "mii-sp-icu-device-property-type",
@@ -1162,6 +1689,782 @@
         "name": "mii-sp-icu-procedure-recorder",
         "description": "Suchparameter für Procedure.recorder",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-arterieller-blutdruck"
+        },
+        "description": "Beispiel: MII PR ICU MUV Arterieller Blutdruck",
+        "exampleBoolean": true,
+        "name": "Muv Arterieller Blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-atemfrequenz"
+        },
+        "description": "Beispiel: MII PR ICU MUV Atemfrequenz",
+        "exampleBoolean": true,
+        "name": "Muv Atemfrequenz"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-herzfrequenz"
+        },
+        "description": "Beispielinstanz des Moduls",
+        "exampleBoolean": true,
+        "name": "Muv Herzfrequenz"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-herzzeitvolumen"
+        },
+        "description": "Beispiel: SD MII ICU Herzzeitvolumen",
+        "exampleBoolean": true,
+        "name": "Muv Herzzeitvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-ideales-koerpergewicht"
+        },
+        "description": "Beispiel: SD MII ICU Ideales Koerpergewicht",
+        "exampleBoolean": true,
+        "name": "Muv Ideales Koerpergewicht"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-intrakranieller-druck-icp"
+        },
+        "description": "Beispiel: SD MII ICU Intrakranieller Druck ICP",
+        "exampleBoolean": true,
+        "name": "Muv Intrakranieller Druck Icp"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergewicht"
+        },
+        "description": "Beispiel: MII PR ICU MUV Koerpergewicht",
+        "exampleBoolean": true,
+        "name": "Muv Koerpergewicht"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig"
+        },
+        "description": "Beispiel: SD MII ICU Koerpergewicht Percentil Altersabhaengig",
+        "exampleBoolean": true,
+        "name": "Muv Koerpergewicht Percentile Altersabhaengig"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergroesse"
+        },
+        "description": "Beispiel: MII PR ICU MUV Koerpergroesse",
+        "exampleBoolean": true,
+        "name": "Muv Koerpergroesse"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpergroesse-percentil"
+        },
+        "description": "Beispiel: SD MII ICU Koerpergroesse Percentil",
+        "exampleBoolean": true,
+        "name": "Muv Koerpergroesse Percentil"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-achsel"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Achsel",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Achsel"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-atemwege"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Atemwege",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Atemwege"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-blut"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Blut",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Blut"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-brust"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Brust",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Brust"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Brustwirbelsaeule",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Brustwirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-gelenk"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Gelenk",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Gelenk"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-generisch"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Generisch",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Generisch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Halswirbelsaeule",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Halswirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-harnblase"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Harnblase",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Harnblase"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-kern"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Kern",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Kern"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-leiste"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Leiste",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Leiste"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Lendenwirbelsaeule",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Lendenwirbelsaeule"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-myokard"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Myokard",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Myokard"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-nasal"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur nasal",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Nasal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Nasen-Rachen-Raum",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Nasen Rachen Raum"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-rektal"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur rektal",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Rektal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-speiseroehre"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Speiseroehre",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Speiseroehre"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-stirn"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Stirn",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Stirn"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-trommelfell"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur Trommelfell",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Trommelfell"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-unter-der-zunge"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur unter der Zunge",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Unter Der Zunge"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerpertemperatur-vaginal"
+        },
+        "description": "Beispiel: SD MII ICU Koerpertemperatur vaginal",
+        "exampleBoolean": true,
+        "name": "Muv Koerpertemperatur Vaginal"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-kopfumfang"
+        },
+        "description": "Beispiel: MII PR ICU MUV Kopfumfang",
+        "exampleBoolean": true,
+        "name": "Muv Kopfumfang"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksatrialer-druck"
+        },
+        "description": "Beispiel: SD MII ICU Linksatrialer Druck",
+        "exampleBoolean": true,
+        "name": "Muv Linksatrialer Druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung",
+        "exampleBoolean": true,
+        "name": "Muv Linksventri Herzzeitvolumen Durch Indikatorverd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung",
+        "exampleBoolean": true,
+        "name": "Muv Linksventri Schlagvolumen Durch Indikatorverduen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung",
+        "exampleBoolean": true,
+        "name": "Muv Linksventri Schlagvolumenind Durch Indikatorverd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung",
+        "exampleBoolean": true,
+        "name": "Muv Linksventrikulaer Herzind Durch Indikatorverduen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaerer-druck"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaerer Druck",
+        "exampleBoolean": true,
+        "name": "Muv Linksventrikulaerer Druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaerer-herzindex"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaerer Herzindex",
+        "exampleBoolean": true,
+        "name": "Muv Linksventrikulaerer Herzindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumen"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen",
+        "exampleBoolean": true,
+        "name": "Muv Linksventrikulaeres Schlagvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex"
+        },
+        "description": "Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumenindex",
+        "exampleBoolean": true,
+        "name": "Muv Linksventrikulaeres Schlagvolumenindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet"
+        },
+        "description": "Beispiel: SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie",
+        "exampleBoolean": true,
+        "name": "Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet"
+        },
+        "description": "Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie",
+        "exampleBoolean": true,
+        "name": "Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet"
+        },
+        "description": "Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie",
+        "exampleBoolean": true,
+        "name": "Muv O2saettigung Im Blut Preduktal Durch Pulsoxymet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-pulmonalarterieller-blutdruck"
+        },
+        "description": "Beispiel: SD MII ICU Pulmonalarterieller Blutdruck",
+        "exampleBoolean": true,
+        "name": "Muv Pulmonalarterieller Blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck"
+        },
+        "description": "Beispiel: SD MII ICU Pulmonalarterieller Wedge Druck",
+        "exampleBoolean": true,
+        "name": "Muv Pulmonalarterieller Wedge Blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "description": "Beispiel: SD MII ICU Pulmonalvaskulaerer Widerstandsindex",
+        "exampleBoolean": true,
+        "name": "Muv Pulmonalvaskulaerer Widerstandsindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-puls"
+        },
+        "description": "Beispiel: SD MII ICU Puls",
+        "exampleBoolean": true,
+        "name": "Muv Puls"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-rechtsatrialer-druck"
+        },
+        "description": "Beispiel: SD MII ICU Rechtsatrialer Druck",
+        "exampleBoolean": true,
+        "name": "Muv Rechtsatrialer Druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-rechtsventrikulaerer-druck"
+        },
+        "description": "Beispiel: SD MII ICU Rechtsventrikulaerer Druck",
+        "exampleBoolean": true,
+        "name": "Muv Rechtsventrikulaerer Druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"
+        },
+        "description": "Beispiel: SD MII ICU Sonstige pulsatile Druecke Generisch",
+        "exampleBoolean": true,
+        "name": "Muv Sonstige Pulsatile Druecke Generisch"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex"
+        },
+        "description": "Beispiel: SD MII ICU Systemischer Vaskulaerer Widerstandsindex",
+        "exampleBoolean": true,
+        "name": "Muv Systemischer Vaskulaerer Widerstandsindex"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-zentralvenoeser-blutdruck"
+        },
+        "description": "Beispiel: SD MII ICU Zentralvenoeser Blutdruck",
+        "exampleBoolean": true,
+        "name": "Muv Zentralvenoeser Blutdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-rass"
+        },
+        "description": "Beispiel: MII PR ICU Score RASS",
+        "exampleBoolean": true,
+        "name": "Score Rass"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenbefund"
+        },
+        "description": "Beispiel: MII PR ICU Untersuchung Pupillenbefund",
+        "exampleBoolean": true,
+        "name": "Untersuchung Pupillenbefund"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenform"
+        },
+        "description": "Beispiel: MII PR ICU Untersuchung Pupillenform",
+        "exampleBoolean": true,
+        "name": "Untersuchung Pupillenform"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillengroesse"
+        },
+        "description": "Beispiel: MII PR ICU Untersuchung Pupillengroesse",
+        "exampleBoolean": true,
+        "name": "Untersuchung Pupillengroesse"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"
+        },
+        "description": "Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Direkt",
+        "exampleBoolean": true,
+        "name": "Untersuchung Pupillenlichtreaktion Direkt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"
+        },
+        "description": "Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt",
+        "exampleBoolean": true,
+        "name": "Untersuchung Pupillenlichtreaktion Indirekt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-untersuchung-pupillensymmetrie"
+        },
+        "description": "Beispiel: MII PR ICU Untersuchung Pupillensymmetrie",
+        "exampleBoolean": true,
+        "name": "Untersuchung Pupillensymmetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess"
+        },
+        "description": "Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+        "exampleBoolean": true,
+        "name": "Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"
+        },
+        "description": "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "exampleBoolean": true,
+        "name": "Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"
+        },
+        "description": "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "exampleBoolean": true,
+        "name": "Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemzugvolumen-einstellung"
+        },
+        "description": "Beispiel: MII PR ICU Atemzugvolumen Einstellung",
+        "exampleBoolean": true,
+        "name": "Vent Atemzugvolumen Einstellung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Atemzugvolumen Waehrend Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Atemzugvolumen Waehrend Beatmung Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/mii-exa-icu-vent-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller"
+        },
+        "description": "Beispiel: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Beatmungsvolumen Pro Minute Maschineller"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-beatmungszeit-auf-hohem-druck"
+        },
+        "description": "Beispiel: MII PR ICU Beatmungszeit Hohem Druck",
+        "exampleBoolean": true,
+        "name": "Vent Beatmungszeit Auf Hohem Druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck"
+        },
+        "description": "Beispiel: MII PR ICU Beatmungszeit Niedrigem Druck",
+        "exampleBoolean": true,
+        "name": "Vent Beatmungszeit Auf Niedrigem Druck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-druckdifferenz-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU Druckdifferenz Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Druckdifferenz Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-dynamische-kompliance"
+        },
+        "description": "Beispiel: MII PR ICU Dynamische Kompliance",
+        "exampleBoolean": true,
+        "name": "Vent Dynamische Kompliance"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Eingestellte Parameter Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss"
+        },
+        "description": "Beispiel: MII PR ICU Eingestellter Inspiratorischer Gasfluss",
+        "exampleBoolean": true,
+        "name": "Vent Eingestellter Inspiratorischer Gasfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU Einstellung Ausatmungszeit Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Einstellung Ausatmungszeit Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-einstellung-einatmungszeit-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU Einstellung Einatmungszeit Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Einstellung Einatmungszeit Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"
+        },
+        "description": "Beispiel: MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
+        "exampleBoolean": true,
+        "name": "Vent Endexspiratorischer Kohlendioxidpartialdruck"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-exspiratorischer-gasfluss"
+        },
+        "description": "Beispiel: MII PR ICU Exspiratorischer Gasfluss",
+        "exampleBoolean": true,
+        "name": "Vent Exspiratorischer Gasfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck"
+        },
+        "description": "Beispiel: MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
+        "exampleBoolean": true,
+        "name": "Vent Exspiratorischer Sauerstoffpartialdruck"
+      },
+      {
+        "reference": {
+          "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Gemessene Parameter Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-horowitz-in-arteriellem-blut"
+        },
+        "description": "Beispiel: MII PR ICU Horowitz In Arteriellem Blut",
+        "exampleBoolean": true,
+        "name": "Vent Horowitz In Arteriellem Blut"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion",
+        "exampleBoolean": true,
+        "name": "Vent Inspiratorische Sauerstofffraktion Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion",
+        "exampleBoolean": true,
+        "name": "Vent Inspiratorische Sauerstofffraktion Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-inspiratorischer-gasfluss"
+        },
+        "description": "Beispiel: MII PR ICU Inspiratorischer Gasfluss",
+        "exampleBoolean": true,
+        "name": "Vent Inspiratorischer Gasfluss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": true,
+        "name": "Vent Maximaler Beatmungsdruck Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": true,
+        "name": "Vent Maximaler Beatmungsdruck Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-mechanische-atemfrequenz-beatmet"
+        },
+        "description": "Beispiel: MII PR ICU Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": true,
+        "name": "Vent Mechanische Atemfrequenz Beatmet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Mittlerer Beatmungsdruck",
+        "exampleBoolean": true,
+        "name": "Vent Mittlerer Beatmungsdruck Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Mittlerer Beatmungsdruck",
+        "exampleBoolean": true,
+        "name": "Vent Mittlerer Beatmungsdruck Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-parameter-von-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU Parameter von Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Parameter Von Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt"
+        },
+        "description": "Beispiel: MII PR ICU Positiv Endexpiratorischer Druck",
+        "exampleBoolean": true,
+        "name": "Vent Positiv Endexspiratorischer Druck Eingestellt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen"
+        },
+        "description": "Beispiel: MII PR ICU Positiv Endexpiratorischer Druck",
+        "exampleBoolean": true,
+        "name": "Vent Positiv Endexspiratorischer Druck Gemessen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontane-atemfrequenz-beatmet"
+        },
+        "description": "Beispiel: MII PR ICU Spontane Atemfrequenz Beatmet",
+        "exampleBoolean": true,
+        "name": "Vent Spontane Atemfrequenz Beatmet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
+        },
+        "description": "Beispiel: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": true,
+        "name": "Vent Spontane Mechanische Atemfrequenz Beatmet"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontanes-atemzugvolumen"
+        },
+        "description": "Beispiel: MII PR ICU Spontanes Atemzugvolumen",
+        "exampleBoolean": true,
+        "name": "Vent Spontanes Atemzugvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"
+        },
+        "description": "Beispiel: MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
+        "exampleBoolean": true,
+        "name": "Vent Spontanes Plus Mechanisches Atemzugvolumen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-unterstuetzungsdruck-beatmung"
+        },
+        "description": "Beispiel: MII PR ICU Unterstuetzungsdruck Beatmung",
+        "exampleBoolean": true,
+        "name": "Vent Unterstuetzungsdruck Beatmung"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung"
+        },
+        "description": "Beispiel: MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": true,
+        "name": "Vent Zeitverhaeltnis Ein Ausatmung"
       }
     ],
     "page": {
@@ -1172,6 +2475,83 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "implementer-guidance.html",
+              "title": "Guidance for Implementers",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "uml-diagrams.html",
+              "title": "UML Diagrams",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "security-and-privacy.html",
+          "title": "Security and Privacy",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capability-statements.html",
+          "title": "Capability Statements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search-parameters.html",
+          "title": "Search Parameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logical-models.html",
+          "title": "Logical Models",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "value-sets.html",
+          "title": "Value Sets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changelog",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "version-history.html",
+          "title": "Versioning",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-mii-ig-icu-de-v2026.html",
+          "title": "MII ImplementationGuide Resource",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "translationinfo.html",
+          "title": "Translation Information",
           "generation": "markdown"
         }
       ]
@@ -1184,6 +2564,130 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/predefined-resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "beispiele"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "en"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "de"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/de"
+      },
+      {
+        "code": "excludexml",
+        "value": "false"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
+      },
+      {
+        "code": "logging",
+        "value": "init"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      },
+      {
+        "code": "logging",
+        "value": "context"
+      },
+      {
+        "code": "logging",
+        "value": "html"
+      },
+      {
+        "code": "logging",
+        "value": "tx"
+      },
+      {
+        "code": "pin-canonicals",
+        "value": "pin-all"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/resources/Parameters-expansion-manifest.json"
+      },
+      {
+        "code": "pin-manifest",
+        "value": "mii-param-icu-manifest"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3/cda"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-blutdruck"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
+      },
+      {
+        "code": "special-url",
+        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
       }
     ]
   }

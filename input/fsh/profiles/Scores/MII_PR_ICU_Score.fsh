@@ -69,12 +69,12 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * value[x] 0..1 MS
 * value[x] only integer or CodeableConcept or Quantity
 
-// component-Slicing-Rahmen — Kinder fuegen contains-Slices hinzu
 * component MS
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false
+// MIGRATION FIX (revertible): the open pattern-slicing frame with ZERO slices that
+// stood here crashes HL7 ProfileUtilities snapshot generation (IG publisher 2.3.2/2.3.3,
+// validator_cli 6.10.0: "This situation is not yet handled ... constrain slicing to 1..1").
+// An open frame with no slices constrains nothing, so the frame moved into the child
+// profiles that actually declare slices (GCS, ICDSC, SOFA; CAM-ICU already had its own).
 * component.value[x] 0..1 MS
 * component.value[x] only integer or Quantity or CodeableConcept
 * component.code MS

@@ -1,40 +1,283 @@
-# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
-# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
-# │  used properties are included. For a list of all supported properties and their functions,     │
-# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# ╭────────────────────────────── TEMPLATE — READ FIRST ───────────────────────────────╮
+# │ This is the CRMI-profiled metadata contract for an MII KDS module IG,              │
+# │ parameterized from medizininformatik-initiative/kerndatensatz-basis (main).        │
+# │ The file does NOT build until every {{...}} placeholder is replaced.               │
+# │                                                                                    │
+# │ All 19 placeholders this repository uses are listed below — 15 ACTIVE and 4        │
+# │ OPTIONAL. ACTIVE ones sit on lines the build reads today — leaving one             │
+# │ unreplaced ships a bogus artifact. OPTIONAL ones sit inside commented-out          │
+# │ blocks and matter only once you enable that block.                                 │
+# │                                                                                    │
+# │ They occur in: this file, ig.ini, publication-request.json,                        │
+# │ qc/custom.rules.yaml, .github/workflows/go-publish.yml, the narrative pages        │
+# │ (input/pagecontent, input/translations), the FSH sources (input/fsh, incl. the     │
+# │ rulesets library), input/resources and tests/.                                     │
+# │                                                                                    │
+# │ ── ACTIVE ────────────────────────────────────────────────────────────────         │
+# │   icu         lowercase module short name, e.g. `base`, `person`,      │
+# │                           `icu`. Drives packageId, id, and the canonical — and     │
+# │                           the resource id inside input/resources/Parameters-       │
+# │                           expansion-manifest.json. It is also the only             │
+# │                           placeholder that appears in FILE NAMES — three:          │
+# │                           input/translations/de/ImplementationGuide-mii-ig-        │
+# │                           icu.po and the IG intro page                 │
+# │                           ImplementationGuide-mii-ig-icu-de-v2026.md in         │
+# │                           input/pagecontent/ + its German mirror. All three        │
+# │                           must be RENAMED as well as substituted                   │
+# │                           (docs/recipes/create-a-new-module.md step 4; .po         │
+# │                           details: docs/recipes/add-translation.md §5).            │
+# │   ICU         CamelCase computable name part, e.g. `Base` →            │
+# │                           name: MII_IG_Base.                                       │
+# │   Intensive Care        human-readable title part, e.g.                          │
+# │                           `Core Dataset Base` → title: MII Implementation          │
+# │                           Guide Core Dataset Base.                                 │
+# │   FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set.  one-sentence English description of the module.          │
+# │   2026.0.3      MII CalVer YYYY.n.n, e.g. 2026.0.1 (NOT SemVer;          │
+# │                           see the MII Module Release Workflow). Also pins the      │
+# │                           versioned canonicals in input/fsh/rulesets/.             │
+# │   2026         the release sequence year, e.g. 2026.                    │
+# │   2026-08-27        ISO date YYYY-MM-DD; go-publish.yml requires it to       │
+# │                           equal the publication date.                              │
+# │   2023  first copyright year, e.g. 2019.                       │
+# │   2026-08-27       ISO date this release was approved; see docs/release.md. │
+# │   thomas.debertshaeuser@charite.de contact email of the module author.                      │
+# │   C201962      NCI Thesaurus code for the module's topic (basis        │
+# │                           declares seven: C15607, C154624, C25218, C16960,         │
+# │                           C25190, C81239, C25717). Read by the artifact-topic      │
+# │                           extension below AND by every profile via                 │
+# │                           `insert CRMIArtifactTopic(...)`. There is no sensible    │
+# │                           default: an unreplaced value ships a bogus code.         │
+# │   medizininformatik-initiative / kerndatensatzmodul-intensivmedizin  (publication-request.json, go-publish.yml)       │
+# │                           the org/repo hosting this module; GitHub Pages under     │
+# │                           the creating org is the publication website.             │
+# │   MII Core Data Set module Intensivmedizin (ICU), release 2026.0.3 - first release on the MII KDS module template. (publication-request.json) one-line description of the   │
+# │                           release being published.                                 │
+# │   FHIR Implementation Guide for the MII Core Data Set extension module Intensivmedizin (ICU): PDMS data and high-resolution biosignal data.  (publication-request.json) the description shown in    │
+# │                           the FHIR IG registry entry.                              │
+# │                                                                                    │
+# │ ── OPTIONAL (inside commented-out blocks — replace only if you enable them) ──     │
+# │   {{SPECIAL_URL_1}}       one entry of the `special-url` list: a canonical this    │
+# │                           IG defines that does NOT start with the module           │
+# │                           canonical. Regenerate the list per                       │
+# │                           docs/recipes/regenerate-special-url.md.                  │
+# │   {{CITATION_TEXT}}       artifact-relatedArtifact — the module's literature       │
+# │   {{CITATION_URL}}        citation, its URL, and its publication date              │
+# │   {{CITATION_PUBLICATION_DATE}}  (ISO YYYY-MM-DD).                                 │
+# ╰────────────────────────────────────────────────────────────────────────────────────╯
+# ABOUT THE kerndatensatz-basis CITATIONS BELOW
+# `kerndatensatz-basis` is the MII reference module. Wherever a comment quotes
+# one of its values, that value is an EXAMPLE of the convention in force — not a
+# value to copy into your module. Every quoted value was verified against
+# medizininformatik-initiative/kerndatensatz-basis, branch `main`, commit
+# f6c6878, on 2026-07-26.
+
+# id pattern per the MII naming convention: mii-ig-<slug>
+# (for example, kerndatensatz-basis uses `mii-ig-base`).
 id: mii-ig-icu-de-v2026
+# Canonical pattern per the MII convention:
+# https://www.medizininformatik-initiative.de/fhir/modul-<slug>
+# (for example, kerndatensatz-basis uses
+# https://www.medizininformatik-initiative.de/fhir/modul-base).
+# The final value is set per module; the publication WEBSITE deliberately
+# differs (GitHub Pages under the creating org — "canonical-mismatch" in the
+# publication setup). Do not point the canonical at github.io.
 canonical: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu
+# name pattern per the MII convention: MII_IG_<Name>
+# (for example, kerndatensatz-basis uses `MII_IG_Base`).
 name: MII_IG_ICU
+# title pattern: "MII Implementation Guide <Title>" (for example,
+# kerndatensatz-basis uses "MII Implementation Guide Core Dataset Base").
 title: MII IG ICU
-# description: Example Implementation Guide for getting started with SUSHI
+description: "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-Beschreibung DE)
 status: draft # draft | active | retired | unknown
+# MII modules use CalVer YYYY.n.n per the MII Module Release Workflow — NOT SemVer.
+# Ballot-RC-Suffix kommt vom Modul-Team (master, 2026-08-28).
 version: "2027.0.0-ballot.rc1"
+# packageId pattern per the MII naming convention:
+# de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
+# kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
+packageId: de.medizininformatikinitiative.kerndatensatz.icu
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2023+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+copyrightYear: "2023+"
+releaseLabel: ci-build
+license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+# Must equal the publication date; go-publish.yml validates this.
+date: "2026-08-27"
+jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+# NUM-DIZ takes over IG development and maintenance when MII funding ends
+# (end-2026), so NUM-DIZ is the publisher shown in the footer's
+# "IG © <year> <publisher>" line (TF-KDS feedback 2026-08-14). "NUM-DIZ" is a
+# proper name, hence language-neutral. The module CONTENT stays MII content —
+# the artifact copyright labels in input/fsh/rulesets/crmi.fsh are unaffected.
 publisher:
   name: Medizininformatik Initiative
+  # Language-neutral URL: the footer's publisher link is the same on every
+  # language's pages, so it must not pin one language's site.
   url: https://www.medizininformatik-initiative.de/
-  # email: test@example.org
-# language: "de-DE"
+
+# CRMI conformance: the IG resource claims the CRMI shareable, publishable and
+# computable ImplementationGuide profiles (for example, kerndatensatz-basis
+# claims the same three).
+meta:
+  profile:
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide
+experimental: false
+# The artifact-* / cqf-* extension set below mirrors the reference module
+# kerndatensatz-basis one-for-one; only the per-module values are placeholders.
+extension:
+  # Date this release was approved by whoever governs the module
+  # (for example, kerndatensatz-basis records 2024-03-07).
+  - url: http://hl7.org/fhir/StructureDefinition/resource-approvalDate
+    valueDate: "2026-08-27"
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
+    valueCode: shareable
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
+    valueCode: publishable
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy
+    valueCodeableConcept:
+      coding:
+        - system: http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes
+          code: package
+          display: Package
+  # Package provenance: must repeat packageId, version, and canonical.
+  - url: http://hl7.org/fhir/StructureDefinition/package-source
+    extension:
+      - url: packageId
+        valueId: de.medizininformatikinitiative.kerndatensatz.icu
+      - url: version
+        valueString: "2026.0.3"
+      - url: uri
+        valueUri: https://www.medizininformatik-initiative.de/fhir/ext/modul-icu
+  # Year this release sequence became effective
+  # (for example, kerndatensatz-basis records "2026").
+  - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
+    valuePeriod:
+      start: "2026"
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-author
+    valueContactDetail:
+      telecom:
+        - system: email
+          value: "thomas.debertshaeuser@charite.de"
+  # The MII-wide governance bodies below apply to every MII KDS module — for
+  # example, kerndatensatz-basis records the same National Steering Committee as
+  # reviewer and endorser. Adjust only if your module's governance differs.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-editor
+    valueContactDetail:
+      name: Taskforce Core Data Set
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
+    valueContactDetail:
+      name: Interoperability Working Group
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
+    valueContactDetail:
+      name: National Steering Committee
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-endorser
+    valueContactDetail:
+      name: Interoperability Working Group
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-endorser
+    valueContactDetail:
+      name: National Steering Committee
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee
+  # OPTIONAL (module-specific): literature reference(s) for the module.
+  # For example, kerndatensatz-basis cites the MII core-data-set paper
+  # (doi:10.1007/s00103-024-03888-4) with this exact structure — uncomment and
+  # fill in when your module has a citation:
+  # - url: http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
+  #   valueRelatedArtifact:
+  #     type: citation
+  #     citation: "{{CITATION_TEXT}}"
+  #     url: "{{CITATION_URL}}"
+  #     extension:
+  #       - url: http://hl7.org/fhir/StructureDefinition/cqf-publicationDate
+  #         valueDate: "{{CITATION_PUBLICATION_DATE}}"
+  #       - url: http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus
+  #         valueCode: active
+  # The module's expansion-parameters manifest — the pinned code system versions
+  # every ValueSet in this IG is expanded against (MII meta wiki, "Terminology
+  # Version Policy"). Shipped at
+  # input/resources/Parameters-expansion-manifest.json; see
+  # input/resources/README.md for the CalVer → SNOMED CT release table. Active
+  # together with path-expansion-params / pin-manifest below — all three must
+  # name the same resource.
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters
+    valueReference:
+      reference: Parameters/mii-param-icu-manifest
+  # `semver` is what the MII modules record here even though MII module versions
+  # are CalVer YYYY.n.n (which parses as three numeric fields) — for example,
+  # kerndatensatz-basis records `semver`. Do not "correct" it without an
+  # MII-wide decision.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
+    valueCoding:
+      system: http://hl7.org/fhir/version-algorithm
+      code: semver
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-usage
+    valueMarkdown: "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-purpose
+    valueMarkdown: "Provide the computable publication unit for the MII Core Dataset Intensive Care module, enabling implementers to discover, validate, version, and apply the specification consistently."
+  # Module topic(s), coded with the NCI Thesaurus (for example,
+  # kerndatensatz-basis declares seven: C15607, C154624, C25218, C16960,
+  # C25190, C81239, C25717 — verified against its main branch). Replace the
+  # code with your module's topic(s); repeat the block for each topic.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-topic
+    valueCodeableConcept:
+      coding:
+        - system: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+          code: "C201962"
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
-# package id and the value is the version (or dev/current). For advanced
-# use cases, the value can be an object with keys for id, uri, and version.
+# package id and the value is the version (for advanced use cases the value
+# can be an object with keys for id, uri, and version).
 #
+# Pinned to the exact versions the reference module kerndatensatz-basis pins on
+# `main`. Fixed versions only — never `current`/`dev` (the go-publish workflow and the convention
+# check reject floating versions; the dependency checker proposes bumps).
 dependencies:
-  hl7.fhir.r4.core: 4.0.1
-  hl7.terminology.r4: 7.3.0
+  # German base profiles (Pin vom Modul-Team, master 2026-08-28).
   de.basisprofil.r4: 1.6.0
+  # Source pins carried unchanged from the pre-migration module (spec 2.1):
+  # ISiK 6.0.0 per TF-Richtung (Spike 2026-08-28: SUSHI 0 Errors, qa-Delta +10 durch
+  # sct-version-de auf Koerpertemperatur-Beispielen -- Team-Entscheidung, s. Report QA-7). gematik liefert KEINE Snapshots (0/178);
+  # der Build bezieht das Paket inkl. nachgebauter Snapshots aus dem
+  # medizininformatik-initiative/fhir-package-store (cache-store-Branch, CI-Priming-Step
+  # in .github/workflows/ig-publisher.yml). Lokal: siehe README, Abschnitt Build.
   de.gematik.isik: 6.0.0
   de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1
+  # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
+  # basis needs it for R5 extensions — for example Encounter.plannedStartDate;
+  # remove it if your module defines no R5 cross-version extensions.
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
+  # Canonical Resource Management Infrastructure — required by the CRMI
+  # profiles claimed under meta.profile above (kerndatensatz-basis pins the
+  # same 2.0.0).
+  hl7.fhir.uv.crmi: 2.0.0
+  # HL7 Terminology (THO) — pinned DIRECTLY on purpose. The IG Publisher's
+  # auto-add guard reads only THIS IG's own dependsOn (PublisherIGLoader,
+  # verified at the pinned 2.2.11): without a direct pin every build silently
+  # injects the LATEST THO release; a transitive pin (e.g. in the meta
+  # package) cannot control the version. scripts/meta-pin-drift.mjs warns
+  # when this pin drifts from what the pinned meta package ships (meta
+  # 2026.0.0 pins none yet), and the Monday dependency check proposes newer
+  # releases like for every other pin.
+  hl7.terminology.r4: 7.3.0
+  # HL7 Extensions Pack — same rationale and same drift watch as
+  # hl7.terminology.r4 above.
+  hl7.fhir.uv.extensions.r4: 5.3.0
+  # Vom Modul-Team auf master ergaenzt (2026-08-28):
   dvmd.kdl.r4: 2026.0.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -48,14 +291,628 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
+# This page tree implements the MII-agreed module menu structure (see
+# docs/page-structure.md for the structure with cardinalities, and
+# docs/optional-pages.md for the OPTIONAL (0..1) entries and how to remove
+# one). kerndatensatz-basis still lists the older combined pages
+# (profiles-and-extensions, search-parameters-and-operations, terminology);
+# this template splits them into one page per artifact type per the agreed
+# structure. The MII-wide conformance topics (Conformance, General
+# Requirements, Must Support, Handling Missing Data) and "Datasets and
+# Descriptions" are MENU LINKS, not pages — they have no entry here.
+# Every entry needs a matching file in input/pagecontent/ (starter pages are a
+# separate scaffolding step); OPTIONAL entries your module does not need are
+# removed per docs/optional-pages.md.
+# Every `title:` below is also a msgid in the IG-level translation catalogue
+# input/translations/de/ImplementationGuide-mii-ig-icu.po — if you
+# add, rename or delete a page here, update that catalogue in the same commit,
+# or the German rendering falls back to the English title for that page.
+resources:
+# >>> BEGIN generierte Beispiel-Deklarationen (scripts/gen-example-resources.py)
+  # Regenerieren: python3 scripts/gen-example-resources.py --write
+  Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte:
+    name: "Bilanz Abnahme Haemofiltration Einzelmesswerte"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-drainage-generisch:
+    name: "Bilanz Ausfuhr Drainage Generisch"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Drainage Generisch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt:
+    name: "Bilanz Ausfuhr Fluessigkeit Gesamt"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit:
+    name: "Bilanz Ausfuhr Gallenfluessigkeit"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-magensonde:
+    name: "Bilanz Ausfuhr Magensonde"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Magensonde"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-opdrainage:
+    name: "Bilanz Ausfuhr Opdrainage"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr OP Drainage"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-pankreasdrainage:
+    name: "Bilanz Ausfuhr Pankreasdrainage"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-stuhlgang:
+    name: "Bilanz Ausfuhr Stuhlgang"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Stuhlgang"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-urin:
+    name: "Bilanz Ausfuhr Urin"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Urin"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-ausfuhr-wunddrainage:
+    name: "Bilanz Ausfuhr Wunddrainage"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Wunddrainage"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-blutverlust:
+    name: "Bilanz Blutverlust"
+    description: "Beispiel: MII PR ICU Bilanz Ausfuhr Blutverlust"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch:
+    name: "Bilanz Einfuhr Abgepumpte Muttermilch"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit:
+    name: "Bilanz Einfuhr Enterale Fluessigkeit"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt:
+    name: "Bilanz Einfuhr Fluessigkeit Gesamt"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-muttermilch:
+    name: "Bilanz Einfuhr Muttermilch"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit:
+    name: "Bilanz Einfuhr Oraler Fluessigkeit"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung:
+    name: "Bilanz Einfuhr Saeuglingsnahrung"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-spendermilch:
+    name: "Bilanz Einfuhr Spendermilch"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit:
+    name: "Bilanz Tagesbilanz Fluessigkeit"
+    description: "Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit"
+    exampleBoolean: true
+  Procedure/mii-exa-icu-ecmo:
+    name: "Ecmo"
+    description: "Beispiel: MII PR ICU Extrakorporales Verfahren"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-arterieller-druck-gemessen:
+    name: "Ect Arterieller Druck Gemessen"
+    description: "Beispiel: MII PR ICU Arterieller Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel:
+    name: "Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel"
+    description: "Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen:
+    name: "Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen"
+    description: "Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt:
+    name: "Ect Blutfluss Extrakorporal Gasaustausch Eingestellt"
+    description: "Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen:
+    name: "Ect Blutfluss Extrakorporaler Gasaustausch Gemessen"
+    description: "Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste:
+    name: "Ect Blutflussind Extrakorporal Gasaustausch Eingeste"
+    description: "Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen:
+    name: "Ect Blutflussind Extrakorporal Gasaustausch Gemessen"
+    description: "Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch:
+    name: "Ect Dauer Extrakorporaler Gasaustausch"
+    description: "Beispiel: MII PR ICU Dauer Extrakorporaler Gasaustausch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-dauer-haemodialysesitzung:
+    name: "Ect Dauer Haemodialysesitzung"
+    description: "Beispiel: MII PR ICU Dauer Haemodialysesitzung"
+    exampleBoolean: true
+  DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo:
+    name: "Ect Eingestellte Parameter Ecmo"
+    description: "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
+    exampleBoolean: true
+  DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo:
+    name: "Ect Gemessene Parameter Ecmo"
+    description: "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-gasfluss-eingestellt:
+    name: "Ect Gasfluss Eingestellt"
+    description: "Beispiel: MII PR ICU Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt:
+    name: "Ect Haemodialyse Blutfluss Eingestellt"
+    description: "Beispiel: MII PR ICU Haemodialyse Blutfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen:
+    name: "Ect Haemodialyse Blutfluss Gemessen"
+    description: "Beispiel: MII PR ICU Haemodialyse Blutfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren:
+    name: "Ect Ionisiertes Kalzium Aus Nierenersatzverfahren"
+    description: "Beispiel: MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren:
+    name: "Ect Parameter Von Extrakorporalen Verfahren"
+    description: "Beispiel: MII PR ICU Parameter von Extrakorporalen Verfahren"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-substituatfluss:
+    name: "Ect Substituatfluss"
+    description: "Beispiel: MII PR ICU Substituatfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-substituatvolumen:
+    name: "Ect Substituatvolumen"
+    description: "Beispiel: MII PR ICU Substituatvolumen"
+    exampleBoolean: true
+  Observation/mii-exa-icu-ect-venoeser-druck:
+    name: "Ect Venoeser Druck"
+    description: "Beispiel: MII PR ICU Venoeser Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-arterieller-blutdruck:
+    name: "Muv Arterieller Blutdruck"
+    description: "Beispiel: MII PR ICU MUV Arterieller Blutdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-atemfrequenz:
+    name: "Muv Atemfrequenz"
+    description: "Beispiel: MII PR ICU MUV Atemfrequenz"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-herzfrequenz:
+    name: "Muv Herzfrequenz"
+    description: "Beispielinstanz des Moduls"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-herzzeitvolumen:
+    name: "Muv Herzzeitvolumen"
+    description: "Beispiel: SD MII ICU Herzzeitvolumen"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-ideales-koerpergewicht:
+    name: "Muv Ideales Koerpergewicht"
+    description: "Beispiel: SD MII ICU Ideales Koerpergewicht"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-intrakranieller-druck-icp:
+    name: "Muv Intrakranieller Druck Icp"
+    description: "Beispiel: SD MII ICU Intrakranieller Druck ICP"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig:
+    name: "Muv Koerpergewicht Percentile Altersabhaengig"
+    description: "Beispiel: SD MII ICU Koerpergewicht Percentil Altersabhaengig"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpergewicht:
+    name: "Muv Koerpergewicht"
+    description: "Beispiel: MII PR ICU MUV Koerpergewicht"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpergroesse-percentil:
+    name: "Muv Koerpergroesse Percentil"
+    description: "Beispiel: SD MII ICU Koerpergroesse Percentil"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpergroesse:
+    name: "Muv Koerpergroesse"
+    description: "Beispiel: MII PR ICU MUV Koerpergroesse"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-achsel:
+    name: "Muv Koerpertemperatur Achsel"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Achsel"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-atemwege:
+    name: "Muv Koerpertemperatur Atemwege"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Atemwege"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-blut:
+    name: "Muv Koerpertemperatur Blut"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Blut"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-brust:
+    name: "Muv Koerpertemperatur Brust"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Brust"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule:
+    name: "Muv Koerpertemperatur Brustwirbelsaeule"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Brustwirbelsaeule"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-gelenk:
+    name: "Muv Koerpertemperatur Gelenk"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Gelenk"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-generisch:
+    name: "Muv Koerpertemperatur Generisch"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Generisch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule:
+    name: "Muv Koerpertemperatur Halswirbelsaeule"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Halswirbelsaeule"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-harnblase:
+    name: "Muv Koerpertemperatur Harnblase"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Harnblase"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-kern:
+    name: "Muv Koerpertemperatur Kern"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Kern"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-leiste:
+    name: "Muv Koerpertemperatur Leiste"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Leiste"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule:
+    name: "Muv Koerpertemperatur Lendenwirbelsaeule"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Lendenwirbelsaeule"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-myokard:
+    name: "Muv Koerpertemperatur Myokard"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Myokard"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-nasal:
+    name: "Muv Koerpertemperatur Nasal"
+    description: "Beispiel: SD MII ICU Koerpertemperatur nasal"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum:
+    name: "Muv Koerpertemperatur Nasen Rachen Raum"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Nasen-Rachen-Raum"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-rektal:
+    name: "Muv Koerpertemperatur Rektal"
+    description: "Beispiel: SD MII ICU Koerpertemperatur rektal"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-speiseroehre:
+    name: "Muv Koerpertemperatur Speiseroehre"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Speiseroehre"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-stirn:
+    name: "Muv Koerpertemperatur Stirn"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Stirn"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-trommelfell:
+    name: "Muv Koerpertemperatur Trommelfell"
+    description: "Beispiel: SD MII ICU Koerpertemperatur Trommelfell"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-unter-der-zunge:
+    name: "Muv Koerpertemperatur Unter Der Zunge"
+    description: "Beispiel: SD MII ICU Koerpertemperatur unter der Zunge"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerpertemperatur-vaginal:
+    name: "Muv Koerpertemperatur Vaginal"
+    description: "Beispiel: SD MII ICU Koerpertemperatur vaginal"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-kopfumfang:
+    name: "Muv Kopfumfang"
+    description: "Beispiel: MII PR ICU MUV Kopfumfang"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksatrialer-druck:
+    name: "Muv Linksatrialer Druck"
+    description: "Beispiel: SD MII ICU Linksatrialer Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd:
+    name: "Muv Linksventri Herzzeitvolumen Durch Indikatorverd"
+    description: "Beispiel: SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen:
+    name: "Muv Linksventri Schlagvolumen Durch Indikatorverduen"
+    description: "Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd:
+    name: "Muv Linksventri Schlagvolumenind Durch Indikatorverd"
+    description: "Beispiel: SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen:
+    name: "Muv Linksventrikulaer Herzind Durch Indikatorverduen"
+    description: "Beispiel: SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventrikulaerer-druck:
+    name: "Muv Linksventrikulaerer Druck"
+    description: "Beispiel: SD MII ICU Linksventrikulaerer Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventrikulaerer-herzindex:
+    name: "Muv Linksventrikulaerer Herzindex"
+    description: "Beispiel: SD MII ICU Linksventrikulaerer Herzindex"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumen:
+    name: "Muv Linksventrikulaeres Schlagvolumen"
+    description: "Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex:
+    name: "Muv Linksventrikulaeres Schlagvolumenindex"
+    description: "Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumenindex"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet:
+    name: "Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet"
+    description: "Beispiel: SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet:
+    name: "Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet"
+    description: "Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet:
+    name: "Muv O2saettigung Im Blut Preduktal Durch Pulsoxymet"
+    description: "Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-pulmonalarterieller-blutdruck:
+    name: "Muv Pulmonalarterieller Blutdruck"
+    description: "Beispiel: SD MII ICU Pulmonalarterieller Blutdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck:
+    name: "Muv Pulmonalarterieller Wedge Blutdruck"
+    description: "Beispiel: SD MII ICU Pulmonalarterieller Wedge Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex:
+    name: "Muv Pulmonalvaskulaerer Widerstandsindex"
+    description: "Beispiel: SD MII ICU Pulmonalvaskulaerer Widerstandsindex"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-puls:
+    name: "Muv Puls"
+    description: "Beispiel: SD MII ICU Puls"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-rechtsatrialer-druck:
+    name: "Muv Rechtsatrialer Druck"
+    description: "Beispiel: SD MII ICU Rechtsatrialer Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-rechtsventrikulaerer-druck:
+    name: "Muv Rechtsventrikulaerer Druck"
+    description: "Beispiel: SD MII ICU Rechtsventrikulaerer Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch:
+    name: "Muv Sonstige Pulsatile Druecke Generisch"
+    description: "Beispiel: SD MII ICU Sonstige pulsatile Druecke Generisch"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex:
+    name: "Muv Systemischer Vaskulaerer Widerstandsindex"
+    description: "Beispiel: SD MII ICU Systemischer Vaskulaerer Widerstandsindex"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-zentralvenoeser-blutdruck:
+    name: "Muv Zentralvenoeser Blutdruck"
+    description: "Beispiel: SD MII ICU Zentralvenoeser Blutdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-rass:
+    name: "Score Rass"
+    description: "Beispiel: MII PR ICU Score RASS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-untersuchung-pupillenbefund:
+    name: "Untersuchung Pupillenbefund"
+    description: "Beispiel: MII PR ICU Untersuchung Pupillenbefund"
+    exampleBoolean: true
+  Observation/mii-exa-icu-untersuchung-pupillenform:
+    name: "Untersuchung Pupillenform"
+    description: "Beispiel: MII PR ICU Untersuchung Pupillenform"
+    exampleBoolean: true
+  Observation/mii-exa-icu-untersuchung-pupillengroesse:
+    name: "Untersuchung Pupillengroesse"
+    description: "Beispiel: MII PR ICU Untersuchung Pupillengroesse"
+    exampleBoolean: true
+  Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt:
+    name: "Untersuchung Pupillenlichtreaktion Direkt"
+    description: "Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
+    exampleBoolean: true
+  Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt:
+    name: "Untersuchung Pupillenlichtreaktion Indirekt"
+    description: "Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
+    exampleBoolean: true
+  Observation/mii-exa-icu-untersuchung-pupillensymmetrie:
+    name: "Untersuchung Pupillensymmetrie"
+    description: "Beispiel: MII PR ICU Untersuchung Pupillensymmetrie"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess:
+    name: "Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess"
+    description: "Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest:
+    name: "Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest"
+    description: "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess:
+    name: "Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess"
+    description: "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-atemzugvolumen-einstellung:
+    name: "Vent Atemzugvolumen Einstellung"
+    description: "Beispiel: MII PR ICU Atemzugvolumen Einstellung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen:
+    name: "Vent Atemzugvolumen Waehrend Beatmung Gemessen"
+    description: "Beispiel: MII PR ICU Atemzugvolumen Waehrend Beatmung"
+    exampleBoolean: true
+  Procedure/mii-exa-icu-vent-beatmung:
+    name: "Vent Beatmung"
+    description: "Beispiel: MII PR ICU Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller:
+    name: "Vent Beatmungsvolumen Pro Minute Maschineller"
+    description: "Beispiel: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-beatmungszeit-auf-hohem-druck:
+    name: "Vent Beatmungszeit Auf Hohem Druck"
+    description: "Beispiel: MII PR ICU Beatmungszeit Hohem Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck:
+    name: "Vent Beatmungszeit Auf Niedrigem Druck"
+    description: "Beispiel: MII PR ICU Beatmungszeit Niedrigem Druck"
+    exampleBoolean: true
+  DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung:
+    name: "Vent Eingestellte Parameter Beatmung"
+    description: "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+    exampleBoolean: true
+  DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung:
+    name: "Vent Gemessene Parameter Beatmung"
+    description: "Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-druckdifferenz-beatmung:
+    name: "Vent Druckdifferenz Beatmung"
+    description: "Beispiel: MII PR ICU Druckdifferenz Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-dynamische-kompliance:
+    name: "Vent Dynamische Kompliance"
+    description: "Beispiel: MII PR ICU Dynamische Kompliance"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss:
+    name: "Vent Eingestellter Inspiratorischer Gasfluss"
+    description: "Beispiel: MII PR ICU Eingestellter Inspiratorischer Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung:
+    name: "Vent Einstellung Ausatmungszeit Beatmung"
+    description: "Beispiel: MII PR ICU Einstellung Ausatmungszeit Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-einstellung-einatmungszeit-beatmung:
+    name: "Vent Einstellung Einatmungszeit Beatmung"
+    description: "Beispiel: MII PR ICU Einstellung Einatmungszeit Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck:
+    name: "Vent Endexspiratorischer Kohlendioxidpartialdruck"
+    description: "Beispiel: MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-exspiratorischer-gasfluss:
+    name: "Vent Exspiratorischer Gasfluss"
+    description: "Beispiel: MII PR ICU Exspiratorischer Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck:
+    name: "Vent Exspiratorischer Sauerstoffpartialdruck"
+    description: "Beispiel: MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-horowitz-in-arteriellem-blut:
+    name: "Vent Horowitz In Arteriellem Blut"
+    description: "Beispiel: MII PR ICU Horowitz In Arteriellem Blut"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt:
+    name: "Vent Inspiratorische Sauerstofffraktion Eingestellt"
+    description: "Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen:
+    name: "Vent Inspiratorische Sauerstofffraktion Gemessen"
+    description: "Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-inspiratorischer-gasfluss:
+    name: "Vent Inspiratorischer Gasfluss"
+    description: "Beispiel: MII PR ICU Inspiratorischer Gasfluss"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt:
+    name: "Vent Maximaler Beatmungsdruck Eingestellt"
+    description: "Beispiel: MII PR ICU Maximaler Beatmungsdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen:
+    name: "Vent Maximaler Beatmungsdruck Gemessen"
+    description: "Beispiel: MII PR ICU Maximaler Beatmungsdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-mechanische-atemfrequenz-beatmet:
+    name: "Vent Mechanische Atemfrequenz Beatmet"
+    description: "Beispiel: MII PR ICU Mechanische Atemfrequenz Beatmet"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt:
+    name: "Vent Mittlerer Beatmungsdruck Eingestellt"
+    description: "Beispiel: MII PR ICU Mittlerer Beatmungsdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen:
+    name: "Vent Mittlerer Beatmungsdruck Gemessen"
+    description: "Beispiel: MII PR ICU Mittlerer Beatmungsdruck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-parameter-von-beatmung:
+    name: "Vent Parameter Von Beatmung"
+    description: "Beispiel: MII PR ICU Parameter von Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt:
+    name: "Vent Positiv Endexspiratorischer Druck Eingestellt"
+    description: "Beispiel: MII PR ICU Positiv Endexpiratorischer Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen:
+    name: "Vent Positiv Endexspiratorischer Druck Gemessen"
+    description: "Beispiel: MII PR ICU Positiv Endexpiratorischer Druck"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-spontane-atemfrequenz-beatmet:
+    name: "Vent Spontane Atemfrequenz Beatmet"
+    description: "Beispiel: MII PR ICU Spontane Atemfrequenz Beatmet"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet:
+    name: "Vent Spontane Mechanische Atemfrequenz Beatmet"
+    description: "Beispiel: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-spontanes-atemzugvolumen:
+    name: "Vent Spontanes Atemzugvolumen"
+    description: "Beispiel: MII PR ICU Spontanes Atemzugvolumen"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen:
+    name: "Vent Spontanes Plus Mechanisches Atemzugvolumen"
+    description: "Beispiel: MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-unterstuetzungsdruck-beatmung:
+    name: "Vent Unterstuetzungsdruck Beatmung"
+    description: "Beispiel: MII PR ICU Unterstuetzungsdruck Beatmung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung:
+    name: "Vent Zeitverhaeltnis Ein Ausatmung"
+    description: "Beispiel: MII PR ICU Zeitverhaeltnis Ein Ausatmung"
+    exampleBoolean: true
+  # <<< ENDE generierte Beispiel-Deklarationen
+
 pages:
   index.md:
     title: Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+
+  guidance.md:
+    title: Guidance
+    implementer-guidance.md:
+      title: Guidance for Implementers
+    uml-diagrams.md:
+      title: UML Diagrams
+
+  # The only Conformance-cluster PAGE of this guide; the MII-wide conformance
+  # topics are menu links to the Meta module (see input/includes/menu.xml).
+  security-and-privacy.md:
+    title: Security and Privacy
+
+  profiles.md:
+    title: Profiles
+  capability-statements.md:
+    title: Capability Statements
+  search-parameters.md: # OPTIONAL (0..1) — see docs/optional-pages.md
+    title: Search Parameters
+  logical-models.md:
+    title: Logical Models
+  value-sets.md: # OPTIONAL (0..1) — see docs/optional-pages.md
+    title: Value Sets
+  examples.md:
+    title: Examples
+
+  downloads.md:
+    title: Downloads
+
+  changes.md:
+    title: Changelog
+
+  version-history.md:
+    title: Versioning
+
+  # The IG Publisher AUTO-GENERATES the ImplementationGuide resource page
+  # (ImplementationGuide-<id>.html); this entry gives it a hand-authored intro
+  # — dependency table, cross-version analysis, global profiles, copyrights —
+  # the kerndatensatz-basis idiom (ImplementationGuide-mii-ig-base.md there).
+  # BOTH this entry's key and the two source files carry icu in
+  # their NAME: like the IG-level .po catalogue, rename
+  # input/pagecontent/ImplementationGuide-mii-ig-icu-de-v2026.md and its
+  # German mirror under input/translations/de/pagecontent/ when you set your
+  # slug (docs/recipes/create-a-new-module.md step 4). The CI self-check
+  # substitutes and renames all of them for the template repo's own preview.
+  ImplementationGuide-mii-ig-icu-de-v2026.md:
+    title: MII ImplementationGuide Resource
+
+  translationinfo.md:
+    title: Translation Information
+
+  # DEMONSTRATION page shipped with the scaffold — delete this entry, the page
+  # and its German mirror once you have taken what you need from it.
+
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -67,151 +924,138 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
-#   excludettl: true
-#   validation: [allow-any-extensions, no-broken-links]
+parameters:
+  path-resource:
+    - input/predefined-resources
+    - beispiele # module's raw JSON examples, kept at their source location (structure-preserving transfer)
+  path-pages:
+    - input/intro-notes # Custom introductory notes
+  # ── Multi-language (e.g. kerndatensatz-basis uses the same model) ──────────
+  # English is the DEFAULT rendering language, German the additional one. The MII
+  # naming conventions prefer German for a conformance resource's description/
+  # name/title but require a translation extension whose content is shown "im
+  # englischsprachigen Implementierungsleitfaden" — they assume the guide is
+  # English. German page mirrors live under input/translations/de/.
+  i18n-default-lang: en # Default language
+  i18n-lang:
+    - de # Additional languages
+  translation-sources:
+    - input/translations/de # Path to German translations
+  excludexml: false
+  excludejson: false
+  excludettl: true
+  # ── Version comparison (enable once a FORMAL publication exists) ───────────
+  # Publishes a machine-generated delta against the previous version at
+  # comparison-v<version>/index.html, and annotates changed elements on the
+  # artifact pages. TWO prerequisites (verified against the publisher's
+  # PreviousVersionComparator):
+  #   1. The canonical must serve package-list.json — the comparator fetches
+  #      <canonical>/package-list.json unconditionally, even for an explicit
+  #      version, and takes the package id from it. MII modules get this with
+  #      their first formal publication at the canonical; until then the
+  #      comparison reports "Unable to find version history" and does nothing.
+  #   2. The previous version's package must be loadable from the package
+  #      cache/registry. If it is not on packages.fhir.org yet,
+  #      scripts/seed-comparison-cache.sh fills the cache from this
+  #      repository's GitHub Release assets (module-release.yml attaches
+  #      package.tgz to every release for exactly this purpose).
+  # Keep the value a released version; update it with every release; link the
+  # report from the version's changelog section (see the Changelog page).
+  # Kill switch: the repository variable ENABLE_VERSION_COMPARISON=false
+  # sets `version-comparison: n/a` in the CI workspace before every build —
+  # n/a is the publisher's documented off-value; an ABSENT parameter defaults
+  # to {last} (registry: http://hl7.org/fhir/tools/CodeSystem/ig-parameters).
+  # version-comparison: "2027.0.0"
+  excludemap: false
+  # ({current}/{last} forms are NOT usable here: they resolve by fetching
+  # <canonical>/package-list.json, which the MII canonical does not serve —
+  # use the explicit version above.)
+  logging:
+    - init
+    - progress
+    - context
+    - html
+    - tx
+  # Pin every canonical reference in the built package (CRMI requirement; for
+  # example, kerndatensatz-basis sets the same value).
+  pin-canonicals: pin-all
+  # Where the IG Publisher reads the pinned code system versions from, and which
+  # manifest's pins are written into the built package. The path is relative to
+  # the publisher's working directory, hence the '../../'. (For example,
+  # kerndatensatz-basis names the file after its slug,
+  # Parameters-mii-param-base-manifest.json; this template uses
+  # a slug-free name so nothing has to be renamed per module.) Keep both in sync
+  # with the cqf-expansionParameters extension above and with the file in
+  # input/resources/ — see input/resources/README.md.
+  path-expansion-params: '../../input/resources/Parameters-expansion-manifest.json'
+  pin-manifest: 'mii-param-icu-manifest'
+  suppress-mappings:
+    - http://hl7.org/v3
+    - http://hl7.org/v3/cda
+  # ── special-url (PLACEHOLDER — do not copy another module's list) ───────────
+  # special-url lists every canonical URL DEFINED by this IG that does not
+  # start with the module canonical above (e.g. legacy
+  # .../fhir/core/modul-<x>/... canonicals kept for compatibility, or R5
+  # cross-version extension URLs). A NEW module normally needs none; the list in
+  # kerndatensatz-basis, for example, is specific to that module and must NOT be
+  # copied. Regenerate the list for
+  # your module per docs/recipes/regenerate-special-url.md, then uncomment:
+  # special-url:
+  #   - {{SPECIAL_URL_1}}
+  # Generated from migration-log/preflight-analysis.json (out_of_space + id_url_mismatch;
+  # prediction counter says 17, itemized lists carry 11 -- delta noted in report):
+  special-url:
+    - https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-blutdruck
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result
+    - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc
+  # FHIR validation test cases (for example, kerndatensatz-basis does the same).
+  # A minimal working harness ships in
+  # tests/profiles/ — see tests/README.md. It stays COMMENTED OUT in the template
+  # repo: the fixtures' canonicals still carry icu, which the CI
+  # self-check substitution does not reach (it rewrites sushi-config.yaml, ig.ini
+  # and the narrative pages only). Replace the placeholders in tests/profiles/,
+  # then uncomment:
+  # profile-test-cases: tests/profiles/profiles.json
+
+# ── MENU (translatable — maintained as menu.xml, NOT the `menu:` property) ────
+# The menu lives in input/includes/menu.xml (English = the default language) with
+# a German translation at input/translations/de/includes/menu.xml. That is
+# the mechanism the HL7 reference IG FHIR/multi-lang-test-ig uses and the ONLY
+# way to get a TRANSLATED menu.
 #
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
+# Do NOT re-add a `menu:` property here: SUSHI would generate a competing
+# fsh-generated/includes/menu.xml whose labels cannot be translated, so the
+# navigation would stay in one language on every rendered language.
+#
+# Editing rules: keep href targets identical across languages, translate only the
+# labels, give dropdown parents a REAL page (href="#" fails the template's menu
+# QA), and remember only one sub-menu level is supported. When you add or remove
+# a page, update BOTH menu files and the `pages:` tree above.
+#
+# ╭──────────────────────────────────────────SUSHI flags───────────────────────────────────────────╮
+# │  The flags below configure aspects of how SUSHI processes FSH.                                 │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
-  # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
-  # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
-  # │  resource. These properties are less commonly needed than those above.                         │
-  # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-  #
-  # Those who need more control or want to add additional details to the contact values can use
-  # contact directly and follow the format outlined in the ImplementationGuide resource and
-  # ContactDetail.
-  #
-  # contact:
-  #   - name: Bob Smith
-  #     telecom:
-  #       - system: email # phone | fax | email | pager | url | sms | other
-  #         value: bobsmith@example.org
-  #         use: work
-  #
-  #
-  # The global property corresponds to the IG.global property, but it
-  # uses the type as the YAML key and the profile as its value. Since
-  # FHIR does not explicitly disallow more than one profile per type,
-  # neither do we; the value can be a single profile URL or an array
-  # of profile URLs. If a value is an id or name, SUSHI will replace
-  # it with the correct canonical when generating the IG JSON.
-  #
-  # global:
-  #   Patient: http://example.org/fhir/StructureDefinition/my-patient-profile
-  #   Encounter: http://example.org/fhir/StructureDefinition/my-encounter-profile
-  #
-  #
-  # The resources property corresponds to IG.definition.resource.
-  # SUSHI can auto-generate all of the resource entries based on
-  # the FSH definitions and/or information in any user-provided
-  # JSON or XML resource files. If the generated entries are not
-  # sufficient or complete, however, the author can add entries
-  # here. If the reference matches a generated entry, it will
-  # replace the generated entry. If it doesn't match any generated
-  # entries, it will be added to the generated entries. The format
-  # follows IG.definition.resource with the following differences:
-  #   * use IG.definition.resource.reference.reference as the YAML key.
-  #   * if the key is an id or name, SUSHI will replace it with the
-  #     correct URL when generating the IG JSON.
-  #   * specify "omit" to omit a FSH-generated resource from the
-  #     resource list.
-  #   * if the exampleCanonical is an id or name, SUSHI will replace
-  #     it with the correct canonical when generating the IG JSON.
-  #   * groupingId can be used, but top-level groups syntax may be a
-  #     better option (see below).
-  # The following are simple examples to demonstrate what this might
-  # look like:
-  #
-  # resources:
-  #   Patient/my-example-patient:
-  #     name: My Example Patient
-  #     description: An example Patient
-  #     exampleBoolean: true
-  #   Patient/bad-example: omit
-  #
-  #
-  # Groups can control certain aspects of the IG generation.  The IG
-  # documentation recommends that authors use the default groups that
-  # are provided by the templating framework, but if authors want to
-  # use their own instead, they can use the mechanism below.  This will
-  # create IG.definition.grouping entries and associate the individual
-  # resource entries with the corresponding groupIds. If a resource
-  # is specified by id or name, SUSHI will replace it with the correct
-  # URL when generating the IG JSON.
-  #
-  # groups:
-  #   GroupA:
-  #     name: Group A
-  #     description: The Alpha Group
-  #     resources:
-  #     - StructureDefinition/animal-patient
-  #     - StructureDefinition/arm-procedure
-  #   GroupB:
-  #     name: Group B
-  #     description: The Beta Group
-  #     resources:
-  #     - StructureDefinition/bark-control
-  #     - StructureDefinition/bee-sting
-  #
-  #
-  # The ImplementationGuide resource defines several other properties
-  # not represented above. These properties can be used as-is and
-  # should follow the format defined in ImplementationGuide:
-  # * date
-  # * meta
-  # * implicitRules
-  # * language
-  # * text
-  # * contained
-  # * extension
-  # * modifierExtension
-  # * experimental
-  # * useContext
-  # * copyright
-  # * packageId
-  #
-  #
-  # ╭──────────────────────────────────────────SUSHI flags───────────────────────────────────────────╮
-  # │  The flags below configure aspects of how SUSHI processes FSH.                                 │
-  # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-  # The FSHOnly flag indicates if only FSH resources should be exported.
-  # If set to true, no IG related content will be generated.
-  # The default value for this property is false.
-  #
-  # FSHOnly: false
-  #
-  #
-  # When set to true, the "short" and "definition" field on the root element of an Extension will
-  # be set to the "Title" and "Description" of that Extension. Default is true.
-  #
-  # applyExtensionMetadataToRoot: true
-  #
-  #
-  # The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
-  # See the individual option definitions below for more detail.
-  #
-  # instanceOptions:
+#
+# The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
+#
+instanceOptions:
   # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
   # in an Instance's assignment rule. All slices appear in the order in which they are specified in FSH rules.
   # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for new projects.
-  # manualSliceOrdering: true # true | false
-  # Determines for which types of Instances SUSHI will automatically set meta.profile
-  # if InstanceOf references a profile:
-  #
-  # setMetaProfile: always # always | never | inline-only | standalone-only
-  #
-  #
-  # Determines for which types of Instances SUSHI will automatically set id
-  # if InstanceOf references a profile:
-  #
-  # setId: always # always | standalone-only
+  manualSliceOrdering: false # Quelle kompilierte mit SUSHI-Default false -- Migration aendert Build-Semantik nicht; Template-Empfehlung true = Folgearbeit (Queue 1)
+
+# Everything above is what this IG actually sets. SUSHI accepts further
+# properties (contact, global profiles, FSHOnly, the remaining instanceOptions,
+# …) that this template deliberately leaves unset; the authoritative list is the
+# SUSHI documentation: https://fshschool.org/docs/sushi/configuration/
+# One of them is a house rule rather than a preference: leave FSHOnly false —
+# this project builds the full IG, not just the resources. (`menu:` is the other;
+# see the menu section above for why it must stay unset.)
