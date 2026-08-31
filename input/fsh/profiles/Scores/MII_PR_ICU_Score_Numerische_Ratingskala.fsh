@@ -9,7 +9,7 @@ Description: """Erfassung der globalen Schmerzintensitaet mittels Numerischer Ra
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
 * ^version = "2026.0.0"
-* ^status = #draft
+* ^status = #active
 
 * obeys mii-icu-painscale-0-10 
 
