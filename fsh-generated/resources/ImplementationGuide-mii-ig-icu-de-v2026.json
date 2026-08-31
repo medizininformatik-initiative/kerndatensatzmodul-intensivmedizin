@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-icu-de-v2026",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
-  "version": "2026.0.3",
+  "version": "2027.0.0",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
   "status": "draft",
@@ -30,22 +30,34 @@
       "id": "hl7_fhir_r4_core"
     },
     {
+      "packageId": "hl7.terminology.r4",
+      "version": "7.3.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology_r4"
+    },
+    {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.4",
+      "version": "1.6.0",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
     {
       "packageId": "de.gematik.isik",
-      "version": "5.1.0",
+      "version": "6.0.0",
       "uri": "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
       "id": "de_gematik_isik"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.base",
-      "version": "2026.0.0",
+      "version": "2026.0.1",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
       "id": "de_medizininformatikinitiative_kerndatensatz_base"
+    },
+    {
+      "packageId": "dvmd.kdl.r4",
+      "version": "2026.0.0",
+      "uri": "http://fhir.org/packages/dvmd.kdl.r4/ImplementationGuide/dvmd.kdl.r4",
+      "id": "dvmd_kdl_r4"
     }
   ],
   "definition": {
