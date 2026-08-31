@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Gallenfluessigkeit - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit**
+* **Bilanz Ausfuhr Gallenfluessigkeit**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit
+## Beispiel Observation: Bilanz Ausfuhr Gallenfluessigkeit
 
 -------
 

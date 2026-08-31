@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung-intro.md
 
@@ -26,6 +26,7 @@ The information whether a value is measured or set is carried by the DeviceMetri
 **Usages:**
 
 * Refer to this Profile: [MII PR ICU Parameter von Beatmung](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md)
+* Examples for this Profile: [DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md) and [DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung](DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.json)
 
@@ -50,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-dm-ein
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

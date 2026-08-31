@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-unter-der-zunge - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Unter Der Zunge - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-unter-der-zunge**
+* **Muv Koerpertemperatur Unter Der Zunge**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-unter-der-zunge
+## Beispiel Observation: Muv Koerpertemperatur Unter Der Zunge
 
 -------
 

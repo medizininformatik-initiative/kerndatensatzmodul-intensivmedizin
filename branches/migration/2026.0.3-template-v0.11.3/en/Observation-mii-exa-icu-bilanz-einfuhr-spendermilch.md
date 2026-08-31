@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-einfuhr-spendermilch - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Spendermilch - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-einfuhr-spendermilch**
+* **Bilanz Einfuhr Spendermilch**
 
-## Observation: mii-exa-icu-bilanz-einfuhr-spendermilch
+## Example Observation: Bilanz Einfuhr Spendermilch
 
 -------
 

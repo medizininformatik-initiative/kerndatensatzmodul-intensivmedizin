@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-gasfluss-eingestellt - MII IG ICU v2026.0.3
+# Ect Gasfluss Eingestellt - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-gasfluss-eingestellt**
+* **Ect Gasfluss Eingestellt**
 
-## Observation: mii-exa-icu-ect-gasfluss-eingestellt
+## Beispiel Observation: Ect Gasfluss Eingestellt
 
 -------
 

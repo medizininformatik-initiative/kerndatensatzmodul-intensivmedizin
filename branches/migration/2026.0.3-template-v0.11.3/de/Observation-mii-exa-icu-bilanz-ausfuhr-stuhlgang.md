@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-stuhlgang - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Stuhlgang - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-stuhlgang**
+* **Bilanz Ausfuhr Stuhlgang**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-stuhlgang
+## Beispiel Observation: Bilanz Ausfuhr Stuhlgang
 
 -------
 

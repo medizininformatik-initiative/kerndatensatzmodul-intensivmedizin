@@ -1,10 +1,10 @@
-# mii-exa-icu-untersuchung-pupillengroesse - MII IG ICU v2026.0.3
+# Untersuchung Pupillengroesse - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-untersuchung-pupillengroesse**
+* **Untersuchung Pupillengroesse**
 
-## Observation: mii-exa-icu-untersuchung-pupillengroesse
+## Example Observation: Untersuchung Pupillengroesse
 
 -------
 

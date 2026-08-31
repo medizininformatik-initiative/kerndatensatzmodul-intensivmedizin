@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel - MII IG ICU v2026.0.3
+# Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel**
+* **Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel**
 
-## Observation: mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel
+## Example Observation: Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel
 
 -------
 

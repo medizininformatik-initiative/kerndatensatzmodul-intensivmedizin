@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-druckdifferenz-beatmung - MII IG ICU v2026.0.3
+# Vent Druckdifferenz Beatmung - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-druckdifferenz-beatmung**
+* **Vent Druckdifferenz Beatmung**
 
-## Observation: mii-exa-icu-vent-druckdifferenz-beatmung
+## Example Observation: Vent Druckdifferenz Beatmung
 
 -------
 

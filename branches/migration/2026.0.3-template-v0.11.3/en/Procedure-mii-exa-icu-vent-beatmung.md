@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-beatmung - MII IG ICU v2026.0.3
+# Vent Beatmung - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-beatmung**
+* **Vent Beatmung**
 
-## Procedure: mii-exa-icu-vent-beatmung
+## Example Procedure: Vent Beatmung
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmung](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmung)
+Profile: [MII PR ICU Beatmung](StructureDefinition-mii-pr-icu-beatmung.md)
 
 **status**: Completed
 
@@ -35,7 +35,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Procedure",
   "id" : "mii-exa-icu-vent-beatmung",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmung"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"]
   },
   "status" : "completed",
   "category" : {

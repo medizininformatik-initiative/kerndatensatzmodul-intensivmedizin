@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen - MII IG ICU v2026.0.3
+# Vent Atemzugvolumen Waehrend Beatmung Gemessen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen**
+* **Vent Atemzugvolumen Waehrend Beatmung Gemessen**
 
-## Observation: mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen
+## Example Observation: Vent Atemzugvolumen Waehrend Beatmung Gemessen
 
 -------
 

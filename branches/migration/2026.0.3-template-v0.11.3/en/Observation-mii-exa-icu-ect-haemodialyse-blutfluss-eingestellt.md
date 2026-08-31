@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt - MII IG ICU v2026.0.3
+# Ect Haemodialyse Blutfluss Eingestellt - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt**
+* **Ect Haemodialyse Blutfluss Eingestellt**
 
-## Observation: mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt
+## Example Observation: Ect Haemodialyse Blutfluss Eingestellt
 
 -------
 

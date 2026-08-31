@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-rechtsventrikulaerer-druck - MII IG ICU v2026.0.3
+# Muv Rechtsventrikulaerer Druck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-rechtsventrikulaerer-druck**
+* **Muv Rechtsventrikulaerer Druck**
 
-## Observation: mii-exa-icu-muv-rechtsventrikulaerer-druck
+## Example Observation: Muv Rechtsventrikulaerer Druck
 
 -------
 

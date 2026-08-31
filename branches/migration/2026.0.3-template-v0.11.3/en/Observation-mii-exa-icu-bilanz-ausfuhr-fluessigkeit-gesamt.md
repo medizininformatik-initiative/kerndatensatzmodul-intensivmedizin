@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Fluessigkeit Gesamt - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt**
+* **Bilanz Ausfuhr Fluessigkeit Gesamt**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt
+## Example Observation: Bilanz Ausfuhr Fluessigkeit Gesamt
 
 -------
 

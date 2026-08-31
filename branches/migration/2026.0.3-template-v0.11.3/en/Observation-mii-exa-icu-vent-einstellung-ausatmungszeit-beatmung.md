@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung - MII IG ICU v2026.0.3
+# Vent Einstellung Ausatmungszeit Beatmung - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung**
+* **Vent Einstellung Ausatmungszeit Beatmung**
 
-## Observation: mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung
+## Example Observation: Vent Einstellung Ausatmungszeit Beatmung
 
 -------
 

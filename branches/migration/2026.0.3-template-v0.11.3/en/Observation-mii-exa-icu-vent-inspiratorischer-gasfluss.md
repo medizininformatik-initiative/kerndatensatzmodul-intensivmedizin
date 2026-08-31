@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-inspiratorischer-gasfluss - MII IG ICU v2026.0.3
+# Vent Inspiratorischer Gasfluss - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-inspiratorischer-gasfluss**
+* **Vent Inspiratorischer Gasfluss**
 
-## Observation: mii-exa-icu-vent-inspiratorischer-gasfluss
+## Example Observation: Vent Inspiratorischer Gasfluss
 
 -------
 

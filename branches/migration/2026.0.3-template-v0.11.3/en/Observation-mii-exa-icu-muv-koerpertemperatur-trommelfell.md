@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-trommelfell - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Trommelfell - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-trommelfell**
+* **Muv Koerpertemperatur Trommelfell**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-trommelfell
+## Example Observation: Muv Koerpertemperatur Trommelfell
 
 -------
 

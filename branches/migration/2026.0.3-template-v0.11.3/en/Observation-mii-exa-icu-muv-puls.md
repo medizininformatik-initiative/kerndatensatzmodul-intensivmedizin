@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-puls - MII IG ICU v2026.0.3
+# Muv Puls - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-puls**
+* **Muv Puls**
 
-## Observation: mii-exa-icu-muv-puls
+## Example Observation: Muv Puls
 
 -------
 

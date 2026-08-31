@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-einfuhr-muttermilch - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Muttermilch - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-einfuhr-muttermilch**
+* **Bilanz Einfuhr Muttermilch**
 
-## Observation: mii-exa-icu-bilanz-einfuhr-muttermilch
+## Beispiel Observation: Bilanz Einfuhr Muttermilch
 
 -------
 

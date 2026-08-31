@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage-intro.md
 
@@ -17,7 +17,7 @@
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/mii-exa-icu-bilanz-ausfuhr-opdrainage](Observation-mii-exa-icu-bilanz-ausfuhr-opdrainage.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.json)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
   "title" : "MII PR ICU Bilanz Ausfuhr OP Drainage",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

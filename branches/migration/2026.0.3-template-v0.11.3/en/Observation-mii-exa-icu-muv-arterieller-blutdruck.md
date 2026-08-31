@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-arterieller-blutdruck - MII IG ICU v2026.0.3
+# Muv Arterieller Blutdruck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-arterieller-blutdruck**
+* **Muv Arterieller Blutdruck**
 
-## Observation: mii-exa-icu-muv-arterieller-blutdruck
+## Example Observation: Muv Arterieller Blutdruck
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen - MII IG ICU v2026.0.3
+# Vent Spontanes Plus Mechanisches Atemzugvolumen - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen**
+* **Vent Spontanes Plus Mechanisches Atemzugvolumen**
 
-## Observation: mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen
+## Beispiel Observation: Vent Spontanes Plus Mechanisches Atemzugvolumen
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend)
+Profile: [MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen](StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

@@ -9,11 +9,12 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
 
 **Usages:**
 
 * Derived from this Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md), [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md), [MII PR ICU Blutfluss Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md), [MII PR ICU Blutflussindex Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md)... Show 8 more, [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md), [MII PR ICU Dauer Haemodialysesitzung](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md), [MII PR ICU Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md), [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md), [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md), [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substituatfluss.md), [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) and [MII PR ICU Venoeser Druck](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md)
+* Examples for this Profile: [Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren](Observation-mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.json)
 
@@ -38,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

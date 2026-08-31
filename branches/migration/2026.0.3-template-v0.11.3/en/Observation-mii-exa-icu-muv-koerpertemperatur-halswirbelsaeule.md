@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Halswirbelsaeule - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule**
+* **Muv Koerpertemperatur Halswirbelsaeule**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule
+## Example Observation: Muv Koerpertemperatur Halswirbelsaeule
 
 -------
 

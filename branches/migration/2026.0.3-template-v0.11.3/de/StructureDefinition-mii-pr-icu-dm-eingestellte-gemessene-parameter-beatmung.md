@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung | *Version*:2026.0.3 |
-| Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -26,6 +26,7 @@ Die Information, ob der Wert gemessen, oder eingestellt ist, trägt die DeviceMe
 **Usages:**
 
 * Refer to this Profile: [MII PR ICU Parameter von Beatmung](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md)
+* Examples for this Profile: [DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md) and [DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung](DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.json)
 
@@ -112,7 +113,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

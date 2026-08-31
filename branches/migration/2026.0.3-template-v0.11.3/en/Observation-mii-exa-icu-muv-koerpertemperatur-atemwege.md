@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-atemwege - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Atemwege - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-atemwege**
+* **Muv Koerpertemperatur Atemwege**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-atemwege
+## Example Observation: Muv Koerpertemperatur Atemwege
 
 -------
 

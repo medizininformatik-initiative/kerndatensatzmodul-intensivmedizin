@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch | *Version*:2026.0.3 |
-| Draft as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch |
+| Draft as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch |
 
 Dies ist eine Ausprägung des generischen Profils zu [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch",
   "title" : "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
   "status" : "draft",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

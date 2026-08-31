@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd - MII IG ICU v2026.0.3
+# Muv Linksventri Herzzeitvolumen Durch Indikatorverd - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd**
+* **Muv Linksventri Herzzeitvolumen Durch Indikatorverd**
 
-## Observation: mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd
+## Beispiel Observation: Muv Linksventri Herzzeitvolumen Durch Indikatorverd
 
 -------
 

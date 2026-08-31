@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-kopfumfang - MII IG ICU v2026.0.3
+# Muv Kopfumfang - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-kopfumfang**
+* **Muv Kopfumfang**
 
-## Observation: mii-exa-icu-muv-kopfumfang
+## Beispiel Observation: Muv Kopfumfang
 
 -------
 

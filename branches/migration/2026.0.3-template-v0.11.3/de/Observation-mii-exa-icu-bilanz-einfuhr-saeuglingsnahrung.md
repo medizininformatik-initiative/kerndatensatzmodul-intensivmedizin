@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Saeuglingsnahrung - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung**
+* **Bilanz Einfuhr Saeuglingsnahrung**
 
-## Observation: mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung
+## Beispiel Observation: Bilanz Einfuhr Saeuglingsnahrung
 
 -------
 

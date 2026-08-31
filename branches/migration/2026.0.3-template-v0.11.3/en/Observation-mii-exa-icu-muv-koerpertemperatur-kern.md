@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-kern - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Kern - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-kern**
+* **Muv Koerpertemperatur Kern**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-kern
+## Example Observation: Muv Koerpertemperatur Kern
 
 -------
 

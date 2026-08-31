@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen - MII IG ICU v2026.0.3
+# Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen**
+* **Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen**
 
-## Observation: mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen
+## Beispiel Observation: Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen
 
 -------
 

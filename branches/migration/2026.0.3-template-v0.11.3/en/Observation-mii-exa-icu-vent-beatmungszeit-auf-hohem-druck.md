@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-beatmungszeit-auf-hohem-druck - MII IG ICU v2026.0.3
+# Vent Beatmungszeit Auf Hohem Druck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-beatmungszeit-auf-hohem-druck**
+* **Vent Beatmungszeit Auf Hohem Druck**
 
-## Observation: mii-exa-icu-vent-beatmungszeit-auf-hohem-druck
+## Example Observation: Vent Beatmungszeit Auf Hohem Druck
 
 -------
 

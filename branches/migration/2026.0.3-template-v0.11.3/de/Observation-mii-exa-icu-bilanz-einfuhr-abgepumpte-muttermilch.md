@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Abgepumpte Muttermilch - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch**
+* **Bilanz Einfuhr Abgepumpte Muttermilch**
 
-## Observation: mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch
+## Beispiel Observation: Bilanz Einfuhr Abgepumpte Muttermilch
 
 -------
 

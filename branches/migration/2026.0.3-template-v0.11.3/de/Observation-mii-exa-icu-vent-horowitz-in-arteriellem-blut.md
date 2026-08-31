@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-horowitz-in-arteriellem-blut - MII IG ICU v2026.0.3
+# Vent Horowitz In Arteriellem Blut - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-horowitz-in-arteriellem-blut**
+* **Vent Horowitz In Arteriellem Blut**
 
-## Observation: mii-exa-icu-vent-horowitz-in-arteriellem-blut
+## Beispiel Observation: Vent Horowitz In Arteriellem Blut
 
 -------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge | *Version*:2026.0.3 |
-| Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
 
 **Usages:**
 
@@ -100,7 +100,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerperlaenge",
   "title" : "MII PR ICU MUV Koerperlaenge",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

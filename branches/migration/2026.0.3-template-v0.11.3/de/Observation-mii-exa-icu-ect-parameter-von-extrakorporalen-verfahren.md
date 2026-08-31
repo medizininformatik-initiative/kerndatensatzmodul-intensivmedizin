@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren - MII IG ICU v2026.0.3
+# Ect Parameter Von Extrakorporalen Verfahren - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren**
+* **Ect Parameter Von Extrakorporalen Verfahren**
 
-## Observation: mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren
+## Beispiel Observation: Ect Parameter Von Extrakorporalen Verfahren
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren)
+Profile: [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -37,7 +37,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-parameter-von-extrakorporalen-verfahren"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

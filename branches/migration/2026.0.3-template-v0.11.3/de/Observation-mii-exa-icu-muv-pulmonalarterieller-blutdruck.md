@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-pulmonalarterieller-blutdruck - MII IG ICU v2026.0.3
+# Muv Pulmonalarterieller Blutdruck - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-pulmonalarterieller-blutdruck**
+* **Muv Pulmonalarterieller Blutdruck**
 
-## Observation: mii-exa-icu-muv-pulmonalarterieller-blutdruck
+## Beispiel Observation: Muv Pulmonalarterieller Blutdruck
 
 -------
 

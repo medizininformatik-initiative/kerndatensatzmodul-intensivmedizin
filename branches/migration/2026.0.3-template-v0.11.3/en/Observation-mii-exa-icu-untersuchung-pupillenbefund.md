@@ -1,10 +1,10 @@
-# mii-exa-icu-untersuchung-pupillenbefund - MII IG ICU v2026.0.3
+# Untersuchung Pupillenbefund - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-untersuchung-pupillenbefund**
+* **Untersuchung Pupillenbefund**
 
-## Observation: mii-exa-icu-untersuchung-pupillenbefund
+## Example Observation: Untersuchung Pupillenbefund
 
 -------
 

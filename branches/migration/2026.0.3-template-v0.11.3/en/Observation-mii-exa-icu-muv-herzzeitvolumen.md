@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-herzzeitvolumen - MII IG ICU v2026.0.3
+# Muv Herzzeitvolumen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-herzzeitvolumen**
+* **Muv Herzzeitvolumen**
 
-## Observation: mii-exa-icu-muv-herzzeitvolumen
+## Example Observation: Muv Herzzeitvolumen
 
 -------
 

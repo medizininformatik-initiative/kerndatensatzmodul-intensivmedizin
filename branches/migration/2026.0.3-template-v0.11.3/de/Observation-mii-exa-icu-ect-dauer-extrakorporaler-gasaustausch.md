@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch - MII IG ICU v2026.0.3
+# Ect Dauer Extrakorporaler Gasaustausch - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch**
+* **Ect Dauer Extrakorporaler Gasaustausch**
 
-## Observation: mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch
+## Beispiel Observation: Ect Dauer Extrakorporaler Gasaustausch
 
 -------
 

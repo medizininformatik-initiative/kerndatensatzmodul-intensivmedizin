@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen - MII IG ICU v2026.0.3
+# Ect Blutfluss Extrakorporaler Gasaustausch Gemessen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen**
+* **Ect Blutfluss Extrakorporaler Gasaustausch Gemessen**
 
-## Observation: mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen
+## Example Observation: Ect Blutfluss Extrakorporaler Gasaustausch Gemessen
 
 -------
 

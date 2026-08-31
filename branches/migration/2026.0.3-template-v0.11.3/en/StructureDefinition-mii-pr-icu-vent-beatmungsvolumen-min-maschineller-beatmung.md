@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung |
 
 "Mechanical ventilation volume per minute" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller](Observation-mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.json)
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
   "name" : "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
   "title" : "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

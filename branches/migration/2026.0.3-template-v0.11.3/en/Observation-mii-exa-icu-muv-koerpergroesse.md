@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpergroesse - MII IG ICU v2026.0.3
+# Muv Koerpergroesse - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpergroesse**
+* **Muv Koerpergroesse**
 
-## Observation: mii-exa-icu-muv-koerpergroesse
+## Example Observation: Muv Koerpergroesse
 
 -------
 

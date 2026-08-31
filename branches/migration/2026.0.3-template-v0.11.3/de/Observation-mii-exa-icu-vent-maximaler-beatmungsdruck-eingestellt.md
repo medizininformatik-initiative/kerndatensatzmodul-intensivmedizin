@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt - MII IG ICU v2026.0.3
+# Vent Maximaler Beatmungsdruck Eingestellt - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt**
+* **Vent Maximaler Beatmungsdruck Eingestellt**
 
-## Observation: mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt
+## Beispiel Observation: Vent Maximaler Beatmungsdruck Eingestellt
 
 -------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Beatmung |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Beatmung |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-beatmung-intro.md
 
@@ -18,6 +18,7 @@ Represents the process of ventilation.
 **Usages:**
 
 * Refer to this Profile: [MII PR ICU Parameter von Beatmung](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md)
+* Examples for this Profile: [Procedure/mii-exa-icu-vent-beatmung](Procedure-mii-exa-icu-vent-beatmung.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-beatmung.json)
 
@@ -52,7 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-beatmu
   "name" : "MII_PR_ICU_Beatmung",
   "title" : "MII PR ICU Beatmung",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

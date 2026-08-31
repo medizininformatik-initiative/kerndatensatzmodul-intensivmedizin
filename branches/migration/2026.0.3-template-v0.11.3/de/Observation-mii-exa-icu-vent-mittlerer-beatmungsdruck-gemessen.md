@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen - MII IG ICU v2026.0.3
+# Vent Mittlerer Beatmungsdruck Gemessen - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen**
+* **Vent Mittlerer Beatmungsdruck Gemessen**
 
-## Observation: mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen
+## Beispiel Observation: Vent Mittlerer Beatmungsdruck Gemessen
 
 -------
 

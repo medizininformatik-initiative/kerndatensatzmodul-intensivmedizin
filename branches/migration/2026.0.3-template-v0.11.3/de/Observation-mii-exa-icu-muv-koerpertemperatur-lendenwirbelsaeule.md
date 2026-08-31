@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Lendenwirbelsaeule - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule**
+* **Muv Koerpertemperatur Lendenwirbelsaeule**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule
+## Beispiel Observation: Muv Koerpertemperatur Lendenwirbelsaeule
 
 -------
 

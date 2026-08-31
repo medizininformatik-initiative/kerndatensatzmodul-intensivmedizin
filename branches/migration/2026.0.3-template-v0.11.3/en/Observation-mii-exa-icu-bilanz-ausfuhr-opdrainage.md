@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-opdrainage - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Opdrainage - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-opdrainage**
+* **Bilanz Ausfuhr Opdrainage**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-opdrainage
+## Example Observation: Bilanz Ausfuhr Opdrainage
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage)
+Profile: [MII PR ICU Bilanz Ausfuhr OP Drainage](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.md)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-ausfuhr-opdrainage",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"]
   },
   "status" : "final",
   "category" : [{

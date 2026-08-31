@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen - MII IG ICU v2026.0.3
+# Vent Inspiratorische Sauerstofffraktion Gemessen - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen**
+* **Vent Inspiratorische Sauerstofffraktion Gemessen**
 
-## Observation: mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen
+## Beispiel Observation: Vent Inspiratorische Sauerstofffraktion Gemessen
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen)
+Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

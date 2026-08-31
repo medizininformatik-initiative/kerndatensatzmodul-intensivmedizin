@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa | *Version*:2026.0.3 |
-| Draft as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Score_SOFA |
+| Draft as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Score_SOFA |
 
  
 Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_SOFA",
   "title" : "MII PR ICU Score SOFA",
   "status" : "draft",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

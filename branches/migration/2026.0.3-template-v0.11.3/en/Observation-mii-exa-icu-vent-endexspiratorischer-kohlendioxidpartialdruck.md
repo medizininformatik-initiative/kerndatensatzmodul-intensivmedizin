@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck - MII IG ICU v2026.0.3
+# Vent Endexspiratorischer Kohlendioxidpartialdruck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck**
+* **Vent Endexspiratorischer Kohlendioxidpartialdruck**
 
-## Observation: mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck
+## Example Observation: Vent Endexspiratorischer Kohlendioxidpartialdruck
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexspiratorischer-kohlendioxidpartialdruck](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexspiratorischer-kohlendioxidpartialdruck)
+Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

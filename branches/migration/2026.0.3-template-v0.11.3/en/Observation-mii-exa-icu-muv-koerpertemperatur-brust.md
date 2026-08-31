@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-brust - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Brust - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-brust**
+* **Muv Koerpertemperatur Brust**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-brust
+## Example Observation: Muv Koerpertemperatur Brust
 
 -------
 

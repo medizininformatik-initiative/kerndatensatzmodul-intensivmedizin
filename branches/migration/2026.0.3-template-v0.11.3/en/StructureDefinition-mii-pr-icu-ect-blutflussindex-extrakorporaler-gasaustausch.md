@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch |
 
 Observation "Blood flow index extracorporeal gas exchange" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-bl
   "name" : "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

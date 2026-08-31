@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste - MII IG ICU v2026.0.3
+# Ect Blutflussind Extrakorporal Gasaustausch Eingeste - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste**
+* **Ect Blutflussind Extrakorporal Gasaustausch Eingeste**
 
-## Observation: mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste
+## Beispiel Observation: Ect Blutflussind Extrakorporal Gasaustausch Eingeste
 
 -------
 

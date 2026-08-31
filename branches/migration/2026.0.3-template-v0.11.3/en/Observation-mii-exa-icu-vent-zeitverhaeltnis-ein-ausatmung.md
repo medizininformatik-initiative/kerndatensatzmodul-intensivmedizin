@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung - MII IG ICU v2026.0.3
+# Vent Zeitverhaeltnis Ein Ausatmung - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung**
+* **Vent Zeitverhaeltnis Ein Ausatmung**
 
-## Observation: mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung
+## Example Observation: Vent Zeitverhaeltnis Ein Ausatmung
 
 -------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2026.0.3 |
-| Draft as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Score |
+| Draft as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Score |
 
  
 Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

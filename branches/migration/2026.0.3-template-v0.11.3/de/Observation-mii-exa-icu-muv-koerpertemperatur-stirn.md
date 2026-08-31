@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-stirn - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Stirn - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-stirn**
+* **Muv Koerpertemperatur Stirn**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-stirn
+## Beispiel Observation: Muv Koerpertemperatur Stirn
 
 -------
 

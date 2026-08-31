@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex - MII IG ICU v2026.0.3
+# Muv Pulmonalvaskulaerer Widerstandsindex - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex**
+* **Muv Pulmonalvaskulaerer Widerstandsindex**
 
-## Observation: mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex
+## Example Observation: Muv Pulmonalvaskulaerer Widerstandsindex
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Oraler Fluessigkeit - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit**
+* **Bilanz Einfuhr Oraler Fluessigkeit**
 
-## Observation: mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit
+## Beispiel Observation: Bilanz Einfuhr Oraler Fluessigkeit
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit)
+Profile: [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit"]
   },
   "status" : "final",
   "category" : [{

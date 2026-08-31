@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-myokard - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Myokard - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-myokard**
+* **Muv Koerpertemperatur Myokard**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-myokard
+## Beispiel Observation: Muv Koerpertemperatur Myokard
 
 -------
 

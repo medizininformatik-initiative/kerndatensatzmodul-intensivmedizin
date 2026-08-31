@@ -1,10 +1,10 @@
-# mii-exa-icu-ecmo - MII IG ICU v2026.0.3
+# Ecmo - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ecmo**
+* **Ecmo**
 
-## Procedure: mii-exa-icu-ecmo
+## Example Procedure: Ecmo
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren)
+Profile: [MII PR ICU Extrakorporales Verfahren](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md)
 
 **status**: Completed
 
@@ -35,7 +35,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Procedure",
   "id" : "mii-exa-icu-ecmo",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"]
   },
   "status" : "completed",
   "category" : {

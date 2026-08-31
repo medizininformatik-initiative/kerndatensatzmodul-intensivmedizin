@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch - MII IG ICU v2026.0.3
+# Muv Sonstige Pulsatile Druecke Generisch - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch**
+* **Muv Sonstige Pulsatile Druecke Generisch**
 
-## Observation: mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch
+## Example Observation: Muv Sonstige Pulsatile Druecke Generisch
 
 -------
 

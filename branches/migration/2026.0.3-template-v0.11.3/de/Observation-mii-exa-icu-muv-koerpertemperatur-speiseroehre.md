@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-speiseroehre - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Speiseroehre - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-speiseroehre**
+* **Muv Koerpertemperatur Speiseroehre**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-speiseroehre
+## Beispiel Observation: Muv Koerpertemperatur Speiseroehre
 
 -------
 

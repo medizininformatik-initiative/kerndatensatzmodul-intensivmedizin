@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa | *Version*:2026.0.3 |
-| Draft as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Score_ZOPA |
+| Draft as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Score_ZOPA |
 
  
 Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_ZOPA",
   "title" : "MII PR ICU Score ZOPA",
   "status" : "draft",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

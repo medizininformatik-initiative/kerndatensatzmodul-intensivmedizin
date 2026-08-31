@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-magensonde - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Magensonde - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-magensonde**
+* **Bilanz Ausfuhr Magensonde**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-magensonde
+## Beispiel Observation: Bilanz Ausfuhr Magensonde
 
 -------
 

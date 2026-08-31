@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-spontanes-atemzugvolumen - MII IG ICU v2026.0.3
+# Vent Spontanes Atemzugvolumen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-spontanes-atemzugvolumen**
+* **Vent Spontanes Atemzugvolumen**
 
-## Observation: mii-exa-icu-vent-spontanes-atemzugvolumen
+## Example Observation: Vent Spontanes Atemzugvolumen
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Nasen Rachen Raum - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum**
+* **Muv Koerpertemperatur Nasen Rachen Raum**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum
+## Example Observation: Muv Koerpertemperatur Nasen Rachen Raum
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-untersuchung-pupillenform - MII IG ICU v2026.0.3
+# Untersuchung Pupillenform - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-untersuchung-pupillenform**
+* **Untersuchung Pupillenform**
 
-## Observation: mii-exa-icu-untersuchung-pupillenform
+## Example Observation: Untersuchung Pupillenform
 
 -------
 

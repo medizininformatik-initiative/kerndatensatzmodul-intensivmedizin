@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-intro.md
 
@@ -17,7 +17,7 @@
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt](Observation-mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.md) and [Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen](Observation-mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.json)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
   "name" : "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
   "title" : "MII PR ICU Inspiratorische Sauerstofffraktion",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

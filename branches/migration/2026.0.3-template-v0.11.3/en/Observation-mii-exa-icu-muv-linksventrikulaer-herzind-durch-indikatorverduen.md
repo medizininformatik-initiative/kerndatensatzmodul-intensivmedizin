@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen - MII IG ICU v2026.0.3
+# Muv Linksventrikulaer Herzind Durch Indikatorverduen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen**
+* **Muv Linksventrikulaer Herzind Durch Indikatorverduen**
 
-## Observation: mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen
+## Example Observation: Muv Linksventrikulaer Herzind Durch Indikatorverduen
 
 -------
 

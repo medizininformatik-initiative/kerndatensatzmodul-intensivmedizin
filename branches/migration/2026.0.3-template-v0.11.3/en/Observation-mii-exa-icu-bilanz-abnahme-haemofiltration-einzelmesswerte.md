@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte - MII IG ICU v2026.0.3
+# Bilanz Abnahme Haemofiltration Einzelmesswerte - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte**
+* **Bilanz Abnahme Haemofiltration Einzelmesswerte**
 
-## Observation: mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte
+## Example Observation: Bilanz Abnahme Haemofiltration Einzelmesswerte
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte)
+Profile: [MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.md)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"]
   },
   "status" : "final",
   "category" : [{

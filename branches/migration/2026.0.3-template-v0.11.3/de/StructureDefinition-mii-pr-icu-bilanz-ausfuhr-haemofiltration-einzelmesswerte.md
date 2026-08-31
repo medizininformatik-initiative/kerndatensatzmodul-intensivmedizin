@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte | *Version*:2026.0.3 |
-| Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte |
 
 Dies ist eine Ausprägung des generischen Profils zu [Bilanz (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte](Observation-mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.json)
 
@@ -92,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
   "title" : "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

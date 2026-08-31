@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-generisch - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Generisch - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-generisch**
+* **Muv Koerpertemperatur Generisch**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-generisch
+## Example Observation: Muv Koerpertemperatur Generisch
 
 -------
 

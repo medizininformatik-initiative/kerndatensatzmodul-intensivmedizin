@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit |
 
 "Balance sheet for imports of enteral fluids (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
   "title" : "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

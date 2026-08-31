@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-venoeser-druck - MII IG ICU v2026.0.3
+# Ect Venoeser Druck - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-venoeser-druck**
+* **Ect Venoeser Druck**
 
-## Observation: mii-exa-icu-ect-venoeser-druck
+## Beispiel Observation: Ect Venoeser Druck
 
 -------
 

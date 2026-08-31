@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-pankreasdrainage - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Pankreasdrainage - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-pankreasdrainage**
+* **Bilanz Ausfuhr Pankreasdrainage**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-pankreasdrainage
+## Example Observation: Bilanz Ausfuhr Pankreasdrainage
 
 -------
 

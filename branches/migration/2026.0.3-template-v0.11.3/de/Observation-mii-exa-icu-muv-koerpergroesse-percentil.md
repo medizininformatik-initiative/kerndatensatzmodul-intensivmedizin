@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpergroesse-percentil - MII IG ICU v2026.0.3
+# Muv Koerpergroesse Percentil - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpergroesse-percentil**
+* **Muv Koerpergroesse Percentil**
 
-## Observation: mii-exa-icu-muv-koerpergroesse-percentil
+## Beispiel Observation: Muv Koerpergroesse Percentil
 
 -------
 

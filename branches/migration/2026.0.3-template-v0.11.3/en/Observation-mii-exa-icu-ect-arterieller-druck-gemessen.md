@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-arterieller-druck-gemessen - MII IG ICU v2026.0.3
+# Ect Arterieller Druck Gemessen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ect-arterieller-druck-gemessen**
+* **Ect Arterieller Druck Gemessen**
 
-## Observation: mii-exa-icu-ect-arterieller-druck-gemessen
+## Example Observation: Ect Arterieller Druck Gemessen
 
 -------
 

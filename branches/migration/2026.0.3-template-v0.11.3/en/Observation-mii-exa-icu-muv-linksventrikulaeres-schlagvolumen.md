@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksventrikulaeres-schlagvolumen - MII IG ICU v2026.0.3
+# Muv Linksventrikulaeres Schlagvolumen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-linksventrikulaeres-schlagvolumen**
+* **Muv Linksventrikulaeres Schlagvolumen**
 
-## Observation: mii-exa-icu-muv-linksventrikulaeres-schlagvolumen
+## Example Observation: Muv Linksventrikulaeres Schlagvolumen
 
 -------
 

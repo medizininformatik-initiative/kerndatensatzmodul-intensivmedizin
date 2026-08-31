@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-drainage-generisch - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Drainage Generisch - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-drainage-generisch**
+* **Bilanz Ausfuhr Drainage Generisch**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-drainage-generisch
+## Example Observation: Bilanz Ausfuhr Drainage Generisch
 
 -------
 

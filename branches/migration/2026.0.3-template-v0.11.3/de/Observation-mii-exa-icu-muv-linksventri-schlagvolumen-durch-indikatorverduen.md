@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen - MII IG ICU v2026.0.3
+# Muv Linksventri Schlagvolumen Durch Indikatorverduen - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen**
+* **Muv Linksventri Schlagvolumen Durch Indikatorverduen**
 
-## Observation: mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen
+## Beispiel Observation: Muv Linksventri Schlagvolumen Durch Indikatorverduen
 
 -------
 

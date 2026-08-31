@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_MUV_Koerpergewicht |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_MUV_Koerpergewicht |
 
 "Body weight (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergewicht",
   "title" : "MII PR ICU MUV Koerpergewicht",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck - MII IG ICU v2026.0.3
+# Vent Beatmungszeit Auf Niedrigem Druck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck**
+* **Vent Beatmungszeit Auf Niedrigem Druck**
 
-## Observation: mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck
+## Example Observation: Vent Beatmungszeit Auf Niedrigem Druck
 
 -------
 

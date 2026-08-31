@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck - MII IG ICU v2026.0.3
+# Vent Exspiratorischer Sauerstoffpartialdruck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck**
+* **Vent Exspiratorischer Sauerstoffpartialdruck**
 
-## Observation: mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck
+## Example Observation: Vent Exspiratorischer Sauerstoffpartialdruck
 
 -------
 

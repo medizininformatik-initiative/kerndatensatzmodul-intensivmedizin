@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet - MII IG ICU v2026.0.3
+# Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet**
+* **Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet**
 
-## Observation: mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet
+## Beispiel Observation: Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet
 
 -------
 

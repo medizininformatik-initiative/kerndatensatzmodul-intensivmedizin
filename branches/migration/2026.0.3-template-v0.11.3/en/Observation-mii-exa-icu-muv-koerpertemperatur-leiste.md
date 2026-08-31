@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-leiste - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Leiste - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-leiste**
+* **Muv Koerpertemperatur Leiste**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-leiste
+## Example Observation: Muv Koerpertemperatur Leiste
 
 -------
 

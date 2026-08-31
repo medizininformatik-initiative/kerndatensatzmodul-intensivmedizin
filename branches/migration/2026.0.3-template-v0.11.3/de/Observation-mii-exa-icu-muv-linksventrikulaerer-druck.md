@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksventrikulaerer-druck - MII IG ICU v2026.0.3
+# Muv Linksventrikulaerer Druck - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-linksventrikulaerer-druck**
+* **Muv Linksventrikulaerer Druck**
 
-## Observation: mii-exa-icu-muv-linksventrikulaerer-druck
+## Beispiel Observation: Muv Linksventrikulaerer Druck
 
 -------
 

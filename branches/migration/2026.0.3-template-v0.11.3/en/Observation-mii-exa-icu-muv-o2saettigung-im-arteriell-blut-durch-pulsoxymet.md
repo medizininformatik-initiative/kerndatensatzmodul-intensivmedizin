@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet - MII IG ICU v2026.0.3
+# Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet**
+* **Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet**
 
-## Observation: mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet
+## Example Observation: Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet
 
 -------
 

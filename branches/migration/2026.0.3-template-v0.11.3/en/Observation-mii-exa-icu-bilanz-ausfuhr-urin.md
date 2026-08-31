@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-urin - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Urin - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-urin**
+* **Bilanz Ausfuhr Urin**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-urin
+## Example Observation: Bilanz Ausfuhr Urin
 
 -------
 

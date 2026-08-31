@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-vaginal - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Vaginal - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-vaginal**
+* **Muv Koerpertemperatur Vaginal**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-vaginal
+## Example Observation: Muv Koerpertemperatur Vaginal
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-dynamische-kompliance - MII IG ICU v2026.0.3
+# Vent Dynamische Kompliance - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-dynamische-kompliance**
+* **Vent Dynamische Kompliance**
 
-## Observation: mii-exa-icu-vent-dynamische-kompliance
+## Beispiel Observation: Vent Dynamische Kompliance
 
 -------
 

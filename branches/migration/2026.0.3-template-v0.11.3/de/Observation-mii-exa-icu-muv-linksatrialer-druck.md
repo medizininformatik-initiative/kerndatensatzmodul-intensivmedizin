@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksatrialer-druck - MII IG ICU v2026.0.3
+# Muv Linksatrialer Druck - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-linksatrialer-druck**
+* **Muv Linksatrialer Druck**
 
-## Observation: mii-exa-icu-muv-linksatrialer-druck
+## Beispiel Observation: Muv Linksatrialer Druck
 
 -------
 

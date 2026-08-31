@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust | *Version*:2026.0.3 |
-| Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -17,7 +17,7 @@ Dies ist eine Ausprägung des generischen Profils zu [Bilanz (Observation)](Stru
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Specification
+* Examples for this Profile: [Observation/mii-exa-icu-bilanz-blutverlust](Observation-mii-exa-icu-bilanz-blutverlust.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.json)
 
@@ -94,7 +94,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
   "title" : "MII PR ICU Bilanz Ausfuhr Blutverlust",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

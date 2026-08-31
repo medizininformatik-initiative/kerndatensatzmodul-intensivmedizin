@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpergewicht - MII IG ICU v2026.0.3
+# Muv Koerpergewicht - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpergewicht**
+* **Muv Koerpergewicht**
 
-## Observation: mii-exa-icu-muv-koerpergewicht
+## Example Observation: Muv Koerpergewicht
 
 -------
 

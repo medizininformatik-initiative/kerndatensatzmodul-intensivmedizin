@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-substituatvolumen - MII IG ICU v2026.0.3
+# Ect Substituatvolumen - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-substituatvolumen**
+* **Ect Substituatvolumen**
 
-## Observation: mii-exa-icu-ect-substituatvolumen
+## Beispiel Observation: Ect Substituatvolumen
 
 -------
 

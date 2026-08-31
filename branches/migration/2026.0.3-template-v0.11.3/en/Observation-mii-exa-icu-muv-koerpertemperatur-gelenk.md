@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-gelenk - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Gelenk - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-gelenk**
+* **Muv Koerpertemperatur Gelenk**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-gelenk
+## Example Observation: Muv Koerpertemperatur Gelenk
 
 -------
 

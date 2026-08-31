@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-rektal - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Rektal - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-rektal**
+* **Muv Koerpertemperatur Rektal**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-rektal
+## Beispiel Observation: Muv Koerpertemperatur Rektal
 
 -------
 

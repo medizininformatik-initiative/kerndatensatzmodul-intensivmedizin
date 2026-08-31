@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt - MII IG ICU v2026.0.3
+# Ect Blutfluss Extrakorporal Gasaustausch Eingestellt - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt**
+* **Ect Blutfluss Extrakorporal Gasaustausch Eingestellt**
 
-## Observation: mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt
+## Beispiel Observation: Ect Blutfluss Extrakorporal Gasaustausch Eingestellt
 
 -------
 

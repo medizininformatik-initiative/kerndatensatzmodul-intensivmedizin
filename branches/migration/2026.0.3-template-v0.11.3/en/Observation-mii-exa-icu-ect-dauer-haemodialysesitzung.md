@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-dauer-haemodialysesitzung - MII IG ICU v2026.0.3
+# Ect Dauer Haemodialysesitzung - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ect-dauer-haemodialysesitzung**
+* **Ect Dauer Haemodialysesitzung**
 
-## Observation: mii-exa-icu-ect-dauer-haemodialysesitzung
+## Example Observation: Ect Dauer Haemodialysesitzung
 
 -------
 

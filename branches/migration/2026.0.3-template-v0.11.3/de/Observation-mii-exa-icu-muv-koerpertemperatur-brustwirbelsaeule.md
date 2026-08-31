@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Brustwirbelsaeule - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule**
+* **Muv Koerpertemperatur Brustwirbelsaeule**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule
+## Beispiel Observation: Muv Koerpertemperatur Brustwirbelsaeule
 
 -------
 

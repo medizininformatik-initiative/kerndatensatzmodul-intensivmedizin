@@ -3,11 +3,11 @@
 <DeviceMetric xmlns="http://hl7.org/fhir">
   <id value="mii-exa-icu-vent-eingestellte-parameter-beatmung"/>
   <meta>
-    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung"/>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"/>
   </meta>
   <language value="de"/>
   <text>
-    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: DeviceMetric mii-exa-icu-vent-eingestellte-parameter-beatmung</b></p><a name="de-mii-exa-icu-vent-eingestellte-parameter-beatmung"> </a><a name="de-hcmii-exa-icu-vent-eingestellte-parameter-beatmung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung</a></p></div><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>category</b>: Setting</p></div>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: DeviceMetric mii-exa-icu-vent-eingestellte-parameter-beatmung</b></p><a name="de-mii-exa-icu-vent-eingestellte-parameter-beatmung"> </a><a name="de-hcmii-exa-icu-vent-eingestellte-parameter-beatmung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.html">MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung</a></p></div><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>category</b>: Setting</p></div>
   </text>
   <type>
     <coding>

@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-rechtsatrialer-druck - MII IG ICU v2026.0.3
+# Muv Rechtsatrialer Druck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-rechtsatrialer-druck**
+* **Muv Rechtsatrialer Druck**
 
-## Observation: mii-exa-icu-muv-rechtsatrialer-druck
+## Example Observation: Muv Rechtsatrialer Druck
 
 -------
 

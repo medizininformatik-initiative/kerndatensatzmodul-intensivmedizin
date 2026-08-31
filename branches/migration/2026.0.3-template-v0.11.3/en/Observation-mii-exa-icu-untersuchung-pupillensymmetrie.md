@@ -1,10 +1,10 @@
-# mii-exa-icu-untersuchung-pupillensymmetrie - MII IG ICU v2026.0.3
+# Untersuchung Pupillensymmetrie - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-untersuchung-pupillensymmetrie**
+* **Untersuchung Pupillensymmetrie**
 
-## Observation: mii-exa-icu-untersuchung-pupillensymmetrie
+## Example Observation: Untersuchung Pupillensymmetrie
 
 -------
 

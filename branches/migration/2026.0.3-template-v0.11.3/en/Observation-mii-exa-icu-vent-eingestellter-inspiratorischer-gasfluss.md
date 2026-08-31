@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss - MII IG ICU v2026.0.3
+# Vent Eingestellter Inspiratorischer Gasfluss - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss**
+* **Vent Eingestellter Inspiratorischer Gasfluss**
 
-## Observation: mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss
+## Example Observation: Vent Eingestellter Inspiratorischer Gasfluss
 
 -------
 

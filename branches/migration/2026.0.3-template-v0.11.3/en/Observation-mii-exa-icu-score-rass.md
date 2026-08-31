@@ -1,10 +1,10 @@
-# mii-exa-icu-score-rass - MII IG ICU v2026.0.3
+# Score Rass - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-score-rass**
+* **Score Rass**
 
-## Observation: mii-exa-icu-score-rass
+## Example Observation: Score Rass
 
 -------
 

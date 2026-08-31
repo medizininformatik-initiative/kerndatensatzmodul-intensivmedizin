@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess - MII IG ICU v2026.0.3
+# Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess**
+* **Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess**
 
-## Observation: mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess
+## Beispiel Observation: Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mitl-exspiratorischem-gasfluss](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mitl-exspiratorischem-gasfluss)
+Profile: [MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mitl-exspiratorischem-gasfluss"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

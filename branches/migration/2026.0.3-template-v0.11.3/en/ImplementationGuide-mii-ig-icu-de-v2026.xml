@@ -1077,6 +1077,435 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"/>
+      </reference>
+      <name value="Bilanz Abnahme Haemofiltration Einzelmesswerte"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-drainage-generisch"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Drainage Generisch"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Drainage Generisch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Fluessigkeit Gesamt"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Gallenfluessigkeit"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-magensonde"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Magensonde"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Magensonde"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-opdrainage"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Opdrainage"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr OP Drainage"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-pankreasdrainage"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Pankreasdrainage"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Pankreasdrainage"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-stuhlgang"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Stuhlgang"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Stuhlgang"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-urin"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Urin"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Urin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-wunddrainage"/>
+      </reference>
+      <name value="Bilanz Ausfuhr Wunddrainage"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Wunddrainage"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-blutverlust"/>
+      </reference>
+      <name value="Bilanz Blutverlust"/>
+      <description value="Beispiel: MII PR ICU Bilanz Ausfuhr Blutverlust"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"/>
+      </reference>
+      <name value="Bilanz Einfuhr Abgepumpte Muttermilch"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"/>
+      </reference>
+      <name value="Bilanz Einfuhr Enterale Fluessigkeit"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"/>
+      </reference>
+      <name value="Bilanz Einfuhr Fluessigkeit Gesamt"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-muttermilch"/>
+      </reference>
+      <name value="Bilanz Einfuhr Muttermilch"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"/>
+      </reference>
+      <name value="Bilanz Einfuhr Oraler Fluessigkeit"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"/>
+      </reference>
+      <name value="Bilanz Einfuhr Saeuglingsnahrung"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-spendermilch"/>
+      </reference>
+      <name value="Bilanz Einfuhr Spendermilch"/>
+      <description value="Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"/>
+      </reference>
+      <name value="Bilanz Tagesbilanz Fluessigkeit"/>
+      <description value="Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/mii-exa-icu-ecmo"/>
+      </reference>
+      <name value="Ecmo"/>
+      <description value="Beispiel: MII PR ICU Extrakorporales Verfahren"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-arterieller-druck-gemessen"/>
+      </reference>
+      <name value="Ect Arterieller Druck Gemessen"/>
+      <description value="Beispiel: MII PR ICU Arterieller Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"/>
+      </reference>
+      <name value="Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel"/>
+      <description value="Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen"/>
+      </reference>
+      <name value="Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen"/>
+      <description value="Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"/>
+      </reference>
+      <name value="Ect Blutfluss Extrakorporal Gasaustausch Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen"/>
+      </reference>
+      <name value="Ect Blutfluss Extrakorporaler Gasaustausch Gemessen"/>
+      <description value="Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste"/>
+      </reference>
+      <name value="Ect Blutflussind Extrakorporal Gasaustausch Eingeste"/>
+      <description value="Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen"/>
+      </reference>
+      <name value="Ect Blutflussind Extrakorporal Gasaustausch Gemessen"/>
+      <description value="Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"/>
+      </reference>
+      <name value="Ect Dauer Extrakorporaler Gasaustausch"/>
+      <description value="Beispiel: MII PR ICU Dauer Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-dauer-haemodialysesitzung"/>
+      </reference>
+      <name value="Ect Dauer Haemodialysesitzung"/>
+      <description value="Beispiel: MII PR ICU Dauer Haemodialysesitzung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo"/>
+      </reference>
+      <name value="Ect Eingestellte Parameter Ecmo"/>
+      <description value="Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-gasfluss-eingestellt"/>
+      </reference>
+      <name value="Ect Gasfluss Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"/>
+      </reference>
+      <name value="Ect Gemessene Parameter Ecmo"/>
+      <description value="Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt"/>
+      </reference>
+      <name value="Ect Haemodialyse Blutfluss Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Haemodialyse Blutfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen"/>
+      </reference>
+      <name value="Ect Haemodialyse Blutfluss Gemessen"/>
+      <description value="Beispiel: MII PR ICU Haemodialyse Blutfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren"/>
+      </reference>
+      <name value="Ect Ionisiertes Kalzium Aus Nierenersatzverfahren"/>
+      <description value="Beispiel: MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren"/>
+      </reference>
+      <name value="Ect Parameter Von Extrakorporalen Verfahren"/>
+      <description value="Beispiel: MII PR ICU Parameter von Extrakorporalen Verfahren"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-substituatfluss"/>
+      </reference>
+      <name value="Ect Substituatfluss"/>
+      <description value="Beispiel: MII PR ICU Substituatfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-substituatvolumen"/>
+      </reference>
+      <name value="Ect Substituatvolumen"/>
+      <description value="Beispiel: MII PR ICU Substituatvolumen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-ect-venoeser-druck"/>
+      </reference>
+      <name value="Ect Venoeser Druck"/>
+      <description value="Beispiel: MII PR ICU Venoeser Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -2535,1366 +2964,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-drainage-generisch"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-drainage-generisch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-magensonde"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-magensonde"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-opdrainage"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-opdrainage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-pankreasdrainage"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-pankreasdrainage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-stuhlgang"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-stuhlgang"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-urin"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-urin"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-ausfuhr-wunddrainage"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-ausfuhr-wunddrainage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-blutverlust"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-blutverlust"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-muttermilch"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-muttermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-einfuhr-spendermilch"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-einfuhr-spendermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"/>
-      </reference>
-      <name value="mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/mii-exa-icu-ecmo"/>
-      </reference>
-      <name value="mii-exa-icu-ecmo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-arterieller-druck-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-ect-arterieller-druck-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"/>
-      </reference>
-      <name value="mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste"/>
-      </reference>
-      <name value="mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"/>
-      </reference>
-      <name value="mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-dauer-haemodialysesitzung"/>
-      </reference>
-      <name value="mii-exa-icu-ect-dauer-haemodialysesitzung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
-      </extension>
-      <reference>
-        <reference value="DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo"/>
-      </reference>
-      <name value="mii-exa-icu-ect-eingestellte-parameter-ecmo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-gasfluss-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-ect-gasfluss-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
-      </extension>
-      <reference>
-        <reference value="DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"/>
-      </reference>
-      <name value="mii-exa-icu-ect-gemessene-parameter-ecmo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-ect-haemodialyse-blutfluss-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren"/>
-      </reference>
-      <name value="mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren"/>
-      </reference>
-      <name value="mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-substituatfluss"/>
-      </reference>
-      <name value="mii-exa-icu-ect-substituatfluss"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-substituatvolumen"/>
-      </reference>
-      <name value="mii-exa-icu-ect-substituatvolumen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-ect-venoeser-druck"/>
-      </reference>
-      <name value="mii-exa-icu-ect-venoeser-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-arterieller-blutdruck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-arterieller-blutdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-atemfrequenz"/>
-      </reference>
-      <name value="mii-exa-icu-muv-atemfrequenz"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-herzfrequenz"/>
-      </reference>
-      <name value="mii-exa-icu-muv-herzfrequenz"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-herzzeitvolumen"/>
-      </reference>
-      <name value="mii-exa-icu-muv-herzzeitvolumen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-ideales-koerpergewicht"/>
-      </reference>
-      <name value="mii-exa-icu-muv-ideales-koerpergewicht"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-intrakranieller-druck-icp"/>
-      </reference>
-      <name value="mii-exa-icu-muv-intrakranieller-druck-icp"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpergewicht"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpergewicht"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpergroesse"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpergroesse"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpergroesse-percentil"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpergroesse-percentil"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-achsel"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-achsel"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-atemwege"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-atemwege"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-blut"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-blut"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-brust"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-brust"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-gelenk"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-gelenk"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-generisch"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-generisch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-harnblase"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-harnblase"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-kern"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-kern"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-leiste"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-leiste"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-myokard"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-myokard"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-nasal"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-nasal"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-rektal"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-rektal"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-speiseroehre"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-speiseroehre"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-stirn"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-stirn"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-trommelfell"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-trommelfell"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-unter-der-zunge"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-unter-der-zunge"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-vaginal"/>
-      </reference>
-      <name value="mii-exa-icu-muv-koerpertemperatur-vaginal"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-kopfumfang"/>
-      </reference>
-      <name value="mii-exa-icu-muv-kopfumfang"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksatrialer-druck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksatrialer-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventrikulaerer-druck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventrikulaerer-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventrikulaerer-herzindex"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventrikulaerer-herzindex"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumen"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventrikulaeres-schlagvolumen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex"/>
-      </reference>
-      <name value="mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet"/>
-      </reference>
-      <name value="mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet"/>
-      </reference>
-      <name value="mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet"/>
-      </reference>
-      <name value="mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-pulmonalarterieller-blutdruck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-pulmonalarterieller-blutdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex"/>
-      </reference>
-      <name value="mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-puls"/>
-      </reference>
-      <name value="mii-exa-icu-muv-puls"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-rechtsatrialer-druck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-rechtsatrialer-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-rechtsventrikulaerer-druck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-rechtsventrikulaerer-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"/>
-      </reference>
-      <name value="mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex"/>
-      </reference>
-      <name value="mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-muv-zentralvenoeser-blutdruck"/>
-      </reference>
-      <name value="mii-exa-icu-muv-zentralvenoeser-blutdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-score-rass"/>
-      </reference>
-      <name value="mii-exa-icu-score-rass"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-untersuchung-pupillenbefund"/>
-      </reference>
-      <name value="mii-exa-icu-untersuchung-pupillenbefund"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-untersuchung-pupillenform"/>
-      </reference>
-      <name value="mii-exa-icu-untersuchung-pupillenform"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-untersuchung-pupillengroesse"/>
-      </reference>
-      <name value="mii-exa-icu-untersuchung-pupillengroesse"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"/>
-      </reference>
-      <name value="mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"/>
-      </reference>
-      <name value="mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-untersuchung-pupillensymmetrie"/>
-      </reference>
-      <name value="mii-exa-icu-untersuchung-pupillensymmetrie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess"/>
-      </reference>
-      <name value="mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"/>
-      </reference>
-      <name value="mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"/>
-      </reference>
-      <name value="mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemzugvolumen-einstellung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-atemzugvolumen-einstellung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/mii-exa-icu-vent-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller"/>
-      </reference>
-      <name value="mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-beatmungszeit-auf-hohem-druck"/>
-      </reference>
-      <name value="mii-exa-icu-vent-beatmungszeit-auf-hohem-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck"/>
-      </reference>
-      <name value="mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-druckdifferenz-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-druckdifferenz-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-dynamische-kompliance"/>
-      </reference>
-      <name value="mii-exa-icu-vent-dynamische-kompliance"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
-      </extension>
-      <reference>
-        <reference value="DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-eingestellte-parameter-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss"/>
-      </reference>
-      <name value="mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-einstellung-einatmungszeit-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-einstellung-einatmungszeit-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"/>
-      </reference>
-      <name value="mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-exspiratorischer-gasfluss"/>
-      </reference>
-      <name value="mii-exa-icu-vent-exspiratorischer-gasfluss"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck"/>
-      </reference>
-      <name value="mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DeviceMetric"/>
-      </extension>
-      <reference>
-        <reference value="DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-gemessene-parameter-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-horowitz-in-arteriellem-blut"/>
-      </reference>
-      <name value="mii-exa-icu-vent-horowitz-in-arteriellem-blut"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-inspiratorischer-gasfluss"/>
-      </reference>
-      <name value="mii-exa-icu-vent-inspiratorischer-gasfluss"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-mechanische-atemfrequenz-beatmet"/>
-      </reference>
-      <name value="mii-exa-icu-vent-mechanische-atemfrequenz-beatmet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-parameter-von-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-parameter-von-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt"/>
-      </reference>
-      <name value="mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-spontane-atemfrequenz-beatmet"/>
-      </reference>
-      <name value="mii-exa-icu-vent-spontane-atemfrequenz-beatmet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet"/>
-      </reference>
-      <name value="mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-spontanes-atemzugvolumen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-spontanes-atemzugvolumen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"/>
-      </reference>
-      <name value="mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-unterstuetzungsdruck-beatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-unterstuetzungsdruck-beatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung"/>
-      </reference>
-      <name value="mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Parameters"/>
       </extension>
       <reference>
@@ -4023,6 +3092,1073 @@
       <name value="mii-sp-icu-procedure-recorder"/>
       <description value="Suchparameter für Procedure.recorder"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-arterieller-blutdruck"/>
+      </reference>
+      <name value="Muv Arterieller Blutdruck"/>
+      <description value="Beispiel: MII PR ICU MUV Arterieller Blutdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-atemfrequenz"/>
+      </reference>
+      <name value="Muv Atemfrequenz"/>
+      <description value="Beispiel: MII PR ICU MUV Atemfrequenz"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-herzfrequenz"/>
+      </reference>
+      <name value="Muv Herzfrequenz"/>
+      <description value="Beispielinstanz des Moduls"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-herzzeitvolumen"/>
+      </reference>
+      <name value="Muv Herzzeitvolumen"/>
+      <description value="Beispiel: SD MII ICU Herzzeitvolumen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-ideales-koerpergewicht"/>
+      </reference>
+      <name value="Muv Ideales Koerpergewicht"/>
+      <description value="Beispiel: SD MII ICU Ideales Koerpergewicht"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-intrakranieller-druck-icp"/>
+      </reference>
+      <name value="Muv Intrakranieller Druck Icp"/>
+      <description value="Beispiel: SD MII ICU Intrakranieller Druck ICP"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpergewicht"/>
+      </reference>
+      <name value="Muv Koerpergewicht"/>
+      <description value="Beispiel: MII PR ICU MUV Koerpergewicht"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig"/>
+      </reference>
+      <name value="Muv Koerpergewicht Percentile Altersabhaengig"/>
+      <description value="Beispiel: SD MII ICU Koerpergewicht Percentil Altersabhaengig"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpergroesse"/>
+      </reference>
+      <name value="Muv Koerpergroesse"/>
+      <description value="Beispiel: MII PR ICU MUV Koerpergroesse"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpergroesse-percentil"/>
+      </reference>
+      <name value="Muv Koerpergroesse Percentil"/>
+      <description value="Beispiel: SD MII ICU Koerpergroesse Percentil"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-achsel"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Achsel"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Achsel"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-atemwege"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Atemwege"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Atemwege"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-blut"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Blut"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Blut"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-brust"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Brust"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Brust"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Brustwirbelsaeule"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Brustwirbelsaeule"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-gelenk"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Gelenk"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Gelenk"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-generisch"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Generisch"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Generisch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Halswirbelsaeule"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Halswirbelsaeule"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-harnblase"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Harnblase"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Harnblase"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-kern"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Kern"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Kern"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-leiste"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Leiste"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Leiste"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Lendenwirbelsaeule"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Lendenwirbelsaeule"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-myokard"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Myokard"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Myokard"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-nasal"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Nasal"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur nasal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Nasen Rachen Raum"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Nasen-Rachen-Raum"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-rektal"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Rektal"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur rektal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-speiseroehre"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Speiseroehre"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Speiseroehre"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-stirn"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Stirn"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Stirn"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-trommelfell"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Trommelfell"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur Trommelfell"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-unter-der-zunge"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Unter Der Zunge"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur unter der Zunge"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-vaginal"/>
+      </reference>
+      <name value="Muv Koerpertemperatur Vaginal"/>
+      <description value="Beispiel: SD MII ICU Koerpertemperatur vaginal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-kopfumfang"/>
+      </reference>
+      <name value="Muv Kopfumfang"/>
+      <description value="Beispiel: MII PR ICU MUV Kopfumfang"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksatrialer-druck"/>
+      </reference>
+      <name value="Muv Linksatrialer Druck"/>
+      <description value="Beispiel: SD MII ICU Linksatrialer Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd"/>
+      </reference>
+      <name value="Muv Linksventri Herzzeitvolumen Durch Indikatorverd"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen"/>
+      </reference>
+      <name value="Muv Linksventri Schlagvolumen Durch Indikatorverduen"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd"/>
+      </reference>
+      <name value="Muv Linksventri Schlagvolumenind Durch Indikatorverd"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen"/>
+      </reference>
+      <name value="Muv Linksventrikulaer Herzind Durch Indikatorverduen"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventrikulaerer-druck"/>
+      </reference>
+      <name value="Muv Linksventrikulaerer Druck"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaerer Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventrikulaerer-herzindex"/>
+      </reference>
+      <name value="Muv Linksventrikulaerer Herzindex"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaerer Herzindex"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumen"/>
+      </reference>
+      <name value="Muv Linksventrikulaeres Schlagvolumen"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex"/>
+      </reference>
+      <name value="Muv Linksventrikulaeres Schlagvolumenindex"/>
+      <description value="Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumenindex"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet"/>
+      </reference>
+      <name value="Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet"/>
+      <description value="Beispiel: SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet"/>
+      </reference>
+      <name value="Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet"/>
+      <description value="Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet"/>
+      </reference>
+      <name value="Muv O2saettigung Im Blut Preduktal Durch Pulsoxymet"/>
+      <description value="Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-pulmonalarterieller-blutdruck"/>
+      </reference>
+      <name value="Muv Pulmonalarterieller Blutdruck"/>
+      <description value="Beispiel: SD MII ICU Pulmonalarterieller Blutdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck"/>
+      </reference>
+      <name value="Muv Pulmonalarterieller Wedge Blutdruck"/>
+      <description value="Beispiel: SD MII ICU Pulmonalarterieller Wedge Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex"/>
+      </reference>
+      <name value="Muv Pulmonalvaskulaerer Widerstandsindex"/>
+      <description value="Beispiel: SD MII ICU Pulmonalvaskulaerer Widerstandsindex"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-puls"/>
+      </reference>
+      <name value="Muv Puls"/>
+      <description value="Beispiel: SD MII ICU Puls"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-rechtsatrialer-druck"/>
+      </reference>
+      <name value="Muv Rechtsatrialer Druck"/>
+      <description value="Beispiel: SD MII ICU Rechtsatrialer Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-rechtsventrikulaerer-druck"/>
+      </reference>
+      <name value="Muv Rechtsventrikulaerer Druck"/>
+      <description value="Beispiel: SD MII ICU Rechtsventrikulaerer Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch"/>
+      </reference>
+      <name value="Muv Sonstige Pulsatile Druecke Generisch"/>
+      <description value="Beispiel: SD MII ICU Sonstige pulsatile Druecke Generisch"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex"/>
+      </reference>
+      <name value="Muv Systemischer Vaskulaerer Widerstandsindex"/>
+      <description value="Beispiel: SD MII ICU Systemischer Vaskulaerer Widerstandsindex"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-zentralvenoeser-blutdruck"/>
+      </reference>
+      <name value="Muv Zentralvenoeser Blutdruck"/>
+      <description value="Beispiel: SD MII ICU Zentralvenoeser Blutdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-score-rass"/>
+      </reference>
+      <name value="Score Rass"/>
+      <description value="Beispiel: MII PR ICU Score RASS"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-untersuchung-pupillenbefund"/>
+      </reference>
+      <name value="Untersuchung Pupillenbefund"/>
+      <description value="Beispiel: MII PR ICU Untersuchung Pupillenbefund"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-untersuchung-pupillenform"/>
+      </reference>
+      <name value="Untersuchung Pupillenform"/>
+      <description value="Beispiel: MII PR ICU Untersuchung Pupillenform"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-untersuchung-pupillengroesse"/>
+      </reference>
+      <name value="Untersuchung Pupillengroesse"/>
+      <description value="Beispiel: MII PR ICU Untersuchung Pupillengroesse"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"/>
+      </reference>
+      <name value="Untersuchung Pupillenlichtreaktion Direkt"/>
+      <description value="Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"/>
+      </reference>
+      <name value="Untersuchung Pupillenlichtreaktion Indirekt"/>
+      <description value="Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-untersuchung-pupillensymmetrie"/>
+      </reference>
+      <name value="Untersuchung Pupillensymmetrie"/>
+      <description value="Beispiel: MII PR ICU Untersuchung Pupillensymmetrie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess"/>
+      </reference>
+      <name value="Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess"/>
+      <description value="Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"/>
+      </reference>
+      <name value="Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest"/>
+      <description value="Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"/>
+      </reference>
+      <name value="Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess"/>
+      <description value="Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-atemzugvolumen-einstellung"/>
+      </reference>
+      <name value="Vent Atemzugvolumen Einstellung"/>
+      <description value="Beispiel: MII PR ICU Atemzugvolumen Einstellung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen"/>
+      </reference>
+      <name value="Vent Atemzugvolumen Waehrend Beatmung Gemessen"/>
+      <description value="Beispiel: MII PR ICU Atemzugvolumen Waehrend Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/mii-exa-icu-vent-beatmung"/>
+      </reference>
+      <name value="Vent Beatmung"/>
+      <description value="Beispiel: MII PR ICU Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller"/>
+      </reference>
+      <name value="Vent Beatmungsvolumen Pro Minute Maschineller"/>
+      <description value="Beispiel: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-beatmungszeit-auf-hohem-druck"/>
+      </reference>
+      <name value="Vent Beatmungszeit Auf Hohem Druck"/>
+      <description value="Beispiel: MII PR ICU Beatmungszeit Hohem Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck"/>
+      </reference>
+      <name value="Vent Beatmungszeit Auf Niedrigem Druck"/>
+      <description value="Beispiel: MII PR ICU Beatmungszeit Niedrigem Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-druckdifferenz-beatmung"/>
+      </reference>
+      <name value="Vent Druckdifferenz Beatmung"/>
+      <description value="Beispiel: MII PR ICU Druckdifferenz Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-dynamische-kompliance"/>
+      </reference>
+      <name value="Vent Dynamische Kompliance"/>
+      <description value="Beispiel: MII PR ICU Dynamische Kompliance"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"/>
+      </reference>
+      <name value="Vent Eingestellte Parameter Beatmung"/>
+      <description value="Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss"/>
+      </reference>
+      <name value="Vent Eingestellter Inspiratorischer Gasfluss"/>
+      <description value="Beispiel: MII PR ICU Eingestellter Inspiratorischer Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung"/>
+      </reference>
+      <name value="Vent Einstellung Ausatmungszeit Beatmung"/>
+      <description value="Beispiel: MII PR ICU Einstellung Ausatmungszeit Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-einstellung-einatmungszeit-beatmung"/>
+      </reference>
+      <name value="Vent Einstellung Einatmungszeit Beatmung"/>
+      <description value="Beispiel: MII PR ICU Einstellung Einatmungszeit Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"/>
+      </reference>
+      <name value="Vent Endexspiratorischer Kohlendioxidpartialdruck"/>
+      <description value="Beispiel: MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-exspiratorischer-gasfluss"/>
+      </reference>
+      <name value="Vent Exspiratorischer Gasfluss"/>
+      <description value="Beispiel: MII PR ICU Exspiratorischer Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck"/>
+      </reference>
+      <name value="Vent Exspiratorischer Sauerstoffpartialdruck"/>
+      <description value="Beispiel: MII PR ICU Exspiratorischer Sauerstoffpartialdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceMetric"/>
+      </extension>
+      <reference>
+        <reference value="DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"/>
+      </reference>
+      <name value="Vent Gemessene Parameter Beatmung"/>
+      <description value="Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-horowitz-in-arteriellem-blut"/>
+      </reference>
+      <name value="Vent Horowitz In Arteriellem Blut"/>
+      <description value="Beispiel: MII PR ICU Horowitz In Arteriellem Blut"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"/>
+      </reference>
+      <name value="Vent Inspiratorische Sauerstofffraktion Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen"/>
+      </reference>
+      <name value="Vent Inspiratorische Sauerstofffraktion Gemessen"/>
+      <description value="Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-inspiratorischer-gasfluss"/>
+      </reference>
+      <name value="Vent Inspiratorischer Gasfluss"/>
+      <description value="Beispiel: MII PR ICU Inspiratorischer Gasfluss"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt"/>
+      </reference>
+      <name value="Vent Maximaler Beatmungsdruck Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Maximaler Beatmungsdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen"/>
+      </reference>
+      <name value="Vent Maximaler Beatmungsdruck Gemessen"/>
+      <description value="Beispiel: MII PR ICU Maximaler Beatmungsdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-mechanische-atemfrequenz-beatmet"/>
+      </reference>
+      <name value="Vent Mechanische Atemfrequenz Beatmet"/>
+      <description value="Beispiel: MII PR ICU Mechanische Atemfrequenz Beatmet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt"/>
+      </reference>
+      <name value="Vent Mittlerer Beatmungsdruck Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Mittlerer Beatmungsdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen"/>
+      </reference>
+      <name value="Vent Mittlerer Beatmungsdruck Gemessen"/>
+      <description value="Beispiel: MII PR ICU Mittlerer Beatmungsdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-parameter-von-beatmung"/>
+      </reference>
+      <name value="Vent Parameter Von Beatmung"/>
+      <description value="Beispiel: MII PR ICU Parameter von Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt"/>
+      </reference>
+      <name value="Vent Positiv Endexspiratorischer Druck Eingestellt"/>
+      <description value="Beispiel: MII PR ICU Positiv Endexpiratorischer Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen"/>
+      </reference>
+      <name value="Vent Positiv Endexspiratorischer Druck Gemessen"/>
+      <description value="Beispiel: MII PR ICU Positiv Endexpiratorischer Druck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-spontane-atemfrequenz-beatmet"/>
+      </reference>
+      <name value="Vent Spontane Atemfrequenz Beatmet"/>
+      <description value="Beispiel: MII PR ICU Spontane Atemfrequenz Beatmet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet"/>
+      </reference>
+      <name value="Vent Spontane Mechanische Atemfrequenz Beatmet"/>
+      <description value="Beispiel: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-spontanes-atemzugvolumen"/>
+      </reference>
+      <name value="Vent Spontanes Atemzugvolumen"/>
+      <description value="Beispiel: MII PR ICU Spontanes Atemzugvolumen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"/>
+      </reference>
+      <name value="Vent Spontanes Plus Mechanisches Atemzugvolumen"/>
+      <description value="Beispiel: MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-unterstuetzungsdruck-beatmung"/>
+      </reference>
+      <name value="Vent Unterstuetzungsdruck Beatmung"/>
+      <description value="Beispiel: MII PR ICU Unterstuetzungsdruck Beatmung"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung"/>
+      </reference>
+      <name value="Vent Zeitverhaeltnis Ein Ausatmung"/>
+      <description value="Beispiel: MII PR ICU Zeitverhaeltnis Ein Ausatmung"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-harnblase - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Harnblase - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-harnblase**
+* **Muv Koerpertemperatur Harnblase**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-harnblase
+## Example Observation: Muv Koerpertemperatur Harnblase
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig - MII IG ICU v2026.0.3
+# Muv Koerpergewicht Percentile Altersabhaengig - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig**
+* **Muv Koerpergewicht Percentile Altersabhaengig**
 
-## Observation: mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig
+## Example Observation: Muv Koerpergewicht Percentile Altersabhaengig
 
 -------
 

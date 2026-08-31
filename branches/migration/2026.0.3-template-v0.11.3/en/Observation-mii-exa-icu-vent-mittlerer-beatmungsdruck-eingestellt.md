@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt - MII IG ICU v2026.0.3
+# Vent Mittlerer Beatmungsdruck Eingestellt - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt**
+* **Vent Mittlerer Beatmungsdruck Eingestellt**
 
-## Observation: mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt
+## Example Observation: Vent Mittlerer Beatmungsdruck Eingestellt
 
 -------
 

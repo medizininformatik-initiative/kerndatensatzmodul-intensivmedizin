@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-substituatfluss - MII IG ICU v2026.0.3
+# Ect Substituatfluss - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-substituatfluss**
+* **Ect Substituatfluss**
 
-## Observation: mii-exa-icu-ect-substituatfluss
+## Beispiel Observation: Ect Substituatfluss
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen - MII IG ICU v2026.0.3
+# Vent Maximaler Beatmungsdruck Gemessen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen**
+* **Vent Maximaler Beatmungsdruck Gemessen**
 
-## Observation: mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen
+## Example Observation: Vent Maximaler Beatmungsdruck Gemessen
 
 -------
 

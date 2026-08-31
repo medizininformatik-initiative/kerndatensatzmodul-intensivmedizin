@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet - MII IG ICU v2026.0.3
+# Vent Spontane Mechanische Atemfrequenz Beatmet - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet**
+* **Vent Spontane Mechanische Atemfrequenz Beatmet**
 
-## Observation: mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet
+## Beispiel Observation: Vent Spontane Mechanische Atemfrequenz Beatmet
 
 -------
 

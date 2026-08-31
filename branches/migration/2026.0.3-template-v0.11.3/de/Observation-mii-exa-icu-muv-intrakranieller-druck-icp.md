@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-intrakranieller-druck-icp - MII IG ICU v2026.0.3
+# Muv Intrakranieller Druck Icp - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-intrakranieller-druck-icp**
+* **Muv Intrakranieller Druck Icp**
 
-## Observation: mii-exa-icu-muv-intrakranieller-druck-icp
+## Beispiel Observation: Muv Intrakranieller Druck Icp
 
 -------
 

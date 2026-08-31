@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-ideales-koerpergewicht - MII IG ICU v2026.0.3
+# Muv Ideales Koerpergewicht - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-ideales-koerpergewicht**
+* **Muv Ideales Koerpergewicht**
 
-## Observation: mii-exa-icu-muv-ideales-koerpergewicht
+## Example Observation: Muv Ideales Koerpergewicht
 
 -------
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren | *Version*:2026.0.3 |
-| Active Stand: 2026-08-28 | *Maschinenlesbarer Name*:MII_PR_ICU_Extrakorporales_Verfahren |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Extrakorporales_Verfahren |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-extrakorporales-verfahren-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -18,6 +18,7 @@ Stellt den Prozess der extrakorporalen Verfahren (extrakorporale Membranoxygenie
 **Usages:**
 
 * Refer to this Profile: [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md)
+* Examples for this Profile: [Procedure/mii-exa-icu-ecmo](Procedure-mii-exa-icu-ecmo.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-extrakorporales-verfahren.json)
 
@@ -102,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren",
   "title" : "MII PR ICU Extrakorporales Verfahren",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

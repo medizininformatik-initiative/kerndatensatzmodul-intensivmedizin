@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex - MII IG ICU v2026.0.3
+# Muv Systemischer Vaskulaerer Widerstandsindex - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex**
+* **Muv Systemischer Vaskulaerer Widerstandsindex**
 
-## Observation: mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex
+## Example Observation: Muv Systemischer Vaskulaerer Widerstandsindex
 
 -------
 

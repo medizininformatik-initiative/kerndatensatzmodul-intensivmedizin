@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-haemodialyse-blutfluss-gemessen - MII IG ICU v2026.0.3
+# Ect Haemodialyse Blutfluss Gemessen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-ect-haemodialyse-blutfluss-gemessen**
+* **Ect Haemodialyse Blutfluss Gemessen**
 
-## Observation: mii-exa-icu-ect-haemodialyse-blutfluss-gemessen
+## Example Observation: Ect Haemodialyse Blutfluss Gemessen
 
 -------
 

@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-atemzugvolumen-einstellung - MII IG ICU v2026.0.3
+# Vent Atemzugvolumen Einstellung - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-atemzugvolumen-einstellung**
+* **Vent Atemzugvolumen Einstellung**
 
-## Observation: mii-exa-icu-vent-atemzugvolumen-einstellung
+## Example Observation: Vent Atemzugvolumen Einstellung
 
 -------
 

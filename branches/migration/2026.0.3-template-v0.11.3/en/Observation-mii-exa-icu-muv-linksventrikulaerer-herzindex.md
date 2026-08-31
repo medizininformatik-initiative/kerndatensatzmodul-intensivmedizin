@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-linksventrikulaerer-herzindex - MII IG ICU v2026.0.3
+# Muv Linksventrikulaerer Herzindex - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-linksventrikulaerer-herzindex**
+* **Muv Linksventrikulaerer Herzindex**
 
-## Observation: mii-exa-icu-muv-linksventrikulaerer-herzindex
+## Example Observation: Muv Linksventrikulaerer Herzindex
 
 -------
 

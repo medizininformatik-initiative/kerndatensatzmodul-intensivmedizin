@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-tagesbilanz-fluessigkeit - MII IG ICU v2026.0.3
+# Bilanz Tagesbilanz Fluessigkeit - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-bilanz-tagesbilanz-fluessigkeit**
+* **Bilanz Tagesbilanz Fluessigkeit**
 
-## Observation: mii-exa-icu-bilanz-tagesbilanz-fluessigkeit
+## Beispiel Observation: Bilanz Tagesbilanz Fluessigkeit
 
 -------
 

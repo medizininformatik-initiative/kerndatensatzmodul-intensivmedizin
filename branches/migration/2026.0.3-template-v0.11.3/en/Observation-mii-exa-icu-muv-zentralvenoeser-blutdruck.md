@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-zentralvenoeser-blutdruck - MII IG ICU v2026.0.3
+# Muv Zentralvenoeser Blutdruck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-zentralvenoeser-blutdruck**
+* **Muv Zentralvenoeser Blutdruck**
 
-## Observation: mii-exa-icu-muv-zentralvenoeser-blutdruck
+## Example Observation: Muv Zentralvenoeser Blutdruck
 
 -------
 

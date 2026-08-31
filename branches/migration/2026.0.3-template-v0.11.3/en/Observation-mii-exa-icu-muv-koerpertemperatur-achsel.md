@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-achsel - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Achsel - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-achsel**
+* **Muv Koerpertemperatur Achsel**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-achsel
+## Example Observation: Muv Koerpertemperatur Achsel
 
 -------
 

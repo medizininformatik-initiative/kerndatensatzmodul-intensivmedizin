@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-unterstuetzungsdruck-beatmung - MII IG ICU v2026.0.3
+# Vent Unterstuetzungsdruck Beatmung - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-unterstuetzungsdruck-beatmung**
+* **Vent Unterstuetzungsdruck Beatmung**
 
-## Observation: mii-exa-icu-vent-unterstuetzungsdruck-beatmung
+## Beispiel Observation: Vent Unterstuetzungsdruck Beatmung
 
 -------
 

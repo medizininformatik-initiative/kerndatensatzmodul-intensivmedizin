@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-ausfuhr-wunddrainage - MII IG ICU v2026.0.3
+# Bilanz Ausfuhr Wunddrainage - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-ausfuhr-wunddrainage**
+* **Bilanz Ausfuhr Wunddrainage**
 
-## Observation: mii-exa-icu-bilanz-ausfuhr-wunddrainage
+## Example Observation: Bilanz Ausfuhr Wunddrainage
 
 -------
 

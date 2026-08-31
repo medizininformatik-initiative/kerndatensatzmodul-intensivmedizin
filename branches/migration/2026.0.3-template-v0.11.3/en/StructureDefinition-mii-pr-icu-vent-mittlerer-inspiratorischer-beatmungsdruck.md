@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck | *Version*:2026.0.3 |
-| Active as of 2026-08-28 | *Computable Name*:MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck |
+| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "name" : "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
   "title" : "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-08-28T14:34:56+00:00",
+  "date" : "2026-08-31T19:08:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

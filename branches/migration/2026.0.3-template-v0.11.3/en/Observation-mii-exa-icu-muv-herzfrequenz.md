@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-herzfrequenz - MII IG ICU v2026.0.3
+# Muv Herzfrequenz - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-herzfrequenz**
+* **Muv Herzfrequenz**
 
-## Observation: mii-exa-icu-muv-herzfrequenz
+## Example Observation: Muv Herzfrequenz
 
 -------
 

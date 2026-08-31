@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-atemfrequenz - MII IG ICU v2026.0.3
+# Muv Atemfrequenz - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-atemfrequenz**
+* **Muv Atemfrequenz**
 
-## Observation: mii-exa-icu-muv-atemfrequenz
+## Example Observation: Muv Atemfrequenz
 
 -------
 

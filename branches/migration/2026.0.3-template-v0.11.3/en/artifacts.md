@@ -201,147 +201,154 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ MII VS ICU Unit equivalent percent 1  ](ValueSet-mii-vs-icu-unit-equivalent-percent-1.md) | Dieses ValueSet enthält äquivalente Codes für Prozent und 1. |
 | [ MII VS Score SNOMED CT  ](ValueSet-mii-vs-icu-score-snomed.md) | Value set for cores - SNOMED CT codes |
 
+### Example: Example Instances 
+
+These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
+
+| | |
+| :--- | :--- |
+| [ Bilanz Abnahme Haemofiltration Einzelmesswerte  ](Observation-mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte |
+| [ Bilanz Ausfuhr Drainage Generisch  ](Observation-mii-exa-icu-bilanz-ausfuhr-drainage-generisch.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Drainage Generisch |
+| [ Bilanz Ausfuhr Fluessigkeit Gesamt  ](Observation-mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt |
+| [ Bilanz Ausfuhr Gallenfluessigkeit  ](Observation-mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit |
+| [ Bilanz Ausfuhr Magensonde  ](Observation-mii-exa-icu-bilanz-ausfuhr-magensonde.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Magensonde |
+| [ Bilanz Ausfuhr Opdrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-opdrainage.md) | Beispiel: MII PR ICU Bilanz Ausfuhr OP Drainage |
+| [ Bilanz Ausfuhr Pankreasdrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-pankreasdrainage.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Pankreasdrainage |
+| [ Bilanz Ausfuhr Stuhlgang  ](Observation-mii-exa-icu-bilanz-ausfuhr-stuhlgang.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Stuhlgang |
+| [ Bilanz Ausfuhr Urin  ](Observation-mii-exa-icu-bilanz-ausfuhr-urin.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Urin |
+| [ Bilanz Ausfuhr Wunddrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Wunddrainage |
+| [ Bilanz Blutverlust  ](Observation-mii-exa-icu-bilanz-blutverlust.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Blutverlust |
+| [ Bilanz Einfuhr Abgepumpte Muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch |
+| [ Bilanz Einfuhr Enterale Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit |
+| [ Bilanz Einfuhr Fluessigkeit Gesamt  ](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) | Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt |
+| [ Bilanz Einfuhr Muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch |
+| [ Bilanz Einfuhr Oraler Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit |
+| [ Bilanz Einfuhr Saeuglingsnahrung  ](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung |
+| [ Bilanz Einfuhr Spendermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch |
+| [ Bilanz Tagesbilanz Fluessigkeit  ](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit |
+| [ Ecmo  ](Procedure-mii-exa-icu-ecmo.md) | Beispiel: MII PR ICU Extrakorporales Verfahren |
+| [ Ect Arterieller Druck Gemessen  ](Observation-mii-exa-icu-ect-arterieller-druck-gemessen.md) | Beispiel: MII PR ICU Arterieller Druck |
+| [ Ect Blutfluss Durch Cardiovasculaer Geraet Eingestel  ](Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.md) | Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet |
+| [ Ect Blutfluss Durch Cardiovasculaer Geraet Gemessen  ](Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen.md) | Beispiel: MII PR ICU Blutfluss Cardiovasculaeres Geraet |
+| [ Ect Blutfluss Extrakorporal Gasaustausch Eingestellt  ](Observation-mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt.md) | Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch |
+| [ Ect Blutfluss Extrakorporaler Gasaustausch Gemessen  ](Observation-mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen.md) | Beispiel: MII PR ICU Blutfluss Extrakorporaler Gasaustausch |
+| [ Ect Blutflussind Extrakorporal Gasaustausch Eingeste  ](Observation-mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste.md) | Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch |
+| [ Ect Blutflussind Extrakorporal Gasaustausch Gemessen  ](Observation-mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen.md) | Beispiel: MII PR ICU Blutflussindex Extrakorporaler Gasaustausch |
+| [ Ect Dauer Extrakorporaler Gasaustausch  ](Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.md) | Beispiel: MII PR ICU Dauer Extrakorporaler Gasaustausch |
+| [ Ect Dauer Haemodialysesitzung  ](Observation-mii-exa-icu-ect-dauer-haemodialysesitzung.md) | Beispiel: MII PR ICU Dauer Haemodialysesitzung |
+| [ Ect Eingestellte Parameter Ecmo  ](DeviceMetric-mii-exa-icu-ect-eingestellte-parameter-ecmo.md) | Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren |
+| [ Ect Gasfluss Eingestellt  ](Observation-mii-exa-icu-ect-gasfluss-eingestellt.md) | Beispiel: MII PR ICU Gasfluss |
+| [ Ect Gemessene Parameter Ecmo  ](DeviceMetric-mii-exa-icu-ect-gemessene-parameter-ecmo.md) | Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren |
+| [ Ect Haemodialyse Blutfluss Eingestellt  ](Observation-mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt.md) | Beispiel: MII PR ICU Haemodialyse Blutfluss |
+| [ Ect Haemodialyse Blutfluss Gemessen  ](Observation-mii-exa-icu-ect-haemodialyse-blutfluss-gemessen.md) | Beispiel: MII PR ICU Haemodialyse Blutfluss |
+| [ Ect Ionisiertes Kalzium Aus Nierenersatzverfahren  ](Observation-mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren.md) | Beispiel: MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren |
+| [ Ect Parameter Von Extrakorporalen Verfahren  ](Observation-mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren.md) | Beispiel: MII PR ICU Parameter von Extrakorporalen Verfahren |
+| [ Ect Substituatfluss  ](Observation-mii-exa-icu-ect-substituatfluss.md) | Beispiel: MII PR ICU Substituatfluss |
+| [ Ect Substituatvolumen  ](Observation-mii-exa-icu-ect-substituatvolumen.md) | Beispiel: MII PR ICU Substituatvolumen |
+| [ Ect Venoeser Druck  ](Observation-mii-exa-icu-ect-venoeser-druck.md) | Beispiel: MII PR ICU Venoeser Druck |
+| [ Muv Arterieller Blutdruck  ](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) | Beispiel: MII PR ICU MUV Arterieller Blutdruck |
+| [ Muv Atemfrequenz  ](Observation-mii-exa-icu-muv-atemfrequenz.md) | Beispiel: MII PR ICU MUV Atemfrequenz |
+| [ Muv Herzfrequenz  ](Observation-mii-exa-icu-muv-herzfrequenz.md) | Beispielinstanz des Moduls |
+| [ Muv Herzzeitvolumen  ](Observation-mii-exa-icu-muv-herzzeitvolumen.md) | Beispiel: SD MII ICU Herzzeitvolumen |
+| [ Muv Ideales Koerpergewicht  ](Observation-mii-exa-icu-muv-ideales-koerpergewicht.md) | Beispiel: SD MII ICU Ideales Koerpergewicht |
+| [ Muv Intrakranieller Druck Icp  ](Observation-mii-exa-icu-muv-intrakranieller-druck-icp.md) | Beispiel: SD MII ICU Intrakranieller Druck ICP |
+| [ Muv Koerpergewicht  ](Observation-mii-exa-icu-muv-koerpergewicht.md) | Beispiel: MII PR ICU MUV Koerpergewicht |
+| [ Muv Koerpergewicht Percentile Altersabhaengig  ](Observation-mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.md) | Beispiel: SD MII ICU Koerpergewicht Percentil Altersabhaengig |
+| [ Muv Koerpergroesse  ](Observation-mii-exa-icu-muv-koerpergroesse.md) | Beispiel: MII PR ICU MUV Koerpergroesse |
+| [ Muv Koerpergroesse Percentil  ](Observation-mii-exa-icu-muv-koerpergroesse-percentil.md) | Beispiel: SD MII ICU Koerpergroesse Percentil |
+| [ Muv Koerpertemperatur Achsel  ](Observation-mii-exa-icu-muv-koerpertemperatur-achsel.md) | Beispiel: SD MII ICU Koerpertemperatur Achsel |
+| [ Muv Koerpertemperatur Atemwege  ](Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.md) | Beispiel: SD MII ICU Koerpertemperatur Atemwege |
+| [ Muv Koerpertemperatur Blut  ](Observation-mii-exa-icu-muv-koerpertemperatur-blut.md) | Beispiel: SD MII ICU Koerpertemperatur Blut |
+| [ Muv Koerpertemperatur Brust  ](Observation-mii-exa-icu-muv-koerpertemperatur-brust.md) | Beispiel: SD MII ICU Koerpertemperatur Brust |
+| [ Muv Koerpertemperatur Brustwirbelsaeule  ](Observation-mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule.md) | Beispiel: SD MII ICU Koerpertemperatur Brustwirbelsaeule |
+| [ Muv Koerpertemperatur Gelenk  ](Observation-mii-exa-icu-muv-koerpertemperatur-gelenk.md) | Beispiel: SD MII ICU Koerpertemperatur Gelenk |
+| [ Muv Koerpertemperatur Generisch  ](Observation-mii-exa-icu-muv-koerpertemperatur-generisch.md) | Beispiel: SD MII ICU Koerpertemperatur Generisch |
+| [ Muv Koerpertemperatur Halswirbelsaeule  ](Observation-mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule.md) | Beispiel: SD MII ICU Koerpertemperatur Halswirbelsaeule |
+| [ Muv Koerpertemperatur Harnblase  ](Observation-mii-exa-icu-muv-koerpertemperatur-harnblase.md) | Beispiel: SD MII ICU Koerpertemperatur Harnblase |
+| [ Muv Koerpertemperatur Kern  ](Observation-mii-exa-icu-muv-koerpertemperatur-kern.md) | Beispiel: SD MII ICU Koerpertemperatur Kern |
+| [ Muv Koerpertemperatur Leiste  ](Observation-mii-exa-icu-muv-koerpertemperatur-leiste.md) | Beispiel: SD MII ICU Koerpertemperatur Leiste |
+| [ Muv Koerpertemperatur Lendenwirbelsaeule  ](Observation-mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule.md) | Beispiel: SD MII ICU Koerpertemperatur Lendenwirbelsaeule |
+| [ Muv Koerpertemperatur Myokard  ](Observation-mii-exa-icu-muv-koerpertemperatur-myokard.md) | Beispiel: SD MII ICU Koerpertemperatur Myokard |
+| [ Muv Koerpertemperatur Nasal  ](Observation-mii-exa-icu-muv-koerpertemperatur-nasal.md) | Beispiel: SD MII ICU Koerpertemperatur nasal |
+| [ Muv Koerpertemperatur Nasen Rachen Raum  ](Observation-mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum.md) | Beispiel: SD MII ICU Koerpertemperatur Nasen-Rachen-Raum |
+| [ Muv Koerpertemperatur Rektal  ](Observation-mii-exa-icu-muv-koerpertemperatur-rektal.md) | Beispiel: SD MII ICU Koerpertemperatur rektal |
+| [ Muv Koerpertemperatur Speiseroehre  ](Observation-mii-exa-icu-muv-koerpertemperatur-speiseroehre.md) | Beispiel: SD MII ICU Koerpertemperatur Speiseroehre |
+| [ Muv Koerpertemperatur Stirn  ](Observation-mii-exa-icu-muv-koerpertemperatur-stirn.md) | Beispiel: SD MII ICU Koerpertemperatur Stirn |
+| [ Muv Koerpertemperatur Trommelfell  ](Observation-mii-exa-icu-muv-koerpertemperatur-trommelfell.md) | Beispiel: SD MII ICU Koerpertemperatur Trommelfell |
+| [ Muv Koerpertemperatur Unter Der Zunge  ](Observation-mii-exa-icu-muv-koerpertemperatur-unter-der-zunge.md) | Beispiel: SD MII ICU Koerpertemperatur unter der Zunge |
+| [ Muv Koerpertemperatur Vaginal  ](Observation-mii-exa-icu-muv-koerpertemperatur-vaginal.md) | Beispiel: SD MII ICU Koerpertemperatur vaginal |
+| [ Muv Kopfumfang  ](Observation-mii-exa-icu-muv-kopfumfang.md) | Beispiel: MII PR ICU MUV Kopfumfang |
+| [ Muv Linksatrialer Druck  ](Observation-mii-exa-icu-muv-linksatrialer-druck.md) | Beispiel: SD MII ICU Linksatrialer Druck |
+| [ Muv Linksventri Herzzeitvolumen Durch Indikatorverd  ](Observation-mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd.md) | Beispiel: SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung |
+| [ Muv Linksventri Schlagvolumen Durch Indikatorverduen  ](Observation-mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen.md) | Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung |
+| [ Muv Linksventri Schlagvolumenind Durch Indikatorverd  ](Observation-mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd.md) | Beispiel: SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung |
+| [ Muv Linksventrikulaer Herzind Durch Indikatorverduen  ](Observation-mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen.md) | Beispiel: SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung |
+| [ Muv Linksventrikulaerer Druck  ](Observation-mii-exa-icu-muv-linksventrikulaerer-druck.md) | Beispiel: SD MII ICU Linksventrikulaerer Druck |
+| [ Muv Linksventrikulaerer Herzindex  ](Observation-mii-exa-icu-muv-linksventrikulaerer-herzindex.md) | Beispiel: SD MII ICU Linksventrikulaerer Herzindex |
+| [ Muv Linksventrikulaeres Schlagvolumen  ](Observation-mii-exa-icu-muv-linksventrikulaeres-schlagvolumen.md) | Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumen |
+| [ Muv Linksventrikulaeres Schlagvolumenindex  ](Observation-mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex.md) | Beispiel: SD MII ICU Linksventrikulaeres Schlagvolumenindex |
+| [ Muv O2saettigung Im Arteriell Blut Durch Pulsoxymet  ](Observation-mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet.md) | Beispiel: SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie |
+| [ Muv O2saettigung Im Blut Postduktal Durch Pulsoxymet  ](Observation-mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet.md) | Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie |
+| [ Muv O2saettigung Im Blut Preduktal Durch Pulsoxymet  ](Observation-mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet.md) | Beispiel: SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie |
+| [ Muv Pulmonalarterieller Blutdruck  ](Observation-mii-exa-icu-muv-pulmonalarterieller-blutdruck.md) | Beispiel: SD MII ICU Pulmonalarterieller Blutdruck |
+| [ Muv Pulmonalarterieller Wedge Blutdruck  ](Observation-mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck.md) | Beispiel: SD MII ICU Pulmonalarterieller Wedge Druck |
+| [ Muv Pulmonalvaskulaerer Widerstandsindex  ](Observation-mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex.md) | Beispiel: SD MII ICU Pulmonalvaskulaerer Widerstandsindex |
+| [ Muv Puls  ](Observation-mii-exa-icu-muv-puls.md) | Beispiel: SD MII ICU Puls |
+| [ Muv Rechtsatrialer Druck  ](Observation-mii-exa-icu-muv-rechtsatrialer-druck.md) | Beispiel: SD MII ICU Rechtsatrialer Druck |
+| [ Muv Rechtsventrikulaerer Druck  ](Observation-mii-exa-icu-muv-rechtsventrikulaerer-druck.md) | Beispiel: SD MII ICU Rechtsventrikulaerer Druck |
+| [ Muv Sonstige Pulsatile Druecke Generisch  ](Observation-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.md) | Beispiel: SD MII ICU Sonstige pulsatile Druecke Generisch |
+| [ Muv Systemischer Vaskulaerer Widerstandsindex  ](Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.md) | Beispiel: SD MII ICU Systemischer Vaskulaerer Widerstandsindex |
+| [ Muv Zentralvenoeser Blutdruck  ](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) | Beispiel: SD MII ICU Zentralvenoeser Blutdruck |
+| [ Score Rass  ](Observation-mii-exa-icu-score-rass.md) | Beispiel: MII PR ICU Score RASS |
+| [ Untersuchung Pupillenbefund  ](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) | Beispiel: MII PR ICU Untersuchung Pupillenbefund |
+| [ Untersuchung Pupillenform  ](Observation-mii-exa-icu-untersuchung-pupillenform.md) | Beispiel: MII PR ICU Untersuchung Pupillenform |
+| [ Untersuchung Pupillengroesse  ](Observation-mii-exa-icu-untersuchung-pupillengroesse.md) | Beispiel: MII PR ICU Untersuchung Pupillengroesse |
+| [ Untersuchung Pupillenlichtreaktion Direkt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt.md) | Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Direkt |
+| [ Untersuchung Pupillenlichtreaktion Indirekt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt |
+| [ Untersuchung Pupillensymmetrie  ](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | Beispiel: MII PR ICU Untersuchung Pupillensymmetrie |
+| [ Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss |
+| [ Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss |
+| [ Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss |
+| [ Vent Atemzugvolumen Einstellung  ](Observation-mii-exa-icu-vent-atemzugvolumen-einstellung.md) | Beispiel: MII PR ICU Atemzugvolumen Einstellung |
+| [ Vent Atemzugvolumen Waehrend Beatmung Gemessen  ](Observation-mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen.md) | Beispiel: MII PR ICU Atemzugvolumen Waehrend Beatmung |
+| [ Vent Beatmung  ](Procedure-mii-exa-icu-vent-beatmung.md) | Beispiel: MII PR ICU Beatmung |
+| [ Vent Beatmungsvolumen Pro Minute Maschineller  ](Observation-mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller.md) | Beispiel: MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung |
+| [ Vent Beatmungszeit Auf Hohem Druck  ](Observation-mii-exa-icu-vent-beatmungszeit-auf-hohem-druck.md) | Beispiel: MII PR ICU Beatmungszeit Hohem Druck |
+| [ Vent Beatmungszeit Auf Niedrigem Druck  ](Observation-mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck.md) | Beispiel: MII PR ICU Beatmungszeit Niedrigem Druck |
+| [ Vent Druckdifferenz Beatmung  ](Observation-mii-exa-icu-vent-druckdifferenz-beatmung.md) | Beispiel: MII PR ICU Druckdifferenz Beatmung |
+| [ Vent Dynamische Kompliance  ](Observation-mii-exa-icu-vent-dynamische-kompliance.md) | Beispiel: MII PR ICU Dynamische Kompliance |
+| [ Vent Eingestellte Parameter Beatmung  ](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md) | Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung |
+| [ Vent Eingestellter Inspiratorischer Gasfluss  ](Observation-mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss.md) | Beispiel: MII PR ICU Eingestellter Inspiratorischer Gasfluss |
+| [ Vent Einstellung Ausatmungszeit Beatmung  ](Observation-mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung.md) | Beispiel: MII PR ICU Einstellung Ausatmungszeit Beatmung |
+| [ Vent Einstellung Einatmungszeit Beatmung  ](Observation-mii-exa-icu-vent-einstellung-einatmungszeit-beatmung.md) | Beispiel: MII PR ICU Einstellung Einatmungszeit Beatmung |
+| [ Vent Endexspiratorischer Kohlendioxidpartialdruck  ](Observation-mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck.md) | Beispiel: MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck |
+| [ Vent Exspiratorischer Gasfluss  ](Observation-mii-exa-icu-vent-exspiratorischer-gasfluss.md) | Beispiel: MII PR ICU Exspiratorischer Gasfluss |
+| [ Vent Exspiratorischer Sauerstoffpartialdruck  ](Observation-mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) | Beispiel: MII PR ICU Exspiratorischer Sauerstoffpartialdruck |
+| [ Vent Gemessene Parameter Beatmung  ](DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.md) | Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung |
+| [ Vent Horowitz In Arteriellem Blut  ](Observation-mii-exa-icu-vent-horowitz-in-arteriellem-blut.md) | Beispiel: MII PR ICU Horowitz In Arteriellem Blut |
+| [ Vent Inspiratorische Sauerstofffraktion Eingestellt  ](Observation-mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.md) | Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion |
+| [ Vent Inspiratorische Sauerstofffraktion Gemessen  ](Observation-mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen.md) | Beispiel: MII PR ICU Inspiratorische Sauerstofffraktion |
+| [ Vent Inspiratorischer Gasfluss  ](Observation-mii-exa-icu-vent-inspiratorischer-gasfluss.md) | Beispiel: MII PR ICU Inspiratorischer Gasfluss |
+| [ Vent Maximaler Beatmungsdruck Eingestellt  ](Observation-mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt.md) | Beispiel: MII PR ICU Maximaler Beatmungsdruck |
+| [ Vent Maximaler Beatmungsdruck Gemessen  ](Observation-mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen.md) | Beispiel: MII PR ICU Maximaler Beatmungsdruck |
+| [ Vent Mechanische Atemfrequenz Beatmet  ](Observation-mii-exa-icu-vent-mechanische-atemfrequenz-beatmet.md) | Beispiel: MII PR ICU Mechanische Atemfrequenz Beatmet |
+| [ Vent Mittlerer Beatmungsdruck Eingestellt  ](Observation-mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt.md) | Beispiel: MII PR ICU Mittlerer Beatmungsdruck |
+| [ Vent Mittlerer Beatmungsdruck Gemessen  ](Observation-mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen.md) | Beispiel: MII PR ICU Mittlerer Beatmungsdruck |
+| [ Vent Parameter Von Beatmung  ](Observation-mii-exa-icu-vent-parameter-von-beatmung.md) | Beispiel: MII PR ICU Parameter von Beatmung |
+| [ Vent Positiv Endexspiratorischer Druck Eingestellt  ](Observation-mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt.md) | Beispiel: MII PR ICU Positiv Endexpiratorischer Druck |
+| [ Vent Positiv Endexspiratorischer Druck Gemessen  ](Observation-mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen.md) | Beispiel: MII PR ICU Positiv Endexpiratorischer Druck |
+| [ Vent Spontane Atemfrequenz Beatmet  ](Observation-mii-exa-icu-vent-spontane-atemfrequenz-beatmet.md) | Beispiel: MII PR ICU Spontane Atemfrequenz Beatmet |
+| [ Vent Spontane Mechanische Atemfrequenz Beatmet  ](Observation-mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) | Beispiel: MII PR ICU Spontane Mechanische Atemfrequenz Beatmet |
+| [ Vent Spontanes Atemzugvolumen  ](Observation-mii-exa-icu-vent-spontanes-atemzugvolumen.md) | Beispiel: MII PR ICU Spontanes Atemzugvolumen |
+| [ Vent Spontanes Plus Mechanisches Atemzugvolumen  ](Observation-mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md) | Beispiel: MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen |
+| [ Vent Unterstuetzungsdruck Beatmung  ](Observation-mii-exa-icu-vent-unterstuetzungsdruck-beatmung.md) | Beispiel: MII PR ICU Unterstuetzungsdruck Beatmung |
+| [ Vent Zeitverhaeltnis Ein Ausatmung  ](Observation-mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung.md) | Beispiel: MII PR ICU Zeitverhaeltnis Ein Ausatmung |
+
 ### Other 
 
 These are resources that are used within this implementation guide that do not fit into one of the other categories.
 
 | |
 | :--- |
-| [ mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte  ](Observation-mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-drainage-generisch  ](Observation-mii-exa-icu-bilanz-ausfuhr-drainage-generisch.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt  ](Observation-mii-exa-icu-bilanz-ausfuhr-fluessigkeit-gesamt.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit  ](Observation-mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-magensonde  ](Observation-mii-exa-icu-bilanz-ausfuhr-magensonde.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-opdrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-opdrainage.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-pankreasdrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-pankreasdrainage.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-stuhlgang  ](Observation-mii-exa-icu-bilanz-ausfuhr-stuhlgang.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-urin  ](Observation-mii-exa-icu-bilanz-ausfuhr-urin.md) |
-| [ mii-exa-icu-bilanz-ausfuhr-wunddrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.md) |
-| [ mii-exa-icu-bilanz-blutverlust  ](Observation-mii-exa-icu-bilanz-blutverlust.md) |
-| [ mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) |
-| [ mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.md) |
-| [ mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt  ](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) |
-| [ mii-exa-icu-bilanz-einfuhr-muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.md) |
-| [ mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) |
-| [ mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung  ](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) |
-| [ mii-exa-icu-bilanz-einfuhr-spendermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) |
-| [ mii-exa-icu-bilanz-tagesbilanz-fluessigkeit  ](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) |
-| [ mii-exa-icu-ecmo  ](Procedure-mii-exa-icu-ecmo.md) |
-| [ mii-exa-icu-ect-arterieller-druck-gemessen  ](Observation-mii-exa-icu-ect-arterieller-druck-gemessen.md) |
-| [ mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel  ](Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-eingestel.md) |
-| [ mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen  ](Observation-mii-exa-icu-ect-blutfluss-durch-cardiovasculaer-geraet-gemessen.md) |
-| [ mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt  ](Observation-mii-exa-icu-ect-blutfluss-extrakorporal-gasaustausch-eingestellt.md) |
-| [ mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen  ](Observation-mii-exa-icu-ect-blutfluss-extrakorporaler-gasaustausch-gemessen.md) |
-| [ mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste  ](Observation-mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-eingeste.md) |
-| [ mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen  ](Observation-mii-exa-icu-ect-blutflussind-extrakorporal-gasaustausch-gemessen.md) |
-| [ mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch  ](Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.md) |
-| [ mii-exa-icu-ect-dauer-haemodialysesitzung  ](Observation-mii-exa-icu-ect-dauer-haemodialysesitzung.md) |
-| [ mii-exa-icu-ect-eingestellte-parameter-ecmo  ](DeviceMetric-mii-exa-icu-ect-eingestellte-parameter-ecmo.md) |
-| [ mii-exa-icu-ect-gasfluss-eingestellt  ](Observation-mii-exa-icu-ect-gasfluss-eingestellt.md) |
-| [ mii-exa-icu-ect-gemessene-parameter-ecmo  ](DeviceMetric-mii-exa-icu-ect-gemessene-parameter-ecmo.md) |
-| [ mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt  ](Observation-mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt.md) |
-| [ mii-exa-icu-ect-haemodialyse-blutfluss-gemessen  ](Observation-mii-exa-icu-ect-haemodialyse-blutfluss-gemessen.md) |
-| [ mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren  ](Observation-mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren.md) |
-| [ mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren  ](Observation-mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren.md) |
-| [ mii-exa-icu-ect-substituatfluss  ](Observation-mii-exa-icu-ect-substituatfluss.md) |
-| [ mii-exa-icu-ect-substituatvolumen  ](Observation-mii-exa-icu-ect-substituatvolumen.md) |
-| [ mii-exa-icu-ect-venoeser-druck  ](Observation-mii-exa-icu-ect-venoeser-druck.md) |
-| [ mii-exa-icu-muv-arterieller-blutdruck  ](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) |
-| [ mii-exa-icu-muv-atemfrequenz  ](Observation-mii-exa-icu-muv-atemfrequenz.md) |
-| [ mii-exa-icu-muv-herzfrequenz  ](Observation-mii-exa-icu-muv-herzfrequenz.md) |
-| [ mii-exa-icu-muv-herzzeitvolumen  ](Observation-mii-exa-icu-muv-herzzeitvolumen.md) |
-| [ mii-exa-icu-muv-ideales-koerpergewicht  ](Observation-mii-exa-icu-muv-ideales-koerpergewicht.md) |
-| [ mii-exa-icu-muv-intrakranieller-druck-icp  ](Observation-mii-exa-icu-muv-intrakranieller-druck-icp.md) |
-| [ mii-exa-icu-muv-koerpergewicht  ](Observation-mii-exa-icu-muv-koerpergewicht.md) |
-| [ mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig  ](Observation-mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.md) |
-| [ mii-exa-icu-muv-koerpergroesse  ](Observation-mii-exa-icu-muv-koerpergroesse.md) |
-| [ mii-exa-icu-muv-koerpergroesse-percentil  ](Observation-mii-exa-icu-muv-koerpergroesse-percentil.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-achsel  ](Observation-mii-exa-icu-muv-koerpertemperatur-achsel.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-atemwege  ](Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-blut  ](Observation-mii-exa-icu-muv-koerpertemperatur-blut.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-brust  ](Observation-mii-exa-icu-muv-koerpertemperatur-brust.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule  ](Observation-mii-exa-icu-muv-koerpertemperatur-brustwirbelsaeule.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-gelenk  ](Observation-mii-exa-icu-muv-koerpertemperatur-gelenk.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-generisch  ](Observation-mii-exa-icu-muv-koerpertemperatur-generisch.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule  ](Observation-mii-exa-icu-muv-koerpertemperatur-halswirbelsaeule.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-harnblase  ](Observation-mii-exa-icu-muv-koerpertemperatur-harnblase.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-kern  ](Observation-mii-exa-icu-muv-koerpertemperatur-kern.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-leiste  ](Observation-mii-exa-icu-muv-koerpertemperatur-leiste.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule  ](Observation-mii-exa-icu-muv-koerpertemperatur-lendenwirbelsaeule.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-myokard  ](Observation-mii-exa-icu-muv-koerpertemperatur-myokard.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-nasal  ](Observation-mii-exa-icu-muv-koerpertemperatur-nasal.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum  ](Observation-mii-exa-icu-muv-koerpertemperatur-nasen-rachen-raum.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-rektal  ](Observation-mii-exa-icu-muv-koerpertemperatur-rektal.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-speiseroehre  ](Observation-mii-exa-icu-muv-koerpertemperatur-speiseroehre.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-stirn  ](Observation-mii-exa-icu-muv-koerpertemperatur-stirn.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-trommelfell  ](Observation-mii-exa-icu-muv-koerpertemperatur-trommelfell.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-unter-der-zunge  ](Observation-mii-exa-icu-muv-koerpertemperatur-unter-der-zunge.md) |
-| [ mii-exa-icu-muv-koerpertemperatur-vaginal  ](Observation-mii-exa-icu-muv-koerpertemperatur-vaginal.md) |
-| [ mii-exa-icu-muv-kopfumfang  ](Observation-mii-exa-icu-muv-kopfumfang.md) |
-| [ mii-exa-icu-muv-linksatrialer-druck  ](Observation-mii-exa-icu-muv-linksatrialer-druck.md) |
-| [ mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd  ](Observation-mii-exa-icu-muv-linksventri-herzzeitvolumen-durch-indikatorverd.md) |
-| [ mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen  ](Observation-mii-exa-icu-muv-linksventri-schlagvolumen-durch-indikatorverduen.md) |
-| [ mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd  ](Observation-mii-exa-icu-muv-linksventri-schlagvolumenind-durch-indikatorverd.md) |
-| [ mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen  ](Observation-mii-exa-icu-muv-linksventrikulaer-herzind-durch-indikatorverduen.md) |
-| [ mii-exa-icu-muv-linksventrikulaerer-druck  ](Observation-mii-exa-icu-muv-linksventrikulaerer-druck.md) |
-| [ mii-exa-icu-muv-linksventrikulaerer-herzindex  ](Observation-mii-exa-icu-muv-linksventrikulaerer-herzindex.md) |
-| [ mii-exa-icu-muv-linksventrikulaeres-schlagvolumen  ](Observation-mii-exa-icu-muv-linksventrikulaeres-schlagvolumen.md) |
-| [ mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex  ](Observation-mii-exa-icu-muv-linksventrikulaeres-schlagvolumenindex.md) |
-| [ mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet  ](Observation-mii-exa-icu-muv-o2saettigung-im-arteriell-blut-durch-pulsoxymet.md) |
-| [ mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet  ](Observation-mii-exa-icu-muv-o2saettigung-im-blut-postduktal-durch-pulsoxymet.md) |
-| [ mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet  ](Observation-mii-exa-icu-muv-o2saettigung-im-blut-preduktal-durch-pulsoxymet.md) |
-| [ mii-exa-icu-muv-pulmonalarterieller-blutdruck  ](Observation-mii-exa-icu-muv-pulmonalarterieller-blutdruck.md) |
-| [ mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck  ](Observation-mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck.md) |
-| [ mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex  ](Observation-mii-exa-icu-muv-pulmonalvaskulaerer-widerstandsindex.md) |
-| [ mii-exa-icu-muv-puls  ](Observation-mii-exa-icu-muv-puls.md) |
-| [ mii-exa-icu-muv-rechtsatrialer-druck  ](Observation-mii-exa-icu-muv-rechtsatrialer-druck.md) |
-| [ mii-exa-icu-muv-rechtsventrikulaerer-druck  ](Observation-mii-exa-icu-muv-rechtsventrikulaerer-druck.md) |
-| [ mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch  ](Observation-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.md) |
-| [ mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex  ](Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.md) |
-| [ mii-exa-icu-muv-zentralvenoeser-blutdruck  ](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) |
-| [ mii-exa-icu-score-rass  ](Observation-mii-exa-icu-score-rass.md) |
-| [ mii-exa-icu-untersuchung-pupillenbefund  ](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) |
-| [ mii-exa-icu-untersuchung-pupillenform  ](Observation-mii-exa-icu-untersuchung-pupillenform.md) |
-| [ mii-exa-icu-untersuchung-pupillengroesse  ](Observation-mii-exa-icu-untersuchung-pupillengroesse.md) |
-| [ mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt.md) |
-| [ mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) |
-| [ mii-exa-icu-untersuchung-pupillensymmetrie  ](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) |
-| [ mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess.md) |
-| [ mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest.md) |
-| [ mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess.md) |
-| [ mii-exa-icu-vent-atemzugvolumen-einstellung  ](Observation-mii-exa-icu-vent-atemzugvolumen-einstellung.md) |
-| [ mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen  ](Observation-mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen.md) |
-| [ mii-exa-icu-vent-beatmung  ](Procedure-mii-exa-icu-vent-beatmung.md) |
-| [ mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller  ](Observation-mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller.md) |
-| [ mii-exa-icu-vent-beatmungszeit-auf-hohem-druck  ](Observation-mii-exa-icu-vent-beatmungszeit-auf-hohem-druck.md) |
-| [ mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck  ](Observation-mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck.md) |
-| [ mii-exa-icu-vent-druckdifferenz-beatmung  ](Observation-mii-exa-icu-vent-druckdifferenz-beatmung.md) |
-| [ mii-exa-icu-vent-dynamische-kompliance  ](Observation-mii-exa-icu-vent-dynamische-kompliance.md) |
-| [ mii-exa-icu-vent-eingestellte-parameter-beatmung  ](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md) |
-| [ mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss  ](Observation-mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss.md) |
-| [ mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung  ](Observation-mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung.md) |
-| [ mii-exa-icu-vent-einstellung-einatmungszeit-beatmung  ](Observation-mii-exa-icu-vent-einstellung-einatmungszeit-beatmung.md) |
-| [ mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck  ](Observation-mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck.md) |
-| [ mii-exa-icu-vent-exspiratorischer-gasfluss  ](Observation-mii-exa-icu-vent-exspiratorischer-gasfluss.md) |
-| [ mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck  ](Observation-mii-exa-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) |
-| [ mii-exa-icu-vent-gemessene-parameter-beatmung  ](DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.md) |
-| [ mii-exa-icu-vent-horowitz-in-arteriellem-blut  ](Observation-mii-exa-icu-vent-horowitz-in-arteriellem-blut.md) |
-| [ mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt  ](Observation-mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt.md) |
-| [ mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen  ](Observation-mii-exa-icu-vent-inspiratorische-sauerstofffraktion-gemessen.md) |
-| [ mii-exa-icu-vent-inspiratorischer-gasfluss  ](Observation-mii-exa-icu-vent-inspiratorischer-gasfluss.md) |
-| [ mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt  ](Observation-mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt.md) |
-| [ mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen  ](Observation-mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen.md) |
-| [ mii-exa-icu-vent-mechanische-atemfrequenz-beatmet  ](Observation-mii-exa-icu-vent-mechanische-atemfrequenz-beatmet.md) |
-| [ mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt  ](Observation-mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt.md) |
-| [ mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen  ](Observation-mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen.md) |
-| [ mii-exa-icu-vent-parameter-von-beatmung  ](Observation-mii-exa-icu-vent-parameter-von-beatmung.md) |
-| [ mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt  ](Observation-mii-exa-icu-vent-positiv-endexspiratorischer-druck-eingestellt.md) |
-| [ mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen  ](Observation-mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen.md) |
-| [ mii-exa-icu-vent-spontane-atemfrequenz-beatmet  ](Observation-mii-exa-icu-vent-spontane-atemfrequenz-beatmet.md) |
-| [ mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet  ](Observation-mii-exa-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) |
-| [ mii-exa-icu-vent-spontanes-atemzugvolumen  ](Observation-mii-exa-icu-vent-spontanes-atemzugvolumen.md) |
-| [ mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen  ](Observation-mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md) |
-| [ mii-exa-icu-vent-unterstuetzungsdruck-beatmung  ](Observation-mii-exa-icu-vent-unterstuetzungsdruck-beatmung.md) |
-| [ mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung  ](Observation-mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |
 | [ mii-param-icu-manifest  ](Parameters-mii-param-icu-manifest.md) |
 

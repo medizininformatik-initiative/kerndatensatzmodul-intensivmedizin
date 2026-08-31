@@ -1,10 +1,10 @@
-# mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit - MII IG ICU v2026.0.3
+# Bilanz Einfuhr Enterale Fluessigkeit - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit**
+* **Bilanz Einfuhr Enterale Fluessigkeit**
 
-## Observation: mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit
+## Example Observation: Bilanz Einfuhr Enterale Fluessigkeit
 
 -------
 

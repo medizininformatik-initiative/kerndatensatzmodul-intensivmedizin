@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck - MII IG ICU v2026.0.3
+# Muv Pulmonalarterieller Wedge Blutdruck - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck**
+* **Muv Pulmonalarterieller Wedge Blutdruck**
 
-## Observation: mii-exa-icu-muv-pulmonalarterieller-wedge-blutdruck
+## Example Observation: Muv Pulmonalarterieller Wedge Blutdruck
 
 -------
 

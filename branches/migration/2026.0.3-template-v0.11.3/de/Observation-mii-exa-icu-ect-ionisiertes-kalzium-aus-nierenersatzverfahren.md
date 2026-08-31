@@ -1,10 +1,10 @@
-# mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren - MII IG ICU v2026.0.3
+# Ect Ionisiertes Kalzium Aus Nierenersatzverfahren - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren**
+* **Ect Ionisiertes Kalzium Aus Nierenersatzverfahren**
 
-## Observation: mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren
+## Beispiel Observation: Ect Ionisiertes Kalzium Aus Nierenersatzverfahren
 
 -------
 

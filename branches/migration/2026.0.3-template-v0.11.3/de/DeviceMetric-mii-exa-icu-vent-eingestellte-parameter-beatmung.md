@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-eingestellte-parameter-beatmung - MII IG ICU v2026.0.3
+# Vent Eingestellte Parameter Beatmung - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-vent-eingestellte-parameter-beatmung**
+* **Vent Eingestellte Parameter Beatmung**
 
-## DeviceMetric: mii-exa-icu-vent-eingestellte-parameter-beatmung
+## Beispiel DeviceMetric: Vent Eingestellte Parameter Beatmung
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung)
+Profile: [MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung](StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.md)
 
 **type**: Artificial ventilation (regime/therapy)
 
@@ -27,7 +27,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "DeviceMetric",
   "id" : "mii-exa-icu-vent-eingestellte-parameter-beatmung",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-devicemetric-eingestellte-gemessene-parameter-beatmung"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"]
   },
   "type" : {
     "coding" : [{

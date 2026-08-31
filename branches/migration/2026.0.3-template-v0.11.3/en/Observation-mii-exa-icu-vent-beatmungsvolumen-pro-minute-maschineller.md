@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller - MII IG ICU v2026.0.3
+# Vent Beatmungsvolumen Pro Minute Maschineller - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller**
+* **Vent Beatmungsvolumen Pro Minute Maschineller**
 
-## Observation: mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller
+## Example Observation: Vent Beatmungsvolumen Pro Minute Maschineller
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller)
+Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-beatmungsvolumen-pro-minute-maschineller",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

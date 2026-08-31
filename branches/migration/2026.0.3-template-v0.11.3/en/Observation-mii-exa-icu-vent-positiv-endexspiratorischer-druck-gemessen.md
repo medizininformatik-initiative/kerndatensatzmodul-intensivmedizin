@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen - MII IG ICU v2026.0.3
+# Vent Positiv Endexspiratorischer Druck Gemessen - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen**
+* **Vent Positiv Endexspiratorischer Druck Gemessen**
 
-## Observation: mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen
+## Example Observation: Vent Positiv Endexspiratorischer Druck Gemessen
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexspiratorischer-druck](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexspiratorischer-druck)
+Profile: [MII PR ICU Positiv Endexpiratorischer Druck](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-positiv-endexspiratorischer-druck-gemessen",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexspiratorischer-druck"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

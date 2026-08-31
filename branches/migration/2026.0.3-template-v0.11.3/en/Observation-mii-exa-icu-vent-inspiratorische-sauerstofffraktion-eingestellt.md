@@ -1,10 +1,10 @@
-# mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt - MII IG ICU v2026.0.3
+# Vent Inspiratorische Sauerstofffraktion Eingestellt - MII IG ICU v2026.0.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt**
+* **Vent Inspiratorische Sauerstofffraktion Eingestellt**
 
-## Observation: mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt
+## Example Observation: Vent Inspiratorische Sauerstofffraktion Eingestellt
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt)
+Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md)
 
 **partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.4&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
 
@@ -39,7 +39,7 @@ Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/Structu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-vent-inspiratorische-sauerstofffraktion-eingestellt",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion-eingestellt"]
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"]
   },
   "partOf" : [{
     "reference" : "Procedure/example"

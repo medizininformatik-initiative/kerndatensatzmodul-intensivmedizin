@@ -1,10 +1,10 @@
-# mii-exa-icu-muv-koerpertemperatur-nasal - MII IG ICU v2026.0.3
+# Muv Koerpertemperatur Nasal - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-muv-koerpertemperatur-nasal**
+* **Muv Koerpertemperatur Nasal**
 
-## Observation: mii-exa-icu-muv-koerpertemperatur-nasal
+## Beispiel Observation: Muv Koerpertemperatur Nasal
 
 -------
 

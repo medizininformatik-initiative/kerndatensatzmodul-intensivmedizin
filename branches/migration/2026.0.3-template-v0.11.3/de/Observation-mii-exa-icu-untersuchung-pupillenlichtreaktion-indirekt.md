@@ -1,10 +1,10 @@
-# mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt - MII IG ICU v2026.0.3
+# Untersuchung Pupillenlichtreaktion Indirekt - MII IG ICU v2026.0.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt**
+* **Untersuchung Pupillenlichtreaktion Indirekt**
 
-## Observation: mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt
+## Beispiel Observation: Untersuchung Pupillenlichtreaktion Indirekt
 
 -------
 
