@@ -6,9 +6,7 @@ Title: "MII PR ICU Score RASS"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"
 * ^version = "2026.0.0"
-* ^status = #draft
-* ^experimental = true
-* ^date = "2025-12-15"
+* ^status = #active
 
 * status 1..
 * category 1..

@@ -6,8 +6,7 @@ Title: "MII PR ICU Score GCS"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs"
 * ^version = "2026.0.0"
-* ^status = #draft
-* ^experimental = true
+* ^status = #active
 
 * obeys gcs-total-range // 3 - 15
 

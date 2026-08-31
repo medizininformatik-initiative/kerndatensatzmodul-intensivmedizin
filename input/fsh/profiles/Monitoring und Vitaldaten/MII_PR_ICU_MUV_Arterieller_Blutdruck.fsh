@@ -121,6 +121,10 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * component[meanBP].code.coding[IEEE-11073].system 1.. MS
 * component[meanBP].code.coding[IEEE-11073].code 1.. MS
 * component[meanBP].code.coding[IEEE-11073].display MS
-* component[meanBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[meanBP].value[x] MS
+* component[meanBP].value[x].unit 1.. MS
+* component[meanBP].value[x].value 1.. MS
+* component[meanBP].value[x].system 1.. MS
+* component[meanBP].value[x].code 1.. MS
+* component[meanBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[meanBP].dataAbsentReason MS

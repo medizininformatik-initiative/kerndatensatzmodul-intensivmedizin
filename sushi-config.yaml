@@ -90,9 +90,9 @@ name: MII_IG_ICU
 title: MII IG ICU
 description: "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-Beschreibung DE)
 status: draft # draft | active | retired | unknown
-# MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
-# Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "2026.0.3"
+# MII modules use CalVer YYYY.n.n per the MII Module Release Workflow — NOT SemVer.
+# Ballot-RC-Suffix kommt vom Modul-Team (master, 2026-08-28).
+version: "2027.0.0-ballot.rc1"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
@@ -244,8 +244,8 @@ extension:
 # `main`. Fixed versions only — never `current`/`dev` (the go-publish workflow and the convention
 # check reject floating versions; the dependency checker proposes bumps).
 dependencies:
-  # German base profiles (kerndatensatz-basis pins the same 1.5.4).
-  de.basisprofil.r4: 1.5.4
+  # German base profiles (Pin vom Modul-Team, master 2026-08-28).
+  de.basisprofil.r4: 1.6.0
   # Source pins carried unchanged from the pre-migration module (spec 2.1):
   # ISiK 6.0.0 per TF-Richtung (Spike 2026-08-28: SUSHI 0 Errors, qa-Delta +10 durch
   # sct-version-de auf Koerpertemperatur-Beispielen -- Team-Entscheidung, s. Report QA-7). gematik liefert KEINE Snapshots (0/178);
@@ -253,7 +253,7 @@ dependencies:
   # medizininformatik-initiative/fhir-package-store (cache-store-Branch, CI-Priming-Step
   # in .github/workflows/ig-publisher.yml). Lokal: siehe README, Abschnitt Build.
   de.gematik.isik: 6.0.0
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1
   # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
   de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
   # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
@@ -276,6 +276,8 @@ dependencies:
   # HL7 Extensions Pack — same rationale and same drift watch as
   # hl7.terminology.r4 above.
   hl7.fhir.uv.extensions.r4: 5.3.0
+  # Vom Modul-Team auf master ergaenzt (2026-08-28):
+  dvmd.kdl.r4: 2026.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
