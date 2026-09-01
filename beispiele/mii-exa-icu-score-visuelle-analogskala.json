@@ -1,9 +1,9 @@
 {
     "resourceType": "Observation",
-    "id": "mii-exa-icu-score-rass",
+    "id": "mii-exa-icu-score-visuelle-analogskala",
     "meta": {
         "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         ]
     },
     "status": "final",
@@ -27,8 +27,13 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
-                "code": "1345050000",
-                "display": "Richmond Agitation Sedation Scale score (observable entity)"
+                "code": "443394008",
+                "display": "Visual analog scale pain score (observable entity)"
+            },
+            {
+                "system": "http://loinc.org",
+                "code": "38214-3",
+                "display": "Visual analog scale pain score (observable entity)"
             }
         ]
     },
@@ -36,18 +41,14 @@
         "type": "Patient",
         "identifier": {
             "system": "http://example.com",
-            "value": "111"
-        },
-        "reference": "Patient/111"
+            "value": "1234"
+        }
     },
     "effectiveDateTime": "2021-12-06T00:52:00+01:00",
-    "valueCodeableConcept": {
-        "coding": [
-            {
-                "system": "http://loinc.org",
-                "code": "LA33962-4",
-                "display": "Alert and calm 0"
-            }
-        ]
+    "valueQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": "63",
+        "unit": "mm",
+        "code": "mm"
     }
 }
