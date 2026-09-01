@@ -6,9 +6,7 @@ Description: "Dieses Profil dient der spezialisierten Abbildung des zerebralen P
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2025-11-18"
+* ^status = #active
 
 * code.coding[sct] = $sct#250846007
 * code.coding[loinc] = $loinc#61017-0
