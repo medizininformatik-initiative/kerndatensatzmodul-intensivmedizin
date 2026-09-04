@@ -28,3 +28,4 @@ Description: "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz ve
 * include $sct#819975003 "Measured volume of intake of expressed breast milk (observable entity)"
 * include $sct#1204299001 "Measured volume of intake of maternal milk (observable entity)"
 * include $sct#1204305004 "Measured volume of intake of infant formula (observable entity)"
+* include $sct#787787004 "Energy intake (observable entity)"
