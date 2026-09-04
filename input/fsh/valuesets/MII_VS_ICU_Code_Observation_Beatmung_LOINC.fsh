@@ -38,3 +38,4 @@ Description: "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung 
 * include $loinc#20060-0 "Airway pressure --at zero inspiratory flow on ventilator"
 * include $loinc#19891-1 "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
 * include $loinc#20079-0 "Pressure support setting Ventilator"
+* include $loinc#76003-3 "Pressure Respiratory system airway --during inspiration on ventilator"

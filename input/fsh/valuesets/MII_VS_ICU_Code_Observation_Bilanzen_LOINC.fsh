@@ -21,3 +21,4 @@ Description: "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz ve
 * include $loinc#9217-1 "Output.stool [Volume]"
 * include $loinc#9257-7 "Fluid output total Measured"
 * include $loinc#99741-1 "Ultrafiltrate volume removed"
+* include $loinc#9057-1 "Calorie intake total 24 hour"
