@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-muv-herzfrequenz",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz",
+  "id": "mii-pr-icu-bilanz-einfuhr-kalorien-24h",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
   "version": "2027.0.0-ballot.rc1",
-  "name": "MII_PR_ICU_MUV_Herzfrequenz",
-  "title": "MII PR ICU MUV Herzfrequenz",
-  "status": "active",
+  "name": "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
+  "title": "MII PR ICU Bilanz Einfuhr Kalorien 24h",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -21,14 +21,24 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
+        "id": "Observation.category.coding:hl7-category",
+        "path": "Observation.category.coding",
+        "sliceName": "hl7-category"
+      },
+      {
+        "id": "Observation.category.coding:hl7-category.code",
+        "path": "Observation.category.coding.code",
+        "patternCode": "exam"
+      },
+      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 3
+        "min": 2
       },
       {
         "id": "Observation.code.coding:sct",
@@ -38,7 +48,8 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "364075005"
+          "code": "787787004",
+          "display": "Energy intake (observable entity)"
         }
       },
       {
@@ -49,41 +60,39 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "8867-4"
+          "code": "9057-1",
+          "display": "Calorie intake total 24 hour"
         }
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "urn:iso:std:iso:11073:10101",
-          "code": "147842"
-        }
+        "max": "0"
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "/min",
+          "code": "kcal/(24.h)",
           "system": "http://unitsofmeasure.org",
-          "unit": "beats per minute"
+          "unit": "kilocalorie per day"
         }
-      },
-      {
-        "id": "Observation.value[x].unit",
-        "path": "Observation.value[x].unit",
-        "min": 1
       },
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute"
-        }
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }
