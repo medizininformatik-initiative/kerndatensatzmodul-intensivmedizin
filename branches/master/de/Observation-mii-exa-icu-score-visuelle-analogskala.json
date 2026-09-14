@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-score-visuelle-analogskala",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-score-visuelle-analogskala</b></p><a name=\"de-mii-exa-icu-score-visuelle-analogskala\"> </a><a name=\"de-hcmii-exa-icu-score-visuelle-analogskala\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html\">MII PR ICU Score Visuelle Analogskala</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}, {http://terminology.hl7.org/CodeSystem/observation-category exam}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 443394008}, {http://loinc.org 38214-3}\">Visual analog scale pain score (observable entity)</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>: 63 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "443394008",
+      "display" : "Visual analog scale pain score (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "38214-3",
+      "display" : "Visual analog scale pain score (observable entity)"
+    }]
+  },
+  "subject" : {
+    "type" : "Patient",
+    "identifier" : {
+      "system" : "http://example.com",
+      "value" : "1234"
+    }
+  },
+  "effectiveDateTime" : "2021-12-06T00:52:00+01:00",
+  "valueQuantity" : {
+    "value" : 63,
+    "unit" : "mm",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mm"
+  }
+}
