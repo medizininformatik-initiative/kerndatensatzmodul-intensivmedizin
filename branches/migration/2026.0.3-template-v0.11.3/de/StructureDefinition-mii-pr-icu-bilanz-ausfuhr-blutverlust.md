@@ -94,7 +94,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
   "title" : "MII PR ICU Bilanz Ausfuhr Blutverlust",
   "status" : "active",
-  "date" : "2026-09-14T10:16:02+00:00",
+  "date" : "2026-09-14T15:22:31+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

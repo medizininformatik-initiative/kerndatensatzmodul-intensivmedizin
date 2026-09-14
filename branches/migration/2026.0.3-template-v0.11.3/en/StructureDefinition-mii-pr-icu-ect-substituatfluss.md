@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-su
   "name" : "MII_PR_ICU_ECT_Substituatfluss",
   "title" : "MII PR ICU Substituatfluss",
   "status" : "active",
-  "date" : "2026-09-14T10:16:02+00:00",
+  "date" : "2026-09-14T15:22:31+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
