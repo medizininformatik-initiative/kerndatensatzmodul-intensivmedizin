@@ -189,3 +189,24 @@ The module ships **137 examples** (at least one per profile family, incl. comple
 |---|---|
 | [Patient](Patient-mii-exa-icu-patient.html) | — |
 <!-- ENDE generiert -->
+
+### Known validation issues
+
+With the migration to the IG-Publisher toolchain, the module's raw JSON examples
+are validated against their profiles **for the first time** — previously they were
+published via Simplifier without passing through any validation pipeline. The QA
+report therefore surfaces a backlog of long-standing findings. They are triaged,
+tracked as GitHub issues, and deliberately **not** part of the migration scope:
+
+| Cluster | Errors | Tracked in |
+|---|--:|---|
+| Required code.coding slices: correct code present, display text differs from the profile's pattern (41×) or coding missing (2×) | 43 | [#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
+| Example and profile pattern encode *different* concepts in the same code system — needs clinical review | 9 | [#80](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/80) |
+| Missing `Quantity.unit` (52×), balance codings matching no slice (21×), vital-signs category/components (7×) | 80 | [#81](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/81) |
+| Invalid `$loinc` FHIRPath expression in ventilation pressure profiles (also present on master) | 35 | [#82](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/82) |
+| ISiK 6.0.0: body-site-specific temperature codes not in `ISiKKernTempSctVS`; profile pins on unavailable SNOMED CT versions | ~11 | [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+
+A further ~450 errors stem from a terminology-server request incompatibility of the
+IG Publisher (`$validate-code` request format) and vary between builds — they are
+infrastructure, not content. Reference resolution and SNOMED CT version stamps of
+the examples were already fixed during migration (1251 → 777 errors).

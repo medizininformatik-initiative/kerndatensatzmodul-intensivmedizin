@@ -187,3 +187,24 @@ Das Modul liefert **137 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 |---|---|
 | [Patient](Patient-mii-exa-icu-patient.html) | — |
 <!-- ENDE generiert -->
+
+### Bekannte Validierungsbefunde
+
+Mit der Migration auf die IG-Publisher-Toolchain werden die Roh-JSON-Beispiele des
+Moduls **erstmals überhaupt** gegen ihre Profile validiert — zuvor wurden sie über
+Simplifier publiziert, ohne eine Validierungspipeline zu durchlaufen. Der QA-Report
+zeigt daher einen lange bestehenden Befund-Bestand. Dieser ist triagiert, als
+GitHub-Issues nachverfolgt und bewusst **nicht** Teil des Migrations-Scopes:
+
+| Cluster | Errors | Nachverfolgt in |
+|---|--:|---|
+| Pflicht-Slices auf code.coding: richtiger Code vorhanden, Display-Text weicht vom Profil-Pattern ab (41×) bzw. Coding fehlt (2×) | 43 | [#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
+| Beispiel und Profil-Pattern kodieren *unterschiedliche* Konzepte im selben Codesystem — fachliches Review nötig | 9 | [#80](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/80) |
+| Fehlende `Quantity.unit` (52×), Bilanz-Codings ohne Slice-Match (21×), Vitalzeichen-Category/-Komponenten (7×) | 80 | [#81](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/81) |
+| Ungültige `$loinc`-FHIRPath-Expression in den Beatmungsdruck-Profilen (besteht auch auf master) | 35 | [#82](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/82) |
+| ISiK 6.0.0: messortspezifische Temperatur-Codes nicht im `ISiKKernTempSctVS`; Profil-Pins auf nicht verfügbare SNOMED-CT-Versionen | ~11 | [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+
+Weitere ~450 Errors stammen aus einer Terminologieserver-Request-Inkompatibilität
+des IG Publishers (`$validate-code`-Request-Format) und schwanken zwischen Builds —
+Infrastruktur, kein Inhalt. Referenzauflösung und SNOMED-CT-Versions-Stempel der
+Beispiele wurden bereits im Zuge der Migration behoben (1251 → 777 Errors).
