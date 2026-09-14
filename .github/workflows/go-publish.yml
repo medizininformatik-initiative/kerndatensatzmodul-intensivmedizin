@@ -99,7 +99,9 @@ concurrency:
 env:
   # The module's FHIR canonical (MII convention — for example,
   # kerndatensatz-basis uses .../fhir/modul-base).
-  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/modul-icu"
+  # ICU ist ein Erweiterungsmodul: Canonical liegt unter /fhir/ext/ (anders als
+  # das Template-Default-Muster der Basismodule, z.B. .../fhir/modul-base).
+  EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").
   EXPECTED_PUBLICATION_BASE: "https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin"
