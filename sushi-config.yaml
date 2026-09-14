@@ -506,6 +506,10 @@ resources:
     name: "Muv Koerpergroesse"
     description: "Beispiel: MII PR ICU MUV Koerpergroesse"
     exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerperlaenge:
+    name: "Muv Koerperlaenge"
+    description: "Beispiel: MII PR ICU MUV Koerperlaenge"
+    exampleBoolean: true
   Observation/mii-exa-icu-muv-koerpertemperatur-achsel:
     name: "Muv Koerpertemperatur Achsel"
     description: "Beispiel: SD MII ICU Koerpertemperatur Achsel"
@@ -678,13 +682,37 @@ resources:
     name: "Muv Zentralvenoeser Blutdruck"
     description: "Beispiel: SD MII ICU Zentralvenoeser Blutdruck"
     exampleBoolean: true
+  Observation/mii-exa-icu-muv-zerebraler-perfusionsdruck:
+    name: "Muv Zerebraler Perfusionsdruck"
+    description: "Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck"
+    exampleBoolean: true
   Patient/mii-exa-icu-patient:
     name: "Patient"
     description: "Beispielinstanz des Moduls"
     exampleBoolean: true
+  Observation/mii-exa-icu-score-faces-pain-scale-revised:
+    name: "Score Faces Pain Scale Revised"
+    description: "Beispiel: MII PR ICU Score Faces Pain Scale Revised"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-gcs:
+    name: "Score Gcs"
+    description: "Beispiel: MII PR ICU Score GCS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-numerische-ratingskala:
+    name: "Score Numerische Ratingskala"
+    description: "Beispiel: MII PR ICU Score Numerische Ratingskala"
+    exampleBoolean: true
   Observation/mii-exa-icu-score-rass:
     name: "Score Rass"
     description: "Beispiel: MII PR ICU Score RASS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-visuelle-analogskala:
+    name: "Score Visuelle Analogskala"
+    description: "Beispiel: MII PR ICU Score Visuelle Analogskala"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score:
+    name: "Score"
+    description: "Beispiel: MII PR ICU Score"
     exampleBoolean: true
   Observation/mii-exa-icu-untersuchung-pupillenbefund:
     name: "Untersuchung Pupillenbefund"
