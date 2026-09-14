@@ -42,7 +42,7 @@ Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, t
   "name" : "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion",
   "title" : "MII VS ICU Code Observation Pupillenlichtreaktion",
   "status" : "draft",
-  "date" : "2026-09-14T15:50:09+00:00",
+  "date" : "2026-09-14T16:14:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

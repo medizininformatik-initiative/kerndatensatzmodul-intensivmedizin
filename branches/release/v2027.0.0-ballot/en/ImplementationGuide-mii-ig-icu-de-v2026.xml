@@ -2176,17 +2176,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"/>
-      </reference>
-      <name value="MII PR ICU MUV zerebraler Perfusionsdruck"/>
-      <description value="Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-parameter-von-beatmung"/>
       </reference>
       <name value="MII PR ICU Parameter von Beatmung"/>
@@ -3213,6 +3202,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerperlaenge"/>
+      </reference>
+      <name value="Muv Koerperlaenge"/>
+      <description value="Beispiel: MII PR ICU MUV Koerperlaenge"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/mii-exa-icu-muv-koerpertemperatur-achsel"/>
       </reference>
       <name value="Muv Koerpertemperatur Achsel"/>
@@ -3683,6 +3683,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-zerebraler-perfusionsdruck"/>
+      </reference>
+      <name value="Muv Zerebraler Perfusionsdruck"/>
+      <description value="Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -3697,10 +3708,65 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/mii-exa-icu-score"/>
+      </reference>
+      <name value="Score"/>
+      <description value="Beispiel: MII PR ICU Score"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-score-faces-pain-scale-revised"/>
+      </reference>
+      <name value="Score Faces Pain Scale Revised"/>
+      <description value="Beispiel: MII PR ICU Score Faces Pain Scale Revised"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-score-gcs"/>
+      </reference>
+      <name value="Score Gcs"/>
+      <description value="Beispiel: MII PR ICU Score GCS"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-score-numerische-ratingskala"/>
+      </reference>
+      <name value="Score Numerische Ratingskala"/>
+      <description value="Beispiel: MII PR ICU Score Numerische Ratingskala"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/mii-exa-icu-score-rass"/>
       </reference>
       <name value="Score Rass"/>
       <description value="Beispiel: MII PR ICU Score RASS"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-score-visuelle-analogskala"/>
+      </reference>
+      <name value="Score Visuelle Analogskala"/>
+      <description value="Beispiel: MII PR ICU Score Visuelle Analogskala"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

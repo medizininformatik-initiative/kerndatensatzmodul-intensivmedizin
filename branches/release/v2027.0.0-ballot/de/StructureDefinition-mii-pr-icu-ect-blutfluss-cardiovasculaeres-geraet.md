@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
   "title" : "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
   "status" : "active",
-  "date" : "2026-09-14T15:50:09+00:00",
+  "date" : "2026-09-14T16:14:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -43,7 +43,7 @@ Present or absent findings
   "title" : "MII VS ICU Present Absent",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-14T15:50:09+00:00",
+  "date" : "2026-09-14T16:14:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
