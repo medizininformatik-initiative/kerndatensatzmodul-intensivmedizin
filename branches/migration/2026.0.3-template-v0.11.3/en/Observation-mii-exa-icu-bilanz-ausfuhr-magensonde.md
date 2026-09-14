@@ -45,7 +45,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364396009",
       "display" : "Fluid balance observable (observable entity)"
     }]
@@ -53,7 +53,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251848001",
       "display" : "Gastric fluid loss (observable entity)"
     },

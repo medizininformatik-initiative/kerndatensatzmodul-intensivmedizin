@@ -49,7 +49,7 @@ Profile: [SD MII ICU Koerpertemperatur Leiste](https://simplifier.net/resolve?sc
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "415929009",
       "display" : "Estimated core body temperature measured in inguinal region"
     },

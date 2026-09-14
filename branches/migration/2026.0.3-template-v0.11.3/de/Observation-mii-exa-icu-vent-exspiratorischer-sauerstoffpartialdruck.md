@@ -48,7 +48,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "40617009",
       "display" : "Artificial ventilation (regime/therapy)"
     }]
@@ -61,7 +61,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "442720002",
       "display" : "Expired oxygen tension (observable entity)"
     },

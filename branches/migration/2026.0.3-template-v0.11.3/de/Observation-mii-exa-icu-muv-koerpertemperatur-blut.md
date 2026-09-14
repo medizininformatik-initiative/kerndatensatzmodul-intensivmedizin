@@ -52,7 +52,7 @@ Profile: [SD MII ICU Koerpertemperatur Blut](https://simplifier.net/resolve?scop
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "1222808002",
       "display" : "Core body temperature measured in blood (observable entity)"
     },

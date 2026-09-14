@@ -49,7 +49,7 @@ Profile: [SD MII ICU Koerpertemperatur Stirn](https://simplifier.net/resolve?sco
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "415922000",
       "display" : "Temperature of forehead"
     },

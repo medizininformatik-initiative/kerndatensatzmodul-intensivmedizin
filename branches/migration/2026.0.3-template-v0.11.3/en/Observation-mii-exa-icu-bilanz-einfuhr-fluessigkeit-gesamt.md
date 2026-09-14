@@ -45,7 +45,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364396009",
       "display" : "Fluid balance observable (observable entity)"
     }]
@@ -53,7 +53,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251855004",
       "display" : "Parenteral fluid input (observable entity)"
     }]

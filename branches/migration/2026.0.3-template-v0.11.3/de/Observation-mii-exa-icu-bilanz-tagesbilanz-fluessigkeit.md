@@ -45,7 +45,7 @@ Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364396009",
       "display" : "Fluid balance observable (observable entity)"
     }]
@@ -53,7 +53,7 @@ Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251856003",
       "display" : "Fluid balance status (observable entity)"
     },

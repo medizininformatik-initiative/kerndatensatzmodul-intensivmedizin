@@ -52,7 +52,7 @@ Profile: [MII PR ICU MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfr
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364075005",
       "display" : "Heart rate (observable entity)"
     },

@@ -47,7 +47,7 @@ Profile: [SD MII ICU Puls](https://simplifier.net/resolve?scope=de.gematik.isik@
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "8499008",
       "display" : "Pulse, function (observable entity)"
     },

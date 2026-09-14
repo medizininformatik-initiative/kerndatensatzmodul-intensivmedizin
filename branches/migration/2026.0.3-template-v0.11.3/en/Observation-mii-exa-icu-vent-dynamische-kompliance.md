@@ -48,7 +48,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "40617009",
       "display" : "Artificial ventilation (regime/therapy)"
     }]
@@ -61,7 +61,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250823005",
       "display" : "Total dynamic compliance (observable entity)"
     },

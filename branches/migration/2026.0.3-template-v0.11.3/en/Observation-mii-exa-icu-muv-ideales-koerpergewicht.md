@@ -52,7 +52,7 @@ Profile: [SD MII ICU Ideales Koerpergewicht](https://simplifier.net/resolve?scop
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "170804003",
       "display" : "Ideal body weight (observable entity)"
     },

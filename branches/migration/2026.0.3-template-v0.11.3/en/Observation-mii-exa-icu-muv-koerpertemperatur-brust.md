@@ -49,7 +49,7 @@ Profile: [SD MII ICU Koerpertemperatur Brust](https://simplifier.net/resolve?sco
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "248835004",
       "display" : "Temperature of breast"
     },

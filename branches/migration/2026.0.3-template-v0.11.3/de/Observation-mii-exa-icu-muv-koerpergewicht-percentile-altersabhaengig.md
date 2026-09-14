@@ -52,7 +52,7 @@ Profile: [SD MII ICU Koerpergewicht Percentil Altersabhaengig](https://simplifie
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "1153592008",
       "display" : "Weight for age percentile (observable entity)"
     }]

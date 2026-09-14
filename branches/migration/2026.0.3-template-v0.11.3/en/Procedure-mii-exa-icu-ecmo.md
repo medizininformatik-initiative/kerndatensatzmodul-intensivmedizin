@@ -48,7 +48,7 @@ Profile: [MII PR ICU Extrakorporales Verfahren](StructureDefinition-mii-pr-icu-e
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "786453001",
       "display" : "Venovenous extracorporeal membrane oxygenation (procedure)"
     }]

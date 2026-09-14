@@ -48,7 +48,7 @@ Profile: [MII PR ICU Blutfluss Extrakorporaler Gasaustausch](StructureDefinition
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "182744004",
       "display" : "Extracorporeal circulation procedure (procedure)"
     }]
@@ -56,7 +56,7 @@ Profile: [MII PR ICU Blutfluss Extrakorporaler Gasaustausch](StructureDefinition
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251288004",
       "display" : "Extracorporeal gas exchange flow rate (observable entity)"
     }]

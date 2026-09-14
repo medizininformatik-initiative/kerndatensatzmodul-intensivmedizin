@@ -48,7 +48,7 @@ Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "40617009",
       "display" : "Artificial ventilation (regime/therapy)"
     }]
@@ -56,13 +56,13 @@ Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "27913002",
       "display" : "Maximum inspiratory pressure (observable entity)"
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250774007",
       "display" : "Inspired oxygen concentration (observable entity)"
     },

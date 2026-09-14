@@ -52,7 +52,7 @@ Profile: [MII PR ICU MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koer
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "1153637007",
       "display" : "Body height (observable entity)"
     }]

@@ -52,7 +52,7 @@ Profile: [SD MII ICU Herzzeitvolumen](https://simplifier.net/resolve?scope=de.ge
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "82799009",
       "display" : "Cardiac output (observable entity)"
     },

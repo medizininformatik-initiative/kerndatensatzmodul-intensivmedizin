@@ -48,7 +48,7 @@ Profile: [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinit
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "182744004",
       "display" : "Extracorporeal circulation procedure (procedure)"
     }]

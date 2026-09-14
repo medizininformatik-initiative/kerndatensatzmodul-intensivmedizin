@@ -52,7 +52,7 @@ Profile: [SD MII ICU Pulmonalvaskulaerer Widerstandsindex](https://simplifier.ne
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "276902009",
       "display" : "Pulmonary vascular Resistance index (observable entity)"
     },

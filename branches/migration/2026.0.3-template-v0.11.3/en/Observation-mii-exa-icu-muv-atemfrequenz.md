@@ -47,7 +47,7 @@ Profile: [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfr
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "86290005",
       "display" : "Respiratory rate (observable entity)"
     },

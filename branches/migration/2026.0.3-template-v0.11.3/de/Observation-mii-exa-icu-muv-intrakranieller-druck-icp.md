@@ -52,7 +52,7 @@ Profile: [SD MII ICU Intrakranieller Druck ICP](https://simplifier.net/resolve?s
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250844005",
       "display" : "Intracranial pressure (observable entity)"
     },

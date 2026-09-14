@@ -45,7 +45,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Spendermilch](StructureDefinition-mii-pr-icu
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364396009",
       "display" : "Fluid balance observable (observable entity)"
     }]

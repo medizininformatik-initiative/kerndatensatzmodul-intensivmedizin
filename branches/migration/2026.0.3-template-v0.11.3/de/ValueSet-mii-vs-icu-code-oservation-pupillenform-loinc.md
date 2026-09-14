@@ -41,7 +41,7 @@ Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder 
   "name" : "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
   "title" : "MII VS ICU Code Observation Pupillenform LOINC",
   "status" : "draft",
-  "date" : "2026-09-14T07:03:32+00:00",
+  "date" : "2026-09-14T10:16:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

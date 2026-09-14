@@ -52,7 +52,7 @@ Profile: [SD MII ICU Zentralvenoeser Blutdruck](https://simplifier.net/resolve?s
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "71420008",
       "display" : "Central venous pressure (observable entity)"
     },

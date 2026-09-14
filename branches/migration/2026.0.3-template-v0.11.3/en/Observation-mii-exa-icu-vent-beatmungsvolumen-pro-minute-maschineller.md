@@ -48,7 +48,7 @@ Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](Structur
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "40617009",
       "display" : "Artificial ventilation (regime/therapy)"
     }]
@@ -61,7 +61,7 @@ Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](Structur
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250875001",
       "display" : "Ventilator delivered minute volume (observable entity)"
     },

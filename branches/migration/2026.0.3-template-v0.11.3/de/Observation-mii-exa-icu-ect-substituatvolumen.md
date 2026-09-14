@@ -48,7 +48,7 @@ Profile: [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-subst
   "category" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "182744004",
       "display" : "Extracorporeal circulation procedure (procedure)"
     }]
@@ -56,7 +56,7 @@ Profile: [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-subst
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "708514004",
       "display" : "Substitution volume (observable entity)"
     }]

@@ -51,12 +51,12 @@ Profile: [SD MII ICU Rechtsatrialer Druck](https://simplifier.net/resolve?scope=
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "75367002"
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20241101",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "276755008",
       "display" : "Right atrial pressure (observable entity)"
     },
