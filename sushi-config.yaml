@@ -91,15 +91,17 @@ title: MII IG ICU
 description: "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set." # TODO:REVIEW derived (EN-Beschreibung abgeleitet aus package.json-Beschreibung DE)
 status: draft # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n per the MII Module Release Workflow — NOT SemVer.
-# Ballot-RC-Suffix kommt vom Modul-Team (master, 2026-08-28).
-version: "2027.0.0-ballot.rc1"
+# Ballot-Version analog zu den Nachbarmodulen (onkologie/base: 2027.0.0-ballot).
+# ACHTUNG Registry-Altlast: auf Simplifier existieren bereits 2027.0.0 (versehentlich,
+# zu deprecaten) sowie 2027.0.0-ballot.rc1/rc2 aus dem Simplifier-Altpfad.
+version: "2027.0.0-ballot"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
 packageId: de.medizininformatikinitiative.kerndatensatz.icu
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: "2023+"
-releaseLabel: ci-build
+releaseLabel: ballot
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # Must equal the publication date; go-publish.yml validates this.
 date: "2026-08-27"
@@ -253,9 +255,9 @@ dependencies:
   # medizininformatik-initiative/fhir-package-store (cache-store-Branch, CI-Priming-Step
   # in .github/workflows/ig-publisher.yml). Lokal: siehe README, Abschnitt Build.
   de.gematik.isik: 6.0.0
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.1
-  # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.base: 2027.0.0-ballot
+  # MII cross-module meta package (kerndatensatz-basis 2027.0.0-ballot pins the same).
+  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot
   # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
   # basis needs it for R5 extensions — for example Encounter.plannedStartDate;
   # remove it if your module defines no R5 cross-version extensions.
