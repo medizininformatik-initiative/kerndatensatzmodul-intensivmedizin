@@ -1,24 +1,22 @@
-# MII ImplementationGuide Resource - MII IG ICU v2027.0.0-ballot.rc1
+# MII ImplementationGuide Ressource - MII IG ICU v2027.0.0-ballot.rc1
 
-* [**Table of Contents**](toc.md)
-* **MII ImplementationGuide Resource**
+* [**Inhaltsverzeichnis**](toc.md)
+* **MII ImplementationGuide Ressource**
 
-## MII ImplementationGuide Resource
+## MII ImplementationGuide Ressource
 
-This ImplementationGuide resource defines the technical details of this publication, including dependencies and publishing parameters.
+Diese ImplementationGuide-Ressource definiert die technischen Details dieser Publikation, einschließlich Abhängigkeiten und Veröffentlichungsparametern.
 
 * [XML](../ImplementationGuide-mii-ig-icu.xml)
 * [JSON](../ImplementationGuide-mii-ig-icu.json)
 
-### Cross Version Analysis
+### Versionsübergreifende Analyse
 
 This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (de.medizininformatikinitiative.kerndatensatz.icu.r4)](../package.r4.tgz) and [R4B (de.medizininformatikinitiative.kerndatensatz.icu.r4b)](../package.r4b.tgz) are available.
 
-### IG Dependencies
+### IG-Abhängigkeiten
 
-This IG contains the following dependencies on other IGs.
-
-
+Dieser IG enthält die folgenden Abhängigkeiten von anderen IGs.
 
 
 
@@ -39,15 +37,17 @@ This IG contains the following dependencies on other IGs.
 
 
 
-> **Where the versions come from.** Every package in the table is pinned directly in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/blob/main/sushi-config.yaml) (`dependencies:`) — including `hl7.terminology.r4` (THO) and `hl7.fhir.uv.extensions.r4`, and those two deliberately so: the IG Publisher's [automatic-packages rule](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) consults only this guide's **own** dependency list, so without a direct pin every build would silently inject the latest THO/extensions release — a version pinned by the MII meta package alone cannot control the build (verified in the publisher source at the pinned release). A weekly check warns when these two pins drift from what the pinned meta package ships, and the exact versions a concrete build used are recorded in its `qa-versions.json` output.
 
-### Global Profiles
 
-This IG declares the following global profiles — profiles that apply to every instance of their resource type exchanged under this guide. An empty table means this module declares none.
+> **Woher die Versionen kommen.** Jedes Paket der Tabelle ist direkt in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/blob/main/sushi-config.yaml) (`dependencies:`) gepinnt — auch `hl7.terminology.r4` (THO) und `hl7.fhir.uv.extensions.r4`, und diese beiden mit Bedacht: Die [Automatik des IG Publishers](https://build.fhir.org/ig/FHIR/ig-guidance/versions.html#automatic-packages) liest ausschließlich die **eigene** Abhängigkeitsliste dieses Leitfadens; ohne direkten Pin würde jeder Build stillschweigend das jeweils aktuellste THO-/Extensions-Release injizieren — eine allein im MII-Meta-Paket gepinnte Version kann den Build nicht steuern (verifiziert im Publisher-Quellcode des gepinnten Release). Eine wöchentliche Prüfung warnt, wenn diese beiden Pins von den Vorgaben des gepinnten Meta-Pakets abweichen; die von einem konkreten Build verwendeten Versionen stehen in dessen `qa-versions.json`.
+
+### Globale Profile
+
+Dieser IG deklariert die folgenden globalen Profile — Profile, die für jede unter diesem Leitfaden ausgetauschte Instanz ihres Ressourcentyps gelten. Eine leere Tabelle bedeutet: Dieses Modul deklariert keine.
 
 *There are no Global profiles defined*
 
-### Copyrights
+### Urheberrechte
 
 This publication includes IP covered under the following statements.
 
@@ -87,9 +87,9 @@ This publication includes IP covered under the following statements.
 * [identifierType](http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html): [Patient/mii-exa-icu-patient](Patient-mii-exa-icu-patient.md)
 
 
-### IG Parameter Settings and Expansion Parameters
+### IG-Parametereinstellungen und Expansionsparameter
 
-Expansion parameters are query parameters that can be passed to a `ValueSet` `$expand` operation to control how the ValueSet is expanded — that is, how the full list of codes is generated from the ValueSet definition. The [IG Parameters](https://hl7.org/fhir/tools/en/CodeSystem-ig-parameters.html) used for this IG are declared in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/blob/main/sushi-config.yaml) (`parameters:`). A module that pins its expansion parameters through a CRMI manifest additionally links the generated `Parameters` resource from here (see the commented manifest blocks in `sushi-config.yaml` and the Metadata Overview page, if the module keeps it).
+Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Operation übergeben werden können, um zu steuern, wie das ValueSet expandiert wird — also wie die vollständige Liste der Codes aus der ValueSet-Definition erzeugt wird. Die für diesen IG verwendeten [IG-Parameter](https://hl7.org/fhir/tools/en/CodeSystem-ig-parameters.html) sind in [`sushi-config.yaml`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/blob/main/sushi-config.yaml) (`parameters:`) deklariert. Ein Modul, das seine Expansionsparameter über ein CRMI-Manifest pinnt, verlinkt hier zusätzlich die generierte `Parameters`-Ressource (siehe die auskommentierten Manifest-Blöcke in `sushi-config.yaml` und die Seite Metadata Overview, sofern das Modul sie behält).
 
 
 
@@ -98,7 +98,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "mii-ig-icu-de-v2026",
+  "id" : "mii-ig-icu",
   "meta" : {
     "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide",
     "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide",
@@ -233,7 +233,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       }]
     }
   }],
-  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu-de-v2026",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu",
   "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_IG_ICU",
   "title" : "MII IG ICU",
@@ -6508,9 +6508,9 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "ImplementationGuide-mii-ig-icu-de-v2026.html"
+          "valueUrl" : "ImplementationGuide-mii-ig-icu.html"
         }],
-        "nameUrl" : "ImplementationGuide-mii-ig-icu-de-v2026.html",
+        "nameUrl" : "ImplementationGuide-mii-ig-icu.html",
         "title" : "MII ImplementationGuide Resource",
         "_title" : {
           "extension" : [{
