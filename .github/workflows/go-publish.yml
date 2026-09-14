@@ -536,7 +536,11 @@ jobs:
               docker logs publication-nginx
               exit 1
             fi
-            echo "tx_url=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
+            # "localhost" statt 127.0.0.1: der ManagedWebAccess des gepinnten
+            # Publishers 2.3.2 refust plain-http fuer alles ausser dem
+            # Literal "localhost" (gemessen: Run 34870692102, inner -go-publish
+            # build "Refusing to fetch from non-https URL ... 127.0.0.1").
+            echo "tx_url=http://localhost:8090/fhir" >> "${GITHUB_OUTPUT}"
             echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
           else
             echo "::notice::SU-TermServ client-certificate secrets are not configured; falling back to the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand — review the QA report (QA note, not a failure)."
