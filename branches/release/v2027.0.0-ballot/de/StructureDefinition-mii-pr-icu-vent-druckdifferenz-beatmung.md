@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Druckdifferenz_Beatmung",
   "title" : "MII PR ICU Druckdifferenz Beatmung",
   "status" : "active",
-  "date" : "2026-09-14T17:04:18+00:00",
+  "date" : "2026-09-14T17:35:45+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
