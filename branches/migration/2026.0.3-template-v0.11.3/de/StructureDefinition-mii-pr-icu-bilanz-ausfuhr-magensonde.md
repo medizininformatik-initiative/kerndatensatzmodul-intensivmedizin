@@ -92,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde",
   "title" : "MII PR ICU Bilanz Ausfuhr Magensonde",
   "status" : "active",
-  "date" : "2026-09-14T15:22:31+00:00",
+  "date" : "2026-09-14T19:16:28+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

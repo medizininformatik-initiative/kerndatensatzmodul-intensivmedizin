@@ -2642,18 +2642,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
-      },
-      "name" : "MII PR ICU MUV zerebraler Perfusionsdruck",
-      "description" : "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-parameter-von-beatmung"
       },
       "name" : "MII PR ICU Parameter von Beatmung",
@@ -3776,6 +3764,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-icu-muv-koerperlaenge"
+      },
+      "name" : "Muv Koerperlaenge",
+      "description" : "Beispiel: MII PR ICU MUV Koerperlaenge",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-icu-muv-koerpertemperatur-achsel"
       },
       "name" : "Muv Koerpertemperatur Achsel",
@@ -4289,6 +4289,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-muv-zerebraler-perfusionsdruck"
+      },
+      "name" : "Muv Zerebraler Perfusionsdruck",
+      "description" : "Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -4304,10 +4316,70 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-icu-score"
+      },
+      "name" : "Score",
+      "description" : "Beispiel: MII PR ICU Score",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-faces-pain-scale-revised"
+      },
+      "name" : "Score Faces Pain Scale Revised",
+      "description" : "Beispiel: MII PR ICU Score Faces Pain Scale Revised",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-gcs"
+      },
+      "name" : "Score Gcs",
+      "description" : "Beispiel: MII PR ICU Score GCS",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-numerische-ratingskala"
+      },
+      "name" : "Score Numerische Ratingskala",
+      "description" : "Beispiel: MII PR ICU Score Numerische Ratingskala",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-icu-score-rass"
       },
       "name" : "Score Rass",
       "description" : "Beispiel: MII PR ICU Score RASS",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-visuelle-analogskala"
+      },
+      "name" : "Score Visuelle Analogskala",
+      "description" : "Beispiel: MII PR ICU Score Visuelle Analogskala",
       "exampleBoolean" : true
     },
     {

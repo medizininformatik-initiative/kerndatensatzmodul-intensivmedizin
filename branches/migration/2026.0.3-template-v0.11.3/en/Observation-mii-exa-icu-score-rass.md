@@ -20,13 +20,11 @@ Profile: [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
 
 **code**: Richmond Agitation Sedation Scale score (observable entity)
 
-**subject**: Identifier: `http://example.com`/1234
-
-**encounter**: Identifier: `http://example.com`/5678
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2021-12-06 00:52:00+0100
 
-**value**: LA33959-0
+**value**: Alert and calm 0
 
 
 
@@ -45,6 +43,11 @@ Profile: [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "survey",
       "display" : "Survey"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
     }]
   }],
   "code" : {
@@ -55,24 +58,19 @@ Profile: [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
     }]
   },
   "subject" : {
+    "reference" : "Patient/mii-exa-icu-patient",
     "type" : "Patient",
     "identifier" : {
       "system" : "http://example.com",
-      "value" : "1234"
-    }
-  },
-  "encounter" : {
-    "type" : "Encounter",
-    "identifier" : {
-      "system" : "http://example.com",
-      "value" : "5678"
+      "value" : "111"
     }
   },
   "effectiveDateTime" : "2021-12-06T00:52:00+01:00",
   "valueCodeableConcept" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "LA33959-0"
+      "code" : "LA33962-4",
+      "display" : "Alert and calm 0"
     }]
   }
 }

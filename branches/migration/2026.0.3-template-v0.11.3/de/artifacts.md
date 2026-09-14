@@ -116,7 +116,6 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |  |
 | [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |  |
 | [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) |  |
-| [ MII PR ICU MUV zerebraler Perfusionsdruck  ](StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.md) | Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin. |
 | [ MII PR ICU Maximaler Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md) |  |
 | [ MII PR ICU Maximaler Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.md) |  |
 | [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) |  |
@@ -258,6 +257,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Muv Koerpergewicht Percentile Altersabhaengig  ](Observation-mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.md) | Beispiel: SD MII ICU Koerpergewicht Percentil Altersabhaengig |
 | [ Muv Koerpergroesse  ](Observation-mii-exa-icu-muv-koerpergroesse.md) | Beispiel: MII PR ICU MUV Koerpergroesse |
 | [ Muv Koerpergroesse Percentil  ](Observation-mii-exa-icu-muv-koerpergroesse-percentil.md) | Beispiel: SD MII ICU Koerpergroesse Percentil |
+| [ Muv Koerperlaenge  ](Observation-mii-exa-icu-muv-koerperlaenge.md) | Beispiel: MII PR ICU MUV Koerperlaenge |
 | [ Muv Koerpertemperatur Achsel  ](Observation-mii-exa-icu-muv-koerpertemperatur-achsel.md) | Beispiel: SD MII ICU Koerpertemperatur Achsel |
 | [ Muv Koerpertemperatur Atemwege  ](Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.md) | Beispiel: SD MII ICU Koerpertemperatur Atemwege |
 | [ Muv Koerpertemperatur Blut  ](Observation-mii-exa-icu-muv-koerpertemperatur-blut.md) | Beispiel: SD MII ICU Koerpertemperatur Blut |
@@ -301,8 +301,14 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Muv Sonstige Pulsatile Druecke Generisch  ](Observation-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.md) | Beispiel: SD MII ICU Sonstige pulsatile Druecke Generisch |
 | [ Muv Systemischer Vaskulaerer Widerstandsindex  ](Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.md) | Beispiel: SD MII ICU Systemischer Vaskulaerer Widerstandsindex |
 | [ Muv Zentralvenoeser Blutdruck  ](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) | Beispiel: SD MII ICU Zentralvenoeser Blutdruck |
+| [ Muv Zerebraler Perfusionsdruck  ](Observation-mii-exa-icu-muv-zerebraler-perfusionsdruck.md) | Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck |
 | [ Patient  ](Patient-mii-exa-icu-patient.md) | Beispielinstanz des Moduls |
+| [ Score  ](Observation-mii-exa-icu-score.md) | Beispiel: MII PR ICU Score |
+| [ Score Faces Pain Scale Revised  ](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | Beispiel: MII PR ICU Score Faces Pain Scale Revised |
+| [ Score Gcs  ](Observation-mii-exa-icu-score-gcs.md) | Beispiel: MII PR ICU Score GCS |
+| [ Score Numerische Ratingskala  ](Observation-mii-exa-icu-score-numerische-ratingskala.md) | Beispiel: MII PR ICU Score Numerische Ratingskala |
 | [ Score Rass  ](Observation-mii-exa-icu-score-rass.md) | Beispiel: MII PR ICU Score RASS |
+| [ Score Visuelle Analogskala  ](Observation-mii-exa-icu-score-visuelle-analogskala.md) | Beispiel: MII PR ICU Score Visuelle Analogskala |
 | [ Untersuchung Pupillenbefund  ](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) | Beispiel: MII PR ICU Untersuchung Pupillenbefund |
 | [ Untersuchung Pupillenform  ](Observation-mii-exa-icu-untersuchung-pupillenform.md) | Beispiel: MII PR ICU Untersuchung Pupillenform |
 | [ Untersuchung Pupillengroesse  ](Observation-mii-exa-icu-untersuchung-pupillengroesse.md) | Beispiel: MII PR ICU Untersuchung Pupillengroesse |

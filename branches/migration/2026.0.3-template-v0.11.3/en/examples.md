@@ -11,7 +11,7 @@ This page lists the example instances of the **Intensive Care** module. The temp
 
 > **Written during migration - review before release.** List generated from the build (the source carried no narrative here).
 
-The module ships **137 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.md) under its profile, and each profile page lists its own examples in the **Examples** section.
+The module ships **144 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.md) under its profile, and each profile page lists its own examples in the **Examples** section.
 
 #### Extracorporeal procedures (20)
 
@@ -104,7 +104,7 @@ The module ships **137 examples** (at least one per profile family, incl. comple
 | [Bilanz Einfuhr Spendermilch](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) | [MII PR ICU Bilanz Einfuhr Spendermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.md) |
 | [Bilanz Tagesbilanz Fluessigkeit](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md) |
 
-#### Monitoring and vital signs (53)
+#### Monitoring and vital signs (55)
 
 | | |
 | :--- | :--- |
@@ -118,6 +118,7 @@ The module ships **137 examples** (at least one per profile family, incl. comple
 | [Muv Koerpergewicht Percentile Altersabhaengig](Observation-mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.md) | SD MII ICU Koerpergewicht Percentil Altersabhaengig (ISiK) |
 | [Muv Koerpergroesse](Observation-mii-exa-icu-muv-koerpergroesse.md) | [MII PR ICU MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |
 | [Muv Koerpergroesse Percentil](Observation-mii-exa-icu-muv-koerpergroesse-percentil.md) | SD MII ICU Koerpergroesse Percentil (ISiK) |
+| [Muv Koerperlaenge](Observation-mii-exa-icu-muv-koerperlaenge.md) | [MII PR ICU MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |
 | [Muv Koerpertemperatur Achsel](Observation-mii-exa-icu-muv-koerpertemperatur-achsel.md) | SD MII ICU Koerpertemperatur Achsel (ISiK) |
 | [Muv Koerpertemperatur Atemwege](Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.md) | SD MII ICU Koerpertemperatur Atemwege (ISiK) |
 | [Muv Koerpertemperatur Blut](Observation-mii-exa-icu-muv-koerpertemperatur-blut.md) | SD MII ICU Koerpertemperatur Blut (ISiK) |
@@ -161,6 +162,7 @@ The module ships **137 examples** (at least one per profile family, incl. comple
 | [Muv Sonstige Pulsatile Druecke Generisch](Observation-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.md) | SD MII ICU Sonstige pulsatile Druecke Generisch (ISiK) |
 | [Muv Systemischer Vaskulaerer Widerstandsindex](Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.md) | SD MII ICU Systemischer Vaskulaerer Widerstandsindex (ISiK) |
 | [Muv Zentralvenoeser Blutdruck](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) | SD MII ICU Zentralvenoeser Blutdruck (ISiK) |
+| [Muv Zerebraler Perfusionsdruck](Observation-mii-exa-icu-muv-zerebraler-perfusionsdruck.md) | MII PR ICU MUV zerebraler Perfusionsdruck (ISiK) |
 
 #### Examinations (6)
 
@@ -173,11 +175,16 @@ The module ships **137 examples** (at least one per profile family, incl. comple
 | [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.md) |
 | [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | [MII PR ICU Untersuchung Pupillensymmetrie](StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.md) |
 
-#### Scores (1)
+#### Scores (6)
 
 | | |
 | :--- | :--- |
+| [Score](Observation-mii-exa-icu-score.md) | [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.md) |
+| [Score Faces Pain Scale Revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) |
+| [Score Gcs](Observation-mii-exa-icu-score-gcs.md) | [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md) |
+| [Score Numerische Ratingskala](Observation-mii-exa-icu-score-numerische-ratingskala.md) | [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) |
 | [Score Rass](Observation-mii-exa-icu-score-rass.md) | [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md) |
+| [Score Visuelle Analogskala](Observation-mii-exa-icu-score-visuelle-analogskala.md) | [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) |
 
 #### Without profile assignment (1)
 
