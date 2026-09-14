@@ -687,10 +687,36 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
+          # Publisher 2.3.2 kopiert die in publish-setup.json deklarierten
+          # Feeds beim Staging und verlangt, dass sie bereits existieren
+          # (gemessen: Run 34874691768 — "Attempt to copy .../package-feed.xml
+          # but it doesn't exist"). Fuer die Erstpublikation werden beide als
+          # leere RSS-Kanaele geseedet; die Items schreibt der Publisher.
+          # Struktur nach dem live-Feed von kerndatensatz-basis.
+          now="$(date -u '+%a, %d %b %Y %H:%M:%S +0000')"
+          for feed in package publication; do
+            cat > "site/${feed}-feed.xml" <<EOF
+          <?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
+            <channel>
+              <title>MII IG ICU ${feed} feed</title>
+              <description>FHIR ${feed}s published by the Medical Informatics Initiative (MII) ICU module</description>
+              <link>${PUBLICATION_BASE}</link>
+              <generator>Medical Informatics Initiative (MII)</generator>
+              <lastBuildDate>${now}</lastBuildDate>
+              <atom:link href="${PUBLICATION_BASE}/${feed}-feed.xml" rel="self" type="application/rss+xml"/>
+              <pubDate>${now}</pubDate>
+              <language>en</language>
+              <ttl>600</ttl>
+            </channel>
+          </rss>
+          EOF
+          done
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
+            echo "- Seeded empty package-feed.xml and publication-feed.xml"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
