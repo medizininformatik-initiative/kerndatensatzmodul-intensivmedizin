@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren | *Version*:2027.0.0-ballot.rc1 |
-| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_PR_ICU_Extrakorporales_Verfahren |
+| Active Stand: 2026-09-14 | *Maschinenlesbarer Name*:MII_PR_ICU_Extrakorporales_Verfahren |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-extrakorporales-verfahren-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -197,7 +197,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren",
   "title" : "MII PR ICU Extrakorporales Verfahren",
   "status" : "active",
-  "date" : "2026-08-31T19:21:50+00:00",
+  "date" : "2026-09-14T06:39:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

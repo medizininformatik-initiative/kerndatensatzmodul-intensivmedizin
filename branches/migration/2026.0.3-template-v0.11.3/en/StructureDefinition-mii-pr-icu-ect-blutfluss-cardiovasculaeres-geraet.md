@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet |
+| Active as of 2026-09-14 | *Computable Name*:MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet |
 
 Observation "Blood flow through cardiovascular device" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-bl
   "name" : "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
   "title" : "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
   "status" : "active",
-  "date" : "2026-08-31T19:21:50+00:00",
+  "date" : "2026-09-14T06:39:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

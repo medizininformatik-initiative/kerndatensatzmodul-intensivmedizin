@@ -24,7 +24,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 

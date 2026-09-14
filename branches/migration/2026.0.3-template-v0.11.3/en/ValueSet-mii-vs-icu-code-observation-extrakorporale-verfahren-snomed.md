@@ -24,8 +24,6 @@ Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren ei
 
 ### Expansion
 
-No Expansion for this valueset (Unsupported Code System Version)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 

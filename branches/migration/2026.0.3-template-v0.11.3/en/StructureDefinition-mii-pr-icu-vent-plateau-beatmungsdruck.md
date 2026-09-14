@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-08-31 | *Computable Name*:MII_PR_ICU_VENT_Plateau_Beatmungsdruck |
+| Active as of 2026-09-14 | *Computable Name*:MII_PR_ICU_VENT_Plateau_Beatmungsdruck |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
   "title" : "MII PR ICU Plateau Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-08-31T19:21:50+00:00",
+  "date" : "2026-09-14T06:39:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
