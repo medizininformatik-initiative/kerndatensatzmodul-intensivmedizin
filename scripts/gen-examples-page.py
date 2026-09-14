@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Beispiel-Übersicht für input/pagecontent/examples.md erzeugen (EN + DE).
 
-Die 137 Beispiele liegen als Roh-JSON in beispiele/ und kommen über
+Die 144 Beispiele liegen als Roh-JSON in beispiele/ und kommen über
 parameters.path-resource in den Build; ihre IG-Deklarationen erzeugt
 scripts/gen-example-resources.py. Diese Seite listet sie gruppiert nach
 Profil-Familie — je Zeile das Beispiel und das Profil, das es illustriert.
