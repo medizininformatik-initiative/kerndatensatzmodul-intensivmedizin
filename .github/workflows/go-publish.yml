@@ -536,11 +536,19 @@ jobs:
               docker logs publication-nginx
               exit 1
             fi
-            # "localhost" statt 127.0.0.1: der ManagedWebAccess des gepinnten
-            # Publishers 2.3.2 refust plain-http fuer alles ausser dem
-            # Literal "localhost" (gemessen: Run 34870692102, inner -go-publish
-            # build "Refusing to fetch from non-https URL ... 127.0.0.1").
-            echo "tx_url=http://localhost:8090/fhir" >> "${GITHUB_OUTPUT}"
+            # Der SSRF-Schutz des Publishers refust plain-http zum Proxy — der
+            # innere -go-publish-Build refust 127.0.0.1 (Run 34870692102), mit
+            # "localhost" bricht sogar der aeussere Build (Run 34873873406).
+            # Offizieller Mechanismus (SECURITY.md, fhir-core): ein servers-
+            # Eintrag in ~/.fhir/fhir-settings.json mit allowHttp +
+            # allowPrivateNetwork NUR fuer den lokalen Proxy; beide Felder sind
+            # seit fhir-core 2026-02/2026-07 vorhanden, also im gepinnten
+            # Publisher 2.3.2 (Build 2026-08-13) enthalten. Beide Publisher-
+            # Prozesse (aeusserer Build und innerer -go-publish-Build) lesen
+            # dieselbe Datei.
+            mkdir -p ~/.fhir
+            printf '%s\n' '{"servers":[{"url":"http://127.0.0.1:8090/fhir","authenticationType":"none","type":"fhir","allowHttp":true,"allowPrivateNetwork":true}]}' > ~/.fhir/fhir-settings.json
+            echo "tx_url=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
             echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
           else
             echo "::notice::SU-TermServ client-certificate secrets are not configured; falling back to the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand — review the QA report (QA note, not a failure)."
