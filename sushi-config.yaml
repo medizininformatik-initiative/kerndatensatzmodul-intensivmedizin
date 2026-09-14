@@ -21,7 +21,7 @@
 # │                           placeholder that appears in FILE NAMES — three:          │
 # │                           input/translations/de/ImplementationGuide-mii-ig-        │
 # │                           icu.po and the IG intro page                 │
-# │                           ImplementationGuide-mii-ig-icu-de-v2026.md in         │
+# │                           ImplementationGuide-mii-ig-icu.md in         │
 # │                           input/pagecontent/ + its German mirror. All three        │
 # │                           must be RENAMED as well as substituted                   │
 # │                           (docs/recipes/create-a-new-module.md step 4; .po         │
@@ -73,7 +73,7 @@
 
 # id pattern per the MII naming convention: mii-ig-<slug>
 # (for example, kerndatensatz-basis uses `mii-ig-base`).
-id: mii-ig-icu-de-v2026
+id: mii-ig-icu
 # Canonical pattern per the MII convention:
 # https://www.medizininformatik-initiative.de/fhir/modul-<slug>
 # (for example, kerndatensatz-basis uses
@@ -934,11 +934,11 @@ pages:
   # the kerndatensatz-basis idiom (ImplementationGuide-mii-ig-base.md there).
   # BOTH this entry's key and the two source files carry icu in
   # their NAME: like the IG-level .po catalogue, rename
-  # input/pagecontent/ImplementationGuide-mii-ig-icu-de-v2026.md and its
+  # input/pagecontent/ImplementationGuide-mii-ig-icu.md and its
   # German mirror under input/translations/de/pagecontent/ when you set your
   # slug (docs/recipes/create-a-new-module.md step 4). The CI self-check
   # substitutes and renames all of them for the template repo's own preview.
-  ImplementationGuide-mii-ig-icu-de-v2026.md:
+  ImplementationGuide-mii-ig-icu.md:
     title: MII ImplementationGuide Resource
 
   translationinfo.md:
