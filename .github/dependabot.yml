@@ -1,0 +1,23 @@
+# Dependabot – hält die in .github/workflows/ verwendeten GitHub Actions aktuell.
+# Übernommen aus kerndatensatzmodul-mikrobiologie (.github/dependabot.yml) und
+# auf das Ökosystem github-actions reduziert.
+#
+# Abweichung zur Vorlage: Dieses Repository hat keinen Integrationsbranch `dev`,
+# daher entfällt `target-branch` – Dependabot öffnet die PRs gegen den
+# Default-Branch `master`.
+#
+# Hinweis: Dependabot aktualisiert nur Referenzen, die auf einen Tag oder einen
+# Commit-SHA zeigen. Branch-Referenzen (z. B. `@master`) bleiben unberührt.
+#
+# Dependabot versteht keine FHIR-Pakete, den IG-Publisher und die IG-Templates –
+# diese werden hierdurch nicht überwacht.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ["*"]
