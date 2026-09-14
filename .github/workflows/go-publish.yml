@@ -706,6 +706,22 @@ jobs:
             test -s site/dist-hist/js/bootstrap.min.js
           fi
 
+      # Publisher 2.3.2 verlangt package-registry.json auch bei der ERST-
+      # Publikation (gemessen: Run 34867526271 — "There is no package-registry
+      # .json file"), das Template sah sie nur fuer Folgepublikationen vor
+      # (Bootstrap-Gate oben). Der Publisher generiert sie selbst aus dem
+      # Webroot. Template-Upstream-Kandidat.
+      - name: Seed package-registry.json when absent (first publication)
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -s site/package-registry.json ]]; then
+            java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" \
+              -generate-package-registry "${GITHUB_WORKSPACE}/site"
+            test -s site/package-registry.json
+            echo "::notice::package-registry.json fuer die Erstpublikation generiert."
+          fi
+
       - name: Run Publisher -go-publish
         shell: bash
         env:
