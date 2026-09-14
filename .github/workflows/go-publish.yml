@@ -565,6 +565,26 @@ jobs:
           sed -i '/^parameters:/a\  version-comparison: n/a' source/sushi-config.yaml
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
 
+      # de.gematik.isik liefert keine Snapshots (0/178 in 6.0.0, gemessen 2026-08-28);
+      # SUSHI kann die sd-mii-icu-*-Parents sonst nicht importieren. Gleicher
+      # Priming-Mechanismus wie in ig-publisher.yml (fhir-package-store,
+      # cache-store-Branch) — ohne ihn bricht der clean release build mit den
+      # bekannten Snapshot-Fehlern ab (gemessen: go-publish-Run 34867072079).
+      - name: FHIR-Paket-Cache aus dem fhir-package-store laden (ISiK-Snapshots)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: cache-store
+          path: .fhir-package-store
+          persist-credentials: false
+
+      - name: Paket-Cache nach ~/.fhir übernehmen
+        run: |
+          mkdir -p ~/.fhir/packages
+          cp -r .fhir-package-store/packages/* ~/.fhir/packages/
+          rm -rf .fhir-package-store
+          ls ~/.fhir/packages | head -20
+
       - name: Run clean release build
         shell: bash
         env:
