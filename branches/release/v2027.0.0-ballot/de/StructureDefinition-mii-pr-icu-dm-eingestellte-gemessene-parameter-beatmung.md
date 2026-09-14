@@ -113,7 +113,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
   "status" : "active",
-  "date" : "2026-09-14T16:38:57+00:00",
+  "date" : "2026-09-14T17:04:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
