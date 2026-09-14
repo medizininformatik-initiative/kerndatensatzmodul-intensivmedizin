@@ -82,7 +82,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
   "title" : "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-09-14T19:40:21+00:00",
+  "date" : "2026-09-14T20:52:16+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
