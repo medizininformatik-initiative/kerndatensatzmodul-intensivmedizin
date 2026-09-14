@@ -311,16 +311,6 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "code"
-            }
-          ],
-          "rules": "open",
-          "ordered": false
-        },
         "constraint": [
           {
             "key": "mii-icu-val-xor-dar",

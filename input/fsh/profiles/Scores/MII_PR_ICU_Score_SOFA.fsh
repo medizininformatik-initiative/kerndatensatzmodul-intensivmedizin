@@ -26,6 +26,11 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
+// slicing frame moved here from the parent MII_PR_ICU_Score (see MIGRATION FIX there)
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
 * component contains
     respiratory 0..1 MS and
     cardiovascular 0..1 MS and

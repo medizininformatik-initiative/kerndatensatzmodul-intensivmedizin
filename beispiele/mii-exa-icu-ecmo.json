@@ -3,7 +3,7 @@
   "id": "mii-exa-icu-ecmo",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-extrakorporales-verfahren"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
     ]
   },
   "status": "completed",
@@ -22,7 +22,7 @@
         "system": "http://snomed.info/sct",
         "code": "786453001",
         "display": "Venovenous extracorporeal membrane oxygenation (procedure)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   },

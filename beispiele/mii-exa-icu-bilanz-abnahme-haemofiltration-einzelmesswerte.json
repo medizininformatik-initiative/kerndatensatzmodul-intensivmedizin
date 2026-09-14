@@ -3,7 +3,7 @@
   "id": "mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
     ]
   },
   "status": "final",
@@ -18,7 +18,7 @@
           "system": "http://snomed.info/sct",
           "code": "364396009",
           "display": "Fluid balance observable (observable entity)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -29,7 +29,7 @@
         "system": "http://snomed.info/sct",
         "code": "251850009",
         "display": "Ultrafiltrate fluid loss (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
@@ -38,7 +38,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",

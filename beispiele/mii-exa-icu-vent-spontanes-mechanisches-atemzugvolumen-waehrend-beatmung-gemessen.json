@@ -3,12 +3,12 @@
   "id": "mii-exa-icu-vent-spontanes-plus-mechanisches-atemzugvolumen",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung"
     ]
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/mii-exa-icu-vent-beatmung"
     }
   ],
   "status": "final",
@@ -19,7 +19,7 @@
           "system": "http://snomed.info/sct",
           "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -34,7 +34,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -46,6 +46,6 @@
     "code": "mL"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
+    "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
   }
 }

@@ -18,7 +18,7 @@
           "system": "http://snomed.info/sct",
           "code": "364396009",
           "display": "Fluid balance observable (observable entity)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -29,7 +29,7 @@
         "system": "http://snomed.info/sct",
         "code": "1162670008",
         "display": "Volume of drainage of chyle (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
@@ -38,7 +38,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",

@@ -28,12 +28,12 @@
         "system": "http://snomed.info/sct",
         "code": "277381004",
         "display": "Stroke index (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",

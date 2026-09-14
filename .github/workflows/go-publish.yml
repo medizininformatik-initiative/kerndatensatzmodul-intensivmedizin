@@ -536,6 +536,18 @@ jobs:
               docker logs publication-nginx
               exit 1
             fi
+            # Der SSRF-Schutz des Publishers refust plain-http zum Proxy — der
+            # innere -go-publish-Build refust 127.0.0.1 (Run 34870692102), mit
+            # "localhost" bricht sogar der aeussere Build (Run 34873873406).
+            # Offizieller Mechanismus (SECURITY.md, fhir-core): ein servers-
+            # Eintrag in ~/.fhir/fhir-settings.json mit allowHttp +
+            # allowPrivateNetwork NUR fuer den lokalen Proxy; beide Felder sind
+            # seit fhir-core 2026-02/2026-07 vorhanden, also im gepinnten
+            # Publisher 2.3.2 (Build 2026-08-13) enthalten. Beide Publisher-
+            # Prozesse (aeusserer Build und innerer -go-publish-Build) lesen
+            # dieselbe Datei.
+            mkdir -p ~/.fhir
+            printf '%s\n' '{"servers":[{"url":"http://127.0.0.1:8090/fhir","authenticationType":"none","type":"fhir","allowHttp":true,"allowPrivateNetwork":true}]}' > ~/.fhir/fhir-settings.json
             echo "tx_url=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
             echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
           else
@@ -564,6 +576,26 @@ jobs:
           sed -i -E 's/^(  version-comparison(-master)?:)/  # (disabled by ENABLE_VERSION_COMPARISON) \1/' source/sushi-config.yaml
           sed -i '/^parameters:/a\  version-comparison: n/a' source/sushi-config.yaml
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
+
+      # de.gematik.isik liefert keine Snapshots (0/178 in 6.0.0, gemessen 2026-08-28);
+      # SUSHI kann die sd-mii-icu-*-Parents sonst nicht importieren. Gleicher
+      # Priming-Mechanismus wie in ig-publisher.yml (fhir-package-store,
+      # cache-store-Branch) — ohne ihn bricht der clean release build mit den
+      # bekannten Snapshot-Fehlern ab (gemessen: go-publish-Run 34867072079).
+      - name: FHIR-Paket-Cache aus dem fhir-package-store laden (ISiK-Snapshots)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: cache-store
+          path: .fhir-package-store
+          persist-credentials: false
+
+      - name: Paket-Cache nach ~/.fhir übernehmen
+        run: |
+          mkdir -p ~/.fhir/packages
+          cp -r .fhir-package-store/packages/* ~/.fhir/packages/
+          rm -rf .fhir-package-store
+          ls ~/.fhir/packages | head -20
 
       - name: Run clean release build
         shell: bash
@@ -655,10 +687,36 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
+          # Publisher 2.3.2 kopiert die in publish-setup.json deklarierten
+          # Feeds beim Staging und verlangt, dass sie bereits existieren
+          # (gemessen: Run 34874691768 — "Attempt to copy .../package-feed.xml
+          # but it doesn't exist"). Fuer die Erstpublikation werden beide als
+          # leere RSS-Kanaele geseedet; die Items schreibt der Publisher.
+          # Struktur nach dem live-Feed von kerndatensatz-basis.
+          now="$(date -u '+%a, %d %b %Y %H:%M:%S +0000')"
+          for feed in package publication; do
+            cat > "site/${feed}-feed.xml" <<EOF
+          <?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
+            <channel>
+              <title>MII IG ICU ${feed} feed</title>
+              <description>FHIR ${feed}s published by the Medical Informatics Initiative (MII) ICU module</description>
+              <link>${PUBLICATION_BASE}</link>
+              <generator>Medical Informatics Initiative (MII)</generator>
+              <lastBuildDate>${now}</lastBuildDate>
+              <atom:link href="${PUBLICATION_BASE}/${feed}-feed.xml" rel="self" type="application/rss+xml"/>
+              <pubDate>${now}</pubDate>
+              <language>en</language>
+              <ttl>600</ttl>
+            </channel>
+          </rss>
+          EOF
+          done
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
+            echo "- Seeded empty package-feed.xml and publication-feed.xml"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
@@ -684,6 +742,22 @@ jobs:
             test -s site/history.css
             test -s site/assets-hist/js/jquery.js
             test -s site/dist-hist/js/bootstrap.min.js
+          fi
+
+      # Publisher 2.3.2 verlangt package-registry.json auch bei der ERST-
+      # Publikation (gemessen: Run 34867526271 — "There is no package-registry
+      # .json file"), das Template sah sie nur fuer Folgepublikationen vor
+      # (Bootstrap-Gate oben). Der Publisher generiert sie selbst aus dem
+      # Webroot. Template-Upstream-Kandidat.
+      - name: Seed package-registry.json when absent (first publication)
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -s site/package-registry.json ]]; then
+            java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" \
+              -generate-package-registry "${GITHUB_WORKSPACE}/site"
+            test -s site/package-registry.json
+            echo "::notice::package-registry.json fuer die Erstpublikation generiert."
           fi
 
       - name: Run Publisher -go-publish

@@ -8,7 +8,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/mii-exa-icu-ecmo"
     }
   ],
   "status": "final",
@@ -19,7 +19,7 @@
           "system": "http://snomed.info/sct",
           "code": "182744004",
           "display": "Extracorporeal circulation procedure (procedure)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -30,7 +30,7 @@
         "system": "http://snomed.info/sct",
         "code": "79063001",
         "display": "Gas flow rate (v) (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
@@ -40,7 +40,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -52,6 +52,6 @@
     "code": "L/min"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo"
   }
 }
