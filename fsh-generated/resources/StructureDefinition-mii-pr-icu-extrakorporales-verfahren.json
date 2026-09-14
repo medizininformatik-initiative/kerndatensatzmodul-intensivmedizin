@@ -181,18 +181,6 @@
         "mustSupport": true
       },
       {
-        "id": "Procedure.encounter",
-        "path": "Procedure.encounter",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
         "type": [
