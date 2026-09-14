@@ -20,7 +20,7 @@ Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr
 
 **code**: Fluid balance status (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-24 09:30:10+0100
 
@@ -67,7 +67,7 @@ Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",

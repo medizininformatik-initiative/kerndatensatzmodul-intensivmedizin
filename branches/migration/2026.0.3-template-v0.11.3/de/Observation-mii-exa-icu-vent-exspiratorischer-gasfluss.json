@@ -7,10 +7,10 @@
   "language" : "de",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-vent-exspiratorischer-gasfluss</b></p><a name=\"de-mii-exa-icu-vent-exspiratorischer-gasfluss\"> </a><a name=\"de-hcmii-exa-icu-vent-exspiratorischer-gasfluss\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.html\">MII PR ICU Exspiratorischer Gasfluss</a></p></div><p><b>partOf</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example\">Procedure/example</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 60792-9}, {urn:iso:std:iso:11073:10101 151944}\">Expiratory gas flow Respiratory system airway --on ventilator</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111\">Patient/111</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 60.0 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_Beatmung\">DeviceMetric/Example_Gemessene_Parameter_Beatmung</a></p></div>"
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-vent-exspiratorischer-gasfluss</b></p><a name=\"de-mii-exa-icu-vent-exspiratorischer-gasfluss\"> </a><a name=\"de-hcmii-exa-icu-vent-exspiratorischer-gasfluss\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.html\">MII PR ICU Exspiratorischer Gasfluss</a></p></div><p><b>partOf</b>: <a href=\"Procedure-mii-exa-icu-vent-beatmung.html\">Procedure Positive pressure airway ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 40617009}\">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 60792-9}, {urn:iso:std:iso:11073:10101 151944}\">Expiratory gas flow Respiratory system airway --on ventilator</span></p><p><b>subject</b>: <a href=\"Patient-mii-exa-icu-patient.html\">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 60.0 L/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL/min = 'L/min')</span></p><p><b>device</b>: <a href=\"DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.html\">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>"
   },
   "partOf" : [{
-    "reference" : "Procedure/example"
+    "reference" : "Procedure/mii-exa-icu-vent-beatmung"
   }],
   "status" : "final",
   "category" : [{
@@ -34,7 +34,7 @@
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",
@@ -46,6 +46,6 @@
     "code" : "L/min"
   },
   "device" : {
-    "reference" : "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
+    "reference" : "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
   }
 }

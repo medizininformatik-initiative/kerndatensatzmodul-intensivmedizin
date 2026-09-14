@@ -20,7 +20,7 @@ Profile: [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfr
 
 **code**: Respiratory rate (observable entity)
 
-**subject**: [Patient/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
@@ -58,7 +58,7 @@ Profile: [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfr
     }]
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",

@@ -13,7 +13,7 @@ Diese Seite führt die Beispielinstanzen des Moduls **Intensive Care** auf. Die 
 
 > **Written during migration - review before release.** Aus dem Build generierte Liste (Quelle hatte hier kein Narrativ).
 
-Das Modul liefert **136 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.md) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt **Examples**.
+Das Modul liefert **137 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.md) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt **Examples**.
 
 #### Parameter von extrakorporalen Verfahren (20)
 
@@ -177,5 +177,11 @@ Das Modul liefert **136 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 
 #### Scores (1)
 
-| Beispiel | illustriert das Profil | |—|—| | [Score Rass](Observation-mii-exa-icu-score-rass.md) | [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md) | 
+| | |
+| :--- | :--- |
+| [Score Rass](Observation-mii-exa-icu-score-rass.md) | [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md) |
+
+#### Ohne Profilzuordnung (1)
+
+| Beispiel | illustriert das Profil | |—|—| | [Patient](Patient-mii-exa-icu-patient.md) | — | 
 

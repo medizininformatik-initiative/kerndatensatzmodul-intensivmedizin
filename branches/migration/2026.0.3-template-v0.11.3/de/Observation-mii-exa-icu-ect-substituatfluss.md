@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substituatfluss.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure Venovenous extracorporeal membrane oxygenation (procedure)](Procedure-mii-exa-icu-ecmo.md)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substit
 
 **code**: Substitution flow rate (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 300.0 mL/h (Details: UCUM codemL/h = 'mL/h')
 
-**device**: [DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren)
+**device**: [DeviceMetric: type = Extracorporeal circulation procedure (procedure); category = setting](DeviceMetric-mii-exa-icu-ect-eingestellte-parameter-ecmo.md)
 
 
 
@@ -42,7 +42,7 @@ Profile: [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substit
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatfluss"]
   },
   "partOf" : [{
-    "reference" : "Procedure/example"
+    "reference" : "Procedure/mii-exa-icu-ecmo"
   }],
   "status" : "final",
   "category" : [{
@@ -62,7 +62,7 @@ Profile: [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substit
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",
@@ -74,7 +74,7 @@ Profile: [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substit
     "code" : "mL/h"
   },
   "device" : {
-    "reference" : "DeviceMetric/Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference" : "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo"
   }
 }
 

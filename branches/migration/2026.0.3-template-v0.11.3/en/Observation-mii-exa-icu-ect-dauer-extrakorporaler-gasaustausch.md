@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure Venovenous extracorporeal membrane oxygenation (procedure)](Procedure-mii-exa-icu-ecmo.md)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii
 
 **code**: Extracorporeal gas exchange duration (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 72.0 h (Details: UCUM codeh = 'h')
 
-**device**: [DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren)
+**device**: [DeviceMetric: type = Extracorporeal circulation procedure (procedure); category = measurement](DeviceMetric-mii-exa-icu-ect-gemessene-parameter-ecmo.md)
 
 
 
@@ -42,7 +42,7 @@ Profile: [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch"]
   },
   "partOf" : [{
-    "reference" : "Procedure/example"
+    "reference" : "Procedure/mii-exa-icu-ecmo"
   }],
   "status" : "final",
   "category" : [{
@@ -62,7 +62,7 @@ Profile: [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",
@@ -74,7 +74,7 @@ Profile: [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii
     "code" : "h"
   },
   "device" : {
-    "reference" : "DeviceMetric/Example_Gemessene_Parameter_extrakorporale_Verfahren"
+    "reference" : "DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"
   }
 }
 

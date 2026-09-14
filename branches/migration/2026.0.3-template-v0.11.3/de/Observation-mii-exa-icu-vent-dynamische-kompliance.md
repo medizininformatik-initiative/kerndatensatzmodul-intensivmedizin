@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure Positive pressure airway ventilation (regime/therapy)](Procedure-mii-exa-icu-vent-beatmung.md)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
 
 **code**: Dynamic lung compliance
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 200.0 mL/cm[H2O] (Details: UCUM codemL/cm[H2O] = 'mL/cm[H2O]')
 
-**device**: [DeviceMetric/Example_Gemessene_Parameter_Beatmung](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Gemessene_Parameter_Beatmung)
+**device**: [DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement](DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.md)
 
 
 
@@ -42,7 +42,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"]
   },
   "partOf" : [{
-    "reference" : "Procedure/example"
+    "reference" : "Procedure/mii-exa-icu-vent-beatmung"
   }],
   "status" : "final",
   "category" : [{
@@ -72,7 +72,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",
@@ -84,7 +84,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
     "code" : "mL/cm[H2O]"
   },
   "device" : {
-    "reference" : "DeviceMetric/Example_Gemessene_Parameter_Beatmung"
+    "reference" : "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
   }
 }
 

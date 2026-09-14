@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md)
 
-**partOf**: [Example_extrakorporales_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/310)
+**partOf**: [Extrakorporales Verfahren (ECMO, Beispiel)](Procedure-mii-exa-icu-ecmo.md)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii
 
 **code**: Rate of blood flow through cardiovascular device (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 2.0 L/min (Details: UCUM codeL/min = 'L/min')
 
-**device**: [Example_Eingestellte_Parameter_extrakorporale_Verfahren](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/311)
+**device**: [Eingestellte Parameter extrakorporales Verfahren (Beispiel)](DeviceMetric-mii-exa-icu-ect-eingestellte-parameter-ecmo.md)
 
 
 
@@ -42,8 +42,8 @@ Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"]
   },
   "partOf" : [{
-    "reference" : "Procedure/310",
-    "display" : "Example_extrakorporales_Verfahren"
+    "reference" : "Procedure/mii-exa-icu-ecmo",
+    "display" : "Extrakorporales Verfahren (ECMO, Beispiel)"
   }],
   "status" : "final",
   "category" : [{
@@ -63,7 +63,7 @@ Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",
@@ -75,8 +75,8 @@ Profile: [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii
     "code" : "L/min"
   },
   "device" : {
-    "reference" : "DeviceMetric/311",
-    "display" : "Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference" : "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo",
+    "display" : "Eingestellte Parameter extrakorporales Verfahren (Beispiel)"
   }
 }
 

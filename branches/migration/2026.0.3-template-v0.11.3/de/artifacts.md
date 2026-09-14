@@ -250,7 +250,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Ect Venoeser Druck  ](Observation-mii-exa-icu-ect-venoeser-druck.md) | Beispiel: MII PR ICU Venoeser Druck |
 | [ Muv Arterieller Blutdruck  ](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) | Beispiel: MII PR ICU MUV Arterieller Blutdruck |
 | [ Muv Atemfrequenz  ](Observation-mii-exa-icu-muv-atemfrequenz.md) | Beispiel: MII PR ICU MUV Atemfrequenz |
-| [ Muv Herzfrequenz  ](Observation-mii-exa-icu-muv-herzfrequenz.md) | Beispielinstanz des Moduls |
+| [ Muv Herzfrequenz  ](Observation-mii-exa-icu-muv-herzfrequenz.md) | Beispiel: MII PR ICU MUV Herzfrequenz |
 | [ Muv Herzzeitvolumen  ](Observation-mii-exa-icu-muv-herzzeitvolumen.md) | Beispiel: SD MII ICU Herzzeitvolumen |
 | [ Muv Ideales Koerpergewicht  ](Observation-mii-exa-icu-muv-ideales-koerpergewicht.md) | Beispiel: SD MII ICU Ideales Koerpergewicht |
 | [ Muv Intrakranieller Druck Icp  ](Observation-mii-exa-icu-muv-intrakranieller-druck-icp.md) | Beispiel: SD MII ICU Intrakranieller Druck ICP |
@@ -301,6 +301,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Muv Sonstige Pulsatile Druecke Generisch  ](Observation-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.md) | Beispiel: SD MII ICU Sonstige pulsatile Druecke Generisch |
 | [ Muv Systemischer Vaskulaerer Widerstandsindex  ](Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.md) | Beispiel: SD MII ICU Systemischer Vaskulaerer Widerstandsindex |
 | [ Muv Zentralvenoeser Blutdruck  ](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) | Beispiel: SD MII ICU Zentralvenoeser Blutdruck |
+| [ Patient  ](Patient-mii-exa-icu-patient.md) | Beispielinstanz des Moduls |
 | [ Score Rass  ](Observation-mii-exa-icu-score-rass.md) | Beispiel: MII PR ICU Score RASS |
 | [ Untersuchung Pupillenbefund  ](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) | Beispiel: MII PR ICU Untersuchung Pupillenbefund |
 | [ Untersuchung Pupillenform  ](Observation-mii-exa-icu-untersuchung-pupillenform.md) | Beispiel: MII PR ICU Untersuchung Pupillenform |

@@ -3128,7 +3128,7 @@
         <reference value="Observation/mii-exa-icu-muv-herzfrequenz"/>
       </reference>
       <name value="Muv Herzfrequenz"/>
-      <description value="Beispielinstanz des Moduls"/>
+      <description value="Beispiel: MII PR ICU MUV Herzfrequenz"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -3679,6 +3679,17 @@
       </reference>
       <name value="Muv Zentralvenoeser Blutdruck"/>
       <description value="Beispiel: SD MII ICU Zentralvenoeser Blutdruck"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/mii-exa-icu-patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Beispielinstanz des Moduls"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

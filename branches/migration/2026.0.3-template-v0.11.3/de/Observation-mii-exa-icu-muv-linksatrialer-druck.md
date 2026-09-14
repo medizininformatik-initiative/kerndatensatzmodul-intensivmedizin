@@ -20,7 +20,7 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
 
 **code**: Left atrial pressure
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100
 
@@ -70,7 +70,7 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectiveDateTime" : "2019-12-23T09:30:10+01:00",
   "component" : [{

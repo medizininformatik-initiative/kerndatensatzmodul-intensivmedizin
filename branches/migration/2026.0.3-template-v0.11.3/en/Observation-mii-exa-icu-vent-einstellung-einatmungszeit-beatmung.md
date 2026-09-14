@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md)
 
-**partOf**: [Procedure/example](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/example)
+**partOf**: [Procedure Positive pressure airway ventilation (regime/therapy)](Procedure-mii-exa-icu-vent-beatmung.md)
 
 **status**: Final
 
@@ -22,13 +22,13 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
 
 **code**: Inspiratory time (observable entity)
 
-**subject**: [Patient/111](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/111)
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
 **value**: 0.5 s (Details: UCUM codes = 's')
 
-**device**: [DeviceMetric/Example_Eingestellte_Parameter_Beatmung](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.org/packages/de.basisprofil.r4/DeviceMetric/Example_Eingestellte_Parameter_Beatmung)
+**device**: [DeviceMetric: type = Artificial ventilation (regime/therapy); category = setting](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md)
 
 
 
@@ -42,7 +42,7 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"]
   },
   "partOf" : [{
-    "reference" : "Procedure/example"
+    "reference" : "Procedure/mii-exa-icu-vent-beatmung"
   }],
   "status" : "final",
   "category" : [{
@@ -72,7 +72,7 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
     }]
   },
   "subject" : {
-    "reference" : "Patient/111"
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod" : {
     "start" : "2019-12-23T09:30:10+01:00",
@@ -84,7 +84,7 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
     "code" : "s"
   },
   "device" : {
-    "reference" : "DeviceMetric/Example_Eingestellte_Parameter_Beatmung"
+    "reference" : "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
   }
 }
 
