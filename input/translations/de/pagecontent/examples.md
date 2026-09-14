@@ -11,7 +11,7 @@ Patientendaten in Beispielen verwenden.
 > **Written during migration - review before release.** Aus dem Build generierte Liste (Quelle hatte hier kein Narrativ).
 {: .ig-highlight .ig-highlight-blue}
 
-Das Modul liefert **136 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.html) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt *Examples*.
+Das Modul liefert **137 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.html) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt *Examples*.
 
 <!-- BEGIN generiert: scripts/gen-examples-page.py -->
 
@@ -180,4 +180,10 @@ Das Modul liefert **136 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | Beispiel | illustriert das Profil |
 |---|---|
 | [Score Rass](Observation-mii-exa-icu-score-rass.html) | [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.html) |
+
+#### Ohne Profilzuordnung (1)
+
+| Beispiel | illustriert das Profil |
+|---|---|
+| [Patient](Patient-mii-exa-icu-patient.html) | — |
 <!-- ENDE generiert -->

@@ -8,8 +8,8 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/310",
-      "display": "Example_extrakorporales_Verfahren"
+      "reference": "Procedure/mii-exa-icu-ecmo",
+      "display": "Extrakorporales Verfahren (ECMO, Beispiel)"
     }
   ],
   "status": "final",
@@ -36,7 +36,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -48,7 +48,7 @@
     "code": "L/min"
   },
   "device": {
-    "reference": "DeviceMetric/311",
-    "display": "Example_Eingestellte_Parameter_extrakorporale_Verfahren"
+    "reference": "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo",
+    "display": "Eingestellte Parameter extrakorporales Verfahren (Beispiel)"
   }
 }

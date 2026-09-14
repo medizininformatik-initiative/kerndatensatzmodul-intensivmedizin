@@ -13,7 +13,7 @@ examples.
 > **Written during migration - review before release.** List generated from the build (the source carried no narrative here).
 {: .ig-highlight .ig-highlight-blue}
 
-The module ships **136 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
+The module ships **137 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
 
 <!-- BEGIN generiert: scripts/gen-examples-page.py -->
 
@@ -182,4 +182,10 @@ The module ships **136 examples** (at least one per profile family, incl. comple
 | Example | illustrates profile |
 |---|---|
 | [Score Rass](Observation-mii-exa-icu-score-rass.html) | [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.html) |
+
+#### Without profile assignment (1)
+
+| Example | illustrates profile |
+|---|---|
+| [Patient](Patient-mii-exa-icu-patient.html) | — |
 <!-- ENDE generiert -->

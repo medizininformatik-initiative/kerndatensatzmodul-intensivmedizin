@@ -476,7 +476,7 @@ resources:
     exampleBoolean: true
   Observation/mii-exa-icu-muv-herzfrequenz:
     name: "Muv Herzfrequenz"
-    description: "Beispielinstanz des Moduls"
+    description: "Beispiel: MII PR ICU MUV Herzfrequenz"
     exampleBoolean: true
   Observation/mii-exa-icu-muv-herzzeitvolumen:
     name: "Muv Herzzeitvolumen"
@@ -677,6 +677,10 @@ resources:
   Observation/mii-exa-icu-muv-zentralvenoeser-blutdruck:
     name: "Muv Zentralvenoeser Blutdruck"
     description: "Beispiel: SD MII ICU Zentralvenoeser Blutdruck"
+    exampleBoolean: true
+  Patient/mii-exa-icu-patient:
+    name: "Patient"
+    description: "Beispielinstanz des Moduls"
     exampleBoolean: true
   Observation/mii-exa-icu-score-rass:
     name: "Score Rass"

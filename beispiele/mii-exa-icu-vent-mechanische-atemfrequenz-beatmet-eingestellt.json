@@ -8,7 +8,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/mii-exa-icu-vent-beatmung"
     }
   ],
   "status": "final",
@@ -45,7 +45,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -57,6 +57,6 @@
     "code": "{Breaths}/min"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Eingestellte_Parameter_Beatmung"
+    "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
   }
 }
