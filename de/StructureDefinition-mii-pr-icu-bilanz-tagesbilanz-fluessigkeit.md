@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Tagesbilanz Fluessigkeit - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Bilanz Tagesbilanz Fluessigkeit - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit |
 
 Dies ist eine Ausprägung des generischen Profils zu [Bilanz (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -88,11 +88,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
   "title" : "MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
   "status" : "active",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

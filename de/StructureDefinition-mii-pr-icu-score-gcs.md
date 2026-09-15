@@ -1,4 +1,4 @@
-# MII PR ICU Score GCS - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Score GCS - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
 
 **Usages:**
@@ -102,11 +102,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-score-gcs",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Score_GCS",
   "title" : "MII PR ICU Score GCS",
   "status" : "active",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG ICU v2027.0.0-ballot</title>
+    <title>Changelog - MII IG ICU v2027.0.0-ballot.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG ICU</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot - 
+            <span style="display:inline-block;">2027.0.0-ballot.3 - 
 
 
 
@@ -304,7 +304,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII IG ICU (v2027.0.0-ballot: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the MII IG ICU (v2027.0.0-ballot.3: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -320,13 +320,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#changes-in-202700-ballot" id="markdown-toc-changes-in-202700-ballot">Changes in 2027.0.0-ballot</a>    <ul>
+      <li><a href="#known-issues" id="markdown-toc-known-issues">Known issues</a></li>
+    </ul>
+  </li>
+  <li><a href="#changes-in-202600" id="markdown-toc-changes-in-202600">Changes in 2026.0.0</a>    <ul>
+      <li><a href="#️-breaking-changes" id="markdown-toc-️-breaking-changes">⚠️ Breaking Changes</a></li>
+    </ul>
+  </li>
+  <li><a href="#changes-in-202504" id="markdown-toc-changes-in-202504">Changes in 2025.0.4</a></li>
+  <li><a href="#changes-in-202502" id="markdown-toc-changes-in-202502">Changes in 2025.0.2</a></li>
+  <li><a href="#changes-in-202501" id="markdown-toc-changes-in-202501">Changes in 2025.0.1</a></li>
+  <li><a href="#änderungen-in-202500" id="markdown-toc-änderungen-in-202500">Änderungen in 2025.0.0</a></li>
+  <li><a href="#changes-in-202400-alpha2" id="markdown-toc-changes-in-202400-alpha2">Changes in 2024.0.0-alpha2</a></li>
+  <li><a href="#changes-in-202400-alpha1" id="markdown-toc-changes-in-202400-alpha1">Changes in 2024.0.0-alpha1</a></li>
+</ul>
 
+</div>
 <!-- markdownlint-disable MD041 -->
 <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Release-Notes.page.md -->
 <p>All changes are listed here.</p>
+
+<h2 id="changes-in-202700-ballot">Changes in 2027.0.0-ballot</h2>
+
+<p>Ballot release — first formal publication of this module through the HL7 IG Publisher, based on the MII KDS module template.</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">BREAKING</code></strong> Migration to the MII KDS module template: the guide is now published on GitHub Pages (this site) instead of Simplifier; page locations changed (see the navigation), the ImplementationGuide id is now <code class="language-plaintext highlighter-rouge">mii-ig-icu</code></li>
+  <li>Dependencies raised to the 2027 generation (<code class="language-plaintext highlighter-rouge">kerndatensatz.base</code>, <code class="language-plaintext highlighter-rouge">kerndatensatz.meta</code> 2027.0.0-ballot) and ISiK 6.0.0</li>
+  <li>The profile <em>Zerebraler Perfusionsdruck</em> moved to the ISiK 6 package and was removed from this module</li>
+  <li>New examples: all score profiles (GCS, Faces Pain Scale, NRS, VAS), body height, cerebral perfusion pressure — 144 examples in total, now validated in CI for the first time</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> Example QA overhaul: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing <code class="language-plaintext highlighter-rouge">Quantity.unit</code> values added; category codings corrected; codes and display texts aligned with the profiles' pattern codings</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired and anchored at the <code class="language-plaintext highlighter-rouge">code</code> element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version</li>
+</ul>
+
+<h3 id="known-issues">Known issues</h3>
+
+<ul>
+  <li>The QA report still lists a substantial number of errors. <strong>All of them are triaged and none is a content defect of this module</strong> — the dominant causes are an IG-Publisher bug in batch terminology validation (upstream fix pending: <a href="https://github.com/hapifhir/org.hl7.fhir.core/pull/2460">org.hl7.fhir.core#2460</a>), display texts pinned in profile patterns that differ from the official terminology displays (<a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79">#79</a>), and terminology-server semantics for version-stamped SNOMED CT codings (<a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a>). Full breakdown: <em>Examples</em> page, section "Known validation issues".</li>
+  <li>Two profile design conflicts are under discussion: the respiratory-rate/ECT-pressure category bindings versus the inherited FHIR core <code class="language-plaintext highlighter-rouge">vital-signs</code> requirement, and the body-site temperature codes versus <code class="language-plaintext highlighter-rouge">ISiKKernTempSctVS</code> (ISiK 6.0.0).</li>
+  <li><code class="language-plaintext highlighter-rouge">full-ig.zip</code> is not offered on the Downloads page — the archive exceeds GitHub's 100 MB file limit.</li>
+  <li>The package has not been published to Simplifier yet; use the <code class="language-plaintext highlighter-rouge">package.tgz</code> of this publication in the meantime.</li>
+</ul>
 
 <h2 id="changes-in-202600">Changes in 2026.0.0</h2>
 
@@ -433,8 +470,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 15, 2026 06:46+0000">2026-09-15</span>
+          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 15, 2026 22:20+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

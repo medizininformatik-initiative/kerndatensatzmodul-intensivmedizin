@@ -1,4 +1,4 @@
-# MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren |
 
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von extrakorporalen Verfahren](profiles.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -86,11 +86,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status" : "active",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -154,7 +154,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
         "key" : "mii-icu-loinc-sct-dgai-ieee11073",
         "severity" : "error",
         "human" : "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
-        "expression" : "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()",
+        "expression" : "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()",
         "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
       }]
     },

@@ -1,4 +1,4 @@
-# MII PR ICU Score CAM-ICU - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Score CAM-ICU - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu | *Version*:2027.0.0-ballot.3 |
 | Draft as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Score_CAM_ICU |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-score-cam-icu",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Score_CAM_ICU",
   "title" : "MII PR ICU Score CAM-ICU",
   "status" : "draft",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

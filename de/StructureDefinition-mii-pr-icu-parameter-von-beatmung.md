@@ -1,4 +1,4 @@
-# MII PR ICU Parameter von Beatmung - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Parameter von Beatmung - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung | *Version*:2027.0.0-ballot |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Parameter_Von_Beatmung |
 
 **Usages:**
@@ -117,11 +117,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-parameter-von-beatmung",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Parameter_Von_Beatmung",
   "title" : "MII PR ICU Parameter von Beatmung",
   "status" : "active",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -173,13 +173,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "id" : "Observation",
       "path" : "Observation",
       "constraint" : [{
-        "key" : "mii-icu-loinc-sct-dgai-ieee11073",
-        "severity" : "error",
-        "human" : "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
-        "expression" : "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
-      },
-      {
         "key" : "mii-icu-comp-xor-val",
         "severity" : "error",
         "human" : "If there is no component or hasMember element then either a value[x] or a data absent reason must be present",
@@ -246,6 +239,13 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
+      "constraint" : [{
+        "key" : "mii-icu-loinc-sct-dgai-ieee11073",
+        "severity" : "error",
+        "human" : "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
+        "expression" : "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
+      }],
       "mustSupport" : true
     },
     {

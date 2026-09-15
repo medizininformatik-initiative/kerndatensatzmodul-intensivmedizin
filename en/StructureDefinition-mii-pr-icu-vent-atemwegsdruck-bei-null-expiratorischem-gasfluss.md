@@ -1,4 +1,4 @@
-# MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss | *Version*:2027.0.0-ballot.3 |
 | Active as of 2026-09-15 | *Computable Name*:MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss-intro.md
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
   "title" : "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
   "status" : "active",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

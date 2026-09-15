@@ -1,4 +1,4 @@
-# MII PR ICU Score - MII IG ICU v2027.0.0-ballot
+# MII PR ICU Score - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2027.0.0-ballot |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2027.0.0-ballot.3 |
 | Draft as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Score |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-score",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
-  "version" : "2027.0.0-ballot",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-09-15T06:46:19+00:00",
+  "date" : "2026-09-15T22:20:02+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -187,7 +187,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
         "key" : "mii-icu-loinc-sct-dgai-ieee11073",
         "severity" : "error",
         "human" : "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
-        "expression" : "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()",
+        "expression" : "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()",
         "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score"
       }]
     },
@@ -240,7 +240,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
     {
       "id" : "Observation.code.coding:sct.version",
       "path" : "Observation.code.coding.version",
-      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260301",
+      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "mustSupport" : true
     },
     {

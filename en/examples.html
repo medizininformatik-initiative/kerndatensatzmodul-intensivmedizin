@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Examples - MII IG ICU v2027.0.0-ballot</title>
+    <title>Examples - MII IG ICU v2027.0.0-ballot.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -138,7 +138,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG ICU</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot - 
+            <span style="display:inline-block;">2027.0.0-ballot.3 - 
 
 
 
@@ -301,7 +301,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the MII IG ICU (v2027.0.0-ballot: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the MII IG ICU (v2027.0.0-ballot.3: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Examples</h2>
   
 
@@ -999,53 +999,54 @@ examples.</p>
 
 <h3 id="known-validation-issues">Known validation issues</h3>
 
-<p>With the migration to the IG-Publisher toolchain, the module's raw JSON examples
-are validated against their profiles <strong>for the first time</strong> — previously they were
-published via Simplifier without passing through any validation pipeline. The QA
-report therefore surfaces a backlog of long-standing findings. They are triaged,
-tracked as GitHub issues, and deliberately <strong>not</strong> part of the migration scope:</p>
+<p>The examples of this module are validated in CI for the first time since the migration to the
+IG Publisher toolchain. All findings of the QA report are triaged; the remaining errors are
+<strong>not module content defects</strong> but have documented external causes. Publisher errors cannot be
+suppressed, so they remain visible in the QA report until the upstream fixes land:</p>
 
 <table>
   <thead>
     <tr>
       <th>Cluster</th>
-      <th style="text-align: right">Errors</th>
-      <th>Tracked in</th>
+      <th style="text-align: right">~Errors</th>
+      <th>Cause and tracking</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Required code.coding slices: correct code present, display text differs from the profile's pattern (41×) or coding missing (2×)</td>
-      <td style="text-align: right">43</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79">#79</a></td>
+      <td>Codes reported "not valid" when validating ValueSet composes</td>
+      <td style="text-align: right">~450</td>
+      <td>IG Publisher sends malformed <code class="language-plaintext highlighter-rouge">$batch-validate-code</code> requests (no <code class="language-plaintext highlighter-rouge">url</code>/<code class="language-plaintext highlighter-rouge">tx-resource</code>); spec-strict servers reject every slot. Upstream fix pending: <a href="https://github.com/hapifhir/org.hl7.fhir.core/pull/2460">org.hl7.fhir.core#2460</a> — see <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
     </tr>
     <tr>
-      <td>Example and profile pattern encode <em>different</em> concepts in the same code system — needs clinical review</td>
-      <td style="text-align: right">9</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/80">#80</a></td>
+      <td>"Wrong Display Name" on LOINC/IEEE-11073 codings</td>
+      <td style="text-align: right">~50</td>
+      <td>The profiles pin display texts in <code class="language-plaintext highlighter-rouge">patternCoding</code> that differ from the official terminology displays. Resolution is a profile decision (drop displays from patterns) — see <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79">#79</a></td>
     </tr>
     <tr>
-      <td>Missing <code class="language-plaintext highlighter-rouge">Quantity.unit</code> (52×), balance codings matching no slice (21×), vital-signs category/components (7×)</td>
-      <td style="text-align: right">80</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/81">#81</a></td>
+      <td>German-edition SNOMED CT codings reported "not in ValueSet"</td>
+      <td style="text-align: right">~15</td>
+      <td>Terminology-server semantics for version-stamped codings; codes are provably members. Full reproduction: <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
     </tr>
     <tr>
-      <td>Invalid <code class="language-plaintext highlighter-rouge">$loinc</code> FHIRPath expression in ventilation pressure profiles (also present on master)</td>
-      <td style="text-align: right">35</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/82">#82</a></td>
+      <td>Score profiles: "slicing cannot be evaluated"</td>
+      <td style="text-align: right">~26</td>
+      <td><code class="language-plaintext highlighter-rouge">$this</code> discriminator evaluation, under analysis</td>
     </tr>
     <tr>
-      <td>ISiK 6.0.0: body-site-specific temperature codes not in <code class="language-plaintext highlighter-rouge">ISiKKernTempSctVS</code>; profile pins on unavailable SNOMED CT versions</td>
-      <td style="text-align: right">~11</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
+      <td>Respiratory-rate / ECT pressure category conflicts</td>
+      <td style="text-align: right">~10</td>
+      <td>Profiles inherit the FHIR core <code class="language-plaintext highlighter-rouge">vital-signs</code> category requirement <strong>and</strong> bind categories to module value sets — mutually unsatisfiable; needs a profile decision</td>
+    </tr>
+    <tr>
+      <td>Body-site temperature codes not in <code class="language-plaintext highlighter-rouge">ISiKKernTempSctVS</code></td>
+      <td style="text-align: right">~9</td>
+      <td>Content conflict with ISiK 6.0.0 — tracked in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
     </tr>
   </tbody>
 </table>
 
-<p>A further ~450 errors stem from a terminology-server request incompatibility of the
-IG Publisher (<code class="language-plaintext highlighter-rouge">$validate-code</code> request format) and vary between builds — they are
-infrastructure, not content. Reference resolution and SNOMED CT version stamps of
-the examples were already fixed during migration (1251 → 777 errors).</p>
+<p>History and measurements per fix: issues <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues">#79–#90</a>.</p>
 
 
 
@@ -1071,8 +1072,8 @@ the examples were already fixed during migration (1251 → 777 errors).</p>
 
 
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 15, 2026 06:46+0000">2026-09-15</span>
+          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 15, 2026 22:20+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.

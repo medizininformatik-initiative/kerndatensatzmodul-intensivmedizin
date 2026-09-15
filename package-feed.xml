@@ -4,12 +4,23 @@
     <description>FHIR packages published by the Medical Informatics Initiative (MII) ICU module</description>
     <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin</link>
     <generator>Medical Informatics Initiative (MII)</generator>
-    <lastBuildDate>Tue, 15 Sep 2026 06:21:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 09:53:43 +0000</lastBuildDate>
     <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Sep 2026 06:21:04 +0000</pubDate>
+    <pubDate>Tue, 15 Sep 2026 09:53:43 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
   
+    <item>
+      <title>de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3</title>
+      <description>Ballot correction release of the MII Core Data Set module Intensivmedizin (ICU): example and profile QA fixes on top of 2027.0.0-ballot.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/2027.0.0-ballot.3/package.tgz</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/2027.0.0-ballot.3/package.tgz</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 15 Sep 2026 09:53:43 +0000</pubDate>
+      <fhir:details>Publication run at 15/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (33 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot</title>
       <description>Ballot release of the MII Core Data Set module Intensivmedizin (ICU) - first formal release on the MII KDS module template.</description>
