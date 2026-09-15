@@ -29,12 +29,12 @@
       {
         "system": "http://loinc.org",
         "code": "76154-4",
-        "display": "Airway pressure delta --on ventilator"
+        "display": "Airway pressure delta^on ventilator"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152720",
-        "display": "Inspiratory airway pressure relative to PEEP or BAP"
+        "display": "Inspiratory airway pressure relative to PEEP or BAP."
       }
     ]
   },
