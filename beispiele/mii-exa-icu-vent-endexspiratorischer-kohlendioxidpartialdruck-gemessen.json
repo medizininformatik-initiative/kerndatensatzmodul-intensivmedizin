@@ -54,7 +54,8 @@
   "valueQuantity": {
     "value": 40.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mm[Hg]"
+    "code": "mm[Hg]",
+    "unit": "mm[Hg]"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"

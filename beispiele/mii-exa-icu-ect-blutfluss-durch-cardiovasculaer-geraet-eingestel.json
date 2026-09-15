@@ -45,7 +45,8 @@
   "valueQuantity": {
     "value": 2.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/min"
+    "code": "L/min",
+    "unit": "L/min"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo",

@@ -54,7 +54,8 @@
   "valueQuantity": {
     "value": 500.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mL"
+    "code": "mL",
+    "unit": "mL"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"

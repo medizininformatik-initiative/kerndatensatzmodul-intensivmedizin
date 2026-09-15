@@ -44,7 +44,8 @@
   "valueQuantity": {
     "value": 200.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mL/min"
+    "code": "mL/min",
+    "unit": "mL/min"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"

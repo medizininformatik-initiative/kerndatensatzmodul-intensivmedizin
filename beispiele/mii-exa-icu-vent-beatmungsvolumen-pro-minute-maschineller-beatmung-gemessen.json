@@ -54,7 +54,8 @@
   "valueQuantity": {
     "value": 7.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/min"
+    "code": "L/min",
+    "unit": "L/min"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"

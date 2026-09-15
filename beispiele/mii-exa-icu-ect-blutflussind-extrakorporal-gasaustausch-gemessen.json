@@ -44,7 +44,8 @@
   "valueQuantity": {
     "value": 2.0,
     "system": "http://unitsofmeasure.org",
-    "code": "L/(min.m2)"
+    "code": "L/(min.m2)",
+    "unit": "L/(min.m2)"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"

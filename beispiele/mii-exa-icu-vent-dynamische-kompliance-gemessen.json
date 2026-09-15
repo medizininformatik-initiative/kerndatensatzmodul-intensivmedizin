@@ -54,7 +54,8 @@
   "valueQuantity": {
     "value": 200.0,
     "system": "http://unitsofmeasure.org",
-    "code": "mL/cm[H2O]"
+    "code": "mL/cm[H2O]",
+    "unit": "mL/cm[H2O]"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
