@@ -11,7 +11,7 @@
     {
       "coding": [
         {
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "exam"
         },
         {
@@ -28,7 +28,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "251843005",
-        "display": "Fluid output from drain (observable entity)",
+        "display": "Fluid output from drain",
         "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
@@ -47,6 +47,7 @@
   "valueQuantity": {
     "value": 200.0,
     "system": "http://unitsofmeasure.org",
-    "code": "ml"
+    "code": "ml",
+    "unit": "ml"
   }
 }

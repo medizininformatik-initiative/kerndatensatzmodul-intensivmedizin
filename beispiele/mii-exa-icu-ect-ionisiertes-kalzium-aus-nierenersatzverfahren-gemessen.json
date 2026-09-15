@@ -43,7 +43,8 @@
   "valueQuantity": {
     "value": 0.2,
     "system": "http://unitsofmeasure.org",
-    "code": "mmol/L"
+    "code": "mmol/L",
+    "unit": "mmol/L"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo"

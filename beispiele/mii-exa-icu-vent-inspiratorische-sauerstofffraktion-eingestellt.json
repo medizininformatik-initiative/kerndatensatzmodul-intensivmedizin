@@ -49,7 +49,8 @@
   "valueQuantity": {
     "value": 0.3,
     "system": "http://unitsofmeasure.org",
-    "code": "%"
+    "code": "%",
+    "unit": "%"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
