@@ -10,6 +10,13 @@ QA correction release on top of `2027.0.0-ballot` — no new content, no breakin
 - `fix` Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired (URL literals instead of unexpanded aliases) and anchored at the `code` element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version
 - `docs` Known validation issues re-triaged and documented with upstream references (see the *Examples* page)
 
+### Known issues in 2027.0.0-ballot.1
+
+- The QA report still lists ~700 errors. **All of them are triaged and none is a content defect of this module** — the dominant causes are an IG-Publisher bug in batch terminology validation (upstream fix pending: [org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460)), display texts pinned in profile patterns that differ from the official terminology displays ([#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79)), and terminology-server semantics for version-stamped SNOMED CT codings ([#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83)). Full breakdown: *Examples* page, section "Known validation issues".
+- Two profile design conflicts are under discussion: the respiratory-rate/ECT-pressure category bindings versus the inherited FHIR core `vital-signs` requirement, and the body-site temperature codes versus `ISiKKernTempSctVS` (ISiK 6.0.0).
+- `full-ig.zip` is not offered on the Downloads page — the archive exceeds GitHub's 100 MB file limit.
+- The package has not been published to Simplifier yet; use the `package.tgz` of this publication in the meantime.
+
 ## Changes in 2027.0.0-ballot
 
 Ballot release — first formal publication of this module through the HL7 IG Publisher, based on the MII KDS module template.
