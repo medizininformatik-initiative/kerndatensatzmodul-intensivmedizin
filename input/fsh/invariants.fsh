@@ -16,7 +16,11 @@ Description: "If there is no component or hasMember element then either a value[
 Invariant: mii-icu-loinc-sct-dgai-ieee11073
 Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"
 * severity = #error
-* expression = "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"
+// FSH-Aliase werden in Expression-STRINGS nicht substituiert — $loinc etc.
+// landeten woertlich im FHIRPath und liessen den Parser scheitern
+// ("Error @1,30: Found $loinc", 35 qa-Errors, Issue #82). URLs daher als
+// gequotete Literale.
+* expression = "coding.where(system = 'http://loinc.org').exists() or coding.where(system = 'http://snomed.info/sct').exists() or coding.where(system = 'http://dgai.de').exists() or coding.where(system = 'urn:iso:std:iso:11073:10101').exists()"
 
 // Score ranges
 Invariant: mii-icu-painscale-vas
