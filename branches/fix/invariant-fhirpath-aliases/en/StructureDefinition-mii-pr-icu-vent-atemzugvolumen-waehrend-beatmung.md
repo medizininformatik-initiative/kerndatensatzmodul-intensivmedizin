@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
   "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
   "title" : "MII PR ICU Atemzugvolumen Waehrend Beatmung",
   "status" : "active",
-  "date" : "2026-09-15T12:10:38+00:00",
+  "date" : "2026-09-15T13:25:50+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
