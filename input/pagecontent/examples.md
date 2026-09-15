@@ -199,21 +199,18 @@ The module ships **144 examples** (at least one per profile family, incl. comple
 
 ### Known validation issues
 
-With the migration to the IG-Publisher toolchain, the module's raw JSON examples
-are validated against their profiles **for the first time** — previously they were
-published via Simplifier without passing through any validation pipeline. The QA
-report therefore surfaces a backlog of long-standing findings. They are triaged,
-tracked as GitHub issues, and deliberately **not** part of the migration scope:
+The examples of this module are validated in CI for the first time since the migration to the
+IG Publisher toolchain. All findings of the QA report are triaged; the remaining errors are
+**not module content defects** but have documented external causes. Publisher errors cannot be
+suppressed, so they remain visible in the QA report until the upstream fixes land:
 
-| Cluster | Errors | Tracked in |
+| Cluster | ~Errors | Cause and tracking |
 |---|--:|---|
-| Required code.coding slices: correct code present, display text differs from the profile's pattern (41×) or coding missing (2×) | 43 | [#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
-| Example and profile pattern encode *different* concepts in the same code system — needs clinical review | 9 | [#80](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/80) |
-| Missing `Quantity.unit` (52×), balance codings matching no slice (21×), vital-signs category/components (7×) | 80 | [#81](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/81) |
-| Invalid `$loinc` FHIRPath expression in ventilation pressure profiles (also present on master) | 35 | [#82](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/82) |
-| ISiK 6.0.0: body-site-specific temperature codes not in `ISiKKernTempSctVS`; profile pins on unavailable SNOMED CT versions | ~11 | [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+| Codes reported "not valid" when validating ValueSet composes | ~450 | IG Publisher sends malformed `$batch-validate-code` requests (no `url`/`tx-resource`); spec-strict servers reject every slot. Upstream fix pending: [org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460) — see [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+| "Wrong Display Name" on LOINC/IEEE-11073 codings | ~50 | The profiles pin display texts in `patternCoding` that differ from the official terminology displays. Resolution is a profile decision (drop displays from patterns) — see [#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
+| German-edition SNOMED CT codings reported "not in ValueSet" | ~15 | Terminology-server semantics for version-stamped codings; codes are provably members. Full reproduction: [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+| Score profiles: "slicing cannot be evaluated" | ~26 | `$this` discriminator evaluation, under analysis |
+| Respiratory-rate / ECT pressure category conflicts | ~10 | Profiles inherit the FHIR core `vital-signs` category requirement **and** bind categories to module value sets — mutually unsatisfiable; needs a profile decision |
+| Body-site temperature codes not in `ISiKKernTempSctVS` | ~9 | Content conflict with ISiK 6.0.0 — tracked in [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
 
-A further ~450 errors stem from a terminology-server request incompatibility of the
-IG Publisher (`$validate-code` request format) and vary between builds — they are
-infrastructure, not content. Reference resolution and SNOMED CT version stamps of
-the examples were already fixed during migration (1251 → 777 errors).
+History and measurements per fix: issues [#79–#90](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues).
