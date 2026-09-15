@@ -2,21 +2,6 @@
 <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Release-Notes.page.md -->
 All changes are listed here.
 
-## Changes in 2027.0.0-ballot.1
-
-QA correction release on top of `2027.0.0-ballot` — no new content, no breaking changes.
-
-- `fix` Examples: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing `Quantity.unit` values added; category codings corrected (typo `vital-sign`, wrong code system, split score categories); code/display values aligned with the profiles' pattern codings
-- `fix` Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired (URL literals instead of unexpanded aliases) and anchored at the `code` element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version
-- `docs` Known validation issues re-triaged and documented with upstream references (see the *Examples* page)
-
-### Known issues in 2027.0.0-ballot.1
-
-- The QA report still lists ~700 errors. **All of them are triaged and none is a content defect of this module** — the dominant causes are an IG-Publisher bug in batch terminology validation (upstream fix pending: [org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460)), display texts pinned in profile patterns that differ from the official terminology displays ([#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79)), and terminology-server semantics for version-stamped SNOMED CT codings ([#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83)). Full breakdown: *Examples* page, section "Known validation issues".
-- Two profile design conflicts are under discussion: the respiratory-rate/ECT-pressure category bindings versus the inherited FHIR core `vital-signs` requirement, and the body-site temperature codes versus `ISiKKernTempSctVS` (ISiK 6.0.0).
-- `full-ig.zip` is not offered on the Downloads page — the archive exceeds GitHub's 100 MB file limit.
-- The package has not been published to Simplifier yet; use the `package.tgz` of this publication in the meantime.
-
 ## Changes in 2027.0.0-ballot
 
 Ballot release — first formal publication of this module through the HL7 IG Publisher, based on the MII KDS module template.
@@ -25,8 +10,15 @@ Ballot release — first formal publication of this module through the HL7 IG Pu
 - Dependencies raised to the 2027 generation (`kerndatensatz.base`, `kerndatensatz.meta` 2027.0.0-ballot) and ISiK 6.0.0
 - The profile *Zerebraler Perfusionsdruck* moved to the ISiK 6 package and was removed from this module
 - New examples: all score profiles (GCS, Faces Pain Scale, NRS, VAS), body height, cerebral perfusion pressure — 144 examples in total, now validated in CI for the first time
-- `docs` Known validation issues documented transparently on the *Examples* page
+- `fix` Example QA overhaul: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing `Quantity.unit` values added; category codings corrected; codes and display texts aligned with the profiles' pattern codings
+- `fix` Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired and anchored at the `code` element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version
 
+### Known issues
+
+- The QA report still lists a substantial number of errors. **All of them are triaged and none is a content defect of this module** — the dominant causes are an IG-Publisher bug in batch terminology validation (upstream fix pending: [org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460)), display texts pinned in profile patterns that differ from the official terminology displays ([#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79)), and terminology-server semantics for version-stamped SNOMED CT codings ([#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83)). Full breakdown: *Examples* page, section "Known validation issues".
+- Two profile design conflicts are under discussion: the respiratory-rate/ECT-pressure category bindings versus the inherited FHIR core `vital-signs` requirement, and the body-site temperature codes versus `ISiKKernTempSctVS` (ISiK 6.0.0).
+- `full-ig.zip` is not offered on the Downloads page — the archive exceeds GitHub's 100 MB file limit.
+- The package has not been published to Simplifier yet; use the `package.tgz` of this publication in the meantime.
 
 ## Changes in 2026.0.0
 
