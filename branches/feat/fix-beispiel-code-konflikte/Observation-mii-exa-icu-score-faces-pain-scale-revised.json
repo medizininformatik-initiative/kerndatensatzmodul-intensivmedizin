@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-score-faces-pain-scale-revised",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-score-faces-pain-scale-revised</b></p><a name=\"mii-exa-icu-score-faces-pain-scale-revised\"> </a><a name=\"hcmii-exa-icu-score-faces-pain-scale-revised\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html\">MII PR ICU Score Faces Pain Scale Revised</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}, {http://snomed.info/sct 273249006}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1284909003}\">Faces Pain Scale - Revised score (observable entity)</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>:  score<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code3 = '3')</span></p></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-score-faces-pain-scale-revised</b></p><a name=\"de-mii-exa-icu-score-faces-pain-scale-revised\"> </a><a name=\"de-hcmii-exa-icu-score-faces-pain-scale-revised\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html\">MII PR ICU Score Faces Pain Scale Revised</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}, {http://snomed.info/sct 273249006}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1284909003}\">Faces Pain Scale - Revised score (observable entity)</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>:  score<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code3 = '3')</span></p></div></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "273249006",
+      "display" : "Assessment scales (assessment scale)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1284909003",
+      "display" : "Faces Pain Scale - Revised score (observable entity)"
+    }]
+  },
+  "subject" : {
+    "type" : "Patient",
+    "identifier" : {
+      "system" : "http://example.com",
+      "value" : "1234"
+    }
+  },
+  "effectiveDateTime" : "2021-12-06T00:52:00+01:00",
+  "valueQuantity" : {
+    "unit" : "score",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "3"
+  }
+}
