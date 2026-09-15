@@ -1123,6 +1123,15 @@ jobs:
             -exec rm -rf '{}' +
           tar -xf candidate/artifact.tar -C site
 
+          # GitHubs hartes 100-MB-Dateilimit: full-ig.zip ist bei diesem Modul
+          # ~123 MB und laesst den gh-pages-Push scheitern (gemessen: Runs
+          # 34908007392 und 35003414339). Gleicher Ausschluss wie im
+          # Preview-Workflow. Template-Upstream-Kandidat.
+          while IFS= read -r zip; do
+            echo "::warning::${zip#site/} (>99MB) vom gh-pages-Commit ausgeschlossen (GitHub-Dateilimit)."
+          done < <(find site -name 'full-ig.zip' -size +99M)
+          find site -name 'full-ig.zip' -size +99M -delete
+
           git -C site config user.name "github-actions[bot]"
           git -C site config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git -C site add --all
