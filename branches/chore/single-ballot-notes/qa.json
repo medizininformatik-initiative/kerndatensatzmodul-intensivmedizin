@@ -1,0 +1,20 @@
+{
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu",
+  "name" : "MII_IG_ICU",
+  "title" : "MII IG ICU",
+  "description" : "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set.",
+  "ig-date" : "2026-09-15",
+  "status" : "draft",
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.icu",
+  "ig-ver" : "2027.0.0-ballot.1",
+  "date" : "Tue, 15 Sep, 2026 17:10:06 +0000",
+  "dateISO8601" : "2026-09-15T17:10:06+00:00",
+  "errs" : 698,
+  "warnings" : 1161,
+  "hints" : 12779,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 6171102096
+}
