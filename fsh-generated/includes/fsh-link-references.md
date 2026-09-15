@@ -98,12 +98,9 @@
 [MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.html
 [MII_PR_ICU_MUV_Arterieller_Blutdruck]: StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html
 [MII_PR_ICU_MUV_Atemfrequenz]: StructureDefinition-mii-pr-icu-muv-atemfrequenz.html
-[MII_PR_ICU_MUV_Herzfrequenz]: StructureDefinition-mii-pr-icu-muv-herzfrequenz.html
 [MII_PR_ICU_MUV_Koerpergewicht]: StructureDefinition-mii-pr-icu-muv-koerpergewicht.html
 [MII_PR_ICU_MUV_Koerpergroesse]: StructureDefinition-mii-pr-icu-muv-koerpergroesse.html
-[MII_PR_ICU_MUV_Koerperlaenge]: StructureDefinition-mii-pr-icu-muv-koerperlaenge.html
 [MII_PR_ICU_MUV_Kopfumfang]: StructureDefinition-mii-pr-icu-muv-kopfumfang.html
-[MII_PR_ICU_MUV_zerebraler_Perfusionsdruck]: StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.html
 [MII_PR_ICU_Parameter_Von_Beatmung]: StructureDefinition-mii-pr-icu-parameter-von-beatmung.html
 [MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren]: StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.html
 [MII_PR_ICU_VENT_Plateau_Beatmungsdruck]: StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.html
@@ -200,6 +197,7 @@
 [mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig]: Observation-mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.html
 [mii-exa-icu-muv-koerpergroesse]: Observation-mii-exa-icu-muv-koerpergroesse.html
 [mii-exa-icu-muv-koerpergroesse-percentil]: Observation-mii-exa-icu-muv-koerpergroesse-percentil.html
+[mii-exa-icu-muv-koerperlaenge]: Observation-mii-exa-icu-muv-koerperlaenge.html
 [mii-exa-icu-muv-koerpertemperatur-achsel]: Observation-mii-exa-icu-muv-koerpertemperatur-achsel.html
 [mii-exa-icu-muv-koerpertemperatur-atemwege]: Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.html
 [mii-exa-icu-muv-koerpertemperatur-blut]: Observation-mii-exa-icu-muv-koerpertemperatur-blut.html
@@ -243,7 +241,14 @@
 [mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch]: Observation-mii-exa-icu-muv-sonstige-pulsatile-druecke-generisch.html
 [mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex]: Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.html
 [mii-exa-icu-muv-zentralvenoeser-blutdruck]: Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.html
+[mii-exa-icu-muv-zerebraler-perfusionsdruck]: Observation-mii-exa-icu-muv-zerebraler-perfusionsdruck.html
+[mii-exa-icu-patient]: Patient-mii-exa-icu-patient.html
+[mii-exa-icu-score]: Observation-mii-exa-icu-score.html
+[mii-exa-icu-score-faces-pain-scale-revised]: Observation-mii-exa-icu-score-faces-pain-scale-revised.html
+[mii-exa-icu-score-gcs]: Observation-mii-exa-icu-score-gcs.html
+[mii-exa-icu-score-numerische-ratingskala]: Observation-mii-exa-icu-score-numerische-ratingskala.html
 [mii-exa-icu-score-rass]: Observation-mii-exa-icu-score-rass.html
+[mii-exa-icu-score-visuelle-analogskala]: Observation-mii-exa-icu-score-visuelle-analogskala.html
 [mii-exa-icu-untersuchung-pupillenbefund]: Observation-mii-exa-icu-untersuchung-pupillenbefund.html
 [mii-exa-icu-untersuchung-pupillenform]: Observation-mii-exa-icu-untersuchung-pupillenform.html
 [mii-exa-icu-untersuchung-pupillengroesse]: Observation-mii-exa-icu-untersuchung-pupillengroesse.html

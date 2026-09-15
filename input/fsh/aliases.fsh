@@ -9,7 +9,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 // SNOMED-CT-Version
 // ggf für Versionierung von SNOMED verwenden
 // letzten 8 Stellen YYYYMMDD, verweist auf internationale Edition, deren sct: 900000000000445007
-Alias: $sct-international-version = http://snomed.info/sct/900000000000207008/version/20260301
+Alias: $sct-international-version = http://snomed.info/sct/900000000000207008/version/20260701
 
 // MII KDS
 // SD
