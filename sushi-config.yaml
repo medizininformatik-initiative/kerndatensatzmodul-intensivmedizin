@@ -92,7 +92,7 @@ description: "FHIR profiles for representing intensive care unit data - PDMS dat
 status: draft # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n per the MII Module Release Workflow — NOT SemVer.
 # Ballot-RC-Suffix kommt vom Modul-Team (master, 2026-08-28).
-version: "2027.0.0-ballot.1"
+version: "2027.0.0-ballot.3"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
