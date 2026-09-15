@@ -236,7 +236,7 @@
     {
       "packageId": "hl7.fhir.uv.extensions.r4",
       "version": "5.3.0",
-      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "uri": "http://hl7.org/fhir/extensions",
       "id": "hl7_fhir_uv_extensions_r4"
     },
     {
@@ -991,13 +991,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
-        },
-        "name": "MII PR ICU MUV Herzfrequenz",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
         },
         "name": "MII PR ICU MUV Koerpergewicht",
@@ -1012,24 +1005,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
-        },
-        "name": "MII PR ICU MUV Koerperlaenge",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
         },
         "name": "MII PR ICU MUV Kopfumfang",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
-        },
-        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
-        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
         "exampleBoolean": false
       },
       {
@@ -1127,7 +1105,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -1710,7 +1688,7 @@
         "reference": {
           "reference": "Observation/mii-exa-icu-muv-herzfrequenz"
         },
-        "description": "Beispielinstanz des Moduls",
+        "description": "Beispiel: MII PR ICU MUV Herzfrequenz",
         "exampleBoolean": true,
         "name": "Muv Herzfrequenz"
       },
@@ -1769,6 +1747,14 @@
         "description": "Beispiel: SD MII ICU Koerpergroesse Percentil",
         "exampleBoolean": true,
         "name": "Muv Koerpergroesse Percentil"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerperlaenge"
+        },
+        "description": "Beispiel: MII PR ICU MUV Koerperlaenge",
+        "exampleBoolean": true,
+        "name": "Muv Koerperlaenge"
       },
       {
         "reference": {
@@ -2116,11 +2102,67 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "description": "Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck",
+        "exampleBoolean": true,
+        "name": "Muv Zerebraler Perfusionsdruck"
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-icu-patient"
+        },
+        "description": "Beispielinstanz des Moduls",
+        "exampleBoolean": true,
+        "name": "Patient"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score"
+        },
+        "description": "Beispiel: MII PR ICU Score",
+        "exampleBoolean": true,
+        "name": "Score"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-faces-pain-scale-revised"
+        },
+        "description": "Beispiel: MII PR ICU Score Faces Pain Scale Revised",
+        "exampleBoolean": true,
+        "name": "Score Faces Pain Scale Revised"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-gcs"
+        },
+        "description": "Beispiel: MII PR ICU Score GCS",
+        "exampleBoolean": true,
+        "name": "Score Gcs"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-numerische-ratingskala"
+        },
+        "description": "Beispiel: MII PR ICU Score Numerische Ratingskala",
+        "exampleBoolean": true,
+        "name": "Score Numerische Ratingskala"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-score-rass"
         },
         "description": "Beispiel: MII PR ICU Score RASS",
         "exampleBoolean": true,
         "name": "Score Rass"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-visuelle-analogskala"
+        },
+        "description": "Beispiel: MII PR ICU Score Visuelle Analogskala",
+        "exampleBoolean": true,
+        "name": "Score Visuelle Analogskala"
       },
       {
         "reference": {
