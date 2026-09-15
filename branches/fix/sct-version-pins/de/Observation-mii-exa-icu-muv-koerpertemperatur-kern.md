@@ -1,0 +1,85 @@
+# Muv Koerpertemperatur Kern - MII IG ICU v2027.0.0-ballot.rc1
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **Muv Koerpertemperatur Kern**
+
+## Beispiel Observation: Muv Koerpertemperatur Kern
+
+-------
+
+**German**
+
+-------
+
+Profile: [SD MII ICU Koerpertemperatur Kern](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern)
+
+**status**: Final
+
+**category**: Vital Signs
+
+**code**: Body temperature - Core
+
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
+
+**effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
+
+**value**: 37 degree Celsius (Details: UCUM codeCel = 'Cel')
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-muv-koerpertemperatur-kern",
+  "meta" : {
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern"]
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8329-5",
+      "display" : "Body temperature - Core"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20260515",
+      "code" : "276885007",
+      "display" : "Core body temperature (observable entity)"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "150368",
+      "display" : "Body temperature - Core"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "8310-5",
+      "display" : "Body temperature"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-icu-patient"
+  },
+  "effectivePeriod" : {
+    "start" : "2019-12-23T09:30:10+01:00",
+    "end" : "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity" : {
+    "value" : 37,
+    "unit" : "degree Celsius",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "Cel"
+  }
+}
+
+```
