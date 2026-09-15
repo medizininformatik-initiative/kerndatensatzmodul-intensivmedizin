@@ -13,7 +13,7 @@ Das Modul **Intensive Care** folgt dem KDS-Schema der Kalender-Versionierung
 (CalVer) in einer SemVer-kompatiblen numerischen Form:
 
 * Format **`JJJJ.MINOR.PATCH[-label]`** — die aktuelle Version ist
-  `2026.0.3`;
+  `2027.0.0-ballot.1`;
 * **`JJJJ`** — das Jahr, in dem der Leitfaden gilt und genutzt werden soll; es
   tritt an die Stelle der Major-Version;
 * **`MINOR`** — wird für nicht brechende Ergänzungen und Präzisierungen erhöht;

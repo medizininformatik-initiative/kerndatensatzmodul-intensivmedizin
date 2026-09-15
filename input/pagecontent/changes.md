@@ -2,6 +2,25 @@
 <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Release-Notes.page.md -->
 All changes are listed here.
 
+## Changes in 2027.0.0-ballot.1
+
+QA correction release on top of `2027.0.0-ballot` — no new content, no breaking changes.
+
+- `fix` Examples: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing `Quantity.unit` values added; category codings corrected (typo `vital-sign`, wrong code system, split score categories); code/display values aligned with the profiles' pattern codings
+- `fix` Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired (URL literals instead of unexpanded aliases) and anchored at the `code` element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version
+- `docs` Known validation issues re-triaged and documented with upstream references (see the *Examples* page)
+
+## Changes in 2027.0.0-ballot
+
+Ballot release — first formal publication of this module through the HL7 IG Publisher, based on the MII KDS module template.
+
+- **`BREAKING`** Migration to the MII KDS module template: the guide is now published on GitHub Pages (this site) instead of Simplifier; page locations changed (see the navigation), the ImplementationGuide id is now `mii-ig-icu`
+- Dependencies raised to the 2027 generation (`kerndatensatz.base`, `kerndatensatz.meta` 2027.0.0-ballot) and ISiK 6.0.0
+- The profile *Zerebraler Perfusionsdruck* moved to the ISiK 6 package and was removed from this module
+- New examples: all score profiles (GCS, Faces Pain Scale, NRS, VAS), body height, cerebral perfusion pressure — 144 examples in total, now validated in CI for the first time
+- `docs` Known validation issues documented transparently on the *Examples* page
+
+
 ## Changes in 2026.0.0
 
 ### ⚠️ Breaking Changes
