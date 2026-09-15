@@ -74,6 +74,7 @@ Profile: [MII PR ICU Exspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-v
   },
   "valueQuantity" : {
     "value" : 60.0,
+    "unit" : "L/min",
     "system" : "http://unitsofmeasure.org",
     "code" : "L/min"
   },

@@ -80,6 +80,7 @@ Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](Structur
   },
   "valueQuantity" : {
     "value" : 7.0,
+    "unit" : "L/min",
     "system" : "http://unitsofmeasure.org",
     "code" : "L/min"
   },

@@ -10,7 +10,7 @@
   "name" : "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
   "title" : "MII PR ICU Score Faces Pain Scale Revised",
   "status" : "active",
-  "date" : "2026-09-14T22:41:23+00:00",
+  "date" : "2026-09-15T14:01:05+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1167,7 +1167,7 @@
         "key" : "mii-icu-loinc-sct-dgai-ieee11073",
         "severity" : "error",
         "human" : "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
-        "expression" : "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()",
+        "expression" : "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()",
         "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score"
       }],
       "isModifier" : false,
@@ -1831,7 +1831,7 @@
       "type" : [{
         "code" : "string"
       }],
-      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260301",
+      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",

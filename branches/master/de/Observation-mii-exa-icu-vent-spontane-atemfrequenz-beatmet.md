@@ -18,7 +18,7 @@ Profile: [MII PR ICU Spontane Atemfrequenz Beatmet](StructureDefinition-mii-pr-i
 
 **status**: Final
 
-**category**: Artificial ventilation (regime/therapy)
+**category**: Artificial ventilation (regime/therapy), Vital Signs
 
 **code**: Rate of spontaneous respiration (observable entity)
 
@@ -52,6 +52,13 @@ Profile: [MII PR ICU Spontane Atemfrequenz Beatmet](StructureDefinition-mii-pr-i
       "code" : "40617009",
       "display" : "Artificial ventilation (regime/therapy)"
     }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
   }],
   "code" : {
     "coding" : [{
@@ -75,6 +82,7 @@ Profile: [MII PR ICU Spontane Atemfrequenz Beatmet](StructureDefinition-mii-pr-i
   },
   "valueQuantity" : {
     "value" : 8.0,
+    "unit" : "/min",
     "system" : "http://unitsofmeasure.org",
     "code" : "/min"
   },

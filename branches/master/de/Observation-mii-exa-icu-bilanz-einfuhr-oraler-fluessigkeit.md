@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](StructureDefinition-mii-
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "therapy"
     },
     {
@@ -59,7 +59,8 @@ Profile: [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](StructureDefinition-mii-
     },
     {
       "system" : "http://loinc.org",
-      "code" : "9000-1"
+      "code" : "9000-1",
+      "display" : "Fluid intake oral Measured"
     }]
   },
   "subject" : {
@@ -71,6 +72,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](StructureDefinition-mii-
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

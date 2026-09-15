@@ -74,6 +74,7 @@ Profile: [MII PR ICU Horowitz In Arteriellem Blut](StructureDefinition-mii-pr-ic
   },
   "valueQuantity" : {
     "value" : 350.0,
+    "unit" : "mm[Hg]",
     "system" : "http://unitsofmeasure.org",
     "code" : "mm[Hg]"
   },

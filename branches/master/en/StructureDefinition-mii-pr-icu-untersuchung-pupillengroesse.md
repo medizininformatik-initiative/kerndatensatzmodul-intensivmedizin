@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse | *Version*:2027.0.0-ballot.rc1 |
-| Draft as of 2026-09-14 | *Computable Name*:MII_PR_ICU_Untersuchung_Pupillengroesse |
+| Draft as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Untersuchung_Pupillengroesse |
 
 **Usages:**
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-unters
   "name" : "MII_PR_ICU_Untersuchung_Pupillengroesse",
   "title" : "MII PR ICU Untersuchung Pupillengroesse",
   "status" : "draft",
-  "date" : "2026-09-14T22:41:23+00:00",
+  "date" : "2026-09-15T14:01:05+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -80,6 +80,7 @@ Profile: [MII PR ICU Atemzugvolumen Einstellung](StructureDefinition-mii-pr-icu-
   },
   "valueQuantity" : {
     "value" : 500.0,
+    "unit" : "mL",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL"
   },

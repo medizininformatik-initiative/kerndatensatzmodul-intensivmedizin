@@ -70,6 +70,7 @@ Profile: [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substit
   },
   "valueQuantity" : {
     "value" : 300.0,
+    "unit" : "mL/h",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL/h"
   },

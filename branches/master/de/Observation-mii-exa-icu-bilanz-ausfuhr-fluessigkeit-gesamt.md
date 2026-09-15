@@ -18,7 +18,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt](StructureDefinition-mii
 
 **category**: Fluid balance observable (observable entity)
 
-**code**: Total fluid loss (observable entity)
+**code**: Total fluid loss
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt](StructureDefinition-mii
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "vital-sign"
     },
     {
@@ -55,11 +55,12 @@ Profile: [MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt](StructureDefinition-mii
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251847006",
-      "display" : "Total fluid loss (observable entity)"
+      "display" : "Total fluid loss"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "9257-7"
+      "code" : "9257-7",
+      "display" : "Fluid output total Measured"
     }]
   },
   "subject" : {
@@ -71,6 +72,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt](StructureDefinition-mii
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

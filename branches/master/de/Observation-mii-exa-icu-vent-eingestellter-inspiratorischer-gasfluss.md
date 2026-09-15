@@ -69,6 +69,7 @@ Profile: [MII PR ICU Eingestellter Inspiratorischer Gasfluss](StructureDefinitio
   },
   "valueQuantity" : {
     "value" : 80.0,
+    "unit" : "L/min",
     "system" : "http://unitsofmeasure.org",
     "code" : "L/min"
   },

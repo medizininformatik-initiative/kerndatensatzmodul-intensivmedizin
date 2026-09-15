@@ -80,6 +80,7 @@ Profile: [MII PR ICU Atemzugvolumen Waehrend Beatmung](StructureDefinition-mii-p
   },
   "valueQuantity" : {
     "value" : 500.0,
+    "unit" : "mL",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL"
   },

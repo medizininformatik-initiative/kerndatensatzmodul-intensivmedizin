@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund | *Version*:2027.0.0-ballot.rc1 |
-| Draft Stand: 2026-09-14 | *Maschinenlesbarer Name*:MII_VS_ICU_BodySite_Observation_Pupillenbefund |
+| Draft Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_VS_ICU_BodySite_Observation_Pupillenbefund |
 
  
 Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille. 
@@ -44,7 +44,7 @@ Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte
   "name" : "MII_VS_ICU_BodySite_Observation_Pupillenbefund",
   "title" : "MII VS ICU BodySite Observation Pupillenbefund",
   "status" : "draft",
-  "date" : "2026-09-14T22:41:23+00:00",
+  "date" : "2026-09-15T14:01:05+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

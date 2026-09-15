@@ -80,6 +80,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "mL/cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL/cm[H2O]"
   },

@@ -18,7 +18,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
 
 **category**: Fluid balance observable (observable entity)
 
-**code**: Parenteral fluid input (observable entity)
+**code**: Total fluid input (observable entity)
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "therapy"
     },
     {
@@ -54,8 +54,8 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
-      "code" : "251855004",
-      "display" : "Parenteral fluid input (observable entity)"
+      "code" : "251852001",
+      "display" : "Total fluid input (observable entity)"
     }]
   },
   "subject" : {
@@ -67,6 +67,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

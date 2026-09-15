@@ -69,6 +69,7 @@ Profile: [MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen](StructureDefini
   },
   "valueQuantity" : {
     "value" : 7.0,
+    "unit" : "mL",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL"
   },

@@ -70,6 +70,7 @@ Profile: [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "mL/min",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL/min"
   },

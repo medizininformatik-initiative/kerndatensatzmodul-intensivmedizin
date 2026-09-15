@@ -75,6 +75,7 @@ Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii
   },
   "valueQuantity" : {
     "value" : 0.3,
+    "unit" : "%",
     "system" : "http://unitsofmeasure.org",
     "code" : "%"
   },

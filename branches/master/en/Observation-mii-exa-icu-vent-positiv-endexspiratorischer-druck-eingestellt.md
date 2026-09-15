@@ -80,6 +80,7 @@ Profile: [MII PR ICU Positiv Endexpiratorischer Druck](StructureDefinition-mii-p
   },
   "valueQuantity" : {
     "value" : 10.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

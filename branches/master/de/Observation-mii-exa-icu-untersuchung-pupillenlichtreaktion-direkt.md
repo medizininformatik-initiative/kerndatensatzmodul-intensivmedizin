@@ -16,7 +16,7 @@ Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinit
 
 **status**: draft
 
-**category**: exam
+**category**: Exam
 
 **code**: Pupil reaction to light
 
@@ -40,7 +40,7 @@ Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinit
   "status" : "draft",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam"
     }]
   }],

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2027.0.0-ballot.rc1 |
-| Draft as of 2026-09-14 | *Computable Name*:MII_PR_ICU_Score |
+| Draft as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Score |
 
  
 Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-09-14T22:41:23+00:00",
+  "date" : "2026-09-15T14:01:05+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -187,7 +187,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
         "key" : "mii-icu-loinc-sct-dgai-ieee11073",
         "severity" : "error",
         "human" : "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
-        "expression" : "coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()",
+        "expression" : "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()",
         "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score"
       }]
     },
@@ -240,7 +240,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score.
     {
       "id" : "Observation.code.coding:sct.version",
       "path" : "Observation.code.coding.version",
-      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260301",
+      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "mustSupport" : true
     },
     {

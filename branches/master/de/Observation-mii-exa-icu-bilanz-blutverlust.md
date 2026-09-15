@@ -18,7 +18,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
 
 **category**: Fluid balance observable (observable entity)
 
-**code**: Actual blood loss (observable entity)
+**code**: Actual blood loss
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "vital-sign"
     },
     {
@@ -55,11 +55,12 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250771004",
-      "display" : "Actual blood loss (observable entity)"
+      "display" : "Actual blood loss"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "81661-1"
+      "code" : "81661-1",
+      "display" : "Blood loss [Volume] Measured"
     }]
   },
   "subject" : {
@@ -71,6 +72,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

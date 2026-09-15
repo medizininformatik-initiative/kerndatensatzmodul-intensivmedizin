@@ -80,6 +80,7 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
   },
   "valueQuantity" : {
     "value" : 0.5,
+    "unit" : "{ratio}",
     "system" : "http://unitsofmeasure.org",
     "code" : "{ratio}"
   },

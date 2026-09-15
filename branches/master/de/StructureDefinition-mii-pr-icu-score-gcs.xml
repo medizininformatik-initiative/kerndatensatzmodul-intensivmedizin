@@ -56,7 +56,7 @@
   <name value="MII_PR_ICU_Score_GCS"/>
   <title value="MII PR ICU Score GCS"/>
   <status value="active"/>
-  <date value="2026-09-14T22:41:23+00:00"/>
+  <date value="2026-09-15T14:01:05+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1172,7 +1172,7 @@
         <key value="mii-icu-loinc-sct-dgai-ieee11073"/>
         <severity value="error"/>
         <human value="Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"/>
-        <expression value="coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"/>
+        <expression value="coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()"/>
         <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score"/>
       </constraint>
       <mustSupport value="true"/>
@@ -1813,7 +1813,7 @@
       <type>
         <code value="string"/>
       </type>
-      <patternString value="http://snomed.info/sct/900000000000207008/version/20260301"/>
+      <patternString value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>

@@ -58,7 +58,7 @@ Profile: [SD MII ICU Linksventrikulaeres Schlagvolumen](https://simplifier.net/r
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
-      "code" : "150428",
+      "code" : "150408",
       "display" : "Ventricular stroke"
     }]
   },

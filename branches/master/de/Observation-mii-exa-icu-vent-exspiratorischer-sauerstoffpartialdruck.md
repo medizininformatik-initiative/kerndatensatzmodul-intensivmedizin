@@ -80,6 +80,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
   },
   "valueQuantity" : {
     "value" : 180.0,
+    "unit" : "mm[Hg]",
     "system" : "http://unitsofmeasure.org",
     "code" : "mm[Hg]"
   },

@@ -70,6 +70,7 @@ Profile: [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii
   },
   "valueQuantity" : {
     "value" : 72.0,
+    "unit" : "h",
     "system" : "http://unitsofmeasure.org",
     "code" : "h"
   },

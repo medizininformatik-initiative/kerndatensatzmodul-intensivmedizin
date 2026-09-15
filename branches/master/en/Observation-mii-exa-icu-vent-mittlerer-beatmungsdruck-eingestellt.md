@@ -80,6 +80,7 @@ Profile: [MII PR ICU Mittlerer Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
   },
   "valueQuantity" : {
     "value" : 15.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

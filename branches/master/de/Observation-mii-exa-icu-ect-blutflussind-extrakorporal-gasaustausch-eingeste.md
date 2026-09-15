@@ -70,6 +70,7 @@ Profile: [MII PR ICU Blutflussindex Extrakorporaler Gasaustausch](StructureDefin
   },
   "valueQuantity" : {
     "value" : 2.0,
+    "unit" : "L/(min.m2)",
     "system" : "http://unitsofmeasure.org",
     "code" : "L/(min.m2)"
   },

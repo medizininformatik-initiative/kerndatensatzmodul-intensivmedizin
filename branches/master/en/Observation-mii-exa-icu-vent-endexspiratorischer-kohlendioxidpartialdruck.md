@@ -80,6 +80,7 @@ Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefin
   },
   "valueQuantity" : {
     "value" : 40.0,
+    "unit" : "mm[Hg]",
     "system" : "http://unitsofmeasure.org",
     "code" : "mm[Hg]"
   },

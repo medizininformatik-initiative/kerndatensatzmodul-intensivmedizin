@@ -74,6 +74,7 @@ Profile: [MII PR ICU Druckdifferenz Beatmung](StructureDefinition-mii-pr-icu-ven
   },
   "valueQuantity" : {
     "value" : 9.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

@@ -70,6 +70,7 @@ Profile: [MII PR ICU Dauer Haemodialysesitzung](StructureDefinition-mii-pr-icu-e
   },
   "valueQuantity" : {
     "value" : 2.0,
+    "unit" : "h",
     "system" : "http://unitsofmeasure.org",
     "code" : "h"
   },

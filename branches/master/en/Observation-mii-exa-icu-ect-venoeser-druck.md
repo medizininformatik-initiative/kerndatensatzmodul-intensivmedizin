@@ -70,6 +70,7 @@ Profile: [MII PR ICU Venoeser Druck](StructureDefinition-mii-pr-icu-ect-venoeser
   },
   "valueQuantity" : {
     "value" : -15.0,
+    "unit" : "mm[Hg]",
     "system" : "http://unitsofmeasure.org",
     "code" : "mm[Hg]"
   },

@@ -69,6 +69,7 @@ Profile: [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinit
   },
   "valueQuantity" : {
     "value" : 0.2,
+    "unit" : "mmol/L",
     "system" : "http://unitsofmeasure.org",
     "code" : "mmol/L"
   },

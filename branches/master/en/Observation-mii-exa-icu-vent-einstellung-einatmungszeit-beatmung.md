@@ -80,6 +80,7 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
   },
   "valueQuantity" : {
     "value" : 0.5,
+    "unit" : "s",
     "system" : "http://unitsofmeasure.org",
     "code" : "s"
   },

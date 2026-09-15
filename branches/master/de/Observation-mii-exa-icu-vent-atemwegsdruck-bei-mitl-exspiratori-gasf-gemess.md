@@ -69,6 +69,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](Struc
   },
   "valueQuantity" : {
     "value" : 14.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

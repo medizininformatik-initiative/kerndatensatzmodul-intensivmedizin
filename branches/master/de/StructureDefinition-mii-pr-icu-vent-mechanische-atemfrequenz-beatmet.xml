@@ -33,7 +33,7 @@
   <name value="MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet"/>
   <title value="MII PR ICU Mechanische Atemfrequenz Beatmet"/>
   <status value="active"/>
-  <date value="2026-09-14T22:41:23+00:00"/>
+  <date value="2026-09-15T14:01:05+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -161,13 +161,6 @@
         <expression value="value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()"/>
         <xpath value="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-      </constraint>
-      <constraint>
-        <key value="mii-icu-loinc-sct-dgai-ieee11073"/>
-        <severity value="error"/>
-        <human value="Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"/>
-        <expression value="coding.where(system= $loinc ).exists() or coding.where(system= $sct ).exists() or coding.where(system= $dgai).exists() or coding.where(system= $ieee-11073).exists()"/>
-        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"/>
       </constraint>
       <constraint>
         <key value="mii-icu-comp-xor-val"/>
@@ -1183,6 +1176,13 @@
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="mii-icu-loinc-sct-dgai-ieee11073"/>
+        <severity value="error"/>
+        <human value="Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"/>
+        <expression value="coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()"/>
+        <source value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>

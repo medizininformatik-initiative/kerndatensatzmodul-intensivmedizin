@@ -18,7 +18,7 @@ Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arter
 
 **status**: Final
 
-**category**: Extracorporeal circulation procedure (procedure)
+**category**: Extracorporeal circulation procedure (procedure), Vital Signs
 
 **code**: Arterial blood pressure (observable entity)
 
@@ -52,6 +52,13 @@ Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arter
       "code" : "182744004",
       "display" : "Extracorporeal circulation procedure (procedure)"
     }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
   }],
   "code" : {
     "coding" : [{
@@ -70,6 +77,7 @@ Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arter
   },
   "valueQuantity" : {
     "value" : 20.0,
+    "unit" : "mm[Hg]",
     "system" : "http://unitsofmeasure.org",
     "code" : "mm[Hg]"
   },

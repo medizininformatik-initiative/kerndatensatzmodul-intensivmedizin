@@ -67,8 +67,8 @@ Profile: [MII PR ICU Maximaler Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
-      "code" : "151973",
-      "display" : "Pressure.max Respiratory system airway --on ventilator"
+      "code" : "151957",
+      "display" : "Maximum airway pressure during mechanical ventilation."
     }]
   },
   "subject" : {
@@ -80,6 +80,7 @@ Profile: [MII PR ICU Maximaler Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
   },
   "valueQuantity" : {
     "value" : 25.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

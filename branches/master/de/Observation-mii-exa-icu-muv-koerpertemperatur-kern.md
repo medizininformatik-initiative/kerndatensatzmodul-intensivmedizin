@@ -58,7 +58,7 @@ Profile: [SD MII ICU Koerpertemperatur Kern](https://simplifier.net/resolve?scop
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
-      "code" : "150368",
+      "code" : "150364",
       "display" : "Body temperature - Core"
     },
     {

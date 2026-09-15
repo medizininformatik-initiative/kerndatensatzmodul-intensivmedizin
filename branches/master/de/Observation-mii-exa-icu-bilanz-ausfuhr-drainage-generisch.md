@@ -18,7 +18,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](StructureDefinition-mii-
 
 **category**: Fluid balance observable (observable entity)
 
-**code**: Fluid output from drain (observable entity)
+**code**: Fluid output from drain
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](StructureDefinition-mii-
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam"
     },
     {
@@ -55,7 +55,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](StructureDefinition-mii-
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251843005",
-      "display" : "Fluid output from drain (observable entity)"
+      "display" : "Fluid output from drain"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
@@ -71,6 +71,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](StructureDefinition-mii-
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

@@ -18,7 +18,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
 
 **category**: Fluid balance observable (observable entity)
 
-**code**: Gastric fluid loss (observable entity)
+**code**: Volume of drainage of gastric contents (observable entity)
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam"
     },
     {
@@ -54,12 +54,13 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
-      "code" : "251848001",
-      "display" : "Gastric fluid loss (observable entity)"
+      "code" : "1162665001",
+      "display" : "Volume of drainage of gastric contents (observable entity)"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "79561-7"
+      "code" : "79561-7",
+      "display" : "Fluid output enteral tube [Volume] Measured"
     }]
   },
   "subject" : {
@@ -71,6 +72,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

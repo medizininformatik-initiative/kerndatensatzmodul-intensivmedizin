@@ -69,6 +69,7 @@ Profile: [MII PR ICU Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-i
   },
   "valueQuantity" : {
     "value" : 6.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

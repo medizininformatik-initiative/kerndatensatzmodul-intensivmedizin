@@ -69,6 +69,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureD
   },
   "valueQuantity" : {
     "value" : 10.0,
+    "unit" : "cm[H2O]",
     "system" : "http://unitsofmeasure.org",
     "code" : "cm[H2O]"
   },

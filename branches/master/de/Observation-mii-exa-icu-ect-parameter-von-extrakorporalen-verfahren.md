@@ -18,7 +18,7 @@ Profile: [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinitio
 
 **status**: Final
 
-**category**: Extracorporeal circulation procedure (procedure)
+**category**: Extracorporeal circulation procedure (procedure), Vital Signs
 
 **code**: Arterial blood pressure (observable entity)
 
@@ -49,6 +49,13 @@ Profile: [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinitio
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "182744004",
       "display" : "Extracorporeal circulation procedure (procedure)"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
     }]
   }],
   "code" : {

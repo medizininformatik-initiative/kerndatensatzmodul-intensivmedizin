@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Pankreasdrainage](StructureDefinition-mii-pr
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam"
     },
     {
@@ -67,6 +67,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Pankreasdrainage](StructureDefinition-mii-pr
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

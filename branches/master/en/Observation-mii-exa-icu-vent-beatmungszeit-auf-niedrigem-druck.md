@@ -74,6 +74,7 @@ Profile: [MII PR ICU Beatmungszeit Niedrigem Druck](StructureDefinition-mii-pr-i
   },
   "valueQuantity" : {
     "value" : 1.0,
+    "unit" : "s",
     "system" : "http://unitsofmeasure.org",
     "code" : "s"
   },

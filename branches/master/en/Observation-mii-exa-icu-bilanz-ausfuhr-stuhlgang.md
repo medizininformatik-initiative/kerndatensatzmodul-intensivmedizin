@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Stuhlgang](StructureDefinition-mii-pr-icu-bi
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam"
     },
     {
@@ -59,7 +59,8 @@ Profile: [MII PR ICU Bilanz Ausfuhr Stuhlgang](StructureDefinition-mii-pr-icu-bi
     },
     {
       "system" : "http://loinc.org",
-      "code" : "9167-8"
+      "code" : "9217-1",
+      "display" : "Output.stool [Volume]"
     }]
   },
   "subject" : {
@@ -71,6 +72,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Stuhlgang](StructureDefinition-mii-pr-icu-bi
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-09-14 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit |
+| Active as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit |
 
 "Balance export bile fluid (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit",
   "title" : "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
   "status" : "active",
-  "date" : "2026-09-14T22:41:23+00:00",
+  "date" : "2026-09-15T14:01:05+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

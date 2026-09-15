@@ -75,6 +75,7 @@ Profile: [MII PR ICU Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md)
   },
   "valueQuantity" : {
     "value" : 2.0,
+    "unit" : "L/min",
     "system" : "http://unitsofmeasure.org",
     "code" : "L/min"
   },

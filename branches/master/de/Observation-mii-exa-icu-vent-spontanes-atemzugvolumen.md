@@ -75,6 +75,7 @@ Profile: [MII PR ICU Spontanes Atemzugvolumen](StructureDefinition-mii-pr-icu-ve
   },
   "valueQuantity" : {
     "value" : 500.0,
+    "unit" : "mL",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL"
   },

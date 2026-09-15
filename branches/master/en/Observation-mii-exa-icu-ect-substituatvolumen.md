@@ -70,6 +70,7 @@ Profile: [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-subst
   },
   "valueQuantity" : {
     "value" : 5.0,
+    "unit" : "L",
     "system" : "http://unitsofmeasure.org",
     "code" : "L"
   },

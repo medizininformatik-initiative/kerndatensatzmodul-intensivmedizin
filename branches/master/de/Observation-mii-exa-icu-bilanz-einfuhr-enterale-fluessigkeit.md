@@ -40,7 +40,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-m
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "therapy"
     },
     {
@@ -59,7 +59,8 @@ Profile: [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-m
     },
     {
       "system" : "http://loinc.org",
-      "code" : "8953-2"
+      "code" : "8953-2",
+      "display" : "Fluid intake enteral tube Measured"
     }]
   },
   "subject" : {
@@ -71,6 +72,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-m
   },
   "valueQuantity" : {
     "value" : 200.0,
+    "unit" : "ml",
     "system" : "http://unitsofmeasure.org",
     "code" : "ml"
   }
