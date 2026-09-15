@@ -29,7 +29,7 @@
       {
         "system": "http://loinc.org",
         "code": "19891-1",
-        "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
+        "display": "Carbon dioxide^at end expiration"
       },
       {
         "system": "http://snomed.info/sct",
@@ -40,7 +40,7 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151708",
-        "display": "End tidal carbon dioxide concentration (or partial pressure) in airway gas"
+        "display": "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
       }
     ]
   },
