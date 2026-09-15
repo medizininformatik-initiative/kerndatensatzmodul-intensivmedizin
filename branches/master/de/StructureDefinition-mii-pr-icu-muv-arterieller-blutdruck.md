@@ -100,7 +100,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-09-15T17:45:52+00:00",
+  "date" : "2026-09-15T20:38:45+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

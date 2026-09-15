@@ -147,7 +147,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren",
   "title" : "MII PR ICU Extrakorporales Verfahren",
   "status" : "active",
-  "date" : "2026-09-15T17:45:52+00:00",
+  "date" : "2026-09-15T20:38:45+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
