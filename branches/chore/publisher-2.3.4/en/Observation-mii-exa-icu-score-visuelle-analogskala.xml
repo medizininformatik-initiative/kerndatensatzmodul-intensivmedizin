@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-icu-score-visuelle-analogskala"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-score-visuelle-analogskala</b></p><a name="mii-exa-icu-score-visuelle-analogskala"> </a><a name="hcmii-exa-icu-score-visuelle-analogskala"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html">MII PR ICU Score Visuelle Analogskala</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}, {http://terminology.hl7.org/CodeSystem/observation-category exam}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 443394008}, {http://loinc.org 38214-3}">Visual analog scale pain score (observable entity)</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>: 63 mm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm = 'mm')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+      <display value="Survey"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="443394008"/>
+      <display value="Visual analog scale pain score (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="38214-3"/>
+      <display value="Visual analog scale pain score (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <type value="Patient"/>
+    <identifier>
+      <system value="http://example.com"/>
+      <value value="1234"/>
+    </identifier>
+  </subject>
+  <effectiveDateTime value="2021-12-06T00:52:00+01:00"/>
+  <valueQuantity>
+    <value value="63"/>
+    <unit value="mm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mm"/>
+  </valueQuantity>
+</Observation>
