@@ -7,7 +7,7 @@
   </meta>
   <language value="de"/>
   <text>
-    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-vent-druckdifferenz-beatmung</b></p><a name="de-mii-exa-icu-vent-druckdifferenz-beatmung"> </a><a name="de-hcmii-exa-icu-vent-druckdifferenz-beatmung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.html">MII PR ICU Druckdifferenz Beatmung</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-icu-vent-beatmung.html">Procedure Positive pressure airway ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 76154-4}, {urn:iso:std:iso:11073:10101 152720}">Airway pressure delta --on ventilator</span></p><p><b>subject</b>: <a href="Patient-mii-exa-icu-patient.html">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 9.0 cm[H2O]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm[H2O] = 'cm[H2O]')</span></p><p><b>device</b>: <a href="DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.html">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-vent-druckdifferenz-beatmung</b></p><a name="de-mii-exa-icu-vent-druckdifferenz-beatmung"> </a><a name="de-hcmii-exa-icu-vent-druckdifferenz-beatmung"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.html">MII PR ICU Druckdifferenz Beatmung</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-icu-vent-beatmung.html">Procedure Positive pressure airway ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 76154-4}, {urn:iso:std:iso:11073:10101 152720}">Airway pressure delta^on ventilator</span></p><p><b>subject</b>: <a href="Patient-mii-exa-icu-patient.html">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 9.0 cm[H2O]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm[H2O] = 'cm[H2O]')</span></p><p><b>device</b>: <a href="DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.html">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>
   </text>
   <partOf>
     <reference value="Procedure/mii-exa-icu-vent-beatmung"/>
@@ -25,12 +25,12 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="76154-4"/>
-      <display value="Airway pressure delta --on ventilator"/>
+      <display value="Airway pressure delta^on ventilator"/>
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
       <code value="152720"/>
-      <display value="Inspiratory airway pressure relative to PEEP or BAP"/>
+      <display value="Inspiratory airway pressure relative to PEEP or BAP."/>
     </coding>
   </code>
   <subject>

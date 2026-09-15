@@ -1,4 +1,4 @@
-# Bilanz Einfuhr Fluessigkeit Gesamt - MII IG ICU v2027.0.0-ballot.rc1
+# Bilanz Einfuhr Fluessigkeit Gesamt - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -56,6 +56,11 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "251852001",
       "display" : "Total fluid input (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "9103-3",
+      "display" : "Fluid intake total Measured"
     }]
   },
   "subject" : {

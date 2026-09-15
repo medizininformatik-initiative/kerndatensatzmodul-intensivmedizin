@@ -1,4 +1,4 @@
-# Bilanz Blutverlust - MII IG ICU v2027.0.0-ballot.rc1
+# Bilanz Blutverlust - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
 
 **status**: Final
 
-**category**: Fluid balance observable (observable entity)
+**category**: Exam
 
 **code**: Actual blood loss
 
@@ -41,7 +41,8 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "code" : "vital-sign"
+      "code" : "exam",
+      "display" : "Exam"
     },
     {
       "system" : "http://snomed.info/sct",

@@ -1,4 +1,4 @@
-# Score Numerische Ratingskala - MII IG ICU v2027.0.0-ballot.rc1
+# Score Numerische Ratingskala - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-ic
 
 **status**: Final
 
-**category**: Survey
+**category**: Survey, Assessment scales (assessment scale)
 
 **code**: Numeric Pain Rating Scale score
 
@@ -43,8 +43,10 @@ Profile: [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-ic
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "survey",
       "display" : "Survey"
-    },
-    {
+    }]
+  },
+  {
+    "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "273249006",
       "display" : "Assessment scales (assessment scale)"

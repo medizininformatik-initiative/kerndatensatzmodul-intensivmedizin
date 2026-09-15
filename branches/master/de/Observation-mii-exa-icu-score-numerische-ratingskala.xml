@@ -7,7 +7,7 @@
   </meta>
   <language value="de"/>
   <text>
-    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-score-numerische-ratingskala</b></p><a name="de-mii-exa-icu-score-numerische-ratingskala"> </a><a name="de-hcmii-exa-icu-score-numerische-ratingskala"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html">MII PR ICU Score Numerische Ratingskala</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}, {http://snomed.info/sct 273249006}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1284857008}">Numeric Pain Rating Scale score</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>: 3</p></div>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-score-numerische-ratingskala</b></p><a name="de-mii-exa-icu-score-numerische-ratingskala"> </a><a name="de-hcmii-exa-icu-score-numerische-ratingskala"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html">MII PR ICU Score Numerische Ratingskala</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span>, <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1284857008}">Numeric Pain Rating Scale score</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>: 3</p></div>
   </text>
   <status value="final"/>
   <category>
@@ -16,6 +16,8 @@
       <code value="survey"/>
       <display value="Survey"/>
     </coding>
+  </category>
+  <category>
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="273249006"/>

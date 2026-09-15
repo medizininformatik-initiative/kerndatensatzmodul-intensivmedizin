@@ -1,4 +1,4 @@
-# Vent Spontane Mechanische Atemfrequenz Beatmet - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Spontane Mechanische Atemfrequenz Beatmet - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -75,7 +75,7 @@ Profile: [MII PR ICU Spontane Mechanische Atemfrequenz Beatmet](StructureDefinit
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "152490",
-      "display" : "Total respiratory rate; total breath rate"
+      "display" : "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
     }]
   },
   "subject" : {

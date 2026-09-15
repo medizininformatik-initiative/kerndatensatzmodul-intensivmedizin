@@ -1,4 +1,4 @@
-# Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -20,7 +20,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureD
 
 **category**: Artificial ventilation (regime/therapy)
 
-**code**: Airway pressure --at zero inspiratory flow on ventilator
+**code**: Pressure.airway^at zero inspiratory flow on ventilator
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
@@ -57,7 +57,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureD
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "20060-0",
-      "display" : "Airway pressure --at zero inspiratory flow on ventilator"
+      "display" : "Pressure.airway^at zero inspiratory flow on ventilator"
     }]
   },
   "subject" : {

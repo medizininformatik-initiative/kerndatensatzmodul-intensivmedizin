@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Änderungshistorie - MII IG ICU v2027.0.0-ballot.rc1</title>
+    <title>Änderungshistorie - MII IG ICU v2027.0.0-ballot.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG ICU</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.3 - 
 
 
 
@@ -276,7 +276,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG ICU - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG ICU - Local Development build (v2027.0.0-ballot.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Änderungshistorie</h2>
   
 
@@ -292,26 +292,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#änderungen-in-202700-ballot" id="markdown-toc-änderungen-in-202700-ballot">Änderungen in 2027.0.0-ballot</a>    <ul>
+      <li><a href="#bekannte-einschränkungen" id="markdown-toc-bekannte-einschränkungen">Bekannte Einschränkungen</a></li>
+    </ul>
+  </li>
+  <li><a href="#änderungen-in-202600" id="markdown-toc-änderungen-in-202600">Änderungen in 2026.0.0</a>    <ul>
+      <li><a href="#️-breaking-changes" id="markdown-toc-️-breaking-changes">⚠️ Breaking Changes</a></li>
+    </ul>
+  </li>
+  <li><a href="#änderungen-in-202504" id="markdown-toc-änderungen-in-202504">Änderungen in 2025.0.4</a></li>
+  <li><a href="#änderungen-in-202502" id="markdown-toc-änderungen-in-202502">Änderungen in 2025.0.2</a></li>
+  <li><a href="#änderungen-in-202501" id="markdown-toc-änderungen-in-202501">Änderungen in 2025.0.1</a></li>
+  <li><a href="#änderungen-in-202500" id="markdown-toc-änderungen-in-202500">Änderungen in 2025.0.0</a></li>
+  <li><a href="#änderungen-in-202400-alpha2" id="markdown-toc-änderungen-in-202400-alpha2">Änderungen in 2024.0.0-alpha2</a></li>
+  <li><a href="#änderungen-in-202400-alpha1" id="markdown-toc-änderungen-in-202400-alpha1">Änderungen in 2024.0.0-alpha1</a></li>
+</ul>
+
 </div>
+<p>Alle Änderungen sind hier gelistet.</p>
 
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+<h2 id="änderungen-in-202700-ballot">Änderungen in 2027.0.0-ballot</h2>
 
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
-<!-- markdownlint-disable MD041 -->
-<!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/Release-Notes.page.md -->
-<p>Hier sind alle Änderungen aufgelistet.</p>
-
-<h2 id="änderungen-in-202601">Änderungen in 2026.0.1</h2>
-
-<p>Fix snapshot error:</p>
+<p>Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publisher, auf Basis des MII-KDS-Modul-Templates.</p>
 
 <ul>
-  <li>Automatische Snapshot Generation in Simplifier</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">BREAKING</code></strong> Migration auf das MII-KDS-Modul-Template: Der Guide wird nun auf GitHub Pages (diese Seite) statt auf Simplifier publiziert; Seiten-Orte haben sich geändert (siehe Navigation), die ImplementationGuide-id lautet nun <code class="language-plaintext highlighter-rouge">mii-ig-icu</code></li>
+  <li>Abhängigkeiten auf die 2027er-Generation angehoben (<code class="language-plaintext highlighter-rouge">kerndatensatz.base</code>, <code class="language-plaintext highlighter-rouge">kerndatensatz.meta</code> 2027.0.0-ballot) sowie ISiK 6.0.0</li>
+  <li>Das Profil <em>Zerebraler Perfusionsdruck</em> ist ins ISiK-6-Package umgezogen und wurde aus diesem Modul entfernt</li>
+  <li>Neue Beispiele: alle Score-Profile (GCS, Faces Pain Scale, NRS, VAS), Körperlänge, zerebraler Perfusionsdruck — insgesamt 144 Beispiele, erstmals CI-validiert</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende <code class="language-plaintext highlighter-rouge">Quantity.unit</code> ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am <code class="language-plaintext highlighter-rouge">code</code>-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen</li>
+</ul>
+
+<h3 id="bekannte-einschränkungen">Bekannte Einschränkungen</h3>
+
+<ul>
+  <li>Der QA-Report listet weiterhin eine erhebliche Zahl an Errors. <strong>Alle sind triagiert, keiner ist ein inhaltlicher Defekt dieses Moduls</strong> — dominierende Ursachen sind ein IG-Publisher-Bug in der Batch-Terminologie-Validierung (Upstream-Fix offen: <a href="https://github.com/hapifhir/org.hl7.fhir.core/pull/2460">org.hl7.fhir.core#2460</a>), in Profil-Patterns gepinnte Display-Texte, die von den offiziellen Terminologie-Displays abweichen (<a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79">#79</a>), sowie die Terminologieserver-Semantik bei versionierten SNOMED-CT-Codings (<a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a>). Vollständige Aufschlüsselung: Seite <em>Examples</em>, Abschnitt „Bekannte Validierungsbefunde".</li>
+  <li>Zwei Profil-Designkonflikte sind in Diskussion: die Category-Bindings der Atemfrequenz-/ECT-Druck-Profile gegen die geerbte FHIR-Core-<code class="language-plaintext highlighter-rouge">vital-signs</code>-Pflicht sowie die Messort-Temperatur-Codes gegen das <code class="language-plaintext highlighter-rouge">ISiKKernTempSctVS</code> (ISiK 6.0.0).</li>
+  <li><code class="language-plaintext highlighter-rouge">full-ig.zip</code> wird auf der Downloads-Seite nicht angeboten — das Archiv überschreitet GitHubs 100-MB-Dateilimit.</li>
+  <li>Das Package ist noch nicht auf Simplifier publiziert; bis dahin bitte das <code class="language-plaintext highlighter-rouge">package.tgz</code> dieser Publikation nutzen.</li>
 </ul>
 
 <h2 id="änderungen-in-202600">Änderungen in 2026.0.0</h2>
@@ -419,8 +440,8 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 15, 2026 14:01+0000">2026-09-15</span>
+          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Tue, Sep 15, 2026 17:45+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

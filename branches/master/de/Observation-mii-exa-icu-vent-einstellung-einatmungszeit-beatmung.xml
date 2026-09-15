@@ -31,12 +31,12 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="76334-2"/>
-      <display value="Inspiratory time setting Ventilator"/>
+      <display value="Inspiratory time setting"/>
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
       <code value="16929632"/>
-      <display value="Inspiratory time setting"/>
+      <display value="MDC_VENT_TIME_PD_INSP_SETTING"/>
     </coding>
   </code>
   <subject>

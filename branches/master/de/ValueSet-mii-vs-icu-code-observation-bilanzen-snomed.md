@@ -1,4 +1,4 @@
-# MII VS ICU Code Observation Bilanzen SNOMED - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Code Observation Bilanzen SNOMED - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Observation_Bilanzen_SNOMED |
 
  
@@ -37,7 +37,7 @@ Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten SNOM
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-observation-bilanzen-snomed",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Code_Observation_Bilanzen_SNOMED",
   "title" : "MII VS ICU Code Observation Bilanzen SNOMED",
   "status" : "active",

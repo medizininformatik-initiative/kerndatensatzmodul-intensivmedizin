@@ -1,4 +1,4 @@
-# MII VS ICU Category Observation Bilanzen HL7 - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Category Observation Bilanzen HL7 - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7 | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7 | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Category_Observation_Bilanzen_HL7 |
 
  
@@ -37,7 +37,7 @@ ValueSet defining HL7 observation categories for ICU Bilanzen
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-category-observation-bilanzen-hl7",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Category_Observation_Bilanzen_HL7",
   "title" : "MII VS ICU Category Observation Bilanzen HL7",
   "status" : "active",

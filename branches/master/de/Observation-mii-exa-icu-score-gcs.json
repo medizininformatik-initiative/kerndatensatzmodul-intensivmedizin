@@ -7,7 +7,7 @@
   "language" : "de",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-score-gcs</b></p><a name=\"de-mii-exa-icu-score-gcs\"> </a><a name=\"de-hcmii-exa-icu-score-gcs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-score-gcs.html\">MII PR ICU Score GCS</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}, {http://snomed.info/sct 273249006}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 248241002}, {http://loinc.org 9269-2}, {urn:iso:std:iso:11073:10101 153728}\">Glasgow coma score</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>:  score<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code14 = '14')</span></p></div>"
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-score-gcs</b></p><a name=\"de-mii-exa-icu-score-gcs\"> </a><a name=\"de-hcmii-exa-icu-score-gcs\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-score-gcs.html\">MII PR ICU Score GCS</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span>, <span title=\"Codes:{http://snomed.info/sct 273249006}\">Assessment scales (assessment scale)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 248241002}, {http://loinc.org 9269-2}, {urn:iso:std:iso:11073:10101 153728}\">Glasgow coma score</span></p><p><b>subject</b>: Identifier: <code>http://example.com</code>/1234</p><p><b>effective</b>: 2021-12-06 00:52:00+0100</p><p><b>value</b>:  score<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code14 = '14')</span></p></div>"
   },
   "status" : "final",
   "category" : [{
@@ -15,8 +15,10 @@
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "survey",
       "display" : "Survey"
-    },
-    {
+    }]
+  },
+  {
+    "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "273249006",
       "display" : "Assessment scales (assessment scale)"

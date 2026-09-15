@@ -1,4 +1,4 @@
-# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.rc1
+# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
 
 Es handelt sich hier um einen pulsatilen Druck. Für diesen gelten neben den Eigenschaften des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md) außerdem die Besonderheiten, die auf der Seite des Profils zu [Blutdruck (Observation)](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) beschrieben sind. Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -96,11 +96,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-muv-arterieller-blutdruck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-09-15T14:01:05+00:00",
+  "date" : "2026-09-15T17:45:52+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

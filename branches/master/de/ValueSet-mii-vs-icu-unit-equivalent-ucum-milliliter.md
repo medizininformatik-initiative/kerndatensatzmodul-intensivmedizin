@@ -1,4 +1,4 @@
-# MII VS ICU Unit equivalent UCUM milliliter - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Unit equivalent UCUM milliliter - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Unit_equivalent_UCUM_milliliter |
 
  
@@ -57,7 +57,7 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-unit-equivalent-ucum-milliliter",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Unit_equivalent_UCUM_milliliter",
   "title" : "MII VS ICU Unit equivalent UCUM milliliter",
   "status" : "active",

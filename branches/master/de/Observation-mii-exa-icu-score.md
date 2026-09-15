@@ -1,4 +1,4 @@
-# Score - MII IG ICU v2027.0.0-ballot.rc1
+# Score - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.md)
 
 **status**: Final
 
-**category**: Survey
+**category**: Survey, Exam
 
 **subject**: Identifier: `http://example.com`/1234
 
@@ -39,8 +39,10 @@ Profile: [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.md)
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "survey",
       "display" : "Survey"
-    },
-    {
+    }]
+  },
+  {
+    "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam",
       "display" : "Exam"

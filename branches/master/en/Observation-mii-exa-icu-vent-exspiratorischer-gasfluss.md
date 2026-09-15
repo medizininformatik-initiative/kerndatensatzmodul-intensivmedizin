@@ -1,4 +1,4 @@
-# Vent Exspiratorischer Gasfluss - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Exspiratorischer Gasfluss - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -62,7 +62,7 @@ Profile: [MII PR ICU Exspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-v
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151944",
-      "display" : "Ventilation expiratory flow"
+      "display" : "Expiratory gas flow during mechanical ventilation. "
     }]
   },
   "subject" : {

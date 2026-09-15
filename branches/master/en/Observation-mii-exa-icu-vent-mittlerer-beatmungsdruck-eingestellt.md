@@ -1,4 +1,4 @@
-# Vent Mittlerer Beatmungsdruck Eingestellt - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Mittlerer Beatmungsdruck Eingestellt - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Mittlerer Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151975",
-      "display" : "Mean pressure Respiratory system airway --on ventilator"
+      "display" : "Mean inspiratory airway pressure."
     }]
   },
   "subject" : {

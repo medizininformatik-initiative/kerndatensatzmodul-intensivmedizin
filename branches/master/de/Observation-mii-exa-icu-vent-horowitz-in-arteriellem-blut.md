@@ -1,4 +1,4 @@
-# Vent Horowitz In Arteriellem Blut - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Horowitz In Arteriellem Blut - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -62,7 +62,7 @@ Profile: [MII PR ICU Horowitz In Arteriellem Blut](StructureDefinition-mii-pr-ic
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "150656",
-      "display" : "Oxygenation Ratio"
+      "display" : "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21)."
     }]
   },
   "subject" : {

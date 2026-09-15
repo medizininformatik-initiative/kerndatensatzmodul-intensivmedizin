@@ -1,4 +1,4 @@
-# Muv Rechtsventrikulaerer Druck - MII IG ICU v2027.0.0-ballot.rc1
+# Muv Rechtsventrikulaerer Druck - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [SD MII ICU Rechtsventrikulaerer Druck](https://simplifier.net/resolve?
 
 **status**: Final
 
-**category**: vital-signs
+**category**: Vital Signs
 
 **code**: Right ventricular pressure (observable entity)
 
@@ -44,7 +44,7 @@ Profile: [SD MII ICU Rechtsventrikulaerer Druck](https://simplifier.net/resolve?
   "status" : "final",
   "category" : [{
     "coding" : [{
-      "system" : "http://hl7.org/fhir/secondary-finding",
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "vital-signs"
     }]
   }],

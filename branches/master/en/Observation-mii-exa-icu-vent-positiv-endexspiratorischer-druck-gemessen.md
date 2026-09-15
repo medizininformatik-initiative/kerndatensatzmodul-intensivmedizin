@@ -1,4 +1,4 @@
-# Vent Positiv Endexspiratorischer Druck Gemessen - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Positiv Endexspiratorischer Druck Gemessen - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Positiv Endexpiratorischer Druck](StructureDefinition-mii-p
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151976",
-      "display" : "Applied PEEP"
+      "display" : "Positive end expiratory pressure applied to the airway."
     }]
   },
   "subject" : {

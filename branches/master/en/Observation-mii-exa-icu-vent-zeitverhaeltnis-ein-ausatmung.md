@@ -1,4 +1,4 @@
-# Vent Zeitverhaeltnis Ein Ausatmung - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Zeitverhaeltnis Ein Ausatmung - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151832",
-      "display" : "Ratio inspiration expiration time"
+      "display" : "Ratio of durations of inspiratory and expiratory phases."
     }]
   },
   "subject" : {

@@ -1,4 +1,4 @@
-# MII VS ICU Code Observation Beatmung LOINC - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Code Observation Beatmung LOINC - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc | *Version*:2027.0.0-ballot.3 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Observation_Beatmung_LOINC |
 
  
@@ -37,7 +37,7 @@ Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Pa
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-observation-beatmung-loinc",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Code_Observation_Beatmung_LOINC",
   "title" : "MII VS ICU Code Observation Beatmung LOINC",
   "status" : "active",

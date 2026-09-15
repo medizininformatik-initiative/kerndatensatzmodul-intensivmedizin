@@ -1,4 +1,4 @@
-# MII VS ICU Unit equivalent percent 1 - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Unit equivalent percent 1 - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-percent-1 | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-percent-1 | *Version*:2027.0.0-ballot.3 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Unit_equivalent_percent_1 |
 
  
@@ -39,7 +39,7 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-unit-equivalent-percent-1",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-percent-1",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Unit_equivalent_percent_1",
   "title" : "MII VS ICU Unit equivalent percent 1",
   "status" : "active",

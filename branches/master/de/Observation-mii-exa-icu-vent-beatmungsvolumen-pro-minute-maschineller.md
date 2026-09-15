@@ -1,4 +1,4 @@
-# Vent Beatmungsvolumen Pro Minute Maschineller - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Beatmungsvolumen Pro Minute Maschineller - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](Structur
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "152004",
-      "display" : "Ventilation inspiratory minute volume"
+      "display" : "Total volume of gas breathed in during 1 min during mechanical ventilation."
     }]
   },
   "subject" : {

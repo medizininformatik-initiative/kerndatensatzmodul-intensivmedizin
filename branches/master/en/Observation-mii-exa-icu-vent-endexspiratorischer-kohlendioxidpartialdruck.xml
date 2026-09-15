@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck</b></p><a name="mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"> </a><a name="hcmii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html">MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-icu-vent-beatmung.html">Procedure Positive pressure airway ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19891-1}, {http://snomed.info/sct 250790007}, {urn:iso:std:iso:11073:10101 151708}">Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration</span></p><p><b>subject</b>: <a href="Patient-mii-exa-icu-patient.html">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 40.0 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>device</b>: <a href="DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.html">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck</b></p><a name="mii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"> </a><a name="hcmii-exa-icu-vent-endexspiratorischer-kohlendioxidpartialdruck"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html">MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck</a></p></div><p><b>partOf</b>: <a href="Procedure-mii-exa-icu-vent-beatmung.html">Procedure Positive pressure airway ventilation (regime/therapy)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 40617009}">Artificial ventilation (regime/therapy)</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 19891-1}, {http://snomed.info/sct 250790007}, {urn:iso:std:iso:11073:10101 151708}">Carbon dioxide^at end expiration</span></p><p><b>subject</b>: <a href="Patient-mii-exa-icu-patient.html">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)</a></p><p><b>effective</b>: 2019-12-23 09:30:10+0100 --&gt; 2019-12-23 10:30:10+0100</p><p><b>value</b>: 40.0 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>device</b>: <a href="DeviceMetric-mii-exa-icu-vent-gemessene-parameter-beatmung.html">DeviceMetric: type = Artificial ventilation (regime/therapy); category = measurement</a></p></div>
   </text>
   <partOf>
     <reference value="Procedure/mii-exa-icu-vent-beatmung"/>
@@ -25,7 +25,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="19891-1"/>
-      <display value="Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"/>
+      <display value="Carbon dioxide^at end expiration"/>
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
@@ -36,7 +36,7 @@
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
       <code value="151708"/>
-      <display value="End tidal carbon dioxide concentration (or partial pressure) in airway gas"/>
+      <display value="Partial pressure of carbon dioxide in airway gas measured at the end of expiration."/>
     </coding>
   </code>
   <subject>

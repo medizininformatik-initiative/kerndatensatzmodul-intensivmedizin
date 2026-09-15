@@ -1,4 +1,4 @@
-# Vent Einstellung Einatmungszeit Beatmung - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Einstellung Einatmungszeit Beatmung - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -63,12 +63,12 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
     {
       "system" : "http://loinc.org",
       "code" : "76334-2",
-      "display" : "Inspiratory time setting Ventilator"
+      "display" : "Inspiratory time setting"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "16929632",
-      "display" : "Inspiratory time setting"
+      "display" : "MDC_VENT_TIME_PD_INSP_SETTING"
     }]
   },
   "subject" : {

@@ -1,4 +1,4 @@
-# MII VS ICU Component GCS Eyes - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Component GCS Eyes - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2026-07-28 | *Maschinenlesbarer Name*:MII_VS_ICU_Component_GCS_Eyes |
 
  **References** 
@@ -34,7 +34,7 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-component-gcs-eyes",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Component_GCS_Eyes",
   "title" : "MII VS ICU Component GCS Eyes",
   "status" : "active",

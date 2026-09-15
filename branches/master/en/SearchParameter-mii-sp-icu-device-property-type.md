@@ -1,4 +1,4 @@
-# mii-sp-icu-device-property-type - MII IG ICU v2027.0.0-ballot.rc1
+# mii-sp-icu-device-property-type - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-device-property-type | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-device-property-type | *Version*:2027.0.0-ballot.3 |
 | Active as of 2025-02-11 | *Computable Name*:MII_SP_ICU_Device_Property_Type |
 
  
@@ -36,7 +36,7 @@ Suchparameter für Device.property.type
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-device-property-type",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_SP_ICU_Device_Property_Type",
   "status" : "active",
   "experimental" : false,

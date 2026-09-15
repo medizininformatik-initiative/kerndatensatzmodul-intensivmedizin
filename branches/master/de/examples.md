@@ -1,4 +1,4 @@
-# Beispiele - MII IG ICU v2027.0.0-ballot.rc1
+# Beispiele - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Beispiele**
@@ -194,15 +194,16 @@ Das Modul liefert **144 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 
 ### Bekannte Validierungsbefunde
 
-Mit der Migration auf die IG-Publisher-Toolchain werden die Roh-JSON-Beispiele des Moduls **erstmals überhaupt** gegen ihre Profile validiert — zuvor wurden sie über Simplifier publiziert, ohne eine Validierungspipeline zu durchlaufen. Der QA-Report zeigt daher einen lange bestehenden Befund-Bestand. Dieser ist triagiert, als GitHub-Issues nachverfolgt und bewusst **nicht** Teil des Migrations-Scopes:
+Die Beispiele dieses Moduls werden seit der Migration auf die IG-Publisher-Toolchain erstmals in der CI validiert. Alle Befunde des QA-Reports sind triagiert; die verbleibenden Errors sind **keine inhaltlichen Fehler des Moduls**, sondern haben dokumentierte externe Ursachen. Publisher-Errors lassen sich nicht unterdrücken und bleiben daher im QA-Report sichtbar, bis die Upstream-Fixes greifen:
 
 | | | |
 | :--- | :--- | :--- |
-| Pflicht-Slices auf code.coding: richtiger Code vorhanden, Display-Text weicht vom Profil-Pattern ab (41×) bzw. Coding fehlt (2×) | 43 | [#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
-| Beispiel und Profil-Pattern kodieren**unterschiedliche**Konzepte im selben Codesystem — fachliches Review nötig | 9 | [#80](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/80) |
-| Fehlende`Quantity.unit`(52×), Bilanz-Codings ohne Slice-Match (21×), Vitalzeichen-Category/-Komponenten (7×) | 80 | [#81](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/81) |
-| Ungültige`$loinc`-FHIRPath-Expression in den Beatmungsdruck-Profilen (besteht auch auf master) | 35 | [#82](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/82) |
-| ISiK 6.0.0: messortspezifische Temperatur-Codes nicht im`ISiKKernTempSctVS`; Profil-Pins auf nicht verfügbare SNOMED-CT-Versionen | ~11 | [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+| Codes „not valid" bei der Validierung von ValueSet-Composes | ~450 | Der IG Publisher sendet fehlerhafte`$batch-validate-code`-Requests (ohne`url`/`tx-resource`); spec-strikte Server lehnen jeden Slot ab. Upstream-Fix offen:[org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460)— siehe[#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+| „Wrong Display Name" bei LOINC-/IEEE-11073-Codings | ~50 | Die Profile pinnen in`patternCoding`Display-Texte, die von den offiziellen Terminologie-Displays abweichen. Lösung ist eine Profil-Entscheidung (Displays aus den Patterns entfernen) — siehe[#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
+| Deutsche-Editions-SNOMED-Codings „not in ValueSet" | ~15 | Terminologieserver-Semantik bei versionierten Codings; die Codes sind nachweislich Mitglieder. Vollständige Repro:[#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
+| Score-Profile: „slicing cannot be evaluated" | ~26 | `$this`-Diskriminator-Auswertung, in Analyse |
+| Category-Konflikte Atemfrequenz-/ECT-Druck-Profile | ~10 | Profile erben die FHIR-Core-`vital-signs`-Pflicht**und**binden Categories an Modul-ValueSets — gleichzeitig unerfüllbar; braucht eine Profil-Entscheidung |
+| Messort-Temperatur-Codes nicht im`ISiKKernTempSctVS` | ~9 | Inhaltlicher Konflikt mit ISiK 6.0.0 — nachverfolgt in[#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
 
-Weitere ~450 Errors stammen aus einer Terminologieserver-Request-Inkompatibilität des IG Publishers (`$validate-code`-Request-Format) und schwanken zwischen Builds — Infrastruktur, kein Inhalt. Referenzauflösung und SNOMED-CT-Versions-Stempel der Beispiele wurden bereits im Zuge der Migration behoben (1251 → 777 Errors).
+Historie und Messungen je Fix: Issues [#79–#90](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues).
 

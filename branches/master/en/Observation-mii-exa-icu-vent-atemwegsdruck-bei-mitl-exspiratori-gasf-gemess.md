@@ -1,4 +1,4 @@
-# Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -20,7 +20,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](Struc
 
 **category**: Artificial ventilation (regime/therapy)
 
-**code**: Airway pressure --at mean expiratory flow on ventilator
+**code**: Pressure.airway^at mean expiratory flow on ventilator
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
@@ -57,7 +57,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](Struc
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "20056-8",
-      "display" : "Airway pressure --at mean expiratory flow on ventilator"
+      "display" : "Pressure.airway^at mean expiratory flow on ventilator"
     }]
   },
   "subject" : {

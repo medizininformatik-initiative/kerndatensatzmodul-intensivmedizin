@@ -1,4 +1,4 @@
-# MII VS ICU Category Procedure Beatmung SNOMED - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Category Procedure Beatmung SNOMED - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed | *Version*:2027.0.0-ballot.3 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Category_Procedure_Beatmung_SNOMED |
 
  **References** 
@@ -36,7 +36,7 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-category-procedure-beatmung-snomed",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED",
   "title" : "MII VS ICU Category Procedure Beatmung SNOMED",
   "status" : "active",

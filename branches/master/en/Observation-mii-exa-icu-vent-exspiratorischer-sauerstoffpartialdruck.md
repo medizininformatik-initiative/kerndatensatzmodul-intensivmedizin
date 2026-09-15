@@ -1,4 +1,4 @@
-# Vent Exspiratorischer Sauerstoffpartialdruck - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Exspiratorischer Sauerstoffpartialdruck - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "153132",
-      "display" : "Expired oxygen concentration (or partial pressure) in airway gas"
+      "display" : "Partial pressure of oxygen in airway gas measured during expiration."
     }]
   },
   "subject" : {

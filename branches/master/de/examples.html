@@ -3,7 +3,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Beispiele - MII IG ICU v2027.0.0-ballot.rc1</title>
+    <title>Beispiele - MII IG ICU v2027.0.0-ballot.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -138,7 +138,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG ICU</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.3 - 
 
 
 
@@ -273,7 +273,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MII IG ICU - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MII IG ICU - Local Development build (v2027.0.0-ballot.3) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Beispiele</h2>
   
 
@@ -975,53 +975,55 @@ Patientendaten in Beispielen verwenden.</p>
 
 <h3 id="bekannte-validierungsbefunde">Bekannte Validierungsbefunde</h3>
 
-<p>Mit der Migration auf die IG-Publisher-Toolchain werden die Roh-JSON-Beispiele des
-Moduls <strong>erstmals überhaupt</strong> gegen ihre Profile validiert — zuvor wurden sie über
-Simplifier publiziert, ohne eine Validierungspipeline zu durchlaufen. Der QA-Report
-zeigt daher einen lange bestehenden Befund-Bestand. Dieser ist triagiert, als
-GitHub-Issues nachverfolgt und bewusst <strong>nicht</strong> Teil des Migrations-Scopes:</p>
+<p>Die Beispiele dieses Moduls werden seit der Migration auf die IG-Publisher-Toolchain erstmals
+in der CI validiert. Alle Befunde des QA-Reports sind triagiert; die verbleibenden Errors sind
+<strong>keine inhaltlichen Fehler des Moduls</strong>, sondern haben dokumentierte externe Ursachen.
+Publisher-Errors lassen sich nicht unterdrücken und bleiben daher im QA-Report sichtbar, bis
+die Upstream-Fixes greifen:</p>
 
 <table>
   <thead>
     <tr>
       <th>Cluster</th>
-      <th style="text-align: right">Errors</th>
-      <th>Nachverfolgt in</th>
+      <th style="text-align: right">~Errors</th>
+      <th>Ursache und Nachverfolgung</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Pflicht-Slices auf code.coding: richtiger Code vorhanden, Display-Text weicht vom Profil-Pattern ab (41×) bzw. Coding fehlt (2×)</td>
-      <td style="text-align: right">43</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79">#79</a></td>
+      <td>Codes „not valid" bei der Validierung von ValueSet-Composes</td>
+      <td style="text-align: right">~450</td>
+      <td>Der IG Publisher sendet fehlerhafte <code class="language-plaintext highlighter-rouge">$batch-validate-code</code>-Requests (ohne <code class="language-plaintext highlighter-rouge">url</code>/<code class="language-plaintext highlighter-rouge">tx-resource</code>); spec-strikte Server lehnen jeden Slot ab. Upstream-Fix offen: <a href="https://github.com/hapifhir/org.hl7.fhir.core/pull/2460">org.hl7.fhir.core#2460</a> — siehe <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
     </tr>
     <tr>
-      <td>Beispiel und Profil-Pattern kodieren <em>unterschiedliche</em> Konzepte im selben Codesystem — fachliches Review nötig</td>
-      <td style="text-align: right">9</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/80">#80</a></td>
+      <td>„Wrong Display Name" bei LOINC-/IEEE-11073-Codings</td>
+      <td style="text-align: right">~50</td>
+      <td>Die Profile pinnen in <code class="language-plaintext highlighter-rouge">patternCoding</code> Display-Texte, die von den offiziellen Terminologie-Displays abweichen. Lösung ist eine Profil-Entscheidung (Displays aus den Patterns entfernen) — siehe <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79">#79</a></td>
     </tr>
     <tr>
-      <td>Fehlende <code class="language-plaintext highlighter-rouge">Quantity.unit</code> (52×), Bilanz-Codings ohne Slice-Match (21×), Vitalzeichen-Category/-Komponenten (7×)</td>
-      <td style="text-align: right">80</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/81">#81</a></td>
+      <td>Deutsche-Editions-SNOMED-Codings „not in ValueSet"</td>
+      <td style="text-align: right">~15</td>
+      <td>Terminologieserver-Semantik bei versionierten Codings; die Codes sind nachweislich Mitglieder. Vollständige Repro: <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
     </tr>
     <tr>
-      <td>Ungültige <code class="language-plaintext highlighter-rouge">$loinc</code>-FHIRPath-Expression in den Beatmungsdruck-Profilen (besteht auch auf master)</td>
-      <td style="text-align: right">35</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/82">#82</a></td>
+      <td>Score-Profile: „slicing cannot be evaluated"</td>
+      <td style="text-align: right">~26</td>
+      <td><code class="language-plaintext highlighter-rouge">$this</code>-Diskriminator-Auswertung, in Analyse</td>
     </tr>
     <tr>
-      <td>ISiK 6.0.0: messortspezifische Temperatur-Codes nicht im <code class="language-plaintext highlighter-rouge">ISiKKernTempSctVS</code>; Profil-Pins auf nicht verfügbare SNOMED-CT-Versionen</td>
-      <td style="text-align: right">~11</td>
-      <td><a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
+      <td>Category-Konflikte Atemfrequenz-/ECT-Druck-Profile</td>
+      <td style="text-align: right">~10</td>
+      <td>Profile erben die FHIR-Core-<code class="language-plaintext highlighter-rouge">vital-signs</code>-Pflicht <strong>und</strong> binden Categories an Modul-ValueSets — gleichzeitig unerfüllbar; braucht eine Profil-Entscheidung</td>
+    </tr>
+    <tr>
+      <td>Messort-Temperatur-Codes nicht im <code class="language-plaintext highlighter-rouge">ISiKKernTempSctVS</code></td>
+      <td style="text-align: right">~9</td>
+      <td>Inhaltlicher Konflikt mit ISiK 6.0.0 — nachverfolgt in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83">#83</a></td>
     </tr>
   </tbody>
 </table>
 
-<p>Weitere ~450 Errors stammen aus einer Terminologieserver-Request-Inkompatibilität
-des IG Publishers (<code class="language-plaintext highlighter-rouge">$validate-code</code>-Request-Format) und schwanken zwischen Builds —
-Infrastruktur, kein Inhalt. Referenzauflösung und SNOMED-CT-Versions-Stempel der
-Beispiele wurden bereits im Zuge der Migration behoben (1251 → 777 Errors).</p>
+<p>Historie und Messungen je Fix: Issues <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues">#79–#90</a>.</p>
 
 
 
@@ -1047,8 +1049,8 @@ Beispiele wurden bereits im Zuge der Migration behoben (1251 → 777 Errors).</p
 
 
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 15, 2026 14:01+0000">2026-09-15</span>
+          Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Tue, Sep 15, 2026 17:45+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.

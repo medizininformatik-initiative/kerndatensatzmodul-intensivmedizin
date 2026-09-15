@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt - MII IG ICU v2027.0.0-ballot.rc1
+# MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt | *Version*:2027.0.0-ballot.3 |
 | Active as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt |
 
 "Balance export liquid total (Observation) (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
   "title" : "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
   "status" : "active",
-  "date" : "2026-09-15T14:01:05+00:00",
+  "date" : "2026-09-15T17:45:52+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

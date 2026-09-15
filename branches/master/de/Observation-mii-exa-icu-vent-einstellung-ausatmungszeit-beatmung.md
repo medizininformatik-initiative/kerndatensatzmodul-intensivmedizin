@@ -1,4 +1,4 @@
-# Vent Einstellung Ausatmungszeit Beatmung - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Einstellung Ausatmungszeit Beatmung - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -63,7 +63,7 @@ Profile: [MII PR ICU Einstellung Ausatmungszeit Beatmung](StructureDefinition-mi
     {
       "system" : "http://loinc.org",
       "code" : "76187-4",
-      "display" : "Expiratory hold time setting Ventilator"
+      "display" : "Expiratory hold time setting"
     }]
   },
   "subject" : {

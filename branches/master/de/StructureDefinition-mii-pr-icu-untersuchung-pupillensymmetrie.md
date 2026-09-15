@@ -1,4 +1,4 @@
-# MII PR ICU Untersuchung Pupillensymmetrie - MII IG ICU v2027.0.0-ballot.rc1
+# MII PR ICU Untersuchung Pupillensymmetrie - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie | *Version*:2027.0.0-ballot.3 |
 | Draft Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Untersuchung_Pupillensymmetrie |
 
 **Usages:**
@@ -105,11 +105,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-u
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-untersuchung-pupillensymmetrie",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Untersuchung_Pupillensymmetrie",
   "title" : "MII PR ICU Untersuchung Pupillensymmetrie",
   "status" : "draft",
-  "date" : "2026-09-15T14:01:05+00:00",
+  "date" : "2026-09-15T17:45:52+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

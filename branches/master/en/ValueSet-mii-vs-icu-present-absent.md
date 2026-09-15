@@ -1,4 +1,4 @@
-# MII VS ICU Present Absent - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Present Absent - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent | *Version*:2027.0.0-ballot.3 |
 | Active as of 2026-09-15 | *Computable Name*:MII_VS_ICU_Present_Absent |
 
  
@@ -38,12 +38,12 @@ Present or absent findings
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-present-absent",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Present_Absent",
   "title" : "MII VS ICU Present Absent",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-15T14:01:05+00:00",
+  "date" : "2026-09-15T17:45:52+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

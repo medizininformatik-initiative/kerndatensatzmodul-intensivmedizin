@@ -1,4 +1,4 @@
-# Home - MII IG ICU v2027.0.0-ballot.rc1
+# Home - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu | *Version*:2027.0.0-ballot.rc1 |
-| Draft as of 2026-08-27 | *Computable Name*:MII_IG_ICU |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu | *Version*:2027.0.0-ballot.3 |
+| Draft as of 2026-09-15 | *Computable Name*:MII_IG_ICU |
 
 This specification describes the FHIR representation of the core dataset module 'Intensive Care Medicine' of the Medical Informatics Initiative. The use cases of the module and the associated FHIR profiles and terminology resources are described below.
 

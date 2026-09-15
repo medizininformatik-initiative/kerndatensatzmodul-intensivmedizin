@@ -1,4 +1,4 @@
-# Vent Beatmungszeit Auf Hohem Druck - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Beatmungszeit Auf Hohem Druck - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -62,7 +62,7 @@ Profile: [MII PR ICU Beatmungszeit Hohem Druck](StructureDefinition-mii-pr-icu-v
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "16929860",
-      "display" : "High pressure hold time setting Ventilator"
+      "display" : "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
     }]
   },
   "subject" : {

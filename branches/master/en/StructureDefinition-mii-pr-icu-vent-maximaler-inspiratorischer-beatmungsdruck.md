@@ -1,4 +1,4 @@
-# MII PR ICU Maximaler Inspiratorischer Beatmungsdruck - MII IG ICU v2027.0.0-ballot.rc1
+# MII PR ICU Maximaler Inspiratorischer Beatmungsdruck - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck | *Version*:2027.0.0-ballot.3 |
 | Draft as of 2026-09-15 | *Computable Name*:MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck |
 
 **Usages:**
@@ -34,11 +34,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
   "title" : "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
   "status" : "draft",
-  "date" : "2026-09-15T14:01:05+00:00",
+  "date" : "2026-09-15T17:45:52+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

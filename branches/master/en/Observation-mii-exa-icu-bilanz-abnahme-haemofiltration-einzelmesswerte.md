@@ -1,4 +1,4 @@
-# Bilanz Abnahme Haemofiltration Einzelmesswerte - MII IG ICU v2027.0.0-ballot.rc1
+# Bilanz Abnahme Haemofiltration Einzelmesswerte - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte](StructureDe
 
 **status**: Final
 
-**category**: Fluid balance observable (observable entity)
+**category**: Exam
 
 **code**: Ultrafiltrate fluid loss (observable entity)
 
@@ -41,7 +41,8 @@ Profile: [MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte](StructureDe
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-      "code" : "vital-sign"
+      "code" : "exam",
+      "display" : "Exam"
     },
     {
       "system" : "http://snomed.info/sct",

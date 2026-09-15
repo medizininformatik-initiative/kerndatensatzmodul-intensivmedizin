@@ -1,4 +1,4 @@
-# MII CPS Intensivmedizin CapabilityStatement - MII IG ICU v2027.0.0-ballot.rc1
+# MII CPS Intensivmedizin CapabilityStatement - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata | *Version*:2027.0.0-ballot.3 |
 | Active as of 2025-05-06 | *Computable Name*:MII_CPS_Intensivmedizin_CapabilityStatement |
 
  
@@ -25,7 +25,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
   "resourceType" : "CapabilityStatement",
   "id" : "mii-cps-icu-capabilitystatement",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-icu/CapabilityStatement/metadata",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_CPS_Intensivmedizin_CapabilityStatement",
   "title" : "MII CPS Intensivmedizin CapabilityStatement",
   "status" : "active",

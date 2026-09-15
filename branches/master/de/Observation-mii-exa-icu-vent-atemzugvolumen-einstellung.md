@@ -1,4 +1,4 @@
-# Vent Atemzugvolumen Einstellung - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Atemzugvolumen Einstellung - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Atemzugvolumen Einstellung](StructureDefinition-mii-pr-icu-
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "16929196",
-      "display" : "Tidal volume setting"
+      "display" : "MDC_VENT_VOL_TIDAL_SETTING"
     }]
   },
   "subject" : {

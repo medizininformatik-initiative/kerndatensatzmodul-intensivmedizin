@@ -1,4 +1,4 @@
-# MII VS ICU Code Observation Bilanzen ISO11073 - MII IG ICU v2027.0.0-ballot.rc1
+# MII VS ICU Code Observation Bilanzen ISO11073 - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073 | *Version*:2027.0.0-ballot.rc1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073 | *Version*:2027.0.0-ballot.3 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Observation_Bilanzen_ISO11073 |
 
  
@@ -37,7 +37,7 @@ Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten ISO/
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-observation-bilanzen-iso11073",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Code_Observation_Bilanzen_ISO11073",
   "title" : "MII VS ICU Code Observation Bilanzen ISO11073",
   "status" : "active",

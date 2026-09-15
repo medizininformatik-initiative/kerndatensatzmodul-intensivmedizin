@@ -1,4 +1,4 @@
-# Vent Mechanische Atemfrequenz Beatmet - MII IG ICU v2027.0.0-ballot.rc1
+# Vent Mechanische Atemfrequenz Beatmet - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -75,7 +75,7 @@ Profile: [MII PR ICU Mechanische Atemfrequenz Beatmet](StructureDefinition-mii-p
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151586",
-      "display" : "Ventilation rate"
+      "display" : "Rate of mechanical ventilation; method not specified."
     }]
   },
   "subject" : {

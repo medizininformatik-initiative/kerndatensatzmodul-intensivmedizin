@@ -1,4 +1,4 @@
-# Score Faces Pain Scale Revised - MII IG ICU v2027.0.0-ballot.rc1
+# Score Faces Pain Scale Revised - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-
 
 **status**: Final
 
-**category**: Survey
+**category**: Survey, Assessment scales (assessment scale)
 
 **code**: Faces Pain Scale - Revised score (observable entity)
 
@@ -43,8 +43,10 @@ Profile: [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "survey",
       "display" : "Survey"
-    },
-    {
+    }]
+  },
+  {
+    "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "273249006",
       "display" : "Assessment scales (assessment scale)"

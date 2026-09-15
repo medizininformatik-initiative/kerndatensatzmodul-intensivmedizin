@@ -1,4 +1,4 @@
-# Score Visuelle Analogskala - MII IG ICU v2027.0.0-ballot.rc1
+# Score Visuelle Analogskala - MII IG ICU v2027.0.0-ballot.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-
 
 **status**: Final
 
-**category**: Survey
+**category**: Survey, Exam
 
 **code**: Visual analog scale pain score (observable entity)
 
@@ -43,8 +43,10 @@ Profile: [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "survey",
       "display" : "Survey"
-    },
-    {
+    }]
+  },
+  {
+    "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "code" : "exam",
       "display" : "Exam"

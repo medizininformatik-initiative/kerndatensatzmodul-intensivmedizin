@@ -1,19 +1,29 @@
-# Änderungshistorie - MII IG ICU v2027.0.0-ballot.rc1
+# Änderungshistorie - MII IG ICU v2027.0.0-ballot.3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungshistorie**
 
 ## Änderungshistorie
 
- Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
+Alle Änderungen sind hier gelistet.
 
-Hier sind alle Änderungen aufgelistet.
+## Änderungen in 2027.0.0-ballot
 
-## Änderungen in 2026.0.1
+Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publisher, auf Basis des MII-KDS-Modul-Templates.
 
-Fix snapshot error:
+* **`BREAKING`** Migration auf das MII-KDS-Modul-Template: Der Guide wird nun auf GitHub Pages (diese Seite) statt auf Simplifier publiziert; Seiten-Orte haben sich geändert (siehe Navigation), die ImplementationGuide-id lautet nun `mii-ig-icu`
+* Abhängigkeiten auf die 2027er-Generation angehoben (`kerndatensatz.base`, `kerndatensatz.meta` 2027.0.0-ballot) sowie ISiK 6.0.0
+* Das Profil **Zerebraler Perfusionsdruck** ist ins ISiK-6-Package umgezogen und wurde aus diesem Modul entfernt
+* Neue Beispiele: alle Score-Profile (GCS, Faces Pain Scale, NRS, VAS), Körperlänge, zerebraler Perfusionsdruck — insgesamt 144 Beispiele, erstmals CI-validiert
+* `fix` Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende `Quantity.unit` ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen
+* `fix` Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am `code`-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen
 
-* Automatische Snapshot Generation in Simplifier
+### Bekannte Einschränkungen
+
+* Der QA-Report listet weiterhin eine erhebliche Zahl an Errors. **Alle sind triagiert, keiner ist ein inhaltlicher Defekt dieses Moduls** — dominierende Ursachen sind ein IG-Publisher-Bug in der Batch-Terminologie-Validierung (Upstream-Fix offen: [org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460)), in Profil-Patterns gepinnte Display-Texte, die von den offiziellen Terminologie-Displays abweichen ([#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79)), sowie die Terminologieserver-Semantik bei versionierten SNOMED-CT-Codings ([#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83)). Vollständige Aufschlüsselung: Seite **Examples**, Abschnitt „Bekannte Validierungsbefunde".
+* Zwei Profil-Designkonflikte sind in Diskussion: die Category-Bindings der Atemfrequenz-/ECT-Druck-Profile gegen die geerbte FHIR-Core-`vital-signs`-Pflicht sowie die Messort-Temperatur-Codes gegen das `ISiKKernTempSctVS` (ISiK 6.0.0).
+* `full-ig.zip` wird auf der Downloads-Seite nicht angeboten — das Archiv überschreitet GitHubs 100-MB-Dateilimit.
+* Das Package ist noch nicht auf Simplifier publiziert; bis dahin bitte das `package.tgz` dieser Publikation nutzen.
 
 ## Änderungen in 2026.0.0
 
