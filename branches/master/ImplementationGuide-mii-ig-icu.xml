@@ -160,12 +160,12 @@
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_base">
     <uri value="https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.base"/>
-    <version value="2026.0.1"/>
+    <version value="2027.0.0-ballot"/>
   </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_meta">
     <uri value="https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-    <version value="2026.0.0"/>
+    <version value="2027.0.0-ballot"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_xver_r5_r4">
     <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>

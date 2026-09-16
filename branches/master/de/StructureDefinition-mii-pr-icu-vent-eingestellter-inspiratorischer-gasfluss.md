@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss",
   "title" : "MII PR ICU Eingestellter Inspiratorischer Gasfluss",
   "status" : "active",
-  "date" : "2026-09-16T05:15:10+00:00",
+  "date" : "2026-09-16T08:10:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

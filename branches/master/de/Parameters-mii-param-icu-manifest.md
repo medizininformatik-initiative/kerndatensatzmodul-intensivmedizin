@@ -35,7 +35,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2026.0.0"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -59,7 +59,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -75,15 +75,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-intend|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-intend|2027.0.0-ballot"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -99,7 +99,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops|2027.0.0-ballot"
   },
   {
     "name" : "default-canonical-version",
@@ -128,6 +128,10 @@
   {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/bodySite|5.3.0"
   },
   {
     "name" : "default-canonical-version",
@@ -207,7 +211,7 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2026.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2027.0.0-ballot"
   },
   {
     "name" : "default-valueset-version",

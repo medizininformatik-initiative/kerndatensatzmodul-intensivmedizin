@@ -109,7 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_SOFA",
   "title" : "MII PR ICU Score SOFA",
   "status" : "draft",
-  "date" : "2026-09-16T05:15:10+00:00",
+  "date" : "2026-09-16T08:10:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

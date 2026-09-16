@@ -59,6 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]
@@ -139,7 +140,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
     "valuePeriod" : {
-      "start" : "2026"
+      "start" : "2027"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
@@ -147,7 +148,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren",
   "title" : "MII PR ICU Extrakorporales Verfahren",
   "status" : "active",
-  "date" : "2026-09-16T05:15:10+00:00",
+  "date" : "2026-09-16T08:10:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

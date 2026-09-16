@@ -59,6 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-beatmu
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]
@@ -139,7 +140,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-beatmu
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
     "valuePeriod" : {
-      "start" : "2026"
+      "start" : "2027"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung",
@@ -147,7 +148,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-beatmu
   "name" : "MII_PR_ICU_Beatmung",
   "title" : "MII PR ICU Beatmung",
   "status" : "active",
-  "date" : "2026-09-16T05:15:10+00:00",
+  "date" : "2026-09-16T08:10:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
