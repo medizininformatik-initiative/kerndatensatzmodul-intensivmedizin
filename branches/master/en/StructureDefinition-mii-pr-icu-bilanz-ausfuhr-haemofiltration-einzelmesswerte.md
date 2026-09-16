@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-15 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte |
+| Active as of 2026-09-16 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte |
 
 "Balance sheet withdrawal in hemofiltration individual measured values (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
   "title" : "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
   "status" : "active",
-  "date" : "2026-09-15T20:38:45+00:00",
+  "date" : "2026-09-16T05:15:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

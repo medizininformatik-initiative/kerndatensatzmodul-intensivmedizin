@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt |
+| Active Stand: 2026-09-16 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt |
 
 Dies ist eine Ausprägung des generischen Profils zu [Bilanz (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -92,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt",
   "title" : "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
   "status" : "active",
-  "date" : "2026-09-15T20:38:45+00:00",
+  "date" : "2026-09-16T05:15:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
