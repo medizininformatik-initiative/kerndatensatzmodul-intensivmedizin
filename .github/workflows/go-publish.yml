@@ -364,22 +364,47 @@ jobs:
               echo "::error::gh-pages publish-setup.json does not describe the Pages publication base and FHIR canonical."
               exit 1
             }
-            jq -e \
-              --arg canonical "${canonical}" \
-              --arg ci_build "${ci_build}" \
-              --arg package_id "${package_id}" \
-              --arg version "${version}" \
-              '.canonical == $canonical
-                and ."package-id" == $package_id
-                and any(.list[];
-                  .version == "current"
-                  and .status == "ci-build"
-                  and .path == $ci_build)
-                and all(.list[]; .version != $version)' \
-              site/package-list.json >/dev/null || {
-              echo "::error::Existing formal history is mismatched or already contains ${version}."
-              exit 1
-            }
+            # mode=technical-correction publiziert eine BEREITS publizierte
+            # Version korrigiert nach (HL7-Publisher-Feature); dann MUSS die
+            # Version in der History existieren — sonst darf sie es NICHT.
+            # (Gemessen: Run 35075661163 blockte die Korrektur pauschal.
+            # Template-Upstream-Kandidat.)
+            pub_mode="$(jq -r '.mode // "milestone"' source/publication-request.json)"
+            if [[ "${pub_mode}" == "technical-correction" ]]; then
+              jq -e \
+                --arg canonical "${canonical}" \
+                --arg ci_build "${ci_build}" \
+                --arg package_id "${package_id}" \
+                --arg version "${version}" \
+                '.canonical == $canonical
+                  and ."package-id" == $package_id
+                  and any(.list[];
+                    .version == "current"
+                    and .status == "ci-build"
+                    and .path == $ci_build)
+                  and any(.list[]; .version == $version)' \
+                site/package-list.json >/dev/null || {
+                echo "::error::technical-correction requires ${version} to already exist in the formal history."
+                exit 1
+              }
+            else
+              jq -e \
+                --arg canonical "${canonical}" \
+                --arg ci_build "${ci_build}" \
+                --arg package_id "${package_id}" \
+                --arg version "${version}" \
+                '.canonical == $canonical
+                  and ."package-id" == $package_id
+                  and any(.list[];
+                    .version == "current"
+                    and .status == "ci-build"
+                    and .path == $ci_build)
+                  and all(.list[]; .version != $version)' \
+                site/package-list.json >/dev/null || {
+                echo "::error::Existing formal history is mismatched or already contains ${version}."
+                exit 1
+              }
+            fi
           fi
 
           {
