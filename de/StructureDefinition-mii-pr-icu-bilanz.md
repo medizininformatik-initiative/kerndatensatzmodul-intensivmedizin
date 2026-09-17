@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz |
+| Active Stand: 2026-09-17 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz |
 
 Stellt alle gemessenen Ein- und Ausfuhren von Flüssigkeiten dar.
 
@@ -104,7 +104,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz",
   "title" : "MII PR ICU Bilanz",
   "status" : "active",
-  "date" : "2026-09-15T22:20:02+00:00",
+  "date" : "2026-09-17T12:17:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

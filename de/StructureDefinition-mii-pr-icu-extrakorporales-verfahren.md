@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-15 | *Maschinenlesbarer Name*:MII_PR_ICU_Extrakorporales_Verfahren |
+| Active Stand: 2026-09-17 | *Maschinenlesbarer Name*:MII_PR_ICU_Extrakorporales_Verfahren |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-extrakorporales-verfahren-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -36,7 +36,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 #### Terminology Bindings (Differential)
 
@@ -44,7 +44,7 @@ Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininf
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 ** Summary **
 
@@ -59,7 +59,7 @@ Mandatory: 3 elements
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 #### Terminology Bindings (Differential)
 
@@ -69,7 +69,7 @@ Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininf
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2026.0.1/StructureDefinition-mii-pr-prozedur-procedure.html) 
+Diese Struktur ist abgeleitet von [MII_PR_Prozedur_Procedure](https://medizininformatik-initiative.github.io/kerndatensatz-basis/2027.0.0-ballot/StructureDefinition-mii-pr-prozedur-procedure.html) 
 
 ** Summary **
 
@@ -109,6 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]
@@ -189,7 +190,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
     "valuePeriod" : {
-      "start" : "2026"
+      "start" : "2027"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
@@ -197,7 +198,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren",
   "title" : "MII PR ICU Extrakorporales Verfahren",
   "status" : "active",
-  "date" : "2026-09-15T22:20:02+00:00",
+  "date" : "2026-09-17T12:17:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

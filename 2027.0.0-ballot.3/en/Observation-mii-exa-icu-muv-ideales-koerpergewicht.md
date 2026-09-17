@@ -1,0 +1,80 @@
+# Muv Ideales Koerpergewicht - MII IG ICU v2027.0.0-ballot.3
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Muv Ideales Koerpergewicht**
+
+## Example Observation: Muv Ideales Koerpergewicht
+
+-------
+
+**English**
+
+-------
+
+Profile: [SD MII ICU Ideales Koerpergewicht](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht)
+
+**status**: Final
+
+**category**: Vital Signs
+
+**code**: Ideal body weight
+
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
+
+**effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
+
+**value**: 70 kilogram (Details: UCUM codekg = 'kg')
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-muv-ideales-koerpergewicht",
+  "meta" : {
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht"]
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "50064-5",
+      "display" : "Ideal body weight"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "170804003",
+      "display" : "Ideal body weight (observable entity)"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "code" : "188796",
+      "display" : "Ideal body weight (IBW)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-icu-patient"
+  },
+  "effectivePeriod" : {
+    "start" : "2019-12-23T09:30:10+01:00",
+    "end" : "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity" : {
+    "value" : 70,
+    "unit" : "kilogram",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
+  }
+}
+
+```

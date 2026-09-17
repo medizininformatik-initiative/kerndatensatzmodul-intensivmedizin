@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-arterieller-druck | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-15 | *Computable Name*:MII_PR_ICU_ECT_Arterieller_Druck |
+| Active as of 2026-09-17 | *Computable Name*:MII_PR_ICU_ECT_Arterieller_Druck |
 
 Observation "arterial pressure" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ar
   "name" : "MII_PR_ICU_ECT_Arterieller_Druck",
   "title" : "MII PR ICU Arterieller Druck",
   "status" : "active",
-  "date" : "2026-09-15T22:20:02+00:00",
+  "date" : "2026-09-17T12:17:33+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

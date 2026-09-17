@@ -1,25 +1,33 @@
 {
-  "list": [
-    {
-      "version": "current",
-      "path": "https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/branches/master/",
-      "status": "ci-build",
-      "sequence": "ci-build",
-      "desc": "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
-    },
-    {
-      "version": "2027.0.0-ballot",
-      "path": "https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/2027.0.0-ballot",
-      "status": "release",
-      "sequence": "2027",
-      "fhirversion": "4.0.1",
-      "date": "2026-09-14",
-      "desc": "Ballot release of the MII Core Data Set module Intensivmedizin (ICU) - first formal release on the MII KDS module template."
-    }
-  ],
-  "package-id": "de.medizininformatikinitiative.kerndatensatz.icu",
-  "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu",
-  "title": "MII IG ICU",
-  "category": "Research",
-  "introduction": "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set."
+  "list" : [{
+    "version" : "current",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/branches/master/",
+    "status" : "ci-build",
+    "sequence" : "ci-build",
+    "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+  },
+  {
+    "version" : "2027.0.0-ballot.3",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/2027.0.0-ballot.3",
+    "status" : "release",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-15",
+    "current" : true,
+    "desc" : "Ballot correction release of the MII Core Data Set module Intensivmedizin (ICU): example and profile QA fixes on top of 2027.0.0-ballot."
+  },
+  {
+    "version" : "2027.0.0-ballot",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-intensivmedizin/2027.0.0-ballot",
+    "status" : "release",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-14",
+    "desc" : "Ballot release of the MII Core Data Set module Intensivmedizin (ICU) - first formal release on the MII KDS module template."
+  }],
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.icu",
+  "canonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu",
+  "title" : "MII IG ICU",
+  "category" : "Research",
+  "introduction" : "FHIR profiles for representing intensive care unit data - PDMS data and high-resolution biosignal data - as part of the MII core data set."
 }
