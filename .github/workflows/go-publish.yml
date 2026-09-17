@@ -408,6 +408,21 @@ jobs:
           fi
 
           {
+            # Unveraenderlichkeits-Guard: Die Version darf auf KEINER
+            # Package-Registry existieren (Simplifier + HL7-Spiegel) — dort
+            # ist eine publizierte Version endgueltig (Consumer-Caches).
+            # Ein Republish derselben Nummer ist nur zulaessig, solange kein
+            # Registry-Paket existiert.
+            for reg in "https://packages.simplifier.net" "https://packages2.fhir.org/packages"; do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "${reg}/${package_id}/${version}")
+              if [[ "${code}" == "200" ]]; then
+                echo "::error::${package_id}@${version} ist bereits auf ${reg} publiziert — Registry-Pakete sind unveraenderlich; neue Versionsnummer erforderlich."
+                exit 1
+              elif [[ "${code}" != "404" ]]; then
+                echo "::warning::Registry-Pruefung ${reg} lieferte HTTP ${code} (weder 200 noch 404) — bitte manuell verifizieren."
+              fi
+            done
+
             echo "bootstrap=${bootstrap}"
             echo "canonical=${canonical}"
             echo "ci_build=${ci_build}"
