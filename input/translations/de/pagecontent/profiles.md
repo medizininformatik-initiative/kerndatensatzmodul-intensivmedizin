@@ -2,6 +2,9 @@
 
 ### Interaktive Profilübersicht
 
+<p style="border-left:4px solid #dcc39a;background:#fffdf9;padding:8px 12px;border-radius:4px">ℹ️ Die Basisprofile der Familie <em>Monitoring und Vitaldaten</em> werden im gematik-Package <code>de.gematik.isik 6.0.0</code> gepflegt — die vollständige, versionsgenaue Liste steht unten in der bernsteinfarbenen Sektion <a href="#isik-hosted-profiles">ISiK-gehostete Profile</a>.</p>
+
+
 <style>
 .icu-acc{margin:1em 0;overflow:hidden}
 .icu-acc details{border:1px solid #c3cedb;border-radius:7px;margin:6px 0;background:#fbfcfe}
@@ -112,7 +115,6 @@
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
-<a href="StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.html">zerebraler Perfusionsdruck</a>
 </div>
 </div></details>
 <details>
@@ -152,7 +154,7 @@
 <p class="icu-note"><b>ISiK-gehostete Profile &mdash; de.gematik.isik 6.0.0</b><br>Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem bewussten Pin-Wechsel. Links &ouml;ffnen Simplifier.</p>
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
-> **Written during migration - review before release.** Die Profile zu
+> Die Profile zu
 > Monitoring und Vitaldaten dieses Moduls sind im ISiK-Paket `de.gematik.isik`
 > (6.0.0) als `sd-mii-icu-*` veroeffentlicht und werden daher von jenem Paket
 > gerendert, nicht von diesem Guide. Der Quell-Guide fuehrte je Profil eine
@@ -166,9 +168,11 @@
 
 Die einzelnen Profile sind Auspraegungen des generischen Profils [Monitoring und Vitaldaten (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten). Siehe dort fuer naehere Informationen zu den Items und zum Bezug auf das Logical Model.
 
+<a id="isik-hosted-profiles"></a>
 <div class="icu-acc isik">
 <details>
 <summary>Generische Profile<span class="cnt">3</span></summary><div class="body"><div class="items">
+<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck">zerebraler Perfusionsdruck (seit ISiK 6 dort gepflegt)</a>
 <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch">Koerpertemperatur Generisch</a>
 <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten">Monitoring und Vitaldaten</a>
 <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch">Sonstige pulsatile Druecke Generisch</a>
