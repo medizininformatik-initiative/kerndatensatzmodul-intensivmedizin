@@ -1050,7 +1050,6 @@ parameters:
     # zwei ISiK-gehostete Basisprofile als IG-Artefakte — PoC fuer die Frage,
     # ob special-url auch Artefakt-Seiten fuer Fremd-Canonicals erzeugt.
     - https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten
-    - https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern
     - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result
     - https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc
   # FHIR validation test cases (for example, kerndatensatz-basis does the same).
