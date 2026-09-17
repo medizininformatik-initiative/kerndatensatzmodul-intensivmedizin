@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-16 | *Computable Name*:MII_PR_ICU_Bilanz |
+| Active as of 2026-09-17 | *Computable Name*:MII_PR_ICU_Bilanz |
 
 Represents all measured imports and exports of liquids.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz",
   "title" : "MII PR ICU Bilanz",
   "status" : "active",
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

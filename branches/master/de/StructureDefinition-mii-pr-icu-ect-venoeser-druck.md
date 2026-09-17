@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-16 | *Maschinenlesbarer Name*:MII_PR_ICU_ECT_Venoeser_Druck |
+| Active Stand: 2026-09-17 | *Maschinenlesbarer Name*:MII_PR_ICU_ECT_Venoeser_Druck |
 
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von extrakorporalen Verfahren](profiles.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Venoeser_Druck",
   "title" : "MII PR ICU Venoeser Druck",
   "status" : "active",
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-16 | *Computable Name*:MII_VS_ICU_Present_Absent |
+| Active as of 2026-09-17 | *Computable Name*:MII_VS_ICU_Present_Absent |
 
  
 Present or absent findings 
@@ -43,7 +43,7 @@ Present or absent findings
   "title" : "MII VS ICU Present Absent",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

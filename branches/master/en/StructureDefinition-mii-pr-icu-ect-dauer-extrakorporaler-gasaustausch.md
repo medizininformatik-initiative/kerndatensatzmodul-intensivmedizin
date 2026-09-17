@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-16 | *Computable Name*:MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch |
+| Active as of 2026-09-17 | *Computable Name*:MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch |
 
 Observation "Duration of extracorporeal gas exchange" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-da
   "name" : "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Dauer Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

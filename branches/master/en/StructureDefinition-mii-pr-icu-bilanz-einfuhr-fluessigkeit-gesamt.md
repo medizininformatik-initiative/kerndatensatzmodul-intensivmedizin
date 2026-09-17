@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-16 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt |
+| Active as of 2026-09-17 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt |
 
 "Balance import liquid total (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt",
   "title" : "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
   "status" : "active",
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

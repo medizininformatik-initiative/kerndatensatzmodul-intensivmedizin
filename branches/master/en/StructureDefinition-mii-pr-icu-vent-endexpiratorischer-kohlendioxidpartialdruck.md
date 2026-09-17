@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-16 | *Computable Name*:MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck |
+| Active as of 2026-09-17 | *Computable Name*:MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck-intro.md
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
   "name" : "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
   "title" : "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
   "status" : "active",
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

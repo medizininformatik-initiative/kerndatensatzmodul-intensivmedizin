@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform | *Version*:2027.0.0-ballot.3 |
-| Draft as of 2026-09-16 | *Computable Name*:MII_PR_ICU_Untersuchung_Pupillenform |
+| Draft as of 2026-09-17 | *Computable Name*:MII_PR_ICU_Untersuchung_Pupillenform |
 
 **Usages:**
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-unters
   "name" : "MII_PR_ICU_Untersuchung_Pupillenform",
   "title" : "MII PR ICU Untersuchung Pupillenform",
   "status" : "draft",
-  "date" : "2026-09-16T08:10:08+00:00",
+  "date" : "2026-09-17T08:26:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
