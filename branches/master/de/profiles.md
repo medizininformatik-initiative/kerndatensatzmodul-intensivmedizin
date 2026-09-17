@@ -7,12 +7,14 @@
 
 ### Interaktive Profilübersicht
 
+ℹ️ Die Basisprofile der Familie **Monitoring und Vitaldaten** werden im gematik-Package `de.gematik.isik 6.0.0` gepflegt — die vollständige, versionsgenaue Liste steht unten in der bernsteinfarbenen Sektion [ISiK-gehostete Profile](#isik-hosted-profiles).
+
 **Modul-eigene Profile — dieses Paket**
 
 **ISiK-gehostete Profile — de.gematik.isik 6.0.0**
 Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert — die Liste ändert sich nur mit einem bewussten Pin-Wechsel. Links öffnen Simplifier.
 
-> **Written during migration - review before release.** Die Profile zu Monitoring und Vitaldaten dieses Moduls sind im ISiK-Paket `de.gematik.isik` (6.0.0) als `sd-mii-icu-*` veroeffentlicht und werden daher von jenem Paket gerendert, nicht von diesem Guide. Der Quell-Guide fuehrte je Profil eine Seite; diese enthielten nur den Verweis auf das generische Profil, der unten einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.
+> Die Profile zu Monitoring und Vitaldaten dieses Moduls sind im ISiK-Paket `de.gematik.isik` (6.0.0) als `sd-mii-icu-*` veroeffentlicht und werden daher von jenem Paket gerendert, nicht von diesem Guide. Der Quell-Guide fuehrte je Profil eine Seite; diese enthielten nur den Verweis auf das generische Profil, der unten einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.
 
 > Original-Wortlaut der Quellseiten (je Profil): „Dies ist eine Ausprägung des generischen Profils zu Monitoring und Vitaldaten (Observation). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model."Für die pulsatilen Drücke zusätzlich: „Es handelt sich hier um einen pulsatilen Druck. Für diesen gelten neben den Eigenschaften des generischen Profils zu Monitoring und Vitaldaten (Observation) die Eigenschaften des generischen Profils zu Sonstige pulsatile Drücke (Generisch) (Observation)."
 

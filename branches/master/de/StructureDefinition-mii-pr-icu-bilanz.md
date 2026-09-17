@@ -104,7 +104,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz",
   "title" : "MII PR ICU Bilanz",
   "status" : "active",
-  "date" : "2026-09-17T08:26:08+00:00",
+  "date" : "2026-09-17T12:53:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

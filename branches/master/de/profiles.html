@@ -303,6 +303,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="interaktive-profilübersicht">Interaktive Profilübersicht</h3>
 
+<p style="border-left:4px solid #dcc39a;background:#fffdf9;padding:8px 12px;border-radius:4px">ℹ️ Die Basisprofile der Familie <em>Monitoring und Vitaldaten</em> werden im gematik-Package <code>de.gematik.isik 6.0.0</code> gepflegt — die vollständige, versionsgenaue Liste steht unten in der bernsteinfarbenen Sektion <a href="#isik-hosted-profiles">ISiK-gehostete Profile</a>.</p>
+
 <style>
 .icu-acc{margin:1em 0;overflow:hidden}
 .icu-acc details{border:1px solid #c3cedb;border-radius:7px;margin:6px 0;background:#fbfcfe}
@@ -406,7 +408,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div></details>
 <details>
 <summary>Monitoring und Vitaldaten (modul-eigen)<span class="cnt">8</span></summary><div class="body">
-<div class="items"><a name="l725">​</a>
+<div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
@@ -414,7 +416,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
-<a href="StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.html">zerebraler Perfusionsdruck</a>
 </div>
 </div></details>
 <details>
@@ -455,7 +456,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
 <blockquote class="ig-highlight ig-highlight-blue">
-  <p><strong>Written during migration - review before release.</strong> Die Profile zu
+  <p>Die Profile zu
 Monitoring und Vitaldaten dieses Moduls sind im ISiK-Paket <code class="language-plaintext highlighter-rouge">de.gematik.isik</code>
 (6.0.0) als <code class="language-plaintext highlighter-rouge">sd-mii-icu-*</code> veroeffentlicht und werden daher von jenem Paket
 gerendert, nicht von diesem Guide. Der Quell-Guide fuehrte je Profil eine
@@ -471,9 +472,11 @@ einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
 <p>Die einzelnen Profile sind Auspraegungen des generischen Profils <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten">Monitoring und Vitaldaten (Observation)</a>. Siehe dort fuer naehere Informationen zu den Items und zum Bezug auf das Logical Model.</p>
 
+<p><a id="isik-hosted-profiles"></a></p>
 <div class="icu-acc isik">
 <details>
 <summary>Generische Profile<span class="cnt">3</span></summary><div class="body"><div class="items">
+<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck">zerebraler Perfusionsdruck (seit ISiK 6 dort gepflegt)</a>
 <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch">Koerpertemperatur Generisch</a>
 <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten">Monitoring und Vitaldaten</a>
 <a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch">Sonstige pulsatile Druecke Generisch</a>
@@ -538,10 +541,10 @@ einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
 <ul>
   <li>
-    <p><a name="l1085">​</a>Parameter von extrakorporalen Verfahren:   - <a href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html">Extrakorporale Verfahren (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von extrakorporalen Verfahren (Observation)</a></p>
+    <p><a name="l1098">​</a>Parameter von extrakorporalen Verfahren:   - <a href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html">Extrakorporale Verfahren (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von extrakorporalen Verfahren (Observation)</a></p>
   </li>
   <li>
-    <p><a name="l1099">​</a>Beatmungswerte:   - <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von Beatmung (Observation)</a></p>
+    <p><a name="l1112">​</a>Beatmungswerte:   - <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von Beatmung (Observation)</a></p>
   </li>
   <li>
     <p>Monitoring und Vitaldaten   - <a href="profiles.html">Monitoring und Vitaldaten (Observation)</a>   - <a href="profiles.html">Sonstige pulsatile Drücke Generisch (Observation)</a>   - <a href="profiles.html">Körpertemperatur Generisch (Observation)</a></p>
@@ -625,7 +628,7 @@ einmal erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Sep 17, 2026 08:26+0000">2026-09-17</span>
+          Erstellt <span title="Thu, Sep 17, 2026 12:53+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.
