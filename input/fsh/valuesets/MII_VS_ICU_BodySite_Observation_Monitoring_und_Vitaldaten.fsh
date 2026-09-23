@@ -39,3 +39,6 @@ Description: "Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie
 * include $sct#34402009
 * include $sct#76784001
 * include $sct#89187006
+* include $sct#731998000  // aus MII_PR_ICU_MUV_Intrakranieller_Druck
+* include $sct#430160002  // aus MII_PR_ICU_MUV_Pulmonalarterieller_Wedge_Druck
+* include $sct#263353005  // aus MII_PR_ICU_MUV_zerebraler_Perfusionsdruck

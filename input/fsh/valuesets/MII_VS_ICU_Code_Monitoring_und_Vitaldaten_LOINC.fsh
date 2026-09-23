@@ -61,3 +61,4 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $loinc#76010-8 "Nasal temperature"
 * include $loinc#60838-0 "Body temperature"
 * include $loinc#104063-3 "Body temperature"
+* include $loinc#60825-7 "Carbon dioxide production (VCO2) in Respiratory system"

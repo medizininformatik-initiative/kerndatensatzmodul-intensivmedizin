@@ -17,14 +17,15 @@ Alias: $mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/m
 // VS
 Alias: $mii-vs-icu-code-observation-pupillenlichtreaktion = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion
 Alias: $mii-vs-icu-bodysite-observation-pupillenbefund = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund
+Alias: $mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten
 
 // ISiK Profiles
+Alias: $observation-de-vitalsign = http://fhir.de/StructureDefinition/observation-de-vitalsign
 Alias: $observation-de-vitalsign-blutdruck = http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck
 Alias: $observation-de-vitalsign-atemfrequenz = http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz
 Alias: $observation-de-vitalsign-koerpergewicht = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht
 Alias: $observation-de-vitalsign-koerpergroesse = http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse
 Alias: $observation-de-vitalsign-kopfumfang = http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang
-Alias: $observation-de-vitalsign = http://fhir.de/StructureDefinition/observation-de-vitalsign
 Alias: $sd-mii-icu-monitoring-und-vitaldaten = https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten
 
 // licenses

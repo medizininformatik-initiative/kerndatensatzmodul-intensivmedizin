@@ -521,6 +521,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"
+        },
+        "name": "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse"
         },
         "name": "MII PR ICU MUV Koerpergroesse",
@@ -538,6 +545,28 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
         },
         "name": "MII PR ICU MUV Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck"
+        },
+        "name": "MII PR ICU MUV Pulmonalarterieller Wedge-Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "name": "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "MII PR ICU MUV zerebraler Perfusionsdruck",
+        "description": "Dieses Profil dient der spezialisierten Abbildung des zerebralen Perfusionsdrucks (ICP) in der Akutmedizin.",
         "exampleBoolean": false
       },
       {
