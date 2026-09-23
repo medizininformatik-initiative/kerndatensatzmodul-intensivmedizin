@@ -141,6 +141,10 @@ Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Pa
       {
         "code" : "151708",
         "display" : "End tidal carbon dioxide concentration (or partial pressure) in airway gas"
+      },
+      {
+        "code" : "151972",
+        "display" : "Airway pressure, primarily during an inspiratory phase"
       }]
     }]
   }

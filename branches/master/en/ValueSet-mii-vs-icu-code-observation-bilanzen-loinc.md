@@ -109,6 +109,10 @@ Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOIN
       {
         "code" : "99741-1",
         "display" : "Ultrafiltrate volume removed"
+      },
+      {
+        "code" : "9057-1",
+        "display" : "Calorie intake total 24 hour"
       }]
     }]
   }

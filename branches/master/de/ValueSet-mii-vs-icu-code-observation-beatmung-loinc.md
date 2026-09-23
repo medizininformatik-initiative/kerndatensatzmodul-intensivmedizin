@@ -177,6 +177,10 @@ Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Pa
       {
         "code" : "20079-0",
         "display" : "Pressure support setting Ventilator"
+      },
+      {
+        "code" : "76003-3",
+        "display" : "Pressure Respiratory system airway --during inspiration on ventilator"
       }]
     }]
   }

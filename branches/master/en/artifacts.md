@@ -79,14 +79,13 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) |  |
+| [ MII PR ICU Bilanz Einfuhr Kalorien 24h  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Muttermilch  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Orale Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Saeuglingsnahrung  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Spendermilch  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.md) |  |
 | [ MII PR ICU Bilanz Tagesbilanz Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md) |  |
 | [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) |  |
-| [ MII PR ICU Blutfluss Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md) |  |
-| [ MII PR ICU Blutflussindex Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md) |  |
 | [ MII PR ICU Dauer Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md) |  |
 | [ MII PR ICU Dauer Haemodialysesitzung  ](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md) |  |
 | [ MII PR ICU Device  ](StructureDefinition-mii-pr-icu-device.md) |  |
@@ -97,6 +96,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Eingestellter Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md) |  |
 | [ MII PR ICU Einstellung Ausatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md) |  |
 | [ MII PR ICU Einstellung Einatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md) |  |
+| [ MII PR ICU Einstellung Inspirationsdruck  ](StructureDefinition-mii-pr-icu-vent-einstellung-inspirationsdruck.md) |  |
 | [ MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck  ](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md) |  |
 | [ MII PR ICU Exspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md) |  |
 | [ MII PR ICU Exspiratorischer Sauerstoffpartialdruck  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) |  |
@@ -106,7 +106,6 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Horowitz In Arteriellem Blut  ](StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.md) |  |
 | [ MII PR ICU Inspiratorische Sauerstofffraktion  ](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md) |  |
 | [ MII PR ICU Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) |  |
 | [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |  |
 | [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |  |
 | [ MII PR ICU MUV Herzfrequenz  ](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |  |

@@ -137,6 +137,10 @@ Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten SNOM
       {
         "code" : "1204305004",
         "display" : "Measured volume of intake of infant formula (observable entity)"
+      },
+      {
+        "code" : "787787004",
+        "display" : "Energy intake (observable entity)"
       }]
     }]
   }

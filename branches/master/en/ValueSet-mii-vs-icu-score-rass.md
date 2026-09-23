@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass | *Version*:2027.0.0-ballot.3 |
-| Draft as of 2026-09-17 | *Computable Name*:MII_VS_ICU_Score_RASS |
+| Draft as of 2026-09-23 | *Computable Name*:MII_VS_ICU_Score_RASS |
 
  
 Value set for RASS Score 
@@ -42,7 +42,7 @@ Value set for RASS Score
   "title" : "MII VS ICU Score RASS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T12:53:08+00:00",
+  "date" : "2026-09-23T08:48:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

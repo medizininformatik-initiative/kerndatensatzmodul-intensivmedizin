@@ -18,7 +18,7 @@ Profile: [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-ic
 
 **category**: Survey, Assessment scales (assessment scale)
 
-**code**: Numeric Pain Rating Scale score
+**code**: 1284857008
 
 **subject**: Identifier: `http://example.com`/1234
 

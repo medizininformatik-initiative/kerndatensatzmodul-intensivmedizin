@@ -9,11 +9,11 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-17 | *Maschinenlesbarer Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
+| Active Stand: 2026-09-23 | *Maschinenlesbarer Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
 
 **Usages:**
 
-* Derived from this Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md), [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md), [MII PR ICU Blutfluss Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md), [MII PR ICU Blutflussindex Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md)... Show 8 more, [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md), [MII PR ICU Dauer Haemodialysesitzung](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md), [MII PR ICU Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md), [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md), [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md), [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substituatfluss.md), [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) and [MII PR ICU Venoeser Druck](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md)
+* Derived from this Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md), [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md), [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md), [MII PR ICU Dauer Haemodialysesitzung](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md)... Show 5 more, [MII PR ICU Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md), [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md), [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substituatfluss.md), [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) and [MII PR ICU Venoeser Druck](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md)
 * Examples for this Profile: [Observation/mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren](Observation-mii-exa-icu-ect-parameter-von-extrakorporalen-verfahren.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.json)
@@ -121,7 +121,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-09-17T12:53:08+00:00",
+  "date" : "2026-09-23T08:48:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

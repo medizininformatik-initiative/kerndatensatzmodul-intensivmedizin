@@ -18,7 +18,7 @@ Profile: [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md)
 
 **category**: Survey, Assessment scales (assessment scale)
 
-**code**: Glasgow coma score
+**code**: 248241002
 
 **subject**: Identifier: `http://example.com`/1234
 

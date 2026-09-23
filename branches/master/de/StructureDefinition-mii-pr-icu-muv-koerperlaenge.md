@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-17 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
+| Active Stand: 2026-09-23 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
 
 **Usages:**
 
@@ -44,7 +44,7 @@ Diese Struktur ist abgeleitet von [SD_MII_ICU_Monitoring_Und_Vitaldaten](https:/
 ** Summary **
 
 Mandatory: 2 elements(1 nested mandatory element)
- Must-Support: 6 elements
+ Must-Support: 7 elements
 
 **Slices**
 
@@ -75,7 +75,7 @@ Diese Struktur ist abgeleitet von [SD_MII_ICU_Monitoring_Und_Vitaldaten](https:/
 ** Summary **
 
 Mandatory: 2 elements(1 nested mandatory element)
- Must-Support: 6 elements
+ Must-Support: 7 elements
 
 **Slices**
 
@@ -100,7 +100,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerperlaenge",
   "title" : "MII PR ICU MUV Koerperlaenge",
   "status" : "active",
-  "date" : "2026-09-17T12:53:08+00:00",
+  "date" : "2026-09-23T08:48:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -137,7 +137,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "min" : 2
+      "min" : 2,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:sct",

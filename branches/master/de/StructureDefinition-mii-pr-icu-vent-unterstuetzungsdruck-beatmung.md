@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-09-17 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung |
+| Active Stand: 2026-09-23 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung |
 
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von Beatmung (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung",
   "title" : "MII PR ICU Unterstuetzungsdruck Beatmung",
   "status" : "active",
-  "date" : "2026-09-17T12:53:08+00:00",
+  "date" : "2026-09-23T08:48:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

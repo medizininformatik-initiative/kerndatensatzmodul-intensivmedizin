@@ -1792,6 +1792,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"/>
+      </reference>
+      <name value="MII PR ICU Bilanz Einfuhr Kalorien 24h"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"/>
       </reference>
       <name value="MII PR ICU Bilanz Einfuhr Muttermilch"/>
@@ -1845,26 +1855,6 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"/>
       </reference>
       <name value="MII PR ICU Blutfluss Cardiovasculaeres Geraet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"/>
-      </reference>
-      <name value="MII PR ICU Blutfluss Extrakorporaler Gasaustausch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"/>
-      </reference>
-      <name value="MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1972,6 +1962,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"/>
+      </reference>
+      <name value="MII PR ICU Einstellung Inspirationsdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"/>
       </reference>
       <name value="MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"/>
@@ -2055,16 +2055,6 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"/>
       </reference>
       <name value="MII PR ICU Inspiratorischer Gasfluss"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"/>
-      </reference>
-      <name value="MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

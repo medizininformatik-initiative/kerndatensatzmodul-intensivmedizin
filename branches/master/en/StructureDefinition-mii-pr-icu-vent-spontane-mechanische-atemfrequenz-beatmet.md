@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-09-17 | *Computable Name*:MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet |
+| Active as of 2026-09-23 | *Computable Name*:MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet |
 
 "Spontaneous mechanical breathing frequency - ventilated" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-09-17T12:53:08+00:00",
+  "date" : "2026-09-23T08:48:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

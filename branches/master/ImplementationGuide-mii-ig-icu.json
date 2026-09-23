@@ -2224,6 +2224,17 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
+      },
+      "name" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
       },
       "name" : "MII PR ICU Bilanz Einfuhr Muttermilch",
@@ -2282,28 +2293,6 @@
         "reference" : "StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
       },
       "name" : "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
-      },
-      "name" : "MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
-      },
-      "name" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
       "exampleBoolean" : false
     },
     {
@@ -2422,6 +2411,17 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"
+      },
+      "name" : "MII PR ICU Einstellung Inspirationsdruck",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
       },
       "name" : "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
@@ -2513,17 +2513,6 @@
         "reference" : "StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"
       },
       "name" : "MII PR ICU Inspiratorischer Gasfluss",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
-      },
-      "name" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
       "exampleBoolean" : false
     },
     {
