@@ -29,4 +29,4 @@ Description: "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung 
 * include $ieee-11073#151976 "Applied PEEP"
 * include $ieee-11073#152720 "Inspiratory airway pressure relative to PEEP or BAP"
 * include $ieee-11073#151708 "End tidal carbon dioxide concentration (or partial pressure) in airway gas"
-
+* include $ieee-11073#151972 "Airway pressure, primarily during an inspiratory phase"
