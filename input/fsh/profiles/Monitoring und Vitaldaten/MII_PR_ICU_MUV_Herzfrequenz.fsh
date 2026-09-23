@@ -7,7 +7,7 @@ Title: "MII PR ICU MUV Herzfrequenz"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz"
 * ^status = #active
 
-* code.coding 3..
+* code.coding 3.. MS
 * code.coding[sct] 1..1
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #364075005

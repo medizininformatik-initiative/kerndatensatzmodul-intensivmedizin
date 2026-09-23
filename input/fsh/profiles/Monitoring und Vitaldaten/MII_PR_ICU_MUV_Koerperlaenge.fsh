@@ -11,7 +11,7 @@ Title: "MII PR ICU MUV Koerperlaenge"
 
 * status MS
 
-* code.coding 2..
+* code.coding 2.. MS
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1149101003
