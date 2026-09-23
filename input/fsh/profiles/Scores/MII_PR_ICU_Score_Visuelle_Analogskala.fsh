@@ -9,7 +9,7 @@ Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
 * ^version = "2026.0.0"
-* ^status = #draft
+* ^status = #active
 
 * obeys mii-icu-painscale-vas
 

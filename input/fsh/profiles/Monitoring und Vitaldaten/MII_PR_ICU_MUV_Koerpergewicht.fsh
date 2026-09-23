@@ -24,7 +24,6 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * category[sct].coding.display 0..1 MS
 
 * code MS
-* code.coding 2..2 MS
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #29463-7
@@ -37,6 +36,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
+* code.coding 2..2 MS
 
 * subject MS
 

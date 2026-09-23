@@ -6,8 +6,7 @@ Title: "MII PR ICU Score GCS"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs"
 * ^version = "2026.0.0"
-* ^status = #draft
-* ^experimental = true
+* ^status = #active
 
 * obeys gcs-total-range // 3 - 15
 
@@ -48,6 +47,11 @@ Title: "MII PR ICU Score GCS"
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
+// slicing frame moved here from the parent MII_PR_ICU_Score (see MIGRATION FIX there)
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
 * component contains
     GCSeyes 0..1 MS and
     GCSmotor 0..1 MS and

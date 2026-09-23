@@ -6,7 +6,7 @@
   "title": "MII VS ICU Code Observation Beatmung ISO11073",
   "description": "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Parameter.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073",
-  "version": "2026.0.2",
+  "version": "2027.0.0-ballot.rc1",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -104,6 +104,10 @@
           {
             "code": "151708",
             "display": "End tidal carbon dioxide concentration (or partial pressure) in airway gas"
+          },
+          {
+            "code": "151972",
+            "display": "Airway pressure, primarily during an inspiratory phase"
           }
         ]
       }

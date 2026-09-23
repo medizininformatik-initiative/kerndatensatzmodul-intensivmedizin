@@ -1,0 +1,4 @@
+2026-08-27T18:12:02Z  INFO   7  prepost-delta  params  pre=migration-log/preflight-analysis.json post=migration-log/postflight-analysis.json out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv
+2026-08-27T18:12:02Z  WARN   7  prepost-delta  delta-not-measurable: identity.license  pre=- post=CC-BY-4.0
+    the field is absent from the pre measurement
+2026-08-27T18:12:02Z  INFO   7  prepost-delta  result  rows=34 unchanged=28 improved=1 expected-change=4 regression=0 not-measurable=1 out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv exit=0

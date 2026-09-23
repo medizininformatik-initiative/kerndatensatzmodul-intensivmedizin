@@ -25,6 +25,11 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #closed
+// slicing frame moved here from the parent MII_PR_ICU_Score (see MIGRATION FIX there)
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
 * component contains
     altered-consciousness 1..1 MS and
     inattention 1..1 MS and

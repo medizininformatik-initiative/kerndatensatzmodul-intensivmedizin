@@ -11,14 +11,15 @@
     {
       "coding": [
         {
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
-          "code": "vital-sign"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "exam",
+          "display": "Exam"
         },
         {
           "system": "http://snomed.info/sct",
           "code": "364396009",
           "display": "Fluid balance observable (observable entity)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -27,18 +28,19 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "364202003",
-        "display": "Measure of urine output (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "code": "364201005",
+        "display": "Urine output observable (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
-        "code": "9187-6"
+        "code": "9187-6",
+        "display": "Urine output"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -47,6 +49,7 @@
   "valueQuantity": {
     "value": 200.0,
     "system": "http://unitsofmeasure.org",
-    "code": "ml"
+    "code": "ml",
+    "unit": "ml"
   }
 }

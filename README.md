@@ -26,3 +26,17 @@ Technische Umsetzung:
 * Tim Steinbach
 * Margaux Gatrio
 * Alexander Zautke
+
+## Lokaler Build (Hinweis ISiK-Snapshots)
+
+`de.gematik.isik` wird ohne Snapshots ausgeliefert; SUSHI kann die
+`sd-mii-icu-*`-Parents dann nicht importieren (3–4 Fehler). Die CI löst das über
+den [fhir-package-store](https://github.com/medizininformatik-initiative/fhir-package-store)
+(Branch `cache-store`, Priming-Step in `.github/workflows/ig-publisher.yml`).
+Für lokale Builds einmalig denselben Cache ziehen:
+
+```bash
+git clone --depth 1 --branch cache-store \
+  https://github.com/medizininformatik-initiative/fhir-package-store /tmp/fps
+mkdir -p ~/.fhir/packages && cp -r /tmp/fps/packages/* ~/.fhir/packages/
+```
