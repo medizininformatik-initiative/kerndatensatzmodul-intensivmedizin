@@ -28,7 +28,8 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 3
+        "min": 3,
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:sct",

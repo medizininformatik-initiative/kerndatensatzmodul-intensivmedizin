@@ -3,7 +3,7 @@
   "id": "mii-exa-icu-bilanz-ausfuhr-opdrainage",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-opdrainage"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
     ]
   },
   "status": "final",
@@ -11,14 +11,14 @@
     {
       "coding": [
         {
-          "system": "https://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "exam"
         },
         {
           "system": "http://snomed.info/sct",
           "code": "364396009",
           "display": "Fluid balance observable (observable entity)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -29,7 +29,7 @@
         "system": "http://snomed.info/sct",
         "code": "251844004",
         "display": "Fluid output from surgical drain (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
@@ -38,7 +38,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -47,6 +47,7 @@
   "valueQuantity": {
     "value": 200.0,
     "system": "http://unitsofmeasure.org",
-    "code": "ml"
+    "code": "ml",
+    "unit": "ml"
   }
 }

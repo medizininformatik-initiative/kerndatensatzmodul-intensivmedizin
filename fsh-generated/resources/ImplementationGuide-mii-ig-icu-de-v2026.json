@@ -248,6 +248,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Kalorien 24h",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
         },
         "name": "MII PR ICU Bilanz Einfuhr Muttermilch",
@@ -370,6 +377,13 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"
         },
         "name": "MII PR ICU Einstellung Einatmungszeit Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"
+        },
+        "name": "MII PR ICU Einstellung Inspirationsdruck",
         "exampleBoolean": false
       },
       {
