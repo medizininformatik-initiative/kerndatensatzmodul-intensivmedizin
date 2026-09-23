@@ -23,7 +23,7 @@
         "system": "http://snomed.info/sct",
         "code": "8499008",
         "display": "Pulse, function (observable entity)",
-        "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
@@ -33,7 +33,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/202"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",

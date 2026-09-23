@@ -3,12 +3,12 @@
   "id": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-exspiratorischem-gasfluss"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"
     ]
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/mii-exa-icu-vent-beatmung"
     }
   ],
   "status": "final",
@@ -19,7 +19,7 @@
           "system": "http://snomed.info/sct",
           "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -29,12 +29,12 @@
       {
         "system": "http://loinc.org",
         "code": "20060-0",
-        "display": "Airway pressure --at zero inspiratory flow on ventilator"
+        "display": "Pressure.airway^at zero inspiratory flow on ventilator"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -43,9 +43,10 @@
   "valueQuantity": {
     "value": 10.0,
     "system": "http://unitsofmeasure.org",
-    "code": "cm[H2O]"
+    "code": "cm[H2O]",
+    "unit": "cm[H2O]"
   },
   "device": {
-    "reference": "DeviceMetric/exa-mii-icu-vent-eingestellte-parameter-beatmung"
+    "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
   }
 }

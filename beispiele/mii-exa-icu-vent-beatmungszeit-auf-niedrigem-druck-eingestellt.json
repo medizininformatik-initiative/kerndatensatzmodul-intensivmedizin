@@ -8,7 +8,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/example"
+      "reference": "Procedure/mii-exa-icu-vent-beatmung"
     }
   ],
   "status": "final",
@@ -19,7 +19,7 @@
           "system": "http://snomed.info/sct",
           "code": "40617009",
           "display": "Artificial ventilation (regime/therapy)",
-          "version": "http://snomed.info/sct/900000000000207008/version/20241101"
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -34,12 +34,12 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "16929864",
-        "display": "Low pressure hold time setting Ventilator"
+        "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/111"
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
@@ -48,9 +48,10 @@
   "valueQuantity": {
     "value": 1.0,
     "system": "http://unitsofmeasure.org",
-    "code": "s"
+    "code": "s",
+    "unit": "s"
   },
   "device": {
-    "reference": "DeviceMetric/Example_Eingestellte_Parameter_Beatmung"
+    "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
   }
 }
