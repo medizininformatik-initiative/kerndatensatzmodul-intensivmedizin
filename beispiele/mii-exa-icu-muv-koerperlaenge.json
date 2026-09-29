@@ -21,11 +21,13 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1149101003"
+        "code": "1149101003",
+        "display": "Recumbent body height (observable entity)"
       },
       {
         "system": "http://loinc.org",
-        "code": "8306-3"
+        "code": "8306-3",
+        "display": "Body height --lying"
       }
     ]
   },
