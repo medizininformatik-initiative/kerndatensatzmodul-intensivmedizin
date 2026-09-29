@@ -11,14 +11,14 @@ Title: "MII PR ICU MUV Koerperlaenge"
 
 * status MS
 
+* code MS
 * code.coding 2.. MS
-* code.coding[sct] 1..1 MS
-* code.coding[sct] ^patternCoding.system = $sct
-* code.coding[sct] ^patternCoding.code = #1149101003
-* code.coding[sct].system MS
-* code.coding[sct].code MS
-* code.coding[sct].display MS
-* code.coding[loinc] 1..1 MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    loinc 1..1 MS and
+    sct 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8306-3
 * code.coding[loinc] ^patternCoding.display = "Body height --lying"
