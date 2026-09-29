@@ -1,0 +1,403 @@
+# MII PR ICU MUV Kohlendioxid Produktion - MII IG ICU v2027.0.0-ballot.3
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII PR ICU MUV Kohlendioxid Produktion**
+
+## Ressourcenprofil: MII PR ICU MUV Kohlendioxid Produktion 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion | *Version*:2027.0.0-ballot.3 |
+| Draft Stand: 2026-09-29 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Kohlendioxid_Produktion |
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.json)
+
+### Formale Ansichten des Profilinhalts
+
+ [Beschreibung von Profilen, Differentials, Snapshots und deren Repräsentationen](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Schlüsselelemente-Tabelle](#tabs-key) 
+*  [Differential-Tabelle](#tabs-diff) 
+*  [Snapshot-Tabelle](#tabs-snap) 
+*  [Statistiken/Referenzen](#tabs-summ) 
+*  [Alle](#tabs-all) 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+
+#### Terminology Bindings (Differential)
+
+#### Constraints
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+
+** Summary **
+
+Mandatory: 3 elements(5 nested mandatory elements)
+ Must-Support: 36 elements
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Observation.code.coding
+* The element 1 is sliced based on the value of Observation.effective[x]
+
+ **Schlüsselelemente-Ansicht** 
+
+#### Terminology Bindings
+
+#### Constraints
+
+ **Differential-Ansicht** 
+
+Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+
+#### Terminology Bindings (Differential)
+
+#### Constraints
+
+ **Snapshot-AnsichtView** 
+
+#### Terminology Bindings
+
+#### Constraints
+
+Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+
+** Summary **
+
+Mandatory: 3 elements(5 nested mandatory elements)
+ Must-Support: 36 elements
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Observation.code.coding
+* The element 1 is sliced based on the value of Observation.effective[x]
+
+ 
+
+Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.csv), [Excel](../StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.xlsx), [Schematron](../StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "mii-pr-icu-muv-kohlendioxid-produktion",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion",
+  "version" : "2027.0.0-ballot.3",
+  "name" : "MII_PR_ICU_MUV_Kohlendioxid_Produktion",
+  "title" : "MII PR ICU MUV Kohlendioxid Produktion",
+  "status" : "draft",
+  "date" : "2026-09-29T12:43:06+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "purpose" : "Das Profil bezieht sich auf die Darstellung der Kohlendioxidproduktion (VCO2) in L/min",
+  "fhirVersion" : "4.0.1",
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "http://fhir.de/StructureDefinition/observation-de-vitalsign",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "mii-icu-val-xor-dar",
+        "severity" : "error",
+        "human" : "Resource must have either value or dataAbsentReason.",
+        "expression" : "value.exists() xor dataAbsentReason.exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"
+      }]
+    },
+    {
+      "id" : "Observation.status",
+      "path" : "Observation.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "min" : 2,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat",
+      "path" : "Observation.category",
+      "sliceName" : "VSCat",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding",
+      "path" : "Observation.category.coding",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.system",
+      "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.code",
+      "path" : "Observation.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:sct",
+      "path" : "Observation.category",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248326004"
+        }]
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:sct.coding",
+      "path" : "Observation.category.coding",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:sct.coding.system",
+      "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:sct.coding.code",
+      "path" : "Observation.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:sct.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 2,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "60825-7",
+        "display" : "Carbon dioxide production (VCO2) in Respiratory system"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.system",
+      "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.code",
+      "path" : "Observation.code.coding.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct",
+      "path" : "Observation.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "251408004",
+        "display" : "Carbon dioxide output (observable entity)"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.system",
+      "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.code",
+      "path" : "Observation.code.coding.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]",
+      "path" : "Observation.effective[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]:effectiveDateTime",
+      "path" : "Observation.effective[x]",
+      "sliceName" : "effectiveDateTime",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]:effectivePeriod",
+      "path" : "Observation.effective[x]",
+      "sliceName" : "effectivePeriod",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]:effectivePeriod.start",
+      "path" : "Observation.effective[x].start",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.effective[x]:effectivePeriod.end",
+      "path" : "Observation.effective[x].end",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity",
+      "path" : "Observation.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }],
+      "patternQuantity" : {
+        "unit" : "liter per minute",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "L/min"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity.value",
+      "path" : "Observation.value[x].value",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity.unit",
+      "path" : "Observation.value[x].unit",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity.system",
+      "path" : "Observation.value[x].system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity.code",
+      "path" : "Observation.value[x].code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason",
+      "path" : "Observation.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite",
+      "path" : "Observation.bodySite",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
+      }
+    }]
+  }
+}
+
+```
