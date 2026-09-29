@@ -8,7 +8,7 @@ Title: "MII VS ICU Component GCS Eyes"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes"
-* ^status = #active
+* ^status = #draft
 * ^date = "2026-07-28"
 * ^experimental = false
 
