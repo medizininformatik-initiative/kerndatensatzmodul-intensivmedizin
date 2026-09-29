@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
   "title" : "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
   "status" : "active",
-  "date" : "2026-09-29T12:43:06+00:00",
+  "date" : "2026-09-29T13:08:20+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

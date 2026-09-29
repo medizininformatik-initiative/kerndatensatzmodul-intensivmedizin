@@ -41,7 +41,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "name" : "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
   "title" : "MII VS ICU Code Observation Pupillenform LOINC",
   "status" : "draft",
-  "date" : "2026-09-29T12:43:06+00:00",
+  "date" : "2026-09-29T13:08:20+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-intensivme
   "name" : "MII_LM_ICU",
   "title" : "MII Logical Model Intensivmedizin",
   "status" : "draft",
-  "date" : "2026-09-29T12:43:06+00:00",
+  "date" : "2026-09-29T13:08:20+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
