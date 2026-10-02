@@ -71,10 +71,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 
 // component-Slicing-Rahmen — Kinder fuegen contains-Slices hinzu
 * component MS
-* component ^slicing.discriminator.type = #pattern 
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false
+//* component ^slicing.discriminator.type = #pattern 
+//* component ^slicing.discriminator.path = "code"
+//* component ^slicing.rules = #open
+//* component ^slicing.ordered = false
 * component.value[x] 0..1 MS
 * component.value[x] only integer or Quantity or CodeableConcept
 * component.code MS
