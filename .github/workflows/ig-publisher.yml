@@ -78,7 +78,6 @@ on:
       - "**"
       - "!gh-pages"
       - "!fsh-generated"
-      # - "!main"
   workflow_dispatch:
 
 permissions:
