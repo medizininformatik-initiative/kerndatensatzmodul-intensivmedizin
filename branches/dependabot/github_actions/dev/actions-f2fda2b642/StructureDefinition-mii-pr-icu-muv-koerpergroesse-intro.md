@@ -1,0 +1,4 @@
+<!-- Migrated from the Simplifier guide page https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Monitoring-and-vital-data/Monitoring-and-vital-data-Observation/Body-height-Observation.page.md?version=current (harvested 2026-08-27, spec 5.1d); the generated profile rendering was NOT copied - the IG Publisher regenerates it on the artifact page below. -->
+"Body height (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
+
+This profile also claims upward compatibility with the [VitalSignDE\_Koerpergroesse](http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse) profile.
