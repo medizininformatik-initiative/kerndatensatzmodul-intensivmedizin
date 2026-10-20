@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-01 | *Computable Name*:MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung |
+| Active as of 2026-10-20 | *Computable Name*:MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung |
 
 "Tidal volume during ventilation" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
   "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
   "title" : "MII PR ICU Atemzugvolumen Waehrend Beatmung",
   "status" : "active",
-  "date" : "2026-10-01T15:49:26+00:00",
+  "date" : "2026-10-20T13:26:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

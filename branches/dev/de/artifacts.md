@@ -78,14 +78,8 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Bilanz Ausfuhr Stuhlgang  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.md) |  |
 | [ MII PR ICU Bilanz Ausfuhr Urin  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.md) |  |
 | [ MII PR ICU Bilanz Ausfuhr Wunddrainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Kalorien 24h  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Muttermilch  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Orale Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Saeuglingsnahrung  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Spendermilch  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.md) |  |
 | [ MII PR ICU Bilanz Tagesbilanz Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md) |  |
 | [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) |  |
 | [ MII PR ICU Dauer Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md) |  |
@@ -98,7 +92,6 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Eingestellter Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md) |  |
 | [ MII PR ICU Einstellung Ausatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md) |  |
 | [ MII PR ICU Einstellung Einatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md) |  |
-| [ MII PR ICU Einstellung Inspirationsdruck  ](StructureDefinition-mii-pr-icu-vent-einstellung-inspirationsdruck.md) |  |
 | [ MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck  ](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md) |  |
 | [ MII PR ICU Exspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md) |  |
 | [ MII PR ICU Exspiratorischer Sauerstoffpartialdruck  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) |  |
@@ -114,10 +107,8 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU MUV Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md) |  |
 | [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |  |
 | [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |  |
-| [ MII PR ICU MUV Kohlendioxid Produktion  ](StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.md) |  |
 | [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) |  |
 | [ MII PR ICU Maximaler Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md) |  |
-| [ MII PR ICU Maximaler Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.md) |  |
 | [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) |  |
 | [ MII PR ICU Mittlerer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md) |  |
 | [ MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md) |  |
@@ -125,15 +116,10 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) |  |
 | [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |  |
 | [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |  |
-| [ MII PR ICU Score CAM-ICU  ](StructureDefinition-mii-pr-icu-score-cam-icu.md) | Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent). |
 | [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. |
 | [ MII PR ICU Score GCS  ](StructureDefinition-mii-pr-icu-score-gcs.md) |  |
-| [ MII PR ICU Score ICDSC  ](StructureDefinition-mii-pr-icu-score-icdsc.md) | Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium. |
 | [ MII PR ICU Score Numerische Ratingskala  ](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) | Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. |
-| [ MII PR ICU Score SOFA  ](StructureDefinition-mii-pr-icu-score-sofa.md) | Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction. |
 | [ MII PR ICU Score Visuelle Analogskala  ](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) | Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. |
-| [ MII PR ICU Score Wong-Baker-FACES-Schmerzskala  ](StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.md) | Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala. Der Score wird als quantitativer Wert dokumentiert. |
-| [ MII PR ICU Score ZOPA  ](StructureDefinition-mii-pr-icu-score-zopa.md) | Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis. |
 | [ MII PR ICU Spontane Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md) |  |
 | [ MII PR ICU Spontane Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) |  |
 | [ MII PR ICU Spontanes Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.md) |  |
@@ -153,7 +139,6 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS ICU BodySite Observation Beatmung  ](ValueSet-mii-vs-icu-body-site-observation-beatmung.md) | Dieses ValueSet enthält Codes für bodySites für die im Kontext einer Beatmung eingestellten oder gemessenen Parametern. |
 | [ MII VS ICU BodySite Observation Blutdruck  ](ValueSet-mii-vs-icu-body-site-observation-blutdruck.md) | Dieses ValueSet enthält Codes für bodySites von Blutdrücken (pulsatilen Drücken). |
 | [ MII VS ICU BodySite Observation Monitoring und Vitaldaten  ](ValueSet-mii-vs-icu-body-site-observation-monitoring-und-vitaldaten.md) | Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem Patientenmonitoring. |
-| [ MII VS ICU BodySite Observation Pupillenbefund  ](ValueSet-mii-vs-icu-bodysite-observation-pupillenbefund.md) | Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille. |
 | [ MII VS ICU BodySite Observation extrakorporale Verfahren  ](ValueSet-mii-vs-icu-body-site-observation-extrakorporale-verfahren.md) | Dieses ValueSet enthält Codes für bodySites für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern. |
 | [ MII VS ICU CAM-ICU Result  ](ValueSet-mii-vs-icu-cam-icu-result.md) | CAM-ICU assessment result: positive (delirium present) or negative (no delirium) |
 | [ MII VS ICU Category Observation Bilanzen HL7  ](ValueSet-mii-vs-icu-category-observation-bilanzen-hl7.md) | ValueSet defining HL7 observation categories for ICU Bilanzen |
@@ -168,9 +153,7 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS ICU Code Observation Bilanzen ISO11073  ](ValueSet-mii-vs-icu-code-observation-bilanzen-iso11073.md) | Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten ISO/IEEE 11073-Parameter. |
 | [ MII VS ICU Code Observation Bilanzen LOINC  ](ValueSet-mii-vs-icu-code-observation-bilanzen-loinc.md) | Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOINC-Parameter. |
 | [ MII VS ICU Code Observation Bilanzen SNOMED  ](ValueSet-mii-vs-icu-code-observation-bilanzen-snomed.md) | Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten SNOMED-Parameter. |
-| [ MII VS ICU Code Observation Pupillenform LOINC  ](ValueSet-mii-vs-icu-code-oservation-pupillenform-loinc.md) | Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes. |
 | [ MII VS ICU Code Observation Pupillengroesse  ](ValueSet-mii-vs-icu-code-observation-pupillengroesse.md) |  |
-| [ MII VS ICU Code Observation Pupillenlichtreaktion  ](ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.md) | Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv. |
 | [ MII VS ICU Code Observation Pupillensymmetrie  ](ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.md) |  |
 | [ MII VS ICU Code Observation extrakorporale Verfahren ISO11073  ](ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073.md) | Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern. |
 | [ MII VS ICU Code Observation extrakorporale Verfahren LOINC  ](ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-loinc.md) | Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern. |
@@ -179,13 +162,10 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS ICU Component GCS Eyes  ](ValueSet-mii-vs-icu-component-gcs-eyes.md) |  |
 | [ MII VS ICU Component GCS Motor  ](ValueSet-mii-vs-icu-component-gcs-motor.md) |  |
 | [ MII VS ICU Component GCS Verbal  ](ValueSet-mii-vs-icu-component-gcs-verbal.md) |  |
-| [ MII VS ICU Delirium Interpretation  ](ValueSet-mii-vs-icu-delirium-interpretation.md) | Delirium status interpretations |
 | [ MII VS ICU DeviceMetric extrakorporale Verfahren  ](ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.md) |  |
 | [ MII VS ICU Method Observation Blutdruck  ](ValueSet-mii-vs-icu-method-observation-blutdruck.md) | Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. |
 | [ MII VS ICU Present Absent  ](ValueSet-mii-vs-icu-present-absent.md) | Present or absent findings |
 | [ MII VS ICU Score Category  ](ValueSet-mii-vs-icu-score-category.md) | Value set for ICU score observation categories |
-| [ MII VS ICU Score LOINC  ](ValueSet-mii-vs-icu-score-loinc.md) | Value set for scores - LOINC codes |
-| [ MII VS ICU Score RASS  ](ValueSet-mii-vs-icu-score-rass.md) | Value set for RASS Score |
 | [ MII VS ICU Unit equivalent UCUM L per minute  ](ValueSet-mii-vs-icu-unit-equivalent-ucum-l-per-minute.md) | Dieses ValueSet enthält äquivalente Codes für Liter pro Minute. |
 | [ MII VS ICU Unit equivalent UCUM L per minute and squaremeter  ](ValueSet-mii-vs-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.md) | Dieses ValueSet enthält äquivalente Codes für Liter pro Minute . |
 | [ MII VS ICU Unit equivalent UCUM beats per minute  ](ValueSet-mii-vs-icu-unit-equivalent-ucum-beats-per-minute.md) | Dieses ValueSet enthält äquivalente Codes für Herzschläge pro Minute. |
@@ -193,7 +173,6 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS ICU Unit equivalent UCUM dyn.s/cm5/m2  ](ValueSet-mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2.md) | Dieses ValueSet enthält äquivalente Codes für dyn.s/cm5/m2. |
 | [ MII VS ICU Unit equivalent UCUM milliliter  ](ValueSet-mii-vs-icu-unit-equivalent-ucum-milliliter.md) | Dieses ValueSet enthält äquivalente Codes für Milliliter. |
 | [ MII VS ICU Unit equivalent percent 1  ](ValueSet-mii-vs-icu-unit-equivalent-percent-1.md) | Dieses ValueSet enthält äquivalente Codes für Prozent und 1. |
-| [ MII VS Score SNOMED CT  ](ValueSet-mii-vs-icu-score-snomed.md) | Value set for cores - SNOMED CT codes |
 
 ### Beispiel: Beispielinstanzen 
 

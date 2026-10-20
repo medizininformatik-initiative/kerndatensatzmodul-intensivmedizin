@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatvolumen | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-01 | *Computable Name*:MII_PR_ICU_ECT_Substituatvolumen |
+| Active as of 2026-10-20 | *Computable Name*:MII_PR_ICU_ECT_Substituatvolumen |
 
 Observation "Substituate volume" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-su
   "name" : "MII_PR_ICU_ECT_Substituatvolumen",
   "title" : "MII PR ICU Substituatvolumen",
   "status" : "active",
-  "date" : "2026-10-01T15:49:26+00:00",
+  "date" : "2026-10-20T13:26:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

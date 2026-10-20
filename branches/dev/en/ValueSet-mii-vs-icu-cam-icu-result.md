@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-01 | *Computable Name*:MII_VS_ICU_CAM_ICU_Result |
+| Active as of 2026-10-20 | *Computable Name*:MII_VS_ICU_CAM_ICU_Result |
 
  
 CAM-ICU assessment result: positive (delirium present) or negative (no delirium) 
 
  **References** 
 
-* [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -42,7 +42,7 @@ CAM-ICU assessment result: positive (delirium present) or negative (no delirium)
   "title" : "MII VS ICU CAM-ICU Result",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-01T15:49:26+00:00",
+  "date" : "2026-10-20T13:26:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

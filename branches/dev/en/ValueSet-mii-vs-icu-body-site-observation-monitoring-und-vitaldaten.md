@@ -16,7 +16,7 @@ Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem
 
  **References** 
 
-* [MII PR ICU MUV Kohlendioxid Produktion](StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 

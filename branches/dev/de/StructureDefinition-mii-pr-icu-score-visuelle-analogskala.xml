@@ -27,7 +27,7 @@
   <name value="MII_PR_ICU_Score_Visuelle_Analogskala"/>
   <title value="MII PR ICU Score Visuelle Analogskala"/>
   <status value="draft"/>
-  <date value="2026-10-01T15:49:26+00:00"/>
+  <date value="2026-10-20T13:26:59+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1774,7 +1774,7 @@
       <short value="Version of the system - if relevant"/>
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged."/>
       <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="Coding.version"/>

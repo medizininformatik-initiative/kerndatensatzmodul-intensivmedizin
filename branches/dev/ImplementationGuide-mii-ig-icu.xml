@@ -1763,16 +1763,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"/>
       </reference>
       <name value="MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"/>
@@ -1786,56 +1776,6 @@
         <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"/>
       </reference>
       <name value="MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Kalorien 24h"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Muttermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Spendermilch"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1963,16 +1903,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"/>
-      </reference>
-      <name value="MII PR ICU Einstellung Inspirationsdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"/>
       </reference>
       <name value="MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"/>
@@ -2073,16 +2003,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"/>
-      </reference>
-      <name value="MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"/>
       </reference>
       <name value="MII PR ICU Mechanische Atemfrequenz Beatmet"/>
@@ -2173,16 +2093,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"/>
-      </reference>
-      <name value="MII PR ICU MUV Kohlendioxid Produktion"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-muv-kopfumfang"/>
       </reference>
       <name value="MII PR ICU MUV Kopfumfang"/>
@@ -2244,17 +2154,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-cam-icu"/>
-      </reference>
-      <name value="MII PR ICU Score CAM-ICU"/>
-      <description value="Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"/>
       </reference>
       <name value="MII PR ICU Score Faces Pain Scale Revised"/>
@@ -2276,17 +2175,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-icdsc"/>
-      </reference>
-      <name value="MII PR ICU Score ICDSC"/>
-      <description value="Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-score-numerische-ratingskala"/>
       </reference>
       <name value="MII PR ICU Score Numerische Ratingskala"/>
@@ -2298,43 +2186,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-sofa"/>
-      </reference>
-      <name value="MII PR ICU Score SOFA"/>
-      <description value="Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-score-visuelle-analogskala"/>
       </reference>
       <name value="MII PR ICU Score Visuelle Analogskala"/>
       <description value="Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).&#xA;Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"/>
-      </reference>
-      <name value="MII PR ICU Score Wong-Baker-FACES-Schmerzskala"/>
-      <description value="Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.&#xA;Der Score wird als quantitativer Wert dokumentiert."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-zopa"/>
-      </reference>
-      <name value="MII PR ICU Score ZOPA"/>
-      <description value="Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2469,17 +2324,6 @@
       </reference>
       <name value="MII VS ICU BodySite Observation Monitoring und Vitaldaten"/>
       <description value="Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem Patientenmonitoring."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
-      </reference>
-      <name value="MII VS ICU BodySite Observation Pupillenbefund"/>
-      <description value="Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2662,31 +2506,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Pupillenform LOINC"/>
-      <description value="Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mii-vs-icu-code-observation-pupillengroesse"/>
       </reference>
       <name value="MII VS ICU Code Observation Pupillengroesse"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
-      <description value="Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2744,17 +2566,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-icu-delirium-interpretation"/>
-      </reference>
-      <name value="MII VS ICU Delirium Interpretation"/>
-      <description value="Delirium status interpretations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"/>
       </reference>
       <name value="MII VS ICU DeviceMetric extrakorporale Verfahren"/>
@@ -2791,28 +2602,6 @@
       </reference>
       <name value="MII VS ICU Score Category"/>
       <description value="Value set for ICU score observation categories"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-score-loinc"/>
-      </reference>
-      <name value="MII VS ICU Score LOINC"/>
-      <description value="Value set for scores - LOINC codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-score-rass"/>
-      </reference>
-      <name value="MII VS ICU Score RASS"/>
-      <description value="Value set for RASS Score"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2890,17 +2679,6 @@
       </reference>
       <name value="MII VS ICU Unit equivalent UCUM milliliter"/>
       <description value="Dieses ValueSet enthält äquivalente Codes für Milliliter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-score-snomed"/>
-      </reference>
-      <name value="MII VS Score SNOMED CT"/>
-      <description value="Value set for cores - SNOMED CT codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
