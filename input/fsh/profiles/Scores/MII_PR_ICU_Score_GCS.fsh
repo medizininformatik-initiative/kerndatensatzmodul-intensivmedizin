@@ -43,10 +43,10 @@ Title: "MII PR ICU Score GCS"
 * valueQuantity.unit 1..1
 * valueQuantity.unit = "{score}"
 
-* component ..3 MS
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #closed
+//* component ..3 MS
+//* component ^slicing.discriminator.type = #pattern
+//* component ^slicing.discriminator.path = "code"
+//* component ^slicing.rules = #closed
 // slicing frame moved here from the parent MII_PR_ICU_Score (see MIGRATION FIX there)
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"

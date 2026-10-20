@@ -50,10 +50,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding[loinc].code 1..1 MS
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
-* code.coding[sct].version 0..1 MS
+* code.coding[sct].version 1..1 MS  // 05.08.26 - auf 1..1 gesetzt
 * code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
-* code.coding[ieee11073].system 1..1
+* code.coding[ieee11073].system 1..1  // neues IEEE-11073 Slicing hinzugefügt - Beschluss 05.08.26
 * code.coding[ieee11073].system = $ieee-11073
 * code.coding[ieee11073].code 1..1 MS
 
@@ -61,20 +61,20 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * subject only Reference(Patient)
 * subject ^short = "Patient being assessed"
 * performer 0..* MS
-* encounter 0..1 MS // ursprünglich 0..; ICU_Score erbt von Observation, dort bereits auf Reference(Encounter) beschränkt. Redundanz
+* encounter 0..1 MS // ursprünglich 0..; ICU_Score erbt von Observation, dort bereits auf Reference(Encounter) beschränkt. 
 
-* effective[x] 1..1 MS
+* effective[x] 1..1 MS  
 * effective[x] only dateTime or Period
 
 * value[x] 0..1 MS
 * value[x] only integer or CodeableConcept or Quantity
 
+// component-Slicing-Rahmen — Kinder fuegen contains-Slices hinzu
 * component MS
-// MIGRATION FIX (revertible): the open pattern-slicing frame with ZERO slices that
-// stood here crashes HL7 ProfileUtilities snapshot generation (IG publisher 2.3.2/2.3.3,
-// validator_cli 6.10.0: "This situation is not yet handled ... constrain slicing to 1..1").
-// An open frame with no slices constrains nothing, so the frame moved into the child
-// profiles that actually declare slices (GCS, ICDSC, SOFA; CAM-ICU already had its own).
+//* component ^slicing.discriminator.type = #pattern 
+//* component ^slicing.discriminator.path = "code"
+//* component ^slicing.rules = #open
+//* component ^slicing.ordered = false
 * component.value[x] 0..1 MS
 * component.value[x] only integer or Quantity or CodeableConcept
 * component.code MS
