@@ -384,13 +384,6 @@
   "name" : "MII_PR_ICU_Score_Numerische_Ratingskala"
 },
 {
-  "id" : "mii-pr-icu-score-rass",
-  "type" : "StructureDefinition",
-  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
-  "version" : "2027.0.0-ballot.3",
-  "name" : "MII_PR_ICU_Score_RASS"
-},
-{
   "id" : "mii-pr-icu-score-visuelle-analogskala",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",

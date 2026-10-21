@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-02 | *Computable Name*:MII_PR_ICU_Parameter_Von_Beatmung |
+| Active as of 2026-10-21 | *Computable Name*:MII_PR_ICU_Parameter_Von_Beatmung |
 
 **Usages:**
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "name" : "MII_PR_ICU_Parameter_Von_Beatmung",
   "title" : "MII PR ICU Parameter von Beatmung",
   "status" : "active",
-  "date" : "2026-10-02T11:25:36+00:00",
+  "date" : "2026-10-21T14:50:03+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

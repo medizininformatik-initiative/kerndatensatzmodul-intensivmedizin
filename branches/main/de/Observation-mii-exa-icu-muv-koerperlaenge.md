@@ -18,7 +18,7 @@ Profile: [MII PR ICU MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerp
 
 **category**: Vital Signs
 
-**code**: Recumbent body height
+**code**: Recumbent body height (observable entity)
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -47,11 +47,13 @@ Profile: [MII PR ICU MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerp
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "1149101003"
+      "code" : "1149101003",
+      "display" : "Recumbent body height (observable entity)"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "8306-3"
+      "code" : "8306-3",
+      "display" : "Body height --lying"
     }]
   },
   "subject" : {

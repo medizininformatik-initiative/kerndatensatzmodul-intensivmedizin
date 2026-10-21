@@ -2186,16 +2186,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-rass"/>
-      </reference>
-      <name value="MII PR ICU Score RASS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-score-visuelle-analogskala"/>
       </reference>
       <name value="MII PR ICU Score Visuelle Analogskala"/>

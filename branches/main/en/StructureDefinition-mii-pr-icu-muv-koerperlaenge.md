@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-02 | *Computable Name*:MII_PR_ICU_MUV_Koerperlaenge |
+| Active as of 2026-10-21 | *Computable Name*:MII_PR_ICU_MUV_Koerperlaenge |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerperlaenge",
   "title" : "MII PR ICU MUV Koerperlaenge",
   "status" : "active",
-  "date" : "2026-10-02T11:25:36+00:00",
+  "date" : "2026-10-21T14:50:03+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -78,6 +78,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
       "slicing" : {
@@ -85,37 +90,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
           "type" : "pattern",
           "path" : "$this"
         }],
-        "rules" : "closed"
+        "rules" : "open"
       },
       "min" : 2,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct",
-      "path" : "Observation.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "1149101003",
-        "display" : "Recumbent body height (observable entity)"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -143,6 +120,34 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
     },
     {
       "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct",
+      "path" : "Observation.code.coding",
+      "sliceName" : "sct",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "1149101003",
+        "display" : "Recumbent body height (observable entity)"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.system",
+      "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.code",
+      "path" : "Observation.code.coding.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.display",
       "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },

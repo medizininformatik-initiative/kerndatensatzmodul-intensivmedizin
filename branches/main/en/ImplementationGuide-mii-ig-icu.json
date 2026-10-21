@@ -2656,17 +2656,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-rass"
-      },
-      "name" : "MII PR ICU Score RASS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
       },
       "name" : "MII PR ICU Score Visuelle Analogskala",

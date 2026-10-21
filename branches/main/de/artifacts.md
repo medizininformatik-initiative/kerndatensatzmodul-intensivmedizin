@@ -119,7 +119,6 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. |
 | [ MII PR ICU Score GCS  ](StructureDefinition-mii-pr-icu-score-gcs.md) |  |
 | [ MII PR ICU Score Numerische Ratingskala  ](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) | Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. |
-| [ MII PR ICU Score RASS  ](StructureDefinition-mii-pr-icu-score-rass.md) |  |
 | [ MII PR ICU Score Visuelle Analogskala  ](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) | Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. |
 | [ MII PR ICU Spontane Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md) |  |
 | [ MII PR ICU Spontane Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) |  |

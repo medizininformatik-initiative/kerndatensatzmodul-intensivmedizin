@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-07-28 | *Maschinenlesbarer Name*:MII_VS_ICU_Component_GCS_Motor |
+| Draft Stand: 2026-07-28 | *Maschinenlesbarer Name*:MII_VS_ICU_Component_GCS_Motor |
 
  **References** 
 
@@ -37,7 +37,7 @@
   "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Component_GCS_Motor",
   "title" : "MII VS ICU Component GCS Motor",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
   "date" : "2026-07-28",
   "publisher" : "Medizininformatik Initiative",

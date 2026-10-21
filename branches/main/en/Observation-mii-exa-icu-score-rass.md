@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
+Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass)
 
 **status**: Final
 

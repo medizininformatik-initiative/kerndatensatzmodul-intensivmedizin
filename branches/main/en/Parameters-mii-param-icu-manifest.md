@@ -491,14 +491,6 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass|2027.0.0-ballot.3"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-score-rass|6.0.0"
-  },
-  {
-    "name" : "default-canonical-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala|2027.0.0-ballot.3"
   }]
 }

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-02 | *Computable Name*:MII_PR_ICU_Score_Numerische_Ratingskala |
+| Draft as of 2026-10-21 | *Computable Name*:MII_PR_ICU_Score_Numerische_Ratingskala |
 
  
 Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. 
@@ -40,8 +40,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "version" : "2027.0.0-ballot.3",
   "name" : "MII_PR_ICU_Score_Numerische_Ratingskala",
   "title" : "MII PR ICU Score Numerische Ratingskala",
-  "status" : "active",
-  "date" : "2026-10-02T11:25:36+00:00",
+  "status" : "draft",
+  "date" : "2026-10-21T14:50:03+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

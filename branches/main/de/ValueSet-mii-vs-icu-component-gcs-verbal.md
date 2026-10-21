@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-07-28 | *Maschinenlesbarer Name*:MII_VS_ICU_Component_GCS_Verbal |
+| Draft Stand: 2026-07-28 | *Maschinenlesbarer Name*:MII_VS_ICU_Component_GCS_Verbal |
 
  **References** 
 
@@ -37,7 +37,7 @@
   "version" : "2027.0.0-ballot.3",
   "name" : "MII_VS_ICU_Component_GCS_Verbal",
   "title" : "MII VS ICU Component GCS Verbal",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
   "date" : "2026-07-28",
   "publisher" : "Medizininformatik Initiative",
