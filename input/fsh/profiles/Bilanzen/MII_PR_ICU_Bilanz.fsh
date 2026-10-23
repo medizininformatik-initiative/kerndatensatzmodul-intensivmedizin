@@ -40,12 +40,10 @@ Title: "MII PR ICU Bilanz"
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct].system 1.. MS
 * code.coding[sct].code 1.. MS
-* code.coding[sct].display MS
 * code.coding[loinc] from mii-vs-icu-code-observation-bilanzen-loinc (required)
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
-* code.coding[loinc].display MS
 * code.coding[IEEE-11073] from mii-vs-icu-code-observation-bilanzen-iso11073 (required)
 * code.coding[IEEE-11073] ^patternCoding.system = "urn:iso:std:iso:11073:10101"
 * code.coding[IEEE-11073].system 1.. MS
