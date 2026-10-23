@@ -5,7 +5,7 @@
   "version": "2026.0.0",
   "name": "MII_PR_ICU_Score_GCS",
   "title": "MII PR ICU Score GCS",
-  "status": "active",
+  "status": "draft",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -143,8 +143,7 @@
           ],
           "rules": "open",
           "ordered": false
-        },
-        "max": "3"
+        }
       },
       {
         "id": "Observation.component:GCSeyes",

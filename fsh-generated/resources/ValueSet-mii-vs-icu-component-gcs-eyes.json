@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "MII_VS_ICU_Component_GCS_Eyes",
   "id": "mii-vs-icu-component-gcs-eyes",
   "title": "MII VS ICU Component GCS Eyes",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
