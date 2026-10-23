@@ -200,6 +200,11 @@ jobs:
           sed -i '/^parameters:/a\  version-comparison: n/a' sushi-config.yaml
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
 
+      - name: Filter draft profiles before build
+        if: ${{ github.ref_name == 'main' }}
+        shell: bash
+        run: bash scripts/strip-drafts.py
+
       - name: SUSHI compile and decide build mode
         id: build
         shell: bash
@@ -282,6 +287,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: bash scripts/seed-comparison-cache.sh
+
+      - name: Seiten aus dem Build erzeugen
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        shell: bash
+        run: |
+          python3 scripts/gen-examples-page.py --write
+        # python3 scripts/gen-profile-map.py --write # nach dem Umbau (I4)
 
       - name: Build IG (SUSHI already ran) with the pinned IG Publisher
         if: ${{ steps.build.outputs.mode == 'full' }}

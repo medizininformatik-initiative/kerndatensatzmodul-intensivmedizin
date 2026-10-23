@@ -273,7 +273,9 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf fsh-generated output temp template
+          python3 scripts/strip-drafts.py
           sushi .
+          python3 scripts/gen-examples-page.py --write
           # -fhir-settings allowlists the local SU-TermServ nginx proxy
           # (http://127.0.0.1:8090) for the publisher's terminology access:
           # publisher 2.3.1+ SSRF hardening can refuse plain-HTTP/private-

@@ -9,6 +9,6 @@ Description: "Dieses ValueSet enthält Codes für bodySites für die im Kontext 
 * ^date = "2025-02-11"
 * ^experimental = false
 
-* include $sct#11527006
-* include $sct#89187006
-* include $sct#181216001
+//* include $sct#11527006 // Arterial system structure (body structure)
+* include $sct#89187006 // Airway structure (body structure)
+* include $sct#181216001 // Entire lung (body structure)

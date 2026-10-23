@@ -21,6 +21,8 @@ updates:
     groups:
       actions:
         patterns: ["*"]
+    ignore: 
+      dependency-name: "medizininformatik-initiative/kerndatensatz-meta"
 
   # npm — the publication scripts (scripts/*.mjs) are dependency-free today,
   # but a root package.json may land with them. Until a manifest exists,

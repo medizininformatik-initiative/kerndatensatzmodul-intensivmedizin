@@ -646,7 +646,9 @@ jobs:
           rm -rf source/fsh-generated source/output source/temp source/template
           (
             cd source
+            python3 scripts/strip-drafts.py
             sushi .
+            python3 scripts/gen-examples-page.py --write
             # -fhir-settings: see .github/fhir-settings.json — allowlists the
             # local SU-TermServ proxy against publisher 2.3.1+ SSRF hardening
             # (basis idiom). Path is workspace-absolute because this build runs

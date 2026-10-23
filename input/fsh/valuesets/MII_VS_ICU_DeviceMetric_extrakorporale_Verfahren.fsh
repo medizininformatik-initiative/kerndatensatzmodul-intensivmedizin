@@ -8,4 +8,4 @@ Title: "MII VS ICU DeviceMetric extrakorporale Verfahren"
 * ^date = "2025-02-11"
 * ^experimental = false
 
-* include $sct#18274404
+* include $sct#182744004 # Extracorporeal circulation procedure (procedure)
