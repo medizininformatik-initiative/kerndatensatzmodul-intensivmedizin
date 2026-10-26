@@ -37,10 +37,6 @@
         "title": "MII PR ICU MUV Koerperlaenge"
       },
       {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion",
-        "title": "MII PR ICU MUV Kohlendioxid Produktion"
-      },
-      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang",
         "title": "MII PR ICU MUV Kopfumfang"
       },
@@ -57,10 +53,6 @@
         "title": "MII PR ICU Score"
       },
       {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu",
-        "title": "MII PR ICU Score CAM-ICU"
-      },
-      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
         "title": "MII PR ICU Score Faces Pain Scale Revised"
       },
@@ -69,28 +61,12 @@
         "title": "MII PR ICU Score GCS"
       },
       {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc",
-        "title": "MII PR ICU Score ICDSC"
-      },
-      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala",
         "title": "MII PR ICU Score Numerische Ratingskala"
       },
       {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
-        "title": "MII PR ICU Score SOFA"
-      },
-      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
         "title": "MII PR ICU Score Visuelle Analogskala"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala",
-        "title": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa",
-        "title": "MII PR ICU Score ZOPA"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss",
@@ -141,10 +117,6 @@
         "title": "MII PR ICU Einstellung Einatmungszeit Beatmung"
       },
       {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck",
-        "title": "MII PR ICU Einstellung Inspirationsdruck"
-      },
-      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
         "title": "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
       },
@@ -171,10 +143,6 @@
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck",
         "title": "MII PR ICU Maximaler Beatmungsdruck"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck",
-        "title": "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet",

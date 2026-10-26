@@ -2191,17 +2191,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"
-      },
-      "name" : "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
       },
       "name" : "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
@@ -2216,61 +2205,6 @@
         "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
       },
       "name" : "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
-      },
-      "name" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"
-      },
-      "name" : "MII PR ICU Bilanz Einfuhr Muttermilch",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit"
-      },
-      "name" : "MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"
-      },
-      "name" : "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"
-      },
-      "name" : "MII PR ICU Bilanz Einfuhr Spendermilch",
       "exampleBoolean" : false
     },
     {
@@ -2411,17 +2345,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"
-      },
-      "name" : "MII PR ICU Einstellung Inspirationsdruck",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
       },
       "name" : "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
@@ -2532,17 +2455,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"
-      },
-      "name" : "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"
       },
       "name" : "MII PR ICU Mechanische Atemfrequenz Beatmet",
@@ -2642,17 +2554,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"
-      },
-      "name" : "MII PR ICU MUV Kohlendioxid Produktion",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-muv-kopfumfang"
       },
       "name" : "MII PR ICU MUV Kopfumfang",
@@ -2720,18 +2621,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-cam-icu"
-      },
-      "name" : "MII PR ICU Score CAM-ICU",
-      "description" : "Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
       },
       "name" : "MII PR ICU Score Faces Pain Scale Revised",
@@ -2755,18 +2644,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-icdsc"
-      },
-      "name" : "MII PR ICU Score ICDSC",
-      "description" : "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
       },
       "name" : "MII PR ICU Score Numerische Ratingskala",
@@ -2779,46 +2656,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-sofa"
-      },
-      "name" : "MII PR ICU Score SOFA",
-      "description" : "Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
       },
       "name" : "MII PR ICU Score Visuelle Analogskala",
       "description" : "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
-      },
-      "name" : "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
-      "description" : "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\nDer Score wird als quantitativer Wert dokumentiert.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-zopa"
-      },
-      "name" : "MII PR ICU Score ZOPA",
-      "description" : "Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis.",
       "exampleBoolean" : false
     },
     {
@@ -2966,18 +2807,6 @@
       },
       "name" : "MII VS ICU BodySite Observation Monitoring und Vitaldaten",
       "description" : "Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem Patientenmonitoring.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"
-      },
-      "name" : "MII VS ICU BodySite Observation Pupillenbefund",
-      "description" : "Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille.",
       "exampleBoolean" : false
     },
     {
@@ -3177,33 +3006,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"
-      },
-      "name" : "MII VS ICU Code Observation Pupillenform LOINC",
-      "description" : "Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/mii-vs-icu-code-observation-pupillengroesse"
       },
       "name" : "MII VS ICU Code Observation Pupillengroesse",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"
-      },
-      "name" : "MII VS ICU Code Observation Pupillenlichtreaktion",
-      "description" : "Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv.",
       "exampleBoolean" : false
     },
     {
@@ -3267,18 +3072,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-delirium-interpretation"
-      },
-      "name" : "MII VS ICU Delirium Interpretation",
-      "description" : "Delirium status interpretations",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"
       },
       "name" : "MII VS ICU DeviceMetric extrakorporale Verfahren",
@@ -3318,30 +3111,6 @@
       },
       "name" : "MII VS ICU Score Category",
       "description" : "Value set for ICU score observation categories",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-score-loinc"
-      },
-      "name" : "MII VS ICU Score LOINC",
-      "description" : "Value set for scores - LOINC codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-score-rass"
-      },
-      "name" : "MII VS ICU Score RASS",
-      "description" : "Value set for RASS Score",
       "exampleBoolean" : false
     },
     {
@@ -3426,18 +3195,6 @@
       },
       "name" : "MII VS ICU Unit equivalent UCUM milliliter",
       "description" : "Dieses ValueSet enthält äquivalente Codes für Milliliter.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-score-snomed"
-      },
-      "name" : "MII VS Score SNOMED CT",
-      "description" : "Value set for cores - SNOMED CT codes",
       "exampleBoolean" : false
     },
     {
