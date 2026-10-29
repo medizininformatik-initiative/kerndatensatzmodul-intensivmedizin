@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-category | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-20 | *Computable Name*:MII_VS_ICU_Score_Category |
+| Active as of 2026-10-29 | *Computable Name*:MII_VS_ICU_Score_Category |
 
  
 Value set for ICU score observation categories 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS ICU Score Category",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-20T13:56:55+00:00",
+  "date" : "2026-10-29T10:59:54+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -193,6 +193,10 @@
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren|2027.0.0-ballot.3"
   },
   {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren|2027.0.0-ballot.3"
+  },
+  {
     "name" : "default-valueset-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2027.0.0-ballot"
   },
@@ -382,6 +386,26 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzzeitvolumen|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-intrakranieller-druck|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht|1.6.0"
   },
   {
@@ -395,6 +419,10 @@
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM|1.6.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil|2027.0.0-ballot.3"
   },
   {
     "name" : "default-canonical-version",
@@ -414,11 +442,23 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang|1.6.0"
   },
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://fhir.de/ValueSet/VitalSignDE-Kopfumfang-SNOMED-CT|1.6.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex|2027.0.0-ballot.3"
   },
   {
     "name" : "default-canonical-version",
@@ -453,6 +493,18 @@
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score|2027.0.0-ballot.3"
   },
   {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent|2027.0.0-ballot.3"
+  },
+  {
     "name" : "default-canonical-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised|2027.0.0-ballot.3"
   },
@@ -474,10 +526,70 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala|2027.0.0-ballot.3"
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillengroesse|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion|2027.0.0-ballot.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie|2027.0.0-ballot.3"
   }]
 }

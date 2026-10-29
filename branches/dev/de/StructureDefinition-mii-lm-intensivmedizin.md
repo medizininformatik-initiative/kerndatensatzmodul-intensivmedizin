@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/LogicalModel/Intensivmedizin | *Version*:2027.0.0-ballot.3 |
-| Draft Stand: 2026-10-20 | *Maschinenlesbarer Name*:MII_LM_ICU |
+| Draft Stand: 2026-10-29 | *Maschinenlesbarer Name*:MII_LM_ICU |
 
  
 Logische Repräsentation des Erweiterungsmodul Intensivmedizin 
@@ -73,7 +73,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-lm-inten
   "name" : "MII_LM_ICU",
   "title" : "MII Logical Model Intensivmedizin",
   "status" : "draft",
-  "date" : "2026-10-20T13:56:55+00:00",
+  "date" : "2026-10-29T10:59:54+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

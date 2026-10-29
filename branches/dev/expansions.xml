@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8c6f8d6b-645c-4031-badc-46140ad6ad05"/>
+  <id value="6ebf2a1c-ee21-4678-a992-077e98ed6a18"/>
   <meta>
-    <lastUpdated value="2026-10-20T13:56:55.764+00:00"/>
+    <lastUpdated value="2026-10-29T10:59:54.044+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -116,8 +116,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ca93d276-d4e3-43d7-9c51-b02b0df3d105"/>
-          <timestamp value="2026-10-20T14:05:42+00:00"/>
+          <identifier value="urn:uuid:0211e333-9078-4c51-a855-c48ce67b12f5"/>
+          <timestamp value="2026-10-29T11:11:15+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -280,8 +280,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ca93d276-d4e3-43d7-9c51-b02b0df3d105"/>
-          <timestamp value="2026-10-20T14:05:42+00:00"/>
+          <identifier value="urn:uuid:0211e333-9078-4c51-a855-c48ce67b12f5"/>
+          <timestamp value="2026-10-29T11:11:15+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -444,8 +444,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:35b97153-0689-445d-9788-046fcce2496c"/>
-          <timestamp value="2026-10-20T14:05:43+00:00"/>
+          <identifier value="urn:uuid:cf90174c-1056-49c7-ac38-167108301b7c"/>
+          <timestamp value="2026-10-29T11:11:16+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -665,8 +665,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:16cff829-fa9f-4f4c-b33e-be2a72c00d08"/>
-          <timestamp value="2026-10-20T14:06:08+00:00"/>
+          <identifier value="urn:uuid:cd131184-6f18-4a98-9d16-490309fbe4d5"/>
+          <timestamp value="2026-10-29T11:11:49+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -904,8 +904,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:16cff829-fa9f-4f4c-b33e-be2a72c00d08"/>
-          <timestamp value="2026-10-20T14:06:08+00:00"/>
+          <identifier value="urn:uuid:cd131184-6f18-4a98-9d16-490309fbe4d5"/>
+          <timestamp value="2026-10-29T11:11:49+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1143,8 +1143,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2dbe7c38-b4c0-4e3a-861d-94bdff300635"/>
-          <timestamp value="2026-10-20T14:06:08+00:00"/>
+          <identifier value="urn:uuid:a7c2e72c-ba01-4816-b76f-8ffec046a023"/>
+          <timestamp value="2026-10-29T11:11:49+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1276,8 +1276,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9ece10a0-8a8e-4786-8b47-ea0acb7f0c4d"/>
-          <timestamp value="2026-10-20T14:05:20+00:00"/>
+          <identifier value="urn:uuid:ed8090b8-772f-4bf9-b5c3-72a7a32f42c1"/>
+          <timestamp value="2026-10-29T11:10:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1390,8 +1390,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9ece10a0-8a8e-4786-8b47-ea0acb7f0c4d"/>
-          <timestamp value="2026-10-20T14:05:20+00:00"/>
+          <identifier value="urn:uuid:ed8090b8-772f-4bf9-b5c3-72a7a32f42c1"/>
+          <timestamp value="2026-10-29T11:10:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1504,8 +1504,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f6e71018-01e9-4a06-8b8a-3401a1793530"/>
-          <timestamp value="2026-10-20T14:05:22+00:00"/>
+          <identifier value="urn:uuid:d6c192ad-04e2-481b-9709-cf353c8384c3"/>
+          <timestamp value="2026-10-29T11:10:46+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -2257,8 +2257,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c11f2a4-3ce1-4995-a0c8-5acc9b5b9eb2"/>
-          <timestamp value="2026-10-20T14:06:08+00:00"/>
+          <identifier value="urn:uuid:38c81a3b-b7c1-4f48-9d2e-c795dd36fea2"/>
+          <timestamp value="2026-10-29T11:11:02+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -3171,8 +3171,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c11f2a4-3ce1-4995-a0c8-5acc9b5b9eb2"/>
-          <timestamp value="2026-10-20T14:06:08+00:00"/>
+          <identifier value="urn:uuid:38c81a3b-b7c1-4f48-9d2e-c795dd36fea2"/>
+          <timestamp value="2026-10-29T11:11:02+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4085,8 +4085,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b7114b1f-6df0-428a-9084-0d94b2f97a07"/>
-          <timestamp value="2026-10-20T14:06:09+00:00"/>
+          <identifier value="urn:uuid:9ead3436-405e-48d7-9625-af443e543efd"/>
+          <timestamp value="2026-10-29T11:11:03+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4257,6 +4257,418 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 2 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-16089004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/16089004">16089004</a>
+                </td>
+                <td>Structure of pupil of left eye</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;16089004&quot;, &quot;display&quot;: &quot;Structure of pupil of left eye&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;16089004&quot;&gt;&lt;display value=&quot;Structure of pupil of left eye&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-52378001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/52378001">52378001</a>
+                </td>
+                <td>Structure of pupil of right eye</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;52378001&quot;, &quot;display&quot;: &quot;Structure of pupil of right eye&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;52378001&quot;&gt;&lt;display value=&quot;Structure of pupil of right eye&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_BodySite_Observation_Pupillenbefund"/>
+        <title value="MII VS ICU BodySite Observation Pupillenbefund"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a8e701a3-b46b-4320-af40-2e1ad6f0af41"/>
+          <timestamp value="2026-10-29T11:11:28+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="16089004"/>
+            <display value="Structure of pupil of left eye"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52378001"/>
+            <display value="Structure of pupil of right eye"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 2 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-16089004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/16089004">16089004</a>
+                </td>
+                <td>Structure of pupil of left eye</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;16089004&quot;, &quot;display&quot;: &quot;Structure of pupil of left eye&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;16089004&quot;&gt;&lt;display value=&quot;Structure of pupil of left eye&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-52378001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/52378001">52378001</a>
+                </td>
+                <td>Structure of pupil of right eye</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;52378001&quot;, &quot;display&quot;: &quot;Structure of pupil of right eye&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;52378001&quot;&gt;&lt;display value=&quot;Structure of pupil of right eye&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_BodySite_Observation_Pupillenbefund"/>
+        <title value="MII VS ICU BodySite Observation Pupillenbefund"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a8e701a3-b46b-4320-af40-2e1ad6f0af41"/>
+          <timestamp value="2026-10-29T11:11:28+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="16089004"/>
+            <display value="Structure of pupil of left eye"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52378001"/>
+            <display value="Structure of pupil of right eye"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 2 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-16089004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/16089004">16089004</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;16089004&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;16089004&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-52378001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/52378001">52378001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;52378001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;52378001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_BodySite_Observation_Pupillenbefund"/>
+        <title value="MII VS ICU BodySite Observation Pupillenbefund"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:eabde934-5415-4c75-981a-fe2359de44bc"/>
+          <timestamp value="2026-10-29T11:11:29+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="16089004"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52378001"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"/>
     <resource>
       <ValueSet>
@@ -4337,7 +4749,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4346,8 +4758,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c623ee3-33a1-4ff9-ba2c-5fc589152e59"/>
-          <timestamp value="2026-10-20T14:06:09+00:00"/>
+          <identifier value="urn:uuid:08c3dc5f-4d29-45f0-b8bf-1904a54d0388"/>
+          <timestamp value="2026-10-29T11:11:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4476,7 +4888,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4485,8 +4897,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c623ee3-33a1-4ff9-ba2c-5fc589152e59"/>
-          <timestamp value="2026-10-20T14:06:09+00:00"/>
+          <identifier value="urn:uuid:08c3dc5f-4d29-45f0-b8bf-1904a54d0388"/>
+          <timestamp value="2026-10-29T11:11:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4615,7 +5027,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4624,8 +5036,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aeeb3339-3bea-4a7d-ad1e-7b083de2edf8"/>
-          <timestamp value="2026-10-20T14:06:09+00:00"/>
+          <identifier value="urn:uuid:94a18c7b-69f2-4df4-8c9a-6b34de3b501e"/>
+          <timestamp value="2026-10-29T11:11:19+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4788,8 +5200,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aa4a83de-a414-4abe-845e-0605d043120d"/>
-          <timestamp value="2026-10-20T14:05:05+00:00"/>
+          <identifier value="urn:uuid:5d52e0c4-41b4-4cd8-84c2-08347d21d6ee"/>
+          <timestamp value="2026-10-29T11:10:29+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -4952,8 +5364,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aa4a83de-a414-4abe-845e-0605d043120d"/>
-          <timestamp value="2026-10-20T14:05:05+00:00"/>
+          <identifier value="urn:uuid:5d52e0c4-41b4-4cd8-84c2-08347d21d6ee"/>
+          <timestamp value="2026-10-29T11:10:29+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -5116,8 +5528,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d2fbac27-478e-447d-bb87-4db06e13c468"/>
-          <timestamp value="2026-10-20T14:05:06+00:00"/>
+          <identifier value="urn:uuid:a067147a-13af-4da3-b0b7-ac925a542cbc"/>
+          <timestamp value="2026-10-29T11:10:30+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -5250,8 +5662,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f01a5330-d868-4bbb-a093-e618eaee3a3f"/>
-          <timestamp value="2026-10-20T14:05:41+00:00"/>
+          <identifier value="urn:uuid:aa5ae490-e641-40ef-aef5-be3764db2076"/>
+          <timestamp value="2026-10-29T11:11:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -5389,8 +5801,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f01a5330-d868-4bbb-a093-e618eaee3a3f"/>
-          <timestamp value="2026-10-20T14:05:41+00:00"/>
+          <identifier value="urn:uuid:aa5ae490-e641-40ef-aef5-be3764db2076"/>
+          <timestamp value="2026-10-29T11:11:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -5528,8 +5940,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4e05a9d1-95e2-4175-8014-420bae8547f9"/>
-          <timestamp value="2026-10-20T14:05:43+00:00"/>
+          <identifier value="urn:uuid:8da4fd7c-c1dc-4733-ae0b-91a12e3e59fb"/>
+          <timestamp value="2026-10-29T11:11:16+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -6625,8 +7037,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:221faee3-20a9-4e1f-8527-209c106fe438"/>
-          <timestamp value="2026-10-20T14:06:09+00:00"/>
+          <identifier value="urn:uuid:f014536a-0e08-4f95-b501-0dd99b88bc8e"/>
+          <timestamp value="2026-10-29T11:11:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -7964,8 +8376,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:221faee3-20a9-4e1f-8527-209c106fe438"/>
-          <timestamp value="2026-10-20T14:06:09+00:00"/>
+          <identifier value="urn:uuid:f014536a-0e08-4f95-b501-0dd99b88bc8e"/>
+          <timestamp value="2026-10-29T11:11:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -9303,8 +9715,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:98798655-0be8-4750-8df2-977f3ed637fb"/>
-          <timestamp value="2026-10-20T14:06:10+00:00"/>
+          <identifier value="urn:uuid:f75c7ec9-17ce-4a5c-8ee0-9e6a6e918248"/>
+          <timestamp value="2026-10-29T11:11:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -10420,8 +10832,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5c1194c4-0e5e-4f43-8da7-6d0c57d2b870"/>
-          <timestamp value="2026-10-20T14:06:10+00:00"/>
+          <identifier value="urn:uuid:58d93fb0-c765-4100-aaa5-4b766577e2fb"/>
+          <timestamp value="2026-10-29T11:11:50+00:00"/>
           <total value="46"/>
           <offset value="0"/>
           <parameter>
@@ -11564,8 +11976,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5c1194c4-0e5e-4f43-8da7-6d0c57d2b870"/>
-          <timestamp value="2026-10-20T14:06:10+00:00"/>
+          <identifier value="urn:uuid:58d93fb0-c765-4100-aaa5-4b766577e2fb"/>
+          <timestamp value="2026-10-29T11:11:50+00:00"/>
           <total value="46"/>
           <offset value="0"/>
           <parameter>
@@ -12708,8 +13120,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:91c61689-8ba0-4b92-9c26-67061fd53acc"/>
-          <timestamp value="2026-10-20T14:06:10+00:00"/>
+          <identifier value="urn:uuid:4a275a86-f6c7-4e4d-8251-089c3ddca800"/>
+          <timestamp value="2026-10-29T11:11:51+00:00"/>
           <total value="46"/>
           <offset value="0"/>
           <parameter>
@@ -14038,8 +14450,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9d8d617-7139-4ef1-a4e3-5833ce12a1db"/>
-          <timestamp value="2026-10-20T14:06:10+00:00"/>
+          <identifier value="urn:uuid:620b237b-da98-4c1c-b19c-22a59530d6da"/>
+          <timestamp value="2026-10-29T11:11:51+00:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -15449,8 +15861,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9d8d617-7139-4ef1-a4e3-5833ce12a1db"/>
-          <timestamp value="2026-10-20T14:06:10+00:00"/>
+          <identifier value="urn:uuid:620b237b-da98-4c1c-b19c-22a59530d6da"/>
+          <timestamp value="2026-10-29T11:11:51+00:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -16860,8 +17272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:98f04204-7add-4f67-9b88-5bba7de28a7d"/>
-          <timestamp value="2026-10-20T14:06:11+00:00"/>
+          <identifier value="urn:uuid:0a9051fb-7106-42de-b44b-054119f409fe"/>
+          <timestamp value="2026-10-29T11:11:51+00:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -17958,8 +18370,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:28dfcb86-1ae5-41ff-9e8c-7816340f27f7"/>
-          <timestamp value="2026-10-20T14:06:11+00:00"/>
+          <identifier value="urn:uuid:0dc22dd6-9104-4547-a4b1-512f81a420e2"/>
+          <timestamp value="2026-10-29T11:11:51+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -19047,8 +19459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:28dfcb86-1ae5-41ff-9e8c-7816340f27f7"/>
-          <timestamp value="2026-10-20T14:06:11+00:00"/>
+          <identifier value="urn:uuid:0dc22dd6-9104-4547-a4b1-512f81a420e2"/>
+          <timestamp value="2026-10-29T11:11:51+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -20136,8 +20548,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e375537f-7038-45c6-8850-dca235eb6637"/>
-          <timestamp value="2026-10-20T14:06:11+00:00"/>
+          <identifier value="urn:uuid:4ce923b9-c88e-43b7-9c9e-1819972cdfcc"/>
+          <timestamp value="2026-10-29T11:11:52+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -20763,8 +21175,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d373805c-c345-4bcd-99f2-5066f339f119"/>
-          <timestamp value="2026-10-20T14:05:42+00:00"/>
+          <identifier value="urn:uuid:b32ca3ed-5edb-4ab5-838c-07aef5108a81"/>
+          <timestamp value="2026-10-29T11:11:15+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -21332,8 +21744,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d373805c-c345-4bcd-99f2-5066f339f119"/>
-          <timestamp value="2026-10-20T14:05:42+00:00"/>
+          <identifier value="urn:uuid:b32ca3ed-5edb-4ab5-838c-07aef5108a81"/>
+          <timestamp value="2026-10-29T11:11:15+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -21901,8 +22313,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9ca6a8cc-2fb7-49e1-8ee0-94aca88e886b"/>
-          <timestamp value="2026-10-20T14:05:43+00:00"/>
+          <identifier value="urn:uuid:f6658128-ada7-4e54-89b8-192637847a8a"/>
+          <timestamp value="2026-10-29T11:11:16+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -22671,8 +23083,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fdc78503-4897-43ec-a4b9-917c99d81a0e"/>
-          <timestamp value="2026-10-20T14:05:42+00:00"/>
+          <identifier value="urn:uuid:facfbe47-a5c3-4ad5-8e67-109d294839a7"/>
+          <timestamp value="2026-10-29T11:11:14+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -23507,8 +23919,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fdc78503-4897-43ec-a4b9-917c99d81a0e"/>
-          <timestamp value="2026-10-20T14:05:42+00:00"/>
+          <identifier value="urn:uuid:facfbe47-a5c3-4ad5-8e67-109d294839a7"/>
+          <timestamp value="2026-10-29T11:11:14+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -24343,8 +24755,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:78b16503-bc16-483f-95ca-376a14add9e3"/>
-          <timestamp value="2026-10-20T14:05:43+00:00"/>
+          <identifier value="urn:uuid:4f86de8f-df02-4d6b-870f-e85375693a72"/>
+          <timestamp value="2026-10-29T11:11:16+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -24929,8 +25341,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e847f57b-5956-4b2e-8b2f-b9b04122a103"/>
-          <timestamp value="2026-10-20T14:05:41+00:00"/>
+          <identifier value="urn:uuid:11d87b04-4dc4-46a2-8165-7f2b2e322923"/>
+          <timestamp value="2026-10-29T11:11:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -25493,8 +25905,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e847f57b-5956-4b2e-8b2f-b9b04122a103"/>
-          <timestamp value="2026-10-20T14:05:41+00:00"/>
+          <identifier value="urn:uuid:11d87b04-4dc4-46a2-8165-7f2b2e322923"/>
+          <timestamp value="2026-10-29T11:11:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -26057,8 +26469,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:070f5b5d-900a-445a-aebc-2eef51130783"/>
-          <timestamp value="2026-10-20T14:05:43+00:00"/>
+          <identifier value="urn:uuid:f101d8f8-fce8-4482-8dc2-293d3bfc3f9c"/>
+          <timestamp value="2026-10-29T11:11:16+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -26240,8 +26652,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21c050ab-f6c1-452c-a668-02a4a3c9ccae"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:2600c1e7-b104-4b28-92eb-1878bb66943d"/>
+          <timestamp value="2026-10-29T11:11:52+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -26349,8 +26761,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21c050ab-f6c1-452c-a668-02a4a3c9ccae"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:2600c1e7-b104-4b28-92eb-1878bb66943d"/>
+          <timestamp value="2026-10-29T11:11:52+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -26458,8 +26870,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7fc1412-20c4-42d8-8b36-1edced6996ce"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:21170279-81ac-4ed7-8442-99589d4994dd"/>
+          <timestamp value="2026-10-29T11:11:53+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -26808,8 +27220,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7e18e336-b922-4398-bfa9-3badde1f630a"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:219d471d-f554-4c67-a155-783bff3edede"/>
+          <timestamp value="2026-10-29T11:11:53+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -27219,8 +27631,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7e18e336-b922-4398-bfa9-3badde1f630a"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:219d471d-f554-4c67-a155-783bff3edede"/>
+          <timestamp value="2026-10-29T11:11:53+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -27630,8 +28042,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5c847521-69b3-4a1e-87ca-9185381bff67"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:a0517dbb-594d-4f89-8e72-0eeb4a172e51"/>
+          <timestamp value="2026-10-29T11:11:53+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -28168,8 +28580,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:978cf7df-68ab-42c9-8dad-e3437cc01ffe"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:178f5286-18d5-4333-8855-657671fb6b4b"/>
+          <timestamp value="2026-10-29T11:11:53+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -28757,8 +29169,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:978cf7df-68ab-42c9-8dad-e3437cc01ffe"/>
-          <timestamp value="2026-10-20T14:06:12+00:00"/>
+          <identifier value="urn:uuid:178f5286-18d5-4333-8855-657671fb6b4b"/>
+          <timestamp value="2026-10-29T11:11:53+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -29346,8 +29758,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:22d339e7-3129-4823-837b-c1de32fafc8b"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:e49dcbf7-031b-4bae-b823-08543f0bf90e"/>
+          <timestamp value="2026-10-29T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -29510,8 +29922,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cadef209-a5de-4e46-9aec-ab18f7f553d2"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:ae148e9e-a6bd-45ed-a812-ee0f016f516c"/>
+          <timestamp value="2026-10-29T11:11:54+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -29579,8 +29991,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cadef209-a5de-4e46-9aec-ab18f7f553d2"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:ae148e9e-a6bd-45ed-a812-ee0f016f516c"/>
+          <timestamp value="2026-10-29T11:11:54+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -29648,8 +30060,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:448544d2-324f-47ee-990d-3514a9086643"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:542f323b-aceb-442a-9b71-4a8f1e8de109"/>
+          <timestamp value="2026-10-29T11:11:54+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -29762,8 +30174,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c34b475c-b02c-40f1-9321-64995948ba15"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:20abecf6-e442-4a3e-af3f-6dd3d7d1d9e3"/>
+          <timestamp value="2026-10-29T11:10:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -29898,8 +30310,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c34b475c-b02c-40f1-9321-64995948ba15"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:20abecf6-e442-4a3e-af3f-6dd3d7d1d9e3"/>
+          <timestamp value="2026-10-29T11:10:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -30034,8 +30446,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9538b069-afb4-4737-a51d-3ddaf7a72862"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:d802a117-4529-47cc-ac8a-cd1435b38f0f"/>
+          <timestamp value="2026-10-29T11:10:53+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -30348,8 +30760,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:42d4ea8e-a006-42ee-8b91-403fc1330c8e"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:36646720-7e7a-4237-9dd7-24e2a3a23c65"/>
+          <timestamp value="2026-10-29T11:10:51+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -30712,8 +31124,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:42d4ea8e-a006-42ee-8b91-403fc1330c8e"/>
-          <timestamp value="2026-10-20T14:06:13+00:00"/>
+          <identifier value="urn:uuid:36646720-7e7a-4237-9dd7-24e2a3a23c65"/>
+          <timestamp value="2026-10-29T11:10:51+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -31076,8 +31488,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:33b3a416-4179-4351-8e9f-71079e5af38a"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:492ed055-6cac-46b1-9ac1-c45ef77738f2"/>
+          <timestamp value="2026-10-29T11:10:53+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -31269,8 +31681,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:13ea36b3-9081-42c7-937c-6db0003cf745"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:808b8416-cba5-4de4-b990-0a51ef3846ff"/>
+          <timestamp value="2026-10-29T11:11:29+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -31433,8 +31845,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:13ea36b3-9081-42c7-937c-6db0003cf745"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:808b8416-cba5-4de4-b990-0a51ef3846ff"/>
+          <timestamp value="2026-10-29T11:11:29+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -31597,8 +32009,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a9128fa5-fb58-4a27-b091-02e7cfa07765"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:84d69c64-6382-4da9-a85d-12982e201e1a"/>
+          <timestamp value="2026-10-29T11:11:30+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -31643,6 +32055,483 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="188557000"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA25441-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA25441-9/">LA25441-9</a>
+                </td>
+                <td>Reactive to light</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA25441-9&quot;, &quot;display&quot;: &quot;Reactive to light&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA25441-9&quot;&gt;&lt;display value=&quot;Reactive to light&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA24899-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA24899-9/">LA24899-9</a>
+                </td>
+                <td>Sluggishly reactive to light</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA24899-9&quot;, &quot;display&quot;: &quot;Sluggishly reactive to light&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA24899-9&quot;&gt;&lt;display value=&quot;Sluggishly reactive to light&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA25442-7"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA25442-7/">LA25442-7</a>
+                </td>
+                <td>Not reactive to light</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA25442-7&quot;, &quot;display&quot;: &quot;Not reactive to light&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA25442-7&quot;&gt;&lt;display value=&quot;Not reactive to light&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"/>
+        <title value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:508e92fb-0e42-4c21-930d-a24077a767ca"/>
+          <timestamp value="2026-10-29T11:11:30+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA25441-9"/>
+            <display value="Reactive to light"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA24899-9"/>
+            <display value="Sluggishly reactive to light"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA25442-7"/>
+            <display value="Not reactive to light"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA25441-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA25441-9/">LA25441-9</a>
+                </td>
+                <td>Reactive to light</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA25441-9&quot;, &quot;display&quot;: &quot;Reactive to light&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA25441-9&quot;&gt;&lt;display value=&quot;Reactive to light&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA24899-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA24899-9/">LA24899-9</a>
+                </td>
+                <td>Sluggishly reactive to light</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA24899-9&quot;, &quot;display&quot;: &quot;Sluggishly reactive to light&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA24899-9&quot;&gt;&lt;display value=&quot;Sluggishly reactive to light&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA25442-7"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA25442-7/">LA25442-7</a>
+                </td>
+                <td>Not reactive to light</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA25442-7&quot;, &quot;display&quot;: &quot;Not reactive to light&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA25442-7&quot;&gt;&lt;display value=&quot;Not reactive to light&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"/>
+        <title value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:508e92fb-0e42-4c21-930d-a24077a767ca"/>
+          <timestamp value="2026-10-29T11:11:30+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA25441-9"/>
+            <display value="Reactive to light"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA24899-9"/>
+            <display value="Sluggishly reactive to light"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA25442-7"/>
+            <display value="Not reactive to light"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA25441-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA25441-9/">LA25441-9</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA25441-9&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA25441-9&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA24899-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA24899-9/">LA24899-9</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA24899-9&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA24899-9&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA25442-7"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA25442-7/">LA25442-7</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA25442-7&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA25442-7&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Code_Observation_Pupillenlichtreaktion"/>
+        <title value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:dfb3617a-c862-48eb-b44b-a41a76de632a"/>
+          <timestamp value="2026-10-29T11:11:31+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA25441-9"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA24899-9"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA25442-7"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -31738,8 +32627,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c0128402-1561-4442-bf91-1ff3b7aef7fe"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:c9cac531-5f81-434e-bd59-d97b9853155b"/>
+          <timestamp value="2026-10-29T11:11:32+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -31877,8 +32766,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c0128402-1561-4442-bf91-1ff3b7aef7fe"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:c9cac531-5f81-434e-bd59-d97b9853155b"/>
+          <timestamp value="2026-10-29T11:11:32+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -32016,8 +32905,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a9eca8f3-b923-425b-a56a-c359ece52acc"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:b51cc34d-39cc-43a8-8f55-2663d01d9bb9"/>
+          <timestamp value="2026-10-29T11:11:32+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -32058,6 +32947,409 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="13045009"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA24884-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA24884-1/">LA24884-1</a>
+                </td>
+                <td>Round</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA24884-1&quot;, &quot;display&quot;: &quot;Round&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA24884-1&quot;&gt;&lt;display value=&quot;Round&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA19583-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA19583-6/">LA19583-6</a>
+                </td>
+                <td>Irregular</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA19583-6&quot;, &quot;display&quot;: &quot;Irregular&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA19583-6&quot;&gt;&lt;display value=&quot;Irregular&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Code_Observation_Pupillenform_LOINC"/>
+        <title value="MII VS ICU Code Observation Pupillenform LOINC"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cef6fcf6-b76c-4fb3-93ce-0713ab0773f9"/>
+          <timestamp value="2026-10-29T11:11:28+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA24884-1"/>
+            <display value="Round"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA19583-6"/>
+            <display value="Irregular"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA24884-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA24884-1/">LA24884-1</a>
+                </td>
+                <td>Round</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA24884-1&quot;, &quot;display&quot;: &quot;Round&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA24884-1&quot;&gt;&lt;display value=&quot;Round&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA19583-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA19583-6/">LA19583-6</a>
+                </td>
+                <td>Irregular</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA19583-6&quot;, &quot;display&quot;: &quot;Irregular&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA19583-6&quot;&gt;&lt;display value=&quot;Irregular&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Code_Observation_Pupillenform_LOINC"/>
+        <title value="MII VS ICU Code Observation Pupillenform LOINC"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cef6fcf6-b76c-4fb3-93ce-0713ab0773f9"/>
+          <timestamp value="2026-10-29T11:11:28+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA24884-1"/>
+            <display value="Round"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA19583-6"/>
+            <display value="Irregular"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA24884-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA24884-1/">LA24884-1</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA24884-1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA24884-1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA19583-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA19583-6/">LA19583-6</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA19583-6&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA19583-6&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Code_Observation_Pupillenform_LOINC"/>
+        <title value="MII VS ICU Code Observation Pupillenform LOINC"/>
+        <status value="draft"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:10dee729-e46f-4e89-81f2-80bc34059a0a"/>
+          <timestamp value="2026-10-29T11:11:29+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA24884-1"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA19583-6"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -33753,8 +35045,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ea0b3ba4-ef37-40af-a5cb-de6d400ade9b"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:d38be12a-96fa-43a6-b1fe-c277d4b5fbed"/>
+          <timestamp value="2026-10-29T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -35892,8 +37184,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ea0b3ba4-ef37-40af-a5cb-de6d400ade9b"/>
-          <timestamp value="2026-10-20T14:06:14+00:00"/>
+          <identifier value="urn:uuid:d38be12a-96fa-43a6-b1fe-c277d4b5fbed"/>
+          <timestamp value="2026-10-29T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -38031,8 +39323,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ad00715-8fa8-41f4-9b34-5918c73ffaab"/>
-          <timestamp value="2026-10-20T14:06:15+00:00"/>
+          <identifier value="urn:uuid:b82c924c-baae-4ffd-aaa8-333fe7a1cf3d"/>
+          <timestamp value="2026-10-29T11:11:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -38528,8 +39820,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b4795d2-a00e-4bfb-9c4f-cce5d6feec4d"/>
-          <timestamp value="2026-10-20T14:05:45+00:00"/>
+          <identifier value="urn:uuid:f2e0b510-8385-4117-ae66-13cc2b50a4d4"/>
+          <timestamp value="2026-10-29T11:11:19+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -38714,8 +40006,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b4795d2-a00e-4bfb-9c4f-cce5d6feec4d"/>
-          <timestamp value="2026-10-20T14:05:45+00:00"/>
+          <identifier value="urn:uuid:f2e0b510-8385-4117-ae66-13cc2b50a4d4"/>
+          <timestamp value="2026-10-29T11:11:19+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -38900,8 +40192,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:50506955-7bc1-4dde-bf10-277dc6f6faf2"/>
-          <timestamp value="2026-10-20T14:05:46+00:00"/>
+          <identifier value="urn:uuid:ae73db08-61ce-4ddf-b2ed-cc79ed3b49c8"/>
+          <timestamp value="2026-10-29T11:11:21+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -39122,8 +40414,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9f566b99-5ad7-4a61-b2be-e2857676b9a8"/>
-          <timestamp value="2026-10-20T14:05:45+00:00"/>
+          <identifier value="urn:uuid:7815774c-0e2f-4a1e-9ed8-f8ea1c851ac8"/>
+          <timestamp value="2026-10-29T11:11:20+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -39358,8 +40650,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9f566b99-5ad7-4a61-b2be-e2857676b9a8"/>
-          <timestamp value="2026-10-20T14:05:45+00:00"/>
+          <identifier value="urn:uuid:7815774c-0e2f-4a1e-9ed8-f8ea1c851ac8"/>
+          <timestamp value="2026-10-29T11:11:20+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -39594,8 +40886,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:987812a3-1a75-4d56-b80f-4ead4bc7174f"/>
-          <timestamp value="2026-10-20T14:05:46+00:00"/>
+          <identifier value="urn:uuid:a7d64333-6b1a-4df5-a4d8-5d1a962982fd"/>
+          <timestamp value="2026-10-29T11:11:21+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -39804,8 +41096,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:28b01afd-f1db-4f24-8a43-6846303d3f25"/>
-          <timestamp value="2026-10-20T14:05:45+00:00"/>
+          <identifier value="urn:uuid:0085cd25-e907-43d4-993b-86f0b93d5773"/>
+          <timestamp value="2026-10-29T11:11:20+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -40015,8 +41307,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:28b01afd-f1db-4f24-8a43-6846303d3f25"/>
-          <timestamp value="2026-10-20T14:05:45+00:00"/>
+          <identifier value="urn:uuid:0085cd25-e907-43d4-993b-86f0b93d5773"/>
+          <timestamp value="2026-10-29T11:11:20+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -40226,8 +41518,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aa628cb4-dd18-4dd1-9e76-458f9c36c278"/>
-          <timestamp value="2026-10-20T14:05:46+00:00"/>
+          <identifier value="urn:uuid:eb4430ce-0368-476c-a877-98db6f589a45"/>
+          <timestamp value="2026-10-29T11:11:21+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -40332,8 +41624,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:285e76dd-a4a8-4010-810a-46706bc489c3"/>
-          <timestamp value="2026-10-20T14:06:16+00:00"/>
+          <identifier value="urn:uuid:e2281c4a-f59a-40b0-89d9-a2abb36397d1"/>
+          <timestamp value="2026-10-29T11:11:56+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -40421,8 +41713,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:285e76dd-a4a8-4010-810a-46706bc489c3"/>
-          <timestamp value="2026-10-20T14:06:16+00:00"/>
+          <identifier value="urn:uuid:e2281c4a-f59a-40b0-89d9-a2abb36397d1"/>
+          <timestamp value="2026-10-29T11:11:56+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -40510,8 +41802,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fcaeaac9-6061-4758-80e4-778e5e9f6714"/>
-          <timestamp value="2026-10-20T14:06:17+00:00"/>
+          <identifier value="urn:uuid:577c4d4e-8f5b-4df3-861a-47360c6cb936"/>
+          <timestamp value="2026-10-29T11:11:58+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -40639,8 +41931,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d44b58df-49bc-4ecb-be44-6b454f9f772f"/>
-          <timestamp value="2026-10-20T14:06:17+00:00"/>
+          <identifier value="urn:uuid:90a463b5-6406-410a-97eb-5017f26fcecc"/>
+          <timestamp value="2026-10-29T11:11:58+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -40778,8 +42070,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d44b58df-49bc-4ecb-be44-6b454f9f772f"/>
-          <timestamp value="2026-10-20T14:06:17+00:00"/>
+          <identifier value="urn:uuid:90a463b5-6406-410a-97eb-5017f26fcecc"/>
+          <timestamp value="2026-10-29T11:11:58+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -40917,8 +42209,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ebde8c5a-6169-4a8b-b30d-10df5230dbf2"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:1e9f530f-3090-420f-83bb-011cdb55cc75"/>
+          <timestamp value="2026-10-29T11:11:59+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41045,7 +42337,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41054,8 +42346,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5f97c1a3-c022-4aa4-bd55-a613e1e32b99"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:63187056-a1f9-4de4-9169-2d5ba621d25d"/>
+          <timestamp value="2026-10-29T11:11:18+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41184,7 +42476,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41193,8 +42485,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5f97c1a3-c022-4aa4-bd55-a613e1e32b99"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:63187056-a1f9-4de4-9169-2d5ba621d25d"/>
+          <timestamp value="2026-10-29T11:11:18+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41323,7 +42615,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41332,8 +42624,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3027f8ec-1aa9-4d32-9fab-850f00367a1f"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:1040db87-fb41-4ba3-ad51-af06d1d5cb51"/>
+          <timestamp value="2026-10-29T11:11:19+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41440,7 +42732,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41449,8 +42741,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ae8b816-625d-4b50-a697-1ba3b2b600b0"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:61a26587-d8c6-48c0-b052-955d571641f2"/>
+          <timestamp value="2026-10-29T11:11:59+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41554,7 +42846,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41563,8 +42855,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ae8b816-625d-4b50-a697-1ba3b2b600b0"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:61a26587-d8c6-48c0-b052-955d571641f2"/>
+          <timestamp value="2026-10-29T11:11:59+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41668,7 +42960,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-10-20T13:56:55+00:00"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41677,8 +42969,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:268e91b4-d541-484c-a526-b99f58faf0a8"/>
-          <timestamp value="2026-10-20T14:06:18+00:00"/>
+          <identifier value="urn:uuid:d6145083-44b5-42ac-ae8a-1c4e75e25b72"/>
+          <timestamp value="2026-10-29T11:12:00+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -41715,6 +43007,1381 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="273249006"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-96789-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/96789-3/">96789-3</a>
+                </td>
+                <td>Sequential Organ Failure Assessment SOFA</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;96789-3&quot;, &quot;display&quot;: &quot;Sequential Organ Failure Assessment SOFA&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;96789-3&quot;&gt;&lt;display value=&quot;Sequential Organ Failure Assessment SOFA&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-96791-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/96791-9/">96791-9</a>
+                </td>
+                <td>Quick SOFA score SOFA.quick</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;96791-9&quot;, &quot;display&quot;: &quot;Quick SOFA score SOFA.quick&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;96791-9&quot;&gt;&lt;display value=&quot;Quick SOFA score SOFA.quick&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-72514-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/72514-3/">72514-3</a>
+                </td>
+                <td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;72514-3&quot;, &quot;display&quot;: &quot;Pain severity - 0-10 verbal numeric rating [Score] - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;72514-3&quot;&gt;&lt;display value=&quot;Pain severity - 0-10 verbal numeric rating [Score] - Reported&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_LOINC"/>
+        <title value="MII VS ICU Score LOINC"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4efc4a78-8b74-4afc-9c44-425b20c3279b"/>
+          <timestamp value="2026-10-29T11:12:00+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96789-3"/>
+            <display value="Sequential Organ Failure Assessment SOFA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96791-9"/>
+            <display value="Quick SOFA score SOFA.quick"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="72514-3"/>
+            <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-96789-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/96789-3/">96789-3</a>
+                </td>
+                <td>Sequential Organ Failure Assessment SOFA</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;96789-3&quot;, &quot;display&quot;: &quot;Sequential Organ Failure Assessment SOFA&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;96789-3&quot;&gt;&lt;display value=&quot;Sequential Organ Failure Assessment SOFA&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-96791-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/96791-9/">96791-9</a>
+                </td>
+                <td>Quick SOFA score SOFA.quick</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;96791-9&quot;, &quot;display&quot;: &quot;Quick SOFA score SOFA.quick&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;96791-9&quot;&gt;&lt;display value=&quot;Quick SOFA score SOFA.quick&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-72514-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/72514-3/">72514-3</a>
+                </td>
+                <td>Pain severity - 0-10 verbal numeric rating [Score] - Reported</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;72514-3&quot;, &quot;display&quot;: &quot;Pain severity - 0-10 verbal numeric rating [Score] - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;72514-3&quot;&gt;&lt;display value=&quot;Pain severity - 0-10 verbal numeric rating [Score] - Reported&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_LOINC"/>
+        <title value="MII VS ICU Score LOINC"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4efc4a78-8b74-4afc-9c44-425b20c3279b"/>
+          <timestamp value="2026-10-29T11:12:00+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96789-3"/>
+            <display value="Sequential Organ Failure Assessment SOFA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96791-9"/>
+            <display value="Quick SOFA score SOFA.quick"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="72514-3"/>
+            <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-96789-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/96789-3/">96789-3</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;96789-3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;96789-3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-96791-9"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/96791-9/">96791-9</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;96791-9&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;96791-9&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-72514-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/72514-3/">72514-3</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;72514-3&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;72514-3&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_LOINC"/>
+        <title value="MII VS ICU Score LOINC"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f0b853be-f9cb-4d31-a703-379273ca36bc"/>
+          <timestamp value="2026-10-29T11:12:00+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96789-3"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96791-9"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="72514-3"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA17287-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA17287-6/">LA17287-6</a>
+                </td>
+                <td>Combative +4</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA17287-6&quot;, &quot;display&quot;: &quot;Combative +4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA17287-6&quot;&gt;&lt;display value=&quot;Combative +4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA16474-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA16474-1/">LA16474-1</a>
+                </td>
+                <td>Restless +1</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA16474-1&quot;, &quot;display&quot;: &quot;Restless +1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA16474-1&quot;&gt;&lt;display value=&quot;Restless +1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_RASS"/>
+        <title value="MII VS ICU Score RASS"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2fb5bd1b-3d7e-40b2-a039-a19172c42fbe"/>
+          <timestamp value="2026-10-29T11:11:23+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17287-6"/>
+            <display value="Combative +4"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA16474-1"/>
+            <display value="Restless +1"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA17287-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA17287-6/">LA17287-6</a>
+                </td>
+                <td>Combative +4</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA17287-6&quot;, &quot;display&quot;: &quot;Combative +4&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA17287-6&quot;&gt;&lt;display value=&quot;Combative +4&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA16474-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA16474-1/">LA16474-1</a>
+                </td>
+                <td>Restless +1</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA16474-1&quot;, &quot;display&quot;: &quot;Restless +1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA16474-1&quot;&gt;&lt;display value=&quot;Restless +1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_RASS"/>
+        <title value="MII VS ICU Score RASS"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2fb5bd1b-3d7e-40b2-a039-a19172c42fbe"/>
+          <timestamp value="2026-10-29T11:11:23+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17287-6"/>
+            <display value="Combative +4"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA16474-1"/>
+            <display value="Restless +1"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on Loinc v2.83
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA17287-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA17287-6/">LA17287-6</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA17287-6&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA17287-6&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-LA16474-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/LA16474-1/">LA16474-1</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;LA16474-1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;LA16474-1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_RASS"/>
+        <title value="MII VS ICU Score RASS"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c194774e-ec5c-4543-8b2b-9a7a893fdeee"/>
+          <timestamp value="2026-10-29T11:11:24+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA17287-6"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA16474-1"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1345050000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1345050000">1345050000</a>
+                </td>
+                <td>Richmond Agitation Sedation Scale score (observable entity)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1345050000&quot;, &quot;display&quot;: &quot;Richmond Agitation Sedation Scale score (observable entity)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1345050000&quot;&gt;&lt;display value=&quot;Richmond Agitation Sedation Scale score (observable entity)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1351995008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1351995008">1351995008</a>
+                </td>
+                <td>Intensive Care Delirium Screening Checklist score (observable entity)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1351995008&quot;, &quot;display&quot;: &quot;Intensive Care Delirium Screening Checklist score (observable entity)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1351995008&quot;&gt;&lt;display value=&quot;Intensive Care Delirium Screening Checklist score (observable entity)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1187491009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1187491009">1187491009</a>
+                </td>
+                <td>Sequential Organ Failure Assessment score (observable entity)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1187491009&quot;, &quot;display&quot;: &quot;Sequential Organ Failure Assessment score (observable entity)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1187491009&quot;&gt;&lt;display value=&quot;Sequential Organ Failure Assessment score (observable entity)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_SNOMED"/>
+        <title value="MII VS Score SNOMED CT"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4ea2e0c7-6053-41b9-bc86-0544d92b5f81"/>
+          <timestamp value="2026-10-29T11:12:03+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1345050000"/>
+            <display value="Richmond Agitation Sedation Scale score (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1351995008"/>
+            <display value="Intensive Care Delirium Screening Checklist score (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1187491009"/>
+            <display value="Sequential Organ Failure Assessment score (observable entity)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1345050000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1345050000">1345050000</a>
+                </td>
+                <td>Richmond Agitation Sedation Scale score (observable entity)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1345050000&quot;, &quot;display&quot;: &quot;Richmond Agitation Sedation Scale score (observable entity)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1345050000&quot;&gt;&lt;display value=&quot;Richmond Agitation Sedation Scale score (observable entity)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1351995008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1351995008">1351995008</a>
+                </td>
+                <td>Intensive Care Delirium Screening Checklist score (observable entity)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1351995008&quot;, &quot;display&quot;: &quot;Intensive Care Delirium Screening Checklist score (observable entity)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1351995008&quot;&gt;&lt;display value=&quot;Intensive Care Delirium Screening Checklist score (observable entity)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1187491009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1187491009">1187491009</a>
+                </td>
+                <td>Sequential Organ Failure Assessment score (observable entity)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1187491009&quot;, &quot;display&quot;: &quot;Sequential Organ Failure Assessment score (observable entity)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1187491009&quot;&gt;&lt;display value=&quot;Sequential Organ Failure Assessment score (observable entity)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_SNOMED"/>
+        <title value="MII VS Score SNOMED CT"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4ea2e0c7-6053-41b9-bc86-0544d92b5f81"/>
+          <timestamp value="2026-10-29T11:12:03+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1345050000"/>
+            <display value="Richmond Agitation Sedation Scale score (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1351995008"/>
+            <display value="Intensive Care Delirium Screening Checklist score (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1187491009"/>
+            <display value="Sequential Organ Failure Assessment score (observable entity)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1345050000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1345050000">1345050000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1345050000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1345050000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1351995008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1351995008">1351995008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1351995008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1351995008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1187491009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1187491009">1187491009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;1187491009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;1187491009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed"/>
+        <version value="2027.0.0-ballot.3"/>
+        <name value="MII_VS_ICU_Score_SNOMED"/>
+        <title value="MII VS Score SNOMED CT"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-10-29T10:59:54+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9939a0fc-8827-4eff-be63-3e7b0c98ef0e"/>
+          <timestamp value="2026-10-29T11:12:03+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1345050000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1351995008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1187491009"/>
           </contains>
         </expansion>
       </ValueSet>

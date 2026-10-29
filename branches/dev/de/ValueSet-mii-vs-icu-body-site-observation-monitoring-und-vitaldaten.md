@@ -16,7 +16,14 @@ Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [MII PR ICU MUV Herzzeitvolumen](StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.md)
+* [MII PR ICU MUV Ideales Koerpergewicht](StructureDefinition-mii-pr-icu-muv-ideales-koerpergewicht.md)
+* [MII PR ICU MUV Intrakranieller Druck (ICP)](StructureDefinition-mii-pr-icu-muv-intrakranieller-druck.md)
+* [MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)](StructureDefinition-mii-pr-icu-muv-koerpergewicht-perzentil.md)
+* [MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)](StructureDefinition-mii-pr-icu-muv-koerpergroesse-perzentil.md)
+* [MII PR ICU MUV Kohlendioxid Produktion](StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.md)
+* [MII PR ICU MUV Pulmonalarterieller Wedge-Druck](StructureDefinition-mii-pr-icu-muv-pulmonalarterieller-wedge-druck.md)
+* [MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex](StructureDefinition-mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex.md)
 
 ### Logical Definition (CLD)
 
