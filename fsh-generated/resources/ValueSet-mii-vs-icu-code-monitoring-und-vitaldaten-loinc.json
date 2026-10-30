@@ -6,7 +6,7 @@
   "title": "MII VS ICU Code Monitoring und Vitaldaten LOINC",
   "description": "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -27,7 +27,7 @@
         "concept": [
           {
             "code": "8867-4",
-            "display": "Heart Rate"
+            "display": "Heart rate"
           },
           {
             "code": "8480-6",
@@ -178,6 +178,10 @@
             "display": "Body height"
           },
           {
+            "code": "8306-3",
+            "display": "Body height --lying"
+          },
+          {
             "code": "8303-0",
             "display": "Body height [Percentile]"
           },
@@ -227,11 +231,15 @@
           },
           {
             "code": "60838-0",
-            "display": "Body temperature"
+            "display": "Nasopharyngeal temperature"
           },
           {
             "code": "104063-3",
             "display": "Body temperature"
+          },
+          {
+            "code": "60825-7",
+            "display": "Carbon dioxide production (VCO2) in Respiratory system"
           }
         ]
       }

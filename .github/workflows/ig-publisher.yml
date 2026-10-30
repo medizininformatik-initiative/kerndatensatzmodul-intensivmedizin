@@ -201,9 +201,9 @@ jobs:
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
 
       - name: Filter draft profiles before build
-        if: ${{ github.ref_name == 'main' }}
+        if: ${{ github.ref_name == 'main' || startsWith(github.ref_name, 'test/main-sicht') }}
         shell: bash
-        run: bash scripts/strip-drafts.py
+        run: python3 scripts/strip-drafts.py
 
       - name: SUSHI compile and decide build mode
         id: build
