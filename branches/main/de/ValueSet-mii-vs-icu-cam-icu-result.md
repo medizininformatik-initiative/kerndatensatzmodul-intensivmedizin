@@ -1,4 +1,4 @@
-# MII VS ICU CAM-ICU Result - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU CAM-ICU Result - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-10-21 | *Maschinenlesbarer Name*:MII_VS_ICU_CAM_ICU_Result |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active Stand: 2026-10-30 | *Maschinenlesbarer Name*:MII_VS_ICU_CAM_ICU_Result |
 
  
 CAM-ICU assessment result: positive (delirium present) or negative (no delirium) 
@@ -37,12 +37,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-cam-icu-result",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_VS_ICU_CAM_ICU_Result",
   "title" : "MII VS ICU CAM-ICU Result",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

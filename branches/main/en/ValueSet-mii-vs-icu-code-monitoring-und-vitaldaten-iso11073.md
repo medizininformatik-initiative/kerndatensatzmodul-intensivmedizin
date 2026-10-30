@@ -1,4 +1,4 @@
-# MII VS ICU Code Monitoring und Vitaldaten ISO11073 - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU Code Monitoring und Vitaldaten ISO11073 - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073 | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073 | *Version*:2027.0.0-ballot.3-rc.1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073 |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073",
   "title" : "MII VS ICU Code Monitoring und Vitaldaten ISO11073",
   "status" : "active",
@@ -64,184 +64,191 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       "system" : "urn:iso:std:iso:11073:10101",
       "concept" : [{
         "code" : "150017",
-        "display" : "Systolic blood pressure"
+        "display" : "MDC_PRESS_BLD_SYS"
       },
       {
         "code" : "150019",
-        "display" : "Mean blood pressure"
+        "display" : "MDC_PRESS_BLD_MEAN"
       },
       {
         "code" : "150018",
-        "display" : "Diastolic blood pressure"
+        "display" : "MDC_PRESS_BLD_DIA"
       },
       {
         "code" : "150084",
-        "display" : "Central venous pressure"
+        "display" : "MDC_PRESS_BLD_VEN_CENT"
       },
       {
         "code" : "150045",
-        "display" : "Systolic pulmonary arterial pressure"
+        "display" : "MDC_PRESS_BLD_ART_PULM_SYS"
       },
       {
         "code" : "150047",
-        "display" : "Mean pulmonary arterial pressure"
+        "display" : "MDC_PRESS_BLD_ART_PULM_MEAN"
       },
       {
         "code" : "150046",
-        "display" : "Diastolic pulmonary arterial pressure"
+        "display" : "MDC_PRESS_BLD_ART_PULM_DIA"
       },
       {
         "code" : "150052",
-        "display" : "Pulmonary artery wedge pressure"
+        "display" : "MDC_PRESS_BLD_ART_PULM_OCCL"
       },
       {
         "code" : "150276",
-        "display" : "Cardiac output"
+        "display" : "MDC_OUTPUT_CARD"
       },
       {
         "code" : "149772",
-        "display" : "Cardiac index"
+        "display" : "MDC_OUTPUT_CARD_INDEX"
       },
       {
         "code" : "149760",
-        "display" : "Systemic vascular resistance indexed"
+        "display" : "MDC_RES_VASC_SYS_INDEX"
       },
       {
         "code" : "152852",
-        "display" : "Pulmonary Vascular Resistance Index"
+        "display" : "MDC_RES_VASC_PULM_INDEX"
       },
       {
         "code" : "150428",
-        "display" : "Ventricular stroke"
+        "display" : "MDC_WK_LV_STROKE"
       },
       {
         "code" : "149764",
-        "display" : "Left Ventricular Stroke Work Index"
+        "display" : "MDC_WK_LV_STROKE_INDEX"
       },
       {
         "code" : "150368",
-        "display" : "Body temperature - Core"
+        "display" : "MDC_TEMP_CORE"
       },
       {
         "code" : "150456",
-        "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+        "display" : "MDC_PULS_OXIM_SAT_O2"
       },
       {
         "code" : "160300",
-        "display" : "Postductal SpO2"
+        "display" : "MDC_PULS_OXIM_SAT_O2_ART_POSTDUCTAL"
       },
       {
         "code" : "160296",
-        "display" : "Preductal SpO2"
+        "display" : "MDC_PULS_OXIM_SAT_O2_ART_PREDUCTAL"
       },
       {
         "code" : "153608",
-        "display" : "Intracranial pressure"
+        "display" : "MDC_PRESS_INTRA_CRAN"
       },
       {
         "code" : "150103",
-        "display" : "Mean left ventricular pressure"
+        "display" : "MDC_PRESS_BLD_VENT_LEFT_MEAN"
       },
       {
         "code" : "150107",
-        "display" : "Mean right ventricular pressure"
+        "display" : "MDC_PRESS_BLD_VENT_RIGHT_MEAN"
       },
       {
         "code" : "150101",
-        "display" : "Systolic left ventricular pressure"
+        "display" : "MDC_PRESS_BLD_VENT_LEFT_SYS"
       },
       {
         "code" : "150105",
-        "display" : "Systolic right ventricular pressure"
+        "display" : "MDC_PRESS_BLD_VENT_RIGHT_SYS"
       },
       {
         "code" : "150102",
-        "display" : "Diastolic left ventricular pressure"
+        "display" : "MDC_PRESS_BLD_VENT_LEFT_DIA"
       },
       {
         "code" : "150106",
-        "display" : "Diastolic right ventricular pressure"
+        "display" : "MDC_PRESS_BLD_VENT_RIGHT_DIA"
       },
       {
         "code" : "150069",
-        "display" : "Systolic right atrial pressure"
+        "display" : "MDC_PRESS_BLD_ATR_RIGHT_SYS"
       },
       {
         "code" : "150065",
-        "display" : "Systolic left atrial pressure"
+        "display" : "MDC_PRESS_BLD_ATR_LEFT_SYS"
       },
       {
         "code" : "150067",
-        "display" : "Mean left atrial pressure"
+        "display" : "MDC_PRESS_BLD_ATR_LEFT_MEAN"
       },
       {
         "code" : "150071",
-        "display" : "Mean right atrial pressure"
+        "display" : "MDC_PRESS_BLD_ATR_RIGHT_MEAN"
       },
       {
         "code" : "150066",
-        "display" : "Diastolic left atrial pressure"
+        "display" : "MDC_PRESS_BLD_ATR_LEFT_DIA"
       },
       {
         "code" : "150070",
-        "display" : "Diastolic right atrial pressure"
+        "display" : "MDC_PRESS_BLD_ATR_RIGHT_DIA"
+      },
+      {
+        "code" : "153604",
+        "display" : "MDC_PRESS_CEREB_PERF"
       },
       {
         "code" : "188420",
-        "display" : "Rectal temperature"
+        "display" : "MDC_TEMP_RECT"
       },
       {
         "code" : "188496",
-        "display" : "Axillary temperature"
+        "display" : "MDC_TEMP_AXIL"
       },
       {
         "code" : "188424",
-        "display" : "Oral temperature"
+        "display" : "MDC_TEMP_ORAL"
       },
       {
         "code" : "188436",
-        "display" : "Blood temperature"
+        "display" : "MDC_TEMP_BLD"
       },
       {
         "code" : "188500",
-        "display" : "Myocardial temperature"
+        "display" : "MDC_TEMP_MYO"
       },
       {
         "code" : "147842",
-        "display" : "Heart Rate"
+        "display" : "MDC_ECG_HEART_RATE"
       },
       {
         "code" : "188504",
-        "display" : "Nasal temperature"
+        "display" : "MDC_TEMP_NASAL"
       },
       {
         "code" : "149514",
-        "display" : "Pulse rate"
+        "display" : "MDC_PULS_RATE"
       },
       {
         "code" : "150380",
-        "display" : "Nasopharynx temperature"
+        "display" : "MDC_TEMP_NASOPH"
       },
       {
         "code" : "188452",
-        "display" : "Axillary (armpit) temperature"
+        "display" : "MDC_TEMP_AXILLA"
       },
       {
-        "code" : "150324"
+        "code" : "150324",
+        "display" : "MDC_SAT_O2_ART"
       },
       {
-        "code" : "150372"
+        "code" : "150372",
+        "display" : "MDC_TEMP_ESOPH"
       },
       {
         "code" : "188796",
-        "display" : "Ideal body weight (IBW)"
+        "display" : "MDC_MASS_BODY_EST_IBW"
       },
       {
-        "code" : "150392"
+        "code" : "150392",
+        "display" : "MDC_TEMP_TYMP"
       },
       {
         "code" : "150356",
-        "display" : "Airway temperature"
+        "display" : "MDC_TEMP_AWAY"
       }]
     }]
   }

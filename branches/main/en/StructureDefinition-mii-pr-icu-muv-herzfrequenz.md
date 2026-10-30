@@ -1,4 +1,4 @@
-# MII PR ICU MUV Herzfrequenz - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU MUV Herzfrequenz - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-21 | *Computable Name*:MII_PR_ICU_MUV_Herzfrequenz |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active as of 2026-10-30 | *Computable Name*:MII_PR_ICU_MUV_Herzfrequenz |
 
 **Usages:**
 
@@ -34,11 +34,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-he
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-muv-herzfrequenz",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_PR_ICU_MUV_Herzfrequenz",
   "title" : "MII PR ICU MUV Herzfrequenz",
   "status" : "active",
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

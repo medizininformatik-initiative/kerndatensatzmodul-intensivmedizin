@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Bilanz - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-21 | *Computable Name*:MII_PR_ICU_Bilanz |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active as of 2026-10-30 | *Computable Name*:MII_PR_ICU_Bilanz |
 
 Represents all measured imports and exports of liquids.
 
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_PR_ICU_Bilanz",
   "title" : "MII PR ICU Bilanz",
   "status" : "active",
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -214,11 +214,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -243,11 +238,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "id" : "Observation.code.coding:loinc.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {

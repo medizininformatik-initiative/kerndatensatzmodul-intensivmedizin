@@ -1,4 +1,4 @@
-# Muv Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.3
+# Muv Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -51,7 +51,6 @@ Profile: [MII PR ICU MUV Arterieller Blutdruck](StructureDefinition-mii-pr-icu-m
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364090009",
       "display" : "Systemic arterial pressure (observable entity)"
     },

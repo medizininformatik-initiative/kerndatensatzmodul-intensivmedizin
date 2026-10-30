@@ -1,4 +1,4 @@
-# mii-sp-icu-observation-bodysite - MII IG ICU v2027.0.0-ballot.3
+# mii-sp-icu-observation-bodysite - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-bodysite | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-bodysite | *Version*:2027.0.0-ballot.3-rc.1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_SP_ICU_Observation_BodySite |
 
  
@@ -36,7 +36,7 @@ Suchparameter für Observation.bodySite
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/mii-sp-icu-observation-bodysite",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_SP_ICU_Observation_BodySite",
   "status" : "active",
   "experimental" : false,

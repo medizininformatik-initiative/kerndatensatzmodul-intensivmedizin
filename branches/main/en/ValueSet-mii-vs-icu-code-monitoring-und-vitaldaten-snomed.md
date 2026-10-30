@@ -1,4 +1,4 @@
-# MII VS ICU Code Monitoring und Vitaldaten SNOMED - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU Code Monitoring und Vitaldaten SNOMED - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed | *Version*:2027.0.0-ballot.3-rc.1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED",
   "title" : "MII VS ICU Code Monitoring und Vitaldaten SNOMED",
   "status" : "active",
@@ -100,11 +100,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "code" : "276900001",
-        "display" : "Systemic vascular Resistance index (observable entity)"
+        "display" : "Systemic vascular resistance index (observable entity)"
       },
       {
         "code" : "276902009",
-        "display" : "Pulmonary vascular Resistance index (observable entity)"
+        "display" : "Pulmonary vascular resistance index (observable entity)"
       },
       {
         "code" : "90096001",
@@ -133,6 +133,10 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       {
         "code" : "1153637007",
         "display" : "Body height (observable entity)"
+      },
+      {
+        "code" : "1149101003",
+        "display" : "Recumbent body height (observable entity)"
       },
       {
         "code" : "1153605006",

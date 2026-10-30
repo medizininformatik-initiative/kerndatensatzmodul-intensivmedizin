@@ -1,4 +1,4 @@
-# Ect Blutflussind Extrakorporal Gasaustausch Eingeste - MII IG ICU v2027.0.0-ballot.3
+# Ect Blutflussind Extrakorporal Gasaustausch Eingeste - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch)
+Profile: [MII PR ICU Blutflussindex Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md)
 
 **partOf**: [Procedure Venovenous extracorporeal membrane oxygenation (procedure)](Procedure-mii-exa-icu-ecmo.md)
 

@@ -23,14 +23,13 @@
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/11000274103/version/20260515"/>
       <code value="415882003"/>
       <display value="Estimated core body temperature measured in axillary region (observable entity)"/>
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
       <code value="188452"/>
-      <display value="Axillary (armpit) temperature"/>
+      <display value="MDC_TEMP_AXILLA"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>

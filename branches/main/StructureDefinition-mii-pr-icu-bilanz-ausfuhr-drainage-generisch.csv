@@ -155,7 +155,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1"
-"Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.2 - but note this is not well followed"
 "Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -182,7 +182,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1"
-"Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.2 - but note this is not well followed"
 "Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}

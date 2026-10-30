@@ -1,4 +1,4 @@
-# Muv Sonstige Pulsatile Druecke Generisch - MII IG ICU v2027.0.0-ballot.3
+# Muv Sonstige Pulsatile Druecke Generisch - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -54,9 +54,6 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "75367002",
       "display" : "Blood pressure (observable entity)"
-    },
-    {
-      "system" : "http://snomed.info/sct"
     }]
   },
   "subject" : {
@@ -76,7 +73,7 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
         "display" : "Systolic blood pressure (observable entity)"
       },
       {
-        "system" : "urn:std:iso:11073:10101",
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "150017",
         "display" : "Systolic blood pressure"
       }]
@@ -101,7 +98,7 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
         "display" : "Mean blood pressure (observable entity)"
       },
       {
-        "system" : "urn:std:iso:11073:10101",
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "150019",
         "display" : "Mean blood pressure"
       }]
@@ -126,7 +123,7 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
         "display" : "Diastolic blood pressure (observable entity)"
       },
       {
-        "system" : "urn:std:iso:11073:10101",
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "150018",
         "display" : "Diastolic blood pressure"
       }]

@@ -1,4 +1,4 @@
-# Beispiele - MII IG ICU v2027.0.0-ballot.3
+# Beispiele - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Beispiele**
@@ -82,7 +82,7 @@ Das Modul liefert **144 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Vent Unterstuetzungsdruck Beatmung](Observation-mii-exa-icu-vent-unterstuetzungsdruck-beatmung.md) | [MII PR ICU Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) |
 | [Vent Zeitverhaeltnis Ein Ausatmung](Observation-mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung.md) | [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |
 
-#### Bilanzen (19)
+#### Bilanzen (14)
 
 | | |
 | :--- | :--- |
@@ -97,13 +97,8 @@ Das Modul liefert **144 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Bilanz Ausfuhr Urin](Observation-mii-exa-icu-bilanz-ausfuhr-urin.md) | [MII PR ICU Bilanz Ausfuhr Urin](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.md) |
 | [Bilanz Ausfuhr Wunddrainage](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.md) | [MII PR ICU Bilanz Ausfuhr Wunddrainage](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md) |
 | [Bilanz Blutverlust](Observation-mii-exa-icu-bilanz-blutverlust.md) | [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.md) |
-| [Bilanz Einfuhr Abgepumpte Muttermilch](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) | [MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) |
 | [Bilanz Einfuhr Enterale Fluessigkeit](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.md) | [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md) |
 | [Bilanz Einfuhr Fluessigkeit Gesamt](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) | [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) |
-| [Bilanz Einfuhr Muttermilch](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.md) | [MII PR ICU Bilanz Einfuhr Muttermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.md) |
-| [Bilanz Einfuhr Oraler Fluessigkeit](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md) |
-| [Bilanz Einfuhr Saeuglingsnahrung](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md) |
-| [Bilanz Einfuhr Spendermilch](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) | [MII PR ICU Bilanz Einfuhr Spendermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.md) |
 | [Bilanz Tagesbilanz Fluessigkeit](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md) |
 
 #### Monitoring und Vitaldaten (55)
@@ -165,28 +160,6 @@ Das Modul liefert **144 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Muv Systemischer Vaskulaerer Widerstandsindex](Observation-mii-exa-icu-muv-systemischer-vaskulaerer-widerstandsindex.md) | SD MII ICU Systemischer Vaskulaerer Widerstandsindex (ISiK) |
 | [Muv Zentralvenoeser Blutdruck](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) | SD MII ICU Zentralvenoeser Blutdruck (ISiK) |
 | [Muv Zerebraler Perfusionsdruck](Observation-mii-exa-icu-muv-zerebraler-perfusionsdruck.md) | MII PR ICU MUV zerebraler Perfusionsdruck (ISiK) |
-
-#### Untersuchungen (6)
-
-| | |
-| :--- | :--- |
-| [Untersuchung Pupillenbefund](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) | [MII PR ICU Untersuchung Pupillenbefund](StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.md) |
-| [Untersuchung Pupillenform](Observation-mii-exa-icu-untersuchung-pupillenform.md) | [MII PR ICU Untersuchung Pupillenform](StructureDefinition-mii-pr-icu-untersuchung-pupillenform.md) |
-| [Untersuchung Pupillengroesse](Observation-mii-exa-icu-untersuchung-pupillengroesse.md) | [MII PR ICU Untersuchung Pupillengroesse](StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.md) |
-| [Untersuchung Pupillenlichtreaktion Direkt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt.md) | [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.md) |
-| [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.md) |
-| [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | [MII PR ICU Untersuchung Pupillensymmetrie](StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.md) |
-
-#### Scores (6)
-
-| | |
-| :--- | :--- |
-| [Score](Observation-mii-exa-icu-score.md) | [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.md) |
-| [Score Faces Pain Scale Revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) |
-| [Score Gcs](Observation-mii-exa-icu-score-gcs.md) | [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md) |
-| [Score Numerische Ratingskala](Observation-mii-exa-icu-score-numerische-ratingskala.md) | [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) |
-| [Score Rass](Observation-mii-exa-icu-score-rass.md) | [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md) |
-| [Score Visuelle Analogskala](Observation-mii-exa-icu-score-visuelle-analogskala.md) | [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) |
 
 #### Ohne Profilzuordnung (1)
 

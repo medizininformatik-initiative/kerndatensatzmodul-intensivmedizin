@@ -1,4 +1,4 @@
-# MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-10-21 | *Maschinenlesbarer Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active Stand: 2026-10-30 | *Maschinenlesbarer Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -109,11 +109,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
   "status" : "active",
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

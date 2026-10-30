@@ -1,4 +1,4 @@
-# Muv Koerpertemperatur Unter Der Zunge - MII IG ICU v2027.0.0-ballot.3
+# Muv Koerpertemperatur Unter Der Zunge - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -54,9 +54,8 @@ Profile: [SD MII ICU Koerpertemperatur unter der Zunge](https://simplifier.net/r
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "415945006",
-      "display" : "Core body temperature measured in sublingual space (observable entity)"
+      "display" : "Oral temperature"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",

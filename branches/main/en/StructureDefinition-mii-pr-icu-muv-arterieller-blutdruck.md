@@ -1,4 +1,4 @@
-# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU MUV Arterieller Blutdruck - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0-ballot.3 |
-| Active as of 2026-10-21 | *Computable Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active as of 2026-10-30 | *Computable Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
 
 This is a pulsatile pressure. In addition to the properties of the generic profile for [Monitoring and vital data](https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-monitoring-und-vitaldaten), the special features described on the page of the profile for [blood pressure (observation)](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) also apply to this. See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-muv-arterieller-blutdruck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

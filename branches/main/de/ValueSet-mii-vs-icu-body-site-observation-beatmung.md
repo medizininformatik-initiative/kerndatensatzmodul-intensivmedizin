@@ -1,4 +1,4 @@
-# MII VS ICU BodySite Observation Beatmung - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU BodySite Observation Beatmung - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung | *Version*:2027.0.0-ballot.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung | *Version*:2027.0.0-ballot.3-rc.1 |
 | Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_BodySite_Observation_Beatmung |
 
  
@@ -37,7 +37,7 @@ Dieses ValueSet enthält Codes für bodySites für die im Kontext einer Beatmung
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-body-site-observation-beatmung",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_VS_ICU_BodySite_Observation_Beatmung",
   "title" : "MII VS ICU BodySite Observation Beatmung",
   "status" : "active",
@@ -63,9 +63,6 @@ Dieses ValueSet enthält Codes für bodySites für die im Kontext einer Beatmung
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "11527006"
-      },
-      {
         "code" : "89187006"
       },
       {

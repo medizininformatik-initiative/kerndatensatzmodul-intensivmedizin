@@ -1,4 +1,4 @@
-# Muv Koerpertemperatur Vaginal - MII IG ICU v2027.0.0-ballot.3
+# Muv Koerpertemperatur Vaginal - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -49,7 +49,6 @@ Profile: [SD MII ICU Koerpertemperatur vaginal](https://simplifier.net/resolve?s
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "364246006",
       "display" : "Core body temperature measured vaginally"
     },

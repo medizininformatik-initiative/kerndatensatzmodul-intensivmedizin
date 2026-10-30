@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Bilanz - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-10-21 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active Stand: 2026-10-30 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz |
 
 Stellt alle gemessenen Ein- und Ausfuhren von Flüssigkeiten dar.
 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 ** Summary **
 
 Mandatory: 8 elements(8 nested mandatory elements)
- Must-Support: 34 elements
+ Must-Support: 32 elements
 
 **Slices**
 
@@ -78,7 +78,7 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 ** Summary **
 
 Mandatory: 8 elements(8 nested mandatory elements)
- Must-Support: 34 elements
+ Must-Support: 32 elements
 
 **Slices**
 
@@ -100,11 +100,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_PR_ICU_Bilanz",
   "title" : "MII PR ICU Bilanz",
   "status" : "active",
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -278,11 +278,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -307,11 +302,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
       "id" : "Observation.code.coding:loinc.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {

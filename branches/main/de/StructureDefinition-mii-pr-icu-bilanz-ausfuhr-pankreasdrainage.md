@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Ausfuhr Pankreasdrainage - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Bilanz Ausfuhr Pankreasdrainage - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage | *Version*:2027.0.0-ballot.3 |
-| Active Stand: 2026-10-21 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage | *Version*:2027.0.0-ballot.3-rc.1 |
+| Active Stand: 2026-10-30 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage |
 
 Dies ist eine Ausprägung des generischen Profils zu [Bilanz (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -88,11 +88,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
   "title" : "MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
   "status" : "active",
-  "date" : "2026-10-21T14:50:03+00:00",
+  "date" : "2026-10-30T08:50:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

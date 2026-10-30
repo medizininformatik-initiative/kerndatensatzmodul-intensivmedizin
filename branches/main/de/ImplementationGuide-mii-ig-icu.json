@@ -140,7 +140,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_IG_ICU",
   "title" : "MII IG ICU",
   "status" : "draft",
@@ -1600,18 +1600,6 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch"
-      },
-      "name" : "Bilanz Einfuhr Abgepumpte Muttermilch",
-      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"
       },
       "name" : "Bilanz Einfuhr Enterale Fluessigkeit",
@@ -1628,54 +1616,6 @@
       },
       "name" : "Bilanz Einfuhr Fluessigkeit Gesamt",
       "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-muttermilch"
-      },
-      "name" : "Bilanz Einfuhr Muttermilch",
-      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit"
-      },
-      "name" : "Bilanz Einfuhr Oraler Fluessigkeit",
-      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung"
-      },
-      "name" : "Bilanz Einfuhr Saeuglingsnahrung",
-      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-spendermilch"
-      },
-      "name" : "Bilanz Einfuhr Spendermilch",
-      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch",
       "exampleBoolean" : true
     },
     {
@@ -2235,6 +2175,28 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
+      },
+      "name" : "MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
+      },
+      "name" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch"
       },
       "name" : "MII PR ICU Dauer Extrakorporaler Gasaustausch",
@@ -2444,6 +2406,17 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
+      },
+      "name" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
       },
       "name" : "MII PR ICU Maximaler Beatmungsdruck",
@@ -2601,65 +2574,6 @@
         "reference" : "StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck"
       },
       "name" : "MII PR ICU Positiv Endexpiratorischer Druck",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource:abstract"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score"
-      },
-      "name" : "MII PR ICU Score",
-      "description" : "Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
-      },
-      "name" : "MII PR ICU Score Faces Pain Scale Revised",
-      "description" : "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-gcs"
-      },
-      "name" : "MII PR ICU Score GCS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
-      },
-      "name" : "MII PR ICU Score Numerische Ratingskala",
-      "description" : "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
-      },
-      "name" : "MII PR ICU Score Visuelle Analogskala",
-      "description" : "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
       "exampleBoolean" : false
     },
     {
@@ -3031,39 +2945,6 @@
         "reference" : "ValueSet/mii-vs-icu-code-procedure-beatmung-snomed"
       },
       "name" : "MII VS ICU Code Procedure Beatmung SNOMED",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-component-gcs-eyes"
-      },
-      "name" : "MII VS ICU Component GCS Eyes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-component-gcs-motor"
-      },
-      "name" : "MII VS ICU Component GCS Motor",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/mii-vs-icu-component-gcs-verbal"
-      },
-      "name" : "MII VS ICU Component GCS Verbal",
       "exampleBoolean" : false
     },
     {
@@ -4010,150 +3891,6 @@
       },
       "name" : "Patient",
       "description" : "Beispielinstanz des Moduls",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score"
-      },
-      "name" : "Score",
-      "description" : "Beispiel: MII PR ICU Score",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-faces-pain-scale-revised"
-      },
-      "name" : "Score Faces Pain Scale Revised",
-      "description" : "Beispiel: MII PR ICU Score Faces Pain Scale Revised",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-gcs"
-      },
-      "name" : "Score Gcs",
-      "description" : "Beispiel: MII PR ICU Score GCS",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-numerische-ratingskala"
-      },
-      "name" : "Score Numerische Ratingskala",
-      "description" : "Beispiel: MII PR ICU Score Numerische Ratingskala",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-rass"
-      },
-      "name" : "Score Rass",
-      "description" : "Beispiel: MII PR ICU Score RASS",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-visuelle-analogskala"
-      },
-      "name" : "Score Visuelle Analogskala",
-      "description" : "Beispiel: MII PR ICU Score Visuelle Analogskala",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-untersuchung-pupillenbefund"
-      },
-      "name" : "Untersuchung Pupillenbefund",
-      "description" : "Beispiel: MII PR ICU Untersuchung Pupillenbefund",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-untersuchung-pupillenform"
-      },
-      "name" : "Untersuchung Pupillenform",
-      "description" : "Beispiel: MII PR ICU Untersuchung Pupillenform",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-untersuchung-pupillengroesse"
-      },
-      "name" : "Untersuchung Pupillengroesse",
-      "description" : "Beispiel: MII PR ICU Untersuchung Pupillengroesse",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt"
-      },
-      "name" : "Untersuchung Pupillenlichtreaktion Direkt",
-      "description" : "Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Direkt",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt"
-      },
-      "name" : "Untersuchung Pupillenlichtreaktion Indirekt",
-      "description" : "Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-untersuchung-pupillensymmetrie"
-      },
-      "name" : "Untersuchung Pupillensymmetrie",
-      "description" : "Beispiel: MII PR ICU Untersuchung Pupillensymmetrie",
       "exampleBoolean" : true
     },
     {

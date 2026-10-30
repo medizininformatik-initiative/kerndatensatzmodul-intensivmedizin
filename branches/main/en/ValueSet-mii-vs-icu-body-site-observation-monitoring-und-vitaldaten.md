@@ -1,4 +1,4 @@
-# MII VS ICU BodySite Observation Monitoring und Vitaldaten - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU BodySite Observation Monitoring und Vitaldaten - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten | *Version*:2027.0.0-ballot.3-rc.1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten |
 
  
@@ -37,7 +37,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-body-site-observation-monitoring-und-vitaldaten",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten",
   "title" : "MII VS ICU BodySite Observation Monitoring und Vitaldaten",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Artifacts Summary - MII IG ICU v2027.0.0-ballot.3
+# Artifacts Summary - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -41,92 +41,83 @@ These define data models that represent the domain covered by this implementatio
 | :--- | :--- |
 | [ MII Logical Model Intensivmedizin  ](StructureDefinition-mii-lm-intensivmedizin.md) | Logische Repräsentation des Erweiterungsmodul Intensivmedizin |
 
-### Structures: Abstract Profiles 
-
-These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly. I.e. instances can conform to profiles **based** on these abstract profiles, but do not declare conformance to the abstract profiles themselves.
-
-| | |
-| :--- | :--- |
-| [ MII PR ICU Score  ](StructureDefinition-mii-pr-icu-score.md) | Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments. |
-
 ### Structures: Resource Profiles 
 
 These define constraints on FHIR resources for systems conforming to this implementation guide.
 
-| | |
-| :--- | :--- |
-| [ MII PR ICU Arterieller Druck  ](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md) |  |
-| [ MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md) |  |
-| [ MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) |  |
-| [ MII PR ICU Atemzugvolumen Einstellung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md) |  |
-| [ MII PR ICU Atemzugvolumen Waehrend Beatmung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md) |  |
-| [ MII PR ICU Beatmung  ](StructureDefinition-mii-pr-icu-beatmung.md) |  |
-| [ MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung  ](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md) |  |
-| [ MII PR ICU Beatmungszeit Hohem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md) |  |
-| [ MII PR ICU Beatmungszeit Niedrigem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md) |  |
-| [ MII PR ICU Bilanz  ](StructureDefinition-mii-pr-icu-bilanz.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Blutverlust  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Drainage Generisch  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Magensonde  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr OP Drainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Pankreasdrainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Stuhlgang  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Urin  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.md) |  |
-| [ MII PR ICU Bilanz Ausfuhr Wunddrainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) |  |
-| [ MII PR ICU Bilanz Tagesbilanz Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md) |  |
-| [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) |  |
-| [ MII PR ICU Dauer Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md) |  |
-| [ MII PR ICU Dauer Haemodialysesitzung  ](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md) |  |
-| [ MII PR ICU Device  ](StructureDefinition-mii-pr-icu-device.md) |  |
-| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung  ](StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.md) |  |
-| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren  ](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md) |  |
-| [ MII PR ICU Druckdifferenz Beatmung  ](StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.md) |  |
-| [ MII PR ICU Dynamische Kompliance  ](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md) |  |
-| [ MII PR ICU Eingestellter Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU Einstellung Ausatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md) |  |
-| [ MII PR ICU Einstellung Einatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md) |  |
-| [ MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck  ](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md) |  |
-| [ MII PR ICU Exspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU Exspiratorischer Sauerstoffpartialdruck  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) |  |
-| [ MII PR ICU Extrakorporales Verfahren  ](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md) |  |
-| [ MII PR ICU Gasfluss  ](StructureDefinition-mii-pr-icu-ect-gasfluss.md) |  |
-| [ MII PR ICU Haemodialyse Blutfluss  ](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md) |  |
-| [ MII PR ICU Horowitz In Arteriellem Blut  ](StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.md) |  |
-| [ MII PR ICU Inspiratorische Sauerstofffraktion  ](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md) |  |
-| [ MII PR ICU Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |  |
-| [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |  |
-| [ MII PR ICU MUV Herzfrequenz  ](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |  |
-| [ MII PR ICU MUV Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md) |  |
-| [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |  |
-| [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |  |
-| [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) |  |
-| [ MII PR ICU Maximaler Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md) |  |
-| [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) |  |
-| [ MII PR ICU Mittlerer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md) |  |
-| [ MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md) |  |
-| [ MII PR ICU Parameter von Beatmung  ](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md) |  |
-| [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) |  |
-| [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |  |
-| [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |  |
-| [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. |
-| [ MII PR ICU Score GCS  ](StructureDefinition-mii-pr-icu-score-gcs.md) |  |
-| [ MII PR ICU Score Numerische Ratingskala  ](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) | Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. |
-| [ MII PR ICU Score Visuelle Analogskala  ](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) | Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. |
-| [ MII PR ICU Spontane Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md) |  |
-| [ MII PR ICU Spontane Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) |  |
-| [ MII PR ICU Spontanes Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.md) |  |
-| [ MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md) |  |
-| [ MII PR ICU Substituatfluss  ](StructureDefinition-mii-pr-icu-ect-substituatfluss.md) |  |
-| [ MII PR ICU Substituatvolumen  ](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) |  |
-| [ MII PR ICU Unterstuetzungsdruck Beatmung  ](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) |  |
-| [ MII PR ICU Venoeser Druck  ](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md) |  |
-| [ MII PR ICU Zeitverhaeltnis Ein Ausatmung  ](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |  |
+| |
+| :--- |
+| [ MII PR ICU Arterieller Druck  ](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md) |
+| [ MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md) |
+| [ MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) |
+| [ MII PR ICU Atemzugvolumen Einstellung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md) |
+| [ MII PR ICU Atemzugvolumen Waehrend Beatmung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md) |
+| [ MII PR ICU Beatmung  ](StructureDefinition-mii-pr-icu-beatmung.md) |
+| [ MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung  ](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md) |
+| [ MII PR ICU Beatmungszeit Hohem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md) |
+| [ MII PR ICU Beatmungszeit Niedrigem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md) |
+| [ MII PR ICU Bilanz  ](StructureDefinition-mii-pr-icu-bilanz.md) |
+| [ MII PR ICU Bilanz Ausfuhr Blutverlust  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.md) |
+| [ MII PR ICU Bilanz Ausfuhr Drainage Generisch  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.md) |
+| [ MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.md) |
+| [ MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.md) |
+| [ MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.md) |
+| [ MII PR ICU Bilanz Ausfuhr Magensonde  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.md) |
+| [ MII PR ICU Bilanz Ausfuhr OP Drainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.md) |
+| [ MII PR ICU Bilanz Ausfuhr Pankreasdrainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.md) |
+| [ MII PR ICU Bilanz Ausfuhr Stuhlgang  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.md) |
+| [ MII PR ICU Bilanz Ausfuhr Urin  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.md) |
+| [ MII PR ICU Bilanz Ausfuhr Wunddrainage  ](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md) |
+| [ MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md) |
+| [ MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) |
+| [ MII PR ICU Bilanz Tagesbilanz Fluessigkeit  ](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md) |
+| [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) |
+| [ MII PR ICU Blutfluss Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md) |
+| [ MII PR ICU Blutflussindex Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md) |
+| [ MII PR ICU Dauer Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md) |
+| [ MII PR ICU Dauer Haemodialysesitzung  ](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md) |
+| [ MII PR ICU Device  ](StructureDefinition-mii-pr-icu-device.md) |
+| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung  ](StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.md) |
+| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren  ](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md) |
+| [ MII PR ICU Druckdifferenz Beatmung  ](StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.md) |
+| [ MII PR ICU Dynamische Kompliance  ](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md) |
+| [ MII PR ICU Eingestellter Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md) |
+| [ MII PR ICU Einstellung Ausatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md) |
+| [ MII PR ICU Einstellung Einatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md) |
+| [ MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck  ](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md) |
+| [ MII PR ICU Exspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md) |
+| [ MII PR ICU Exspiratorischer Sauerstoffpartialdruck  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) |
+| [ MII PR ICU Extrakorporales Verfahren  ](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md) |
+| [ MII PR ICU Gasfluss  ](StructureDefinition-mii-pr-icu-ect-gasfluss.md) |
+| [ MII PR ICU Haemodialyse Blutfluss  ](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md) |
+| [ MII PR ICU Horowitz In Arteriellem Blut  ](StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.md) |
+| [ MII PR ICU Inspiratorische Sauerstofffraktion  ](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md) |
+| [ MII PR ICU Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md) |
+| [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) |
+| [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |
+| [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |
+| [ MII PR ICU MUV Herzfrequenz  ](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |
+| [ MII PR ICU MUV Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md) |
+| [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |
+| [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |
+| [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) |
+| [ MII PR ICU Maximaler Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md) |
+| [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) |
+| [ MII PR ICU Mittlerer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md) |
+| [ MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md) |
+| [ MII PR ICU Parameter von Beatmung  ](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md) |
+| [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) |
+| [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |
+| [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |
+| [ MII PR ICU Spontane Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md) |
+| [ MII PR ICU Spontane Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) |
+| [ MII PR ICU Spontanes Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.md) |
+| [ MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md) |
+| [ MII PR ICU Substituatfluss  ](StructureDefinition-mii-pr-icu-ect-substituatfluss.md) |
+| [ MII PR ICU Substituatvolumen  ](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) |
+| [ MII PR ICU Unterstuetzungsdruck Beatmung  ](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) |
+| [ MII PR ICU Venoeser Druck  ](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md) |
+| [ MII PR ICU Zeitverhaeltnis Ein Ausatmung  ](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |
 
 ### Terminology: Value Sets 
 
@@ -157,9 +148,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ MII VS ICU Code Observation extrakorporale Verfahren LOINC  ](ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-loinc.md) | Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern. |
 | [ MII VS ICU Code Observation extrakorporale Verfahren SNOMED  ](ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-snomed.md) | Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern. |
 | [ MII VS ICU Code Procedure Beatmung SNOMED  ](ValueSet-mii-vs-icu-code-procedure-beatmung-snomed.md) |  |
-| [ MII VS ICU Component GCS Eyes  ](ValueSet-mii-vs-icu-component-gcs-eyes.md) |  |
-| [ MII VS ICU Component GCS Motor  ](ValueSet-mii-vs-icu-component-gcs-motor.md) |  |
-| [ MII VS ICU Component GCS Verbal  ](ValueSet-mii-vs-icu-component-gcs-verbal.md) |  |
 | [ MII VS ICU DeviceMetric extrakorporale Verfahren  ](ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.md) |  |
 | [ MII VS ICU Method Observation Blutdruck  ](ValueSet-mii-vs-icu-method-observation-blutdruck.md) | Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. |
 | [ MII VS ICU Present Absent  ](ValueSet-mii-vs-icu-present-absent.md) | Present or absent findings |
@@ -189,13 +177,8 @@ These are example instances that show what data produced and consumed by systems
 | [ Bilanz Ausfuhr Urin  ](Observation-mii-exa-icu-bilanz-ausfuhr-urin.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Urin |
 | [ Bilanz Ausfuhr Wunddrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Wunddrainage |
 | [ Bilanz Blutverlust  ](Observation-mii-exa-icu-bilanz-blutverlust.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Blutverlust |
-| [ Bilanz Einfuhr Abgepumpte Muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch |
 | [ Bilanz Einfuhr Enterale Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit |
 | [ Bilanz Einfuhr Fluessigkeit Gesamt  ](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) | Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt |
-| [ Bilanz Einfuhr Muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch |
-| [ Bilanz Einfuhr Oraler Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit |
-| [ Bilanz Einfuhr Saeuglingsnahrung  ](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung |
-| [ Bilanz Einfuhr Spendermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch |
 | [ Bilanz Tagesbilanz Fluessigkeit  ](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit |
 | [ Ecmo  ](Procedure-mii-exa-icu-ecmo.md) | Beispiel: MII PR ICU Extrakorporales Verfahren |
 | [ Ect Arterieller Druck Gemessen  ](Observation-mii-exa-icu-ect-arterieller-druck-gemessen.md) | Beispiel: MII PR ICU Arterieller Druck |
@@ -273,18 +256,6 @@ These are example instances that show what data produced and consumed by systems
 | [ Muv Zentralvenoeser Blutdruck  ](Observation-mii-exa-icu-muv-zentralvenoeser-blutdruck.md) | Beispiel: SD MII ICU Zentralvenoeser Blutdruck |
 | [ Muv Zerebraler Perfusionsdruck  ](Observation-mii-exa-icu-muv-zerebraler-perfusionsdruck.md) | Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck |
 | [ Patient  ](Patient-mii-exa-icu-patient.md) | Beispielinstanz des Moduls |
-| [ Score  ](Observation-mii-exa-icu-score.md) | Beispiel: MII PR ICU Score |
-| [ Score Faces Pain Scale Revised  ](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | Beispiel: MII PR ICU Score Faces Pain Scale Revised |
-| [ Score Gcs  ](Observation-mii-exa-icu-score-gcs.md) | Beispiel: MII PR ICU Score GCS |
-| [ Score Numerische Ratingskala  ](Observation-mii-exa-icu-score-numerische-ratingskala.md) | Beispiel: MII PR ICU Score Numerische Ratingskala |
-| [ Score Rass  ](Observation-mii-exa-icu-score-rass.md) | Beispiel: MII PR ICU Score RASS |
-| [ Score Visuelle Analogskala  ](Observation-mii-exa-icu-score-visuelle-analogskala.md) | Beispiel: MII PR ICU Score Visuelle Analogskala |
-| [ Untersuchung Pupillenbefund  ](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) | Beispiel: MII PR ICU Untersuchung Pupillenbefund |
-| [ Untersuchung Pupillenform  ](Observation-mii-exa-icu-untersuchung-pupillenform.md) | Beispiel: MII PR ICU Untersuchung Pupillenform |
-| [ Untersuchung Pupillengroesse  ](Observation-mii-exa-icu-untersuchung-pupillengroesse.md) | Beispiel: MII PR ICU Untersuchung Pupillengroesse |
-| [ Untersuchung Pupillenlichtreaktion Direkt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt.md) | Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Direkt |
-| [ Untersuchung Pupillenlichtreaktion Indirekt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt |
-| [ Untersuchung Pupillensymmetrie  ](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | Beispiel: MII PR ICU Untersuchung Pupillensymmetrie |
 | [ Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss |
 | [ Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss |
 | [ Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss |

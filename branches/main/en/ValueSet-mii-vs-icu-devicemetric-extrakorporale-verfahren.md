@@ -1,4 +1,4 @@
-# MII VS ICU DeviceMetric extrakorporale Verfahren - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU DeviceMetric extrakorporale Verfahren - MII IG ICU v2027.0.0-ballot.3-rc.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren | *Version*:2027.0.0-ballot.3-rc.1 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren |
 
  **References** 
@@ -34,7 +34,7 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-devicemetric-extrakorporale-verfahren",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0-ballot.3-rc.1",
   "name" : "MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren",
   "title" : "MII VS ICU DeviceMetric extrakorporale Verfahren",
   "status" : "active",
@@ -59,7 +59,7 @@
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "18274404"
+        "code" : "182744004"
       }]
     }]
   }
