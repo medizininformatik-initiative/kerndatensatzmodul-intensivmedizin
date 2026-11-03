@@ -42,7 +42,7 @@ CAM-ICU assessment result: positive (delirium present) or negative (no delirium)
   "title" : "MII VS ICU CAM-ICU Result",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-03T19:31:36+00:00",
+  "date" : "2026-11-03T21:03:18+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
