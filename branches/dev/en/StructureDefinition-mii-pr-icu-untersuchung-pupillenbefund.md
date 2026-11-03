@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-unters
   "name" : "MII_PR_ICU_Untersuchung_Pupillenbefund",
   "title" : "MII PR ICU Untersuchung Pupillenbefund",
   "status" : "draft",
-  "date" : "2026-11-03T16:06:22+00:00",
+  "date" : "2026-11-03T19:31:36+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
