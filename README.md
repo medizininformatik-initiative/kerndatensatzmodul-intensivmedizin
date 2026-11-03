@@ -26,6 +26,7 @@ Technische Umsetzung:
 * Tim Steinbach
 * Margaux Gatrio
 * Alexander Zautke
+* Gregor Lichtner
 
 ## Lokaler Build (Hinweis ISiK-Snapshots)
 

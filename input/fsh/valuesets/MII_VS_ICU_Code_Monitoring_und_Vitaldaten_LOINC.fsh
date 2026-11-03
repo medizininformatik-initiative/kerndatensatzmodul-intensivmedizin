@@ -9,7 +9,7 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * ^date = "2025-02-11"
 * ^experimental = false
 
-* include $loinc#8867-4 "Heart Rate"
+* include $loinc#8867-4 "Heart rate"
 * include $loinc#8480-6 "Systolic blood Pressure"
 * include $loinc#8478-0 "Mean blood Pressure"
 * include $loinc#8462-4 "Diastolic blood pressure"
@@ -47,6 +47,7 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $loinc#29463-7 "Body weight"
 * include $loinc#50064-5 "Ideal body weight"
 * include $loinc#8302-2 "Body height"
+* include $loinc#8306-3 "Body height --lying"
 * include $loinc#8303-0 "Body height [Percentile]"
 * include $loinc#8336-0 "Body weight [Percentile] Per age"
 * include $loinc#8333-7 "Tympanic membrane temperature"
@@ -59,6 +60,6 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $loinc#60955-2 "Airway temperature"
 * include $loinc#61009-7 "Myocardial temperature"
 * include $loinc#76010-8 "Nasal temperature"
-* include $loinc#60838-0 "Body temperature"
+* include $loinc#60838-0 "Nasopharyngeal temperature"
 * include $loinc#104063-3 "Body temperature"
 * include $loinc#60825-7 "Carbon dioxide production (VCO2) in Respiratory system"

@@ -31,6 +31,8 @@ Questions about this publication can be asked at any time at [https://chat.fhir.
 
 - Christian Gebauer
 
+- Gregor Lichtner
+
 - Christoph Müller
 
 - Tim Steinbach
