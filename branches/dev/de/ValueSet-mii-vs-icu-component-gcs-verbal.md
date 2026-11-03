@@ -1,4 +1,4 @@
-# MII VS ICU Component GCS Verbal - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU Component GCS Verbal - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal | *Version*:2027.0.0-ballot.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal | *Version*:2027.0.0 |
 | Draft Stand: 2026-07-28 | *Maschinenlesbarer Name*:MII_VS_ICU_Component_GCS_Verbal |
 
  **References** 
@@ -34,7 +34,7 @@
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-component-gcs-verbal",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_VS_ICU_Component_GCS_Verbal",
   "title" : "MII VS ICU Component GCS Verbal",
   "status" : "draft",

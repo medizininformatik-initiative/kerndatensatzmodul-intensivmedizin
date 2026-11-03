@@ -1,4 +1,4 @@
-# Guidance for Implementers - MII IG ICU v2027.0.0-ballot.3
+# Guidance for Implementers - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

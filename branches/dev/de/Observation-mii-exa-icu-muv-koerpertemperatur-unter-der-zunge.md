@@ -1,4 +1,4 @@
-# Muv Koerpertemperatur Unter Der Zunge - MII IG ICU v2027.0.0-ballot.3
+# Muv Koerpertemperatur Unter Der Zunge - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

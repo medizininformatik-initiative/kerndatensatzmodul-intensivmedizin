@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Ausfuhr Blutverlust - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Bilanz Ausfuhr Blutverlust - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust | *Version*:2027.0.0-ballot.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust | *Version*:2027.0.0 |
 | Active Stand: 2026-11-03 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
@@ -90,11 +90,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-ausfuhr-blutverlust",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
   "title" : "MII PR ICU Bilanz Ausfuhr Blutverlust",
   "status" : "active",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,4 +1,4 @@
-# MII VS ICU Code Observation Pupillenform LOINC - MII IG ICU v2027.0.0-ballot.3
+# MII VS ICU Code Observation Pupillenform LOINC - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc | *Version*:2027.0.0-ballot.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc | *Version*:2027.0.0 |
 | Draft Stand: 2026-11-03 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Observation_Pupillenform_LOINC |
 
  
@@ -37,11 +37,11 @@ Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder 
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-oservation-pupillenform-loinc",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
   "title" : "MII VS ICU Code Observation Pupillenform LOINC",
   "status" : "draft",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

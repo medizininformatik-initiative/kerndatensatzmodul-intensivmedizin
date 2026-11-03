@@ -1,4 +1,4 @@
-# MII ImplementationGuide Ressource - MII IG ICU v2027.0.0-ballot.3
+# MII ImplementationGuide Ressource - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Ressource**
@@ -236,7 +236,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_IG_ICU",
   "title" : "MII IG ICU",
   "status" : "draft",

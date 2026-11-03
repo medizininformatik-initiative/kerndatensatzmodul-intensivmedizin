@@ -1,4 +1,4 @@
-# MII PR ICU Inspiratorische Sauerstofffraktion - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Inspiratorische Sauerstofffraktion - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,10 +8,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion | *Version*:2027.0.0 |
 | Active as of 2026-11-03 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
 
-> **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-intro.md
+> **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German version: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-intro.md
 
 "Inspiratory oxygen fraction (Observation)" is a characteristic of the generic profile for [Ventilation parameters (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-inspiratorische-sauerstofffraktion",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
   "title" : "MII PR ICU Inspiratorische Sauerstofffraktion",
   "status" : "active",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

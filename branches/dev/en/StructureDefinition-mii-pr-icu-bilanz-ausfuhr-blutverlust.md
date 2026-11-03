@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Ausfuhr Blutverlust - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Bilanz Ausfuhr Blutverlust - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,10 +8,10 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust | *Version*:2027.0.0 |
 | Active as of 2026-11-03 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust |
 
-> **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German original: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust-intro.md
+> **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German version: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust-intro.md
 
 "Balance export blood loss (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-ausfuhr-blutverlust",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
   "title" : "MII PR ICU Bilanz Ausfuhr Blutverlust",
   "status" : "active",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -1,4 +1,4 @@
-# Sicherheit und Datenschutz - MII IG ICU v2027.0.0-ballot.3
+# Sicherheit und Datenschutz - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Sicherheit und Datenschutz**

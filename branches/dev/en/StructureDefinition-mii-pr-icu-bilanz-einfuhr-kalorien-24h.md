@@ -1,4 +1,4 @@
-# MII PR ICU Bilanz Einfuhr Kalorien 24h - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Bilanz Einfuhr Kalorien 24h - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h | *Version*:2027.0.0 |
 | Draft as of 2026-11-03 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h |
 
 **Usages:**
@@ -34,11 +34,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-bilanz-einfuhr-kalorien-24h",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

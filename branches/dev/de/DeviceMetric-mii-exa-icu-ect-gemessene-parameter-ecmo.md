@@ -1,4 +1,4 @@
-# Ect Gemessene Parameter Ecmo - MII IG ICU v2027.0.0-ballot.3
+# Ect Gemessene Parameter Ecmo - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

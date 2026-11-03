@@ -1,4 +1,4 @@
-# Bilanz Ausfuhr Stuhlgang - MII IG ICU v2027.0.0-ballot.3
+# Bilanz Ausfuhr Stuhlgang - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

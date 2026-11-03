@@ -1,4 +1,4 @@
-# Artifacts Summary - MII IG ICU v2027.0.0-ballot.3
+# Artifacts Summary - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

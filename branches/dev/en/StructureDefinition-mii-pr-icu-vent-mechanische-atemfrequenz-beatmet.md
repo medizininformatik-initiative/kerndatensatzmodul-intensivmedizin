@@ -1,4 +1,4 @@
-# MII PR ICU Mechanische Atemfrequenz Beatmet - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Mechanische Atemfrequenz Beatmet - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet | *Version*:2027.0.0-ballot.3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet | *Version*:2027.0.0 |
 | Active as of 2026-11-03 | *Computable Name*:MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet |
 
 "Mechanical breathing frequency - ventilated" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

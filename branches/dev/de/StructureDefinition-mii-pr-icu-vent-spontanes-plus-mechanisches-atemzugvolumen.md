@@ -1,4 +1,4 @@
-# MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung | *Version*:2027.0.0-ballot.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung | *Version*:2027.0.0 |
 | Active Stand: 2026-11-03 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
@@ -84,11 +84,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-mechanisches-atemzugvolumen-waehrend-beatmung",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen",
   "title" : "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
   "status" : "active",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

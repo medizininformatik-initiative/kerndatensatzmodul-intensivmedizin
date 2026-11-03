@@ -1,4 +1,4 @@
-# MII PR ICU Einstellung Inspirationsdruck - MII IG ICU v2027.0.0-ballot.3
+# MII PR ICU Einstellung Inspirationsdruck - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck | *Version*:2027.0.0-ballot.3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck | *Version*:2027.0.0 |
 | Draft Stand: 2026-11-03 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Einstellung_Inspirationsdruck |
 
 **Usages:**
@@ -80,11 +80,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "resourceType" : "StructureDefinition",
   "id" : "mii-pr-icu-vent-einstellung-inspirationsdruck",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck",
-  "version" : "2027.0.0-ballot.3",
+  "version" : "2027.0.0",
   "name" : "MII_PR_ICU_VENT_Einstellung_Inspirationsdruck",
   "title" : "MII PR ICU Einstellung Inspirationsdruck",
   "status" : "draft",
-  "date" : "2026-11-03T21:03:18+00:00",
+  "date" : "2026-11-03T21:41:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

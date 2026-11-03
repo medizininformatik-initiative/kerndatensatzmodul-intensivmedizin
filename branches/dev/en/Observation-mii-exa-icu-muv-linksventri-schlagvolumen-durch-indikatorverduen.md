@@ -1,4 +1,4 @@
-# Muv Linksventri Schlagvolumen Durch Indikatorverduen - MII IG ICU v2027.0.0-ballot.3
+# Muv Linksventri Schlagvolumen Durch Indikatorverduen - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
