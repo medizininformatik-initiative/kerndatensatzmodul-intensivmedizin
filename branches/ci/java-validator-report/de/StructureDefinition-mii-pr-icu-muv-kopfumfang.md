@@ -98,7 +98,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Kopfumfang",
   "title" : "MII PR ICU MUV Kopfumfang",
   "status" : "active",
-  "date" : "2026-11-03T21:35:12+00:00",
+  "date" : "2026-11-03T22:13:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

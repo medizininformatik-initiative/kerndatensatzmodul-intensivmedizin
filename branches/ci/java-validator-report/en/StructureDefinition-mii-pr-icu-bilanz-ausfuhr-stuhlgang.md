@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang",
   "title" : "MII PR ICU Bilanz Ausfuhr Stuhlgang",
   "status" : "active",
-  "date" : "2026-11-03T21:35:12+00:00",
+  "date" : "2026-11-03T22:13:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ar
   "name" : "MII_PR_ICU_ECT_Arterieller_Druck",
   "title" : "MII PR ICU Arterieller Druck",
   "status" : "active",
-  "date" : "2026-11-03T21:35:12+00:00",
+  "date" : "2026-11-03T22:13:55+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
