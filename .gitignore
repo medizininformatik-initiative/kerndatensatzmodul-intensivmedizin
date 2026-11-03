@@ -35,3 +35,8 @@ fhirpkg.lock.json
 # (Skill mii-ig-migration: run.log committed with the branch) — Ausnahme vom *.log oben.
 !migration-log/**/*.log
 !migration-log/*.log
+
+# IG Publisher writes cache indexes into the vendored template folder on every
+# build; they are not part of ig-template-mii-kds and make the drift check fail.
+ig-template/**/.index.db
+ig-template/**/.index.json
