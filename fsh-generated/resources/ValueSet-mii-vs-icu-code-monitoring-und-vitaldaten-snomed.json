@@ -6,7 +6,7 @@
   "title": "MII VS ICU Code Monitoring und Vitaldaten SNOMED",
   "description": "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -63,11 +63,11 @@
           },
           {
             "code": "276900001",
-            "display": "Systemic vascular Resistance index (observable entity)"
+            "display": "Systemic vascular resistance index (observable entity)"
           },
           {
             "code": "276902009",
-            "display": "Pulmonary vascular Resistance index (observable entity)"
+            "display": "Pulmonary vascular resistance index (observable entity)"
           },
           {
             "code": "90096001",
@@ -96,6 +96,10 @@
           {
             "code": "1153637007",
             "display": "Body height (observable entity)"
+          },
+          {
+            "code": "1149101003",
+            "display": "Recumbent body height (observable entity)"
           },
           {
             "code": "1153605006",
@@ -180,6 +184,10 @@
           {
             "code": "364090009",
             "display": "Systemic arterial pressure (observable entity)"
+          },
+          {
+            "code": "251408004",
+            "display": "Carbon dioxide output (observable entity)"
           }
         ]
       }

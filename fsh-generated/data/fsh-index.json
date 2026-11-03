@@ -200,14 +200,6 @@
     "endLine": 33
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.json",
-    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Abgepumpte_Muttermilch.fsh",
-    "startLine": 1,
-    "endLine": 29
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
     "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
     "fshType": "Profile",
@@ -224,38 +216,6 @@
     "endLine": 33
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.json",
-    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Muttermilch",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Muttermilch.fsh",
-    "startLine": 1,
-    "endLine": 29
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.json",
-    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit.fsh",
-    "startLine": 1,
-    "endLine": 33
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.json",
-    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung.fsh",
-    "startLine": 1,
-    "endLine": 29
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.json",
-    "fshName": "MII_PR_ICU_Bilanz_Einfuhr_Spendermilch",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz_Einfuhr_Spendermilch.fsh",
-    "startLine": 1,
-    "endLine": 29
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.json",
     "fshName": "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
     "fshType": "Profile",
@@ -269,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "profiles\\Bilanzen\\MII_PR_ICU_Bilanz.fsh",
     "startLine": 1,
-    "endLine": 73
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-device.json",
@@ -312,22 +272,6 @@
     "endLine": 20
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.json",
-    "fshName": "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Parameter von extrakorporalen Verfahren\\Parameter von extrakorporalen Verfahren\\MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.json",
-    "fshName": "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Parameter von extrakorporalen Verfahren\\Parameter von extrakorporalen Verfahren\\MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch.fsh",
-    "startLine": 1,
-    "endLine": 22
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.json",
     "fshName": "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
     "fshType": "Profile",
@@ -358,14 +302,6 @@
     "fshFile": "profiles\\Parameter von extrakorporalen Verfahren\\Parameter von extrakorporalen Verfahren\\MII_PR_ICU_ECT_Haemodialyse_Blutfluss.fsh",
     "startLine": 1,
     "endLine": 22
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.json",
-    "fshName": "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Parameter von extrakorporalen Verfahren\\Parameter von extrakorporalen Verfahren\\MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren.fsh",
-    "startLine": 1,
-    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-ect-substituatfluss.json",
@@ -432,6 +368,14 @@
     "endLine": 61
   },
   {
+    "outputFile": "StructureDefinition-mii-pr-icu-muv-koerperlaenge.json",
+    "fshName": "MII_PR_ICU_MUV_Koerperlaenge",
+    "fshType": "Profile",
+    "fshFile": "profiles\\Monitoring und Vitaldaten\\MII_PR_ICU_MUV_Koerperlaenge.fsh",
+    "startLine": 1,
+    "endLine": 57
+  },
+  {
     "outputFile": "StructureDefinition-mii-pr-icu-muv-kopfumfang.json",
     "fshName": "MII_PR_ICU_MUV_Kopfumfang",
     "fshType": "Profile",
@@ -456,14 +400,6 @@
     "endLine": 82
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-cam-icu.json",
-    "fshName": "MII_PR_ICU_Score_CAM_ICU",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_CAM_ICU.fsh",
-    "startLine": 1,
-    "endLine": 76
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.json",
     "fshName": "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
     "fshType": "Profile",
@@ -480,36 +416,12 @@
     "endLine": 94
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-icdsc.json",
-    "fshName": "MII_PR_ICU_Score_ICDSC",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_ICDSC.fsh",
-    "startLine": 1,
-    "endLine": 121
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-score-numerische-ratingskala.json",
     "fshName": "MII_PR_ICU_Score_Numerische_Ratingskala",
     "fshType": "Profile",
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Numerische_Ratingskala.fsh",
     "startLine": 1,
     "endLine": 20
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-rass.json",
-    "fshName": "MII_PR_ICU_Score_RASS",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_RASS.fsh",
-    "startLine": 1,
-    "endLine": 79
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-sofa.json",
-    "fshName": "MII_PR_ICU_Score_SOFA",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_SOFA.fsh",
-    "startLine": 1,
-    "endLine": 109
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-score-visuelle-analogskala.json",
@@ -520,76 +432,12 @@
     "endLine": 35
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.json",
-    "fshName": "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala.fsh",
-    "startLine": 6,
-    "endLine": 70
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-score-zopa.json",
-    "fshName": "MII_PR_ICU_Score_ZOPA",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Scores\\MII_PR_ICU_Score_ZOPA.fsh",
-    "startLine": 1,
-    "endLine": 22
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-score.json",
     "fshName": "MII_PR_ICU_Score",
     "fshType": "Profile",
     "fshFile": "profiles\\Scores\\MII_PR_ICU_Score.fsh",
     "startLine": 1,
     "endLine": 86
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillenbefund",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenbefund.fsh",
-    "startLine": 6,
-    "endLine": 94
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenform.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillenform",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenform.fsh",
-    "startLine": 10,
-    "endLine": 46
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillengroesse",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillengroesse.fsh",
-    "startLine": 12,
-    "endLine": 57
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt.fsh",
-    "startLine": 1,
-    "endLine": 41
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt.fsh",
-    "startLine": 1,
-    "endLine": 41
-  },
-  {
-    "outputFile": "StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.json",
-    "fshName": "MII_PR_ICU_Untersuchung_Pupillensymmetrie",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Untersuchung\\MII_PR_ICU_Untersuchung_Pupillensymmetrie.fsh",
-    "startLine": 11,
-    "endLine": 52
   },
   {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.json",
@@ -744,14 +592,6 @@
     "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.json",
-    "fshName": "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
-    "fshType": "Profile",
-    "fshFile": "profiles\\Beatmungswerte\\Parameter von Beatmung\\MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
     "outputFile": "StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.json",
     "fshName": "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
     "fshType": "Profile",
@@ -869,15 +709,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_BodySite_Observation_Monitoring_und_Vitaldaten.fsh",
     "startLine": 1,
-    "endLine": 41
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-bodysite-observation-pupillenbefund.json",
-    "fshName": "MII_VS_ICU_BodySite_Observation_Pupillenbefund",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_BodySite_Observation_Pupillenbefund.fsh",
-    "startLine": 8,
-    "endLine": 18
+    "endLine": 44
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-cam-icu-result.json",
@@ -917,7 +749,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 58
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-monitoring-und-vitaldaten-loinc.json",
@@ -925,7 +757,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Monitoring_und_Vitaldaten_LOINC.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 65
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-monitoring-und-vitaldaten-snomed.json",
@@ -933,7 +765,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Monitoring_und_Vitaldaten_SNOMED.fsh",
     "startLine": 1,
-    "endLine": 50
+    "endLine": 52
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-beatmung-iso11073.json",
@@ -941,7 +773,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Beatmung_ISO11073.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 32
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-beatmung-loinc.json",
@@ -949,7 +781,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Beatmung_LOINC.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 41
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-beatmung-snomed.json",
@@ -973,7 +805,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Bilanzen_LOINC.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-bilanzen-snomed.json",
@@ -981,7 +813,7 @@
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Bilanzen_SNOMED.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 31
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073.json",
@@ -1016,28 +848,12 @@
     "endLine": 13
   },
   {
-    "outputFile": "ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.json",
-    "fshName": "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillenlichtreaktion.fsh",
-    "startLine": 10,
-    "endLine": 21
-  },
-  {
     "outputFile": "ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.json",
     "fshName": "MII_VS_ICU_Code_Observation_Pupillensymmetrie",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillensymmetrie.fsh",
     "startLine": 1,
     "endLine": 12
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-code-oservation-pupillenform-loinc.json",
-    "fshName": "MII_VS_ICU_Code_Observation_Pupillenform_LOINC",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Code_Observation_Pupillenform_LOINC.fsh",
-    "startLine": 8,
-    "endLine": 19
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-code-procedure-beatmung-snomed.json",
@@ -1072,14 +888,6 @@
     "endLine": 19
   },
   {
-    "outputFile": "ValueSet-mii-vs-icu-delirium-interpretation.json",
-    "fshName": "MII_VS_ICU_Delirium_Interpretation",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Delirium_Interpretation.fsh",
-    "startLine": 1,
-    "endLine": 12
-  },
-  {
     "outputFile": "ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.json",
     "fshName": "MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren",
     "fshType": "ValueSet",
@@ -1110,30 +918,6 @@
     "fshFile": "valuesets\\MII_VS_ICU_Score_Category.fsh",
     "startLine": 1,
     "endLine": 10
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-score-loinc.json",
-    "fshName": "MII_VS_ICU_Score_LOINC",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Score_LOINC.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-score-rass.json",
-    "fshName": "MII_VS_ICU_Score_RASS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Score_RASS.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
-    "outputFile": "ValueSet-mii-vs-icu-score-snomed.json",
-    "fshName": "MII_VS_ICU_Score_SNOMED",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\MII_VS_ICU_Score_SNOMED.fsh",
-    "startLine": 1,
-    "endLine": 13
   },
   {
     "outputFile": "ValueSet-mii-vs-icu-unit-equivalent-percent-1.json",
