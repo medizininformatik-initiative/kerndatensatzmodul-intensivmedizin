@@ -14,7 +14,7 @@
 
 Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.md)
 
-**status**: draft
+**status**: Final
 
 **category**: Exam
 
@@ -37,7 +37,7 @@ Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinit
   "meta" : {
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"]
   },
-  "status" : "draft",
+  "status" : "final",
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",

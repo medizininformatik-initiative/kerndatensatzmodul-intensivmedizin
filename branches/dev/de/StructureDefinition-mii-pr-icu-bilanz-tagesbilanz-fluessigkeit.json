@@ -11,7 +11,7 @@
   "name" : "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
   "title" : "MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
   "status" : "active",
-  "date" : "2026-10-29T10:59:54+00:00",
+  "date" : "2026-11-03T16:06:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1959,7 +1959,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -2290,7 +2289,6 @@
         "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{

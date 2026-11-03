@@ -64,7 +64,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       "system" : "http://loinc.org",
       "concept" : [{
         "code" : "8867-4",
-        "display" : "Heart Rate"
+        "display" : "Heart rate"
       },
       {
         "code" : "8480-6",
@@ -215,6 +215,10 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
         "display" : "Body height"
       },
       {
+        "code" : "8306-3",
+        "display" : "Body height --lying"
+      },
+      {
         "code" : "8303-0",
         "display" : "Body height [Percentile]"
       },
@@ -264,7 +268,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "code" : "60838-0",
-        "display" : "Body temperature"
+        "display" : "Nasopharyngeal temperature"
       },
       {
         "code" : "104063-3",

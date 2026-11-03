@@ -52,9 +52,8 @@ Profile: [MII PR ICU MUV Kopfumfang](StructureDefinition-mii-pr-icu-muv-kopfumfa
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
-      "code" : "363811000",
-      "display" : "Head circumference measure (observable entity)"
+      "code" : "363812007",
+      "display" : "Head circumference (observable entity)"
     }]
   },
   "subject" : {

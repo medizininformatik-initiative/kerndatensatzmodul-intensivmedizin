@@ -54,7 +54,6 @@ Profile: [SD MII ICU Koerpertemperatur Speiseroehre](https://simplifier.net/reso
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "431598003",
       "display" : "Core body temperature measured in esophagus"
     },

@@ -955,7 +955,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -984,7 +984,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-blutverlust","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -1325,7 +1325,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -1352,7 +1352,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-drainage-generisch","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -1694,7 +1694,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -1723,7 +1723,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -2064,7 +2064,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -2093,7 +2093,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -2434,7 +2434,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -2463,7 +2463,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -2804,7 +2804,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -2833,7 +2833,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-magensonde","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -3174,7 +3174,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -3201,7 +3201,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-op-drainage","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -3542,7 +3542,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -3569,7 +3569,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -3908,7 +3908,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -3937,7 +3937,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-stuhlgang","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -4278,7 +4278,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -4307,7 +4307,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-urin","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -4648,7 +4648,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -4677,7 +4677,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-ausfuhr-wunddrainage","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -5018,7 +5018,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -5045,7 +5045,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -5386,7 +5386,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -5415,7 +5415,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -5756,7 +5756,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -5785,7 +5785,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -6126,7 +6126,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -6155,7 +6155,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-kalorien-24h","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -6500,7 +6500,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -6527,7 +6527,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-muttermilch","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -6868,7 +6868,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -6897,7 +6897,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -7238,7 +7238,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -7265,7 +7265,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -7606,7 +7606,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -7633,7 +7633,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-einfuhr-spendermilch","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -7974,7 +7974,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -8003,7 +8003,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -8342,7 +8342,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz","Observation.code.coding:sct.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz","Observation.code.coding:sct.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz","Observation.code.coding:sct.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -8369,7 +8369,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-bilanz","Observation.code.coding:loinc.code","Observation.code.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-bilanz","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
+"mii-pr-icu-bilanz","Observation.code.coding:loinc.display","Observation.code.coding.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-bilanz","Observation.code.coding:loinc.userSelected","Observation.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}

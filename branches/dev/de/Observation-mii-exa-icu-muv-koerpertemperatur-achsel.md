@@ -54,14 +54,13 @@ Profile: [SD MII ICU Koerpertemperatur Achsel](https://simplifier.net/resolve?sc
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "415882003",
       "display" : "Estimated core body temperature measured in axillary region (observable entity)"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "188452",
-      "display" : "Axillary (armpit) temperature"
+      "display" : "MDC_TEMP_AXILLA"
     },
     {
       "system" : "http://loinc.org",

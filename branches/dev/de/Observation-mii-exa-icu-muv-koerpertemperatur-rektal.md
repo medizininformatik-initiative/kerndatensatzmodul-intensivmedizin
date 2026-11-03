@@ -54,7 +54,6 @@ Profile: [SD MII ICU Koerpertemperatur rektal](https://simplifier.net/resolve?sc
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "307047009",
       "display" : "Core body temperature measured in rectum (observable entity)"
     },

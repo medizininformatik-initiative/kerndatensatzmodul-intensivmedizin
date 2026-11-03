@@ -46,7 +46,7 @@
   <name value="MII_PR_ICU_Bilanz_Einfuhr_Saeuglingsnahrung"/>
   <title value="MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"/>
   <status value="draft"/>
-  <date value="2026-10-29T10:59:54+00:00"/>
+  <date value="2026-11-03T16:06:22+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -1930,7 +1930,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
@@ -2249,7 +2248,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>

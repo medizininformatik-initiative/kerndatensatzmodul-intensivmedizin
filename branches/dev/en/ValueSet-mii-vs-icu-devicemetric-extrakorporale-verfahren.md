@@ -59,7 +59,7 @@
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "18274404"
+        "code" : "182744004"
       }]
     }]
   }

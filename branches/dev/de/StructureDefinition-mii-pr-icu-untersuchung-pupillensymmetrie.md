@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie | *Version*:2027.0.0-ballot.3 |
-| Draft Stand: 2026-10-29 | *Maschinenlesbarer Name*:MII_PR_ICU_Untersuchung_Pupillensymmetrie |
+| Draft Stand: 2026-11-03 | *Maschinenlesbarer Name*:MII_PR_ICU_Untersuchung_Pupillensymmetrie |
 
 **Usages:**
 
@@ -109,7 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-u
   "name" : "MII_PR_ICU_Untersuchung_Pupillensymmetrie",
   "title" : "MII PR ICU Untersuchung Pupillensymmetrie",
   "status" : "draft",
-  "date" : "2026-10-29T10:59:54+00:00",
+  "date" : "2026-11-03T16:06:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

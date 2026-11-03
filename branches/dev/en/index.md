@@ -32,6 +32,7 @@ Questions about this publication can be asked at any time at [https://chat.fhir.
 * Felix Erdfelder
 * Margaux Gatrio
 * Christian Gebauer
+* Gregor Lichtner
 * Christoph Müller
 * Tim Steinbach
 * Alexander Zautke

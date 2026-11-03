@@ -63,9 +63,6 @@ Dieses ValueSet enthält Codes für bodySites für die im Kontext einer Beatmung
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "11527006"
-      },
-      {
         "code" : "89187006"
       },
       {

@@ -100,11 +100,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "code" : "276900001",
-        "display" : "Systemic vascular Resistance index (observable entity)"
+        "display" : "Systemic vascular resistance index (observable entity)"
       },
       {
         "code" : "276902009",
-        "display" : "Pulmonary vascular Resistance index (observable entity)"
+        "display" : "Pulmonary vascular resistance index (observable entity)"
       },
       {
         "code" : "90096001",
@@ -133,6 +133,10 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       {
         "code" : "1153637007",
         "display" : "Body height (observable entity)"
+      },
+      {
+        "code" : "1149101003",
+        "display" : "Recumbent body height (observable entity)"
       },
       {
         "code" : "1153605006",

@@ -54,7 +54,6 @@ Profile: [SD MII ICU Koerpertemperatur Harnblase](https://simplifier.net/resolve
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20260515",
       "code" : "698832009",
       "display" : "Core body temperature measured at urinary bladder (observable entity)"
     },

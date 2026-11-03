@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala | *Version*:2027.0.0-ballot.3 |
-| Draft as of 2026-10-29 | *Computable Name*:MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala |
+| Draft as of 2026-11-03 | *Computable Name*:MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala |
 
  
 Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala. Der Score wird als quantitativer Wert dokumentiert. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
   "title" : "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
   "status" : "draft",
-  "date" : "2026-10-29T10:59:54+00:00",
+  "date" : "2026-11-03T16:06:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
