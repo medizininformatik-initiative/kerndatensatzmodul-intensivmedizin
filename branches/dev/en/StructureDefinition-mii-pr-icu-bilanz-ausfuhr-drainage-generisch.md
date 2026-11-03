@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch",
   "title" : "MII PR ICU Bilanz Ausfuhr Drainage Generisch",
   "status" : "active",
-  "date" : "2026-11-03T21:41:29+00:00",
+  "date" : "2026-11-03T22:17:56+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -106,7 +106,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergroesse_Perzentil",
   "title" : "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-03T21:41:29+00:00",
+  "date" : "2026-11-03T22:17:56+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
