@@ -42,7 +42,7 @@ Value set for RASS Score
   "title" : "MII VS ICU Score RASS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-03T21:00:01+00:00",
+  "date" : "2026-11-03T21:31:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

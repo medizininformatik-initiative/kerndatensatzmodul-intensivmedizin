@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-u
   "name" : "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Indirekt",
   "title" : "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt",
   "status" : "draft",
-  "date" : "2026-11-03T21:00:01+00:00",
+  "date" : "2026-11-03T21:31:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
