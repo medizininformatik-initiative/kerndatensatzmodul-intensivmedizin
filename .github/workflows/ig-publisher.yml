@@ -17,9 +17,12 @@
 #            file (and cleanup-gh-pages.yml); it strips only the template's own
 #            release automation.
 #
-# Triggers:  push to every branch except main / gh-pages / fsh-generated, plus
-#            manual workflow_dispatch (rebuild one branch's preview). main and
-#            tags are reserved for formal publication and are NOT previewed here.
+# Triggers:  push to every branch except gh-pages / fsh-generated, a pull
+#            request being opened or reopened, plus manual workflow_dispatch
+#            (rebuild one branch's preview). Every run builds the IG and its QA,
+#            but a PREVIEW is published only for dev, main and branches with an
+#            open pull request from this repository; dependabot/* branches never
+#            get one. This keeps gh-pages under the 1 GB GitHub Pages limit.
 #
 # Toggle:    vars.ENABLE_PREVIEW — ON by default. Set the repo variable
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
@@ -78,6 +81,10 @@ on:
       - "**"
       - "!gh-pages"
       - "!fsh-generated"
+  # Opening (or reopening) a PR builds its preview right away, without waiting
+  # for the next push to the branch.
+  pull_request:
+    types: [opened, reopened]
   workflow_dispatch:
 
 permissions:
@@ -103,6 +110,9 @@ env:
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
   SUSHI_VERSION: "3.20.1"
   JEKYLL_VERSION: "4.4.1"
+  # The branch a preview belongs to: the PR head branch on pull_request events,
+  # otherwise the pushed/dispatched branch.
+  PREVIEW_BRANCH: ${{ github.head_ref || github.ref_name }}
 
 jobs:
   build:
@@ -111,11 +121,57 @@ jobs:
     timeout-minutes: 90
     outputs:
       mode: ${{ steps.build.outputs.mode }}
+      publish: ${{ steps.preview.outputs.publish }}
+      branch: ${{ env.PREVIEW_BRANCH }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          # On pull_request events build the PR head branch, not the merge ref,
+          # so the preview shows exactly what the branch contains.
+          ref: ${{ github.head_ref || github.ref }}
           persist-credentials: false
+
+      # Previews are published only for dev, main and branches with an open,
+      # non-Dependabot PR from this repository. Every other branch still builds
+      # (SUSHI + IG Publisher + QA) but publishes nothing, so gh-pages stays
+      # within the GitHub Pages size limit (1 GB per deployment).
+      - name: Decide whether this run publishes a preview
+        id: preview
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+          PR_HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+        run: |
+          set -euo pipefail
+          publish=false
+          reason=""
+          if [[ "${PREVIEW_BRANCH}" == dependabot/* ]]; then
+            reason="Dependabot branch"
+          elif [[ "${PREVIEW_BRANCH}" == "dev" || "${PREVIEW_BRANCH}" == "main" ]]; then
+            publish=true; reason="${PREVIEW_BRANCH} is always previewed"
+          elif [[ "${EVENT}" == "pull_request" ]]; then
+            if [[ "${PR_HEAD_REPO}" == "${REPO}" ]]; then
+              publish=true; reason="pull request opened from ${PREVIEW_BRANCH}"
+            else
+              reason="pull request from a fork"
+            fi
+          else
+            open_prs="$(gh pr list --repo "${REPO}" --head "${PREVIEW_BRANCH}" --state open --json number --jq 'length')"
+            if (( open_prs > 0 )); then
+              publish=true; reason="${PREVIEW_BRANCH} has an open pull request"
+            else
+              reason="no open pull request for ${PREVIEW_BRANCH}"
+            fi
+          fi
+          echo "publish=${publish}" >> "${GITHUB_OUTPUT}"
+          if [[ "${publish}" == "true" ]]; then
+            echo "Preview will be published (${reason})."
+          else
+            echo "::notice::No preview for ${PREVIEW_BRANCH} (${reason}). The IG still builds and QA runs; open a pull request to get a preview."
+          fi
 
       # de.gematik.isik liefert keine Snapshots (0/178 in 6.0.0, gemessen 2026-08-28);
       # SUSHI kann die sd-mii-icu-*-Parents sonst nicht importieren. Der MII-weite
@@ -201,7 +257,7 @@ jobs:
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
 
       - name: Filter draft profiles before build
-        if: ${{ github.ref_name == 'main' || startsWith(github.ref_name, 'test/main-sicht') }}
+        if: ${{ env.PREVIEW_BRANCH == 'main' || startsWith(env.PREVIEW_BRANCH, 'test/main-sicht') }}
         shell: bash
         run: python3 scripts/strip-drafts.py
 
@@ -435,11 +491,11 @@ jobs:
         run: docker rm --force preview-nginx >/dev/null 2>&1 || true
 
       - name: Publish preview to gh-pages/branches/<branch>/ 
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' }}
+        if: ${{ steps.build.outputs.mode == 'full' && steps.preview.outputs.publish == 'true' }}
         shell: bash
         env:
           REPO: ${{ github.repository }}
-          BRANCH: ${{ github.ref_name }}
+          BRANCH: ${{ env.PREVIEW_BRANCH }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PAGES_ACTIONS_ENABLED: ${{ vars.PAGES_ACTIONS_ENABLED }}
           GIT_AUTHOR_NAME: "github-actions[bot]"
@@ -498,10 +554,10 @@ jobs:
           git push origin gh-pages
 
       - name: Preview URL
-        if: ${{ steps.build.outputs.mode == 'full'  && github.ref_name != 'gh-pages' }}
+        if: ${{ steps.build.outputs.mode == 'full' && steps.preview.outputs.publish == 'true' }}
         shell: bash
         run: |
-          base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}"
+          base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${PREVIEW_BRANCH}"
           echo "Preview: ${base}/" >> "${GITHUB_STEP_SUMMARY}"
           if [ -s output/comparison-demo/index.html ]; then
             echo "Comparison demo: ${base}/comparison-demo/index.html" >> "${GITHUB_STEP_SUMMARY}"
@@ -511,20 +567,20 @@ jobs:
       # pipeline (Settings → Pages → GitHub Actions). Mirrors go-publish.yml's
       # tar + github-pages artifact + deploy-pages pairing (verified pins).
       - name: Package gh-pages tree as a Pages artifact
-        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+        if: ${{ steps.build.outputs.mode == 'full' && steps.preview.outputs.publish == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: gh-pages
 
   deploy:
     name: Deploy GitHub Pages (Actions mode)
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && needs.build.outputs.publish == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 30
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}branches/${{ github.ref_name }}/
+      url: ${{ steps.deployment.outputs.page_url }}branches/${{ needs.build.outputs.branch }}/
     permissions:
       contents: read
       id-token: write
@@ -538,7 +594,7 @@ jobs:
     name: Report preview URL
     # Separate from the build job (which touches the terminology secrets) so the
     # literal repository URL is never masked in the summary or the PR comment.
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full'  && github.ref_name != 'gh-pages' }}
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && needs.build.outputs.publish == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -551,7 +607,7 @@ jobs:
         continue-on-error: true
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
-          BRANCH_NAME: ${{ github.ref_name }}
+          BRANCH_NAME: ${{ needs.build.outputs.branch }}
         with:
           script: |
             const { owner, repo } = context.repo;
