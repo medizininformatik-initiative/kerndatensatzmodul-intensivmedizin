@@ -95,9 +95,13 @@ permissions:
   issues: write # PR comments go through the issues API
 
 concurrency:
-  # Serialize every writer of the gh-pages branch (previews, cleanup, and the
-  # formal go-publish share this group) so they never race. Queue, never cancel.
-  group: gh-pages-writes
+  # One build per branch at a time; builds of different branches run in
+  # parallel. A newer run for the same branch replaces a waiting older one,
+  # which is harmless because the newer commit supersedes it. The gh-pages push
+  # below retries on conflicts, and the deploy job has its own queue, so
+  # previews no longer share the gh-pages-writes group (cleanup and go-publish
+  # still do).
+  group: ig-preview-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: false
 
 env:
@@ -503,12 +507,10 @@ jobs:
         run: |
           set -euo pipefail
           remote_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
-          rm -rf gh-pages
-          if git ls-remote --heads "${remote_url}" gh-pages | grep -q "."; then
-            git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
-          else
+          if ! git ls-remote --heads "${remote_url}" gh-pages | grep -q "."; then
             # First preview ever: orphan-init gh-pages with a .nojekyll marker so
             # Pages serves the IG output verbatim (no Jekyll re-processing).
+            rm -rf gh-pages
             git clone "${remote_url}" gh-pages
             cd gh-pages
             git config user.name "${GIT_AUTHOR_NAME}"
@@ -518,40 +520,55 @@ jobs:
             touch .nojekyll
             git add .nojekyll
             git commit -m "chore: initialize gh-pages"
-            git push --set-upstream origin gh-pages
+            git push --set-upstream origin gh-pages || true # another build may have won the race
             cd ..
           fi
-          # The root and version-like paths are reserved for formal -go-publish
-          # output; every CI preview lives below branches/<branch>/.
-          touch gh-pages/.nojekyll
-          branch_dir="gh-pages/branches/${BRANCH}"
-          rm -rf "${branch_dir}"
-          mkdir -p "${branch_dir}"
-          cp -R "output/." "${branch_dir}/"
-          # GitHubs 100-MB-Dateilimit: full-ig.zip (gemessen 122 MB bei diesem
-          # Modul, 2026-08-28) bricht sonst den gh-pages-Push. Die Branch-PREVIEW
-          # braucht das Download-Zip nicht; der formale go-publish-Pfad bleibt
-          # unberuehrt. Upstream-Kandidat fuer das Modul-Template.
-          find "${branch_dir}" -name 'full-ig.zip' -size +99M -delete
-          # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
-          echo "${BRANCH}" > "${branch_dir}/.branch-name"
-          cd gh-pages
-          if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
-            bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
-            supported_max_bytes="1000000000"
-            if (( bytes > supported_max_bytes )); then
-              echo "::warning::The staged Pages site is ${bytes} bytes, above GitHub Pages' ${supported_max_bytes}-byte officially supported maximum. Publication will continue, but Pages does not guarantee deployments above 1 GB."
+          # Builds of different branches run in parallel, so another build may
+          # push to gh-pages between our clone and our push. Each preview only
+          # touches its own branches/<branch>/ directory, so on a rejected push
+          # we re-clone the fresh gh-pages and stage the preview again.
+          for attempt in 1 2 3 4 5; do
+            rm -rf gh-pages
+            git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
+            # The root and version-like paths are reserved for formal -go-publish
+            # output; every CI preview lives below branches/<branch>/.
+            touch gh-pages/.nojekyll
+            branch_dir="gh-pages/branches/${BRANCH}"
+            rm -rf "${branch_dir}"
+            mkdir -p "${branch_dir}"
+            cp -R "output/." "${branch_dir}/"
+            # GitHubs 100-MB-Dateilimit: full-ig.zip (gemessen 122 MB bei diesem
+            # Modul, 2026-08-28) bricht sonst den gh-pages-Push. Die Branch-PREVIEW
+            # braucht das Download-Zip nicht; der formale go-publish-Pfad bleibt
+            # unberuehrt. Upstream-Kandidat fuer das Modul-Template.
+            find "${branch_dir}" -name 'full-ig.zip' -size +99M -delete
+            # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
+            echo "${BRANCH}" > "${branch_dir}/.branch-name"
+            cd gh-pages
+            if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
+              bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
+              supported_max_bytes="1000000000"
+              if (( bytes > supported_max_bytes )); then
+                echo "::warning::The staged Pages site is ${bytes} bytes, above GitHub Pages' ${supported_max_bytes}-byte officially supported maximum. Publication will continue, but Pages does not guarantee deployments above 1 GB."
+              fi
             fi
-          fi
-          git config user.name "${GIT_AUTHOR_NAME}"
-          git config user.email "${GIT_AUTHOR_EMAIL}"
-          git add --all
-          if git diff --cached --quiet; then
-            echo "No preview changes to publish for ${BRANCH}."
-            exit 0
-          fi
-          git commit -m "chore: preview ${BRANCH}"
-          git push origin gh-pages
+            git config user.name "${GIT_AUTHOR_NAME}"
+            git config user.email "${GIT_AUTHOR_EMAIL}"
+            git add --all
+            if git diff --cached --quiet; then
+              echo "No preview changes to publish for ${BRANCH}."
+              exit 0
+            fi
+            git commit -m "chore: preview ${BRANCH}"
+            if git push origin gh-pages; then
+              exit 0
+            fi
+            cd ..
+            echo "::notice::gh-pages moved while publishing (attempt ${attempt}); retrying on the fresh tree."
+            sleep $(( attempt * 10 ))
+          done
+          echo "::error::Could not push the preview to gh-pages after 5 attempts."
+          exit 1
 
       - name: Preview URL
         if: ${{ steps.build.outputs.mode == 'full' && steps.preview.outputs.publish == 'true' }}
@@ -562,15 +579,6 @@ jobs:
           if [ -s output/comparison-demo/index.html ]; then
             echo "Comparison demo: ${base}/comparison-demo/index.html" >> "${GITHUB_STEP_SUMMARY}"
           fi
-
-      # ── PAGES_ACTIONS_ENABLED mode only: also publish via the Pages Actions
-      # pipeline (Settings → Pages → GitHub Actions). Mirrors go-publish.yml's
-      # tar + github-pages artifact + deploy-pages pairing (verified pins).
-      - name: Package gh-pages tree as a Pages artifact
-        if: ${{ steps.build.outputs.mode == 'full' && steps.preview.outputs.publish == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
-        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
-        with:
-          path: gh-pages
 
   deploy:
     name: Deploy GitHub Pages (Actions mode)
@@ -585,7 +593,27 @@ jobs:
       contents: read
       id-token: write
       pages: write
+    # Deploys queue here instead of blocking builds. Each deploy packages the
+    # gh-pages HEAD at the time it starts, so when a newer deploy replaces a
+    # waiting older one, the newer one already contains the older preview.
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
     steps:
+      # ── PAGES_ACTIONS_ENABLED mode only: publish the current gh-pages tree via
+      # the Pages Actions pipeline (Settings → Pages → GitHub Actions). Mirrors
+      # go-publish.yml's tar + github-pages artifact + deploy-pages pairing.
+      - name: Check out the current gh-pages tree
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Package gh-pages tree as a Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: gh-pages
       - name: Deploy Pages artifact
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
