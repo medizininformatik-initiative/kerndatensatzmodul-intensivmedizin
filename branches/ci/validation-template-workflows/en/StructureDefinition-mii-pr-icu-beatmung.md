@@ -148,7 +148,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-beatmu
   "name" : "MII_PR_ICU_Beatmung",
   "title" : "MII PR ICU Beatmung",
   "status" : "active",
-  "date" : "2026-11-04T17:44:41+00:00",
+  "date" : "2026-11-04T18:22:47+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

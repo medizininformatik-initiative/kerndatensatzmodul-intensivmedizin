@@ -44,7 +44,7 @@ Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte
   "name" : "MII_VS_ICU_BodySite_Observation_Pupillenbefund",
   "title" : "MII VS ICU BodySite Observation Pupillenbefund",
   "status" : "draft",
-  "date" : "2026-11-04T17:44:41+00:00",
+  "date" : "2026-11-04T18:22:47+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

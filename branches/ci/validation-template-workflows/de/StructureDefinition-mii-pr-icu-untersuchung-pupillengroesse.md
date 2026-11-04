@@ -109,7 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-u
   "name" : "MII_PR_ICU_Untersuchung_Pupillengroesse",
   "title" : "MII PR ICU Untersuchung Pupillengroesse",
   "status" : "draft",
-  "date" : "2026-11-04T17:44:41+00:00",
+  "date" : "2026-11-04T18:22:47+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
