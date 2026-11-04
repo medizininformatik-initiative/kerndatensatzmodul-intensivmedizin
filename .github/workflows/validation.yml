@@ -34,7 +34,9 @@
 #            bootstrap keeps it).
 #
 # Fixed versions: the reusable workflows are pinned to a FIXED commit SHA
-#            of kerndatensatz-meta (not the moving @master the wiki shows).
+#            of mii-kds-module-template. They moved there from
+#            kerndatensatz-meta (meta #251); meta master is frozen only so that
+#            old SHA pins keep resolving and gets no further fixes.
 #            SUSHI + Java-validator versions are pinned with a repo-var override.
 #
 # Secrets (human prerequisites — CI cannot obtain them by itself):
@@ -96,7 +98,7 @@ jobs:
     # ON by default, and only on created modules — the placeholder
     # template repo cannot produce clean SUSHI output for validation.
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.dotnet-validation-guard.outputs.has_creds == 'true' }}
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-09-14
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@9d464cddb17985b41df9ab6e0a5ff95870f902f2 # mii-kds-module-template dev @ 2026-11-02 (#49)
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       # Pinned SUSHI (fixed versions); overridable via the repo variable.
@@ -133,26 +135,28 @@ jobs:
     name: HL7 Java validator (SU-TermServ)
     needs: java-validation-guard
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.java-validation-guard.outputs.has_cert == 'true' }}
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-09-14
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_java_validation.yml@9d464cddb17985b41df9ab6e0a5ff95870f902f2 # mii-kds-module-template dev @ 2026-11-02 (#49)
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
+      # Compile FSH in the job so the validator checks the current FSH source,
+      # not the committed (possibly stale) fsh-generated/. Same pinned SUSHI as
+      # the .NET job above; overridable via the repo variable.
+      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.20.1' }}
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.
-      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.5.7' }}
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.10.4' }}
       # Wire the repo's advisor file into the validator CLI. The reusable
       # workflow passes JAVA_VALIDATION_OPTIONS verbatim to validator_cli.jar
       # (verified at the pinned SHA); without this the advisor.json shipped at
       # the repo root would be read by NOTHING and the "suppressed via
       # advisor.json" contract in this file's header would be false.
-      # -output / -html-output: the upstream step captures the validator's
-      # stdout under `bash -e`, so when the validator exits 1 (validation
-      # errors found) the script aborts before printing anything. Writing the
-      # report to files keeps it: the upstream upload and markdown-summary
-      # steps read exactly validation.json / validation.html, also on failure.
-      JAVA_VALIDATION_OPTIONS: "-advisor-file advisor.json -output validation.json -html-output validation.html"
+      # The reusable workflow adds -output validation.json / -html-output
+      # validation.html / -txLog itself and prints the validator output on
+      # failure, so only the advisor file is passed here.
+      JAVA_VALIDATION_OPTIONS: "-advisor-file advisor.json"
       VALIDATION_REPORT_FILTERS: |
         filename | messageId | detailsWildcard | location
     # Secret-name reconciliation: the MII reusable workflow declares
