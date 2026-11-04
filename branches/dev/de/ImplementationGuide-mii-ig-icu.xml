@@ -210,6 +210,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-data"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/data"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="i18n-default-lang"/>
       </extension>
       <extension url="value">
@@ -662,6 +670,14 @@
       </extension>
       <extension url="value">
         <valueString value="ballot"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-data"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/data"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -4412,6 +4428,406 @@
         <nameUrl value="profiles.html"/>
         <title value="Profile"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html"/>
+          <title value="MII PR ICU MUV zerebraler Perfusionsdruck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-herzzeitvolumen.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-herzzeitvolumen.html"/>
+          <title value="SD MII ICU Herzzeitvolumen"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-ideales-koerpergewicht.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-ideales-koerpergewicht.html"/>
+          <title value="SD MII ICU Ideales Koerpergewicht"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-intrakranieller-druck-icp.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-intrakranieller-druck-icp.html"/>
+          <title value="SD MII ICU Intrakranieller Druck ICP"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.html"/>
+          <title value="SD MII ICU Koerpergewicht Percentil Altersabhaengig"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.html"/>
+          <title value="SD MII ICU Koerpergroesse Percentil"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerperkerntemperatur-stirn.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerperkerntemperatur-stirn.html"/>
+          <title value="SD MII ICU Koerperkerntemperatur Stirn"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-achsel.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-achsel.html"/>
+          <title value="SD MII ICU Koerpertemperatur Achsel"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-atemwege.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-atemwege.html"/>
+          <title value="SD MII ICU Koerpertemperatur Atemwege"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-blut.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-blut.html"/>
+          <title value="SD MII ICU Koerpertemperatur Blut"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-brust.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-brust.html"/>
+          <title value="SD MII ICU Koerpertemperatur Brust"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.html"/>
+          <title value="SD MII ICU Koerpertemperatur Brustwirbelsaeule"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-gelenk.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-gelenk.html"/>
+          <title value="SD MII ICU Koerpertemperatur Gelenk"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-generisch.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-generisch.html"/>
+          <title value="SD MII ICU Koerpertemperatur Generisch"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.html"/>
+          <title value="SD MII ICU Koerpertemperatur Halswirbelsaeule"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-harnblase.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-harnblase.html"/>
+          <title value="SD MII ICU Koerpertemperatur Harnblase"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-kern.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-kern.html"/>
+          <title value="SD MII ICU Koerpertemperatur Kern"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-leiste.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-leiste.html"/>
+          <title value="SD MII ICU Koerpertemperatur Leiste"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.html"/>
+          <title value="SD MII ICU Koerpertemperatur Lendenwirbelsaeule"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-myokard.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-myokard.html"/>
+          <title value="SD MII ICU Koerpertemperatur Myokard"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-nasal.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-nasal.html"/>
+          <title value="SD MII ICU Koerpertemperatur nasal"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.html"/>
+          <title value="SD MII ICU Koerpertemperatur Nasen-Rachen-Raum"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-rektal.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-rektal.html"/>
+          <title value="SD MII ICU Koerpertemperatur rektal"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-speiseroehre.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-speiseroehre.html"/>
+          <title value="SD MII ICU Koerpertemperatur Speiseroehre"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-stirn.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-stirn.html"/>
+          <title value="SD MII ICU Koerpertemperatur Stirn"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-trommelfell.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-trommelfell.html"/>
+          <title value="SD MII ICU Koerpertemperatur Trommelfell"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.html"/>
+          <title value="SD MII ICU Koerpertemperatur unter der Zunge"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-koerpertemperatur-vaginal.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-koerpertemperatur-vaginal.html"/>
+          <title value="SD MII ICU Koerpertemperatur vaginal"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksatrialer-druck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksatrialer-druck.html"/>
+          <title value="SD MII ICU Linksatrialer Druck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.html"/>
+          <title value="SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.html"/>
+          <title value="SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.html"/>
+          <title value="SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventrikulaerer-druck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventrikulaerer-druck.html"/>
+          <title value="SD MII ICU Linksventrikulaerer Druck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventrikulaerer-herzindex.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventrikulaerer-herzindex.html"/>
+          <title value="SD MII ICU Linksventrikulaerer Herzindex"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.html"/>
+          <title value="SD MII ICU Linksventrikulaeres Schlagvolumen"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.html"/>
+          <title value="SD MII ICU Linksventrikulaeres Schlagvolumenindex"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.html"/>
+          <title value="SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-monitoring-und-vitaldaten.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-monitoring-und-vitaldaten.html"/>
+          <title value="SD MII ICU Monitoring und Vitaldaten"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.html"/>
+          <title value="SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.html"/>
+          <title value="SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.html"/>
+          <title value="SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-pulmonalarterieller-blutdruck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-pulmonalarterieller-blutdruck.html"/>
+          <title value="SD MII ICU Pulmonalarterieller Blutdruck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-pulmonalarterieller-wedge-druck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-pulmonalarterieller-wedge-druck.html"/>
+          <title value="SD MII ICU Pulmonalarterieller Wedge Druck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.html"/>
+          <title value="SD MII ICU Pulmonalvaskulaerer Widerstandsindex"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-puls.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-puls.html"/>
+          <title value="SD MII ICU Puls"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-rechtsatrialer-druck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-rechtsatrialer-druck.html"/>
+          <title value="SD MII ICU Rechtsatrialer Druck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-rechtsventrikulaerer-druck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-rechtsventrikulaerer-druck.html"/>
+          <title value="SD MII ICU Rechtsventrikulaerer Druck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html"/>
+          <title value="SD MII ICU Sonstige pulsatile Druecke Generisch"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.html"/>
+          <title value="SD MII ICU Systemischer Vaskulaerer Widerstandsindex"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-sd-mii-icu-zentralvenoeser-blutdruck.html"/>
+          </extension>
+          <nameUrl value="extern-sd-mii-icu-zentralvenoeser-blutdruck.html"/>
+          <title value="SD MII ICU Zentralvenoeser Blutdruck"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

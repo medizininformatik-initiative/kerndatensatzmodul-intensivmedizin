@@ -341,6 +341,17 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "path-data"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/data"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "i18n-default-lang"
       },
       {
@@ -961,6 +972,17 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       {
         "url" : "value",
         "valueString" : "ballot"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-data"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/data"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -6501,7 +6523,457 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
             "url" : "http://hl7.org/fhir/StructureDefinition/translation"
           }]
         },
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html"
+          }],
+          "nameUrl" : "extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html",
+          "title" : "MII PR ICU MUV zerebraler Perfusionsdruck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-herzzeitvolumen.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-herzzeitvolumen.html",
+          "title" : "SD MII ICU Herzzeitvolumen",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-ideales-koerpergewicht.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-ideales-koerpergewicht.html",
+          "title" : "SD MII ICU Ideales Koerpergewicht",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-intrakranieller-druck-icp.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-intrakranieller-druck-icp.html",
+          "title" : "SD MII ICU Intrakranieller Druck ICP",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.html",
+          "title" : "SD MII ICU Koerpergewicht Percentil Altersabhaengig",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.html",
+          "title" : "SD MII ICU Koerpergroesse Percentil",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerperkerntemperatur-stirn.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerperkerntemperatur-stirn.html",
+          "title" : "SD MII ICU Koerperkerntemperatur Stirn",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-achsel.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-achsel.html",
+          "title" : "SD MII ICU Koerpertemperatur Achsel",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-atemwege.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-atemwege.html",
+          "title" : "SD MII ICU Koerpertemperatur Atemwege",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-blut.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-blut.html",
+          "title" : "SD MII ICU Koerpertemperatur Blut",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-brust.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-brust.html",
+          "title" : "SD MII ICU Koerpertemperatur Brust",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.html",
+          "title" : "SD MII ICU Koerpertemperatur Brustwirbelsaeule",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-gelenk.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-gelenk.html",
+          "title" : "SD MII ICU Koerpertemperatur Gelenk",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-generisch.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-generisch.html",
+          "title" : "SD MII ICU Koerpertemperatur Generisch",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.html",
+          "title" : "SD MII ICU Koerpertemperatur Halswirbelsaeule",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-harnblase.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-harnblase.html",
+          "title" : "SD MII ICU Koerpertemperatur Harnblase",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-kern.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-kern.html",
+          "title" : "SD MII ICU Koerpertemperatur Kern",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-leiste.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-leiste.html",
+          "title" : "SD MII ICU Koerpertemperatur Leiste",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.html",
+          "title" : "SD MII ICU Koerpertemperatur Lendenwirbelsaeule",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-myokard.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-myokard.html",
+          "title" : "SD MII ICU Koerpertemperatur Myokard",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-nasal.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-nasal.html",
+          "title" : "SD MII ICU Koerpertemperatur nasal",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.html",
+          "title" : "SD MII ICU Koerpertemperatur Nasen-Rachen-Raum",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-rektal.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-rektal.html",
+          "title" : "SD MII ICU Koerpertemperatur rektal",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-speiseroehre.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-speiseroehre.html",
+          "title" : "SD MII ICU Koerpertemperatur Speiseroehre",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-stirn.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-stirn.html",
+          "title" : "SD MII ICU Koerpertemperatur Stirn",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-trommelfell.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-trommelfell.html",
+          "title" : "SD MII ICU Koerpertemperatur Trommelfell",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.html",
+          "title" : "SD MII ICU Koerpertemperatur unter der Zunge",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-koerpertemperatur-vaginal.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-koerpertemperatur-vaginal.html",
+          "title" : "SD MII ICU Koerpertemperatur vaginal",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksatrialer-druck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksatrialer-druck.html",
+          "title" : "SD MII ICU Linksatrialer Druck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.html",
+          "title" : "SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.html",
+          "title" : "SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.html",
+          "title" : "SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventrikulaerer-druck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventrikulaerer-druck.html",
+          "title" : "SD MII ICU Linksventrikulaerer Druck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventrikulaerer-herzindex.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventrikulaerer-herzindex.html",
+          "title" : "SD MII ICU Linksventrikulaerer Herzindex",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.html",
+          "title" : "SD MII ICU Linksventrikulaeres Schlagvolumen",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.html",
+          "title" : "SD MII ICU Linksventrikulaeres Schlagvolumenindex",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.html",
+          "title" : "SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-monitoring-und-vitaldaten.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-monitoring-und-vitaldaten.html",
+          "title" : "SD MII ICU Monitoring und Vitaldaten",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.html",
+          "title" : "SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.html",
+          "title" : "SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.html",
+          "title" : "SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-pulmonalarterieller-blutdruck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-pulmonalarterieller-blutdruck.html",
+          "title" : "SD MII ICU Pulmonalarterieller Blutdruck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-pulmonalarterieller-wedge-druck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-pulmonalarterieller-wedge-druck.html",
+          "title" : "SD MII ICU Pulmonalarterieller Wedge Druck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.html",
+          "title" : "SD MII ICU Pulmonalvaskulaerer Widerstandsindex",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-puls.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-puls.html",
+          "title" : "SD MII ICU Puls",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-rechtsatrialer-druck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-rechtsatrialer-druck.html",
+          "title" : "SD MII ICU Rechtsatrialer Druck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-rechtsventrikulaerer-druck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-rechtsventrikulaerer-druck.html",
+          "title" : "SD MII ICU Rechtsventrikulaerer Druck",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html",
+          "title" : "SD MII ICU Sonstige pulsatile Druecke Generisch",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.html",
+          "title" : "SD MII ICU Systemischer Vaskulaerer Widerstandsindex",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "extern-sd-mii-icu-zentralvenoeser-blutdruck.html"
+          }],
+          "nameUrl" : "extern-sd-mii-icu-zentralvenoeser-blutdruck.html",
+          "title" : "SD MII ICU Zentralvenoeser Blutdruck",
+          "generation" : "markdown"
+        }]
       },
       {
         "extension" : [{

@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS Score SNOMED CT",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-04T12:01:12+00:00",
+  "date" : "2026-11-04T16:11:15+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
