@@ -11,7 +11,7 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse | *Version*:2027.0.0 |
 | Active as of 2026-11-04 | *Computable Name*:MII_PR_ICU_MUV_Koerpergroesse |
 
-"Body height (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
+"Body height (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
 This profile also claims upward compatibility with the [VitalSignDE_Koerpergroesse](http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse) profile.
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse",
   "title" : "MII PR ICU MUV Koerpergroesse",
   "status" : "active",
-  "date" : "2026-11-04T10:58:29+00:00",
+  "date" : "2026-11-04T17:44:41+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
