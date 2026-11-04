@@ -6,7 +6,7 @@
   "title": "MII VS ICU Score RASS",
   "description": "Value set for RASS Score",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-score-rass",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -26,43 +26,43 @@
         "concept": [
           {
             "code": "LA17287-6",
-            "display": "Combative"
+            "display": "Combative +4"
           },
           {
             "code": "LA33959-0",
-            "display": "Very agitated"
+            "display": "Very agitated +3"
           },
           {
             "code": "LA33960-8",
-            "display": "Agitated"
+            "display": "Agitated +2"
           },
           {
             "code": "LA16474-1",
-            "display": "Restless"
+            "display": "Restless +1"
           },
           {
             "code": "LA33962-4",
-            "display": "Alert and calm"
+            "display": "Alert and calm 0"
           },
           {
             "code": "LA33963-2",
-            "display": "Drowsy"
+            "display": "Drowsy -1"
           },
           {
             "code": "LA33964-0",
-            "display": "Light sedation"
+            "display": "Light sedation -2"
           },
           {
             "code": "LA33965-7",
-            "display": "Moderate sedation"
+            "display": "Moderate sedation -3"
           },
           {
             "code": "LA33966-5",
-            "display": "Deep sedation"
+            "display": "Deep sedation -4"
           },
           {
             "code": "LA33967-3",
-            "display": "Unarousable"
+            "display": "Unarousable -5"
           }
         ]
       }

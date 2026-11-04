@@ -113,7 +113,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_Extrakorporales_Verfahren",
   "title": "MII PR ICU Extrakorporales Verfahren",
   "status": "active",
@@ -180,18 +180,6 @@
         "id": "Procedure.code.coding:sct.display",
         "path": "Procedure.code.coding.display",
         "mustSupport": true
-      },
-      {
-        "id": "Procedure.encounter",
-        "path": "Procedure.encounter",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
-            ]
-          }
-        ]
       },
       {
         "id": "Procedure.performed[x]",
