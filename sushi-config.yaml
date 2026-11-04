@@ -906,6 +906,108 @@ pages:
 
   profiles.md:
     title: Profiles
+    # BEGIN generated: ISiK-hosted profile pages (scripts/gen-external-profiles.py)
+    extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.md:
+      title: "MII PR ICU MUV zerebraler Perfusionsdruck"
+    extern-sd-mii-icu-herzzeitvolumen.md:
+      title: "SD MII ICU Herzzeitvolumen"
+    extern-sd-mii-icu-ideales-koerpergewicht.md:
+      title: "SD MII ICU Ideales Koerpergewicht"
+    extern-sd-mii-icu-intrakranieller-druck-icp.md:
+      title: "SD MII ICU Intrakranieller Druck ICP"
+    extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.md:
+      title: "SD MII ICU Koerpergewicht Percentil Altersabhaengig"
+    extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.md:
+      title: "SD MII ICU Koerpergroesse Percentil"
+    extern-sd-mii-icu-koerperkerntemperatur-stirn.md:
+      title: "SD MII ICU Koerperkerntemperatur Stirn"
+    extern-sd-mii-icu-koerpertemperatur-achsel.md:
+      title: "SD MII ICU Koerpertemperatur Achsel"
+    extern-sd-mii-icu-koerpertemperatur-atemwege.md:
+      title: "SD MII ICU Koerpertemperatur Atemwege"
+    extern-sd-mii-icu-koerpertemperatur-blut.md:
+      title: "SD MII ICU Koerpertemperatur Blut"
+    extern-sd-mii-icu-koerpertemperatur-brust.md:
+      title: "SD MII ICU Koerpertemperatur Brust"
+    extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.md:
+      title: "SD MII ICU Koerpertemperatur Brustwirbelsaeule"
+    extern-sd-mii-icu-koerpertemperatur-gelenk.md:
+      title: "SD MII ICU Koerpertemperatur Gelenk"
+    extern-sd-mii-icu-koerpertemperatur-generisch.md:
+      title: "SD MII ICU Koerpertemperatur Generisch"
+    extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.md:
+      title: "SD MII ICU Koerpertemperatur Halswirbelsaeule"
+    extern-sd-mii-icu-koerpertemperatur-harnblase.md:
+      title: "SD MII ICU Koerpertemperatur Harnblase"
+    extern-sd-mii-icu-koerpertemperatur-kern.md:
+      title: "SD MII ICU Koerpertemperatur Kern"
+    extern-sd-mii-icu-koerpertemperatur-leiste.md:
+      title: "SD MII ICU Koerpertemperatur Leiste"
+    extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.md:
+      title: "SD MII ICU Koerpertemperatur Lendenwirbelsaeule"
+    extern-sd-mii-icu-koerpertemperatur-myokard.md:
+      title: "SD MII ICU Koerpertemperatur Myokard"
+    extern-sd-mii-icu-koerpertemperatur-nasal.md:
+      title: "SD MII ICU Koerpertemperatur nasal"
+    extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.md:
+      title: "SD MII ICU Koerpertemperatur Nasen-Rachen-Raum"
+    extern-sd-mii-icu-koerpertemperatur-rektal.md:
+      title: "SD MII ICU Koerpertemperatur rektal"
+    extern-sd-mii-icu-koerpertemperatur-speiseroehre.md:
+      title: "SD MII ICU Koerpertemperatur Speiseroehre"
+    extern-sd-mii-icu-koerpertemperatur-stirn.md:
+      title: "SD MII ICU Koerpertemperatur Stirn"
+    extern-sd-mii-icu-koerpertemperatur-trommelfell.md:
+      title: "SD MII ICU Koerpertemperatur Trommelfell"
+    extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.md:
+      title: "SD MII ICU Koerpertemperatur unter der Zunge"
+    extern-sd-mii-icu-koerpertemperatur-vaginal.md:
+      title: "SD MII ICU Koerpertemperatur vaginal"
+    extern-sd-mii-icu-linksatrialer-druck.md:
+      title: "SD MII ICU Linksatrialer Druck"
+    extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.md:
+      title: "SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung"
+    extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.md:
+      title: "SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung"
+    extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.md:
+      title: "SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung"
+    extern-sd-mii-icu-linksventrikulaerer-druck.md:
+      title: "SD MII ICU Linksventrikulaerer Druck"
+    extern-sd-mii-icu-linksventrikulaerer-herzindex.md:
+      title: "SD MII ICU Linksventrikulaerer Herzindex"
+    extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.md:
+      title: "SD MII ICU Linksventrikulaeres Schlagvolumen"
+    extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.md:
+      title: "SD MII ICU Linksventrikulaeres Schlagvolumenindex"
+    extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.md:
+      title: "SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung"
+    extern-sd-mii-icu-monitoring-und-vitaldaten.md:
+      title: "SD MII ICU Monitoring und Vitaldaten"
+    extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.md:
+      title: "SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie"
+    extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.md:
+      title: "SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie"
+    extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.md:
+      title: "SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie"
+    extern-sd-mii-icu-pulmonalarterieller-blutdruck.md:
+      title: "SD MII ICU Pulmonalarterieller Blutdruck"
+    extern-sd-mii-icu-pulmonalarterieller-wedge-druck.md:
+      title: "SD MII ICU Pulmonalarterieller Wedge Druck"
+    extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.md:
+      title: "SD MII ICU Pulmonalvaskulaerer Widerstandsindex"
+    extern-sd-mii-icu-puls.md:
+      title: "SD MII ICU Puls"
+    extern-sd-mii-icu-rechtsatrialer-druck.md:
+      title: "SD MII ICU Rechtsatrialer Druck"
+    extern-sd-mii-icu-rechtsventrikulaerer-druck.md:
+      title: "SD MII ICU Rechtsventrikulaerer Druck"
+    extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.md:
+      title: "SD MII ICU Sonstige pulsatile Druecke Generisch"
+    extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.md:
+      title: "SD MII ICU Systemischer Vaskulaerer Widerstandsindex"
+    extern-sd-mii-icu-zentralvenoeser-blutdruck.md:
+      title: "SD MII ICU Zentralvenoeser Blutdruck"
+    # END generated: ISiK-hosted profile pages
   capability-statements.md:
     title: Capability Statements
   search-parameters.md: # OPTIONAL (0..1) — see docs/optional-pages.md
@@ -962,6 +1064,10 @@ parameters:
     - beispiele # module's raw JSON examples, kept at their source location (structure-preserving transfer)
   path-pages:
     - input/intro-notes # Custom introductory notes
+  # Jekyll data written by the external-profiles build step
+  # (Gefyra/ig-external-profiles-action, see external-profiles.yaml):
+  # site.data.external_profiles lists the ISiK-hosted profiles rendered here.
+  path-data: input/data
   # ── Multi-language (e.g. kerndatensatz-basis uses the same model) ──────────
   # English is the DEFAULT rendering language, German the additional one. The MII
   # naming conventions prefer German for a conformance resource's description/

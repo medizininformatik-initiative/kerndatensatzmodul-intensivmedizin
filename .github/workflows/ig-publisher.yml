@@ -348,6 +348,29 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: bash scripts/seed-comparison-cache.sh
 
+      - name: Download the pinned IG Publisher
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # IG Publisher pinned + checksum-verified (fixed versions; same jar as go-publish.yml).
+          publisher_url="https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
+          curl --fail --location --silent --show-error "${publisher_url}" --output "${RUNNER_TEMP}/publisher.jar"
+          echo "${PUBLISHER_SHA256}  ${RUNNER_TEMP}/publisher.jar" | sha256sum --check
+
+      # The ISiK-hosted ICU profiles (sd-mii-icu-*) live in de.gematik.isik, and the
+      # IG Publisher renders only the IG's own profiles. This step renders them in a
+      # throwaway helper IG with the same publisher jar and writes the fragments to
+      # input/includes/extern-* (gitignored); the pages input/pagecontent/extern-*.md
+      # include them. No ISiK StructureDefinition enters this IG's package.
+      # Needs the primed package cache above (ISiK ships without snapshots).
+      # Config: external-profiles.yaml (scripts/gen-external-profiles.py).
+      - name: Render the ISiK-hosted profiles (external profiles)
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        uses: Gefyra/ig-external-profiles-action@2e978a88629ab199d4ed2d1f824f53bf051d622a # v1.3.0
+        with:
+          publisher-jar: ${{ runner.temp }}/publisher.jar
+
       - name: Seiten aus dem Build erzeugen
         if: ${{ steps.build.outputs.mode == 'full' }}
         shell: bash
@@ -362,10 +385,6 @@ jobs:
           TX_URL: ${{ steps.tx.outputs.tx }}
         run: |
           set -euo pipefail
-          # IG Publisher pinned + checksum-verified (fixed versions; same jar as go-publish.yml).
-          publisher_url="https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
-          curl --fail --location --silent --show-error "${publisher_url}" --output "${RUNNER_TEMP}/publisher.jar"
-          echo "${PUBLISHER_SHA256}  ${RUNNER_TEMP}/publisher.jar" | sha256sum --check
           # -fhir-settings allowlists the local SU-TermServ nginx proxy
           # (http://127.0.0.1:8090) for the publisher's terminology access:
           # publisher 2.3.1+ SSRF hardening can refuse plain-HTTP/private-

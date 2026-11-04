@@ -171,12 +171,16 @@ def build(lang, mod, isik, pin):
     note = (('Von der gematik gehostet und versioniert; dieser Leitfaden listet sie '
              'als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten '
              'Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem '
-             'bewussten Pin-Wechsel. Links &ouml;ffnen Simplifier.')
+             'bewussten Pin-Wechsel. Jeder Link &ouml;ffnet das in diesem Leitfaden '
+             'gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); '
+             'die Profile selbst bleiben im ISiK-Paket.')
             if lang == 'de' else
             ('Hosted and versioned by gematik; this guide lists them as clinical '
              'content of the ICU core data set. Generated from the pinned package '
              'version &mdash; the list only changes with a deliberate pin bump. '
-             'Links open Simplifier.'))
+             'Each link opens the profile rendered in this guide (differential, '
+             'snapshot, must support, definitions); the profiles themselves stay in '
+             'the ISiK package.'))
     out.append(f'<p class="icu-note"><b>{t2}</b><br>{note}</p>')
     out.append('<div class="icu-acc isik">')
     generics = sorted(i for i in isik if i.endswith('-generisch')
@@ -197,7 +201,7 @@ def build(lang, mod, isik, pin):
                    f'</summary><div class="body"><div class="items">')
         for pid in members:
             rt, ptitle, url = isik[pid]
-            out.append(f'<a href="https://simplifier.net/resolve?canonical={url}">'
+            out.append(f'<a href="extern-{pid}.html">'
                        f'{html.escape(short(ptitle, drop))}</a>')
         out.append('</div></div></details>')
     out.append('</div>')
