@@ -141,10 +141,12 @@ jobs:
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
-      # Compile FSH in the job so the validator checks the current FSH source,
-      # not the committed (possibly stale) fsh-generated/. Same pinned SUSHI as
-      # the .NET job above; overridable via the repo variable.
-      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.20.1' }}
+      # SUSHI_VERSION is deliberately NOT set: at the pinned SHA the reusable
+      # workflow compiles FSH BEFORE its fhir-pkg-tool step generates the
+      # dependency snapshots, so SUSHI fails on the differential-only ISiK
+      # base profiles ("... is missing a snapshot"). The job therefore
+      # validates the committed fsh-generated/ until the template runs the
+      # snapshot step first.
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.10.4' }}
