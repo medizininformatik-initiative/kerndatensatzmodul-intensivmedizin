@@ -113,7 +113,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_Beatmung",
   "title": "MII PR ICU Beatmung",
   "status": "active",
@@ -195,18 +195,6 @@
         ]
       },
       {
-        "id": "Procedure.encounter",
-        "path": "Procedure.encounter",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
         "type": [
@@ -218,17 +206,6 @@
       {
         "id": "Procedure.recorder",
         "path": "Procedure.recorder",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
-            ]
-          }
-        ],
         "mustSupport": true
       }
     ]
