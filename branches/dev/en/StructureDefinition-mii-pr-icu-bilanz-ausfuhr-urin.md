@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin | *Version*:2027.0.0 |
-| Active as of 2026-11-03 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Urin |
+| Active as of 2026-11-04 | *Computable Name*:MII_PR_ICU_Bilanz_Ausfuhr_Urin |
 
 "Balance export urine (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Urin",
   "title" : "MII PR ICU Bilanz Ausfuhr Urin",
   "status" : "active",
-  "date" : "2026-11-03T22:17:56+00:00",
+  "date" : "2026-11-04T12:01:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

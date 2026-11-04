@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt | *Version*:2027.0.0 |
-| Draft as of 2026-11-03 | *Computable Name*:MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt |
+| Draft as of 2026-11-04 | *Computable Name*:MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt |
 
 **Usages:**
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-unters
   "name" : "MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt",
   "title" : "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt",
   "status" : "draft",
-  "date" : "2026-11-03T22:17:56+00:00",
+  "date" : "2026-11-04T12:01:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
