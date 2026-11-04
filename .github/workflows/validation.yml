@@ -34,7 +34,8 @@
 #            bootstrap keeps it).
 #
 # Fixed versions: the reusable workflows are pinned to a FIXED commit SHA
-#            of mii-kds-module-template. They moved there from
+#            (Java job: mii-kds-module-template; .NET job: still
+#            kerndatensatz-meta, see that job). They moved to the template from
 #            kerndatensatz-meta (meta #251); meta master is frozen only so that
 #            old SHA pins keep resolving and gets no further fixes.
 #            SUSHI + Java-validator versions are pinned with a repo-var override.
@@ -98,7 +99,11 @@ jobs:
     # ON by default, and only on created modules — the placeholder
     # template repo cannot produce clean SUSHI output for validation.
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.dotnet-validation-guard.outputs.has_creds == 'true' }}
-    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@9d464cddb17985b41df9ab6e0a5ff95870f902f2 # mii-kds-module-template dev @ 2026-11-02 (#49)
+    # Stays on kerndatensatz-meta for now: the template's version of this
+    # workflow (firely-terminal-pipeline v0.8.25) fails SUSHI on the
+    # differential-only ISiK base profiles ("... is missing a snapshot"),
+    # while the meta version (v0.6.7) passes. Only the Java job moved.
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-09-14
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       # Pinned SUSHI (fixed versions); overridable via the repo variable.
