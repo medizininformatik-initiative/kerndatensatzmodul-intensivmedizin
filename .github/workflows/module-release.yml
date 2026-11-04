@@ -266,6 +266,13 @@ jobs:
           sed -i '/^parameters:/a\  version-comparison: n/a' sushi-config.yaml
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
 
+      # Renders the ISiK-hosted ICU profiles into input/includes/extern-*
+      # (same step as ig-publisher.yml; HTML only, nothing enters the package).
+      - name: Render the ISiK-hosted profiles (external profiles)
+        uses: Gefyra/ig-external-profiles-action@2e978a88629ab199d4ed2d1f824f53bf051d622a # v1.3.0
+        with:
+          publisher-jar: ${{ runner.temp }}/publisher.jar
+
       - name: Build the IG (SUSHI + IG Publisher)
         shell: bash
         env:

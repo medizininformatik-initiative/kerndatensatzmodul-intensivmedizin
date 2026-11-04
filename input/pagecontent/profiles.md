@@ -151,83 +151,84 @@
 </div>
 </div></details>
 </div>
-<p class="icu-note"><b>ISiK-hosted profiles &mdash; de.gematik.isik 6.0.0</b><br>Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version &mdash; the list only changes with a deliberate pin bump. Links open Simplifier.</p>
+<p class="icu-note"><b>ISiK-hosted profiles &mdash; de.gematik.isik 6.0.0</b><br>Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version &mdash; the list only changes with a deliberate pin bump. Each link opens the profile rendered in this guide (differential, snapshot, must support, definitions); the profiles themselves stay in the ISiK package.</p>
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
 > The Monitoring and
 > Vital Signs profiles of this module are published inside the ISiK package
-> `de.gematik.isik` (6.0.0) as `sd-mii-icu-*` and are therefore rendered by
-> that package, not by this guide. The source guide carried one page per
-> profile; those pages contained only the generic-profile reference sentence,
-> which is preserved below once, followed by the complete profile list.
+> `de.gematik.isik` (6.0.0) as `sd-mii-icu-*`. They are not part of this
+> guide's package; this guide renders them from the pinned ISiK package on
+> one page per profile. The source guide carried one page per profile; those
+> pages contained only the generic-profile reference sentence, which is
+> preserved below once, followed by the complete profile list.
 {: .ig-highlight .ig-highlight-blue}
 
 > Original wording of the source pages (per profile): ""Body weight (Observation)" is a characteristic of the generic profile for monitoring and vital data (Observation). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model."
 >
 > For the pulsatile pressures additionally: "This is a pulsatile pressure. In addition to the properties of the generic profile for Monitoring and vital data, the special features described on the page of the profile for other pulsatile pressures generic (Observation) also apply to this. See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model."
 
-The individual profiles are characteristics of the generic profile [Monitoring and vital data (Observation)](https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten). See there for details on the items and their relation to the Logical Model.
+The individual profiles are characteristics of the generic profile [Monitoring and vital data (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.html). See there for details on the items and their relation to the Logical Model.
 
 <a id="isik-hosted-profiles"></a>
 <div class="icu-acc isik">
 <details>
 <summary>Generic profiles<span class="cnt">3</span></summary><div class="body"><div class="items">
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck">zerebraler Perfusionsdruck (seit ISiK 6 dort gepflegt)</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch">Koerpertemperatur Generisch</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten">Monitoring und Vitaldaten</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch">Sonstige pulsatile Druecke Generisch</a>
+<a href="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html">zerebraler Perfusionsdruck (seit ISiK 6 dort gepflegt)</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-generisch.html">Koerpertemperatur Generisch</a>
+<a href="extern-sd-mii-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a>
+<a href="extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html">Sonstige pulsatile Druecke Generisch</a>
 </div></div></details>
 <details>
 <summary>Monitoring and vital sign specialisations<span class="cnt">25</span></summary><div class="body"><div class="items">
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen">Herzzeitvolumen</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht">Ideales Koerpergewicht</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp">Intrakranieller Druck ICP</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig">Koerpergewicht Percentil Altersabhaengig</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig">Koerpergroesse Percentil</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck">Linksatrialer Druck</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung">Linksventrikulaerer Herzindex durch Indikatorverduennung</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung">Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd">Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck">Linksventrikulaerer Druck</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex">Linksventrikulaerer Herzindex</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen">Linksventrikulaeres Schlagvolumen</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex">Linksventrikulaeres Schlagvolumenindex</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd">Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie">Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie">Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie">Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck">Pulmonalarterieller Blutdruck</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck">Pulmonalarterieller Wedge Druck</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex">Pulmonalvaskulaerer Widerstandsindex</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls">Puls</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck">Rechtsatrialer Druck</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck">Rechtsventrikulaerer Druck</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex">Systemischer Vaskulaerer Widerstandsindex</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck">Zentralvenoeser Blutdruck</a>
+<a href="extern-sd-mii-icu-herzzeitvolumen.html">Herzzeitvolumen</a>
+<a href="extern-sd-mii-icu-ideales-koerpergewicht.html">Ideales Koerpergewicht</a>
+<a href="extern-sd-mii-icu-intrakranieller-druck-icp.html">Intrakranieller Druck ICP</a>
+<a href="extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.html">Koerpergewicht Percentil Altersabhaengig</a>
+<a href="extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.html">Koerpergroesse Percentil</a>
+<a href="extern-sd-mii-icu-linksatrialer-druck.html">Linksatrialer Druck</a>
+<a href="extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.html">Linksventrikulaerer Herzindex durch Indikatorverduennung</a>
+<a href="extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.html">Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung</a>
+<a href="extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.html">Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung</a>
+<a href="extern-sd-mii-icu-linksventrikulaerer-druck.html">Linksventrikulaerer Druck</a>
+<a href="extern-sd-mii-icu-linksventrikulaerer-herzindex.html">Linksventrikulaerer Herzindex</a>
+<a href="extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.html">Linksventrikulaeres Schlagvolumen</a>
+<a href="extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.html">Linksventrikulaeres Schlagvolumenindex</a>
+<a href="extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.html">Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung</a>
+<a href="extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.html">Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie</a>
+<a href="extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.html">Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie</a>
+<a href="extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.html">Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie</a>
+<a href="extern-sd-mii-icu-pulmonalarterieller-blutdruck.html">Pulmonalarterieller Blutdruck</a>
+<a href="extern-sd-mii-icu-pulmonalarterieller-wedge-druck.html">Pulmonalarterieller Wedge Druck</a>
+<a href="extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.html">Pulmonalvaskulaerer Widerstandsindex</a>
+<a href="extern-sd-mii-icu-puls.html">Puls</a>
+<a href="extern-sd-mii-icu-rechtsatrialer-druck.html">Rechtsatrialer Druck</a>
+<a href="extern-sd-mii-icu-rechtsventrikulaerer-druck.html">Rechtsventrikulaerer Druck</a>
+<a href="extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.html">Systemischer Vaskulaerer Widerstandsindex</a>
+<a href="extern-sd-mii-icu-zentralvenoeser-blutdruck.html">Zentralvenoeser Blutdruck</a>
 </div></div></details>
 <details>
 <summary>Body temperature<span class="cnt">21</span></summary><div class="body"><div class="items">
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn">Stirn</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel">Achsel</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege">Atemwege</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut">Blut</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust">Brust</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule">Brustwirbelsaeule</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk">Gelenk</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule">Halswirbelsaeule</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase">Harnblase</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern">Kern</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste">Leiste</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule">Lendenwirbelsaeule</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard">Myokard</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal">nasal</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum">Nasen-Rachen-Raum</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal">rektal</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre">Speiseroehre</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn">Stirn</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell">Trommelfell</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge">unter der Zunge</a>
-<a href="https://simplifier.net/resolve?canonical=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal">vaginal</a>
+<a href="extern-sd-mii-icu-koerperkerntemperatur-stirn.html">Stirn</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-achsel.html">Achsel</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-atemwege.html">Atemwege</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-blut.html">Blut</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-brust.html">Brust</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.html">Brustwirbelsaeule</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-gelenk.html">Gelenk</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.html">Halswirbelsaeule</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-harnblase.html">Harnblase</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-kern.html">Kern</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-leiste.html">Leiste</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.html">Lendenwirbelsaeule</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-myokard.html">Myokard</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-nasal.html">nasal</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.html">Nasen-Rachen-Raum</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-rektal.html">rektal</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-speiseroehre.html">Speiseroehre</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-stirn.html">Stirn</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-trommelfell.html">Trommelfell</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.html">unter der Zunge</a>
+<a href="extern-sd-mii-icu-koerpertemperatur-vaginal.html">vaginal</a>
 </div></div></details>
 </div>
 

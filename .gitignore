@@ -17,6 +17,12 @@ input-cache/
 # The IG Publisher jar itself — downloaded, version-pinned, never committed.
 publisher.jar
 
+# Rendered ISiK-hosted profiles: written by the build step
+# Gefyra/ig-external-profiles-action from external-profiles.yaml (pages:
+# scripts/gen-external-profiles.py). HTML only, regenerated on every build.
+/input/includes/extern-*
+/input/data/external_profiles.json
+
 # --- Tooling ---
 node_modules/
 
