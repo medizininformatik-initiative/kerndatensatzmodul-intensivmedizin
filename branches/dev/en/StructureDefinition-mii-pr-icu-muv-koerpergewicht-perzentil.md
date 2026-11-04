@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergewicht_Perzentil",
   "title" : "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-04T16:11:15+00:00",
+  "date" : "2026-11-04T23:09:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

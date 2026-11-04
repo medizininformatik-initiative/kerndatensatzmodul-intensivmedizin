@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-04T16:11:15+00:00",
+  "date" : "2026-11-04T23:09:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

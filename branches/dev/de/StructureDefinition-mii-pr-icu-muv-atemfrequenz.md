@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-04T16:11:15+00:00",
+  "date" : "2026-11-04T23:09:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
