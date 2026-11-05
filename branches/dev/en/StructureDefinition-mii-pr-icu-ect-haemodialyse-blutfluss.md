@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss | *Version*:2027.0.0 |
-| Active as of 2026-11-04 | *Computable Name*:MII_PR_ICU_ECT_Haemodialyse_Blutfluss |
+| Active as of 2026-11-05 | *Computable Name*:MII_PR_ICU_ECT_Haemodialyse_Blutfluss |
 
 Observation "Hemodialysis blood flow" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ha
   "name" : "MII_PR_ICU_ECT_Haemodialyse_Blutfluss",
   "title" : "MII PR ICU Haemodialyse Blutfluss",
   "status" : "active",
-  "date" : "2026-11-04T23:09:25+00:00",
+  "date" : "2026-11-05T13:03:43+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

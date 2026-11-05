@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-04 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Observation_Pupillenlichtreaktion |
+| Draft Stand: 2026-11-05 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Observation_Pupillenlichtreaktion |
 
  
 Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv. 
@@ -42,7 +42,7 @@ Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, t
   "name" : "MII_VS_ICU_Code_Observation_Pupillenlichtreaktion",
   "title" : "MII VS ICU Code Observation Pupillenlichtreaktion",
   "status" : "draft",
-  "date" : "2026-11-04T23:09:25+00:00",
+  "date" : "2026-11-05T13:03:43+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
