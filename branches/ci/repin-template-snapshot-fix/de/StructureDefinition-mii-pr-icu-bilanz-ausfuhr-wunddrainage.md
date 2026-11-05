@@ -92,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage",
   "title" : "MII PR ICU Bilanz Ausfuhr Wunddrainage",
   "status" : "active",
-  "date" : "2026-11-05T09:22:27+00:00",
+  "date" : "2026-11-05T10:00:13+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

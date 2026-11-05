@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage",
   "title" : "MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
   "status" : "active",
-  "date" : "2026-11-05T09:22:27+00:00",
+  "date" : "2026-11-05T10:00:13+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
