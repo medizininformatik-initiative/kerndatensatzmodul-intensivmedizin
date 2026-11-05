@@ -195,6 +195,18 @@
         ]
       },
       {
+        "id": "Procedure.encounter",
+        "path": "Procedure.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
         "type": [
@@ -206,6 +218,17 @@
       {
         "id": "Procedure.recorder",
         "path": "Procedure.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]
