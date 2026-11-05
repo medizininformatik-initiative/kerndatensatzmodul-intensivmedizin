@@ -98,7 +98,7 @@ jobs:
     # ON by default, and only on created modules — the placeholder
     # template repo cannot produce clean SUSHI output for validation.
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.dotnet-validation-guard.outputs.has_creds == 'true' }}
-    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@9d464cddb17985b41df9ab6e0a5ff95870f902f2 # mii-kds-module-template dev @ 2026-11-02 (#49)
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@793a50274dfa00c24ac386a84a63f3fa527a4e2a # mii-kds-module-template dev @ 2026-11-05 (#52)
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       # Pinned SUSHI (fixed versions); overridable via the repo variable.
@@ -135,18 +135,18 @@ jobs:
     name: HL7 Java validator (SU-TermServ)
     needs: java-validation-guard
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.java-validation-guard.outputs.has_cert == 'true' }}
-    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_java_validation.yml@9d464cddb17985b41df9ab6e0a5ff95870f902f2 # mii-kds-module-template dev @ 2026-11-02 (#49)
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_java_validation.yml@793a50274dfa00c24ac386a84a63f3fa527a4e2a # mii-kds-module-template dev @ 2026-11-05 (#52)
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
-      # SUSHI_VERSION is deliberately NOT set: at the pinned SHA the reusable
-      # workflow compiles FSH BEFORE its fhir-pkg-tool step generates the
-      # dependency snapshots, so SUSHI fails on the differential-only ISiK
-      # base profiles ("... is missing a snapshot"). The job therefore
-      # validates the committed fsh-generated/ until the template runs the
-      # snapshot step first.
+      # Compile FSH in the job so the validator checks the current FSH source,
+      # not the committed fsh-generated/. The reusable workflow snapshots the
+      # dependencies (fhir-pkg-tool) before SUSHI since template #52, so the
+      # differential-only ISiK base profiles no longer break SUSHI. Same
+      # pinned SUSHI as the .NET job above; overridable via the repo variable.
+      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.20.1' }}
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.10.4' }}
