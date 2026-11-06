@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit | *Version*:2027.0.0 |
-| Draft as of 2026-11-05 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit |
+| Draft as of 2026-11-06 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit |
 
 "Balance import of oral fluids (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](StructureDefinition-mii-pr-icu-bilanz.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Orale_Fluessigkeit",
   "title" : "MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
   "status" : "draft",
-  "date" : "2026-11-05T13:03:43+00:00",
+  "date" : "2026-11-06T21:59:35+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

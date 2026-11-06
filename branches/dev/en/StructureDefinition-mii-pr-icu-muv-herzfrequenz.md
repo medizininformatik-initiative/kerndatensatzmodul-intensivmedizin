@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz | *Version*:2027.0.0 |
-| Active as of 2026-11-05 | *Computable Name*:MII_PR_ICU_MUV_Herzfrequenz |
+| Active as of 2026-11-06 | *Computable Name*:MII_PR_ICU_MUV_Herzfrequenz |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-he
   "name" : "MII_PR_ICU_MUV_Herzfrequenz",
   "title" : "MII PR ICU MUV Herzfrequenz",
   "status" : "active",
-  "date" : "2026-11-05T13:03:43+00:00",
+  "date" : "2026-11-06T21:59:35+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
