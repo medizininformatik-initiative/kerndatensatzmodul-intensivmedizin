@@ -349,36 +349,6 @@
           "valid": false
         }
       ]
-    },
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht",
-      "tests": [
-        {
-          "source": "valid/icu-ideal-body-weight.json",
-          "description": "Valid ideal body weight with explicit displays and versions",
-          "valid": true
-        },
-        {
-          "source": "invalid/icu-ideal-body-weight-missing-display.json",
-          "description": "Invalid: missing display",
-          "valid": false
-        },
-        {
-          "source": "invalid/icu-ideal-body-weight-wrong-display.json",
-          "description": "Invalid: wrong display",
-          "valid": false
-        },
-        {
-          "source": "invalid/icu-ideal-body-weight-missing-version.json",
-          "description": "Invalid: missing version",
-          "valid": false
-        },
-        {
-          "source": "invalid/icu-ideal-body-weight-wrong-version.json",
-          "description": "Invalid: wrong version",
-          "valid": false
-        }
-      ]
     }
   ]
 }

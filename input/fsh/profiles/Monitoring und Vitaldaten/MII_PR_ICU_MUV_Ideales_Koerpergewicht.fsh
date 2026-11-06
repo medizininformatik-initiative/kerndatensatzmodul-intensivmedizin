@@ -36,28 +36,22 @@ Title: "MII PR ICU MUV Ideales Koerpergewicht"
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #50064-5
+* code.coding[loinc] ^patternCoding.display = "Ideal body weight"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
-* code.coding[loinc].display 1..1 MS
-* code.coding[loinc].display = "Ideal body weight"
-* code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
+* code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #170804003
+* code.coding[sct] ^patternCoding.display = "Ideal body weight (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
-* code.coding[sct].display 1..1 MS
-* code.coding[sct].display = "Ideal body weight (observable entity)"
-* code.coding[sct].version 1..1 MS
-* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #188796
+* code.coding[IEEE-11073] ^patternCoding.display = "Ideal body weight (IBW)"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
-* code.coding[IEEE-11073].display 1..1 MS
-* code.coding[IEEE-11073].display = "MDC_MASS_BODY_EST_IBW"
-* code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"
+* code.coding[IEEE-11073].display MS
 
 * subject MS
 
