@@ -15,12 +15,7 @@
       "tests": [
         {
           "source": "valid/icu-birth-length.json",
-          "description": "Valid birth length with birth-specific SNOMED and optional ISO/IEEE code",
-          "valid": true
-        },
-        {
-          "source": "valid/icu-birth-length-without-iso.json",
-          "description": "Valid birth length without optional ISO/IEEE coding or inherited recumbent-body-height code",
+          "description": "Valid birth length with birth-specific SNOMED and required ISO/IEEE code",
           "valid": true
         },
         {
@@ -72,6 +67,21 @@
           "source": "invalid/icu-birth-length-general-loinc.json",
           "description": "Invalid: generic LOINC 8302-2 is excluded from this specialised profile",
           "valid": false
+        },
+        {
+          "source": "invalid/icu-koerperlaenge-bei-geburt-missing-ieee.json",
+          "description": "Invalid: missing ieee",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerperlaenge-bei-geburt-missing-version.json",
+          "description": "Invalid: missing version",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerperlaenge-bei-geburt-wrong-version.json",
+          "description": "Invalid: wrong version",
+          "valid": false
         }
       ]
     },
@@ -80,12 +90,12 @@
       "tests": [
         {
           "source": "valid/icu-body-height.json",
-          "description": "Valid body height without recumbent-length or birth-length codes",
+          "description": "Valid body height with required IEEE coding and without recumbent-length or birth-length codes",
           "valid": true
         },
         {
           "source": "valid/icu-body-height-with-iso.json",
-          "description": "Valid body height with the optional general patient-height ISO code",
+          "description": "Valid body height with the required general patient-height ISO code",
           "valid": true
         },
         {
@@ -106,6 +116,21 @@
         {
           "source": "invalid/icu-body-height-birth-iso.json",
           "description": "Invalid: length-specific code 68058 in body-height profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerpergroesse-missing-ieee.json",
+          "description": "Invalid: missing ieee",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerpergroesse-missing-version.json",
+          "description": "Invalid: missing version",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerpergroesse-wrong-version.json",
+          "description": "Invalid: wrong version",
           "valid": false
         }
       ]
@@ -185,12 +210,27 @@
         },
         {
           "source": "valid/icu-body-length-with-iso.json",
-          "description": "Valid recumbent body length with optional general patient-height ISO code",
+          "description": "Valid recumbent body length with required general patient-height ISO code",
           "valid": true
         },
         {
           "source": "invalid/icu-body-length-general-loinc.json",
           "description": "Invalid: generic LOINC 8302-2 is excluded from this specialised profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerperlaenge-missing-ieee.json",
+          "description": "Invalid: missing ieee",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerperlaenge-missing-version.json",
+          "description": "Invalid: missing version",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerperlaenge-wrong-version.json",
+          "description": "Invalid: wrong version",
           "valid": false
         }
       ]
@@ -231,6 +271,21 @@
         {
           "source": "invalid/icu-body-weight-ieee-68059.json",
           "description": "Reject ISO/IEEE coding belonging to the other weight profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerpergewicht-missing-ieee.json",
+          "description": "Invalid: missing ieee",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerpergewicht-missing-version.json",
+          "description": "Invalid: missing version",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-koerpergewicht-wrong-version.json",
+          "description": "Invalid: wrong version",
           "valid": false
         }
       ]
@@ -276,6 +331,21 @@
         {
           "source": "invalid/icu-birth-weight-general-loinc.json",
           "description": "Invalid: generic LOINC 29463-7 is excluded from this specialised profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-geburtsgewicht-missing-ieee.json",
+          "description": "Invalid: missing ieee",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-geburtsgewicht-missing-version.json",
+          "description": "Invalid: missing version",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-geburtsgewicht-wrong-version.json",
+          "description": "Invalid: wrong version",
           "valid": false
         }
       ]

@@ -51,7 +51,7 @@
           ],
           "rules": "closed"
         },
-        "min": 2,
+        "min": 3,
         "mustSupport": true
       },
       {
@@ -66,6 +66,13 @@
         }
       },
       {
+        "id": "Observation.code.coding:sct.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
@@ -77,14 +84,29 @@
         }
       },
       {
+        "id": "Observation.code.coding:loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2.83",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
+        "min": 1,
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
           "code": "68059"
         }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2024-12-05",
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",

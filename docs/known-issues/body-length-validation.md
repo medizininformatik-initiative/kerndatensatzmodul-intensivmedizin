@@ -4,7 +4,7 @@ Related issues: [NRA-592](https://imi-uka.atlassian.net/browse/NRA-592), [NRA-59
 
 The recumbent body-length, birth-length and birth-weight profiles derive from the module-owned monitoring base. They intentionally use measurement-specific codes rather than the general body-height or body-weight LOINC codes:
 
-| Profile | Required codes | Optional IEEE 11073 code |
+| Profile | Required codes | Required IEEE 11073 code |
 | --- | --- | --- |
 | Recumbent body length | LOINC 8306-3; SNOMED CT 1149101003 | 68060 |
 | Birth length | SNOMED CT 169886007 | 68058 |
@@ -25,4 +25,6 @@ Consequently these two positive regression cases currently produce one error eac
 
 Their expected validity remains true in the test manifest to express the intended profile behaviour. The automatic validator check has not been disabled or filtered, and the cases have not been relabelled as invalid. A validation job running these cases can therefore fail. Retaining the specific codes without 8302-2 is an explicit modelling decision; this is not a fully passing validation result.
 
-The offline audit of all 47 regression cases produced 45 expected outcomes and the two discrepancies above. Birth length and birth weight passed their positive structural cases without the general LOINC codes. SUSHI 3.20.1 compiled the profiles with zero errors. Online terminology validation remains pending.
+The offline audit of all 61 regression cases produced 59 expected outcomes and the two discrepancies above. Birth length and birth weight passed their positive structural cases without the general LOINC codes. SUSHI 3.20.1 compiled the profiles with zero errors. Online terminology validation remains pending.
+
+Terminology editions for the five body-measurement profiles: LOINC 2.83, SNOMED CT International 2026-07-01 (`http://snomed.info/sct/900000000000207008/version/20260701`), and IEEE 11073 MDC nomenclature 2024-12-05. Each measurement Coding must include its fixed version; the IEEE measurement coding is required in each profile.

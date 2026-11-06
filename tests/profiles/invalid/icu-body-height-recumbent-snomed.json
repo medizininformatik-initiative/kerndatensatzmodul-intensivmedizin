@@ -22,7 +22,8 @@
       {
         "system": "http://loinc.org",
         "code": "8302-2",
-        "display": "Body height"
+        "display": "Body height",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
@@ -32,7 +33,13 @@
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "1149101003"
+        "code": "1149101003",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68060",
+        "version": "2024-12-05"
       }
     ]
   },

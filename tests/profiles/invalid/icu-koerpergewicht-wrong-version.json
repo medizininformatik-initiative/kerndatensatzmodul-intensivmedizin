@@ -1,0 +1,54 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-icu-muv-koerpergewicht",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7",
+        "display": "Body weight",
+        "version": "unsupported-version"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "27113001",
+        "display": "Body weight (observable entity)",
+        "version": "unsupported-version"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68063",
+        "version": "unsupported-version"
+      }
+    ]
+  },
+  "subject": {
+    "display": "Example patient"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  },
+  "valueQuantity": {
+    "value": 70,
+    "unit": "kilogram",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  }
+}

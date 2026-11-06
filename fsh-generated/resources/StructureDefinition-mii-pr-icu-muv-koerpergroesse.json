@@ -77,6 +77,13 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category:sct.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category:sct.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
@@ -99,13 +106,20 @@
           ],
           "rules": "closed"
         },
-        "min": 2,
+        "min": 3,
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2.83",
         "mustSupport": true
       },
       {
@@ -132,6 +146,13 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding:snomed.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:snomed.display",
         "path": "Observation.code.coding.display",
         "mustSupport": true
@@ -140,12 +161,19 @@
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
           "code": "68060"
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2024-12-05",
         "mustSupport": true
       },
       {

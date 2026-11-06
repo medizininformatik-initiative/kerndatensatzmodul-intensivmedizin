@@ -21,7 +21,13 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "364589006"
+        "code": "364589006",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68059",
+        "version": "2024-12-05"
       }
     ]
   },

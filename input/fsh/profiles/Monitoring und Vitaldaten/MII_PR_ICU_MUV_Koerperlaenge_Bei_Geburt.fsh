@@ -9,12 +9,12 @@ Description: "Body length measured at birth, expressed in centimetres. The effec
 * ^status = #draft
 * obeys mii-icu-val-xor-dar
 
-* code.coding 1.. MS
+* code.coding 2.. MS
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 0..0
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.code = #169886007
-* code.coding[IEEE-11073] 0..1 MS
+* code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.code = #68058
 
 * value[x] only Quantity
@@ -22,3 +22,9 @@ Description: "Body length measured at birth, expressed in centimetres. The effec
 * valueQuantity.unit 1.. MS
 * valueQuantity.code = #cm
 * valueQuantity.unit = "centimeter"
+
+// Fixed terminology editions for reproducible measurement coding.
+* code.coding[sct].version 1..1 MS
+* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[IEEE-11073].version = "2024-12-05"

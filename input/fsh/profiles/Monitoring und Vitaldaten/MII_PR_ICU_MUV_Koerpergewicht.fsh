@@ -37,7 +37,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
-* code.coding 2..3 MS
+* code.coding 3..3 MS
 
 * subject MS
 
@@ -61,7 +61,17 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * code.coding[loinc-zusatzcode] 0..0
 * code.coding ^slicing.rules = #closed
 
-// Optional ISO/IEEE 11073 coding specific to this measurement.
-* code.coding contains IEEE-11073 0..1 MS
+// Required ISO/IEEE 11073 coding specific to this measurement.
+* code.coding contains IEEE-11073 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #68063
+
+// Fixed terminology editions for reproducible measurement coding.
+* code.coding[loinc].version 1..1 MS
+* code.coding[loinc].version = "2.83"
+* code.coding[snomed].version 1..1 MS
+* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[IEEE-11073].version = "2024-12-05"
+* category[sct].coding.version 1..1 MS
+* category[sct].coding.version = "http://snomed.info/sct/900000000000207008/version/20260701"

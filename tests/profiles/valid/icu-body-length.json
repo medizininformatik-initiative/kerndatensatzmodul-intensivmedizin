@@ -22,12 +22,19 @@
       {
         "system": "http://snomed.info/sct",
         "code": "1149101003",
-        "display": "Recumbent body height (observable entity)"
+        "display": "Recumbent body height (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
         "code": "8306-3",
-        "display": "Body height --lying"
+        "display": "Body height --lying",
+        "version": "2.83"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68060",
+        "version": "2024-12-05"
       }
     ]
   },

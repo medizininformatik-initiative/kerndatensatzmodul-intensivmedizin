@@ -9,13 +9,13 @@ Description: "Body weight measured at birth, expressed in kilograms. The effecti
 * ^status = #draft
 * obeys mii-icu-val-xor-dar
 
-* code.coding 2.. MS
+* code.coding 3.. MS
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.code = #8339-4
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.code = #364589006
-* code.coding[IEEE-11073] 0..1 MS
+* code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.code = #68059
 
 * value[x] only Quantity
@@ -23,3 +23,11 @@ Description: "Body weight measured at birth, expressed in kilograms. The effecti
 * valueQuantity.unit 1.. MS
 * valueQuantity.code = #kg
 * valueQuantity.unit = "kilogram"
+
+// Fixed terminology editions for reproducible measurement coding.
+* code.coding[loinc].version 1..1 MS
+* code.coding[loinc].version = "2.83"
+* code.coding[sct].version 1..1 MS
+* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[IEEE-11073].version = "2024-12-05"

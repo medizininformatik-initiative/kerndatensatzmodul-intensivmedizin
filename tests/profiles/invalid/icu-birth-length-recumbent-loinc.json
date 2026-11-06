@@ -21,15 +21,18 @@
       {
         "system": "http://snomed.info/sct",
         "code": "169886007",
-        "display": "Birth length (observable entity)"
+        "display": "Birth length (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "68058"
+        "code": "68058",
+        "version": "2024-12-05"
       },
       {
         "system": "http://loinc.org",
-        "code": "8306-3"
+        "code": "8306-3",
+        "version": "2.83"
       }
     ]
   },

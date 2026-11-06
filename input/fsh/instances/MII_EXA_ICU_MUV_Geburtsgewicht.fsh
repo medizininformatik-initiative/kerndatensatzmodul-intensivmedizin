@@ -11,3 +11,6 @@ Description: "A birth weight of 3.5 kilograms."
 * effectiveDateTime = "2025-01-01T09:30:00+01:00"
 * valueQuantity.value = 3.5
 * code.coding[IEEE-11073] = $ieee-11073#68059
+* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* code.coding[IEEE-11073].version = "2024-12-05"
+* code.coding[loinc].version = "2.83"

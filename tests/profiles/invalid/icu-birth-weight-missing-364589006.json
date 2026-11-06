@@ -21,7 +21,13 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8339-4"
+        "code": "8339-4",
+        "version": "2.83"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68059",
+        "version": "2024-12-05"
       }
     ]
   },
