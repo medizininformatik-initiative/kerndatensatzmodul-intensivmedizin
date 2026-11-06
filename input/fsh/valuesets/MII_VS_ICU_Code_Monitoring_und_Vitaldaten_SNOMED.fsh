@@ -51,3 +51,4 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $sct#364090009 "Systemic arterial pressure (observable entity)"
 * include $sct#251408004 "Carbon dioxide output (observable entity)"
 * include $sct#169886007 "Birth length (observable entity)"
+* include $sct#364589006 "Birth weight (observable entity)"

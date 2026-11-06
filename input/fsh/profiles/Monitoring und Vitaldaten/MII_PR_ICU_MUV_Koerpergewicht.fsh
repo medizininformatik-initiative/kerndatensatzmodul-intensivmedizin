@@ -20,7 +20,8 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * category[sct].coding 0.. MS
 * category[sct].coding.system 1..1 MS
 * category[sct].coding.code 1..1 MS
-* category[sct].coding = $sct#248326004
+* category[sct] ^patternCodeableConcept.coding.system = $sct
+* category[sct] ^patternCodeableConcept.coding.code = #248326004
 * category[sct].coding.display 0..1 MS
 
 * code MS
@@ -36,7 +37,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
-* code.coding 2..2 MS
+* code.coding 2..3 MS
 
 * subject MS
 
@@ -56,3 +57,11 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * valueQuantity.code MS
 
 * component MS
+// Birth weight is represented by its dedicated profile.
+* code.coding[loinc-zusatzcode] 0..0
+* code.coding ^slicing.rules = #closed
+
+// Optional ISO/IEEE 11073 coding specific to this measurement.
+* code.coding contains IEEE-11073 0..1 MS
+* code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
+* code.coding[IEEE-11073] ^patternCoding.code = #68063

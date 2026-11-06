@@ -106,14 +106,16 @@
 </div>
 </div></details>
 <details>
-<summary>Monitoring and vital signs (module-owned)<span class="cnt">9</span></summary><div class="body">
+<summary>Monitoring and vital signs (module-owned)<span class="cnt">10</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a></p>
 <p>The module-owned base profile uses extensible terminology bindings: a suitable concept from the bound value set must be used when available; additional concepts are allowed when the value set does not cover the measurement. Body height, recumbent body length and birth length derive separately from this base. Their specialised coding slices are closed so that recumbent-length and birth-length codes cannot be used in the body-height profile. The general FHIR bodyheight code 8302-2 is shared; measurement-specific codes are defined only in the appropriate profile. Quantity units and specific measurement codes are constrained by each specialised profile.</p>
+<p>Body weight and birth weight remain sibling profiles derived from the German body-weight base. General body weight prohibits the inherited birth-weight LOINC slice. Birth weight requires LOINC 8339-4 and SNOMED CT 364589006, in addition to the shared FHIR body-weight code 29463-7. Optional ISO/IEEE 11073 codes are 68063 (general weight) and 68059 (birth weight), respectively. Both profiles use Quantity values in kilograms.</p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
+<a href="StructureDefinition-mii-pr-icu-muv-geburtsgewicht.html">Geburtsgewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html">Koerperlaenge Bei Geburt</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>

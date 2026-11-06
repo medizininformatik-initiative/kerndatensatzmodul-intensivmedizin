@@ -410,6 +410,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-geburtsgewicht"
+        },
+        "name": "Birth weight",
+        "description": "A birth weight of 3.5 kilograms.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-icu-ecmo"
         },
         "description": "Beispiel: MII PR ICU Extrakorporales Verfahren",
@@ -1017,6 +1025,14 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
         },
         "name": "MII PR ICU MUV Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
+        },
+        "name": "MII PR ICU MUV Geburtsgewicht",
+        "description": "Body weight measured at birth, expressed in kilograms. The effective time refers to the birth-weight measurement, even when documented later.",
         "exampleBoolean": false
       },
       {

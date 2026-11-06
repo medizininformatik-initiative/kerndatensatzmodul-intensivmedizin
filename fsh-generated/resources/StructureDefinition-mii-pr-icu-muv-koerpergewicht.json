@@ -81,15 +81,19 @@
         "sliceName": "sct",
         "min": 0,
         "max": "*",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "248326004"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
         "id": "Observation.category:sct.coding",
         "path": "Observation.category.coding",
-        "patternCoding": {
-          "code": "248326004",
-          "system": "http://snomed.info/sct"
-        },
         "mustSupport": true
       },
       {
@@ -117,8 +121,17 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
         "min": 2,
-        "max": "2",
+        "max": "3",
         "mustSupport": true
       },
       {
@@ -141,6 +154,12 @@
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-zusatzcode",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-zusatzcode",
+        "max": "0"
       },
       {
         "id": "Observation.code.coding:snomed",
@@ -167,6 +186,18 @@
       {
         "id": "Observation.code.coding:snomed.display",
         "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "68063"
+        },
         "mustSupport": true
       },
       {

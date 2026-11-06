@@ -189,6 +189,86 @@
           "valid": true
         }
       ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht",
+      "tests": [
+        {
+          "source": "valid/icu-body-weight.json",
+          "description": "Valid measurement with Quantity in kg",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-body-weight-absent.json",
+          "description": "Valid missing value with dataAbsentReason",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-body-weight-string.json",
+          "description": "Invalid non-Quantity value",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-weight-birth-8339-4.json",
+          "description": "Invalid birth-specific code in general weight",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-weight-birth-364589006.json",
+          "description": "Invalid birth-specific code in general weight",
+          "valid": false
+        },
+        {
+          "source": "valid/icu-body-weight-ieee-68063.json",
+          "description": "Measurement-specific ISO/IEEE coding",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-body-weight-ieee-68059.json",
+          "description": "Reject ISO/IEEE coding belonging to the other weight profile",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht",
+      "tests": [
+        {
+          "source": "valid/icu-birth-weight.json",
+          "description": "Valid measurement with Quantity in kg",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-birth-weight-absent.json",
+          "description": "Valid missing value with dataAbsentReason",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-birth-weight-string.json",
+          "description": "Invalid non-Quantity value",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-weight-missing-8339-4.json",
+          "description": "Invalid missing birth-specific code",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-weight-missing-364589006.json",
+          "description": "Invalid missing birth-specific code",
+          "valid": false
+        },
+        {
+          "source": "valid/icu-birth-weight-ieee-68059.json",
+          "description": "Measurement-specific ISO/IEEE coding",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-birth-weight-ieee-68063.json",
+          "description": "Reject ISO/IEEE coding belonging to the other weight profile",
+          "valid": false
+        }
+      ]
     }
   ]
 }

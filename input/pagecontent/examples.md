@@ -13,7 +13,7 @@ examples.
 > **Written during migration - review before release.** List generated from the build (the source carried no narrative here).
 {: .ig-highlight .ig-highlight-blue}
 
-The module ships **145 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
+The module ships **146 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
 
 <!-- BEGIN generiert: scripts/gen-examples-page.py -->
 
@@ -119,6 +119,7 @@ The module ships **145 examples** (at least one per profile family, incl. comple
 | [Muv Ideales Koerpergewicht](Observation-mii-exa-icu-muv-ideales-koerpergewicht.html) | SD MII ICU Ideales Koerpergewicht (ISiK) |
 | [Muv Intrakranieller Druck Icp](Observation-mii-exa-icu-muv-intrakranieller-druck-icp.html) | SD MII ICU Intrakranieller Druck ICP (ISiK) |
 | [Muv Koerpergewicht](Observation-mii-exa-icu-muv-koerpergewicht.html) | [MII PR ICU MUV Koerpergewicht](StructureDefinition-mii-pr-icu-muv-koerpergewicht.html) |
+| [Birth weight](Observation-mii-exa-icu-muv-geburtsgewicht.html) | [MII PR ICU MUV Geburtsgewicht](StructureDefinition-mii-pr-icu-muv-geburtsgewicht.html) |
 | [Muv Koerpergewicht Percentile Altersabhaengig](Observation-mii-exa-icu-muv-koerpergewicht-percentile-altersabhaengig.html) | SD MII ICU Koerpergewicht Percentil Altersabhaengig (ISiK) |
 | [Muv Koerpergroesse](Observation-mii-exa-icu-muv-koerpergroesse.html) | [MII PR ICU MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koerpergroesse.html) |
 | [Birth length](Observation-mii-exa-icu-muv-koerperlaenge-bei-geburt.html) | [MII PR ICU MUV Koerperlaenge Bei Geburt](StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html) |
