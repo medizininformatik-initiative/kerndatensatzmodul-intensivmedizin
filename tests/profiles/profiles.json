@@ -9,6 +9,186 @@
           "valid": true
         }
       ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt",
+      "tests": [
+        {
+          "source": "valid/icu-birth-length.json",
+          "description": "Valid birth length with birth-specific SNOMED, generic LOINC and optional ISO/IEEE code",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-birth-length-without-iso.json",
+          "description": "Valid birth length without optional ISO/IEEE coding or inherited recumbent-body-height code",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-birth-length-absent.json",
+          "description": "Valid birth length with dataAbsentReason instead of a measured value",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-birth-length-missing-snomed.json",
+          "description": "Invalid: birth-specific SNOMED 169886007 is missing",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-wrong-snomed.json",
+          "description": "Invalid: generic recumbent-body-height SNOMED cannot replace birth length",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-string.json",
+          "description": "Invalid: valueString instead of valueQuantity",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-value-and-absent.json",
+          "description": "Invalid: measured value and dataAbsentReason at the same time",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-missing-generic-loinc.json",
+          "description": "Invalid: FHIR bodyheight LOINC 8302-2 is missing",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-recumbent-loinc.json",
+          "description": "Invalid: non-birth-specific coding 8306-3 in the birth-length profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-recumbent-snomed.json",
+          "description": "Invalid: non-birth-specific coding 1149101003 in the birth-length profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-general-snomed.json",
+          "description": "Invalid: non-birth-specific coding 1153637007 in the birth-length profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-general-iso.json",
+          "description": "Invalid: non-birth-specific coding 68060 in the birth-length profile",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse",
+      "tests": [
+        {
+          "source": "valid/icu-body-height.json",
+          "description": "Valid body height without recumbent-length or birth-length codes",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-body-height-with-iso.json",
+          "description": "Valid body height with the optional general patient-height ISO code",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-body-height-recumbent-loinc.json",
+          "description": "Invalid: length-specific code 8306-3 in body-height profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-height-recumbent-snomed.json",
+          "description": "Invalid: length-specific code 1149101003 in body-height profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-height-birth-snomed.json",
+          "description": "Invalid: length-specific code 169886007 in body-height profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-height-birth-iso.json",
+          "description": "Invalid: length-specific code 68058 in body-height profile",
+          "valid": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
+      "tests": [
+        {
+          "source": "valid/icu-monitoring-generic.json",
+          "description": "Valid generic monitoring observation without a mandatory SNOMED or IEEE coding",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-monitoring-missing-value-or-reason.json",
+          "description": "Invalid: no value, dataAbsentReason, components or members",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-monitoring-missing-patient.json",
+          "description": "Invalid: patient reference is missing",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-monitoring-no-supported-system.json",
+          "description": "Invalid: no LOINC, SNOMED, IEEE or DGAI coding",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-monitoring-ieee-only.json",
+          "description": "Invalid: ISiK requires LOINC or SNOMED even when IEEE coding is present",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-monitoring-implicit-rules.json",
+          "description": "Invalid: implicitRules is prohibited as in ISiK",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-monitoring-component-string.json",
+          "description": "Invalid: component values must be Quantity as in ISiK",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-monitoring-component-without-reason.json",
+          "description": "Invalid: ISiK mii-icu-1 requires dataAbsentReason when the main value is absent",
+          "valid": false
+        },
+        {
+          "source": "valid/icu-monitoring-period-without-start.json",
+          "description": "Valid: ISiK permits an effectivePeriod without start",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
+      "tests": [
+        {
+          "source": "valid/icu-body-length.json",
+          "description": "Valid recumbent body length with generic and lying LOINC codes",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-body-length-missing-length-code.json",
+          "description": "Invalid: recumbent-length LOINC is missing",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-length-birth-snomed.json",
+          "description": "Invalid: birth-specific code 169886007 in general recumbent-length profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-body-length-birth-iso.json",
+          "description": "Invalid: birth-specific code 68058 in general recumbent-length profile",
+          "valid": false
+        },
+        {
+          "source": "valid/icu-body-length-with-iso.json",
+          "description": "Valid recumbent body length with optional general patient-height ISO code",
+          "valid": true
+        }
+      ]
     }
   ]
 }
