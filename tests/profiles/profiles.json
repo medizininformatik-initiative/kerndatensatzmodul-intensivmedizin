@@ -355,12 +355,7 @@
       "tests": [
         {
           "source": "valid/icu-energy-expenditure.json",
-          "description": "Valid energy expenditure with optional broader SNOMED code",
-          "valid": true
-        },
-        {
-          "source": "valid/icu-energy-expenditure-without-snomed.json",
-          "description": "Valid method-specific LOINC and IEEE codings without broader SNOMED",
+          "description": "Valid energy expenditure with only specific LOINC and IEEE codes",
           "valid": true
         },
         {
@@ -401,6 +396,11 @@
         {
           "source": "invalid/icu-energy-expenditure-missing-version.json",
           "description": "Invalid: missing version",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-snomed.json",
+          "description": "Invalid: additional SNOMED coding is prohibited",
           "valid": false
         }
       ]

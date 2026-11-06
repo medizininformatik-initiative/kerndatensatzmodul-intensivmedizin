@@ -30,6 +30,12 @@
         "code": "152812",
         "display": "MDC_RESP_EXPENDED_ENERGY",
         "version": "2024-12-05"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "251833007",
+        "display": "Energy expenditure (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   },

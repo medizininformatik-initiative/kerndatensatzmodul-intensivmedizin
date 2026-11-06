@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method. The optional SNOMED coding is broader and does not independently identify indirect calorimetry.",
+  "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -52,32 +52,14 @@
           "rules": "closed"
         },
         "min": 2,
-        "max": "3",
+        "max": "2",
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
-        "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "251833007"
-        }
-      },
-      {
-        "id": "Observation.code.coding:sct.version",
-        "path": "Observation.code.coding.version",
-        "min": 1,
-        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "Energy expenditure (observable entity)",
-        "mustSupport": true
+        "max": "0"
       },
       {
         "id": "Observation.code.coding:loinc",

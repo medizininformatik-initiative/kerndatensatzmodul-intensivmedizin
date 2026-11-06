@@ -581,7 +581,7 @@
           "reference": "Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie"
         },
         "name": "Energy expenditure by indirect calorimetry",
-        "description": "Synthetic body-weight-normalised energy expenditure of 25 kcal/kg/d, with the optional broader SNOMED coding.",
+        "description": "Synthetic body-weight-normalised energy expenditure of 25 kcal/kg/d.",
         "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
       },
       {
@@ -1040,7 +1040,7 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
         },
         "name": "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
-        "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method. The optional SNOMED coding is broader and does not independently identify indirect calorimetry.",
+        "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method.",
         "exampleBoolean": false
       },
       {

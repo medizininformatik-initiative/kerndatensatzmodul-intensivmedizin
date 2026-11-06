@@ -52,4 +52,3 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $sct#251408004 "Carbon dioxide output (observable entity)"
 * include $sct#169886007 "Birth length (observable entity)"
 * include $sct#364589006 "Birth weight (observable entity)"
-* include $sct#251833007 "Energy expenditure (observable entity)" // Broader observable; method encoded by LOINC/IEEE
