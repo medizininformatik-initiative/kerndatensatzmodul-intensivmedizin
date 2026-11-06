@@ -601,7 +601,10 @@ jobs:
 
   deploy:
     name: Deploy GitHub Pages (Actions mode)
-    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && needs.build.outputs.publish == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+    # Skipped on pull_request runs: the github-pages environment only accepts
+    # branch refs and rejects refs/pull/<n>/merge, and the push run of the same
+    # branch already deploys this preview.
+    if: ${{ github.event_name != 'pull_request' && vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && needs.build.outputs.publish == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 30
