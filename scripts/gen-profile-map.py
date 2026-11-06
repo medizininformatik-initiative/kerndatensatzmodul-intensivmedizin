@@ -8,7 +8,8 @@ Adaptiert von kerndatensatzmodul-onkologie/scripts/gen-profile-map.py
     programmatisch nach dem Präfix-Schema der Modul-IDs gruppiert (das
     ICU-Schema ist streng regulär: ect-/vent-/bilanz-/untersuchung-/score-/
     muv-*), generische Profile je Familie zuerst und fett.
-  * Ebene 2 (amber): die ISiK-gehosteten sd-mii-icu-*-Profile — generiert aus
+  * Ebene 2 (amber): die ISiK-gehosteten Profile (sd-mii-icu-*, seit ISiK 6
+    auch Bilanzen, Untersuchungen und RASS) — generiert aus
     dem GEPINNTEN Paket (Pin wird aus sushi-config.yaml gelesen, Inhalt aus
     ~/.fhir/packages/de.gematik.isik#<pin>). Die Liste ändert sich damit
     ausschließlich mit einem bewussten Pin-Bump (Governance-Entscheid DEC-11
@@ -64,14 +65,11 @@ FAMILIEN = [
       'mii-pr-icu-parameter-von-beatmung'],
      lambda i: i.startswith('mii-pr-icu-vent-'), ()),
     ('Bilanzen', 'Balances',
-     ['mii-pr-icu-bilanz'],
+     [],
      lambda i: i.startswith('mii-pr-icu-bilanz-'), ('Bilanz',)),
     ('Monitoring und Vitaldaten (modul-eigen)', 'Monitoring and vital signs (module-owned)',
      [],
      lambda i: i.startswith('mii-pr-icu-muv-'), ('MUV',)),
-    ('Untersuchungen', 'Examinations',
-     ['mii-pr-icu-untersuchung-pupillenbefund'],
-     lambda i: i.startswith('mii-pr-icu-untersuchung-'), ('Untersuchung',)),
     ('Scores', 'Scores',
      ['mii-pr-icu-score'],
      lambda i: i.startswith('mii-pr-icu-score-'), ('Score',)),
@@ -79,6 +77,11 @@ FAMILIEN = [
      [],
      lambda i: i in ('mii-pr-icu-device',), ()),
 ]
+
+
+# ISiK-hosted profiles listed in Ebene 2 (file globs in the package).
+ISIK_PATTERNS = ['sd-mii-icu-*', 'mii-pr-icu-bilanz', 'mii-pr-icu-bilanz-*',
+                 'mii-pr-icu-untersuchung-*', 'mii-pr-icu-score-rass']
 
 
 def load_module_profiles():
@@ -104,7 +107,8 @@ def load_isik_profiles(pin):
         sys.exit(f'FEHLER — ISiK-Paket nicht im Cache: {base}\n'
                  '(Cache primen, s. README Abschnitt "Lokaler Build")')
     out = {}
-    for f in glob.glob(f'{base}/StructureDefinition-sd-mii-icu-*.json'):
+    files = [f for p in ISIK_PATTERNS for f in glob.glob(f'{base}/StructureDefinition-{p}.json')]
+    for f in files:
         d = json.load(open(f))
         out[d['id']] = (d.get('type'), d.get('title') or d.get('name'),
                         d.get('url'))
@@ -188,12 +192,19 @@ def build(lang, mod, isik, pin):
     koerpert = sorted(i for i in isik
                       if ('koerpertemperatur' in i or 'koerperkerntemperatur' in i)
                       and i not in generics)
-    rest = sorted(i for i in isik if i not in generics and i not in koerpert)
+    bilanz = sorted(i for i in isik if i.startswith('mii-pr-icu-bilanz'))
+    unters = sorted(i for i in isik if i.startswith('mii-pr-icu-untersuchung-'))
+    scores = sorted(i for i in isik if i.startswith('mii-pr-icu-score-'))
+    rest = sorted(i for i in isik if i.startswith('sd-mii-icu-')
+                  and i not in generics and i not in koerpert)
     groups = [('Generische Profile', 'Generic profiles', generics, ()),
               ('Monitoring- und Vitaldaten-Auspr&auml;gungen',
                'Monitoring and vital sign specialisations', rest, ()),
               ('K&ouml;rpertemperatur', 'Body temperature', koerpert,
-               ('Koerpertemperatur', 'Koerperkerntemperatur'))]
+               ('Koerpertemperatur', 'Koerperkerntemperatur')),
+              ('Bilanzen', 'Balances', bilanz, ('Bilanz',)),
+              ('Untersuchungen', 'Examinations', unters, ('Untersuchung',)),
+              ('Scores', 'Scores', scores, ('Score',))]
     for de_t, en_t, members, drop in groups:
         title = de_t if lang == 'de' else en_t
         out.append('<details>')
