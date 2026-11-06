@@ -22,7 +22,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
+  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -40,12 +40,12 @@
         ]
       },
       {
-        "id": "Observation.category:vs-cat",
+        "id": "Observation.category:VSCat",
         "path": "Observation.category",
-        "sliceName": "vs-cat"
+        "sliceName": "VSCat"
       },
       {
-        "id": "Observation.category:vs-cat.coding.display",
+        "id": "Observation.category:VSCat.coding.display",
         "path": "Observation.category.coding.display",
         "mustSupport": true
       },
@@ -103,31 +103,10 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:sct",
-        "path": "Observation.code.coding",
-        "sliceName": "sct",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "1153637007"
-        }
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://loinc.org",
-          "code": "8302-2"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.display",
@@ -135,14 +114,39 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding:loinc-zusatzcode",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-zusatzcode",
+        "max": "0"
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "1153637007"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:IEEE-11073",
         "path": "Observation.code.coding",
         "sliceName": "IEEE-11073",
+        "min": 0,
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
           "code": "68060"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:IEEE-11073.display",
@@ -150,8 +154,33 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "patternQuantity": {
           "code": "cm",
           "system": "http://unitsofmeasure.org",
@@ -159,15 +188,26 @@
         }
       },
       {
-        "id": "Observation.value[x].unit",
-        "path": "Observation.value[x].unit",
-        "min": 1,
-        "patternString": "centimeter"
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.value[x].value",
+        "mustSupport": true
       },
       {
-        "id": "Observation.value[x].code",
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "patternString": "centimeter",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
         "path": "Observation.value[x].code",
-        "patternCode": "cm"
+        "patternCode": "cm",
+        "mustSupport": true
       }
     ]
   }

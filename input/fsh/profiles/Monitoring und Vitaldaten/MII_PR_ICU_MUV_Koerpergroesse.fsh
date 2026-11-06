@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_MUV_Koerpergroesse
-Parent: MII_PR_ICU_Monitoring_Und_Vitaldaten
+Parent: $observation-de-vitalsign-koerpergroesse
 Id: mii-pr-icu-muv-koerpergroesse
 Title: "MII PR ICU MUV Koerpergroesse"
 Description: "Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles."
@@ -9,7 +9,7 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * ^status = #active
 * obeys mii-icu-val-xor-dar
 
-* category[vs-cat].coding.display MS
+* category[VSCat].coding.display MS
 * category contains sct 0.. MS
 * category[sct] ^patternCodeableConcept.coding.system = $sct
 * category[sct] ^patternCodeableConcept.coding.code = #248326004
@@ -24,10 +24,11 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.code = #8302-2
 * code.coding[loinc].display MS
-* code.coding[sct] 1..1 MS
-* code.coding[sct] ^patternCoding.code = #1153637007
-* code.coding[sct].display MS
-* code.coding[IEEE-11073] 0..1 MS
+* code.coding[snomed] 1..1 MS
+* code.coding[snomed] ^patternCoding.code = #1153637007
+* code.coding[snomed].display MS
+* code.coding contains IEEE-11073 0..1 MS
+* code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #68060
 * code.coding[IEEE-11073].display MS
 
@@ -35,3 +36,14 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * valueQuantity.unit 1.. MS
 * valueQuantity.code = #cm
 * valueQuantity.unit = "centimeter"
+
+// Exclude the birth-height LOINC slice inherited from the German base.
+* code.coding[loinc-zusatzcode] 0..0
+* value[x] only Quantity
+* subject 1.. MS
+* subject only Reference(Patient)
+* effective[x] 1.. MS
+* effective[x] only dateTime or Period
+* valueQuantity.value 1.. MS
+* valueQuantity.system 1.. MS
+* valueQuantity.code 1.. MS
