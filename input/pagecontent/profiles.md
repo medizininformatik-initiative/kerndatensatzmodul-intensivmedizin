@@ -106,13 +106,16 @@
 </div>
 </div></details>
 <details>
-<summary>Monitoring and vital signs (module-owned)<span class="cnt">8</span></summary><div class="body">
+<summary>Monitoring and vital signs (module-owned)<span class="cnt">9</span></summary><div class="body">
+<p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a></p>
+<p>The module-owned base profile uses extensible terminology bindings: a suitable concept from the bound value set must be used when available; additional concepts are allowed when the value set does not cover the measurement. Body height, recumbent body length and birth length derive separately from this base. Their specialised coding slices are closed so that recumbent-length and birth-length codes cannot be used in the body-height profile. The general FHIR bodyheight code 8302-2 is shared; measurement-specific codes are defined only in the appropriate profile. Quantity units and specific measurement codes are constrained by each specialised profile.</p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html">Koerperlaenge Bei Geburt</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
 </div>
