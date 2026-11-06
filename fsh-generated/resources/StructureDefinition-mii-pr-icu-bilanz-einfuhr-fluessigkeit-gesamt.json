@@ -71,6 +71,28 @@
         "max": "0"
       },
       {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "definition": "The period to which the recorded total fluid intake volume relates SHALL be represented as effectivePeriod. Only when this period is unknown MAY effectiveDateTime be used to record the time at which the volume was determined.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Der Zeitraum, auf den sich die dokumentierte Gesamtmenge der Fluessigkeitseinfuhr bezieht, muss als effectivePeriod angegeben werden. Nur wenn dieser Zeitraum nicht bekannt ist, darf stattdessen der Feststellungszeitpunkt als effectiveDateTime angegeben werden."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "short": "Display unit (SI)",

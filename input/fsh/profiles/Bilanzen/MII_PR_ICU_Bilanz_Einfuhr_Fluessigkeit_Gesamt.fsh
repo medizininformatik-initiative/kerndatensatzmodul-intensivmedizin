@@ -31,3 +31,6 @@ Title: "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"
 * valueQuantity.unit ^definition = "Human-readable display for the unit. SI display unit SHALL be 'ml', independent of whether code is 'mL' or 'ml'."
 * valueQuantity.unit ^example[0].label = "Preferred display"
 * valueQuantity.unit ^example[0].valueString = "ml"
+
+* effective[x] ^definition = "The period to which the recorded total fluid intake volume relates SHALL be represented as effectivePeriod. Only when this period is unknown MAY effectiveDateTime be used to record the time at which the volume was determined."
+* insert Translation(effective[x] ^definition, de-DE, Der Zeitraum\, auf den sich die dokumentierte Gesamtmenge der Fluessigkeitseinfuhr bezieht\, muss als effectivePeriod angegeben werden. Nur wenn dieser Zeitraum nicht bekannt ist\, darf stattdessen der Feststellungszeitpunkt als effectiveDateTime angegeben werden.)
