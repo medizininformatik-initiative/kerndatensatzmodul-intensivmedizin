@@ -56,3 +56,5 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $ieee-11073#188796 "MDC_MASS_BODY_EST_IBW" // "Ideal body weight (IBW)"
 * include $ieee-11073#150392 "MDC_TEMP_TYMP" // "Tympanic temperature"
 * include $ieee-11073#150356 "MDC_TEMP_AWAY" // "Airway temperature"
+* include $ieee-11073#68058 "MDC_ATTR_PT_BIRTH_LENGTH" // Birth length
+* include $ieee-11073#68060 "MDC_ATTR_PT_HEIGHT" // General patient height

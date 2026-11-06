@@ -402,6 +402,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "name": "Birth length",
+        "description": "A birth length of 51 centimetres, including the optional ISO/IEEE 11073 coding.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-icu-ecmo"
         },
         "description": "Beispiel: MII PR ICU Extrakorporales Verfahren",
@@ -991,6 +999,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten"
+        },
+        "name": "MII PR ICU Monitoring und Vitaldaten",
+        "description": "Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
         },
         "name": "MII PR ICU MUV Arterieller Blutdruck",
@@ -1050,6 +1066,7 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse"
         },
         "name": "MII PR ICU MUV Koerpergroesse",
+        "description": "Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles.",
         "exampleBoolean": false
       },
       {
@@ -1064,6 +1081,15 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
         },
         "name": "MII PR ICU MUV Koerperlaenge",
+        "description": "Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "name": "MII PR ICU MUV Koerperlaenge Bei Geburt",
+        "description": "Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later.",
         "exampleBoolean": false
       },
       {
