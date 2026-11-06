@@ -13,11 +13,9 @@ Title: "MII PR ICU Einstellung Inspirationsdruck"
 
 * code.coding 2..
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76003-3
-* code.coding[loinc] ^patternCoding.display = "Pressure Respiratory system airway --during inspiration on ventilator"
+* code.coding[loinc] = $loinc#76003-3 "Pressure Respiratory system airway --during inspiration on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151972
-* code.coding[IEEE-11073] ^patternCoding.display = "Airway pressure, primarily during an inspiratory phase"
+* code.coding[IEEE-11073] = $ieee-11073#151972 "Airway pressure, primarily during an inspiratory phase"
 * code.coding[sct] ..0
 * valueQuantity = $ucum#cm[H2O]
 

@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250875001",
+          "system": "http://snomed.info/sct",
           "display": "Ventilator delivered minute volume (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76009-0",
+          "system": "http://loinc.org",
           "display": "Inspired minute Volume during Mechanical ventilation"
         }
       },
@@ -76,6 +78,7 @@
         "max": "1",
         "patternCoding": {
           "code": "152004",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "Total volume of gas breathed in during 1 min during mechanical ventilation."
         }
       },

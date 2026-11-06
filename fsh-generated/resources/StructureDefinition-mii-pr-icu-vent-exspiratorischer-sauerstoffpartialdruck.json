@@ -70,6 +70,7 @@
         "max": "1",
         "patternCoding": {
           "code": "442720002",
+          "system": "http://snomed.info/sct",
           "display": "Expired oxygen tension (observable entity)"
         }
       },
@@ -81,6 +82,7 @@
         "max": "1",
         "patternCoding": {
           "code": "3147-6",
+          "system": "http://loinc.org",
           "display": "Oxygen [Partial pressure] in Exhaled gas"
         }
       },
@@ -92,6 +94,7 @@
         "max": "1",
         "patternCoding": {
           "code": "153132",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "Partial pressure of oxygen in airway gas measured during expiration."
         }
       },
