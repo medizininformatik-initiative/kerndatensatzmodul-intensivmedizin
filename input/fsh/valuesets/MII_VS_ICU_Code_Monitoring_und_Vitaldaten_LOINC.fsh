@@ -64,3 +64,4 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $loinc#104063-3 "Body temperature"
 * include $loinc#60825-7 "Carbon dioxide production (VCO2) in Respiratory system"
 * include $loinc#8339-4 "Birth weight Measured"
+* include $loinc#75990-2 "Energy expended Reporting Period by Indirect calorimetry"

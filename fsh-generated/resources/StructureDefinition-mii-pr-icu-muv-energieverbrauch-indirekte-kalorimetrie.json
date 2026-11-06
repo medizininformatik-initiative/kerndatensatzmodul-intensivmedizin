@@ -1,0 +1,175 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+  "version": "2027.0.0",
+  "name": "MII_PR_ICU_MUV_Energieverbrauch_Indirekte_Kalorimetrie",
+  "title": "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method. The optional SNOMED coding is broader and does not independently identify indirect calorimetry.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "mii-icu-val-xor-dar",
+            "human": "Resource must have either value or dataAbsentReason.",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+            "severity": "error",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ]
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "3",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "251833007"
+        }
+      },
+      {
+        "id": "Observation.code.coding:sct.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.display",
+        "path": "Observation.code.coding.display",
+        "min": 1,
+        "patternString": "Energy expenditure (observable entity)",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "75990-2"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2.83",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "min": 1,
+        "patternString": "Energy expended Reporting Period by Indirect calorimetry",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "152812"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2024-12-05",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.display",
+        "path": "Observation.code.coding.display",
+        "min": 1,
+        "patternString": "MDC_RESP_EXPENDED_ENERGY",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x].start",
+        "path": "Observation.effective[x].start",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x].end",
+        "path": "Observation.effective[x].end",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "patternQuantity": {
+          "code": "kcal/kg/d",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kilocalorie per kilogram per day"
+        }
+      },
+      {
+        "id": "Observation.value[x].unit",
+        "path": "Observation.value[x].unit",
+        "min": 1,
+        "patternString": "kilocalorie per kilogram per day"
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "kcal/kg/d"
+      }
+    ]
+  }
+}

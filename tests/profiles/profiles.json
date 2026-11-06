@@ -349,6 +349,61 @@
           "valid": false
         }
       ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+      "tests": [
+        {
+          "source": "valid/icu-energy-expenditure.json",
+          "description": "Valid energy expenditure with optional broader SNOMED code",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-energy-expenditure-without-snomed.json",
+          "description": "Valid method-specific LOINC and IEEE codings without broader SNOMED",
+          "valid": true
+        },
+        {
+          "source": "valid/icu-energy-expenditure-absent.json",
+          "description": "Valid unavailable measurement with reason",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-missing-loinc.json",
+          "description": "Invalid: missing loinc",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-missing-ieee.json",
+          "description": "Invalid: missing ieee",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-wrong-unit.json",
+          "description": "Invalid: wrong unit",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-string.json",
+          "description": "Invalid: string",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-missing-end.json",
+          "description": "Invalid: missing end",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-wrong-code.json",
+          "description": "Invalid: wrong code",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-energy-expenditure-missing-version.json",
+          "description": "Invalid: missing version",
+          "valid": false
+        }
+      ]
     }
   ]
 }
