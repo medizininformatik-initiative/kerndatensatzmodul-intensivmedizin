@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_RASS",
   "title" : "MII PR ICU Score RASS",
   "status" : "draft",
-  "date" : "2026-11-06T22:03:00+00:00",
+  "date" : "2026-11-06T22:39:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Spendermilch",
   "title" : "MII PR ICU Bilanz Einfuhr Spendermilch",
   "status" : "draft",
-  "date" : "2026-11-06T22:03:00+00:00",
+  "date" : "2026-11-06T22:39:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
