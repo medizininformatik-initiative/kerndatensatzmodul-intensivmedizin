@@ -15,7 +15,7 @@
       "tests": [
         {
           "source": "valid/icu-birth-length.json",
-          "description": "Valid birth length with birth-specific SNOMED, generic LOINC and optional ISO/IEEE code",
+          "description": "Valid birth length with birth-specific SNOMED and optional ISO/IEEE code",
           "valid": true
         },
         {
@@ -49,11 +49,6 @@
           "valid": false
         },
         {
-          "source": "invalid/icu-birth-length-missing-generic-loinc.json",
-          "description": "Invalid: FHIR bodyheight LOINC 8302-2 is missing",
-          "valid": false
-        },
-        {
           "source": "invalid/icu-birth-length-recumbent-loinc.json",
           "description": "Invalid: non-birth-specific coding 8306-3 in the birth-length profile",
           "valid": false
@@ -71,6 +66,11 @@
         {
           "source": "invalid/icu-birth-length-general-iso.json",
           "description": "Invalid: non-birth-specific coding 68060 in the birth-length profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-length-general-loinc.json",
+          "description": "Invalid: generic LOINC 8302-2 is excluded from this specialised profile",
           "valid": false
         }
       ]
@@ -165,7 +165,7 @@
       "tests": [
         {
           "source": "valid/icu-body-length.json",
-          "description": "Valid recumbent body length with generic and lying LOINC codes",
+          "description": "Valid recumbent body length with the lying LOINC code, without general body height",
           "valid": true
         },
         {
@@ -187,6 +187,11 @@
           "source": "valid/icu-body-length-with-iso.json",
           "description": "Valid recumbent body length with optional general patient-height ISO code",
           "valid": true
+        },
+        {
+          "source": "invalid/icu-body-length-general-loinc.json",
+          "description": "Invalid: generic LOINC 8302-2 is excluded from this specialised profile",
+          "valid": false
         }
       ]
     },
@@ -266,6 +271,11 @@
         {
           "source": "invalid/icu-birth-weight-ieee-68063.json",
           "description": "Reject ISO/IEEE coding belonging to the other weight profile",
+          "valid": false
+        },
+        {
+          "source": "invalid/icu-birth-weight-general-loinc.json",
+          "description": "Invalid: generic LOINC 29463-7 is excluded from this specialised profile",
           "valid": false
         }
       ]

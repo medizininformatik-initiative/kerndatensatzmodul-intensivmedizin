@@ -19,19 +19,14 @@
   "code": {
     "coding": [
       {
-        "system": "http://loinc.org",
-        "code": "29463-7",
-        "display": "Body weight"
+        "system": "http://snomed.info/sct",
+        "code": "364589006",
+        "display": "Birth weight (observable entity)"
       },
       {
         "system": "http://loinc.org",
         "code": "8339-4",
         "display": "Birth weight Measured"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "364589006",
-        "display": "Birth weight (observable entity)"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
@@ -40,9 +35,9 @@
     ]
   },
   "valueQuantity": {
+    "unit": "kilogram",
     "system": "http://unitsofmeasure.org",
     "code": "kg",
-    "unit": "kilogram",
     "value": 3.5
   },
   "status": "final",
