@@ -46,6 +46,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
 
+* value[x] only Quantity
 * value[x] MS
 * valueQuantity = $ucum#kg "kilogram"
 * valueQuantity MS
