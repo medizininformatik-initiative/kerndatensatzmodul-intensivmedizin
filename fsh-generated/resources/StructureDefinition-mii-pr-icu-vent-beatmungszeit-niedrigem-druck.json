@@ -60,6 +60,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76229-4",
+          "system": "http://loinc.org",
           "display": "Low pressure hold time setting Ventilator"
         }
       },
@@ -71,6 +72,7 @@
         "max": "1",
         "patternCoding": {
           "code": "16929864",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
         }
       },

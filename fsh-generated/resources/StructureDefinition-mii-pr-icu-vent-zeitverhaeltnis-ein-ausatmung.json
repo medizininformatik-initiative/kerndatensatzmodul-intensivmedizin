@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250822000",
+          "system": "http://snomed.info/sct",
           "display": "Inspiration/expiration time ratio (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "75931-6",
+          "system": "http://loinc.org",
           "display": "Inspiration/Expiration time Ratio"
         }
       },
@@ -76,6 +78,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151832",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "Ratio of durations of inspiratory and expiratory phases."
         }
       },

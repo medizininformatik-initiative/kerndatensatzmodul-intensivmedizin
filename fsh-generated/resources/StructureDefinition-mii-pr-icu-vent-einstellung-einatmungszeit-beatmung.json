@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250819002",
+          "system": "http://snomed.info/sct",
           "display": "Inspiratory time (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76334-2",
+          "system": "http://loinc.org",
           "display": "Inspiratory time setting"
         }
       },
@@ -76,6 +78,7 @@
         "max": "1",
         "patternCoding": {
           "code": "16929632",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "MDC_VENT_TIME_PD_INSP_SETTING"
         }
       },

@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250876000",
+          "system": "http://snomed.info/sct",
           "display": "Ventilator rate (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "33438-3",
+          "system": "http://loinc.org",
           "display": "Breath rate mechanical --on ventilator"
         }
       },
@@ -76,6 +78,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151586",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "Rate of mechanical ventilation; method not specified."
         }
       },

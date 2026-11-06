@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "27913002",
+          "system": "http://snomed.info/sct",
           "display": "Maximum inspiratory pressure (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151973",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "Maximum inspiratory airway pressure."
         }
       },

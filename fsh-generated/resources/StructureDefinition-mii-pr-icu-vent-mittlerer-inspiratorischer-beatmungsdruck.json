@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "698821009",
+          "system": "http://snomed.info/sct",
           "display": "Mean inspiratory airway pressure (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "60952-9",
+          "system": "http://loinc.org",
           "display": "Mean airway pressure --during inspiration"
         }
       },
@@ -76,6 +78,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151975",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "Mean inspiratory airway pressure."
         }
       },
