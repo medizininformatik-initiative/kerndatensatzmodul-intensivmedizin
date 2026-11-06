@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
   "title" : "MII PR ICU Maximaler Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-06T21:08:03+00:00",
+  "date" : "2026-11-06T21:37:45+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
