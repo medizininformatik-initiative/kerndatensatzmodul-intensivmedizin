@@ -15,12 +15,9 @@ Title: "MII PR ICU Mittlerer Beatmungsdruck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #698821009
-* code.coding[sct] ^patternCoding.display = "Mean inspiratory airway pressure (observable entity)"
+* code.coding[sct] = $sct#698821009 "Mean inspiratory airway pressure (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76530-5
-* code.coding[loinc] ^patternCoding.display = "Mean pressure Respiratory system airway --on ventilator"
+* code.coding[loinc] = $loinc#76530-5 "Mean pressure Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151975
-* code.coding[IEEE-11073] ^patternCoding.display = "Mean inspiratory airway pressure."
+* code.coding[IEEE-11073] = $ieee-11073#151975 "Mean inspiratory airway pressure."
 * valueQuantity = $ucum#cm[H2O]
