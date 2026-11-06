@@ -5,6 +5,7 @@
     "MSG_DRAFT",
     "TERMINOLOGY_TX_WARNING@StructureDefinition.*",
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20@StructureDefinition.differential.element",
     "UNABLE_TO_INFER_CODESYSTEM@StructureDefinition.*",
     "Terminology_TX_NoValid_16@StructureDefinition.*",
     "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.*"
