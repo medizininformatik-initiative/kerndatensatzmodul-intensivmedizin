@@ -61,3 +61,4 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * include $ieee-11073#68059 "MDC_ATTR_PT_BIRTH_WEIGHT" // Birth weight
 * include $ieee-11073#68063 "MDC_ATTR_PT_WEIGHT" // General patient weight
 * include $ieee-11073#152812 "MDC_RESP_EXPENDED_ENERGY" // Energy expenditure by indirect calorimetry
+* include $ieee-11073#151776 "MDC_FLOW_CO2_PROD_RESP"
