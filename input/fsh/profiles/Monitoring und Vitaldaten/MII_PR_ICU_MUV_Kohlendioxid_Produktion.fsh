@@ -27,6 +27,7 @@ Title: "MII PR ICU MUV Kohlendioxid Produktion"
 * category[sct].coding.display MS
 
 * code.coding 3.. MS
+* code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.code = #60825-7
 * code.coding[loinc].display 1..1 MS
