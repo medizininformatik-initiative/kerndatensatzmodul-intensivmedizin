@@ -51,7 +51,8 @@
           ],
           "rules": "closed"
         },
-        "min": 3,
+        "min": 4,
+        "max": "4",
         "mustSupport": true
       },
       {
@@ -106,6 +107,25 @@
         "path": "Observation.code.coding.version",
         "min": 1,
         "patternString": "2024-12-05",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-body-height",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-body-height",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8302-2"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-body-height.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2.83",
         "mustSupport": true
       },
       {

@@ -214,8 +214,8 @@
           "valid": true
         },
         {
-          "source": "invalid/icu-body-length-general-loinc.json",
-          "description": "Invalid: generic LOINC 8302-2 is excluded from this specialised profile",
+          "source": "invalid/icu-body-length-missing-general-loinc.json",
+          "description": "Invalid: required validator compatibility coding LOINC 8302-2 is missing",
           "valid": false
         },
         {

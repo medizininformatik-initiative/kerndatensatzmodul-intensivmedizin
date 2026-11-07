@@ -9,7 +9,7 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * ^status = #active
 * obeys mii-icu-val-xor-dar
 
-* code.coding 3.. MS
+* code.coding 4..4 MS
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.code = #8306-3
@@ -17,6 +17,14 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[sct] ^patternCoding.code = #1149101003
 * code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.code = #68060
+
+// LOINC 8306-3 describes recumbent length more precisely. The HL7 Java validator
+// in IG Publisher 2.3.2 currently also requires the broader LOINC 8302-2.
+* code.coding contains loinc-body-height 1..1 MS
+* code.coding[loinc-body-height] ^patternCoding.system = $loinc
+* code.coding[loinc-body-height] ^patternCoding.code = #8302-2
+* code.coding[loinc-body-height].version 1..1 MS
+* code.coding[loinc-body-height].version = "2.83"
 
 * value[x] only Quantity
 * valueQuantity = $ucum#cm "centimeter"
