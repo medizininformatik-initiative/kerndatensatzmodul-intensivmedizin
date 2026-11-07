@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-icu-bilanz-kalorienbedarf-pro-tag",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
+    ]
+  },
+  "valueQuantity": {
+    "code": "kcal/(24.h)",
+    "system": "http://unitsofmeasure.org",
+    "unit": "kilocalorie per day",
+    "value": 1800
+  },
+  "code": {
+    "coding": [
+      {
+        "version": "2.83",
+        "display": "Calorie need 24 hour Estimated",
+        "system": "http://loinc.org",
+        "code": "9058-9"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "display": "Synthetic example patient"
+  },
+  "effectiveDateTime": "2026-01-01T09:00:00+01:00",
+  "method": {
+    "coding": [
+      {
+        "code": "258090004",
+        "system": "http://snomed.info/sct",
+        "display": "Calculated"
+      }
+    ],
+    "text": "Schofield equation"
+  }
+}

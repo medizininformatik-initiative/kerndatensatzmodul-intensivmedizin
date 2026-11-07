@@ -586,6 +586,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "name": "Estimated daily calorie requirement",
+        "description": "Synthetic example of an estimated requirement of 1800 kilocalories per day using the Schofield equation.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
         },
         "name": "MII CPS Intensivmedizin CapabilityStatement",
@@ -801,6 +809,14 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"
         },
         "name": "MII PR ICU Bilanz Einfuhr Spendermilch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "name": "MII PR ICU Bilanz Kalorienbedarf pro Tag",
+        "description": "Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target.",
         "exampleBoolean": false
       },
       {
@@ -1609,6 +1625,14 @@
           "reference": "ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"
         },
         "name": "MII VS ICU DeviceMetric extrakorporale Verfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-method-kalorienbedarf"
+        },
+        "name": "MII VS ICU Method Kalorienbedarf",
+        "description": "SNOMED CT qualifiers for how daily energy requirement was determined. The codes do not identify particular equations.",
         "exampleBoolean": false
       },
       {

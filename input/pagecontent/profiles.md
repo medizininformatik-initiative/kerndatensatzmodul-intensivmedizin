@@ -81,7 +81,7 @@
 </div>
 </div></details>
 <details>
-<summary>Balances<span class="cnt">20</span></summary><div class="body">
+<summary>Balances<span class="cnt">21</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-bilanz.html">Bilanz</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.html">Ausfuhr Blutverlust</a>
@@ -102,6 +102,7 @@
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html">Einfuhr Orale Fluessigkeit</a>
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html">Einfuhr Saeuglingsnahrung</a>
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.html">Einfuhr Spendermilch</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html">Kalorienbedarf pro Tag</a>
 <a href="StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html">Tagesbilanz Fluessigkeit</a>
 </div>
 </div></details>
