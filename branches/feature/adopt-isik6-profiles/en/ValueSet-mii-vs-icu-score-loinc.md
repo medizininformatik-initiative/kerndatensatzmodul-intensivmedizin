@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-loinc | *Version*:2027.0.0 |
-| Draft as of 2026-11-06 | *Computable Name*:MII_VS_ICU_Score_LOINC |
+| Draft as of 2026-11-09 | *Computable Name*:MII_VS_ICU_Score_LOINC |
 
  
 Value set for scores - LOINC codes 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS ICU Score LOINC",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-06T21:37:45+00:00",
+  "date" : "2026-11-09T14:11:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

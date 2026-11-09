@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz | *Version*:2027.0.0 |
-| Active as of 2026-11-06 | *Computable Name*:MII_PR_ICU_MUV_Atemfrequenz |
+| Active as of 2026-11-09 | *Computable Name*:MII_PR_ICU_MUV_Atemfrequenz |
 
 "Respiratory rate (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-06T21:37:45+00:00",
+  "date" : "2026-11-09T14:11:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

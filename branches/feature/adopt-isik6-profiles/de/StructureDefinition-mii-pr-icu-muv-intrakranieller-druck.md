@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-intrakranieller-druck | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Intrakranieller_Druck |
+| Draft Stand: 2026-11-09 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Intrakranieller_Druck |
 
 **Usages:**
 
@@ -106,7 +106,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Intrakranieller_Druck",
   "title" : "MII PR ICU MUV Intrakranieller Druck (ICP)",
   "status" : "draft",
-  "date" : "2026-11-06T21:37:45+00:00",
+  "date" : "2026-11-09T14:11:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
