@@ -69,8 +69,12 @@ def block(lang, rows):
         out += [hdr, sep]
         for r in sorted(sel, key=lambda x: x['name']):
             pid, ptitle, own = r['prof']
-            plink = (f'[{ptitle}](StructureDefinition-{pid}.html)' if own
-                     else f'{ptitle} (ISiK)')
+            if own:
+                plink = f'[{ptitle}](StructureDefinition-{pid}.html)'
+            elif os.path.exists(f'input/pagecontent/extern-{pid}.md'):
+                plink = f'[{ptitle}](extern-{pid}.html) (ISiK)'
+            else:
+                plink = f'{ptitle} (ISiK)'
             out.append(f"| [{r['name']}]({r['rt']}-{r['id']}.html) | {plink} |")
     rest = [r for r in rows if r['id'] not in used]
     if rest:

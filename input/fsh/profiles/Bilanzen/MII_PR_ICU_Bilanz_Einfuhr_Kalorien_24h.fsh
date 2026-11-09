@@ -1,5 +1,6 @@
 Profile: MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h
-Parent: MII_PR_ICU_Bilanz
+// ISiK 6: the generic balance profile moved to de.gematik.isik (mii-pr-icu-bilanz)
+Parent: $isik-mii-pr-icu-bilanz
 Id: mii-pr-icu-bilanz-einfuhr-kalorien-24h
 Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * insert PR_CS_VS_Version
