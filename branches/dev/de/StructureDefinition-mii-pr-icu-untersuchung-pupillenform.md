@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-u
   "name" : "MII_PR_ICU_Untersuchung_Pupillenform",
   "title" : "MII PR ICU Untersuchung Pupillenform",
   "status" : "draft",
-  "date" : "2026-11-09T13:22:26+00:00",
+  "date" : "2026-11-09T15:34:23+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
