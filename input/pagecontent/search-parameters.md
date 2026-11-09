@@ -20,8 +20,8 @@ The 11 module-specific search parameters:
 | [MII_SP_ICU_Device_Property_Type](SearchParameter-mii-sp-icu-device-property-type.html) | `property-type` | Device |
 | [MII_SP_ICU_DeviceMetric_Source](SearchParameter-mii-sp-icu-devicemetric-source.html) | `source` | DeviceMetric |
 | [MII_SP_ICU_Observation_BodySite](SearchParameter-mii-sp-icu-observation-bodysite.html) | `body-site` | Observation |
-| [MII_SP_ICU_Observation_Component_Interpretation](SearchParameter-mii-sp-icu-observation-component-interpretation.html) | `component.interpretation` | Observation |
-| [MII_SP_ICU_Observation_Component_ReferenceRange](SearchParameter-mii-sp-icu-observation-component-referencerange.html) | `component.referenceRange` | Observation |
+| [MII_SP_ICU_Observation_Component_Interpretation](SearchParameter-mii-sp-icu-observation-component-interpretation.html) | `component-interpretation` | Observation |
+| [MII_SP_ICU_Observation_Component_ReferenceRange](SearchParameter-mii-sp-icu-observation-component-referencerange.html) | `component-referencerange` | Observation |
 | [MII_SP_ICU_Observation_Interpretation](SearchParameter-mii-sp-icu-observation-interpretation.html) | `interpretation` | Observation |
 | [MII_SP_ICU_Observation_Issued](SearchParameter-mii-sp-icu-observation-issued.html) | `issued` | Observation |
 | [MII_SP_ICU_Observation_ReferenceRange_High](SearchParameter-mii-sp-icu-observation-referencerange-high.html) | `reference-range-high` | Observation |

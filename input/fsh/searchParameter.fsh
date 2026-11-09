@@ -66,7 +66,7 @@ Usage: #definition
 * experimental = false
 * date = "2025-02-11"
 * description = "Suchparameter für Observation.component.interpretation"
-* code = #component.interpretation
+* code = #component-interpretation
 * base = #Observation
 * type = #token
 * expression = "Observation.component.interpretation"
@@ -83,7 +83,7 @@ Usage: #definition
 * experimental = false
 * date = "2025-02-11"
 * description = "Suchparameter für Observation.component.referenceRange"
-* code = #component.referenceRange
+* code = #component-referencerange
 * base = #Observation
 * type = #token
 * expression = "Observation.component.referenceRange"
