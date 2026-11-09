@@ -17,6 +17,7 @@ Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publ
 * Neue Beispiele: alle Score-Profile (GCS, Faces Pain Scale, NRS, VAS), Körperlänge, zerebraler Perfusionsdruck — insgesamt 144 Beispiele, erstmals CI-validiert
 * `fix` Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende `Quantity.unit` ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen
 * `fix` Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am `code`-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen
+* **`BREAKING`** Suchparameter: Die Codes `component.interpretation` und `component.referenceRange` enthielten einen Punkt, der in FHIR-Such-URLs eine besondere Bedeutung hat. Sie lauten nun `component-interpretation` und `component-referencerange`; die Canonical-URLs beider SearchParameter bleiben unverändert
 
 ### Bekannte Einschränkungen
 

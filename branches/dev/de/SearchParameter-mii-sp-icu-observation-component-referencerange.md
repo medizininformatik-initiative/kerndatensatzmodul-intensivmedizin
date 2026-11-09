@@ -57,7 +57,7 @@ Suchparameter für Observation.component.referenceRange
       "display" : "Germany"
     }]
   }],
-  "code" : "component.referenceRange",
+  "code" : "component-referencerange",
   "base" : ["Observation"],
   "type" : "token",
   "expression" : "Observation.component.referenceRange"

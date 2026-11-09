@@ -17,6 +17,7 @@ Ballot release — first formal publication of this module through the HL7 IG Pu
 * New examples: all score profiles (GCS, Faces Pain Scale, NRS, VAS), body height, cerebral perfusion pressure — 144 examples in total, now validated in CI for the first time
 * `fix` Example QA overhaul: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing `Quantity.unit` values added; category codings corrected; codes and display texts aligned with the profiles' pattern codings
 * `fix` Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired and anchored at the `code` element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version
+* **`BREAKING`** Search parameters: the codes `component.interpretation` and `component.referenceRange` contained a dot, which has special meaning in FHIR search URLs. They are now `component-interpretation` and `component-referencerange`; the canonical URLs of both SearchParameters are unchanged
 
 ### Known issues
 

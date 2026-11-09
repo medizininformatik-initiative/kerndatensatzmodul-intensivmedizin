@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion | *Version*:2027.0.0 |
-| Active as of 2026-11-06 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
+| Active as of 2026-11-09 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
 
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German version: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion-intro.md
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
   "name" : "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
   "title" : "MII PR ICU Inspiratorische Sauerstofffraktion",
   "status" : "active",
-  "date" : "2026-11-06T22:47:16+00:00",
+  "date" : "2026-11-09T13:22:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

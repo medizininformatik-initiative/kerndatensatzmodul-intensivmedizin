@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung | *Version*:2027.0.0 |
-| Active as of 2026-11-06 | *Computable Name*:MII_PR_ICU_ECT_Dauer_Haemodialysesitzung |
+| Active as of 2026-11-09 | *Computable Name*:MII_PR_ICU_ECT_Dauer_Haemodialysesitzung |
 
 Observation "Duration of hemodialysis session" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-da
   "name" : "MII_PR_ICU_ECT_Dauer_Haemodialysesitzung",
   "title" : "MII PR ICU Dauer Haemodialysesitzung",
   "status" : "active",
-  "date" : "2026-11-06T22:47:16+00:00",
+  "date" : "2026-11-09T13:22:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

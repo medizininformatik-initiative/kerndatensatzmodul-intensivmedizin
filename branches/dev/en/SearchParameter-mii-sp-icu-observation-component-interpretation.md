@@ -57,7 +57,7 @@ Suchparameter für Observation.component.interpretation
       "display" : "Germany"
     }]
   }],
-  "code" : "component.interpretation",
+  "code" : "component-interpretation",
   "base" : ["Observation"],
   "type" : "token",
   "expression" : "Observation.component.interpretation"

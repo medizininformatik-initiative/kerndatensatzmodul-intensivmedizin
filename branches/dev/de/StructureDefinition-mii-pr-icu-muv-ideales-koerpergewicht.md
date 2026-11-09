@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-06 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Ideales_Koerpergewicht |
+| Draft Stand: 2026-11-09 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Ideales_Koerpergewicht |
 
 **Usages:**
 
@@ -106,7 +106,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Ideales_Koerpergewicht",
   "title" : "MII PR ICU MUV Ideales Koerpergewicht",
   "status" : "draft",
-  "date" : "2026-11-06T22:47:16+00:00",
+  "date" : "2026-11-09T13:22:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
