@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Ausfuhr Urin](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.md)
+Profile: [MII PR ICU Bilanz Ausfuhr Urin](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Urin](StructureDefinition-mii-pr-icu-bilanz-
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-ausfuhr-urin",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"]
   },
   "status" : "final",
   "category" : [{

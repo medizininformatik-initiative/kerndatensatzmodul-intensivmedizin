@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Untersuchung Pupillensymmetrie](StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.md)
+Profile: [MII PR ICU Untersuchung Pupillensymmetrie](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Untersuchung Pupillensymmetrie](StructureDefinition-mii-pr-
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-untersuchung-pupillensymmetrie",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"]
   },
   "status" : "final",
   "category" : [{

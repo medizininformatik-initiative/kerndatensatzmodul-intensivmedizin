@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.md)
+Profile: [MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit](StructureDefinition-mii-
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-ausfuhr-gallenfluessigkeit",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"]
   },
   "status" : "final",
   "category" : [{

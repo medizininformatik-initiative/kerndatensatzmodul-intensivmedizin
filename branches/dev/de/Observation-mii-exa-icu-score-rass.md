@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
+Profile: [MII PR ICU Score RASS](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-score-rass)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Score RASS](StructureDefinition-mii-pr-icu-score-rass.md)
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-score-rass",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-score-rass"]
   },
   "status" : "final",
   "category" : [{

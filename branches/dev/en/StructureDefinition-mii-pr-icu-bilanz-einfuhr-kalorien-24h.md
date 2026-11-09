@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-09T15:34:23+00:00",
+  "date" : "2026-11-09T16:16:34+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -55,35 +55,10 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
     }]
   }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [{
-    "identity" : "workflow",
-    "uri" : "http://hl7.org/fhir/workflow",
-    "name" : "Workflow Pattern"
-  },
-  {
-    "identity" : "sct-concept",
-    "uri" : "http://snomed.info/conceptdomain",
-    "name" : "SNOMED CT Concept Domain Binding"
-  },
-  {
-    "identity" : "v2",
-    "uri" : "http://hl7.org/v2",
-    "name" : "HL7 v2 Mapping"
-  },
-  {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
-    "identity" : "sct-attr",
-    "uri" : "http://snomed.org/attributebinding",
-    "name" : "SNOMED CT Attribute Binding"
-  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
+  "baseDefinition" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

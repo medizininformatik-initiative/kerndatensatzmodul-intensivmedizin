@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Einfuhr Spendermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.md)
+Profile: [MII PR ICU Bilanz Einfuhr Spendermilch](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Spendermilch](StructureDefinition-mii-pr-icu
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-einfuhr-spendermilch",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"]
   },
   "status" : "final",
   "category" : [{

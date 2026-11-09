@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md)
+Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](StructureDefinition-mii
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"]
   },
   "status" : "final",
   "category" : [{

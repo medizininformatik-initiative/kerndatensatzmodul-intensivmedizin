@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ga
   "name" : "MII_PR_ICU_ECT_Gasfluss",
   "title" : "MII PR ICU Gasfluss",
   "status" : "active",
-  "date" : "2026-11-09T15:34:23+00:00",
+  "date" : "2026-11-09T16:16:34+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

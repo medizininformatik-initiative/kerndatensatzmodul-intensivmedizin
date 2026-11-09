@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md)
+Profile: [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](StructureDefinition-m
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"]
   },
   "status" : "final",
   "category" : [{

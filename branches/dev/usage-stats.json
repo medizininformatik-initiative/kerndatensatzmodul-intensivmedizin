@@ -105,10 +105,6 @@
         "title": "MII PR ICU Score Numerische Ratingskala"
       },
       {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-rass",
-        "title": "MII PR ICU Score RASS"
-      },
-      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
         "title": "MII PR ICU Score SOFA"
       },
@@ -123,30 +119,6 @@
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa",
         "title": "MII PR ICU Score ZOPA"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
-        "title": "MII PR ICU Untersuchung Pupillenbefund"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
-        "title": "MII PR ICU Untersuchung Pupillenform"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse",
-        "title": "MII PR ICU Untersuchung Pupillengroesse"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt",
-        "title": "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt",
-        "title": "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
-      },
-      {
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie",
-        "title": "MII PR ICU Untersuchung Pupillensymmetrie"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss",

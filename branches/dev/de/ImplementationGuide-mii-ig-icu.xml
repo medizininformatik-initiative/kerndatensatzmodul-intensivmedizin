@@ -1658,209 +1658,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz"/>
-      </reference>
-      <name value="MII PR ICU Bilanz"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Blutverlust"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Drainage Generisch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Magensonde"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr OP Drainage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Pankreasdrainage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Stuhlgang"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Urin"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Ausfuhr Wunddrainage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"/>
       </reference>
       <name value="MII PR ICU Bilanz Einfuhr Kalorien 24h"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Muttermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Einfuhr Spendermilch"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"/>
-      </reference>
-      <name value="MII PR ICU Bilanz Tagesbilanz Fluessigkeit"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2413,16 +2213,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-rass"/>
-      </reference>
-      <name value="MII PR ICU Score RASS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-score-sofa"/>
       </reference>
       <name value="MII PR ICU Score SOFA"/>
@@ -2537,66 +2327,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund"/>
-      </reference>
-      <name value="MII PR ICU Untersuchung Pupillenbefund"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-untersuchung-pupillenform"/>
-      </reference>
-      <name value="MII PR ICU Untersuchung Pupillenform"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"/>
-      </reference>
-      <name value="MII PR ICU Untersuchung Pupillengroesse"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"/>
-      </reference>
-      <name value="MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt"/>
-      </reference>
-      <name value="MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie"/>
-      </reference>
-      <name value="MII PR ICU Untersuchung Pupillensymmetrie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-ect-venoeser-druck"/>
       </reference>
       <name value="MII PR ICU Venoeser Druck"/>
@@ -2661,32 +2391,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"/>
-      </reference>
-      <name value="MII VS ICU BodySite Observation Pupillenbefund"/>
-      <description value="Zulaessige Koerperstellen fuer lateralisierte Pupillenbefunde: linke oder rechte Pupille."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mii-vs-icu-cam-icu-result"/>
       </reference>
       <name value="MII VS ICU CAM-ICU Result"/>
       <description value="CAM-ICU assessment result: positive (delirium present) or negative (no delirium)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"/>
-      </reference>
-      <name value="MII VS ICU Category Observation Bilanzen HL7"/>
-      <description value="ValueSet defining HL7 observation categories for ICU Bilanzen"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2781,39 +2489,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Bilanzen ISO11073"/>
-      <description value="Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten ISO/IEEE 11073-Parameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Bilanzen LOINC"/>
-      <description value="Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOINC-Parameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-bilanzen-snomed"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Bilanzen SNOMED"/>
-      <description value="Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten SNOMED-Parameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073"/>
       </reference>
       <name value="MII VS ICU Code Observation extrakorporale Verfahren ISO11073"/>
@@ -2840,48 +2515,6 @@
       </reference>
       <name value="MII VS ICU Code Observation extrakorporale Verfahren SNOMED"/>
       <description value="Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Pupillenform LOINC"/>
-      <description value="Kategoriale Beurteilung der Pupillenform/Regularitaet: regelmaessig (rund) oder unregelmaessig. Zulaessig sind SNOMED-Findings und/oder LOINC-Antwortcodes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-pupillengroesse"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Pupillengroesse"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Pupillenlichtreaktion"/>
-      <description value="Subset der LOINC AnswerList LL3762-3 fuer die Pupillen-Lichtreaktion: reaktiv, traege reaktiv, nicht reaktiv."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-code-observation-pupillensymmetrie"/>
-      </reference>
-      <name value="MII VS ICU Code Observation Pupillensymmetrie"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2994,17 +2627,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/mii-vs-icu-score-rass"/>
-      </reference>
-      <name value="MII VS ICU Score RASS"/>
-      <description value="Value set for RASS Score"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/mii-vs-icu-unit-equivalent-percent-1"/>
       </reference>
       <name value="MII VS ICU Unit equivalent percent 1"/>
@@ -3064,17 +2686,6 @@
       </reference>
       <name value="MII VS ICU Unit equivalent UCUM L per minute and squaremeter"/>
       <description value="Dieses ValueSet enthält äquivalente Codes für Liter pro Minute ."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter"/>
-      </reference>
-      <name value="MII VS ICU Unit equivalent UCUM milliliter"/>
-      <description value="Dieses ValueSet enthält äquivalente Codes für Milliliter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4430,10 +4041,226 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz.html"/>
+          <title value="MII PR ICU Bilanz"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Blutverlust"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Drainage Generisch"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-magensonde.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-magensonde.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Magensonde"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-op-drainage.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-op-drainage.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr OP Drainage"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Pankreasdrainage"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-stuhlgang.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-stuhlgang.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Stuhlgang"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-urin.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-urin.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Urin"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html"/>
+          <title value="MII PR ICU Bilanz Ausfuhr Wunddrainage"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-muttermilch.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-muttermilch.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Muttermilch"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-einfuhr-spendermilch.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-einfuhr-spendermilch.html"/>
+          <title value="MII PR ICU Bilanz Einfuhr Spendermilch"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html"/>
+          <title value="MII PR ICU Bilanz Tagesbilanz Fluessigkeit"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html"/>
           </extension>
           <nameUrl value="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html"/>
           <title value="MII PR ICU MUV zerebraler Perfusionsdruck"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-score-rass.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-score-rass.html"/>
+          <title value="MII PR ICU Score RASS"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-untersuchung-pupillenbefund.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-untersuchung-pupillenbefund.html"/>
+          <title value="MII PR ICU Untersuchung Pupillenbefund"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-untersuchung-pupillenform.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-untersuchung-pupillenform.html"/>
+          <title value="MII PR ICU Untersuchung Pupillenform"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-untersuchung-pupillengroesse.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-untersuchung-pupillengroesse.html"/>
+          <title value="MII PR ICU Untersuchung Pupillengroesse"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html"/>
+          <title value="MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html"/>
+          <title value="MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="extern-mii-pr-icu-untersuchung-pupillensymmetrie.html"/>
+          </extension>
+          <nameUrl value="extern-mii-pr-icu-untersuchung-pupillensymmetrie.html"/>
+          <title value="MII PR ICU Untersuchung Pupillensymmetrie"/>
           <generation value="markdown"/>
         </page>
         <page>

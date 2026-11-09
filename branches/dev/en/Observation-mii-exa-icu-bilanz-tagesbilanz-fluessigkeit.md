@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md)
+Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](StructureDefinition-mii-pr
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-tagesbilanz-fluessigkeit",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"]
   },
   "status" : "final",
   "category" : [{

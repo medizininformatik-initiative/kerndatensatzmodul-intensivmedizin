@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.md)
+Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Magensonde](StructureDefinition-mii-pr-icu-b
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-ausfuhr-magensonde",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"]
   },
   "status" : "final",
   "category" : [{

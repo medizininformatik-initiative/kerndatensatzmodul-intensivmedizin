@@ -27,7 +27,7 @@ Es gibt jeweils mindestens ein **generisches Profil** für die im Datenmodell de
 * Parameter von extrakorporalen Verfahren: - [Extrakorporale Verfahren (Procedure)](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md) - [Eingestellte und gemessene Parameter (DeviceMetric)](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md) - [Parameter von extrakorporalen Verfahren (Observation)](RETIRED)
 * Beatmungswerte: - [Beatmung (Procedure)](StructureDefinition-mii-pr-icu-beatmung.md) - [Eingestellte und gemessene Parameter (DeviceMetric)](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md) - [Parameter von Beatmung (Observation)](RETIRED)
 * Monitoring und Vitaldaten - [Monitoring und Vitaldaten (Observation)](profiles.md) - [Sonstige pulsatile Drücke Generisch (Observation)](profiles.md) - [Körpertemperatur Generisch (Observation)](profiles.md)
-* Bilanzen - [Bilanz (Observation)](StructureDefinition-mii-pr-icu-bilanz.md)
+* Bilanzen - [Bilanz (Observation)](extern-mii-pr-icu-bilanz.md)
 
 Außerdem gibt es **spezifische Profile**, welche jeweils die Code- und Einheiten-Zugehörigkeiten **fixieren**. Diese Spezifischen Ressourcen sind unter anderem als **Handreichung für den Implementierer** gedacht und sollen dabei helfen, die Hürde der korrekten semantischen Annotation zu verringern und die Interoperabilität zu verbessern. Die spezifische Profile sind all jene, die sich innerhalb einer Gruppe an die o.g. generischen Profile anschließen.
 

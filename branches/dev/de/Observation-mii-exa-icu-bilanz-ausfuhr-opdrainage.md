@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Ausfuhr OP Drainage](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.md)
+Profile: [MII PR ICU Bilanz Ausfuhr OP Drainage](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr OP Drainage](StructureDefinition-mii-pr-icu-
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-ausfuhr-opdrainage",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"]
   },
   "status" : "final",
   "category" : [{

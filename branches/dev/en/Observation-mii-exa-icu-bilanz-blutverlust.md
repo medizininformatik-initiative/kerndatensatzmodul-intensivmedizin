@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.md)
+Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Blutverlust](StructureDefinition-mii-pr-icu-
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-blutverlust",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"]
   },
   "status" : "final",
   "category" : [{

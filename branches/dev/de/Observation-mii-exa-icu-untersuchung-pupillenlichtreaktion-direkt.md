@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.md)
+Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](StructureDefinit
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt"]
   },
   "status" : "final",
   "category" : [{

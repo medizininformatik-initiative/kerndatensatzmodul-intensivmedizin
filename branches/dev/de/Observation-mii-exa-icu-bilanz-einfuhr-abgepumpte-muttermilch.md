@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch](StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md)
+Profile: [MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch](StructureDefinition-
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch"]
   },
   "status" : "final",
   "category" : [{

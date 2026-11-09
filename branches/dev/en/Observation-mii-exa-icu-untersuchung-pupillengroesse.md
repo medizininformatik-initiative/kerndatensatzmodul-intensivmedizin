@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Untersuchung Pupillengroesse](StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.md)
+Profile: [MII PR ICU Untersuchung Pupillengroesse](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Untersuchung Pupillengroesse](StructureDefinition-mii-pr-ic
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-untersuchung-pupillengroesse",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse"]
   },
   "status" : "final",
   "category" : [{

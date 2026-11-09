@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md)
+Profile: [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](StructureDefinition-mii-p
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung"]
   },
   "status" : "final",
   "category" : [{

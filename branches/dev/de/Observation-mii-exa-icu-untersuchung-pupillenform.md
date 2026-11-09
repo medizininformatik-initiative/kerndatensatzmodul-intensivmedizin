@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Untersuchung Pupillenform](StructureDefinition-mii-pr-icu-untersuchung-pupillenform.md)
+Profile: [MII PR ICU Untersuchung Pupillenform](https://simplifier.net/resolve?scope=de.gematik.isik@6.0.0&canonical=https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenform)
 
 **status**: Final
 
@@ -35,7 +35,7 @@ Profile: [MII PR ICU Untersuchung Pupillenform](StructureDefinition-mii-pr-icu-u
   "resourceType" : "Observation",
   "id" : "mii-exa-icu-untersuchung-pupillenform",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"]
+    "profile" : ["https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenform"]
   },
   "status" : "final",
   "category" : [{
