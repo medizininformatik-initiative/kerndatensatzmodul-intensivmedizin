@@ -12,6 +12,7 @@ Title: "MII PR ICU MUV Atemfrequenz"
 * identifier MS
 * status MS
 * category MS
+* category[VSCat] MS
 
 * code MS
 * code.coding 2.. MS
@@ -19,7 +20,7 @@ Title: "MII PR ICU MUV Atemfrequenz"
 * code.coding[loinc] MS
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
-* code.coding[snomed] 1..1
+* code.coding[snomed] 1..1 MS
 * code.coding[snomed] ^patternCoding.system = $sct
 * code.coding[snomed] ^patternCoding.code = #86290005
 
@@ -28,7 +29,7 @@ Title: "MII PR ICU MUV Atemfrequenz"
 * effective[x] MS
 
 * value[x] MS
-* valueQuantity 1..
+* valueQuantity 1.. MS
 * valueQuantity ^patternQuantity.unit = "breaths per minute"
 * valueQuantity.value MS
 * valueQuantity.unit MS
