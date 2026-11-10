@@ -8,6 +8,8 @@
     "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20@StructureDefinition.differential.element",
     "UNABLE_TO_INFER_CODESYSTEM@StructureDefinition.*",
     "Terminology_TX_NoValid_16@StructureDefinition.*",
-    "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.*"
+    "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.*",
+    "UNKNOWN_CODESYSTEM@CapabilityStatement.jurisdiction.coding.system",
+    "UNKNOWN_CODESYSTEM@ImplementationGuide.jurisdiction.coding.system"
   ]
 }
