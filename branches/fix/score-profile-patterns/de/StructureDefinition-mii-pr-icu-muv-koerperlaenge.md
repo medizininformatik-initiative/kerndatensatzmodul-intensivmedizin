@@ -106,7 +106,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerperlaenge",
   "title" : "MII PR ICU MUV Koerperlaenge",
   "status" : "active",
-  "date" : "2026-11-10T11:46:48+00:00",
+  "date" : "2026-11-10T12:25:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

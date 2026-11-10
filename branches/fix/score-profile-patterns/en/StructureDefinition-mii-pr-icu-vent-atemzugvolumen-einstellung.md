@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
   "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung",
   "title" : "MII PR ICU Atemzugvolumen Einstellung",
   "status" : "active",
-  "date" : "2026-11-10T11:46:48+00:00",
+  "date" : "2026-11-10T12:25:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
