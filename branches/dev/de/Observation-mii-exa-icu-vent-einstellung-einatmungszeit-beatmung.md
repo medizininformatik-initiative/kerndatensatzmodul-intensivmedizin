@@ -63,7 +63,7 @@ Profile: [MII PR ICU Einstellung Einatmungszeit Beatmung](StructureDefinition-mi
     {
       "system" : "http://loinc.org",
       "code" : "76334-2",
-      "display" : "Inspiratory time setting"
+      "display" : "Inspiratory time setting Ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",

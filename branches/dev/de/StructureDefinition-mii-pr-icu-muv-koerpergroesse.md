@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergroesse](https://simplifie
 ** Summary **
 
 Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 34 elements
+ Must-Support: 36 elements
 
 **Slices**
 
@@ -75,7 +75,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergroesse](https://simplifie
 ** Summary **
 
 Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 34 elements
+ Must-Support: 36 elements
 
 **Slices**
 
@@ -100,7 +100,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergroesse",
   "title" : "MII PR ICU MUV Koerpergroesse",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -234,6 +234,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:loinc-zusatzcode",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc-zusatzcode",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:snomed",
       "path" : "Observation.code.coding",
       "sliceName" : "snomed",
@@ -242,7 +248,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "1153637007"
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:snomed.system",

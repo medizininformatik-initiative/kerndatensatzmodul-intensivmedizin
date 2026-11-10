@@ -26,7 +26,7 @@ Profile: [MII PR ICU Mechanische Atemfrequenz Beatmet](StructureDefinition-mii-p
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
-**value**: 12.0 {Breaths}/min (Details: UCUM code{Breaths}/min = '{Breaths}/min')
+**value**: 12.0 breaths/min (Details: UCUM code/min = '/min')
 
 **device**: [DeviceMetric: type = Artificial ventilation (regime/therapy); category = setting](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md)
 
@@ -75,7 +75,7 @@ Profile: [MII PR ICU Mechanische Atemfrequenz Beatmet](StructureDefinition-mii-p
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151586",
-      "display" : "Rate of mechanical ventilation; method not specified."
+      "display" : "MDC_VENT_RESP_RATE"
     }]
   },
   "subject" : {
@@ -87,9 +87,9 @@ Profile: [MII PR ICU Mechanische Atemfrequenz Beatmet](StructureDefinition-mii-p
   },
   "valueQuantity" : {
     "value" : 12.0,
-    "unit" : "{Breaths}/min",
+    "unit" : "breaths/min",
     "system" : "http://unitsofmeasure.org",
-    "code" : "{Breaths}/min"
+    "code" : "/min"
   },
   "device" : {
     "reference" : "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"

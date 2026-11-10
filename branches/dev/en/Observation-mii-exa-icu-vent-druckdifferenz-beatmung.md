@@ -20,7 +20,7 @@ Profile: [MII PR ICU Druckdifferenz Beatmung](StructureDefinition-mii-pr-icu-ven
 
 **category**: Artificial ventilation (regime/therapy)
 
-**code**: Airway pressure delta^on ventilator
+**code**: Airway pressure delta --on ventilator
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
@@ -57,12 +57,12 @@ Profile: [MII PR ICU Druckdifferenz Beatmung](StructureDefinition-mii-pr-icu-ven
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "76154-4",
-      "display" : "Airway pressure delta^on ventilator"
+      "display" : "Airway pressure delta --on ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "152720",
-      "display" : "Inspiratory airway pressure relative to PEEP or BAP."
+      "display" : "MDC_VENT_PRESS_AWAY_DELTA"
     }]
   },
   "subject" : {

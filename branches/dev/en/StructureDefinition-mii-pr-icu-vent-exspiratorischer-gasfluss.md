@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
   "name" : "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
   "title" : "MII PR ICU Exspiratorischer Gasfluss",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -124,6 +124,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "60792-9",
         "display" : "Expiratory gas flow Respiratory system airway --on ventilator"
       }
@@ -135,8 +136,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151944",
-        "display" : "Expiratory gas flow during mechanical ventilation. "
+        "display" : "MDC_VENT_FLOW_EXP"
       }
     },
     {

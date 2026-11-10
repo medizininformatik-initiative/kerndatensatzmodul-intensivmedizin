@@ -44,7 +44,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 ** Summary **
 
 Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 27 elements
+ Must-Support: 28 elements
 
 **Slices**
 
@@ -73,7 +73,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 ** Summary **
 
 Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 27 elements
+ Must-Support: 28 elements
 
 **Slices**
 
@@ -98,7 +98,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Kopfumfang",
   "title" : "MII PR ICU MUV Kopfumfang",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -184,7 +184,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
-      "sliceName" : "loinc"
+      "sliceName" : "loinc",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:loinc.system",

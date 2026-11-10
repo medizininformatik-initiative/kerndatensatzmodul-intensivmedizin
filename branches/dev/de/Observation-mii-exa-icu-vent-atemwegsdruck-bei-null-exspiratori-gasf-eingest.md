@@ -20,7 +20,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureD
 
 **category**: Artificial ventilation (regime/therapy)
 
-**code**: Pressure.airway^at zero inspiratory flow on ventilator
+**code**: Airway pressure --at zero inspiratory flow on ventilator
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -57,7 +57,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureD
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "20060-0",
-      "display" : "Pressure.airway^at zero inspiratory flow on ventilator"
+      "display" : "Airway pressure --at zero inspiratory flow on ventilator"
     }]
   },
   "subject" : {

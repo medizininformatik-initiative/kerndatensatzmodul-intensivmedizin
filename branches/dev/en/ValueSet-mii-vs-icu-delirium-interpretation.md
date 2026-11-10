@@ -25,8 +25,6 @@ Delirium status interpretations
 
 ### Expansion
 
-No Expansion for this valueset (Unknown Code System)
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -45,7 +43,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "MII VS ICU Delirium Interpretation",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -72,10 +70,6 @@ No Expansion for this valueset (Unknown Code System)
       {
         "code" : "191507002",
         "display" : "Subacute delirium (disorder)"
-      },
-      {
-        "code" : "xxx",
-        "display" : "No delirium (finding)"
       }]
     }]
   }

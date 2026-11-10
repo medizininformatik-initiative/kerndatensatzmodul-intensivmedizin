@@ -68,7 +68,7 @@ Profile: [MII PR ICU Maximaler Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151957",
-      "display" : "Maximum airway pressure during mechanical ventilation."
+      "display" : "MDC_VENT_PRESS_MAX"
     }]
   },
   "subject" : {

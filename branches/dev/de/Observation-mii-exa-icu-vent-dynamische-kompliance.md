@@ -20,7 +20,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
 
 **category**: Artificial ventilation (regime/therapy)
 
-**code**: Compliance.dynamic
+**code**: Dynamic lung compliance
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -57,7 +57,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "60827-3",
-      "display" : "Compliance.dynamic"
+      "display" : "Dynamic lung compliance"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151692",
-      "display" : "Change of tidal volume per unit change of transthoracic pressure."
+      "display" : "MDC_COMPL_LUNG_DYN"
     }]
   },
   "subject" : {

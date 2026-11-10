@@ -110,6 +110,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","C*E.1-8, C*E.10-22"
 "Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250822000""/>
   <display value=""Inspiration/expiration time ratio (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -138,6 +139,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first"
 "Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""75931-6""/>
   <display value=""Inspiration/Expiration time Ratio""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -166,8 +168,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first"
 "Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151832""/>
-  <display value=""Ratio of durations of inspiratory and expiratory phases.""/>
+  <display value=""MDC_RATIO_IE""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -218,7 +221,7 @@ Period {[]} {[]}","Clinically relevant time/time-period for observation","The ti
 "Observation.value[x]","Observation.value[x]","","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <system value=""http://unitsofmeasure.org""/>
-  <code value=""{ratio}""/>
+  <code value=""1""/>
 </valueQuantity>","","","",,,,,"",,,,"Observation.value[x]",0,1,"obs-7
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 441742003 |Evaluation finding|","OBX.2, OBX.5, OBX.6","363714003 |Interprets|"

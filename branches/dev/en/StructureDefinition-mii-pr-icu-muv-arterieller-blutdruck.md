@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -73,6 +73,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:VSCat",
+      "path" : "Observation.category",
+      "sliceName" : "VSCat",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "mustSupport" : true
@@ -102,6 +108,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.code.coding:loinc.display",
       "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:snomed",
+      "path" : "Observation.code.coding",
+      "sliceName" : "snomed",
       "mustSupport" : true
     },
     {
@@ -147,11 +159,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
-      "id" : "Observation.value[x]",
-      "path" : "Observation.value[x]",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.dataAbsentReason",
       "path" : "Observation.dataAbsentReason",
       "max" : "0",
@@ -187,6 +194,15 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "id" : "Observation.component",
       "path" : "Observation.component",
       "max" : "3",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }],
       "mustSupport" : true
     },
     {
@@ -334,7 +350,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "sliceName" : "valueQuantity",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:SystolicBP.value[x]:valueQuantity.value",
@@ -506,7 +523,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "sliceName" : "valueQuantity",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity.value",
@@ -678,7 +696,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "sliceName" : "valueQuantity",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:meanBP.value[x]:valueQuantity.value",

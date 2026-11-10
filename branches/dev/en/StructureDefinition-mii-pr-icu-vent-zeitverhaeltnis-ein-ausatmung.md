@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-z
   "name" : "MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
   "title" : "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -118,6 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-z
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250822000",
         "display" : "Inspiration/expiration time ratio (observable entity)"
       }
@@ -129,6 +130,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-z
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "75931-6",
         "display" : "Inspiration/Expiration time Ratio"
       }
@@ -140,8 +142,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-z
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151832",
-        "display" : "Ratio of durations of inspiratory and expiratory phases."
+        "display" : "MDC_RATIO_IE"
       }
     },
     {
@@ -149,7 +152,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-z
       "path" : "Observation.value[x]",
       "patternQuantity" : {
         "system" : "http://unitsofmeasure.org",
-        "code" : "{ratio}"
+        "code" : "1"
       }
     }]
   }

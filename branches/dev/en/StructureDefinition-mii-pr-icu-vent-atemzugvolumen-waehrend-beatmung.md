@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
   "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Waehrend_Beatmung",
   "title" : "MII PR ICU Atemzugvolumen Waehrend Beatmung",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -118,6 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250874002",
         "display" : "Ventilator delivered tidal volume (observable entity)"
       }
@@ -129,6 +130,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "76222-9",
         "display" : "Tidal volume Ventilator --on ventilator"
       }
@@ -140,8 +142,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151980",
-        "display" : "Volume of gas delivered through the patient-connection port during a respiratory cycle."
+        "display" : "MDC_VENT_VOL_TIDAL"
       }
     },
     {

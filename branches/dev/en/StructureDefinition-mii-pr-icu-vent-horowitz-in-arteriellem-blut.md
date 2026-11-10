@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-h
   "name" : "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
   "title" : "MII PR ICU Horowitz In Arteriellem Blut",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -138,6 +138,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-h
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "50984-4",
         "display" : "Horowitz index in Arterial blood"
       }
@@ -149,8 +150,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-h
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "150656",
-        "display" : "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21)."
+        "display" : "MDC_O2_OXYGENATION_RATIO"
       }
     },
     {

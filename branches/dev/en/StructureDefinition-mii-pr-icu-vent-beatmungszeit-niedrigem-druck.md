@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
   "title" : "MII PR ICU Beatmungszeit Niedrigem Druck",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -124,6 +124,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "76229-4",
         "display" : "Low pressure hold time setting Ventilator"
       }
@@ -135,6 +136,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "16929864",
         "display" : "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
       }

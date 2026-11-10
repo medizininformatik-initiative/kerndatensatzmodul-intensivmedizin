@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
   "title" : "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -176,6 +176,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "442720002",
         "display" : "Expired oxygen tension (observable entity)"
       }
@@ -187,6 +188,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "3147-6",
         "display" : "Oxygen [Partial pressure] in Exhaled gas"
       }
@@ -198,8 +200,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "153132",
-        "display" : "Partial pressure of oxygen in airway gas measured during expiration."
+        "display" : "MDC_CONC_AWAY_O2_EXP"
       }
     },
     {

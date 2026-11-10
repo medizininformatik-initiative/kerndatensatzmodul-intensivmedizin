@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-d
   "name" : "MII_PR_ICU_VENT_Dynamische_Kompliance",
   "title" : "MII PR ICU Dynamische Kompliance",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -118,6 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-d
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250823005",
         "display" : "Total dynamic compliance (observable entity)"
       }
@@ -129,8 +130,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-d
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "60827-3",
-        "display" : "Compliance.dynamic"
+        "display" : "Dynamic lung compliance"
       }
     },
     {
@@ -140,8 +142,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-d
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151692",
-        "display" : "Change of tidal volume per unit change of transthoracic pressure."
+        "display" : "MDC_COMPL_LUNG_DYN"
       }
     },
     {

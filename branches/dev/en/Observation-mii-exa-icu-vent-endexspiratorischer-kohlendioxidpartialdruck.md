@@ -20,7 +20,7 @@ Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefin
 
 **category**: Artificial ventilation (regime/therapy)
 
-**code**: Carbon dioxide^at end expiration
+**code**: Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
@@ -57,7 +57,7 @@ Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefin
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "19891-1",
-      "display" : "Carbon dioxide^at end expiration"
+      "display" : "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefin
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151708",
-      "display" : "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
+      "display" : "MDC_CONC_AWAY_CO2_ET"
     }]
   },
   "subject" : {

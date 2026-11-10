@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
   "title" : "MII PR ICU Spontanes Atemzugvolumen",
   "status" : "active",
-  "date" : "2026-11-10T10:24:19+00:00",
+  "date" : "2026-11-10T10:55:46+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -115,6 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250816009",
         "display" : "Spontaneous tidal volume (observable entity)"
       }

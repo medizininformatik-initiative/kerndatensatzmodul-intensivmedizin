@@ -68,7 +68,7 @@ Profile: [MII PR ICU Positiv Endexpiratorischer Druck](StructureDefinition-mii-p
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151976",
-      "display" : "Positive end expiratory pressure applied to the airway."
+      "display" : "MDC_VENT_PRESS_AWAY_END_EXP_POS"
     }]
   },
   "subject" : {

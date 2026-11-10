@@ -62,7 +62,7 @@ Profile: [MII PR ICU Exspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-v
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151944",
-      "display" : "Expiratory gas flow during mechanical ventilation. "
+      "display" : "MDC_VENT_FLOW_EXP"
     }]
   },
   "subject" : {
