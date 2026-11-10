@@ -55,7 +55,8 @@
         "max": "1",
         "patternCoding": {
           "code": "20056-8",
-          "display": "Pressure.airway^at mean expiratory flow on ventilator"
+          "system": "http://loinc.org",
+          "display": "Airway pressure --at mean expiratory flow on ventilator"
         }
       },
       {

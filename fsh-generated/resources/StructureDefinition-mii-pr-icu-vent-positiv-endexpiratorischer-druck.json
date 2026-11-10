@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250854009",
+          "system": "http://snomed.info/sct",
           "display": "Positive end expiratory pressure (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76248-4",
+          "system": "http://loinc.org",
           "display": "PEEP Respiratory system --on ventilator"
         }
       },
@@ -76,7 +78,8 @@
         "max": "1",
         "patternCoding": {
           "code": "151976",
-          "display": "Positive end expiratory pressure applied to the airway."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_PRESS_AWAY_END_EXP_POS"
         }
       },
       {

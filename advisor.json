@@ -1,13 +1,32 @@
 {
+  // The validator (-advisor-file) reads this file with // line comments allowed.
+  // Give every suppression a one-line reason.
   "suppress": [
+    // The IG Publisher's own parameter codes (copyrightyear, path-data, special-url, ...) are required by the publisher but are not in the R4 guide-parameter-code value set.
     "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
+    // Same IG Publisher parameter codes as above; validator 6.10.4 reports them under this message id instead.
     "UNABLE_TO_INFER_CODESYSTEM@ImplementationGuide.definition.parameter.code",
+    // The module is in ballot and references draft ValueSets and CodeSystems (its own and its dependencies'); these warnings go away once the referenced artifacts are published as active.
     "MSG_DRAFT",
+    // Terminology server notes on codes inside profile definitions (patterns and bindings, e.g. edition or version differences); the same codes are still checked on every instance.
     "TERMINOLOGY_TX_WARNING@StructureDefinition.*",
+    // SUSHI output has no narrative; the IG Publisher generates the narrative during the build, so the published resources do have one.
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
+    // The ICU logical model deliberately keeps UpperCamelCase element names (MonitoringUndVitaldaten, ParameterCode, ...), which eld-20 rejects for every path segment after the root.
     "http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20@StructureDefinition.differential.element",
+    // Codes given without a system in profile patterns or bindings that draw on several code systems cannot be tied to one system when the profile itself is checked; instances carry the system and are validated normally.
     "UNABLE_TO_INFER_CODESYSTEM@StructureDefinition.*",
+    // Codes fixed in profiles are checked against value sets the terminology server cannot fully expand at profile level; instances are still validated against the binding.
     "Terminology_TX_NoValid_16@StructureDefinition.*",
-    "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.*"
+    // Some value sets list codes from code system releases the terminology server does not have yet. Broad: it can also hide real invalid codes, so check new value set codes with $lookup.
+    "VALUESET_INCLUDE_INVALID_CONCEPT_CODE@ValueSet.*",
+    // urn:iso:std:iso:3166#DE is the correct jurisdiction, but the terminology server (SU-TermServ) has no definition of the ISO 3166 code system.
+    "UNKNOWN_CODESYSTEM@CapabilityStatement.jurisdiction.coding.system",
+    // Same ISO 3166 jurisdiction coding as above, on the ImplementationGuide.
+    "UNKNOWN_CODESYSTEM@ImplementationGuide.jurisdiction.coding.system",
+    // SUSHI writes a placeholder http://fhir.org/packages/<id>/ImplementationGuide/<id> as dependsOn.uri for packages without a usable IG canonical (de.basisprofil.r4, de.gematik.isik, dvmd.kdl.r4); dependencies resolve by packageId and version, so the URI is not used.
+    "IG_DEPENDENCY_INVALID_URL@ImplementationGuide.dependsOn",
+    // The dependency tree loads several copies of UCUM and ISO 11073 (THO 5.0.0 to 6.5.0, xver-r5). The IG Publisher pins versions at publish time (pin-canonicals: pin-all); pinning in FSH would break SU-TermServ, which has ISO 11073 2024-12-05 instead of the local 2.0.1/20250520.
+    "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS@ValueSet.compose.include.system"
   ]
 }

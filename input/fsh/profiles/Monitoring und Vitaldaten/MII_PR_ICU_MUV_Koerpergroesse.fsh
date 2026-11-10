@@ -22,9 +22,11 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * code.coding 3.. MS
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8302-2
 * code.coding[loinc].display MS
 * code.coding[snomed] 1..1 MS
+* code.coding[snomed] ^patternCoding.system = $sct
 * code.coding[snomed] ^patternCoding.code = #1153637007
 * code.coding[snomed].display MS
 * code.coding contains IEEE-11073 1..1 MS

@@ -11,6 +11,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * category MS
 * obeys mii-icu-val-xor-dar
 
+* category[VSCat] MS
 * category[VSCat].coding 0.. MS
 * category[VSCat].coding.system 1..1 MS
 * category[VSCat].coding.code 1..1 MS
