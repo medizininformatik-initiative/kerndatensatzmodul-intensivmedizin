@@ -48,7 +48,7 @@ Title: "MII PR ICU MUV Ideales Koerpergewicht"
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #188796
-* code.coding[IEEE-11073] ^patternCoding.display = "Ideal body weight (IBW)"
+* code.coding[IEEE-11073] ^patternCoding.display = "MDC_MASS_BODY_EST_IBW"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS
