@@ -23,6 +23,8 @@
     // urn:iso:std:iso:3166#DE is the correct jurisdiction, but the terminology server (SU-TermServ) has no definition of the ISO 3166 code system.
     "UNKNOWN_CODESYSTEM@CapabilityStatement.jurisdiction.coding.system",
     // Same ISO 3166 jurisdiction coding as above, on the ImplementationGuide.
-    "UNKNOWN_CODESYSTEM@ImplementationGuide.jurisdiction.coding.system"
+    "UNKNOWN_CODESYSTEM@ImplementationGuide.jurisdiction.coding.system",
+    // SUSHI writes a placeholder http://fhir.org/packages/<id>/ImplementationGuide/<id> as dependsOn.uri for packages without a usable IG canonical (de.basisprofil.r4, de.gematik.isik, dvmd.kdl.r4); dependencies resolve by packageId and version, so the URI is not used.
+    "IG_DEPENDENCY_INVALID_URL@ImplementationGuide.dependsOn"
   ]
 }
