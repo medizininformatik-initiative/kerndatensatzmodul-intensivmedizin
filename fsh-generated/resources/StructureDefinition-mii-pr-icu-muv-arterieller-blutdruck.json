@@ -31,6 +31,12 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category:VSCat",
+        "path": "Observation.category",
+        "sliceName": "VSCat",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
@@ -38,6 +44,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "comment": "Mindestens zwei Codings: LOINC 85354-9 (Slice loinc, aus dem Basisprofil) und SNOMED CT 364090009 (Slice sct).",
         "min": 2,
         "mustSupport": true
       },
@@ -60,6 +67,13 @@
       {
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "comment": "Optionales SNOMED-CT-Coding 75367002 (Blood pressure) aus dem Basisprofil. Das für dieses Profil verpflichtende SNOMED-CT-Coding ist 364090009 (Systemic arterial pressure) im Slice sct; beide können nebeneinander stehen.",
         "mustSupport": true
       },
       {
@@ -105,14 +119,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
-        "max": "0",
         "mustSupport": true
       },
       {
@@ -145,6 +153,17 @@
         "id": "Observation.component",
         "path": "Observation.component",
         "max": "3",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x]:valueQuantity",
+        "path": "Observation.component.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -296,7 +315,8 @@
           {
             "code": "Quantity"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.component:SystolicBP.value[x]:valueQuantity.value",
@@ -472,7 +492,8 @@
           {
             "code": "Quantity"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.component:DiastolicBP.value[x]:valueQuantity.value",
@@ -648,7 +669,8 @@
           {
             "code": "Quantity"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.component:meanBP.value[x]:valueQuantity.value",
