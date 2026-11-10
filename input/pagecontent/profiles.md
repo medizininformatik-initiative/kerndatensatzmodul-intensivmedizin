@@ -99,9 +99,10 @@
 </div>
 </div></details>
 <details>
-<summary>Scores<span class="cnt">10</span></summary><div class="body">
+<summary>Scores<span class="cnt">11</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
 <div class="items">
+<a href="StructureDefinition-mii-pr-icu-score-bps.html">Behavioral Pain Scale (BPS)</a>
 <a href="StructureDefinition-mii-pr-icu-score-cam-icu.html">CAM-ICU</a>
 <a href="StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html">Faces Pain Scale Revised</a>
 <a href="StructureDefinition-mii-pr-icu-score-gcs.html">GCS</a>

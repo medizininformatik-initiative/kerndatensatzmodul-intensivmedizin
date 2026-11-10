@@ -993,6 +993,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-bps"
+        },
+        "name": "MII PR ICU Score BPS",
+        "description": "Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-cam-icu"
         },
         "name": "MII PR ICU Score CAM-ICU",
