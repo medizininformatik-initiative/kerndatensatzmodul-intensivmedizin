@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
   "title" : "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
   "status" : "active",
-  "date" : "2026-11-10T10:55:46+00:00",
+  "date" : "2026-11-10T11:36:35+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
