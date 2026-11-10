@@ -16,6 +16,7 @@ Ballot release — first formal publication of this module through the HL7 IG Pu
 - **`BREAKING`** Search parameters: the codes `component.interpretation` and `component.referenceRange` contained a dot, which has special meaning in FHIR search URLs. They are now `component-interpretation` and `component-referencerange`; the canonical URLs of both SearchParameters are unchanged
 - `fix` SOFA score: the six subscore components no longer carry SNOMED CT placeholder codings (`xxx`/`xxxx`), since SNOMED CT has no concepts for the SOFA subscores. Each component is now identified by its LOINC code alone (`code.coding` 1..1)
 - `fix` CAM-ICU score (early draft): the invalid codes LOINC `99844-5` and SNOMED CT `450740000` were removed from `Observation.code`; neither code system has a CAM-ICU-specific concept yet. The score is identified by `code.text` until codes are available
+- `fix` Value set *MII VS ICU Delirium Interpretation*: the placeholder `$sct#xxx "No delirium (finding)"` was removed; SNOMED CT has no such concept
 
 ### Known issues
 
