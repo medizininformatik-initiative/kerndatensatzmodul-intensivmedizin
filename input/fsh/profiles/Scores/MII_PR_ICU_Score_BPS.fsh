@@ -19,7 +19,7 @@ Description: "Total score of the Behavioral Pain Scale (BPS) for mechanically ve
 * code.coding[dgai].code 1..1 MS
 
 * value[x] only integer
-* valueInteger 1..1 MS
+* valueInteger 0..1 MS
 * valueInteger ^minValueInteger = 3
 * valueInteger ^maxValueInteger = 12
 * component 0..0

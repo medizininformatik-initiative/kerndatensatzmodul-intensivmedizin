@@ -17,7 +17,7 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 * code.coding[sct] = $sct#1351995008 "Intensive Care Delirium Screening Checklist score (observable entity)"
 
 * value[x] only integer
-* valueInteger 1..1 MS
+* valueInteger 0..1 MS
 * valueInteger ^minValueInteger = 0
 * valueInteger ^maxValueInteger = 8
 

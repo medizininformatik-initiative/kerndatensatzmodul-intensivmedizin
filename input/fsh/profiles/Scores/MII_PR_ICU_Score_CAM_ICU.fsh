@@ -20,7 +20,7 @@ Description: "Overall result of the Confusion Assessment Method for the ICU (CAM
 * code.coding[dgai].code 1..1 MS
 
 * value[x] only CodeableConcept
-* valueCodeableConcept 1..1
+* valueCodeableConcept 0..1 MS
 * valueCodeableConcept from mii-vs-icu-cam-icu-result (required)
 
 * interpretation from mii-vs-icu-delirium-interpretation (extensible)
