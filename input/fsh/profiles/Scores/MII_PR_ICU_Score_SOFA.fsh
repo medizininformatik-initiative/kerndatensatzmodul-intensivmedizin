@@ -44,7 +44,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
   * code
     * insert sofa-component-coding-slicing
     * coding[loinc] = $loinc#96823-0 "Respiration [Score] SOFA"
-    * coding[sct] = $sct#xxxx "SOFA Subscore - Respiratory" // TODO: find appropriate SCT code
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Respiratory component"
@@ -55,7 +54,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
   * code
     * insert sofa-component-coding-slicing
     * coding[loinc] = $loinc#96826-3 "Cardiovascular [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Cardiovascular" // TODO: find appropriate SCT code
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Cardiovascular component"
@@ -66,7 +64,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
   * code
     * insert sofa-component-coding-slicing
     * coding[loinc] = $loinc#96825-5 "Liver [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Hepatic" // TODO: find appropriate SCT code
     * text = "Hepatic (Bilirubin)"
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
@@ -78,7 +75,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
   * code
     * insert sofa-component-coding-slicing
     * coding[loinc] = $loinc#96824-8 "Coagulation [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Coagulation" // TODO: find appropriate SCT code
     * text = "Coagulation (Platelets)"
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
@@ -90,7 +86,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
   * code
     * insert sofa-component-coding-slicing
     * coding[loinc] = $loinc#96828-9 "Renal [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Renal" // TODO: find appropriate SCT code
     * text = "Renal (Creatinine or urine output)"
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
@@ -102,7 +97,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
   * code
     * insert sofa-component-coding-slicing
     * coding[loinc] = $loinc#96827-1 "Central nervous system [Score] SOFA"
-    * coding[sct] = $sct#xxxx "SOFA Subscore - Neurological" // TODO: find appropriate SCT code
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Neurological component"
@@ -126,7 +120,6 @@ RuleSet: sofa-component-coding-slicing
 * coding ^slicing.rules = #closed
 * coding ^slicing.description = "Component codes for SOFA score"
 * coding ^slicing.ordered = false
-* coding 2..2
+* coding 1..1
 * coding contains
-    loinc 1..1 and
-    sct 1..1
+    loinc 1..1
