@@ -357,6 +357,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">fix</code> Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired and anchored at the <code class="language-plaintext highlighter-rouge">code</code> element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version</li>
   <li><strong><code class="language-plaintext highlighter-rouge">BREAKING</code></strong> Search parameters: the codes <code class="language-plaintext highlighter-rouge">component.interpretation</code> and <code class="language-plaintext highlighter-rouge">component.referenceRange</code> contained a dot, which has special meaning in FHIR search URLs. They are now <code class="language-plaintext highlighter-rouge">component-interpretation</code> and <code class="language-plaintext highlighter-rouge">component-referencerange</code>; the canonical URLs of both SearchParameters are unchanged</li>
   <li><code class="language-plaintext highlighter-rouge">fix</code> SOFA score: the six subscore components no longer carry SNOMED CT placeholder codings (<code class="language-plaintext highlighter-rouge">xxx</code>/<code class="language-plaintext highlighter-rouge">xxxx</code>), since SNOMED CT has no concepts for the SOFA subscores. Each component is now identified by its LOINC code alone (<code class="language-plaintext highlighter-rouge">code.coding</code> 1..1)</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> CAM-ICU score (early draft): the invalid codes LOINC <code class="language-plaintext highlighter-rouge">99844-5</code> and SNOMED CT <code class="language-plaintext highlighter-rouge">450740000</code> were removed from <code class="language-plaintext highlighter-rouge">Observation.code</code>; neither code system has a CAM-ICU-specific concept yet. The score is identified by <code class="language-plaintext highlighter-rouge">code.text</code> until codes are available</li>
 </ul>
 
 <h3 id="known-issues">Known issues</h3>
@@ -474,7 +475,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 10, 2026 09:47+0000">2026-11-10</span>
+          Generated <span title="Tue, Nov 10, 2026 10:24+0000">2026-11-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

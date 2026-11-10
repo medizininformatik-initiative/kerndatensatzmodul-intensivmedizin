@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-id
   "name" : "MII_PR_ICU_MUV_Ideales_Koerpergewicht",
   "title" : "MII PR ICU MUV Ideales Koerpergewicht",
   "status" : "draft",
-  "date" : "2026-11-10T09:47:44+00:00",
+  "date" : "2026-11-10T10:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -230,7 +230,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-id
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
         "code" : "188796",
-        "display" : "Ideal body weight (IBW)"
+        "display" : "MDC_MASS_BODY_EST_IBW"
       },
       "mustSupport" : true
     },

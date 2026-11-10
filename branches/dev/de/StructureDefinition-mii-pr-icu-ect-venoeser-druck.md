@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Venoeser_Druck",
   "title" : "MII PR ICU Venoeser Druck",
   "status" : "active",
-  "date" : "2026-11-10T09:47:44+00:00",
+  "date" : "2026-11-10T10:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

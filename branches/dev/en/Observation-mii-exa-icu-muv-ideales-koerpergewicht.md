@@ -59,7 +59,7 @@ Profile: [SD MII ICU Ideales Koerpergewicht](https://simplifier.net/resolve?scop
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "188796",
-      "display" : "Ideal body weight (IBW)"
+      "display" : "MDC_MASS_BODY_EST_IBW"
     }]
   },
   "subject" : {
