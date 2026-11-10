@@ -60,7 +60,8 @@
         "max": "1",
         "patternCoding": {
           "code": "76154-4",
-          "display": "Airway pressure delta^on ventilator"
+          "system": "http://loinc.org",
+          "display": "Airway pressure delta --on ventilator"
         }
       },
       {
@@ -71,7 +72,8 @@
         "max": "1",
         "patternCoding": {
           "code": "152720",
-          "display": "Inspiratory airway pressure relative to PEEP or BAP."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_PRESS_AWAY_DELTA"
         }
       },
       {

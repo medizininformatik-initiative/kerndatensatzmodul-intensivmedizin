@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250874002",
+          "system": "http://snomed.info/sct",
           "display": "Ventilator delivered tidal volume (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76222-9",
+          "system": "http://loinc.org",
           "display": "Tidal volume Ventilator --on ventilator"
         }
       },
@@ -76,7 +78,8 @@
         "max": "1",
         "patternCoding": {
           "code": "151980",
-          "display": "Volume of gas delivered through the patient-connection port during a respiratory cycle."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_VOL_TIDAL"
         }
       },
       {

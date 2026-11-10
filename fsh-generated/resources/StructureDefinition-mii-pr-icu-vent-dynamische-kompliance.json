@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250823005",
+          "system": "http://snomed.info/sct",
           "display": "Total dynamic compliance (observable entity)"
         }
       },
@@ -65,7 +66,8 @@
         "max": "1",
         "patternCoding": {
           "code": "60827-3",
-          "display": "Compliance.dynamic"
+          "system": "http://loinc.org",
+          "display": "Dynamic lung compliance"
         }
       },
       {
@@ -76,7 +78,8 @@
         "max": "1",
         "patternCoding": {
           "code": "151692",
-          "display": "Change of tidal volume per unit change of transthoracic pressure."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_COMPL_LUNG_DYN"
         }
       },
       {

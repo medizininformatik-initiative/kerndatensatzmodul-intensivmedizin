@@ -60,6 +60,7 @@
         "max": "1",
         "patternCoding": {
           "code": "60792-9",
+          "system": "http://loinc.org",
           "display": "Expiratory gas flow Respiratory system airway --on ventilator"
         }
       },
@@ -71,7 +72,8 @@
         "max": "1",
         "patternCoding": {
           "code": "151944",
-          "display": "Expiratory gas flow during mechanical ventilation. "
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_FLOW_EXP"
         }
       },
       {

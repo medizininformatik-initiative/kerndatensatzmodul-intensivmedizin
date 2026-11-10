@@ -12,12 +12,9 @@ Title: "MII PR ICU Atemzugvolumen Waehrend Beatmung"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] ^patternCoding.code = #250874002
-* code.coding[sct] ^patternCoding.display = "Ventilator delivered tidal volume (observable entity)"
+* code.coding[sct] = $sct#250874002 "Ventilator delivered tidal volume (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76222-9
-* code.coding[loinc] ^patternCoding.display = "Tidal volume Ventilator --on ventilator"
+* code.coding[loinc] = $loinc#76222-9 "Tidal volume Ventilator --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #151980
-* code.coding[IEEE-11073] ^patternCoding.display = "Volume of gas delivered through the patient-connection port during a respiratory cycle."
+* code.coding[IEEE-11073] = $ieee-11073#151980 "MDC_VENT_VOL_TIDAL"
 * valueQuantity = $ucum#mL

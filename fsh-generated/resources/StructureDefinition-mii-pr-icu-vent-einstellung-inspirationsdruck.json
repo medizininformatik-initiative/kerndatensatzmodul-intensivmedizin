@@ -61,6 +61,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76003-3",
+          "system": "http://loinc.org",
           "display": "Pressure Respiratory system airway --during inspiration on ventilator"
         }
       },
@@ -72,7 +73,8 @@
         "max": "1",
         "patternCoding": {
           "code": "151972",
-          "display": "Airway pressure, primarily during an inspiratory phase"
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_PRESS_AWAY"
         }
       },
       {

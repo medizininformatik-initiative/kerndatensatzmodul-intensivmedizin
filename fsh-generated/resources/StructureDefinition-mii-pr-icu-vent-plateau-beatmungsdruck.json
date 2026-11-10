@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "698822002",
+          "system": "http://snomed.info/sct",
           "display": "Airway plateau pressure (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76259-1",
+          "system": "http://loinc.org",
           "display": "Pressure.plateau Respiratory system airway --on ventilator"
         }
       },
@@ -76,7 +78,8 @@
         "max": "1",
         "patternCoding": {
           "code": "152424",
-          "display": "Pressure in airway in plateau phase during mechanical ventilation."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_PRESS_RESP_PLAT"
         }
       },
       {
