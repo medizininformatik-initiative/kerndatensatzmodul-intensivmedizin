@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
   "title" : "MII PR ICU Positiv Endexpiratorischer Druck",
   "status" : "active",
-  "date" : "2026-11-10T12:10:36+00:00",
+  "date" : "2026-11-10T13:05:35+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
