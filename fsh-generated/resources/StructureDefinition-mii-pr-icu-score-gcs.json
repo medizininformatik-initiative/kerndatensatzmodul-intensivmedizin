@@ -154,17 +154,27 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:GCSeyes.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "9267-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:GCSeyes.code.coding.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "patternUri": "http://loinc.org",
         "mustSupport": true
       },
       {
         "id": "Observation.component:GCSeyes.code.coding.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "patternCode": "9267-6",
         "mustSupport": true
       },
       {
@@ -195,17 +205,27 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:GCSmotor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "9268-4",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:GCSmotor.code.coding.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "patternUri": "http://loinc.org",
         "mustSupport": true
       },
       {
         "id": "Observation.component:GCSmotor.code.coding.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "patternCode": "9268-4",
         "mustSupport": true
       },
       {
@@ -236,17 +256,27 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.component:GCSverbal.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "9270-0",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.component:GCSverbal.code.coding.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "patternUri": "http://loinc.org",
         "mustSupport": true
       },
       {
         "id": "Observation.component:GCSverbal.code.coding.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "patternCode": "9270-0",
         "mustSupport": true
       },
       {
