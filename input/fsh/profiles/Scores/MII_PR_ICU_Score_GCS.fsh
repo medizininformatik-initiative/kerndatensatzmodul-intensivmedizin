@@ -58,8 +58,7 @@ Title: "MII PR ICU Score GCS"
     GCSverbal 0..1 MS 
 
 * component[GCSeyes] MS
-* component[GCSeyes].code.coding.system = $loinc  // slicing für loinc/sct, etc., wenn nur loinc AnswerList eingebunden wird? Ggf. spätere Wartbarkeit, aber ansonsten overpowered
-* component[GCSeyes].code.coding.code = #9267-6
+* component[GCSeyes].code = $loinc#9267-6
 * component[GCSeyes].code.coding.system 1.. MS
 * component[GCSeyes].code.coding.code 1..1 MS
 * component[GCSeyes].code.coding.display 1.. MS
@@ -69,8 +68,7 @@ Title: "MII PR ICU Score GCS"
 * component[GCSeyes].dataAbsentReason MS
 
 * component[GCSmotor] MS
-* component[GCSmotor].code.coding.system = $loinc  
-* component[GCSmotor].code.coding.code = #9268-4
+* component[GCSmotor].code = $loinc#9268-4
 * component[GCSmotor].code.coding.system 1.. MS
 * component[GCSmotor].code.coding.code 1..1 MS
 * component[GCSmotor].code.coding.display 1.. MS
@@ -80,8 +78,7 @@ Title: "MII PR ICU Score GCS"
 * component[GCSmotor].dataAbsentReason MS
 
 * component[GCSverbal] MS
-* component[GCSverbal].code.coding.system = $loinc 
-* component[GCSverbal].code.coding.code = #9270-0
+* component[GCSverbal].code = $loinc#9270-0
 * component[GCSverbal].code.coding.system 1.. MS
 * component[GCSverbal].code.coding.code 1..1 MS
 * component[GCSverbal].code.coding.display 1.. MS
