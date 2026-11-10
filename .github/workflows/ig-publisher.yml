@@ -547,6 +547,14 @@ jobs:
           # touches its own branches/<branch>/ directory, so on a rejected push
           # we re-clone the fresh gh-pages and stage the preview again.
           for attempt in 1 2 3 4 5; do
+            # The branch may have been deleted (PR merged) while this build ran.
+            # Its preview would then be stale on arrival and only come back
+            # after the next cleanup, so skip publishing. Forks never publish,
+            # so the branch always lives in this repository.
+            if ! git ls-remote --exit-code --heads "${remote_url}" "${BRANCH}" >/dev/null; then
+              echo "::notice::Branch ${BRANCH} no longer exists; skipping the preview publish."
+              exit 0
+            fi
             rm -rf gh-pages
             git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
             # The root and version-like paths are reserved for formal -go-publish
