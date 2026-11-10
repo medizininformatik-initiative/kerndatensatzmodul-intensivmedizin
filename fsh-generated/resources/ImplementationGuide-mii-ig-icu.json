@@ -673,13 +673,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
-        },
-        "name": "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
         },
         "name": "MII PR ICU Bilanz Einfuhr Kalorien 24h",
@@ -1084,7 +1077,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
         },
         "name": "MII PR ICU Score Faces Pain Scale Revised",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\r\nDer Score wird als quantitativer Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -1123,7 +1116,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\r\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -1131,7 +1124,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
         },
         "name": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\r\nDer Score wird als quantitativer Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\nDer Score wird als quantitativer Wert dokumentiert.",
         "exampleBoolean": false
       },
       {
@@ -1306,14 +1299,6 @@
         },
         "name": "MII VS ICU Code Observation Beatmung SNOMED",
         "description": "Dieses ValueSet enthält Codes für die im Kontext einer Beatmung verwendeten Parameter.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"
-        },
-        "name": "MII VS ICU Code Observation Bilanzen LOINC",
-        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOINC-Parameter.",
         "exampleBoolean": false
       },
       {
