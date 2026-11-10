@@ -19,6 +19,7 @@ Title: "MII PR ICU MUV Kopfumfang"
 
 * code MS
 * code.coding 2.. MS
+* code.coding[loinc] MS
 * code.coding[loinc].system 1..1 MS
 * code.coding[loinc].code 1..1 MS
 * code.coding[snomed] 1..1 MS

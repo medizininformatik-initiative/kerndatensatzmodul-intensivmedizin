@@ -8,9 +8,11 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * ^status = #active
 
 * category MS
+* category[VSCat] MS
 
 * code MS
 * code.coding MS
+* code.coding[snomed] MS
 * code.coding[loinc] MS
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
@@ -25,7 +27,7 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * subject MS
 * encounter MS
 * effective[x] MS
-* value[x] ..0 MS
+* value[x] ..0 // prohibited (values are in components), so not must-support
 * dataAbsentReason ..0 MS
 * interpretation MS
 * bodySite MS
@@ -34,6 +36,7 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * referenceRange ..1 MS
 
 * component ..3 MS
+* component.valueQuantity MS
 * component[SystolicBP] MS
 * component[SystolicBP].code.coding ^slicing.discriminator.type = #pattern
 * component[SystolicBP].code.coding ^slicing.discriminator.path = "$this"
