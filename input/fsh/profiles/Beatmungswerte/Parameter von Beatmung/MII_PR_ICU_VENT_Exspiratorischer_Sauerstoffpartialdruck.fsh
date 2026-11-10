@@ -18,5 +18,5 @@ Title: "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#3147-6 "Oxygen [Partial pressure] in Exhaled gas"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#153132 "Partial pressure of oxygen in airway gas measured during expiration."
+* code.coding[IEEE-11073] = $ieee-11073#153132 "MDC_CONC_AWAY_O2_EXP"
 * valueQuantity = $ucum#mm[Hg]

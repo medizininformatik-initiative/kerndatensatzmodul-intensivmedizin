@@ -16,5 +16,5 @@ Title: "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#76009-0 "Inspired minute Volume during Mechanical ventilation"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152004 "Total volume of gas breathed in during 1 min during mechanical ventilation."
+* code.coding[IEEE-11073] = $ieee-11073#152004 "MDC_VENT_VOL_MINUTE_INSP"
 * valueQuantity = $ucum#L/min

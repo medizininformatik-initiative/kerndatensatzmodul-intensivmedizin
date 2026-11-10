@@ -16,5 +16,5 @@ Title: "MII PR ICU Positiv Endexpiratorischer Druck"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151976 "Positive end expiratory pressure applied to the airway."
+* code.coding[IEEE-11073] = $ieee-11073#151976 "MDC_VENT_PRESS_AWAY_END_EXP_POS"
 * valueQuantity = $ucum#cm[H2O]

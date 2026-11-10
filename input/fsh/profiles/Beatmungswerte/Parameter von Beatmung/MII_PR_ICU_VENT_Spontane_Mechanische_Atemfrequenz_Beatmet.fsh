@@ -17,5 +17,5 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#19840-8 "Breath rate spontaneous and mechanical --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152490 "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
+* code.coding[IEEE-11073] = $ieee-11073#152490 "MDC_VENT_RESP_BTSD_PSAZC_RATE"
 * valueQuantity = $ucum#/min

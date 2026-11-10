@@ -17,7 +17,7 @@ Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * code.coding[sct] 1..1
 * code.coding[sct] = $sct#250790007 "End tidal carbon dioxide tension (observable entity)"
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#19891-1 "Carbon dioxide^at end expiration"
+* code.coding[loinc] = $loinc#19891-1 "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151708 "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
+* code.coding[IEEE-11073] = $ieee-11073#151708 "MDC_CONC_AWAY_CO2_ET"
 * valueQuantity = $ucum#mm[Hg]

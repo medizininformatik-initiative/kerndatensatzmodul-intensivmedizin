@@ -16,5 +16,5 @@ Title: "MII PR ICU Plateau Beatmungsdruck"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#76259-1 "Pressure.plateau Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152424 "Pressure in airway in plateau phase during mechanical ventilation."
+* code.coding[IEEE-11073] = $ieee-11073#152424 "MDC_VENT_PRESS_RESP_PLAT"
 * valueQuantity = $ucum#cm[H2O]

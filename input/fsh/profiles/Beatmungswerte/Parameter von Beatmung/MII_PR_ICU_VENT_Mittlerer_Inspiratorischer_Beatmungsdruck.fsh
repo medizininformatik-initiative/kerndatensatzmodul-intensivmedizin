@@ -16,5 +16,5 @@ Title: "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#60952-9 "Mean airway pressure --during inspiration"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151975 "Mean inspiratory airway pressure."
+* code.coding[IEEE-11073] = $ieee-11073#151975 "MDC_VENT_PRESS_AWAY_MEAN"
 * valueQuantity = $ucum#cm[H2O]

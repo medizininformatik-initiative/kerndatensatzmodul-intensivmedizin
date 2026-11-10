@@ -15,5 +15,5 @@ Title: "MII PR ICU Exspiratorischer Gasfluss"
 * code.coding[loinc] 1..1
 * code.coding[loinc] = $loinc#60792-9 "Expiratory gas flow Respiratory system airway --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151944 "Expiratory gas flow during mechanical ventilation. "
+* code.coding[IEEE-11073] = $ieee-11073#151944 "MDC_VENT_FLOW_EXP"
 * valueQuantity = $ucum#L/min
