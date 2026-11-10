@@ -19,6 +19,7 @@ Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publ
 * `fix` Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende `Quantity.unit` ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen
 * `fix` Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am `code`-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen
 * **`BREAKING`** Suchparameter: Die Codes `component.interpretation` und `component.referenceRange` enthielten einen Punkt, der in FHIR-Such-URLs eine besondere Bedeutung hat. Sie lauten nun `component-interpretation` und `component-referencerange`; die Canonical-URLs beider SearchParameter bleiben unverändert
+* `fix` SOFA-Score: Die sechs Subscore-Komponenten enthalten keine SNOMED-CT-Platzhalter-Codings (`xxx`/`xxxx`) mehr, da SNOMED CT keine Konzepte für die SOFA-Subscores kennt. Jede Komponente wird nun allein über ihren LOINC-Code identifiziert (`code.coding` 1..1)
 
 ### Bekannte Einschränkungen
 

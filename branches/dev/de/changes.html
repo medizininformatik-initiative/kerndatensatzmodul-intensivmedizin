@@ -326,6 +326,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">fix</code> Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende <code class="language-plaintext highlighter-rouge">Quantity.unit</code> ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen</li>
   <li><code class="language-plaintext highlighter-rouge">fix</code> Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am <code class="language-plaintext highlighter-rouge">code</code>-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen</li>
   <li><strong><code class="language-plaintext highlighter-rouge">BREAKING</code></strong> Suchparameter: Die Codes <code class="language-plaintext highlighter-rouge">component.interpretation</code> und <code class="language-plaintext highlighter-rouge">component.referenceRange</code> enthielten einen Punkt, der in FHIR-Such-URLs eine besondere Bedeutung hat. Sie lauten nun <code class="language-plaintext highlighter-rouge">component-interpretation</code> und <code class="language-plaintext highlighter-rouge">component-referencerange</code>; die Canonical-URLs beider SearchParameter bleiben unverändert</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> SOFA-Score: Die sechs Subscore-Komponenten enthalten keine SNOMED-CT-Platzhalter-Codings (<code class="language-plaintext highlighter-rouge">xxx</code>/<code class="language-plaintext highlighter-rouge">xxxx</code>) mehr, da SNOMED CT keine Konzepte für die SOFA-Subscores kennt. Jede Komponente wird nun allein über ihren LOINC-Code identifiziert (<code class="language-plaintext highlighter-rouge">code.coding</code> 1..1)</li>
 </ul>
 
 <h3 id="bekannte-einschränkungen">Bekannte Einschränkungen</h3>
@@ -443,7 +444,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 10, 2026 07:42+0000">2026-11-10</span>
+          Erstellt <span title="Tue, Nov 10, 2026 09:47+0000">2026-11-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

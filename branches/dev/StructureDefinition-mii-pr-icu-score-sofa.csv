@@ -351,7 +351,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.component:respiratory.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"Observation.component:respiratory.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
@@ -360,13 +360,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96823-0""/>
   <display value=""Respiration [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","C*E.1-8, C*E.10-22"
-"Observation.component:respiratory.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxxx""/>
-  <display value=""SOFA Subscore - Respiratory""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.component:respiratory.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -417,7 +410,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.component:cardiovascular.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"Observation.component:cardiovascular.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
@@ -426,13 +419,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96826-3""/>
   <display value=""Cardiovascular [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","C*E.1-8, C*E.10-22"
-"Observation.component:cardiovascular.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Cardiovascular""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.component:cardiovascular.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -483,7 +469,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.component:hepatic.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"Observation.component:hepatic.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
@@ -492,13 +478,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96825-5""/>
   <display value=""Liver [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","C*E.1-8, C*E.10-22"
-"Observation.component:hepatic.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Hepatic""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.component:hepatic.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -549,7 +528,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.component:coagulation.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"Observation.component:coagulation.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
@@ -558,13 +537,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96824-8""/>
   <display value=""Coagulation [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","C*E.1-8, C*E.10-22"
-"Observation.component:coagulation.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Coagulation""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.component:coagulation.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -615,7 +587,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.component:renal.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"Observation.component:renal.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
@@ -624,13 +596,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96828-9""/>
   <display value=""Renal [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","C*E.1-8, C*E.10-22"
-"Observation.component:renal.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Renal""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.component:renal.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -681,7 +646,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.component:neurological.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"Observation.component:neurological.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
@@ -690,13 +655,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96827-1""/>
   <display value=""Central nervous system [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","C*E.1-8, C*E.10-22"
-"Observation.component:neurological.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxxx""/>
-  <display value=""SOFA Subscore - Neurological""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.component:neurological.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
