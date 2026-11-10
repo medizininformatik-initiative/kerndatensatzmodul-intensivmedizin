@@ -63,8 +63,8 @@
   "valueQuantity": {
     "value": 12.0,
     "system": "http://unitsofmeasure.org",
-    "code": "{Breaths}/min",
-    "unit": "{Breaths}/min"
+    "code": "/min",
+    "unit": "breaths/min"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"
