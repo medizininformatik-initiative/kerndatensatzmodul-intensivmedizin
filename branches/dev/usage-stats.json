@@ -311,6 +311,12 @@
     "http://hl7.org/fhir/StructureDefinition/bodySite": [
       "Procedure.bodySite"
     ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.searchParam",
+      "CapabilityStatement.rest.resource.supportedProfile"
+    ],
     "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters": [
       "ImplementationGuide"
     ],

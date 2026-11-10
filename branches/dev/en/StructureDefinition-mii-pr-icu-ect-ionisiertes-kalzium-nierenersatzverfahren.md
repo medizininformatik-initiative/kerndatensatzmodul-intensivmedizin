@@ -16,6 +16,7 @@ Observation "Ionized calcium from renal replacement procedures" is a characteris
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren](Observation-mii-exa-icu-ect-ionisiertes-kalzium-aus-nierenersatzverfahren.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-io
   "name" : "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status" : "active",
-  "date" : "2026-11-10T16:12:09+00:00",
+  "date" : "2026-11-10T16:46:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

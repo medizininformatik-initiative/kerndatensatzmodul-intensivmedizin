@@ -16,6 +16,7 @@ Observation "Duration of extracorporeal gas exchange" is a characteristic of the
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch](Observation-mii-exa-icu-ect-dauer-extrakorporaler-gasaustausch.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-da
   "name" : "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Dauer Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-10T16:12:09+00:00",
+  "date" : "2026-11-10T16:46:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

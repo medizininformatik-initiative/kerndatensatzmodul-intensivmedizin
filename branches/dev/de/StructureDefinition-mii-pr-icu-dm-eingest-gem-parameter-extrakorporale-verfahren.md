@@ -27,6 +27,7 @@ Die Information, ob der Wert gemessen, oder eingestellt ist, trägt die DeviceMe
 
 * Refer to this Profile: [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md)
 * Examples for this Profile: [DeviceMetric/mii-exa-icu-ect-eingestellte-parameter-ecmo](DeviceMetric-mii-exa-icu-ect-eingestellte-parameter-ecmo.md) and [DeviceMetric/mii-exa-icu-ect-gemessene-parameter-ecmo](DeviceMetric-mii-exa-icu-ect-gemessene-parameter-ecmo.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.json)
 
@@ -113,7 +114,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
   "status" : "active",
-  "date" : "2026-11-10T16:12:09+00:00",
+  "date" : "2026-11-10T16:46:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

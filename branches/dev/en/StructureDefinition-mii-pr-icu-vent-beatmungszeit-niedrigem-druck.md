@@ -16,6 +16,7 @@
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck](Observation-mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
   "title" : "MII PR ICU Beatmungszeit Niedrigem Druck",
   "status" : "active",
-  "date" : "2026-11-10T16:12:09+00:00",
+  "date" : "2026-11-10T16:46:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
