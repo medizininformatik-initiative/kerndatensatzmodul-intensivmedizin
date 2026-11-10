@@ -9,4 +9,4 @@ Description: "Delirium status interpretations"
 * ^experimental = false
 * $sct#2776000 "Delirium (disorder)"
 * $sct#191507002 "Subacute delirium (disorder)"
-* $sct#xxx "No delirium (finding)" // TODO: find appropriate code
+// TODO: add a "no delirium" concept once one exists (SNOMED CT has no such finding; the placeholder $sct#xxx was removed)

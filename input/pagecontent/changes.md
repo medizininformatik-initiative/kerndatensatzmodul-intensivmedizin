@@ -17,6 +17,7 @@ Ballot release — first formal publication of this module through the HL7 IG Pu
 - `fix` SOFA score: the six subscore components no longer carry SNOMED CT placeholder codings (`xxx`/`xxxx`), since SNOMED CT has no concepts for the SOFA subscores. Each component is now identified by its LOINC code alone (`code.coding` 1..1)
 - `fix` CAM-ICU score (early draft): the invalid codes LOINC `99844-5` and SNOMED CT `450740000` were removed from `Observation.code`; neither code system has a CAM-ICU-specific concept yet. The score is identified by `code.text` until codes are available
 - `fix` Must-support: the MUV profiles *Arterieller Blutdruck*, *Atemfrequenz*, *Körpergewicht*, *Körpergröße* and *Kopfumfang* now also mark the inherited slices of must-support elements as must-support (`category:VSCat`, `code.coding:loinc`/`snomed`/`loinc-zusatzcode`, `valueQuantity`). In *Arterieller Blutdruck*, the prohibited `value[x]` (0..0) is no longer must-support
+- `fix` Value set *MII VS ICU Delirium Interpretation*: the placeholder `$sct#xxx "No delirium (finding)"` was removed; SNOMED CT has no such concept
 
 ### Known issues
 
