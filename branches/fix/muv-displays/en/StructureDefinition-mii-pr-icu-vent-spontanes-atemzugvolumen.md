@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
   "title" : "MII PR ICU Spontanes Atemzugvolumen",
   "status" : "active",
-  "date" : "2026-11-10T09:23:34+00:00",
+  "date" : "2026-11-10T09:57:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
