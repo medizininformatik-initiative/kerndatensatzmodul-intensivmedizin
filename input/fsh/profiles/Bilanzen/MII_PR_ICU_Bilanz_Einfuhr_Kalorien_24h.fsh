@@ -15,7 +15,6 @@ Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding contains hl7-category 0..1 MS
-* category.coding[hl7-category] from mii-vs-icu-category-observation-bilanzen-hl7 (required)
 * category.coding[hl7-category] ^patternCoding.system = $observation-category
 * category.coding[hl7-category].system 1.. MS
 * category.coding[hl7-category].code 1.. MS
@@ -27,13 +26,11 @@ Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #closed
 * code.coding contains sct 1..1 MS and loinc 1..1 MS
-* code.coding[sct] from mii-vs-icu-code-observation-bilanzen-snomed (required)
 * code.coding[sct].system 1.. MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #787787004
 * code.coding[sct] ^patternCoding.display = "Energy intake (observable entity)"
 * code.coding[sct].code 1.. MS
-* code.coding[loinc] from mii-vs-icu-code-observation-bilanzen-loinc (required)
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #9057-1
