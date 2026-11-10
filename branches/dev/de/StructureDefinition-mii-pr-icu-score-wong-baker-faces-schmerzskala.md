@@ -46,13 +46,14 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 12 elements
- Must-Support: 10 elements
+Mandatory: 13 elements
+ Must-Support: 11 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
+* The element 1 is sliced based on the value of Observation.category
 * The element 1 is sliced based on the value of Observation.code.coding
 
  **Schlüsselelemente-Ansicht** 
@@ -77,13 +78,14 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 12 elements
- Must-Support: 10 elements
+Mandatory: 13 elements
+ Must-Support: 11 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
+* The element 1 is sliced based on the value of Observation.category
 * The element 1 is sliced based on the value of Observation.code.coding
 
  
@@ -103,7 +105,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
   "title" : "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
   "status" : "draft",
-  "date" : "2026-11-10T12:04:15+00:00",
+  "date" : "2026-11-10T13:32:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -171,23 +173,29 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
     {
       "id" : "Observation.category",
       "path" : "Observation.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category.coding.system",
-      "path" : "Observation.category.coding.system",
-      "patternUri" : "http://terminology.hl7.org/CodeSystem/observation-category"
-    },
-    {
-      "id" : "Observation.category.coding.code",
-      "path" : "Observation.category.coding.code",
-      "patternCode" : "survey"
-    },
-    {
-      "id" : "Observation.category.coding.display",
-      "path" : "Observation.category.coding.display",
-      "patternString" : "Assessment"
+      "id" : "Observation.category:survey",
+      "path" : "Observation.category",
+      "sliceName" : "survey",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
