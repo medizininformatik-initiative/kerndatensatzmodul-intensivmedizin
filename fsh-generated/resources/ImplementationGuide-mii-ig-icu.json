@@ -996,7 +996,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-cam-icu"
         },
         "name": "MII PR ICU Score CAM-ICU",
-        "description": "Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent).",
+        "description": "Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative.",
         "exampleBoolean": false
       },
       {
