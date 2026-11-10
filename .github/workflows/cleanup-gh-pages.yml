@@ -99,105 +99,114 @@ jobs:
         run: |
           set -euo pipefail
 
-          remote_refs="$(git ls-remote --heads origin)"
-          mapfile -t active_branches < <(
-            awk '
-              {
-                sub("refs/heads/", "", $2)
-                if ($2 != "gh-pages") {
-                  print $2
+          # Preview builds push to gh-pages in parallel (they do not share the
+          # gh-pages-writes group), so our push can be rejected. On a rejected
+          # push, re-read the fresh gh-pages tip and sweep again from scratch.
+          sweep() {
+            remote_refs="$(git ls-remote --heads origin)"
+            mapfile -t active_branches < <(
+              awk '
+                {
+                  sub("refs/heads/", "", $2)
+                  if ($2 != "gh-pages") {
+                    print $2
+                  }
                 }
-              }
-            ' <<< "${remote_refs}"
-          )
-          mapfile -d '' -t markers < <(
-            find . \
-              -path './.git' -prune -o \
-              -type f \
-              -name '.branch-name' \
-              -print0
-          )
+              ' <<< "${remote_refs}"
+            )
+            mapfile -d '' -t markers < <(
+              find . \
+                -path './.git' -prune -o \
+                -type f \
+                -name '.branch-name' \
+                -print0
+            )
 
-          printf 'Active branches: %s\n' "${#active_branches[@]}"
-          printf 'Marked preview deployments: %s\n' "${#markers[@]}"
+            printf 'Active branches: %s\n' "${#active_branches[@]}"
+            printf 'Marked preview deployments: %s\n' "${#markers[@]}"
 
-          stale_count=0
-          preserved_count=0
-          branch_is_active() {
-            local candidate="$1" active
-            for active in "${active_branches[@]}"; do
-              if [[ "${active}" == "${candidate}" ]]; then
-                return 0
-              fi
-            done
-            return 1
-          }
+            stale_count=0
+            preserved_count=0
+            branch_is_active() {
+              local candidate="$1" active
+              for active in "${active_branches[@]}"; do
+                if [[ "${active}" == "${candidate}" ]]; then
+                  return 0
+                fi
+              done
+              return 1
+            }
 
-          for marker in "${markers[@]}"; do
-            # An earlier stale ancestor may already have removed this marker.
-            [[ -f "${marker}" ]] || continue
-            deployment="$(dirname "${marker}")"
-            branch="$(tr -d '\r\n' < "${marker}")"
+            for marker in "${markers[@]}"; do
+              # An earlier stale ancestor may already have removed this marker.
+              [[ -f "${marker}" ]] || continue
+              deployment="$(dirname "${marker}")"
+              branch="$(tr -d '\r\n' < "${marker}")"
 
-            # A marker at the site root belongs to a formal publication; never a
-            # cleanup candidate.
-            if [[ "${deployment}" == "." ]]; then
-              echo "Preserving formal publication root"
-              preserved_count=$((preserved_count + 1))
-              continue
-            fi
-            relative_deployment="${deployment#./}"
-            # Version-like permanent paths (CalVer YYYY.n.n and friends) are formal.
-            if [[ "${relative_deployment}" =~ ^[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.-]+)?$ ]]; then
-              echo "Preserving version-like permanent path ${relative_deployment}/"
-              preserved_count=$((preserved_count + 1))
-              continue
-            fi
-            if [[ -z "${branch}" ]]; then
-              echo "::warning::Ignoring empty preview marker at ${marker}"
-              preserved_count=$((preserved_count + 1))
-              continue
-            fi
-
-            if branch_is_active "${branch}"; then
-              echo "Preserving ${deployment#./}/ (${branch})"
-              preserved_count=$((preserved_count + 1))
-              continue
-            fi
-
-            # Branch names may contain slashes, so a stale preview can be an
-            # ancestor of another preview. Never recursively delete an active
-            # descendant deployment.
-            has_active_descendant=false
-            for descendant_marker in "${markers[@]}"; do
-              if [[ "${descendant_marker}" == "${marker}" ]] ||
-                [[ "${descendant_marker}" != "${deployment}/"* ]] ||
-                [[ ! -f "${descendant_marker}" ]]; then
+              # A marker at the site root belongs to a formal publication; never a
+              # cleanup candidate.
+              if [[ "${deployment}" == "." ]]; then
+                echo "Preserving formal publication root"
+                preserved_count=$((preserved_count + 1))
                 continue
               fi
-              descendant_branch="$(tr -d '\r\n' < "${descendant_marker}")"
-              if branch_is_active "${descendant_branch}"; then
-                echo "::warning::Preserving stale ancestor ${deployment#./}/ (${branch}) because it contains active preview ${descendant_branch}."
-                has_active_descendant=true
-                break
+              relative_deployment="${deployment#./}"
+              # Version-like permanent paths (CalVer YYYY.n.n and friends) are formal.
+              if [[ "${relative_deployment}" =~ ^[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.-]+)?$ ]]; then
+                echo "Preserving version-like permanent path ${relative_deployment}/"
+                preserved_count=$((preserved_count + 1))
+                continue
+              fi
+              if [[ -z "${branch}" ]]; then
+                echo "::warning::Ignoring empty preview marker at ${marker}"
+                preserved_count=$((preserved_count + 1))
+                continue
+              fi
+
+              if branch_is_active "${branch}"; then
+                echo "Preserving ${deployment#./}/ (${branch})"
+                preserved_count=$((preserved_count + 1))
+                continue
+              fi
+
+              # Branch names may contain slashes, so a stale preview can be an
+              # ancestor of another preview. Never recursively delete an active
+              # descendant deployment.
+              has_active_descendant=false
+              for descendant_marker in "${markers[@]}"; do
+                if [[ "${descendant_marker}" == "${marker}" ]] ||
+                  [[ "${descendant_marker}" != "${deployment}/"* ]] ||
+                  [[ ! -f "${descendant_marker}" ]]; then
+                  continue
+                fi
+                descendant_branch="$(tr -d '\r\n' < "${descendant_marker}")"
+                if branch_is_active "${descendant_branch}"; then
+                  echo "::warning::Preserving stale ancestor ${deployment#./}/ (${branch}) because it contains active preview ${descendant_branch}."
+                  has_active_descendant=true
+                  break
+                fi
+              done
+              if [[ "${has_active_descendant}" == "true" ]]; then
+                preserved_count=$((preserved_count + 1))
+                continue
+              fi
+
+              stale_count=$((stale_count + 1))
+              if [[ "${DRY_RUN}" == "true" ]]; then
+                echo "[dry run] Would remove ${deployment#./}/ (${branch})"
+              else
+                echo "Removing ${deployment#./}/ (${branch})"
+                rm -rf -- "${deployment}"
               fi
             done
-            if [[ "${has_active_descendant}" == "true" ]]; then
-              preserved_count=$((preserved_count + 1))
-              continue
-            fi
-
-            stale_count=$((stale_count + 1))
-            if [[ "${DRY_RUN}" == "true" ]]; then
-              echo "[dry run] Would remove ${deployment#./}/ (${branch})"
-            else
-              echo "Removing ${deployment#./}/ (${branch})"
-              rm -rf -- "${deployment}"
-            fi
-          done
+          }
 
           changed=false
-          if [[ "${DRY_RUN}" != "true" ]]; then
+          for attempt in 1 2 3 4 5; do
+            sweep
+            if [[ "${DRY_RUN}" == "true" ]]; then
+              break
+            fi
             if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
               bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
               supported_max_bytes="1000000000"
@@ -206,14 +215,26 @@ jobs:
               fi
             fi
             git add --all
-            if ! git diff --cached --quiet; then
-              git config user.name "github-actions[bot]"
-              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-              git commit -m "chore: remove ${stale_count} stale Pages preview(s)"
-              git push origin gh-pages
-              changed=true
+            if git diff --cached --quiet; then
+              break
             fi
-          fi
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: remove ${stale_count} stale Pages preview(s)"
+            if git push origin gh-pages; then
+              changed=true
+              break
+            fi
+            if (( attempt == 5 )); then
+              echo "::error::Could not push the cleanup to gh-pages after 5 attempts."
+              exit 1
+            fi
+            echo "::notice::gh-pages moved during the cleanup (attempt ${attempt}); sweeping the fresh tree again."
+            sleep $(( attempt * 10 ))
+            git fetch --depth 1 origin gh-pages
+            git reset --hard FETCH_HEAD
+            git clean -ffdx
+          done
           echo "changed=${changed}" >> "${GITHUB_OUTPUT}"
 
           {
