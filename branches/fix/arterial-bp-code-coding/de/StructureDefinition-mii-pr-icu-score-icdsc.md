@@ -111,7 +111,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_ICDSC",
   "title" : "MII PR ICU Score ICDSC",
   "status" : "draft",
-  "date" : "2026-11-10T13:05:35+00:00",
+  "date" : "2026-11-10T13:41:07+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

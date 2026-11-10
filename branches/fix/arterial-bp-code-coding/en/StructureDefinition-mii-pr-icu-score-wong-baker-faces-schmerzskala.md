@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
   "title" : "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
   "status" : "draft",
-  "date" : "2026-11-10T13:05:35+00:00",
+  "date" : "2026-11-10T13:41:07+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -109,23 +109,29 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
     {
       "id" : "Observation.category",
       "path" : "Observation.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Observation.category.coding.system",
-      "path" : "Observation.category.coding.system",
-      "patternUri" : "http://terminology.hl7.org/CodeSystem/observation-category"
-    },
-    {
-      "id" : "Observation.category.coding.code",
-      "path" : "Observation.category.coding.code",
-      "patternCode" : "survey"
-    },
-    {
-      "id" : "Observation.category.coding.display",
-      "path" : "Observation.category.coding.display",
-      "patternString" : "Assessment"
+      "id" : "Observation.category:survey",
+      "path" : "Observation.category",
+      "sliceName" : "survey",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "survey"
+        }]
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
