@@ -51,6 +51,12 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category:VSCat",
+        "path": "Observation.category",
+        "sliceName": "VSCat",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
@@ -86,7 +92,8 @@
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "86290005"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
@@ -123,7 +130,8 @@
           "system": "http://unitsofmeasure.org",
           "code": "/min",
           "unit": "breaths per minute"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",

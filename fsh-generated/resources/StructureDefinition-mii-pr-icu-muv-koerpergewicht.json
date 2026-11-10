@@ -51,7 +51,8 @@
       {
         "id": "Observation.category:VSCat",
         "path": "Observation.category",
-        "sliceName": "VSCat"
+        "sliceName": "VSCat",
+        "mustSupport": true
       },
       {
         "id": "Observation.category:VSCat.coding",
@@ -140,6 +141,12 @@
       {
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-zusatzcode",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-zusatzcode",
         "mustSupport": true
       },
       {
