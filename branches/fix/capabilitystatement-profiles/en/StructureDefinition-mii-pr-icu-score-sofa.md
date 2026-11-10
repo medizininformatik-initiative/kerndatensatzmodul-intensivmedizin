@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_SOFA",
   "title" : "MII PR ICU Score SOFA",
   "status" : "draft",
-  "date" : "2026-11-10T12:15:47+00:00",
+  "date" : "2026-11-10T13:34:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -182,31 +182,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:respiratory.code.coding",
-      "path" : "Observation.component.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding"
-        }],
-        "description" : "Component codes for SOFA score",
-        "ordered" : false,
-        "rules" : "closed"
-      },
-      "min" : 1,
-      "max" : "1"
+      "id" : "Observation.component:respiratory.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "96823-0"
+        }]
+      }
     },
     {
-      "id" : "Observation.component:respiratory.code.coding:loinc",
+      "id" : "Observation.component:respiratory.code.coding",
       "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
       "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "96823-0",
-        "display" : "Respiration [Score] SOFA"
-      }
+      "max" : "1"
     },
     {
       "id" : "Observation.component:respiratory.value[x]",
@@ -249,31 +238,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:cardiovascular.code.coding",
-      "path" : "Observation.component.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding"
-        }],
-        "description" : "Component codes for SOFA score",
-        "ordered" : false,
-        "rules" : "closed"
-      },
-      "min" : 1,
-      "max" : "1"
+      "id" : "Observation.component:cardiovascular.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "96826-3"
+        }]
+      }
     },
     {
-      "id" : "Observation.component:cardiovascular.code.coding:loinc",
+      "id" : "Observation.component:cardiovascular.code.coding",
       "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
       "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "96826-3",
-        "display" : "Cardiovascular [Score] SOFA"
-      }
+      "max" : "1"
     },
     {
       "id" : "Observation.component:cardiovascular.value[x]",
@@ -316,36 +294,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:hepatic.code.coding",
-      "path" : "Observation.component.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding"
-        }],
-        "description" : "Component codes for SOFA score",
-        "ordered" : false,
-        "rules" : "closed"
-      },
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.component:hepatic.code.coding:loinc",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "96825-5",
-        "display" : "Liver [Score] SOFA"
+      "id" : "Observation.component:hepatic.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "96825-5"
+        }]
       }
     },
     {
-      "id" : "Observation.component:hepatic.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Hepatic (Bilirubin)"
+      "id" : "Observation.component:hepatic.code.coding",
+      "path" : "Observation.component.code.coding",
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:hepatic.value[x]",
@@ -388,36 +350,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:coagulation.code.coding",
-      "path" : "Observation.component.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding"
-        }],
-        "description" : "Component codes for SOFA score",
-        "ordered" : false,
-        "rules" : "closed"
-      },
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.component:coagulation.code.coding:loinc",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "96824-8",
-        "display" : "Coagulation [Score] SOFA"
+      "id" : "Observation.component:coagulation.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "96824-8"
+        }]
       }
     },
     {
-      "id" : "Observation.component:coagulation.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Coagulation (Platelets)"
+      "id" : "Observation.component:coagulation.code.coding",
+      "path" : "Observation.component.code.coding",
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:coagulation.value[x]",
@@ -460,36 +406,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:renal.code.coding",
-      "path" : "Observation.component.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding"
-        }],
-        "description" : "Component codes for SOFA score",
-        "ordered" : false,
-        "rules" : "closed"
-      },
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Observation.component:renal.code.coding:loinc",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "96828-9",
-        "display" : "Renal [Score] SOFA"
+      "id" : "Observation.component:renal.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "96828-9"
+        }]
       }
     },
     {
-      "id" : "Observation.component:renal.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Renal (Creatinine or urine output)"
+      "id" : "Observation.component:renal.code.coding",
+      "path" : "Observation.component.code.coding",
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:renal.value[x]",
@@ -532,31 +462,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:neurological.code.coding",
-      "path" : "Observation.component.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "coding"
-        }],
-        "description" : "Component codes for SOFA score",
-        "ordered" : false,
-        "rules" : "closed"
-      },
-      "min" : 1,
-      "max" : "1"
+      "id" : "Observation.component:neurological.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "96827-1"
+        }]
+      }
     },
     {
-      "id" : "Observation.component:neurological.code.coding:loinc",
+      "id" : "Observation.component:neurological.code.coding",
       "path" : "Observation.component.code.coding",
-      "sliceName" : "loinc",
       "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "96827-1",
-        "display" : "Central nervous system [Score] SOFA"
-      }
+      "max" : "1"
     },
     {
       "id" : "Observation.component:neurological.value[x]",

@@ -87,7 +87,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
   "title" : "MII PR ICU Beatmungszeit Hohem Druck",
   "status" : "active",
-  "date" : "2026-11-10T12:15:47+00:00",
+  "date" : "2026-11-10T13:34:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

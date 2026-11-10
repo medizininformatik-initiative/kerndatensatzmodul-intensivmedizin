@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
   "name" : "MII_PR_ICU_MUV_Pulmonalarterieller_Wedge_Druck",
   "title" : "MII PR ICU MUV Pulmonalarterieller Wedge-Druck",
   "status" : "draft",
-  "date" : "2026-11-10T12:15:47+00:00",
+  "date" : "2026-11-10T13:34:12+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
