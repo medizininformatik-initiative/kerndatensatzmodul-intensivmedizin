@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
   "title" : "MII PR ICU Einstellung Einatmungszeit Beatmung",
   "status" : "active",
-  "date" : "2026-11-10T11:36:35+00:00",
+  "date" : "2026-11-10T12:04:15+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
