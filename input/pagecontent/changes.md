@@ -18,6 +18,7 @@ Ballot release — first formal publication of this module through the HL7 IG Pu
 - `fix` CAM-ICU score (early draft): the invalid codes LOINC `99844-5` and SNOMED CT `450740000` were removed from `Observation.code`; neither code system has a CAM-ICU-specific concept yet. The score is identified by `code.text` until codes are available
 - `fix` Must-support: the MUV profiles *Arterieller Blutdruck*, *Atemfrequenz*, *Körpergewicht*, *Körpergröße* and *Kopfumfang* now also mark the inherited slices of must-support elements as must-support (`category:VSCat`, `code.coding:loinc`/`snomed`/`loinc-zusatzcode`, `valueQuantity`). In *Arterieller Blutdruck*, the prohibited `value[x]` (0..0) is no longer must-support
 - `fix` Value set *MII VS ICU Delirium Interpretation*: the placeholder `$sct#xxx "No delirium (finding)"` was removed; SNOMED CT has no such concept
+- **`BREAKING`** UCUM units without annotations: *Mechanische Atemfrequenz (beatmet)* now fixes `valueQuantity.code` to `/min` (was `{Breaths}/min`) and *Zeitverhältnis Ein-/Ausatmung* to `1` (was `{ratio}`). The validator ignores annotations when comparing units, so they should not carry meaning in the code; human-readable text belongs in `valueQuantity.unit`. Data sent with the old codes no longer matches the profiles
 
 ### Known issues
 

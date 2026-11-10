@@ -17,4 +17,4 @@ Title: "MII PR ICU Mechanische Atemfrequenz Beatmet"
 * code.coding[loinc] = $loinc#33438-3 "Breath rate mechanical --on ventilator"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#151586 "MDC_VENT_RESP_RATE"
-* valueQuantity = $ucum#{Breaths}/min
+* valueQuantity = $ucum#/min
