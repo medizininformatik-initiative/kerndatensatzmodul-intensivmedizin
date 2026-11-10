@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-icu-method-kalorienbedarf",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-method-kalorienbedarf</b></p><a name=\"mii-vs-icu-method-kalorienbedarf\"> </a><a name=\"hcmii-vs-icu-method-kalorienbedarf\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/258090004\">258090004</a></td><td>Calculated</td></tr><tr><td><a href=\"http://snomed.info/id/414135002\">414135002</a></td><td>Estimated</td></tr></table></li></ul></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-method-kalorienbedarf</b></p><a name=\"de-mii-vs-icu-method-kalorienbedarf\"> </a><a name=\"de-hcmii-vs-icu-method-kalorienbedarf\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/258090004\">258090004</a></td><td>Calculated</td></tr><tr><td><a href=\"http://snomed.info/id/414135002\">414135002</a></td><td>Estimated</td></tr></table></li></ul></div></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-method-kalorienbedarf",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Method_Kalorienbedarf",
+  "title" : "MII VS ICU Method Kalorienbedarf",
+  "status" : "draft",
+  "date" : "2026-11-10T09:28:06+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "SNOMED CT qualifiers for how daily energy requirement was determined. The codes do not identify particular equations.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "258090004",
+        "display" : "Calculated"
+      },
+      {
+        "code" : "414135002",
+        "display" : "Estimated"
+      }]
+    }]
+  }
+}

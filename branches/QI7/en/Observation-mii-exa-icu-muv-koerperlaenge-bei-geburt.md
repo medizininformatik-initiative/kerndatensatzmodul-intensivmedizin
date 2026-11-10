@@ -1,0 +1,72 @@
+# Birth length - MII IG ICU v2027.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Birth length**
+
+## Example Observation: Birth length
+
+-------
+
+**English**
+
+-------
+
+Profile: [MII PR ICU MUV Koerperlaenge Bei Geburt](StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.md)
+
+**status**: Final
+
+**category**: Vital Signs
+
+**code**: Birth length (observable entity)
+
+**subject**: Example newborn
+
+**effective**: 2025-01-01 09:30:00+0100
+
+**value**: 51 centimeter (Details: UCUM codecm = 'cm')
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-muv-koerperlaenge-bei-geburt",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"]
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "169886007",
+      "display" : "Birth length (observable entity)"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
+      "code" : "68058"
+    }]
+  },
+  "subject" : {
+    "display" : "Example newborn"
+  },
+  "effectiveDateTime" : "2025-01-01T09:30:00+01:00",
+  "valueQuantity" : {
+    "value" : 51,
+    "unit" : "centimeter",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  }
+}
+
+```
