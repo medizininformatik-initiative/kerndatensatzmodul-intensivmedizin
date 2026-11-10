@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Einstellung_Inspirationsdruck",
   "title" : "MII PR ICU Einstellung Inspirationsdruck",
   "status" : "draft",
-  "date" : "2026-11-10T07:06:43+00:00",
+  "date" : "2026-11-10T07:42:04+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
