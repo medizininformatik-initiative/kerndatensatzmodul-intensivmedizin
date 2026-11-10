@@ -1,0 +1,257 @@
+# MII VS ICU Code Monitoring und Vitaldaten ISO11073 - MII IG ICU v2027.0.0
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII VS ICU Code Monitoring und Vitaldaten ISO11073**
+
+## ValueSet: MII VS ICU Code Monitoring und Vitaldaten ISO11073 
+
+| | |
+| :--- | :--- |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073 | *Version*:2027.0.0 |
+| Active Stand: 2025-02-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073 |
+
+ 
+Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring. 
+
+ **References** 
+
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Beschreibung der obigen Tabelle(n)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Code_Monitoring_und_Vitaldaten_ISO11073",
+  "title" : "MII VS ICU Code Monitoring und Vitaldaten ISO11073",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-11",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "concept" : [{
+        "code" : "150017",
+        "display" : "MDC_PRESS_BLD_SYS"
+      },
+      {
+        "code" : "150019",
+        "display" : "MDC_PRESS_BLD_MEAN"
+      },
+      {
+        "code" : "150018",
+        "display" : "MDC_PRESS_BLD_DIA"
+      },
+      {
+        "code" : "150084",
+        "display" : "MDC_PRESS_BLD_VEN_CENT"
+      },
+      {
+        "code" : "150045",
+        "display" : "MDC_PRESS_BLD_ART_PULM_SYS"
+      },
+      {
+        "code" : "150047",
+        "display" : "MDC_PRESS_BLD_ART_PULM_MEAN"
+      },
+      {
+        "code" : "150046",
+        "display" : "MDC_PRESS_BLD_ART_PULM_DIA"
+      },
+      {
+        "code" : "150052",
+        "display" : "MDC_PRESS_BLD_ART_PULM_OCCL"
+      },
+      {
+        "code" : "150276",
+        "display" : "MDC_OUTPUT_CARD"
+      },
+      {
+        "code" : "149772",
+        "display" : "MDC_OUTPUT_CARD_INDEX"
+      },
+      {
+        "code" : "149760",
+        "display" : "MDC_RES_VASC_SYS_INDEX"
+      },
+      {
+        "code" : "152852",
+        "display" : "MDC_RES_VASC_PULM_INDEX"
+      },
+      {
+        "code" : "150428",
+        "display" : "MDC_WK_LV_STROKE"
+      },
+      {
+        "code" : "149764",
+        "display" : "MDC_WK_LV_STROKE_INDEX"
+      },
+      {
+        "code" : "150368",
+        "display" : "MDC_TEMP_CORE"
+      },
+      {
+        "code" : "150456",
+        "display" : "MDC_PULS_OXIM_SAT_O2"
+      },
+      {
+        "code" : "160300",
+        "display" : "MDC_PULS_OXIM_SAT_O2_ART_POSTDUCTAL"
+      },
+      {
+        "code" : "160296",
+        "display" : "MDC_PULS_OXIM_SAT_O2_ART_PREDUCTAL"
+      },
+      {
+        "code" : "153608",
+        "display" : "MDC_PRESS_INTRA_CRAN"
+      },
+      {
+        "code" : "150103",
+        "display" : "MDC_PRESS_BLD_VENT_LEFT_MEAN"
+      },
+      {
+        "code" : "150107",
+        "display" : "MDC_PRESS_BLD_VENT_RIGHT_MEAN"
+      },
+      {
+        "code" : "150101",
+        "display" : "MDC_PRESS_BLD_VENT_LEFT_SYS"
+      },
+      {
+        "code" : "150105",
+        "display" : "MDC_PRESS_BLD_VENT_RIGHT_SYS"
+      },
+      {
+        "code" : "150102",
+        "display" : "MDC_PRESS_BLD_VENT_LEFT_DIA"
+      },
+      {
+        "code" : "150106",
+        "display" : "MDC_PRESS_BLD_VENT_RIGHT_DIA"
+      },
+      {
+        "code" : "150069",
+        "display" : "MDC_PRESS_BLD_ATR_RIGHT_SYS"
+      },
+      {
+        "code" : "150065",
+        "display" : "MDC_PRESS_BLD_ATR_LEFT_SYS"
+      },
+      {
+        "code" : "150067",
+        "display" : "MDC_PRESS_BLD_ATR_LEFT_MEAN"
+      },
+      {
+        "code" : "150071",
+        "display" : "MDC_PRESS_BLD_ATR_RIGHT_MEAN"
+      },
+      {
+        "code" : "150066",
+        "display" : "MDC_PRESS_BLD_ATR_LEFT_DIA"
+      },
+      {
+        "code" : "150070",
+        "display" : "MDC_PRESS_BLD_ATR_RIGHT_DIA"
+      },
+      {
+        "code" : "153604",
+        "display" : "MDC_PRESS_CEREB_PERF"
+      },
+      {
+        "code" : "188420",
+        "display" : "MDC_TEMP_RECT"
+      },
+      {
+        "code" : "188496",
+        "display" : "MDC_TEMP_AXIL"
+      },
+      {
+        "code" : "188424",
+        "display" : "MDC_TEMP_ORAL"
+      },
+      {
+        "code" : "188436",
+        "display" : "MDC_TEMP_BLD"
+      },
+      {
+        "code" : "188500",
+        "display" : "MDC_TEMP_MYO"
+      },
+      {
+        "code" : "147842",
+        "display" : "MDC_ECG_HEART_RATE"
+      },
+      {
+        "code" : "188504",
+        "display" : "MDC_TEMP_NASAL"
+      },
+      {
+        "code" : "149514",
+        "display" : "MDC_PULS_RATE"
+      },
+      {
+        "code" : "150380",
+        "display" : "MDC_TEMP_NASOPH"
+      },
+      {
+        "code" : "188452",
+        "display" : "MDC_TEMP_AXILLA"
+      },
+      {
+        "code" : "150324",
+        "display" : "MDC_SAT_O2_ART"
+      },
+      {
+        "code" : "150372",
+        "display" : "MDC_TEMP_ESOPH"
+      },
+      {
+        "code" : "188796",
+        "display" : "MDC_MASS_BODY_EST_IBW"
+      },
+      {
+        "code" : "150392",
+        "display" : "MDC_TEMP_TYMP"
+      },
+      {
+        "code" : "150356",
+        "display" : "MDC_TEMP_AWAY"
+      }]
+    }]
+  }
+}
+
+```
