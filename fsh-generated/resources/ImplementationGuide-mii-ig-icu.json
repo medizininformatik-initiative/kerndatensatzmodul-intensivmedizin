@@ -993,10 +993,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-bps"
+        },
+        "name": "MII PR ICU Score BPS",
+        "description": "Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-cam-icu"
         },
         "name": "MII PR ICU Score CAM-ICU",
-        "description": "Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent).",
+        "description": "Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative.",
         "exampleBoolean": false
       },
       {
@@ -1019,7 +1027,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-icdsc"
         },
         "name": "MII PR ICU Score ICDSC",
-        "description": "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium.",
+        "description": "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen.",
         "exampleBoolean": false
       },
       {
