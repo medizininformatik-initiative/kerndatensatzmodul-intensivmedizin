@@ -2,10 +2,118 @@
 # Renders the ISiK-hosted ICU profiles on pages of this IG with
 # Gefyra/ig-external-profiles-action (see .github/workflows/ig-publisher.yml).
 profiles:
+  - id: mii-pr-icu-bilanz
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz.html
+  - id: mii-pr-icu-bilanz-ausfuhr-blutverlust
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.html
+  - id: mii-pr-icu-bilanz-ausfuhr-drainage-generisch
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html
+  - id: mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html
+  - id: mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html
+  - id: mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html
+  - id: mii-pr-icu-bilanz-ausfuhr-magensonde
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-magensonde.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.html
+  - id: mii-pr-icu-bilanz-ausfuhr-op-drainage
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-op-drainage.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.html
+  - id: mii-pr-icu-bilanz-ausfuhr-pankreasdrainage
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.html
+  - id: mii-pr-icu-bilanz-ausfuhr-stuhlgang
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-stuhlgang.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.html
+  - id: mii-pr-icu-bilanz-ausfuhr-urin
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-urin.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.html
+  - id: mii-pr-icu-bilanz-ausfuhr-wunddrainage
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html
+  - id: mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html
+  - id: mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html
+  - id: mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html
+  - id: mii-pr-icu-bilanz-einfuhr-muttermilch
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-muttermilch.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.html
+  - id: mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html
+  - id: mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html
+  - id: mii-pr-icu-bilanz-einfuhr-spendermilch
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-einfuhr-spendermilch.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.html
+  - id: mii-pr-icu-bilanz-tagesbilanz-fluessigkeit
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html
   - id: mii-pr-icu-muv-zerebraler-perfusionsdruck
     package: de.gematik.isik#6.0.0
     page: extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html
     link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.html
+  - id: mii-pr-icu-score-rass
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-score-rass.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-score-rass.html
+  - id: mii-pr-icu-untersuchung-pupillenbefund
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-untersuchung-pupillenbefund.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.html
+  - id: mii-pr-icu-untersuchung-pupillenform
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-untersuchung-pupillenform.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-untersuchung-pupillenform.html
+  - id: mii-pr-icu-untersuchung-pupillengroesse
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-untersuchung-pupillengroesse.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.html
+  - id: mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html
+  - id: mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html
+  - id: mii-pr-icu-untersuchung-pupillensymmetrie
+    package: de.gematik.isik#6.0.0
+    page: extern-mii-pr-icu-untersuchung-pupillensymmetrie.html
+    link: https://gemspec.gematik.de/ig/fhir/isik/icu/6.0.0/StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.html
   - id: sd-mii-icu-herzzeitvolumen
     package: de.gematik.isik#6.0.0
     page: extern-sd-mii-icu-herzzeitvolumen.html

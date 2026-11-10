@@ -9,9 +9,10 @@ Description: "Confusion Assessment Method for the ICU (CAM-ICU) for delirium ass
 * ^version = "2026.0.0"
 * ^status = #draft
 
-* code.coding[sct] = $sct#450740000 "Confusion Assessment Method for the intensive care unit score"
-* code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#99844-5 "Confusion Assessment Method for the ICU"
+// TODO: early draft. Neither LOINC nor SNOMED CT has a CAM-ICU-specific concept yet
+// (the former codes LOINC 99844-5 and SNOMED 450740000 do not exist). Add the codings
+// once codes are available; until then the score is identified by code.text only.
+* code.text = "Confusion Assessment Method for the ICU (CAM-ICU)"
 
 * valueCodeableConcept 1..1
 * valueCodeableConcept from mii-vs-icu-cam-icu-result (required)

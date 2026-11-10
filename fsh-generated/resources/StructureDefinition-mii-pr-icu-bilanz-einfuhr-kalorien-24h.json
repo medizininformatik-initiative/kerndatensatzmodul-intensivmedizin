@@ -21,7 +21,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz",
   "derivation": "constraint",
   "differential": {
     "element": [

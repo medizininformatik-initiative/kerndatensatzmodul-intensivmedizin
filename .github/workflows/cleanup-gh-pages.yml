@@ -12,7 +12,7 @@
 #            modules created from this template (the first-run bootstrap keeps
 #            it) — every module's gh-pages benefits from the same sweep.
 #
-# Triggers:  weekly schedule (Sundays 00:00 UTC) + manual workflow_dispatch
+# Triggers:  daily schedule (00:00 UTC) + manual workflow_dispatch
 #            (with a dry_run input to list stale previews without deleting).
 #
 # Toggle:    vars.ENABLE_PREVIEW — ON by default; shares the preview
@@ -37,7 +37,7 @@ name: Cleanup stale GitHub Pages previews
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

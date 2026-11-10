@@ -42,7 +42,7 @@ Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #276902009
-* code.coding[sct] ^patternCoding.display = "Pulmonary vascular Resistance index (observable entity)"
+* code.coding[sct] ^patternCoding.display = "Pulmonary vascular resistance index (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS

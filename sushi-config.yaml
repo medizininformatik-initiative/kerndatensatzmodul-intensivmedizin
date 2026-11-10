@@ -139,6 +139,8 @@ extension:
     valueCodeableConcept:
       coding:
         - system: http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes
+          # pin THO's 3.0.0 (hl7.terminology.r4 7.3.0); without it the validator picks an older copy that lacks `package`
+          version: 3.0.0
           code: package
           display: Package
   # Package provenance: must repeat packageId, version, and canonical.
@@ -907,8 +909,62 @@ pages:
   profiles.md:
     title: Profiles
     # BEGIN generated: ISiK-hosted profile pages (scripts/gen-external-profiles.py)
+    extern-mii-pr-icu-bilanz.md:
+      title: "MII PR ICU Bilanz"
+    extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.md:
+      title: "MII PR ICU Bilanz Ausfuhr Blutverlust"
+    extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.md:
+      title: "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
+    extern-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.md:
+      title: "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
+    extern-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.md:
+      title: "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
+    extern-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.md:
+      title: "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
+    extern-mii-pr-icu-bilanz-ausfuhr-magensonde.md:
+      title: "MII PR ICU Bilanz Ausfuhr Magensonde"
+    extern-mii-pr-icu-bilanz-ausfuhr-op-drainage.md:
+      title: "MII PR ICU Bilanz Ausfuhr OP Drainage"
+    extern-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.md:
+      title: "MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
+    extern-mii-pr-icu-bilanz-ausfuhr-stuhlgang.md:
+      title: "MII PR ICU Bilanz Ausfuhr Stuhlgang"
+    extern-mii-pr-icu-bilanz-ausfuhr-urin.md:
+      title: "MII PR ICU Bilanz Ausfuhr Urin"
+    extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md:
+      title: "MII PR ICU Bilanz Ausfuhr Wunddrainage"
+    extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md:
+      title: "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"
+    extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md:
+      title: "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
+    extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md:
+      title: "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"
+    extern-mii-pr-icu-bilanz-einfuhr-muttermilch.md:
+      title: "MII PR ICU Bilanz Einfuhr Muttermilch"
+    extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md:
+      title: "MII PR ICU Bilanz Einfuhr Orale Fluessigkeit"
+    extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md:
+      title: "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung"
+    extern-mii-pr-icu-bilanz-einfuhr-spendermilch.md:
+      title: "MII PR ICU Bilanz Einfuhr Spendermilch"
+    extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md:
+      title: "MII PR ICU Bilanz Tagesbilanz Fluessigkeit"
     extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.md:
       title: "MII PR ICU MUV zerebraler Perfusionsdruck"
+    extern-mii-pr-icu-score-rass.md:
+      title: "MII PR ICU Score RASS"
+    extern-mii-pr-icu-untersuchung-pupillenbefund.md:
+      title: "MII PR ICU Untersuchung Pupillenbefund"
+    extern-mii-pr-icu-untersuchung-pupillenform.md:
+      title: "MII PR ICU Untersuchung Pupillenform"
+    extern-mii-pr-icu-untersuchung-pupillengroesse.md:
+      title: "MII PR ICU Untersuchung Pupillengroesse"
+    extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.md:
+      title: "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt"
+    extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.md:
+      title: "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt"
+    extern-mii-pr-icu-untersuchung-pupillensymmetrie.md:
+      title: "MII PR ICU Untersuchung Pupillensymmetrie"
     extern-sd-mii-icu-herzzeitvolumen.md:
       title: "SD MII ICU Herzzeitvolumen"
     extern-sd-mii-icu-ideales-koerpergewicht.md:
