@@ -11,8 +11,10 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * category[VSCat] MS
 
 * code MS
-* code.coding MS
+* code.coding 2.. MS
+* code.coding ^comment = "Mindestens zwei Codings: LOINC 85354-9 (Slice loinc, aus dem Basisprofil) und SNOMED CT 364090009 (Slice sct)."
 * code.coding[snomed] MS
+* code.coding[snomed] ^comment = "Optionales SNOMED-CT-Coding 75367002 (Blood pressure) aus dem Basisprofil. Das für dieses Profil verpflichtende SNOMED-CT-Coding ist 364090009 (Systemic arterial pressure) im Slice sct; beide können nebeneinander stehen."
 * code.coding[loinc] MS
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
@@ -28,7 +30,7 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * encounter MS
 * effective[x] MS
 * value[x] ..0 // prohibited (values are in components), so not must-support
-* dataAbsentReason ..0 MS
+* dataAbsentReason MS // allowed when no measured components are sent (vs-de-2); obs-6 is satisfied because value[x] is 0..0
 * interpretation MS
 * bodySite MS
 * method MS
