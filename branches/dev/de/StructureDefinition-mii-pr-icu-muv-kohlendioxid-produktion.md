@@ -106,7 +106,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Kohlendioxid_Produktion",
   "title" : "MII PR ICU MUV Kohlendioxid Produktion",
   "status" : "draft",
-  "date" : "2026-11-10T13:32:27+00:00",
+  "date" : "2026-11-10T16:12:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

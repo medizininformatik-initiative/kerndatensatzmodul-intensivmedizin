@@ -45,7 +45,6 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net
 
 Mandatory: 19 elements(21 nested mandatory elements)
  Must-Support: 96 elements
- Prohibited: 1 element
 
 **Slices**
 
@@ -75,7 +74,6 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net
 
 Mandatory: 19 elements(21 nested mandatory elements)
  Must-Support: 96 elements
- Prohibited: 1 element
 
 **Slices**
 
@@ -100,7 +98,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-11-10T13:32:27+00:00",
+  "date" : "2026-11-10T16:12:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -146,6 +144,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
+      "comment" : "Mindestens zwei Codings: LOINC 85354-9 (Slice loinc, aus dem Basisprofil) und SNOMED CT 364090009 (Slice sct).",
       "min" : 2,
       "mustSupport" : true
     },
@@ -174,6 +173,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "id" : "Observation.code.coding:snomed",
       "path" : "Observation.code.coding",
       "sliceName" : "snomed",
+      "comment" : "Optionales SNOMED-CT-Coding 75367002 (Blood pressure) aus dem Basisprofil. Das für dieses Profil verpflichtende SNOMED-CT-Coding ist 364090009 (Systemic arterial pressure) im Slice sct; beide können nebeneinander stehen.",
       "mustSupport" : true
     },
     {
@@ -221,7 +221,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.dataAbsentReason",
       "path" : "Observation.dataAbsentReason",
-      "max" : "0",
       "mustSupport" : true
     },
     {
