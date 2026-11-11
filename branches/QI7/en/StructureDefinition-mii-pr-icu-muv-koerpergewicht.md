@@ -16,6 +16,7 @@
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-muv-koerpergewicht](Observation-mii-exa-icu-muv-koerpergewicht.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-muv-koerpergewicht.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergewicht",
   "title" : "MII PR ICU MUV Koerpergewicht",
   "status" : "active",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

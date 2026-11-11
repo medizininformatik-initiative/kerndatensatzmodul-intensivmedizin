@@ -16,6 +16,7 @@
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt](Observation-mii-exa-icu-vent-maximaler-beatmungsdruck-eingestellt.md) and [Observation/mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen](Observation-mii-exa-icu-vent-maximaler-beatmungsdruck-gemessen.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "name" : "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
   "title" : "MII PR ICU Maximaler Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

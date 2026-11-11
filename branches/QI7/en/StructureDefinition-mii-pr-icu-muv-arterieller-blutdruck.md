@@ -16,6 +16,7 @@ This is a pulsatile pressure. In addition to the properties of the generic profi
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-muv-arterieller-blutdruck](Observation-mii-exa-icu-muv-arterieller-blutdruck.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -86,6 +87,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
+      "comment" : "Mindestens zwei Codings: LOINC 85354-9 (Slice loinc, aus dem Basisprofil) und SNOMED CT 364090009 (Slice sct).",
       "min" : 2,
       "mustSupport" : true
     },
@@ -114,6 +116,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "id" : "Observation.code.coding:snomed",
       "path" : "Observation.code.coding",
       "sliceName" : "snomed",
+      "comment" : "Optionales SNOMED-CT-Coding 75367002 (Blood pressure) aus dem Basisprofil. Das für dieses Profil verpflichtende SNOMED-CT-Coding ist 364090009 (Systemic arterial pressure) im Slice sct; beide können nebeneinander stehen.",
       "mustSupport" : true
     },
     {
@@ -161,7 +164,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.dataAbsentReason",
       "path" : "Observation.dataAbsentReason",
-      "max" : "0",
       "mustSupport" : true
     },
     {

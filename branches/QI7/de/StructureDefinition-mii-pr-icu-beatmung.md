@@ -19,6 +19,7 @@ Stellt den Prozess der Beatmung dar.
 
 * Refer to this Profile: [MII PR ICU Parameter von Beatmung](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md)
 * Examples for this Profile: [Procedure/mii-exa-icu-vent-beatmung](Procedure-mii-exa-icu-vent-beatmung.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-beatmung.json)
 
@@ -198,7 +199,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Beatmung",
   "title" : "MII PR ICU Beatmung",
   "status" : "active",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

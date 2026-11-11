@@ -16,6 +16,7 @@ Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt
 
 **Usages:**
 
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 * This Profile is not used by any profiles in this Specification
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-score-zopa.json)
@@ -91,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_ZOPA",
   "title" : "MII PR ICU Score ZOPA",
   "status" : "draft",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -13,6 +13,7 @@
 
 **Usages:**
 
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 * This Profile is not used by any profiles in this Specification
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.json)
@@ -38,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-he
   "name" : "MII_PR_ICU_MUV_Herzzeitvolumen",
   "title" : "MII PR ICU MUV Herzzeitvolumen",
   "status" : "draft",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -105,7 +105,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Energieverbrauch_Indirekte_Kalorimetrie",
   "title" : "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
   "status" : "draft",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

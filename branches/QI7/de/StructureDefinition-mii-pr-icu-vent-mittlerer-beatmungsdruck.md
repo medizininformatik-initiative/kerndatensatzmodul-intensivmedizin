@@ -16,6 +16,7 @@ Dies ist eine Ausprägung des generischen Profils zu [Parameter von Beatmung (Ob
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt](Observation-mii-exa-icu-vent-mittlerer-beatmungsdruck-eingestellt.md) and [Observation/mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen](Observation-mii-exa-icu-vent-mittlerer-beatmungsdruck-gemessen.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.json)
 
@@ -84,7 +85,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
   "title" : "MII PR ICU Mittlerer Beatmungsdruck",
   "status" : "retired",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

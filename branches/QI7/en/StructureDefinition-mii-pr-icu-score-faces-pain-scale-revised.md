@@ -17,6 +17,7 @@ Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-score-faces-pain-scale-revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.json)
 
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
   "title" : "MII PR ICU Score Faces Pain Scale Revised",
   "status" : "draft",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

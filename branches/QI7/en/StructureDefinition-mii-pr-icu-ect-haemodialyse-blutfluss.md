@@ -16,6 +16,7 @@ Observation "Hemodialysis blood flow" is a characteristic of the generic profile
 **Usages:**
 
 * Examples for this Profile: [Observation/mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt](Observation-mii-exa-icu-ect-haemodialyse-blutfluss-eingestellt.md) and [Observation/mii-exa-icu-ect-haemodialyse-blutfluss-gemessen](Observation-mii-exa-icu-ect-haemodialyse-blutfluss-gemessen.md)
+* CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.json)
 
@@ -40,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ha
   "name" : "MII_PR_ICU_ECT_Haemodialyse_Blutfluss",
   "title" : "MII PR ICU Haemodialyse Blutfluss",
   "status" : "active",
-  "date" : "2026-11-11T10:11:22+00:00",
+  "date" : "2026-11-11T10:44:39+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
