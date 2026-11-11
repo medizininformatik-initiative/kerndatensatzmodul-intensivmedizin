@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-11T10:41:13+00:00",
+  "date" : "2026-11-11T11:13:13+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

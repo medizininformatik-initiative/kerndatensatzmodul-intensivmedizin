@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_Visuelle_Analogskala",
   "title" : "MII PR ICU Score Visuelle Analogskala",
   "status" : "draft",
-  "date" : "2026-11-11T10:41:13+00:00",
+  "date" : "2026-11-11T11:13:13+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
