@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6e6833be-e1d7-43e4-bf74-e6675c7a7d47"/>
+  <id value="9ad91ceb-4c60-4690-a19d-a77c86b65089"/>
   <meta>
-    <lastUpdated value="2026-11-10T09:28:06.770+00:00"/>
+    <lastUpdated value="2026-11-11T10:11:22.530+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -96,8 +96,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:167901f5-0167-4cf9-9273-d5babccb56cb"/>
-          <timestamp value="2026-11-10T09:38:18+00:00"/>
+          <identifier value="urn:uuid:0746f495-80aa-4d87-9183-8900a3f82320"/>
+          <timestamp value="2026-11-11T10:21:44+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -235,8 +235,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:167901f5-0167-4cf9-9273-d5babccb56cb"/>
-          <timestamp value="2026-11-10T09:38:18+00:00"/>
+          <identifier value="urn:uuid:0746f495-80aa-4d87-9183-8900a3f82320"/>
+          <timestamp value="2026-11-11T10:21:44+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -374,8 +374,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b09ce35d-12f2-43b4-8c1c-1e721ff0089f"/>
-          <timestamp value="2026-11-10T09:38:19+00:00"/>
+          <identifier value="urn:uuid:2616e9f1-d7d4-4a76-bf4f-5af67a1cfde2"/>
+          <timestamp value="2026-11-11T10:21:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -591,8 +591,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7ce1191-d172-4b4e-b8d2-75f06a6b280c"/>
-          <timestamp value="2026-11-10T09:38:51+00:00"/>
+          <identifier value="urn:uuid:a76ad637-ce62-447d-b34a-8ab641f0a156"/>
+          <timestamp value="2026-11-11T10:22:13+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -830,8 +830,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7ce1191-d172-4b4e-b8d2-75f06a6b280c"/>
-          <timestamp value="2026-11-10T09:38:51+00:00"/>
+          <identifier value="urn:uuid:a76ad637-ce62-447d-b34a-8ab641f0a156"/>
+          <timestamp value="2026-11-11T10:22:13+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1069,8 +1069,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b86db53c-9da8-4f44-9f3b-c05c40d15fd1"/>
-          <timestamp value="2026-11-10T09:38:52+00:00"/>
+          <identifier value="urn:uuid:914e1e86-c98b-4d98-9487-5c2dc7e1f7fc"/>
+          <timestamp value="2026-11-11T10:22:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1202,8 +1202,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0a7ef237-d52d-4e58-b69e-27bc456d8a02"/>
-          <timestamp value="2026-11-10T09:37:29+00:00"/>
+          <identifier value="urn:uuid:3a10941d-632c-49b7-bd4d-43a2c17e9b07"/>
+          <timestamp value="2026-11-11T10:20:58+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1316,8 +1316,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0a7ef237-d52d-4e58-b69e-27bc456d8a02"/>
-          <timestamp value="2026-11-10T09:37:29+00:00"/>
+          <identifier value="urn:uuid:3a10941d-632c-49b7-bd4d-43a2c17e9b07"/>
+          <timestamp value="2026-11-11T10:20:58+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1430,8 +1430,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c3c0f2b-8291-4f0d-bb42-5027ebfc9c2e"/>
-          <timestamp value="2026-11-10T09:37:30+00:00"/>
+          <identifier value="urn:uuid:a8823d64-67cf-457d-87a2-31af34ceb987"/>
+          <timestamp value="2026-11-11T10:21:00+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -2183,8 +2183,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:83651f23-0dd4-43e1-bb9d-2b4527a0c572"/>
-          <timestamp value="2026-11-10T09:37:57+00:00"/>
+          <identifier value="urn:uuid:8f5e309f-c3cc-4ccc-988f-e8b3b869d0cb"/>
+          <timestamp value="2026-11-11T10:21:25+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -3097,8 +3097,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:83651f23-0dd4-43e1-bb9d-2b4527a0c572"/>
-          <timestamp value="2026-11-10T09:37:57+00:00"/>
+          <identifier value="urn:uuid:8f5e309f-c3cc-4ccc-988f-e8b3b869d0cb"/>
+          <timestamp value="2026-11-11T10:21:25+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4011,8 +4011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:445cabd4-8439-4aff-b5f9-147d030a1045"/>
-          <timestamp value="2026-11-10T09:37:59+00:00"/>
+          <identifier value="urn:uuid:f2a1c6d6-7a02-42dc-9734-63cb60d54df9"/>
+          <timestamp value="2026-11-11T10:21:26+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4263,7 +4263,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4272,8 +4272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6f992a6e-2460-4484-90b9-387060abe6eb"/>
-          <timestamp value="2026-11-10T09:38:20+00:00"/>
+          <identifier value="urn:uuid:4c79ba75-b3b1-474c-9c75-2c6c6ffc7320"/>
+          <timestamp value="2026-11-11T10:21:46+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4402,7 +4402,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4411,8 +4411,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6f992a6e-2460-4484-90b9-387060abe6eb"/>
-          <timestamp value="2026-11-10T09:38:20+00:00"/>
+          <identifier value="urn:uuid:4c79ba75-b3b1-474c-9c75-2c6c6ffc7320"/>
+          <timestamp value="2026-11-11T10:21:46+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4541,7 +4541,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4550,8 +4550,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:df204438-640b-4e2d-8426-c685df0e4c4d"/>
-          <timestamp value="2026-11-10T09:38:22+00:00"/>
+          <identifier value="urn:uuid:20aa9b74-cdc4-4896-9454-ce6707d93fe7"/>
+          <timestamp value="2026-11-11T10:21:47+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4687,8 +4687,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:be61bcd4-49c6-4483-a899-292fd31ac719"/>
-          <timestamp value="2026-11-10T09:38:17+00:00"/>
+          <identifier value="urn:uuid:43fbc32f-44ff-41c2-a0b2-f3274cedc62f"/>
+          <timestamp value="2026-11-11T10:21:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4826,8 +4826,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:be61bcd4-49c6-4483-a899-292fd31ac719"/>
-          <timestamp value="2026-11-10T09:38:17+00:00"/>
+          <identifier value="urn:uuid:43fbc32f-44ff-41c2-a0b2-f3274cedc62f"/>
+          <timestamp value="2026-11-11T10:21:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -4965,8 +4965,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2b01a99b-6ff8-4843-b5f1-724eefa4efca"/>
-          <timestamp value="2026-11-10T09:38:19+00:00"/>
+          <identifier value="urn:uuid:ba4e3387-71c7-4e23-8f7a-de51dce400ce"/>
+          <timestamp value="2026-11-11T10:21:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -6062,8 +6062,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2d4bdf1-2b4c-4ba7-9175-6b8f70da12a0"/>
-          <timestamp value="2026-11-10T09:38:52+00:00"/>
+          <identifier value="urn:uuid:20f634ad-f166-4365-a61f-e784e3e63cf8"/>
+          <timestamp value="2026-11-11T10:22:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -7401,8 +7401,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2d4bdf1-2b4c-4ba7-9175-6b8f70da12a0"/>
-          <timestamp value="2026-11-10T09:38:52+00:00"/>
+          <identifier value="urn:uuid:20f634ad-f166-4365-a61f-e784e3e63cf8"/>
+          <timestamp value="2026-11-11T10:22:14+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -8740,8 +8740,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8aabde41-fcec-4e82-8c11-4839ca17bafc"/>
-          <timestamp value="2026-11-10T09:38:53+00:00"/>
+          <identifier value="urn:uuid:b989e09c-9333-43f9-86c5-f806f9921856"/>
+          <timestamp value="2026-11-11T10:22:15+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -9983,8 +9983,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2a3853b1-5f5a-4a4a-a438-fd13d7f51db3"/>
-          <timestamp value="2026-11-10T09:37:43+00:00"/>
+          <identifier value="urn:uuid:0b2b86ef-be5d-44c9-85c9-81a75061be70"/>
+          <timestamp value="2026-11-11T10:21:12+00:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -11288,8 +11288,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2a3853b1-5f5a-4a4a-a438-fd13d7f51db3"/>
-          <timestamp value="2026-11-10T09:37:43+00:00"/>
+          <identifier value="urn:uuid:0b2b86ef-be5d-44c9-85c9-81a75061be70"/>
+          <timestamp value="2026-11-11T10:21:12+00:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -12593,8 +12593,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:703e1220-f9af-4fc8-b5ca-678750e032fe"/>
-          <timestamp value="2026-11-10T09:37:46+00:00"/>
+          <identifier value="urn:uuid:8f2df174-8f66-461c-991c-c26cbade7b26"/>
+          <timestamp value="2026-11-11T10:21:15+00:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -14011,8 +14011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a8ec9ae2-9699-4741-a3da-baf2d60ed62e"/>
-          <timestamp value="2026-11-10T09:37:43+00:00"/>
+          <identifier value="urn:uuid:f70e5b82-fce9-41be-99f6-1c3c50b280d4"/>
+          <timestamp value="2026-11-11T10:21:11+00:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -15497,8 +15497,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a8ec9ae2-9699-4741-a3da-baf2d60ed62e"/>
-          <timestamp value="2026-11-10T09:37:43+00:00"/>
+          <identifier value="urn:uuid:f70e5b82-fce9-41be-99f6-1c3c50b280d4"/>
+          <timestamp value="2026-11-11T10:21:11+00:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -16983,8 +16983,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:995e327e-ee68-4bca-a90e-d43de350aa6d"/>
-          <timestamp value="2026-11-10T09:37:46+00:00"/>
+          <identifier value="urn:uuid:abec5d32-5cbc-4a5d-80f4-373e18f51da6"/>
+          <timestamp value="2026-11-11T10:21:15+00:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -18153,8 +18153,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e844c98-2470-46d5-9203-370bae3dc291"/>
-          <timestamp value="2026-11-10T09:37:42+00:00"/>
+          <identifier value="urn:uuid:30a79b7b-66da-4710-b1af-2d609cad0e79"/>
+          <timestamp value="2026-11-11T10:21:10+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -19317,8 +19317,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e844c98-2470-46d5-9203-370bae3dc291"/>
-          <timestamp value="2026-11-10T09:37:42+00:00"/>
+          <identifier value="urn:uuid:30a79b7b-66da-4710-b1af-2d609cad0e79"/>
+          <timestamp value="2026-11-11T10:21:10+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -20481,8 +20481,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7f6366e0-4909-48de-a204-f612db25c4ed"/>
-          <timestamp value="2026-11-10T09:37:46+00:00"/>
+          <identifier value="urn:uuid:9002ec23-453e-4da4-90d9-f16c3e15dc47"/>
+          <timestamp value="2026-11-11T10:21:15+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -21120,8 +21120,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd2b3ff4-e0ba-4821-aa96-939fbf02bb69"/>
-          <timestamp value="2026-11-10T09:38:18+00:00"/>
+          <identifier value="urn:uuid:8d9c97f9-6610-4d7b-bfaa-88c93acf946d"/>
+          <timestamp value="2026-11-11T10:21:44+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -21689,8 +21689,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd2b3ff4-e0ba-4821-aa96-939fbf02bb69"/>
-          <timestamp value="2026-11-10T09:38:18+00:00"/>
+          <identifier value="urn:uuid:8d9c97f9-6610-4d7b-bfaa-88c93acf946d"/>
+          <timestamp value="2026-11-11T10:21:44+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -22258,8 +22258,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:be8c15bd-9158-4c71-8607-c44122dfff56"/>
-          <timestamp value="2026-11-10T09:38:19+00:00"/>
+          <identifier value="urn:uuid:2b0e5451-14bd-4cba-ba77-cd669d5f43b7"/>
+          <timestamp value="2026-11-11T10:21:45+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -23028,8 +23028,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2171b5b4-2781-4fa6-b87f-45393f2f1a0a"/>
-          <timestamp value="2026-11-10T09:38:17+00:00"/>
+          <identifier value="urn:uuid:bdcbba3a-c9c8-43d6-8028-9e1471412b62"/>
+          <timestamp value="2026-11-11T10:21:43+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -23864,8 +23864,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2171b5b4-2781-4fa6-b87f-45393f2f1a0a"/>
-          <timestamp value="2026-11-10T09:38:17+00:00"/>
+          <identifier value="urn:uuid:bdcbba3a-c9c8-43d6-8028-9e1471412b62"/>
+          <timestamp value="2026-11-11T10:21:43+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -24700,8 +24700,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e82a3a5c-7bd6-4af8-8943-35d013e327b1"/>
-          <timestamp value="2026-11-10T09:38:19+00:00"/>
+          <identifier value="urn:uuid:a0da52fe-59a5-4906-94c4-92773713bc2d"/>
+          <timestamp value="2026-11-11T10:21:45+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -25286,8 +25286,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40bfd34b-6ef6-4e61-812a-c0bae8da1d14"/>
-          <timestamp value="2026-11-10T09:38:17+00:00"/>
+          <identifier value="urn:uuid:1d9d8fbc-3d93-4211-ae58-e208225085f9"/>
+          <timestamp value="2026-11-11T10:21:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -25850,8 +25850,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:40bfd34b-6ef6-4e61-812a-c0bae8da1d14"/>
-          <timestamp value="2026-11-10T09:38:17+00:00"/>
+          <identifier value="urn:uuid:1d9d8fbc-3d93-4211-ae58-e208225085f9"/>
+          <timestamp value="2026-11-11T10:21:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -26414,8 +26414,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9692513c-1529-49de-9bba-5ecf1c610bc1"/>
-          <timestamp value="2026-11-10T09:38:19+00:00"/>
+          <identifier value="urn:uuid:b1b17847-a368-49f2-9a9d-c66c0f2b1277"/>
+          <timestamp value="2026-11-11T10:21:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -26574,8 +26574,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2519ab54-65cf-46b5-b8f7-521935b68c3c"/>
-          <timestamp value="2026-11-10T09:38:53+00:00"/>
+          <identifier value="urn:uuid:854bb939-6ff5-4824-93e5-1c62d18c0982"/>
+          <timestamp value="2026-11-11T10:22:15+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -26643,8 +26643,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2519ab54-65cf-46b5-b8f7-521935b68c3c"/>
-          <timestamp value="2026-11-10T09:38:53+00:00"/>
+          <identifier value="urn:uuid:854bb939-6ff5-4824-93e5-1c62d18c0982"/>
+          <timestamp value="2026-11-11T10:22:15+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -26712,8 +26712,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:010d0532-aefe-4f9b-9dd1-b0c08572d8ac"/>
-          <timestamp value="2026-11-10T09:38:53+00:00"/>
+          <identifier value="urn:uuid:74ccab33-0f8f-461c-bc01-9d3a0ace62c3"/>
+          <timestamp value="2026-11-11T10:22:15+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -26826,8 +26826,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c72c6f5a-984a-4b5d-a1fb-2587e9effef4"/>
-          <timestamp value="2026-11-10T09:37:36+00:00"/>
+          <identifier value="urn:uuid:179bbff1-6ee6-45ed-9cdf-c0422da3c180"/>
+          <timestamp value="2026-11-11T10:21:05+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -26962,8 +26962,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c72c6f5a-984a-4b5d-a1fb-2587e9effef4"/>
-          <timestamp value="2026-11-10T09:37:36+00:00"/>
+          <identifier value="urn:uuid:179bbff1-6ee6-45ed-9cdf-c0422da3c180"/>
+          <timestamp value="2026-11-11T10:21:05+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -27098,8 +27098,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:56c53f49-e189-4765-bdb4-653f064fae36"/>
-          <timestamp value="2026-11-10T09:37:38+00:00"/>
+          <identifier value="urn:uuid:7b66bbaf-4efc-4891-a9a8-cd3d89cab575"/>
+          <timestamp value="2026-11-11T10:21:07+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -27412,8 +27412,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:529aa1d9-27c4-48a4-a3b3-5e8de8c35c8b"/>
-          <timestamp value="2026-11-10T09:37:36+00:00"/>
+          <identifier value="urn:uuid:d5d28744-352c-4251-b315-e666efee2617"/>
+          <timestamp value="2026-11-11T10:21:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -27776,8 +27776,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:529aa1d9-27c4-48a4-a3b3-5e8de8c35c8b"/>
-          <timestamp value="2026-11-10T09:37:36+00:00"/>
+          <identifier value="urn:uuid:d5d28744-352c-4251-b315-e666efee2617"/>
+          <timestamp value="2026-11-11T10:21:05+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -28140,8 +28140,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c7913276-c802-417b-a438-5ebb943839da"/>
-          <timestamp value="2026-11-10T09:37:38+00:00"/>
+          <identifier value="urn:uuid:df3a76c7-e9bf-4c48-a18c-f9c41973504b"/>
+          <timestamp value="2026-11-11T10:21:07+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -29913,8 +29913,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5c905a99-91f6-45a8-9e81-dfabe9441126"/>
-          <timestamp value="2026-11-10T09:38:54+00:00"/>
+          <identifier value="urn:uuid:a370b34a-5954-455e-8bfb-36bc5b84fb67"/>
+          <timestamp value="2026-11-11T10:22:15+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -32052,8 +32052,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5c905a99-91f6-45a8-9e81-dfabe9441126"/>
-          <timestamp value="2026-11-10T09:38:54+00:00"/>
+          <identifier value="urn:uuid:a370b34a-5954-455e-8bfb-36bc5b84fb67"/>
+          <timestamp value="2026-11-11T10:22:15+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -34191,8 +34191,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:241a2530-7f55-444e-a3b4-c018954a1a6c"/>
-          <timestamp value="2026-11-10T09:38:54+00:00"/>
+          <identifier value="urn:uuid:784ab77a-7140-4b79-9422-d2bc520a8a56"/>
+          <timestamp value="2026-11-11T10:22:16+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -34688,8 +34688,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5deaf91e-6427-47cb-aa7f-b5a9f37f84aa"/>
-          <timestamp value="2026-11-10T09:38:23+00:00"/>
+          <identifier value="urn:uuid:298175b5-561e-4608-b412-e6403f4f1a33"/>
+          <timestamp value="2026-11-11T10:21:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -34874,8 +34874,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5deaf91e-6427-47cb-aa7f-b5a9f37f84aa"/>
-          <timestamp value="2026-11-10T09:38:23+00:00"/>
+          <identifier value="urn:uuid:298175b5-561e-4608-b412-e6403f4f1a33"/>
+          <timestamp value="2026-11-11T10:21:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -35060,8 +35060,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c9ddb6e-93c6-44e1-afd6-a2a0eb7d06f4"/>
-          <timestamp value="2026-11-10T09:38:25+00:00"/>
+          <identifier value="urn:uuid:bb42db6d-b472-4218-901b-7807175a1bea"/>
+          <timestamp value="2026-11-11T10:21:50+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -35282,8 +35282,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3f2a8a0e-187b-4120-b01b-5deb94638244"/>
-          <timestamp value="2026-11-10T09:38:23+00:00"/>
+          <identifier value="urn:uuid:7068cef2-03c4-4790-b2ca-a1e4d6aa85ba"/>
+          <timestamp value="2026-11-11T10:21:49+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -35518,8 +35518,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3f2a8a0e-187b-4120-b01b-5deb94638244"/>
-          <timestamp value="2026-11-10T09:38:23+00:00"/>
+          <identifier value="urn:uuid:7068cef2-03c4-4790-b2ca-a1e4d6aa85ba"/>
+          <timestamp value="2026-11-11T10:21:49+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -35754,8 +35754,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b6d4ae56-eb5b-4861-ad1f-072f0ac3e9a6"/>
-          <timestamp value="2026-11-10T09:38:25+00:00"/>
+          <identifier value="urn:uuid:de0fb781-7cc5-4812-8d7f-7190657727dd"/>
+          <timestamp value="2026-11-11T10:21:50+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -35964,8 +35964,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5460105a-a8ea-404d-80a4-3d3562779ece"/>
-          <timestamp value="2026-11-10T09:38:24+00:00"/>
+          <identifier value="urn:uuid:3e7708bd-aaf3-4e82-bf01-32faee0fd6e1"/>
+          <timestamp value="2026-11-11T10:21:49+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -36175,8 +36175,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5460105a-a8ea-404d-80a4-3d3562779ece"/>
-          <timestamp value="2026-11-10T09:38:24+00:00"/>
+          <identifier value="urn:uuid:3e7708bd-aaf3-4e82-bf01-32faee0fd6e1"/>
+          <timestamp value="2026-11-11T10:21:49+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -36386,8 +36386,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:70adbc4c-d152-4061-9b28-b81815755d23"/>
-          <timestamp value="2026-11-10T09:38:25+00:00"/>
+          <identifier value="urn:uuid:481d41e2-e6c4-491d-b3e0-4f0296ca7ac7"/>
+          <timestamp value="2026-11-11T10:21:50+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -36437,6 +36437,421 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="LA6561-0"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 2 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-2776000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/2776000">2776000</a>
+                </td>
+                <td>Delirium (disorder)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;2776000&quot;, &quot;display&quot;: &quot;Delirium (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;2776000&quot;&gt;&lt;display value=&quot;Delirium (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-191507002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/191507002">191507002</a>
+                </td>
+                <td>Subacute delirium (disorder)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;191507002&quot;, &quot;display&quot;: &quot;Subacute delirium (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;191507002&quot;&gt;&lt;display value=&quot;Subacute delirium (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Delirium_Interpretation"/>
+        <title value="MII VS ICU Delirium Interpretation"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ab1d0392-64f0-492b-bc76-9963061efc10"/>
+          <timestamp value="2026-11-11T10:21:46+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2776000"/>
+            <display value="Delirium (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="191507002"/>
+            <display value="Subacute delirium (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 2 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-2776000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/2776000">2776000</a>
+                </td>
+                <td>Delirium (disorder)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;2776000&quot;, &quot;display&quot;: &quot;Delirium (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;2776000&quot;&gt;&lt;display value=&quot;Delirium (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-191507002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/191507002">191507002</a>
+                </td>
+                <td>Subacute delirium (disorder)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;191507002&quot;, &quot;display&quot;: &quot;Subacute delirium (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;191507002&quot;&gt;&lt;display value=&quot;Subacute delirium (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Delirium_Interpretation"/>
+        <title value="MII VS ICU Delirium Interpretation"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ab1d0392-64f0-492b-bc76-9963061efc10"/>
+          <timestamp value="2026-11-11T10:21:46+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2776000"/>
+            <display value="Delirium (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="191507002"/>
+            <display value="Subacute delirium (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from 127.0.0.1 based on SNOMED CT International edition 01-Jul 2026
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 2 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-2776000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/2776000">2776000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;2776000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;2776000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-191507002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/191507002">191507002</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;191507002&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;191507002&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Delirium_Interpretation"/>
+        <title value="MII VS ICU Delirium Interpretation"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:142f7593-8019-470d-af95-2430b6d5e2b1"/>
+          <timestamp value="2026-11-11T10:21:47+00:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2776000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="191507002"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -36512,8 +36927,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47ace129-71f6-4257-812f-cb453274c50b"/>
-          <timestamp value="2026-11-10T09:38:55+00:00"/>
+          <identifier value="urn:uuid:f94af0fc-95f4-49ce-9955-ef23ac2a8df8"/>
+          <timestamp value="2026-11-11T10:22:16+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -36626,8 +37041,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47ace129-71f6-4257-812f-cb453274c50b"/>
-          <timestamp value="2026-11-10T09:38:55+00:00"/>
+          <identifier value="urn:uuid:f94af0fc-95f4-49ce-9955-ef23ac2a8df8"/>
+          <timestamp value="2026-11-11T10:22:16+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -36740,8 +37155,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbfaaa83-2597-4be1-80a8-3e97df8bc811"/>
-          <timestamp value="2026-11-10T09:38:55+00:00"/>
+          <identifier value="urn:uuid:ee3603dd-e3e0-452d-b871-f3f01582a7e9"/>
+          <timestamp value="2026-11-11T10:22:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -36863,7 +37278,7 @@
         <name value="MII_VS_ICU_Method_Kalorienbedarf"/>
         <title value="MII VS ICU Method Kalorienbedarf"/>
         <status value="draft"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -36872,8 +37287,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b8fefc4-dec6-441c-ba67-93e23c865733"/>
-          <timestamp value="2026-11-10T09:37:26+00:00"/>
+          <identifier value="urn:uuid:c712c682-540c-4575-87a6-73151cf2da8b"/>
+          <timestamp value="2026-11-11T10:20:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37001,7 +37416,7 @@
         <name value="MII_VS_ICU_Method_Kalorienbedarf"/>
         <title value="MII VS ICU Method Kalorienbedarf"/>
         <status value="draft"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -37010,8 +37425,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b8fefc4-dec6-441c-ba67-93e23c865733"/>
-          <timestamp value="2026-11-10T09:37:26+00:00"/>
+          <identifier value="urn:uuid:c712c682-540c-4575-87a6-73151cf2da8b"/>
+          <timestamp value="2026-11-11T10:20:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37139,7 +37554,7 @@
         <name value="MII_VS_ICU_Method_Kalorienbedarf"/>
         <title value="MII VS ICU Method Kalorienbedarf"/>
         <status value="draft"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -37148,8 +37563,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:80d4b77a-99b3-4c9c-9f4e-d857a76ce70e"/>
-          <timestamp value="2026-11-10T09:37:27+00:00"/>
+          <identifier value="urn:uuid:4bc159ad-6566-4b07-a960-6ab4b47acabc"/>
+          <timestamp value="2026-11-11T10:20:56+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37285,8 +37700,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c6dcd14c-ffd2-4c5b-9079-1024d963da01"/>
-          <timestamp value="2026-11-10T09:38:55+00:00"/>
+          <identifier value="urn:uuid:fcb988c3-a4c3-48a6-947d-a436255a77ef"/>
+          <timestamp value="2026-11-11T10:22:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37424,8 +37839,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c6dcd14c-ffd2-4c5b-9079-1024d963da01"/>
-          <timestamp value="2026-11-10T09:38:55+00:00"/>
+          <identifier value="urn:uuid:fcb988c3-a4c3-48a6-947d-a436255a77ef"/>
+          <timestamp value="2026-11-11T10:22:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37563,8 +37978,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ccd2d445-f659-4a2b-bbb8-e340f5cd8dba"/>
-          <timestamp value="2026-11-10T09:38:56+00:00"/>
+          <identifier value="urn:uuid:5a2c5035-dc3e-42c6-912f-a880b7be097a"/>
+          <timestamp value="2026-11-11T10:22:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37691,7 +38106,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -37700,8 +38115,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e19a713f-bbf3-42d8-9ed3-dffbaf7e0fc2"/>
-          <timestamp value="2026-11-10T09:38:21+00:00"/>
+          <identifier value="urn:uuid:8d26b215-6f80-4f01-b158-142609ae3758"/>
+          <timestamp value="2026-11-11T10:21:47+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37830,7 +38245,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -37839,8 +38254,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e19a713f-bbf3-42d8-9ed3-dffbaf7e0fc2"/>
-          <timestamp value="2026-11-10T09:38:21+00:00"/>
+          <identifier value="urn:uuid:8d26b215-6f80-4f01-b158-142609ae3758"/>
+          <timestamp value="2026-11-11T10:21:47+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -37969,7 +38384,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -37978,8 +38393,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c4b5781-3497-4eee-8baa-4f8e391134f0"/>
-          <timestamp value="2026-11-10T09:38:22+00:00"/>
+          <identifier value="urn:uuid:373aa59d-eb74-4c64-8bcc-378b57b5e2b4"/>
+          <timestamp value="2026-11-11T10:21:47+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -38086,7 +38501,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38095,8 +38510,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3c9ec077-1b5c-4f86-a63b-8ab39b3ec68a"/>
-          <timestamp value="2026-11-10T09:38:56+00:00"/>
+          <identifier value="urn:uuid:c193a228-f30e-450b-909d-f21a034b614d"/>
+          <timestamp value="2026-11-11T10:22:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -38200,7 +38615,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38209,8 +38624,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3c9ec077-1b5c-4f86-a63b-8ab39b3ec68a"/>
-          <timestamp value="2026-11-10T09:38:56+00:00"/>
+          <identifier value="urn:uuid:c193a228-f30e-450b-909d-f21a034b614d"/>
+          <timestamp value="2026-11-11T10:22:17+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -38314,7 +38729,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38323,8 +38738,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9740bbd-01f0-4f46-8c53-3f7134342a0c"/>
-          <timestamp value="2026-11-10T09:38:56+00:00"/>
+          <identifier value="urn:uuid:00b52202-5ce9-4d80-bdcd-ee2145552c5a"/>
+          <timestamp value="2026-11-11T10:22:18+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -38467,7 +38882,7 @@
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38476,8 +38891,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ced97033-11e7-401e-962d-db024019ca69"/>
-          <timestamp value="2026-11-10T09:38:56+00:00"/>
+          <identifier value="urn:uuid:d3bf407a-195d-4d02-ac6a-b57fea45d5d6"/>
+          <timestamp value="2026-11-11T10:22:18+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -38628,7 +39043,7 @@
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38637,8 +39052,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ced97033-11e7-401e-962d-db024019ca69"/>
-          <timestamp value="2026-11-10T09:38:56+00:00"/>
+          <identifier value="urn:uuid:d3bf407a-195d-4d02-ac6a-b57fea45d5d6"/>
+          <timestamp value="2026-11-11T10:22:18+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -38789,7 +39204,7 @@
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38798,8 +39213,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:34a33512-dd95-4dce-8329-cf87499b6d7f"/>
-          <timestamp value="2026-11-10T09:38:57+00:00"/>
+          <identifier value="urn:uuid:a1376253-1046-4360-abc4-d48cf08a3a7d"/>
+          <timestamp value="2026-11-11T10:22:18+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -38947,7 +39362,7 @@
         <title value="MII VS Score SNOMED CT"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -38956,8 +39371,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e8b9f0e5-c061-4ab3-b9da-1e928686b1ee"/>
-          <timestamp value="2026-11-10T09:38:57+00:00"/>
+          <identifier value="urn:uuid:e793356f-0ec5-46a1-9d4a-ef56adaf5ad4"/>
+          <timestamp value="2026-11-11T10:22:18+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -39111,7 +39526,7 @@
         <title value="MII VS Score SNOMED CT"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -39120,8 +39535,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e8b9f0e5-c061-4ab3-b9da-1e928686b1ee"/>
-          <timestamp value="2026-11-10T09:38:57+00:00"/>
+          <identifier value="urn:uuid:e793356f-0ec5-46a1-9d4a-ef56adaf5ad4"/>
+          <timestamp value="2026-11-11T10:22:18+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -39275,7 +39690,7 @@
         <title value="MII VS Score SNOMED CT"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-10T09:28:06+00:00"/>
+        <date value="2026-11-11T10:11:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -39284,8 +39699,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1feab425-f4eb-4fde-b5eb-dda4dca20975"/>
-          <timestamp value="2026-11-10T09:38:57+00:00"/>
+          <identifier value="urn:uuid:32864bee-109f-4865-8cde-26d332219d38"/>
+          <timestamp value="2026-11-11T10:22:19+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>

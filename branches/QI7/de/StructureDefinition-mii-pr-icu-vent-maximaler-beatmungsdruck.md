@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Maximaler_Beatmungsdruck |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Maximaler_Beatmungsdruck |
 
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von Beatmung (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Maximaler_Beatmungsdruck",
   "title" : "MII PR ICU Maximaler Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -163,6 +163,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "76531-3",
         "display" : "Pressure.max Respiratory system airway --on ventilator"
       }
@@ -174,8 +175,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151957",
-        "display" : "Maximum airway pressure during mechanical ventilation."
+        "display" : "MDC_VENT_PRESS_MAX"
       }
     },
     {

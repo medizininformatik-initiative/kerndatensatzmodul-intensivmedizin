@@ -64,7 +64,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"open","Observation.category",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.category:VSCat","Observation.category","VSCat","","",1,1,"","","","CodeableConcept {[]} {[]}
+"Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
@@ -126,7 +126,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.code.coding:snomed","Observation.code.coding","snomed","","",1,1,"","","Y","Coding {[]} {[]}
+"Observation.code.coding:snomed","Observation.code.coding","snomed","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
   <code value=""86290005""/>
@@ -196,7 +196,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"closed","Observation.value[x]",0,1,"ele-1
 obs-7","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.value[x]:valueQuantity","Observation.value[x]","valueQuantity","","",1,1,"","","Y","Quantity {[]} {[]}
+"Observation.value[x]:valueQuantity","Observation.value[x]","valueQuantity","","",1,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <unit value=""breaths per minute""/>
   <system value=""http://unitsofmeasure.org""/>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet | *Version*:2027.0.0 |
-| Active as of 2026-11-10 | *Computable Name*:MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet |
+| Active as of 2026-11-11 | *Computable Name*:MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet |
 
 "Spontaneous mechanical breathing frequency - ventilated" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -119,6 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250810003",
         "display" : "Total breath rate (observable entity)"
       }
@@ -130,6 +131,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "19840-8",
         "display" : "Breath rate spontaneous and mechanical --on ventilator"
       }
@@ -141,8 +143,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "152490",
-        "display" : "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
+        "display" : "MDC_VENT_RESP_BTSD_PSAZC_RATE"
       }
     },
     {

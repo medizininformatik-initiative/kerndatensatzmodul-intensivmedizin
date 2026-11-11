@@ -274,7 +274,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""188796""/>
-  <display value=""Ideal body weight (IBW)""/>
+  <display value=""MDC_MASS_BODY_EST_IBW""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

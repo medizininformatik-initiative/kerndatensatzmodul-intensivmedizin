@@ -68,7 +68,7 @@ Profile: [MII PR ICU Atemzugvolumen Waehrend Beatmung](StructureDefinition-mii-p
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151980",
-      "display" : "Volume of gas delivered through the patient-connection port during a respiratory cycle."
+      "display" : "MDC_VENT_VOL_TIDAL"
     }]
   },
   "subject" : {

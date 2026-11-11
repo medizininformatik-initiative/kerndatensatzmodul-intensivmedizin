@@ -6957,7 +6957,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"open","Observation.category",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"","","","CodeableConcept {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
@@ -7019,7 +7019,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.code.coding:snomed","Observation.code.coding","snomed","","",0,*,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.code.coding:snomed","Observation.code.coding","snomed","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
   <code value=""75367002""/>
@@ -7113,9 +7113,9 @@ vs-de-1:If Observation.effective[x] has a value then that value shall be precise
 ","Who is responsible for the observation","Who was responsible for asserting the observed value as ""true"".","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.","","","","","","","",,,,,"",,,,"Observation.performer",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.exists() implies (reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids')) or (reference='#' and %rootResource!=%resource))}"
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.value[x]","Observation.value[x]","","","",0,0,"Y","","Y","CodeableConcept {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.value[x]","Observation.value[x]","","","",0,0,"","","Y","CodeableConcept {[]} {[]}
 string {[]} {[]}boolean {[]} {[]}integer {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}SampledData {[]} {[]}time {[]} {[]}dateTime {[]} {[]}Period {[]} {[]}","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,,,,"","type:$this}
-","",,"closed","Observation.value[x]",0,1,"ele-1
+","",,"open","Observation.value[x]",0,1,"ele-1
 obs-7","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-muv-arterieller-blutdruck","Observation.value[x]:valueQuantity","Observation.value[x]","valueQuantity","","",0,0,"","","Y","Quantity {[]} {[]}
@@ -7260,10 +7260,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-muv-arterieller-blutdruck","Observation.component.value[x]","Observation.component.value[x]","","","",0,1,"","","Y","Quantity {[]} {[]}
 CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}integer {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}SampledData {[]} {[]}time {[]} {[]}dateTime {[]} {[]}Period {[]} {[]}","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,,,,"","type:$this}
-","",,"open","Observation.component.value[x]",0,1,"ele-1
+","",,"closed","Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.component.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"","","Y","Quantity {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.component.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,,,,"",,,,"Observation.component.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -7466,7 +7466,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-muv-arterieller-blutdruck","Observation.component:SystolicBP.value[x].code","Observation.component.value[x].code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","","","","",,,,,"",,,,"Quantity.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.component:SystolicBP.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"","","Y","Quantity {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.component:SystolicBP.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <system value=""http://unitsofmeasure.org""/>
   <code value=""mm[Hg]""/>
@@ -7672,7 +7672,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-muv-arterieller-blutdruck","Observation.component:DiastolicBP.value[x].code","Observation.component.value[x].code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","","","","",,,,,"",,,,"Quantity.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.component:DiastolicBP.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"","","Y","Quantity {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.component:DiastolicBP.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <system value=""http://unitsofmeasure.org""/>
   <code value=""mm[Hg]""/>
@@ -7878,7 +7878,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mii-pr-icu-muv-arterieller-blutdruck","Observation.component:meanBP.value[x].code","Observation.component.value[x].code","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","","","","",,,,,"",,,,"Quantity.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-arterieller-blutdruck","Observation.component:meanBP.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"","","Y","Quantity {[]} {[]}
+"mii-pr-icu-muv-arterieller-blutdruck","Observation.component:meanBP.value[x]:valueQuantity","Observation.component.value[x]","valueQuantity","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <system value=""http://unitsofmeasure.org""/>
   <code value=""mm[Hg]""/>
@@ -7991,7 +7991,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"open","Observation.category",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-atemfrequenz","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"","","","CodeableConcept {[]} {[]}
+"mii-pr-icu-muv-atemfrequenz","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
@@ -8053,7 +8053,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-atemfrequenz","Observation.code.coding:snomed","Observation.code.coding","snomed","","",1,1,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-muv-atemfrequenz","Observation.code.coding:snomed","Observation.code.coding","snomed","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
   <code value=""86290005""/>
@@ -8123,7 +8123,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"closed","Observation.value[x]",0,1,"ele-1
 obs-7","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-atemfrequenz","Observation.value[x]:valueQuantity","Observation.value[x]","valueQuantity","","",1,1,"","","Y","Quantity {[]} {[]}
+"mii-pr-icu-muv-atemfrequenz","Observation.value[x]:valueQuantity","Observation.value[x]","valueQuantity","","",1,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <unit value=""breaths per minute""/>
   <system value=""http://unitsofmeasure.org""/>
@@ -10303,7 +10303,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""188796""/>
-  <display value=""Ideal body weight (IBW)""/>
+  <display value=""MDC_MASS_BODY_EST_IBW""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -11746,7 +11746,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"open","Observation.category",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-koerpergewicht","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"","","","CodeableConcept {[]} {[]}
+"mii-pr-icu-muv-koerpergewicht","Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>
@@ -14631,7 +14631,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-muv-kopfumfang","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-muv-kopfumfang","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://loinc.org""/>
   <code value=""9843-4""/>
@@ -15779,7 +15779,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://snomed.info/sct""/>
   <code value=""276902009""/>
-  <display value=""Pulmonary vascular Resistance index (observable entity)""/>
+  <display value=""Pulmonary vascular resistance index (observable entity)""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -16872,16 +16872,12 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-cam-icu","Observation.code.coding","Observation.code.coding","","","",1,*,"Y","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-cam-icu","Observation.code.coding","Observation.code.coding","","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:$this}
 ","",,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"mii-pr-icu-score-cam-icu","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://loinc.org""/>
-  <code value=""99844-5""/>
-  <display value=""Confusion Assessment Method for the ICU""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"mii-pr-icu-score-cam-icu","Observation.code.coding:loinc","Observation.code.coding","loinc","","",0,1,"Y","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-cam-icu","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -16906,11 +16902,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-cam-icu","Observation.code.coding:sct","Observation.code.coding","sct","","",0,1,"Y","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""450740000""/>
-  <display value=""Confusion Assessment Method for the intensive care unit score""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-cam-icu","Observation.code.coding:sct.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -16960,7 +16952,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-cam-icu","Observation.code.text","Observation.code.text","","","",0,1,"","","Y","string {[]} {[]}
-","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Confusion Assessment Method for the ICU (CAM-ICU)""/>","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-cam-icu","Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","Patient being assessed","The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.","One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.","Observations have no value if you don't know who or what they're about.","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -19578,7 +19570,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-sofa","Observation.component:respiratory.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-sofa","Observation.component:respiratory.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19587,13 +19579,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96823-0""/>
   <display value=""Respiration [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"mii-pr-icu-score-sofa","Observation.component:respiratory.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxxx""/>
-  <display value=""SOFA Subscore - Respiratory""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-sofa","Observation.component:respiratory.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -19644,7 +19629,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-sofa","Observation.component:cardiovascular.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-sofa","Observation.component:cardiovascular.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19653,13 +19638,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96826-3""/>
   <display value=""Cardiovascular [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"mii-pr-icu-score-sofa","Observation.component:cardiovascular.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Cardiovascular""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-sofa","Observation.component:cardiovascular.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -19710,7 +19688,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-sofa","Observation.component:hepatic.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-sofa","Observation.component:hepatic.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19719,13 +19697,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96825-5""/>
   <display value=""Liver [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"mii-pr-icu-score-sofa","Observation.component:hepatic.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Hepatic""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-sofa","Observation.component:hepatic.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -19776,7 +19747,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-sofa","Observation.component:coagulation.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-sofa","Observation.component:coagulation.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19785,13 +19756,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96824-8""/>
   <display value=""Coagulation [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"mii-pr-icu-score-sofa","Observation.component:coagulation.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Coagulation""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-sofa","Observation.component:coagulation.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -19842,7 +19806,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-sofa","Observation.component:renal.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-sofa","Observation.component:renal.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19851,13 +19815,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96828-9""/>
   <display value=""Renal [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"mii-pr-icu-score-sofa","Observation.component:renal.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxx""/>
-  <display value=""SOFA Subscore - Renal""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-sofa","Observation.component:renal.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -19908,7 +19865,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"mii-pr-icu-score-sofa","Observation.component:neurological.code.coding","Observation.component.code.coding","","","",2,2,"","","Y","Coding {[]} {[]}
+"mii-pr-icu-score-sofa","Observation.component:neurological.code.coding","Observation.component.code.coding","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","pattern:coding}
 ","Component codes for SOFA score",,"closed","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -19917,13 +19874,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   <system value=""http://loinc.org""/>
   <code value=""96827-1""/>
   <display value=""Central nervous system [Score] SOFA""/>
-</valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"mii-pr-icu-score-sofa","Observation.component:neurological.code.coding:sct","Observation.component.code.coding","sct","","",1,1,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
-  <code value=""xxxx""/>
-  <display value=""SOFA Subscore - Neurological""/>
 </valueCoding>","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-score-sofa","Observation.component:neurological.code.text","Observation.component.code.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -21381,8 +21331,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""20060-0""/>
-  <display value=""Pressure.airway^at zero inspiratory flow on ventilator""/>
+  <display value=""Airway pressure --at zero inspiratory flow on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -21723,8 +21674,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""20056-8""/>
-  <display value=""Pressure.airway^at mean expiratory flow on ventilator""/>
+  <display value=""Airway pressure --at mean expiratory flow on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -22040,6 +21992,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemzugvolumen-einstellung","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""416811008""/>
   <display value=""Tidal volume setting (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22068,6 +22021,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemzugvolumen-einstellung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""20112-9""/>
   <display value=""Tidal volume setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22096,6 +22050,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemzugvolumen-einstellung","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""16929196""/>
   <display value=""MDC_VENT_VOL_TIDAL_SETTING""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22388,6 +22343,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250874002""/>
   <display value=""Ventilator delivered tidal volume (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22416,6 +22372,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76222-9""/>
   <display value=""Tidal volume Ventilator --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22444,8 +22401,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151980""/>
-  <display value=""Volume of gas delivered through the patient-connection port during a respiratory cycle.""/>
+  <display value=""MDC_VENT_VOL_TIDAL""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -22736,6 +22694,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250875001""/>
   <display value=""Ventilator delivered minute volume (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22764,6 +22723,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76009-0""/>
   <display value=""Inspired minute Volume during Mechanical ventilation""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -22792,8 +22752,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""152004""/>
-  <display value=""Total volume of gas breathed in during 1 min during mechanical ventilation.""/>
+  <display value=""MDC_VENT_VOL_MINUTE_INSP""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -23109,6 +23070,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungszeit-hohem-druck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76190-8""/>
   <display value=""High pressure hold time setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -23137,6 +23099,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungszeit-hohem-druck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""16929860""/>
   <display value=""MDC_VENT_TIME_PD_INSP_THIGH_SETTING""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -23454,6 +23417,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungszeit-niedrigem-druck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76229-4""/>
   <display value=""Low pressure hold time setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -23482,6 +23446,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-beatmungszeit-niedrigem-druck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""16929864""/>
   <display value=""MDC_VENT_TIME_PD_EXP_TLOW_SETTING""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -23799,8 +23764,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-druckdifferenz-beatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76154-4""/>
-  <display value=""Airway pressure delta^on ventilator""/>
+  <display value=""Airway pressure delta --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-druckdifferenz-beatmung","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -23827,8 +23793,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-druckdifferenz-beatmung","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""152720""/>
-  <display value=""Inspiratory airway pressure relative to PEEP or BAP.""/>
+  <display value=""MDC_VENT_PRESS_AWAY_DELTA""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-druckdifferenz-beatmung","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -24119,6 +24086,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-dynamische-kompliance","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250823005""/>
   <display value=""Total dynamic compliance (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -24147,8 +24115,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-dynamische-kompliance","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""60827-3""/>
-  <display value=""Compliance.dynamic""/>
+  <display value=""Dynamic lung compliance""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-dynamische-kompliance","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -24175,8 +24144,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-dynamische-kompliance","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151692""/>
-  <display value=""Change of tidal volume per unit change of transthoracic pressure.""/>
+  <display value=""MDC_COMPL_LUNG_DYN""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-dynamische-kompliance","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -24492,6 +24462,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76275-7""/>
   <display value=""Inspiratory flow setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -24809,6 +24780,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250820008""/>
   <display value=""Expiratory time (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -24837,8 +24809,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76187-4""/>
-  <display value=""Expiratory hold time setting""/>
+  <display value=""Expiratory hold time setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -25154,6 +25127,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-einatmungszeit-beatmung","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250819002""/>
   <display value=""Inspiratory time (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -25182,8 +25156,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-einatmungszeit-beatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76334-2""/>
-  <display value=""Inspiratory time setting""/>
+  <display value=""Inspiratory time setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-einstellung-einatmungszeit-beatmung","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -25210,6 +25185,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-einatmungszeit-beatmung","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""16929632""/>
   <display value=""MDC_VENT_TIME_PD_INSP_SETTING""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -25527,6 +25503,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-inspirationsdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76003-3""/>
   <display value=""Pressure Respiratory system airway --during inspiration on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -25555,8 +25532,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-einstellung-inspirationsdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151972""/>
-  <display value=""Airway pressure, primarily during an inspiratory phase""/>
+  <display value=""MDC_VENT_PRESS_AWAY""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-einstellung-inspirationsdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -25856,6 +25834,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250790007""/>
   <display value=""End tidal carbon dioxide tension (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -25884,8 +25863,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""19891-1""/>
-  <display value=""Carbon dioxide^at end expiration""/>
+  <display value=""Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck","Observation.code.coding:loinc.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -25912,8 +25892,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151708""/>
-  <display value=""Partial pressure of carbon dioxide in airway gas measured at the end of expiration.""/>
+  <display value=""MDC_CONC_AWAY_CO2_ET""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -26229,6 +26210,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-exspiratorischer-gasfluss","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""60792-9""/>
   <display value=""Expiratory gas flow Respiratory system airway --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -26257,8 +26239,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-exspiratorischer-gasfluss","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151944""/>
-  <display value=""Expiratory gas flow during mechanical ventilation. ""/>
+  <display value=""MDC_VENT_FLOW_EXP""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-exspiratorischer-gasfluss","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -26558,6 +26541,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""442720002""/>
   <display value=""Expired oxygen tension (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -26586,6 +26570,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""3147-6""/>
   <display value=""Oxygen [Partial pressure] in Exhaled gas""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -26614,8 +26599,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""153132""/>
-  <display value=""Partial pressure of oxygen in airway gas measured during expiration.""/>
+  <display value=""MDC_CONC_AWAY_O2_EXP""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -26940,6 +26926,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-horowitz-in-arteriellem-blut","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""50984-4""/>
   <display value=""Horowitz index in Arterial blood""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -26968,8 +26955,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-horowitz-in-arteriellem-blut","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""150656""/>
-  <display value=""Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g., FiO2 in air = 0.21).""/>
+  <display value=""MDC_O2_OXYGENATION_RATIO""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-horowitz-in-arteriellem-blut","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -27269,6 +27257,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-inspiratorische-sauerstofffraktion","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250774007""/>
   <display value=""Inspired oxygen concentration (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -27636,6 +27625,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-inspiratorischer-gasfluss","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""60794-5""/>
   <display value=""Inspiratory gas flow Respiratory system airway --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -27664,6 +27654,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-inspiratorischer-gasfluss","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151948""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -27980,6 +27971,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-maximaler-beatmungsdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76531-3""/>
   <display value=""Pressure.max Respiratory system airway --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -28008,8 +28000,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-maximaler-beatmungsdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151957""/>
-  <display value=""Maximum airway pressure during mechanical ventilation.""/>
+  <display value=""MDC_VENT_PRESS_MAX""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-maximaler-beatmungsdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -28300,6 +28293,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""27913002""/>
   <display value=""Maximum inspiratory pressure (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -28353,8 +28347,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151973""/>
-  <display value=""Maximum inspiratory airway pressure.""/>
+  <display value=""MDC_VENT_PRESS_AWAY_MAX""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -28645,6 +28640,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250876000""/>
   <display value=""Ventilator rate (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -28673,6 +28669,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""33438-3""/>
   <display value=""Breath rate mechanical --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -28701,8 +28698,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151586""/>
-  <display value=""Rate of mechanical ventilation; method not specified.""/>
+  <display value=""MDC_VENT_RESP_RATE""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -28753,7 +28751,7 @@ Period {[]} {[]}","Clinically relevant time/time-period for observation","The ti
 "mii-pr-icu-vent-mechanische-atemfrequenz-beatmet","Observation.value[x]","Observation.value[x]","","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <system value=""http://unitsofmeasure.org""/>
-  <code value=""{Breaths}/min""/>
+  <code value=""/min""/>
 </valueQuantity>","","","",,,,,"",,,,"Observation.value[x]",0,1,"obs-7
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -28984,6 +28982,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mittlerer-beatmungsdruck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""698821009""/>
   <display value=""Mean inspiratory airway pressure (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -29012,6 +29011,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mittlerer-beatmungsdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76530-5""/>
   <display value=""Mean pressure Respiratory system airway --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -29040,8 +29040,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mittlerer-beatmungsdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151975""/>
-  <display value=""Mean inspiratory airway pressure.""/>
+  <display value=""MDC_VENT_PRESS_AWAY_MEAN""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-mittlerer-beatmungsdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -29332,6 +29333,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""698821009""/>
   <display value=""Mean inspiratory airway pressure (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -29360,6 +29362,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""60952-9""/>
   <display value=""Mean airway pressure --during inspiration""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -29388,8 +29391,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151975""/>
-  <display value=""Mean inspiratory airway pressure.""/>
+  <display value=""MDC_VENT_PRESS_AWAY_MEAN""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -29680,6 +29684,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-plateau-beatmungsdruck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""698822002""/>
   <display value=""Airway plateau pressure (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -29708,6 +29713,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-plateau-beatmungsdruck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76259-1""/>
   <display value=""Pressure.plateau Respiratory system airway --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -29736,8 +29742,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-plateau-beatmungsdruck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""152424""/>
-  <display value=""Pressure in airway in plateau phase during mechanical ventilation.""/>
+  <display value=""MDC_VENT_PRESS_RESP_PLAT""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-plateau-beatmungsdruck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -30028,6 +30035,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-positiv-endexpiratorischer-druck","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250854009""/>
   <display value=""Positive end expiratory pressure (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -30056,6 +30064,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-positiv-endexpiratorischer-druck","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76248-4""/>
   <display value=""PEEP Respiratory system --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -30084,8 +30093,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-positiv-endexpiratorischer-druck","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151976""/>
-  <display value=""Positive end expiratory pressure applied to the airway.""/>
+  <display value=""MDC_VENT_PRESS_AWAY_END_EXP_POS""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-positiv-endexpiratorischer-druck","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -30401,6 +30411,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontane-atemfrequenz-beatmet","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""19839-0""/>
   <display value=""Breath rate spontaneous --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -30429,8 +30440,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontane-atemfrequenz-beatmet","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""152498""/>
-  <display value=""Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes.""/>
+  <display value=""MDC_VENT_RESP_BTSD_P_RATE""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-spontane-atemfrequenz-beatmet","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -30721,6 +30733,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250810003""/>
   <display value=""Total breath rate (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -30749,6 +30762,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""19840-8""/>
   <display value=""Breath rate spontaneous and mechanical --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -30777,8 +30791,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""152490""/>
-  <display value=""Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types.""/>
+  <display value=""MDC_VENT_RESP_BTSD_PSAZC_RATE""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -31069,6 +31084,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontanes-atemzugvolumen","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250816009""/>
   <display value=""Spontaneous tidal volume (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -31436,6 +31452,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""20118-6""/>
   <display value=""Tidal volume.spontaneous+mechanical --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -31778,6 +31795,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-unterstuetzungsdruck-beatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""20079-0""/>
   <display value=""Pressure support setting Ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -32095,6 +32113,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung","Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""250822000""/>
   <display value=""Inspiration/expiration time ratio (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -32123,6 +32142,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung","Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""75931-6""/>
   <display value=""Inspiration/Expiration time Ratio""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -32151,8 +32171,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung","Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""151832""/>
-  <display value=""Ratio of durations of inspiratory and expiratory phases.""/>
+  <display value=""MDC_RATIO_IE""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung","Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -32203,7 +32224,7 @@ Period {[]} {[]}","Clinically relevant time/time-period for observation","The ti
 "mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung","Observation.value[x]","Observation.value[x]","","","",0,1,"Y","","Y","Quantity {[]} {[]}
 ","Actual result","The information determined as a result of making the observation, if the information has a simple value.","An observation may have; 1)  a single value here, 2)  both a value and a set of related or component values,  or 3)  only a set of related or component values. If a value is present, the datatype for this element should be determined by Observation.code.  A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","<valueQuantity xmlns=""http://hl7.org/fhir"">
   <system value=""http://unitsofmeasure.org""/>
-  <code value=""{ratio}""/>
+  <code value=""1""/>
 </valueQuantity>","","","",,,,,"",,,,"Observation.value[x]",0,1,"obs-7
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

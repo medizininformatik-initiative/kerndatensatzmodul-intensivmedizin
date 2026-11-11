@@ -110,6 +110,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","C*E.1-8, C*E.10-22"
 "Observation.code.coding:sct","Observation.code.coding","sct","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://snomed.info/sct""/>
   <code value=""698822002""/>
   <display value=""Airway plateau pressure (observable entity)""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -138,6 +139,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first"
 "Observation.code.coding:loinc","Observation.code.coding","loinc","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""http://loinc.org""/>
   <code value=""76259-1""/>
   <display value=""Pressure.plateau Respiratory system airway --on ventilator""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -166,8 +168,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first"
 "Observation.code.coding:IEEE-11073","Observation.code.coding","IEEE-11073","","",1,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:11073:10101""/>
   <code value=""152424""/>
-  <display value=""Pressure in airway in plateau phase during mechanical ventilation.""/>
+  <display value=""MDC_VENT_PRESS_RESP_PLAT""/>
 </valueCoding>","","","",,"required","","https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22"
 "Observation.code.coding:IEEE-11073.id","Observation.code.coding.id","","","",0,1,"","","","string {[]} {[]}

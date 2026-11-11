@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung | *Version*:2027.0.0 |
-| Active as of 2026-11-10 | *Computable Name*:MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung |
+| Active as of 2026-11-11 | *Computable Name*:MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung |
 
 "Setting inspiratory time - ventilation" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
   "name" : "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
   "title" : "MII PR ICU Einstellung Einatmungszeit Beatmung",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -118,6 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250819002",
         "display" : "Inspiratory time (observable entity)"
       }
@@ -129,8 +130,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "76334-2",
-        "display" : "Inspiratory time setting"
+        "display" : "Inspiratory time setting Ventilator"
       }
     },
     {
@@ -140,6 +142,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "16929632",
         "display" : "MDC_VENT_TIME_PD_INSP_SETTING"
       }

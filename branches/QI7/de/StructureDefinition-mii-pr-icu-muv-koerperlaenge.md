@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge | *Version*:2027.0.0 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
 
  
 Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile. 
@@ -103,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerperlaenge",
   "title" : "MII PR ICU MUV Koerperlaenge",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

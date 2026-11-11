@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck | *Version*:2027.0.0 |
-| Active as of 2026-11-10 | *Computable Name*:MII_PR_ICU_VENT_Plateau_Beatmungsdruck |
+| Active as of 2026-11-11 | *Computable Name*:MII_PR_ICU_VENT_Plateau_Beatmungsdruck |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
   "title" : "MII PR ICU Plateau Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -116,6 +116,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "698822002",
         "display" : "Airway plateau pressure (observable entity)"
       }
@@ -127,6 +128,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "76259-1",
         "display" : "Pressure.plateau Respiratory system airway --on ventilator"
       }
@@ -138,8 +140,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "152424",
-        "display" : "Pressure in airway in plateau phase during mechanical ventilation."
+        "display" : "MDC_VENT_PRESS_RESP_PLAT"
       }
     },
     {

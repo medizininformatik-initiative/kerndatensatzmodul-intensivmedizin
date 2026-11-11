@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz | *Version*:2027.0.0 |
-| Active as of 2026-11-10 | *Computable Name*:MII_PR_ICU_MUV_Atemfrequenz |
+| Active as of 2026-11-11 | *Computable Name*:MII_PR_ICU_MUV_Atemfrequenz |
 
 "Respiratory rate (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -93,6 +93,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:VSCat",
+      "path" : "Observation.category",
+      "sliceName" : "VSCat",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "mustSupport" : true
@@ -128,7 +134,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "86290005"
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.subject",
@@ -163,7 +170,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
         "unit" : "breaths per minute",
         "system" : "http://unitsofmeasure.org",
         "code" : "/min"
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.value[x]:valueQuantity.value",

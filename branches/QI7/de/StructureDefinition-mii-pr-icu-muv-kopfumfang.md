@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang | *Version*:2027.0.0 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Kopfumfang |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Kopfumfang |
 
 Dies ist eine Ausprägung des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -44,7 +44,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 ** Summary **
 
 Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 27 elements
+ Must-Support: 28 elements
 
 **Slices**
 
@@ -73,7 +73,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 ** Summary **
 
 Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 27 elements
+ Must-Support: 28 elements
 
 **Slices**
 
@@ -98,7 +98,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Kopfumfang",
   "title" : "MII PR ICU MUV Kopfumfang",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -184,7 +184,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
-      "sliceName" : "loinc"
+      "sliceName" : "loinc",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:loinc.system",

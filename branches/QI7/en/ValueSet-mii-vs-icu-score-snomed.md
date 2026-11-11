@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/score-snomed | *Version*:2027.0.0 |
-| Draft as of 2026-11-10 | *Computable Name*:MII_VS_ICU_Score_SNOMED |
+| Draft as of 2026-11-11 | *Computable Name*:MII_VS_ICU_Score_SNOMED |
 
  
 Value set for cores - SNOMED CT codes 
@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS Score SNOMED CT",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

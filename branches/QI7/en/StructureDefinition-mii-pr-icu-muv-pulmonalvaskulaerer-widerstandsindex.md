@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex | *Version*:2027.0.0 |
-| Draft as of 2026-11-10 | *Computable Name*:MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex |
+| Draft as of 2026-11-11 | *Computable Name*:MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
   "name" : "MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex",
   "title" : "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
   "status" : "draft",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -202,7 +202,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "276902009",
-        "display" : "Pulmonary vascular Resistance index (observable entity)"
+        "display" : "Pulmonary vascular resistance index (observable entity)"
       },
       "mustSupport" : true
     },

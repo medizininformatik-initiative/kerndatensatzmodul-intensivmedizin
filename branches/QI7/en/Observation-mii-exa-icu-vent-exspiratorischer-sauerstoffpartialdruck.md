@@ -68,7 +68,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "153132",
-      "display" : "Partial pressure of oxygen in airway gas measured during expiration."
+      "display" : "MDC_CONC_AWAY_O2_EXP"
     }]
   },
   "subject" : {

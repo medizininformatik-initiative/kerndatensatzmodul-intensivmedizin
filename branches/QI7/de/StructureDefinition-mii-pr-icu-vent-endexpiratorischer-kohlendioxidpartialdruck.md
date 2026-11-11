@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck |
 
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
   "title" : "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -178,6 +178,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "250790007",
         "display" : "End tidal carbon dioxide tension (observable entity)"
       }
@@ -189,8 +190,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "19891-1",
-        "display" : "Carbon dioxide^at end expiration"
+        "display" : "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
       }
     },
     {
@@ -200,8 +202,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151708",
-        "display" : "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
+        "display" : "MDC_CONC_AWAY_CO2_ET"
       }
     },
     {

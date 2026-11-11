@@ -64,7 +64,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","",,"open","Observation.category",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Observation.category:VSCat","Observation.category","VSCat","","",1,1,"","","","CodeableConcept {[]} {[]}
+"Observation.category:VSCat","Observation.category","VSCat","","",1,1,"Y","","","CodeableConcept {[]} {[]}
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/observation-category""/>

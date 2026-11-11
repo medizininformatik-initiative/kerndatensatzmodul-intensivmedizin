@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h |
+| Draft Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h |
 
 **Usages:**
 
@@ -98,7 +98,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

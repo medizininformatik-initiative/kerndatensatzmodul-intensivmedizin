@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten | *Version*:2027.0.0 |
-| Draft as of 2026-11-10 | *Computable Name*:MII_PR_ICU_Monitoring_Und_Vitaldaten |
+| Draft as of 2026-11-11 | *Computable Name*:MII_PR_ICU_Monitoring_Und_Vitaldaten |
 
  
 Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-monito
   "name" : "MII_PR_ICU_Monitoring_Und_Vitaldaten",
   "title" : "MII PR ICU Monitoring und Vitaldaten",
   "status" : "draft",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

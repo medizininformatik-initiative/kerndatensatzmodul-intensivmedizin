@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa | *Version*:2027.0.0 |
-| Draft as of 2026-11-10 | *Computable Name*:MII_PR_ICU_Score_SOFA |
+| Draft as of 2026-11-11 | *Computable Name*:MII_PR_ICU_Score_SOFA |
 
  
 Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_SOFA",
   "title" : "MII PR ICU Score SOFA",
   "status" : "draft",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -192,8 +192,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "ordered" : false,
         "rules" : "closed"
       },
-      "min" : 2,
-      "max" : "2"
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:respiratory.code.coding:loinc",
@@ -205,18 +205,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "system" : "http://loinc.org",
         "code" : "96823-0",
         "display" : "Respiration [Score] SOFA"
-      }
-    },
-    {
-      "id" : "Observation.component:respiratory.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "xxxx",
-        "display" : "SOFA Subscore - Respiratory"
       }
     },
     {
@@ -271,8 +259,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "ordered" : false,
         "rules" : "closed"
       },
-      "min" : 2,
-      "max" : "2"
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:cardiovascular.code.coding:loinc",
@@ -284,18 +272,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "system" : "http://loinc.org",
         "code" : "96826-3",
         "display" : "Cardiovascular [Score] SOFA"
-      }
-    },
-    {
-      "id" : "Observation.component:cardiovascular.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "xxx",
-        "display" : "SOFA Subscore - Cardiovascular"
       }
     },
     {
@@ -350,8 +326,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "ordered" : false,
         "rules" : "closed"
       },
-      "min" : 2,
-      "max" : "2"
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:hepatic.code.coding:loinc",
@@ -363,18 +339,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "system" : "http://loinc.org",
         "code" : "96825-5",
         "display" : "Liver [Score] SOFA"
-      }
-    },
-    {
-      "id" : "Observation.component:hepatic.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "xxx",
-        "display" : "SOFA Subscore - Hepatic"
       }
     },
     {
@@ -434,8 +398,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "ordered" : false,
         "rules" : "closed"
       },
-      "min" : 2,
-      "max" : "2"
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:coagulation.code.coding:loinc",
@@ -447,18 +411,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "system" : "http://loinc.org",
         "code" : "96824-8",
         "display" : "Coagulation [Score] SOFA"
-      }
-    },
-    {
-      "id" : "Observation.component:coagulation.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "xxx",
-        "display" : "SOFA Subscore - Coagulation"
       }
     },
     {
@@ -518,8 +470,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "ordered" : false,
         "rules" : "closed"
       },
-      "min" : 2,
-      "max" : "2"
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:renal.code.coding:loinc",
@@ -531,18 +483,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "system" : "http://loinc.org",
         "code" : "96828-9",
         "display" : "Renal [Score] SOFA"
-      }
-    },
-    {
-      "id" : "Observation.component:renal.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "xxx",
-        "display" : "SOFA Subscore - Renal"
       }
     },
     {
@@ -602,8 +542,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "ordered" : false,
         "rules" : "closed"
       },
-      "min" : 2,
-      "max" : "2"
+      "min" : 1,
+      "max" : "1"
     },
     {
       "id" : "Observation.component:neurological.code.coding:loinc",
@@ -615,18 +555,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "system" : "http://loinc.org",
         "code" : "96827-1",
         "display" : "Central nervous system [Score] SOFA"
-      }
-    },
-    {
-      "id" : "Observation.component:neurological.code.coding:sct",
-      "path" : "Observation.component.code.coding",
-      "sliceName" : "sct",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "xxxx",
-        "display" : "SOFA Subscore - Neurological"
       }
     },
     {

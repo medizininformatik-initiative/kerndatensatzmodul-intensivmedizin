@@ -26,7 +26,7 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
 
 **effective**: 2019-12-23 09:30:10+0100 --> 2019-12-23 10:30:10+0100
 
-**value**: 0.5 {ratio} (Details: UCUM code{ratio} = '{ratio}')
+**value**: 0.5 ratio (Details: UCUM code1 = '1')
 
 **device**: [DeviceMetric: type = Artificial ventilation (regime/therapy); category = setting](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md)
 
@@ -68,7 +68,7 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "151832",
-      "display" : "Ratio of durations of inspiratory and expiratory phases."
+      "display" : "MDC_RATIO_IE"
     }]
   },
   "subject" : {
@@ -80,9 +80,9 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
   },
   "valueQuantity" : {
     "value" : 0.5,
-    "unit" : "{ratio}",
+    "unit" : "ratio",
     "system" : "http://unitsofmeasure.org",
-    "code" : "{ratio}"
+    "code" : "1"
   },
   "device" : {
     "reference" : "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"

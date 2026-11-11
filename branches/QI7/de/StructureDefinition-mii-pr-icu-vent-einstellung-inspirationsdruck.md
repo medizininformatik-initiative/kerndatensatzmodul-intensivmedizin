@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Einstellung_Inspirationsdruck |
+| Draft Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Einstellung_Inspirationsdruck |
 
 **Usages:**
 
@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Einstellung_Inspirationsdruck",
   "title" : "MII PR ICU Einstellung Inspirationsdruck",
   "status" : "draft",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -169,6 +169,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "76003-3",
         "display" : "Pressure Respiratory system airway --during inspiration on ventilator"
       }
@@ -180,8 +181,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151972",
-        "display" : "Airway pressure, primarily during an inspiratory phase"
+        "display" : "MDC_VENT_PRESS_AWAY"
       }
     },
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu | *Version*:2027.0.0 |
-| Draft as of 2026-11-10 | *Computable Name*:MII_PR_ICU_Score_CAM_ICU |
+| Draft as of 2026-11-11 | *Computable Name*:MII_PR_ICU_Score_CAM_ICU |
 
  
 Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_CAM_ICU",
   "title" : "MII PR ICU Score CAM-ICU",
   "status" : "draft",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -95,30 +95,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "path" : "Observation"
     },
     {
-      "id" : "Observation.code.coding",
-      "path" : "Observation.code.coding",
-      "min" : 1
-    },
-    {
-      "id" : "Observation.code.coding:loinc",
-      "path" : "Observation.code.coding",
-      "sliceName" : "loinc",
-      "min" : 1,
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "99844-5",
-        "display" : "Confusion Assessment Method for the ICU"
-      }
-    },
-    {
-      "id" : "Observation.code.coding:sct",
-      "path" : "Observation.code.coding",
-      "sliceName" : "sct",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "450740000",
-        "display" : "Confusion Assessment Method for the intensive care unit score"
-      }
+      "id" : "Observation.code.text",
+      "path" : "Observation.code.text",
+      "patternString" : "Confusion Assessment Method for the ICU (CAM-ICU)"
     },
     {
       "id" : "Observation.value[x]",

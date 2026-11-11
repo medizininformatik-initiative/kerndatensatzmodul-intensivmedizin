@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz | *Version*:2027.0.0 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Atemfrequenz |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Atemfrequenz |
 
 Dies ist eine Ausprägung des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 ** Summary **
 
 Mandatory: 3 elements
- Must-Support: 19 elements
+ Must-Support: 22 elements
 
  **Schlüsselelemente-Ansicht** 
 
@@ -71,7 +71,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 ** Summary **
 
 Mandatory: 3 elements
- Must-Support: 19 elements
+ Must-Support: 22 elements
 
  
 
@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -143,6 +143,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:VSCat",
+      "path" : "Observation.category",
+      "sliceName" : "VSCat",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "mustSupport" : true
@@ -178,7 +184,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "86290005"
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.subject",
@@ -213,7 +220,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         "unit" : "breaths per minute",
         "system" : "http://unitsofmeasure.org",
         "code" : "/min"
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.value[x]:valueQuantity.value",

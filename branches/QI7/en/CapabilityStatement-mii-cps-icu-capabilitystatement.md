@@ -49,7 +49,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
   }],
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
-  "format" : ["xml", "json"],
+  "format" : ["application/fhir+xml", "application/fhir+json"],
   "rest" : [{
     "mode" : "server"
   }]

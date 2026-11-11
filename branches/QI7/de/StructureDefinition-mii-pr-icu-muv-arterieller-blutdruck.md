@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
+| Active Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
 
 Es handelt sich hier um einen pulsatilen Druck. Für diesen gelten neben den Eigenschaften des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md) außerdem die Besonderheiten, die auf der Seite des Profils zu [Blutdruck (Observation)](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) beschrieben sind. Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -44,7 +44,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net
 ** Summary **
 
 Mandatory: 19 elements(21 nested mandatory elements)
- Must-Support: 91 elements
+ Must-Support: 96 elements
  Prohibited: 1 element
 
 **Slices**
@@ -74,7 +74,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Blutdruck](https://simplifier.net
 ** Summary **
 
 Mandatory: 19 elements(21 nested mandatory elements)
- Must-Support: 91 elements
+ Must-Support: 96 elements
  Prohibited: 1 element
 
 **Slices**
@@ -100,7 +100,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -133,6 +133,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:VSCat",
+      "path" : "Observation.category",
+      "sliceName" : "VSCat",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code",
       "path" : "Observation.code",
       "mustSupport" : true
@@ -162,6 +168,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding:loinc.display",
       "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:snomed",
+      "path" : "Observation.code.coding",
+      "sliceName" : "snomed",
       "mustSupport" : true
     },
     {
@@ -207,11 +219,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
-      "id" : "Observation.value[x]",
-      "path" : "Observation.value[x]",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.dataAbsentReason",
       "path" : "Observation.dataAbsentReason",
       "max" : "0",
@@ -247,6 +254,15 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "id" : "Observation.component",
       "path" : "Observation.component",
       "max" : "3",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }],
       "mustSupport" : true
     },
     {
@@ -394,7 +410,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "sliceName" : "valueQuantity",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:SystolicBP.value[x]:valueQuantity.value",
@@ -566,7 +583,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "sliceName" : "valueQuantity",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:DiastolicBP.value[x]:valueQuantity.value",
@@ -738,7 +756,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "sliceName" : "valueQuantity",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:meanBP.value[x]:valueQuantity.value",

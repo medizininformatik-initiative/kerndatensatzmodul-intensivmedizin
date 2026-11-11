@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_VS_ICU_Delirium_Interpretation |
+| Draft Stand: 2026-11-11 | *Maschinenlesbarer Name*:MII_VS_ICU_Delirium_Interpretation |
 
  
 Delirium status interpretations 
@@ -24,8 +24,6 @@ Delirium status interpretations
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -45,7 +43,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "MII VS ICU Delirium Interpretation",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -72,10 +70,6 @@ No Expansion for this valueset (Unknown Code System)
       {
         "code" : "191507002",
         "display" : "Subacute delirium (disorder)"
-      },
-      {
-        "code" : "xxx",
-        "display" : "No delirium (finding)"
       }]
     }]
   }

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck | *Version*:2027.0.0 |
-| Active as of 2026-11-10 | *Computable Name*:MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck |
+| Active as of 2026-11-11 | *Computable Name*:MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck |
 
 **Usages:**
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "name" : "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
   "title" : "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-10T09:28:06+00:00",
+  "date" : "2026-11-11T10:11:22+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -116,6 +116,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://snomed.info/sct",
         "code" : "698821009",
         "display" : "Mean inspiratory airway pressure (observable entity)"
       }
@@ -127,6 +128,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "http://loinc.org",
         "code" : "60952-9",
         "display" : "Mean airway pressure --during inspiration"
       }
@@ -138,8 +140,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
         "code" : "151975",
-        "display" : "Mean inspiratory airway pressure."
+        "display" : "MDC_VENT_PRESS_AWAY_MEAN"
       }
     },
     {

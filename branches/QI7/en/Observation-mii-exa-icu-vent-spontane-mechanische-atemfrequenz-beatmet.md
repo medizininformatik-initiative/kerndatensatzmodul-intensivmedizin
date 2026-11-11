@@ -75,7 +75,7 @@ Profile: [MII PR ICU Spontane Mechanische Atemfrequenz Beatmet](StructureDefinit
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "code" : "152490",
-      "display" : "Total rate of breaths or inspiratory gas flow comprised of unassisted (P), supported (S), assisted (A), synchronized assisted (Z) and controlled (C) breath types."
+      "display" : "MDC_VENT_RESP_BTSD_PSAZC_RATE"
     }]
   },
   "subject" : {
