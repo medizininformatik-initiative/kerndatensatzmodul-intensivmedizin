@@ -259,7 +259,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}branches/${{ github.ref_name }}/
     permissions:
       contents: read
       id-token: write
