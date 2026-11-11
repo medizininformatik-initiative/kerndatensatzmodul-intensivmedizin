@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-da
   "name" : "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Dauer Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-11T11:42:04+00:00",
+  "date" : "2026-11-11T12:43:45+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "name" : "MII_PR_ICU_Parameter_Von_Beatmung",
   "title" : "MII PR ICU Parameter von Beatmung",
   "status" : "active",
-  "date" : "2026-11-11T11:42:04+00:00",
+  "date" : "2026-11-11T12:43:45+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
