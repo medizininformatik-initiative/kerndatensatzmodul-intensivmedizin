@@ -86,7 +86,7 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "{Breaths}/min",
+          "code": "/min",
           "system": "http://unitsofmeasure.org"
         }
       }
