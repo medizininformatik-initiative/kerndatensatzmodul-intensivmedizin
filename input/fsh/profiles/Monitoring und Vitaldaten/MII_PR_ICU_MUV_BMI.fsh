@@ -7,4 +7,22 @@ Description: "Body mass index (BMI) calculated from body weight and height, expr
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-bmi"
 * ^status = #draft
+
+* obeys mii-icu-val-xor-dar
+
+* code.coding contains snomed 1..1 MS and IEEE-11073 1..1 MS
+* code.coding[BMICode] MS
+* code.coding[snomed].system 1..1 MS
+* code.coding[snomed].system = $sct (exactly)
+* code.coding[snomed].code 1..1 MS
+* code.coding[snomed].code = #60621009 (exactly)
+* code.coding[snomed].display MS
+* code.coding[IEEE-11073].system 1..1 MS
+* code.coding[IEEE-11073].system = $ieee-11073 (exactly)
+* code.coding[IEEE-11073].code 1..1 MS
+* code.coding[IEEE-11073].code = #188752 (exactly)
+* code.coding[IEEE-11073].display MS
+
+* effectivePeriod.start 1.. MS
+* effectivePeriod.end MS
 * derivedFrom MS

@@ -23,6 +23,16 @@
         "system": "http://loinc.org",
         "code": "39156-5",
         "display": "Body mass index (BMI) [Ratio]"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "60621009",
+        "display": "Body mass index (observable entity)"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "188752",
+        "display": "MDC_RATIO_MASS_BODY_LEN_SQ"
       }
     ]
   },
