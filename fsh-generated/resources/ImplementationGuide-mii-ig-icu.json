@@ -866,6 +866,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-bmi"
+        },
+        "name": "MII PR ICU MUV Body Mass Index",
+        "description": "Body mass index (BMI) calculated from body weight and height, expressed in kg/m2.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
         },
         "name": "MII PR ICU MUV Herzfrequenz",
@@ -1493,6 +1501,14 @@
         "description": "Beispiel: MII PR ICU MUV Atemfrequenz",
         "exampleBoolean": true,
         "name": "Muv Atemfrequenz"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-bmi"
+        },
+        "description": "Beispiel: MII PR ICU MUV Body Mass Index",
+        "exampleBoolean": true,
+        "name": "Muv Bmi"
       },
       {
         "reference": {
