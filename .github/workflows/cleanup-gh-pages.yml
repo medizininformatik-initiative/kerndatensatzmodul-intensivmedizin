@@ -1,10 +1,11 @@
 # Stale GitHub Pages preview cleanup (companion to ig-publisher.yml).
 #
-# Purpose:   Remove branch previews under gh-pages/branches/<branch>/ whose
-#            branch no longer exists, so gh-pages does not grow without bound as
-#            short-lived feature branches come and go. Each preview drops a
-#            .branch-name marker; this workflow deletes a preview ONLY when its
-#            marker names a branch that is gone. The formal publication ROOT and
+# Purpose:   Remove branch previews under gh-pages/branches/<branch>/ that are
+#            not for an existing dev or main branch, so gh-pages stays under the
+#            1 GB Pages limit. ig-publisher.yml previews only dev and main; older
+#            previews of feature branches are removed even while the branch
+#            exists. Each preview drops a .branch-name marker; this workflow
+#            deletes a preview ONLY when its marker names another branch. The formal publication ROOT and
 #            any version-like paths (e.g. 2026.0.0/) are NEVER cleanup
 #            candidates — they belong to -go-publish, not to previews.
 #
@@ -108,7 +109,9 @@ jobs:
               awk '
                 {
                   sub("refs/heads/", "", $2)
-                  if ($2 != "gh-pages") {
+                  # Only dev and main get previews (ig-publisher.yml); any
+                  # other preview is left over and removed.
+                  if ($2 == "dev" || $2 == "main") {
                     print $2
                   }
                 }
