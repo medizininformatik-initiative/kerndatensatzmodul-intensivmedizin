@@ -1,7 +1,5 @@
 <!-- markdownlint-disable MD041 -->
 <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation + https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/Compatibility.page.md + https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Context-in-the-overall-project-references-to-other-modules.page.md + https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/References.page.md -->
-This page was intentionally left blank.
-
 ### Compatibility
 
 This module is intended to provide usable and comprehensive profiles within the framework of MII projects and also provide a basis for more in-depth/further-reaching profiling work on this basis. Furthermore, in the interests of interoperability, compatibility with existing national and international standards should be ensured wherever possible.
@@ -14,7 +12,10 @@ We aim for this module to be compatible with national profiles that have already
 
 - the [KBV basic profiles](https://simplifier.net/base1x0)
 
-- the [basic profiles of the Gematik ISiK project](https://simplifier.net/isik-stufe-5)
+- the [basic profiles of the gematik ISiK project](https://gemspec.gematik.de/ig/fhir/isik/basis/latest/index.html) and the ISiK modules related to intensive care:
+  - [ISiK ICU](https://gemspec.gematik.de/ig/fhir/isik/icu/latest/index.html) (the monitoring and vital data profiles of this module are maintained there and, for readability, also included in this guide)
+  - [ISiK Vitalparameter](https://gemspec.gematik.de/ig/fhir/isik/vitalparameter/latest/index.html)
+  - [ISiK Organspendeerkennung](https://gemspec.gematik.de/ig/fhir/isik/organspendeerkennung/latest/index.html)
 
 In addition, the profiles created here should be compatible with existing international profiles from [HL7 International](http://hl7.org/fhir/) (see e.g. those for [Observations](http://hl7.org/fhir/observation-profiles.html)).
 
