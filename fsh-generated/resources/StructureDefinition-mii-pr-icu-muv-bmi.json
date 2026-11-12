@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-muv-bmi",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-bmi",
+  "version": "2027.0.0",
+  "name": "MII_PR_ICU_MUV_BMI",
+  "title": "MII PR ICU MUV Body Mass Index",
+  "status": "draft",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Body mass index (BMI) calculated from body weight and height, expressed in kg/m2.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bmi",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "mustSupport": true
+      }
+    ]
+  }
+}

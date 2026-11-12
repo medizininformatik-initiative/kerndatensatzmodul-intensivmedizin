@@ -87,10 +87,11 @@
 </div>
 </div></details>
 <details>
-<summary>Monitoring und Vitaldaten (MII)<span class="cnt">8</span></summary><div class="body">
+<summary>Monitoring und Vitaldaten (MII)<span class="cnt">9</span></summary><div class="body">
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
+<a href="StructureDefinition-mii-pr-icu-muv-bmi.html">Body Mass Index</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
