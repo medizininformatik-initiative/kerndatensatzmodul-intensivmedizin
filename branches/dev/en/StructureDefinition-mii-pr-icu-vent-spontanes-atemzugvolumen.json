@@ -11,7 +11,7 @@
   "name" : "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
   "title" : "MII PR ICU Spontanes Atemzugvolumen",
   "status" : "active",
-  "date" : "2026-11-12T15:49:11+00:00",
+  "date" : "2026-11-12T16:20:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1713,6 +1713,9 @@
       "type" : [{
         "code" : "Coding"
       }],
+      "patternCoding" : {
+        "system" : "http://loinc.org"
+      },
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -2040,6 +2043,9 @@
       "type" : [{
         "code" : "Coding"
       }],
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101"
+      },
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",

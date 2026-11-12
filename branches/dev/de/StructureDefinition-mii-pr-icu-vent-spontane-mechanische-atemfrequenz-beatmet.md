@@ -85,7 +85,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-11-12T15:49:11+00:00",
+  "date" : "2026-11-12T16:20:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

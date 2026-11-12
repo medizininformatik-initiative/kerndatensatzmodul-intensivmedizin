@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "name" : "MII_PR_ICU_Parameter_Von_Beatmung",
   "title" : "MII PR ICU Parameter von Beatmung",
   "status" : "active",
-  "date" : "2026-11-12T15:49:11+00:00",
+  "date" : "2026-11-12T16:20:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -187,6 +187,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
       "sliceName" : "sct",
       "min" : 0,
       "max" : "*",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct"
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -217,6 +220,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
       "sliceName" : "loinc",
       "min" : 0,
       "max" : "*",
+      "patternCoding" : {
+        "system" : "http://loinc.org"
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -247,6 +253,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
       "sliceName" : "IEEE-11073",
       "min" : 0,
       "max" : "*",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101"
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",

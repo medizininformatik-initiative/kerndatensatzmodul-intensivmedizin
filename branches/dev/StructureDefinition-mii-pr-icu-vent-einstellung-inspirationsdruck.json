@@ -10,7 +10,7 @@
   "name" : "MII_PR_ICU_VENT_Einstellung_Inspirationsdruck",
   "title" : "MII PR ICU Einstellung Inspirationsdruck",
   "status" : "draft",
-  "date" : "2026-11-12T15:49:11+00:00",
+  "date" : "2026-11-12T16:20:08+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1381,6 +1381,9 @@
       "type" : [{
         "code" : "Coding"
       }],
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct"
+      },
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
