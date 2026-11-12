@@ -12,16 +12,17 @@ Description: "Body mass index (BMI) calculated from body weight and height, expr
 
 * code.coding contains snomed 1..1 MS and IEEE-11073 1..1 MS
 * code.coding[BMICode] MS
+* code.coding[BMICode].version 1..1 MS
 * code.coding[snomed].system 1..1 MS
 * code.coding[snomed].system = $sct (exactly)
 * code.coding[snomed].code 1..1 MS
 * code.coding[snomed].code = #60621009 (exactly)
-* code.coding[snomed].display MS
+* code.coding[snomed].version 1..1 MS
 * code.coding[IEEE-11073].system 1..1 MS
 * code.coding[IEEE-11073].system = $ieee-11073 (exactly)
 * code.coding[IEEE-11073].code 1..1 MS
 * code.coding[IEEE-11073].code = #188752 (exactly)
-* code.coding[IEEE-11073].display MS
+* code.coding[IEEE-11073].version 1..1 MS
 
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
