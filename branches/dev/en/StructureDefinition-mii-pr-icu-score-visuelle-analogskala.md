@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Visuelle_Analogskala",
   "title" : "MII PR ICU Score Visuelle Analogskala",
   "status" : "draft",
-  "date" : "2026-11-12T08:46:25+00:00",
+  "date" : "2026-11-12T10:58:16+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

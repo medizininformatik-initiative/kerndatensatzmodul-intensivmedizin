@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-d
   "name" : "MII_PR_ICU_VENT_Dynamische_Kompliance",
   "title" : "MII PR ICU Dynamische Kompliance",
   "status" : "active",
-  "date" : "2026-11-12T08:46:25+00:00",
+  "date" : "2026-11-12T10:58:16+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
