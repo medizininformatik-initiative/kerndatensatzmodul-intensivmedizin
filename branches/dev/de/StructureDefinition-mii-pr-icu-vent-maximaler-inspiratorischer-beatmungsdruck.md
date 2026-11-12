@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-10 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck |
+| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck |
 
 **Usages:**
 
@@ -83,7 +83,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Maximaler_Inspiratorischer_Beatmungsdruck",
   "title" : "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
   "status" : "draft",
-  "date" : "2026-11-10T16:46:09+00:00",
+  "date" : "2026-11-12T08:46:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

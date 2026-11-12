@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck | *Version*:2027.0.0 |
-| Active as of 2026-11-10 | *Computable Name*:MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck |
+| Active as of 2026-11-12 | *Computable Name*:MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck |
 
 "PEEP - Positive end-expiratory pressure" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
   "title" : "MII PR ICU Positiv Endexpiratorischer Druck",
   "status" : "active",
-  "date" : "2026-11-10T16:46:09+00:00",
+  "date" : "2026-11-12T08:46:25+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
