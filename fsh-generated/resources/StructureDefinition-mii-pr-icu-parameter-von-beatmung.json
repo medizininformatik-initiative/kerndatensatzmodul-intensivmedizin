@@ -136,6 +136,9 @@
         "sliceName": "sct",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -166,6 +169,9 @@
         "sliceName": "loinc",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -196,6 +202,9 @@
         "sliceName": "IEEE-11073",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
