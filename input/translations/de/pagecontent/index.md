@@ -77,7 +77,7 @@ Die Profilierung erstreckt sich ebenfalls über die zugrundeliegenden Prozeduren
 
 Monitoring- bzw. Vitaldaten umfassen Daten wie z.B.: Blutdruck (arteriell, zentralvenös, pulmonalarteriell, ventrikulär, artrial…), Herzfrequenz, Temperatur, hämodynamisches Monitoring (Herzzeitvolumen, Herzschlagvolumen, systemischer- und pulmonaler Gefäßwiederstand, etc.), pulsoxymetrischen Sauerstoffsättigung prä- und postduktal etc.
 
-Die etablierten Monitoring- und Vitaldaten Profile wurden mit der Version 2025.0.0 in ISiK Profile überführt und werden seit dem dort in enger Kooperation weiter gepflegt.
+Die etablierten Monitoring- und Vitaldaten-Profile wurden mit der Version 2025.0.0 in ISiK überführt und werden seitdem dort in enger Kooperation weiter gepflegt. Maßgeblich ist die jeweils aktuelle Version des [ISiK-Leitfadens ICU](https://gemspec.gematik.de/ig/fhir/isik/icu/latest/index.html). Zur besseren Lesbarkeit sind diese Profile zusätzlich in diesem Leitfaden enthalten.
 
 ### Parameter von extrakorporalen Verfahren
 
