@@ -21,7 +21,8 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * category[sct].coding 0.. MS
 * category[sct].coding.system 1..1 MS
 * category[sct].coding.code 1..1 MS
-* category[sct].coding = $sct#248326004
+* category[sct] ^patternCodeableConcept.coding.system = $sct
+* category[sct] ^patternCodeableConcept.coding.code = #248326004
 * category[sct].coding.display 0..1 MS
 
 * code MS
@@ -37,8 +38,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * code.coding[snomed].system MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
-* code.coding 2..2 MS
-* code.coding[loinc-zusatzcode] MS
+* code.coding 3..3 MS
 
 * subject MS
 
@@ -48,6 +48,7 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
 
+* value[x] only Quantity
 * value[x] MS
 * valueQuantity = $ucum#kg "kilogram"
 * valueQuantity MS
@@ -57,3 +58,21 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * valueQuantity.code MS
 
 * component MS
+// Birth weight is represented by its dedicated profile.
+* code.coding[loinc-zusatzcode] 0..0
+* code.coding ^slicing.rules = #closed
+
+// Required ISO/IEEE 11073 coding specific to this measurement.
+* code.coding contains IEEE-11073 1..1 MS
+* code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
+* code.coding[IEEE-11073] ^patternCoding.code = #68063
+
+// Fixed terminology editions for reproducible measurement coding.
+* code.coding[loinc].version 1..1 MS
+* code.coding[loinc].version = "2.83"
+* code.coding[snomed].version 1..1 MS
+* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20260701"
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[IEEE-11073].version = "2024-12-05"
+* category[sct].coding.version 1..1 MS
+* category[sct].coding.version = "http://snomed.info/sct/900000000000207008/version/20260701"

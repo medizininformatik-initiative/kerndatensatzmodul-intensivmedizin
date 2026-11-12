@@ -403,6 +403,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "name": "Birth length",
+        "description": "A birth length of 51 centimetres, including the required ISO/IEEE 11073 coding.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-geburtsgewicht"
+        },
+        "name": "Birth weight",
+        "description": "A birth weight of 3.5 kilograms.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
+      },
+      {
+        "reference": {
           "reference": "Procedure/mii-exa-icu-ecmo"
         },
         "description": "Beispiel: MII PR ICU Extrakorporales Verfahren",
@@ -563,6 +579,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+        },
+        "name": "Energy expenditure by indirect calorimetry",
+        "description": "Synthetic body-weight-normalised energy expenditure of 25 kcal/kg/d.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "name": "Estimated daily calorie requirement",
+        "description": "Synthetic example of an estimated requirement of 1800 kilocalories per day using the Schofield equation.",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/mii-cps-icu-capabilitystatement"
         },
         "name": "MII CPS Intensivmedizin CapabilityStatement",
@@ -645,6 +677,14 @@
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
         },
         "name": "MII PR ICU Bilanz Einfuhr Kalorien 24h",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "name": "MII PR ICU Bilanz Kalorienbedarf pro Tag",
+        "description": "Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target.",
         "exampleBoolean": false
       },
       {
@@ -852,6 +892,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten"
+        },
+        "name": "MII PR ICU Monitoring und Vitaldaten",
+        "description": "Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
         },
         "name": "MII PR ICU MUV Arterieller Blutdruck",
@@ -862,6 +910,22 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
         },
         "name": "MII PR ICU MUV Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+        },
+        "name": "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
+        "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
+        },
+        "name": "MII PR ICU MUV Geburtsgewicht",
+        "description": "Body weight measured at birth, expressed in kilograms. The effective time refers to the birth-weight measurement, even when documented later.",
         "exampleBoolean": false
       },
       {
@@ -911,6 +975,7 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse"
         },
         "name": "MII PR ICU MUV Koerpergroesse",
+        "description": "Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles.",
         "exampleBoolean": false
       },
       {
@@ -925,6 +990,15 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
         },
         "name": "MII PR ICU MUV Koerperlaenge",
+        "description": "Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "name": "MII PR ICU MUV Koerperlaenge Bei Geburt",
+        "description": "Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later.",
         "exampleBoolean": false
       },
       {
@@ -1293,6 +1367,14 @@
           "reference": "ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"
         },
         "name": "MII VS ICU DeviceMetric extrakorporale Verfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-method-kalorienbedarf"
+        },
+        "name": "MII VS ICU Method Kalorienbedarf",
+        "description": "SNOMED CT qualifiers for how daily energy requirement was determined. The codes do not identify particular equations.",
         "exampleBoolean": false
       },
       {

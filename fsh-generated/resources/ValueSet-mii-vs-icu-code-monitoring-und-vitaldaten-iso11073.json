@@ -212,6 +212,30 @@
           {
             "code": "150356",
             "display": "MDC_TEMP_AWAY"
+          },
+          {
+            "code": "68058",
+            "display": "MDC_ATTR_PT_BIRTH_LENGTH"
+          },
+          {
+            "code": "68060",
+            "display": "MDC_ATTR_PT_HEIGHT"
+          },
+          {
+            "code": "68059",
+            "display": "MDC_ATTR_PT_BIRTH_WEIGHT"
+          },
+          {
+            "code": "68063",
+            "display": "MDC_ATTR_PT_WEIGHT"
+          },
+          {
+            "code": "152812",
+            "display": "MDC_RESP_EXPENDED_ENERGY"
+          },
+          {
+            "code": "151776",
+            "display": "MDC_FLOW_CO2_PROD_RESP"
           }
         ]
       }

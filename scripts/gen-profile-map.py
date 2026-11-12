@@ -68,7 +68,7 @@ FAMILIEN = [
      [],
      lambda i: i.startswith('mii-pr-icu-bilanz-'), ('Bilanz',)),
     ('Monitoring und Vitaldaten (modul-eigen)', 'Monitoring and vital signs (module-owned)',
-     [],
+     ['mii-pr-icu-monitoring-und-vitaldaten'],
      lambda i: i.startswith('mii-pr-icu-muv-'), ('MUV',)),
     ('Scores', 'Scores',
      ['mii-pr-icu-score'],

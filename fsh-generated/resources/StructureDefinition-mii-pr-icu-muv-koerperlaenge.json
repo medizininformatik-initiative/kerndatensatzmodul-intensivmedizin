@@ -17,11 +17,12 @@
       ]
     }
   ],
+  "description": "Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://fhir.de/StructureDefinition/observation-de-vitalsign",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -39,16 +40,6 @@
         ]
       },
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
@@ -58,37 +49,10 @@
               "path": "$this"
             }
           ],
-          "rules": "open"
+          "rules": "closed"
         },
-        "min": 2,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "system": "http://loinc.org",
-          "code": "8306-3",
-          "display": "Body height --lying"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
+        "min": 4,
+        "max": "4",
         "mustSupport": true
       },
       {
@@ -99,139 +63,90 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "1149101003",
-          "display": "Recumbent body height (observable entity)"
-        },
-        "mustSupport": true
+          "code": "1149101003"
+        }
       },
       {
-        "id": "Observation.code.coding:sct.system",
-        "path": "Observation.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.code",
-        "path": "Observation.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]:effectiveDateTime",
-        "path": "Observation.effective[x]",
-        "sliceName": "effectiveDateTime",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]:effectivePeriod",
-        "path": "Observation.effective[x]",
-        "sliceName": "effectivePeriod",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]:effectivePeriod.start",
-        "path": "Observation.effective[x].start",
+        "id": "Observation.code.coding:sct.version",
+        "path": "Observation.code.coding.version",
         "min": 1,
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
         "mustSupport": true
       },
       {
-        "id": "Observation.effective[x]:effectivePeriod.end",
-        "path": "Observation.effective[x].end",
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8306-3"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2.83",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073",
+        "path": "Observation.code.coding",
+        "sliceName": "IEEE-11073",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101",
+          "code": "68060"
+        }
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2024-12-05",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-body-height",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-body-height",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org",
+          "code": "8302-2"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc-body-height.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "patternString": "2.83",
         "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity",
-        "path": "Observation.value[x]",
-        "sliceName": "valueQuantity",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
         "patternQuantity": {
           "code": "cm",
           "system": "http://unitsofmeasure.org",
           "unit": "centimeter"
-        },
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM"
         }
       },
       {
-        "id": "Observation.value[x]:valueQuantity.value",
-        "path": "Observation.value[x].value",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.unit",
+        "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
-        "patternString": "centimeter",
-        "mustSupport": true
+        "min": 1,
+        "patternString": "centimeter"
       },
       {
-        "id": "Observation.value[x]:valueQuantity.system",
-        "path": "Observation.value[x].system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.code",
+        "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "patternCode": "cm",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.dataAbsentReason",
-        "path": "Observation.dataAbsentReason",
-        "mustSupport": true
+        "patternCode": "cm"
       }
     ]
   }

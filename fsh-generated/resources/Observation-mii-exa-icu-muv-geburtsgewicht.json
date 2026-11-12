@@ -1,0 +1,51 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-icu-muv-geburtsgewicht",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "system": "http://snomed.info/sct",
+        "code": "364589006",
+        "display": "Birth weight (observable entity)"
+      },
+      {
+        "version": "2.83",
+        "system": "http://loinc.org",
+        "code": "8339-4",
+        "display": "Birth weight Measured"
+      },
+      {
+        "version": "2024-12-05",
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68059"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "unit": "kilogram",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg",
+    "value": 3.5
+  },
+  "status": "final",
+  "subject": {
+    "display": "Example newborn"
+  },
+  "effectiveDateTime": "2025-01-01T09:30:00+01:00"
+}
