@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device | *Version*:2027.0.0-ballot.3-rc.1 |
-| Active Stand: 2026-10-30 | *Maschinenlesbarer Name*:MII_PR_ICU_Device |
+| Active Stand: 2026-11-13 | *Maschinenlesbarer Name*:MII_PR_ICU_Device |
 
 **Usages:**
 
@@ -84,7 +84,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "name" : "MII_PR_ICU_Device",
   "title" : "MII PR ICU Device",
   "status" : "active",
-  "date" : "2026-10-30T08:50:12+00:00",
+  "date" : "2026-11-13T10:22:54+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

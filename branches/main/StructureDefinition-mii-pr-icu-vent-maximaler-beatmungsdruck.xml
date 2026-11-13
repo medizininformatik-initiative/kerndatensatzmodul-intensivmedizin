@@ -45,7 +45,7 @@
   <name value="MII_PR_ICU_VENT_Maximaler_Beatmungsdruck"/>
   <title value="MII PR ICU Maximaler Beatmungsdruck"/>
   <status value="active"/>
-  <date value="2026-10-30T08:50:12+00:00"/>
+  <date value="2026-11-13T10:22:54+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -659,7 +659,7 @@
       <comment value="In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set."/>
       <requirements value="Used for filtering what observations are retrieved and displayed."/>
       <min value="1"/>
-      <max value="1"/>
+      <max value="*"/>
       <base>
         <path value="Observation.category"/>
         <min value="0"/>

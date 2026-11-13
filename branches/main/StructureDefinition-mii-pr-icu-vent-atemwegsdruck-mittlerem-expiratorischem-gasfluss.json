@@ -10,7 +10,7 @@
   "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
   "title" : "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
   "status" : "active",
-  "date" : "2026-10-30T08:50:12+00:00",
+  "date" : "2026-11-13T10:22:54+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -645,7 +645,7 @@
       "comment" : "In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.",
       "requirements" : "Used for filtering what observations are retrieved and displayed.",
       "min" : 1,
-      "max" : "1",
+      "max" : "*",
       "base" : {
         "path" : "Observation.category",
         "min" : 0,
