@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-score-icdsc",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc",
-  "version": "2026.0.0",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_Score_ICDSC",
   "title": "MII PR ICU Score ICDSC",
   "status": "draft",
@@ -26,6 +26,19 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "icdsc-total-range",
+            "human": "Der Gesamtwert der Intensive Care Delirium Screening Checklist (ICDSC) muss zwischen 0 und 8 liegen.",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc",
+            "severity": "error",
+            "expression": "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 8)"
+          }
+        ]
+      },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
@@ -53,8 +66,7 @@
         "min": 1,
         "patternCoding": {
           "code": "1351995008",
-          "system": "http://snomed.info/sct",
-          "display": "Intensive Care Delirium Screening Checklist score (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -70,9 +82,7 @@
           {
             "code": "integer"
           }
-        ],
-        "minValueInteger": 0,
-        "maxValueInteger": 8
+        ]
       },
       {
         "id": "Observation.interpretation",
