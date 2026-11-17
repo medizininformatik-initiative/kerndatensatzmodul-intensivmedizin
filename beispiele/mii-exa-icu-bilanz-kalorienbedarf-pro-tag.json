@@ -6,12 +6,7 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
     ]
   },
-  "valueQuantity": {
-    "code": "kcal/(24.h)",
-    "system": "http://unitsofmeasure.org",
-    "unit": "kilocalorie per day",
-    "value": 1800
-  },
+  "status": "final",
   "code": {
     "coding": [
       {
@@ -22,11 +17,16 @@
       }
     ]
   },
-  "status": "final",
   "subject": {
     "display": "Synthetic example patient"
   },
   "effectiveDateTime": "2026-01-01T09:00:00+01:00",
+  "valueQuantity": {
+    "code": "kcal/(24.h)",
+    "system": "http://unitsofmeasure.org",
+    "unit": "kilocalorie per day",
+    "value": 1800
+  },
   "method": {
     "coding": [
       {

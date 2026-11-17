@@ -6,6 +6,7 @@
       "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
     ]
   },
+  "status": "final",
   "category": [
     {
       "coding": [
@@ -31,15 +32,14 @@
       }
     ]
   },
+  "subject": {
+    "display": "Example newborn"
+  },
+  "effectiveDateTime": "2025-01-01T09:30:00+01:00",
   "valueQuantity": {
     "unit": "centimeter",
     "system": "http://unitsofmeasure.org",
     "code": "cm",
     "value": 51
-  },
-  "status": "final",
-  "subject": {
-    "display": "Example newborn"
-  },
-  "effectiveDateTime": "2025-01-01T09:30:00+01:00"
+  }
 }
