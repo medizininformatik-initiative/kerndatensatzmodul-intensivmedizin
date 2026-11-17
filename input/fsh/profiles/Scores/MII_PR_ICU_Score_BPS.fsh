@@ -8,18 +8,13 @@ Description: "Total score of the Behavioral Pain Scale (BPS) for mechanically ve
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-bps"
 * ^status = #draft
 
-* code.coding 1.. MS
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 0..0
 * code.coding[sct] 0..0
 * code.coding[ieee11073] 0..0
 * code.coding contains dgai 1..1 MS
-* code.coding[dgai] = $dgai#bps "Behavioral Pain Scale (BPS)"
-* code.coding[dgai].system 1..1 MS
-* code.coding[dgai].code 1..1 MS
+* code.coding[dgai] = $dgai#DGAI-BPS
 
 * value[x] only integer
-* valueInteger 0..1 MS
-* valueInteger ^minValueInteger = 3
-* valueInteger ^maxValueInteger = 12
+* obeys bps-total-range
 * component 0..0
