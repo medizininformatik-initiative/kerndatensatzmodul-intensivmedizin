@@ -16,7 +16,7 @@ Description: "If there is no component or hasMember element then either a value[
 Invariant: mii-icu-loinc-sct-dgai-ieee11073
 Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"
 * severity = #error
-* expression = "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()"
+* expression = "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai').exists()"
 
 // Score ranges
 Invariant: mii-icu-painscale-vas
