@@ -45,7 +45,7 @@ jobs:
       # SUBDIRECTORY of google/osv-scanner-action (the repo-root action.yml has
       # no runnable definition — verified upstream at v2.3.8).
       - name: OSV-Scanner
-        uses: google/osv-scanner-action/osv-scanner-action@b1d267aea5211fa648d9d442fa64b90dbdcbdd36 # v2.7.0
+        uses: google/osv-scanner-action/osv-scanner-action@32d3cd482bdadfb38b186c0ad1b031902d55d932 # v2.7.1
         # osv-scanner exits non-zero when it finds vulnerabilities (1) or when
         # the repo has no scannable package sources yet (128). Neither must
         # block the SARIF upload, so the step tolerates failure.
