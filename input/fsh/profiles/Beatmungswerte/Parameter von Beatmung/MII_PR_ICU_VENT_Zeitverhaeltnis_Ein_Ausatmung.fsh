@@ -17,4 +17,4 @@ Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * code.coding[loinc] = $loinc#75931-6 "Inspiration/Expiration time Ratio"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#151832 "MDC_RATIO_IE"
-* valueQuantity = $ucum#{ratio}
+* valueQuantity = $ucum#1

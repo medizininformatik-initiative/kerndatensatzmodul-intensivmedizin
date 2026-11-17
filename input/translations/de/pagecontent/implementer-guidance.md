@@ -1,7 +1,5 @@
 <!-- markdownlint-disable MD041 -->
 <!-- Migrated from the Simplifier guide (harvested 2026-08-27, spec 5.1d): https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/TechnischeImplementierung + https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/TechnischeImplementierung/Kompatibilit-t.page.md + https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/KontextimGesamtprojektBezgezuanderenModulen.page.md + https://simplifier.net/guide/MIIIGIntensivmedizin-DE/MIIIGModulICU/Referenzen.page.md -->
-Diese Seite wurde absichtlich leer gelassen.
-
 ### Kompatibilität
 
 Das vorliegende Modul soll im Rahmen von MII-Projekten nutzbare und umfangreiche Profile bereitstellen und darüber hinaus eine Grundlage bieten für tiefer-/weitergehende Profilierungsarbeiten auf dieser Basis. Darüber hinaus soll jedoch im Sinne der Interoperabilität - wo möglich - eine Kompatibilität zu bestehenden nationalen wie internationalen Vorgaben gewährleiset werden.
@@ -14,7 +12,10 @@ Wir streben für dieses Modul eine Kompatibilität zu bereits abgestimmten und e
 
 - die [KBV-Basisprofile](https://simplifier.net/base1x0)
 
-- die [Basisprofile des ISiK-Projektes](https://simplifier.net/isik-stufe-5) der Gematik.
+- die [Basisprofile des ISiK-Projektes](https://gemspec.gematik.de/ig/fhir/isik/basis/latest/index.html) der gematik sowie die ISiK-Module mit Bezug zur Intensivmedizin:
+  - [ISiK ICU](https://gemspec.gematik.de/ig/fhir/isik/icu/latest/index.html) (dort werden die Monitoring- und Vitaldaten-Profile dieses Moduls gepflegt; zur besseren Lesbarkeit sind sie zusätzlich in diesem Leitfaden enthalten)
+  - [ISiK Vitalparameter](https://gemspec.gematik.de/ig/fhir/isik/vitalparameter/latest/index.html)
+  - [ISiK Organspendeerkennung](https://gemspec.gematik.de/ig/fhir/isik/organspendeerkennung/latest/index.html)
 
 Außerdem sollen die hier erstellten Profile kompatibel sein zu bestehenden internationalen Profilen von [HL7 International](http://hl7.org/fhir/) (siehe z.B. die für [Observations](http://hl7.org/fhir/observation-profiles.html)).
 

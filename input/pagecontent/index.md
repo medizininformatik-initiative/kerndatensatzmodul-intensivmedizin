@@ -80,7 +80,7 @@ The profiling also covers the underlying procedures (applications of extracorpor
 
 Monitoring or vital data includes data such as: Blood pressure (arterial, central venous, pulmonary arterial, ventricular, arterial...), heart rate, temperature, haemodynamic monitoring (cardiac output per time period, cardiac output, systemic and pulmonary vascular resistance, etc.), pre- and post-ductal pulse oximetric oxygen saturation, etc.
 
-The established monitoring and vital data profiles were transferred to ISiK Profile in version 2025.0.0 and have been maintained there in close cooperation ever since.
+The established monitoring and vital data profiles were transferred to ISiK in version 2025.0.0 and have been maintained there in close cooperation ever since. The normative source is the current version of the [ISiK ICU guide](https://gemspec.gematik.de/ig/fhir/isik/icu/latest/index.html). For readability, these profiles are also included in this guide.
 
 ### Parameters of extracorporeal procedures
 
