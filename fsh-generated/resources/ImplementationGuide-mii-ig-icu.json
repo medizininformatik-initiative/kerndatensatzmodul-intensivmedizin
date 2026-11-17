@@ -395,27 +395,19 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Kalorienbedarf pro Tag",
+        "exampleBoolean": true,
+        "name": "Bilanz Kalorienbedarf Pro Tag"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"
         },
         "description": "Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
         "exampleBoolean": true,
         "name": "Bilanz Tagesbilanz Fluessigkeit"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt"
-        },
-        "name": "Birth length",
-        "description": "A birth length of 51 centimetres, including the required ISO/IEEE 11073 coding.",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-muv-geburtsgewicht"
-        },
-        "name": "Birth weight",
-        "description": "A birth weight of 3.5 kilograms.",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
       },
       {
         "reference": {
@@ -576,22 +568,6 @@
         "description": "Beispiel: MII PR ICU Venoeser Druck",
         "exampleBoolean": true,
         "name": "Ect Venoeser Druck"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie"
-        },
-        "name": "Energy expenditure by indirect calorimetry",
-        "description": "Synthetic body-weight-normalised energy expenditure of 25 kcal/kg/d.",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag"
-        },
-        "name": "Estimated daily calorie requirement",
-        "description": "Synthetic example of an estimated requirement of 1800 kilocalories per day using the Schofield equation.",
-        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
       },
       {
         "reference": {
@@ -1578,6 +1554,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+        },
+        "description": "Beispiel: MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
+        "exampleBoolean": true,
+        "name": "Muv Energieverbrauch Indirekte Kalorimetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-geburtsgewicht"
+        },
+        "description": "Beispiel: MII PR ICU MUV Geburtsgewicht",
+        "exampleBoolean": true,
+        "name": "Muv Geburtsgewicht"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-muv-herzfrequenz"
         },
         "description": "Beispiel: MII PR ICU MUV Herzfrequenz",
@@ -1647,6 +1639,14 @@
         "description": "Beispiel: MII PR ICU MUV Koerperlaenge",
         "exampleBoolean": true,
         "name": "Muv Koerperlaenge"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "description": "Beispiel: MII PR ICU MUV Koerperlaenge Bei Geburt",
+        "exampleBoolean": true,
+        "name": "Muv Koerperlaenge Bei Geburt"
       },
       {
         "reference": {
