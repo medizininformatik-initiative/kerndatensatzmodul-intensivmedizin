@@ -54,7 +54,8 @@ Usage: #definition
 // ---------------------------------------------------------------------------
 // Supported resources and profiles (issues #52, #121).
 // Every profile of this module is listed: active profiles with SHALL, draft
-// profiles with MAY. The ICU profiles maintained in ISiK 6 (see
+// and retired profiles with MAY. scripts/strip-drafts.py removes the draft
+// lines in the main/release builds. The ICU profiles maintained in ISiK 6 (see
 // external-profiles.yaml) are listed with their versioned ISiK canonical.
 // When a profile is added, removed or moved, update this list as well.
 // ---------------------------------------------------------------------------
@@ -124,7 +125,7 @@ Usage: #definition
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck, #MAY)  // draft
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck, #MAY)  // retired
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck, #SHALL)

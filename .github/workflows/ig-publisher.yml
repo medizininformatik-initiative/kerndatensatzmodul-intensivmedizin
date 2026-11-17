@@ -20,9 +20,10 @@
 # Triggers:  push to every branch except gh-pages / fsh-generated, a pull
 #            request being opened or reopened, plus manual workflow_dispatch
 #            (rebuild one branch's preview). Every run builds the IG and its QA,
-#            but a PREVIEW is published only for dev, main and branches with an
-#            open pull request from this repository; dependabot/* branches never
-#            get one. This keeps gh-pages under the 1 GB GitHub Pages limit.
+#            but a PREVIEW is published only for dev and main. Feature and PR
+#            branches build and run QA without a preview: the Actions-mode deploy
+#            uploads the whole gh-pages tree, and every preview adds ~1 GB raw
+#            (~115 MB compressed), which pushed it over the 1 GB Pages limit.
 #
 # Toggle:    vars.ENABLE_PREVIEW — ON by default. Set the repo variable
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
@@ -136,45 +137,26 @@ jobs:
           ref: ${{ github.head_ref || github.ref }}
           persist-credentials: false
 
-      # Previews are published only for dev, main and branches with an open,
-      # non-Dependabot PR from this repository. Every other branch still builds
-      # (SUSHI + IG Publisher + QA) but publishes nothing, so gh-pages stays
-      # within the GitHub Pages size limit (1 GB per deployment).
+      # Previews are published only for dev and main. Every other branch still
+      # builds (SUSHI + IG Publisher + QA) but publishes nothing, so gh-pages
+      # stays within the GitHub Pages size limit (1 GB per deployment).
       - name: Decide whether this run publishes a preview
         id: preview
         shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-          EVENT: ${{ github.event_name }}
-          PR_HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
         run: |
           set -euo pipefail
           publish=false
           reason=""
-          if [[ "${PREVIEW_BRANCH}" == dependabot/* ]]; then
-            reason="Dependabot branch"
-          elif [[ "${PREVIEW_BRANCH}" == "dev" || "${PREVIEW_BRANCH}" == "main" ]]; then
+          if [[ "${PREVIEW_BRANCH}" == "dev" || "${PREVIEW_BRANCH}" == "main" ]]; then
             publish=true; reason="${PREVIEW_BRANCH} is always previewed"
-          elif [[ "${EVENT}" == "pull_request" ]]; then
-            if [[ "${PR_HEAD_REPO}" == "${REPO}" ]]; then
-              publish=true; reason="pull request opened from ${PREVIEW_BRANCH}"
-            else
-              reason="pull request from a fork"
-            fi
           else
-            open_prs="$(gh pr list --repo "${REPO}" --head "${PREVIEW_BRANCH}" --state open --json number --jq 'length')"
-            if (( open_prs > 0 )); then
-              publish=true; reason="${PREVIEW_BRANCH} has an open pull request"
-            else
-              reason="no open pull request for ${PREVIEW_BRANCH}"
-            fi
+            reason="previews are published for dev and main only"
           fi
           echo "publish=${publish}" >> "${GITHUB_OUTPUT}"
           if [[ "${publish}" == "true" ]]; then
             echo "Preview will be published (${reason})."
           else
-            echo "::notice::No preview for ${PREVIEW_BRANCH} (${reason}). The IG still builds and QA runs; open a pull request to get a preview."
+            echo "::notice::No preview for ${PREVIEW_BRANCH} (${reason}). The IG still builds and QA runs (see the build log); the dev preview shows the result once merged."
           fi
 
       # de.gematik.isik liefert keine Snapshots (0/178 in 6.0.0, gemessen 2026-08-28);
