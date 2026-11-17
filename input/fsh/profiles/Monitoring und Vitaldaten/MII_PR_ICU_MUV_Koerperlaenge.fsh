@@ -6,7 +6,7 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge"
-* ^status = #active
+* ^status = #draft
 * obeys mii-icu-val-xor-dar
 
 * code.coding 4..4 MS
@@ -25,6 +25,12 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[loinc-body-height] ^patternCoding.code = #8302-2
 * code.coding[loinc-body-height].version 1..1 MS
 * code.coding[loinc-body-height].version = "2.83"
+
+* effective[x] MS
+* effectiveDateTime MS
+* effectivePeriod MS
+* effectivePeriod.start 1.. MS
+* effectivePeriod.end MS
 
 * value[x] only Quantity
 * valueQuantity = $ucum#cm "centimeter"

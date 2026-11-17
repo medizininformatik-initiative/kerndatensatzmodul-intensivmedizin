@@ -9,6 +9,9 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * ^status = #active
 * obeys mii-icu-val-xor-dar
 
+* status MS
+
+* category MS
 * category[VSCat].coding.display MS
 * category contains sct 0.. MS
 * category[sct] ^patternCodeableConcept.coding.system = $sct
@@ -46,9 +49,15 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * subject only Reference(Patient)
 * effective[x] 1.. MS
 * effective[x] only dateTime or Period
+* effectiveDateTime MS
+* effectivePeriod MS
+* effectivePeriod.start 1.. MS
+* effectivePeriod.end MS
 * valueQuantity.value 1.. MS
 * valueQuantity.system 1.. MS
 * valueQuantity.code 1.. MS
+
+* dataAbsentReason MS
 
 // Fixed terminology editions for reproducible measurement coding.
 * code.coding[loinc].version 1..1 MS
