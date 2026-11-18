@@ -251,38 +251,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "Observation/mii-exa-icu-score-cam-icu-absent"
-        },
-        "name": "Score Cam Icu Absent",
-        "description": "Beispiel: MII PR ICU Score CAM-ICU",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-bps"
-        },
-        "name": "Score Bps",
-        "description": "Beispiel: MII PR ICU Score BPS",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-cam-icu"
-        },
-        "name": "Score Cam Icu",
-        "description": "Beispiel: MII PR ICU Score CAM-ICU",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-icdsc"
-        },
-        "name": "Score Icdsc",
-        "description": "Beispiel: MII PR ICU Score ICDSC",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
         },
         "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
@@ -1976,6 +1944,30 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-score-bps"
+        },
+        "description": "Beispiel: MII PR ICU Score BPS",
+        "exampleBoolean": true,
+        "name": "Score Bps"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-cam-icu"
+        },
+        "description": "Beispiel: MII PR ICU Score CAM-ICU",
+        "exampleBoolean": true,
+        "name": "Score Cam Icu"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-cam-icu-absent"
+        },
+        "description": "Beispiel: MII PR ICU Score CAM-ICU",
+        "exampleBoolean": true,
+        "name": "Score Cam Icu Absent"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-score-faces-pain-scale-revised"
         },
         "description": "Beispiel: MII PR ICU Score Faces Pain Scale Revised",
@@ -1989,6 +1981,14 @@
         "description": "Beispiel: MII PR ICU Score GCS",
         "exampleBoolean": true,
         "name": "Score Gcs"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-icdsc"
+        },
+        "description": "Beispiel: MII PR ICU Score ICDSC",
+        "exampleBoolean": true,
+        "name": "Score Icdsc"
       },
       {
         "reference": {
