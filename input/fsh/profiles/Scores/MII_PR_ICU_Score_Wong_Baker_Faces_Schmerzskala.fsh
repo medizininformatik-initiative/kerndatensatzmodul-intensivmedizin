@@ -20,9 +20,11 @@ Der Score wird als quantitativer Wert dokumentiert."
 * obeys mii-icu-wbf-1
 
 * category 1..* MS
-* category.coding.system = $observation-category
-* category.coding.code = #survey
-* category.coding.display = "Assessment"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains survey 1..1 MS
+* category[survey] = $observation-category#survey
 
 * code 1..1 MS
 * code.coding 2..2 MS

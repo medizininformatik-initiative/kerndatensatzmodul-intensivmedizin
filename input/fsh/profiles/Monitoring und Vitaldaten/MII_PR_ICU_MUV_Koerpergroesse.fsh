@@ -26,12 +26,13 @@ Title: "MII PR ICU MUV Koerpergroesse"
 * code MS
 * code.coding 2.. MS
 * code.coding[loinc] 1..1 MS
+* code.coding[loinc-zusatzcode] MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8302-2
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
-* code.coding[snomed] 1..1
+* code.coding[snomed] 1..1 MS
 * code.coding[snomed] ^patternCoding.system = $sct
 * code.coding[snomed] ^patternCoding.code = #1153637007
 * code.coding[snomed].system MS

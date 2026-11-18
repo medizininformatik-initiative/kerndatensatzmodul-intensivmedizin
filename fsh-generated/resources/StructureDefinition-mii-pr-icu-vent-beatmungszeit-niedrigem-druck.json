@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
   "title": "MII PR ICU Beatmungszeit Niedrigem Druck",
   "status": "active",
@@ -60,6 +60,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76229-4",
+          "system": "http://loinc.org",
           "display": "Low pressure hold time setting Ventilator"
         }
       },
@@ -71,6 +72,7 @@
         "max": "1",
         "patternCoding": {
           "code": "16929864",
+          "system": "urn:iso:std:iso:11073:10101",
           "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
         }
       },

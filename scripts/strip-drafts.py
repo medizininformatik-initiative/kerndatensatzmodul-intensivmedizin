@@ -13,6 +13,8 @@ Entfernt:
      dieselben IDs unter dem gematik-Canonical)
   3. die zugehörigen Einträge im generierten resources:-Block der sushi-config.yaml
   4. Intro-/Notes-Seiten der entfernten Profile (EN und DE)
+  5. `* insert SupportProfile(<Canonical>, ...)`-Zeilen in verbleibendem FSH
+     (CapabilityStatement), die auf ein entferntes Profil zeigen
 
 Prüft danach, dass im verbleibenden FSH nichts mehr auf Entferntes verweist.
 
@@ -85,12 +87,24 @@ def main():
     drop_intro = [p for i in sorted(sd_ids) for dd in INTRO_DIRS
                   for p in glob.glob(f'{dd}/StructureDefinition-{i}-*.md')]
 
-    # Prüfung: verweist verbleibendes FSH noch auf Entferntes?
-    names = {n for _, n, _ in removed} | {i for _, _, i in removed}
+    # 5. SupportProfile-Zeilen (CapabilityStatement) zu entfernten Profilen
     keep = [f for f in glob.glob('input/fsh/**/*.fsh', recursive=True) if f not in drop_files]
-    dangling = []
+    sp = re.compile(r'(?m)^\*\s*insert\s+SupportProfile\(\s*([^,\s)]+)[^\n]*\n')
+    texts, rewritten, n_sp = {}, [], 0
     for f in keep:
         t = open(f, encoding='utf-8').read()
+        t2 = sp.sub(lambda m: '' if m.group(1).split('|')[0] in canon else m.group(0), t)
+        k = sum(1 for m in sp.finditer(t) if m.group(1).split('|')[0] in canon)
+        texts[f] = t2
+        if k:
+            rewritten.append(f)
+            n_sp += k
+
+    # Prüfung: verweist verbleibendes FSH noch auf Entferntes?
+    names = {n for _, n, _ in removed} | {i for _, _, i in removed}
+    dangling = []
+    for f in keep:
+        t = texts[f]
         t = re.sub(r'/\*.*?\*/', '', t, flags=re.S)        # Blockkommentare
         t = re.sub(r'(?m)\s//.*$', '', t)                  # Zeilenkommentare
         t = re.sub(r'(?m)^Alias:.*$', '', t)               # Alias-Definitionen sind unschädlich
@@ -103,14 +117,19 @@ def main():
     print(f'Entwürfe: {sum(k in SD_KINDS for k, _, _ in removed)} Profile, '
           f'{sum(k == "ValueSet" for k, _, _ in removed)} ValueSets, '
           f'{sum(k == "CodeSystem" for k, _, _ in removed)} CodeSystems in {len(drop_files)} FSH-Dateien')
-    print(f'Beispiele: {len(drop_examples)} | Intro/Notes: {len(drop_intro)}')
+    print(f'Beispiele: {len(drop_examples)} | Intro/Notes: {len(drop_intro)} | '
+          f'SupportProfile-Zeilen: {n_sp} in {len(rewritten)} Dateien')
     if a.dry_run:
         for f in drop_files + [e[0] for e in drop_examples] + drop_intro:
             print('  würde löschen:', f)
+        for f in rewritten:
+            print('  würde SupportProfile-Zeilen entfernen in:', f)
         return
 
     for f in drop_files + [e[0] for e in drop_examples] + drop_intro:
         os.remove(f)
+    for f in rewritten:
+        open(f, 'w', encoding='utf-8').write(texts[f])
 
     # 3. sushi-config.yaml: Einträge der gelöschten Beispiele entfernen
     cfg = open(CFG, encoding='utf-8').read()

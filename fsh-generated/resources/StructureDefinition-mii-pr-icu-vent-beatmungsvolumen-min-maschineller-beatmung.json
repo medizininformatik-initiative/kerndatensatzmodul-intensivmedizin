@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
   "title": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
   "status": "active",
@@ -54,6 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250875001",
+          "system": "http://snomed.info/sct",
           "display": "Ventilator delivered minute volume (observable entity)"
         }
       },
@@ -65,6 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76009-0",
+          "system": "http://loinc.org",
           "display": "Inspired minute Volume during Mechanical ventilation"
         }
       },
@@ -76,7 +78,8 @@
         "max": "1",
         "patternCoding": {
           "code": "152004",
-          "display": "Total volume of gas breathed in during 1 min during mechanical ventilation."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_VENT_VOL_MINUTE_INSP"
         }
       },
       {

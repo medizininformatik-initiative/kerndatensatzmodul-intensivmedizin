@@ -49,7 +49,7 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151586",
-        "display": "Rate of mechanical ventilation; method not specified."
+        "display": "MDC_VENT_RESP_RATE"
       }
     ]
   },
@@ -63,8 +63,8 @@
   "valueQuantity": {
     "value": 12.0,
     "system": "http://unitsofmeasure.org",
-    "code": "{Breaths}/min",
-    "unit": "{Breaths}/min"
+    "code": "/min",
+    "unit": "breaths/min"
   },
   "device": {
     "reference": "DeviceMetric/mii-exa-icu-vent-eingestellte-parameter-beatmung"

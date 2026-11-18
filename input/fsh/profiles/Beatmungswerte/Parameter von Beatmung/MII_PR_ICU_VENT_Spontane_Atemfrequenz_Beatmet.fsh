@@ -13,9 +13,7 @@ Title: "MII PR ICU Spontane Atemfrequenz Beatmet"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #19839-0
-* code.coding[loinc] ^patternCoding.display = "Breath rate spontaneous --on ventilator"
+* code.coding[loinc] = $loinc#19839-0 "Breath rate spontaneous --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #152498
-* code.coding[IEEE-11073] ^patternCoding.display = "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by the ventilator. Includes unassisted breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes."
+* code.coding[IEEE-11073] = $ieee-11073#152498 "MDC_VENT_RESP_BTSD_P_RATE"
 * valueQuantity = $ucum#/min

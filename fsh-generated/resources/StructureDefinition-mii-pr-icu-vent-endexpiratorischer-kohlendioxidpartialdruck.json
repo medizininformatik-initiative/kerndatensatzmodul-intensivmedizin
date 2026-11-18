@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
   "title": "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
   "status": "active",
@@ -70,6 +70,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250790007",
+          "system": "http://snomed.info/sct",
           "display": "End tidal carbon dioxide tension (observable entity)"
         }
       },
@@ -81,7 +82,8 @@
         "max": "1",
         "patternCoding": {
           "code": "19891-1",
-          "display": "Carbon dioxide^at end expiration"
+          "system": "http://loinc.org",
+          "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
         }
       },
       {
@@ -92,7 +94,8 @@
         "max": "1",
         "patternCoding": {
           "code": "151708",
-          "display": "Partial pressure of carbon dioxide in airway gas measured at the end of expiration."
+          "system": "urn:iso:std:iso:11073:10101",
+          "display": "MDC_CONC_AWAY_CO2_ET"
         }
       },
       {

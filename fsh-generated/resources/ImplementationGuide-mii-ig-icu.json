@@ -27,6 +27,7 @@
         "coding": [
           {
             "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version": "3.0.0",
             "code": "package",
             "display": "Package"
           }
@@ -155,7 +156,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu",
-  "version": "2027.0.0-ballot.3",
+  "version": "2027.0.0",
   "name": "MII_IG_ICU",
   "title": "MII IG ICU",
   "status": "draft",
@@ -641,107 +642,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz"
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
         },
-        "name": "MII PR ICU Bilanz",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Blutverlust",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Drainage Generisch",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Magensonde",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr OP Drainage",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Stuhlgang",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Urin",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage"
-        },
-        "name": "MII PR ICU Bilanz Ausfuhr Wunddrainage",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
-        },
-        "name": "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
-        },
-        "name": "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit"
-        },
-        "name": "MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
+        "name": "MII PR ICU Bilanz Einfuhr Kalorien 24h",
         "exampleBoolean": false
       },
       {
@@ -749,6 +652,20 @@
           "reference": "StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
         },
         "name": "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
+        },
+        "name": "MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
+        },
+        "name": "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
         "exampleBoolean": false
       },
       {
@@ -823,6 +740,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"
+        },
+        "name": "MII PR ICU Einstellung Inspirationsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
         },
         "name": "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
@@ -886,9 +810,23 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
+        },
+        "name": "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
         },
         "name": "MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"
+        },
+        "name": "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
         "exampleBoolean": false
       },
       {
@@ -928,9 +866,44 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzfrequenz"
+        },
+        "name": "MII PR ICU MUV Herzfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-herzzeitvolumen"
+        },
+        "name": "MII PR ICU MUV Herzzeitvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"
+        },
+        "name": "MII PR ICU MUV Ideales Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-intrakranieller-druck"
+        },
+        "name": "MII PR ICU MUV Intrakranieller Druck (ICP)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
         },
         "name": "MII PR ICU MUV Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"
+        },
+        "name": "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
         "exampleBoolean": false
       },
       {
@@ -942,6 +915,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil"
+        },
+        "name": "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
         },
         "name": "MII PR ICU MUV Koerperlaenge",
@@ -949,9 +929,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"
+        },
+        "name": "MII PR ICU MUV Kohlendioxid Produktion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-kopfumfang"
         },
         "name": "MII PR ICU MUV Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck"
+        },
+        "name": "MII PR ICU MUV Pulmonalarterieller Wedge-Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "name": "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
         "exampleBoolean": false
       },
       {
@@ -992,6 +993,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-bps"
+        },
+        "name": "MII PR ICU Score BPS",
+        "description": "Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-cam-icu"
+        },
+        "name": "MII PR ICU Score CAM-ICU",
+        "description": "Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
         },
         "name": "MII PR ICU Score Faces Pain Scale Revised",
@@ -1007,6 +1024,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-icdsc"
+        },
+        "name": "MII PR ICU Score ICDSC",
+        "description": "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
         },
         "name": "MII PR ICU Score Numerische Ratingskala",
@@ -1015,10 +1040,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-sofa"
+        },
+        "name": "MII PR ICU Score SOFA",
+        "description": "Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
         },
         "name": "MII PR ICU Score Visuelle Analogskala",
         "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
+        },
+        "name": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\nDer Score wird als quantitativer Wert dokumentiert.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-zopa"
+        },
+        "name": "MII PR ICU Score ZOPA",
+        "description": "Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis.",
         "exampleBoolean": false
       },
       {
@@ -1126,14 +1175,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"
-        },
-        "name": "MII VS ICU Category Observation Bilanzen HL7",
-        "description": "ValueSet defining HL7 observation categories for ICU Bilanzen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
         },
         "name": "MII VS ICU Category Procedure Beatmung SNOMED",
@@ -1197,30 +1238,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"
-        },
-        "name": "MII VS ICU Code Observation Bilanzen ISO11073",
-        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten ISO/IEEE 11073-Parameter.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"
-        },
-        "name": "MII VS ICU Code Observation Bilanzen LOINC",
-        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten LOINC-Parameter.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-bilanzen-snomed"
-        },
-        "name": "MII VS ICU Code Observation Bilanzen SNOMED",
-        "description": "Dieses ValueSet enthaelt Codes fuer die im Kontext einer Bilanz verwendeten SNOMED-Parameter.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073"
         },
         "name": "MII VS ICU Code Observation extrakorporale Verfahren ISO11073",
@@ -1241,20 +1258,6 @@
         },
         "name": "MII VS ICU Code Observation extrakorporale Verfahren SNOMED",
         "description": "Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-pupillengroesse"
-        },
-        "name": "MII VS ICU Code Observation Pupillengroesse",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-code-observation-pupillensymmetrie"
-        },
-        "name": "MII VS ICU Code Observation Pupillensymmetrie",
         "exampleBoolean": false
       },
       {
@@ -1287,6 +1290,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-icu-delirium-interpretation"
+        },
+        "name": "MII VS ICU Delirium Interpretation",
+        "description": "Delirium status interpretations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"
         },
         "name": "MII VS ICU DeviceMetric extrakorporale Verfahren",
@@ -1314,6 +1325,14 @@
         },
         "name": "MII VS ICU Score Category",
         "description": "Value set for ICU score observation categories",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-score-loinc"
+        },
+        "name": "MII VS ICU Score LOINC",
+        "description": "Value set for scores - LOINC codes",
         "exampleBoolean": false
       },
       {
@@ -1366,10 +1385,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter"
+          "reference": "ValueSet/mii-vs-icu-score-snomed"
         },
-        "name": "MII VS ICU Unit equivalent UCUM milliliter",
-        "description": "Dieses ValueSet enthält äquivalente Codes für Milliliter.",
+        "name": "MII VS Score SNOMED CT",
+        "description": "Value set for cores - SNOMED CT codes",
         "exampleBoolean": false
       },
       {
@@ -1925,6 +1944,30 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-score-bps"
+        },
+        "description": "Beispiel: MII PR ICU Score BPS",
+        "exampleBoolean": true,
+        "name": "Score Bps"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-cam-icu"
+        },
+        "description": "Beispiel: MII PR ICU Score CAM-ICU",
+        "exampleBoolean": true,
+        "name": "Score Cam Icu"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-cam-icu-absent"
+        },
+        "description": "Beispiel: MII PR ICU Score CAM-ICU",
+        "exampleBoolean": true,
+        "name": "Score Cam Icu Absent"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-score-faces-pain-scale-revised"
         },
         "description": "Beispiel: MII PR ICU Score Faces Pain Scale Revised",
@@ -1938,6 +1981,14 @@
         "description": "Beispiel: MII PR ICU Score GCS",
         "exampleBoolean": true,
         "name": "Score Gcs"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-icdsc"
+        },
+        "description": "Beispiel: MII PR ICU Score ICDSC",
+        "exampleBoolean": true,
+        "name": "Score Icdsc"
       },
       {
         "reference": {
@@ -2343,7 +2394,394 @@
         {
           "nameUrl": "profiles.html",
           "title": "Profiles",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz.html",
+              "title": "MII PR ICU Bilanz",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Blutverlust",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Drainage Generisch",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-magensonde.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Magensonde",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-op-drainage.html",
+              "title": "MII PR ICU Bilanz Ausfuhr OP Drainage",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-stuhlgang.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Stuhlgang",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-urin.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Urin",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html",
+              "title": "MII PR ICU Bilanz Ausfuhr Wunddrainage",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html",
+              "title": "MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html",
+              "title": "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html",
+              "title": "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-muttermilch.html",
+              "title": "MII PR ICU Bilanz Einfuhr Muttermilch",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.html",
+              "title": "MII PR ICU Bilanz Einfuhr Orale Fluessigkeit",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.html",
+              "title": "MII PR ICU Bilanz Einfuhr Saeuglingsnahrung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-einfuhr-spendermilch.html",
+              "title": "MII PR ICU Bilanz Einfuhr Spendermilch",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html",
+              "title": "MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html",
+              "title": "MII PR ICU MUV zerebraler Perfusionsdruck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-score-rass.html",
+              "title": "MII PR ICU Score RASS",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-untersuchung-pupillenbefund.html",
+              "title": "MII PR ICU Untersuchung Pupillenbefund",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-untersuchung-pupillenform.html",
+              "title": "MII PR ICU Untersuchung Pupillenform",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-untersuchung-pupillengroesse.html",
+              "title": "MII PR ICU Untersuchung Pupillengroesse",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.html",
+              "title": "MII PR ICU Untersuchung Pupillenlichtreaktion Direkt",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html",
+              "title": "MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-mii-pr-icu-untersuchung-pupillensymmetrie.html",
+              "title": "MII PR ICU Untersuchung Pupillensymmetrie",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-herzzeitvolumen.html",
+              "title": "SD MII ICU Herzzeitvolumen",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-ideales-koerpergewicht.html",
+              "title": "SD MII ICU Ideales Koerpergewicht",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-intrakranieller-druck-icp.html",
+              "title": "SD MII ICU Intrakranieller Druck ICP",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.html",
+              "title": "SD MII ICU Koerpergewicht Percentil Altersabhaengig",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.html",
+              "title": "SD MII ICU Koerpergroesse Percentil",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerperkerntemperatur-stirn.html",
+              "title": "SD MII ICU Koerperkerntemperatur Stirn",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-achsel.html",
+              "title": "SD MII ICU Koerpertemperatur Achsel",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-atemwege.html",
+              "title": "SD MII ICU Koerpertemperatur Atemwege",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-blut.html",
+              "title": "SD MII ICU Koerpertemperatur Blut",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-brust.html",
+              "title": "SD MII ICU Koerpertemperatur Brust",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.html",
+              "title": "SD MII ICU Koerpertemperatur Brustwirbelsaeule",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-gelenk.html",
+              "title": "SD MII ICU Koerpertemperatur Gelenk",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-generisch.html",
+              "title": "SD MII ICU Koerpertemperatur Generisch",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-halswirbelsaeule.html",
+              "title": "SD MII ICU Koerpertemperatur Halswirbelsaeule",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-harnblase.html",
+              "title": "SD MII ICU Koerpertemperatur Harnblase",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-kern.html",
+              "title": "SD MII ICU Koerpertemperatur Kern",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-leiste.html",
+              "title": "SD MII ICU Koerpertemperatur Leiste",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.html",
+              "title": "SD MII ICU Koerpertemperatur Lendenwirbelsaeule",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-myokard.html",
+              "title": "SD MII ICU Koerpertemperatur Myokard",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-nasal.html",
+              "title": "SD MII ICU Koerpertemperatur nasal",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.html",
+              "title": "SD MII ICU Koerpertemperatur Nasen-Rachen-Raum",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-rektal.html",
+              "title": "SD MII ICU Koerpertemperatur rektal",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-speiseroehre.html",
+              "title": "SD MII ICU Koerpertemperatur Speiseroehre",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-stirn.html",
+              "title": "SD MII ICU Koerpertemperatur Stirn",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-trommelfell.html",
+              "title": "SD MII ICU Koerpertemperatur Trommelfell",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-unter-der-zunge.html",
+              "title": "SD MII ICU Koerpertemperatur unter der Zunge",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-koerpertemperatur-vaginal.html",
+              "title": "SD MII ICU Koerpertemperatur vaginal",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksatrialer-druck.html",
+              "title": "SD MII ICU Linksatrialer Druck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.html",
+              "title": "SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.html",
+              "title": "SD MII ICU Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.html",
+              "title": "SD MII ICU Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventrikulaerer-druck.html",
+              "title": "SD MII ICU Linksventrikulaerer Druck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventrikulaerer-herzindex.html",
+              "title": "SD MII ICU Linksventrikulaerer Herzindex",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventrikulaeres-schlagvolumen.html",
+              "title": "SD MII ICU Linksventrikulaeres Schlagvolumen",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.html",
+              "title": "SD MII ICU Linksventrikulaeres Schlagvolumenindex",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.html",
+              "title": "SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-monitoring-und-vitaldaten.html",
+              "title": "SD MII ICU Monitoring und Vitaldaten",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.html",
+              "title": "SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.html",
+              "title": "SD MII ICU Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.html",
+              "title": "SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-pulmonalarterieller-blutdruck.html",
+              "title": "SD MII ICU Pulmonalarterieller Blutdruck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-pulmonalarterieller-wedge-druck.html",
+              "title": "SD MII ICU Pulmonalarterieller Wedge Druck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.html",
+              "title": "SD MII ICU Pulmonalvaskulaerer Widerstandsindex",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-puls.html",
+              "title": "SD MII ICU Puls",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-rechtsatrialer-druck.html",
+              "title": "SD MII ICU Rechtsatrialer Druck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-rechtsventrikulaerer-druck.html",
+              "title": "SD MII ICU Rechtsventrikulaerer Druck",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html",
+              "title": "SD MII ICU Sonstige pulsatile Druecke Generisch",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.html",
+              "title": "SD MII ICU Systemischer Vaskulaerer Widerstandsindex",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "extern-sd-mii-icu-zentralvenoeser-blutdruck.html",
+              "title": "SD MII ICU Zentralvenoeser Blutdruck",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "capability-statements.html",
@@ -2417,6 +2855,10 @@
       {
         "code": "path-pages",
         "value": "input/intro-notes"
+      },
+      {
+        "code": "path-data",
+        "value": "input/data"
       },
       {
         "code": "i18n-default-lang",

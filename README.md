@@ -41,3 +41,21 @@ git clone --depth 1 --branch cache-store \
   https://github.com/medizininformatik-initiative/fhir-package-store /tmp/fps
 mkdir -p ~/.fhir/packages && cp -r /tmp/fps/packages/* ~/.fhir/packages/
 ```
+
+### ISiK-gehostete Profile im Leitfaden
+
+Die `sd-mii-icu-*`-Profile (und der zerebrale Perfusionsdruck) liegen im Paket
+`de.gematik.isik`. Der IG Publisher rendert nur eigene Profile; die CI rendert sie
+deshalb mit [ig-external-profiles-action](https://github.com/Gefyra/ig-external-profiles-action)
+in einem Hilfs-IG und legt nur das HTML unter `input/includes/extern-*` ab
+(gitignored, nicht im Paket). Konfiguration: `external-profiles.yaml`, eine Seite
+je Profil unter `input/pagecontent/extern-*.md`. Beides wird mit
+`python3 scripts/gen-external-profiles.py` aus dem gepinnten Paket erzeugt
+(`--check` prüft auf Drift) — nach jedem ISiK-Pin-Wechsel neu ausführen.
+
+Lokal vor `_genonce.sh` (Node, Java, SUSHI und `publisher.jar` vorausgesetzt):
+
+```bash
+git clone --depth 1 --branch v1.3.0 https://github.com/Gefyra/ig-external-profiles-action /tmp/iep
+node /tmp/iep/bin/ig-external-profiles.js --ig . --publisher input-cache/publisher.jar
+```

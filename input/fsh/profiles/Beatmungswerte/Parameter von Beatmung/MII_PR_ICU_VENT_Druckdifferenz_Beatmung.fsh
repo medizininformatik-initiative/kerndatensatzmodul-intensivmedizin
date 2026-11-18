@@ -13,9 +13,7 @@ Title: "MII PR ICU Druckdifferenz Beatmung"
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] ^patternCoding.code = #76154-4
-* code.coding[loinc] ^patternCoding.display = "Airway pressure delta^on ventilator"
+* code.coding[loinc] = $loinc#76154-4 "Airway pressure delta --on ventilator"
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] ^patternCoding.code = #152720
-* code.coding[IEEE-11073] ^patternCoding.display = "Inspiratory airway pressure relative to PEEP or BAP."
+* code.coding[IEEE-11073] = $ieee-11073#152720 "MDC_VENT_PRESS_AWAY_DELTA"
 * valueQuantity = $ucum#cm[H2O]

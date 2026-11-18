@@ -23,9 +23,6 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // SOFA components
 * component 6..6 MS
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #closed
 // slicing frame moved here from the parent MII_PR_ICU_Score (see MIGRATION FIX there)
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -41,10 +38,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // Respiratory (PaO2/FiO2)
 * component[respiratory]
-  * code
-    * insert sofa-component-coding-slicing
-    * coding[loinc] = $loinc#96823-0 "Respiration [Score] SOFA"
-    * coding[sct] = $sct#xxxx "SOFA Subscore - Respiratory" // TODO: find appropriate SCT code
+  * code = $loinc#96823-0
+  * code.coding 1..1
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Respiratory component"
@@ -52,10 +47,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // Cardiovascular (hypotension and vasopressor requirement)
 * component[cardiovascular]
-  * code
-    * insert sofa-component-coding-slicing
-    * coding[loinc] = $loinc#96826-3 "Cardiovascular [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Cardiovascular" // TODO: find appropriate SCT code
+  * code = $loinc#96826-3
+  * code.coding 1..1
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Cardiovascular component"
@@ -63,11 +56,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // Hepatic (Bilirubin)
 * component[hepatic]
-  * code
-    * insert sofa-component-coding-slicing
-    * coding[loinc] = $loinc#96825-5 "Liver [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Hepatic" // TODO: find appropriate SCT code
-    * text = "Hepatic (Bilirubin)"
+  * code = $loinc#96825-5
+  * code.coding 1..1
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Hepatic component"
@@ -75,11 +65,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // Coagulation (Platelets)
 * component[coagulation]
-  * code
-    * insert sofa-component-coding-slicing
-    * coding[loinc] = $loinc#96824-8 "Coagulation [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Coagulation" // TODO: find appropriate SCT code
-    * text = "Coagulation (Platelets)"
+  * code = $loinc#96824-8
+  * code.coding 1..1
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Coagulation component"
@@ -87,11 +74,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // Renal (Creatinine or urine output)
 * component[renal]
-  * code
-    * insert sofa-component-coding-slicing
-    * coding[loinc] = $loinc#96828-9 "Renal [Score] SOFA"
-    * coding[sct] = $sct#xxx "SOFA Subscore - Renal" // TODO: find appropriate SCT code
-    * text = "Renal (Creatinine or urine output)"
+  * code = $loinc#96828-9
+  * code.coding 1..1
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Renal component"
@@ -99,10 +83,8 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 // Neurological (Glasgow Coma Scale)
 * component[neurological]
-  * code
-    * insert sofa-component-coding-slicing
-    * coding[loinc] = $loinc#96827-1 "Central nervous system [Score] SOFA"
-    * coding[sct] = $sct#xxxx "SOFA Subscore - Neurological" // TODO: find appropriate SCT code
+  * code = $loinc#96827-1
+  * code.coding 1..1
   * valueInteger 1..1
   * valueInteger obeys sofa-component-range
   * ^short = "Neurological component"
@@ -119,14 +101,3 @@ Invariant: sofa-component-range
 Description: "SOFA component score must be between 0 and 4"
 Severity: #error
 Expression: "valueInteger >= 0 and valueInteger <= 4" // TODO: test invariant
-
-RuleSet: sofa-component-coding-slicing
-* coding ^slicing.discriminator.type = #pattern
-* coding ^slicing.discriminator.path = "coding"
-* coding ^slicing.rules = #closed
-* coding ^slicing.description = "Component codes for SOFA score"
-* coding ^slicing.ordered = false
-* coding 2..2
-* coding contains
-    loinc 1..1 and
-    sct 1..1

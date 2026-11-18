@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-muv-koerpergroesse",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse",
-  "version": "2027.0.0-ballot",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_MUV_Koerpergroesse",
   "title": "MII PR ICU MUV Koerpergroesse",
   "status": "active",
@@ -134,6 +134,12 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding:loinc-zusatzcode",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc-zusatzcode",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:snomed",
         "path": "Observation.code.coding",
         "sliceName": "snomed",
@@ -142,7 +148,8 @@
         "patternCoding": {
           "system": "http://snomed.info/sct",
           "code": "1153637007"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:snomed.system",

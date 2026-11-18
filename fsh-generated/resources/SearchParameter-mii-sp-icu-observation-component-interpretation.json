@@ -32,13 +32,13 @@
       }
     }
   ],
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0",
   "name": "MII_SP_ICU_Observation_Component_Interpretation",
   "status": "active",
   "experimental": false,
   "date": "2025-02-11",
   "description": "Suchparameter für Observation.component.interpretation",
-  "code": "component.interpretation",
+  "code": "component-interpretation",
   "base": [
     "Observation"
   ],
