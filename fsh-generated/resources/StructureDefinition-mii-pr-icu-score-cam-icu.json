@@ -66,7 +66,7 @@
         "max": "1",
         "patternCoding": {
           "code": "DGAI-CAM-ICU",
-          "system": "http://dgai.de"
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"
         },
         "mustSupport": true
       },

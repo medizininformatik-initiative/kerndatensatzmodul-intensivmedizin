@@ -5,13 +5,9 @@
   "name": "MII_CS_ICU_DGAI",
   "id": "mii-cs-icu-dgai",
   "title": "MII CS ICU DGAI",
-  "description": "Platzhaltercodes fuer klinische Assessments der DGAI ohne etablierten internationalen Code.",
+  "description": "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
   "concept": [
-    {
-      "code": "DGAI-ZOPA",
-      "display": "Zuerich Observation Pain Assessment (ZOPA)"
-    },
     {
       "code": "DGAI-CAPD",
       "display": "Cornell Assessment of Pediatric Delirium (CAPD)"
@@ -31,6 +27,26 @@
     {
       "code": "DGAI-SOS-PD",
       "display": "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD)"
+    },
+    {
+      "code": "DGAI-BPS",
+      "display": "Behavioral Pain Scale (BPS)"
+    },
+    {
+      "code": "DGAI-CAM-ICU",
+      "display": "Confusion Assessment Method for the ICU (CAM-ICU)"
+    },
+    {
+      "code": "DGAI-ZOPA",
+      "display": "Zuerich Observation Pain Assessment (ZOPA)"
+    },
+    {
+      "code": "DGAI-KI-ENTERALE-ERNAEHRUNG",
+      "display": "Kontraindikation gegen enterale Ernaehrung"
+    },
+    {
+      "code": "DGAI-KALORIENZIEL-24H",
+      "display": "Kalorienziel ueber 24h"
     }
   ],
   "version": "2027.0.0",
@@ -47,5 +63,5 @@
   ],
   "experimental": true,
   "caseSensitive": true,
-  "count": 6
+  "count": 10
 }

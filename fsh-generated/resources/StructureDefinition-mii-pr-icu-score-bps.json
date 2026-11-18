@@ -31,7 +31,7 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "bps-total-range",
+            "key": "mii-icu-score-bps-total-range",
             "human": "Der Gesamtwert der Behavioral Pain Scale (BPS) muss zwischen 3 und 12 liegen.",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-bps",
             "severity": "error",
@@ -79,7 +79,7 @@
         "max": "1",
         "patternCoding": {
           "code": "DGAI-BPS",
-          "system": "http://dgai.de"
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"
         },
         "mustSupport": true
       },
