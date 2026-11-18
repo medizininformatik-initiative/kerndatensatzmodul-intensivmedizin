@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzzeitvolumen | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-12 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Herzzeitvolumen |
+| Draft Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Herzzeitvolumen |
 
 **Usages:**
 
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Herzzeitvolumen",
   "title" : "MII PR ICU MUV Herzzeitvolumen",
   "status" : "draft",
-  "date" : "2026-11-12T16:20:08+00:00",
+  "date" : "2026-11-18T07:22:57+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
