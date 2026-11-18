@@ -21,4 +21,4 @@ Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der I
 
 * value[x] only integer
 
-* obeys sos-pd-total-range // Range: 0 - 17 
+* obeys mii-icu-score-sos-pd-total-range // Range: 0 - 17 

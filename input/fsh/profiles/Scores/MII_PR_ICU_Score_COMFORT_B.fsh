@@ -19,5 +19,5 @@ Description: "Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonv
 
 * value[x] only integer
 
-* obeys comfort-b-total-range // 6 - 30
+* obeys mii-icu-score-comfort-b-total-range // 6 - 30
 // „Atemreaktion" (beatmet) und „Weinen" (spontan atmend) schließen sich gegenseitig aus, deswegen nicht 7 - 35

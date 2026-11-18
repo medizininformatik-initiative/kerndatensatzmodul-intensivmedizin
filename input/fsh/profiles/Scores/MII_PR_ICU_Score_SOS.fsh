@@ -22,4 +22,4 @@ Description: "Früherkennung von Entzugssymptomen bei kritisch kranken Kindern a
 
 * value[x] only integer
 
-* obeys sos-total-range // 0 - 15
+* obeys mii-icu-score-sos-total-range // 0 - 15

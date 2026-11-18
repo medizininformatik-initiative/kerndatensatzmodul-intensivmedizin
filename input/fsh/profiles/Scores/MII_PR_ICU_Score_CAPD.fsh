@@ -23,4 +23,4 @@ Description: "Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instru
 
 * value[x] only integer
 
-* obeys capd-total-range // 0 - 32
+* obeys mii-icu-score-capd-total-range // 0 - 32

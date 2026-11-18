@@ -16,5 +16,7 @@ Description: "Total score of the Behavioral Pain Scale (BPS) for mechanically ve
 * code.coding[dgai] = $dgai#DGAI-BPS
 
 * value[x] only integer
-* obeys bps-total-range
+
+* obeys mii-icu-score-bps-total-range
+
 * component 0..0

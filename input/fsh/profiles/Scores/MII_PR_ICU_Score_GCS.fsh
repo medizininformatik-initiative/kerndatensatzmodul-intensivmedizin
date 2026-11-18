@@ -8,7 +8,7 @@ Title: "MII PR ICU Score GCS"
 * ^version = "2026.0.0"
 * ^status = #draft
 
-* obeys gcs-total-range // 3 - 15
+* obeys mii-icu-score-gcs-total-range // 3 - 15
 
 * code 1..1 MS
 * code.coding 3..3 MS
