@@ -53,3 +53,13 @@ Invariant: npass-sedation-total-range
 Description: "NPASS Sedierungs-Gesamtscore muss zwischen -10 und 0 liegen."
 * severity = #error
 * expression = "value.ofType(integer) >= -10 and value.ofType(integer) <= 0"
+
+Invariant: bps-total-range
+Description: "Der Gesamtwert der Behavioral Pain Scale (BPS) muss zwischen 3 und 12 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(integer) >= 3 and value.ofType(integer) <= 12)"
+
+Invariant: icdsc-total-range
+Description: "Der Gesamtwert der Intensive Care Delirium Screening Checklist (ICDSC) muss zwischen 0 und 8 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 8)"

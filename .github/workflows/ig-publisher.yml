@@ -20,10 +20,14 @@
 # Triggers:  push to every branch except gh-pages / fsh-generated, a pull
 #            request being opened or reopened, plus manual workflow_dispatch
 #            (rebuild one branch's preview). Every run builds the IG and its QA,
-#            but a PREVIEW is published only for dev and main. Feature and PR
-#            branches build and run QA without a preview: the Actions-mode deploy
-#            uploads the whole gh-pages tree, and every preview adds ~1 GB raw
-#            (~115 MB compressed), which pushed it over the 1 GB Pages limit.
+#            but a PREVIEW is published automatically only for dev and main.
+#            Feature and PR branches build and run QA without a preview: the
+#            Actions-mode deploy uploads the whole gh-pages tree, and every
+#            preview adds ~1 GB raw (~115 MB compressed), which pushed it over
+#            the 1 GB Pages limit.
+#            On demand: a manual run with the input `publish_preview` ticked
+#            publishes a preview for the selected branch as well. Such a preview
+#            is temporary: cleanup-gh-pages.yml removes it on its next run.
 #
 # Toggle:    vars.ENABLE_PREVIEW — ON by default. Set the repo variable
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
@@ -87,6 +91,11 @@ on:
   pull_request:
     types: [opened, reopened]
   workflow_dispatch:
+    inputs:
+      publish_preview:
+        description: "Publish a preview for this branch even if it is not dev or main (temporary; the next cleanup removes it)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # push previews to the gh-pages branch
@@ -137,20 +146,26 @@ jobs:
           ref: ${{ github.head_ref || github.ref }}
           persist-credentials: false
 
-      # Previews are published only for dev and main. Every other branch still
-      # builds (SUSHI + IG Publisher + QA) but publishes nothing, so gh-pages
-      # stays within the GitHub Pages size limit (1 GB per deployment).
+      # Previews are published automatically only for dev and main. Every other
+      # branch still builds (SUSHI + IG Publisher + QA) but publishes nothing,
+      # so gh-pages stays within the GitHub Pages size limit (1 GB per
+      # deployment). A manual run with `publish_preview` ticked publishes a
+      # preview for its branch on demand.
       - name: Decide whether this run publishes a preview
         id: preview
         shell: bash
+        env:
+          FORCE_PREVIEW: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_preview }}
         run: |
           set -euo pipefail
           publish=false
           reason=""
           if [[ "${PREVIEW_BRANCH}" == "dev" || "${PREVIEW_BRANCH}" == "main" ]]; then
             publish=true; reason="${PREVIEW_BRANCH} is always previewed"
+          elif [[ "${FORCE_PREVIEW}" == "true" ]]; then
+            publish=true; reason="requested with the publish_preview input of a manual run"
           else
-            reason="previews are published for dev and main only"
+            reason="previews are published for dev and main only; start a manual run with publish_preview to get one for this branch"
           fi
           echo "publish=${publish}" >> "${GITHUB_OUTPUT}"
           if [[ "${publish}" == "true" ]]; then

@@ -99,6 +99,22 @@
 </div>
 </div></details>
 <details>
+<summary>Scores<span class="cnt">11</span></summary><div class="body">
+<p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
+<div class="items">
+<a href="StructureDefinition-mii-pr-icu-score-bps.html">BPS</a>
+<a href="StructureDefinition-mii-pr-icu-score-cam-icu.html">CAM-ICU</a>
+<a href="StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html">Faces Pain Scale Revised</a>
+<a href="StructureDefinition-mii-pr-icu-score-gcs.html">GCS</a>
+<a href="StructureDefinition-mii-pr-icu-score-icdsc.html">ICDSC</a>
+<a href="StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html">Numerische Ratingskala</a>
+<a href="StructureDefinition-mii-pr-icu-score-sofa.html">SOFA</a>
+<a href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html">Visuelle Analogskala</a>
+<a href="StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html">Wong-Baker-FACES-Schmerzskala</a>
+<a href="StructureDefinition-mii-pr-icu-score-zopa.html">ZOPA</a>
+</div>
+</div></details>
+<details>
 <summary>Geräteinformationen<span class="cnt">1</span></summary><div class="body">
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-device.html">Device</a>
