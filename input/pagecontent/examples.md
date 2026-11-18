@@ -179,13 +179,14 @@ The module ships **144 examples** (at least one per profile family, incl. comple
 | [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.html) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html) (ISiK) |
 | [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.html) | [MII PR ICU Untersuchung Pupillensymmetrie](extern-mii-pr-icu-untersuchung-pupillensymmetrie.html) (ISiK) |
 
-#### Scores (9)
+#### Scores (10)
 
 | Example | illustrates profile |
 |---|---|
 | [Score](Observation-mii-exa-icu-score.html) | [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.html) |
 | [Score Bps](Observation-mii-exa-icu-score-bps.html) | [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.html) |
 | [Score Cam Icu](Observation-mii-exa-icu-score-cam-icu.html) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.html) |
+| [Score Cam Icu Absent](Observation-mii-exa-icu-score-cam-icu-absent.html) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.html) |
 | [Score Faces Pain Scale Revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.html) | [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html) |
 | [Score Gcs](Observation-mii-exa-icu-score-gcs.html) | [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.html) |
 | [Score Icdsc](Observation-mii-exa-icu-score-icdsc.html) | [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.html) |

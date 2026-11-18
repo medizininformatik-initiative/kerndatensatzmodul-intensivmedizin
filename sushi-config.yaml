@@ -696,6 +696,10 @@ resources:
     name: "Score Bps"
     description: "Beispiel: MII PR ICU Score BPS"
     exampleBoolean: true
+  Observation/mii-exa-icu-score-cam-icu-absent:
+    name: "Score Cam Icu Absent"
+    description: "Beispiel: MII PR ICU Score CAM-ICU"
+    exampleBoolean: true
   Observation/mii-exa-icu-score-cam-icu:
     name: "Score Cam Icu"
     description: "Beispiel: MII PR ICU Score CAM-ICU"

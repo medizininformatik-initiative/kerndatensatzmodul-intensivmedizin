@@ -251,6 +251,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-score-cam-icu-absent"
+        },
+        "name": "Score Cam Icu Absent",
+        "description": "Beispiel: MII PR ICU Score CAM-ICU",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-score-bps"
         },
         "name": "Score Bps",
