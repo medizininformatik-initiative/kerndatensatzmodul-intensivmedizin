@@ -251,6 +251,30 @@
     "resource": [
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-score-bps"
+        },
+        "name": "Score Bps",
+        "description": "Beispiel: MII PR ICU Score BPS",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-cam-icu"
+        },
+        "name": "Score Cam Icu",
+        "description": "Beispiel: MII PR ICU Score CAM-ICU",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-icdsc"
+        },
+        "name": "Score Icdsc",
+        "description": "Beispiel: MII PR ICU Score ICDSC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
         },
         "description": "Beispiel: MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",

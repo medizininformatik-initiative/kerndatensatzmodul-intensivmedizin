@@ -692,6 +692,14 @@ resources:
     name: "Patient"
     description: "Beispielinstanz des Moduls"
     exampleBoolean: true
+  Observation/mii-exa-icu-score-bps:
+    name: "Score Bps"
+    description: "Beispiel: MII PR ICU Score BPS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-cam-icu:
+    name: "Score Cam Icu"
+    description: "Beispiel: MII PR ICU Score CAM-ICU"
+    exampleBoolean: true
   Observation/mii-exa-icu-score-faces-pain-scale-revised:
     name: "Score Faces Pain Scale Revised"
     description: "Beispiel: MII PR ICU Score Faces Pain Scale Revised"
@@ -699,6 +707,10 @@ resources:
   Observation/mii-exa-icu-score-gcs:
     name: "Score Gcs"
     description: "Beispiel: MII PR ICU Score GCS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-icdsc:
+    name: "Score Icdsc"
+    description: "Beispiel: MII PR ICU Score ICDSC"
     exampleBoolean: true
   Observation/mii-exa-icu-score-numerische-ratingskala:
     name: "Score Numerische Ratingskala"
