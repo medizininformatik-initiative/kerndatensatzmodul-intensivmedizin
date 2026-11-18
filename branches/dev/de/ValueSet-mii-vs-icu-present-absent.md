@@ -16,7 +16,6 @@ Present or absent findings
 
  **References** 
 
-* [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md)
 * [MII PR ICU Score ZOPA](StructureDefinition-mii-pr-icu-score-zopa.md)
 
 ### Logical Definition (CLD)
@@ -43,7 +42,7 @@ Present or absent findings
   "title" : "MII VS ICU Present Absent",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-18T07:22:57+00:00",
+  "date" : "2026-11-18T07:53:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

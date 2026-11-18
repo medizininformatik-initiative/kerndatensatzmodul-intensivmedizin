@@ -12,12 +12,12 @@
 | Draft Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_ICDSC |
 
  
-Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium. 
+Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen. 
 
 **Usages:**
 
+* Examples for this Profile: [Observation/mii-exa-icu-score-icdsc](Observation-mii-exa-icu-score-icdsc.md)
 * CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
-* This Profile is not used by any profiles in this Specification
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.icu|current/StructureDefinition/StructureDefinition-mii-pr-icu-score-icdsc.json)
 
@@ -49,16 +49,14 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 26 elements
- Must-Support: 8 elements
+Mandatory: 2 elements
+ Prohibited: 3 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
-* The element 1 is sliced based on the value of Observation.value[x]
-* The element 1 is sliced based on the value of Observation.component
-* The element 1 is sliced based on the value of Observation.component.value[x]
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 
  **Schlüsselelemente-Ansicht** 
 
@@ -84,16 +82,14 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 26 elements
- Must-Support: 8 elements
+Mandatory: 2 elements
+ Prohibited: 3 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
-* The element 1 is sliced based on the value of Observation.value[x]
-* The element 1 is sliced based on the value of Observation.component
-* The element 1 is sliced based on the value of Observation.component.value[x]
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 
  
 
@@ -112,7 +108,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_ICDSC",
   "title" : "MII PR ICU Score ICDSC",
   "status" : "draft",
-  "date" : "2026-11-18T07:22:57+00:00",
+  "date" : "2026-11-18T07:53:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -121,7 +117,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium.",
+  "description" : "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -163,53 +159,61 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "differential" : {
     "element" : [{
       "id" : "Observation",
-      "path" : "Observation"
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "icdsc-total-range",
+        "severity" : "error",
+        "human" : "Der Gesamtwert der Intensive Care Delirium Screening Checklist (ICDSC) muss zwischen 0 und 8 liegen.",
+        "expression" : "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 8)",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
+      }]
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "max" : "0"
     },
     {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
+      "min" : 1,
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "1351995008",
-        "display" : "Intensive Care Delirium Screening Checklist score (observable entity)"
+        "code" : "1351995008"
       }
+    },
+    {
+      "id" : "Observation.code.coding:ieee11073",
+      "path" : "Observation.code.coding",
+      "sliceName" : "ieee11073",
+      "max" : "0"
     },
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.value[x]:valueInteger",
-      "path" : "Observation.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-score-range",
-        "severity" : "error",
-        "human" : "ICDSC total score must be between 0 and 8",
-        "expression" : "value >= 0 and value <= 8",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
       }]
     },
     {
       "id" : "Observation.interpretation",
       "path" : "Observation.interpretation",
       "short" : "Delirium status",
-      "definition" : "No delirium (0), subsyndromal delirium (1-3), delirium (≥4)",
+      "definition" : "Optional interpretation of the screening result. A total score of 4 or higher indicates a positive delirium screen.",
       "binding" : {
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"
@@ -218,376 +222,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
     {
       "id" : "Observation.component",
       "path" : "Observation.component",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "code"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 8,
-      "max" : "8"
-    },
-    {
-      "id" : "Observation.component:altered-consciousness",
-      "path" : "Observation.component",
-      "sliceName" : "altered-consciousness",
-      "short" : "Altered consciousness",
-      "definition" : "No response (5 points in GCS), need for vigorous stimulation to obtain any response (1 point), or spontaneously drowsy (RASS -1 to -3) but easy to arouse (1 point)",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:altered-consciousness.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Altered level of consciousness"
-    },
-    {
-      "id" : "Observation.component:altered-consciousness.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:altered-consciousness.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:inattention",
-      "path" : "Observation.component",
-      "sliceName" : "inattention",
-      "short" : "Inattention",
-      "definition" : "Difficulty following conversation or instructions, easily distracted by external stimuli, difficulty shifting focus",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:inattention.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Inattention"
-    },
-    {
-      "id" : "Observation.component:inattention.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:inattention.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:disorientation",
-      "path" : "Observation.component",
-      "sliceName" : "disorientation",
-      "short" : "Disorientation",
-      "definition" : "Manifest disorientation to time, place, or person (≥ 1 error)",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:disorientation.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Disorientation"
-    },
-    {
-      "id" : "Observation.component:disorientation.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:disorientation.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:hallucination-delusion",
-      "path" : "Observation.component",
-      "sliceName" : "hallucination-delusion",
-      "short" : "Hallucination, delusion, or psychosis",
-      "definition" : "Clinical manifestation of hallucination or behavior suggestive of hallucination, gross distortion or misrepresentation of reality",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:hallucination-delusion.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Hallucination, delusion, or psychosis"
-    },
-    {
-      "id" : "Observation.component:hallucination-delusion.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:hallucination-delusion.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:psychomotor-agitation-retardation",
-      "path" : "Observation.component",
-      "sliceName" : "psychomotor-agitation-retardation",
-      "short" : "Psychomotor agitation or retardation",
-      "definition" : "Hyperactivity requiring sedation or restraints, hypoactivity or clinically noticeable psychomotor slowing",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:psychomotor-agitation-retardation.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Psychomotor agitation or retardation"
-    },
-    {
-      "id" : "Observation.component:psychomotor-agitation-retardation.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:psychomotor-agitation-retardation.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:inappropriate-speech-mood",
-      "path" : "Observation.component",
-      "sliceName" : "inappropriate-speech-mood",
-      "short" : "Inappropriate speech or mood",
-      "definition" : "Inappropriate, disorganized, or incoherent speech, inappropriate display of emotion",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:inappropriate-speech-mood.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Inappropriate speech or mood"
-    },
-    {
-      "id" : "Observation.component:inappropriate-speech-mood.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:inappropriate-speech-mood.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:sleep-wake-disturbance",
-      "path" : "Observation.component",
-      "sliceName" : "sleep-wake-disturbance",
-      "short" : "Sleep/wake cycle disturbance",
-      "definition" : "Sleeping less than 4 hours or frequent awakening at night, sleeping most of the day",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:sleep-wake-disturbance.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Sleep/wake cycle disturbance"
-    },
-    {
-      "id" : "Observation.component:sleep-wake-disturbance.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:sleep-wake-disturbance.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
-    },
-    {
-      "id" : "Observation.component:symptom-fluctuation",
-      "path" : "Observation.component",
-      "sliceName" : "symptom-fluctuation",
-      "short" : "Symptom fluctuation",
-      "definition" : "Fluctuation of manifestation of any item or symptom over 24 hours",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.component:symptom-fluctuation.code.text",
-      "path" : "Observation.component.code.text",
-      "patternString" : "Symptom fluctuation"
-    },
-    {
-      "id" : "Observation.component:symptom-fluctuation.value[x]",
-      "path" : "Observation.component.value[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
-        }],
-        "ordered" : false,
-        "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "Observation.component:symptom-fluctuation.value[x]:valueInteger",
-      "path" : "Observation.component.value[x]",
-      "sliceName" : "valueInteger",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }],
-      "constraint" : [{
-        "key" : "icdsc-item-range",
-        "severity" : "error",
-        "human" : "ICDSC item score must be 0 or 1",
-        "expression" : "value = 0 or value = 1",
-        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
-      }]
+      "max" : "0"
     }]
   }
 }

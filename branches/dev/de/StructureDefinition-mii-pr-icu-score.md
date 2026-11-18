@@ -16,7 +16,7 @@ Parent profile for ICU scoring systems. Scores are represented as Observations w
 
 **Usages:**
 
-* Derived from this Profile: [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md), [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md), [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md), [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.md)... Show 4 more, [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md), [MII PR ICU Score SOFA](StructureDefinition-mii-pr-icu-score-sofa.md), [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) and [MII PR ICU Score ZOPA](StructureDefinition-mii-pr-icu-score-zopa.md)
+* Derived from this Profile: [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.md), [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md), [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md), [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md)... Show 5 more, [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.md), [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md), [MII PR ICU Score SOFA](StructureDefinition-mii-pr-icu-score-sofa.md), [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) and [MII PR ICU Score ZOPA](StructureDefinition-mii-pr-icu-score-zopa.md)
 * Examples for this Profile: [Observation/mii-exa-icu-score](Observation-mii-exa-icu-score.md)
 * CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
@@ -109,7 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-11-18T07:22:57+00:00",
+  "date" : "2026-11-18T07:53:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

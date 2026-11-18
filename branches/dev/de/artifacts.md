@@ -115,10 +115,11 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) |  |
 | [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |  |
 | [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |  |
-| [ MII PR ICU Score CAM-ICU  ](StructureDefinition-mii-pr-icu-score-cam-icu.md) | Confusion Assessment Method for the ICU (CAM-ICU) for delirium assessment. A two-step process: first assess arousal using RASS (Feature 1), then evaluate four features if RASS ≥ -3. Delirium is present if Features 1 and 2 are present, plus either Feature 3 or 4. The result is a binary outcome: positive (delirium present) or negative (delirium absent). |
+| [ MII PR ICU Score BPS  ](StructureDefinition-mii-pr-icu-score-bps.md) | Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12. |
+| [ MII PR ICU Score CAM-ICU  ](StructureDefinition-mii-pr-icu-score-cam-icu.md) | Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative. |
 | [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. |
 | [ MII PR ICU Score GCS  ](StructureDefinition-mii-pr-icu-score-gcs.md) |  |
-| [ MII PR ICU Score ICDSC  ](StructureDefinition-mii-pr-icu-score-icdsc.md) | Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 0: no delirium, 1-3: subsyndromal delirium, ≥4: delirium. |
+| [ MII PR ICU Score ICDSC  ](StructureDefinition-mii-pr-icu-score-icdsc.md) | Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen. |
 | [ MII PR ICU Score Numerische Ratingskala  ](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) | Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. |
 | [ MII PR ICU Score SOFA  ](StructureDefinition-mii-pr-icu-score-sofa.md) | Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction. |
 | [ MII PR ICU Score Visuelle Analogskala  ](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) | Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. |
@@ -276,8 +277,12 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Muv Zerebraler Perfusionsdruck  ](Observation-mii-exa-icu-muv-zerebraler-perfusionsdruck.md) | Beispiel: MII PR ICU MUV zerebraler Perfusionsdruck |
 | [ Patient  ](Patient-mii-exa-icu-patient.md) | Beispielinstanz des Moduls |
 | [ Score  ](Observation-mii-exa-icu-score.md) | Beispiel: MII PR ICU Score |
+| [ Score Bps  ](Observation-mii-exa-icu-score-bps.md) | Beispiel: MII PR ICU Score BPS |
+| [ Score Cam Icu  ](Observation-mii-exa-icu-score-cam-icu.md) | Beispiel: MII PR ICU Score CAM-ICU |
+| [ Score Cam Icu Absent  ](Observation-mii-exa-icu-score-cam-icu-absent.md) | Beispiel: MII PR ICU Score CAM-ICU |
 | [ Score Faces Pain Scale Revised  ](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | Beispiel: MII PR ICU Score Faces Pain Scale Revised |
 | [ Score Gcs  ](Observation-mii-exa-icu-score-gcs.md) | Beispiel: MII PR ICU Score GCS |
+| [ Score Icdsc  ](Observation-mii-exa-icu-score-icdsc.md) | Beispiel: MII PR ICU Score ICDSC |
 | [ Score Numerische Ratingskala  ](Observation-mii-exa-icu-score-numerische-ratingskala.md) | Beispiel: MII PR ICU Score Numerische Ratingskala |
 | [ Score Rass  ](Observation-mii-exa-icu-score-rass.md) | Beispiel: MII PR ICU Score RASS |
 | [ Score Visuelle Analogskala  ](Observation-mii-exa-icu-score-visuelle-analogskala.md) | Beispiel: MII PR ICU Score Visuelle Analogskala |

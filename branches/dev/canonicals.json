@@ -342,6 +342,13 @@
   "name" : "MII_PR_ICU_Score"
 },
 {
+  "id" : "mii-pr-icu-score-bps",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-bps",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Score_BPS"
+},
+{
   "id" : "mii-pr-icu-score-cam-icu",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu",

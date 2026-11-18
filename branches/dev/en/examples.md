@@ -175,13 +175,17 @@ The module ships **144 examples** (at least one per profile family, incl. comple
 | [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.md)(ISiK) |
 | [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | [MII PR ICU Untersuchung Pupillensymmetrie](extern-mii-pr-icu-untersuchung-pupillensymmetrie.md)(ISiK) |
 
-#### Scores (6)
+#### Scores (10)
 
 | | |
 | :--- | :--- |
 | [Score](Observation-mii-exa-icu-score.md) | [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.md) |
+| [Score Bps](Observation-mii-exa-icu-score-bps.md) | [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.md) |
+| [Score Cam Icu](Observation-mii-exa-icu-score-cam-icu.md) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md) |
+| [Score Cam Icu Absent](Observation-mii-exa-icu-score-cam-icu-absent.md) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md) |
 | [Score Faces Pain Scale Revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) |
 | [Score Gcs](Observation-mii-exa-icu-score-gcs.md) | [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md) |
+| [Score Icdsc](Observation-mii-exa-icu-score-icdsc.md) | [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.md) |
 | [Score Numerische Ratingskala](Observation-mii-exa-icu-score-numerische-ratingskala.md) | [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) |
 | [Score Rass](Observation-mii-exa-icu-score-rass.md) | [MII PR ICU Score RASS](extern-mii-pr-icu-score-rass.md)(ISiK) |
 | [Score Visuelle Analogskala](Observation-mii-exa-icu-score-visuelle-analogskala.md) | [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) |
