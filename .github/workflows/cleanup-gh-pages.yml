@@ -109,8 +109,9 @@ jobs:
               awk '
                 {
                   sub("refs/heads/", "", $2)
-                  # Only dev and main get previews (ig-publisher.yml); any
-                  # other preview is left over and removed.
+                  # Only dev and main keep their previews (ig-publisher.yml);
+                  # any other preview is left over, or was published on
+                  # demand with publish_preview, and is removed.
                   if ($2 == "dev" || $2 == "main") {
                     print $2
                   }
