@@ -15,10 +15,11 @@ Description: "Früherkennung von Entzugssymptomen bei kritisch kranken Kindern a
 // Kein SNOMED/LOINC-Code fuer SOS(-PD) bekannt -> sct/loinc-Slices aus Basis bleiben leer
 * code.coding contains 
     dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-SOS "Sophia Observation withdrawal Symptoms-scale (SOS)"
+* code.coding[dgai] = $dgai#DGAI-SOS
 * code.coding[dgai].system 1..1 MS
 * code.coding[dgai].code 1..1 MS
+* code.coding[dgai].version 1..1 MS
 
 * value[x] only integer
 
-// Range: 0 - 15 
+* obeys sos-total-range // 0 - 15

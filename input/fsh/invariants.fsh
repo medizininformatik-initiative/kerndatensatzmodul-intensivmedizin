@@ -63,3 +63,18 @@ Invariant: icdsc-total-range
 Description: "Der Gesamtwert der Intensive Care Delirium Screening Checklist (ICDSC) muss zwischen 0 und 8 liegen."
 * severity = #error
 * expression = "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 8)"
+
+Invariant: capd-total-range
+Description: "Der Gesamtwert des Cornell Assessment of Pediatric Delirium (CAPD) muss zwischen 0 und 32 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 32)"
+
+Invariant: comfort-b-total-range
+Description: "Der Gesamtwert der COMFORT-Behavior-Skala (COMFORT-B) muss zwischen 6 und 30 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(integer) >= 6 and value.ofType(integer) <= 30)"
+
+Invariant: sos-total-range
+Description: "Der Gesamtwert der Sophia Observation withdrawal Symptoms-scale (SOS) muss zwischen 0 und 15 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 15)"

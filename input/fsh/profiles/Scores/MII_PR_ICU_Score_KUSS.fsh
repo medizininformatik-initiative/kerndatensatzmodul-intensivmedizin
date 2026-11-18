@@ -12,9 +12,10 @@ Description: "Kindliche Unbehagens- und Schmerzskala (KUSS) - Fremdbeobachtungss
 // Kein SNOMED/LOINC-Code fuer KUSS bekannt -> sct/loinc-Slices aus Basis bleiben leer
 * code.coding contains 
     dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-KUSS "Kindliche Unbehagens- und Schmerzskala (KUSS)"
+* code.coding[dgai] = $dgai#DGAI-KUSS
 * code.coding[dgai].system 1..1 MS
 * code.coding[dgai].code 1..1 MS
+* code.coding[dgai].version 1..1 MS
 
 * obeys mii-icu-painscale-0-10
 

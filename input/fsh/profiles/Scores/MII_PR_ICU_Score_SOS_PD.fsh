@@ -15,9 +15,10 @@ Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der I
 // Kein SNOMED/LOINC-Code fuer SOS(-PD) bekannt -> sct/loinc-Slices aus Basis bleiben leer
 * code.coding contains 
     dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-SOS-PD "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD)"
+* code.coding[dgai] = $dgai#DGAI-SOS-PD
 * code.coding[dgai].system 1..1 MS
 * code.coding[dgai].code 1..1 MS
+* code.coding[dgai].version 1..1 MS
 
 * value[x] only integer
 

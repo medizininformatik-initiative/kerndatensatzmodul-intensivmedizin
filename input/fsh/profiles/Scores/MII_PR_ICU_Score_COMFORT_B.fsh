@@ -12,11 +12,12 @@ Description: "Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonv
 // Kein SNOMED/LOINC-Code fuer COMFORT-B bekannt -> sct/loinc-Slices aus Basis bleiben leer
 * code.coding contains 
     dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-COMFORT-B "COMFORT-Behavior-Skala (COMFORT-B)"
+* code.coding[dgai] = $dgai#DGAI-COMFORT-B
 * code.coding[dgai].system 1..1 MS
 * code.coding[dgai].code 1..1 MS
+* code.coding[dgai].version 1..1 MS
 
 * value[x] only integer
 
-// Beschränken auf Wertebereich 6 - 30 -> Invariant?
+* obeys comfort-b-total-range // 6 - 30
 // „Atemreaktion" (beatmet) und „Weinen" (spontan atmend) schließen sich gegenseitig aus, deswegen nicht 7 - 35
