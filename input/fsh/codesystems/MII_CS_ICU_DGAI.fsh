@@ -19,3 +19,7 @@ Description: "Platzhaltercodes fuer klinische Assessments der DGAI ohne etablier
 * #DGAI-KUSS "Kindliche Unbehagens- und Schmerzskala (KUSS)"
 * #DGAI-SOS "Sophia Observation withdrawal Symptoms-scale (SOS)"
 * #DGAI-SOS-PD "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD)"
+
+// Erwachsenen-Scores
+* #DGAI-BPS "Behavioral Pain Scale (BPS)"
+* #DGAI-CAM-ICU "Confusion Assessment Method for the ICU (CAM-ICU)"
