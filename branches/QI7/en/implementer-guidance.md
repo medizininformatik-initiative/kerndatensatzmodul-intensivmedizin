@@ -6,8 +6,6 @@
 
 ## Guidance for Implementers
 
-This page was intentionally left blank.
-
 ### Compatibility
 
 This module is intended to provide usable and comprehensive profiles within the framework of MII projects and also provide a basis for more in-depth/further-reaching profiling work on this basis. Furthermore, in the interests of interoperability, compatibility with existing national and international standards should be ensured wherever possible.
@@ -18,7 +16,7 @@ We aim for this module to be compatible with national profiles that have already
 
 * the [basic profiles of HL7 Deutschland e.V.](https://simplifier.net/basisprofil-de-r4)
 * the [KBV basic profiles](https://simplifier.net/base1x0)
-* the [basic profiles of the Gematik ISiK project](https://simplifier.net/isik-stufe-5)
+* the [basic profiles of the gematik ISiK project](https://gemspec.gematik.de/ig/fhir/isik/basis/latest/index.html) and the ISiK modules related to intensive care:
 
 In addition, the profiles created here should be compatible with existing international profiles from [HL7 International](http://hl7.org/fhir/) (see e.g. those for [Observations](http://hl7.org/fhir/observation-profiles.html)).
 

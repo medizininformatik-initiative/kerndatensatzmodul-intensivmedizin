@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung | *Version*:2027.0.0 |
-| Active Stand: 2026-11-17 | *Maschinenlesbarer Name*:MII_PR_ICU_Parameter_Von_Beatmung |
+| Active Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_PR_ICU_Parameter_Von_Beatmung |
 
 **Usages:**
 
@@ -122,7 +122,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
   "name" : "MII_PR_ICU_Parameter_Von_Beatmung",
   "title" : "MII PR ICU Parameter von Beatmung",
   "status" : "active",
-  "date" : "2026-11-17T23:36:12+00:00",
+  "date" : "2026-11-18T07:51:09+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -269,6 +269,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "sliceName" : "sct",
       "min" : 0,
       "max" : "*",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct"
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -299,6 +302,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "sliceName" : "loinc",
       "min" : 0,
       "max" : "*",
+      "patternCoding" : {
+        "system" : "http://loinc.org"
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -329,6 +335,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "sliceName" : "IEEE-11073",
       "min" : 0,
       "max" : "*",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101"
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
