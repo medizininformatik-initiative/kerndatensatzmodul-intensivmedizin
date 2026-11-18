@@ -1,7 +1,7 @@
 Profile: MII_PR_ICU_Score_COMFORT_B
 Parent: MII_PR_ICU_Score
 Id: mii-pr-icu-score-comfort-b
-Title: "MII PR ICU Score COMFORT B"
+Title: "MII PR ICU Score COMFORT-B"
 Description: "Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonverbalen Kindern mittels COMFORT-Behavior-Skala (COMFORT-B)."
 * insert PR_CS_VS_Version
 * insert Publisher

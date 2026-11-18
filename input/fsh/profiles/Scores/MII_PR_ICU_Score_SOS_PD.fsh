@@ -2,7 +2,7 @@ Profile: MII_PR_ICU_Score_SOS_PD
 Parent: MII_PR_ICU_Score
 Id: mii-pr-icu-score-sos-pd
 Title: "MII PR ICU Score SOS-PD"
-Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium."
+Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium. Der Scope dieses Profils liegt auf dem Assessment des Deliriums, für die Entzugssymptomatik ist das Profil MII_PR_ICU_Score_SOS zu verwenden. Die elterliche Verhaltensbeurteilung des Kindes wird in diesem Profil nicht abgebildet, nur der Gesamtwert des Scores."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos-pd"
@@ -10,7 +10,6 @@ Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der I
 * ^status = #draft
 
 // Aufteilung des SOS-PD in SOS (Entzug) und SOS-PD (Delir) als separate Profile mit unterschiedlichem Scope
-
 
 // Kein SNOMED/LOINC-Code fuer SOS(-PD) bekannt -> sct/loinc-Slices aus Basis bleiben leer
 * code.coding contains 
@@ -22,4 +21,4 @@ Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der I
 
 * value[x] only integer
 
-// Range: 0 - 17 -> so korrekt fachlich verifizieren, weil hier Eltern-Assessment nicht abgebildet ist 
+* obeys sos-pd-total-range // Range: 0 - 17 

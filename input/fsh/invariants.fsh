@@ -78,3 +78,8 @@ Invariant: sos-total-range
 Description: "Der Gesamtwert der Sophia Observation withdrawal Symptoms-scale (SOS) muss zwischen 0 und 15 liegen."
 * severity = #error
 * expression = "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 15)"
+
+Invariant: sos-pd-total-range
+Description: "Der Gesamtwert der Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD) muss zwischen 0 und 17 liegen."
+* severity = #error
+* expression = "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 17)"
