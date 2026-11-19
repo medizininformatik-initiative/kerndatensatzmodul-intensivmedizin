@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc | *Version*:2027.0.0 |
-| Draft as of 2026-11-18 | *Computable Name*:MII_PR_ICU_Score_ICDSC |
+| Draft as of 2026-11-19 | *Computable Name*:MII_PR_ICU_Score_ICDSC |
 
  
 Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_ICDSC",
   "title" : "MII PR ICU Score ICDSC",
   "status" : "draft",
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "id" : "Observation",
       "path" : "Observation",
       "constraint" : [{
-        "key" : "icdsc-total-range",
+        "key" : "mii-icu-score-icdsc-total-range",
         "severity" : "error",
         "human" : "Der Gesamtwert der Intensive Care Delirium Screening Checklist (ICDSC) muss zwischen 0 und 8 liegen.",
         "expression" : "value.exists() implies (value.ofType(integer) >= 0 and value.ofType(integer) <= 8)",

@@ -18,7 +18,7 @@ Profile: [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu
 
 **category**: Survey, Assessment scales (assessment scale)
 
-**code**: Confusion Assessment Method for the ICU (CAM-ICU)
+**code**: CAM-ICU
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)](Patient-mii-exa-icu-patient.md)
 
@@ -55,9 +55,10 @@ Profile: [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu
   }],
   "code" : {
     "coding" : [{
-      "system" : "http://dgai.de",
-      "code" : "DGAI-CAM-ICU",
-      "display" : "Confusion Assessment Method for the ICU (CAM-ICU)"
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+      "version" : "2027.0.0",
+      "code" : "cam-icu",
+      "display" : "CAM-ICU"
     }]
   },
   "subject" : {

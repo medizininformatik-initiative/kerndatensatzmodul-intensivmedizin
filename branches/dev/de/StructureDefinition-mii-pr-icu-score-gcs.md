@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
+| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
 
 **Usages:**
 
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_GCS",
   "title" : "MII PR ICU Score GCS",
   "status" : "draft",
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -159,10 +159,10 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "id" : "Observation",
       "path" : "Observation",
       "constraint" : [{
-        "key" : "gcs-total-range",
+        "key" : "mii-icu-score-gcs-total-range",
         "severity" : "error",
         "human" : "Glasgow Coma Scale Gesamtscore muss zwischen 3 und 15 liegen.",
-        "expression" : "value.exists() implies (value.ofType(Quantity) >= 3 and value.ofType(Quantity) <= 15)",
+        "expression" : "value.exists() implies (value.ofType(Quantity).value >= 3 and value.ofType(Quantity).value <= 15)",
         "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs"
       }]
     },

@@ -93,6 +93,14 @@
         "title": "MII PR ICU Score CAM-ICU"
       },
       {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-capd",
+        "title": "MII PR ICU Score CAPD"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-comfort-b",
+        "title": "MII PR ICU Score COMFORT-B"
+      },
+      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
         "title": "MII PR ICU Score Faces Pain Scale Revised"
       },
@@ -105,12 +113,24 @@
         "title": "MII PR ICU Score ICDSC"
       },
       {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-kuss",
+        "title": "MII PR ICU Score KUSS"
+      },
+      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala",
         "title": "MII PR ICU Score Numerische Ratingskala"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
         "title": "MII PR ICU Score SOFA"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos",
+        "title": "MII PR ICU Score SOS"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos-pd",
+        "title": "MII PR ICU Score SOS-PD"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",

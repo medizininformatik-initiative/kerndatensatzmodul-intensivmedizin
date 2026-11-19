@@ -1,4 +1,11 @@
 [{
+  "id" : "mii-cs-icu-dgai",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+  "version" : "2027.0.0",
+  "name" : "MII_CS_ICU_DGAI"
+},
+{
   "id" : "mii-ig-icu",
   "type" : "ImplementationGuide",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ImplementationGuide/mii-ig-icu",
@@ -356,6 +363,20 @@
   "name" : "MII_PR_ICU_Score_CAM_ICU"
 },
 {
+  "id" : "mii-pr-icu-score-capd",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-capd",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Score_CAPD"
+},
+{
+  "id" : "mii-pr-icu-score-comfort-b",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-comfort-b",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Score_COMFORT_B"
+},
+{
   "id" : "mii-pr-icu-score-faces-pain-scale-revised",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
@@ -377,6 +398,13 @@
   "name" : "MII_PR_ICU_Score_ICDSC"
 },
 {
+  "id" : "mii-pr-icu-score-kuss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-kuss",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Score_KUSS"
+},
+{
   "id" : "mii-pr-icu-score-numerische-ratingskala",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala",
@@ -389,6 +417,20 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa",
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_Score_SOFA"
+},
+{
+  "id" : "mii-pr-icu-score-sos",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Score_SOS"
+},
+{
+  "id" : "mii-pr-icu-score-sos-pd",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos-pd",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Score_SOS_PD"
 },
 {
   "id" : "mii-pr-icu-score-visuelle-analogskala",

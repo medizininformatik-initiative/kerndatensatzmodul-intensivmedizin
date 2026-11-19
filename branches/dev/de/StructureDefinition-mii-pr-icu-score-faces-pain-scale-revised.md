@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_Faces_Pain_Scale_Revised |
+| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_Faces_Pain_Scale_Revised |
 
  
-Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. 
+Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden. 
 
 **Usages:**
 
@@ -47,7 +47,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 7 elements
+Mandatory: 2 elements
 
  **Schlüsselelemente-Ansicht** 
 
@@ -71,7 +71,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 7 elements
+Mandatory: 2 elements
 
  
 
@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
   "title" : "MII PR ICU Score Faces Pain Scale Revised",
   "status" : "draft",
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -99,7 +99,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
+  "description" : "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -153,7 +153,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "min" : 1
+      "min" : 2
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "57696-7"
+      }
     },
     {
       "id" : "Observation.code.coding:sct",
@@ -162,40 +172,15 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "min" : 1,
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "1284909003",
-        "display" : "Faces Pain Scale - Revised score (observable entity)"
+        "code" : "1284909003"
       }
     },
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "min" : 1,
       "type" : [{
-        "code" : "Quantity"
+        "code" : "integer"
       }]
-    },
-    {
-      "id" : "Observation.value[x].value",
-      "path" : "Observation.value[x].value",
-      "min" : 1
-    },
-    {
-      "id" : "Observation.value[x].unit",
-      "path" : "Observation.value[x].unit",
-      "min" : 1,
-      "patternString" : "{score}"
-    },
-    {
-      "id" : "Observation.value[x].system",
-      "path" : "Observation.value[x].system",
-      "min" : 1,
-      "patternUri" : "http://unitsofmeasure.org"
-    },
-    {
-      "id" : "Observation.value[x].code",
-      "path" : "Observation.value[x].code",
-      "min" : 1,
-      "patternCode" : "{score}"
     }]
   }
 }

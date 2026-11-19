@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-bps | *Version*:2027.0.0 |
-| Draft as of 2026-11-18 | *Computable Name*:MII_PR_ICU_Score_BPS |
+| Draft as of 2026-11-19 | *Computable Name*:MII_PR_ICU_Score_BPS |
 
  
 Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_BPS",
   "title" : "MII PR ICU Score BPS",
   "status" : "draft",
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "id" : "Observation",
       "path" : "Observation",
       "constraint" : [{
-        "key" : "bps-total-range",
+        "key" : "mii-icu-score-bps-total-range",
         "severity" : "error",
         "human" : "Der Gesamtwert der Behavioral Pain Scale (BPS) muss zwischen 3 und 12 liegen.",
         "expression" : "value.exists() implies (value.ofType(integer) >= 3 and value.ofType(integer) <= 12)",
@@ -105,13 +105,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "closed"
-      },
       "min" : 1
     },
     {
@@ -139,9 +132,27 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
-        "system" : "http://dgai.de",
-        "code" : "DGAI-BPS"
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+        "code" : "bps"
       },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:dgai.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:dgai.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:dgai.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1,
       "mustSupport" : true
     },
     {

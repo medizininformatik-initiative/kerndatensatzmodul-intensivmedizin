@@ -24,7 +24,7 @@ Profile: [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-
 
 **effective**: 2021-12-06 00:52:00+0100
 
-**value**: score (Details: UCUM code3 = '3')
+**value**: 4
 
 
 
@@ -54,7 +54,12 @@ Profile: [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-
   }],
   "code" : {
     "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "57696-7"
+    },
+    {
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "1284909003",
       "display" : "Faces Pain Scale - Revised score (observable entity)"
     }]
@@ -67,11 +72,7 @@ Profile: [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-
     }
   },
   "effectiveDateTime" : "2021-12-06T00:52:00+01:00",
-  "valueQuantity" : {
-    "unit" : "score",
-    "system" : "http://unitsofmeasure.org",
-    "code" : "3"
-  }
+  "valueInteger" : 4
 }
 
 ```

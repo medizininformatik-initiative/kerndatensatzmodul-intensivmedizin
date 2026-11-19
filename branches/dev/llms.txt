@@ -98,6 +98,10 @@
 
 ## Resources
 
+### CodeSystems
+
+* [MII CS ICU DGAI](en/CodeSystem-mii-cs-icu-dgai.md)
+
 ### ValueSets
 
 * [MII VS ICU BodySite Observation Beatmung](en/ValueSet-mii-vs-icu-body-site-observation-beatmung.md)
@@ -177,11 +181,16 @@
 * [MII PR ICU Parameter von Extrakorporalen Verfahren](en/StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md)
 * [MII PR ICU Score BPS](en/StructureDefinition-mii-pr-icu-score-bps.md)
 * [MII PR ICU Score CAM-ICU](en/StructureDefinition-mii-pr-icu-score-cam-icu.md)
+* [MII PR ICU Score CAPD](en/StructureDefinition-mii-pr-icu-score-capd.md)
+* [MII PR ICU Score COMFORT-B](en/StructureDefinition-mii-pr-icu-score-comfort-b.md)
 * [MII PR ICU Score Faces Pain Scale Revised](en/StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md)
 * [MII PR ICU Score GCS](en/StructureDefinition-mii-pr-icu-score-gcs.md)
 * [MII PR ICU Score ICDSC](en/StructureDefinition-mii-pr-icu-score-icdsc.md)
+* [MII PR ICU Score KUSS](en/StructureDefinition-mii-pr-icu-score-kuss.md)
 * [MII PR ICU Score Numerische Ratingskala](en/StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md)
 * [MII PR ICU Score SOFA](en/StructureDefinition-mii-pr-icu-score-sofa.md)
+* [MII PR ICU Score SOS-PD](en/StructureDefinition-mii-pr-icu-score-sos-pd.md)
+* [MII PR ICU Score SOS](en/StructureDefinition-mii-pr-icu-score-sos.md)
 * [MII PR ICU Score Visuelle Analogskala](en/StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md)
 * [MII PR ICU Score Wong-Baker-FACES-Schmerzskala](en/StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.md)
 * [MII PR ICU Score ZOPA](en/StructureDefinition-mii-pr-icu-score-zopa.md)
@@ -226,6 +235,14 @@
 ### ImplementationGuides
 
 * [MII IG ICU](en/ImplementationGuide-mii-ig-icu.md)
+
+### Observations
+
+* [mii-exa-icu-score-capd](en/Observation-mii-exa-icu-score-capd.md)
+* [mii-exa-icu-score-comfort-b](en/Observation-mii-exa-icu-score-comfort-b.md)
+* [mii-exa-icu-score-kuss](en/Observation-mii-exa-icu-score-kuss.md)
+* [mii-exa-icu-score-sos-pd](en/Observation-mii-exa-icu-score-sos-pd.md)
+* [mii-exa-icu-score-sos](en/Observation-mii-exa-icu-score-sos.md)
 
 ### Parameters
 

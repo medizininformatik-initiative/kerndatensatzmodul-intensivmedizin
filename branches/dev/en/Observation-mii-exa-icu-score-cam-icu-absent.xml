@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-score-cam-icu-absent</b></p><a name="mii-exa-icu-score-cam-icu-absent"> </a><a name="hcmii-exa-icu-score-cam-icu-absent"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-score-cam-icu.html">MII PR ICU Score CAM-ICU</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span>, <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>code</b>: <span title="Codes:{http://dgai.de DGAI-CAM-ICU}">Confusion Assessment Method for the ICU (CAM-ICU)</span></p><p><b>subject</b>: <a href="Patient-mii-exa-icu-patient.html">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)</a></p><p><b>effective</b>: 2026-11-18 09:00:00+0100</p><p><b>dataAbsentReason</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-performed}">Not Performed</span></p><p><b>note</b>: </p><blockquote><div><p>CAM-ICU assessment was not performed.</p>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Observation mii-exa-icu-score-cam-icu-absent</b></p><a name="mii-exa-icu-score-cam-icu-absent"> </a><a name="hcmii-exa-icu-score-cam-icu-absent"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-icu-score-cam-icu.html">MII PR ICU Score CAM-ICU</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span>, <span title="Codes:{http://snomed.info/sct 273249006}">Assessment scales (assessment scale)</span></p><p><b>code</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai cam-icu}">CAM-ICU</span></p><p><b>subject</b>: <a href="Patient-mii-exa-icu-patient.html">Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)</a></p><p><b>effective</b>: 2026-11-18 09:00:00+0100</p><p><b>dataAbsentReason</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/data-absent-reason not-performed}">Not Performed</span></p><p><b>note</b>: </p><blockquote><div><p>CAM-ICU assessment was not performed.</p>
 </div></blockquote></div>
   </text>
   <status value="final"/>
@@ -28,9 +28,10 @@
   </category>
   <code>
     <coding>
-      <system value="http://dgai.de"/>
-      <code value="DGAI-CAM-ICU"/>
-      <display value="Confusion Assessment Method for the ICU (CAM-ICU)"/>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+      <version value="2027.0.0"/>
+      <code value="cam-icu"/>
+      <display value="CAM-ICU"/>
     </coding>
   </code>
   <subject>

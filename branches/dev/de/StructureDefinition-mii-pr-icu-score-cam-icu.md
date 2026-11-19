@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_CAM_ICU |
+| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_CAM_ICU |
 
  
 Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative. 
@@ -47,15 +47,9 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 2 elements
- Must-Support: 1 element
+Mandatory: 5 elements
+ Must-Support: 4 elements
  Prohibited: 4 elements
-
-**Slices**
-
-This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
-
-* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 
  **Schlüsselelemente-Ansicht** 
 
@@ -79,15 +73,9 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 2 elements
- Must-Support: 1 element
+Mandatory: 5 elements
+ Must-Support: 4 elements
  Prohibited: 4 elements
-
-**Slices**
-
-This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
-
-* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 
  
 
@@ -106,7 +94,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_CAM_ICU",
   "title" : "MII PR ICU Score CAM-ICU",
   "status" : "draft",
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -162,13 +150,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "closed"
-      },
       "min" : 1
     },
     {
@@ -196,9 +177,27 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "min" : 1,
       "max" : "1",
       "patternCoding" : {
-        "system" : "http://dgai.de",
-        "code" : "DGAI-CAM-ICU"
+        "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+        "code" : "cam-icu"
       },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:dgai.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:dgai.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:dgai.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1,
       "mustSupport" : true
     },
     {

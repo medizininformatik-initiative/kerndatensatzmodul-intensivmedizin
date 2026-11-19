@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck | *Version*:2027.0.0 |
-| Draft as of 2026-11-18 | *Computable Name*:MII_PR_ICU_MUV_Pulmonalarterieller_Wedge_Druck |
+| Draft as of 2026-11-19 | *Computable Name*:MII_PR_ICU_MUV_Pulmonalarterieller_Wedge_Druck |
 
 **Usages:**
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
   "name" : "MII_PR_ICU_MUV_Pulmonalarterieller_Wedge_Druck",
   "title" : "MII PR ICU MUV Pulmonalarterieller Wedge-Druck",
   "status" : "draft",
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

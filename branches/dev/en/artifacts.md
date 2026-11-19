@@ -115,11 +115,16 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |  |
 | [ MII PR ICU Score BPS  ](StructureDefinition-mii-pr-icu-score-bps.md) | Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12. |
 | [ MII PR ICU Score CAM-ICU  ](StructureDefinition-mii-pr-icu-score-cam-icu.md) | Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative. |
-| [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. |
+| [ MII PR ICU Score CAPD  ](StructureDefinition-mii-pr-icu-score-capd.md) | Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instrument für Delir auf der pädiatrischen Intensivstation. Validiert für Alter von 0 bis 21 Jahren, einschließlich präverbale und entwicklungsverzögerte Kinder. Voraussetzung RASS >= -3 |
+| [ MII PR ICU Score COMFORT-B  ](StructureDefinition-mii-pr-icu-score-comfort-b.md) | Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonverbalen Kindern mittels COMFORT-Behavior-Skala (COMFORT-B). |
+| [ MII PR ICU Score Faces Pain Scale Revised  ](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md) | Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden. |
 | [ MII PR ICU Score GCS  ](StructureDefinition-mii-pr-icu-score-gcs.md) |  |
 | [ MII PR ICU Score ICDSC  ](StructureDefinition-mii-pr-icu-score-icdsc.md) | Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen. |
+| [ MII PR ICU Score KUSS  ](StructureDefinition-mii-pr-icu-score-kuss.md) | Kindliche Unbehagens- und Schmerzskala (KUSS) - Fremdbeobachtungsskala für den postoperativen Schmerz bei Kindern von der Geburt bis zum Ende des 4. Lebensjahres. Für sedierte, beatmete oder relaxierte Kinder nicht validiert. |
 | [ MII PR ICU Score Numerische Ratingskala  ](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md) | Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10. 0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert. |
 | [ MII PR ICU Score SOFA  ](StructureDefinition-mii-pr-icu-score-sofa.md) | Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction. |
+| [ MII PR ICU Score SOS  ](StructureDefinition-mii-pr-icu-score-sos.md) | Früherkennung von Entzugssymptomen bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale. Der Scope dieses Profils liegt auf dem Assessment der Entzugssymptomatik, für das Delir ist das Profil MII_PR_ICU_Score_SOS_PD zu verwenden. Abgebildet wird nur der Gesamtwert des Entzugsscores. |
+| [ MII PR ICU Score SOS-PD  ](StructureDefinition-mii-pr-icu-score-sos-pd.md) | Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium. Der Scope dieses Profils liegt auf dem Assessment des Deliriums, für die Entzugssymptomatik ist das Profil MII_PR_ICU_Score_SOS zu verwenden. Die elterliche Verhaltensbeurteilung des Kindes wird in diesem Profil nicht abgebildet, nur der Gesamtwert des Scores. |
 | [ MII PR ICU Score Visuelle Analogskala  ](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) | Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. |
 | [ MII PR ICU Score Wong-Baker-FACES-Schmerzskala  ](StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.md) | Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala. Der Score wird als quantitativer Wert dokumentiert. |
 | [ MII PR ICU Score ZOPA  ](StructureDefinition-mii-pr-icu-score-zopa.md) | Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis. |
@@ -172,6 +177,14 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ MII VS ICU Unit equivalent UCUM dyn.s/cm5/m2  ](ValueSet-mii-vs-icu-unit-equivalent-ucum-dyn-s-cm5-m2.md) | Dieses ValueSet enthält äquivalente Codes für dyn.s/cm5/m2. |
 | [ MII VS ICU Unit equivalent percent 1  ](ValueSet-mii-vs-icu-unit-equivalent-percent-1.md) | Dieses ValueSet enthält äquivalente Codes für Prozent und 1. |
 | [ MII VS Score SNOMED CT  ](ValueSet-mii-vs-icu-score-snomed.md) | Value set for cores - SNOMED CT codes |
+
+### Terminology: Code Systems 
+
+These define new code systems used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [ MII CS ICU DGAI  ](CodeSystem-mii-cs-icu-dgai.md) | Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe). |
 
 ### Example: Example Instances 
 
@@ -334,5 +347,10 @@ These are resources that are used within this implementation guide that do not f
 
 | |
 | :--- |
+| [ mii-exa-icu-score-capd  ](Observation-mii-exa-icu-score-capd.md) |
+| [ mii-exa-icu-score-comfort-b  ](Observation-mii-exa-icu-score-comfort-b.md) |
+| [ mii-exa-icu-score-kuss  ](Observation-mii-exa-icu-score-kuss.md) |
+| [ mii-exa-icu-score-sos  ](Observation-mii-exa-icu-score-sos.md) |
+| [ mii-exa-icu-score-sos-pd  ](Observation-mii-exa-icu-score-sos-pd.md) |
 | [ mii-param-icu-manifest  ](Parameters-mii-param-icu-manifest.md) |
 

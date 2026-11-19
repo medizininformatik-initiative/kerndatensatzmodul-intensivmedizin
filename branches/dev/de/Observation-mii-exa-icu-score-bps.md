@@ -18,7 +18,7 @@ Profile: [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.md)
 
 **category**: Survey, Assessment scales (assessment scale)
 
-**code**: Behavioral Pain Scale (BPS)
+**code**: BPS
 
 **subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
@@ -55,9 +55,10 @@ Profile: [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.md)
   }],
   "code" : {
     "coding" : [{
-      "system" : "http://dgai.de",
-      "code" : "DGAI-BPS",
-      "display" : "Behavioral Pain Scale (BPS)"
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+      "version" : "2027.0.0",
+      "code" : "bps",
+      "display" : "BPS"
     }]
   },
   "subject" : {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-18 | *Maschinenlesbarer Name*:MII_VS_ICU_Delirium_Interpretation |
+| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_VS_ICU_Delirium_Interpretation |
 
  
 Delirium status interpretations 
@@ -43,7 +43,7 @@ Delirium status interpretations
   "title" : "MII VS ICU Delirium Interpretation",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-18T07:53:09+00:00",
+  "date" : "2026-11-19T16:33:24+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
