@@ -571,6 +571,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/mii-cs-icu-dgai"
+        },
+        "name": "MII CS ICU DGAI",
+        "description": "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-lm-intensivmedizin"
         },
         "name": "MII Logical Model Intensivmedizin",
@@ -1009,10 +1017,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-capd"
+        },
+        "name": "MII PR ICU Score CAPD",
+        "description": "Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instrument für Delir auf der pädiatrischen Intensivstation. Validiert für Alter von 0 bis 21 Jahren, einschließlich präverbale und entwicklungsverzögerte Kinder. Voraussetzung RASS >= -3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-comfort-b"
+        },
+        "name": "MII PR ICU Score COMFORT-B",
+        "description": "Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonverbalen Kindern mittels COMFORT-Behavior-Skala (COMFORT-B).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
         },
         "name": "MII PR ICU Score Faces Pain Scale Revised",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden.",
         "exampleBoolean": false
       },
       {
@@ -1032,6 +1056,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-kuss"
+        },
+        "name": "MII PR ICU Score KUSS",
+        "description": "Kindliche Unbehagens- und Schmerzskala (KUSS) - Fremdbeobachtungsskala für den postoperativen Schmerz bei Kindern von der Geburt bis zum Ende des 4. Lebensjahres. Für sedierte, beatmete oder relaxierte Kinder nicht validiert.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
         },
         "name": "MII PR ICU Score Numerische Ratingskala",
@@ -1044,6 +1076,22 @@
         },
         "name": "MII PR ICU Score SOFA",
         "description": "Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-sos"
+        },
+        "name": "MII PR ICU Score SOS",
+        "description": "Früherkennung von Entzugssymptomen bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale. Der Scope dieses Profils liegt auf dem Assessment der Entzugssymptomatik, für das Delir ist das Profil MII_PR_ICU_Score_SOS_PD zu verwenden. Abgebildet wird nur der Gesamtwert des Entzugsscores.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-score-sos-pd"
+        },
+        "name": "MII PR ICU Score SOS-PD",
+        "description": "Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium. Der Scope dieses Profils liegt auf dem Assessment des Deliriums, für die Entzugssymptomatik ist das Profil MII_PR_ICU_Score_SOS zu verwenden. Die elterliche Verhaltensbeurteilung des Kindes wird in diesem Profil nicht abgebildet, nur der Gesamtwert des Scores.",
         "exampleBoolean": false
       },
       {
@@ -1390,6 +1438,41 @@
         "name": "MII VS Score SNOMED CT",
         "description": "Value set for cores - SNOMED CT codes",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-capd"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-score-capd"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-comfort-b"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-score-comfort-b"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-kuss"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-score-kuss"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-sos"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-score-sos"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-score-sos-pd"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-score-sos-pd"
       },
       {
         "reference": {

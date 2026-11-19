@@ -30,11 +30,11 @@
         "path": "Observation",
         "constraint": [
           {
-            "key": "gcs-total-range",
+            "key": "mii-icu-score-gcs-total-range",
             "human": "Glasgow Coma Scale Gesamtscore muss zwischen 3 und 15 liegen.",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs",
             "severity": "error",
-            "expression": "value.exists() implies (value.ofType(Quantity) >= 3 and value.ofType(Quantity) <= 15)"
+            "expression": "value.exists() implies (value.ofType(Quantity).value >= 3 and value.ofType(Quantity).value <= 15)"
           }
         ]
       },

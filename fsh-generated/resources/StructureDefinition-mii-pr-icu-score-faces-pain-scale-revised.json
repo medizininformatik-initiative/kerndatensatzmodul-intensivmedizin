@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-icu-score-faces-pain-scale-revised",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
-  "version": "2026.0.0",
+  "version": "2027.0.0",
   "name": "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
   "title": "MII PR ICU Score Faces Pain Scale Revised",
   "status": "draft",
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
+  "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -42,7 +42,17 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 1
+        "min": 2
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "patternCoding": {
+          "code": "57696-7",
+          "system": "http://loinc.org"
+        }
       },
       {
         "id": "Observation.code.coding:sct",
@@ -51,42 +61,17 @@
         "min": 1,
         "patternCoding": {
           "code": "1284909003",
-          "system": "http://snomed.info/sct",
-          "display": "Faces Pain Scale - Revised score (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "min": 1,
         "type": [
           {
-            "code": "Quantity"
+            "code": "integer"
           }
         ]
-      },
-      {
-        "id": "Observation.value[x].value",
-        "path": "Observation.value[x].value",
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x].unit",
-        "path": "Observation.value[x].unit",
-        "min": 1,
-        "patternString": "{score}"
-      },
-      {
-        "id": "Observation.value[x].system",
-        "path": "Observation.value[x].system",
-        "min": 1,
-        "patternUri": "http://unitsofmeasure.org"
-      },
-      {
-        "id": "Observation.value[x].code",
-        "path": "Observation.value[x].code",
-        "min": 1,
-        "patternCode": "{score}"
       }
     ]
   }

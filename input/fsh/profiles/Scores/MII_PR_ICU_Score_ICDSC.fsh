@@ -6,6 +6,7 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-icdsc"
+* ^version = "2027.0.0"
 * ^status = #draft
 
 * code.coding ^slicing.rules = #closed
@@ -15,7 +16,7 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 * code.coding[sct] = $sct#1351995008
 
 * value[x] only integer
-* obeys icdsc-total-range
+* obeys mii-icu-score-icdsc-total-range
 
 // Interpretation: delirium status categories
 * interpretation from mii-vs-icu-delirium-interpretation (extensible)
