@@ -128,7 +128,7 @@
         "definition": "Identifies which score/scale is being represented",
         "constraint": [
           {
-            "key": "mii-icu-loinc-sct-dgai-ieee11073",
+            "key": "mii-icu-score-supported-code",
             "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
             "severity": "error",
