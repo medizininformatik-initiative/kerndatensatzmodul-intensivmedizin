@@ -81,20 +81,25 @@
 </div>
 </div></details>
 <details>
-<summary>Balances<span class="cnt">1</span></summary><div class="body">
+<summary>Balances<span class="cnt">2</span></summary><div class="body">
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.html">Einfuhr Kalorien 24h</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html">Kalorienbedarf pro Tag</a>
 </div>
 </div></details>
 <details>
-<summary>Monitoring and vital signs (module-owned)<span class="cnt">8</span></summary><div class="body">
+<summary>Monitoring and vital signs (module-owned)<span class="cnt">11</span></summary><div class="body">
+<p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
+<a href="StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.html">Energieverbrauch Indirekte Kalorimetrie</a>
+<a href="StructureDefinition-mii-pr-icu-muv-geburtsgewicht.html">Geburtsgewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html">Koerperlaenge Bei Geburt</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
 </div>
 </div></details>
@@ -121,6 +126,17 @@
 </div>
 </div></details>
 </div>
+
+**Body measurements in the module-owned monitoring profiles**
+
+The module-owned monitoring base retains the ISiK 6.0.0 element rules with extensible MII measurement-code bindings. Recumbent body length, birth length and birth weight derive independently from this base and use only measurement-specific codes. They do not claim conformance to the German or FHIR body-height/body-weight profiles, which require the general LOINC codes.
+
+Body height and general body weight retain their German parent profiles and prohibit the inherited birth-specific LOINC slices. Recumbent length requires LOINC 8306-3 and SNOMED CT 1149101003; birth length requires SNOMED CT 169886007; birth weight requires LOINC 8339-4 and SNOMED CT 364589006. LOINC 8302-2 is excluded from birth length, and 29463-7 is excluded from birth weight. Required IEEE 11073 codes are 68060, 68058 and 68059, respectively. Height and length use Quantity in cm, general body weight uses Quantity in kg and birth weight uses Quantity in g.
+
+**Validator compatibility:** Recumbent length also requires the broader LOINC 8302-2 (Body height) because the HL7 Java validator bundled with IG Publisher 2.3.2 requires it when 8306-3 is present. LOINC 8306-3 remains the more precise code for recumbent length (NRA-592).
+
+Each measurement Coding must state the terminology edition actually used. The profiles do not fix editions or displays. The IEEE measurement coding remains required.
+
 <p class="icu-note"><b>ISiK-hosted profiles &mdash; de.gematik.isik 6.0.0</b><br>Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version &mdash; the list only changes with a deliberate pin bump. Each link opens the profile rendered in this guide (differential, snapshot, must support, definitions); the profiles themselves stay in the ISiK package.</p>
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->

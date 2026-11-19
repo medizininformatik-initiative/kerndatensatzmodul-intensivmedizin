@@ -1,0 +1,49 @@
+{
+  "resourceType": "Observation",
+  "id": "icu-energy-expenditure",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "41981-2",
+        "display": "Energy expended Reporting Period by Indirect calorimetry",
+        "version": "2.83"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "152812",
+        "display": "MDC_RESP_EXPENDED_ENERGY",
+        "version": "2024-12-05"
+      }
+    ]
+  },
+  "subject": {
+    "display": "Synthetic example patient"
+  },
+  "effectivePeriod": {
+    "start": "2026-01-01T09:00:00+01:00",
+    "end": "2026-01-01T09:30:00+01:00"
+  },
+  "valueQuantity": {
+    "value": 25,
+    "system": "http://unitsofmeasure.org",
+    "code": "kcal/kg/d",
+    "unit": "kilocalorie per kilogram per day"
+  }
+}

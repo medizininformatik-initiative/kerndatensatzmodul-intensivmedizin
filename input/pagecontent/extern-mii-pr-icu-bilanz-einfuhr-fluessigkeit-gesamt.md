@@ -3,4 +3,6 @@
 <!-- Migrated from the Simplifier guide page https://simplifier.net/guide/MIIIGIntensivecare-EN/MIIIGModulICU/Technical-implementation/FHIR-profiles/Balances/Liquid-balances-Observation/Balance-import-liquid-total-Observation.page.md?version=current (harvested 2026-08-27, spec 5.1d); the generated profile rendering was NOT copied - the IG Publisher regenerates it on the artifact page below. -->
 "Balance import liquid total (Observation)" is a characteristic of the generic profile for [(Liquid) balances (Observation)](extern-mii-pr-icu-bilanz.html). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
+Record the period covered by the total fluid intake in `effectivePeriod`. Only if that period is unknown may `effectiveDateTime` record when the total was determined.
+
 {% include extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html %}

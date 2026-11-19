@@ -395,6 +395,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Kalorienbedarf pro Tag",
+        "exampleBoolean": true,
+        "name": "Bilanz Kalorienbedarf Pro Tag"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"
         },
         "description": "Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
@@ -657,6 +665,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"
+        },
+        "name": "MII PR ICU Bilanz Kalorienbedarf pro Tag",
+        "description": "Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
         },
         "name": "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
@@ -860,6 +876,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten"
+        },
+        "name": "MII PR ICU Monitoring und Vitaldaten",
+        "description": "Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
         },
         "name": "MII PR ICU MUV Arterieller Blutdruck",
@@ -870,6 +894,22 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
         },
         "name": "MII PR ICU MUV Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+        },
+        "name": "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
+        "description": "Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
+        },
+        "name": "MII PR ICU MUV Geburtsgewicht",
+        "description": "Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later.",
         "exampleBoolean": false
       },
       {
@@ -919,6 +959,7 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-koerpergroesse"
         },
         "name": "MII PR ICU MUV Koerpergroesse",
+        "description": "Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles.",
         "exampleBoolean": false
       },
       {
@@ -933,6 +974,15 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge"
         },
         "name": "MII PR ICU MUV Koerperlaenge",
+        "description": "Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "name": "MII PR ICU MUV Koerperlaenge Bei Geburt",
+        "description": "Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later.",
         "exampleBoolean": false
       },
       {
@@ -1353,6 +1403,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-icu-method-kalorienbedarf"
+        },
+        "name": "MII VS ICU Method Kalorienbedarf",
+        "description": "SNOMED CT qualifiers for how daily energy requirement was determined. The codes do not identify particular equations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-icu-method-observation-blutdruck"
         },
         "name": "MII VS ICU Method Observation Blutdruck",
@@ -1587,6 +1645,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie"
+        },
+        "description": "Beispiel: MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
+        "exampleBoolean": true,
+        "name": "Muv Energieverbrauch Indirekte Kalorimetrie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-geburtsgewicht"
+        },
+        "description": "Beispiel: MII PR ICU MUV Geburtsgewicht",
+        "exampleBoolean": true,
+        "name": "Muv Geburtsgewicht"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-muv-herzfrequenz"
         },
         "description": "Beispiel: MII PR ICU MUV Herzfrequenz",
@@ -1656,6 +1730,14 @@
         "description": "Beispiel: MII PR ICU MUV Koerperlaenge",
         "exampleBoolean": true,
         "name": "Muv Koerperlaenge"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt"
+        },
+        "description": "Beispiel: MII PR ICU MUV Koerperlaenge Bei Geburt",
+        "exampleBoolean": true,
+        "name": "Muv Koerperlaenge Bei Geburt"
       },
       {
         "reference": {

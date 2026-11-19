@@ -81,20 +81,25 @@
 </div>
 </div></details>
 <details>
-<summary>Bilanzen<span class="cnt">1</span></summary><div class="body">
+<summary>Bilanzen<span class="cnt">2</span></summary><div class="body">
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.html">Einfuhr Kalorien 24h</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html">Kalorienbedarf pro Tag</a>
 </div>
 </div></details>
 <details>
-<summary>Monitoring und Vitaldaten (MII)<span class="cnt">8</span></summary><div class="body">
+<summary>Monitoring und Vitaldaten (MII)<span class="cnt">11</span></summary><div class="body">
+<p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
+<a href="StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.html">Energieverbrauch Indirekte Kalorimetrie</a>
+<a href="StructureDefinition-mii-pr-icu-muv-geburtsgewicht.html">Geburtsgewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html">Koerperlaenge Bei Geburt</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
 </div>
 </div></details>
@@ -121,6 +126,17 @@
 </div>
 </div></details>
 </div>
+
+**Körpermaße in den modul-eigenen Monitoring-Profilen**
+
+Das modul-eigene Basisprofil für Monitoring und Vitaldaten übernimmt die Elementregeln aus ISiK 6.0.0 und bindet die Messcodes erweiterbar (extensible) an die MII-ValueSets. Körperlänge im Liegen, Körperlänge bei Geburt und Geburtsgewicht leiten unabhängig von diesem Basisprofil ab und verwenden ausschließlich messungsspezifische Codes. Sie erheben keinen Anspruch auf Konformität zu den deutschen oder den FHIR-Profilen für Körpergröße und Körpergewicht, die die allgemeinen LOINC-Codes verlangen.
+
+Körpergröße und allgemeines Körpergewicht behalten ihre deutschen Elternprofile und schließen die geerbten geburtsspezifischen LOINC-Slices aus. Die Körperlänge im Liegen verlangt LOINC 8306-3 und SNOMED CT 1149101003, die Körperlänge bei Geburt SNOMED CT 169886007 und das Geburtsgewicht LOINC 8339-4 und SNOMED CT 364589006. LOINC 8302-2 ist bei der Körperlänge bei Geburt ausgeschlossen, 29463-7 beim Geburtsgewicht. Die verpflichtenden IEEE-11073-Codes sind 68060, 68058 beziehungsweise 68059. Größe und Länge werden als Quantity in cm angegeben, das allgemeine Körpergewicht als Quantity in kg und das Geburtsgewicht als Quantity in g.
+
+**Validator-Kompatibilität:** Die Körperlänge im Liegen verlangt zusätzlich den allgemeineren LOINC-Code 8302-2 (Body height), weil der HL7-Java-Validator im IG Publisher 2.3.2 ihn fordert, sobald 8306-3 vorhanden ist. LOINC 8306-3 bleibt der genauere Code für die Körperlänge im Liegen (NRA-592).
+
+Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.
+
 <p class="icu-note"><b>ISiK-gehostete Profile &mdash; de.gematik.isik 6.0.0</b><br>Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem bewussten Pin-Wechsel. Jeder Link &ouml;ffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.</p>
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->

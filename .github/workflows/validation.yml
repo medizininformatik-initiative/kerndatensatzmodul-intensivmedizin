@@ -66,6 +66,60 @@ permissions:
   pull-requests: write
 
 jobs:
+  profile-regressions:
+    name: ICU profile regressions and ISiK parity
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+      - uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Load ISiK dependency snapshots
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: cache-store
+          path: .fhir-package-store
+          persist-credentials: false
+      - name: Seed the FHIR package cache
+        run: |
+          mkdir -p "${HOME}/.fhir/packages"
+          cp -r .fhir-package-store/packages/. "${HOME}/.fhir/packages/"
+      - name: Compile current FSH
+        run: |
+          sushi_version=$(sed -n 's/^  SUSHI_VERSION: "\([^"]*\)"/\1/p' .github/workflows/ig-publisher.yml)
+          npm install --global "fsh-sushi@${sushi_version}"
+          sushi . --out "${RUNNER_TEMP}/icu-regressions"
+      - name: Check monitoring rules against the pinned ISiK package
+        run: |
+          python3 tests/profiles/check-monitoring-isik-parity.py \
+            "${HOME}/.fhir/packages/de.gematik.isik#6.0.0/package/StructureDefinition-sd-mii-icu-monitoring-und-vitaldaten.json" \
+            "${RUNNER_TEMP}/icu-regressions/fsh-generated/resources/StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.json"
+      - name: Check the scope of the temporary UCUM exception
+        run: python3 tests/profiles/check-ucum-advisor-scope.py "${RUNNER_TEMP}/icu-regressions/fsh-generated/resources"
+      - name: Run structural positive and negative cases
+        run: |
+          set -euo pipefail
+          # Reuse the IG toolchain pins and verify the downloaded executable.
+          version=$(sed -n 's/^  PUBLISHER_VERSION: "\([^"]*\)"/\1/p' .github/workflows/ig-publisher.yml)
+          checksum=$(sed -n 's/^  PUBLISHER_SHA256: "\([^"]*\)"/\1/p' .github/workflows/ig-publisher.yml)
+          curl --fail --location --silent --show-error \
+            "https://github.com/HL7/fhir-ig-publisher/releases/download/${version}/publisher.jar" \
+            --output "${RUNNER_TEMP}/publisher.jar"
+          echo "${checksum}  ${RUNNER_TEMP}/publisher.jar" | sha256sum --check
+          java -Xmx3g -cp "${RUNNER_TEMP}/publisher.jar" tests/profiles/RunProfileTests.java \
+            "${RUNNER_TEMP}/icu-regressions/fsh-generated/resources" tests/profiles/profiles.json
+      - name: Check the release draft filter
+        run: python3 scripts/strip-drafts.py --dry-run
+
   # The upstream dotnet workflow declares SIMPLIFIER_USERNAME/SIMPLIFIER_PASSWORD
   # as REQUIRED secrets — calling it without them fails at workflow evaluation
   # with zero steps ("Secret SIMPLIFIER_USERNAME is required, but not
