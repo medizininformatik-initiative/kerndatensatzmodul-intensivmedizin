@@ -12,9 +12,13 @@ Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der I
 // Aufteilung des SOS-PD in SOS (Entzug) und SOS-PD (Delir) als separate Profile mit unterschiedlichem Scope
 
 // Kein SNOMED/LOINC-Code fuer SOS(-PD) bekannt -> sct/loinc-Slices aus Basis bleiben leer
+* code.coding ^slicing.rules = #open
+* code.coding[loinc] 0..0
+* code.coding[sct] 0..0
+* code.coding[ieee11073] 0..0
 * code.coding contains 
     dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-SOS-PD
+* code.coding[dgai] = $dgai#ped-sos-pd
 * code.coding[dgai].system 1..1 MS
 * code.coding[dgai].code 1..1 MS
 * code.coding[dgai].version 1..1 MS

@@ -8,12 +8,15 @@ Description: "Overall result of the Confusion Assessment Method for the ICU (CAM
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu"
 * ^status = #draft
 
-* code.coding ^slicing.rules = #closed
+* code.coding ^slicing.rules = #open
 * code.coding[loinc] 0..0
 * code.coding[sct] 0..0
 * code.coding[ieee11073] 0..0
 * code.coding contains dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-CAM-ICU
+* code.coding[dgai] = $dgai#cam-icu
+* code.coding[dgai].system 1..1 MS
+* code.coding[dgai].code 1..1 MS
+* code.coding[dgai].version 1..1 MS
 
 * value[x] only CodeableConcept
 * valueCodeableConcept from mii-vs-icu-cam-icu-result (required)

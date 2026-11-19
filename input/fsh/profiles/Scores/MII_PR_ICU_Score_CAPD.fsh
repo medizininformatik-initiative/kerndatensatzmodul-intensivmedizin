@@ -10,9 +10,13 @@ Description: "Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instru
 * ^status = #draft
 
 // Kein SNOMED/LOINC-Code fuer CAPD bekannt -> sct/loinc-Slices aus Basis bleiben leer
+* code.coding ^slicing.rules = #open
+* code.coding[loinc] 0..0
+* code.coding[sct] 0..0
+* code.coding[ieee11073] 0..0
 * code.coding contains 
     dgai 1..1 MS
-* code.coding[dgai] = $dgai#DGAI-CAPD
+* code.coding[dgai] = $dgai#ped-capd
 * code.coding[dgai].system 1..1 MS
 * code.coding[dgai].code 1..1 MS
 * code.coding[dgai].version 1..1 MS

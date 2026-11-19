@@ -13,17 +13,21 @@ Description: "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierte
 // CodeSystem: DGAI Platzhaltercodes
 
 // Paed. Scores Prototypen
-* #DGAI-CAPD "Cornell Assessment of Pediatric Delirium (CAPD)"
-* #DGAI-COMFORT-B "COMFORT-Behavior-Skala (COMFORT-B)"
-* #DGAI-KUSS "Kindliche Unbehagens- und Schmerzskala (KUSS)"
-* #DGAI-SOS "Sophia Observation withdrawal Symptoms-scale (SOS)"  // Scope des Profils ist die Entzugssymptomatik. Für paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden.
-* #DGAI-SOS-PD "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD)" // Scope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet. Die elterliche Verhaltensbeurteilung wird nicht erfasst. Für Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden. 
+* #ped-capd "pediatric CAPD" "Cornell Assessment of Pediatric Delirium (CAPD)"
+* #ped-cbs "pediatric COMFORT-B-Scale" "COMFORT-Behavior-Skala (COMFORT-B)"
+* #ped-kuss "pediatric KUSS" "Kindliche Unbehagens- und Schmerzskala (KUSS)"
+* #ped-sos "pediatric SOS" """Sophia Observation withdrawal Symptoms-scale (SOS) Scope des Profils ist die Entzugssymptomatik. 
+Fuer paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden."""
+
+* #ped-sos-pd "pediatric SOS-PD" """Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD) 
+Scope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet. 
+Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden."""
 
 // Erwachsenen Scores Prototypen
-* #DGAI-BPS "Behavioral Pain Scale (BPS)"
-* #DGAI-CAM-ICU "Confusion Assessment Method for the ICU (CAM-ICU)"
-* #DGAI-ZOPA "Zuerich Observation Pain Assessment (ZOPA)"
+* #bps "BPS" "Behavioral Pain Scale (BPS)"
+* #cam-icu "CAM-ICU" "Confusion Assessment Method for the ICU (CAM-ICU)"
+* #DGAI-ZOPA "Zuerich Observation Pain Assessment (ZOPA)" // -> obsolet, wenn abschließend entschieden und Profil entfernt auch hier >>
 
 // Bilanz Profile / QI7
-* #DGAI-KI-ENTERALE-ERNAEHRUNG "Kontraindikation gegen enterale Ernaehrung"
-* #DGAI-KALORIENZIEL-24H "Kalorienziel ueber 24h"
+* #contraindication-enteral-nutrition "Contraindication to enteral nutrition" "Kontraindikation gegen enterale Ernaehrung"
+* #calorie-goal-in-24-h "Calorie Goal in 24h" "Kalorienziel ueber 24h"
