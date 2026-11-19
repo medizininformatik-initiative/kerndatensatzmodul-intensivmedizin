@@ -30,7 +30,12 @@
   "code": {
     "coding": [
       {
+        "system": "http://loinc.org",
+        "code": "57696-7"
+      },
+      {
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
         "code": "1284909003",
         "display": "Faces Pain Scale - Revised score (observable entity)"
       }
@@ -44,9 +49,5 @@
     }
   },
   "effectiveDateTime": "2021-12-06T00:52:00+01:00",
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "code": "3",
-    "unit": "score"
-  }
+  "valueInteger": 4
 }
