@@ -1036,7 +1036,7 @@
           "reference": "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
         },
         "name": "MII PR ICU Score Faces Pain Scale Revised",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert.",
+        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden.",
         "exampleBoolean": false
       },
       {
