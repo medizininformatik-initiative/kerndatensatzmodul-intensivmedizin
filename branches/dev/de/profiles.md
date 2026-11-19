@@ -11,6 +11,16 @@
 
 **Modul-eigene Profile — dieses Paket**
 
+**Körpermaße in den modul-eigenen Monitoring-Profilen**
+
+Das modul-eigene Basisprofil für Monitoring und Vitaldaten übernimmt die Elementregeln aus ISiK 6.0.0 und bindet die Messcodes erweiterbar (extensible) an die MII-ValueSets. Körperlänge im Liegen, Körperlänge bei Geburt und Geburtsgewicht leiten unabhängig von diesem Basisprofil ab und verwenden ausschließlich messungsspezifische Codes. Sie erheben keinen Anspruch auf Konformität zu den deutschen oder den FHIR-Profilen für Körpergröße und Körpergewicht, die die allgemeinen LOINC-Codes verlangen.
+
+Körpergröße und allgemeines Körpergewicht behalten ihre deutschen Elternprofile und schließen die geerbten geburtsspezifischen LOINC-Slices aus. Die Körperlänge im Liegen verlangt LOINC 8306-3 und SNOMED CT 1149101003, die Körperlänge bei Geburt SNOMED CT 169886007 und das Geburtsgewicht LOINC 8339-4 und SNOMED CT 364589006. LOINC 8302-2 ist bei der Körperlänge bei Geburt ausgeschlossen, 29463-7 beim Geburtsgewicht. Die verpflichtenden IEEE-11073-Codes sind 68060, 68058 beziehungsweise 68059. Größe und Länge werden als Quantity in cm angegeben, das allgemeine Körpergewicht als Quantity in kg und das Geburtsgewicht als Quantity in g.
+
+**Validator-Kompatibilität:** Die Körperlänge im Liegen verlangt zusätzlich den allgemeineren LOINC-Code 8302-2 (Body height), weil der HL7-Java-Validator im IG Publisher 2.3.2 ihn fordert, sobald 8306-3 vorhanden ist. LOINC 8306-3 bleibt der genauere Code für die Körperlänge im Liegen (NRA-592).
+
+Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.
+
 **ISiK-gehostete Profile — de.gematik.isik 6.0.0**
 Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert — die Liste ändert sich nur mit einem bewussten Pin-Wechsel. Jeder Link öffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.
 

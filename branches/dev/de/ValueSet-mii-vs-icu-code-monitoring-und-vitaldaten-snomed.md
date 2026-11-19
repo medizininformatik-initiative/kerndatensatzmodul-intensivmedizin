@@ -16,7 +16,7 @@ Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmoni
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [MII PR ICU Monitoring und Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md)
 
 ### Logical Definition (CLD)
 
@@ -225,6 +225,14 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       {
         "code" : "251408004",
         "display" : "Carbon dioxide output (observable entity)"
+      },
+      {
+        "code" : "169886007",
+        "display" : "Birth length (observable entity)"
+      },
+      {
+        "code" : "364589006",
+        "display" : "Birth weight (observable entity)"
       }]
     }]
   }

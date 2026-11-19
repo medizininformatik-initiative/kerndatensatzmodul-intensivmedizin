@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse | *Version*:2027.0.0 |
 | Active as of 2026-11-19 | *Computable Name*:MII_PR_ICU_MUV_Koerpergroesse |
 
+ 
+Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles. 
+
 "Body height (Observation)" is a characteristic of the generic profile for [monitoring and vital data (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.md). See there for more detailed information regarding explanations of the items or reference of the entries in the FHIR resource to the Logical Model.
 
 This profile also claims upward compatibility with the [VitalSignDE_Koerpergroesse](http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse) profile.
@@ -43,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse",
   "title" : "MII PR ICU MUV Koerpergroesse",
   "status" : "active",
-  "date" : "2026-11-19T16:33:24+00:00",
+  "date" : "2026-11-19T20:15:57+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -68,7 +72,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "differential" : {
     "element" : [{
       "id" : "Observation",
-      "path" : "Observation"
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "mii-icu-val-xor-dar",
+        "severity" : "error",
+        "human" : "Resource must have either value or dataAbsentReason.",
+        "expression" : "value.exists() xor dataAbsentReason.exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+      }]
     },
     {
       "id" : "Observation.status",
@@ -83,25 +94,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
     {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
-      "sliceName" : "VSCat",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:VSCat.coding",
-      "path" : "Observation.category.coding",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:VSCat.coding.system",
-      "path" : "Observation.category.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:VSCat.coding.code",
-      "path" : "Observation.category.coding.code",
-      "min" : 1,
-      "mustSupport" : true
+      "sliceName" : "VSCat"
     },
     {
       "id" : "Observation.category:VSCat.coding.display",
@@ -134,6 +127,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:sct.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:sct.coding.code",
       "path" : "Observation.category.coding.code",
       "min" : 1,
@@ -145,14 +144,16 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code",
-      "path" : "Observation.code",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "min" : 2,
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 3,
       "mustSupport" : true
     },
     {
@@ -162,13 +163,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:loinc.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.code",
-      "path" : "Observation.code.coding.code",
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -180,7 +177,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "id" : "Observation.code.coding:loinc-zusatzcode",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc-zusatzcode",
-      "mustSupport" : true
+      "max" : "0"
     },
     {
       "id" : "Observation.code.coding:snomed",
@@ -195,17 +192,36 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:snomed.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:snomed.code",
-      "path" : "Observation.code.coding.code",
+      "id" : "Observation.code.coding:snomed.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:snomed.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073",
+      "path" : "Observation.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "68060"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.display",
       "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
@@ -263,7 +279,9 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "mustSupport" : true
+      "type" : [{
+        "code" : "Quantity"
+      }]
     },
     {
       "id" : "Observation.value[x]:valueQuantity",
@@ -276,8 +294,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
         "unit" : "centimeter",
         "system" : "http://unitsofmeasure.org",
         "code" : "cm"
-      },
-      "mustSupport" : true
+      }
     },
     {
       "id" : "Observation.value[x]:valueQuantity.value",

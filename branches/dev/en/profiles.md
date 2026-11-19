@@ -11,6 +11,16 @@
 
 **Module-owned profiles — this package**
 
+**Body measurements in the module-owned monitoring profiles**
+
+The module-owned monitoring base retains the ISiK 6.0.0 element rules with extensible MII measurement-code bindings. Recumbent body length, birth length and birth weight derive independently from this base and use only measurement-specific codes. They do not claim conformance to the German or FHIR body-height/body-weight profiles, which require the general LOINC codes.
+
+Body height and general body weight retain their German parent profiles and prohibit the inherited birth-specific LOINC slices. Recumbent length requires LOINC 8306-3 and SNOMED CT 1149101003; birth length requires SNOMED CT 169886007; birth weight requires LOINC 8339-4 and SNOMED CT 364589006. LOINC 8302-2 is excluded from birth length, and 29463-7 is excluded from birth weight. Required IEEE 11073 codes are 68060, 68058 and 68059, respectively. Height and length use Quantity in cm, general body weight uses Quantity in kg and birth weight uses Quantity in g.
+
+**Validator compatibility:** Recumbent length also requires the broader LOINC 8302-2 (Body height) because the HL7 Java validator bundled with IG Publisher 2.3.2 requires it when 8306-3 is present. LOINC 8306-3 remains the more precise code for recumbent length (NRA-592).
+
+Each measurement Coding must state the terminology edition actually used. The profiles do not fix editions or displays. The IEEE measurement coding remains required.
+
 **ISiK-hosted profiles — de.gematik.isik 6.0.0**
 Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version — the list only changes with a deliberate pin bump. Each link opens the profile rendered in this guide (differential, snapshot, must support, definitions); the profiles themselves stay in the ISiK package.
 

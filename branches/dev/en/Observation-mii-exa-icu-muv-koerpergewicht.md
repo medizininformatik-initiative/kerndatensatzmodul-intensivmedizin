@@ -47,6 +47,7 @@ Profile: [MII PR ICU MUV Koerpergewicht](StructureDefinition-mii-pr-icu-muv-koer
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "29463-7",
       "display" : "Body weight"
     },
@@ -55,6 +56,11 @@ Profile: [MII PR ICU MUV Koerpergewicht](StructureDefinition-mii-pr-icu-muv-koer
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "27113001",
       "display" : "Body weight (observable entity)"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
+      "code" : "68063"
     }]
   },
   "subject" : {

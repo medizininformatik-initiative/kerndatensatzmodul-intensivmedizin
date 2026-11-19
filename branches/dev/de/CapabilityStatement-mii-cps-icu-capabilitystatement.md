@@ -350,7 +350,7 @@ Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktione
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-          "valueCode" : "SHALL"
+          "valueCode" : "MAY"
         }]
       },
       {

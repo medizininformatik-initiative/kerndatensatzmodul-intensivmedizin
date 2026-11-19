@@ -46,13 +46,15 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergewicht](https://simplifie
 
 ** Summary **
 
-Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 36 elements
+Mandatory: 5 elements(6 nested mandatory elements)
+ Must-Support: 40 elements
+ Prohibited: 1 element
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 * The element 1 is sliced based on the value of Observation.effective[x]
 
  **Schlüsselelemente-Ansicht** 
@@ -77,13 +79,15 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergewicht](https://simplifie
 
 ** Summary **
 
-Mandatory: 1 element(5 nested mandatory elements)
- Must-Support: 36 elements
+Mandatory: 5 elements(6 nested mandatory elements)
+ Must-Support: 40 elements
+ Prohibited: 1 element
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 * The element 1 is sliced based on the value of Observation.effective[x]
 
  
@@ -103,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergewicht",
   "title" : "MII PR ICU MUV Koerpergewicht",
   "status" : "active",
-  "date" : "2026-11-19T16:33:24+00:00",
+  "date" : "2026-11-19T20:15:57+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -181,20 +185,28 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "sliceName" : "sct",
       "min" : 0,
       "max" : "*",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "248326004"
+        }]
+      },
       "mustSupport" : true
     },
     {
       "id" : "Observation.category:sct.coding",
       "path" : "Observation.category.coding",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct",
-        "code" : "248326004"
-      },
       "mustSupport" : true
     },
     {
       "id" : "Observation.category:sct.coding.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:sct.coding.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -217,8 +229,15 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "min" : 2,
-      "max" : "2",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 3,
+      "max" : "3",
       "mustSupport" : true
     },
     {
@@ -230,6 +249,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding:loinc.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -246,7 +271,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "id" : "Observation.code.coding:loinc-zusatzcode",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc-zusatzcode",
-      "mustSupport" : true
+      "max" : "0"
     },
     {
       "id" : "Observation.code.coding:snomed",
@@ -266,6 +291,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:snomed.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:snomed.code",
       "path" : "Observation.code.coding.code",
       "mustSupport" : true
@@ -273,6 +304,24 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.code.coding:snomed.display",
       "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073",
+      "path" : "Observation.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "68063"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -329,6 +378,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }],
       "mustSupport" : true
     },
     {

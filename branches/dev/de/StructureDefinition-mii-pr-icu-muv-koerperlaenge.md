@@ -9,7 +9,10 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge | *Version*:2027.0.0 |
-| Active Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
+| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge |
+
+ 
+Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile. 
 
 **Usages:**
 
@@ -32,9 +35,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
-
-#### Terminology Bindings (Differential)
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 #### Constraints
 
@@ -42,18 +43,18 @@ Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?s
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 ** Summary **
 
-Mandatory: 2 elements(1 nested mandatory element)
- Must-Support: 24 elements
+Mandatory: 8 elements(2 nested mandatory elements)
+ Must-Support: 10 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
-* The element 1 is sliced based on the value of Observation.code.coding
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 * The element 1 is sliced based on the value of Observation.effective[x]
 
  **Schlüsselelemente-Ansicht** 
@@ -64,9 +65,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
-
-#### Terminology Bindings (Differential)
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 #### Constraints
 
@@ -76,18 +75,18 @@ Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?s
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 ** Summary **
 
-Mandatory: 2 elements(1 nested mandatory element)
- Must-Support: 24 elements
+Mandatory: 8 elements(2 nested mandatory elements)
+ Must-Support: 10 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
-* The element 1 is sliced based on the value of Observation.code.coding
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 * The element 1 is sliced based on the value of Observation.effective[x]
 
  
@@ -106,8 +105,8 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_MUV_Koerperlaenge",
   "title" : "MII PR ICU MUV Koerperlaenge",
-  "status" : "active",
-  "date" : "2026-11-19T16:33:24+00:00",
+  "status" : "draft",
+  "date" : "2026-11-19T20:15:57+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -116,6 +115,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -124,10 +124,35 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     }]
   }],
   "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://fhir.de/StructureDefinition/observation-de-vitalsign",
+  "baseDefinition" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -142,16 +167,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       }]
     },
     {
-      "id" : "Observation.status",
-      "path" : "Observation.status",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code",
-      "path" : "Observation.code",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
       "slicing" : {
@@ -159,37 +174,10 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
           "type" : "pattern",
           "path" : "$this"
         }],
-        "rules" : "open"
+        "rules" : "closed"
       },
-      "min" : 2,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc",
-      "path" : "Observation.code.coding",
-      "sliceName" : "loinc",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "8306-3",
-        "display" : "Body height --lying"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.code",
-      "path" : "Observation.code.coding.code",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
+      "min" : 4,
+      "max" : "4",
       "mustSupport" : true
     },
     {
@@ -200,29 +188,65 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "1149101003",
-        "display" : "Recumbent body height (observable entity)"
+        "code" : "1149101003"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "8306-3"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073",
+      "path" : "Observation.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "68060"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc-body-height",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc-body-height",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "8302-2"
       },
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:sct.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.subject",
-      "path" : "Observation.subject",
+      "id" : "Observation.code.coding:loinc-body-height.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -235,8 +259,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         }],
         "ordered" : false,
         "rules" : "open"
-      },
-      "mustSupport" : true
+      }
     },
     {
       "id" : "Observation.effective[x]:effectiveDateTime",
@@ -274,55 +297,22 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "type" : [{
-        "code" : "Quantity"
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity",
-      "path" : "Observation.value[x]",
-      "sliceName" : "valueQuantity",
-      "type" : [{
-        "code" : "Quantity"
-      }],
       "patternQuantity" : {
         "unit" : "centimeter",
         "system" : "http://unitsofmeasure.org",
         "code" : "cm"
-      },
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM"
       }
     },
     {
-      "id" : "Observation.value[x]:valueQuantity.value",
-      "path" : "Observation.value[x].value",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity.unit",
+      "id" : "Observation.value[x].unit",
       "path" : "Observation.value[x].unit",
-      "patternString" : "centimeter",
-      "mustSupport" : true
+      "min" : 1,
+      "patternString" : "centimeter"
     },
     {
-      "id" : "Observation.value[x]:valueQuantity.system",
-      "path" : "Observation.value[x].system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity.code",
+      "id" : "Observation.value[x].code",
       "path" : "Observation.value[x].code",
-      "patternCode" : "cm",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.dataAbsentReason",
-      "path" : "Observation.dataAbsentReason",
-      "mustSupport" : true
+      "patternCode" : "cm"
     }]
   }
 }

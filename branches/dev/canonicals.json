@@ -111,6 +111,13 @@
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h"
 },
 {
+  "id" : "mii-pr-icu-bilanz-kalorienbedarf-pro-tag",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Bilanz_Kalorienbedarf_Pro_Tag"
+},
+{
   "id" : "mii-pr-icu-device",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device",
@@ -223,6 +230,13 @@
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren"
 },
 {
+  "id" : "mii-pr-icu-monitoring-und-vitaldaten",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Monitoring_Und_Vitaldaten"
+},
+{
   "id" : "mii-pr-icu-muv-arterieller-blutdruck",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
@@ -235,6 +249,20 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz",
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_MUV_Atemfrequenz"
+},
+{
+  "id" : "mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_MUV_Energieverbrauch_Indirekte_Kalorimetrie"
+},
+{
+  "id" : "mii-pr-icu-muv-geburtsgewicht",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_MUV_Geburtsgewicht"
 },
 {
   "id" : "mii-pr-icu-muv-herzfrequenz",
@@ -298,6 +326,13 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_MUV_Koerperlaenge"
+},
+{
+  "id" : "mii-pr-icu-muv-koerperlaenge-bei-geburt",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_MUV_Koerperlaenge_Bei_Geburt"
 },
 {
   "id" : "mii-pr-icu-muv-kohlendioxid-produktion",
@@ -830,6 +865,13 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren",
   "version" : "2027.0.0",
   "name" : "MII_VS_ICU_DeviceMetric_extrakorporale_Verfahren"
+},
+{
+  "id" : "mii-vs-icu-method-kalorienbedarf",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-method-kalorienbedarf",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Method_Kalorienbedarf"
 },
 {
   "id" : "mii-vs-icu-method-observation-blutdruck",

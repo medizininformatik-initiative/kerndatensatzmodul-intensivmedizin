@@ -67,6 +67,7 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Beatmungszeit Hohem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md) |  |
 | [ MII PR ICU Beatmungszeit Niedrigem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md) |  |
 | [ MII PR ICU Bilanz Einfuhr Kalorien 24h  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.md) |  |
+| [ MII PR ICU Bilanz Kalorienbedarf pro Tag  ](StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.md) | Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target. |
 | [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) |  |
 | [ MII PR ICU Blutfluss Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md) |  |
 | [ MII PR ICU Blutflussindex Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md) |  |
@@ -93,15 +94,18 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) |  |
 | [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |  |
 | [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |  |
+| [ MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie  ](StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method. |
+| [ MII PR ICU MUV Geburtsgewicht  ](StructureDefinition-mii-pr-icu-muv-geburtsgewicht.md) | Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later. |
 | [ MII PR ICU MUV Herzfrequenz  ](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |  |
 | [ MII PR ICU MUV Herzzeitvolumen  ](StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.md) |  |
 | [ MII PR ICU MUV Ideales Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-ideales-koerpergewicht.md) |  |
 | [ MII PR ICU MUV Intrakranieller Druck (ICP)  ](StructureDefinition-mii-pr-icu-muv-intrakranieller-druck.md) |  |
 | [ MII PR ICU MUV Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md) |  |
 | [ MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht-perzentil.md) |  |
-| [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |  |
+| [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) | Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles. |
 | [ MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse-perzentil.md) |  |
-| [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |  |
+| [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) | Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile. |
+| [ MII PR ICU MUV Koerperlaenge Bei Geburt  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.md) | Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later. |
 | [ MII PR ICU MUV Kohlendioxid Produktion  ](StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.md) |  |
 | [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) |  |
 | [ MII PR ICU MUV Pulmonalarterieller Wedge-Druck  ](StructureDefinition-mii-pr-icu-muv-pulmonalarterieller-wedge-druck.md) |  |
@@ -111,6 +115,7 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) |  |
 | [ MII PR ICU Mittlerer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md) |  |
 | [ MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md) |  |
+| [ MII PR ICU Monitoring und Vitaldaten  ](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) | Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement. |
 | [ MII PR ICU Parameter von Beatmung  ](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md) |  |
 | [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) |  |
 | [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |  |
@@ -168,6 +173,7 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS ICU Component GCS Verbal  ](ValueSet-mii-vs-icu-component-gcs-verbal.md) |  |
 | [ MII VS ICU Delirium Interpretation  ](ValueSet-mii-vs-icu-delirium-interpretation.md) | Delirium status interpretations |
 | [ MII VS ICU DeviceMetric extrakorporale Verfahren  ](ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.md) |  |
+| [ MII VS ICU Method Kalorienbedarf  ](ValueSet-mii-vs-icu-method-kalorienbedarf.md) | SNOMED CT qualifiers for how daily energy requirement was determined. The codes do not identify particular equations. |
 | [ MII VS ICU Method Observation Blutdruck  ](ValueSet-mii-vs-icu-method-observation-blutdruck.md) | Dieses ValueSet enthält Codes zur Angabe, ob ein Blutdruck invasiv oder nicht-invasiv gemessen ist. |
 | [ MII VS ICU Present Absent  ](ValueSet-mii-vs-icu-present-absent.md) | Present or absent findings |
 | [ MII VS ICU Score Category  ](ValueSet-mii-vs-icu-score-category.md) | Value set for ICU score observation categories |
@@ -212,6 +218,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Bilanz Einfuhr Oraler Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit |
 | [ Bilanz Einfuhr Saeuglingsnahrung  ](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung |
 | [ Bilanz Einfuhr Spendermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch |
+| [ Bilanz Kalorienbedarf Pro Tag  ](Observation-mii-exa-icu-bilanz-kalorienbedarf-pro-tag.md) | Beispiel: MII PR ICU Bilanz Kalorienbedarf pro Tag |
 | [ Bilanz Tagesbilanz Fluessigkeit  ](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit |
 | [ Ecmo  ](Procedure-mii-exa-icu-ecmo.md) | Beispiel: MII PR ICU Extrakorporales Verfahren |
 | [ Ect Arterieller Druck Gemessen  ](Observation-mii-exa-icu-ect-arterieller-druck-gemessen.md) | Beispiel: MII PR ICU Arterieller Druck |
@@ -235,6 +242,8 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Ect Venoeser Druck  ](Observation-mii-exa-icu-ect-venoeser-druck.md) | Beispiel: MII PR ICU Venoeser Druck |
 | [ Muv Arterieller Blutdruck  ](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) | Beispiel: MII PR ICU MUV Arterieller Blutdruck |
 | [ Muv Atemfrequenz  ](Observation-mii-exa-icu-muv-atemfrequenz.md) | Beispiel: MII PR ICU MUV Atemfrequenz |
+| [ Muv Energieverbrauch Indirekte Kalorimetrie  ](Observation-mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | Beispiel: MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie |
+| [ Muv Geburtsgewicht  ](Observation-mii-exa-icu-muv-geburtsgewicht.md) | Beispiel: MII PR ICU MUV Geburtsgewicht |
 | [ Muv Herzfrequenz  ](Observation-mii-exa-icu-muv-herzfrequenz.md) | Beispiel: MII PR ICU MUV Herzfrequenz |
 | [ Muv Herzzeitvolumen  ](Observation-mii-exa-icu-muv-herzzeitvolumen.md) | Beispiel: SD MII ICU Herzzeitvolumen |
 | [ Muv Ideales Koerpergewicht  ](Observation-mii-exa-icu-muv-ideales-koerpergewicht.md) | Beispiel: SD MII ICU Ideales Koerpergewicht |
@@ -244,6 +253,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Muv Koerpergroesse  ](Observation-mii-exa-icu-muv-koerpergroesse.md) | Beispiel: MII PR ICU MUV Koerpergroesse |
 | [ Muv Koerpergroesse Percentil  ](Observation-mii-exa-icu-muv-koerpergroesse-percentil.md) | Beispiel: SD MII ICU Koerpergroesse Percentil |
 | [ Muv Koerperlaenge  ](Observation-mii-exa-icu-muv-koerperlaenge.md) | Beispiel: MII PR ICU MUV Koerperlaenge |
+| [ Muv Koerperlaenge Bei Geburt  ](Observation-mii-exa-icu-muv-koerperlaenge-bei-geburt.md) | Beispiel: MII PR ICU MUV Koerperlaenge Bei Geburt |
 | [ Muv Koerpertemperatur Achsel  ](Observation-mii-exa-icu-muv-koerpertemperatur-achsel.md) | Beispiel: SD MII ICU Koerpertemperatur Achsel |
 | [ Muv Koerpertemperatur Atemwege  ](Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.md) | Beispiel: SD MII ICU Koerpertemperatur Atemwege |
 | [ Muv Koerpertemperatur Blut  ](Observation-mii-exa-icu-muv-koerpertemperatur-blut.md) | Beispiel: SD MII ICU Koerpertemperatur Blut |

@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-19T16:33:24+00:00",
+  "date" : "2026-11-19T20:15:57+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -56,10 +56,35 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
     }]
   }],
   "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -67,19 +92,68 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "path" : "Observation"
     },
     {
+      "id" : "Observation.identifier",
+      "path" : "Observation.identifier",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding",
+      "path" : "Observation.category.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category.coding:hl7-category",
       "path" : "Observation.category.coding",
-      "sliceName" : "hl7-category"
+      "sliceName" : "hl7-category",
+      "min" : 0,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/observation-category"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding:hl7-category.system",
+      "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.category.coding:hl7-category.code",
       "path" : "Observation.category.coding.code",
-      "patternCode" : "exam"
+      "min" : 1,
+      "patternCode" : "exam",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
-      "min" : 2
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 2,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:sct",
@@ -89,9 +163,27 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "787787004",
-        "display" : "Energy intake (observable entity)"
-      }
+        "code" : "787787004"
+      },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:loinc",
@@ -101,36 +193,110 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "9057-1",
-        "display" : "Calorie intake total 24 hour"
-      }
+        "code" : "9057-1"
+      },
+      "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:IEEE-11073",
-      "path" : "Observation.code.coding",
-      "sliceName" : "IEEE-11073",
-      "max" : "0"
+      "id" : "Observation.code.coding:loinc.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.encounter",
+      "path" : "Observation.encounter",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.effective[x]",
       "path" : "Observation.effective[x]",
+      "min" : 1,
       "type" : [{
         "code" : "Period"
-      }]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.issued",
+      "path" : "Observation.issued",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "Quantity"
+      }],
       "patternQuantity" : {
         "unit" : "kilocalorie per day",
         "system" : "http://unitsofmeasure.org",
         "code" : "kcal/(24.h)"
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Observation.value[x].code",
       "path" : "Observation.value[x].code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason",
+      "path" : "Observation.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation",
+      "path" : "Observation.interpretation",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite",
+      "path" : "Observation.bodySite",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method",
+      "path" : "Observation.method",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.specimen",
+      "path" : "Observation.specimen",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.device",
+      "path" : "Observation.device",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.referenceRange",
+      "path" : "Observation.referenceRange",
       "mustSupport" : true
     }]
   }

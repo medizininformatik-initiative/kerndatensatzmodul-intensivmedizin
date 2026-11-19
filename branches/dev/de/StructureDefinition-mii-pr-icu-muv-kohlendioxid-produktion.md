@@ -32,7 +32,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 #### Terminology Bindings (Differential)
 
@@ -42,18 +42,18 @@ Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?s
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 ** Summary **
 
-Mandatory: 3 elements(5 nested mandatory elements)
- Must-Support: 36 elements
+Mandatory: 7 elements(4 nested mandatory elements)
+ Must-Support: 17 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
-* The element 1 is sliced based on the value of Observation.code.coding
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 * The element 1 is sliced based on the value of Observation.effective[x]
 
  **Schlüsselelemente-Ansicht** 
@@ -64,7 +64,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 #### Terminology Bindings (Differential)
 
@@ -76,18 +76,18 @@ Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?s
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?scope=de.basisprofil.r4@1.6.0&canonical=http://fhir.de/StructureDefinition/observation-de-vitalsign) 
+Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) 
 
 ** Summary **
 
-Mandatory: 3 elements(5 nested mandatory elements)
- Must-Support: 36 elements
+Mandatory: 7 elements(4 nested mandatory elements)
+ Must-Support: 17 elements
 
 **Slices**
 
 This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
 
-* The element 1 is sliced based on the value of Observation.code.coding
+* The element 1 is sliced based on the value of Observation.code.coding (Closed)
 * The element 1 is sliced based on the value of Observation.effective[x]
 
  
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Kohlendioxid_Produktion",
   "title" : "MII PR ICU MUV Kohlendioxid Produktion",
   "status" : "draft",
-  "date" : "2026-11-19T16:33:24+00:00",
+  "date" : "2026-11-19T20:15:57+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -125,10 +125,35 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   }],
   "purpose" : "Das Profil bezieht sich auf die Darstellung der Kohlendioxidproduktion (VCO2) in L/min",
   "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://fhir.de/StructureDefinition/observation-de-vitalsign",
+  "baseDefinition" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -143,41 +168,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       }]
     },
     {
-      "id" : "Observation.status",
-      "path" : "Observation.status",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.category",
       "path" : "Observation.category",
-      "min" : 2,
-      "mustSupport" : true
+      "min" : 2
     },
     {
-      "id" : "Observation.category:VSCat",
+      "id" : "Observation.category:vs-cat",
       "path" : "Observation.category",
-      "sliceName" : "VSCat",
-      "mustSupport" : true
+      "sliceName" : "vs-cat"
     },
     {
-      "id" : "Observation.category:VSCat.coding",
-      "path" : "Observation.category.coding",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:VSCat.coding.system",
-      "path" : "Observation.category.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:VSCat.coding.code",
-      "path" : "Observation.category.coding.code",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:VSCat.coding.display",
+      "id" : "Observation.category:vs-cat.coding.display",
       "path" : "Observation.category.coding.display",
       "mustSupport" : true
     },
@@ -218,11 +219,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code",
-      "path" : "Observation.code",
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
       "slicing" : {
@@ -230,37 +226,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
           "type" : "pattern",
           "path" : "$this"
         }],
-        "rules" : "open"
+        "rules" : "closed"
       },
-      "min" : 2,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc",
-      "path" : "Observation.code.coding",
-      "sliceName" : "loinc",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://loinc.org",
-        "code" : "60825-7",
-        "display" : "Carbon dioxide production (VCO2) in Respiratory system"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.code",
-      "path" : "Observation.code.coding.code",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
+      "min" : 3,
       "mustSupport" : true
     },
     {
@@ -271,19 +239,13 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "251408004",
-        "display" : "Carbon dioxide output (observable entity)"
-      },
-      "mustSupport" : true
+        "code" : "251408004"
+      }
     },
     {
-      "id" : "Observation.code.coding:sct.system",
-      "path" : "Observation.code.coding.system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:sct.code",
-      "path" : "Observation.code.coding.code",
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -292,8 +254,47 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
-      "id" : "Observation.subject",
-      "path" : "Observation.subject",
+      "id" : "Observation.code.coding:loinc",
+      "path" : "Observation.code.coding",
+      "sliceName" : "loinc",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org",
+        "code" : "60825-7"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073",
+      "path" : "Observation.code.coding",
+      "sliceName" : "IEEE-11073",
+      "min" : 1,
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101",
+        "code" : "151776"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -306,8 +307,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         }],
         "ordered" : false,
         "rules" : "open"
-      },
-      "mustSupport" : true
+      }
     },
     {
       "id" : "Observation.effective[x]:effectiveDateTime",
@@ -345,54 +345,20 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "type" : [{
-        "code" : "Quantity"
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity",
-      "path" : "Observation.value[x]",
-      "sliceName" : "valueQuantity",
-      "type" : [{
-        "code" : "Quantity"
-      }],
       "patternQuantity" : {
         "unit" : "liter per minute",
         "system" : "http://unitsofmeasure.org",
         "code" : "L/min"
-      },
-      "mustSupport" : true
+      }
     },
     {
-      "id" : "Observation.value[x]:valueQuantity.value",
-      "path" : "Observation.value[x].value",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity.unit",
+      "id" : "Observation.value[x].unit",
       "path" : "Observation.value[x].unit",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity.system",
-      "path" : "Observation.value[x].system",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.value[x]:valueQuantity.code",
-      "path" : "Observation.value[x].code",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.dataAbsentReason",
-      "path" : "Observation.dataAbsentReason",
-      "mustSupport" : true
+      "min" : 1
     },
     {
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
-      "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"

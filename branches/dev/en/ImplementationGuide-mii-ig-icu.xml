@@ -1316,6 +1316,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag"/>
+      </reference>
+      <name value="Bilanz Kalorienbedarf Pro Tag"/>
+      <description value="Beispiel: MII PR ICU Bilanz Kalorienbedarf pro Tag"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit"/>
       </reference>
       <name value="Bilanz Tagesbilanz Fluessigkeit"/>
@@ -1680,6 +1691,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"/>
+      </reference>
+      <name value="MII PR ICU Bilanz Kalorienbedarf pro Tag"/>
+      <description value="Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"/>
       </reference>
       <name value="MII PR ICU Blutfluss Cardiovasculaeres Geraet"/>
@@ -1970,6 +1992,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten"/>
+      </reference>
+      <name value="MII PR ICU Monitoring und Vitaldaten"/>
+      <description value="Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"/>
       </reference>
       <name value="MII PR ICU MUV Arterieller Blutdruck"/>
@@ -1983,6 +2016,28 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-atemfrequenz"/>
       </reference>
       <name value="MII PR ICU MUV Atemfrequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"/>
+      </reference>
+      <name value="MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie"/>
+      <description value="Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mii-pr-icu-muv-geburtsgewicht"/>
+      </reference>
+      <name value="MII PR ICU MUV Geburtsgewicht"/>
+      <description value="Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2053,6 +2108,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-koerpergroesse"/>
       </reference>
       <name value="MII PR ICU MUV Koerpergroesse"/>
+      <description value="Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2073,6 +2129,18 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-koerperlaenge"/>
       </reference>
       <name value="MII PR ICU MUV Koerperlaenge"/>
+      <description value="Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt"/>
+      </reference>
+      <name value="MII PR ICU MUV Koerperlaenge Bei Geburt"/>
+      <description value="Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2661,6 +2729,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/mii-vs-icu-method-kalorienbedarf"/>
+      </reference>
+      <name value="MII VS ICU Method Kalorienbedarf"/>
+      <description value="SNOMED CT qualifiers for how daily energy requirement was determined. The codes do not identify particular equations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/mii-vs-icu-method-observation-blutdruck"/>
       </reference>
       <name value="MII VS ICU Method Observation Blutdruck"/>
@@ -2985,6 +3064,28 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie"/>
+      </reference>
+      <name value="Muv Energieverbrauch Indirekte Kalorimetrie"/>
+      <description value="Beispiel: MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-geburtsgewicht"/>
+      </reference>
+      <name value="Muv Geburtsgewicht"/>
+      <description value="Beispiel: MII PR ICU MUV Geburtsgewicht"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/mii-exa-icu-muv-herzfrequenz"/>
       </reference>
       <name value="Muv Herzfrequenz"/>
@@ -3077,6 +3178,17 @@
       </reference>
       <name value="Muv Koerperlaenge"/>
       <description value="Beispiel: MII PR ICU MUV Koerperlaenge"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt"/>
+      </reference>
+      <name value="Muv Koerperlaenge Bei Geburt"/>
+      <description value="Beispiel: MII PR ICU MUV Koerperlaenge Bei Geburt"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

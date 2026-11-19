@@ -13,12 +13,24 @@
     ],
     "Observation": [
       {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
+        "title": "MII PR ICU Monitoring und Vitaldaten"
+      },
+      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck",
         "title": "MII PR ICU MUV Arterieller Blutdruck"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz",
         "title": "MII PR ICU MUV Atemfrequenz"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",
+        "title": "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht",
+        "title": "MII PR ICU MUV Geburtsgewicht"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-herzfrequenz",
@@ -55,6 +67,10 @@
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge",
         "title": "MII PR ICU MUV Koerperlaenge"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt",
+        "title": "MII PR ICU MUV Koerperlaenge Bei Geburt"
       },
       {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion",

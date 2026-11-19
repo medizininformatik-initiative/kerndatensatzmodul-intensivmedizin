@@ -562,20 +562,68 @@
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/bodySite|5.3.0"
   },
   {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz|6.0.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-method-kalorienbedarf|2027.0.0"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/security-labels|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren|2027.0.0"
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "http://hl7.org/fhir/ValueSet/common-tags|4.0.1"
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc|2027.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2027.0.0-ballot"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren|2027.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-snomed|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-loinc|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-iso11073|2027.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten|6.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck|1.6.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign|1.6.0"
   },
   {
     "name" : "default-valueset-version",
@@ -607,6 +655,10 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Reference|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"
   },
   {
@@ -631,35 +683,15 @@
   },
   {
     "name" : "default-valueset-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7|6.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/ValueSet/observation-codes|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed|6.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc|6.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073|6.0.0"
   },
   {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
   },
   {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1"
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://fhir.de/ValueSet/UcumVitalsCommonDE|1.6.0"
   },
   {
     "name" : "default-valueset-version",
@@ -686,12 +718,20 @@
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"
   },
   {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Quantity|4.0.1"
+  },
+  {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/ValueSet/referencerange-meaning|4.0.1"
   },
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Range|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -710,54 +750,6 @@
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Media|4.0.1"
   },
   {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren|2027.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed|2027.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc|2027.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren|2027.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct|2027.0.0-ballot"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren|2027.0.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck|1.6.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign|1.6.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Reference|4.0.1"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "http://fhir.de/ValueSet/UcumVitalsCommonDE|1.6.0"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Quantity|4.0.1"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Range|4.0.1"
-  },
-  {
     "name" : "default-canonical-version",
     "valueCanonical" : "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz|1.6.0"
   },
@@ -771,7 +763,27 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie|2027.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht|2027.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten|6.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/ValueSet/security-labels|4.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/ValueSet/common-tags|4.0.1"
   },
   {
     "name" : "default-valueset-version",
@@ -788,10 +800,6 @@
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute|2027.0.0"
-  },
-  {
-    "name" : "default-valueset-version",
-    "valueCanonical" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten|6.0.0"
   },
   {
     "name" : "default-valueset-version",
@@ -820,6 +828,10 @@
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM|1.6.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt|2027.0.0"
   },
   {
     "name" : "default-canonical-version",

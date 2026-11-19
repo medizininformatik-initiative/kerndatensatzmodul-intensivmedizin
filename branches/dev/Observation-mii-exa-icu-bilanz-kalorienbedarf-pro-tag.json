@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "mii-exa-icu-bilanz-kalorienbedarf-pro-tag",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-bilanz-kalorienbedarf-pro-tag</b></p><a name=\"mii-exa-icu-bilanz-kalorienbedarf-pro-tag\"> </a><a name=\"hcmii-exa-icu-bilanz-kalorienbedarf-pro-tag\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html\">MII PR ICU Bilanz Kalorienbedarf pro Tag</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9058-9}\">Calorie need 24 hour Estimated</span></p><p><b>subject</b>: Synthetic example patient</p><p><b>effective</b>: 2026-01-01 09:00:00+0100</p><p><b>value</b>: 1800 kilocalorie per day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekcal/(24.h) = 'kcal/(24.h)')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 258090004}\">Schofield equation</span></p></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Observation mii-exa-icu-bilanz-kalorienbedarf-pro-tag</b></p><a name=\"de-mii-exa-icu-bilanz-kalorienbedarf-pro-tag\"> </a><a name=\"de-hcmii-exa-icu-bilanz-kalorienbedarf-pro-tag\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html\">MII PR ICU Bilanz Kalorienbedarf pro Tag</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9058-9}\">Calorie need 24 hour Estimated</span></p><p><b>subject</b>: Synthetic example patient</p><p><b>effective</b>: 2026-01-01 09:00:00+0100</p><p><b>value</b>: 1800 kilocalorie per day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekcal/(24.h) = 'kcal/(24.h)')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 258090004}\">Schofield equation</span></p></div></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.83",
+      "code" : "9058-9",
+      "display" : "Calorie need 24 hour Estimated"
+    }]
+  },
+  "subject" : {
+    "display" : "Synthetic example patient"
+  },
+  "effectiveDateTime" : "2026-01-01T09:00:00+01:00",
+  "valueQuantity" : {
+    "value" : 1800,
+    "unit" : "kilocalorie per day",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kcal/(24.h)"
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "258090004",
+      "display" : "Calculated"
+    }],
+    "text" : "Schofield equation"
+  }
+}

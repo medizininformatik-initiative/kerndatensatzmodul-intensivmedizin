@@ -11,7 +11,7 @@ This page lists the example instances of the **Intensive Care** module. The temp
 
 > **Written during migration - review before release.** List generated from the build (the source carried no narrative here).
 
-The module ships **144 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.md) under its profile, and each profile page lists its own examples in the **Examples** section.
+The module ships **148 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.md) under its profile, and each profile page lists its own examples in the **Examples** section.
 
 #### Extracorporeal procedures (20)
 
@@ -80,7 +80,7 @@ The module ships **144 examples** (at least one per profile family, incl. comple
 | [Vent Unterstuetzungsdruck Beatmung](Observation-mii-exa-icu-vent-unterstuetzungsdruck-beatmung.md) | [MII PR ICU Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) |
 | [Vent Zeitverhaeltnis Ein Ausatmung](Observation-mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung.md) | [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |
 
-#### Balances (19)
+#### Balances (20)
 
 | | |
 | :--- | :--- |
@@ -102,14 +102,17 @@ The module ships **144 examples** (at least one per profile family, incl. comple
 | [Bilanz Einfuhr Oraler Fluessigkeit](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md)(ISiK) |
 | [Bilanz Einfuhr Saeuglingsnahrung](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md)(ISiK) |
 | [Bilanz Einfuhr Spendermilch](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.md) | [MII PR ICU Bilanz Einfuhr Spendermilch](extern-mii-pr-icu-bilanz-einfuhr-spendermilch.md)(ISiK) |
+| [Bilanz Kalorienbedarf Pro Tag](Observation-mii-exa-icu-bilanz-kalorienbedarf-pro-tag.md) | [MII PR ICU Bilanz Kalorienbedarf pro Tag](StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.md) |
 | [Bilanz Tagesbilanz Fluessigkeit](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md)(ISiK) |
 
-#### Monitoring and vital signs (55)
+#### Monitoring and vital signs (58)
 
 | | |
 | :--- | :--- |
 | [Muv Arterieller Blutdruck](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) | [MII PR ICU MUV Arterieller Blutdruck](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |
 | [Muv Atemfrequenz](Observation-mii-exa-icu-muv-atemfrequenz.md) | [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |
+| [Muv Energieverbrauch Indirekte Kalorimetrie](Observation-mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | [MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie](StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) |
+| [Muv Geburtsgewicht](Observation-mii-exa-icu-muv-geburtsgewicht.md) | [MII PR ICU MUV Geburtsgewicht](StructureDefinition-mii-pr-icu-muv-geburtsgewicht.md) |
 | [Muv Herzfrequenz](Observation-mii-exa-icu-muv-herzfrequenz.md) | [MII PR ICU MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |
 | [Muv Herzzeitvolumen](Observation-mii-exa-icu-muv-herzzeitvolumen.md) | [SD MII ICU Herzzeitvolumen](extern-sd-mii-icu-herzzeitvolumen.md)(ISiK) |
 | [Muv Ideales Koerpergewicht](Observation-mii-exa-icu-muv-ideales-koerpergewicht.md) | [SD MII ICU Ideales Koerpergewicht](extern-sd-mii-icu-ideales-koerpergewicht.md)(ISiK) |
@@ -119,6 +122,7 @@ The module ships **144 examples** (at least one per profile family, incl. comple
 | [Muv Koerpergroesse](Observation-mii-exa-icu-muv-koerpergroesse.md) | [MII PR ICU MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) |
 | [Muv Koerpergroesse Percentil](Observation-mii-exa-icu-muv-koerpergroesse-percentil.md) | [SD MII ICU Koerpergroesse Percentil](extern-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.md)(ISiK) |
 | [Muv Koerperlaenge](Observation-mii-exa-icu-muv-koerperlaenge.md) | [MII PR ICU MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) |
+| [Muv Koerperlaenge Bei Geburt](Observation-mii-exa-icu-muv-koerperlaenge-bei-geburt.md) | [MII PR ICU MUV Koerperlaenge Bei Geburt](StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.md) |
 | [Muv Koerpertemperatur Achsel](Observation-mii-exa-icu-muv-koerpertemperatur-achsel.md) | [SD MII ICU Koerpertemperatur Achsel](extern-sd-mii-icu-koerpertemperatur-achsel.md)(ISiK) |
 | [Muv Koerpertemperatur Atemwege](Observation-mii-exa-icu-muv-koerpertemperatur-atemwege.md) | [SD MII ICU Koerpertemperatur Atemwege](extern-sd-mii-icu-koerpertemperatur-atemwege.md)(ISiK) |
 | [Muv Koerpertemperatur Blut](Observation-mii-exa-icu-muv-koerpertemperatur-blut.md) | [SD MII ICU Koerpertemperatur Blut](extern-sd-mii-icu-koerpertemperatur-blut.md)(ISiK) |

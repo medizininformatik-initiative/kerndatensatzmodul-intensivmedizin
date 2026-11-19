@@ -47,6 +47,7 @@ Profile: [MII PR ICU MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koer
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8302-2",
       "display" : "Body height"
     },
@@ -55,6 +56,11 @@ Profile: [MII PR ICU MUV Koerpergroesse](StructureDefinition-mii-pr-icu-muv-koer
       "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "1153637007",
       "display" : "Body height (observable entity)"
+    },
+    {
+      "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
+      "code" : "68060"
     }]
   },
   "subject" : {
