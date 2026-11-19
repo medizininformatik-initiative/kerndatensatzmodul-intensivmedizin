@@ -45,13 +45,31 @@
         "min": 1
       },
       {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "max": "0"
+      },
+      {
+        "id": "Observation.code.coding:sct",
+        "path": "Observation.code.coding",
+        "sliceName": "sct",
+        "max": "0"
+      },
+      {
+        "id": "Observation.code.coding:ieee11073",
+        "path": "Observation.code.coding",
+        "sliceName": "ieee11073",
+        "max": "0"
+      },
+      {
         "id": "Observation.code.coding:dgai",
         "path": "Observation.code.coding",
         "sliceName": "dgai",
         "min": 1,
         "max": "1",
         "patternCoding": {
-          "code": "DGAI-KUSS",
+          "code": "ped-kuss",
           "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"
         },
         "mustSupport": true
