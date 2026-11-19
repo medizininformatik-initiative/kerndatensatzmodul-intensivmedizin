@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Body weight measured at birth, expressed in kilograms. The effective time refers to the birth-weight measurement, even when documented later.",
+  "description": "Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -112,21 +112,21 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "code": "kg",
+          "code": "g",
           "system": "http://unitsofmeasure.org",
-          "unit": "kilogram"
+          "unit": "gram"
         }
       },
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "min": 1,
-        "patternString": "kilogram"
+        "patternString": "gram"
       },
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "patternCode": "kg"
+        "patternCode": "g"
       }
     ]
   }
