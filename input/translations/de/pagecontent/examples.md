@@ -106,12 +106,13 @@ Das Modul liefert **144 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Bilanz Einfuhr Spendermilch](Observation-mii-exa-icu-bilanz-einfuhr-spendermilch.html) | [MII PR ICU Bilanz Einfuhr Spendermilch](extern-mii-pr-icu-bilanz-einfuhr-spendermilch.html) (ISiK) |
 | [Bilanz Tagesbilanz Fluessigkeit](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.html) | [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.html) (ISiK) |
 
-#### Monitoring und Vitaldaten (55)
+#### Monitoring und Vitaldaten (56)
 
 | Beispiel | illustriert das Profil |
 |---|---|
 | [Muv Arterieller Blutdruck](Observation-mii-exa-icu-muv-arterieller-blutdruck.html) | [MII PR ICU MUV Arterieller Blutdruck](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html) |
 | [Muv Atemfrequenz](Observation-mii-exa-icu-muv-atemfrequenz.html) | [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfrequenz.html) |
+| [Muv Bmi](Observation-mii-exa-icu-muv-bmi.html) | [MII PR ICU MUV Body Mass Index](StructureDefinition-mii-pr-icu-muv-bmi.html) |
 | [Muv Herzfrequenz](Observation-mii-exa-icu-muv-herzfrequenz.html) | [MII PR ICU MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfrequenz.html) |
 | [Muv Herzzeitvolumen](Observation-mii-exa-icu-muv-herzzeitvolumen.html) | [SD MII ICU Herzzeitvolumen](extern-sd-mii-icu-herzzeitvolumen.html) (ISiK) |
 | [Muv Ideales Koerpergewicht](Observation-mii-exa-icu-muv-ideales-koerpergewicht.html) | [SD MII ICU Ideales Koerpergewicht](extern-sd-mii-icu-ideales-koerpergewicht.html) (ISiK) |

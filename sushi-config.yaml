@@ -476,6 +476,10 @@ resources:
     name: "Muv Atemfrequenz"
     description: "Beispiel: MII PR ICU MUV Atemfrequenz"
     exampleBoolean: true
+  Observation/mii-exa-icu-muv-bmi:
+    name: "Muv Bmi"
+    description: "Beispiel: MII PR ICU MUV Body Mass Index"
+    exampleBoolean: true
   Observation/mii-exa-icu-muv-herzfrequenz:
     name: "Muv Herzfrequenz"
     description: "Beispiel: MII PR ICU MUV Herzfrequenz"
