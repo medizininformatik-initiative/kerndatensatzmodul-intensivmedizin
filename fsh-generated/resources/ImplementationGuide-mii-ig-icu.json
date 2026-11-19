@@ -901,7 +901,7 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-geburtsgewicht"
         },
         "name": "MII PR ICU MUV Geburtsgewicht",
-        "description": "Body weight measured at birth, expressed in kilograms. The effective time refers to the birth-weight measurement, even when documented later.",
+        "description": "Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later.",
         "exampleBoolean": false
       },
       {
