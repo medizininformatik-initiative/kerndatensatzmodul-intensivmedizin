@@ -1233,6 +1233,7 @@ parameters:
   # self-check substitution does not reach (it rewrites sushi-config.yaml, ig.ini
   # and the narrative pages only). Replace the placeholders in tests/profiles/,
   # then uncomment:
+  # Profile regressions run separately in validation.yml, before draft stripping.
   # profile-test-cases: tests/profiles/profiles.json
 
 # ── MENU (translatable — maintained as menu.xml, NOT the `menu:` property) ────

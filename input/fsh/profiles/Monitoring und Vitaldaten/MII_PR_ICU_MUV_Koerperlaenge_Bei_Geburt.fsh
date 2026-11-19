@@ -23,8 +23,6 @@ Description: "Body length measured at birth, expressed in centimetres. The effec
 * valueQuantity.code = #cm
 * valueQuantity.unit = "centimeter"
 
-// Fixed terminology editions for reproducible measurement coding.
+// Send the terminology edition actually used; editions and displays are not fixed here.
 * code.coding[sct].version 1..1 MS
-* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"

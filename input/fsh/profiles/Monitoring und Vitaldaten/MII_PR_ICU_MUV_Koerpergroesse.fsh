@@ -59,12 +59,8 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 
 * dataAbsentReason MS
 
-// Fixed terminology editions for reproducible measurement coding.
+// Send the terminology edition actually used; editions and displays are not fixed here.
 * code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
 * code.coding[snomed].version 1..1 MS
-* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"
 * category[sct].coding.version 1..1 MS
-* category[sct].coding.version = "http://snomed.info/sct/900000000000207008/version/20260701"

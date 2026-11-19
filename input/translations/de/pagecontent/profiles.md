@@ -119,7 +119,7 @@ Körpergröße und allgemeines Körpergewicht behalten ihre deutschen Elternprof
 
 **Validator-Kompatibilität:** Die Körperlänge im Liegen verlangt zusätzlich den allgemeineren LOINC-Code 8302-2 (Body height), weil der HL7-Java-Validator im IG Publisher 2.3.2 ihn fordert, sobald 8306-3 vorhanden ist. LOINC 8306-3 bleibt der genauere Code für die Körperlänge im Liegen (NRA-592).
 
-Terminologie-Versionen für die fünf Körpermaß-Profile: LOINC 2.83, SNOMED CT International 2026-07-01 (`http://snomed.info/sct/900000000000207008/version/20260701`) und IEEE-11073-MDC-Nomenklatur 2024-12-05. Jedes Mess-Coding muss seine festgelegte Version enthalten; das IEEE-Mess-Coding ist in jedem dieser Profile verpflichtend.
+Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.
 
 <p class="icu-note"><b>ISiK-gehostete Profile &mdash; de.gematik.isik 6.0.0</b><br>Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem bewussten Pin-Wechsel. Jeder Link &ouml;ffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.</p>
 

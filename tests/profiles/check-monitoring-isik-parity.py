@@ -9,8 +9,10 @@ from pathlib import Path
 
 reference = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
 actual = json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))
-assert reference["version"] == "6.0.0"
-assert actual["baseDefinition"] == reference["baseDefinition"]
+if reference["version"] != "6.0.0":
+    sys.exit("Unexpected ISiK version")
+if actual["baseDefinition"] != reference["baseDefinition"]:
+    sys.exit("MII and ISiK base definitions differ")
 
 def rules(profile):
     result = {}
@@ -38,5 +40,7 @@ for slice_name, suffix in (("sct", "snomed"), ("loinc", "loinc"), ("IEEE-11073",
         "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-" + suffix,
     }
 observed = rules(actual)
-assert expected == observed, "ISiK element rules differ beyond the three intended bindings"
+if expected != observed:
+    differences = sorted(key for key in expected.keys() | observed.keys() if expected.get(key) != observed.get(key))
+    sys.exit("ISiK element rules differ beyond the three intended bindings: " + ", ".join(differences))
 print(f"PASS: {len(expected)} element definitions match ISiK 6.0.0; only the three code bindings differ")

@@ -1,16 +1,6 @@
 {
   "profiles": [
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/modul-icu/StructureDefinition/example-patient",
-      "tests": [
-        {
-          "source": "valid/example-patient-valid.json",
-          "description": "Valid: Patient with a family name (name 1..* and name.family 1..1 satisfied)",
-          "valid": true
-        }
-      ]
-    },
-    {
       "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt",
       "tests": [
         {
@@ -79,9 +69,9 @@
           "valid": false
         },
         {
-          "source": "invalid/icu-koerperlaenge-bei-geburt-wrong-version.json",
-          "description": "Invalid: wrong version",
-          "valid": false
+          "source": "valid/icu-koerperlaenge-bei-geburt-other-version.json",
+          "description": "Valid: terminology edition is provided without a fixed release requirement",
+          "valid": true
         }
       ]
     },
@@ -129,9 +119,9 @@
           "valid": false
         },
         {
-          "source": "invalid/icu-koerpergroesse-wrong-version.json",
-          "description": "Invalid: wrong version",
-          "valid": false
+          "source": "valid/icu-koerpergroesse-other-version.json",
+          "description": "Valid: terminology edition is provided without a fixed release requirement",
+          "valid": true
         }
       ]
     },
@@ -229,9 +219,9 @@
           "valid": false
         },
         {
-          "source": "invalid/icu-koerperlaenge-wrong-version.json",
-          "description": "Invalid: wrong version",
-          "valid": false
+          "source": "valid/icu-koerperlaenge-other-version.json",
+          "description": "Valid: terminology edition is provided without a fixed release requirement",
+          "valid": true
         }
       ]
     },
@@ -284,9 +274,9 @@
           "valid": false
         },
         {
-          "source": "invalid/icu-koerpergewicht-wrong-version.json",
-          "description": "Invalid: wrong version",
-          "valid": false
+          "source": "valid/icu-koerpergewicht-other-version.json",
+          "description": "Valid: terminology edition is provided without a fixed release requirement",
+          "valid": true
         }
       ]
     },
@@ -344,9 +334,14 @@
           "valid": false
         },
         {
-          "source": "invalid/icu-geburtsgewicht-wrong-version.json",
-          "description": "Invalid: wrong version",
-          "valid": false
+          "source": "valid/icu-geburtsgewicht-other-version.json",
+          "description": "Valid: terminology edition is provided without a fixed release requirement",
+          "valid": true
+        },
+        {
+          "source": "invalid/icu-birth-weight-kilograms.json",
+          "valid": false,
+          "description": "Invalid: birth weight requires grams, not kilograms"
         }
       ]
     },
@@ -402,6 +397,76 @@
           "source": "invalid/icu-energy-expenditure-snomed.json",
           "description": "Invalid: additional SNOMED coding is prohibited",
           "valid": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-kalorienbedarf-pro-tag",
+      "tests": [
+        {
+          "source": "valid/icu-calorie-need-valid.json",
+          "valid": true,
+          "description": "valid"
+        },
+        {
+          "source": "invalid/icu-calorie-need-wrong-code.json",
+          "valid": false,
+          "description": "wrong code"
+        },
+        {
+          "source": "invalid/icu-calorie-need-wrong-unit.json",
+          "valid": false,
+          "description": "wrong unit"
+        },
+        {
+          "source": "invalid/icu-calorie-need-missing-version.json",
+          "valid": false,
+          "description": "missing version"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
+      "tests": [
+        {
+          "source": "valid/icu-calorie-intake-valid.json",
+          "valid": true,
+          "description": "valid"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-missing-loinc.json",
+          "valid": false,
+          "description": "missing loinc"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-missing-version.json",
+          "valid": false,
+          "description": "missing version"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion",
+      "tests": [
+        {
+          "source": "valid/icu-vco2-valid.json",
+          "valid": true,
+          "description": "valid"
+        },
+        {
+          "source": "invalid/icu-vco2-extra-fluid-code.json",
+          "valid": false,
+          "description": "extra fluid code"
+        },
+        {
+          "source": "invalid/icu-vco2-missing-ieee.json",
+          "valid": false,
+          "description": "missing ieee"
+        },
+        {
+          "source": "invalid/icu-vco2-missing-version.json",
+          "valid": false,
+          "description": "missing version"
         }
       ]
     }

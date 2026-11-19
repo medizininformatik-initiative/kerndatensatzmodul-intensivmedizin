@@ -29,13 +29,14 @@ Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * code.coding[sct].system 1.. MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #787787004
-* code.coding[sct] ^patternCoding.display = "Energy intake (observable entity)"
 * code.coding[sct].code 1.. MS
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #9057-1
-* code.coding[loinc] ^patternCoding.display = "Calorie intake total 24 hour"
 * code.coding[loinc].code 1.. MS
+* code.coding[sct].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+
 * subject 1.. MS
 * subject only Reference(Patient)
 * encounter MS

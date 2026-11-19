@@ -24,7 +24,6 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[loinc-body-height] ^patternCoding.system = $loinc
 * code.coding[loinc-body-height] ^patternCoding.code = #8302-2
 * code.coding[loinc-body-height].version 1..1 MS
-* code.coding[loinc-body-height].version = "2.83"
 
 * effective[x] MS
 * effectiveDateTime MS
@@ -38,10 +37,7 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * valueQuantity.code = #cm
 * valueQuantity.unit = "centimeter"
 
-// Fixed terminology editions for reproducible measurement coding.
+// Send the terminology edition actually used; editions and displays are not fixed here.
 * code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
 * code.coding[sct].version 1..1 MS
-* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"

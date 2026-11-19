@@ -22,10 +22,8 @@ Description: "Estimated daily energy requirement. This is distinct from measured
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding[loinc] ^patternCoding.code = #9058-9
-* code.coding[loinc].display 1..1 MS
-* code.coding[loinc].display = "Calorie need 24 hour Estimated"
+* code.coding[loinc].display MS
 * code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
 * code.coding 1..1 MS
 * valueQuantity = $ucum#"kcal/(24.h)" "kilocalorie per day"
 * valueQuantity.value 1.. MS

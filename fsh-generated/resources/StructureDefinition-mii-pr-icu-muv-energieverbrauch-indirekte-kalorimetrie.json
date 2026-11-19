@@ -76,14 +76,11 @@
         "id": "Observation.code.coding:loinc.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "2.83",
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "Energy expended Reporting Period by Indirect calorimetry",
         "mustSupport": true
       },
       {
@@ -101,14 +98,11 @@
         "id": "Observation.code.coding:IEEE-11073.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "2024-12-05",
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:IEEE-11073.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "MDC_RESP_EXPENDED_ENERGY",
         "mustSupport": true
       },
       {

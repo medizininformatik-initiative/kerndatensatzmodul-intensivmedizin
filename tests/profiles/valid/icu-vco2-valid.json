@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-muv-koerpergroesse",
+  "id": "icu-vco2",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"
     ]
   },
   "status": "final",
@@ -15,26 +15,32 @@
           "code": "vital-signs"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "248326004"
+        }
+      ]
     }
   ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "8302-2",
-        "display": "Body height",
-        "version": "unsupported-version"
+        "code": "60825-7",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "1153637007",
-        "display": "Body height (observable entity)",
-        "version": "unsupported-version"
+        "code": "251408004",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "68060",
-        "version": "unsupported-version"
+        "code": "151776",
+        "version": "2024-12-05"
       }
     ]
   },
@@ -42,13 +48,13 @@
     "display": "Example patient"
   },
   "effectivePeriod": {
-    "start": "2019-12-23T09:30:10+01:00",
-    "end": "2019-12-23T10:30:10+01:00"
+    "start": "2026-01-01T09:00:00+01:00",
+    "end": "2026-01-01T09:30:00+01:00"
   },
   "valueQuantity": {
-    "value": 170,
-    "unit": "centimeter",
+    "value": 0.2,
     "system": "http://unitsofmeasure.org",
-    "code": "cm"
+    "code": "L/min",
+    "unit": "liter per minute"
   }
 }

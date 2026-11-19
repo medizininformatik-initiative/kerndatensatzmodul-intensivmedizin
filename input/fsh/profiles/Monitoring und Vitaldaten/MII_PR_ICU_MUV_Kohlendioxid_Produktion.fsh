@@ -30,22 +30,16 @@ Title: "MII PR ICU MUV Kohlendioxid Produktion"
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.code = #60825-7
-* code.coding[loinc].display 1..1 MS
-* code.coding[loinc].display = "Carbon dioxide production (VCO2) in Respiratory system"
+* code.coding[loinc].display MS
 * code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.code = #251408004
-* code.coding[sct].display 1..1 MS
-* code.coding[sct].display = "Carbon dioxide output (observable entity)"
+* code.coding[sct].display MS
 * code.coding[sct].version 1..1 MS
-* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.code = #151776
-* code.coding[IEEE-11073].display 1..1 MS
-* code.coding[IEEE-11073].display = "MDC_FLOW_CO2_PROD_RESP"
+* code.coding[IEEE-11073].display MS
 * code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"
 
 * subject MS
 

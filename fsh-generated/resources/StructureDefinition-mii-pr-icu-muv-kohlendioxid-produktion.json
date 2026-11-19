@@ -122,14 +122,11 @@
         "id": "Observation.code.coding:sct.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:sct.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "Carbon dioxide output (observable entity)",
         "mustSupport": true
       },
       {
@@ -147,14 +144,11 @@
         "id": "Observation.code.coding:loinc.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "2.83",
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "Carbon dioxide production (VCO2) in Respiratory system",
         "mustSupport": true
       },
       {
@@ -172,14 +166,11 @@
         "id": "Observation.code.coding:IEEE-11073.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "2024-12-05",
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:IEEE-11073.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "MDC_FLOW_CO2_PROD_RESP",
         "mustSupport": true
       },
       {

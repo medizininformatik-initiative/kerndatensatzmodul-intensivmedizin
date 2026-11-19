@@ -13,16 +13,12 @@ Description: "Body-weight-normalised energy expenditure assessed by indirect cal
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS
 * code.coding[loinc] ^patternCoding.code = #75990-2
-* code.coding[loinc].display 1..1 MS
-* code.coding[loinc].display = "Energy expended Reporting Period by Indirect calorimetry"
+* code.coding[loinc].display MS
 * code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
 * code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.code = #152812
-* code.coding[IEEE-11073].display 1..1 MS
-* code.coding[IEEE-11073].display = "MDC_RESP_EXPENDED_ENERGY"
+* code.coding[IEEE-11073].display MS
 * code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"
 // SNOMED coding is excluded: no sufficiently specific code was confirmed.
 * code.coding[sct] 0..0
 * code.coding 2..2 MS

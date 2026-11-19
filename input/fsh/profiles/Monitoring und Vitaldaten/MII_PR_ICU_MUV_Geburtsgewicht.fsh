@@ -24,10 +24,7 @@ Description: "Body weight measured at birth, expressed in grams. The effective t
 * valueQuantity.code = #g
 * valueQuantity.unit = "gram"
 
-// Fixed terminology editions for reproducible measurement coding.
+// Send the terminology edition actually used; editions and displays are not fixed here.
 * code.coding[loinc].version 1..1 MS
-* code.coding[loinc].version = "2.83"
 * code.coding[sct].version 1..1 MS
-* code.coding[sct].version = "http://snomed.info/sct/900000000000207008/version/20260701"
 * code.coding[IEEE-11073].version 1..1 MS
-* code.coding[IEEE-11073].version = "2024-12-05"

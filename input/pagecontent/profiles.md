@@ -134,7 +134,7 @@ Body height and general body weight retain their German parent profiles and proh
 
 **Validator compatibility:** Recumbent length also requires the broader LOINC 8302-2 (Body height) because the HL7 Java validator bundled with IG Publisher 2.3.2 requires it when 8306-3 is present. LOINC 8306-3 remains the more precise code for recumbent length (NRA-592).
 
-Terminology editions for the five body-measurement profiles: LOINC 2.83, SNOMED CT International 2026-07-01 (`http://snomed.info/sct/900000000000207008/version/20260701`), and IEEE 11073 MDC nomenclature 2024-12-05. Each measurement Coding must include its fixed version; the IEEE measurement coding is required in each profile.
+Each measurement Coding must state the terminology edition actually used. The profiles do not fix editions or displays. The IEEE measurement coding remains required.
 
 <p class="icu-note"><b>ISiK-hosted profiles &mdash; de.gematik.isik 6.0.0</b><br>Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version &mdash; the list only changes with a deliberate pin bump. Each link opens the profile rendered in this guide (differential, snapshot, must support, definitions); the profiles themselves stay in the ISiK package.</p>
 

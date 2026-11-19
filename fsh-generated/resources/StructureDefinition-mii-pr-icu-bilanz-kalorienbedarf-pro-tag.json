@@ -69,7 +69,6 @@
         "id": "Observation.code.coding:loinc.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "2.83",
         "mustSupport": true
       },
       {
@@ -81,8 +80,6 @@
       {
         "id": "Observation.code.coding:loinc.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
-        "patternString": "Calorie need 24 hour Estimated",
         "mustSupport": true
       },
       {

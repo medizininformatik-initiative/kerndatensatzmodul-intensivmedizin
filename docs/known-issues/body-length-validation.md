@@ -20,4 +20,4 @@ The HL7 Java validator bundled in IG Publisher 2.3.2 applies an automatic body-h
 
 The recumbent-length profile now requires LOINC 8302-2 in a separate slice for validator compatibility. LOINC 8306-3 remains required and describes the recumbent measurement more precisely. The regression cases cover observations with both codes and a negative case missing the broader code.
 
-Terminology editions for the five body-measurement profiles: LOINC 2.83, SNOMED CT International 2026-07-01 (`http://snomed.info/sct/900000000000207008/version/20260701`), and IEEE 11073 MDC nomenclature 2024-12-05. Each measurement Coding must include its fixed version; the IEEE measurement coding is required in each profile.
+Each measurement Coding must include the terminology edition actually used. The profiles do not fix an edition or display. Examples use LOINC 2.83, SNOMED CT International 2026-07-01 and IEEE 11073 MDC 2024-12-05. The IEEE measurement coding remains required.

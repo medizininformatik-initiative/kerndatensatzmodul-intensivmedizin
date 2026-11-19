@@ -69,7 +69,6 @@
         "id": "Observation.code.coding:sct.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
         "mustSupport": true
       },
       {
@@ -93,7 +92,6 @@
         "id": "Observation.code.coding:IEEE-11073.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "2024-12-05",
         "mustSupport": true
       },
       {
