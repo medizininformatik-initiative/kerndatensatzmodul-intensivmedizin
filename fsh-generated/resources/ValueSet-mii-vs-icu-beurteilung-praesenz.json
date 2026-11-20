@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Beurteilung_Praesenz",
+  "id": "mii-vs-icu-beurteilung-praesenz",
+  "title": "MII VS ICU Beurteilung Praesenz",
+  "description": "Known presence or assessed absence of the clinical state identified by Observation.code. An unavailable assessment is represented by dataAbsentReason.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-beurteilung-praesenz",
+  "version": "2027.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "410515003",
+            "display": "Known present"
+          },
+          {
+            "code": "410516002",
+            "display": "Known absent"
+          }
+        ]
+      }
+    ]
+  }
+}

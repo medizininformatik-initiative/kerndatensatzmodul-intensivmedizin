@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+  "version": "2027.0.0",
+  "name": "MII_PR_ICU_Kontraindikation_Medikamentoese_Thromboseprophylaxe",
+  "title": "MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Assessment of contraindications to pharmacological thromboprophylaxis. Known present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikationsbeurteilung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "contraindication-drug-based-thrombosis-prophylaxis",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "max": "1"
+      }
+    ]
+  }
+}

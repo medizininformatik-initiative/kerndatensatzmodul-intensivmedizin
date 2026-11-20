@@ -46,12 +46,27 @@
     {
       "code": "contraindication-enteral-nutrition",
       "display": "Contraindication to enteral nutrition",
-      "definition": "Kontraindikation gegen enterale Ernaehrung"
+      "definition": "Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence."
     },
     {
       "code": "calorie-goal-in-24-h",
       "display": "Calorie Goal in 24h",
       "definition": "Kalorienziel ueber 24h"
+    },
+    {
+      "code": "contraindication-proning",
+      "display": "Contraindication to prone positioning",
+      "definition": "Assessment of whether a contraindication to prone positioning is present or absent."
+    },
+    {
+      "code": "contraindication-drug-based-thrombosis-prophylaxis",
+      "display": "Contraindication to pharmacological thromboprophylaxis",
+      "definition": "Assessment of contraindications to pharmacological thromboprophylaxis, not to mechanical thromboprophylaxis."
+    },
+    {
+      "code": "parenteral-nutrition-in-progress",
+      "display": "Parenteral nutrition currently being administered",
+      "definition": "Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; not an order, indication or contraindication assessment."
     }
   ],
   "version": "2027.0.0",
@@ -68,5 +83,5 @@
   ],
   "experimental": true,
   "caseSensitive": true,
-  "count": 9
+  "count": 12
 }
