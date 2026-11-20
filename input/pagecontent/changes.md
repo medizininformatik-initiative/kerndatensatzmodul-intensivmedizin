@@ -6,6 +6,7 @@ All changes are listed here.
 
 Ballot release — first formal publication of this module through the HL7 IG Publisher, based on the MII KDS module template.
 
+- `feat` Abstract generic nutritional intake base with extensible identity-code binding; carbohydrate, fat, protein and 24-hour calorie intake derive from it. Periods require start and end; calorie intake also supports dataAbsentReason.
 - `feat` Draft *Bilanz Einfuhr Eiweiß*: accumulated protein intake in grams with SNOMED CT 874875003, a documented time interval and support for absent values.
 - `feat` Draft *Bilanz Einfuhr Fett*: accumulated fat intake in grams with SNOMED CT 870372004, a documented time interval and support for absent values.
 - `feat` Draft *Bilanz Einfuhr Kohlenhydrate*: carbohydrate intake as an accumulated mass in grams with SNOMED CT 788472008, explicit time interval and support for missing values. No DGAI code or fluid-balance semantics are inherited.

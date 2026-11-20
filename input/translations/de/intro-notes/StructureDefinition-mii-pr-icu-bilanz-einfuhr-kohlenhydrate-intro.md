@@ -4,4 +4,6 @@ Verpflichtender Identitätscode ist SNOMED CT **788472008 |Carbohydrate intake|*
 
 LOINC [9059-7](https://loinc.org/9059-7/) bezeichnet ausdrücklich eine **geschätzte** Masse. LOINC [9065-4](https://loinc.org/9065-4/) bezeichnet eine **24-Stunden-Zufuhrrate**, keine beliebige aufsummierte Menge. Beide werden hier nicht als gleichbedeutende Codes verlangt. IEEE 11073 `8417764` (`MDC_CTXT_GLU_CARB`) beschreibt den Kohlenhydratkontext einer Glukosemessung und wird nicht als gleichbedeutend mit dieser allgemeinen Ernährungsbilanz gesetzt. Kein DGAI-Code wird verwendet.
 
-Das Profil erbt direkt von `Observation`, da die ISiK-Flüssigkeitsbilanz flüssigkeitsspezifische Codes und Milliliter-Einheiten vorgibt. Je nach dokumentiertem Umfang können orale, enterale und parenterale Anteile einbezogen werden. Den Umfang in `note` erläutern; das Profil legt keinen bestimmten Zugangsweg fest.
+Das Profil erbt von der lokalen generischen Ernährungszufuhr, die auf `Observation` basiert, da die ISiK-Flüssigkeitsbilanz flüssigkeitsspezifische Codes und Milliliter-Einheiten vorgibt. Je nach dokumentiertem Umfang können orale, enterale und parenterale Anteile einbezogen werden. Den Umfang in `note` erläutern; das Profil legt keinen bestimmten Zugangsweg fest.
+
+Bei Verwendung von `effectivePeriod` sind sowohl `start` als auch `end` verpflichtend.

@@ -4,6 +4,7 @@ Alle Änderungen sind hier gelistet.
 
 Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publisher, auf Basis des MII-KDS-Modul-Templates.
 
+- `feat` Abstrakte generische Ernährungszufuhr mit extensible Identitätscode-Bindung; Kohlenhydrate, Fett, Eiweiß und Kalorienzufuhr 24h erben davon. Zeiträume benötigen Anfang und Ende; auch Kalorienzufuhr unterstützt dataAbsentReason.
 - `feat` Draft *Bilanz Einfuhr Eiweiß*: aufsummierte Zufuhr in Gramm mit SNOMED CT 874875003, Bezugszeitraum und Unterstützung fehlender Werte.
 - `feat` Draft *Bilanz Einfuhr Fett*: aufsummierte Zufuhr in Gramm mit SNOMED CT 870372004, Bezugszeitraum und Unterstützung fehlender Werte.
 - `feat` Draft *Bilanz Einfuhr Kohlenhydrate*: aufsummierte Kohlenhydratzufuhr in Gramm mit SNOMED CT 788472008, Bezugszeitraum und Unterstützung fehlender Werte. Ohne DGAI-Code und ohne geerbte Flüssigkeitsbilanz-Semantik.

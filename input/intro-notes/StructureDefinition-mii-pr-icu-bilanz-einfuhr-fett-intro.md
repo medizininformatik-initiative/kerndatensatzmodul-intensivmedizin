@@ -4,4 +4,6 @@ The required identity code is SNOMED CT **870372004 |Fat and oil intake|**. Codi
 
 LOINC [9066-2](https://loinc.org/9066-2/) explicitly denotes estimated intake and [9067-0](https://loinc.org/9067-0/) measured intake. These method-specific concepts are not required as equivalents to this general profile. No equivalent general IEEE 11073 intake code was identified.
 
-The profile derives directly from `Observation`, avoiding the fluid-specific codes and millilitre units of the ISiK fluid-balance base. Document the included oral, enteral and parenteral contributions in `note`; no specific route is implied.
+The profile derives from the local generic nutritional intake profile, which derives from `Observation`, avoiding the fluid-specific codes and millilitre units of the ISiK fluid-balance base. Document the included oral, enteral and parenteral contributions in `note`; no specific route is implied.
+
+When `effectivePeriod` is used, both `start` and `end` are mandatory.

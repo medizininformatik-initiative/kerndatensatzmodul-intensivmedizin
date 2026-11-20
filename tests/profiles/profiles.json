@@ -687,6 +687,11 @@
           "source": "invalid/icu-carbohydrate-period-no-start.json",
           "valid": false,
           "description": "Carbohydrate intake: period-no-start"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-period-no-end.json",
+          "valid": false,
+          "description": "An accumulated intake period must have an end"
         }
       ]
     },
@@ -752,6 +757,11 @@
           "source": "invalid/icu-fat-period-no-start.json",
           "valid": false,
           "description": "Fat intake: period-no-start"
+        },
+        {
+          "source": "invalid/icu-fat-period-no-end.json",
+          "valid": false,
+          "description": "An accumulated intake period must have an end"
         }
       ]
     },
@@ -817,6 +827,36 @@
           "source": "invalid/icu-protein-period-no-start.json",
           "valid": false,
           "description": "Protein intake: period-no-start"
+        },
+        {
+          "source": "invalid/icu-protein-period-no-end.json",
+          "valid": false,
+          "description": "An accumulated intake period must have an end"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
+      "tests": [
+        {
+          "source": "valid/icu-calorie-intake-complete.json",
+          "valid": true,
+          "description": "Calorie intake retains rate and period semantics: complete"
+        },
+        {
+          "source": "valid/icu-calorie-intake-absent.json",
+          "valid": true,
+          "description": "Calorie intake retains rate and period semantics: absent"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-no-end.json",
+          "valid": false,
+          "description": "Calorie intake retains rate and period semantics: no-end"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-point-time.json",
+          "valid": false,
+          "description": "Calorie intake retains rate and period semantics: point-time"
         }
       ]
     }

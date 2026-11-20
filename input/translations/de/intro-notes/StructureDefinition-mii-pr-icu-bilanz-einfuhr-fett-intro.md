@@ -4,4 +4,6 @@ Verpflichtender Identitätscode ist SNOMED CT **870372004 |Fat and oil intake|**
 
 LOINC [9066-2](https://loinc.org/9066-2/) bezeichnet ausdrücklich eine geschätzte, [9067-0](https://loinc.org/9067-0/) eine gemessene Zufuhr. Diese methodenspezifischen Konzepte werden nicht als gleichbedeutende Pflichtcodes für das allgemeine Profil verwendet. Ein gleichbedeutender allgemeiner IEEE-11073-Zufuhrcode wurde nicht gefunden.
 
-Das Profil erbt direkt von `Observation`, ohne die flüssigkeitsspezifischen Codes und Milliliter-Einheiten der ISiK-Flüssigkeitsbilanz. Den Umfang der einbezogenen oralen, enteralen und parenteralen Beiträge in `note` erläutern; es wird kein bestimmter Zugangsweg vorgegeben.
+Das Profil erbt von der lokalen generischen Ernährungszufuhr, die auf `Observation` basiert, ohne die flüssigkeitsspezifischen Codes und Milliliter-Einheiten der ISiK-Flüssigkeitsbilanz. Den Umfang der einbezogenen oralen, enteralen und parenteralen Beiträge in `note` erläutern; es wird kein bestimmter Zugangsweg vorgegeben.
+
+Bei Verwendung von `effectivePeriod` sind sowohl `start` als auch `end` verpflichtend.

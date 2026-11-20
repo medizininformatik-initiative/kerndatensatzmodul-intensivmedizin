@@ -4,6 +4,8 @@ The required identity code is SNOMED CT **874875003 |Protein and/or protein deri
 
 LOINC [9079-5](https://loinc.org/9079-5/) explicitly denotes estimated intake and [9080-3](https://loinc.org/9080-3/) measured intake. These method-specific concepts are not required as equivalents to this general profile. No equivalent general IEEE 11073 intake code was identified.
 
-The profile derives directly from `Observation`, avoiding the fluid-specific codes and millilitre units of the ISiK fluid-balance base. Document the included oral, enteral and parenteral contributions in `note`; no specific route is implied.
+The profile derives from the local generic nutritional intake profile, which derives from `Observation`, avoiding the fluid-specific codes and millilitre units of the ISiK fluid-balance base. Document the included oral, enteral and parenteral contributions in `note`; no specific route is implied.
 
 The SNOMED concept includes protein derivatives.
+
+When `effectivePeriod` is used, both `start` and `end` are mandatory.
