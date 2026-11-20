@@ -11,7 +11,7 @@ Patientendaten in Beispielen verwenden.
 > **Written during migration - review before release.** Aus dem Build generierte Liste (Quelle hatte hier kein Narrativ).
 {: .ig-highlight .ig-highlight-blue}
 
-Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.html) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt *Examples*.
+Das Modul liefert **161 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.html) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt *Examples*.
 
 <!-- BEGIN generiert: scripts/gen-examples-page.py -->
 
@@ -181,7 +181,16 @@ Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.html) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html) (ISiK) |
 | [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.html) | [MII PR ICU Untersuchung Pupillensymmetrie](extern-mii-pr-icu-untersuchung-pupillensymmetrie.html) (ISiK) |
 
-#### Scores (10)
+#### Klinische Beurteilungen (4)
+
+| Beispiel | illustriert das Profil |
+|---|---|
+| [Klinische Beurteilung Parenterale Ernaehrung](Observation-mii-exa-icu-klinische-beurteilung-parenterale-ernaehrung.html) | [MII PR ICU Klinische Beurteilung Parenterale Ernaehrung](StructureDefinition-mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung.html) |
+| [Kontraindikation Bauchlage](Observation-mii-exa-icu-kontraindikation-bauchlage.html) | [MII PR ICU Kontraindikation Bauchlage](StructureDefinition-mii-pr-icu-kontraindikation-bauchlage.html) |
+| [Kontraindikation Enterale Ernaehrung](Observation-mii-exa-icu-kontraindikation-enterale-ernaehrung.html) | [MII PR ICU Kontraindikation Enterale Ernaehrung](StructureDefinition-mii-pr-icu-kontraindikation-enterale-ernaehrung.html) |
+| [Kontraindikation Medikamentoese Thromboseprophylaxe](Observation-mii-exa-icu-kontraindikation-medikamentoese-thromboseprophylaxe.html) | [MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe](StructureDefinition-mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe.html) |
+
+#### Scores (15)
 
 | Beispiel | illustriert das Profil |
 |---|---|
@@ -189,11 +198,16 @@ Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Score Bps](Observation-mii-exa-icu-score-bps.html) | [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.html) |
 | [Score Cam Icu](Observation-mii-exa-icu-score-cam-icu.html) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.html) |
 | [Score Cam Icu Absent](Observation-mii-exa-icu-score-cam-icu-absent.html) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.html) |
+| [Score Capd](Observation-mii-exa-icu-score-capd.html) | [MII PR ICU Score CAPD](StructureDefinition-mii-pr-icu-score-capd.html) |
+| [Score Comfort B](Observation-mii-exa-icu-score-comfort-b.html) | [MII PR ICU Score COMFORT-B](StructureDefinition-mii-pr-icu-score-comfort-b.html) |
 | [Score Faces Pain Scale Revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.html) | [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html) |
 | [Score Gcs](Observation-mii-exa-icu-score-gcs.html) | [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.html) |
 | [Score Icdsc](Observation-mii-exa-icu-score-icdsc.html) | [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.html) |
+| [Score Kuss](Observation-mii-exa-icu-score-kuss.html) | [MII PR ICU Score KUSS](StructureDefinition-mii-pr-icu-score-kuss.html) |
 | [Score Numerische Ratingskala](Observation-mii-exa-icu-score-numerische-ratingskala.html) | [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html) |
 | [Score Rass](Observation-mii-exa-icu-score-rass.html) | [MII PR ICU Score RASS](extern-mii-pr-icu-score-rass.html) (ISiK) |
+| [Score Sos](Observation-mii-exa-icu-score-sos.html) | [MII PR ICU Score SOS](StructureDefinition-mii-pr-icu-score-sos.html) |
+| [Score Sos Pd](Observation-mii-exa-icu-score-sos-pd.html) | [MII PR ICU Score SOS-PD](StructureDefinition-mii-pr-icu-score-sos-pd.html) |
 | [Score Visuelle Analogskala](Observation-mii-exa-icu-score-visuelle-analogskala.html) | [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html) |
 
 #### Ohne Profilzuordnung (1)
