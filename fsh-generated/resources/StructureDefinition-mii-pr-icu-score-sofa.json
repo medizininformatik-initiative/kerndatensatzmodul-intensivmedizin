@@ -27,6 +27,19 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "sofa-complete-components",
+            "severity": "error",
+            "human": "A SOFA result or any recorded component requires all six organ-system components; a missing observation may contain only dataAbsentReason.",
+            "expression": "(value.exists() or component.exists()) implies component.count() = 6",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
+          }
+        ]
+      },
+      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "min": 1
@@ -55,24 +68,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x]:valueInteger",
-        "path": "Observation.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "integer"
@@ -83,7 +78,7 @@
             "key": "sofa-score-range",
             "severity": "error",
             "human": "SOFA total score must be between 0 and 24",
-            "expression": "valueInteger >= 0 and valueInteger <= 24",
+            "expression": "$this >= 0 and $this <= 24",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
@@ -104,11 +99,19 @@
               "path": "code"
             }
           ],
-          "rules": "open",
+          "rules": "closed",
           "ordered": false
         },
-        "min": 6,
         "max": "6"
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
       },
       {
         "id": "Observation.component:respiratory",
@@ -141,35 +144,12 @@
       {
         "id": "Observation.component:respiratory.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:respiratory.value[x]:valueInteger",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ],
         "constraint": [
           {
             "key": "sofa-component-range",
             "severity": "error",
             "human": "SOFA component score must be between 0 and 4",
-            "expression": "valueInteger >= 0 and valueInteger <= 4",
+            "expression": "$this >= 0 and $this <= 4",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
@@ -205,35 +185,12 @@
       {
         "id": "Observation.component:cardiovascular.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:cardiovascular.value[x]:valueInteger",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ],
         "constraint": [
           {
             "key": "sofa-component-range",
             "severity": "error",
             "human": "SOFA component score must be between 0 and 4",
-            "expression": "valueInteger >= 0 and valueInteger <= 4",
+            "expression": "$this >= 0 and $this <= 4",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
@@ -269,35 +226,12 @@
       {
         "id": "Observation.component:hepatic.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:hepatic.value[x]:valueInteger",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ],
         "constraint": [
           {
             "key": "sofa-component-range",
             "severity": "error",
             "human": "SOFA component score must be between 0 and 4",
-            "expression": "valueInteger >= 0 and valueInteger <= 4",
+            "expression": "$this >= 0 and $this <= 4",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
@@ -333,35 +267,12 @@
       {
         "id": "Observation.component:coagulation.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:coagulation.value[x]:valueInteger",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ],
         "constraint": [
           {
             "key": "sofa-component-range",
             "severity": "error",
             "human": "SOFA component score must be between 0 and 4",
-            "expression": "valueInteger >= 0 and valueInteger <= 4",
+            "expression": "$this >= 0 and $this <= 4",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
@@ -397,35 +308,12 @@
       {
         "id": "Observation.component:renal.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:renal.value[x]:valueInteger",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ],
         "constraint": [
           {
             "key": "sofa-component-range",
             "severity": "error",
             "human": "SOFA component score must be between 0 and 4",
-            "expression": "valueInteger >= 0 and valueInteger <= 4",
+            "expression": "$this >= 0 and $this <= 4",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
@@ -461,35 +349,12 @@
       {
         "id": "Observation.component:neurological.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:neurological.value[x]:valueInteger",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueInteger",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ],
         "constraint": [
           {
             "key": "sofa-component-range",
             "severity": "error",
             "human": "SOFA component score must be between 0 and 4",
-            "expression": "valueInteger >= 0 and valueInteger <= 4",
+            "expression": "$this >= 0 and $this <= 4",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa"
           }
         ]
