@@ -32,5 +32,15 @@
         "code": "410516002"
       }
     ]
-  }
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "therapy"
+        }
+      ]
+    }
+  ]
 }

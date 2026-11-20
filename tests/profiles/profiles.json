@@ -957,6 +957,21 @@
           "source": "invalid/icu-pn-period-reversed.json",
           "valid": false,
           "description": "PN status period: period-reversed"
+        },
+        {
+          "source": "invalid/icu-pn-no-category.json",
+          "valid": false,
+          "description": "PN therapy category: no-category"
+        },
+        {
+          "source": "invalid/icu-pn-wrong-category.json",
+          "valid": false,
+          "description": "PN therapy category: wrong-category"
+        },
+        {
+          "source": "valid/icu-pn-extra-category.json",
+          "valid": true,
+          "description": "PN therapy category: extra-category"
         }
       ]
     }

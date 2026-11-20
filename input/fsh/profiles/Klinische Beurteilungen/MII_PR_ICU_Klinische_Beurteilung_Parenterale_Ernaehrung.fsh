@@ -20,3 +20,8 @@ Description: "Assessment of whether parenteral nutrition is actually being admin
 * partOf MS
 * partOf ^short = "Administration event this assessment is part of"
 * partOf ^definition = "When the observation is part of a particular parenteral nutrition administration, reference that MedicationAdministration here. Use supportingInfo for clinical records used as evidence when there is no part-of relationship. An order alone does not establish actual administration."
+
+// This profile assesses actual treatment delivery; contraindication profiles do not.
+* category 1.. MS
+* category.coding[hl7-category] 1..1 MS
+* category.coding[hl7-category] ^patternCoding.code = #therapy

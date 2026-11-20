@@ -5,3 +5,5 @@ Zugehöriges Issue: [NRA-179](https://imi-uka.atlassian.net/browse/NRA-179).
 Ist die Beurteilung Teil einer konkreten Gabe, wird die `MedicationAdministration` über `partOf` referenziert. Für als Beleg verwendete Dokumentation ohne Teil-von-Beziehung erlaubt `workflow-supportingInfo` auch `MedicationAdministration` und `MedicationStatement`. Alle Beurteilungsprofile behalten die regulären Observation-Performer ohne zusätzliche Einschränkung bei.
 
 `effectiveDateTime` bezeichnet einen fachlich relevanten Zeitpunkt, `effectivePeriod` ein Intervall, für das das Ergebnis gilt. Period.start ist verpflichtend; ein unbekanntes Ende darf fehlen. Unterbrechungen dürfen nicht durch ein positives Zeitraumergebnis überbrückt werden. `issued` bezeichnet den Zeitpunkt, zu dem das Beurteilungsergebnis verfügbar wurde, nicht den fachlichen Zeitraum.
+
+Die Beurteilung der tatsächlichen Durchführung verlangt die Kategorie therapy, auch bei einem negativen Ergebnis. Die Kategorie klassifiziert die Beurteilung; erst der Ergebniswert sagt aus, ob die Verabreichung stattfindet. Zusätzliche Kategoriesysteme bleiben erlaubt.

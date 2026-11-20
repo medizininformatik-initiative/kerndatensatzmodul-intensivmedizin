@@ -1,3 +1,5 @@
 Abstract base for categorical clinical assessments. The concrete profile identifies the clinical question and its result value set. Contraindications and current treatment status are separate assessment questions. Observation.status is the documentation status, while valueCodeableConcept carries the clinical result. Record exactly one result or dataAbsentReason, the patient and the effective time. Use performer for the assessor, note for reasoning and workflow-supportingInfo for supporting clinical records.
 
 This base applies only to categorical assessments derived from it. It does not replace the existing Score, quantitative Monitoring or ISiK pupil profiles. In particular, pupil size may be quantitative, while shape and light reaction have their own result value sets. Known present / Known absent is required only by the specific binary assessment profiles, not by this generic base.
+
+Category coding is open and must-support. The generic assessment does not require a particular category. Contraindication assessments do not assert therapy delivery and have no fixed therapy category.

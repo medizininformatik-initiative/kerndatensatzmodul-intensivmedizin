@@ -23,5 +23,15 @@
       "value": "assessment-test"
     }
   },
-  "effectiveDateTime": "2026-11-20T08:00:00+01:00"
+  "effectiveDateTime": "2026-11-20T08:00:00+01:00",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "therapy"
+        }
+      ]
+    }
+  ]
 }

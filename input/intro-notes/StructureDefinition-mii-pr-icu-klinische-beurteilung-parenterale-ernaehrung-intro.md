@@ -5,3 +5,5 @@ Related issue: [NRA-179](https://imi-uka.atlassian.net/browse/NRA-179).
 When the assessment is part of a specific administration event, use `partOf` to reference the `MedicationAdministration`. For records used as supporting evidence without a part-of relationship, `workflow-supportingInfo` accepts `MedicationAdministration` and `MedicationStatement`. All assessment profiles retain the standard Observation performer types without further restriction.
 
 Use `effectiveDateTime` for a single clinically relevant time or `effectivePeriod` for an interval to which the result applies. Period.start is required; an unknown end may be omitted. Do not span interruptions with a positive period result. `issued` records when the assessment result became available, not the clinical interval.
+
+The actual administration assessment requires category therapy, including when its result is known absent. The category classifies the assessment; the result alone states whether administration is in progress. Additional category systems are permitted.
