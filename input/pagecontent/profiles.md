@@ -104,19 +104,23 @@
 </div>
 </div></details>
 <details>
-<summary>Scores<span class="cnt">11</span></summary><div class="body">
+<summary>Scores<span class="cnt">15</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-score-bps.html">BPS</a>
 <a href="StructureDefinition-mii-pr-icu-score-cam-icu.html">CAM-ICU</a>
+<a href="StructureDefinition-mii-pr-icu-score-capd.html">CAPD</a>
+<a href="StructureDefinition-mii-pr-icu-score-comfort-b.html">COMFORT-B</a>
 <a href="StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html">Faces Pain Scale Revised</a>
 <a href="StructureDefinition-mii-pr-icu-score-gcs.html">GCS</a>
 <a href="StructureDefinition-mii-pr-icu-score-icdsc.html">ICDSC</a>
+<a href="StructureDefinition-mii-pr-icu-score-kuss.html">KUSS</a>
 <a href="StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html">Numerische Ratingskala</a>
 <a href="StructureDefinition-mii-pr-icu-score-sofa.html">SOFA</a>
+<a href="StructureDefinition-mii-pr-icu-score-sos.html">SOS</a>
+<a href="StructureDefinition-mii-pr-icu-score-sos-pd.html">SOS-PD</a>
 <a href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html">Visuelle Analogskala</a>
 <a href="StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html">Wong-Baker-FACES-Schmerzskala</a>
-<a href="StructureDefinition-mii-pr-icu-score-zopa.html">ZOPA</a>
 </div>
 </div></details>
 <details>

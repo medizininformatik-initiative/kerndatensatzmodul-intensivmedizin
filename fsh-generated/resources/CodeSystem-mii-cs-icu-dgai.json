@@ -44,10 +44,6 @@
       "definition": "Confusion Assessment Method for the ICU (CAM-ICU)"
     },
     {
-      "code": "DGAI-ZOPA",
-      "display": "Zuerich Observation Pain Assessment (ZOPA)"
-    },
-    {
       "code": "contraindication-enteral-nutrition",
       "display": "Contraindication to enteral nutrition",
       "definition": "Kontraindikation gegen enterale Ernaehrung"
@@ -72,5 +68,5 @@
   ],
   "experimental": true,
   "caseSensitive": true,
-  "count": 10
+  "count": 9
 }

@@ -26,7 +26,6 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
 // Erwachsenen Scores Prototypen
 * #bps "BPS" "Behavioral Pain Scale (BPS)"
 * #cam-icu "CAM-ICU" "Confusion Assessment Method for the ICU (CAM-ICU)"
-* #DGAI-ZOPA "Zuerich Observation Pain Assessment (ZOPA)" // -> obsolet, wenn abschließend entschieden und Profil entfernt auch hier >>
 
 // Bilanz Profile / QI7
 * #contraindication-enteral-nutrition "Contraindication to enteral nutrition" "Kontraindikation gegen enterale Ernaehrung"

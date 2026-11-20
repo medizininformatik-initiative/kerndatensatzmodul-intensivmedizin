@@ -34,7 +34,7 @@ Title: "MII PR ICU Score GCS"
 * value[x] 0..1 MS
 * value[x] only Quantity
 * value[x] ^short = "GCS Gesamtwert"
-* valueQuantity 1..1
+* valueQuantity 0..1
 * valueQuantity.value 1..1
 * valueQuantity.system 1..1
 * valueQuantity.system = $ucum
