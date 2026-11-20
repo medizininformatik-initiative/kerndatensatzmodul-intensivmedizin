@@ -5,6 +5,7 @@ Title: "MII PR ICU Score COMFORT-B"
 Description: "Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonverbalen Kindern mittels COMFORT-Behavior-Skala (COMFORT-B)."
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-comfort-b"
 * ^version = "2027.0.0"
 * ^status = #draft
