@@ -4,9 +4,10 @@ Title: "MII VS ICU Code Observation extrakorporale Verfahren ISO11073"
 Description: "Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern."
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc"
+* ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073"
 * ^status = #active
 * ^date = "2025-02-11"
 * ^experimental = false
 
-// Todo: warum ist das leer?
+// Generic extensible binding; specialised profiles select the relevant metrics.
+* include codes from system $ieee-11073

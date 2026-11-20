@@ -45,10 +45,18 @@ public class RunProfileTests {
         .fromSource("hl7.fhir.r4.core#4.0.1");
     engine.loadPackage("de.basisprofil.r4", "1.6.0");
     engine.getValidator(FhirFormat.JSON).setNoTerminologyChecks(true);
+    Set<String> identities = new HashSet<>();
     try (var files = Files.list(resources)) {
       for (Path path : files.filter(p -> p.getFileName().toString().endsWith(".json")).toList()) {
         JsonObject resource = read(path);
         String type = resource.get("resourceType").getAsString();
+        if (resource.has("url")) {
+          String identity = resource.get("url").getAsString() + "|" +
+              (resource.has("version") ? resource.get("version").getAsString() : "");
+          if (!identities.add(identity)) {
+            throw new IllegalArgumentException("Duplicate canonical and version: " + identity);
+          }
+        }
         if (type.equals("StructureDefinition")) {
           profiles.put(resource.get("url").getAsString(), path);
         } else if (type.equals("ValueSet") || type.equals("CodeSystem")) {
