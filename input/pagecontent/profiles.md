@@ -44,7 +44,7 @@
 </div>
 </div></details>
 <details>
-<summary>Ventilation values<span class="cnt">34</span></summary><div class="body">
+<summary>Ventilation values<span class="cnt">35</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.html">Eingestellte Gemessene Parameter Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-parameter-von-beatmung.html">Parameter von Beatmung</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html">Atemwegsdruck Bei Null Expiratorischem Gasfluss</a>
@@ -59,6 +59,7 @@
 <a href="StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html">Eingestellter Inspiratorischer Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html">Einstellung Ausatmungszeit Beatmung</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.html">Einstellung Einatmungszeit Beatmung</a>
+<a href="StructureDefinition-mii-pr-icu-vent-einstellung-inspirationsdruck.html">Einstellung Inspirationsdruck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html">Endexpiratorischer Kohlendioxidpartialdruck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.html">Exspiratorischer Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.html">Exspiratorischer Sauerstoffpartialdruck</a>
@@ -88,7 +89,7 @@
 </div>
 </div></details>
 <details>
-<summary>Monitoring and vital signs (module-owned)<span class="cnt">11</span></summary><div class="body">
+<summary>Monitoring and vital signs (module-owned)<span class="cnt">19</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
@@ -96,11 +97,29 @@
 <a href="StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.html">Energieverbrauch Indirekte Kalorimetrie</a>
 <a href="StructureDefinition-mii-pr-icu-muv-geburtsgewicht.html">Geburtsgewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
+<a href="StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.html">Herzzeitvolumen</a>
+<a href="StructureDefinition-mii-pr-icu-muv-ideales-koerpergewicht.html">Ideales Koerpergewicht</a>
+<a href="StructureDefinition-mii-pr-icu-muv-intrakranieller-druck.html">Intrakranieller Druck (ICP)</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht-perzentil.html">Koerpergewicht Perzentil (altersabhaengig)</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse-perzentil.html">Koerpergroesse Perzentil (altersabhaengig)</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html">Koerperlaenge Bei Geburt</a>
+<a href="StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.html">Kohlendioxid Produktion</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
+<a href="StructureDefinition-mii-pr-icu-muv-pulmonalarterieller-wedge-druck.html">Pulmonalarterieller Wedge-Druck</a>
+<a href="StructureDefinition-mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex.html">Pulmonalvaskulaerer Widerstandsindex</a>
+</div>
+</div></details>
+<details>
+<summary>Clinical assessments<span class="cnt">6</span></summary><div class="body">
+<p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-klinische-beurteilung.html">Kategoriale Klinische Beurteilung</a> &middot; <a href="StructureDefinition-mii-pr-icu-kontraindikationsbeurteilung.html">Kontraindikationsbeurteilung</a></p>
+<div class="items">
+<a href="StructureDefinition-mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung.html">Klinische Beurteilung Parenterale Ernaehrung</a>
+<a href="StructureDefinition-mii-pr-icu-kontraindikation-bauchlage.html">Bauchlage</a>
+<a href="StructureDefinition-mii-pr-icu-kontraindikation-enterale-ernaehrung.html">Enterale Ernaehrung</a>
+<a href="StructureDefinition-mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe.html">Medikamentoese Thromboseprophylaxe</a>
 </div>
 </div></details>
 <details>

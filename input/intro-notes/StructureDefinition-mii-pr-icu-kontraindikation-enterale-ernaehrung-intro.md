@@ -1,0 +1,3 @@
+The DGAI assessment code identifies the intervention. Known present (410515003) means at least one contraindication was identified; known absent (410516002) means contraindications were assessed as absent. Neither missing documentation nor a missing assessment is a negative result: use dataAbsentReason. The result does not classify a contraindication as absolute or relative, and does not itself record a decision to withhold treatment. Record reasoning in note and reference coded diagnoses or findings with workflow-supportingInfo. Reassess when the clinical situation changes; effective[x] is the clinical assessment time, issued is documentation time.
+
+Related issue: [NRA-19](https://imi-uka.atlassian.net/browse/NRA-19).

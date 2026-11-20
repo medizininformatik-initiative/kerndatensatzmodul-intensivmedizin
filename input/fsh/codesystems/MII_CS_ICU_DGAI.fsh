@@ -28,5 +28,11 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
 * #cam-icu "CAM-ICU" "Confusion Assessment Method for the ICU (CAM-ICU)"
 
 // Bilanz Profile / QI7
-* #contraindication-enteral-nutrition "Contraindication to enteral nutrition" "Kontraindikation gegen enterale Ernaehrung"
+* #contraindication-enteral-nutrition "Contraindication to enteral nutrition" "Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence."
 * #calorie-goal-in-24-h "Calorie Goal in 24h" "Kalorienziel ueber 24h"
+// Contraindication assessment prototypes
+* #contraindication-proning "Contraindication to prone positioning" "Assessment of whether a contraindication to prone positioning is present or absent."
+* #contraindication-drug-based-thrombosis-prophylaxis "Contraindication to pharmacological thromboprophylaxis" "Assessment of contraindications to pharmacological thromboprophylaxis, not to mechanical thromboprophylaxis."
+
+// Current therapy status assessment prototype
+* #parenteral-nutrition-in-progress "Parenteral nutrition currently being administered" "Assessment of whether parenteral nutrition is actually being administered at the effective time; not an order, indication or contraindication assessment."
