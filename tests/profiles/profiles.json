@@ -697,6 +697,11 @@
           "source": "valid/icu-kontraindikation-supporting-condition.json",
           "valid": true,
           "description": "A coded clinical assessment can reference a supporting Condition through the standard HL7 extension"
+        },
+        {
+          "source": "invalid/icu-contraindication-organization-performer.json",
+          "valid": false,
+          "description": "Contraindications retain the narrower Practitioner or PractitionerRole assessor constraint"
         }
       ]
     },
@@ -907,6 +912,31 @@
           "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-extra-question-coding.json",
           "valid": false,
           "description": "One unambiguous specialised assessment code is required"
+        },
+        {
+          "source": "valid/icu-pn-supporting-medicationadministration.json",
+          "valid": true,
+          "description": "Medication documentation can support the current administration assessment"
+        },
+        {
+          "source": "valid/icu-pn-supporting-medicationstatement.json",
+          "valid": true,
+          "description": "Medication documentation can support the current administration assessment"
+        },
+        {
+          "source": "valid/icu-pn-part-of-administration.json",
+          "valid": true,
+          "description": "Assessment can be part of a specific administration event"
+        },
+        {
+          "source": "valid/icu-pn-organization-performer.json",
+          "valid": true,
+          "description": "The generic base retains standard FHIR performer types"
+        },
+        {
+          "source": "invalid/icu-pn-extra-result-coding.json",
+          "valid": false,
+          "description": "Exactly one result coding remains required"
         }
       ]
     }

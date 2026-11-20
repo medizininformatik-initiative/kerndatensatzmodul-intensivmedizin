@@ -17,3 +17,7 @@ Description: "Point-in-time assessment of whether parenteral nutrition is actual
 * effectiveDateTime 1..1 MS
 * component 0..0
 * hasMember 0..0
+
+* partOf MS
+* partOf ^short = "Administration event this assessment is part of"
+* partOf ^definition = "When the observation is part of a particular parenteral nutrition administration, reference that MedicationAdministration here. Use supportingInfo for clinical records used as evidence when there is no part-of relationship. An order alone does not establish actual administration."

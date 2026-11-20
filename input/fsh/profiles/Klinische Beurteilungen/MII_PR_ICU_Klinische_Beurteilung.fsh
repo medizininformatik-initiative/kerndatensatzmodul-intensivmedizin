@@ -33,7 +33,6 @@ Description: "Reusable categorical clinical assessment with explicit question, p
 * effectivePeriod.end MS
 * issued MS
 * performer MS
-* performer only Reference(Practitioner or PractitionerRole)
 
 * value[x] only CodeableConcept
 * value[x] MS
@@ -48,6 +47,6 @@ Description: "Reusable categorical clinical assessment with explicit question, p
 * method MS
 
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo named supportingInfo 0..* MS
-* extension[supportingInfo].valueReference only Reference(Condition or Observation or AllergyIntolerance or Procedure or DocumentReference)
+* extension[supportingInfo].valueReference only Reference(Condition or Observation or AllergyIntolerance or Procedure or DocumentReference or MedicationAdministration or MedicationStatement)
 * extension[supportingInfo] ^short = "Clinical information supporting this assessment"
 * extension[supportingInfo] ^definition = "References the diagnoses, findings or other clinical documentation used for this assessment. Referenced clinical facts can carry the coded reasons; narrative reasoning can be recorded in note."

@@ -10,6 +10,8 @@ Description: "Assessment of the presence or absence of contraindications to one 
 * ^experimental = true
 * ^abstract = true
 
+* performer only Reference(Practitioner or PractitionerRole)
+
 * code from MII_VS_ICU_Code_Kontraindikation (extensible)
 * code ^definition = "The assessment question MUST identify the intervention being considered. A code stating only that a contraindication exists is insufficient. Use an existing suitable question code when available."
 * valueCodeableConcept from MII_VS_ICU_Beurteilung_Praesenz (required)
