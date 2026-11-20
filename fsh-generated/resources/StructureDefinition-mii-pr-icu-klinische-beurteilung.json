@@ -101,6 +101,49 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "definition": "General category of the observation. Specialisations may require a category when it matches their clinical scope; assessing a contraindication does not assert treatment delivery.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:hl7-category",
+        "path": "Observation.category.coding",
+        "sliceName": "hl7-category",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:hl7-category.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:hl7-category.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "definition": "Identifies the clinical assessment question. Where an intervention is being assessed, the question must identify that intervention. Specialised profiles define appropriate codes and result value sets.",

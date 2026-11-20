@@ -35,6 +35,26 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.category.coding:hl7-category",
+        "path": "Observation.category.coding",
+        "sliceName": "hl7-category",
+        "min": 1,
+        "patternCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "therapy"
+        }
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "patternCodeableConcept": {

@@ -5,7 +5,7 @@
   "name": "MII_CS_ICU_DGAI",
   "id": "mii-cs-icu-dgai",
   "title": "MII CS ICU DGAI",
-  "description": "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).",
+  "description": "Placeholder codes for intensive care concepts without an established international code (drafts only).",
   "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
   "concept": [
     {
@@ -16,22 +16,22 @@
     {
       "code": "ped-cbs",
       "display": "pediatric COMFORT-B-Scale",
-      "definition": "COMFORT-Behavior-Skala (COMFORT-B)"
+      "definition": "COMFORT-Behavior Scale (COMFORT-B)"
     },
     {
       "code": "ped-kuss",
       "display": "pediatric KUSS",
-      "definition": "Kindliche Unbehagens- und Schmerzskala (KUSS)"
+      "definition": "Child discomfort and pain scale (KUSS)"
     },
     {
       "code": "ped-sos",
       "display": "pediatric SOS",
-      "definition": "Sophia Observation withdrawal Symptoms-scale (SOS) Scope des Profils ist die Entzugssymptomatik. \nFuer paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden."
+      "definition": "Sophia Observation withdrawal Symptoms-scale (SOS). This profile covers withdrawal symptoms.\nFor pediatric delirium use MII_PR_ICU_Score_SOS_PD."
     },
     {
       "code": "ped-sos-pd",
       "display": "pediatric SOS-PD",
-      "definition": "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD) \nScope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet. \nDie elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden."
+      "definition": "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD).\nThis profile covers only the pediatric delirium assessment score, although the instrument also includes SOS.\nParental behavioural assessment is not captured. For withdrawal symptoms use MII_PR_ICU_Score_SOS."
     },
     {
       "code": "bps",
@@ -51,22 +51,22 @@
     {
       "code": "calorie-goal-in-24-h",
       "display": "Calorie Goal in 24h",
-      "definition": "Kalorienziel ueber 24h"
+      "definition": "Calorie target over 24 hours"
     },
     {
       "code": "contraindication-proning",
       "display": "Contraindication to prone positioning",
-      "definition": "Assessment of whether a contraindication to prone positioning is present or absent."
+      "definition": "Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence."
     },
     {
       "code": "contraindication-drug-based-thrombosis-prophylaxis",
       "display": "Contraindication to pharmacological thromboprophylaxis",
-      "definition": "Assessment of contraindications to pharmacological thromboprophylaxis, not to mechanical thromboprophylaxis."
+      "definition": "Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope."
     },
     {
       "code": "parenteral-nutrition-in-progress",
       "display": "Parenteral nutrition currently being administered",
-      "definition": "Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; not an order, indication or contraindication assessment."
+      "definition": "Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment."
     }
   ],
   "version": "2027.0.0",
