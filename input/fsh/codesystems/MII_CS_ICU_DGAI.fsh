@@ -35,4 +35,4 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
 * #contraindication-drug-based-thrombosis-prophylaxis "Contraindication to pharmacological thromboprophylaxis" "Assessment of contraindications to pharmacological thromboprophylaxis, not to mechanical thromboprophylaxis."
 
 // Current therapy status assessment prototype
-* #parenteral-nutrition-in-progress "Parenteral nutrition currently being administered" "Assessment of whether parenteral nutrition is actually being administered at the effective time; not an order, indication or contraindication assessment."
+* #parenteral-nutrition-in-progress "Parenteral nutrition currently being administered" "Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; not an order, indication or contraindication assessment."

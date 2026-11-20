@@ -19,7 +19,6 @@
   "subject": {
     "reference": "Patient/mii-exa-icu-patient"
   },
-  "effectiveDateTime": "2026-11-20T08:00:00+01:00",
   "valueCodeableConcept": {
     "coding": [
       {
@@ -29,5 +28,10 @@
         "display": "Known present"
       }
     ]
-  }
+  },
+  "effectivePeriod": {
+    "start": "2026-11-20T07:00:00+01:00",
+    "end": "2026-11-20T09:00:00+01:00"
+  },
+  "issued": "2026-11-20T09:15:00+01:00"
 }

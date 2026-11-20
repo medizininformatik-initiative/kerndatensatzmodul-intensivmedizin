@@ -699,9 +699,9 @@
           "description": "A coded clinical assessment can reference a supporting Condition through the standard HL7 extension"
         },
         {
-          "source": "invalid/icu-contraindication-organization-performer.json",
-          "valid": false,
-          "description": "Contraindications retain the narrower Practitioner or PractitionerRole assessor constraint"
+          "source": "valid/icu-contraindication-organization-performer.json",
+          "valid": true,
+          "description": "Contraindication assessments retain standard FHIR performer types, including Organization"
         }
       ]
     },
@@ -937,6 +937,26 @@
           "source": "invalid/icu-pn-extra-result-coding.json",
           "valid": false,
           "description": "Exactly one result coding remains required"
+        },
+        {
+          "source": "valid/icu-pn-period.json",
+          "valid": true,
+          "description": "PN status period: period"
+        },
+        {
+          "source": "valid/icu-pn-open-period.json",
+          "valid": true,
+          "description": "PN status period: open-period"
+        },
+        {
+          "source": "invalid/icu-pn-period-missing-start.json",
+          "valid": false,
+          "description": "PN status period: period-missing-start"
+        },
+        {
+          "source": "invalid/icu-pn-period-reversed.json",
+          "valid": false,
+          "description": "PN status period: period-reversed"
         }
       ]
     }
