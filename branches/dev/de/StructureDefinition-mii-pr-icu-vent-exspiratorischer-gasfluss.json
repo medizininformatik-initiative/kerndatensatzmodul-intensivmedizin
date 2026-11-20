@@ -11,7 +11,7 @@
   "name" : "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
   "title" : "MII PR ICU Exspiratorischer Gasfluss",
   "status" : "active",
-  "date" : "2026-11-20T09:30:27+00:00",
+  "date" : "2026-11-20T10:23:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1396,7 +1396,7 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed"
       },
       "mapping" : [{
@@ -1728,7 +1728,7 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"
       },
       "mapping" : [{
@@ -2060,7 +2060,7 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "required",
+        "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"
       },
       "mapping" : [{
