@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "description": "Assessment of contraindications to pharmacological thromboprophylaxis. Known present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+  "description": "Assessment of contraindications to pharmacological thromboprophylaxis. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -41,13 +41,8 @@
         "path": "Observation.value[x]",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-beurteilung-praesenz"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent"
         }
-      },
-      {
-        "id": "Observation.value[x].coding.system",
-        "path": "Observation.value[x].coding.system",
-        "patternUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.hasMember",

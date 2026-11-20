@@ -884,7 +884,7 @@
           "reference": "StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung"
         },
         "name": "MII PR ICU Klinische Beurteilung Parenterale Ernaehrung",
-        "description": "Assessment of whether parenteral nutrition is actually being administered at a specified time or throughout a specified period. Known present means administration is in progress; known absent means it was assessed as not in progress. This is not an order, indication or contraindication, and does not replace the underlying administration record.",
+        "description": "Assessment of whether parenteral nutrition is actually being administered at a specified time or throughout a specified period. Present means administration is in progress; known absent means it was assessed as not in progress. This is not an order, indication or contraindication, and does not replace the underlying administration record.",
         "exampleBoolean": false
       },
       {
@@ -892,7 +892,7 @@
           "reference": "StructureDefinition/mii-pr-icu-kontraindikation-bauchlage"
         },
         "name": "MII PR ICU Kontraindikation Bauchlage",
-        "description": "Assessment of contraindications to prone positioning. Known present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+        "description": "Assessment of contraindications to prone positioning. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
         "exampleBoolean": false
       },
       {
@@ -900,7 +900,7 @@
           "reference": "StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung"
         },
         "name": "MII PR ICU Kontraindikation Enterale Ernaehrung",
-        "description": "Assessment of contraindications to enteral nutrition. Known present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+        "description": "Assessment of contraindications to enteral nutrition. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
         "exampleBoolean": false
       },
       {
@@ -908,7 +908,7 @@
           "reference": "StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe"
         },
         "name": "MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe",
-        "description": "Assessment of contraindications to pharmacological thromboprophylaxis. Known present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+        "description": "Assessment of contraindications to pharmacological thromboprophylaxis. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
         "exampleBoolean": false
       },
       {
@@ -1301,14 +1301,6 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
         },
         "name": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-beurteilung-praesenz"
-        },
-        "name": "MII VS ICU Beurteilung Praesenz",
-        "description": "Known presence or assessed absence of the clinical state identified by Observation.code. An unavailable assessment is represented by dataAbsentReason.",
         "exampleBoolean": false
       },
       {
