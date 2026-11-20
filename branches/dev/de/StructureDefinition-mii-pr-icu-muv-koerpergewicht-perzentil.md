@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerpergewicht_Perzentil |
+| Draft Stand: 2026-11-20 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerpergewicht_Perzentil |
 
 **Usages:**
 
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergewicht_Perzentil",
   "title" : "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-19T20:15:57+00:00",
+  "date" : "2026-11-20T09:30:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -2392,17 +2392,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-zopa"/>
-      </reference>
-      <name value="MII PR ICU Score ZOPA"/>
-      <description value="Schmerzerfassung mittels Zuerich Observation Pain Assessment (ZOPA). Dargestellt wird nur ein dichotomes Gesamtergebnis."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"/>
       </reference>
       <name value="MII PR ICU Spontane Atemfrequenz Beatmet"/>

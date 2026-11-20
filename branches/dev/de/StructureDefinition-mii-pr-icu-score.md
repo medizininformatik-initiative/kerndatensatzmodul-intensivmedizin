@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_Score |
+| Draft Stand: 2026-11-20 | *Maschinenlesbarer Name*:MII_PR_ICU_Score |
 
  
 Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments. 
 
 **Usages:**
 
-* Derived from this Profile: [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.md), [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md), [MII PR ICU Score CAPD](StructureDefinition-mii-pr-icu-score-capd.md), [MII PR ICU Score COMFORT-B](StructureDefinition-mii-pr-icu-score-comfort-b.md)... Show 10 more, [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md), [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md), [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.md), [MII PR ICU Score KUSS](StructureDefinition-mii-pr-icu-score-kuss.md), [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md), [MII PR ICU Score SOFA](StructureDefinition-mii-pr-icu-score-sofa.md), [MII PR ICU Score SOS-PD](StructureDefinition-mii-pr-icu-score-sos-pd.md), [MII PR ICU Score SOS](StructureDefinition-mii-pr-icu-score-sos.md), [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) and [MII PR ICU Score ZOPA](StructureDefinition-mii-pr-icu-score-zopa.md)
+* Derived from this Profile: [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.md), [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.md), [MII PR ICU Score CAPD](StructureDefinition-mii-pr-icu-score-capd.md), [MII PR ICU Score COMFORT-B](StructureDefinition-mii-pr-icu-score-comfort-b.md)... Show 9 more, [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.md), [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md), [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.md), [MII PR ICU Score KUSS](StructureDefinition-mii-pr-icu-score-kuss.md), [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.md), [MII PR ICU Score SOFA](StructureDefinition-mii-pr-icu-score-sofa.md), [MII PR ICU Score SOS-PD](StructureDefinition-mii-pr-icu-score-sos-pd.md), [MII PR ICU Score SOS](StructureDefinition-mii-pr-icu-score-sos.md) and [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md)
 * Examples for this Profile: [Observation/mii-exa-icu-score](Observation-mii-exa-icu-score.md)
 * CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
 
@@ -109,7 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-11-19T20:15:57+00:00",
+  "date" : "2026-11-20T09:30:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -276,6 +276,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "sliceName" : "loinc",
       "min" : 0,
       "max" : "1",
+      "patternCoding" : {
+        "system" : "http://loinc.org"
+      },
       "mustSupport" : true
     },
     {
@@ -296,6 +299,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "sliceName" : "sct",
       "min" : 0,
       "max" : "1",
+      "patternCoding" : {
+        "system" : "http://snomed.info/sct"
+      },
       "mustSupport" : true
     },
     {
@@ -323,6 +329,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "sliceName" : "ieee11073",
       "min" : 0,
       "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:11073:10101"
+      },
       "mustSupport" : true
     },
     {

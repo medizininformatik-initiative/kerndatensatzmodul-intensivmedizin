@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc | *Version*:2027.0.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073 | *Version*:2027.0.0 |
 | Active as of 2025-02-11 | *Computable Name*:MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073 |
 
  
@@ -19,8 +19,6 @@ Dieses ValueSet enthält Codes für die im Kontext von extrakoralen Verfahren ei
 * [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md)
 
 ### Logical Definition (CLD)
-
-No formal definition provided for this value set
 
  
 
@@ -38,7 +36,7 @@ No formal definition provided for this value set
 {
   "resourceType" : "ValueSet",
   "id" : "mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073",
-  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-iso11073",
   "version" : "2027.0.0",
   "name" : "MII_VS_ICU_Code_Observation_extrakorporale_Verfahren_ISO11073",
   "title" : "MII VS ICU Code Observation extrakorporale Verfahren ISO11073",
@@ -60,7 +58,12 @@ No formal definition provided for this value set
       "code" : "DE",
       "display" : "Germany"
     }]
-  }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:11073:10101"
+    }]
+  }
 }
 
 ```

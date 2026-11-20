@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent | *Version*:2027.0.0 |
-| Active as of 2026-11-19 | *Computable Name*:MII_VS_ICU_Present_Absent |
+| Active as of 2026-11-20 | *Computable Name*:MII_VS_ICU_Present_Absent |
 
  
 Present or absent findings 
 
  **References** 
 
-* [MII PR ICU Score ZOPA](StructureDefinition-mii-pr-icu-score-zopa.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -42,7 +42,7 @@ Present or absent findings
   "title" : "MII VS ICU Present Absent",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-19T20:15:57+00:00",
+  "date" : "2026-11-20T09:30:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

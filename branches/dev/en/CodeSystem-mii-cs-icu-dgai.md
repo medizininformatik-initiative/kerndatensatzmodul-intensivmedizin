@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai | *Version*:2027.0.0 |
-| Draft as of 2026-11-19 | *Computable Name*:MII_CS_ICU_DGAI |
+| Draft as of 2026-11-20 | *Computable Name*:MII_CS_ICU_DGAI |
 
  
 Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe). 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS ICU DGAI",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-19T20:15:57+00:00",
+  "date" : "2026-11-20T09:30:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -55,7 +55,7 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 10,
+  "count" : 9,
   "concept" : [{
     "code" : "ped-capd",
     "display" : "pediatric CAPD",
@@ -90,10 +90,6 @@ This Code system is referenced in the definition of the following value sets:
     "code" : "cam-icu",
     "display" : "CAM-ICU",
     "definition" : "Confusion Assessment Method for the ICU (CAM-ICU)"
-  },
-  {
-    "code" : "DGAI-ZOPA",
-    "display" : "Zuerich Observation Pain Assessment (ZOPA)"
   },
   {
     "code" : "contraindication-enteral-nutrition",

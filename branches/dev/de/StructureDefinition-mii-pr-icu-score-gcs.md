@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-19 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
+| Draft Stand: 2026-11-20 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
 
 **Usages:**
 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 8 elements(9 nested mandatory elements)
+Mandatory: 3 elements(13 nested mandatory elements)
  Must-Support: 13 elements
  Prohibited: 1 element
 
@@ -80,7 +80,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 8 elements(9 nested mandatory elements)
+Mandatory: 3 elements(13 nested mandatory elements)
  Must-Support: 13 elements
  Prohibited: 1 element
 
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_GCS",
   "title" : "MII PR ICU Score GCS",
   "status" : "draft",
-  "date" : "2026-11-19T20:15:57+00:00",
+  "date" : "2026-11-20T09:30:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -224,7 +224,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
       "short" : "GCS Gesamtwert",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }]

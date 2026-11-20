@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala | *Version*:2027.0.0 |
-| Draft as of 2026-11-19 | *Computable Name*:MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala |
+| Draft as of 2026-11-20 | *Computable Name*:MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala |
 
  
 Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala. Der Score wird als quantitativer Wert dokumentiert. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
   "title" : "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
   "status" : "draft",
-  "date" : "2026-11-19T20:15:57+00:00",
+  "date" : "2026-11-20T09:30:27+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -98,7 +98,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "key" : "mii-icu-wbf-1",
         "severity" : "error",
         "human" : "Zulaessige Wong-Baker-FACES-Werte sind 0, 2, 4, 6, 8 und 10.",
-        "expression" : "value.ofType(Quantity).value = 0 or value.ofType(Quantity).value = 2 or value.ofType(Quantity).value = 4 or value.ofType(Quantity).value = 6 or value.ofType(Quantity).value = 8 or value.ofType(Quantity).value = 10",
+        "expression" : "value.exists() implies (value.ofType(Quantity).value = 0 or value.ofType(Quantity).value = 2 or value.ofType(Quantity).value = 4 or value.ofType(Quantity).value = 6 or value.ofType(Quantity).value = 8 or value.ofType(Quantity).value = 10)",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
+      },
+      {
+        "key" : "mii-icu-val-xor-dar",
+        "severity" : "error",
+        "human" : "Resource must have either value or dataAbsentReason.",
+        "expression" : "value.exists() xor dataAbsentReason.exists()",
         "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
       }]
     },
@@ -226,7 +233,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "path" : "Observation.value[x]",
       "short" : "Wong-Baker-FACES-Wert als Score (0-10, Schritte 2)",
       "definition" : "Wong-Baker-FACES-Score als quantitativer Wert ({score}).\n\nDie 6 Gesichter werden analog zur NRS gemappt, wobei 2er-Schritte die Skalenabstände repräsentieren.\nZulaessige Werte gemaess Originalskala: 0, 2, 4, 6, 8, 10.\nDie Skala ist zur NRS 0-10 analogisierbar; die dokumentierten Werte entsprechen direkt der 0-10-Skala.",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }],
@@ -256,6 +262,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "path" : "Observation.value[x].code",
       "min" : 1,
       "patternCode" : "{score}"
+    },
+    {
+      "id" : "Observation.dataAbsentReason",
+      "path" : "Observation.dataAbsentReason",
+      "mustSupport" : true
     }]
   }
 }

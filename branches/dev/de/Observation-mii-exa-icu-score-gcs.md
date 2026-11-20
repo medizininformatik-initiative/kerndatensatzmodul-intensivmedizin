@@ -18,13 +18,13 @@ Profile: [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md)
 
 **category**: Survey, Assessment scales (assessment scale)
 
-**code**: Glasgow coma score
+**code**: Glasgow coma score (observable entity)
 
-**subject**: Identifier: `http://example.com`/1234
+**subject**: [Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Krankenaktennummer)](Patient-mii-exa-icu-patient.md)
 
 **effective**: 2021-12-06 00:52:00+0100
 
-**value**: score (Details: UCUM code14 = '14')
+**value**: 14 {score} (Details: UCUM code{score} = '{score}')
 
 
 
@@ -55,11 +55,14 @@ Profile: [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md)
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "248241002"
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
+      "code" : "248241002",
+      "display" : "Glasgow coma score (observable entity)"
     },
     {
       "system" : "http://loinc.org",
-      "code" : "9269-2"
+      "code" : "9269-2",
+      "display" : "Glasgow coma score total"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
@@ -67,17 +70,14 @@ Profile: [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.md)
     }]
   },
   "subject" : {
-    "type" : "Patient",
-    "identifier" : {
-      "system" : "http://example.com",
-      "value" : "1234"
-    }
+    "reference" : "Patient/mii-exa-icu-patient"
   },
   "effectiveDateTime" : "2021-12-06T00:52:00+01:00",
   "valueQuantity" : {
-    "unit" : "score",
+    "value" : 14,
+    "unit" : "{score}",
     "system" : "http://unitsofmeasure.org",
-    "code" : "14"
+    "code" : "{score}"
   }
 }
 
