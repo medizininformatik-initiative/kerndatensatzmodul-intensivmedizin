@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Code_Ernaehrungszufuhr",
+  "id": "mii-vs-icu-code-ernaehrungszufuhr",
+  "title": "MII VS ICU Code Ernährungszufuhr",
+  "description": "Nutritional intake observables for the generic ICU nutrition-intake base. Extensible to additional nutrients and appropriate intake codes. Not a value set of requirements or prescribed targets.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr",
+  "version": "2027.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "788472008"
+          },
+          {
+            "code": "870372004"
+          },
+          {
+            "code": "874875003"
+          },
+          {
+            "code": "787787004"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "9057-1"
+          }
+        ]
+      }
+    ]
+  }
+}

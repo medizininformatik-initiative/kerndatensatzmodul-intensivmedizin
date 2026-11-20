@@ -360,13 +360,25 @@ resources:
     name: "Bilanz Einfuhr Abgepumpte Muttermilch"
     description: "Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch"
     exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-eiweiss:
+    name: "Bilanz Einfuhr Eiweiss"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Eiweiß"
+    exampleBoolean: true
   Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit:
     name: "Bilanz Einfuhr Enterale Fluessigkeit"
     description: "Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
     exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-fett:
+    name: "Bilanz Einfuhr Fett"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Fett"
+    exampleBoolean: true
   Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt:
     name: "Bilanz Einfuhr Fluessigkeit Gesamt"
     description: "Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt"
+    exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-einfuhr-kohlenhydrate:
+    name: "Bilanz Einfuhr Kohlenhydrate"
+    description: "Beispiel: MII PR ICU Bilanz Einfuhr Kohlenhydrate"
     exampleBoolean: true
   Observation/mii-exa-icu-bilanz-einfuhr-muttermilch:
     name: "Bilanz Einfuhr Muttermilch"

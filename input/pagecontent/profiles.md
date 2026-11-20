@@ -81,9 +81,13 @@
 </div>
 </div></details>
 <details>
-<summary>Balances<span class="cnt">2</span></summary><div class="body">
+<summary>Balances<span class="cnt">6</span></summary><div class="body">
 <div class="items">
+<a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-eiweiss.html">Einfuhr Eiweiß</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-fett.html">Einfuhr Fett</a>
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.html">Einfuhr Kalorien 24h</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-kohlenhydrate.html">Einfuhr Kohlenhydrate</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-ernaehrung-generisch.html">Ernährung Generisch</a>
 <a href="StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html">Kalorienbedarf pro Tag</a>
 </div>
 </div></details>

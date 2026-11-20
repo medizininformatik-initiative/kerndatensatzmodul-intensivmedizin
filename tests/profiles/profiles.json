@@ -624,6 +624,241 @@
           "valid": false
         }
       ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kohlenhydrate",
+      "tests": [
+        {
+          "source": "../../beispiele/mii-exa-icu-bilanz-einfuhr-kohlenhydrate.json",
+          "valid": true,
+          "description": "Accumulated carbohydrate mass in grams over a period"
+        },
+        {
+          "source": "valid/icu-carbohydrate-date-time.json",
+          "valid": true,
+          "description": "Carbohydrate intake: date-time"
+        },
+        {
+          "source": "valid/icu-carbohydrate-absent.json",
+          "valid": true,
+          "description": "Carbohydrate intake: absent"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-rate.json",
+          "valid": false,
+          "description": "Carbohydrate intake: rate"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-energy.json",
+          "valid": false,
+          "description": "Carbohydrate intake: energy"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-negative.json",
+          "valid": false,
+          "description": "Carbohydrate intake: negative"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-missing-version.json",
+          "valid": false,
+          "description": "Carbohydrate intake: missing-version"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-wrong-code.json",
+          "valid": false,
+          "description": "Carbohydrate intake: wrong-code"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-no-value.json",
+          "valid": false,
+          "description": "Carbohydrate intake: no-value"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-missing-value.json",
+          "valid": false,
+          "description": "Carbohydrate intake: missing-value"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-both.json",
+          "valid": false,
+          "description": "Carbohydrate intake: both"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-period-no-start.json",
+          "valid": false,
+          "description": "Carbohydrate intake: period-no-start"
+        },
+        {
+          "source": "invalid/icu-carbohydrate-period-no-end.json",
+          "valid": false,
+          "description": "An accumulated intake period must have an end"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fett",
+      "tests": [
+        {
+          "source": "../../beispiele/mii-exa-icu-bilanz-einfuhr-fett.json",
+          "valid": true,
+          "description": "Accumulated fat mass in grams over a period"
+        },
+        {
+          "source": "valid/icu-fat-date-time.json",
+          "valid": true,
+          "description": "Fat intake: date-time"
+        },
+        {
+          "source": "valid/icu-fat-absent.json",
+          "valid": true,
+          "description": "Fat intake: absent"
+        },
+        {
+          "source": "invalid/icu-fat-rate.json",
+          "valid": false,
+          "description": "Fat intake: rate"
+        },
+        {
+          "source": "invalid/icu-fat-energy.json",
+          "valid": false,
+          "description": "Fat intake: energy"
+        },
+        {
+          "source": "invalid/icu-fat-negative.json",
+          "valid": false,
+          "description": "Fat intake: negative"
+        },
+        {
+          "source": "invalid/icu-fat-missing-version.json",
+          "valid": false,
+          "description": "Fat intake: missing-version"
+        },
+        {
+          "source": "invalid/icu-fat-wrong-code.json",
+          "valid": false,
+          "description": "Fat intake: wrong-code"
+        },
+        {
+          "source": "invalid/icu-fat-no-value.json",
+          "valid": false,
+          "description": "Fat intake: no-value"
+        },
+        {
+          "source": "invalid/icu-fat-missing-value.json",
+          "valid": false,
+          "description": "Fat intake: missing-value"
+        },
+        {
+          "source": "invalid/icu-fat-both.json",
+          "valid": false,
+          "description": "Fat intake: both"
+        },
+        {
+          "source": "invalid/icu-fat-period-no-start.json",
+          "valid": false,
+          "description": "Fat intake: period-no-start"
+        },
+        {
+          "source": "invalid/icu-fat-period-no-end.json",
+          "valid": false,
+          "description": "An accumulated intake period must have an end"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-eiweiss",
+      "tests": [
+        {
+          "source": "../../beispiele/mii-exa-icu-bilanz-einfuhr-eiweiss.json",
+          "valid": true,
+          "description": "Accumulated protein mass in grams over a period"
+        },
+        {
+          "source": "valid/icu-protein-date-time.json",
+          "valid": true,
+          "description": "Protein intake: date-time"
+        },
+        {
+          "source": "valid/icu-protein-absent.json",
+          "valid": true,
+          "description": "Protein intake: absent"
+        },
+        {
+          "source": "invalid/icu-protein-rate.json",
+          "valid": false,
+          "description": "Protein intake: rate"
+        },
+        {
+          "source": "invalid/icu-protein-energy.json",
+          "valid": false,
+          "description": "Protein intake: energy"
+        },
+        {
+          "source": "invalid/icu-protein-negative.json",
+          "valid": false,
+          "description": "Protein intake: negative"
+        },
+        {
+          "source": "invalid/icu-protein-missing-version.json",
+          "valid": false,
+          "description": "Protein intake: missing-version"
+        },
+        {
+          "source": "invalid/icu-protein-wrong-code.json",
+          "valid": false,
+          "description": "Protein intake: wrong-code"
+        },
+        {
+          "source": "invalid/icu-protein-no-value.json",
+          "valid": false,
+          "description": "Protein intake: no-value"
+        },
+        {
+          "source": "invalid/icu-protein-missing-value.json",
+          "valid": false,
+          "description": "Protein intake: missing-value"
+        },
+        {
+          "source": "invalid/icu-protein-both.json",
+          "valid": false,
+          "description": "Protein intake: both"
+        },
+        {
+          "source": "invalid/icu-protein-period-no-start.json",
+          "valid": false,
+          "description": "Protein intake: period-no-start"
+        },
+        {
+          "source": "invalid/icu-protein-period-no-end.json",
+          "valid": false,
+          "description": "An accumulated intake period must have an end"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
+      "tests": [
+        {
+          "source": "valid/icu-calorie-intake-complete.json",
+          "valid": true,
+          "description": "Calorie intake retains rate and period semantics: complete"
+        },
+        {
+          "source": "valid/icu-calorie-intake-absent.json",
+          "valid": true,
+          "description": "Calorie intake retains rate and period semantics: absent"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-no-end.json",
+          "valid": false,
+          "description": "Calorie intake retains rate and period semantics: no-end"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-point-time.json",
+          "valid": false,
+          "description": "Calorie intake retains rate and period semantics: point-time"
+        }
+      ]
     }
   ]
 }

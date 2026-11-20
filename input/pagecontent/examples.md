@@ -13,7 +13,7 @@ examples.
 > **Written during migration - review before release.** List generated from the build (the source carried no narrative here).
 {: .ig-highlight .ig-highlight-blue}
 
-The module ships **148 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
+The module ships **160 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
 
 <!-- BEGIN generiert: scripts/gen-examples-page.py -->
 
@@ -84,7 +84,7 @@ The module ships **148 examples** (at least one per profile family, incl. comple
 | [Vent Unterstuetzungsdruck Beatmung](Observation-mii-exa-icu-vent-unterstuetzungsdruck-beatmung.html) | [MII PR ICU Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.html) |
 | [Vent Zeitverhaeltnis Ein Ausatmung](Observation-mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung.html) | [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html) |
 
-#### Balances (20)
+#### Balances (23)
 
 | Example | illustrates profile |
 |---|---|
@@ -100,6 +100,9 @@ The module ships **148 examples** (at least one per profile family, incl. comple
 | [Bilanz Ausfuhr Wunddrainage](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.html) | [MII PR ICU Bilanz Ausfuhr Wunddrainage](extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.html) (ISiK) |
 | [Bilanz Blutverlust](Observation-mii-exa-icu-bilanz-blutverlust.html) | [MII PR ICU Bilanz Ausfuhr Blutverlust](extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.html) (ISiK) |
 | [Bilanz Einfuhr Abgepumpte Muttermilch](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.html) | [MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch](extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.html) (ISiK) |
+| [Bilanz Einfuhr Eiweiss](Observation-mii-exa-icu-bilanz-einfuhr-eiweiss.html) | [MII PR ICU Bilanz Einfuhr Eiweiß](StructureDefinition-mii-pr-icu-bilanz-einfuhr-eiweiss.html) |
+| [Bilanz Einfuhr Fett](Observation-mii-exa-icu-bilanz-einfuhr-fett.html) | [MII PR ICU Bilanz Einfuhr Fett](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fett.html) |
+| [Bilanz Einfuhr Kohlenhydrate](Observation-mii-exa-icu-bilanz-einfuhr-kohlenhydrate.html) | [MII PR ICU Bilanz Einfuhr Kohlenhydrate](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kohlenhydrate.html) |
 | [Bilanz Einfuhr Enterale Fluessigkeit](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.html) | [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html) (ISiK) |
 | [Bilanz Einfuhr Fluessigkeit Gesamt](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.html) | [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html) (ISiK) |
 | [Bilanz Einfuhr Muttermilch](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.html) | [MII PR ICU Bilanz Einfuhr Muttermilch](extern-mii-pr-icu-bilanz-einfuhr-muttermilch.html) (ISiK) |
