@@ -12,7 +12,6 @@ Description: "Assessment of the presence or absence of contraindications to one 
 
 * code from MII_VS_ICU_Code_Kontraindikation (extensible)
 * code ^definition = "The assessment question MUST identify the intervention being considered. A code stating only that a contraindication exists is insufficient. Use an existing suitable question code when available."
-* valueCodeableConcept from MII_VS_ICU_Beurteilung_Praesenz (required)
-* valueCodeableConcept.coding.system = $sct
+* valueCodeableConcept from MII_VS_ICU_Present_Absent (required)
 * component 0..0
 * hasMember 0..0

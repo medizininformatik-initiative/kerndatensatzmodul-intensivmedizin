@@ -684,11 +684,6 @@
           "description": "An unrelated DGAI question must not match the specialised assessment"
         },
         {
-          "source": "invalid/icu-kontraindikation-bauchlage-wrong-result-system.json",
-          "valid": false,
-          "description": "Results use SNOMED CT"
-        },
-        {
           "source": "invalid/icu-kontraindikation-bauchlage-extra-question-coding.json",
           "valid": false,
           "description": "One unambiguous specialised assessment code is required"
@@ -702,6 +697,11 @@
           "source": "valid/icu-contraindication-organization-performer.json",
           "valid": true,
           "description": "Contraindication assessments retain standard FHIR performer types, including Organization"
+        },
+        {
+          "source": "valid/icu-contraindication-absent-part-of-procedure.json",
+          "valid": true,
+          "description": "The PN-specific partOf invariant must not restrict a negative contraindication assessment"
         }
       ]
     },
@@ -762,11 +762,6 @@
           "source": "invalid/icu-kontraindikation-enterale-ernaehrung-wrong-question.json",
           "valid": false,
           "description": "An unrelated DGAI question must not match the specialised assessment"
-        },
-        {
-          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-wrong-result-system.json",
-          "valid": false,
-          "description": "Results use SNOMED CT"
         },
         {
           "source": "invalid/icu-kontraindikation-enterale-ernaehrung-extra-question-coding.json",
@@ -834,11 +829,6 @@
           "description": "An unrelated DGAI question must not match the specialised assessment"
         },
         {
-          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-wrong-result-system.json",
-          "valid": false,
-          "description": "Results use SNOMED CT"
-        },
-        {
           "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-extra-question-coding.json",
           "valid": false,
           "description": "One unambiguous specialised assessment code is required"
@@ -904,11 +894,6 @@
           "description": "An unrelated DGAI question must not match the specialised assessment"
         },
         {
-          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-wrong-result-system.json",
-          "valid": false,
-          "description": "Results use SNOMED CT"
-        },
-        {
           "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-extra-question-coding.json",
           "valid": false,
           "description": "One unambiguous specialised assessment code is required"
@@ -972,6 +957,31 @@
           "source": "valid/icu-pn-extra-category.json",
           "valid": true,
           "description": "PN therapy category: extra-category"
+        },
+        {
+          "source": "valid/icu-pn-additional-hl7-category.json",
+          "valid": true,
+          "description": "Open category slicing: additional-hl7-category"
+        },
+        {
+          "source": "valid/icu-pn-therapy-second.json",
+          "valid": true,
+          "description": "Open category slicing: therapy-second"
+        },
+        {
+          "source": "invalid/icu-pn-duplicate-therapy.json",
+          "valid": false,
+          "description": "Open category slicing: duplicate-therapy"
+        },
+        {
+          "source": "invalid/icu-pn-absent-part-of-administration.json",
+          "valid": false,
+          "description": "Absent PN must not have partOf"
+        },
+        {
+          "source": "valid/icu-pn-absent-supporting-info.json",
+          "valid": true,
+          "description": "Negative PN can retain supporting evidence"
         }
       ]
     }

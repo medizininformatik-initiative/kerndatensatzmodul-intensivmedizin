@@ -2,7 +2,7 @@ Profile: MII_PR_ICU_Klinische_Beurteilung_Parenterale_Ernaehrung
 Parent: MII_PR_ICU_Klinische_Beurteilung
 Id: mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung
 Title: "MII PR ICU Klinische Beurteilung Parenterale Ernaehrung"
-Description: "Assessment of whether parenteral nutrition is actually being administered at a specified time or throughout a specified period. Known present means administration is in progress; known absent means it was assessed as not in progress. This is not an order, indication or contraindication, and does not replace the underlying administration record."
+Description: "Assessment of whether parenteral nutrition is actually being administered at a specified time or throughout a specified period. Present means administration is in progress; known absent means it was assessed as not in progress. This is not an order, indication or contraindication, and does not replace the underlying administration record."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung"
@@ -11,8 +11,7 @@ Description: "Assessment of whether parenteral nutrition is actually being admin
 * ^abstract = false
 * code = $dgai#parenteral-nutrition-in-progress
 * code.coding 1..1 MS
-* valueCodeableConcept from MII_VS_ICU_Beurteilung_Praesenz (required)
-* valueCodeableConcept.coding.system = $sct
+* valueCodeableConcept from MII_VS_ICU_Present_Absent (required)
 // Inherit both effectiveDateTime and effectivePeriod from the generic base.
 * component 0..0
 * hasMember 0..0
@@ -23,5 +22,14 @@ Description: "Assessment of whether parenteral nutrition is actually being admin
 
 // This profile assesses actual treatment delivery; contraindication profiles do not.
 * category 1.. MS
-* category.coding[hl7-category] 1..1 MS
-* category.coding[hl7-category] ^patternCoding.code = #therapy
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains therapy 1..1 MS
+* category[therapy] ^patternCodeableConcept.coding[0].system = $observation-category
+* category[therapy] ^patternCodeableConcept.coding[0].code = #therapy
+* category[therapy] ^short = "Therapy category"
+* category[therapy].coding 1.. MS
+
+* obeys mii-icu-pn-absent-no-partof
+* partOf ^comment = "Only use partOf for the specific parenteral nutrition administration event of which this assessment is a part. If the result is Absent, partOf must be empty. Clinical records supporting a negative assessment may be referenced through supportingInfo."

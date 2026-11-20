@@ -16,13 +16,7 @@ Description: "Reusable categorical clinical assessment with explicit question, p
 * category MS
 * category ^definition = "General category of the observation. Specialisations may require a category when it matches their clinical scope; assessing a contraindication does not assert treatment delivery."
 * category.coding MS
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains hl7-category 0..1 MS
-* category.coding[hl7-category] ^patternCoding.system = $observation-category
-* category.coding[hl7-category].system 1..1 MS
-* category.coding[hl7-category].code 1..1 MS
+
 * code MS
 * code from MII_VS_ICU_Code_Klinische_Beurteilung (extensible)
 * code ^definition = "Identifies the clinical assessment question. Where an intervention is being assessed, the question must identify that intervention. Specialised profiles define appropriate codes and result value sets."
