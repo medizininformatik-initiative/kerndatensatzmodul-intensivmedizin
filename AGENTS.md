@@ -88,6 +88,12 @@ Author identity is the configured human committer.
   auto-merge; any change is a PR targeting `dev`.
 - Never trigger a publication or announcement; those are human-gated.
 
+## ICU profile design
+
+Follow [docs/profiling-guidelines.md](docs/profiling-guidelines.md) when adding
+or changing ICU profiles. Generic identity-code value-set bindings use
+`extensible`; review inherited constraints before selecting a parent.
+
 ## Skills
 
 Every skill an agent can invoke here lives in [`skills/`](skills/) — one folder
