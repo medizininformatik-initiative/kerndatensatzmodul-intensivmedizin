@@ -67,6 +67,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.display",
+        "path": "Observation.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category:survey",
         "path": "Observation.category",
         "sliceName": "survey",
@@ -104,6 +115,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:Loinc",
         "path": "Observation.code.coding",
         "sliceName": "Loinc",
@@ -118,6 +140,12 @@
         "patternUri": "http://loinc.org"
       },
       {
+        "id": "Observation.code.coding:Loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:Loinc.code",
         "path": "Observation.code.coding.code",
         "patternCode": "38221-8"
@@ -125,7 +153,8 @@
       {
         "id": "Observation.code.coding:Loinc.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Pain severity Wong-Baker FACES pain rating scale"
+        "patternString": "Pain severity Wong-Baker FACES pain rating scale",
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:Snomed",
@@ -142,6 +171,12 @@
         "patternUri": "http://snomed.info/sct"
       },
       {
+        "id": "Observation.code.coding:Snomed.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:Snomed.code",
         "path": "Observation.code.coding.code",
         "patternCode": "718581005"
@@ -149,7 +184,8 @@
       {
         "id": "Observation.code.coding:Snomed.display",
         "path": "Observation.code.coding.display",
-        "patternString": "Wong-Baker FACES pain assessment scale (assessment scale)"
+        "patternString": "Wong-Baker FACES pain assessment scale (assessment scale)",
+        "mustSupport": true
       },
       {
         "id": "Observation.subject",
@@ -213,6 +249,17 @@
       {
         "id": "Observation.dataAbsentReason",
         "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.version",
+        "path": "Observation.dataAbsentReason.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.display",
+        "path": "Observation.dataAbsentReason.coding.display",
         "mustSupport": true
       }
     ]
