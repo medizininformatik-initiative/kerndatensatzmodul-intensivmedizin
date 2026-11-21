@@ -9,15 +9,15 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * ^purpose = "Das Profil übermittelt die gesamte Atemfrequenz als Summe aus mechanischer Ventilation und spontaner Atemtätigkeit."
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250810003 "Total breath rate (observable entity)"
+* code.coding[sct] = $sct#250810003
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#19840-8 "Breath rate spontaneous and mechanical --on ventilator"
+* code.coding[loinc] = $loinc#19840-8
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152490 "MDC_VENT_RESP_BTSD_PSAZC_RATE"
+* code.coding[IEEE-11073] = $ieee-11073#152490
 * valueQuantity = $ucum#/min
 
 // Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")

@@ -8,15 +8,15 @@ Title: "MII PR ICU Einstellung Einatmungszeit Beatmung"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250819002 "Inspiratory time (observable entity)"
+* code.coding[sct] = $sct#250819002
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76334-2 "Inspiratory time setting Ventilator"
+* code.coding[loinc] = $loinc#76334-2
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#16929632 "MDC_VENT_TIME_PD_INSP_SETTING"
+* code.coding[IEEE-11073] = $ieee-11073#16929632
 * valueQuantity = $ucum#s
 
 // Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")

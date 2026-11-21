@@ -15,11 +15,9 @@ Title: "MII PR ICU Score GCS"
 * code.coding[sct] 1..1
 * code.coding[sct].system = $sct 
 * code.coding[sct].code = #248241002
-* code.coding[sct].display = "Glasgow coma score (observable entity)"
 * code.coding[loinc] 1..1
 * code.coding[loinc].system = $loinc
 * code.coding[loinc].code = #9269-2
-* code.coding[loinc].display = "Glasgow coma score total"
 * code.coding[ieee11073] 1..1 
 * code.coding[ieee11073].system = $ieee-11073
 * code.coding[ieee11073].code = #153728

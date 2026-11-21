@@ -8,11 +8,11 @@ Title: "MII PR ICU Unterstuetzungsdruck Beatmung"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#20079-0 "Pressure support setting Ventilator"
+* code.coding[loinc] = $loinc#20079-0
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#cm[H2O]
 

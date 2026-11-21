@@ -8,13 +8,13 @@ Title: "MII PR ICU Einstellung Ausatmungszeit Beatmung"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 2..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250820008 "Expiratory time (observable entity)"
+* code.coding[sct] = $sct#250820008
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76187-4 "Expiratory hold time setting Ventilator"
+* code.coding[loinc] = $loinc#76187-4
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#s
 

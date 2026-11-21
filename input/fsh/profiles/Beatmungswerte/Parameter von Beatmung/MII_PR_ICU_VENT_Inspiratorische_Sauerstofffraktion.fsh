@@ -8,13 +8,13 @@ Title: "MII PR ICU Inspiratorische Sauerstofffraktion"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 0..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 * category contains Sauerstofftherapie 0..1
-* category[Sauerstofftherapie] = $sct#57485005 "Oxygen therapy (procedure)"
+* category[Sauerstofftherapie] = $sct#57485005
 
 * code.coding 1..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250774007 "Inspired oxygen concentration (observable entity)"
+* code.coding[sct] = $sct#250774007
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#%

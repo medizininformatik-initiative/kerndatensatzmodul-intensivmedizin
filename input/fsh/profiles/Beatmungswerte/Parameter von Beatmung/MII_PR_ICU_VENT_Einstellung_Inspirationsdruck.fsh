@@ -9,13 +9,13 @@ Title: "MII PR ICU Einstellung Inspirationsdruck"
 * ^purpose = "Das Profil bezieht sich auf die Einstellung des inspiratorischen Beatmungsdrucks am Beatmungsgerät."
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 2..
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76003-3 "Pressure Respiratory system airway --during inspiration on ventilator"
+* code.coding[loinc] = $loinc#76003-3
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151972 "MDC_VENT_PRESS_AWAY"
+* code.coding[IEEE-11073] = $ieee-11073#151972
 * code.coding[sct] ..0
 * valueQuantity = $ucum#cm[H2O]
 

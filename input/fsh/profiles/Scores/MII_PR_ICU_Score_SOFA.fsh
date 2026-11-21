@@ -9,9 +9,9 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 * ^version = "2026.0.0"
 * ^status = #draft
 
-* code.coding[sct] = $sct#1187491009 "Sequential Organ Failure Assessment score (observable entity)"
+* code.coding[sct] = $sct#1187491009
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#96789-3 "Sequential Organ Failure Assessment SOFA"
+* code.coding[loinc] = $loinc#96789-3
 
 // A missing total may be recorded with dataAbsentReason.
 * value[x] only integer

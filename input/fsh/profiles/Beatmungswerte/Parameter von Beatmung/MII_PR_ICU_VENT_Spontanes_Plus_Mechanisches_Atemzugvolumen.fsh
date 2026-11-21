@@ -8,11 +8,11 @@ Title: "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#20118-6 "Tidal volume.spontaneous+mechanical --on ventilator"
+* code.coding[loinc] = $loinc#20118-6
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#mL
 

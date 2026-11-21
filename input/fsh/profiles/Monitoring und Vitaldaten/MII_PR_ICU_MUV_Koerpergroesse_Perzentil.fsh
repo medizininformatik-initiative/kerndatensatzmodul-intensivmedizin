@@ -33,7 +33,6 @@ Title: "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)"
 * code.coding contains sct 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1153605006
-* code.coding[sct] ^patternCoding.display = "Body height for age percentile (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS

@@ -8,14 +8,14 @@ Title: "MII PR ICU Spontane Atemfrequenz Beatmet"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#19839-0 "Breath rate spontaneous --on ventilator"
+* code.coding[loinc] = $loinc#19839-0
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152498 "MDC_VENT_RESP_BTSD_P_RATE"
+* code.coding[IEEE-11073] = $ieee-11073#152498
 * valueQuantity = $ucum#/min
 
 // Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")

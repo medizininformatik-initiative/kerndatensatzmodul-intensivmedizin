@@ -8,16 +8,16 @@ Title: "MII PR ICU Horowitz In Arteriellem Blut"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 0..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 * category contains Sauerstofftherapie 0..1
-* category[Sauerstofftherapie] = $sct#57485005 "Oxygen therapy (procedure)"
+* category[Sauerstofftherapie] = $sct#57485005
 
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#50984-4 "Horowitz index in Arterial blood"
+* code.coding[loinc] = $loinc#50984-4
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#150656 "MDC_O2_OXYGENATION_RATIO"
+* code.coding[IEEE-11073] = $ieee-11073#150656
 * valueQuantity = $ucum#mm[Hg]
 
 // Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")

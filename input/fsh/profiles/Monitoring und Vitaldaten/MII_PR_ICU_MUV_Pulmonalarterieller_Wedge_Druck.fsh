@@ -36,19 +36,16 @@ Title: "MII PR ICU MUV Pulmonalarterieller Wedge-Druck"
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #75994-4
-* code.coding[loinc] ^patternCoding.display = "Pulmonary artery wedge pressure"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #118433006
-* code.coding[sct] ^patternCoding.display = "Pulmonary artery wedge pressure (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #150052
-* code.coding[IEEE-11073] ^patternCoding.display = "Pulmonary artery wedge pressure"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS

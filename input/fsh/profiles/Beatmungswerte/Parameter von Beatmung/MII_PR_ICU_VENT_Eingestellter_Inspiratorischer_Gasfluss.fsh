@@ -8,11 +8,11 @@ Title: "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76275-7 "Inspiratory flow setting Ventilator"
+* code.coding[loinc] = $loinc#76275-7
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#L/min
 

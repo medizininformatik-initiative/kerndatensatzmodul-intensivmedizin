@@ -35,13 +35,11 @@ Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
     sct 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8336-0
-* code.coding[loinc] ^patternCoding.display = "Body weight [Percentile] Per age"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1153592008
-* code.coding[sct] ^patternCoding.display = "Weight for age percentile (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS

@@ -8,11 +8,11 @@ Title: "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#20060-0 "Airway pressure --at zero inspiratory flow on ventilator"
+* code.coding[loinc] = $loinc#20060-0
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#cm[H2O]
 

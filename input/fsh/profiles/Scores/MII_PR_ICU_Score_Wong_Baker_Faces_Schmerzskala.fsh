@@ -38,11 +38,9 @@ Der Score wird als quantitativer Wert dokumentiert."
 
 * code.coding[Loinc].system = $loinc
 * code.coding[Loinc].code = #38221-8
-* code.coding[Loinc].display = "Pain severity Wong-Baker FACES pain rating scale"
 
 * code.coding[Snomed].system = $sct
 * code.coding[Snomed].code = #718581005
-* code.coding[Snomed].display = "Wong-Baker FACES pain assessment scale (assessment scale)"
 
 * subject 1..1 MS
 

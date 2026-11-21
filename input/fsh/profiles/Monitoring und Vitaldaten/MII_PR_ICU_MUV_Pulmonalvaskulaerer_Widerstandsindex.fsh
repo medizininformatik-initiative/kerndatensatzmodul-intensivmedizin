@@ -36,19 +36,16 @@ Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8834-4
-* code.coding[loinc] ^patternCoding.display = "Pulmonary vascular Resistance index"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #276902009
-* code.coding[sct] ^patternCoding.display = "Pulmonary vascular resistance index (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #152852
-* code.coding[IEEE-11073] ^patternCoding.display = "Pulmonary Vascular Resistance Index"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS

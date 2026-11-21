@@ -29,10 +29,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * category contains 
     survey 1..1 MS and
     assessment-scale 1..1 MS
-* category[survey] = $observation-category#survey "Survey"
+* category[survey] = $observation-category#survey
 * category[survey] ^short = "Survey category"
 * category[survey].coding 1..1 MS
-* category[assessment-scale] = $sct#273249006 "Assessment scales (assessment scale)"
+* category[assessment-scale] = $sct#273249006
 * category[assessment-scale].coding 1..1 MS
 
 * code ^definition = "Identifies which score/scale is being represented"

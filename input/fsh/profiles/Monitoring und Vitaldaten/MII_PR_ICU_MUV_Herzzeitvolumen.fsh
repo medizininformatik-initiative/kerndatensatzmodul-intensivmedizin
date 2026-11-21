@@ -36,19 +36,16 @@ Title: "MII PR ICU MUV Herzzeitvolumen"
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8741-1
-* code.coding[loinc] ^patternCoding.display = "Left ventricular Cardiac output"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #82799009
-* code.coding[sct] ^patternCoding.display = "Cardiac output (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #150276
-* code.coding[IEEE-11073] ^patternCoding.display = "Cardiac output"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS
