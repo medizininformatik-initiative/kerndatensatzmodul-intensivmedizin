@@ -8,7 +8,8 @@
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "survey",
-          "display": "Survey"
+          "display": "Survey",
+          "version": "2.0.0"
         }
       ]
     },
@@ -17,7 +18,8 @@
         {
           "system": "http://snomed.info/sct",
           "code": "273249006",
-          "display": "Assessment scales (assessment scale)"
+          "display": "Assessment scales (assessment scale)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -35,7 +37,8 @@
       {
         "system": "http://loinc.org",
         "code": "96789-3",
-        "display": "Sequential Organ Failure Assessment SOFA"
+        "display": "Sequential Organ Failure Assessment SOFA",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
@@ -52,7 +55,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "96823-0"
+            "code": "96823-0",
+            "version": "2.83"
           }
         ]
       },
@@ -67,7 +71,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "96826-3"
+            "code": "96826-3",
+            "version": "2.83"
           }
         ]
       },
@@ -78,7 +83,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "96825-5"
+            "code": "96825-5",
+            "version": "2.83"
           }
         ]
       },
@@ -89,7 +95,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "96824-8"
+            "code": "96824-8",
+            "version": "2.83"
           }
         ]
       },
@@ -100,7 +107,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "96828-9"
+            "code": "96828-9",
+            "version": "2.83"
           }
         ]
       },
@@ -111,7 +119,8 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "96827-1"
+            "code": "96827-1",
+            "version": "2.83"
           }
         ]
       },

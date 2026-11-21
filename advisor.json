@@ -31,6 +31,6 @@
     // Temporary SU-TermServ workaround, limited to the calorimetry Quantity pattern.
     // check-ucum-advisor-scope.py verifies the indexed location after each compilation.
     // Remove when SU-TermServ supports algebraic UCUM expressions.
-    "Unknown_Code_in_Version@^StructureDefinition\\.differential\\.element\\[12\\]\\.pattern\\.(ofType\\(Quantity\\)|Quantity)(\\..*)?"
+    "Unknown_Code_in_Version@^StructureDefinition\\.differential\\.element\\[20\\]\\.pattern\\.(ofType\\(Quantity\\)|Quantity)(\\..*)?"
   ]
 }

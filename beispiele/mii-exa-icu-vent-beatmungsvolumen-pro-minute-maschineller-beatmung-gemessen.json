@@ -29,7 +29,8 @@
       {
         "system": "http://loinc.org",
         "code": "76009-0",
-        "display": "Inspired minute Volume during Mechanical ventilation"
+        "display": "Inspired minute Volume during Mechanical ventilation",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
@@ -40,7 +41,8 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "152004",
-        "display": "MDC_VENT_VOL_MINUTE_INSP"
+        "display": "MDC_VENT_VOL_MINUTE_INSP",
+        "version": "2024-12-05"
       }
     ]
   },

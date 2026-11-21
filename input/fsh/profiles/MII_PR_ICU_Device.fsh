@@ -19,3 +19,9 @@ Title: "MII PR ICU Device"
 * version.value MS
 * property MS
 * property.type MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* property.type.coding.display 0..1 MS
+* property.type.coding.version 1..1 MS
+* type.coding.display 0..1 MS
+* type.coding.version 1..1 MS

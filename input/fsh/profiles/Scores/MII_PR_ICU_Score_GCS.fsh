@@ -89,3 +89,11 @@ Title: "MII PR ICU Score GCS"
 
 * bodySite 0..0
 * specimen 0..0
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* component[GCSeyes].valueCodeableConcept.coding.display 0..1 MS
+* component[GCSeyes].valueCodeableConcept.coding.version 1..1 MS
+* component[GCSmotor].valueCodeableConcept.coding.display 0..1 MS
+* component[GCSmotor].valueCodeableConcept.coding.version 1..1 MS
+* component[GCSverbal].valueCodeableConcept.coding.display 0..1 MS
+* component[GCSverbal].valueCodeableConcept.coding.version 1..1 MS

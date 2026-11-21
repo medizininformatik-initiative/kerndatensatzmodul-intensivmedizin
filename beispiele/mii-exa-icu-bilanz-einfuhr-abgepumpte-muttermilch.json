@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "exam"
+          "code": "exam",
+          "version": "2.0.0"
         },
         {
           "system": "http://snomed.info/sct",
@@ -28,7 +29,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "819975003",
-        "display": "Intake of maternal expressed breast milk (observable entity)"
+        "display": "Intake of maternal expressed breast milk (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   },

@@ -12,7 +12,7 @@ advisor = Path("advisor.json").read_text(encoding="utf-8")
 rules = [json.loads(match.group()) for match in re.finditer(r'"(?:\\.|[^"\\])*"', advisor)]
 rules = [rule for rule in rules if rule.startswith("Unknown_Code_in_Version@")]
 expected = (
-    r"Unknown_Code_in_Version@^StructureDefinition\.differential\.element\[12\]"
+    r"Unknown_Code_in_Version@^StructureDefinition\.differential\.element\[20\]"
     r"\.pattern\.(ofType\(Quantity\)|Quantity)(\..*)?"
 )
 if rules != [expected]:
@@ -22,8 +22,8 @@ matches = []
 for path in sorted(resources.glob("StructureDefinition-*.json")):
     profile = json.loads(path.read_text(encoding="utf-8"))
     elements = profile.get("differential", {}).get("element", [])
-    if len(elements) > 12 and "patternQuantity" in elements[12]:
-        matches.append((profile["id"], elements[12]["id"], elements[12]["patternQuantity"]))
+    if len(elements) > 20 and "patternQuantity" in elements[20]:
+        matches.append((profile["id"], elements[20]["id"], elements[20]["patternQuantity"]))
 
 if matches != [(
     "mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie",

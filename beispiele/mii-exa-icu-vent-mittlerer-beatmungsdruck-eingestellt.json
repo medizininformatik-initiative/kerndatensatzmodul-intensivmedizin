@@ -35,12 +35,14 @@
       {
         "system": "http://loinc.org",
         "code": "76530-5",
-        "display": "Mean pressure Respiratory system airway --on ventilator"
+        "display": "Mean pressure Respiratory system airway --on ventilator",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151975",
-        "display": "MDC_VENT_PRESS_AWAY_MEAN"
+        "display": "MDC_VENT_PRESS_AWAY_MEAN",
+        "version": "2024-12-05"
       }
     ]
   },

@@ -72,3 +72,13 @@ Die Skala ist zur NRS 0-10 analogisierbar; die dokumentierten Werte entsprechen 
 
 * performer 0..* MS
 
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[Loinc].version 1..1 MS
+* code.coding[Snomed].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+
