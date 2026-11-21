@@ -29,7 +29,7 @@ Title: "MII PR ICU MUV Atemfrequenz"
 * effective[x] MS
 
 * value[x] MS
-* valueQuantity 1.. MS
+* valueQuantity MS // optional: dataAbsentReason may replace the value (vs-de-2, obs-6)
 * valueQuantity ^patternQuantity.unit = "breaths per minute"
 * valueQuantity.value MS
 * valueQuantity.unit MS
