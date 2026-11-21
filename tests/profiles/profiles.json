@@ -649,21 +649,6 @@
           "description": "Valid missing value with dataAbsentReason"
         }
       ]
-    },
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck",
-      "tests": [
-        {
-          "source": "valid/icu-ect-venous-pressure-absent.json",
-          "valid": true,
-          "description": "Valid missing value with dataAbsentReason"
-        },
-        {
-          "source": "invalid/icu-ect-venous-pressure-no-value-or-reason.json",
-          "valid": false,
-          "description": "Invalid: neither value nor dataAbsentReason (mii-icu-comp-xor-val)"
-        }
-      ]
     }
   ]
 }

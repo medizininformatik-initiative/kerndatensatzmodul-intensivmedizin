@@ -276,6 +276,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "Quantity"
@@ -305,11 +306,6 @@
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.dataAbsentReason",
-        "path": "Observation.dataAbsentReason",
         "mustSupport": true
       },
       {
