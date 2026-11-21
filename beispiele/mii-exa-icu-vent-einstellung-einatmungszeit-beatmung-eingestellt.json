@@ -35,12 +35,14 @@
       {
         "system": "http://loinc.org",
         "code": "76334-2",
-        "display": "Inspiratory time setting Ventilator"
+        "display": "Inspiratory time setting Ventilator",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "16929632",
-        "display": "MDC_VENT_TIME_PD_INSP_SETTING"
+        "display": "MDC_VENT_TIME_PD_INSP_SETTING",
+        "version": "2024-12-05"
       }
     ]
   },

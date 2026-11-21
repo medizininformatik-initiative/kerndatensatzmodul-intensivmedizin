@@ -133,3 +133,35 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * component[meanBP].value[x].code 1.. MS
 * component[meanBP].value[x] = $ucum#mm[Hg] "millimeter Mercury column"
 * component[meanBP].dataAbsentReason MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* code.coding[snomed].version 1..1 MS
+* component[DiastolicBP].code.coding[IEEE-11073].version 1..1 MS
+* component[DiastolicBP].code.coding[loinc].version 1..1 MS
+* component[DiastolicBP].code.coding[sct].version 1..1 MS
+* component[DiastolicBP].dataAbsentReason.coding.display 0..1 MS
+* component[DiastolicBP].dataAbsentReason.coding.version 1..1 MS
+* component[SystolicBP].code.coding[IEEE-11073].version 1..1 MS
+* component[SystolicBP].code.coding[loinc].version 1..1 MS
+* component[SystolicBP].code.coding[sct].version 1..1 MS
+* component[SystolicBP].dataAbsentReason.coding.display 0..1 MS
+* component[SystolicBP].dataAbsentReason.coding.version 1..1 MS
+* component[meanBP].code.coding[IEEE-11073].version 1..1 MS
+* component[meanBP].code.coding[loinc].version 1..1 MS
+* component[meanBP].code.coding[sct].version 1..1 MS
+* component[meanBP].dataAbsentReason.coding.display 0..1 MS
+* component[meanBP].dataAbsentReason.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS

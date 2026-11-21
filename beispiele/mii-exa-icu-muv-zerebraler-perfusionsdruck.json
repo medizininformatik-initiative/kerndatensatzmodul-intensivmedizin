@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -21,15 +22,18 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "250846007"
+        "code": "250846007",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
-        "code": "61017-0"
+        "code": "61017-0",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "153604"
+        "code": "153604",
+        "version": "2024-12-05"
       }
     ]
   },
@@ -50,7 +54,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "263353005"
+        "code": "263353005",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }

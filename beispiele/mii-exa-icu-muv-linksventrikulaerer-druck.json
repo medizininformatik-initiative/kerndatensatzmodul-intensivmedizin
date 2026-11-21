@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -33,7 +34,8 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "150100",
-        "display": "Pressure of the blood in the left ventricle of the heart"
+        "display": "Pressure of the blood in the left ventricle of the heart",
+        "version": "2024-12-05"
       }
     ]
   },
@@ -47,17 +49,20 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8478-0"
+            "code": "8478-0",
+            "version": "2.83"
           },
           {
             "system": "http://loinc.org",
             "code": "8404-6",
-            "display": "Left ventricular Intrachamber mean pressure"
+            "display": "Left ventricular Intrachamber mean pressure",
+            "version": "2.83"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
             "code": "150103",
-            "display": "Mean left ventricular pressure"
+            "display": "Mean left ventricular pressure",
+            "version": "2024-12-05"
           }
         ]
       },
@@ -73,17 +78,20 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8480-6"
+            "code": "8480-6",
+            "version": "2.83"
           },
           {
             "system": "http://loinc.org",
             "code": "8430-1",
-            "display": "Left ventricular Intrachamber systolic pressure"
+            "display": "Left ventricular Intrachamber systolic pressure",
+            "version": "2.83"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
             "code": "150101",
-            "display": "Systolic left ventricular pressure"
+            "display": "Systolic left ventricular pressure",
+            "version": "2024-12-05"
           }
         ]
       },
@@ -99,17 +107,20 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8462-4"
+            "code": "8462-4",
+            "version": "2.83"
           },
           {
             "system": "http://loinc.org",
             "code": "8375-8",
-            "display": "Left ventricular Intrachamber diastolic pressure"
+            "display": "Left ventricular Intrachamber diastolic pressure",
+            "version": "2.83"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
             "code": "150102",
-            "display": "Diastolic left ventricular pressure"
+            "display": "Diastolic left ventricular pressure",
+            "version": "2024-12-05"
           }
         ]
       },

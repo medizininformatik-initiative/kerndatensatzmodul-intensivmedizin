@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,22 +23,26 @@
       {
         "system": "http://loinc.org",
         "code": "8334-5",
-        "display": "Body temperature - Urinary bladder"
+        "display": "Body temperature - Urinary bladder",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "698832009",
-        "display": "Core body temperature measured at urinary bladder (observable entity)"
+        "display": "Core body temperature measured at urinary bladder (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
         "code": "8310-5",
-        "display": "Body temperature"
+        "display": "Body temperature",
+        "version": "2.83"
       },
       {
         "system": "http://loinc.org",
         "code": "8329-5",
-        "display": "Body temperature - Core"
+        "display": "Body temperature - Core",
+        "version": "2.83"
       }
     ]
   },
@@ -59,7 +64,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "89837001",
-        "display": "Urinary bladder structure (body structure)"
+        "display": "Urinary bladder structure (body structure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }

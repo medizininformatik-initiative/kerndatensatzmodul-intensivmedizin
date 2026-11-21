@@ -30,3 +30,17 @@ Title: "MII PR ICU Extrakorporales Verfahren"
 
 * recorder MS
 * recorder only Reference(Patient or Practitioner or PractitionerRole)
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* bodySite.coding[snomed-ct].display 0..1 MS
+* bodySite.coding[snomed-ct].version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* category.coding[sct].version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[ops].display 0..1 MS
+* code.coding[ops].version 1..1 MS
+* code.coding[sct].version 1..1 MS

@@ -13,7 +13,8 @@
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
           "code": "survey",
-          "display": "Survey"
+          "display": "Survey",
+          "version": "2.0.0"
         }
       ]
     },
@@ -22,7 +23,8 @@
         {
           "system": "http://snomed.info/sct",
           "code": "273249006",
-          "display": "Assessment scales (assessment scale)"
+          "display": "Assessment scales (assessment scale)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
         }
       ]
     }
@@ -38,11 +40,13 @@
       {
         "system": "http://loinc.org",
         "code": "9269-2",
-        "display": "Glasgow coma score total"
+        "display": "Glasgow coma score total",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "153728"
+        "code": "153728",
+        "version": "2024-12-05"
       }
     ]
   },
@@ -58,7 +62,8 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "code": "unknown"
+        "code": "unknown",
+        "version": "2.0.0"
       }
     ]
   }

@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,27 +23,32 @@
       {
         "system": "http://loinc.org",
         "code": "8328-7",
-        "display": "Axillary temperature"
+        "display": "Axillary temperature",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "415882003",
-        "display": "Estimated core body temperature measured in axillary region (observable entity)"
+        "display": "Estimated core body temperature measured in axillary region (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "188452",
-        "display": "MDC_TEMP_AXILLA"
+        "display": "MDC_TEMP_AXILLA",
+        "version": "2024-12-05"
       },
       {
         "system": "http://loinc.org",
         "code": "8310-5",
-        "display": "Body temperature"
+        "display": "Body temperature",
+        "version": "2.83"
       },
       {
         "system": "http://loinc.org",
         "code": "8329-5",
-        "display": "Body temperature - Core"
+        "display": "Body temperature - Core",
+        "version": "2.83"
       }
     ]
   },
@@ -64,7 +70,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "91470000",
-        "display": "Axillary region structure (body structure)"
+        "display": "Axillary region structure (body structure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }
