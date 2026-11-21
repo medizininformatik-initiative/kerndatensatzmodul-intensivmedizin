@@ -51,8 +51,7 @@
         "min": 1,
         "patternCoding": {
           "code": "96789-3",
-          "system": "http://loinc.org",
-          "display": "Sequential Organ Failure Assessment SOFA"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -61,8 +60,7 @@
         "sliceName": "sct",
         "patternCoding": {
           "code": "1187491009",
-          "system": "http://snomed.info/sct",
-          "display": "Sequential Organ Failure Assessment score (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {

@@ -95,8 +95,7 @@
           "coding": [
             {
               "code": "survey",
-              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-              "display": "Survey"
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
             }
           ]
         },
@@ -130,8 +129,7 @@
           "coding": [
             {
               "code": "273249006",
-              "system": "http://snomed.info/sct",
-              "display": "Assessment scales (assessment scale)"
+              "system": "http://snomed.info/sct"
             }
           ]
         },

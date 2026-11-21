@@ -35,8 +35,7 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -54,8 +53,7 @@
         "max": "1",
         "patternCoding": {
           "code": "698821009",
-          "system": "http://snomed.info/sct",
-          "display": "Mean inspiratory airway pressure (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -66,8 +64,7 @@
         "max": "1",
         "patternCoding": {
           "code": "60952-9",
-          "system": "http://loinc.org",
-          "display": "Mean airway pressure --during inspiration"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -78,8 +75,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151975",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_PRESS_AWAY_MEAN"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

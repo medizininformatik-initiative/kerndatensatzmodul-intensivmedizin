@@ -35,8 +35,7 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -54,8 +53,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250874002",
-          "system": "http://snomed.info/sct",
-          "display": "Ventilator delivered tidal volume (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -66,8 +64,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76222-9",
-          "system": "http://loinc.org",
-          "display": "Tidal volume Ventilator --on ventilator"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -78,8 +75,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151980",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_VOL_TIDAL"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

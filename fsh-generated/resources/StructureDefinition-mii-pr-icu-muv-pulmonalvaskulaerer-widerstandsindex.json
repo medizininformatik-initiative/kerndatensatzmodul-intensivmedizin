@@ -177,8 +177,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://loinc.org",
-          "code": "8834-4",
-          "display": "Pulmonary vascular Resistance index"
+          "code": "8834-4"
         },
         "mustSupport": true
       },
@@ -211,8 +210,7 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "276902009",
-          "display": "Pulmonary vascular resistance index (observable entity)"
+          "code": "276902009"
         },
         "mustSupport": true
       },
@@ -245,8 +243,7 @@
         "max": "1",
         "patternCoding": {
           "system": "urn:iso:std:iso:11073:10101",
-          "code": "152852",
-          "display": "Pulmonary Vascular Resistance Index"
+          "code": "152852"
         },
         "mustSupport": true
       },

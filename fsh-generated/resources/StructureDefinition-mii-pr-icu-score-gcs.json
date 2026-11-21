@@ -61,11 +61,6 @@
         "patternCode": "9269-2"
       },
       {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Glasgow coma score total"
-      },
-      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
@@ -75,11 +70,6 @@
         "id": "Observation.code.coding:sct.code",
         "path": "Observation.code.coding.code",
         "patternCode": "248241002"
-      },
-      {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Glasgow coma score (observable entity)"
       },
       {
         "id": "Observation.code.coding:ieee11073",

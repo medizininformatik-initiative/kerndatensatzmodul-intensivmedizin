@@ -35,8 +35,7 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -51,8 +50,7 @@
           "coding": [
             {
               "code": "57485005",
-              "system": "http://snomed.info/sct",
-              "display": "Oxygen therapy (procedure)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -70,8 +68,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250790007",
-          "system": "http://snomed.info/sct",
-          "display": "End tidal carbon dioxide tension (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -82,8 +79,7 @@
         "max": "1",
         "patternCoding": {
           "code": "19891-1",
-          "system": "http://loinc.org",
-          "display": "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -94,8 +90,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151708",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_CONC_AWAY_CO2_ET"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {
