@@ -81,4 +81,6 @@ Die Skala ist zur NRS 0-10 analogisierbar; die dokumentierten Werte entsprechen 
 * code.coding[Snomed].version 1..1 MS
 * dataAbsentReason.coding.display 0..1 MS
 * dataAbsentReason.coding.version 1..1 MS
+* category[survey].coding.display 0..1 MS
+* category[survey].coding.version 1..1 MS
 

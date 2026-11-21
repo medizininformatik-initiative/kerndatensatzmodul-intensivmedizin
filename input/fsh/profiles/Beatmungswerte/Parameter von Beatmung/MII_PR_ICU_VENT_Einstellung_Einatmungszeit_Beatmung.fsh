@@ -18,3 +18,7 @@ Title: "MII PR ICU Einstellung Einatmungszeit Beatmung"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#16929632 "MDC_VENT_TIME_PD_INSP_SETTING"
 * valueQuantity = $ucum#s
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

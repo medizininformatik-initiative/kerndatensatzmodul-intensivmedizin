@@ -97,3 +97,6 @@ Title: "MII PR ICU Score GCS"
 * component[GCSmotor].valueCodeableConcept.coding.version 1..1 MS
 * component[GCSverbal].valueCodeableConcept.coding.display 0..1 MS
 * component[GCSverbal].valueCodeableConcept.coding.version 1..1 MS
+* component[GCSeyes].code.coding.version 1..1 MS
+* component[GCSmotor].code.coding.version 1..1 MS
+* component[GCSverbal].code.coding.version 1..1 MS

@@ -17,3 +17,7 @@ Title: "MII PR ICU Exspiratorischer Gasfluss"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#151944 "MDC_VENT_FLOW_EXP"
 * valueQuantity = $ucum#L/min
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

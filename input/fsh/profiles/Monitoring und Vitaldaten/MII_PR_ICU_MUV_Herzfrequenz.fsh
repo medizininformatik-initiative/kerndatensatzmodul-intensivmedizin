@@ -44,3 +44,5 @@ Title: "MII PR ICU MUV Herzfrequenz"
 * interpretation.coding.version 1..1 MS
 * method.coding.display 0..1 MS
 * method.coding.version 1..1 MS
+* category[vs-cat].coding.display 0..1 MS
+* category[vs-cat].coding.version 1..1 MS

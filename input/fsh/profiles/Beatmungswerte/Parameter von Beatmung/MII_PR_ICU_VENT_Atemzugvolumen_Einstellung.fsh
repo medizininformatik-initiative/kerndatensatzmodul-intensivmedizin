@@ -18,3 +18,7 @@ Title: "MII PR ICU Atemzugvolumen Einstellung"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#16929196 "MDC_VENT_VOL_TIDAL_SETTING"
 * valueQuantity = $ucum#mL
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

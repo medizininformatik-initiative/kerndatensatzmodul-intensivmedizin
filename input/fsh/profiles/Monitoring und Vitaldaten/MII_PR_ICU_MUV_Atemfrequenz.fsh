@@ -48,3 +48,5 @@ Title: "MII PR ICU MUV Atemfrequenz"
 * code.coding[snomed].version 1..1 MS
 * dataAbsentReason.coding.display 0..1 MS
 * dataAbsentReason.coding.version 1..1 MS
+* category[VSCat].coding.display 0..1 MS
+* category[VSCat].coding.version 1..1 MS

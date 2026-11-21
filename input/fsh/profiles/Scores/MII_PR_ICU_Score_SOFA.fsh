@@ -95,6 +95,20 @@ Description: "Sequential Organ Failure Assessment (SOFA) score for assessing org
 
 
 // Invariants
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* component[cardiovascular].code.coding.display 0..1 MS
+* component[cardiovascular].code.coding.version 1..1 MS
+* component[coagulation].code.coding.display 0..1 MS
+* component[coagulation].code.coding.version 1..1 MS
+* component[hepatic].code.coding.display 0..1 MS
+* component[hepatic].code.coding.version 1..1 MS
+* component[neurological].code.coding.display 0..1 MS
+* component[neurological].code.coding.version 1..1 MS
+* component[renal].code.coding.display 0..1 MS
+* component[renal].code.coding.version 1..1 MS
+* component[respiratory].code.coding.display 0..1 MS
+* component[respiratory].code.coding.version 1..1 MS
 Invariant: sofa-score-range
 Description: "SOFA total score must be between 0 and 24"
 Severity: #error

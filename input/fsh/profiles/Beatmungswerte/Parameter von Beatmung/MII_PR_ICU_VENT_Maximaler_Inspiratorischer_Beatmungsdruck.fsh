@@ -16,3 +16,7 @@ Title: "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#151973 "MDC_VENT_PRESS_AWAY_MAX"
 * valueQuantity = $ucum#cm[H2O]
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

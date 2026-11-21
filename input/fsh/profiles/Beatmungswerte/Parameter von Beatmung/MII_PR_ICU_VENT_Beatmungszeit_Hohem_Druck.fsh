@@ -18,3 +18,7 @@ Title: "MII PR ICU Beatmungszeit Hohem Druck"
 * code.coding[IEEE-11073] = $ieee-11073#16929860 "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
 * valueQuantity = $ucum#s
 
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS
+

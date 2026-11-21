@@ -165,3 +165,11 @@ Title: "MII PR ICU MUV Arterieller Blutdruck"
 * interpretation.coding.version 1..1 MS
 * method.coding.display 0..1 MS
 * method.coding.version 1..1 MS
+* category[VSCat].coding.display 0..1 MS
+* category[VSCat].coding.version 1..1 MS
+* component[DiastolicBP].code.coding.display 0..1 MS
+* component[DiastolicBP].code.coding.version 1..1 MS
+* component[SystolicBP].code.coding.display 0..1 MS
+* component[SystolicBP].code.coding.version 1..1 MS
+* component[meanBP].code.coding.display 0..1 MS
+* component[meanBP].code.coding.version 1..1 MS

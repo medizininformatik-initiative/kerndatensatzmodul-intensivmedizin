@@ -18,3 +18,9 @@ Title: "MII PR ICU Inspiratorische Sauerstofffraktion"
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#%
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[Sauerstofftherapie].coding.display 0..1 MS
+* category[Sauerstofftherapie].coding.version 1..1 MS
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

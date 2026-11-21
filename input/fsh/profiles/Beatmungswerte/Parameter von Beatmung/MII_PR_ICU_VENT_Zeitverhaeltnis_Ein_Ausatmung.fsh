@@ -18,3 +18,7 @@ Title: "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#151832 "MDC_RATIO_IE"
 * valueQuantity = $ucum#1
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

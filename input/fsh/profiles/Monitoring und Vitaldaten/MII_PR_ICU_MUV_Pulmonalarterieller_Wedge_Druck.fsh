@@ -88,3 +88,5 @@ Title: "MII PR ICU MUV Pulmonalarterieller Wedge-Druck"
 * code.coding[sct].version 1..1 MS
 * dataAbsentReason.coding.display 0..1 MS
 * dataAbsentReason.coding.version 1..1 MS
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS

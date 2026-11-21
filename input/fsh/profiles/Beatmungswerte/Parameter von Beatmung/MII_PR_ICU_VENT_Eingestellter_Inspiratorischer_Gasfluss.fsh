@@ -15,3 +15,7 @@ Title: "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
 * code.coding[loinc] = $loinc#76275-7 "Inspiratory flow setting Ventilator"
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#L/min
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

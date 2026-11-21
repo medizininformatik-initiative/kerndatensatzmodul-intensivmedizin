@@ -20,3 +20,7 @@ Title: "MII PR ICU Einstellung Inspirationsdruck"
 * valueQuantity = $ucum#cm[H2O]
 
 // IEEE 11073 Code verwendet als Alias explizit "pInsp", der LOINC-Code ist dem Mapping dieses IEEE-Codes entnommen - eine entsprechende semantische Übereinstimmnung wird somit unterstellt
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

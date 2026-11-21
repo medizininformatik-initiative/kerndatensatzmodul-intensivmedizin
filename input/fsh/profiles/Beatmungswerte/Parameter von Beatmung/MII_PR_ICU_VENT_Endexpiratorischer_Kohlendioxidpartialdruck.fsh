@@ -21,3 +21,9 @@ Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#151708 "MDC_CONC_AWAY_CO2_ET"
 * valueQuantity = $ucum#mm[Hg]
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[Sauerstofftherapie].coding.display 0..1 MS
+* category[Sauerstofftherapie].coding.version 1..1 MS
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

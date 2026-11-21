@@ -19,3 +19,7 @@ Title: "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
 * code.coding[IEEE-11073] 1..1
 * code.coding[IEEE-11073] = $ieee-11073#152490 "MDC_VENT_RESP_BTSD_PSAZC_RATE"
 * valueQuantity = $ucum#/min
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

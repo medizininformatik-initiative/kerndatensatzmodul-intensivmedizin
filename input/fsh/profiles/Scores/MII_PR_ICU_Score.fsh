@@ -53,7 +53,6 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
 * code.coding[sct].version 1..1 MS  // 05.08.26 - auf 1..1 gesetzt
-* code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
 * code.coding[ieee11073] ^patternCoding.system = $ieee-11073
 * code.coding[ieee11073].system 1..1  // neues IEEE-11073 Slicing hinzugefügt - Beschluss 05.08.26
@@ -106,6 +105,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * dataAbsentReason.coding.version 1..1 MS
 * interpretation.coding.display 0..1 MS
 * interpretation.coding.version 1..1 MS
+* category[assessment-scale].coding.display 0..1 MS
+* category[assessment-scale].coding.version 1..1 MS
+* category[survey].coding.display 0..1 MS
+* category[survey].coding.version 1..1 MS
 Invariant: mii-icu-score-supported-code
 Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"
 * severity = #error
