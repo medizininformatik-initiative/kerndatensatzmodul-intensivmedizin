@@ -286,9 +286,20 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.bodySite.coding.version",
+        "path": "Observation.bodySite.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.bodySite.coding.code",
         "path": "Observation.bodySite.coding.code",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.coding.display",
+        "path": "Observation.bodySite.coding.display",
         "mustSupport": true
       }
     ]

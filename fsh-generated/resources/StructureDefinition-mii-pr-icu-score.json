@@ -110,6 +110,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category:survey.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:survey.coding.display",
+        "path": "Observation.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category:assessment-scale",
         "path": "Observation.category",
         "sliceName": "assessment-scale",
@@ -131,6 +142,17 @@
         "path": "Observation.category.coding",
         "min": 1,
         "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:assessment-scale.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:assessment-scale.coding.display",
+        "path": "Observation.category.coding.display",
         "mustSupport": true
       },
       {
@@ -227,7 +249,6 @@
         "id": "Observation.code.coding:sct.version",
         "path": "Observation.code.coding.version",
         "min": 1,
-        "patternString": "http://snomed.info/sct/900000000000207008/version/20260701",
         "mustSupport": true
       },
       {
