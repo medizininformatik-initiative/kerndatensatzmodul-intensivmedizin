@@ -179,8 +179,7 @@
       {
         "id": "Observation.component:GCSeyes.code.coding.display",
         "path": "Observation.component.code.coding.display",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Observation.component:GCSeyes.value[x]",
@@ -194,6 +193,17 @@
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes"
         }
+      },
+      {
+        "id": "Observation.component:GCSeyes.value[x].coding.version",
+        "path": "Observation.component.value[x].coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:GCSeyes.value[x].coding.display",
+        "path": "Observation.component.value[x].coding.display",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:GCSmotor",
@@ -230,8 +240,7 @@
       {
         "id": "Observation.component:GCSmotor.code.coding.display",
         "path": "Observation.component.code.coding.display",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Observation.component:GCSmotor.value[x]",
@@ -245,6 +254,17 @@
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor"
         }
+      },
+      {
+        "id": "Observation.component:GCSmotor.value[x].coding.version",
+        "path": "Observation.component.value[x].coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:GCSmotor.value[x].coding.display",
+        "path": "Observation.component.value[x].coding.display",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:GCSverbal",
@@ -281,8 +301,7 @@
       {
         "id": "Observation.component:GCSverbal.code.coding.display",
         "path": "Observation.component.code.coding.display",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Observation.component:GCSverbal.value[x]",
@@ -296,6 +315,17 @@
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal"
         }
+      },
+      {
+        "id": "Observation.component:GCSverbal.value[x].coding.version",
+        "path": "Observation.component.value[x].coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:GCSverbal.value[x].coding.display",
+        "path": "Observation.component.value[x].coding.display",
+        "mustSupport": true
       }
     ]
   }
