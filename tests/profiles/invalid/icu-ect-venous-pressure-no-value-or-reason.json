@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "icu-ect-venous-pressure-no-value-or-reason",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "182744004",
+          "display": "Extracorporeal circulation procedure (procedure)",
+          "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "252076005",
+        "display": "Venous pressure (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+      }
+    ]
+  },
+  "subject": {
+    "display": "Example patient"
+  },
+  "effectivePeriod": {
+    "start": "2019-12-23T09:30:10+01:00",
+    "end": "2019-12-23T10:30:10+01:00"
+  }
+}
