@@ -579,14 +579,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/mii-cs-icu-dgai"
-        },
-        "name": "MII CS ICU DGAI",
-        "description": "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-lm-intensivmedizin"
         },
         "name": "MII Logical Model Intensivmedizin",
@@ -1043,125 +1035,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score"
-        },
-        "name": "MII PR ICU Score",
-        "description": "Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-bps"
-        },
-        "name": "MII PR ICU Score BPS",
-        "description": "Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-cam-icu"
-        },
-        "name": "MII PR ICU Score CAM-ICU",
-        "description": "Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-capd"
-        },
-        "name": "MII PR ICU Score CAPD",
-        "description": "Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instrument für Delir auf der pädiatrischen Intensivstation. Validiert für Alter von 0 bis 21 Jahren, einschließlich präverbale und entwicklungsverzögerte Kinder. Voraussetzung RASS >= -3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-comfort-b"
-        },
-        "name": "MII PR ICU Score COMFORT-B",
-        "description": "Einschätzung von Sedierungstiefe, Schmerzen und Distress bei nonverbalen Kindern mittels COMFORT-Behavior-Skala (COMFORT-B).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
-        },
-        "name": "MII PR ICU Score Faces Pain Scale Revised",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R).\nDer Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-gcs"
-        },
-        "name": "MII PR ICU Score GCS",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-icdsc"
-        },
-        "name": "MII PR ICU Score ICDSC",
-        "description": "Intensive Care Delirium Screening Checklist (ICDSC) for delirium assessment. Evaluates 8 items over a shift (usually 8-12 hours). Each item scores 0 (absent) or 1 (present). Total score ranges from 0-8. A score of 4 or higher indicates a positive delirium screen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-kuss"
-        },
-        "name": "MII PR ICU Score KUSS",
-        "description": "Kindliche Unbehagens- und Schmerzskala (KUSS) - Fremdbeobachtungsskala für den postoperativen Schmerz bei Kindern von der Geburt bis zum Ende des 4. Lebensjahres. Für sedierte, beatmete oder relaxierte Kinder nicht validiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
-        },
-        "name": "MII PR ICU Score Numerische Ratingskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Numerischer Ratingskala (NRS) von 0 bis 10.\n0 = kein Schmerz, 10 = staerkster vorstellbarer Schmerz. Der Score wird als ganzzahliger Wert dokumentiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-sofa"
-        },
-        "name": "MII PR ICU Score SOFA",
-        "description": "Sequential Organ Failure Assessment (SOFA) score for assessing organ dysfunction in critically ill patients. Evaluates six organ systems (respiratory, cardiovascular, hepatic, coagulation, renal, neurological), each scored 0-4 points. Total score ranges from 0 to 24, with higher scores indicating more severe organ dysfunction.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-sos"
-        },
-        "name": "MII PR ICU Score SOS",
-        "description": "Früherkennung von Entzugssymptomen bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale. Der Scope dieses Profils liegt auf dem Assessment der Entzugssymptomatik, für das Delir ist das Profil MII_PR_ICU_Score_SOS_PD zu verwenden. Abgebildet wird nur der Gesamtwert des Entzugsscores.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-sos-pd"
-        },
-        "name": "MII PR ICU Score SOS-PD",
-        "description": "Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium. Der Scope dieses Profils liegt auf dem Assessment des Deliriums, für die Entzugssymptomatik ist das Profil MII_PR_ICU_Score_SOS zu verwenden. Die elterliche Verhaltensbeurteilung des Kindes wird in diesem Profil nicht abgebildet, nur der Gesamtwert des Scores.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
-        },
-        "name": "MII PR ICU Score Visuelle Analogskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS).\nDer Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
-        },
-        "name": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\nDer Score wird als quantitativer Wert dokumentiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
         },
         "name": "MII PR ICU Spontane Atemfrequenz Beatmet",
@@ -1253,14 +1126,6 @@
         },
         "name": "MII VS ICU BodySite Observation Monitoring und Vitaldaten",
         "description": "Dieses ValueSet enthält Codes für bodySites von Vitaldaten sowie Daten aus dem Patientenmonitoring.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-cam-icu-result"
-        },
-        "name": "MII VS ICU CAM-ICU Result",
-        "description": "CAM-ICU assessment result: positive (delirium present) or negative (no delirium)",
         "exampleBoolean": false
       },
       {
@@ -1359,35 +1224,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/mii-vs-icu-component-gcs-eyes"
-        },
-        "name": "MII VS ICU Component GCS Eyes",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-component-gcs-motor"
-        },
-        "name": "MII VS ICU Component GCS Motor",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-component-gcs-verbal"
-        },
-        "name": "MII VS ICU Component GCS Verbal",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-delirium-interpretation"
-        },
-        "name": "MII VS ICU Delirium Interpretation",
-        "description": "Delirium status interpretations",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren"
         },
         "name": "MII VS ICU DeviceMetric extrakorporale Verfahren",
@@ -1415,22 +1251,6 @@
         },
         "name": "MII VS ICU Present Absent",
         "description": "Present or absent findings",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-score-category"
-        },
-        "name": "MII VS ICU Score Category",
-        "description": "Value set for ICU score observation categories",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-score-loinc"
-        },
-        "name": "MII VS ICU Score LOINC",
-        "description": "Value set for scores - LOINC codes",
         "exampleBoolean": false
       },
       {
@@ -1480,49 +1300,6 @@
         "name": "MII VS ICU Unit equivalent UCUM L per minute and squaremeter",
         "description": "Dieses ValueSet enthält äquivalente Codes für Liter pro Minute .",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mii-vs-icu-score-snomed"
-        },
-        "name": "MII VS Score SNOMED CT",
-        "description": "Value set for cores - SNOMED CT codes",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-capd"
-        },
-        "exampleBoolean": false,
-        "name": "mii-exa-icu-score-capd"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-comfort-b"
-        },
-        "exampleBoolean": false,
-        "name": "mii-exa-icu-score-comfort-b"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-kuss"
-        },
-        "exampleBoolean": false,
-        "name": "mii-exa-icu-score-kuss"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-sos"
-        },
-        "exampleBoolean": false,
-        "name": "mii-exa-icu-score-sos"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-sos-pd"
-        },
-        "exampleBoolean": false,
-        "name": "mii-exa-icu-score-sos-pd"
       },
       {
         "reference": {
@@ -2093,83 +1870,11 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-icu-score"
-        },
-        "description": "Beispiel: MII PR ICU Score",
-        "exampleBoolean": true,
-        "name": "Score"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-bps"
-        },
-        "description": "Beispiel: MII PR ICU Score BPS",
-        "exampleBoolean": true,
-        "name": "Score Bps"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-cam-icu"
-        },
-        "description": "Beispiel: MII PR ICU Score CAM-ICU",
-        "exampleBoolean": true,
-        "name": "Score Cam Icu"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-cam-icu-absent"
-        },
-        "description": "Beispiel: MII PR ICU Score CAM-ICU",
-        "exampleBoolean": true,
-        "name": "Score Cam Icu Absent"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-faces-pain-scale-revised"
-        },
-        "description": "Beispiel: MII PR ICU Score Faces Pain Scale Revised",
-        "exampleBoolean": true,
-        "name": "Score Faces Pain Scale Revised"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-gcs"
-        },
-        "description": "Beispiel: MII PR ICU Score GCS",
-        "exampleBoolean": true,
-        "name": "Score Gcs"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-icdsc"
-        },
-        "description": "Beispiel: MII PR ICU Score ICDSC",
-        "exampleBoolean": true,
-        "name": "Score Icdsc"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-numerische-ratingskala"
-        },
-        "description": "Beispiel: MII PR ICU Score Numerische Ratingskala",
-        "exampleBoolean": true,
-        "name": "Score Numerische Ratingskala"
-      },
-      {
-        "reference": {
           "reference": "Observation/mii-exa-icu-score-rass"
         },
         "description": "Beispiel: MII PR ICU Score RASS",
         "exampleBoolean": true,
         "name": "Score Rass"
-      },
-      {
-        "reference": {
-          "reference": "Observation/mii-exa-icu-score-visuelle-analogskala"
-        },
-        "description": "Beispiel: MII PR ICU Score Visuelle Analogskala",
-        "exampleBoolean": true,
-        "name": "Score Visuelle Analogskala"
       },
       {
         "reference": {
@@ -3124,10 +2829,6 @@
       {
         "code": "special-url",
         "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
-      },
-      {
-        "code": "special-url",
-        "value": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
       },
       {
         "code": "special-url",
