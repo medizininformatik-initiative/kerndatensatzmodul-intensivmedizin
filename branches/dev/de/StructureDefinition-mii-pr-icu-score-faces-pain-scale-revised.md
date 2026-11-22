@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-20 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_Faces_Pain_Scale_Revised |
+| Draft Stand: 2026-11-22 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_Faces_Pain_Scale_Revised |
 
  
 Erfassung der globalen Schmerzintensitaet mittels Faces Pain Scale Revised (FPS-R). Der Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konsens werden neben der publizierten Skalierung 0|2|4|6|8|10 auch die Zwischenwerte zugelassen, da diese klinisch Anwendung finden. 
@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_Faces_Pain_Scale_Revised",
   "title" : "MII PR ICU Score Faces Pain Scale Revised",
   "status" : "draft",
-  "date" : "2026-11-20T10:23:14+00:00",
+  "date" : "2026-11-22T08:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

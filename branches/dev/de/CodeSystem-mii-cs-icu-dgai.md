@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-20 | *Maschinenlesbarer Name*:MII_CS_ICU_DGAI |
+| Draft Stand: 2026-11-22 | *Maschinenlesbarer Name*:MII_CS_ICU_DGAI |
 
  
 Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe). 
@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS ICU DGAI",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-20T10:23:14+00:00",
+  "date" : "2026-11-22T08:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

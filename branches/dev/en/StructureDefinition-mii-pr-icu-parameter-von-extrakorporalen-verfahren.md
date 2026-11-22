@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren | *Version*:2027.0.0 |
-| Active as of 2026-11-20 | *Computable Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
+| Active as of 2026-11-22 | *Computable Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
 
 **Usages:**
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-11-20T10:23:14+00:00",
+  "date" : "2026-11-22T08:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

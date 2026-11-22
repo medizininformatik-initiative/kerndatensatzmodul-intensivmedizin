@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-gcs | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-20 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
+| Draft Stand: 2026-11-22 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_GCS |
 
 **Usages:**
 
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_GCS",
   "title" : "MII PR ICU Score GCS",
   "status" : "draft",
-  "date" : "2026-11-20T10:23:14+00:00",
+  "date" : "2026-11-22T08:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

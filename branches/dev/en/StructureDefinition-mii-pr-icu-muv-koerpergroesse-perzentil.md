@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil | *Version*:2027.0.0 |
-| Draft as of 2026-11-20 | *Computable Name*:MII_PR_ICU_MUV_Koerpergroesse_Perzentil |
+| Draft as of 2026-11-22 | *Computable Name*:MII_PR_ICU_MUV_Koerpergroesse_Perzentil |
 
 **Usages:**
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse_Perzentil",
   "title" : "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-20T10:23:14+00:00",
+  "date" : "2026-11-22T08:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

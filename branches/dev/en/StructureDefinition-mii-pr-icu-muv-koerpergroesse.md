@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse | *Version*:2027.0.0 |
-| Active as of 2026-11-20 | *Computable Name*:MII_PR_ICU_MUV_Koerpergroesse |
+| Active as of 2026-11-22 | *Computable Name*:MII_PR_ICU_MUV_Koerpergroesse |
 
  
 Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse",
   "title" : "MII PR ICU MUV Koerpergroesse",
   "status" : "active",
-  "date" : "2026-11-20T10:23:14+00:00",
+  "date" : "2026-11-22T08:57:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
