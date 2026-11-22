@@ -6,6 +6,7 @@ Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
 * ^status = #draft
+* obeys mii-icu-val-xor-dar
 
 * identifier MS
 
@@ -47,7 +48,7 @@ Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * issued MS
 
 * value[x] only Quantity
-* valueQuantity 1..1 MS
+* valueQuantity MS // optional: dataAbsentReason may replace the value (mii-icu-val-xor-dar)
 * valueQuantity.code 1.. MS
 * valueQuantity = $ucum#kcal/(24.h) "kilocalorie per day"
 * dataAbsentReason MS
