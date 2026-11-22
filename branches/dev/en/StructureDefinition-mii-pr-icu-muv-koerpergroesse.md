@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse",
   "title" : "MII PR ICU MUV Koerpergroesse",
   "status" : "active",
-  "date" : "2026-11-22T16:24:19+00:00",
+  "date" : "2026-11-22T22:59:35+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

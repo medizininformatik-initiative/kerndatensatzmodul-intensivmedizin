@@ -3478,7 +3478,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Sun, Nov 22, 2026 16:24+0000">2026-11-22</span>
+          Erstellt           <span title="Sun, Nov 22, 2026 22:59+0000">2026-11-22</span>
 
                     <br/>
 
@@ -6752,6 +6752,313 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
           <a href="de/changes.html">web</a>
         </td>
         <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Migration auf das MII-KDS-Modul-Template: Der Guide wird nun auf GitHub Pages (diese Seite) statt auf Simplifier publiziert; Seiten-Orte haben sich geändert (siehe Navigation), die ImplementationGuide-id lautet nun           <code class="language-plaintext highlighter-rouge">mii-ig-icu</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">#74</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/144">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <strong>Canonical-URLs von 27 Profilen geändert, die jetzt in ISiK 6 gepflegt werden.</strong>
+ Die Bilanz-Profile (generische           <em>Bilanz</em>
+ und ihre 19 Ausprägungen), die sechs Untersuchungsprofile (Pupillen) und der           <em>RASS</em>
+-Score sind ins ISiK-6-Package (          <code class="language-plaintext highlighter-rouge">de.gematik.isik</code>
+ 6.0.0) umgezogen und wurden samt ihrer 11 ValueSets aus diesem Modul entfernt. Die Profil-IDs bleiben gleich, die Canonical ändert sich jedoch von           <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/&lt;id&gt;</code>
+ zu           <code class="language-plaintext highlighter-rouge">https://gematik.de/fhir/isik/StructureDefinition/&lt;id&gt;</code>
+.           <strong>Instanzen und abgeleitete Profile, die die MII-Canonicals referenzieren, müssen auf die ISiK-Canonicals umgestellt werden</strong>
+ (          <code class="language-plaintext highlighter-rouge">meta.profile</code>
+,           <code class="language-plaintext highlighter-rouge">baseDefinition</code>
+). Die MII-ValueSets           <code class="language-plaintext highlighter-rouge">mii-vs-icu-*</code>
+ für Bilanzen, Pupillen, RASS und Milliliter-Einheiten werden durch die ISiK-Kopien ersetzt. Der Leitfaden rendert die ISiK-Fassungen auf eigenen Seiten (          <code class="language-plaintext highlighter-rouge">extern-&lt;id&gt;.html</code>
+), die Beispiele deklarieren die ISiK-Canonicals.           <em>Bilanz Einfuhr Kalorien 24h</em>
+ bleibt im Modul und leitet jetzt direkt von           <code class="language-plaintext highlighter-rouge">Observation</code>
+ ab; es erbt dadurch keine Flüssigkeitsbilanz-Codes oder Milliliter-Einheiten mehr. Die Beatmungsprofile bleiben unverändert. (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/144">#144</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/146">#146</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/146">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <strong>Canonical-URLs von 27 Profilen geändert, die jetzt in ISiK 6 gepflegt werden.</strong>
+ Die Bilanz-Profile (generische           <em>Bilanz</em>
+ und ihre 19 Ausprägungen), die sechs Untersuchungsprofile (Pupillen) und der           <em>RASS</em>
+-Score sind ins ISiK-6-Package (          <code class="language-plaintext highlighter-rouge">de.gematik.isik</code>
+ 6.0.0) umgezogen und wurden samt ihrer 11 ValueSets aus diesem Modul entfernt. Die Profil-IDs bleiben gleich, die Canonical ändert sich jedoch von           <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/&lt;id&gt;</code>
+ zu           <code class="language-plaintext highlighter-rouge">https://gematik.de/fhir/isik/StructureDefinition/&lt;id&gt;</code>
+.           <strong>Instanzen und abgeleitete Profile, die die MII-Canonicals referenzieren, müssen auf die ISiK-Canonicals umgestellt werden</strong>
+ (          <code class="language-plaintext highlighter-rouge">meta.profile</code>
+,           <code class="language-plaintext highlighter-rouge">baseDefinition</code>
+). Die MII-ValueSets           <code class="language-plaintext highlighter-rouge">mii-vs-icu-*</code>
+ für Bilanzen, Pupillen, RASS und Milliliter-Einheiten werden durch die ISiK-Kopien ersetzt. Der Leitfaden rendert die ISiK-Fassungen auf eigenen Seiten (          <code class="language-plaintext highlighter-rouge">extern-&lt;id&gt;.html</code>
+), die Beispiele deklarieren die ISiK-Canonicals.           <em>Bilanz Einfuhr Kalorien 24h</em>
+ bleibt im Modul und leitet jetzt direkt von           <code class="language-plaintext highlighter-rouge">Observation</code>
+ ab; es erbt dadurch keine Flüssigkeitsbilanz-Codes oder Milliliter-Einheiten mehr. Die Beatmungsprofile bleiben unverändert. (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/144">#144</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/146">#146</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ QI7-Körpermaße:           <em>Körpergewicht</em>
+ und           <em>Körpergröße</em>
+ beschränken           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ auf           <code class="language-plaintext highlighter-rouge">Quantity</code>
+, schließen die Messcode-Slices und verlangen zusätzlich zu LOINC und SNOMED CT das messungsspezifische IEEE-11073-Coding. Geburtsbezogene bzw. Körperlängen-Codings sind aus den allgemeinen Gewichts- und Größenprofilen entsprechend ausgeschlossen; hierfür sind die eigenen Profile zu verwenden. Die Messcodings der durch QI7 überarbeiteten Profile verlangen           <code class="language-plaintext highlighter-rouge">Coding.version 1..1 MS</code>
+, ohne eine Edition oder einen Display-Text festzuschreiben. Bestehende Instanzen mit anderen Werttypen, fehlenden Pflichtcodings oder Versionen sowie zusätzlichen Messcodings müssen angepasst werden. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <em>Körperlänge</em>
+ wechselt von           <code class="language-plaintext highlighter-rouge">active</code>
+ zu           <code class="language-plaintext highlighter-rouge">draft</code>
+ und leitet von der neuen Draft-Basis für Monitoring ab. Die Unterstützung im CapabilityStatement wechselt von SHALL zu MAY. Release-Builds entfernen das Profil und sein Beispiel zusammen mit den übrigen Entwürfen; in Entwicklungs-Previews mit Drafts bleibt es verfügbar. Zusätzlich zu LOINC 8306-3 wird für die Kompatibilität mit dem aktuellen HL7-Java-Validator LOINC 8302-2 verpflichtend verlangt. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+QI7 ergänzt Draft-Profile für           <em>Geburtsgewicht</em>
+ (ausschließlich Gramm),           <em>Körperlänge bei Geburt</em>
+ (Zentimeter), den körpergewichtsbezogenen           <em>Energieverbrauch Indirekte Kalorimetrie</em>
+ (          <code class="language-plaintext highlighter-rouge">kcal/kg/d</code>
+) und           <em>Kalorienbedarf pro Tag</em>
+. Die Geburtsmaßprofile leiten von der unabhängigen MII-Monitoring-Basis ab und schließen die allgemeinen LOINC-Codes für Körpergewicht bzw. Körpergröße aus. Das Kalorienbedarfsprofil leitet direkt von           <code class="language-plaintext highlighter-rouge">Observation</code>
+ ab; sein extensibles Methoden-ValueSet unterscheidet berechneten und geschätzten Bedarf. Diese neuen Draft-Profile sind nicht in Release-Builds enthalten. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <em>Bilanz Einfuhr Kalorien 24h</em>
+ erlaubt nur noch die festgelegten LOINC- und SNOMED-CT-Messcodings und verlangt deren Versionen. Instanzen mit geerbten Flüssigkeitsbilanz-Codings müssen angepasst werden. Das Profil bleibt ein Entwurf. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">github.com</a>
+        </td>
+        <td>
+Abhängigkeiten auf die 2027er-Generation angehoben (          <code class="language-plaintext highlighter-rouge">kerndatensatz.base</code>
+,           <code class="language-plaintext highlighter-rouge">kerndatensatz.meta</code>
+ 2027.0.0-ballot) sowie ISiK 6.0.0 (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">#74</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/96">#96</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/96">github.com</a>
+        </td>
+        <td>
+Abhängigkeiten auf die 2027er-Generation angehoben (          <code class="language-plaintext highlighter-rouge">kerndatensatz.base</code>
+,           <code class="language-plaintext highlighter-rouge">kerndatensatz.meta</code>
+ 2027.0.0-ballot) sowie ISiK 6.0.0 (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">#74</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/96">#96</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/d0c97cb">github.com</a>
+        </td>
+        <td>
+Das Profil           <em>Zerebraler Perfusionsdruck</em>
+ ist ins ISiK-6-Package umgezogen und wurde aus diesem Modul entfernt (commit           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/d0c97cb">d0c97cb</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/4c608a9">github.com</a>
+        </td>
+        <td>
+Neue Beispiele: alle Score-Profile (GCS, Faces Pain Scale, NRS, VAS), Körperlänge, zerebraler Perfusionsdruck — insgesamt 144 Beispiele, erstmals CI-validiert (commit           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/4c608a9">4c608a9</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende           <code class="language-plaintext highlighter-rouge">Quantity.unit</code>
+ ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">#84</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">#86</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">#89</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende           <code class="language-plaintext highlighter-rouge">Quantity.unit</code>
+ ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">#84</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">#86</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">#89</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Beispiel-QA-Überarbeitung: Beispielpatient eingeführt und alle hängenden Referenzen aufgelöst; SNOMED-CT-Versionsstempel auf verfügbare Editionen umgestellt; fehlende           <code class="language-plaintext highlighter-rouge">Quantity.unit</code>
+ ergänzt; Category-Codings korrigiert; Codes und Display-Texte an die Pattern-Codings der Profile angeglichen (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">#84</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">#86</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">#89</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/85">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am           <code class="language-plaintext highlighter-rouge">code</code>
+-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/85">#85</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/88">#88</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/88">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Profile: Invariante „mindestens ein LOINC/SNOMED/DGAI/IEEE-11073-Code" repariert und am           <code class="language-plaintext highlighter-rouge">code</code>
+-Element verankert; SNOMED-CT-Versions-Alias auf eine serverseitig verfügbare Edition angehoben; Artefakt-Versionen an die Guide-Version angeglichen (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/85">#85</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/88">#88</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/149">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Suchparameter: Die Codes           <code class="language-plaintext highlighter-rouge">component.interpretation</code>
+ und           <code class="language-plaintext highlighter-rouge">component.referenceRange</code>
+ enthielten einen Punkt, der in FHIR-Such-URLs eine besondere Bedeutung hat. Sie lauten nun           <code class="language-plaintext highlighter-rouge">component-interpretation</code>
+ und           <code class="language-plaintext highlighter-rouge">component-referencerange</code>
+; die Canonical-URLs beider SearchParameter bleiben unverändert (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/149">#149</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/156">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ SOFA-Score: Die sechs Subscore-Komponenten enthalten keine SNOMED-CT-Platzhalter-Codings (          <code class="language-plaintext highlighter-rouge">xxx</code>
+/          <code class="language-plaintext highlighter-rouge">xxxx</code>
+) mehr, da SNOMED CT keine Konzepte für die SOFA-Subscores kennt. Jede Komponente wird nun allein über ihren LOINC-Code identifiziert (          <code class="language-plaintext highlighter-rouge">code.coding</code>
+ 1..1) (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/156">#156</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
           <a href="https://imi-uka.atlassian.net/browse/NRA-583">imi-uka.atlassian.net</a>
         </td>
         <td>
@@ -6762,6 +7069,140 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  und SNOMED CT           <code class="language-plaintext highlighter-rouge">450740000</code>
  werden nicht mehr verwendet; keines der beiden Codesysteme enthält bisher ein CAM-ICU-spezifisches Konzept. Statt eines Ergebnisses kann ein           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
  angegeben werden (          <a href="https://imi-uka.atlassian.net/browse/NRA-583">NRA-583</a>
+; PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">#157</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ CAM-ICU-Score (Entwurf): Der Score erfasst nur noch das Gesamtergebnis (positiv oder negativ) und wird über die DGAI-Code           <code class="language-plaintext highlighter-rouge">DGAI-CAM-ICU</code>
+ identifiziert; die vier Feature-Komponenten entfallen. Die ungültigen Codes LOINC           <code class="language-plaintext highlighter-rouge">99844-5</code>
+ und SNOMED CT           <code class="language-plaintext highlighter-rouge">450740000</code>
+ werden nicht mehr verwendet; keines der beiden Codesysteme enthält bisher ein CAM-ICU-spezifisches Konzept. Statt eines Ergebnisses kann ein           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ angegeben werden (          <a href="https://imi-uka.atlassian.net/browse/NRA-583">NRA-583</a>
+; PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">#157</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ CAM-ICU-Score (Entwurf): Der Score erfasst nur noch das Gesamtergebnis (positiv oder negativ) und wird über die DGAI-Code           <code class="language-plaintext highlighter-rouge">DGAI-CAM-ICU</code>
+ identifiziert; die vier Feature-Komponenten entfallen. Die ungültigen Codes LOINC           <code class="language-plaintext highlighter-rouge">99844-5</code>
+ und SNOMED CT           <code class="language-plaintext highlighter-rouge">450740000</code>
+ werden nicht mehr verwendet; keines der beiden Codesysteme enthält bisher ein CAM-ICU-spezifisches Konzept. Statt eines Ergebnisses kann ein           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ angegeben werden (          <a href="https://imi-uka.atlassian.net/browse/NRA-583">NRA-583</a>
+; PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">#157</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ ICDSC-Score (Entwurf): Der Score erfasst nur noch den ganzzahligen Gesamtwert (0 bis 8, SNOMED CT           <code class="language-plaintext highlighter-rouge">1351995008</code>
+); die acht Item-Komponenten entfallen. Statt eines Ergebnisses kann ein           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ angegeben werden (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">github.com</a>
+        </td>
+        <td>
+Neues Profil           <em>MII PR ICU Score BPS</em>
+ (Entwurf): Gesamtwert der Behavioral Pain Scale (3 bis 12) für beatmete Erwachsene, identifiziert über die DGAI-Code           <code class="language-plaintext highlighter-rouge">DGAI-BPS</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/161">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Must-Support: Die MUV-Profile           <em>Arterieller Blutdruck</em>
+,           <em>Atemfrequenz</em>
+,           <em>Körpergewicht</em>
+,           <em>Körpergröße</em>
+ und           <em>Kopfumfang</em>
+ kennzeichnen nun auch die geerbten Slices von Must-Support-Elementen als Must-Support (          <code class="language-plaintext highlighter-rouge">category:VSCat</code>
+,           <code class="language-plaintext highlighter-rouge">code.coding:loinc</code>
+/          <code class="language-plaintext highlighter-rouge">snomed</code>
+/          <code class="language-plaintext highlighter-rouge">loinc-zusatzcode</code>
+,           <code class="language-plaintext highlighter-rouge">valueQuantity</code>
+). In           <em>Arterieller Blutdruck</em>
+ ist das verbotene           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ (0..0) nicht mehr Must-Support (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/161">#161</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/164">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ ValueSet           <em>MII VS ICU Delirium Interpretation</em>
+: Der Platzhalter           <code class="language-plaintext highlighter-rouge">$sct#xxx "No delirium (finding)"</code>
+ wurde entfernt; SNOMED CT enthält kein solches Konzept (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/164">#164</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/166">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ UCUM-Einheiten ohne Annotationen:           <em>Mechanische Atemfrequenz (beatmet)</em>
+ legt           <code class="language-plaintext highlighter-rouge">valueQuantity.code</code>
+ nun auf           <code class="language-plaintext highlighter-rouge">/min</code>
+ fest (vorher           <code class="language-plaintext highlighter-rouge">{Breaths}/min</code>
+),           <em>Zeitverhältnis Ein-/Ausatmung</em>
+ auf           <code class="language-plaintext highlighter-rouge">1</code>
+ (vorher           <code class="language-plaintext highlighter-rouge">{ratio}</code>
+). Der Validator ignoriert Annotationen beim Einheitenvergleich, daher sollen sie im Code keine Bedeutung tragen; lesbarer Text gehört in           <code class="language-plaintext highlighter-rouge">valueQuantity.unit</code>
+. Daten mit den alten Codes passen nicht mehr zu den Profilen (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/166">#166</a>
 )
         </td>
       </tr>
@@ -6785,6 +7226,7 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  ist "Survey"); die Kategorie           <code class="language-plaintext highlighter-rouge">survey</code>
  ist nun ein Slice, weitere Kategorien sind erlaubt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/116">#116</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/117">#117</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">#170</a>
 )
         </td>
       </tr>
@@ -6808,6 +7250,31 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  ist "Survey"); die Kategorie           <code class="language-plaintext highlighter-rouge">survey</code>
  ist nun ein Slice, weitere Kategorien sind erlaubt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/116">#116</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/117">#117</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">#170</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Score-Profile:           <em>SOFA</em>
+ und           <em>GCS</em>
+ legen den           <code class="language-plaintext highlighter-rouge">code</code>
+ jeder Komponente nun auf ihr LOINC-Coding fest (Pattern auf           <code class="language-plaintext highlighter-rouge">component.code</code>
+), damit die Komponenten ihren Slices zugeordnet werden können; das ungenutzte Slicing auf Coding-Ebene und die festen           <code class="language-plaintext highlighter-rouge">code.text</code>
+-Werte in SOFA wurden entfernt.           <em>Wong-Baker-FACES</em>
+ legt           <code class="language-plaintext highlighter-rouge">category.coding.display</code>
+ nicht mehr auf "Assessment" fest (das offizielle Display von           <code class="language-plaintext highlighter-rouge">survey</code>
+ ist "Survey"); die Kategorie           <code class="language-plaintext highlighter-rouge">survey</code>
+ ist nun ein Slice, weitere Kategorien sind erlaubt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/116">#116</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/117">#117</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">#170</a>
 )
         </td>
       </tr>
@@ -6828,6 +7295,7 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  (75367002) des Basisprofils ist daneben dokumentiert.           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
  ist wieder erlaubt (0..1, Must-Support), damit eine fehlende Messung ohne Komponenten dokumentiert werden kann; bisher war es zugleich verboten und Must-Support (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/46">#46</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/33">#33</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">#171</a>
 )
         </td>
       </tr>
@@ -6848,6 +7316,70 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  (75367002) des Basisprofils ist daneben dokumentiert.           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
  ist wieder erlaubt (0..1, Must-Support), damit eine fehlende Messung ohne Komponenten dokumentiert werden kann; bisher war es zugleich verboten und Must-Support (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/46">#46</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/33">#33</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">#171</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <em>Arterieller Blutdruck</em>
+:           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ hat nun ein Minimum von 2, passend zu den verpflichtenden Slices (          <code class="language-plaintext highlighter-rouge">loinc</code>
+ 85354-9 aus dem Basisprofil und           <code class="language-plaintext highlighter-rouge">sct</code>
+ 364090009); der optionale SNOMED-CT-Slice           <code class="language-plaintext highlighter-rouge">snomed</code>
+ (75367002) des Basisprofils ist daneben dokumentiert.           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ ist wieder erlaubt (0..1, Must-Support), damit eine fehlende Messung ohne Komponenten dokumentiert werden kann; bisher war es zugleich verboten und Must-Support (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/46">#46</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/33">#33</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">#171</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/118">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ statt eines Werts:           <em>Atemfrequenz</em>
+,           <em>Bilanz Einfuhr Kalorien 24h</em>
+ und die Parameter extrakorporaler Verfahren (          <em>Parameter von extrakorporalen Verfahren</em>
+ und seine 12 Spezialisierungen) verlangen           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ nicht mehr (jetzt 0..1), sodass eine fehlende Messung mit           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ (Must-Support) dokumentiert werden kann.           <em>Bilanz Einfuhr Kalorien 24h</em>
+ verlangt genau eines von beiden (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/118">#118</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/194">#194</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/194">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ statt eines Werts:           <em>Atemfrequenz</em>
+,           <em>Bilanz Einfuhr Kalorien 24h</em>
+ und die Parameter extrakorporaler Verfahren (          <em>Parameter von extrakorporalen Verfahren</em>
+ und seine 12 Spezialisierungen) verlangen           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ nicht mehr (jetzt 0..1), sodass eine fehlende Messung mit           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ (Must-Support) dokumentiert werden kann.           <em>Bilanz Einfuhr Kalorien 24h</em>
+ verlangt genau eines von beiden (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/118">#118</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/194">#194</a>
 )
         </td>
       </tr>
@@ -6867,6 +7399,7 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
 : die Profile dieses Moduls (aktive SHALL, Drafts MAY) sowie die 77 in ISiK 6 gepflegten ICU-Profile mit ihrer versionierten ISiK-Canonical (          <code class="language-plaintext highlighter-rouge">|6.0.0</code>
 ) (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/121">#121</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/52">#52</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">#172</a>
 )
         </td>
       </tr>
@@ -6886,6 +7419,27 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
 : die Profile dieses Moduls (aktive SHALL, Drafts MAY) sowie die 77 in ISiK 6 gepflegten ICU-Profile mit ihrer versionierten ISiK-Canonical (          <code class="language-plaintext highlighter-rouge">|6.0.0</code>
 ) (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/121">#121</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/52">#52</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">#172</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ CapabilityStatement           <em>MII CPS Intensivmedizin</em>
+: Es wird nicht mehr leer gerendert. Es listet nun die Ressourcentypen Observation, Procedure, Device und DeviceMetric mit           <code class="language-plaintext highlighter-rouge">read</code>
+ und           <code class="language-plaintext highlighter-rouge">search-type</code>
+, die Suchparameter (Core und modulspezifisch) und alle Profile als           <code class="language-plaintext highlighter-rouge">supportedProfile</code>
+: die Profile dieses Moduls (aktive SHALL, Drafts MAY) sowie die 77 in ISiK 6 gepflegten ICU-Profile mit ihrer versionierten ISiK-Canonical (          <code class="language-plaintext highlighter-rouge">|6.0.0</code>
+) (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/121">#121</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/52">#52</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">#172</a>
 )
         </td>
       </tr>
@@ -6901,6 +7455,7 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  Links zu ISiK: Startseite und "Bezug zu anderen Projekten" verlinken nun die aktuellen ISiK-Leitfäden (Basis, ICU, Vitalparameter, Organspendeerkennung) und weisen darauf hin, dass die in ISiK gepflegten Monitoring- und Vitaldaten-Profile zur besseren Lesbarkeit hier enthalten sind; der Rest "Diese Seite wurde absichtlich leer gelassen." wurde aus der Anleitung für Implementierende entfernt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
 )
         </td>
       </tr>
@@ -6916,6 +7471,7 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  Links zu ISiK: Startseite und "Bezug zu anderen Projekten" verlinken nun die aktuellen ISiK-Leitfäden (Basis, ICU, Vitalparameter, Organspendeerkennung) und weisen darauf hin, dass die in ISiK gepflegten Monitoring- und Vitaldaten-Profile zur besseren Lesbarkeit hier enthalten sind; der Rest "Diese Seite wurde absichtlich leer gelassen." wurde aus der Anleitung für Implementierende entfernt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
 )
         </td>
       </tr>
@@ -6931,6 +7487,23 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
  Links zu ISiK: Startseite und "Bezug zu anderen Projekten" verlinken nun die aktuellen ISiK-Leitfäden (Basis, ICU, Vitalparameter, Organspendeerkennung) und weisen darauf hin, dass die in ISiK gepflegten Monitoring- und Vitaldaten-Profile zur besseren Lesbarkeit hier enthalten sind; der Rest "Diese Seite wurde absichtlich leer gelassen." wurde aus der Anleitung für Implementierende entfernt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">docs</code>
+ Links zu ISiK: Startseite und "Bezug zu anderen Projekten" verlinken nun die aktuellen ISiK-Leitfäden (Basis, ICU, Vitalparameter, Organspendeerkennung) und weisen darauf hin, dass die in ISiK gepflegten Monitoring- und Vitaldaten-Profile zur besseren Lesbarkeit hier enthalten sind; der Rest "Diese Seite wurde absichtlich leer gelassen." wurde aus der Anleitung für Implementierende entfernt (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
 )
         </td>
       </tr>
@@ -6952,6 +7525,304 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
 ) ließen den Slice           <code class="language-plaintext highlighter-rouge">sct</code>
  unter dem Diskriminator           <code class="language-plaintext highlighter-rouge">pattern:$this</code>
  bisher ohne Muster, sodass er jedes Coding traf und das geforderte IEEE-11073-Coding abgelehnt wurde (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/114">#114</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/175">#175</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/175">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Beatmungsprofile: Die Slices           <code class="language-plaintext highlighter-rouge">sct</code>
+,           <code class="language-plaintext highlighter-rouge">loinc</code>
+ und           <code class="language-plaintext highlighter-rouge">IEEE-11073</code>
+ von           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ in           <em>Parameter von Beatmung</em>
+ tragen nun ein Muster auf das Codesystem. Kindprofile ohne SNOMED-CT-Code (z. B.           <em>Maximaler Beatmungsdruck</em>
+) ließen den Slice           <code class="language-plaintext highlighter-rouge">sct</code>
+ unter dem Diskriminator           <code class="language-plaintext highlighter-rouge">pattern:$this</code>
+ bisher ohne Muster, sodass er jedes Coding traf und das geforderte IEEE-11073-Coding abgelehnt wurde (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/114">#114</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/175">#175</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Das obsolete Draft-Profil ZOPA wurde samt DGAI-Code, CapabilityStatement-Eintrag und Profilkarten-Link entfernt. Implementierungen dürfen das entfernte ICU-ZOPA-Profil nicht mehr als unterstützt ausweisen oder neue Ressourcen damit deklarieren. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ SOFA verwendet auswertbare Integer-Wertebereichsregeln und geschlossenes Organkomponenten-Slicing. Ein erfasstes Ergebnis verlangt alle sechs unterschiedlichen Organsysteme; fremde oder doppelte Komponenten ersetzen keinen Subscore. Bei vollständig fehlender SOFA-Beobachtung genügt           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+; auch ein fehlender Organ-Subscore kann einen eigenen Grund tragen. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Die Score-Basis liefert nun Systemmuster auf Coding-Ebene für den Diskriminator           <code class="language-plaintext highlighter-rouge">pattern:$this</code>
+. GCS und Wong-Baker-FACES erlauben           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ anstelle des Gesamtwerts; Wert und Fehlgrund bleiben gegenseitig ausgeschlossen. Das GCS-Beispiel enthält jetzt einen numerischen Gesamtwert und die erwartete Score-Einheit. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Das IEEE-11073-ValueSet für extrakorporale Parameter verwendet die eigene Canonical           <code class="language-plaintext highlighter-rouge">...-iso11073</code>
+ statt der kollidierenden LOINC-Canonical. Seine generische extensible Bindung umfasst die IEEE-11073-Nomenklatur; spezifische Profile wählen passende Messgrößen. Für IEEE gedachte Referenzen müssen die korrigierte Canonical verwenden; die LOINC-Canonical bleibt unverändert. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">github.com</a>
+        </td>
+        <td>
+Neue Draft-Profile:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ und           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (Monitoring und Vitaldaten),           <em>Einstellung Inspirationsdruck</em>
+ (Beatmung) sowie           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft-Profile sind nicht in Release-Builds enthalten (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">github.com</a>
+        </td>
+        <td>
+Neue Draft-Profile:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ und           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (Monitoring und Vitaldaten),           <em>Einstellung Inspirationsdruck</em>
+ (Beatmung) sowie           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft-Profile sind nicht in Release-Builds enthalten (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">github.com</a>
+        </td>
+        <td>
+Neue Draft-Profile:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ und           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (Monitoring und Vitaldaten),           <em>Einstellung Inspirationsdruck</em>
+ (Beatmung) sowie           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft-Profile sind nicht in Release-Builds enthalten (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">github.com</a>
+        </td>
+        <td>
+Neue Draft-Profile:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ und           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (Monitoring und Vitaldaten),           <em>Einstellung Inspirationsdruck</em>
+ (Beatmung) sowie           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft-Profile sind nicht in Release-Builds enthalten (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/183">github.com</a>
+        </td>
+        <td>
+Neue Draft-Score-Profile für die pädiatrische Intensivmedizin:           <em>CAPD</em>
+,           <em>COMFORT-B</em>
+,           <em>KUSS</em>
+,           <em>SOS</em>
+ und           <em>SOS-PD</em>
+. Sie erfassen jeweils nur den Gesamtwert. Da es dafür noch keine LOINC- oder SNOMED-CT-Codes gibt, werden sie über Platzhalter-Codes aus dem neuen CodeSystem           <em>MII CS ICU DGAI</em>
+ identifiziert; der Alias           <code class="language-plaintext highlighter-rouge">$dgai</code>
+ verweist nun auf dieses CodeSystem statt auf           <code class="language-plaintext highlighter-rouge">http://dgai.de</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/183">#183</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/187">github.com</a>
+        </td>
+        <td>
+          <em>Parameter von Beatmung</em>
+: Die ValueSet-Bindings der Slices           <code class="language-plaintext highlighter-rouge">sct</code>
+,           <code class="language-plaintext highlighter-rouge">loinc</code>
+ und           <code class="language-plaintext highlighter-rouge">IEEE-11073</code>
+ von           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ sind nun extensible statt required, sodass spezialisierte Profile passende Codes außerhalb dieser ValueSets verwenden können (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/187">#187</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/151">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Beatmungsprofile: Die Pattern-Codings der Profile unter           <em>Parameter von Beatmung</em>
+ enthalten nun ihr Codesystem, nicht nur Code und Display (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/151">#151</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/158">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Display-Texte korrigiert in           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (SNOMED CT           <code class="language-plaintext highlighter-rouge">276902009</code>
+) und           <em>Ideales Körpergewicht</em>
+ (IEEE 11073           <code class="language-plaintext highlighter-rouge">188796</code>
+, nun           <code class="language-plaintext highlighter-rouge">MDC_MASS_BODY_EST_IBW</code>
+) (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/158">#158</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/77">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <em>Herzfrequenz</em>
+:           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ ist nun Must-Support (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/77">#77</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/162">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ CapabilityStatement:           <code class="language-plaintext highlighter-rouge">format</code>
+ verwendet die vollständigen MIME-Types           <code class="language-plaintext highlighter-rouge">application/fhir+xml</code>
+ und           <code class="language-plaintext highlighter-rouge">application/fhir+json</code>
+ statt           <code class="language-plaintext highlighter-rouge">xml</code>
+ und           <code class="language-plaintext highlighter-rouge">json</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/162">#162</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/160">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ ImplementationGuide: Das Coding in           <code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code>
+ nennt nun Version 3.0.0 seines CodeSystems, die den Code           <code class="language-plaintext highlighter-rouge">package</code>
+ definiert (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/160">#160</a>
 )
         </td>
       </tr>
@@ -9387,7 +10258,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Sun, Nov 22, 2026 16:24+0000">2026-11-22</span>
+          Generated           <span title="Sun, Nov 22, 2026 22:59+0000">2026-11-22</span>
 
                     <br/>
 
@@ -9698,6 +10569,313 @@ This profile also claims upward compatibility with the           <a href="http:/
           <a href="en/changes.html">web</a>
         </td>
         <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Migration to the MII KDS module template: the guide is now published on GitHub Pages (this site) instead of Simplifier; page locations changed (see the navigation), the ImplementationGuide id is now           <code class="language-plaintext highlighter-rouge">mii-ig-icu</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">#74</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/144">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <strong>Canonical URLs changed for 27 profiles now maintained in ISiK 6.</strong>
+ The balance profiles (generic           <em>Bilanz</em>
+ and its 19 specialisations), the six examination profiles (pupils) and the           <em>RASS</em>
+ score moved to the ISiK 6 package (          <code class="language-plaintext highlighter-rouge">de.gematik.isik</code>
+ 6.0.0) and were removed from this module, together with their 11 value sets. The profile ids stay the same, but the canonical changes from           <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/&lt;id&gt;</code>
+ to           <code class="language-plaintext highlighter-rouge">https://gematik.de/fhir/isik/StructureDefinition/&lt;id&gt;</code>
+.           <strong>Instances and dependent profiles that reference the MII canonicals must switch to the ISiK canonicals</strong>
+ (          <code class="language-plaintext highlighter-rouge">meta.profile</code>
+,           <code class="language-plaintext highlighter-rouge">baseDefinition</code>
+). The MII value sets           <code class="language-plaintext highlighter-rouge">mii-vs-icu-*</code>
+ for balances, pupils, RASS and millilitre units are replaced by the ISiK copies. The guide renders the ISiK versions on its own pages (          <code class="language-plaintext highlighter-rouge">extern-&lt;id&gt;.html</code>
+), and the examples declare the ISiK canonicals.           <em>Bilanz Einfuhr Kalorien 24h</em>
+ stays in this module and now derives directly from           <code class="language-plaintext highlighter-rouge">Observation</code>
+, so it no longer inherits fluid-balance codes or millilitre units. The ventilation profiles are unchanged. (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/144">#144</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/146">#146</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/146">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <strong>Canonical URLs changed for 27 profiles now maintained in ISiK 6.</strong>
+ The balance profiles (generic           <em>Bilanz</em>
+ and its 19 specialisations), the six examination profiles (pupils) and the           <em>RASS</em>
+ score moved to the ISiK 6 package (          <code class="language-plaintext highlighter-rouge">de.gematik.isik</code>
+ 6.0.0) and were removed from this module, together with their 11 value sets. The profile ids stay the same, but the canonical changes from           <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/&lt;id&gt;</code>
+ to           <code class="language-plaintext highlighter-rouge">https://gematik.de/fhir/isik/StructureDefinition/&lt;id&gt;</code>
+.           <strong>Instances and dependent profiles that reference the MII canonicals must switch to the ISiK canonicals</strong>
+ (          <code class="language-plaintext highlighter-rouge">meta.profile</code>
+,           <code class="language-plaintext highlighter-rouge">baseDefinition</code>
+). The MII value sets           <code class="language-plaintext highlighter-rouge">mii-vs-icu-*</code>
+ for balances, pupils, RASS and millilitre units are replaced by the ISiK copies. The guide renders the ISiK versions on its own pages (          <code class="language-plaintext highlighter-rouge">extern-&lt;id&gt;.html</code>
+), and the examples declare the ISiK canonicals.           <em>Bilanz Einfuhr Kalorien 24h</em>
+ stays in this module and now derives directly from           <code class="language-plaintext highlighter-rouge">Observation</code>
+, so it no longer inherits fluid-balance codes or millilitre units. The ventilation profiles are unchanged. (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/144">#144</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/146">#146</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ QI7 body measurements:           <em>Körpergewicht</em>
+ and           <em>Körpergröße</em>
+ restrict           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ to           <code class="language-plaintext highlighter-rouge">Quantity</code>
+, close the measurement coding slices and require the measurement-specific IEEE 11073 coding in addition to LOINC and SNOMED CT. Birth-specific and recumbent-length codings are excluded from general weight and height as applicable; use the dedicated profiles for these measurements. The measurement codings in the profiles revised by QI7 require           <code class="language-plaintext highlighter-rouge">Coding.version 1..1 MS</code>
+, without fixing an edition or display. Existing instances with other value types, missing required codings or versions, or additional measurement codings must be adapted. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <em>Körperlänge</em>
+ changes from           <code class="language-plaintext highlighter-rouge">active</code>
+ to           <code class="language-plaintext highlighter-rouge">draft</code>
+ and derives from the new draft monitoring base. Its CapabilityStatement support changes from SHALL to MAY. Release builds remove this profile and its example together with the other drafts; it remains available in development previews that include drafts. Its LOINC 8306-3 coding is supplemented by mandatory LOINC 8302-2 for compatibility with the current HL7 Java validator. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+QI7 adds draft profiles for           <em>Geburtsgewicht</em>
+ (grams only),           <em>Körperlänge bei Geburt</em>
+ (centimetres), body-weight-normalised           <em>Energieverbrauch Indirekte Kalorimetrie</em>
+ (          <code class="language-plaintext highlighter-rouge">kcal/kg/d</code>
+) and           <em>Kalorienbedarf pro Tag</em>
+. The birth-measurement profiles derive from the independent MII monitoring base and exclude the general body-weight/body-height LOINC codes. The calorie-requirement profile derives directly from           <code class="language-plaintext highlighter-rouge">Observation</code>
+; its extensible method value set distinguishes calculated and estimated requirements. These new draft profiles are excluded from release builds. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+           <em>Bilanz Einfuhr Kalorien 24h</em>
+ now permits only its specified LOINC and SNOMED CT measurement codings and requires their versions. Instances carrying inherited fluid-balance codings must be updated. The profile remains a draft. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/155">#155</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">github.com</a>
+        </td>
+        <td>
+Dependencies raised to the 2027 generation (          <code class="language-plaintext highlighter-rouge">kerndatensatz.base</code>
+,           <code class="language-plaintext highlighter-rouge">kerndatensatz.meta</code>
+ 2027.0.0-ballot) and ISiK 6.0.0 (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">#74</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/96">#96</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/96">github.com</a>
+        </td>
+        <td>
+Dependencies raised to the 2027 generation (          <code class="language-plaintext highlighter-rouge">kerndatensatz.base</code>
+,           <code class="language-plaintext highlighter-rouge">kerndatensatz.meta</code>
+ 2027.0.0-ballot) and ISiK 6.0.0 (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/74">#74</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/96">#96</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/d0c97cb">github.com</a>
+        </td>
+        <td>
+The profile           <em>Zerebraler Perfusionsdruck</em>
+ moved to the ISiK 6 package and was removed from this module (commit           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/d0c97cb">d0c97cb</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/4c608a9">github.com</a>
+        </td>
+        <td>
+New examples: all score profiles (GCS, Faces Pain Scale, NRS, VAS), body height, cerebral perfusion pressure — 144 examples in total, now validated in CI for the first time (commit           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/commit/4c608a9">4c608a9</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Example QA overhaul: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing           <code class="language-plaintext highlighter-rouge">Quantity.unit</code>
+ values added; category codings corrected; codes and display texts aligned with the profiles' pattern codings (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">#84</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">#86</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">#89</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Example QA overhaul: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing           <code class="language-plaintext highlighter-rouge">Quantity.unit</code>
+ values added; category codings corrected; codes and display texts aligned with the profiles' pattern codings (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">#84</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">#86</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">#89</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Example QA overhaul: example patient introduced and all dangling references resolved; SNOMED CT version stamps aligned with available editions; missing           <code class="language-plaintext highlighter-rouge">Quantity.unit</code>
+ values added; category codings corrected; codes and display texts aligned with the profiles' pattern codings (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/84">#84</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/86">#86</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/89">#89</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/85">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired and anchored at the           <code class="language-plaintext highlighter-rouge">code</code>
+ element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/85">#85</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/88">#88</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/88">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Profiles: the "at least one LOINC/SNOMED/DGAI/IEEE-11073 code" invariant repaired and anchored at the           <code class="language-plaintext highlighter-rouge">code</code>
+ element; SNOMED CT version alias raised to an edition available on terminology servers; artifact versions aligned with the guide version (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/85">#85</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/88">#88</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/149">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Search parameters: the codes           <code class="language-plaintext highlighter-rouge">component.interpretation</code>
+ and           <code class="language-plaintext highlighter-rouge">component.referenceRange</code>
+ contained a dot, which has special meaning in FHIR search URLs. They are now           <code class="language-plaintext highlighter-rouge">component-interpretation</code>
+ and           <code class="language-plaintext highlighter-rouge">component-referencerange</code>
+; the canonical URLs of both SearchParameters are unchanged (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/149">#149</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/156">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ SOFA score: the six subscore components no longer carry SNOMED CT placeholder codings (          <code class="language-plaintext highlighter-rouge">xxx</code>
+/          <code class="language-plaintext highlighter-rouge">xxxx</code>
+), since SNOMED CT has no concepts for the SOFA subscores. Each component is now identified by its LOINC code alone (          <code class="language-plaintext highlighter-rouge">code.coding</code>
+ 1..1) (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/156">#156</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
           <a href="https://imi-uka.atlassian.net/browse/NRA-583">imi-uka.atlassian.net</a>
         </td>
         <td>
@@ -9708,6 +10886,140 @@ This profile also claims upward compatibility with the           <a href="http:/
  and SNOMED CT           <code class="language-plaintext highlighter-rouge">450740000</code>
  are no longer used; neither code system has a CAM-ICU-specific concept yet. A           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
  may be given instead of a result (          <a href="https://imi-uka.atlassian.net/browse/NRA-583">NRA-583</a>
+; PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">#157</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ CAM-ICU score (draft): the score now records only the overall result (positive or negative) and is identified by the DGAI code           <code class="language-plaintext highlighter-rouge">DGAI-CAM-ICU</code>
+; the four feature components were removed. The invalid codes LOINC           <code class="language-plaintext highlighter-rouge">99844-5</code>
+ and SNOMED CT           <code class="language-plaintext highlighter-rouge">450740000</code>
+ are no longer used; neither code system has a CAM-ICU-specific concept yet. A           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ may be given instead of a result (          <a href="https://imi-uka.atlassian.net/browse/NRA-583">NRA-583</a>
+; PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">#157</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ CAM-ICU score (draft): the score now records only the overall result (positive or negative) and is identified by the DGAI code           <code class="language-plaintext highlighter-rouge">DGAI-CAM-ICU</code>
+; the four feature components were removed. The invalid codes LOINC           <code class="language-plaintext highlighter-rouge">99844-5</code>
+ and SNOMED CT           <code class="language-plaintext highlighter-rouge">450740000</code>
+ are no longer used; neither code system has a CAM-ICU-specific concept yet. A           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ may be given instead of a result (          <a href="https://imi-uka.atlassian.net/browse/NRA-583">NRA-583</a>
+; PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/157">#157</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ ICDSC score (draft): the score now records only the integer total score (0 to 8, SNOMED CT           <code class="language-plaintext highlighter-rouge">1351995008</code>
+); the eight item components were removed. A           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ may be given instead of a result (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">github.com</a>
+        </td>
+        <td>
+New profile           <em>MII PR ICU Score BPS</em>
+ (draft): total score of the Behavioral Pain Scale (3 to 12) for mechanically ventilated adults, identified by the DGAI code           <code class="language-plaintext highlighter-rouge">DGAI-BPS</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/173">#173</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/161">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Must-support: the MUV profiles           <em>Arterieller Blutdruck</em>
+,           <em>Atemfrequenz</em>
+,           <em>Körpergewicht</em>
+,           <em>Körpergröße</em>
+ and           <em>Kopfumfang</em>
+ now also mark the inherited slices of must-support elements as must-support (          <code class="language-plaintext highlighter-rouge">category:VSCat</code>
+,           <code class="language-plaintext highlighter-rouge">code.coding:loinc</code>
+/          <code class="language-plaintext highlighter-rouge">snomed</code>
+/          <code class="language-plaintext highlighter-rouge">loinc-zusatzcode</code>
+,           <code class="language-plaintext highlighter-rouge">valueQuantity</code>
+). In           <em>Arterieller Blutdruck</em>
+, the prohibited           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ (0..0) is no longer must-support (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/161">#161</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/164">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Value set           <em>MII VS ICU Delirium Interpretation</em>
+: the placeholder           <code class="language-plaintext highlighter-rouge">$sct#xxx "No delirium (finding)"</code>
+ was removed; SNOMED CT has no such concept (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/164">#164</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/166">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ UCUM units without annotations:           <em>Mechanische Atemfrequenz (beatmet)</em>
+ now fixes           <code class="language-plaintext highlighter-rouge">valueQuantity.code</code>
+ to           <code class="language-plaintext highlighter-rouge">/min</code>
+ (was           <code class="language-plaintext highlighter-rouge">{Breaths}/min</code>
+) and           <em>Zeitverhältnis Ein-/Ausatmung</em>
+ to           <code class="language-plaintext highlighter-rouge">1</code>
+ (was           <code class="language-plaintext highlighter-rouge">{ratio}</code>
+). The validator ignores annotations when comparing units, so they should not carry meaning in the code; human-readable text belongs in           <code class="language-plaintext highlighter-rouge">valueQuantity.unit</code>
+. Data sent with the old codes no longer matches the profiles (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/166">#166</a>
 )
         </td>
       </tr>
@@ -9731,6 +11043,7 @@ This profile also claims upward compatibility with the           <a href="http:/
  is "Survey"); the           <code class="language-plaintext highlighter-rouge">survey</code>
  category is now a slice, so further categories are allowed (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/116">#116</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/117">#117</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">#170</a>
 )
         </td>
       </tr>
@@ -9754,6 +11067,31 @@ This profile also claims upward compatibility with the           <a href="http:/
  is "Survey"); the           <code class="language-plaintext highlighter-rouge">survey</code>
  category is now a slice, so further categories are allowed (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/116">#116</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/117">#117</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">#170</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Score profiles:           <em>SOFA</em>
+ and           <em>GCS</em>
+ now fix each component's           <code class="language-plaintext highlighter-rouge">code</code>
+ to its LOINC coding (pattern on           <code class="language-plaintext highlighter-rouge">component.code</code>
+), so the components can be matched to their slices; the unused coding-level slicing and the fixed           <code class="language-plaintext highlighter-rouge">code.text</code>
+ values in SOFA were removed.           <em>Wong-Baker FACES</em>
+ no longer pins           <code class="language-plaintext highlighter-rouge">category.coding.display</code>
+ to "Assessment" (the official display of           <code class="language-plaintext highlighter-rouge">survey</code>
+ is "Survey"); the           <code class="language-plaintext highlighter-rouge">survey</code>
+ category is now a slice, so further categories are allowed (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/116">#116</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/117">#117</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170">#170</a>
 )
         </td>
       </tr>
@@ -9774,6 +11112,7 @@ This profile also claims upward compatibility with the           <a href="http:/
  (75367002) is documented next to it.           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
  is allowed again (0..1, must-support) so that a missing measurement can be recorded without components; previously it was prohibited and must-support at the same time (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/46">#46</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/33">#33</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">#171</a>
 )
         </td>
       </tr>
@@ -9794,6 +11133,70 @@ This profile also claims upward compatibility with the           <a href="http:/
  (75367002) is documented next to it.           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
  is allowed again (0..1, must-support) so that a missing measurement can be recorded without components; previously it was prohibited and must-support at the same time (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/46">#46</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/33">#33</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">#171</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <em>Arterieller Blutdruck</em>
+:           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ now has a minimum of 2, matching its required slices (          <code class="language-plaintext highlighter-rouge">loinc</code>
+ 85354-9 from the base profile and           <code class="language-plaintext highlighter-rouge">sct</code>
+ 364090009); the optional base-profile SNOMED CT slice           <code class="language-plaintext highlighter-rouge">snomed</code>
+ (75367002) is documented next to it.           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ is allowed again (0..1, must-support) so that a missing measurement can be recorded without components; previously it was prohibited and must-support at the same time (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/46">#46</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/33">#33</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/171">#171</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/118">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ instead of a value:           <em>Atemfrequenz</em>
+,           <em>Bilanz Einfuhr Kalorien 24h</em>
+ and the parameters of extracorporeal procedures (          <em>Parameter von extrakorporalen Verfahren</em>
+ and its 12 specialisations) no longer require           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ (now 0..1), so a missing measurement can be recorded with           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ (must-support).           <em>Bilanz Einfuhr Kalorien 24h</em>
+ requires exactly one of the two (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/118">#118</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/194">#194</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/194">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ instead of a value:           <em>Atemfrequenz</em>
+,           <em>Bilanz Einfuhr Kalorien 24h</em>
+ and the parameters of extracorporeal procedures (          <em>Parameter von extrakorporalen Verfahren</em>
+ and its 12 specialisations) no longer require           <code class="language-plaintext highlighter-rouge">value[x]</code>
+ (now 0..1), so a missing measurement can be recorded with           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ (must-support).           <em>Bilanz Einfuhr Kalorien 24h</em>
+ requires exactly one of the two (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/118">#118</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/194">#194</a>
 )
         </td>
       </tr>
@@ -9813,6 +11216,7 @@ This profile also claims upward compatibility with the           <a href="http:/
 : the profiles of this module (active ones SHALL, drafts MAY) and the 77 ICU profiles maintained in ISiK 6 with their versioned ISiK canonical (          <code class="language-plaintext highlighter-rouge">|6.0.0</code>
 ) (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/121">#121</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/52">#52</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">#172</a>
 )
         </td>
       </tr>
@@ -9832,6 +11236,27 @@ This profile also claims upward compatibility with the           <a href="http:/
 : the profiles of this module (active ones SHALL, drafts MAY) and the 77 ICU profiles maintained in ISiK 6 with their versioned ISiK canonical (          <code class="language-plaintext highlighter-rouge">|6.0.0</code>
 ) (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/121">#121</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/52">#52</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">#172</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ CapabilityStatement           <em>MII CPS Intensivmedizin</em>
+: it no longer renders empty. It now lists the resource types Observation, Procedure, Device and DeviceMetric with           <code class="language-plaintext highlighter-rouge">read</code>
+ and           <code class="language-plaintext highlighter-rouge">search-type</code>
+, the search parameters (core and module-specific), and every profile as           <code class="language-plaintext highlighter-rouge">supportedProfile</code>
+: the profiles of this module (active ones SHALL, drafts MAY) and the 77 ICU profiles maintained in ISiK 6 with their versioned ISiK canonical (          <code class="language-plaintext highlighter-rouge">|6.0.0</code>
+) (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/121">#121</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/52">#52</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/172">#172</a>
 )
         </td>
       </tr>
@@ -9847,6 +11272,7 @@ This profile also claims upward compatibility with the           <a href="http:/
  Links to ISiK: the start page and "Reference to other projects" now link the latest ISiK guides (Basis, ICU, Vitalparameter, Organspendeerkennung) and state that the ISiK-maintained monitoring and vital data profiles are included here for readability; the leftover "This page was intentionally left blank." was removed from the implementer guidance (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
 )
         </td>
       </tr>
@@ -9862,6 +11288,7 @@ This profile also claims upward compatibility with the           <a href="http:/
  Links to ISiK: the start page and "Reference to other projects" now link the latest ISiK guides (Basis, ICU, Vitalparameter, Organspendeerkennung) and state that the ISiK-maintained monitoring and vital data profiles are included here for readability; the leftover "This page was intentionally left blank." was removed from the implementer guidance (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
 )
         </td>
       </tr>
@@ -9877,6 +11304,23 @@ This profile also claims upward compatibility with the           <a href="http:/
  Links to ISiK: the start page and "Reference to other projects" now link the latest ISiK guides (Basis, ICU, Vitalparameter, Organspendeerkennung) and state that the ISiK-maintained monitoring and vital data profiles are included here for readability; the leftover "This page was intentionally left blank." was removed from the implementer guidance (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
 ,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">docs</code>
+ Links to ISiK: the start page and "Reference to other projects" now link the latest ISiK guides (Basis, ICU, Vitalparameter, Organspendeerkennung) and state that the ISiK-maintained monitoring and vital data profiles are included here for readability; the leftover "This page was intentionally left blank." was removed from the implementer guidance (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/124">#124</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/125">#125</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/126">#126</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/176">#176</a>
 )
         </td>
       </tr>
@@ -9898,6 +11342,304 @@ This profile also claims upward compatibility with the           <a href="http:/
 ) previously left the           <code class="language-plaintext highlighter-rouge">sct</code>
  slice without a pattern under the           <code class="language-plaintext highlighter-rouge">pattern:$this</code>
  discriminator, so it matched every coding and the required IEEE 11073 coding was rejected (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/114">#114</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/175">#175</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/175">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Ventilation profiles: the           <code class="language-plaintext highlighter-rouge">sct</code>
+,           <code class="language-plaintext highlighter-rouge">loinc</code>
+ and           <code class="language-plaintext highlighter-rouge">IEEE-11073</code>
+ slices of           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ in           <em>Parameter von Beatmung</em>
+ now carry a pattern on the code system. Children without a SNOMED CT code (e.g.           <em>Maximaler Beatmungsdruck</em>
+) previously left the           <code class="language-plaintext highlighter-rouge">sct</code>
+ slice without a pattern under the           <code class="language-plaintext highlighter-rouge">pattern:$this</code>
+ discriminator, so it matched every coding and the required IEEE 11073 coding was rejected (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/114">#114</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/175">#175</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Removed the obsolete draft ZOPA profile and its DGAI code, CapabilityStatement entry and profile-map link. Implementations must no longer advertise or create resources using the removed ICU ZOPA profile. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ SOFA now uses evaluable integer range constraints and closed organ-component slicing. A recorded result requires all six distinct organ systems; unrelated or duplicate components cannot replace a subscore. A wholly unavailable SOFA observation can contain only           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+, and an unavailable organ subscore can carry its own reason. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ The Score base now supplies coding-level system patterns for its           <code class="language-plaintext highlighter-rouge">pattern:$this</code>
+ discriminator. GCS and Wong-Baker-FACES permit           <code class="language-plaintext highlighter-rouge">dataAbsentReason</code>
+ instead of a total; value and absence reason remain mutually exclusive. The GCS example now contains a numeric total and the expected score unit. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ The extracorporeal-parameter IEEE 11073 ValueSet now uses its own           <code class="language-plaintext highlighter-rouge">...-iso11073</code>
+ canonical instead of colliding with the LOINC ValueSet. Its generic extensible binding covers the IEEE 11073 nomenclature; specialised profiles select appropriate metrics. References intended for IEEE must use the corrected canonical; the LOINC canonical is unchanged. (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/188">#188</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">github.com</a>
+        </td>
+        <td>
+New draft profiles:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ and           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (monitoring and vital data),           <em>Einstellung Inspirationsdruck</em>
+ (ventilation) and           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft profiles are not part of release builds (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">github.com</a>
+        </td>
+        <td>
+New draft profiles:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ and           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (monitoring and vital data),           <em>Einstellung Inspirationsdruck</em>
+ (ventilation) and           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft profiles are not part of release builds (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">github.com</a>
+        </td>
+        <td>
+New draft profiles:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ and           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (monitoring and vital data),           <em>Einstellung Inspirationsdruck</em>
+ (ventilation) and           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft profiles are not part of release builds (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">github.com</a>
+        </td>
+        <td>
+New draft profiles:           <em>Herzzeitvolumen</em>
+,           <em>Ideales Körpergewicht</em>
+,           <em>Intrakranieller Druck (ICP)</em>
+,           <em>Körpergewicht Perzentil</em>
+,           <em>Körpergröße Perzentil</em>
+,           <em>Kohlendioxid Produktion</em>
+,           <em>Pulmonalarterieller Wedge-Druck</em>
+ and           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (monitoring and vital data),           <em>Einstellung Inspirationsdruck</em>
+ (ventilation) and           <em>Bilanz Einfuhr Kalorien 24h</em>
+. Draft profiles are not part of release builds (PRs           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/69">#69</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/75">#75</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/76">#76</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/109">#109</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/183">github.com</a>
+        </td>
+        <td>
+New draft score profiles for paediatric intensive care:           <em>CAPD</em>
+,           <em>COMFORT-B</em>
+,           <em>KUSS</em>
+,           <em>SOS</em>
+ and           <em>SOS-PD</em>
+. Each records only the total score. No LOINC or SNOMED CT codes exist for them yet, so they are identified by placeholder codes from the new code system           <em>MII CS ICU DGAI</em>
+; the           <code class="language-plaintext highlighter-rouge">$dgai</code>
+ alias now points to this code system instead of           <code class="language-plaintext highlighter-rouge">http://dgai.de</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/183">#183</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/187">github.com</a>
+        </td>
+        <td>
+          <em>Parameter von Beatmung</em>
+: the value set bindings of the           <code class="language-plaintext highlighter-rouge">sct</code>
+,           <code class="language-plaintext highlighter-rouge">loinc</code>
+ and           <code class="language-plaintext highlighter-rouge">IEEE-11073</code>
+ slices of           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ are now extensible instead of required, so specialised profiles can use suitable codes outside these value sets (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/187">#187</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/151">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Ventilation profiles: the pattern codings of the profiles under           <em>Parameter von Beatmung</em>
+ now carry their code system, not only code and display (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/151">#151</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/158">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ Display texts corrected in           <em>Pulmonalvaskulärer Widerstandsindex</em>
+ (SNOMED CT           <code class="language-plaintext highlighter-rouge">276902009</code>
+) and           <em>Ideales Körpergewicht</em>
+ (IEEE 11073           <code class="language-plaintext highlighter-rouge">188796</code>
+, now           <code class="language-plaintext highlighter-rouge">MDC_MASS_BODY_EST_IBW</code>
+) (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/158">#158</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/77">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+           <em>Herzfrequenz</em>
+:           <code class="language-plaintext highlighter-rouge">code.coding</code>
+ is now must-support (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/77">#77</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/162">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ CapabilityStatement:           <code class="language-plaintext highlighter-rouge">format</code>
+ uses the full MIME types           <code class="language-plaintext highlighter-rouge">application/fhir+xml</code>
+ and           <code class="language-plaintext highlighter-rouge">application/fhir+json</code>
+ instead of           <code class="language-plaintext highlighter-rouge">xml</code>
+ and           <code class="language-plaintext highlighter-rouge">json</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/162">#162</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/160">github.com</a>
+        </td>
+        <td>
+          <code class="language-plaintext highlighter-rouge">fix</code>
+ ImplementationGuide: the           <code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code>
+ coding now names version 3.0.0 of its code system, the version that defines the code           <code class="language-plaintext highlighter-rouge">package</code>
+ (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/160">#160</a>
 )
         </td>
       </tr>
