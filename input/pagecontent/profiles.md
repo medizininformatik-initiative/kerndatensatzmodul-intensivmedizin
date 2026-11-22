@@ -55,7 +55,7 @@
 <a href="StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html">Beatmungszeit Hohem Druck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.html">Beatmungszeit Niedrigem Druck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.html">Druckdifferenz Beatmung</a>
-<a href="StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.html">Dynamische Kompliance</a>
+<a href="StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.html">Dynamische Compliance</a>
 <a href="StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html">Eingestellter Inspiratorischer Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html">Einstellung Ausatmungszeit Beatmung</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.html">Einstellung Einatmungszeit Beatmung</a>
