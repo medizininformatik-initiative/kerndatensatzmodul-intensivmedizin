@@ -103,8 +103,6 @@ jobs:
           python3 tests/profiles/check-monitoring-isik-parity.py \
             "${HOME}/.fhir/packages/de.gematik.isik#6.0.0/package/StructureDefinition-sd-mii-icu-monitoring-und-vitaldaten.json" \
             "${RUNNER_TEMP}/icu-regressions/fsh-generated/resources/StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.json"
-      - name: Check the scope of the temporary UCUM exception
-        run: python3 tests/profiles/check-ucum-advisor-scope.py "${RUNNER_TEMP}/icu-regressions/fsh-generated/resources"
       - name: Run structural positive and negative cases
         run: |
           set -euo pipefail

@@ -17,7 +17,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * partOf ^definition = "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
 * status MS
 
-* category 1..1 MS
+* category 1.. MS
 * category from mii-vs-icu-category-procedure-beatmung-snomed (required)
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
