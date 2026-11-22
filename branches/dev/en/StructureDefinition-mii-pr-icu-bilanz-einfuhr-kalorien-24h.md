@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-22T11:34:12+00:00",
+  "date" : "2026-11-22T16:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -89,7 +89,14 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "differential" : {
     "element" : [{
       "id" : "Observation",
-      "path" : "Observation"
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "mii-icu-val-xor-dar",
+        "severity" : "error",
+        "human" : "Resource must have either value or dataAbsentReason.",
+        "expression" : "value.exists() xor dataAbsentReason.exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
+      }]
     },
     {
       "id" : "Observation.identifier",
@@ -247,7 +254,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }],

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-22T11:34:12+00:00",
+  "date" : "2026-11-22T16:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -156,14 +156,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-at
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "min" : 1,
       "mustSupport" : true
     },
     {
       "id" : "Observation.value[x]:valueQuantity",
       "path" : "Observation.value[x]",
       "sliceName" : "valueQuantity",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }],

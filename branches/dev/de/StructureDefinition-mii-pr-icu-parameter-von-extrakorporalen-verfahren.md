@@ -47,8 +47,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 6 elements(10 nested mandatory elements)
- Must-Support: 31 elements
+Mandatory: 2 elements(13 nested mandatory elements)
+ Must-Support: 32 elements
 
 **Structures**
 
@@ -88,8 +88,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 6 elements(10 nested mandatory elements)
- Must-Support: 31 elements
+Mandatory: 2 elements(13 nested mandatory elements)
+ Must-Support: 32 elements
 
 **Structures**
 
@@ -122,7 +122,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-11-22T11:34:12+00:00",
+  "date" : "2026-11-22T16:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -401,7 +401,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }],
@@ -429,6 +428,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "id" : "Observation.value[x].code",
       "path" : "Observation.value[x].code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason",
+      "path" : "Observation.dataAbsentReason",
       "mustSupport" : true
     },
     {

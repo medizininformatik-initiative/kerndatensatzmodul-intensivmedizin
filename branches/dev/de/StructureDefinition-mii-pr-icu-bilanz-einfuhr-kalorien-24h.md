@@ -34,6 +34,8 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observation.html) 
 
+#### Constraints
+
 #### Terminology Bindings
 
 #### Constraints
@@ -42,7 +44,7 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 12 elements(2 nested mandatory elements)
+Mandatory: 10 elements(3 nested mandatory elements)
  Must-Support: 29 elements
 
 **Slices**
@@ -62,6 +64,8 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
 Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observation.html) 
 
+#### Constraints
+
  **Snapshot-AnsichtView** 
 
 #### Terminology Bindings
@@ -72,7 +76,7 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 12 elements(2 nested mandatory elements)
+Mandatory: 10 elements(3 nested mandatory elements)
  Must-Support: 29 elements
 
 **Slices**
@@ -99,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-22T11:34:12+00:00",
+  "date" : "2026-11-22T16:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -149,7 +153,14 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "differential" : {
     "element" : [{
       "id" : "Observation",
-      "path" : "Observation"
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "mii-icu-val-xor-dar",
+        "severity" : "error",
+        "human" : "Resource must have either value or dataAbsentReason.",
+        "expression" : "value.exists() xor dataAbsentReason.exists()",
+        "source" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
+      }]
     },
     {
       "id" : "Observation.identifier",
@@ -307,7 +318,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }],

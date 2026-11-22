@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 
 ** Summary **
 
-Mandatory: 3 elements
+Mandatory: 1 element
  Must-Support: 22 elements
 
  **Schlüsselelemente-Ansicht** 
@@ -71,7 +71,7 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 
 ** Summary **
 
-Mandatory: 3 elements
+Mandatory: 1 element
  Must-Support: 22 elements
 
  
@@ -91,7 +91,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-22T11:34:12+00:00",
+  "date" : "2026-11-22T16:24:19+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -206,14 +206,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.value[x]",
       "path" : "Observation.value[x]",
-      "min" : 1,
       "mustSupport" : true
     },
     {
       "id" : "Observation.value[x]:valueQuantity",
       "path" : "Observation.value[x]",
       "sliceName" : "valueQuantity",
-      "min" : 1,
       "type" : [{
         "code" : "Quantity"
       }],
