@@ -94,3 +94,5 @@ Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
 * code.coding[IEEE-11073].version 1..1 MS
 * code.coding[loinc].version 1..1 MS
 * code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
