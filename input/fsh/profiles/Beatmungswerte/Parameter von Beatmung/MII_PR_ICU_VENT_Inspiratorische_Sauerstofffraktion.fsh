@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-inspiratorische-sauerstofffraktion
 Title: "MII PR ICU Inspiratorische Sauerstofffraktion"
+Description: "Inspiratory oxygen fraction (FiO2): the proportion of oxygen in the inspired gas."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"

@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck
 Title: "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck"
+Description: "Mean airway pressure during the inspiratory phase of a ventilator breath."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck"

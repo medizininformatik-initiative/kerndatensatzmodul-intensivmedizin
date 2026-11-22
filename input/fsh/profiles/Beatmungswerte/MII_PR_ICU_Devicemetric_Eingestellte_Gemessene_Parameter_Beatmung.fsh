@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung
 Parent: DeviceMetric
 Id: mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung
 Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+Description: "A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"

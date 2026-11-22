@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Arterieller_Blutdruck
 Parent: $observation-de-vitalsign-blutdruck
 Id: mii-pr-icu-muv-arterieller-blutdruck
 Title: "MII PR ICU MUV Arterieller Blutdruck"
+Description: "Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"

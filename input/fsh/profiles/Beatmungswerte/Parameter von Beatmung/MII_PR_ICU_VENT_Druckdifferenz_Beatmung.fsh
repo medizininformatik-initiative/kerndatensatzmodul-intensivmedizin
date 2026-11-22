@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Druckdifferenz_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-druckdifferenz-beatmung
 Title: "MII PR ICU Druckdifferenz Beatmung"
+Description: "Difference between the upper and lower airway pressure during a ventilator breath, for example between peak or plateau pressure and PEEP."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"

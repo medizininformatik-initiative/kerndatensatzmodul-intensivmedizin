@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Ideales_Koerpergewicht
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-ideales-koerpergewicht
 Title: "MII PR ICU MUV Ideales Koerpergewicht"
+Description: "Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"

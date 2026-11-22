@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss
 Title: "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+Description: "Airway pressure on the ventilator measured at a moment of zero gas flow."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"

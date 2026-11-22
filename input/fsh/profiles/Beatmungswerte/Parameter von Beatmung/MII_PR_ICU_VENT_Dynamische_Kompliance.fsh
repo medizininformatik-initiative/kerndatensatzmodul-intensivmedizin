@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Dynamische_Kompliance
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-dynamische-kompliance
 Title: "MII PR ICU Dynamische Kompliance"
+Description: "Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"

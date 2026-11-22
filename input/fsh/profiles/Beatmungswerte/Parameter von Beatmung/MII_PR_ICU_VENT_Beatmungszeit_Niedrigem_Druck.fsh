@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-beatmungszeit-niedrigem-druck
 Title: "MII PR ICU Beatmungszeit Niedrigem Druck"
+Description: "Set duration of the low pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck"
