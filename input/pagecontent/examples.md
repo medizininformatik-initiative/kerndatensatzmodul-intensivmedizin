@@ -13,7 +13,7 @@ examples.
 > **Written during migration - review before release.** List generated from the build (the source carried no narrative here).
 {: .ig-highlight .ig-highlight-blue}
 
-The module ships **148 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring, examination and score chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
+The module ships **143 examples** (at least one per profile family, incl. complete ventilation, balance, ECT, monitoring and examination chains). Every example is listed on the [artifacts summary](artifacts.html) under its profile, and each profile page lists its own examples in the *Examples* section.
 
 <!-- BEGIN generiert: scripts/gen-examples-page.py -->
 
@@ -183,20 +183,11 @@ The module ships **148 examples** (at least one per profile family, incl. comple
 | [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.html) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.html) (ISiK) |
 | [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.html) | [MII PR ICU Untersuchung Pupillensymmetrie](extern-mii-pr-icu-untersuchung-pupillensymmetrie.html) (ISiK) |
 
-#### Scores (10)
+#### Scores (1)
 
 | Example | illustrates profile |
 |---|---|
-| [Score](Observation-mii-exa-icu-score.html) | [MII PR ICU Score](StructureDefinition-mii-pr-icu-score.html) |
-| [Score Bps](Observation-mii-exa-icu-score-bps.html) | [MII PR ICU Score BPS](StructureDefinition-mii-pr-icu-score-bps.html) |
-| [Score Cam Icu](Observation-mii-exa-icu-score-cam-icu.html) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.html) |
-| [Score Cam Icu Absent](Observation-mii-exa-icu-score-cam-icu-absent.html) | [MII PR ICU Score CAM-ICU](StructureDefinition-mii-pr-icu-score-cam-icu.html) |
-| [Score Faces Pain Scale Revised](Observation-mii-exa-icu-score-faces-pain-scale-revised.html) | [MII PR ICU Score Faces Pain Scale Revised](StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html) |
-| [Score Gcs](Observation-mii-exa-icu-score-gcs.html) | [MII PR ICU Score GCS](StructureDefinition-mii-pr-icu-score-gcs.html) |
-| [Score Icdsc](Observation-mii-exa-icu-score-icdsc.html) | [MII PR ICU Score ICDSC](StructureDefinition-mii-pr-icu-score-icdsc.html) |
-| [Score Numerische Ratingskala](Observation-mii-exa-icu-score-numerische-ratingskala.html) | [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html) |
 | [Score Rass](Observation-mii-exa-icu-score-rass.html) | [MII PR ICU Score RASS](extern-mii-pr-icu-score-rass.html) (ISiK) |
-| [Score Visuelle Analogskala](Observation-mii-exa-icu-score-visuelle-analogskala.html) | [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html) |
 
 #### Without profile assignment (1)
 
@@ -217,7 +208,6 @@ suppressed, so they remain visible in the QA report until the upstream fixes lan
 | Codes reported "not valid" when validating ValueSet composes | ~450 | IG Publisher sends malformed `$batch-validate-code` requests (no `url`/`tx-resource`); spec-strict servers reject every slot. Upstream fix pending: [org.hl7.fhir.core#2460](https://github.com/hapifhir/org.hl7.fhir.core/pull/2460) — see [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
 | "Wrong Display Name" on LOINC/IEEE-11073 codings | ~50 | The profiles pin display texts in `patternCoding` that differ from the official terminology displays. Resolution is a profile decision (drop displays from patterns) — see [#79](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/79) |
 | German-edition SNOMED CT codings reported "not in ValueSet" | ~15 | Terminology-server semantics for version-stamped codings; codes are provably members. Full reproduction: [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
-| Score profiles: "slicing cannot be evaluated" | ~26 | `$this` discriminator evaluation, under analysis |
 | Respiratory-rate / ECT pressure category conflicts | ~10 | Profiles inherit the FHIR core `vital-signs` category requirement **and** bind categories to module value sets — mutually unsatisfiable; needs a profile decision |
 | Body-site temperature codes not in `ISiKKernTempSctVS` | ~9 | Content conflict with ISiK 6.0.0 — tracked in [#83](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/83) |
 

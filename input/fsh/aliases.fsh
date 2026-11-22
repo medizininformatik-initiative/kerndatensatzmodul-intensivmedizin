@@ -2,7 +2,6 @@
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $ieee-11073 = urn:iso:std:iso:11073:10101
-Alias: $dgai = https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai // Platzhalter-CodeSystem (nur Drafts), siehe MII_CS_ICU_DGAI
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
