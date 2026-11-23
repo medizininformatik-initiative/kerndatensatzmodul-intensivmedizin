@@ -76,7 +76,6 @@
           "rules": "open"
         },
         "min": 1,
-        "max": "1",
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -106,10 +105,10 @@
         "constraint": [
           {
             "key": "mii-icu-loinc-sct-dgai-ieee11073",
-            "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
+            "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 Code vorhanden sein",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
             "severity": "error",
-            "expression": "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()"
+            "expression": "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists()"
           }
         ],
         "mustSupport": true
@@ -136,9 +135,12 @@
         "sliceName": "sct",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed"
         }
       },
@@ -166,9 +168,12 @@
         "sliceName": "loinc",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"
         }
       },
@@ -196,9 +201,12 @@
         "sliceName": "IEEE-11073",
         "min": 0,
         "max": "*",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101"
+        },
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073"
         }
       },

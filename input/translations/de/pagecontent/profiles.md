@@ -5,6 +5,7 @@
 <p style="border-left:4px solid #dcc39a;background:#fffdf9;padding:8px 12px;border-radius:4px">ℹ️ Die Basisprofile der Familie <em>Monitoring und Vitaldaten</em> werden im gematik-Package <code>de.gematik.isik 6.0.0</code> gepflegt — die vollständige, versionsgenaue Liste steht unten in der bernsteinfarbenen Sektion <a href="#isik-hosted-profiles">ISiK-gehostete Profile</a>.</p>
 
 
+<!-- BEGIN GENERATED:profile-map:style -->
 <style>
 .icu-acc{margin:1em 0;overflow:hidden}
 .icu-acc details{border:1px solid #c3cedb;border-radius:7px;margin:6px 0;background:#fbfcfe}
@@ -23,6 +24,8 @@
 .icu-note{overflow:hidden;font-size:0.85em;color:#555;margin:0.6em 0 0.2em 0;padding-left:2px}
 @media (max-width:720px){.icu-acc .items{columns:1}}
 </style>
+<!-- END GENERATED:profile-map:style -->
+<!-- BEGIN GENERATED:profile-map:module -->
 <p class="icu-note"><b>Modul-eigene Profile &mdash; dieses Paket</b></p>
 <div class="icu-acc">
 <details>
@@ -44,7 +47,7 @@
 </div>
 </div></details>
 <details>
-<summary>Beatmungswerte<span class="cnt">34</span></summary><div class="body">
+<summary>Beatmungswerte<span class="cnt">35</span></summary><div class="body">
 <p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.html">Eingestellte Gemessene Parameter Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-parameter-von-beatmung.html">Parameter von Beatmung</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html">Atemwegsdruck Bei Null Expiratorischem Gasfluss</a>
@@ -59,6 +62,7 @@
 <a href="StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html">Eingestellter Inspiratorischer Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html">Einstellung Ausatmungszeit Beatmung</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.html">Einstellung Einatmungszeit Beatmung</a>
+<a href="StructureDefinition-mii-pr-icu-vent-einstellung-inspirationsdruck.html">Einstellung Inspirationsdruck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html">Endexpiratorischer Kohlendioxidpartialdruck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.html">Exspiratorischer Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.html">Exspiratorischer Sauerstoffpartialdruck</a>
@@ -81,22 +85,54 @@
 </div>
 </div></details>
 <details>
-<summary>Bilanzen<span class="cnt">1</span></summary><div class="body">
+<summary>Bilanzen<span class="cnt">2</span></summary><div class="body">
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.html">Einfuhr Kalorien 24h</a>
+<a href="StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.html">Kalorienbedarf pro Tag</a>
 </div>
 </div></details>
 <details>
-<summary>Monitoring und Vitaldaten (MII)<span class="cnt">9</span></summary><div class="body">
+<summary>Monitoring und Vitaldaten (modul-eigen)<span class="cnt">19</span></summary><div class="body">
+<p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.html">Arterieller Blutdruck</a>
 <a href="StructureDefinition-mii-pr-icu-muv-atemfrequenz.html">Atemfrequenz</a>
-<a href="StructureDefinition-mii-pr-icu-muv-bmi.html">Body Mass Index</a>
+<a href="StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.html">Energieverbrauch Indirekte Kalorimetrie</a>
+<a href="StructureDefinition-mii-pr-icu-muv-geburtsgewicht.html">Geburtsgewicht</a>
 <a href="StructureDefinition-mii-pr-icu-muv-herzfrequenz.html">Herzfrequenz</a>
+<a href="StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.html">Herzzeitvolumen</a>
+<a href="StructureDefinition-mii-pr-icu-muv-ideales-koerpergewicht.html">Ideales Koerpergewicht</a>
+<a href="StructureDefinition-mii-pr-icu-muv-intrakranieller-druck.html">Intrakranieller Druck (ICP)</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht.html">Koerpergewicht</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerpergewicht-perzentil.html">Koerpergewicht Perzentil (altersabhaengig)</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse.html">Koerpergroesse</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerpergroesse-perzentil.html">Koerpergroesse Perzentil (altersabhaengig)</a>
 <a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge.html">Koerperlaenge</a>
+<a href="StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.html">Koerperlaenge Bei Geburt</a>
+<a href="StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.html">Kohlendioxid Produktion</a>
 <a href="StructureDefinition-mii-pr-icu-muv-kopfumfang.html">Kopfumfang</a>
+<a href="StructureDefinition-mii-pr-icu-muv-pulmonalarterieller-wedge-druck.html">Pulmonalarterieller Wedge-Druck</a>
+<a href="StructureDefinition-mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex.html">Pulmonalvaskulaerer Widerstandsindex</a>
+</div>
+</div></details>
+<details>
+<summary>Scores<span class="cnt">15</span></summary><div class="body">
+<p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
+<div class="items">
+<a href="StructureDefinition-mii-pr-icu-score-bps.html">BPS</a>
+<a href="StructureDefinition-mii-pr-icu-score-cam-icu.html">CAM-ICU</a>
+<a href="StructureDefinition-mii-pr-icu-score-capd.html">CAPD</a>
+<a href="StructureDefinition-mii-pr-icu-score-comfort-b.html">COMFORT-B</a>
+<a href="StructureDefinition-mii-pr-icu-score-faces-pain-scale-revised.html">Faces Pain Scale Revised</a>
+<a href="StructureDefinition-mii-pr-icu-score-gcs.html">GCS</a>
+<a href="StructureDefinition-mii-pr-icu-score-icdsc.html">ICDSC</a>
+<a href="StructureDefinition-mii-pr-icu-score-kuss.html">KUSS</a>
+<a href="StructureDefinition-mii-pr-icu-score-numerische-ratingskala.html">Numerische Ratingskala</a>
+<a href="StructureDefinition-mii-pr-icu-score-sofa.html">SOFA</a>
+<a href="StructureDefinition-mii-pr-icu-score-sos.html">SOS</a>
+<a href="StructureDefinition-mii-pr-icu-score-sos-pd.html">SOS-PD</a>
+<a href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html">Visuelle Analogskala</a>
+<a href="StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html">Wong-Baker-FACES-Schmerzskala</a>
 </div>
 </div></details>
 <details>
@@ -106,7 +142,21 @@
 </div>
 </div></details>
 </div>
+<!-- END GENERATED:profile-map:module -->
+
+**Körpermaße in den modul-eigenen Monitoring-Profilen**
+
+Das modul-eigene Basisprofil für Monitoring und Vitaldaten übernimmt die Elementregeln aus ISiK 6.0.0 und bindet die Messcodes erweiterbar (extensible) an die MII-ValueSets. Körperlänge im Liegen, Körperlänge bei Geburt und Geburtsgewicht leiten unabhängig von diesem Basisprofil ab und verwenden ausschließlich messungsspezifische Codes. Sie erheben keinen Anspruch auf Konformität zu den deutschen oder den FHIR-Profilen für Körpergröße und Körpergewicht, die die allgemeinen LOINC-Codes verlangen.
+
+Körpergröße und allgemeines Körpergewicht behalten ihre deutschen Elternprofile und schließen die geerbten geburtsspezifischen LOINC-Slices aus. Die Körperlänge im Liegen verlangt LOINC 8306-3 und SNOMED CT 1149101003, die Körperlänge bei Geburt SNOMED CT 169886007 und das Geburtsgewicht LOINC 8339-4 und SNOMED CT 364589006. LOINC 8302-2 ist bei der Körperlänge bei Geburt ausgeschlossen, 29463-7 beim Geburtsgewicht. Die verpflichtenden IEEE-11073-Codes sind 68060, 68058 beziehungsweise 68059. Größe und Länge werden als Quantity in cm angegeben, das allgemeine Körpergewicht als Quantity in kg und das Geburtsgewicht als Quantity in g.
+
+**Validator-Kompatibilität:** Die Körperlänge im Liegen verlangt zusätzlich den allgemeineren LOINC-Code 8302-2 (Body height), weil der HL7-Java-Validator im IG Publisher 2.3.2 ihn fordert, sobald 8306-3 vorhanden ist. LOINC 8306-3 bleibt der genauere Code für die Körperlänge im Liegen (NRA-592).
+
+Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.
+
+<!-- BEGIN GENERATED:profile-map:isik-note -->
 <p class="icu-note"><b>ISiK-gehostete Profile &mdash; de.gematik.isik 6.0.0</b><br>Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem bewussten Pin-Wechsel. Jeder Link &ouml;ffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.</p>
+<!-- END GENERATED:profile-map:isik-note -->
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
 > Die Profile zu
@@ -125,10 +175,11 @@
 Die einzelnen Profile sind Auspraegungen des generischen Profils [Monitoring und Vitaldaten (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.html). Siehe dort fuer naehere Informationen zu den Items und zum Bezug auf das Logical Model.
 
 <a id="isik-hosted-profiles"></a>
+<!-- BEGIN GENERATED:profile-map:isik -->
 <div class="icu-acc isik">
 <details>
-<summary>Generische Profile<span class="cnt">3</span></summary><div class="body"><div class="items">
-<a href="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html">zerebraler Perfusionsdruck (seit ISiK 6 dort gepflegt)</a>
+<summary>Generische Profile<span class="cnt">4</span></summary><div class="body"><div class="items">
+<a href="extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html">Bilanz Ausfuhr Drainage Generisch</a>
 <a href="extern-sd-mii-icu-koerpertemperatur-generisch.html">Koerpertemperatur Generisch</a>
 <a href="extern-sd-mii-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a>
 <a href="extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html">Sonstige pulsatile Druecke Generisch</a>
@@ -222,6 +273,7 @@ Die einzelnen Profile sind Auspraegungen des generischen Profils [Monitoring und
 <a href="extern-mii-pr-icu-score-rass.html">RASS</a>
 </div></div></details>
 </div>
+<!-- END GENERATED:profile-map:isik -->
 
 Die FHIR-Profile in diesem Projekt folgen folgendem Ansatz:
 

@@ -384,6 +384,10 @@ resources:
     name: "Bilanz Einfuhr Spendermilch"
     description: "Beispiel: MII PR ICU Bilanz Einfuhr Spendermilch"
     exampleBoolean: true
+  Observation/mii-exa-icu-bilanz-kalorienbedarf-pro-tag:
+    name: "Bilanz Kalorienbedarf Pro Tag"
+    description: "Beispiel: MII PR ICU Bilanz Kalorienbedarf pro Tag"
+    exampleBoolean: true
   Observation/mii-exa-icu-bilanz-tagesbilanz-fluessigkeit:
     name: "Bilanz Tagesbilanz Fluessigkeit"
     description: "Beispiel: MII PR ICU Bilanz Tagesbilanz Fluessigkeit"
@@ -476,9 +480,13 @@ resources:
     name: "Muv Atemfrequenz"
     description: "Beispiel: MII PR ICU MUV Atemfrequenz"
     exampleBoolean: true
-  Observation/mii-exa-icu-muv-bmi:
-    name: "Muv Bmi"
-    description: "Beispiel: MII PR ICU MUV Body Mass Index"
+  Observation/mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie:
+    name: "Muv Energieverbrauch Indirekte Kalorimetrie"
+    description: "Beispiel: MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-geburtsgewicht:
+    name: "Muv Geburtsgewicht"
+    description: "Beispiel: MII PR ICU MUV Geburtsgewicht"
     exampleBoolean: true
   Observation/mii-exa-icu-muv-herzfrequenz:
     name: "Muv Herzfrequenz"
@@ -511,6 +519,10 @@ resources:
   Observation/mii-exa-icu-muv-koerpergroesse:
     name: "Muv Koerpergroesse"
     description: "Beispiel: MII PR ICU MUV Koerpergroesse"
+    exampleBoolean: true
+  Observation/mii-exa-icu-muv-koerperlaenge-bei-geburt:
+    name: "Muv Koerperlaenge Bei Geburt"
+    description: "Beispiel: MII PR ICU MUV Koerperlaenge Bei Geburt"
     exampleBoolean: true
   Observation/mii-exa-icu-muv-koerperlaenge:
     name: "Muv Koerperlaenge"
@@ -696,6 +708,18 @@ resources:
     name: "Patient"
     description: "Beispielinstanz des Moduls"
     exampleBoolean: true
+  Observation/mii-exa-icu-score-bps:
+    name: "Score Bps"
+    description: "Beispiel: MII PR ICU Score BPS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-cam-icu-absent:
+    name: "Score Cam Icu Absent"
+    description: "Beispiel: MII PR ICU Score CAM-ICU"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-cam-icu:
+    name: "Score Cam Icu"
+    description: "Beispiel: MII PR ICU Score CAM-ICU"
+    exampleBoolean: true
   Observation/mii-exa-icu-score-faces-pain-scale-revised:
     name: "Score Faces Pain Scale Revised"
     description: "Beispiel: MII PR ICU Score Faces Pain Scale Revised"
@@ -703,6 +727,10 @@ resources:
   Observation/mii-exa-icu-score-gcs:
     name: "Score Gcs"
     description: "Beispiel: MII PR ICU Score GCS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-icdsc:
+    name: "Score Icdsc"
+    description: "Beispiel: MII PR ICU Score ICDSC"
     exampleBoolean: true
   Observation/mii-exa-icu-score-numerische-ratingskala:
     name: "Score Numerische Ratingskala"
@@ -1221,6 +1249,7 @@ parameters:
   # self-check substitution does not reach (it rewrites sushi-config.yaml, ig.ini
   # and the narrative pages only). Replace the placeholders in tests/profiles/,
   # then uncomment:
+  # Profile regressions run separately in validation.yml, before draft stripping.
   # profile-test-cases: tests/profiles/profiles.json
 
 # ── MENU (translatable — maintained as menu.xml, NOT the `menu:` property) ────

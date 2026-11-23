@@ -36,7 +36,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * category[assessment-scale].coding 1..1 MS
 
 * code ^definition = "Identifies which score/scale is being represented"
-* code obeys mii-icu-loinc-sct-dgai-ieee11073
+* code obeys mii-icu-score-supported-code
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -45,14 +45,17 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
     loinc 0..1 MS and 
     sct 0..1 MS and
     ieee11073 0..1 MS
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc].system 1..1
 * code.coding[loinc].system = $loinc
 * code.coding[loinc].code 1..1 MS
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
 * code.coding[sct].version 1..1 MS  // 05.08.26 - auf 1..1 gesetzt
 * code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
+* code.coding[ieee11073] ^patternCoding.system = $ieee-11073
 * code.coding[ieee11073].system 1..1  // neues IEEE-11073 Slicing hinzugefügt - Beschluss 05.08.26
 * code.coding[ieee11073].system = $ieee-11073
 * code.coding[ieee11073].code 1..1 MS
@@ -84,3 +87,7 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 
 * interpretation 0..1 MS
 * dataAbsentReason 0..1 MS
+Invariant: mii-icu-score-supported-code
+Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"
+* severity = #error
+* expression = "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai').exists()"

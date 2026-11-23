@@ -128,11 +128,11 @@
         "definition": "Identifies which score/scale is being represented",
         "constraint": [
           {
-            "key": "mii-icu-loinc-sct-dgai-ieee11073",
+            "key": "mii-icu-score-supported-code",
             "human": "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein",
             "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score",
             "severity": "error",
-            "expression": "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='http://dgai.de').exists()"
+            "expression": "coding.where(system='http://loinc.org').exists() or coding.where(system='http://snomed.info/sct').exists() or coding.where(system='urn:iso:std:iso:11073:10101').exists() or coding.where(system='https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai').exists()"
           }
         ]
       },
@@ -156,6 +156,9 @@
         "sliceName": "loinc",
         "min": 0,
         "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
         "mustSupport": true
       },
       {
@@ -176,6 +179,9 @@
         "sliceName": "sct",
         "min": 0,
         "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
         "mustSupport": true
       },
       {
@@ -203,6 +209,9 @@
         "sliceName": "ieee11073",
         "min": 0,
         "max": "1",
+        "patternCoding": {
+          "system": "urn:iso:std:iso:11073:10101"
+        },
         "mustSupport": true
       },
       {

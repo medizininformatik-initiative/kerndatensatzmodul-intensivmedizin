@@ -22,13 +22,19 @@
       {
         "system": "http://loinc.org",
         "code": "29463-7",
-        "display": "Body weight"
+        "display": "Body weight",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "27113001",
         "display": "Body weight (observable entity)",
         "version": "http://snomed.info/sct/900000000000207008/version/20260701"
+      },
+      {
+        "system": "urn:iso:std:iso:11073:10101",
+        "code": "68063",
+        "version": "2024-12-05"
       }
     ]
   },

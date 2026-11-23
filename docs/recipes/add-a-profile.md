@@ -5,6 +5,9 @@
 **Prerequisites.** A module created from this template that already builds (see
 [create-a-new-module.md](create-a-new-module.md)).
 
+For ICU profiles, follow the [profiling guidelines](../profiling-guidelines.md),
+including extensible identity-code bindings in generic bases.
+
 ## Steps
 
 1. Look at the shipped example `input/fsh/profiles/example-patient.fsh` and its
