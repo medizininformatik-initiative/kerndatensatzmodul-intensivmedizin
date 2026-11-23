@@ -7,6 +7,7 @@ Description: "Calorie intake over 24 hours, as part of the fluid and nutrition b
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
 * ^status = #draft
+* obeys mii-icu-val-xor-dar
 
 * identifier MS
 
@@ -48,7 +49,7 @@ Description: "Calorie intake over 24 hours, as part of the fluid and nutrition b
 * issued MS
 
 * value[x] only Quantity
-* valueQuantity 1..1 MS
+* valueQuantity MS // optional: dataAbsentReason may replace the value (mii-icu-val-xor-dar)
 * valueQuantity.code 1.. MS
 * valueQuantity = $ucum#kcal/(24.h) "kilocalorie per day"
 * dataAbsentReason MS

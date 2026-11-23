@@ -70,13 +70,14 @@ Description: "Generic profile for a single setting or measurement of an extracor
 
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam)
 
-* value[x] 1.. MS
+* value[x] MS // optional: dataAbsentReason may replace the value (mii-icu-comp-xor-val)
 * value[x] only Quantity
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.value 1.. MS
 * valueQuantity.code 1.. MS
 * valueQuantity.unit MS
 * valueQuantity.system 1.. MS
+* dataAbsentReason MS
 
 * bodySite from mii-vs-icu-body-site-observation-extrakorporale-verfahren (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren)

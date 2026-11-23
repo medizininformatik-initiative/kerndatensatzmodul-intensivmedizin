@@ -25,6 +25,15 @@
           "display": "Exam"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "273249006",
+          "display": "Assessment scales (assessment scale)"
+        }
+      ]
     }
   ],
   "code": {
@@ -32,12 +41,13 @@
       {
         "system": "http://snomed.info/sct",
         "code": "443394008",
-        "display": "Visual analog scale pain score (observable entity)"
+        "display": "Visual analog scale pain score (observable entity)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
         "code": "38214-3",
-        "display": "Visual analog scale pain score (observable entity)"
+        "display": "Pain severity [Score] Visual analog score"
       }
     ]
   },
@@ -51,7 +61,7 @@
   "effectiveDateTime": "2021-12-06T00:52:00+01:00",
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": "63",
+    "value": 63,
     "unit": "mm",
     "code": "mm"
   }

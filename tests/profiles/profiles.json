@@ -442,6 +442,21 @@
           "source": "invalid/icu-calorie-intake-missing-version.json",
           "valid": false,
           "description": "missing version"
+        },
+        {
+          "source": "valid/icu-calorie-intake-absent.json",
+          "valid": true,
+          "description": "Valid missing value with dataAbsentReason"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-no-value-or-reason.json",
+          "valid": false,
+          "description": "Invalid: neither value nor dataAbsentReason"
+        },
+        {
+          "source": "invalid/icu-calorie-intake-value-and-absent.json",
+          "valid": false,
+          "description": "Invalid: value and dataAbsentReason at the same time"
         }
       ]
     },
@@ -586,42 +601,147 @@
       ]
     },
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala",
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-capd",
       "tests": [
         {
-          "source": "valid/icu-wbf-0.json",
-          "description": "Wong-Baker accepts only its six scale steps",
-          "valid": true
+          "source": "valid/icu-score-capd-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-capd: total result only; components prohibited"
         },
         {
-          "source": "valid/icu-wbf-10.json",
-          "description": "Wong-Baker accepts only its six scale steps",
-          "valid": true
+          "source": "invalid/icu-score-capd-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-capd: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-comfort-b",
+      "tests": [
+        {
+          "source": "valid/icu-score-comfort-b-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-comfort-b: total result only; components prohibited"
         },
         {
-          "source": "invalid/icu-wbf-3.json",
-          "description": "Wong-Baker accepts only its six scale steps",
-          "valid": false
+          "source": "invalid/icu-score-comfort-b-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-comfort-b: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-kuss",
+      "tests": [
+        {
+          "source": "valid/icu-score-kuss-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-kuss: total result only; components prohibited"
         },
         {
-          "source": "invalid/icu-wbf-12.json",
-          "description": "Wong-Baker accepts only its six scale steps",
-          "valid": false
+          "source": "invalid/icu-score-kuss-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-kuss: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos",
+      "tests": [
+        {
+          "source": "valid/icu-score-sos-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-sos: total result only; components prohibited"
         },
         {
-          "source": "valid/icu-wbf-absent.json",
-          "description": "Missing Wong-Baker score with dataAbsentReason",
-          "valid": true
+          "source": "invalid/icu-score-sos-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-sos: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos-pd",
+      "tests": [
+        {
+          "source": "valid/icu-score-sos-pd-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-sos-pd: total result only; components prohibited"
         },
         {
-          "source": "invalid/icu-wbf-value-and-absent.json",
-          "description": "Value and reason are mutually exclusive",
-          "valid": false
+          "source": "invalid/icu-score-sos-pd-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-sos-pd: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala",
+      "tests": [
+        {
+          "source": "valid/icu-score-numerische-ratingskala-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-numerische-ratingskala: total result only; components prohibited"
         },
         {
-          "source": "invalid/icu-wbf-no-value-or-reason.json",
-          "description": "Missing value requires a reason",
-          "valid": false
+          "source": "invalid/icu-score-numerische-ratingskala-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-numerische-ratingskala: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala",
+      "tests": [
+        {
+          "source": "valid/icu-score-visuelle-analogskala-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-visuelle-analogskala: total result only; components prohibited"
+        },
+        {
+          "source": "invalid/icu-score-visuelle-analogskala-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-visuelle-analogskala: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised",
+      "tests": [
+        {
+          "source": "valid/icu-score-faces-pain-scale-revised-without-components.json",
+          "valid": true,
+          "description": "mii-pr-icu-score-faces-pain-scale-revised: total result only; components prohibited"
+        },
+        {
+          "source": "invalid/icu-score-faces-pain-scale-revised-with-component.json",
+          "valid": false,
+          "description": "mii-pr-icu-score-faces-pain-scale-revised: total result only; components prohibited"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz",
+      "tests": [
+        {
+          "source": "valid/icu-respiratory-rate-absent.json",
+          "valid": true,
+          "description": "Valid missing value with dataAbsentReason"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck",
+      "tests": [
+        {
+          "source": "valid/icu-ect-venous-pressure-absent.json",
+          "valid": true,
+          "description": "Valid missing value with dataAbsentReason"
+        },
+        {
+          "source": "invalid/icu-ect-venous-pressure-no-value-or-reason.json",
+          "valid": false,
+          "description": "Invalid: neither value nor dataAbsentReason (mii-icu-comp-xor-val)"
         }
       ]
     }
