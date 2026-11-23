@@ -268,6 +268,8 @@ jobs:
         run: |
           set -euo pipefail
           npm install --global "fsh-sushi@${SUSHI_VERSION}"
+          # Prevent removed/draft profiles in tracked output from entering the map.
+          rm -rf fsh-generated
           sushi .
           test -d fsh-generated/resources
           # A full IG Publisher build needs a buildable IG template in ig.ini.
@@ -373,7 +375,7 @@ jobs:
         shell: bash
         run: |
           python3 scripts/gen-examples-page.py --write
-        # python3 scripts/gen-profile-map.py --write # nach dem Umbau (I4)
+          python3 scripts/gen-profile-map.py --write
 
       - name: Build IG (SUSHI already ran) with the pinned IG Publisher
         if: ${{ steps.build.outputs.mode == 'full' }}
