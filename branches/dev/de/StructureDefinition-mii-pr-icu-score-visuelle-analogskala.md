@@ -48,6 +48,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 ** Summary **
 
 Mandatory: 2 elements(4 nested mandatory elements)
+ Prohibited: 1 element
 
  **Schlüsselelemente-Ansicht** 
 
@@ -72,6 +73,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 ** Summary **
 
 Mandatory: 2 elements(4 nested mandatory elements)
+ Prohibited: 1 element
 
  
 
@@ -90,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_Visuelle_Analogskala",
   "title" : "MII PR ICU Score Visuelle Analogskala",
   "status" : "draft",
-  "date" : "2026-11-23T09:10:11+00:00",
+  "date" : "2026-11-23T09:48:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -216,6 +218,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "path" : "Observation.value[x].code",
       "min" : 1,
       "patternCode" : "mm"
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "max" : "0"
     }]
   }
 }

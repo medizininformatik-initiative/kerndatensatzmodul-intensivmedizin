@@ -55,6 +55,7 @@ Profile: [MII PR ICU Score Numerische Ratingskala](StructureDefinition-mii-pr-ic
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "1284857008"
     }]
   },

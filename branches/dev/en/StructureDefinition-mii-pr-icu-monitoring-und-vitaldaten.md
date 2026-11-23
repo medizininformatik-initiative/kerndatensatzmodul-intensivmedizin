@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-monito
   "name" : "MII_PR_ICU_Monitoring_Und_Vitaldaten",
   "title" : "MII PR ICU Monitoring und Vitaldaten",
   "status" : "draft",
-  "date" : "2026-11-23T09:10:11+00:00",
+  "date" : "2026-11-23T09:48:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

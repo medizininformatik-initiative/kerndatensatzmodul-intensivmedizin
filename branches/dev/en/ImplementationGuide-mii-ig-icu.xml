@@ -2392,17 +2392,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"/>
-      </reference>
-      <name value="MII PR ICU Score Wong-Baker-FACES-Schmerzskala"/>
-      <description value="Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.&#xA;Der Score wird als quantitativer Wert dokumentiert."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"/>
       </reference>
       <name value="MII PR ICU Spontane Atemfrequenz Beatmet"/>

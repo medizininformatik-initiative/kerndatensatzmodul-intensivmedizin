@@ -48,7 +48,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 Mandatory: 5 elements
  Must-Support: 4 elements
- Prohibited: 3 elements
+ Prohibited: 4 elements
 
  **Schlüsselelemente-Ansicht** 
 
@@ -74,7 +74,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 Mandatory: 5 elements
  Must-Support: 4 elements
- Prohibited: 3 elements
+ Prohibited: 4 elements
 
  
 
@@ -93,7 +93,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_COMFORT_B",
   "title" : "MII PR ICU Score COMFORT-B",
   "status" : "draft",
-  "date" : "2026-11-23T09:10:11+00:00",
+  "date" : "2026-11-23T09:48:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -212,6 +212,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "type" : [{
         "code" : "integer"
       }]
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "max" : "0"
     }]
   }
 }

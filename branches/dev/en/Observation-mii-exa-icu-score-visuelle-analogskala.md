@@ -16,7 +16,7 @@ Profile: [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-
 
 **status**: Final
 
-**category**: Survey, Exam
+**category**: Survey, Exam, Assessment scales (assessment scale)
 
 **code**: Visual analog scale pain score (observable entity)
 
@@ -51,17 +51,25 @@ Profile: [MII PR ICU Score Visuelle Analogskala](StructureDefinition-mii-pr-icu-
       "code" : "exam",
       "display" : "Exam"
     }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "273249006",
+      "display" : "Assessment scales (assessment scale)"
+    }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "443394008",
       "display" : "Visual analog scale pain score (observable entity)"
     },
     {
       "system" : "http://loinc.org",
       "code" : "38214-3",
-      "display" : "Visual analog scale pain score (observable entity)"
+      "display" : "Pain severity [Score] Visual analog score"
     }]
   },
   "subject" : {

@@ -36,7 +36,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS ICU DGAI",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-23T09:10:11+00:00",
+  "date" : "2026-11-23T09:48:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
