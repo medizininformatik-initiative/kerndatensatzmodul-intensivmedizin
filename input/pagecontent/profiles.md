@@ -50,7 +50,7 @@
 <summary>Ventilation values<span class="cnt">35</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.html">Eingestellte Gemessene Parameter Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-parameter-von-beatmung.html">Parameter von Beatmung</a></p>
 <div class="items">
-<a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html">Atemwegsdruck Bei Null Expiratorischem Gasfluss</a>
+<a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss.html">Atemwegsdruck bei inspiratorischem Nullfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.html">Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.html">Atemzugvolumen Einstellung</a>
 <a href="StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.html">Atemzugvolumen Waehrend Beatmung</a>

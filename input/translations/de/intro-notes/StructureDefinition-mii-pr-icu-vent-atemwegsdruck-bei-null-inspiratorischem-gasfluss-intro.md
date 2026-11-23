@@ -1,0 +1,3 @@
+Dieses Profil erfasst den Atemwegsdruck am Beatmungsgerät bei **inspiratorischem Nullfluss** mit [LOINC 20060-0](https://loinc.org/20060-0/). Es bildet keinen endexspiratorischen Druck (PEEP) ab. Es leitet sich von [Parameter von Beatmung](StructureDefinition-mii-pr-icu-parameter-von-beatmung.html) ab.
+
+Der bisherige Profilname und die Canonical bezeichneten irrtümlich exspiratorischen Gasfluss. `meta.profile` in Instanzen, abhängige Profile und Schnittstellenkonfigurationen müssen auf die korrigierte Canonical umgestellt werden. Bereits veröffentlichte Pakete werden nicht verändert. Das separate [Plateaudruck-Profil](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.html) bleibt unverändert.

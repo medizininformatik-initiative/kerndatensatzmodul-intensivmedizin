@@ -744,6 +744,36 @@
           "description": "Invalid: neither value nor dataAbsentReason (mii-icu-comp-xor-val)"
         }
       ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss",
+      "tests": [
+        {
+          "source": "valid/icu-inspiratory-zero-flow-pressure.json",
+          "valid": true,
+          "description": "Inspiratory zero-flow pressure: pressure"
+        },
+        {
+          "source": "valid/icu-inspiratory-zero-flow-absent.json",
+          "valid": true,
+          "description": "Inspiratory zero-flow pressure: absent"
+        },
+        {
+          "source": "invalid/icu-inspiratory-zero-flow-peep-code.json",
+          "valid": false,
+          "description": "Inspiratory zero-flow pressure: peep-code"
+        },
+        {
+          "source": "invalid/icu-inspiratory-zero-flow-snomed-measurement.json",
+          "valid": false,
+          "description": "Inspiratory zero-flow pressure: snomed-measurement"
+        },
+        {
+          "source": "invalid/icu-inspiratory-zero-flow-missing-version.json",
+          "valid": false,
+          "description": "Inspiratory zero-flow pressure: missing-version"
+        }
+      ]
     }
   ]
 }
