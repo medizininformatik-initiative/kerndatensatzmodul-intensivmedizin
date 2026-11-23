@@ -5,6 +5,7 @@ Title: "MII PR ICU Score KUSS"
 Description: "Kindliche Unbehagens- und Schmerzskala (KUSS) - Fremdbeobachtungsskala für den postoperativen Schmerz bei Kindern von der Geburt bis zum Ende des 4. Lebensjahres. Für sedierte, beatmete oder relaxierte Kinder nicht validiert."
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-kuss"
 * ^version = "2027.0.0"
 * ^status = #draft

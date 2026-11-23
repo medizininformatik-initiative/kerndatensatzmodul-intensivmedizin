@@ -5,6 +5,7 @@ Title: "MII PR ICU Score SOS-PD"
 Description: "Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium. Der Scope dieses Profils liegt auf dem Assessment des Deliriums, für die Entzugssymptomatik ist das Profil MII_PR_ICU_Score_SOS zu verwenden. Die elterliche Verhaltensbeurteilung des Kindes wird in diesem Profil nicht abgebildet, nur der Gesamtwert des Scores."
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos-pd"
 * ^version = "2027.0.0"
 * ^status = #draft
