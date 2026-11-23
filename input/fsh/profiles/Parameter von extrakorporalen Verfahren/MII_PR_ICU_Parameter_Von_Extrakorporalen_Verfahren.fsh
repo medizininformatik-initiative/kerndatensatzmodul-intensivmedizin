@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Parent: Observation
 Id: mii-pr-icu-parameter-von-extrakorporalen-verfahren
 Title: "MII PR ICU Parameter von Extrakorporalen Verfahren"
+Description: "Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active

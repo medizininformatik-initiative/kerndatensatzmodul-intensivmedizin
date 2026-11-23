@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Device
 Parent: Device
 Id: mii-pr-icu-device
 Title: "MII PR ICU Device"
+Description: "A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device"

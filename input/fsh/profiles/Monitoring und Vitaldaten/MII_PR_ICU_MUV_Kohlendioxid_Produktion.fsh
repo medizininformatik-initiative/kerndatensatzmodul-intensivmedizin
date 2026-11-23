@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Kohlendioxid_Produktion
 Parent: MII_PR_ICU_Monitoring_Und_Vitaldaten
 Id: mii-pr-icu-muv-kohlendioxid-produktion
 Title: "MII PR ICU MUV Kohlendioxid Produktion"
+Description: "Carbon dioxide production (VCO2): the volume of carbon dioxide the body produces per minute."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"

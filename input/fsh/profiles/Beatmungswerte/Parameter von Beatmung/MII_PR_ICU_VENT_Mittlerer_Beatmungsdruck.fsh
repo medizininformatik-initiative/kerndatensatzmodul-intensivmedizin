@@ -7,6 +7,7 @@ Profile: MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-mittlerer-beatmungsdruck
 Title: "MII PR ICU Mittlerer Beatmungsdruck"
+Description: "Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"

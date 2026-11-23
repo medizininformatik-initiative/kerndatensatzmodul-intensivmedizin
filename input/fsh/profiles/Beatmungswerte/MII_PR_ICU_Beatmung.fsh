@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Beatmung
 Parent: $mii-procedure 
 Id: mii-pr-icu-beatmung
 Title: "MII PR ICU Beatmung"
+Description: "Ventilation as a procedure: the period during which a patient receives invasive or non-invasive respiratory support. Individual ventilation settings and measurements are recorded with the Parameter von Beatmung profiles."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung"

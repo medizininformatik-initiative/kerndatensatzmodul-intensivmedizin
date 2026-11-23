@@ -5,6 +5,7 @@ Title: "MII PR ICU Score SOS"
 Description: "Früherkennung von Entzugssymptomen bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale. Der Scope dieses Profils liegt auf dem Assessment der Entzugssymptomatik, für das Delir ist das Profil MII_PR_ICU_Score_SOS_PD zu verwenden. Abgebildet wird nur der Gesamtwert des Entzugsscores."
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sos"
 * ^version = "2027.0.0"
 * ^status = #draft

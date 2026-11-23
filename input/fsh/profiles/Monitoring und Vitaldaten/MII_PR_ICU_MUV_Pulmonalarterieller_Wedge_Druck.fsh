@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Pulmonalarterieller_Wedge_Druck
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-pulmonalarterieller-wedge-druck
 Title: "MII PR ICU MUV Pulmonalarterieller Wedge-Druck"
+Description: "Pulmonary artery wedge pressure: the pressure measured with a pulmonary artery catheter in the wedged position, an estimate of the left atrial pressure."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck"

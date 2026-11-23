@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Einstellung_Inspirationsdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-einstellung-inspirationsdruck
 Title: "MII PR ICU Einstellung Inspirationsdruck"
+Description: "Inspiratory pressure set on the ventilator (pInsp) for pressure-controlled breaths."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"

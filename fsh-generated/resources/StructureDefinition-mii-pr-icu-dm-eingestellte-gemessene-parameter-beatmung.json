@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

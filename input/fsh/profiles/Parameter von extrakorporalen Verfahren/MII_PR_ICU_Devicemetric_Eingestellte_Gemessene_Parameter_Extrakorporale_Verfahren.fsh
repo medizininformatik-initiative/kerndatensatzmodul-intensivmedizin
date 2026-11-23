@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale
 Parent: DeviceMetric
 Id: mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren
 Title: "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
+Description: "A metric of a device for an extracorporeal procedure that states whether a parameter was set on the device or measured by it. It links an Observation of the procedure to the device that produced it."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"

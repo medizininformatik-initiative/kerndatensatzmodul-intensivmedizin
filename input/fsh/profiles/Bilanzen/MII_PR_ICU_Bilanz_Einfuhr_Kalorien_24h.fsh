@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h
 Parent: Observation
 Id: mii-pr-icu-bilanz-einfuhr-kalorien-24h
 Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
+Description: "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"

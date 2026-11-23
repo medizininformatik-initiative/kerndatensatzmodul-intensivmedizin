@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead.",
   "purpose": "Ersetzt durch mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck und mii-pr-icu-vent-plateau-beatmungsdruck. Nicht fuer neue Implementierungen verwenden.",
   "fhirVersion": "4.0.1",
   "kind": "resource",

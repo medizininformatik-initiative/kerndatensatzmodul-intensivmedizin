@@ -97,6 +97,11 @@
         "path": "Observation.value[x].code",
         "min": 1,
         "patternCode": "mm"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "max": "0"
       }
     ]
   }

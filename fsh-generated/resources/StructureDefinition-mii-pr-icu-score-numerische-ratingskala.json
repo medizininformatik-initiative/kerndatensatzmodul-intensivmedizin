@@ -63,6 +63,11 @@
             "code": "integer"
           }
         ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "max": "0"
       }
     ]
   }

@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Exspiratorischer_Gasfluss
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-exspiratorischer-gasfluss
 Title: "MII PR ICU Exspiratorischer Gasfluss"
+Description: "Expiratory gas flow in the airway measured by the ventilator."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss"

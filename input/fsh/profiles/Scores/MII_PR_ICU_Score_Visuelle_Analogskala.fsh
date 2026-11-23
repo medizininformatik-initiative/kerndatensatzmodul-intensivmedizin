@@ -7,6 +7,7 @@ Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert.
 
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala"
 * ^version = "2026.0.0"
 * ^status = #draft

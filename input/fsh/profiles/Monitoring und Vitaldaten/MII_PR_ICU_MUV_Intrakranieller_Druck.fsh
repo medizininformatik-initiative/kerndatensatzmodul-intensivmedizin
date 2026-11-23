@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Intrakranieller_Druck
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-intrakranieller-druck
 Title: "MII PR ICU MUV Intrakranieller Druck (ICP)"
+Description: "Intracranial pressure (ICP): the pressure inside the skull."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-intrakranieller-druck"

@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Plateau_Beatmungsdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-plateau-beatmungsdruck
 Title: "MII PR ICU Plateau Beatmungsdruck"
+Description: "Plateau pressure: the airway pressure at the end of inspiration while the gas flow is paused."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck"

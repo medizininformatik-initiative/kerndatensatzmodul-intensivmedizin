@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Inspiratory pressure set on the ventilator (pInsp) for pressure-controlled breaths.",
   "purpose": "Das Profil bezieht sich auf die Einstellung des inspiratorischen Beatmungsdrucks am Beatmungsgerät.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
