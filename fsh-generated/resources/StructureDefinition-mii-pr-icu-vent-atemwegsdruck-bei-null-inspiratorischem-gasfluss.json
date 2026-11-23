@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss",
+  "id": "mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss",
   "version": "2027.0.0",
-  "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss",
-  "title": "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+  "name": "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Inspiratorischem_Gasfluss",
+  "title": "MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Airway pressure on the ventilator measured at a moment of zero gas flow.",
+  "description": "Airway pressure on a ventilator measured at zero inspiratory gas flow.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -36,11 +36,25 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "max": "1"
       },
       {
         "id": "Observation.code.coding:sct",
@@ -56,9 +70,14 @@
         "max": "1",
         "patternCoding": {
           "code": "20060-0",
-          "system": "http://loinc.org",
-          "display": "Airway pressure --at zero inspiratory flow on ventilator"
+          "system": "http://loinc.org"
         }
+      },
+      {
+        "id": "Observation.code.coding:loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:IEEE-11073",
