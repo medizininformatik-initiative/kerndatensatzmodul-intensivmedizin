@@ -11,7 +11,7 @@
   "name" : "MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
   "title" : "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -20,6 +20,7 @@
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Minute volume of mechanical ventilation: the volume of gas the ventilator delivers per minute.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

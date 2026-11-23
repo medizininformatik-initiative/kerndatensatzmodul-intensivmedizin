@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren | *Version*:2027.0.0 |
 | Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren |
 
+ 
+Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation. 
+
 Observation "Ionized calcium from renal replacement procedures" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
 **Usages:**
@@ -41,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-io
   "name" : "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -50,6 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-io
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

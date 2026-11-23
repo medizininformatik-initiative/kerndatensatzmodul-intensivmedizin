@@ -52,7 +52,7 @@
   <name value="MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck"/>
   <title value="MII PR ICU Beatmungszeit Hohem Druck"/>
   <status value="active"/>
-  <date value="2026-11-23T09:48:14+00:00"/>
+  <date value="2026-11-23T10:24:48+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -61,6 +61,7 @@
       <value value="https://www.medizininformatik-initiative.de/"/>
     </telecom>
   </contact>
+  <description value="Set duration of the high pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h | *Version*:2027.0.0 |
 | Draft as of 2026-11-23 | *Computable Name*:MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h |
 
+ 
+Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required. 
+
 **Usages:**
 
 * CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
@@ -39,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -48,6 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

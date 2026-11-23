@@ -10,7 +10,7 @@
   "name" : "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -19,6 +19,7 @@
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Blood flow through the circuit of an extracorporeal gas exchange, indexed to the patient's body surface area.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

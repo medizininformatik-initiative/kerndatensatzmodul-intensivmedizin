@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut | *Version*:2027.0.0 |
 | Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut |
 
+ 
+Horowitz index (oxygenation index): the arterial oxygen partial pressure divided by the inspiratory oxygen fraction (PaO2/FiO2). 
+
 "Horowitz-In-Arterial-Blood" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
 **Usages:**
@@ -41,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-h
   "name" : "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
   "title" : "MII PR ICU Horowitz In Arteriellem Blut",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -50,6 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-h
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Horowitz index (oxygenation index): the arterial oxygen partial pressure divided by the inspiratory oxygen fraction (PaO2/FiO2).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

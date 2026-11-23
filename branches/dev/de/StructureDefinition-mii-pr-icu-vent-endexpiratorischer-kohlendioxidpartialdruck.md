@@ -11,6 +11,9 @@
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck | *Version*:2027.0.0 |
 | Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck |
 
+ 
+End-tidal carbon dioxide partial pressure (etCO2): the partial pressure of carbon dioxide in the exhaled gas at the end of expiration. 
+
 > **Written during migration - review before release.** TODO:REVIEW Der EN-Guide hatte keine Gegenseite zu dieser Seite; die englische Fassung unter input/intro-notes/StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck-intro.md wurde bei der Migration uebersetzt. Diese deutsche Fassung ist das Original.
 
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von Beatmung (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
@@ -87,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck",
   "title" : "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -96,6 +99,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "End-tidal carbon dioxide partial pressure (etCO2): the partial pressure of carbon dioxide in the exhaled gas at the end of expiration.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

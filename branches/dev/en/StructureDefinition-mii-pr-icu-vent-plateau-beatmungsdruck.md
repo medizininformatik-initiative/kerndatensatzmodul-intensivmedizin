@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck | *Version*:2027.0.0 |
 | Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Plateau_Beatmungsdruck |
 
+ 
+Plateau pressure: the airway pressure at the end of inspiration while the gas flow is paused. 
+
 **Usages:**
 
 * CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
@@ -39,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
   "title" : "MII PR ICU Plateau Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -48,6 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Plateau pressure: the airway pressure at the end of inspiration while the gas flow is paused.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

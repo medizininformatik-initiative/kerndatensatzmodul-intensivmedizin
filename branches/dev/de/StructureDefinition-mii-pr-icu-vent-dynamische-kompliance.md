@@ -1,15 +1,18 @@
-# MII PR ICU Dynamische Kompliance - MII IG ICU v2027.0.0
+# MII PR ICU Dynamische Compliance - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **MII PR ICU Dynamische Kompliance**
+* **MII PR ICU Dynamische Compliance**
 
-## Ressourcenprofil: MII PR ICU Dynamische Kompliance 
+## Ressourcenprofil: MII PR ICU Dynamische Compliance 
 
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance | *Version*:2027.0.0 |
 | Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Dynamische_Kompliance |
+
+ 
+Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow. 
 
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von Beatmung (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
@@ -83,9 +86,9 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance",
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_VENT_Dynamische_Kompliance",
-  "title" : "MII PR ICU Dynamische Kompliance",
+  "title" : "MII PR ICU Dynamische Compliance",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -94,6 +97,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

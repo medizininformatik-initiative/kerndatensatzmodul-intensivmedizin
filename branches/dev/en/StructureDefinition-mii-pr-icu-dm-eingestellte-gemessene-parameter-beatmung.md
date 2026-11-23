@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung | *Version*:2027.0.0 |
 | Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung |
 
+ 
+A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it. 
+
 > **Written during migration - review before release.** TODO:REVIEW English translation produced during migration; the EN guide had no counterpart page. German version: input/translations/de/intro-notes/StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung-intro.md
 
 **Recommendation:** For measured as well as set values we can distinguish two cases (see also the page [Description of module](index.md)):
@@ -52,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-dm-ein
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -61,6 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-dm-ein
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

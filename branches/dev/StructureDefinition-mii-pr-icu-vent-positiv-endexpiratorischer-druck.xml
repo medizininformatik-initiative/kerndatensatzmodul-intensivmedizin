@@ -58,7 +58,7 @@
   <name value="MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck"/>
   <title value="MII PR ICU Positiv Endexpiratorischer Druck"/>
   <status value="active"/>
-  <date value="2026-11-23T09:48:14+00:00"/>
+  <date value="2026-11-23T10:24:48+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -67,6 +67,7 @@
       <value value="https://www.medizininformatik-initiative.de/"/>
     </telecom>
   </contact>
+  <description value="Positive end-expiratory pressure (PEEP): the airway pressure that remains at the end of expiration during ventilation."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

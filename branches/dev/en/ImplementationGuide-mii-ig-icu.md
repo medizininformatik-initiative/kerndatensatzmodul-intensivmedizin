@@ -2283,6 +2283,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-arterieller-druck"
       },
       "name" : "MII PR ICU Arterieller Druck",
+      "description" : "Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure.",
       "exampleBoolean" : false
     },
     {
@@ -2298,6 +2299,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss"
       },
       "name" : "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+      "description" : "Airway pressure on the ventilator measured at mean expiratory gas flow.",
       "exampleBoolean" : false
     },
     {
@@ -2313,6 +2315,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"
       },
       "name" : "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+      "description" : "Airway pressure on the ventilator measured at a moment of zero gas flow.",
       "exampleBoolean" : false
     },
     {
@@ -2328,6 +2331,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung"
       },
       "name" : "MII PR ICU Atemzugvolumen Einstellung",
+      "description" : "Tidal volume set on the ventilator: the volume of gas to be delivered with each mechanical breath.",
       "exampleBoolean" : false
     },
     {
@@ -2343,6 +2347,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung"
       },
       "name" : "MII PR ICU Atemzugvolumen Waehrend Beatmung",
+      "description" : "Tidal volume delivered by the ventilator: the measured volume of gas per breath during mechanical ventilation.",
       "exampleBoolean" : false
     },
     {
@@ -2358,6 +2363,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-beatmung"
       },
       "name" : "MII PR ICU Beatmung",
+      "description" : "Ventilation as a procedure: the period during which a patient receives invasive or non-invasive respiratory support. Individual ventilation settings and measurements are recorded with the Parameter von Beatmung profiles.",
       "exampleBoolean" : false
     },
     {
@@ -2373,6 +2379,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung"
       },
       "name" : "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+      "description" : "Minute volume of mechanical ventilation: the volume of gas the ventilator delivers per minute.",
       "exampleBoolean" : false
     },
     {
@@ -2388,6 +2395,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck"
       },
       "name" : "MII PR ICU Beatmungszeit Hohem Druck",
+      "description" : "Set duration of the high pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV.",
       "exampleBoolean" : false
     },
     {
@@ -2403,6 +2411,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck"
       },
       "name" : "MII PR ICU Beatmungszeit Niedrigem Druck",
+      "description" : "Set duration of the low pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV.",
       "exampleBoolean" : false
     },
     {
@@ -2418,6 +2427,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
       },
       "name" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
+      "description" : "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required.",
       "exampleBoolean" : false
     },
     {
@@ -2449,6 +2459,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
       },
       "name" : "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+      "description" : "Blood flow through a cardiovascular device, such as a ventricular assist device or an extracorporeal circuit.",
       "exampleBoolean" : false
     },
     {
@@ -2464,6 +2475,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
       },
       "name" : "MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+      "description" : "Blood flow through the circuit of an extracorporeal gas exchange, such as ECMO or ECCO2R.",
       "exampleBoolean" : false
     },
     {
@@ -2479,6 +2491,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
       },
       "name" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+      "description" : "Blood flow through the circuit of an extracorporeal gas exchange, indexed to the patient's body surface area.",
       "exampleBoolean" : false
     },
     {
@@ -2494,6 +2507,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch"
       },
       "name" : "MII PR ICU Dauer Extrakorporaler Gasaustausch",
+      "description" : "Duration of an extracorporeal gas exchange, such as ECMO or ECCO2R.",
       "exampleBoolean" : false
     },
     {
@@ -2509,6 +2523,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"
       },
       "name" : "MII PR ICU Dauer Haemodialysesitzung",
+      "description" : "Duration of a single haemodialysis session.",
       "exampleBoolean" : false
     },
     {
@@ -2524,6 +2539,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-device"
       },
       "name" : "MII PR ICU Device",
+      "description" : "A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed.",
       "exampleBoolean" : false
     },
     {
@@ -2539,6 +2555,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"
       },
       "name" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+      "description" : "A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it.",
       "exampleBoolean" : false
     },
     {
@@ -2554,6 +2571,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"
       },
       "name" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+      "description" : "A metric of a device for an extracorporeal procedure that states whether a parameter was set on the device or measured by it. It links an Observation of the procedure to the device that produced it.",
       "exampleBoolean" : false
     },
     {
@@ -2569,6 +2587,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"
       },
       "name" : "MII PR ICU Druckdifferenz Beatmung",
+      "description" : "Difference between the upper and lower airway pressure during a ventilator breath, for example between peak or plateau pressure and PEEP.",
       "exampleBoolean" : false
     },
     {
@@ -2583,7 +2602,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
       },
-      "name" : "MII PR ICU Dynamische Kompliance",
+      "name" : "MII PR ICU Dynamische Compliance",
+      "description" : "Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow.",
       "exampleBoolean" : false
     },
     {
@@ -2599,6 +2619,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"
       },
       "name" : "MII PR ICU Eingestellter Inspiratorischer Gasfluss",
+      "description" : "Inspiratory gas flow set on the ventilator.",
       "exampleBoolean" : false
     },
     {
@@ -2614,6 +2635,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung"
       },
       "name" : "MII PR ICU Einstellung Ausatmungszeit Beatmung",
+      "description" : "Expiratory time set on the ventilator: the duration of the expiratory phase of a mechanical breath.",
       "exampleBoolean" : false
     },
     {
@@ -2629,6 +2651,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"
       },
       "name" : "MII PR ICU Einstellung Einatmungszeit Beatmung",
+      "description" : "Inspiratory time set on the ventilator: the duration of the inspiratory phase of a mechanical breath.",
       "exampleBoolean" : false
     },
     {
@@ -2644,6 +2667,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"
       },
       "name" : "MII PR ICU Einstellung Inspirationsdruck",
+      "description" : "Inspiratory pressure set on the ventilator (pInsp) for pressure-controlled breaths.",
       "exampleBoolean" : false
     },
     {
@@ -2659,6 +2683,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
       },
       "name" : "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
+      "description" : "End-tidal carbon dioxide partial pressure (etCO2): the partial pressure of carbon dioxide in the exhaled gas at the end of expiration.",
       "exampleBoolean" : false
     },
     {
@@ -2674,6 +2699,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss"
       },
       "name" : "MII PR ICU Exspiratorischer Gasfluss",
+      "description" : "Expiratory gas flow in the airway measured by the ventilator.",
       "exampleBoolean" : false
     },
     {
@@ -2689,6 +2715,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"
       },
       "name" : "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
+      "description" : "Partial pressure of oxygen in the exhaled gas.",
       "exampleBoolean" : false
     },
     {
@@ -2704,6 +2731,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
       },
       "name" : "MII PR ICU Extrakorporales Verfahren",
+      "description" : "An extracorporeal procedure as a procedure, for example extracorporeal membrane oxygenation, haemofiltration, dialysis or apheresis. Individual settings and measurements are recorded with the Parameter von extrakorporalen Verfahren profiles.",
       "exampleBoolean" : false
     },
     {
@@ -2719,6 +2747,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-gasfluss"
       },
       "name" : "MII PR ICU Gasfluss",
+      "description" : "Flow of fresh gas (sweep gas) through the oxygenator of an extracorporeal gas exchange.",
       "exampleBoolean" : false
     },
     {
@@ -2734,6 +2763,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss"
       },
       "name" : "MII PR ICU Haemodialyse Blutfluss",
+      "description" : "Blood flow through the extracorporeal circuit during haemodialysis.",
       "exampleBoolean" : false
     },
     {
@@ -2749,6 +2779,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut"
       },
       "name" : "MII PR ICU Horowitz In Arteriellem Blut",
+      "description" : "Horowitz index (oxygenation index): the arterial oxygen partial pressure divided by the inspiratory oxygen fraction (PaO2/FiO2).",
       "exampleBoolean" : false
     },
     {
@@ -2764,6 +2795,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"
       },
       "name" : "MII PR ICU Inspiratorische Sauerstofffraktion",
+      "description" : "Inspiratory oxygen fraction (FiO2): the proportion of oxygen in the inspired gas.",
       "exampleBoolean" : false
     },
     {
@@ -2779,6 +2811,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"
       },
       "name" : "MII PR ICU Inspiratorischer Gasfluss",
+      "description" : "Inspiratory gas flow in the airway measured by the ventilator.",
       "exampleBoolean" : false
     },
     {
@@ -2794,6 +2827,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"
       },
       "name" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+      "description" : "Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation.",
       "exampleBoolean" : false
     },
     {
@@ -2809,6 +2843,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"
       },
       "name" : "MII PR ICU Maximaler Beatmungsdruck",
+      "description" : "Maximum airway pressure measured by the ventilator during a breath (peak pressure).",
       "exampleBoolean" : false
     },
     {
@@ -2824,6 +2859,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"
       },
       "name" : "MII PR ICU Maximaler Inspiratorischer Beatmungsdruck",
+      "description" : "Maximum airway pressure during the inspiratory phase of a ventilator breath.",
       "exampleBoolean" : false
     },
     {
@@ -2839,6 +2875,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"
       },
       "name" : "MII PR ICU Mechanische Atemfrequenz Beatmet",
+      "description" : "Mechanical breath rate: the number of breaths per minute delivered by the ventilator.",
       "exampleBoolean" : false
     },
     {
@@ -2854,6 +2891,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
       },
       "name" : "MII PR ICU Mittlerer Beatmungsdruck",
+      "description" : "Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead.",
       "exampleBoolean" : false
     },
     {
@@ -2869,6 +2907,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck"
       },
       "name" : "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
+      "description" : "Mean airway pressure during the inspiratory phase of a ventilator breath.",
       "exampleBoolean" : false
     },
     {
@@ -2900,6 +2939,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"
       },
       "name" : "MII PR ICU MUV Arterieller Blutdruck",
+      "description" : "Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively.",
       "exampleBoolean" : false
     },
     {
@@ -2915,6 +2955,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-atemfrequenz"
       },
       "name" : "MII PR ICU MUV Atemfrequenz",
+      "description" : "Respiratory rate of the patient: the number of breaths per minute.",
       "exampleBoolean" : false
     },
     {
@@ -2993,6 +3034,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-herzzeitvolumen"
       },
       "name" : "MII PR ICU MUV Herzzeitvolumen",
+      "description" : "Cardiac output: the volume of blood the heart pumps per minute.",
       "exampleBoolean" : false
     },
     {
@@ -3008,6 +3050,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"
       },
       "name" : "MII PR ICU MUV Ideales Koerpergewicht",
+      "description" : "Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight.",
       "exampleBoolean" : false
     },
     {
@@ -3023,6 +3066,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-intrakranieller-druck"
       },
       "name" : "MII PR ICU MUV Intrakranieller Druck (ICP)",
+      "description" : "Intracranial pressure (ICP): the pressure inside the skull.",
       "exampleBoolean" : false
     },
     {
@@ -3038,6 +3082,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-koerpergewicht"
       },
       "name" : "MII PR ICU MUV Koerpergewicht",
+      "description" : "Body weight of the patient.",
       "exampleBoolean" : false
     },
     {
@@ -3053,6 +3098,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"
       },
       "name" : "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
+      "description" : "Body weight of a child expressed as a percentile for age, compared with a reference population.",
       "exampleBoolean" : false
     },
     {
@@ -3084,6 +3130,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil"
       },
       "name" : "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)",
+      "description" : "Body height of a child expressed as a percentile for age, compared with a reference population.",
       "exampleBoolean" : false
     },
     {
@@ -3131,6 +3178,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"
       },
       "name" : "MII PR ICU MUV Kohlendioxid Produktion",
+      "description" : "Carbon dioxide production (VCO2): the volume of carbon dioxide the body produces per minute.",
       "exampleBoolean" : false
     },
     {
@@ -3146,6 +3194,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-kopfumfang"
       },
       "name" : "MII PR ICU MUV Kopfumfang",
+      "description" : "Head circumference, measured as the largest circumference of the head.",
       "exampleBoolean" : false
     },
     {
@@ -3161,6 +3210,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck"
       },
       "name" : "MII PR ICU MUV Pulmonalarterieller Wedge-Druck",
+      "description" : "Pulmonary artery wedge pressure: the pressure measured with a pulmonary artery catheter in the wedged position, an estimate of the left atrial pressure.",
       "exampleBoolean" : false
     },
     {
@@ -3176,6 +3226,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"
       },
       "name" : "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
+      "description" : "Pulmonary vascular resistance index: the resistance of the pulmonary circulation, indexed to the body surface area.",
       "exampleBoolean" : false
     },
     {
@@ -3191,6 +3242,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-parameter-von-beatmung"
       },
       "name" : "MII PR ICU Parameter von Beatmung",
+      "description" : "Generic profile for a single setting or measurement of mechanical ventilation, identified by SNOMED CT, LOINC and IEEE 11073 codes. The specialised ventilation profiles derive from it.",
       "exampleBoolean" : false
     },
     {
@@ -3206,6 +3258,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"
       },
       "name" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
+      "description" : "Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it.",
       "exampleBoolean" : false
     },
     {
@@ -3221,6 +3274,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck"
       },
       "name" : "MII PR ICU Plateau Beatmungsdruck",
+      "description" : "Plateau pressure: the airway pressure at the end of inspiration while the gas flow is paused.",
       "exampleBoolean" : false
     },
     {
@@ -3236,6 +3290,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck"
       },
       "name" : "MII PR ICU Positiv Endexpiratorischer Druck",
+      "description" : "Positive end-expiratory pressure (PEEP): the airway pressure that remains at the end of expiration during ventilation.",
       "exampleBoolean" : false
     },
     {
@@ -3474,6 +3529,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
       },
       "name" : "MII PR ICU Spontane Atemfrequenz Beatmet",
+      "description" : "Spontaneous breath rate of a ventilated patient: the number of breaths per minute the patient initiates.",
       "exampleBoolean" : false
     },
     {
@@ -3489,6 +3545,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
       },
       "name" : "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+      "description" : "Total breath rate of a ventilated patient: the number of spontaneous and mechanical breaths per minute.",
       "exampleBoolean" : false
     },
     {
@@ -3504,6 +3561,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen"
       },
       "name" : "MII PR ICU Spontanes Atemzugvolumen",
+      "description" : "Spontaneous tidal volume: the volume of gas per breath the patient breathes without mechanical support.",
       "exampleBoolean" : false
     },
     {
@@ -3519,6 +3577,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"
       },
       "name" : "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
+      "description" : "Tidal volume of spontaneous and mechanical breaths together during ventilation.",
       "exampleBoolean" : false
     },
     {
@@ -3534,6 +3593,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-substituatfluss"
       },
       "name" : "MII PR ICU Substituatfluss",
+      "description" : "Flow rate of the substitution fluid given during a renal replacement procedure such as haemofiltration.",
       "exampleBoolean" : false
     },
     {
@@ -3549,6 +3609,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-substituatvolumen"
       },
       "name" : "MII PR ICU Substituatvolumen",
+      "description" : "Volume of substitution fluid given during a renal replacement procedure such as haemofiltration.",
       "exampleBoolean" : false
     },
     {
@@ -3564,6 +3625,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung"
       },
       "name" : "MII PR ICU Unterstuetzungsdruck Beatmung",
+      "description" : "Pressure support set on the ventilator: the pressure above PEEP with which spontaneous breaths are supported.",
       "exampleBoolean" : false
     },
     {
@@ -3579,6 +3641,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-ect-venoeser-druck"
       },
       "name" : "MII PR ICU Venoeser Druck",
+      "description" : "Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure.",
       "exampleBoolean" : false
     },
     {
@@ -3594,6 +3657,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
       },
       "name" : "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+      "description" : "Inspiration to expiration time ratio (I:E ratio) of a ventilator breath.",
       "exampleBoolean" : false
     },
     {
@@ -5787,8 +5851,8 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "reference" : {
         "reference" : "Observation/mii-exa-icu-vent-dynamische-kompliance"
       },
-      "name" : "Vent Dynamische Kompliance",
-      "description" : "Beispiel: MII PR ICU Dynamische Kompliance",
+      "name" : "Vent Dynamische Compliance",
+      "description" : "Beispiel: MII PR ICU Dynamische Compliance",
       "exampleBoolean" : true
     },
     {

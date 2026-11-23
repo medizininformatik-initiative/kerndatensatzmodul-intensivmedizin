@@ -11,7 +11,7 @@
   "name" : "MII_PR_ICU_ECT_Dauer_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Dauer Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -20,6 +20,7 @@
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Duration of an extracorporeal gas exchange, such as ECMO or ECCO2R.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

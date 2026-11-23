@@ -11,6 +11,9 @@
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck | *Version*:2027.0.0 |
 | Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Arterieller_Blutdruck |
 
+ 
+Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively. 
+
 Es handelt sich hier um einen pulsatilen Druck. Für diesen gelten neben den Eigenschaften des generischen Profils zu [Monitoring und Vitaldaten (Observation)](profiles.md) außerdem die Besonderheiten, die auf der Seite des Profils zu [Blutdruck (Observation)](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) beschrieben sind. Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
 **Usages:**
@@ -99,7 +102,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -108,6 +111,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

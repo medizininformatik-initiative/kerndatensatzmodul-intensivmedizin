@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck | *Version*:2027.0.0 |
 | Retired as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck |
 
+ 
+Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead. 
+
 "Mean ventilation pressure" is a characteristic of the generic profile for [parameters of ventilation (Observation)](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the Logical Model.
 
 **Usages:**
@@ -41,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "name" : "MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck",
   "title" : "MII PR ICU Mittlerer Beatmungsdruck",
   "status" : "retired",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -50,6 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

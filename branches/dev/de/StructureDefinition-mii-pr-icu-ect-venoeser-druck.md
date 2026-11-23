@@ -11,6 +11,9 @@
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck | *Version*:2027.0.0 |
 | Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_ECT_Venoeser_Druck |
 
+ 
+Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure. 
+
 Dies ist eine Ausprägung des generischen Profils zu [Parameter von extrakorporalen Verfahren](profiles.md). Siehe dort für nähere Informationen hinsichtlich Erklärungen der Items, oder Bezug der Einträge in der FHIR-Ressource zum Logical Model.
 
 Bei extrakorporalen Verfahren beschreibt der „arterielle Druck“ einen im Gerät gemessenen Druck eines von der Pumpe wegführenden und Blut transportierenden Schlauchs ("wegführender Schenkel"), wohingegen der „venöse Druck“ den Weg zur Pumpe des Gerätes beschreibt ("hinführender Schenkel", Messung erfolgt auch im Gerät). Die Nomenklatur venös/arteriell erfolgt also analog zum Herz-Kreislaufsystem.
@@ -89,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Venoeser_Druck",
   "title" : "MII PR ICU Venoeser Druck",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -98,6 +101,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

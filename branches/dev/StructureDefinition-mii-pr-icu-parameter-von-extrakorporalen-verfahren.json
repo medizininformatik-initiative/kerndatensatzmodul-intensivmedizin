@@ -10,7 +10,7 @@
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -19,6 +19,7 @@
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

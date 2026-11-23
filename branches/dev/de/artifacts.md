@@ -57,70 +57,70 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 
 | | |
 | :--- | :--- |
-| [ MII PR ICU Arterieller Druck  ](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md) |  |
-| [ MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md) |  |
-| [ MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) |  |
-| [ MII PR ICU Atemzugvolumen Einstellung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md) |  |
-| [ MII PR ICU Atemzugvolumen Waehrend Beatmung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md) |  |
-| [ MII PR ICU Beatmung  ](StructureDefinition-mii-pr-icu-beatmung.md) |  |
-| [ MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung  ](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md) |  |
-| [ MII PR ICU Beatmungszeit Hohem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md) |  |
-| [ MII PR ICU Beatmungszeit Niedrigem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md) |  |
-| [ MII PR ICU Bilanz Einfuhr Kalorien 24h  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.md) |  |
+| [ MII PR ICU Arterieller Druck  ](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md) | Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure. |
+| [ MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md) | Airway pressure on the ventilator measured at mean expiratory gas flow. |
+| [ MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) | Airway pressure on the ventilator measured at a moment of zero gas flow. |
+| [ MII PR ICU Atemzugvolumen Einstellung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md) | Tidal volume set on the ventilator: the volume of gas to be delivered with each mechanical breath. |
+| [ MII PR ICU Atemzugvolumen Waehrend Beatmung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md) | Tidal volume delivered by the ventilator: the measured volume of gas per breath during mechanical ventilation. |
+| [ MII PR ICU Beatmung  ](StructureDefinition-mii-pr-icu-beatmung.md) | Ventilation as a procedure: the period during which a patient receives invasive or non-invasive respiratory support. Individual ventilation settings and measurements are recorded with the Parameter von Beatmung profiles. |
+| [ MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung  ](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md) | Minute volume of mechanical ventilation: the volume of gas the ventilator delivers per minute. |
+| [ MII PR ICU Beatmungszeit Hohem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md) | Set duration of the high pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV. |
+| [ MII PR ICU Beatmungszeit Niedrigem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md) | Set duration of the low pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV. |
+| [ MII PR ICU Bilanz Einfuhr Kalorien 24h  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.md) | Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required. |
 | [ MII PR ICU Bilanz Kalorienbedarf pro Tag  ](StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.md) | Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target. |
-| [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) |  |
-| [ MII PR ICU Blutfluss Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md) |  |
-| [ MII PR ICU Blutflussindex Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md) |  |
-| [ MII PR ICU Dauer Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md) |  |
-| [ MII PR ICU Dauer Haemodialysesitzung  ](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md) |  |
-| [ MII PR ICU Device  ](StructureDefinition-mii-pr-icu-device.md) |  |
-| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung  ](StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.md) |  |
-| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren  ](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md) |  |
-| [ MII PR ICU Druckdifferenz Beatmung  ](StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.md) |  |
-| [ MII PR ICU Dynamische Kompliance  ](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md) |  |
-| [ MII PR ICU Eingestellter Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU Einstellung Ausatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md) |  |
-| [ MII PR ICU Einstellung Einatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md) |  |
-| [ MII PR ICU Einstellung Inspirationsdruck  ](StructureDefinition-mii-pr-icu-vent-einstellung-inspirationsdruck.md) |  |
-| [ MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck  ](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md) |  |
-| [ MII PR ICU Exspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU Exspiratorischer Sauerstoffpartialdruck  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) |  |
-| [ MII PR ICU Extrakorporales Verfahren  ](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md) |  |
-| [ MII PR ICU Gasfluss  ](StructureDefinition-mii-pr-icu-ect-gasfluss.md) |  |
-| [ MII PR ICU Haemodialyse Blutfluss  ](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md) |  |
-| [ MII PR ICU Horowitz In Arteriellem Blut  ](StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.md) |  |
-| [ MII PR ICU Inspiratorische Sauerstofffraktion  ](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md) |  |
-| [ MII PR ICU Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md) |  |
-| [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) |  |
-| [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |  |
-| [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |  |
+| [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) | Blood flow through a cardiovascular device, such as a ventricular assist device or an extracorporeal circuit. |
+| [ MII PR ICU Blutfluss Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md) | Blood flow through the circuit of an extracorporeal gas exchange, such as ECMO or ECCO2R. |
+| [ MII PR ICU Blutflussindex Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md) | Blood flow through the circuit of an extracorporeal gas exchange, indexed to the patient's body surface area. |
+| [ MII PR ICU Dauer Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md) | Duration of an extracorporeal gas exchange, such as ECMO or ECCO2R. |
+| [ MII PR ICU Dauer Haemodialysesitzung  ](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md) | Duration of a single haemodialysis session. |
+| [ MII PR ICU Device  ](StructureDefinition-mii-pr-icu-device.md) | A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed. |
+| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung  ](StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.md) | A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it. |
+| [ MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren  ](StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.md) | A metric of a device for an extracorporeal procedure that states whether a parameter was set on the device or measured by it. It links an Observation of the procedure to the device that produced it. |
+| [ MII PR ICU Druckdifferenz Beatmung  ](StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.md) | Difference between the upper and lower airway pressure during a ventilator breath, for example between peak or plateau pressure and PEEP. |
+| [ MII PR ICU Dynamische Compliance  ](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md) | Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow. |
+| [ MII PR ICU Eingestellter Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.md) | Inspiratory gas flow set on the ventilator. |
+| [ MII PR ICU Einstellung Ausatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.md) | Expiratory time set on the ventilator: the duration of the expiratory phase of a mechanical breath. |
+| [ MII PR ICU Einstellung Einatmungszeit Beatmung  ](StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.md) | Inspiratory time set on the ventilator: the duration of the inspiratory phase of a mechanical breath. |
+| [ MII PR ICU Einstellung Inspirationsdruck  ](StructureDefinition-mii-pr-icu-vent-einstellung-inspirationsdruck.md) | Inspiratory pressure set on the ventilator (pInsp) for pressure-controlled breaths. |
+| [ MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck  ](StructureDefinition-mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.md) | End-tidal carbon dioxide partial pressure (etCO2): the partial pressure of carbon dioxide in the exhaled gas at the end of expiration. |
+| [ MII PR ICU Exspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-gasfluss.md) | Expiratory gas flow in the airway measured by the ventilator. |
+| [ MII PR ICU Exspiratorischer Sauerstoffpartialdruck  ](StructureDefinition-mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck.md) | Partial pressure of oxygen in the exhaled gas. |
+| [ MII PR ICU Extrakorporales Verfahren  ](StructureDefinition-mii-pr-icu-extrakorporales-verfahren.md) | An extracorporeal procedure as a procedure, for example extracorporeal membrane oxygenation, haemofiltration, dialysis or apheresis. Individual settings and measurements are recorded with the Parameter von extrakorporalen Verfahren profiles. |
+| [ MII PR ICU Gasfluss  ](StructureDefinition-mii-pr-icu-ect-gasfluss.md) | Flow of fresh gas (sweep gas) through the oxygenator of an extracorporeal gas exchange. |
+| [ MII PR ICU Haemodialyse Blutfluss  ](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md) | Blood flow through the extracorporeal circuit during haemodialysis. |
+| [ MII PR ICU Horowitz In Arteriellem Blut  ](StructureDefinition-mii-pr-icu-vent-horowitz-in-arteriellem-blut.md) | Horowitz index (oxygenation index): the arterial oxygen partial pressure divided by the inspiratory oxygen fraction (PaO2/FiO2). |
+| [ MII PR ICU Inspiratorische Sauerstofffraktion  ](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md) | Inspiratory oxygen fraction (FiO2): the proportion of oxygen in the inspired gas. |
+| [ MII PR ICU Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md) | Inspiratory gas flow in the airway measured by the ventilator. |
+| [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) | Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation. |
+| [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) | Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively. |
+| [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) | Respiratory rate of the patient: the number of breaths per minute. |
 | [ MII PR ICU MUV Body Mass Index  ](StructureDefinition-mii-pr-icu-muv-bmi.md) | Body mass index (BMI) calculated from body weight and height, expressed in kg/m2. |
 | [ MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie  ](StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method. |
 | [ MII PR ICU MUV Geburtsgewicht  ](StructureDefinition-mii-pr-icu-muv-geburtsgewicht.md) | Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later. |
 | [ MII PR ICU MUV Herzfrequenz  ](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |  |
-| [ MII PR ICU MUV Herzzeitvolumen  ](StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.md) |  |
-| [ MII PR ICU MUV Ideales Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-ideales-koerpergewicht.md) |  |
-| [ MII PR ICU MUV Intrakranieller Druck (ICP)  ](StructureDefinition-mii-pr-icu-muv-intrakranieller-druck.md) |  |
-| [ MII PR ICU MUV Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md) |  |
-| [ MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht-perzentil.md) |  |
+| [ MII PR ICU MUV Herzzeitvolumen  ](StructureDefinition-mii-pr-icu-muv-herzzeitvolumen.md) | Cardiac output: the volume of blood the heart pumps per minute. |
+| [ MII PR ICU MUV Ideales Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-ideales-koerpergewicht.md) | Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight. |
+| [ MII PR ICU MUV Intrakranieller Druck (ICP)  ](StructureDefinition-mii-pr-icu-muv-intrakranieller-druck.md) | Intracranial pressure (ICP): the pressure inside the skull. |
+| [ MII PR ICU MUV Koerpergewicht  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht.md) | Body weight of the patient. |
+| [ MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)  ](StructureDefinition-mii-pr-icu-muv-koerpergewicht-perzentil.md) | Body weight of a child expressed as a percentile for age, compared with a reference population. |
 | [ MII PR ICU MUV Koerpergroesse  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse.md) | Body height, expressed in centimetres. Recumbent body length and birth length are represented by their dedicated profiles. |
-| [ MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse-perzentil.md) |  |
+| [ MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)  ](StructureDefinition-mii-pr-icu-muv-koerpergroesse-perzentil.md) | Body height of a child expressed as a percentile for age, compared with a reference population. |
 | [ MII PR ICU MUV Koerperlaenge  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge.md) | Recumbent body length, expressed in centimetres. Measurements specifically recorded as birth length use the dedicated birth-length profile. |
 | [ MII PR ICU MUV Koerperlaenge Bei Geburt  ](StructureDefinition-mii-pr-icu-muv-koerperlaenge-bei-geburt.md) | Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later. |
-| [ MII PR ICU MUV Kohlendioxid Produktion  ](StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.md) |  |
-| [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) |  |
-| [ MII PR ICU MUV Pulmonalarterieller Wedge-Druck  ](StructureDefinition-mii-pr-icu-muv-pulmonalarterieller-wedge-druck.md) |  |
-| [ MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex  ](StructureDefinition-mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex.md) |  |
-| [ MII PR ICU Maximaler Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md) |  |
-| [ MII PR ICU Maximaler Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.md) |  |
-| [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) |  |
-| [ MII PR ICU Mittlerer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md) |  |
-| [ MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md) |  |
+| [ MII PR ICU MUV Kohlendioxid Produktion  ](StructureDefinition-mii-pr-icu-muv-kohlendioxid-produktion.md) | Carbon dioxide production (VCO2): the volume of carbon dioxide the body produces per minute. |
+| [ MII PR ICU MUV Kopfumfang  ](StructureDefinition-mii-pr-icu-muv-kopfumfang.md) | Head circumference, measured as the largest circumference of the head. |
+| [ MII PR ICU MUV Pulmonalarterieller Wedge-Druck  ](StructureDefinition-mii-pr-icu-muv-pulmonalarterieller-wedge-druck.md) | Pulmonary artery wedge pressure: the pressure measured with a pulmonary artery catheter in the wedged position, an estimate of the left atrial pressure. |
+| [ MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex  ](StructureDefinition-mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex.md) | Pulmonary vascular resistance index: the resistance of the pulmonary circulation, indexed to the body surface area. |
+| [ MII PR ICU Maximaler Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-beatmungsdruck.md) | Maximum airway pressure measured by the ventilator during a breath (peak pressure). |
+| [ MII PR ICU Maximaler Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck.md) | Maximum airway pressure during the inspiratory phase of a ventilator breath. |
+| [ MII PR ICU Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-mechanische-atemfrequenz-beatmet.md) | Mechanical breath rate: the number of breaths per minute delivered by the ventilator. |
+| [ MII PR ICU Mittlerer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-beatmungsdruck.md) | Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead. |
+| [ MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck.md) | Mean airway pressure during the inspiratory phase of a ventilator breath. |
 | [ MII PR ICU Monitoring und Vitaldaten  ](StructureDefinition-mii-pr-icu-monitoring-und-vitaldaten.md) | Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement. |
-| [ MII PR ICU Parameter von Beatmung  ](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md) |  |
-| [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) |  |
-| [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) |  |
-| [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) |  |
+| [ MII PR ICU Parameter von Beatmung  ](StructureDefinition-mii-pr-icu-parameter-von-beatmung.md) | Generic profile for a single setting or measurement of mechanical ventilation, identified by SNOMED CT, LOINC and IEEE 11073 codes. The specialised ventilation profiles derive from it. |
+| [ MII PR ICU Parameter von Extrakorporalen Verfahren  ](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md) | Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it. |
+| [ MII PR ICU Plateau Beatmungsdruck  ](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.md) | Plateau pressure: the airway pressure at the end of inspiration while the gas flow is paused. |
+| [ MII PR ICU Positiv Endexpiratorischer Druck  ](StructureDefinition-mii-pr-icu-vent-positiv-endexpiratorischer-druck.md) | Positive end-expiratory pressure (PEEP): the airway pressure that remains at the end of expiration during ventilation. |
 | [ MII PR ICU Score BPS  ](StructureDefinition-mii-pr-icu-score-bps.md) | Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12. |
 | [ MII PR ICU Score CAM-ICU  ](StructureDefinition-mii-pr-icu-score-cam-icu.md) | Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative. |
 | [ MII PR ICU Score CAPD  ](StructureDefinition-mii-pr-icu-score-capd.md) | Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instrument für Delir auf der pädiatrischen Intensivstation. Validiert für Alter von 0 bis 21 Jahren, einschließlich präverbale und entwicklungsverzögerte Kinder. Voraussetzung RASS >= -3 |
@@ -134,15 +134,15 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Score SOS  ](StructureDefinition-mii-pr-icu-score-sos.md) | Früherkennung von Entzugssymptomen bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale. Der Scope dieses Profils liegt auf dem Assessment der Entzugssymptomatik, für das Delir ist das Profil MII_PR_ICU_Score_SOS_PD zu verwenden. Abgebildet wird nur der Gesamtwert des Entzugsscores. |
 | [ MII PR ICU Score SOS-PD  ](StructureDefinition-mii-pr-icu-score-sos-pd.md) | Früherkennung von Delirium bei kritisch kranken Kindern auf der Intensivstation mittels Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium. Der Scope dieses Profils liegt auf dem Assessment des Deliriums, für die Entzugssymptomatik ist das Profil MII_PR_ICU_Score_SOS zu verwenden. Die elterliche Verhaltensbeurteilung des Kindes wird in diesem Profil nicht abgebildet, nur der Gesamtwert des Scores. |
 | [ MII PR ICU Score Visuelle Analogskala  ](StructureDefinition-mii-pr-icu-score-visuelle-analogskala.md) | Erfassung der globalen Schmerzintensitaet mittels Visueller Analogskala (VAS). Der Messwert wird in Millimeter (mm) auf einer 100 mm langen Skala dokumentiert. |
-| [ MII PR ICU Spontane Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md) |  |
-| [ MII PR ICU Spontane Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) |  |
-| [ MII PR ICU Spontanes Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.md) |  |
-| [ MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md) |  |
-| [ MII PR ICU Substituatfluss  ](StructureDefinition-mii-pr-icu-ect-substituatfluss.md) |  |
-| [ MII PR ICU Substituatvolumen  ](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) |  |
-| [ MII PR ICU Unterstuetzungsdruck Beatmung  ](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) |  |
-| [ MII PR ICU Venoeser Druck  ](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md) |  |
-| [ MII PR ICU Zeitverhaeltnis Ein Ausatmung  ](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |  |
+| [ MII PR ICU Spontane Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.md) | Spontaneous breath rate of a ventilated patient: the number of breaths per minute the patient initiates. |
+| [ MII PR ICU Spontane Mechanische Atemfrequenz Beatmet  ](StructureDefinition-mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.md) | Total breath rate of a ventilated patient: the number of spontaneous and mechanical breaths per minute. |
+| [ MII PR ICU Spontanes Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.md) | Spontaneous tidal volume: the volume of gas per breath the patient breathes without mechanical support. |
+| [ MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen  ](StructureDefinition-mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.md) | Tidal volume of spontaneous and mechanical breaths together during ventilation. |
+| [ MII PR ICU Substituatfluss  ](StructureDefinition-mii-pr-icu-ect-substituatfluss.md) | Flow rate of the substitution fluid given during a renal replacement procedure such as haemofiltration. |
+| [ MII PR ICU Substituatvolumen  ](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) | Volume of substitution fluid given during a renal replacement procedure such as haemofiltration. |
+| [ MII PR ICU Unterstuetzungsdruck Beatmung  ](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) | Pressure support set on the ventilator: the pressure above PEEP with which spontaneous breaths are supported. |
+| [ MII PR ICU Venoeser Druck  ](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md) | Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure. |
+| [ MII PR ICU Zeitverhaeltnis Ein Ausatmung  ](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) | Inspiration to expiration time ratio (I:E ratio) of a ventilator breath. |
 
 ### Terminologie: ValueSets 
 
@@ -324,7 +324,7 @@ Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Sy
 | [ Vent Beatmungszeit Auf Hohem Druck  ](Observation-mii-exa-icu-vent-beatmungszeit-auf-hohem-druck.md) | Beispiel: MII PR ICU Beatmungszeit Hohem Druck |
 | [ Vent Beatmungszeit Auf Niedrigem Druck  ](Observation-mii-exa-icu-vent-beatmungszeit-auf-niedrigem-druck.md) | Beispiel: MII PR ICU Beatmungszeit Niedrigem Druck |
 | [ Vent Druckdifferenz Beatmung  ](Observation-mii-exa-icu-vent-druckdifferenz-beatmung.md) | Beispiel: MII PR ICU Druckdifferenz Beatmung |
-| [ Vent Dynamische Kompliance  ](Observation-mii-exa-icu-vent-dynamische-kompliance.md) | Beispiel: MII PR ICU Dynamische Kompliance |
+| [ Vent Dynamische Compliance  ](Observation-mii-exa-icu-vent-dynamische-kompliance.md) | Beispiel: MII PR ICU Dynamische Compliance |
 | [ Vent Eingestellte Parameter Beatmung  ](DeviceMetric-mii-exa-icu-vent-eingestellte-parameter-beatmung.md) | Beispiel: MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung |
 | [ Vent Eingestellter Inspiratorischer Gasfluss  ](Observation-mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss.md) | Beispiel: MII PR ICU Eingestellter Inspiratorischer Gasfluss |
 | [ Vent Einstellung Ausatmungszeit Beatmung  ](Observation-mii-exa-icu-vent-einstellung-ausatmungszeit-beatmung.md) | Beispiel: MII PR ICU Einstellung Ausatmungszeit Beatmung |

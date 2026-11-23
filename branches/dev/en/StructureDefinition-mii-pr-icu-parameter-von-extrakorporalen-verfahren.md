@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren | *Version*:2027.0.0 |
 | Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren |
 
+ 
+Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it. 
+
 **Usages:**
 
 * Derived from this Profile: [MII PR ICU Arterieller Druck](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md), [MII PR ICU Blutfluss Cardiovasculaeres Geraet](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md), [MII PR ICU Blutfluss Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md), [MII PR ICU Blutflussindex Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.md)... Show 8 more, [MII PR ICU Dauer Extrakorporaler Gasaustausch](StructureDefinition-mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch.md), [MII PR ICU Dauer Haemodialysesitzung](StructureDefinition-mii-pr-icu-ect-dauer-haemodialysesitzung.md), [MII PR ICU Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md), [MII PR ICU Haemodialyse Blutfluss](StructureDefinition-mii-pr-icu-ect-haemodialyse-blutfluss.md), [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md), [MII PR ICU Substituatfluss](StructureDefinition-mii-pr-icu-ect-substituatfluss.md), [MII PR ICU Substituatvolumen](StructureDefinition-mii-pr-icu-ect-substituatvolumen.md) and [MII PR ICU Venoeser Druck](StructureDefinition-mii-pr-icu-ect-venoeser-druck.md)
@@ -40,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -49,6 +52,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-parame
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

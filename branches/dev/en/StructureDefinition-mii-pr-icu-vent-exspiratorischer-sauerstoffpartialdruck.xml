@@ -39,7 +39,7 @@
   <name value="MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck"/>
   <title value="MII PR ICU Exspiratorischer Sauerstoffpartialdruck"/>
   <status value="active"/>
-  <date value="2026-11-23T09:48:14+00:00"/>
+  <date value="2026-11-23T10:24:48+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -48,6 +48,7 @@
       <value value="https://www.medizininformatik-initiative.de/"/>
     </telecom>
   </contact>
+  <description value="Partial pressure of oxygen in the exhaled gas."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

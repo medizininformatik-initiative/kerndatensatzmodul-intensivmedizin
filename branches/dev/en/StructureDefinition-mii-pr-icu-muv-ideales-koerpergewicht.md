@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht | *Version*:2027.0.0 |
 | Draft as of 2026-11-23 | *Computable Name*:MII_PR_ICU_MUV_Ideales_Koerpergewicht |
 
+ 
+Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight. 
+
 **Usages:**
 
 * CapabilityStatements using this Profile: [MII CPS Intensivmedizin CapabilityStatement](CapabilityStatement-mii-cps-icu-capabilitystatement.md)
@@ -39,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-id
   "name" : "MII_PR_ICU_MUV_Ideales_Koerpergewicht",
   "title" : "MII PR ICU MUV Ideales Koerpergewicht",
   "status" : "draft",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -48,6 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-id
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

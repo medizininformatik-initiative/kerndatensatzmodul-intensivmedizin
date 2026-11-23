@@ -24,7 +24,7 @@
   <name value="MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren"/>
   <title value="MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"/>
   <status value="active"/>
-  <date value="2026-11-23T09:48:14+00:00"/>
+  <date value="2026-11-23T10:24:48+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -33,6 +33,7 @@
       <value value="https://www.medizininformatik-initiative.de/"/>
     </telecom>
   </contact>
+  <description value="A metric of a device for an extracorporeal procedure that states whether a parameter was set on the device or measured by it. It links an Observation of the procedure to the device that produced it."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

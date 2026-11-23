@@ -1,10 +1,10 @@
-# Vent Dynamische Kompliance - MII IG ICU v2027.0.0
+# Vent Dynamische Compliance - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Vent Dynamische Kompliance**
+* **Vent Dynamische Compliance**
 
-## Example Observation: Vent Dynamische Kompliance
+## Example Observation: Vent Dynamische Compliance
 
 -------
 
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR ICU Dynamische Kompliance](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md)
+Profile: [MII PR ICU Dynamische Compliance](StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.md)
 
 **partOf**: [Procedure Positive pressure airway ventilation (regime/therapy)](Procedure-mii-exa-icu-vent-beatmung.md)
 

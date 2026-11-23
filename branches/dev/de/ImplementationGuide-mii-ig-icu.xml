@@ -1594,6 +1594,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-arterieller-druck"/>
       </reference>
       <name value="MII PR ICU Arterieller Druck"/>
+      <description value="Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1604,6 +1605,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss"/>
       </reference>
       <name value="MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"/>
+      <description value="Airway pressure on the ventilator measured at mean expiratory gas flow."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1614,6 +1616,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"/>
       </reference>
       <name value="MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <description value="Airway pressure on the ventilator measured at a moment of zero gas flow."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1624,6 +1627,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung"/>
       </reference>
       <name value="MII PR ICU Atemzugvolumen Einstellung"/>
+      <description value="Tidal volume set on the ventilator: the volume of gas to be delivered with each mechanical breath."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1634,6 +1638,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung"/>
       </reference>
       <name value="MII PR ICU Atemzugvolumen Waehrend Beatmung"/>
+      <description value="Tidal volume delivered by the ventilator: the measured volume of gas per breath during mechanical ventilation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1644,6 +1649,7 @@
         <reference value="StructureDefinition/mii-pr-icu-beatmung"/>
       </reference>
       <name value="MII PR ICU Beatmung"/>
+      <description value="Ventilation as a procedure: the period during which a patient receives invasive or non-invasive respiratory support. Individual ventilation settings and measurements are recorded with the Parameter von Beatmung profiles."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1654,6 +1660,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung"/>
       </reference>
       <name value="MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"/>
+      <description value="Minute volume of mechanical ventilation: the volume of gas the ventilator delivers per minute."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1664,6 +1671,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck"/>
       </reference>
       <name value="MII PR ICU Beatmungszeit Hohem Druck"/>
+      <description value="Set duration of the high pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1674,6 +1682,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-beatmungszeit-niedrigem-druck"/>
       </reference>
       <name value="MII PR ICU Beatmungszeit Niedrigem Druck"/>
+      <description value="Set duration of the low pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1684,6 +1693,7 @@
         <reference value="StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"/>
       </reference>
       <name value="MII PR ICU Bilanz Einfuhr Kalorien 24h"/>
+      <description value="Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1705,6 +1715,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"/>
       </reference>
       <name value="MII PR ICU Blutfluss Cardiovasculaeres Geraet"/>
+      <description value="Blood flow through a cardiovascular device, such as a ventricular assist device or an extracorporeal circuit."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1715,6 +1726,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"/>
       </reference>
       <name value="MII PR ICU Blutfluss Extrakorporaler Gasaustausch"/>
+      <description value="Blood flow through the circuit of an extracorporeal gas exchange, such as ECMO or ECCO2R."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1725,6 +1737,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"/>
       </reference>
       <name value="MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"/>
+      <description value="Blood flow through the circuit of an extracorporeal gas exchange, indexed to the patient's body surface area."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1735,6 +1748,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-dauer-extrakorporaler-gasaustausch"/>
       </reference>
       <name value="MII PR ICU Dauer Extrakorporaler Gasaustausch"/>
+      <description value="Duration of an extracorporeal gas exchange, such as ECMO or ECCO2R."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1745,6 +1759,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-dauer-haemodialysesitzung"/>
       </reference>
       <name value="MII PR ICU Dauer Haemodialysesitzung"/>
+      <description value="Duration of a single haemodialysis session."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1755,6 +1770,7 @@
         <reference value="StructureDefinition/mii-pr-icu-device"/>
       </reference>
       <name value="MII PR ICU Device"/>
+      <description value="A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1765,6 +1781,7 @@
         <reference value="StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung"/>
       </reference>
       <name value="MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"/>
+      <description value="A metric of a ventilator that states whether a ventilation parameter was set on the device or measured by it. It links a ventilation Observation to the device that produced it."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1775,6 +1792,7 @@
         <reference value="StructureDefinition/mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren"/>
       </reference>
       <name value="MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"/>
+      <description value="A metric of a device for an extracorporeal procedure that states whether a parameter was set on the device or measured by it. It links an Observation of the procedure to the device that produced it."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1785,6 +1803,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"/>
       </reference>
       <name value="MII PR ICU Druckdifferenz Beatmung"/>
+      <description value="Difference between the upper and lower airway pressure during a ventilator breath, for example between peak or plateau pressure and PEEP."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1794,7 +1813,8 @@
       <reference>
         <reference value="StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"/>
       </reference>
-      <name value="MII PR ICU Dynamische Kompliance"/>
+      <name value="MII PR ICU Dynamische Compliance"/>
+      <description value="Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1805,6 +1825,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"/>
       </reference>
       <name value="MII PR ICU Eingestellter Inspiratorischer Gasfluss"/>
+      <description value="Inspiratory gas flow set on the ventilator."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1815,6 +1836,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung"/>
       </reference>
       <name value="MII PR ICU Einstellung Ausatmungszeit Beatmung"/>
+      <description value="Expiratory time set on the ventilator: the duration of the expiratory phase of a mechanical breath."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1825,6 +1847,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung"/>
       </reference>
       <name value="MII PR ICU Einstellung Einatmungszeit Beatmung"/>
+      <description value="Inspiratory time set on the ventilator: the duration of the inspiratory phase of a mechanical breath."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1835,6 +1858,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-einstellung-inspirationsdruck"/>
       </reference>
       <name value="MII PR ICU Einstellung Inspirationsdruck"/>
+      <description value="Inspiratory pressure set on the ventilator (pInsp) for pressure-controlled breaths."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1845,6 +1869,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"/>
       </reference>
       <name value="MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"/>
+      <description value="End-tidal carbon dioxide partial pressure (etCO2): the partial pressure of carbon dioxide in the exhaled gas at the end of expiration."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1855,6 +1880,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss"/>
       </reference>
       <name value="MII PR ICU Exspiratorischer Gasfluss"/>
+      <description value="Expiratory gas flow in the airway measured by the ventilator."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1865,6 +1891,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck"/>
       </reference>
       <name value="MII PR ICU Exspiratorischer Sauerstoffpartialdruck"/>
+      <description value="Partial pressure of oxygen in the exhaled gas."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1875,6 +1902,7 @@
         <reference value="StructureDefinition/mii-pr-icu-extrakorporales-verfahren"/>
       </reference>
       <name value="MII PR ICU Extrakorporales Verfahren"/>
+      <description value="An extracorporeal procedure as a procedure, for example extracorporeal membrane oxygenation, haemofiltration, dialysis or apheresis. Individual settings and measurements are recorded with the Parameter von extrakorporalen Verfahren profiles."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1885,6 +1913,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-gasfluss"/>
       </reference>
       <name value="MII PR ICU Gasfluss"/>
+      <description value="Flow of fresh gas (sweep gas) through the oxygenator of an extracorporeal gas exchange."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1895,6 +1924,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-haemodialyse-blutfluss"/>
       </reference>
       <name value="MII PR ICU Haemodialyse Blutfluss"/>
+      <description value="Blood flow through the extracorporeal circuit during haemodialysis."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1905,6 +1935,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut"/>
       </reference>
       <name value="MII PR ICU Horowitz In Arteriellem Blut"/>
+      <description value="Horowitz index (oxygenation index): the arterial oxygen partial pressure divided by the inspiratory oxygen fraction (PaO2/FiO2)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1915,6 +1946,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion"/>
       </reference>
       <name value="MII PR ICU Inspiratorische Sauerstofffraktion"/>
+      <description value="Inspiratory oxygen fraction (FiO2): the proportion of oxygen in the inspired gas."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1925,6 +1957,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-inspiratorischer-gasfluss"/>
       </reference>
       <name value="MII PR ICU Inspiratorischer Gasfluss"/>
+      <description value="Inspiratory gas flow in the airway measured by the ventilator."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1935,6 +1968,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren"/>
       </reference>
       <name value="MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"/>
+      <description value="Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1945,6 +1979,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-maximaler-beatmungsdruck"/>
       </reference>
       <name value="MII PR ICU Maximaler Beatmungsdruck"/>
+      <description value="Maximum airway pressure measured by the ventilator during a breath (peak pressure)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1955,6 +1990,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-maximaler-inspiratorischer-beatmungsdruck"/>
       </reference>
       <name value="MII PR ICU Maximaler Inspiratorischer Beatmungsdruck"/>
+      <description value="Maximum airway pressure during the inspiratory phase of a ventilator breath."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1965,6 +2001,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet"/>
       </reference>
       <name value="MII PR ICU Mechanische Atemfrequenz Beatmet"/>
+      <description value="Mechanical breath rate: the number of breaths per minute delivered by the ventilator."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1975,6 +2012,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"/>
       </reference>
       <name value="MII PR ICU Mittlerer Beatmungsdruck"/>
+      <description value="Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1985,6 +2023,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck"/>
       </reference>
       <name value="MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck"/>
+      <description value="Mean airway pressure during the inspiratory phase of a ventilator breath."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2006,6 +2045,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-arterieller-blutdruck"/>
       </reference>
       <name value="MII PR ICU MUV Arterieller Blutdruck"/>
+      <description value="Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2016,6 +2056,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-atemfrequenz"/>
       </reference>
       <name value="MII PR ICU MUV Atemfrequenz"/>
+      <description value="Respiratory rate of the patient: the number of breaths per minute."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2069,6 +2110,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-herzzeitvolumen"/>
       </reference>
       <name value="MII PR ICU MUV Herzzeitvolumen"/>
+      <description value="Cardiac output: the volume of blood the heart pumps per minute."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2079,6 +2121,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"/>
       </reference>
       <name value="MII PR ICU MUV Ideales Koerpergewicht"/>
+      <description value="Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2089,6 +2132,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-intrakranieller-druck"/>
       </reference>
       <name value="MII PR ICU MUV Intrakranieller Druck (ICP)"/>
+      <description value="Intracranial pressure (ICP): the pressure inside the skull."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2099,6 +2143,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-koerpergewicht"/>
       </reference>
       <name value="MII PR ICU MUV Koerpergewicht"/>
+      <description value="Body weight of the patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2109,6 +2154,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"/>
       </reference>
       <name value="MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"/>
+      <description value="Body weight of a child expressed as a percentile for age, compared with a reference population."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2130,6 +2176,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil"/>
       </reference>
       <name value="MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)"/>
+      <description value="Body height of a child expressed as a percentile for age, compared with a reference population."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2162,6 +2209,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"/>
       </reference>
       <name value="MII PR ICU MUV Kohlendioxid Produktion"/>
+      <description value="Carbon dioxide production (VCO2): the volume of carbon dioxide the body produces per minute."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2172,6 +2220,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-kopfumfang"/>
       </reference>
       <name value="MII PR ICU MUV Kopfumfang"/>
+      <description value="Head circumference, measured as the largest circumference of the head."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2182,6 +2231,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-pulmonalarterieller-wedge-druck"/>
       </reference>
       <name value="MII PR ICU MUV Pulmonalarterieller Wedge-Druck"/>
+      <description value="Pulmonary artery wedge pressure: the pressure measured with a pulmonary artery catheter in the wedged position, an estimate of the left atrial pressure."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2192,6 +2242,7 @@
         <reference value="StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"/>
       </reference>
       <name value="MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"/>
+      <description value="Pulmonary vascular resistance index: the resistance of the pulmonary circulation, indexed to the body surface area."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2202,6 +2253,7 @@
         <reference value="StructureDefinition/mii-pr-icu-parameter-von-beatmung"/>
       </reference>
       <name value="MII PR ICU Parameter von Beatmung"/>
+      <description value="Generic profile for a single setting or measurement of mechanical ventilation, identified by SNOMED CT, LOINC and IEEE 11073 codes. The specialised ventilation profiles derive from it."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2212,6 +2264,7 @@
         <reference value="StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren"/>
       </reference>
       <name value="MII PR ICU Parameter von Extrakorporalen Verfahren"/>
+      <description value="Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2222,6 +2275,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-plateau-beatmungsdruck"/>
       </reference>
       <name value="MII PR ICU Plateau Beatmungsdruck"/>
+      <description value="Plateau pressure: the airway pressure at the end of inspiration while the gas flow is paused."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2232,6 +2286,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck"/>
       </reference>
       <name value="MII PR ICU Positiv Endexpiratorischer Druck"/>
+      <description value="Positive end-expiratory pressure (PEEP): the airway pressure that remains at the end of expiration during ventilation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2395,6 +2450,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"/>
       </reference>
       <name value="MII PR ICU Spontane Atemfrequenz Beatmet"/>
+      <description value="Spontaneous breath rate of a ventilated patient: the number of breaths per minute the patient initiates."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2405,6 +2461,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"/>
       </reference>
       <name value="MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"/>
+      <description value="Total breath rate of a ventilated patient: the number of spontaneous and mechanical breaths per minute."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2415,6 +2472,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen"/>
       </reference>
       <name value="MII PR ICU Spontanes Atemzugvolumen"/>
+      <description value="Spontaneous tidal volume: the volume of gas per breath the patient breathes without mechanical support."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2425,6 +2483,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"/>
       </reference>
       <name value="MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"/>
+      <description value="Tidal volume of spontaneous and mechanical breaths together during ventilation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2435,6 +2494,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-substituatfluss"/>
       </reference>
       <name value="MII PR ICU Substituatfluss"/>
+      <description value="Flow rate of the substitution fluid given during a renal replacement procedure such as haemofiltration."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2445,6 +2505,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-substituatvolumen"/>
       </reference>
       <name value="MII PR ICU Substituatvolumen"/>
+      <description value="Volume of substitution fluid given during a renal replacement procedure such as haemofiltration."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2455,6 +2516,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-unterstuetzungsdruck-beatmung"/>
       </reference>
       <name value="MII PR ICU Unterstuetzungsdruck Beatmung"/>
+      <description value="Pressure support set on the ventilator: the pressure above PEEP with which spontaneous breaths are supported."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2465,6 +2527,7 @@
         <reference value="StructureDefinition/mii-pr-icu-ect-venoeser-druck"/>
       </reference>
       <name value="MII PR ICU Venoeser Druck"/>
+      <description value="Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2475,6 +2538,7 @@
         <reference value="StructureDefinition/mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"/>
       </reference>
       <name value="MII PR ICU Zeitverhaeltnis Ein Ausatmung"/>
+      <description value="Inspiration to expiration time ratio (I:E ratio) of a ventilator breath."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3978,8 +4042,8 @@
       <reference>
         <reference value="Observation/mii-exa-icu-vent-dynamische-kompliance"/>
       </reference>
-      <name value="Vent Dynamische Kompliance"/>
-      <description value="Beispiel: MII PR ICU Dynamische Kompliance"/>
+      <name value="Vent Dynamische Compliance"/>
+      <description value="Beispiel: MII PR ICU Dynamische Compliance"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

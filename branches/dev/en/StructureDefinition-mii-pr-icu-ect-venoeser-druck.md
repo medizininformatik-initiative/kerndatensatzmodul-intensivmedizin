@@ -11,6 +11,9 @@
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck | *Version*:2027.0.0 |
 | Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_ECT_Venoeser_Druck |
 
+ 
+Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure. 
+
 Observation "venous pressure" is a characteristic of the generic profile for [parameters of extracorporeal procedures (Observation)](StructureDefinition-mii-pr-icu-parameter-von-extrakorporalen-verfahren.md). See there for more information regarding explanations of the items, or reference of the entries in the FHIR resource to the logical model.
 
 In extracorporeal procedures, the "arterial pressure" describes a pressure measured in the device of a tube leading away from the pump and transporting blood ("leading away limb"), whereas the "venous pressure" describes the path to the pump of the device ("leading towards limb", measurement also takes place in the device). The venous/arterial nomenclature is therefore analogous to the cardiovascular system.
@@ -43,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ve
   "name" : "MII_PR_ICU_ECT_Venoeser_Druck",
   "title" : "MII PR ICU Venoeser Druck",
   "status" : "active",
-  "date" : "2026-11-23T09:48:14+00:00",
+  "date" : "2026-11-23T10:24:48+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -52,6 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ve
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
+  "description" : "Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

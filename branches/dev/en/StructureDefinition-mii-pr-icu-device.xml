@@ -24,7 +24,7 @@
   <name value="MII_PR_ICU_Device"/>
   <title value="MII PR ICU Device"/>
   <status value="active"/>
-  <date value="2026-11-23T09:48:14+00:00"/>
+  <date value="2026-11-23T10:24:48+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -33,6 +33,7 @@
       <value value="https://www.medizininformatik-initiative.de/"/>
     </telecom>
   </contact>
+  <description value="A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
