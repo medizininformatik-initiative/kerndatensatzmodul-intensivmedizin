@@ -31,11 +31,14 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "248241002"
+        "code": "248241002",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "display": "Glasgow coma score (observable entity)"
       },
       {
         "system": "http://loinc.org",
-        "code": "9269-2"
+        "code": "9269-2",
+        "display": "Glasgow coma score total"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
@@ -44,16 +47,13 @@
     ]
   },
   "subject": {
-    "type": "Patient",
-    "identifier": {
-      "system": "http://example.com",
-      "value": "1234"
-    }
+    "reference": "Patient/mii-exa-icu-patient"
   },
   "effectiveDateTime": "2021-12-06T00:52:00+01:00",
   "valueQuantity": {
+    "value": 14,
     "system": "http://unitsofmeasure.org",
-    "code": "14",
-    "unit": "score"
+    "code": "{score}",
+    "unit": "{score}"
   }
 }

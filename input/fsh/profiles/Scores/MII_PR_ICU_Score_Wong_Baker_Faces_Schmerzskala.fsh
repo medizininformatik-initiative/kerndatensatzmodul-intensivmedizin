@@ -1,6 +1,6 @@
 Invariant: mii-icu-wbf-1
 Description: "Zulaessige Wong-Baker-FACES-Werte sind 0, 2, 4, 6, 8 und 10."
-Expression: "value.ofType(Quantity).value = 0 or value.ofType(Quantity).value = 2 or value.ofType(Quantity).value = 4 or value.ofType(Quantity).value = 6 or value.ofType(Quantity).value = 8 or value.ofType(Quantity).value = 10"
+Expression: "value.exists() implies (value.ofType(Quantity).value = 0 or value.ofType(Quantity).value = 2 or value.ofType(Quantity).value = 4 or value.ofType(Quantity).value = 6 or value.ofType(Quantity).value = 8 or value.ofType(Quantity).value = 10)"
 Severity: #error
 
 Profile: MII_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala
@@ -17,7 +17,8 @@ Der Score wird als quantitativer Wert dokumentiert."
 * ^status = #draft
 
 * status 1..1 MS
-* obeys mii-icu-wbf-1
+* obeys mii-icu-wbf-1 and mii-icu-val-xor-dar
+* dataAbsentReason MS
 
 * category 1..* MS
 * category ^slicing.discriminator.type = #pattern
@@ -48,9 +49,9 @@ Der Score wird als quantitativer Wert dokumentiert."
 * effective[x] 1..1 MS
 * effective[x] only dateTime
 
-* value[x] 1..1 MS
+* value[x] 0..1 MS
 * value[x] only Quantity
-* valueQuantity 1..1
+* valueQuantity 0..1
 * valueQuantity.value 1..1
 * valueQuantity.value ^minValueDecimal = 0
 * valueQuantity.value ^maxValueDecimal = 10

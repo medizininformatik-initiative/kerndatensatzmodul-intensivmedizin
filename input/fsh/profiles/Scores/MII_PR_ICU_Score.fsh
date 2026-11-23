@@ -45,14 +45,17 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
     loinc 0..1 MS and 
     sct 0..1 MS and
     ieee11073 0..1 MS
+* code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc].system 1..1
 * code.coding[loinc].system = $loinc
 * code.coding[loinc].code 1..1 MS
+* code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
 * code.coding[sct].version 1..1 MS  // 05.08.26 - auf 1..1 gesetzt
 * code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
+* code.coding[ieee11073] ^patternCoding.system = $ieee-11073
 * code.coding[ieee11073].system 1..1  // neues IEEE-11073 Slicing hinzugefügt - Beschluss 05.08.26
 * code.coding[ieee11073].system = $ieee-11073
 * code.coding[ieee11073].code 1..1 MS

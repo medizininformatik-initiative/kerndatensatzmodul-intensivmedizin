@@ -102,7 +102,6 @@ Usage: #definition
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-sofa, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-visuelle-analogskala, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala, #MAY)  // draft
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-zopa, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss, #SHALL)

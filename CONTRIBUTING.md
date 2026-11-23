@@ -14,6 +14,17 @@ from the new module so the two release systems never mix. The rest of this page
 describes contributing to **this template repository**; the full operational
 model for both layers is in [`docs/workflows.md`](docs/workflows.md).
 
+## ICU profile development
+
+Follow the [ICU profiling guidelines](docs/profiling-guidelines.md), including
+the extensible identity-code bindings required for generic base profiles.
+
+## Changelog entries
+
+Add an entry for every content change to `input/pagecontent/changes.md` and
+`input/translations/de/pagecontent/changes.md`, and end it with a link to the
+pull request (see [AGENTS.md](AGENTS.md#changelog)).
+
 ## Branching model
 
 Two long-lived branches, short-lived working branches:

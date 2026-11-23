@@ -17,7 +17,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * partOf ^definition = "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
 * status MS
 
-* category 1..1 MS
+* category 1.. MS
 * category from mii-vs-icu-category-procedure-beatmung-snomed (required)
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
@@ -33,7 +33,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding ^slicing.ordered = false
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 0..
-* code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed  (required)
+* code.coding[sct] from mii-vs-icu-code-observation-beatmung-snomed  (extensible)
 * code.coding[sct] ^patternCoding.system = $sct  // Diskriminator pattern:$this braucht ein Muster am Slice (#114)
 * code.coding[sct].system = $sct
 * code.coding[sct] MS
@@ -41,7 +41,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding[sct].code 1..1 MS
 * code.coding[sct].display MS
 * code.coding contains loinc 0..
-* code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc  (required)
+* code.coding[loinc] from mii-vs-icu-code-observation-beatmung-loinc  (extensible)
 * code.coding[loinc] ^patternCoding.system = $loinc  // Diskriminator pattern:$this braucht ein Muster am Slice (#114)
 * code.coding[loinc].system = $loinc
 * code.coding[loinc] MS
@@ -49,7 +49,7 @@ Title: "MII PR ICU Parameter von Beatmung"
 * code.coding[loinc].code 1..1 MS
 * code.coding[loinc].display MS
 * code.coding contains IEEE-11073 0..
-* code.coding[IEEE-11073] from mii-vs-icu-code-observation-beatmung-iso11073 (required)
+* code.coding[IEEE-11073] from mii-vs-icu-code-observation-beatmung-iso11073 (extensible)
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073  // Diskriminator pattern:$this braucht ein Muster am Slice (#114)
 * code.coding[IEEE-11073].system = $ieee-11073
 * code.coding[IEEE-11073] MS

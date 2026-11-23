@@ -116,7 +116,7 @@
 </div>
 </div></details>
 <details>
-<summary>Scores<span class="cnt">16</span></summary><div class="body">
+<summary>Scores<span class="cnt">15</span></summary><div class="body">
 <p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-score-bps.html">BPS</a>
@@ -133,7 +133,6 @@
 <a href="StructureDefinition-mii-pr-icu-score-sos-pd.html">SOS-PD</a>
 <a href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html">Visuelle Analogskala</a>
 <a href="StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html">Wong-Baker-FACES-Schmerzskala</a>
-<a href="StructureDefinition-mii-pr-icu-score-zopa.html">ZOPA</a>
 </div>
 </div></details>
 <details>
