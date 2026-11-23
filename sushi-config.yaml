@@ -821,8 +821,8 @@ resources:
     description: "Beispiel: MII PR ICU Druckdifferenz Beatmung"
     exampleBoolean: true
   Observation/mii-exa-icu-vent-dynamische-kompliance:
-    name: "Vent Dynamische Kompliance"
-    description: "Beispiel: MII PR ICU Dynamische Kompliance"
+    name: "Vent Dynamische Compliance"
+    description: "Beispiel: MII PR ICU Dynamische Compliance"
     exampleBoolean: true
   Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss:
     name: "Vent Eingestellter Inspiratorischer Gasfluss"
