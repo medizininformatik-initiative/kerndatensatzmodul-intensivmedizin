@@ -7,6 +7,7 @@ Der Score wird als quantitativer Wert dokumentiert. Im interdisziplinaeren Konse
 
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised"
 * ^version = "2027.0.0"
 * ^status = #draft

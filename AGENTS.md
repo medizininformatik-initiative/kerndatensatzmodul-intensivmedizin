@@ -94,6 +94,16 @@ Follow [docs/profiling-guidelines.md](docs/profiling-guidelines.md) when adding
 or changing ICU profiles. Generic identity-code value-set bindings use
 `extensible`; review inherited constraints before selecting a parent.
 
+## Changelog
+
+Every change that alters the published guide, its profiles, value sets or
+examples gets an entry in `input/pagecontent/changes.md` and its German copy
+`input/translations/de/pagecontent/changes.md`, under the upcoming version.
+Each entry ends with a link to its pull request, for example
+`([#170](https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/170))`;
+when an entry also cites issues, add the PR after a semicolon:
+`([#116](…/issues/116); PR [#170](…/pull/170))`. CI-only changes need no entry.
+
 ## Skills
 
 Every skill an agent can invoke here lives in [`skills/`](skills/) — one folder

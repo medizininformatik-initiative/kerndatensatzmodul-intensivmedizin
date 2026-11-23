@@ -5,6 +5,7 @@ Title: "MII PR ICU Score CAPD"
 Description: "Cornell Assessment of Pediatric Delirium (CAPD) - Screening-Instrument für Delir auf der pädiatrischen Intensivstation. Validiert für Alter von 0 bis 21 Jahren, einschließlich präverbale und entwicklungsverzögerte Kinder. Voraussetzung RASS >= -3"
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-capd"
 * ^version = "2027.0.0"
 * ^status = #draft

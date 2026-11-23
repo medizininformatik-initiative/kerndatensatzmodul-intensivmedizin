@@ -1210,14 +1210,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-score-wong-baker-faces-schmerzskala"
-        },
-        "name": "MII PR ICU Score Wong-Baker-FACES-Schmerzskala",
-        "description": "Erfassung der globalen Schmerzintensitaet mittels Wong-Baker-FACES-Schmerzskala.\nDer Score wird als quantitativer Wert dokumentiert.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet"
         },
         "name": "MII PR ICU Spontane Atemfrequenz Beatmet",
