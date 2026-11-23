@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Atemfrequenz
 Parent: $observation-de-vitalsign-atemfrequenz
 Id: mii-pr-icu-muv-atemfrequenz
 Title: "MII PR ICU MUV Atemfrequenz"
+Description: "Respiratory rate of the patient: the number of breaths per minute."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-atemfrequenz"

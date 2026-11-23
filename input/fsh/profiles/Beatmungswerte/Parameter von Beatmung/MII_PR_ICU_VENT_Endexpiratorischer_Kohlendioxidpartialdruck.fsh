@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Endexpiratorischer_Kohlendioxidpartialdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck
 Title: "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
+Description: "End-tidal carbon dioxide partial pressure (etCO2): the partial pressure of carbon dioxide in the exhaled gas at the end of expiration."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"

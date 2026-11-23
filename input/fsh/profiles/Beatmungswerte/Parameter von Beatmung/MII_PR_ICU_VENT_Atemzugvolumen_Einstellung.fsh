@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Atemzugvolumen_Einstellung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-atemzugvolumen-einstellung
 Title: "MII PR ICU Atemzugvolumen Einstellung"
+Description: "Tidal volume set on the ventilator: the volume of gas to be delivered with each mechanical breath."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemzugvolumen-einstellung"

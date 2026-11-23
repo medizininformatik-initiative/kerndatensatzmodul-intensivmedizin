@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung
 Title: "MII PR ICU Einstellung Ausatmungszeit Beatmung"
+Description: "Expiratory time set on the ventilator: the duration of the expiratory phase of a mechanical breath."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung"

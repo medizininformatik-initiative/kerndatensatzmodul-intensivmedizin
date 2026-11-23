@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Generic profile for a single setting or measurement of an extracorporeal procedure, such as a pressure, flow, volume or duration. The specialised profiles for extracorporeal procedures derive from it.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

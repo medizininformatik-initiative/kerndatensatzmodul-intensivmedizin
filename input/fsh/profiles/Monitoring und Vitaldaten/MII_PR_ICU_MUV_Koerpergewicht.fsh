@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Koerpergewicht
 Parent: $observation-de-vitalsign-koerpergewicht
 Id: mii-pr-icu-muv-koerpergewicht
 Title: "MII PR ICU MUV Koerpergewicht"
+Description: "Body weight of the patient."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"

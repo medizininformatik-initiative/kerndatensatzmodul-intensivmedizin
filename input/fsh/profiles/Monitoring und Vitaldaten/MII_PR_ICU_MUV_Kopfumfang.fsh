@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Kopfumfang
 Parent: $observation-de-vitalsign-kopfumfang
 Id: mii-pr-icu-muv-kopfumfang
 Title: "MII PR ICU MUV Kopfumfang"
+Description: "Head circumference, measured as the largest circumference of the head."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"

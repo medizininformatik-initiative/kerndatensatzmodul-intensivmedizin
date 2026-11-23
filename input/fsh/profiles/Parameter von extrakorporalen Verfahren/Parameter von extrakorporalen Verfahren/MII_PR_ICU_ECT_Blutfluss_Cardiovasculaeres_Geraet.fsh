@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet
 Title: "MII PR ICU Blutfluss Cardiovasculaeres Geraet"
+Description: "Blood flow through a cardiovascular device, such as a ventricular assist device or an extracorporeal circuit."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"

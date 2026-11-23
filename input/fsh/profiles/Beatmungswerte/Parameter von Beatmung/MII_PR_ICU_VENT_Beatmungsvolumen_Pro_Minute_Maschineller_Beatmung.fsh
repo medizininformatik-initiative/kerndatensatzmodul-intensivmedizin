@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_VENT_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung
 Title: "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+Description: "Minute volume of mechanical ventilation: the volume of gas the ventilator delivers per minute."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungsvolumen-pro-minute-maschineller-beatmung"

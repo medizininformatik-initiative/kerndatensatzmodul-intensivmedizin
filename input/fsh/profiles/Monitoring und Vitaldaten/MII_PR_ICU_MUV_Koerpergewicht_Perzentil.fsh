@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Koerpergewicht_Perzentil
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-koerpergewicht-perzentil
 Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
+Description: "Body weight of a child expressed as a percentile for age, compared with a reference population."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"

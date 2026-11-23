@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex
 Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
+Description: "Pulmonary vascular resistance index: the resistance of the pulmonary circulation, indexed to the body surface area."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"

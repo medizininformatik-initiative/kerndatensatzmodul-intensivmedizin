@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Extrakorporales_Verfahren
 Parent: MII_PR_Prozedur_Procedure
 Id: mii-pr-icu-extrakorporales-verfahren
 Title: "MII PR ICU Extrakorporales Verfahren"
+Description: "An extracorporeal procedure as a procedure, for example extracorporeal membrane oxygenation, haemofiltration, dialysis or apheresis. Individual settings and measurements are recorded with the Parameter von extrakorporalen Verfahren profiles."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren"
