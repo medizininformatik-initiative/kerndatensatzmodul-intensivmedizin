@@ -93,3 +93,28 @@ must exist for the artifact — check `temp/pages/_includes/` after a build;
 one missing include fails the whole Jekyll run. When the narrative does not
 need an inline rendering, a plain link to the artifact page (which carries
 the same views as tabs) is the better choice.
+
+## Updating the ICU profile overview
+
+After compiling the current FSH with SUSHI, run:
+
+```sh
+python3 scripts/gen-profile-map.py --write
+```
+
+This updates both `input/pagecontent/profiles.md` and its German translation.
+Only the four `BEGIN/END GENERATED:profile-map:*` sections are replaced:
+styles, module profiles, the ISiK note and the ISiK profile list. Keep explanatory
+prose outside those boundaries. Both pages are checked before either is written;
+missing or duplicate boundaries stop the update.
+
+The preview, module-release and go-publish workflows run this command after
+SUSHI and before the IG Publisher. They compile into a clean `fsh-generated/`
+directory so removed profiles and filtered drafts cannot leave stale links.
+For a local build, likewise use fresh SUSHI output if profiles were removed.
+The generator reads the ISiK version pinned in `sushi-config.yaml`; that package
+must already be available in the FHIR cache.
+
+Without options the script checks profile grouping. `--print en` or `--print de`
+prints the generated HTML without modifying either page. Review the changes
+before committing a manually regenerated overview.

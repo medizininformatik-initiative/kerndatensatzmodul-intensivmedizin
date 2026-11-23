@@ -26,6 +26,19 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "mii-icu-val-xor-dar",
+            "human": "Resource must have either value or dataAbsentReason.",
+            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
+            "severity": "error",
+            "expression": "value.exists() xor dataAbsentReason.exists()"
+          }
+        ]
+      },
+      {
         "id": "Observation.identifier",
         "path": "Observation.identifier",
         "mustSupport": true
@@ -191,7 +204,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "min": 1,
         "type": [
           {
             "code": "Quantity"
