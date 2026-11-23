@@ -7,6 +7,7 @@ Description: """Erfassung der globalen Schmerzintensitaet mittels Numerischer Ra
 
 * insert PR_CS_VS_Version
 * insert Publisher
+* component 0..0
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-numerische-ratingskala"
 * ^version = "2026.0.0"
 * ^status = #draft

@@ -5,6 +5,7 @@
 <p style="border-left:4px solid #dcc39a;background:#fffdf9;padding:8px 12px;border-radius:4px">ℹ️ The <em>Monitoring and Vital Signs</em> base profiles of this module are maintained in the gematik package <code>de.gematik.isik 6.0.0</code> — see the amber section <a href="#isik-hosted-profiles">ISiK-hosted profiles</a> below for the complete, version-pinned list.</p>
 
 
+<!-- BEGIN GENERATED:profile-map:style -->
 <style>
 .icu-acc{margin:1em 0;overflow:hidden}
 .icu-acc details{border:1px solid #c3cedb;border-radius:7px;margin:6px 0;background:#fbfcfe}
@@ -23,6 +24,8 @@
 .icu-note{overflow:hidden;font-size:0.85em;color:#555;margin:0.6em 0 0.2em 0;padding-left:2px}
 @media (max-width:720px){.icu-acc .items{columns:1}}
 </style>
+<!-- END GENERATED:profile-map:style -->
+<!-- BEGIN GENERATED:profile-map:module -->
 <p class="icu-note"><b>Module-owned profiles &mdash; this package</b></p>
 <div class="icu-acc">
 <details>
@@ -123,7 +126,7 @@
 </div>
 </div></details>
 <details>
-<summary>Scores<span class="cnt">15</span></summary><div class="body">
+<summary>Scores<span class="cnt">14</span></summary><div class="body">
 <p class="generic"><b>Generic:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
 <div class="items">
 <a href="StructureDefinition-mii-pr-icu-score-bps.html">BPS</a>
@@ -139,7 +142,6 @@
 <a href="StructureDefinition-mii-pr-icu-score-sos.html">SOS</a>
 <a href="StructureDefinition-mii-pr-icu-score-sos-pd.html">SOS-PD</a>
 <a href="StructureDefinition-mii-pr-icu-score-visuelle-analogskala.html">Visuelle Analogskala</a>
-<a href="StructureDefinition-mii-pr-icu-score-wong-baker-faces-schmerzskala.html">Wong-Baker-FACES-Schmerzskala</a>
 </div>
 </div></details>
 <details>
@@ -149,6 +151,7 @@
 </div>
 </div></details>
 </div>
+<!-- END GENERATED:profile-map:module -->
 
 **Body measurements in the module-owned monitoring profiles**
 
@@ -160,7 +163,9 @@ Body height and general body weight retain their German parent profiles and proh
 
 Each measurement Coding must state the terminology edition actually used. The profiles do not fix editions or displays. The IEEE measurement coding remains required.
 
+<!-- BEGIN GENERATED:profile-map:isik-note -->
 <p class="icu-note"><b>ISiK-hosted profiles &mdash; de.gematik.isik 6.0.0</b><br>Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version &mdash; the list only changes with a deliberate pin bump. Each link opens the profile rendered in this guide (differential, snapshot, must support, definitions); the profiles themselves stay in the ISiK package.</p>
+<!-- END GENERATED:profile-map:isik-note -->
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhir-profile-monitoringundvitaldaten.md gate=B -->
 > The Monitoring and
@@ -179,10 +184,11 @@ Each measurement Coding must state the terminology edition actually used. The pr
 The individual profiles are characteristics of the generic profile [Monitoring and vital data (Observation)](extern-sd-mii-icu-monitoring-und-vitaldaten.html). See there for details on the items and their relation to the Logical Model.
 
 <a id="isik-hosted-profiles"></a>
+<!-- BEGIN GENERATED:profile-map:isik -->
 <div class="icu-acc isik">
 <details>
-<summary>Generic profiles<span class="cnt">3</span></summary><div class="body"><div class="items">
-<a href="extern-mii-pr-icu-muv-zerebraler-perfusionsdruck.html">zerebraler Perfusionsdruck (seit ISiK 6 dort gepflegt)</a>
+<summary>Generic profiles<span class="cnt">4</span></summary><div class="body"><div class="items">
+<a href="extern-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.html">Bilanz Ausfuhr Drainage Generisch</a>
 <a href="extern-sd-mii-icu-koerpertemperatur-generisch.html">Koerpertemperatur Generisch</a>
 <a href="extern-sd-mii-icu-monitoring-und-vitaldaten.html">Monitoring und Vitaldaten</a>
 <a href="extern-sd-mii-icu-sonstige-pulsatile-druecke-generisch.html">Sonstige pulsatile Druecke Generisch</a>
@@ -276,6 +282,7 @@ The individual profiles are characteristics of the generic profile [Monitoring a
 <a href="extern-mii-pr-icu-score-rass.html">RASS</a>
 </div></div></details>
 </div>
+<!-- END GENERATED:profile-map:isik -->
 
 The FHIR profiles in this project follow the following approach:
 
