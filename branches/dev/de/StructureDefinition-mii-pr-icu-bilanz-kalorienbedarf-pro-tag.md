@@ -103,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Kalorienbedarf_Pro_Tag",
   "title" : "MII PR ICU Bilanz Kalorienbedarf pro Tag",
   "status" : "draft",
-  "date" : "2026-11-23T10:24:48+00:00",
+  "date" : "2026-11-23T16:20:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

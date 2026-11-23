@@ -57,7 +57,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | :--- | :--- |
 | [ MII PR ICU Arterieller Druck  ](StructureDefinition-mii-pr-icu-ect-arterieller-druck.md) | Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure. |
 | [ MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md) | Airway pressure on the ventilator measured at mean expiratory gas flow. |
-| [ MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) | Airway pressure on the ventilator measured at a moment of zero gas flow. |
+| [ MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss  ](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss.md) | Airway pressure on a ventilator measured at zero inspiratory gas flow. |
 | [ MII PR ICU Atemzugvolumen Einstellung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md) | Tidal volume set on the ventilator: the volume of gas to be delivered with each mechanical breath. |
 | [ MII PR ICU Atemzugvolumen Waehrend Beatmung  ](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md) | Tidal volume delivered by the ventilator: the measured volume of gas per breath during mechanical ventilation. |
 | [ MII PR ICU Beatmung  ](StructureDefinition-mii-pr-icu-beatmung.md) | Ventilation as a procedure: the period during which a patient receives invasive or non-invasive respiratory support. Individual ventilation settings and measurements are recorded with the Parameter von Beatmung profiles. |
@@ -313,8 +313,8 @@ These are example instances that show what data produced and consumed by systems
 | [ Untersuchung Pupillenlichtreaktion Indirekt  ](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | Beispiel: MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt |
 | [ Untersuchung Pupillensymmetrie  ](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | Beispiel: MII PR ICU Untersuchung Pupillensymmetrie |
 | [ Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss |
-| [ Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss |
-| [ Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss |
+| [ Vent Atemwegsdruck Bei Null Inspiratori Gasf Eingest  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-eingest.md) | Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss |
+| [ Vent Atemwegsdruck Bei Null Inspiratori Gasf Gemess  ](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-gemess.md) | Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss |
 | [ Vent Atemzugvolumen Einstellung  ](Observation-mii-exa-icu-vent-atemzugvolumen-einstellung.md) | Beispiel: MII PR ICU Atemzugvolumen Einstellung |
 | [ Vent Atemzugvolumen Waehrend Beatmung Gemessen  ](Observation-mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen.md) | Beispiel: MII PR ICU Atemzugvolumen Waehrend Beatmung |
 | [ Vent Beatmung  ](Procedure-mii-exa-icu-vent-beatmung.md) | Beispiel: MII PR ICU Beatmung |

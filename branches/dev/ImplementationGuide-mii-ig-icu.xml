@@ -1603,10 +1603,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss"/>
+        <reference value="StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss"/>
       </reference>
-      <name value="MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"/>
-      <description value="Airway pressure on the ventilator measured at mean expiratory gas flow."/>
+      <name value="MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss"/>
+      <description value="Airway pressure on a ventilator measured at zero inspiratory gas flow."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1614,10 +1614,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"/>
+        <reference value="StructureDefinition/mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss"/>
       </reference>
-      <name value="MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
-      <description value="Airway pressure on the ventilator measured at a moment of zero gas flow."/>
+      <name value="MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"/>
+      <description value="Airway pressure on the ventilator measured at mean expiratory gas flow."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3942,10 +3942,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"/>
+        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-eingest"/>
       </reference>
-      <name value="Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest"/>
-      <description value="Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <name value="Vent Atemwegsdruck Bei Null Inspiratori Gasf Eingest"/>
+      <description value="Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -3953,10 +3953,10 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"/>
+        <reference value="Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-gemess"/>
       </reference>
-      <name value="Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess"/>
-      <description value="Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <name value="Vent Atemwegsdruck Bei Null Inspiratori Gasf Gemess"/>
+      <description value="Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

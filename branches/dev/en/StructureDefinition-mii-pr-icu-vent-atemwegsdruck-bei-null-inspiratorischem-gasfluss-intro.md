@@ -1,0 +1,3 @@
+This profile records airway pressure on a ventilator at **zero inspiratory gas flow**, using [LOINC 20060-0](https://loinc.org/20060-0/). It does not represent end-expiratory pressure (PEEP). It specialises [Ventilation parameters](StructureDefinition-mii-pr-icu-parameter-von-beatmung.html).
+
+The previous profile name and canonical incorrectly referred to expiratory flow. Update instance `meta.profile`, dependent profiles and interface configurations to the corrected canonical. Existing published packages are not modified. The separate [plateau-pressure profile](StructureDefinition-mii-pr-icu-vent-plateau-beatmungsdruck.html) remains unchanged.

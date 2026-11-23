@@ -43,8 +43,8 @@ The module ships **148 examples** (at least one per profile family, incl. comple
 | | |
 | :--- | :--- |
 | [Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess](Observation-mii-exa-icu-vent-atemwegsdruck-bei-mitl-exspiratori-gasf-gemess.md) | [MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.md) |
-| [Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest.md) | [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) |
-| [Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess.md) | [MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.md) |
+| [Vent Atemwegsdruck Bei Null Inspiratori Gasf Eingest](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-eingest.md) | [MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss.md) |
+| [Vent Atemwegsdruck Bei Null Inspiratori Gasf Gemess](Observation-mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-gemess.md) | [MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss](StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss.md) |
 | [Vent Atemzugvolumen Einstellung](Observation-mii-exa-icu-vent-atemzugvolumen-einstellung.md) | [MII PR ICU Atemzugvolumen Einstellung](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.md) |
 | [Vent Atemzugvolumen Waehrend Beatmung Gemessen](Observation-mii-exa-icu-vent-atemzugvolumen-waehrend-beatmung-gemessen.md) | [MII PR ICU Atemzugvolumen Waehrend Beatmung](StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.md) |
 | [Vent Beatmung](Procedure-mii-exa-icu-vent-beatmung.md) | [MII PR ICU Beatmung](StructureDefinition-mii-pr-icu-beatmung.md) |

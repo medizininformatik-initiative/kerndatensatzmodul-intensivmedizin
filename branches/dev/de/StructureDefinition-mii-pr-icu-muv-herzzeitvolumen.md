@@ -110,7 +110,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Herzzeitvolumen",
   "title" : "MII PR ICU MUV Herzzeitvolumen",
   "status" : "draft",
-  "date" : "2026-11-23T10:24:48+00:00",
+  "date" : "2026-11-23T16:20:29+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
