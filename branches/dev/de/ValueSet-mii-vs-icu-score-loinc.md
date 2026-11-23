@@ -42,7 +42,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS ICU Score LOINC",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-23T08:37:48+00:00",
+  "date" : "2026-11-23T09:10:11+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

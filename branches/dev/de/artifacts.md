@@ -94,6 +94,7 @@ Diese definieren Einschränkungen für FHIR-Ressourcen für Systeme, die mit dem
 | [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) |  |
 | [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |  |
 | [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |  |
+| [ MII PR ICU MUV Body Mass Index  ](StructureDefinition-mii-pr-icu-muv-bmi.md) | Body mass index (BMI) calculated from body weight and height, expressed in kg/m2. |
 | [ MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie  ](StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | Body-weight-normalised energy expenditure assessed by indirect calorimetry over a reporting period, expressed in kcal/kg/d. LOINC and IEEE codings identify the measurement and method. |
 | [ MII PR ICU MUV Geburtsgewicht  ](StructureDefinition-mii-pr-icu-muv-geburtsgewicht.md) | Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later. |
 | [ MII PR ICU MUV Herzfrequenz  ](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |  |
@@ -358,6 +359,7 @@ Dies sind Ressourcen, die in diesem Implementierungsleitfaden verwendet werden, 
 
 | |
 | :--- |
+| [ mii-exa-icu-muv-bmi  ](Observation-mii-exa-icu-muv-bmi.md) |
 | [ mii-exa-icu-score-capd  ](Observation-mii-exa-icu-score-capd.md) |
 | [ mii-exa-icu-score-comfort-b  ](Observation-mii-exa-icu-score-comfort-b.md) |
 | [ mii-exa-icu-score-kuss  ](Observation-mii-exa-icu-score-kuss.md) |

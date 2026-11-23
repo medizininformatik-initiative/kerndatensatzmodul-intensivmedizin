@@ -41,7 +41,7 @@ SNOMED CT qualifiers for how daily energy requirement was determined. The codes 
   "name" : "MII_VS_ICU_Method_Kalorienbedarf",
   "title" : "MII VS ICU Method Kalorienbedarf",
   "status" : "draft",
-  "date" : "2026-11-23T08:37:48+00:00",
+  "date" : "2026-11-23T09:10:11+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

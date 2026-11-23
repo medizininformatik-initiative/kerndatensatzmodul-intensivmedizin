@@ -107,12 +107,13 @@ Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Bilanz Kalorienbedarf Pro Tag](Observation-mii-exa-icu-bilanz-kalorienbedarf-pro-tag.md) | [MII PR ICU Bilanz Kalorienbedarf pro Tag](StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.md) |
 | [Bilanz Tagesbilanz Fluessigkeit](Observation-mii-exa-icu-bilanz-tagesbilanz-fluessigkeit.md) | [MII PR ICU Bilanz Tagesbilanz Fluessigkeit](extern-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.md)(ISiK) |
 
-#### Monitoring und Vitaldaten (58)
+#### Monitoring und Vitaldaten (59)
 
 | | |
 | :--- | :--- |
 | [Muv Arterieller Blutdruck](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) | [MII PR ICU MUV Arterieller Blutdruck](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) |
 | [Muv Atemfrequenz](Observation-mii-exa-icu-muv-atemfrequenz.md) | [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) |
+| [Muv Bmi](Observation-mii-exa-icu-muv-bmi.md) | [MII PR ICU MUV Body Mass Index](StructureDefinition-mii-pr-icu-muv-bmi.md) |
 | [Muv Energieverbrauch Indirekte Kalorimetrie](Observation-mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | [MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie](StructureDefinition-mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) |
 | [Muv Geburtsgewicht](Observation-mii-exa-icu-muv-geburtsgewicht.md) | [MII PR ICU MUV Geburtsgewicht](StructureDefinition-mii-pr-icu-muv-geburtsgewicht.md) |
 | [Muv Herzfrequenz](Observation-mii-exa-icu-muv-herzfrequenz.md) | [MII PR ICU MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfrequenz.md) |

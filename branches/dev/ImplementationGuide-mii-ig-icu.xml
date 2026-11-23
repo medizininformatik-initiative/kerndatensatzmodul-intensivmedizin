@@ -2024,6 +2024,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/mii-pr-icu-muv-bmi"/>
+      </reference>
+      <name value="MII PR ICU MUV Body Mass Index"/>
+      <description value="Body mass index (BMI) calculated from body weight and height, expressed in kg/m2."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"/>
       </reference>
       <name value="MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie"/>
@@ -2844,6 +2855,16 @@
       </reference>
       <name value="MII VS Score SNOMED CT"/>
       <description value="Value set for cores - SNOMED CT codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mii-exa-icu-muv-bmi"/>
+      </reference>
+      <name value="mii-exa-icu-muv-bmi"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
