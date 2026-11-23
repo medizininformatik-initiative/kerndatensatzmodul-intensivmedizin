@@ -738,7 +738,7 @@
         "reference": {
           "reference": "StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
         },
-        "name": "MII PR ICU Dynamische Kompliance",
+        "name": "MII PR ICU Dynamische Compliance",
         "exampleBoolean": false
       },
       {
@@ -2295,9 +2295,9 @@
         "reference": {
           "reference": "Observation/mii-exa-icu-vent-dynamische-kompliance"
         },
-        "description": "Beispiel: MII PR ICU Dynamische Kompliance",
+        "description": "Beispiel: MII PR ICU Dynamische Compliance",
         "exampleBoolean": true,
-        "name": "Vent Dynamische Kompliance"
+        "name": "Vent Dynamische Compliance"
       },
       {
         "reference": {
