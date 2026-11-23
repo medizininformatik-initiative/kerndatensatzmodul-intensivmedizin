@@ -898,6 +898,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-muv-bmi"
+        },
+        "name": "MII PR ICU MUV Body Mass Index",
+        "description": "Body mass index (BMI) calculated from body weight and height, expressed in kg/m2.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie"
         },
         "name": "MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie",
@@ -1480,6 +1488,13 @@
         "name": "MII VS Score SNOMED CT",
         "description": "Value set for cores - SNOMED CT codes",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-muv-bmi"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-bmi"
       },
       {
         "reference": {
