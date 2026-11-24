@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss | *Version*:2027.0.0 |
-| Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss |
+| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss |
 
  
 Airway pressure on the ventilator measured at mean expiratory gas flow. 
@@ -92,7 +92,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
   "title" : "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

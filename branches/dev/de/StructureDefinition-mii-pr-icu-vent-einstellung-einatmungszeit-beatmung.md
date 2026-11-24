@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-einstellung-einatmungszeit-beatmung | *Version*:2027.0.0 |
-| Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung |
+| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung |
 
  
 Inspiratory time set on the ventilator: the duration of the inspiratory phase of a mechanical breath. 
@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
   "title" : "MII PR ICU Einstellung Einatmungszeit Beatmung",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-gasfluss | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Exspiratorischer_Gasfluss |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_VENT_Exspiratorischer_Gasfluss |
 
  
 Expiratory gas flow in the airway measured by the ventilator. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
   "name" : "MII_PR_ICU_VENT_Exspiratorischer_Gasfluss",
   "title" : "MII PR ICU Exspiratorischer Gasfluss",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

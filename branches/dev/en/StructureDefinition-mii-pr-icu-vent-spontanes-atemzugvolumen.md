@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Spontanes_Atemzugvolumen |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_VENT_Spontanes_Atemzugvolumen |
 
  
 Spontaneous tidal volume: the volume of gas per breath the patient breathes without mechanical support. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontanes_Atemzugvolumen",
   "title" : "MII PR ICU Spontanes Atemzugvolumen",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

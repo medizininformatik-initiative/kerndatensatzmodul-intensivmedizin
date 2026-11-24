@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-bps | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_BPS |
+| Draft Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_BPS |
 
  
 Total score of the Behavioral Pain Scale (BPS) for mechanically ventilated adults. The total ranges from 3 to 12. 
@@ -94,7 +94,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_BPS",
   "title" : "MII PR ICU Score BPS",
   "status" : "draft",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

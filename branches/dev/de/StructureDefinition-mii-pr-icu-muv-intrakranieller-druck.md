@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-intrakranieller-druck | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Intrakranieller_Druck |
+| Draft Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Intrakranieller_Druck |
 
  
 Intracranial pressure (ICP): the pressure inside the skull. 
@@ -110,7 +110,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Intrakranieller_Druck",
   "title" : "MII PR ICU MUV Intrakranieller Druck (ICP)",
   "status" : "draft",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

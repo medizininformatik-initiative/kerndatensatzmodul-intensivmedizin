@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-beatmung | *Version*:2027.0.0 |
-| Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_Beatmung |
+| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_Beatmung |
 
  
 Ventilation as a procedure: the period during which a patient receives invasive or non-invasive respiratory support. Individual ventilation settings and measurements are recorded with the Parameter von Beatmung profiles. 
@@ -202,7 +202,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Beatmung",
   "title" : "MII PR ICU Beatmung",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

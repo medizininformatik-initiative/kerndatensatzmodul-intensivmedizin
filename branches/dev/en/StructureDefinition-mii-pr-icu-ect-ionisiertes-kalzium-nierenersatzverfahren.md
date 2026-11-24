@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren |
 
  
 Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-io
   "name" : "MII_PR_ICU_ECT_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

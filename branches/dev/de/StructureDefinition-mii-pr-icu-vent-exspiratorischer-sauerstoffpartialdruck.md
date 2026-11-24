@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-exspiratorischer-sauerstoffpartialdruck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck |
+| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck |
 
  
 Partial pressure of oxygen in the exhaled gas. 
@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Exspiratorischer_Sauerstoffpartialdruck",
   "title" : "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

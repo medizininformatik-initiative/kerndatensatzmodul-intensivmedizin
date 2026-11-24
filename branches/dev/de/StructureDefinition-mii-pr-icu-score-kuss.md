@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-kuss | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-23 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_KUSS |
+| Draft Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_Score_KUSS |
 
  
 Kindliche Unbehagens- und Schmerzskala (KUSS) - Fremdbeobachtungsskala für den postoperativen Schmerz bei Kindern von der Geburt bis zum Ende des 4. Lebensjahres. Für sedierte, beatmete oder relaxierte Kinder nicht validiert. 
@@ -93,7 +93,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_KUSS",
   "title" : "MII PR ICU Score KUSS",
   "status" : "draft",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

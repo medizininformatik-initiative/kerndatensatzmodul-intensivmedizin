@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-substituatfluss | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_ECT_Substituatfluss |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_ECT_Substituatfluss |
 
  
 Flow rate of the substitution fluid given during a renal replacement procedure such as haemofiltration. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-su
   "name" : "MII_PR_ICU_ECT_Substituatfluss",
   "title" : "MII PR ICU Substituatfluss",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

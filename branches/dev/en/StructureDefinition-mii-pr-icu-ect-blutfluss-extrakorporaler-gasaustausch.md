@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch |
 
  
 Blood flow through the circuit of an extracorporeal gas exchange, such as ECMO or ECCO2R. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-bl
   "name" : "MII_PR_ICU_ECT_Blutfluss_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-horowitz-in-arteriellem-blut | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut |
 
  
 Horowitz index (oxygenation index): the arterial oxygen partial pressure divided by the inspiratory oxygen fraction (PaO2/FiO2). 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-h
   "name" : "MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut",
   "title" : "MII PR ICU Horowitz In Arteriellem Blut",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

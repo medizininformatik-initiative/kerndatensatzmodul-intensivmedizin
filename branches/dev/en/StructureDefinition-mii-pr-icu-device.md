@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_Device |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_Device |
 
  
 A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-device
   "name" : "MII_PR_ICU_Device",
   "title" : "MII PR ICU Device",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

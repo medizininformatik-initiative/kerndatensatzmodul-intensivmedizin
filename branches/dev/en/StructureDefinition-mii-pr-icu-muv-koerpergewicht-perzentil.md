@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil | *Version*:2027.0.0 |
-| Draft as of 2026-11-23 | *Computable Name*:MII_PR_ICU_MUV_Koerpergewicht_Perzentil |
+| Draft as of 2026-11-24 | *Computable Name*:MII_PR_ICU_MUV_Koerpergewicht_Perzentil |
 
  
 Body weight of a child expressed as a percentile for age, compared with a reference population. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergewicht_Perzentil",
   "title" : "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

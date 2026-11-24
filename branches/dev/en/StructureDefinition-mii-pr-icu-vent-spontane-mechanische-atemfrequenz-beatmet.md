@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet | *Version*:2027.0.0 |
-| Active as of 2026-11-23 | *Computable Name*:MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet |
+| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet |
 
  
 Total breath rate of a ventilated patient: the number of spontaneous and mechanical breaths per minute. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontane_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

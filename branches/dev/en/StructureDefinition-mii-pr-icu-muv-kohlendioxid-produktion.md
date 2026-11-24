@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion | *Version*:2027.0.0 |
-| Draft as of 2026-11-23 | *Computable Name*:MII_PR_ICU_MUV_Kohlendioxid_Produktion |
+| Draft as of 2026-11-24 | *Computable Name*:MII_PR_ICU_MUV_Kohlendioxid_Produktion |
 
  
 Carbon dioxide production (VCO2): the volume of carbon dioxide the body produces per minute. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Kohlendioxid_Produktion",
   "title" : "MII PR ICU MUV Kohlendioxid Produktion",
   "status" : "draft",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

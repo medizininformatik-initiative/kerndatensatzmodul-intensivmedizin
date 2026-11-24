@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu | *Version*:2027.0.0 |
-| Draft as of 2026-11-23 | *Computable Name*:MII_PR_ICU_Score_CAM_ICU |
+| Draft as of 2026-11-24 | *Computable Name*:MII_PR_ICU_Score_CAM_ICU |
 
  
 Overall result of the Confusion Assessment Method for the ICU (CAM-ICU) delirium screening, recorded as positive or negative. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_CAM_ICU",
   "title" : "MII PR ICU Score CAM-ICU",
   "status" : "draft",
-  "date" : "2026-11-23T16:20:29+00:00",
+  "date" : "2026-11-24T11:24:10+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
