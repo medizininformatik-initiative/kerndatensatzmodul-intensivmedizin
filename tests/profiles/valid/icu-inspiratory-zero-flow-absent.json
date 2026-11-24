@@ -1,16 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess",
+  "id": "mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-gemess",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss"
     ]
   },
-  "partOf": [
-    {
-      "reference": "Procedure/mii-exa-icu-vent-beatmung"
-    }
-  ],
   "status": "final",
   "category": [
     {
@@ -35,19 +30,23 @@
     ]
   },
   "subject": {
-    "reference": "Patient/mii-exa-icu-patient"
+    "type": "Patient",
+    "identifier": {
+      "system": "urn:icu:synthetic-patient",
+      "value": "inspiratory-pressure"
+    }
   },
   "effectivePeriod": {
     "start": "2019-12-23T09:30:10+01:00",
     "end": "2019-12-23T10:30:10+01:00"
   },
-  "valueQuantity": {
-    "value": 10.0,
-    "system": "http://unitsofmeasure.org",
-    "code": "cm[H2O]",
-    "unit": "cm[H2O]"
-  },
-  "device": {
-    "reference": "DeviceMetric/mii-exa-icu-vent-gemessene-parameter-beatmung"
+  "dataAbsentReason": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code": "unknown",
+        "version": "2.0.0"
+      }
+    ]
   }
 }

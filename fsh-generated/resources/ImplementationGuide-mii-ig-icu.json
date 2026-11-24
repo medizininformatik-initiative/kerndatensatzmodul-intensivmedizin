@@ -603,18 +603,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss"
+          "reference": "StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss"
         },
-        "name": "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
-        "description": "Airway pressure on the ventilator measured at mean expiratory gas flow.",
+        "name": "MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss",
+        "description": "Airway pressure on a ventilator measured at zero inspiratory gas flow.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"
+          "reference": "StructureDefinition/mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss"
         },
-        "name": "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
-        "description": "Airway pressure on the ventilator measured at a moment of zero gas flow.",
+        "name": "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+        "description": "Airway pressure on the ventilator measured at mean expiratory gas flow.",
         "exampleBoolean": false
       },
       {
@@ -2300,19 +2300,19 @@
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest"
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-eingest"
         },
-        "description": "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "description": "Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss",
         "exampleBoolean": true,
-        "name": "Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest"
+        "name": "Vent Atemwegsdruck Bei Null Inspiratori Gasf Eingest"
       },
       {
         "reference": {
-          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess"
+          "reference": "Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-gemess"
         },
-        "description": "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "description": "Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss",
         "exampleBoolean": true,
-        "name": "Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess"
+        "name": "Vent Atemwegsdruck Bei Null Inspiratori Gasf Gemess"
       },
       {
         "reference": {
