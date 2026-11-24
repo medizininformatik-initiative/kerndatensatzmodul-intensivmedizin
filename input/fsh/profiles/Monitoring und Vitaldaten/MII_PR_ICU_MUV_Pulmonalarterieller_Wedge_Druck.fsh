@@ -37,19 +37,16 @@ Description: "Pulmonary artery wedge pressure: the pressure measured with a pulm
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #75994-4
-* code.coding[loinc] ^patternCoding.display = "Pulmonary artery wedge pressure"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #118433006
-* code.coding[sct] ^patternCoding.display = "Pulmonary artery wedge pressure (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #150052
-* code.coding[IEEE-11073] ^patternCoding.display = "Pulmonary artery wedge pressure"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS
@@ -78,3 +75,16 @@ Description: "Pulmonary artery wedge pressure: the pressure measured with a pulm
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS

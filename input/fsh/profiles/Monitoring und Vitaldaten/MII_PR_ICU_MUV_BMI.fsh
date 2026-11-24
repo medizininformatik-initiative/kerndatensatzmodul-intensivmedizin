@@ -27,3 +27,16 @@ Description: "Body mass index (BMI) calculated from body weight and height, expr
 * effectivePeriod.start 1.. MS
 * effectivePeriod.end MS
 * derivedFrom MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* category[VSCat].coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* component.code.coding.display 0..1 MS
+* component.code.coding.version 1..1 MS
+* component.dataAbsentReason.coding.display 0..1 MS
+* component.dataAbsentReason.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

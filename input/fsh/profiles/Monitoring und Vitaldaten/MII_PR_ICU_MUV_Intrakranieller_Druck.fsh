@@ -37,19 +37,16 @@ Description: "Intracranial pressure (ICP): the pressure inside the skull."
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #60956-0
-* code.coding[loinc] ^patternCoding.display = "Intracranial pressure (ICP)"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #250844005
-* code.coding[sct] ^patternCoding.display = "Intracranial pressure (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #153608
-* code.coding[IEEE-11073] ^patternCoding.display = "Intracranial pressure"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS
@@ -72,9 +69,22 @@ Description: "Intracranial pressure (ICP): the pressure inside the skull."
 * valueQuantity.code 1..1 MS
 
 * bodySite from $mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten (extensible)
-* bodySite = $sct#731998000 "Entire intracranial structure (body structure)"
+* bodySite = $sct#731998000
 * bodySite MS
 
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS

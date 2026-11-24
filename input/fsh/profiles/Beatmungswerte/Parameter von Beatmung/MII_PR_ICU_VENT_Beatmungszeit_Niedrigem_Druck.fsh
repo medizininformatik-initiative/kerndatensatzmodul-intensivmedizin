@@ -9,12 +9,16 @@ Description: "Set duration of the low pressure level in pressure-controlled vent
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 2..
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76229-4 "Low pressure hold time setting Ventilator"
+* code.coding[loinc] = $loinc#76229-4
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#16929864 "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
+* code.coding[IEEE-11073] = $ieee-11073#16929864
 * valueQuantity = $ucum#s
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

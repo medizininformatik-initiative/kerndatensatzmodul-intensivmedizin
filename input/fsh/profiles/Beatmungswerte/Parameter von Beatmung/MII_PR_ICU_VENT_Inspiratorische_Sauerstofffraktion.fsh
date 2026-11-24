@@ -9,13 +9,19 @@ Description: "Inspiratory oxygen fraction (FiO2): the proportion of oxygen in th
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 0..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 * category contains Sauerstofftherapie 0..1
-* category[Sauerstofftherapie] = $sct#57485005 "Oxygen therapy (procedure)"
+* category[Sauerstofftherapie] = $sct#57485005
 
 * code.coding 1..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250774007 "Inspired oxygen concentration (observable entity)"
+* code.coding[sct] = $sct#250774007
 * code.coding[loinc] ..0
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#%
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[Sauerstofftherapie].coding.display 0..1 MS
+* category[Sauerstofftherapie].coding.version 1..1 MS
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

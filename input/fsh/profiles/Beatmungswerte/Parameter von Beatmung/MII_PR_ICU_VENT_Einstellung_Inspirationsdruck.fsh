@@ -10,14 +10,18 @@ Description: "Inspiratory pressure set on the ventilator (pInsp) for pressure-co
 * ^purpose = "Das Profil bezieht sich auf die Einstellung des inspiratorischen Beatmungsdrucks am Beatmungsgerät."
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 2..
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76003-3 "Pressure Respiratory system airway --during inspiration on ventilator"
+* code.coding[loinc] = $loinc#76003-3
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151972 "MDC_VENT_PRESS_AWAY"
+* code.coding[IEEE-11073] = $ieee-11073#151972
 * code.coding[sct] ..0
 * valueQuantity = $ucum#cm[H2O]
 
 // IEEE 11073 Code verwendet als Alias explizit "pInsp", der LOINC-Code ist dem Mapping dieses IEEE-Codes entnommen - eine entsprechende semantische Übereinstimmnung wird somit unterstellt
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

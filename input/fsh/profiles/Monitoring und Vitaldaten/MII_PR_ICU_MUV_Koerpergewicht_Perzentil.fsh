@@ -36,13 +36,11 @@ Description: "Body weight of a child expressed as a percentile for age, compared
     sct 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8336-0
-* code.coding[loinc] ^patternCoding.display = "Body weight [Percentile] Per age"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1153592008
-* code.coding[sct] ^patternCoding.display = "Weight for age percentile (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
@@ -71,3 +69,15 @@ Description: "Body weight of a child expressed as a percentile for age, compared
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

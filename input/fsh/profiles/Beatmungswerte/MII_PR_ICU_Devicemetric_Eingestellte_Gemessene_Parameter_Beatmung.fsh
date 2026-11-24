@@ -17,3 +17,7 @@ Description: "A metric of a ventilator that states whether a ventilation paramet
 * source only Reference(MII_PR_ICU_Device)
 * source MS
 * category MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* type.coding.display 0..1 MS
+* type.coding.version 1..1 MS

@@ -39,3 +39,15 @@ Description: "Respiratory rate of the patient: the number of breaths per minute.
 * valueQuantity.code from mii-vs-icu-unit-equivalent-ucum-breaths-per-minute (required)
 
 * dataAbsentReason MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[snomed].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* category[VSCat].coding.display 0..1 MS
+* category[VSCat].coding.version 1..1 MS

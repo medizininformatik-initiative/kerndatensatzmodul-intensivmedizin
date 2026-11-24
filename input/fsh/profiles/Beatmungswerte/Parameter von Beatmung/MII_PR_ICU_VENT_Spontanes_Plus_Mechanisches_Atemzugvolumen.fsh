@@ -9,10 +9,14 @@ Description: "Tidal volume of spontaneous and mechanical breaths together during
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#20118-6 "Tidal volume.spontaneous+mechanical --on ventilator"
+* code.coding[loinc] = $loinc#20118-6
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#mL
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

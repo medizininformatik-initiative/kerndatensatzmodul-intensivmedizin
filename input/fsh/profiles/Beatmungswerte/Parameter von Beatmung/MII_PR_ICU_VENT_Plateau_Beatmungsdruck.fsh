@@ -9,13 +9,17 @@ Description: "Plateau pressure: the airway pressure at the end of inspiration wh
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#698822002 "Airway plateau pressure (observable entity)"
+* code.coding[sct] = $sct#698822002
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76259-1 "Pressure.plateau Respiratory system airway --on ventilator"
+* code.coding[loinc] = $loinc#76259-1
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152424 "MDC_VENT_PRESS_RESP_PLAT"
+* code.coding[IEEE-11073] = $ieee-11073#152424
 * valueQuantity = $ucum#cm[H2O]
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

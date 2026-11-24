@@ -41,3 +41,23 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[loinc].version 1..1 MS
 * code.coding[sct].version 1..1 MS
 * code.coding[IEEE-11073].version 1..1 MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* component.code.coding.display 0..1 MS
+* component.code.coding.version 1..1 MS
+* component.dataAbsentReason.coding.display 0..1 MS
+* component.dataAbsentReason.coding.version 1..1 MS
+* component.interpretation.coding.display 0..1 MS
+* component.interpretation.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS

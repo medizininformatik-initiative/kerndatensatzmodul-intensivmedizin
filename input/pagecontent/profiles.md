@@ -153,6 +153,12 @@ Body height and general body weight retain their German parent profiles and proh
 
 Each measurement Coding must state the terminology edition actually used. The profiles do not fix editions or displays. The IEEE measurement coding remains required.
 
+**Terminology versions and displays (all module-owned profiles)**
+
+Every Coding in the module-owned profiles requires `version` (1..1, Must Support) and supports `display` (0..1, Must Support). Fixed codes and patterns contain system and code only; they never fix a version or a display.
+
+Deviations from ISiK: the module-owned monitoring base `MII_PR_ICU_Monitoring_Und_Vitaldaten` keeps the ISiK 6.0.0 element rules unchanged, so these Coding rules are set in the profiles derived from it. The ISiK-hosted profiles listed below are used as published by gematik and do not yet follow these rules; change requests to gematik are pending.
+
 <!-- BEGIN GENERATED:profile-map:isik-note -->
 <p class="icu-note"><b>ISiK-hosted profiles &mdash; de.gematik.isik 6.0.0</b><br>Hosted and versioned by gematik; this guide lists them as clinical content of the ICU core data set. Generated from the pinned package version &mdash; the list only changes with a deliberate pin bump. Each link opens the profile rendered in this guide (differential, snapshot, must support, definitions); the profiles themselves stay in the ISiK package.</p>
 <!-- END GENERATED:profile-map:isik-note -->

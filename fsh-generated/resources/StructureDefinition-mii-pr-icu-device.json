@@ -69,6 +69,17 @@
         "mustSupport": true
       },
       {
+        "id": "Device.type.coding.version",
+        "path": "Device.type.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.type.coding.display",
+        "path": "Device.type.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Device.version",
         "path": "Device.version",
         "mustSupport": true
@@ -86,6 +97,17 @@
       {
         "id": "Device.property.type",
         "path": "Device.property.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.property.type.coding.version",
+        "path": "Device.property.type.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.property.type.coding.display",
+        "path": "Device.property.type.coding.display",
         "mustSupport": true
       }
     ]

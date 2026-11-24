@@ -49,3 +49,18 @@ Description: "Head circumference, measured as the largest circumference of the h
 * bodySite.coding MS
 * bodySite.coding.system 1.. MS
 * bodySite.coding.code 1.. MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[snomed].display 0..1 MS
+* code.coding[snomed].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category[VSCat].coding.display 0..1 MS
+* category[VSCat].coding.version 1..1 MS

@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,7 +23,8 @@
       {
         "system": "http://loinc.org",
         "code": "8310-5",
-        "display": "Body temperature"
+        "display": "Body temperature",
+        "version": "2.83"
       }
     ]
   },

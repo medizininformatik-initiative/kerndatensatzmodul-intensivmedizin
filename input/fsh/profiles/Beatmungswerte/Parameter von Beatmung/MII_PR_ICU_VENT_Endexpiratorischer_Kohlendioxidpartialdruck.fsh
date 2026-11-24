@@ -9,16 +9,22 @@ Description: "End-tidal carbon dioxide partial pressure (etCO2): the partial pre
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 0..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 * category contains Sauerstofftherapie 0..1
-* category[Sauerstofftherapie] = $sct#57485005 "Oxygen therapy (procedure)"
+* category[Sauerstofftherapie] = $sct#57485005
 
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250790007 "End tidal carbon dioxide tension (observable entity)"
+* code.coding[sct] = $sct#250790007
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#19891-1 "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
+* code.coding[loinc] = $loinc#19891-1
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151708 "MDC_CONC_AWAY_CO2_ET"
+* code.coding[IEEE-11073] = $ieee-11073#151708
 * valueQuantity = $ucum#mm[Hg]
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[Sauerstofftherapie].coding.display 0..1 MS
+* category[Sauerstofftherapie].coding.version 1..1 MS
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

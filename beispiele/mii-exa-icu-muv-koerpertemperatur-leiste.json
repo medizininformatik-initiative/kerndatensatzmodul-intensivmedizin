@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,21 +23,25 @@
       {
         "system": "http://snomed.info/sct",
         "code": "415929009",
-        "display": "Estimated core body temperature measured in inguinal region"
+        "display": "Estimated core body temperature measured in inguinal region",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
-        "code": "8310-5"
+        "code": "8310-5",
+        "version": "2.83"
       },
       {
         "system": "http://loinc.org",
         "code": "104063-3",
-        "display": "Body temperature - Groin"
+        "display": "Body temperature - Groin",
+        "version": "2.83"
       },
       {
         "system": "http://loinc.org",
         "code": "8329-5",
-        "display": "Body temperature - Core"
+        "display": "Body temperature - Core",
+        "version": "2.83"
       }
     ]
   },
@@ -58,7 +63,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "26893007",
-        "display": "Inguinal region structure (body structure)"
+        "display": "Inguinal region structure (body structure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }

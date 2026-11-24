@@ -36,8 +36,7 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -55,8 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250822000",
-          "system": "http://snomed.info/sct",
-          "display": "Inspiration/expiration time ratio (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -67,8 +65,7 @@
         "max": "1",
         "patternCoding": {
           "code": "75931-6",
-          "system": "http://loinc.org",
-          "display": "Inspiration/Expiration time Ratio"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -79,8 +76,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151832",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_RATIO_IE"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

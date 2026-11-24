@@ -82,3 +82,18 @@ Description: "Generic profile for a single setting or measurement of an extracor
 * bodySite from mii-vs-icu-body-site-observation-extrakorporale-verfahren (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren)
 * device MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* category.coding[sct].version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[IEEE-11073].display 0..1 MS
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

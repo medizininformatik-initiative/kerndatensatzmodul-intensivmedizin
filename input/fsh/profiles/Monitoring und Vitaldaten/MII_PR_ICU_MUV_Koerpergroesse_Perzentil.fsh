@@ -34,7 +34,6 @@ Description: "Body height of a child expressed as a percentile for age, compared
 * code.coding contains sct 1..1 MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1153605006
-* code.coding[sct] ^patternCoding.display = "Body height for age percentile (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
@@ -62,3 +61,14 @@ Description: "Body height of a child expressed as a percentile for age, compared
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

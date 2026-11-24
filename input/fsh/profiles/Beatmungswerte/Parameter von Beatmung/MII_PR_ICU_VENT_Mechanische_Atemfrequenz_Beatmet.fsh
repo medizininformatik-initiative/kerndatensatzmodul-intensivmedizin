@@ -9,13 +9,17 @@ Description: "Mechanical breath rate: the number of breaths per minute delivered
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250876000 "Ventilator rate (observable entity)"
+* code.coding[sct] = $sct#250876000
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#33438-3 "Breath rate mechanical --on ventilator"
+* code.coding[loinc] = $loinc#33438-3
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151586 "MDC_VENT_RESP_RATE"
+* code.coding[IEEE-11073] = $ieee-11073#151586
 * valueQuantity = $ucum#/min
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

@@ -9,13 +9,17 @@ Description: "Inspiration to expiration time ratio (I:E ratio) of a ventilator b
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250822000 "Inspiration/expiration time ratio (observable entity)"
+* code.coding[sct] = $sct#250822000
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#75931-6 "Inspiration/Expiration time Ratio"
+* code.coding[loinc] = $loinc#75931-6
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151832 "MDC_RATIO_IE"
+* code.coding[IEEE-11073] = $ieee-11073#151832
 * valueQuantity = $ucum#1
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

@@ -9,13 +9,17 @@ Description: "Tidal volume delivered by the ventilator: the measured volume of g
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250874002 "Ventilator delivered tidal volume (observable entity)"
+* code.coding[sct] = $sct#250874002
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76222-9 "Tidal volume Ventilator --on ventilator"
+* code.coding[loinc] = $loinc#76222-9
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151980 "MDC_VENT_VOL_TIDAL"
+* code.coding[IEEE-11073] = $ieee-11073#151980
 * valueQuantity = $ucum#mL
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

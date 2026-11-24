@@ -9,13 +9,17 @@ Description: "Minute volume of mechanical ventilation: the volume of gas the ven
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#250875001 "Ventilator delivered minute volume (observable entity)"
+* code.coding[sct] = $sct#250875001
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76009-0 "Inspired minute Volume during Mechanical ventilation"
+* code.coding[loinc] = $loinc#76009-0
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#152004 "MDC_VENT_VOL_MINUTE_INSP"
+* code.coding[IEEE-11073] = $ieee-11073#152004
 * valueQuantity = $ucum#L/min
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

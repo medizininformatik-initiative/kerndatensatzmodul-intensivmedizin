@@ -65,3 +65,23 @@ Description: "Carbon dioxide production (VCO2): the volume of carbon dioxide the
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* component.code.coding.display 0..1 MS
+* component.code.coding.version 1..1 MS
+* component.dataAbsentReason.coding.display 0..1 MS
+* component.dataAbsentReason.coding.version 1..1 MS
+* component.interpretation.coding.display 0..1 MS
+* component.interpretation.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS
