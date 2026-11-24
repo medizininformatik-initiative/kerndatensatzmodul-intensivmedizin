@@ -56,11 +56,13 @@ Profile: [MII PR ICU Horowitz In Arteriellem Blut](StructureDefinition-mii-pr-ic
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "50984-4",
       "display" : "Horowitz index in Arterial blood"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150656",
       "display" : "MDC_O2_OXYGENATION_RATIO"
     }]

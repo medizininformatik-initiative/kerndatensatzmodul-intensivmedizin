@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_CAM_ICU",
   "title" : "MII PR ICU Score CAM-ICU",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -137,12 +137,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:dgai.version",
-      "path" : "Observation.code.coding.version",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding:dgai.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
@@ -158,6 +152,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
       }
+    },
+    {
+      "id" : "Observation.value[x].coding.version",
+      "path" : "Observation.value[x].coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x].coding.display",
+      "path" : "Observation.value[x].coding.display",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.interpretation",

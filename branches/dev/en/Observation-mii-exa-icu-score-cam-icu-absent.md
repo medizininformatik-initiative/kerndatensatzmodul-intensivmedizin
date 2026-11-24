@@ -48,6 +48,7 @@ CAM-ICU assessment was not performed.
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "survey",
       "display" : "Survey"
     }]
@@ -75,6 +76,7 @@ CAM-ICU assessment was not performed.
   "dataAbsentReason" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "2.0.0",
       "code" : "not-performed",
       "display" : "Not Performed"
     }]

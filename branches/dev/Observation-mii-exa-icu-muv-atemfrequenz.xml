@@ -12,6 +12,7 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
@@ -24,6 +25,7 @@
     </coding>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="9279-1"/>
       <display value="Respiratory Rate"/>
     </coding>

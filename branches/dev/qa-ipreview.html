@@ -3478,7 +3478,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Tue, Nov 24, 2026 11:24+0000">2026-11-24</span>
+          Erstellt           <span title="Tue, Nov 24, 2026 12:01+0000">2026-11-24</span>
 
                     <br/>
 
@@ -7893,6 +7893,81 @@ Neue Draft-Score-Profile für die pädiatrische Intensivmedizin:           <em>C
           <a href="de/changes.html">web</a>
         </td>
         <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Terminologieversionen in allen modul-eigenen Profilen: Jedes Coding verlangt           <code class="language-plaintext highlighter-rouge">version</code>
+ (1..1, Must Support) und unterstützt           <code class="language-plaintext highlighter-rouge">display</code>
+ (0..1, Must Support), auch in Slices mit festem Code und unter           <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code>
+. Feste Codes und Patterns enthalten nur noch System und Code; sie legen weder Display noch Version fest (das SNOMED-CT-Versions-Pattern im Score-Basisprofil wurde entfernt). Die Displays der GCS-Komponentencodes ändern sich von 1.. auf 0..1.           <strong>
+Bestehende Instanzen, deren Codings keine <code class="language-plaintext highlighter-rouge">version</code> tragen, sind nicht mehr valide und müssen die verwendete Edition des Codesystems angeben
+          </strong>
+ (z. B. LOINC           <code class="language-plaintext highlighter-rouge">2.83</code>
+, SNOMED CT           <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/900000000000207008/version/20260701</code>
+, ISO/IEEE 11073           <code class="language-plaintext highlighter-rouge">2024-12-05</code>
+). Die ISiK-Profile und das an ISiK ausgerichtete Monitoring-Basisprofil bleiben unverändert; Änderungsanträge an gematik sind in Vorbereitung (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">#185</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">#19</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">#193</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Terminologieversionen in allen modul-eigenen Profilen: Jedes Coding verlangt           <code class="language-plaintext highlighter-rouge">version</code>
+ (1..1, Must Support) und unterstützt           <code class="language-plaintext highlighter-rouge">display</code>
+ (0..1, Must Support), auch in Slices mit festem Code und unter           <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code>
+. Feste Codes und Patterns enthalten nur noch System und Code; sie legen weder Display noch Version fest (das SNOMED-CT-Versions-Pattern im Score-Basisprofil wurde entfernt). Die Displays der GCS-Komponentencodes ändern sich von 1.. auf 0..1.           <strong>
+Bestehende Instanzen, deren Codings keine <code class="language-plaintext highlighter-rouge">version</code> tragen, sind nicht mehr valide und müssen die verwendete Edition des Codesystems angeben
+          </strong>
+ (z. B. LOINC           <code class="language-plaintext highlighter-rouge">2.83</code>
+, SNOMED CT           <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/900000000000207008/version/20260701</code>
+, ISO/IEEE 11073           <code class="language-plaintext highlighter-rouge">2024-12-05</code>
+). Die ISiK-Profile und das an ISiK ausgerichtete Monitoring-Basisprofil bleiben unverändert; Änderungsanträge an gematik sind in Vorbereitung (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">#185</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">#19</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">#193</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Terminologieversionen in allen modul-eigenen Profilen: Jedes Coding verlangt           <code class="language-plaintext highlighter-rouge">version</code>
+ (1..1, Must Support) und unterstützt           <code class="language-plaintext highlighter-rouge">display</code>
+ (0..1, Must Support), auch in Slices mit festem Code und unter           <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code>
+. Feste Codes und Patterns enthalten nur noch System und Code; sie legen weder Display noch Version fest (das SNOMED-CT-Versions-Pattern im Score-Basisprofil wurde entfernt). Die Displays der GCS-Komponentencodes ändern sich von 1.. auf 0..1.           <strong>
+Bestehende Instanzen, deren Codings keine <code class="language-plaintext highlighter-rouge">version</code> tragen, sind nicht mehr valide und müssen die verwendete Edition des Codesystems angeben
+          </strong>
+ (z. B. LOINC           <code class="language-plaintext highlighter-rouge">2.83</code>
+, SNOMED CT           <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/900000000000207008/version/20260701</code>
+, ISO/IEEE 11073           <code class="language-plaintext highlighter-rouge">2024-12-05</code>
+). Die ISiK-Profile und das an ISiK ausgerichtete Monitoring-Basisprofil bleiben unverändert; Änderungsanträge an gematik sind in Vorbereitung (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">#185</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">#19</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">#193</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
           <a href="https://github.com/hapifhir/org.hl7.fhir.core/pull/2460">github.com</a>
         </td>
         <td>
@@ -10320,7 +10395,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Tue, Nov 24, 2026 11:24+0000">2026-11-24</span>
+          Generated           <span title="Tue, Nov 24, 2026 12:01+0000">2026-11-24</span>
 
                     <br/>
 
@@ -11783,6 +11858,81 @@ New draft score profiles for paediatric intensive care:           <em>CAPD</em>
  ImplementationGuide: the           <code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code>
  coding now names version 3.0.0 of its code system, the version that defines the code           <code class="language-plaintext highlighter-rouge">package</code>
  (PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/160">#160</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Terminology versions in all module-owned profiles: every Coding requires           <code class="language-plaintext highlighter-rouge">version</code>
+ (1..1, must-support) and supports           <code class="language-plaintext highlighter-rouge">display</code>
+ (0..1, must-support), including slices with a fixed code and Codings under a           <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code>
+. Fixed codes and patterns now contain system and code only; they no longer fix a display or a version (the SNOMED CT version pattern in the Score base was removed). The GCS component code displays change from 1.. to 0..1.           <strong>
+Existing instances whose Codings carry no <code class="language-plaintext highlighter-rouge">version</code> no longer validate and must state the code system edition used
+          </strong>
+ (for example LOINC           <code class="language-plaintext highlighter-rouge">2.83</code>
+, SNOMED CT           <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/900000000000207008/version/20260701</code>
+, ISO/IEEE 11073           <code class="language-plaintext highlighter-rouge">2024-12-05</code>
+). The ISiK-hosted profiles and the ISiK-aligned monitoring base are unchanged; change requests to gematik are pending (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">#185</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">#19</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">#193</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Terminology versions in all module-owned profiles: every Coding requires           <code class="language-plaintext highlighter-rouge">version</code>
+ (1..1, must-support) and supports           <code class="language-plaintext highlighter-rouge">display</code>
+ (0..1, must-support), including slices with a fixed code and Codings under a           <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code>
+. Fixed codes and patterns now contain system and code only; they no longer fix a display or a version (the SNOMED CT version pattern in the Score base was removed). The GCS component code displays change from 1.. to 0..1.           <strong>
+Existing instances whose Codings carry no <code class="language-plaintext highlighter-rouge">version</code> no longer validate and must state the code system edition used
+          </strong>
+ (for example LOINC           <code class="language-plaintext highlighter-rouge">2.83</code>
+, SNOMED CT           <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/900000000000207008/version/20260701</code>
+, ISO/IEEE 11073           <code class="language-plaintext highlighter-rouge">2024-12-05</code>
+). The ISiK-hosted profiles and the ISiK-aligned monitoring base are unchanged; change requests to gematik are pending (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">#185</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">#19</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">#193</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Terminology versions in all module-owned profiles: every Coding requires           <code class="language-plaintext highlighter-rouge">version</code>
+ (1..1, must-support) and supports           <code class="language-plaintext highlighter-rouge">display</code>
+ (0..1, must-support), including slices with a fixed code and Codings under a           <code class="language-plaintext highlighter-rouge">patternCodeableConcept</code>
+. Fixed codes and patterns now contain system and code only; they no longer fix a display or a version (the SNOMED CT version pattern in the Score base was removed). The GCS component code displays change from 1.. to 0..1.           <strong>
+Existing instances whose Codings carry no <code class="language-plaintext highlighter-rouge">version</code> no longer validate and must state the code system edition used
+          </strong>
+ (for example LOINC           <code class="language-plaintext highlighter-rouge">2.83</code>
+, SNOMED CT           <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/900000000000207008/version/20260701</code>
+, ISO/IEEE 11073           <code class="language-plaintext highlighter-rouge">2024-12-05</code>
+). The ISiK-hosted profiles and the ISiK-aligned monitoring base are unchanged; change requests to gematik are pending (          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/185">#185</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/issues/19">#19</a>
+,           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/193">#193</a>
 )
         </td>
       </tr>

@@ -56,6 +56,7 @@ Profile: [MII PR ICU Atemzugvolumen Einstellung](StructureDefinition-mii-pr-icu-
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "20112-9",
       "display" : "Tidal volume setting Ventilator"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Atemzugvolumen Einstellung](StructureDefinition-mii-pr-icu-
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "16929196",
       "display" : "MDC_VENT_VOL_TIDAL_SETTING"
     }]

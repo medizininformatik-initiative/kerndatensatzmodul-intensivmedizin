@@ -46,8 +46,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 12 elements
- Must-Support: 17 elements
+Mandatory: 13 elements(1 nested mandatory element)
+ Must-Support: 21 elements
 
 **Slices**
 
@@ -77,8 +77,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 12 elements
- Must-Support: 17 elements
+Mandatory: 13 elements(1 nested mandatory element)
+ Must-Support: 21 elements
 
 **Slices**
 
@@ -103,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
   "name" : "MII_PR_ICU_Bilanz_Kalorienbedarf_Pro_Tag",
   "title" : "MII PR ICU Bilanz Kalorienbedarf pro Tag",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -173,6 +173,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
       },
       "min" : 1,
       "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -279,6 +290,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-b
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-method-kalorienbedarf"
       }
+    },
+    {
+      "id" : "Observation.method.coding.version",
+      "path" : "Observation.method.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.display",
+      "path" : "Observation.method.coding.display",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.method.text",

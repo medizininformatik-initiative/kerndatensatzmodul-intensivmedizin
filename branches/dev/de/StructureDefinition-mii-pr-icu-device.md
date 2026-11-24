@@ -45,8 +45,8 @@ Diese Struktur ist abgeleitet von [Device](http://hl7.org/fhir/R4/device.html)
 
 ** Summary **
 
-Mandatory: 0 element(2 nested mandatory elements)
- Must-Support: 12 elements
+Mandatory: 0 element(4 nested mandatory elements)
+ Must-Support: 16 elements
 
  **Schlüsselelemente-Ansicht** 
 
@@ -68,8 +68,8 @@ Diese Struktur ist abgeleitet von [Device](http://hl7.org/fhir/R4/device.html)
 
 ** Summary **
 
-Mandatory: 0 element(2 nested mandatory elements)
- Must-Support: 12 elements
+Mandatory: 0 element(4 nested mandatory elements)
+ Must-Support: 16 elements
 
  
 
@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "name" : "MII_PR_ICU_Device",
   "title" : "MII PR ICU Device",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -169,6 +169,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
       "mustSupport" : true
     },
     {
+      "id" : "Device.type.coding.version",
+      "path" : "Device.type.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Device.type.coding.display",
+      "path" : "Device.type.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Device.version",
       "path" : "Device.version",
       "mustSupport" : true
@@ -186,6 +197,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
     {
       "id" : "Device.property.type",
       "path" : "Device.property.type",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Device.property.type.coding.version",
+      "path" : "Device.property.type.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Device.property.type.coding.display",
+      "path" : "Device.property.type.coding.display",
       "mustSupport" : true
     }]
   }

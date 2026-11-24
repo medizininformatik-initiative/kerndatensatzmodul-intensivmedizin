@@ -47,7 +47,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 ** Summary **
 
 Mandatory: 3 elements(13 nested mandatory elements)
- Must-Support: 13 elements
+ Must-Support: 16 elements
  Prohibited: 1 element
 
 **Slices**
@@ -81,7 +81,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 ** Summary **
 
 Mandatory: 3 elements(13 nested mandatory elements)
- Must-Support: 13 elements
+ Must-Support: 16 elements
  Prohibited: 1 element
 
 **Slices**
@@ -107,7 +107,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_GCS",
   "title" : "MII PR ICU Score GCS",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -189,11 +189,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "patternCode" : "9269-2"
     },
     {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Glasgow coma score total"
-    },
-    {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
@@ -203,11 +198,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "id" : "Observation.code.coding:sct.code",
       "path" : "Observation.code.coding.code",
       "patternCode" : "248241002"
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Glasgow coma score (observable entity)"
     },
     {
       "id" : "Observation.code.coding:ieee11073",
@@ -299,12 +289,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:GCSeyes.code.coding.display",
-      "path" : "Observation.component.code.coding.display",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.component:GCSeyes.value[x]",
       "path" : "Observation.component.value[x]",
       "type" : [{
@@ -314,6 +298,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-eyes"
       }
+    },
+    {
+      "id" : "Observation.component:GCSeyes.value[x].coding.version",
+      "path" : "Observation.component.value[x].coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:GCSeyes.value[x].coding.display",
+      "path" : "Observation.component.value[x].coding.display",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:GCSmotor",
@@ -346,12 +341,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:GCSmotor.code.coding.display",
-      "path" : "Observation.component.code.coding.display",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.component:GCSmotor.value[x]",
       "path" : "Observation.component.value[x]",
       "type" : [{
@@ -361,6 +350,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-motor"
       }
+    },
+    {
+      "id" : "Observation.component:GCSmotor.value[x].coding.version",
+      "path" : "Observation.component.value[x].coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:GCSmotor.value[x].coding.display",
+      "path" : "Observation.component.value[x].coding.display",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.component:GCSverbal",
@@ -393,12 +393,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
-      "id" : "Observation.component:GCSverbal.code.coding.display",
-      "path" : "Observation.component.code.coding.display",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.component:GCSverbal.value[x]",
       "path" : "Observation.component.value[x]",
       "type" : [{
@@ -408,6 +402,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-component-gcs-verbal"
       }
+    },
+    {
+      "id" : "Observation.component:GCSverbal.value[x].coding.version",
+      "path" : "Observation.component.value[x].coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:GCSverbal.value[x].coding.display",
+      "path" : "Observation.component.value[x].coding.display",
+      "mustSupport" : true
     }]
   }
 }

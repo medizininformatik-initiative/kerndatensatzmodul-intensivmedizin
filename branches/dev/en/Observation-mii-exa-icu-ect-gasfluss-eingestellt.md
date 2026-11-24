@@ -62,6 +62,7 @@ Profile: [MII PR ICU Gasfluss](StructureDefinition-mii-pr-icu-ect-gasfluss.md)
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "19941-4",
       "display" : "Oxygen gas flow Oxygen delivery system"
     }]

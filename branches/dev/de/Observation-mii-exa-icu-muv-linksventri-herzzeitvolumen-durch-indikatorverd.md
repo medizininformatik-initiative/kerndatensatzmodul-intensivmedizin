@@ -41,12 +41,14 @@ Profile: [SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduenn
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8737-9",
       "display" : "Left ventricular Cardiac output by Indicator dilution"
     }]

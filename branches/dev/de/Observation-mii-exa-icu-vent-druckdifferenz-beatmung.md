@@ -56,11 +56,13 @@ Profile: [MII PR ICU Druckdifferenz Beatmung](StructureDefinition-mii-pr-icu-ven
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76154-4",
       "display" : "Airway pressure delta --on ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "152720",
       "display" : "MDC_VENT_PRESS_AWAY_DELTA"
     }]

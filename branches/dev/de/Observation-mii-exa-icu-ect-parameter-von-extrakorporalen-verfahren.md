@@ -54,6 +54,7 @@ Profile: [MII PR ICU Parameter von Extrakorporalen Verfahren](StructureDefinitio
   {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs",
       "display" : "Vital Signs"
     }]

@@ -62,6 +62,7 @@ Profile: [MII PR ICU Einstellung Ausatmungszeit Beatmung](StructureDefinition-mi
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76187-4",
       "display" : "Expiratory hold time setting Ventilator"
     }]

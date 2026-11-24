@@ -12,12 +12,14 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="exam"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="113147002"/>
       <display value="Pupil reaction to light"/>
     </coding>
@@ -32,6 +34,7 @@
   <bodySite>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="16089004"/>
       <display value="Structure of pupil of left eye"/>
     </coding>

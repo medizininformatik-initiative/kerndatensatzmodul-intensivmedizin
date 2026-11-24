@@ -23,11 +23,13 @@
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76190-8",
       "display" : "High pressure hold time setting Ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "16929860",
       "display" : "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
     }]

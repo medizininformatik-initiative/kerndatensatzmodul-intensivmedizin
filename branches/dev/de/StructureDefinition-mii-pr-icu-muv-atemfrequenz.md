@@ -49,8 +49,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 
 ** Summary **
 
-Mandatory: 1 element
- Must-Support: 22 elements
+Mandatory: 4 elements(2 nested mandatory elements)
+ Must-Support: 32 elements
 
  **Schlüsselelemente-Ansicht** 
 
@@ -74,8 +74,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Atemfrequenz](https://simplifier.
 
 ** Summary **
 
-Mandatory: 1 element
- Must-Support: 22 elements
+Mandatory: 4 elements(2 nested mandatory elements)
+ Must-Support: 32 elements
 
  
 
@@ -94,7 +94,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Atemfrequenz",
   "title" : "MII PR ICU MUV Atemfrequenz",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -148,6 +148,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -165,6 +176,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -176,8 +198,19 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc.code",
       "path" : "Observation.code.coding.code",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -190,6 +223,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         "system" : "http://snomed.info/sct",
         "code" : "86290005"
       },
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:snomed.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:snomed.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -253,6 +297,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.dataAbsentReason",
       "path" : "Observation.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
       "mustSupport" : true
     }]
   }

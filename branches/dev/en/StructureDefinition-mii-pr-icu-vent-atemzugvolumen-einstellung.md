@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
   "name" : "MII_PR_ICU_VENT_Atemzugvolumen_Einstellung",
   "title" : "MII PR ICU Atemzugvolumen Einstellung",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -106,8 +106,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -124,8 +123,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "416811008",
-        "display" : "Tidal volume setting (observable entity)"
+        "code" : "416811008"
       }
     },
     {
@@ -136,8 +134,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "20112-9",
-        "display" : "Tidal volume setting Ventilator"
+        "code" : "20112-9"
       }
     },
     {
@@ -148,8 +145,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-a
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "16929196",
-        "display" : "MDC_VENT_VOL_TIDAL_SETTING"
+        "code" : "16929196"
       }
     },
     {

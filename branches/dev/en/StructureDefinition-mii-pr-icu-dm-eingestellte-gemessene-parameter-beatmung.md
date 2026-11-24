@@ -55,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-dm-ein
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -112,9 +112,20 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-dm-ein
       "mustSupport" : true
     },
     {
+      "id" : "DeviceMetric.type.coding.version",
+      "path" : "DeviceMetric.type.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "DeviceMetric.type.coding.code",
       "path" : "DeviceMetric.type.coding.code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "DeviceMetric.type.coding.display",
+      "path" : "DeviceMetric.type.coding.display",
       "mustSupport" : true
     },
     {

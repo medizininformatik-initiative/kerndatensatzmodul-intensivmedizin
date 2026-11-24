@@ -13,6 +13,7 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="exam"/>
       <display value="Exam"/>
     </coding>
@@ -32,6 +33,7 @@
     </coding>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="99741-1"/>
       <display value="Ultrafiltrate volume removed"/>
     </coding>

@@ -56,6 +56,7 @@ Profile: [MII PR ICU Eingestellter Inspiratorischer Gasfluss](StructureDefinitio
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76275-7",
       "display" : "Inspiratory flow setting Ventilator"
     }]

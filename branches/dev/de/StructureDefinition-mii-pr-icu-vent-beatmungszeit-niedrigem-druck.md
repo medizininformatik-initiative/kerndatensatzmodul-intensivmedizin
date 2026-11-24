@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Niedrigem_Druck",
   "title" : "MII PR ICU Beatmungszeit Niedrigem Druck",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -152,8 +152,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -176,8 +175,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "76229-4",
-        "display" : "Low pressure hold time setting Ventilator"
+        "code" : "76229-4"
       }
     },
     {
@@ -188,8 +186,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "16929864",
-        "display" : "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
+        "code" : "16929864"
       }
     },
     {

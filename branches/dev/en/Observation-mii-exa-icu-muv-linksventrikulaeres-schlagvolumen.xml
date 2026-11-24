@@ -13,12 +13,14 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="20562-5"/>
       <display value="Left ventricular Stroke volume"/>
     </coding>
@@ -30,6 +32,7 @@
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
+      <version value="2024-12-05"/>
       <code value="150408"/>
       <display value="Ventricular stroke"/>
     </coding>

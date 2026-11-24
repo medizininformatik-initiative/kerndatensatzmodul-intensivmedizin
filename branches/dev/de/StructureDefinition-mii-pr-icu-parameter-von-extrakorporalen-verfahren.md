@@ -50,8 +50,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 2 elements(13 nested mandatory elements)
- Must-Support: 32 elements
+Mandatory: 3 elements(20 nested mandatory elements)
+ Must-Support: 45 elements
 
 **Structures**
 
@@ -91,8 +91,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 2 elements(13 nested mandatory elements)
- Must-Support: 32 elements
+Mandatory: 3 elements(20 nested mandatory elements)
+ Must-Support: 45 elements
 
 **Structures**
 
@@ -125,7 +125,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
   "name" : "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title" : "MII PR ICU Parameter von Extrakorporalen Verfahren",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -227,6 +227,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category.coding:sct",
       "path" : "Observation.category.coding",
       "sliceName" : "sct",
@@ -241,6 +252,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
     {
       "id" : "Observation.category.coding:sct.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding:sct.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -274,6 +291,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
@@ -291,6 +319,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
     {
       "id" : "Observation.code.coding:sct.system",
       "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -327,6 +361,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
@@ -359,9 +399,20 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:IEEE-11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:IEEE-11073.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -440,12 +491,34 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-p
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
       "binding" : {
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren"
       }
+    },
+    {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.device",

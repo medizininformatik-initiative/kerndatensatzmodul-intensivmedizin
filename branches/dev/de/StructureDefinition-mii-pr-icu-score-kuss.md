@@ -46,8 +46,8 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 5 elements
- Must-Support: 4 elements
+Mandatory: 4 elements
+ Must-Support: 3 elements
  Prohibited: 4 elements
 
  **Schlüsselelemente-Ansicht** 
@@ -72,8 +72,8 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 5 elements
- Must-Support: 4 elements
+Mandatory: 4 elements
+ Must-Support: 3 elements
  Prohibited: 4 elements
 
  
@@ -93,7 +93,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_KUSS",
   "title" : "MII PR ICU Score KUSS",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -191,12 +191,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
     {
       "id" : "Observation.code.coding:dgai.system",
       "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:dgai.version",
-      "path" : "Observation.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },

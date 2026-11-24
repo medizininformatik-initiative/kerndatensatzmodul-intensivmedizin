@@ -41,12 +41,14 @@ Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](https://simplifi
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "exam"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "113147002",
       "display" : "Pupil reaction to light"
     }]
@@ -61,6 +63,7 @@ Profile: [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](https://simplifi
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "16089004",
       "display" : "Structure of pupil of left eye"
     }]

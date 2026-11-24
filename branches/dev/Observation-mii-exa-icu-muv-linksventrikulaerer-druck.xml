@@ -12,6 +12,7 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
@@ -29,6 +30,7 @@
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
+      <version value="2024-12-05"/>
       <code value="150100"/>
       <display value="Pressure of the blood in the left ventricle of the heart"/>
     </coding>
@@ -41,15 +43,18 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8478-0"/>
       </coding>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8404-6"/>
         <display value="Left ventricular Intrachamber mean pressure"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150103"/>
         <display value="Mean left ventricular pressure"/>
       </coding>
@@ -65,15 +70,18 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8480-6"/>
       </coding>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8430-1"/>
         <display value="Left ventricular Intrachamber systolic pressure"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150101"/>
         <display value="Systolic left ventricular pressure"/>
       </coding>
@@ -89,15 +97,18 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8462-4"/>
       </coding>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8375-8"/>
         <display value="Left ventricular Intrachamber diastolic pressure"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150102"/>
         <display value="Diastolic left ventricular pressure"/>
       </coding>

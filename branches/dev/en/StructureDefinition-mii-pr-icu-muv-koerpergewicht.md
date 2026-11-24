@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergewicht",
   "title" : "MII PR ICU MUV Koerpergewicht",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -90,6 +90,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -103,6 +114,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
     {
       "id" : "Observation.category:VSCat.coding.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -176,6 +193,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       },
       "min" : 3,
       "max" : "3",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -260,6 +288,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "id" : "Observation.code.coding:IEEE-11073.version",
       "path" : "Observation.code.coding.version",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {

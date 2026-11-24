@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse_Perzentil",
   "title" : "MII PR ICU MUV Koerpergroesse Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -89,6 +89,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -102,6 +113,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
     {
       "id" : "Observation.category:VSCat.coding.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -142,6 +159,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:sct.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:sct.coding.code",
       "path" : "Observation.category.coding.code",
       "min" : 1,
@@ -170,6 +193,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
@@ -177,14 +211,19 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "1153605006",
-        "display" : "Body height for age percentile (observable entity)"
+        "code" : "1153605006"
       },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:sct.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -296,6 +335,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
       "mustSupport" : true,
@@ -303,6 +353,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
       }
+    },
+    {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
     }]
   }
 }

@@ -18,6 +18,13 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Procedure/f:category/f:coding</sch:title>
+    <sch:rule context="f:Procedure/f:category/f:coding">
+      <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Procedure/f:code/f:coding</sch:title>
     <sch:rule context="f:Procedure/f:code/f:coding">
       <sch:assert test="count(f:extension[@url = 'http://fhir.de/StructureDefinition/seitenlokalisation']) &lt;= 1">extension with URL = 'http://fhir.de/StructureDefinition/seitenlokalisation': maximum cardinality of 'extension' is 1</sch:assert>
@@ -27,6 +34,13 @@
     <sch:title>f:Procedure/f:bodySite</sch:title>
     <sch:rule context="f:Procedure/f:bodySite">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/bodySite']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/bodySite': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Procedure/f:bodySite/f:coding</sch:title>
+    <sch:rule context="f:Procedure/f:bodySite/f:coding">
+      <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

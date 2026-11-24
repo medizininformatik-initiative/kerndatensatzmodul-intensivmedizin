@@ -41,6 +41,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte](https://sim
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "exam",
       "display" : "Exam"
     },
@@ -60,6 +61,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte](https://sim
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "99741-1",
       "display" : "Ultrafiltrate volume removed"
     }]

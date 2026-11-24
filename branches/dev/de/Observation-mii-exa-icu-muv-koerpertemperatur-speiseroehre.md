@@ -43,31 +43,37 @@ Profile: [SD MII ICU Koerpertemperatur Speiseroehre](https://simplifier.net/reso
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "60836-4",
       "display" : "Esophageal temperature"
     },
     {
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "431598003",
       "display" : "Core body temperature measured in esophagus"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150372"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8329-5",
       "display" : "Body temperature - Core"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8310-5"
     }]
   },
@@ -87,6 +93,7 @@ Profile: [SD MII ICU Koerpertemperatur Speiseroehre](https://simplifier.net/reso
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "32849002",
       "display" : "Esophageal structure (body structure)"
     }]

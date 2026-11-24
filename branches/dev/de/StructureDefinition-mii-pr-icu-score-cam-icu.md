@@ -47,8 +47,8 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 5 elements
- Must-Support: 4 elements
+Mandatory: 4 elements(1 nested mandatory element)
+ Must-Support: 5 elements
  Prohibited: 4 elements
 
  **Schlüsselelemente-Ansicht** 
@@ -73,8 +73,8 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Score](StructureDefinition-mii-pr-
 
 ** Summary **
 
-Mandatory: 5 elements
- Must-Support: 4 elements
+Mandatory: 4 elements(1 nested mandatory element)
+ Must-Support: 5 elements
  Prohibited: 4 elements
 
  
@@ -94,7 +94,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score_CAM_ICU",
   "title" : "MII PR ICU Score CAM-ICU",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -189,12 +189,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
-      "id" : "Observation.code.coding:dgai.version",
-      "path" : "Observation.code.coding.version",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
       "id" : "Observation.code.coding:dgai.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
@@ -210,6 +204,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
         "strength" : "required",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/cam-icu-result"
       }
+    },
+    {
+      "id" : "Observation.value[x].coding.version",
+      "path" : "Observation.value[x].coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x].coding.display",
+      "path" : "Observation.value[x].coding.display",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.interpretation",

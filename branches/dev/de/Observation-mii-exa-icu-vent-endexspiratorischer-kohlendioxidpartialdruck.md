@@ -56,6 +56,7 @@ Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefin
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "19891-1",
       "display" : "Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck](StructureDefin
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151708",
       "display" : "MDC_CONC_AWAY_CO2_ET"
     }]

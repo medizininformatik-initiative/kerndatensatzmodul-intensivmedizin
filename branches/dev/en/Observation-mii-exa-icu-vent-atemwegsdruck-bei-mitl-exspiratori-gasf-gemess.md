@@ -56,6 +56,7 @@ Profile: [MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss](Struc
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "20056-8",
       "display" : "Airway pressure --at mean expiratory flow on ventilator"
     }]

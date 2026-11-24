@@ -45,6 +45,7 @@ Profile: [SD MII ICU Pulmonalarterieller Blutdruck](https://simplifier.net/resol
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -62,11 +63,13 @@ Profile: [SD MII ICU Pulmonalarterieller Blutdruck](https://simplifier.net/resol
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76284-9",
       "display" : "Pulmonary artery Blood pressure"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150044"
     }]
   },
@@ -78,15 +81,18 @@ Profile: [SD MII ICU Pulmonalarterieller Blutdruck](https://simplifier.net/resol
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8480-6"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8440-0",
         "display" : "Pulmonary artery Systolic blood pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150045",
         "display" : "Systolic pulmonary arterial pressure"
       }]
@@ -102,15 +108,18 @@ Profile: [SD MII ICU Pulmonalarterieller Blutdruck](https://simplifier.net/resol
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8478-0"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8414-5",
         "display" : "Pulmonary artery Mean blood pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150047",
         "display" : "Mean pulmonary arterial pressure"
       }]
@@ -126,15 +135,18 @@ Profile: [SD MII ICU Pulmonalarterieller Blutdruck](https://simplifier.net/resol
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8462-4"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8385-7",
         "display" : "Pulmonary artery Diastolic blood pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150046",
         "display" : "Diastolic pulmonary arterial pressure"
       }]

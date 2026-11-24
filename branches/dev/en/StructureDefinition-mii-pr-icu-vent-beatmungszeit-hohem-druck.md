@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
   "title" : "MII PR ICU Beatmungszeit Hohem Druck",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -106,8 +106,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -130,8 +129,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "76190-8",
-        "display" : "High pressure hold time setting Ventilator"
+        "code" : "76190-8"
       }
     },
     {
@@ -142,8 +140,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-b
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "16929860",
-        "display" : "MDC_VENT_TIME_PD_INSP_THIGH_SETTING"
+        "code" : "16929860"
       }
     },
     {

@@ -49,8 +49,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?s
 
 ** Summary **
 
-Mandatory: 3 elements(5 nested mandatory elements)
- Must-Support: 36 elements
+Mandatory: 6 elements(10 nested mandatory elements)
+ Must-Support: 48 elements
 
 **Slices**
 
@@ -83,8 +83,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE](https://simplifier.net/resolve?s
 
 ** Summary **
 
-Mandatory: 3 elements(5 nested mandatory elements)
- Must-Support: 36 elements
+Mandatory: 6 elements(10 nested mandatory elements)
+ Must-Support: 48 elements
 
 **Slices**
 
@@ -110,7 +110,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergewicht_Perzentil",
   "title" : "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -157,6 +157,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -170,6 +181,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.category:VSCat.coding.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -210,6 +227,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:sct.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:sct.coding.code",
       "path" : "Observation.category.coding.code",
       "min" : 1,
@@ -239,6 +262,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -246,14 +280,19 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "8336-0",
-        "display" : "Body weight [Percentile] Per age"
+        "code" : "8336-0"
       },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:loinc.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -274,14 +313,19 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "1153592008",
-        "display" : "Weight for age percentile (observable entity)"
+        "code" : "1153592008"
       },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:sct.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -393,6 +437,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
       "mustSupport" : true,
@@ -400,6 +455,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
       }
+    },
+    {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
     }]
   }
 }

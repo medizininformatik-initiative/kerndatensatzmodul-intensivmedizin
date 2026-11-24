@@ -13,6 +13,7 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="survey"/>
       <display value="Survey"/>
     </coding>

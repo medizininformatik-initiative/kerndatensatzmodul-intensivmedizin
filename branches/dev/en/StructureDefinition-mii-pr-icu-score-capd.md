@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_CAPD",
   "title" : "MII PR ICU Score CAPD",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -139,12 +139,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
     {
       "id" : "Observation.code.coding:dgai.system",
       "path" : "Observation.code.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding:dgai.version",
-      "path" : "Observation.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },

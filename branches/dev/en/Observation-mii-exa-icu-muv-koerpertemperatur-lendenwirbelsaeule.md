@@ -43,17 +43,20 @@ Profile: [SD MII ICU Koerpertemperatur Lendenwirbelsaeule](https://simplifier.ne
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364429006",
       "display" : "Temperature of lumbar spine"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8310-5"
     }]
   },
@@ -73,6 +76,7 @@ Profile: [SD MII ICU Koerpertemperatur Lendenwirbelsaeule](https://simplifier.ne
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "122496007",
       "display" : "Structure of lumbar vertebral column (body structure)"
     }]

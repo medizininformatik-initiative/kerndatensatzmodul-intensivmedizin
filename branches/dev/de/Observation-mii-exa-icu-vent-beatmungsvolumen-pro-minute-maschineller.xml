@@ -24,6 +24,7 @@
   <code>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="76009-0"/>
       <display value="Inspired minute Volume during Mechanical ventilation"/>
     </coding>
@@ -35,6 +36,7 @@
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
+      <version value="2024-12-05"/>
       <code value="152004"/>
       <display value="MDC_VENT_VOL_MINUTE_INSP"/>
     </coding>

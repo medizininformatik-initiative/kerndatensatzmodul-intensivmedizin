@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Einstellung_Inspirationsdruck",
   "title" : "MII PR ICU Einstellung Inspirationsdruck",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -151,8 +151,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -175,8 +174,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "76003-3",
-        "display" : "Pressure Respiratory system airway --during inspiration on ventilator"
+        "code" : "76003-3"
       }
     },
     {
@@ -187,8 +185,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "151972",
-        "display" : "MDC_VENT_PRESS_AWAY"
+        "code" : "151972"
       }
     },
     {

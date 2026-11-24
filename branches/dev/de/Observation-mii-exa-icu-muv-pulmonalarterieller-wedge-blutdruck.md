@@ -41,12 +41,14 @@ Profile: [SD MII ICU Pulmonalarterieller Wedge Druck](https://simplifier.net/res
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "75994-4",
       "display" : "Pulmonary artery wedge pressure"
     },
@@ -58,6 +60,7 @@ Profile: [SD MII ICU Pulmonalarterieller Wedge Druck](https://simplifier.net/res
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150052",
       "display" : "Pulmonary artery wedge pressure"
     }]

@@ -62,11 +62,13 @@ Profile: [MII PR ICU Maximaler Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76531-3",
       "display" : "Pressure.max Respiratory system airway --on ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151957",
       "display" : "MDC_VENT_PRESS_MAX"
     }]

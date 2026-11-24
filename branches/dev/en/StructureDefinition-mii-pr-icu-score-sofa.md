@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_SOFA",
   "title" : "MII PR ICU Score SOFA",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -114,8 +114,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "min" : 1,
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "96789-3",
-        "display" : "Sequential Organ Failure Assessment SOFA"
+        "code" : "96789-3"
       }
     },
     {
@@ -124,8 +123,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "sliceName" : "sct",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "1187491009",
-        "display" : "Sequential Organ Failure Assessment score (observable entity)"
+        "code" : "1187491009"
       }
     },
     {

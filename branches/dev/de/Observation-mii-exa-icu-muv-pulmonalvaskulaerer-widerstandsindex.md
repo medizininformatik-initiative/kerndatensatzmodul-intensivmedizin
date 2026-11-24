@@ -41,12 +41,14 @@ Profile: [SD MII ICU Pulmonalvaskulaerer Widerstandsindex](https://simplifier.ne
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8834-4",
       "display" : "Pulmonary vascular Resistance index"
     },
@@ -58,6 +60,7 @@ Profile: [SD MII ICU Pulmonalvaskulaerer Widerstandsindex](https://simplifier.ne
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "152852",
       "display" : "Pulmonary Vascular Resistance Index"
     }]

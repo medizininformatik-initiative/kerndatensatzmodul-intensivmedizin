@@ -45,6 +45,7 @@ Profile: [SD MII ICU Linksventrikulaerer Druck](https://simplifier.net/resolve?s
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -62,6 +63,7 @@ Profile: [SD MII ICU Linksventrikulaerer Druck](https://simplifier.net/resolve?s
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150100",
       "display" : "Pressure of the blood in the left ventricle of the heart"
     }]
@@ -74,15 +76,18 @@ Profile: [SD MII ICU Linksventrikulaerer Druck](https://simplifier.net/resolve?s
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8478-0"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8404-6",
         "display" : "Left ventricular Intrachamber mean pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150103",
         "display" : "Mean left ventricular pressure"
       }]
@@ -98,15 +103,18 @@ Profile: [SD MII ICU Linksventrikulaerer Druck](https://simplifier.net/resolve?s
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8480-6"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8430-1",
         "display" : "Left ventricular Intrachamber systolic pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150101",
         "display" : "Systolic left ventricular pressure"
       }]
@@ -122,15 +130,18 @@ Profile: [SD MII ICU Linksventrikulaerer Druck](https://simplifier.net/resolve?s
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8462-4"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8375-8",
         "display" : "Left ventricular Intrachamber diastolic pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150102",
         "display" : "Diastolic left ventricular pressure"
       }]

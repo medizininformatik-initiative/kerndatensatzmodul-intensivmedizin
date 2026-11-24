@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Einstellung_Ausatmungszeit_Beatmung",
   "title" : "MII PR ICU Einstellung Ausatmungszeit Beatmung",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -152,8 +152,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -170,8 +169,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "250820008",
-        "display" : "Expiratory time (observable entity)"
+        "code" : "250820008"
       }
     },
     {
@@ -182,8 +180,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "76187-4",
-        "display" : "Expiratory hold time setting Ventilator"
+        "code" : "76187-4"
       }
     },
     {

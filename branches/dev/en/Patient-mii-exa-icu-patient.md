@@ -28,6 +28,7 @@ Ida Intensivbeispiel (official) Female, DoB: 1998-06-15 ( Medical record number)
     "type" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "version" : "5.0.0",
         "code" : "MR"
       }]
     },

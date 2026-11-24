@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
   "name" : "MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex",
   "title" : "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -89,6 +89,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -102,6 +113,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
     {
       "id" : "Observation.category:VSCat.coding.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -142,6 +159,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:sct.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:sct.coding.code",
       "path" : "Observation.category.coding.code",
       "min" : 1,
@@ -171,6 +194,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -178,14 +212,19 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "8834-4",
-        "display" : "Pulmonary vascular Resistance index"
+        "code" : "8834-4"
       },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:loinc.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -206,14 +245,19 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "276902009",
-        "display" : "Pulmonary vascular resistance index (observable entity)"
+        "code" : "276902009"
       },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:sct.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -234,14 +278,19 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "152852",
-        "display" : "Pulmonary Vascular Resistance Index"
+        "code" : "152852"
       },
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:IEEE-11073.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -353,6 +402,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
       "mustSupport" : true,
@@ -360,6 +420,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-pu
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
       }
+    },
+    {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
     }]
   }
 }

@@ -41,6 +41,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](https://simplifier.net/r
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "exam"
     },
     {
@@ -59,6 +60,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Drainage Generisch](https://simplifier.net/r
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "157740"
     }]
   },

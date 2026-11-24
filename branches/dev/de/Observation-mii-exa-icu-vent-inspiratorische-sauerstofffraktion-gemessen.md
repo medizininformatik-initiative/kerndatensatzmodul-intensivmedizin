@@ -68,6 +68,7 @@ Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "71835-3",
       "display" : "Oxygen/Gas total [Pure volume fraction] Inhaled gas"
     }]

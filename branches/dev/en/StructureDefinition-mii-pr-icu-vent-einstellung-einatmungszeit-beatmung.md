@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
   "name" : "MII_PR_ICU_VENT_Einstellung_Einatmungszeit_Beatmung",
   "title" : "MII PR ICU Einstellung Einatmungszeit Beatmung",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -106,8 +106,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -124,8 +123,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "250819002",
-        "display" : "Inspiratory time (observable entity)"
+        "code" : "250819002"
       }
     },
     {
@@ -136,8 +134,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "76334-2",
-        "display" : "Inspiratory time setting Ventilator"
+        "code" : "76334-2"
       }
     },
     {
@@ -148,8 +145,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-e
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "16929632",
-        "display" : "MDC_VENT_TIME_PD_INSP_SETTING"
+        "code" : "16929632"
       }
     },
     {

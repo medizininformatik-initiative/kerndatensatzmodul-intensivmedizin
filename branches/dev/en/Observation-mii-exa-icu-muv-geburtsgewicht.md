@@ -41,6 +41,7 @@ Profile: [MII PR ICU MUV Geburtsgewicht](StructureDefinition-mii-pr-icu-muv-gebu
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],

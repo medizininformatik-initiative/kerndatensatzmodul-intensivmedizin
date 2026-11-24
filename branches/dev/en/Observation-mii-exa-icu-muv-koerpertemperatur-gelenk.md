@@ -43,17 +43,20 @@ Profile: [SD MII ICU Koerpertemperatur Gelenk](https://simplifier.net/resolve?sc
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "250124002",
       "display" : "Temperature of joint"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8310-5"
     }]
   },
@@ -73,6 +76,7 @@ Profile: [SD MII ICU Koerpertemperatur Gelenk](https://simplifier.net/resolve?sc
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "39352004",
       "display" : "Joint structure (body structure)"
     }]

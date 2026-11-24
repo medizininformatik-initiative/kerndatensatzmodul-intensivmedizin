@@ -56,6 +56,7 @@ Profile: [MII PR ICU Atemzugvolumen Waehrend Beatmung](StructureDefinition-mii-p
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76222-9",
       "display" : "Tidal volume Ventilator --on ventilator"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Atemzugvolumen Waehrend Beatmung](StructureDefinition-mii-p
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151980",
       "display" : "MDC_VENT_VOL_TIDAL"
     }]

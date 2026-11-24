@@ -48,8 +48,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 6 elements(7 nested mandatory elements)
- Must-Support: 28 elements
+Mandatory: 8 elements(15 nested mandatory elements)
+ Must-Support: 49 elements
  Prohibited: 1 element
 
 **Slices**
@@ -81,8 +81,8 @@ Diese Struktur ist abgeleitet von [Observation](http://hl7.org/fhir/R4/observati
 
 ** Summary **
 
-Mandatory: 6 elements(7 nested mandatory elements)
- Must-Support: 28 elements
+Mandatory: 8 elements(15 nested mandatory elements)
+ Must-Support: 49 elements
  Prohibited: 1 element
 
 **Slices**
@@ -109,7 +109,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
   "name" : "MII_PR_ICU_Score",
   "title" : "MII PR ICU Score",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -202,6 +202,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:survey",
       "path" : "Observation.category",
       "sliceName" : "survey",
@@ -211,8 +222,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "survey",
-          "display" : "Survey"
+          "code" : "survey"
         }]
       },
       "mustSupport" : true
@@ -225,6 +235,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:survey.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:survey.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:assessment-scale",
       "path" : "Observation.category",
       "sliceName" : "assessment-scale",
@@ -233,8 +254,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "273249006",
-          "display" : "Assessment scales (assessment scale)"
+          "code" : "273249006"
         }]
       },
       "mustSupport" : true
@@ -244,6 +264,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "path" : "Observation.category.coding",
       "min" : 1,
       "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:assessment-scale.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:assessment-scale.coding.display",
+      "path" : "Observation.category.coding.display",
       "mustSupport" : true
     },
     {
@@ -271,6 +302,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -288,9 +330,20 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "patternUri" : "http://loinc.org"
     },
     {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -314,13 +367,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "id" : "Observation.code.coding:sct.version",
       "path" : "Observation.code.coding.version",
       "min" : 1,
-      "patternString" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:sct.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -341,9 +398,20 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "patternUri" : "urn:iso:std:iso:11073:10101"
     },
     {
+      "id" : "Observation.code.coding:ieee11073.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:ieee11073.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:ieee11073.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -404,9 +472,31 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.interpretation",
       "path" : "Observation.interpretation",
       "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.version",
+      "path" : "Observation.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.display",
+      "path" : "Observation.interpretation.coding.display",
       "mustSupport" : true
     },
     {
@@ -448,6 +538,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
       "mustSupport" : true
     },
     {
+      "id" : "Observation.component.code.coding.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.code.coding.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component.value[x]",
       "path" : "Observation.component.value[x]",
       "type" : [{
@@ -464,6 +565,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-s
     {
       "id" : "Observation.component.dataAbsentReason",
       "path" : "Observation.component.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.dataAbsentReason.coding.version",
+      "path" : "Observation.component.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.dataAbsentReason.coding.display",
+      "path" : "Observation.component.dataAbsentReason.coding.display",
       "mustSupport" : true
     }]
   }

@@ -43,22 +43,26 @@ Profile: [SD MII ICU Koerpertemperatur nasal](https://simplifier.net/resolve?sco
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76010-8",
       "display" : "Nasal temperature"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "188504",
       "display" : "Nasal temperature"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8310-5",
       "display" : "Body temperature"
     }]
@@ -79,6 +83,7 @@ Profile: [SD MII ICU Koerpertemperatur nasal](https://simplifier.net/resolve?sco
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "45206002",
       "display" : "Nasal structure (body structure)"
     }]

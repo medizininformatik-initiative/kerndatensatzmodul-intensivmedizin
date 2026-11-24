@@ -41,6 +41,7 @@ Profile: [SD MII ICU Puls](https://simplifier.net/resolve?scope=de.gematik.isik@
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -53,6 +54,7 @@ Profile: [SD MII ICU Puls](https://simplifier.net/resolve?scope=de.gematik.isik@
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "149514",
       "display" : "Pulse rate"
     }]

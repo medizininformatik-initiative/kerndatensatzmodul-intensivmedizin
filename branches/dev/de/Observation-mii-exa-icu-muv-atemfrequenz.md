@@ -41,6 +41,7 @@ Profile: [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfr
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -53,6 +54,7 @@ Profile: [MII PR ICU MUV Atemfrequenz](StructureDefinition-mii-pr-icu-muv-atemfr
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "9279-1",
       "display" : "Respiratory Rate"
     }]

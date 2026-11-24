@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h",
   "title" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -125,6 +125,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category.coding:hl7-category",
       "path" : "Observation.category.coding",
       "sliceName" : "hl7-category",
@@ -142,10 +153,21 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding:hl7-category.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category.coding:hl7-category.code",
       "path" : "Observation.category.coding.code",
       "min" : 1,
       "patternCode" : "exam",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding:hl7-category.display",
+      "path" : "Observation.category.coding.display",
       "mustSupport" : true
     },
     {
@@ -164,6 +186,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
         "rules" : "closed"
       },
       "min" : 2,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -197,6 +230,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:sct.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -224,6 +262,11 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "id" : "Observation.code.coding:loinc.code",
       "path" : "Observation.code.coding.code",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -280,8 +323,30 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.interpretation",
       "path" : "Observation.interpretation",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.version",
+      "path" : "Observation.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.display",
+      "path" : "Observation.interpretation.coding.display",
       "mustSupport" : true
     },
     {
@@ -290,8 +355,30 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-bilanz
       "mustSupport" : true
     },
     {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.method",
       "path" : "Observation.method",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.version",
+      "path" : "Observation.method.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.display",
+      "path" : "Observation.method.coding.display",
       "mustSupport" : true
     },
     {

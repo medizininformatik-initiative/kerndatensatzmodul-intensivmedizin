@@ -45,6 +45,7 @@ Profile: [SD MII ICU Rechtsatrialer Druck](https://simplifier.net/resolve?scope=
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -62,11 +63,13 @@ Profile: [SD MII ICU Rechtsatrialer Druck](https://simplifier.net/resolve?scope=
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "60996-6",
       "display" : "Right atrial pressure"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150068"
     }]
   },
@@ -78,15 +81,18 @@ Profile: [SD MII ICU Rechtsatrialer Druck](https://simplifier.net/resolve?scope=
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8480-6"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "60998-2",
         "display" : "Right atrial pressure Systolic"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150069",
         "display" : "Systolic right atrial pressure"
       }]
@@ -102,15 +108,18 @@ Profile: [SD MII ICU Rechtsatrialer Druck](https://simplifier.net/resolve?scope=
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8478-0"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8400-4",
         "display" : "Right atrial Intrachamber mean pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150071",
         "display" : "Mean right atrial pressure"
       }]
@@ -126,15 +135,18 @@ Profile: [SD MII ICU Rechtsatrialer Druck](https://simplifier.net/resolve?scope=
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8462-4"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "60997-4",
         "display" : "Right atrial pressure Diastolic"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150070",
         "display" : "Diastolic right atrial pressure"
       }]

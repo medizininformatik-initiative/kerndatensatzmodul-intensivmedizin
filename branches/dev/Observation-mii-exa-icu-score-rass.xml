@@ -12,11 +12,13 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="survey"/>
       <display value="Survey"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="exam"/>
       <display value="Exam"/>
     </coding>
@@ -24,6 +26,7 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="1345050000"/>
       <display value="Richmond Agitation Sedation Scale score (observable entity)"/>
     </coding>
@@ -40,6 +43,7 @@
   <valueCodeableConcept>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="LA33962-4"/>
       <display value="Alert and calm 0"/>
     </coding>

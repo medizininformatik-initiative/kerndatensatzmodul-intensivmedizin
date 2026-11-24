@@ -12,31 +12,37 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="60836-4"/>
       <display value="Esophageal temperature"/>
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="431598003"/>
       <display value="Core body temperature measured in esophagus"/>
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
+      <version value="2024-12-05"/>
       <code value="150372"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="8329-5"/>
       <display value="Body temperature - Core"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="8310-5"/>
     </coding>
   </code>
@@ -56,6 +62,7 @@
   <bodySite>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="32849002"/>
       <display value="Esophageal structure (body structure)"/>
     </coding>

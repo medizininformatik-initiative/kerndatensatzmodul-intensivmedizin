@@ -56,6 +56,7 @@ Profile: [MII PR ICU Positiv Endexpiratorischer Druck](StructureDefinition-mii-p
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76248-4",
       "display" : "PEEP Respiratory system --on ventilator"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Positiv Endexpiratorischer Druck](StructureDefinition-mii-p
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151976",
       "display" : "MDC_VENT_PRESS_AWAY_END_EXP_POS"
     }]

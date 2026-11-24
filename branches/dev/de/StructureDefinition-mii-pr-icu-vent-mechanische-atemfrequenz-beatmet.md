@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -150,8 +150,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -168,8 +167,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "250876000",
-        "display" : "Ventilator rate (observable entity)"
+        "code" : "250876000"
       }
     },
     {
@@ -180,8 +178,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "33438-3",
-        "display" : "Breath rate mechanical --on ventilator"
+        "code" : "33438-3"
       }
     },
     {
@@ -192,8 +189,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "151586",
-        "display" : "MDC_VENT_RESP_RATE"
+        "code" : "151586"
       }
     },
     {

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Kohlendioxid_Produktion",
   "title" : "MII PR ICU MUV Kohlendioxid Produktion",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -109,9 +109,26 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "min" : 2
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:vs-cat",
       "path" : "Observation.category",
       "sliceName" : "vs-cat"
+    },
+    {
+      "id" : "Observation.category:vs-cat.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.category:vs-cat.coding.display",
@@ -144,6 +161,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category:sct.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:sct.coding.code",
       "path" : "Observation.category.coding.code",
       "min" : 1,
@@ -165,6 +188,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
         "rules" : "closed"
       },
       "min" : 3,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -293,12 +327,89 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "min" : 1
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.version",
+      "path" : "Observation.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.display",
+      "path" : "Observation.interpretation.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
       "binding" : {
         "strength" : "extensible",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
       }
+    },
+    {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.version",
+      "path" : "Observation.method.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.display",
+      "path" : "Observation.method.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.code.coding.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.code.coding.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.dataAbsentReason.coding.version",
+      "path" : "Observation.component.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.dataAbsentReason.coding.display",
+      "path" : "Observation.component.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.interpretation.coding.version",
+      "path" : "Observation.component.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.interpretation.coding.display",
+      "path" : "Observation.component.interpretation.coding.display",
+      "mustSupport" : true
     }]
   }
 }

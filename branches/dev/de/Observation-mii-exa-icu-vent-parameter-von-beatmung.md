@@ -54,6 +54,7 @@ Profile: [MII PR ICU Parameter von Beatmung](StructureDefinition-mii-pr-icu-para
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76531-3",
       "display" : "Pressure.max Respiratory system airway --on ventilator"
     }]

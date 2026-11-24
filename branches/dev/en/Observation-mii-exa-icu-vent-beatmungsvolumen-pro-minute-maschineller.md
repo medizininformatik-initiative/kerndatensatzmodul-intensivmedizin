@@ -56,6 +56,7 @@ Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](Structur
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76009-0",
       "display" : "Inspired minute Volume during Mechanical ventilation"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung](Structur
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "152004",
       "display" : "MDC_VENT_VOL_MINUTE_INSP"
     }]

@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
   "name" : "MII_PR_ICU_MUV_Koerpergroesse",
   "title" : "MII PR ICU MUV Koerpergroesse",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -92,9 +92,26 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat"
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.category:VSCat.coding.display",
@@ -154,6 +171,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
         "rules" : "closed"
       },
       "min" : 3,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -321,6 +349,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ko
     {
       "id" : "Observation.dataAbsentReason",
       "path" : "Observation.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
       "mustSupport" : true
     }]
   }

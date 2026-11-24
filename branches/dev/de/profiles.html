@@ -455,6 +455,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.</p>
 
+<p><strong>Terminologieversionen und Displays (alle modul-eigenen Profile)</strong></p>
+
+<p>Jedes Coding in den modul-eigenen Profilen verlangt <code class="language-plaintext highlighter-rouge">version</code> (1..1, Must Support) und unterstützt <code class="language-plaintext highlighter-rouge">display</code> (0..1, Must Support). Feste Codes und Muster (Patterns) enthalten nur System und Code; sie legen nie eine Version oder ein Display fest.</p>
+
+<p>Abweichungen von ISiK: Das modul-eigene Basisprofil <code class="language-plaintext highlighter-rouge">MII_PR_ICU_Monitoring_Und_Vitaldaten</code> behält die Elementregeln aus ISiK 6.0.0 unverändert bei; diese Coding-Regeln stehen daher in den davon abgeleiteten Profilen. Die unten aufgeführten ISiK-Profile werden so verwendet, wie gematik sie veröffentlicht, und folgen diesen Regeln noch nicht; Änderungsanträge an gematik sind in Vorbereitung.</p>
+
   <!-- BEGIN GENERATED:profile-map:isik-note -->
 <p class="icu-note"><b>ISiK-gehostete Profile — de.gematik.isik 6.0.0</b><br/>Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert — die Liste ändert sich nur mit einem bewussten Pin-Wechsel. Jeder Link öffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.</p>
   <!-- END GENERATED:profile-map:isik-note -->
@@ -585,10 +591,10 @@ erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
 <ul>
   <li>
-    <p><a name="l1206">​</a>Parameter von extrakorporalen Verfahren:   - <a href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html">Extrakorporale Verfahren (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von extrakorporalen Verfahren (Observation)</a></p>
+    <p><a name="l1225">​</a>Parameter von extrakorporalen Verfahren:   - <a href="StructureDefinition-mii-pr-icu-extrakorporales-verfahren.html">Extrakorporale Verfahren (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von extrakorporalen Verfahren (Observation)</a></p>
   </li>
   <li>
-    <p><a name="l1220">​</a>Beatmungswerte:   - <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von Beatmung (Observation)</a></p>
+    <p><a name="l1239">​</a>Beatmungswerte:   - <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung (Procedure)</a>   - <a href="StructureDefinition-mii-pr-icu-dm-eingest-gem-parameter-extrakorporale-verfahren.html">Eingestellte und gemessene Parameter (DeviceMetric)</a>   - <a href="RETIRED">Parameter von Beatmung (Observation)</a></p>
   </li>
   <li>
     <p>Monitoring und Vitaldaten   - <a href="profiles.html">Monitoring und Vitaldaten (Observation)</a>   - <a href="profiles.html">Sonstige pulsatile Drücke Generisch (Observation)</a>   - <a href="profiles.html">Körpertemperatur Generisch (Observation)</a></p>
@@ -672,7 +678,7 @@ erhalten ist, gefolgt von der vollstaendigen Profilliste.</p>
 
           IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Nov 24, 2026 11:24+0000">2026-11-24</span>
+          Erstellt <span title="Tue, Nov 24, 2026 12:01+0000">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.

@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
   "name" : "MII_PR_ICU_MUV_Arterieller_Blutdruck",
   "title" : "MII PR ICU MUV Arterieller Blutdruck",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -78,6 +78,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -96,6 +107,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -104,6 +126,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.code.coding:loinc.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:loinc.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -124,6 +152,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:snomed.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:snomed.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
@@ -138,6 +177,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.code.coding:sct.system",
       "path" : "Observation.code.coding.system",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:sct.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
       "mustSupport" : true
     },
     {
@@ -171,8 +216,30 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.interpretation",
       "path" : "Observation.interpretation",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.version",
+      "path" : "Observation.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.display",
+      "path" : "Observation.interpretation.coding.display",
       "mustSupport" : true
     },
     {
@@ -181,8 +248,30 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.method",
       "path" : "Observation.method",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.version",
+      "path" : "Observation.method.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.display",
+      "path" : "Observation.method.coding.display",
       "mustSupport" : true
     },
     {
@@ -230,6 +319,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "min" : 3
     },
     {
+      "id" : "Observation.component:SystolicBP.code.coding.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:SystolicBP.code.coding:loinc",
       "path" : "Observation.component.code.coding",
       "sliceName" : "loinc",
@@ -244,6 +344,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:SystolicBP.code.coding:loinc.system",
       "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:loinc.version",
+      "path" : "Observation.component.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -277,6 +383,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.component:SystolicBP.code.coding:sct.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:SystolicBP.code.coding:sct.code",
       "path" : "Observation.component.code.coding.code",
       "min" : 1,
@@ -302,6 +414,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:SystolicBP.code.coding:IEEE-11073.system",
       "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.code.coding:IEEE-11073.version",
+      "path" : "Observation.component.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -385,6 +503,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.component:SystolicBP.dataAbsentReason.coding.version",
+      "path" : "Observation.component.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:SystolicBP.dataAbsentReason.coding.display",
+      "path" : "Observation.component.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:DiastolicBP",
       "path" : "Observation.component",
       "sliceName" : "DiastolicBP",
@@ -403,6 +532,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "min" : 3
     },
     {
+      "id" : "Observation.component:DiastolicBP.code.coding.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:DiastolicBP.code.coding:loinc",
       "path" : "Observation.component.code.coding",
       "sliceName" : "loinc",
@@ -417,6 +557,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:DiastolicBP.code.coding:loinc.system",
       "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:loinc.version",
+      "path" : "Observation.component.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -450,6 +596,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.component:DiastolicBP.code.coding:sct.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:DiastolicBP.code.coding:sct.code",
       "path" : "Observation.component.code.coding.code",
       "min" : 1,
@@ -475,6 +627,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:DiastolicBP.code.coding:IEEE-11073.system",
       "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.code.coding:IEEE-11073.version",
+      "path" : "Observation.component.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -558,6 +716,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.component:DiastolicBP.dataAbsentReason.coding.version",
+      "path" : "Observation.component.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:DiastolicBP.dataAbsentReason.coding.display",
+      "path" : "Observation.component.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:meanBP",
       "path" : "Observation.component",
       "sliceName" : "meanBP",
@@ -576,6 +745,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "min" : 3
     },
     {
+      "id" : "Observation.component:meanBP.code.coding.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:meanBP.code.coding:loinc",
       "path" : "Observation.component.code.coding",
       "sliceName" : "loinc",
@@ -590,6 +770,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:meanBP.code.coding:loinc.system",
       "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:loinc.version",
+      "path" : "Observation.component.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -623,6 +809,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
       "mustSupport" : true
     },
     {
+      "id" : "Observation.component:meanBP.code.coding:sct.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.component:meanBP.code.coding:sct.code",
       "path" : "Observation.component.code.coding.code",
       "min" : 1,
@@ -648,6 +840,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:meanBP.code.coding:IEEE-11073.system",
       "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.code.coding:IEEE-11073.version",
+      "path" : "Observation.component.code.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -728,6 +926,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-muv-ar
     {
       "id" : "Observation.component:meanBP.dataAbsentReason",
       "path" : "Observation.component.dataAbsentReason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.dataAbsentReason.coding.version",
+      "path" : "Observation.component.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component:meanBP.dataAbsentReason.coding.display",
+      "path" : "Observation.component.dataAbsentReason.coding.display",
       "mustSupport" : true
     }]
   }

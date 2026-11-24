@@ -56,6 +56,7 @@ Profile: [MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen](StructureDefini
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "20118-6",
       "display" : "Tidal volume.spontaneous+mechanical --on ventilator"
     }]

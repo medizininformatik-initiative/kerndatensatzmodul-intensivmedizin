@@ -43,6 +43,7 @@ Profile: [SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetri
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -55,15 +56,18 @@ Profile: [SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetri
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "59408-5",
       "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150324"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "2708-6"
     }]
   },
@@ -83,6 +87,7 @@ Profile: [SD MII ICU Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetri
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "11527006",
       "display" : "Arterial system structure (body structure)"
     }]

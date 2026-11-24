@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
   "title" : "MII PR ICU Plateau Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -104,8 +104,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -122,8 +121,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "max" : "1",
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
-        "code" : "698822002",
-        "display" : "Airway plateau pressure (observable entity)"
+        "code" : "698822002"
       }
     },
     {
@@ -134,8 +132,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "76259-1",
-        "display" : "Pressure.plateau Respiratory system airway --on ventilator"
+        "code" : "76259-1"
       }
     },
     {
@@ -146,8 +143,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
       "max" : "1",
       "patternCoding" : {
         "system" : "urn:iso:std:iso:11073:10101",
-        "code" : "152424",
-        "display" : "MDC_VENT_PRESS_RESP_PLAT"
+        "code" : "152424"
       }
     },
     {

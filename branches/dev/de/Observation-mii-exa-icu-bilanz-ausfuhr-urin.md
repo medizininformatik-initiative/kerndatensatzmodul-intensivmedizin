@@ -41,6 +41,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Urin](https://simplifier.net/resolve?scope=d
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "exam",
       "display" : "Exam"
     },
@@ -60,6 +61,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Urin](https://simplifier.net/resolve?scope=d
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "9187-6",
       "display" : "Urine output"
     }]

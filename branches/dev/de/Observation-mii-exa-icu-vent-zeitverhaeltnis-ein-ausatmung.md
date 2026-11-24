@@ -56,6 +56,7 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "75931-6",
       "display" : "Inspiration/Expiration time Ratio"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-i
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151832",
       "display" : "MDC_RATIO_IE"
     }]

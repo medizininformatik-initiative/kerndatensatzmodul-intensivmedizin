@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Visuelle_Analogskala",
   "title" : "MII PR ICU Score Visuelle Analogskala",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -119,11 +119,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "patternCode" : "38214-3"
     },
     {
-      "id" : "Observation.code.coding:loinc.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Pain severity [Score] Visual analog score"
-    },
-    {
       "id" : "Observation.code.coding:sct",
       "path" : "Observation.code.coding",
       "sliceName" : "sct",
@@ -133,11 +128,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "id" : "Observation.code.coding:sct.code",
       "path" : "Observation.code.coding.code",
       "patternCode" : "443394008"
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Visual analog scale pain score (observable entity)"
     },
     {
       "id" : "Observation.value[x]",

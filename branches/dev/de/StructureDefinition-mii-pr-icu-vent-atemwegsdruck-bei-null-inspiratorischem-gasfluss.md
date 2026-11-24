@@ -49,8 +49,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Parameter_Von_Beatmung](StructureD
 
 ** Summary **
 
-Mandatory: 3 elements
- Must-Support: 1 element
+Mandatory: 2 elements
  Prohibited: 2 elements
 
 **Slices**
@@ -79,8 +78,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Parameter_Von_Beatmung](StructureD
 
 ** Summary **
 
-Mandatory: 3 elements
- Must-Support: 1 element
+Mandatory: 2 elements
  Prohibited: 2 elements
 
 **Slices**
@@ -106,7 +104,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Inspiratorischem_Gasfluss",
   "title" : "MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -201,12 +199,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
         "system" : "http://loinc.org",
         "code" : "20060-0"
       }
-    },
-    {
-      "id" : "Observation.code.coding:loinc.version",
-      "path" : "Observation.code.coding.version",
-      "min" : 1,
-      "mustSupport" : true
     },
     {
       "id" : "Observation.code.coding:IEEE-11073",

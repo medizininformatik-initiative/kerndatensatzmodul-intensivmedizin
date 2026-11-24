@@ -41,6 +41,7 @@ Profile: [MII PR ICU MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerp
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],

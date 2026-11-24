@@ -43,17 +43,20 @@ Profile: [SD MII ICU Koerpertemperatur Brustwirbelsaeule](https://simplifier.net
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "364424001",
       "display" : "Temperature of thoracic spine"
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8310-5"
     }]
   },
@@ -73,6 +76,7 @@ Profile: [SD MII ICU Koerpertemperatur Brustwirbelsaeule](https://simplifier.net
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "122495006",
       "display" : "Structure of thoracic vertebral column (body structure)"
     }]

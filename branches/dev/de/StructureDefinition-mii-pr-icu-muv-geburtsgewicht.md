@@ -46,8 +46,8 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](Structu
 
 ** Summary **
 
-Mandatory: 6 elements(1 nested mandatory element)
- Must-Support: 4 elements
+Mandatory: 7 elements(10 nested mandatory elements)
+ Must-Support: 27 elements
 
 **Slices**
 
@@ -77,8 +77,8 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](Structu
 
 ** Summary **
 
-Mandatory: 6 elements(1 nested mandatory element)
- Must-Support: 4 elements
+Mandatory: 7 elements(10 nested mandatory elements)
+ Must-Support: 27 elements
 
 **Slices**
 
@@ -103,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Geburtsgewicht",
   "title" : "MII PR ICU MUV Geburtsgewicht",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -164,6 +164,37 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       }]
     },
     {
+      "id" : "Observation.category",
+      "path" : "Observation.category"
+    },
+    {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:vs-cat",
+      "path" : "Observation.category",
+      "sliceName" : "vs-cat"
+    },
+    {
+      "id" : "Observation.category:vs-cat.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:vs-cat.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding",
       "path" : "Observation.code.coding",
       "slicing" : {
@@ -174,6 +205,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
         "rules" : "closed"
       },
       "min" : 3,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -194,6 +236,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:sct.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:loinc",
       "path" : "Observation.code.coding",
       "sliceName" : "loinc",
@@ -211,6 +258,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.code.coding:loinc.display",
+      "path" : "Observation.code.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.code.coding:IEEE-11073",
       "path" : "Observation.code.coding",
       "sliceName" : "IEEE-11073",
@@ -225,6 +277,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "id" : "Observation.code.coding:IEEE-11073.version",
       "path" : "Observation.code.coding.version",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -246,6 +303,83 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "id" : "Observation.value[x].code",
       "path" : "Observation.value[x].code",
       "patternCode" : "g"
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.version",
+      "path" : "Observation.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.dataAbsentReason.coding.display",
+      "path" : "Observation.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.version",
+      "path" : "Observation.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.interpretation.coding.display",
+      "path" : "Observation.interpretation.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.version",
+      "path" : "Observation.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.bodySite.coding.display",
+      "path" : "Observation.bodySite.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.version",
+      "path" : "Observation.method.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.method.coding.display",
+      "path" : "Observation.method.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.code.coding.version",
+      "path" : "Observation.component.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.code.coding.display",
+      "path" : "Observation.component.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.dataAbsentReason.coding.version",
+      "path" : "Observation.component.dataAbsentReason.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.dataAbsentReason.coding.display",
+      "path" : "Observation.component.dataAbsentReason.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.interpretation.coding.version",
+      "path" : "Observation.component.interpretation.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.component.interpretation.coding.display",
+      "path" : "Observation.component.interpretation.coding.display",
+      "mustSupport" : true
     }]
   }
 }

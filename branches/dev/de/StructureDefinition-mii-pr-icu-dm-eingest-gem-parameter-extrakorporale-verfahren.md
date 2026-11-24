@@ -60,8 +60,8 @@ Diese Struktur ist abgeleitet von [DeviceMetric](http://hl7.org/fhir/R4/deviceme
 
 ** Summary **
 
-Mandatory: 0 element(2 nested mandatory elements)
- Must-Support: 6 elements
+Mandatory: 0 element(3 nested mandatory elements)
+ Must-Support: 7 elements
 
 **Structures**
 
@@ -91,8 +91,8 @@ Diese Struktur ist abgeleitet von [DeviceMetric](http://hl7.org/fhir/R4/deviceme
 
 ** Summary **
 
-Mandatory: 0 element(2 nested mandatory elements)
- Must-Support: 6 elements
+Mandatory: 0 element(3 nested mandatory elements)
+ Must-Support: 7 elements
 
 **Structures**
 
@@ -117,7 +117,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
   "name" : "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren",
   "title" : "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -171,6 +171,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-d
     {
       "id" : "DeviceMetric.type.coding.system",
       "path" : "DeviceMetric.type.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "DeviceMetric.type.coding.version",
+      "path" : "DeviceMetric.type.coding.version",
       "min" : 1,
       "mustSupport" : true
     },

@@ -56,6 +56,7 @@ Profile: [MII PR ICU Dynamische Compliance](StructureDefinition-mii-pr-icu-vent-
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "60827-3",
       "display" : "Dynamic lung compliance"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Dynamische Compliance](StructureDefinition-mii-pr-icu-vent-
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151692",
       "display" : "MDC_COMPL_LUNG_DYN"
     }]

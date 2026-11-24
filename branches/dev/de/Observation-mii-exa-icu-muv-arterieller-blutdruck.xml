@@ -13,17 +13,20 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
       <code value="364090009"/>
       <display value="Systemic arterial pressure (observable entity)"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="85354-9"/>
       <display value="Blood pressure panel with all children optional"/>
     </coding>
@@ -36,16 +39,19 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
       <coding>
         <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="271649006"/>
         <display value="Systolic blood pressure (observable entity)"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150017"/>
         <display value="Systolic blood pressure"/>
       </coding>
@@ -61,16 +67,19 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8478-0"/>
         <display value="Mean blood pressure"/>
       </coding>
       <coding>
         <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="6797001"/>
         <display value="Mean blood pressure (observable entity)"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150019"/>
         <display value="Mean blood pressure"/>
       </coding>
@@ -86,16 +95,19 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>
       <coding>
         <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20260701"/>
         <code value="271650006"/>
         <display value="Diastolic blood pressure (observable entity)"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150018"/>
         <display value="Diastolic blood pressure"/>
       </coding>

@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
   "name" : "MII_PR_ICU_VENT_Spontanes_Plus_Mechanisches_Atemzugvolumen",
   "title" : "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -108,8 +108,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -127,8 +126,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-s
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "20118-6",
-        "display" : "Tidal volume.spontaneous+mechanical --on ventilator"
+        "code" : "20118-6"
       }
     },
     {

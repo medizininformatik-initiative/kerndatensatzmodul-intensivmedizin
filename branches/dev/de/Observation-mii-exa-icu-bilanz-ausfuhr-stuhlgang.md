@@ -41,6 +41,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Stuhlgang](https://simplifier.net/resolve?sc
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "exam"
     },
     {
@@ -59,6 +60,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Stuhlgang](https://simplifier.net/resolve?sc
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "9217-1",
       "display" : "Output.stool [Volume]"
     }]

@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
   "name" : "MII_PR_ICU_VENT_Inspiratorischer_Gasfluss",
   "title" : "MII PR ICU Inspiratorischer Gasfluss",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -106,8 +106,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -130,8 +129,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "60794-5",
-        "display" : "Inspiratory gas flow Respiratory system airway --on ventilator"
+        "code" : "60794-5"
       }
     },
     {

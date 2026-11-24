@@ -45,6 +45,7 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -61,11 +62,13 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "60988-3",
       "display" : "Left atrial pressure"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "150064"
     }]
   },
@@ -77,15 +80,18 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8480-6"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "60989-1",
         "display" : "Left atrial pressure Systolic"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150065",
         "display" : "Systolic left atrial pressure"
       }]
@@ -101,15 +107,18 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8478-0"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8399-8",
         "display" : "Left atrial Intrachamber mean pressure"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150067",
         "display" : "Mean left atrial pressure"
       }]
@@ -125,15 +134,18 @@ Profile: [SD MII ICU Linksatrialer Druck](https://simplifier.net/resolve?scope=d
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8462-4"
       },
       {
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "75933-2",
         "display" : "Left atrial pressure Diastolic"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150066",
         "display" : "Diastolic left atrial pressure"
       }]

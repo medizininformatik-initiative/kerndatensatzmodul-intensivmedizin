@@ -152,7 +152,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren",
   "title" : "MII PR ICU Extrakorporales Verfahren",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -207,6 +207,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
       "max" : "1"
     },
     {
+      "id" : "Procedure.category.coding.version",
+      "path" : "Procedure.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.category.coding.display",
+      "path" : "Procedure.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Procedure.category.coding:sct",
       "path" : "Procedure.category.coding",
       "sliceName" : "sct",
@@ -221,8 +232,39 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
       "patternUri" : "http://snomed.info/sct"
     },
     {
+      "id" : "Procedure.category.coding:sct.version",
+      "path" : "Procedure.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
       "id" : "Procedure.category.coding:sct.display",
       "path" : "Procedure.category.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.coding",
+      "path" : "Procedure.code.coding"
+    },
+    {
+      "id" : "Procedure.code.coding.version",
+      "path" : "Procedure.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.coding.display",
+      "path" : "Procedure.code.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.coding:ops",
+      "path" : "Procedure.code.coding",
+      "sliceName" : "ops"
+    },
+    {
+      "id" : "Procedure.code.coding:ops.display",
+      "path" : "Procedure.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -234,6 +276,12 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
         "description" : "Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004)",
         "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren"
       }
+    },
+    {
+      "id" : "Procedure.code.coding:sct.version",
+      "path" : "Procedure.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code.coding:sct.display",
@@ -275,6 +323,36 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-extrak
         "http://hl7.org/fhir/StructureDefinition/Practitioner",
         "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
       }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.bodySite.coding",
+      "path" : "Procedure.bodySite.coding"
+    },
+    {
+      "id" : "Procedure.bodySite.coding.version",
+      "path" : "Procedure.bodySite.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.bodySite.coding.display",
+      "path" : "Procedure.bodySite.coding.display",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.bodySite.coding:snomed-ct",
+      "path" : "Procedure.bodySite.coding",
+      "sliceName" : "snomed-ct"
+    },
+    {
+      "id" : "Procedure.bodySite.coding:snomed-ct.version",
+      "path" : "Procedure.bodySite.coding.version",
+      "min" : 1
+    },
+    {
+      "id" : "Procedure.bodySite.coding:snomed-ct.display",
+      "path" : "Procedure.bodySite.coding.display",
       "mustSupport" : true
     }]
   }

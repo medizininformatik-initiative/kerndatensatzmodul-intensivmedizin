@@ -62,11 +62,13 @@ Profile: [MII PR ICU Mittlerer Beatmungsdruck](StructureDefinition-mii-pr-icu-ve
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "76530-5",
       "display" : "Mean pressure Respiratory system airway --on ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151975",
       "display" : "MDC_VENT_PRESS_AWAY_MEAN"
     }]

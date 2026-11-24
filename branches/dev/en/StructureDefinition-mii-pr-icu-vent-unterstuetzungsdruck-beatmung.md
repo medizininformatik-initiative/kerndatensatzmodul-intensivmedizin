@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-u
   "name" : "MII_PR_ICU_VENT_Unterstuetzungsdruck_Beatmung",
   "title" : "MII PR ICU Unterstuetzungsdruck Beatmung",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -106,8 +106,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-u
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "40617009",
-          "display" : "Artificial ventilation (regime/therapy)"
+          "code" : "40617009"
         }]
       }
     },
@@ -125,8 +124,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-u
       "max" : "1",
       "patternCoding" : {
         "system" : "http://loinc.org",
-        "code" : "20079-0",
-        "display" : "Pressure support setting Ventilator"
+        "code" : "20079-0"
       }
     },
     {

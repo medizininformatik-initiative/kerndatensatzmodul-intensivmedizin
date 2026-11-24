@@ -59,6 +59,7 @@ Profile: [MII PR ICU Bilanz Kalorienbedarf pro Tag](StructureDefinition-mii-pr-i
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
       "code" : "258090004",
       "display" : "Calculated"
     }],

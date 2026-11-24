@@ -62,6 +62,7 @@ Profile: [MII PR ICU Inspiratorische Sauerstofffraktion](StructureDefinition-mii
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "19994-3",
       "display" : "Oxygen/Total gas setting [Volume Fraction] Ventilator"
     }]

@@ -56,11 +56,13 @@ Profile: [MII PR ICU Exspiratorischer Gasfluss](StructureDefinition-mii-pr-icu-v
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "60792-9",
       "display" : "Expiratory gas flow Respiratory system airway --on ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "151944",
       "display" : "MDC_VENT_FLOW_EXP"
     }]

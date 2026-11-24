@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
   "name" : "MII_PR_ICU_Score_Numerische_Ratingskala",
   "title" : "MII PR ICU Score Numerische Ratingskala",
   "status" : "draft",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -117,11 +117,6 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-score-
       "id" : "Observation.code.coding:sct.code",
       "path" : "Observation.code.coding.code",
       "patternCode" : "1284857008"
-    },
-    {
-      "id" : "Observation.code.coding:sct.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Numeric Pain Rating Scale score (observable entity)"
     },
     {
       "id" : "Observation.value[x]",

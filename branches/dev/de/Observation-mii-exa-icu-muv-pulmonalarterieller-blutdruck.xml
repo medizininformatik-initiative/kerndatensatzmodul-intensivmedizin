@@ -13,6 +13,7 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
@@ -30,11 +31,13 @@
     </coding>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="76284-9"/>
       <display value="Pulmonary artery Blood pressure"/>
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
+      <version value="2024-12-05"/>
       <code value="150044"/>
     </coding>
   </code>
@@ -46,15 +49,18 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8480-6"/>
       </coding>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8440-0"/>
         <display value="Pulmonary artery Systolic blood pressure"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150045"/>
         <display value="Systolic pulmonary arterial pressure"/>
       </coding>
@@ -70,15 +76,18 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8478-0"/>
       </coding>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8414-5"/>
         <display value="Pulmonary artery Mean blood pressure"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150047"/>
         <display value="Mean pulmonary arterial pressure"/>
       </coding>
@@ -94,15 +103,18 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8462-4"/>
       </coding>
       <coding>
         <system value="http://loinc.org"/>
+        <version value="2.83"/>
         <code value="8385-7"/>
         <display value="Pulmonary artery Diastolic blood pressure"/>
       </coding>
       <coding>
         <system value="urn:iso:std:iso:11073:10101"/>
+        <version value="2024-12-05"/>
         <code value="150046"/>
         <display value="Diastolic pulmonary arterial pressure"/>
       </coding>

@@ -41,6 +41,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](https://simplifier.net/
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "therapy"
     },
     {
@@ -59,6 +60,7 @@ Profile: [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](https://simplifier.net/
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "9103-3",
       "display" : "Fluid intake total Measured"
     }]

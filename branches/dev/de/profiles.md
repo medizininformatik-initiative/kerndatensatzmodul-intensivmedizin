@@ -21,6 +21,12 @@ Körpergröße und allgemeines Körpergewicht behalten ihre deutschen Elternprof
 
 Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.
 
+**Terminologieversionen und Displays (alle modul-eigenen Profile)**
+
+Jedes Coding in den modul-eigenen Profilen verlangt `version` (1..1, Must Support) und unterstützt `display` (0..1, Must Support). Feste Codes und Muster (Patterns) enthalten nur System und Code; sie legen nie eine Version oder ein Display fest.
+
+Abweichungen von ISiK: Das modul-eigene Basisprofil `MII_PR_ICU_Monitoring_Und_Vitaldaten` behält die Elementregeln aus ISiK 6.0.0 unverändert bei; diese Coding-Regeln stehen daher in den davon abgeleiteten Profilen. Die unten aufgeführten ISiK-Profile werden so verwendet, wie gematik sie veröffentlicht, und folgen diesen Regeln noch nicht; Änderungsanträge an gematik sind in Vorbereitung.
+
 **ISiK-gehostete Profile — de.gematik.isik 6.0.0**
 Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert — die Liste ändert sich nur mit einem bewussten Pin-Wechsel. Jeder Link öffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.
 

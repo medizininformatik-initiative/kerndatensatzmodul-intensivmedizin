@@ -56,6 +56,7 @@ Profile: [MII PR ICU Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-i
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "20079-0",
       "display" : "Pressure support setting Ventilator"
     }]

@@ -49,8 +49,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergewicht](https://simplifie
 
 ** Summary **
 
-Mandatory: 5 elements(6 nested mandatory elements)
- Must-Support: 40 elements
+Mandatory: 5 elements(9 nested mandatory elements)
+ Must-Support: 46 elements
  Prohibited: 1 element
 
 **Slices**
@@ -82,8 +82,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergewicht](https://simplifie
 
 ** Summary **
 
-Mandatory: 5 elements(6 nested mandatory elements)
- Must-Support: 40 elements
+Mandatory: 5 elements(9 nested mandatory elements)
+ Must-Support: 46 elements
  Prohibited: 1 element
 
 **Slices**
@@ -110,7 +110,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergewicht",
   "title" : "MII PR ICU MUV Koerpergewicht",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -156,6 +156,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "mustSupport" : true
     },
     {
+      "id" : "Observation.category.coding.version",
+      "path" : "Observation.category.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category.coding.display",
+      "path" : "Observation.category.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.category:VSCat",
       "path" : "Observation.category",
       "sliceName" : "VSCat",
@@ -169,6 +180,12 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.category:VSCat.coding.system",
       "path" : "Observation.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.category:VSCat.coding.version",
+      "path" : "Observation.category.coding.version",
       "min" : 1,
       "mustSupport" : true
     },
@@ -242,6 +259,17 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       },
       "min" : 3,
       "max" : "3",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.version",
+      "path" : "Observation.code.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {
@@ -326,6 +354,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
       "id" : "Observation.code.coding:IEEE-11073.version",
       "path" : "Observation.code.coding.version",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.coding:IEEE-11073.display",
+      "path" : "Observation.code.coding.display",
       "mustSupport" : true
     },
     {

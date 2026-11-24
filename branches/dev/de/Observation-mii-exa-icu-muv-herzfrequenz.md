@@ -41,12 +41,14 @@ Profile: [MII PR ICU MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfr
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8867-4",
       "display" : "Heart Rate"
     },
@@ -58,6 +60,7 @@ Profile: [MII PR ICU MUV Herzfrequenz](StructureDefinition-mii-pr-icu-muv-herzfr
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "147842",
       "display" : "Heart Rate"
     }]

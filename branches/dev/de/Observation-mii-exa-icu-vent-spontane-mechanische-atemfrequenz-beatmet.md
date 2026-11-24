@@ -56,6 +56,7 @@ Profile: [MII PR ICU Spontane Mechanische Atemfrequenz Beatmet](StructureDefinit
   {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs",
       "display" : "Vital Signs"
     }]
@@ -69,11 +70,13 @@ Profile: [MII PR ICU Spontane Mechanische Atemfrequenz Beatmet](StructureDefinit
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "19840-8",
       "display" : "Breath rate spontaneous and mechanical --on ventilator"
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "152490",
       "display" : "MDC_VENT_RESP_BTSD_PSAZC_RATE"
     }]

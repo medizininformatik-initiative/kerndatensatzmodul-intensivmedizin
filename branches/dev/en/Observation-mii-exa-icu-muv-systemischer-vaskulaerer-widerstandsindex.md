@@ -41,12 +41,14 @@ Profile: [SD MII ICU Systemischer Vaskulaerer Widerstandsindex](https://simplifi
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "8837-7",
       "display" : "Systemic vascular Resistance index"
     },
@@ -58,6 +60,7 @@ Profile: [SD MII ICU Systemischer Vaskulaerer Widerstandsindex](https://simplifi
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "149760",
       "display" : "Systemic vascular resistance indexed"
     }]

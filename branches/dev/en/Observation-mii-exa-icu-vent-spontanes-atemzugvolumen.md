@@ -56,6 +56,7 @@ Profile: [MII PR ICU Spontanes Atemzugvolumen](StructureDefinition-mii-pr-icu-ve
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "20116-0",
       "display" : "Tidal volume.spontaneous --on ventilator"
     },

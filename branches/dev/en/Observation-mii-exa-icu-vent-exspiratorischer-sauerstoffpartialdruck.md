@@ -56,6 +56,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "3147-6",
       "display" : "Oxygen [Partial pressure] in Exhaled gas"
     },
@@ -67,6 +68,7 @@ Profile: [MII PR ICU Exspiratorischer Sauerstoffpartialdruck](StructureDefinitio
     },
     {
       "system" : "urn:iso:std:iso:11073:10101",
+      "version" : "2024-12-05",
       "code" : "153132",
       "display" : "MDC_CONC_AWAY_O2_EXP"
     }]

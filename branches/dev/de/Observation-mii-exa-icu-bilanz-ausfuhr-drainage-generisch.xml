@@ -13,6 +13,7 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="exam"/>
     </coding>
     <coding>
@@ -31,6 +32,7 @@
     </coding>
     <coding>
       <system value="urn:iso:std:iso:11073:10101"/>
+      <version value="2024-12-05"/>
       <code value="157740"/>
     </coding>
   </code>

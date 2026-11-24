@@ -41,6 +41,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit](https://simplifier.net/r
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "exam"
     },
     {
@@ -59,6 +60,7 @@ Profile: [MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit](https://simplifier.net/r
     },
     {
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "9113-2",
       "display" : "Fluid output biliary drain"
     }]

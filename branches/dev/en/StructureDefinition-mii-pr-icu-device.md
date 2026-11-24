@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-device
   "name" : "MII_PR_ICU_Device",
   "title" : "MII PR ICU Device",
   "status" : "active",
-  "date" : "2026-11-24T11:24:10+00:00",
+  "date" : "2026-11-24T12:01:14+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -123,6 +123,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-device
       "mustSupport" : true
     },
     {
+      "id" : "Device.type.coding.version",
+      "path" : "Device.type.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Device.type.coding.display",
+      "path" : "Device.type.coding.display",
+      "mustSupport" : true
+    },
+    {
       "id" : "Device.version",
       "path" : "Device.version",
       "mustSupport" : true
@@ -140,6 +151,17 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-device
     {
       "id" : "Device.property.type",
       "path" : "Device.property.type",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Device.property.type.coding.version",
+      "path" : "Device.property.type.coding.version",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Device.property.type.coding.display",
+      "path" : "Device.property.type.coding.display",
       "mustSupport" : true
     }]
   }

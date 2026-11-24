@@ -45,6 +45,7 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
       "code" : "vital-signs"
     }]
   }],
@@ -64,16 +65,19 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8480-6",
         "display" : "Systolic blood pressure"
       },
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "271649006",
         "display" : "Systolic blood pressure (observable entity)"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150017",
         "display" : "Systolic blood pressure"
       }]
@@ -89,16 +93,19 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8478-0",
         "display" : "Mean blood pressure"
       },
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "6797001",
         "display" : "Mean blood pressure (observable entity)"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150019",
         "display" : "Mean blood pressure"
       }]
@@ -114,16 +121,19 @@ Profile: [SD MII ICU Sonstige pulsatile Druecke Generisch](https://simplifier.ne
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
+        "version" : "2.83",
         "code" : "8462-4",
         "display" : "Diastolic blood pressure"
       },
       {
         "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/900000000000207008/version/20260701",
         "code" : "271650006",
         "display" : "Diastolic blood pressure (observable entity)"
       },
       {
         "system" : "urn:iso:std:iso:11073:10101",
+        "version" : "2024-12-05",
         "code" : "150018",
         "display" : "Diastolic blood pressure"
       }]

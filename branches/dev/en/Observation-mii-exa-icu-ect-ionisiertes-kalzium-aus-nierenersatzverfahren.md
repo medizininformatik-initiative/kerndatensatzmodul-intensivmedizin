@@ -56,6 +56,7 @@ Profile: [MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren](StructureDefinit
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
+      "version" : "2.83",
       "code" : "83064-6",
       "display" : "Calcium.ionized [Moles/volume] in Blood drawn from CRRT circuit"
     }]

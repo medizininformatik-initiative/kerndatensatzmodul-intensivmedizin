@@ -12,12 +12,14 @@
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <version value="2.0.0"/>
       <code value="vital-signs"/>
     </coding>
   </category>
   <code>
     <coding>
       <system value="http://loinc.org"/>
+      <version value="2.83"/>
       <code value="8791-6"/>
       <display value="Left ventricular Stroke volume index by Indicator dilution"/>
     </coding>
