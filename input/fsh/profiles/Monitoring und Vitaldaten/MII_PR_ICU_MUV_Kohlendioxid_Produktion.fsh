@@ -19,13 +19,6 @@ Description: "Carbon dioxide production (VCO2): the volume of carbon dioxide the
 * category[vs-cat].coding.system 1.. MS
 * category[vs-cat].coding.code 1.. MS
 * category[vs-cat].coding.display MS
-* category contains sct 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 * code.coding 3.. MS
 * code.coding ^slicing.rules = #closed

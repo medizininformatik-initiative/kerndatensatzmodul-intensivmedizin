@@ -18,13 +18,6 @@ Description: "Pulmonary vascular resistance index: the resistance of the pulmona
 * category[VSCat].coding.system 1.. MS
 * category[VSCat].coding.code 1.. MS
 * category[VSCat].coding.display MS
-* category contains sct 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 * code MS
 * code.coding 3.. MS
