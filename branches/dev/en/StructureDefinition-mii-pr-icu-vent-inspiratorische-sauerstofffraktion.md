@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-inspiratorische-sauerstofffraktion | *Version*:2027.0.0 |
-| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
+| Active as of 2026-11-25 | *Computable Name*:MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion |
 
  
 Inspiratory oxygen fraction (FiO2): the proportion of oxygen in the inspired gas. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-i
   "name" : "MII_PR_ICU_VENT_Inspiratorische_Sauerstofffraktion",
   "title" : "MII PR ICU Inspiratorische Sauerstofffraktion",
   "status" : "active",
-  "date" : "2026-11-24T12:01:14+00:00",
+  "date" : "2026-11-25T11:38:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

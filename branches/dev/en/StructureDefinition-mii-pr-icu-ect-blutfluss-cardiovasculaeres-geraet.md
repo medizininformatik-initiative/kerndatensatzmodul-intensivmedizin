@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet | *Version*:2027.0.0 |
-| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet |
+| Active as of 2026-11-25 | *Computable Name*:MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet |
 
  
 Blood flow through a cardiovascular device, such as a ventricular assist device or an extracorporeal circuit. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-bl
   "name" : "MII_PR_ICU_ECT_Blutfluss_Cardiovasculaeres_Geraet",
   "title" : "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
   "status" : "active",
-  "date" : "2026-11-24T12:01:14+00:00",
+  "date" : "2026-11-25T11:38:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

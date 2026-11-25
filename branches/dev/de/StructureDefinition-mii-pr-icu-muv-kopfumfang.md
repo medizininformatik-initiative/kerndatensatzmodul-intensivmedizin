@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang | *Version*:2027.0.0 |
-| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Kopfumfang |
+| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Kopfumfang |
 
  
 Head circumference, measured as the largest circumference of the head. 
@@ -47,8 +47,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 
 ** Summary **
 
-Mandatory: 4 elements(9 nested mandatory elements)
- Must-Support: 41 elements
+Mandatory: 4 elements(5 nested mandatory elements)
+ Must-Support: 35 elements
 
 **Slices**
 
@@ -76,8 +76,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Kopfumfang](https://simplifier.ne
 
 ** Summary **
 
-Mandatory: 4 elements(9 nested mandatory elements)
- Must-Support: 41 elements
+Mandatory: 4 elements(5 nested mandatory elements)
+ Must-Support: 35 elements
 
 **Slices**
 
@@ -102,7 +102,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Kopfumfang",
   "title" : "MII PR ICU MUV Kopfumfang",
   "status" : "active",
-  "date" : "2026-11-24T12:01:14+00:00",
+  "date" : "2026-11-25T11:38:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -148,52 +148,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     {
       "id" : "Observation.category.coding.display",
       "path" : "Observation.category.coding.display",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct",
-      "path" : "Observation.category",
-      "sliceName" : "sct",
-      "min" : 0,
-      "max" : "1",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "248326004"
-        }]
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding",
-      "path" : "Observation.category.coding",
-      "patternCoding" : {
-        "system" : "http://snomed.info/sct"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.system",
-      "path" : "Observation.category.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.version",
-      "path" : "Observation.category.coding.version",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.code",
-      "path" : "Observation.category.coding.code",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.display",
-      "path" : "Observation.category.coding.display",
-      "min" : 1,
       "mustSupport" : true
     },
     {

@@ -14,7 +14,6 @@
     <sch:rule context="f:Observation/f:category/f:coding">
       <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
       <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
-      <sch:assert test="count(f:version) &gt;= 1">version: minimum cardinality of 'version' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

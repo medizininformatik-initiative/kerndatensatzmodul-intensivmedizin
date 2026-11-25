@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht | *Version*:2027.0.0 |
-| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerpergewicht |
+| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerpergewicht |
 
  
 Body weight of the patient. 
@@ -49,8 +49,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergewicht](https://simplifie
 
 ** Summary **
 
-Mandatory: 5 elements(9 nested mandatory elements)
- Must-Support: 46 elements
+Mandatory: 5 elements(6 nested mandatory elements)
+ Must-Support: 40 elements
  Prohibited: 1 element
 
 **Slices**
@@ -82,8 +82,8 @@ Diese Struktur ist abgeleitet von [VitalSignDE_Koerpergewicht](https://simplifie
 
 ** Summary **
 
-Mandatory: 5 elements(9 nested mandatory elements)
- Must-Support: 46 elements
+Mandatory: 5 elements(6 nested mandatory elements)
+ Must-Support: 40 elements
  Prohibited: 1 element
 
 **Slices**
@@ -110,7 +110,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerpergewicht",
   "title" : "MII PR ICU MUV Koerpergewicht",
   "status" : "active",
-  "date" : "2026-11-24T12:01:14+00:00",
+  "date" : "2026-11-25T11:38:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -197,48 +197,6 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
     },
     {
       "id" : "Observation.category:VSCat.coding.display",
-      "path" : "Observation.category.coding.display",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct",
-      "path" : "Observation.category",
-      "sliceName" : "sct",
-      "min" : 0,
-      "max" : "*",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "248326004"
-        }]
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding",
-      "path" : "Observation.category.coding",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.system",
-      "path" : "Observation.category.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.version",
-      "path" : "Observation.category.coding.version",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.code",
-      "path" : "Observation.category.coding.code",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category:sct.coding.display",
       "path" : "Observation.category.coding.display",
       "mustSupport" : true
     },

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-arterieller-druck | *Version*:2027.0.0 |
-| Active as of 2026-11-24 | *Computable Name*:MII_PR_ICU_ECT_Arterieller_Druck |
+| Active as of 2026-11-25 | *Computable Name*:MII_PR_ICU_ECT_Arterieller_Druck |
 
  
 Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-ect-ar
   "name" : "MII_PR_ICU_ECT_Arterieller_Druck",
   "title" : "MII PR ICU Arterieller Druck",
   "status" : "active",
-  "date" : "2026-11-24T12:01:14+00:00",
+  "date" : "2026-11-25T11:38:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

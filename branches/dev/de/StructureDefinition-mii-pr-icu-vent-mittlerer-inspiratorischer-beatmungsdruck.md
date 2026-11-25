@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-inspiratorischer-beatmungsdruck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-24 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck |
+| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck |
 
  
 Mean airway pressure during the inspiratory phase of a ventilator breath. 
@@ -86,7 +86,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Mittlerer_Inspiratorischer_Beatmungsdruck",
   "title" : "MII PR ICU Mittlerer Inspiratorischer Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-24T12:01:14+00:00",
+  "date" : "2026-11-25T11:38:26+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
