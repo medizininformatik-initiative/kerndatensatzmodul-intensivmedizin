@@ -18,13 +18,6 @@ Description: "Body weight of the patient."
 * category[VSCat].coding.code 1..1 MS
 * category[VSCat].coding.display 0..1 MS
 
-* category contains sct 0.. MS
-* category[sct].coding 0.. MS
-* category[sct].coding.system 1..1 MS
-* category[sct].coding.code 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding.display 0..1 MS
 
 * code MS
 * code.coding[loinc] 1..1 MS
@@ -72,7 +65,6 @@ Description: "Body weight of the patient."
 * code.coding[loinc].version 1..1 MS
 * code.coding[snomed].version 1..1 MS
 * code.coding[IEEE-11073].version 1..1 MS
-* category[sct].coding.version 1..1 MS
 
 // Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
 * category.coding.display 0..1 MS

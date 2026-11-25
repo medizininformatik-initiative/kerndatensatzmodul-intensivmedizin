@@ -132,6 +132,21 @@
           "source": "valid/icu-koerpergroesse-other-version.json",
           "description": "Valid: terminology edition is provided without a fixed release requirement",
           "valid": true
+        },
+        {
+          "source": "valid/category-koerpergroesse-vital-signs-only.json",
+          "valid": true,
+          "description": "mii-pr-icu-muv-koerpergroesse: vital-signs-only"
+        },
+        {
+          "source": "valid/category-koerpergroesse-legacy-body-measure.json",
+          "valid": true,
+          "description": "mii-pr-icu-muv-koerpergroesse: legacy-body-measure"
+        },
+        {
+          "source": "invalid/category-koerpergroesse-missing-vital-signs.json",
+          "valid": false,
+          "description": "mii-pr-icu-muv-koerpergroesse: missing-vital-signs"
         }
       ]
     },
@@ -827,6 +842,26 @@
           "source": "invalid/icu-inspiratory-zero-flow-missing-version.json",
           "valid": false,
           "description": "Inspiratory zero-flow pressure: missing-version"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil",
+      "tests": [
+        {
+          "source": "valid/category-koerpergroesse-perzentil-vital-signs-only.json",
+          "valid": true,
+          "description": "mii-pr-icu-muv-koerpergroesse-perzentil: vital-signs-only"
+        },
+        {
+          "source": "valid/category-koerpergroesse-perzentil-legacy-body-measure.json",
+          "valid": true,
+          "description": "mii-pr-icu-muv-koerpergroesse-perzentil: legacy-body-measure"
+        },
+        {
+          "source": "invalid/category-koerpergroesse-perzentil-missing-vital-signs.json",
+          "valid": false,
+          "description": "mii-pr-icu-muv-koerpergroesse-perzentil: missing-vital-signs"
         }
       ]
     }
