@@ -2,13 +2,14 @@ Profile: MII_PR_ICU_Monitoring_Und_Vitaldaten
 Parent: Observation
 Id: mii-pr-icu-monitoring-und-vitaldaten
 Title: "MII PR ICU Monitoring und Vitaldaten"
-Description: "Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement."
+Description: "Independent counterpart of the ISiK 6.0.0 monitoring profile, with module-specific measurement-code value-set bindings and exactly one coding in the required vital-signs category slice. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten"
 * ^status = #draft
 
-// Element rules mirror ISiK 6.0.0; only the three measurement-code bindings differ.
+// Based on ISiK 6.0.0, with module-specific measurement-code bindings and
+// an explicit 1..1 coding cardinality in the vital-signs category slice.
 // tests/profiles/check-monitoring-isik-parity.py compares the generated profile with ISiK.
 
 * id ^short = "serverseitige, interne ID des Datensatzes"
@@ -36,7 +37,7 @@ Description: "Independent counterpart of the ISiK 6.0.0 monitoring profile, pres
 * category ^slicing.rules = #open
 * category contains vs-cat 1..1 MS
 * category[vs-cat] = $observation-category#vital-signs
-* category[vs-cat].coding MS
+* category[vs-cat].coding 1..1 MS
 * category[vs-cat].coding.system 1.. MS
 * category[vs-cat].coding.code 1.. MS
 

@@ -9,8 +9,6 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * ^status = #draft
 * obeys mii-icu-val-xor-dar
 
-* category[vs-cat].coding 1..1 MS
-
 * code.coding 4..4 MS
 * code.coding ^slicing.rules = #closed
 * code.coding[loinc] 1..1 MS

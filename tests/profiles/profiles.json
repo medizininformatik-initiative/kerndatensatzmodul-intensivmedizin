@@ -72,6 +72,16 @@
           "source": "valid/icu-koerperlaenge-bei-geburt-other-version.json",
           "description": "Valid: terminology edition is provided without a fixed release requirement",
           "valid": true
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-koerperlaenge-bei-geburt-category-coding-missing.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: missing"
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-koerperlaenge-bei-geburt-category-coding-multiple.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: multiple"
         }
       ]
     },
@@ -357,6 +367,16 @@
           "source": "invalid/icu-birth-weight-kilograms.json",
           "valid": false,
           "description": "Invalid: birth weight requires grams, not kilograms"
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-geburtsgewicht-category-coding-missing.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: missing"
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-geburtsgewicht-category-coding-multiple.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: multiple"
         }
       ]
     },
@@ -412,6 +432,16 @@
           "source": "invalid/icu-energy-expenditure-snomed.json",
           "description": "Invalid: additional SNOMED coding is prohibited",
           "valid": false
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie-category-coding-missing.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: missing"
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-energieverbrauch-indirekte-kalorimetrie-category-coding-multiple.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: multiple"
         }
       ]
     },
@@ -497,6 +527,16 @@
           "source": "invalid/icu-vco2-missing-version.json",
           "valid": false,
           "description": "missing version"
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-kohlendioxid-produktion-category-coding-missing.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: missing"
+        },
+        {
+          "source": "invalid/mii-pr-icu-muv-kohlendioxid-produktion-category-coding-multiple.json",
+          "valid": false,
+          "description": "Inherited vital-signs category coding cardinality: multiple"
         }
       ]
     },
