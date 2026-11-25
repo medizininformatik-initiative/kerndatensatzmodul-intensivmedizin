@@ -180,7 +180,7 @@
       "tests": [
         {
           "source": "valid/icu-body-length.json",
-          "description": "Valid recumbent body length with the lying LOINC code, without general body height",
+          "description": "Valid recumbent body length with specific LOINC/SNOMED, IEEE 188740 and validator-required general LOINC",
           "valid": true
         },
         {
@@ -200,7 +200,7 @@
         },
         {
           "source": "valid/icu-body-length-with-iso.json",
-          "description": "Valid recumbent body length with required general patient-height ISO code",
+          "description": "Valid recumbent body length with mandatory IEEE actual-body-length code 188740",
           "valid": true
         },
         {
@@ -222,6 +222,21 @@
           "source": "valid/icu-koerperlaenge-other-version.json",
           "description": "Valid: terminology edition is provided without a fixed release requirement",
           "valid": true
+        },
+        {
+          "source": "invalid/icu-body-length-old-height-ieee.json",
+          "valid": false,
+          "description": "Invalid body length: old-height-ieee"
+        },
+        {
+          "source": "invalid/icu-body-length-missing-category-coding.json",
+          "valid": false,
+          "description": "Invalid body length: missing-category-coding"
+        },
+        {
+          "source": "invalid/icu-body-length-extra-category-coding.json",
+          "valid": false,
+          "description": "Invalid body length: extra-category-coding"
         }
       ]
     },
