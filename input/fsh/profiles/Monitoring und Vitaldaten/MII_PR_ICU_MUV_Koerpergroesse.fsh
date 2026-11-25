@@ -13,13 +13,6 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 
 * category MS
 * category[VSCat].coding.display MS
-* category contains sct 0.. MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 // Only the height codings below are permitted in this specialised profile.
 * code.coding 3.. MS
@@ -63,7 +56,6 @@ Description: "Body height, expressed in centimetres. Recumbent body length and b
 * code.coding[loinc].version 1..1 MS
 * code.coding[snomed].version 1..1 MS
 * code.coding[IEEE-11073].version 1..1 MS
-* category[sct].coding.version 1..1 MS
 
 // Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
 * category.coding.display 0..1 MS

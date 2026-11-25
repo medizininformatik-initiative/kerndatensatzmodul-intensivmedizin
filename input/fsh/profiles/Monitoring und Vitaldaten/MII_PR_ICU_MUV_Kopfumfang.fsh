@@ -10,13 +10,6 @@ Description: "Head circumference, measured as the largest circumference of the h
 
 * status MS
 
-* category contains sct 0..1 MS
-* category[sct] = $sct#248326004
-* category[sct].coding MS
-* category[sct].coding ^patternCoding.system = "http://snomed.info/sct"
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display 1.. MS
 
 * code MS
 * code.coding 2.. MS
