@@ -87,6 +87,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category.coding:hl7-category.display",
+        "path": "Observation.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
         "slicing": {
@@ -99,17 +104,6 @@
           "rules": "closed"
         },
         "min": 2
-      },
-      {
-        "id": "Observation.code.coding.version",
-        "path": "Observation.code.coding.version",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:sct",
@@ -183,6 +177,28 @@
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.coding.version",
+        "path": "Observation.bodySite.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.coding.display",
+        "path": "Observation.bodySite.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding.version",
+        "path": "Observation.method.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding.display",
+        "path": "Observation.method.coding.display",
         "mustSupport": true
       },
       {
