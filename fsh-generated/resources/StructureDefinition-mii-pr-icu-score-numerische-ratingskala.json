@@ -56,11 +56,6 @@
         "patternCode": "1284857008"
       },
       {
-        "id": "Observation.code.coding:sct.display",
-        "path": "Observation.code.coding.display",
-        "patternString": "Numeric Pain Rating Scale score (observable entity)"
-      },
-      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "type": [

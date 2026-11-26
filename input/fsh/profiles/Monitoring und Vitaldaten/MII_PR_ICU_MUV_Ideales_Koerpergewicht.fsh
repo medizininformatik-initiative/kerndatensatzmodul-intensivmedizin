@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Ideales_Koerpergewicht
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-ideales-koerpergewicht
 Title: "MII PR ICU MUV Ideales Koerpergewicht"
+Description: "Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"
@@ -17,13 +18,6 @@ Title: "MII PR ICU MUV Ideales Koerpergewicht"
 * category[VSCat].coding.system 1.. MS
 * category[VSCat].coding.code 1.. MS
 * category[VSCat].coding.display MS
-* category contains sct 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 * code MS
 * code.coding 3.. MS
@@ -36,19 +30,16 @@ Title: "MII PR ICU MUV Ideales Koerpergewicht"
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #50064-5
-* code.coding[loinc] ^patternCoding.display = "Ideal body weight"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #170804003
-* code.coding[sct] ^patternCoding.display = "Ideal body weight (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #188796
-* code.coding[IEEE-11073] ^patternCoding.display = "MDC_MASS_BODY_EST_IBW"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS
@@ -76,3 +67,16 @@ Title: "MII PR ICU MUV Ideales Koerpergewicht"
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

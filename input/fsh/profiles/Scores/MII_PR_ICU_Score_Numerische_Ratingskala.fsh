@@ -16,6 +16,5 @@ Description: """Erfassung der globalen Schmerzintensitaet mittels Numerischer Ra
 
 * code.coding[sct] 1..1
 * code.coding[sct].code = #1284857008
-* code.coding[sct].display = "Numeric Pain Rating Scale score (observable entity)"
 
 * value[x] only integer

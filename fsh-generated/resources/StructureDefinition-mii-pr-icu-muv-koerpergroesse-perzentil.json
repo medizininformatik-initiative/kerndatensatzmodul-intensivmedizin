@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Body height of a child expressed as a percentile for age, compared with a reference population.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -46,7 +47,17 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
-        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.display",
+        "path": "Observation.category.coding.display",
         "mustSupport": true
       },
       {
@@ -67,6 +78,12 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category:VSCat.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category:VSCat.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
@@ -74,44 +91,6 @@
       },
       {
         "id": "Observation.category:VSCat.coding.display",
-        "path": "Observation.category.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct",
-        "path": "Observation.category",
-        "sliceName": "sct",
-        "min": 1,
-        "max": "1",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "248326004"
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding",
-        "path": "Observation.category.coding",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.system",
-        "path": "Observation.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.code",
-        "path": "Observation.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.display",
         "path": "Observation.category.coding.display",
         "mustSupport": true
       },
@@ -135,6 +114,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.code.coding.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code.coding:sct",
         "path": "Observation.code.coding",
         "sliceName": "sct",
@@ -142,14 +132,19 @@
         "max": "1",
         "patternCoding": {
           "system": "http://snomed.info/sct",
-          "code": "1153605006",
-          "display": "Body height for age percentile (observable entity)"
+          "code": "1153605006"
         },
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding:sct.system",
         "path": "Observation.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sct.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -271,6 +266,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.dataAbsentReason.coding.version",
+        "path": "Observation.dataAbsentReason.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.display",
+        "path": "Observation.dataAbsentReason.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
         "mustSupport": true,
@@ -278,6 +284,17 @@
           "strength": "extensible",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-monitoring-und-vitaldaten"
         }
+      },
+      {
+        "id": "Observation.bodySite.coding.version",
+        "path": "Observation.bodySite.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.bodySite.coding.display",
+        "path": "Observation.bodySite.coding.display",
+        "mustSupport": true
       }
     ]
   }

@@ -1,6 +1,7 @@
 """Compare the independent MII base with the pinned ISiK 6.0.0 rules.
 Usage: python check-monitoring-isik-parity.py ISIK_PROFILE MII_PROFILE
-Narrative text and resource identity are excluded; all element rules are compared.
+Narrative text and resource identity are excluded; only the three code bindings
+and the explicit vital-signs coding cardinality may differ.
 """
 import copy
 import json
@@ -39,8 +40,9 @@ for slice_name, suffix in (("sct", "snomed"), ("loinc", "loinc"), ("IEEE-11073",
         "strength": "extensible",
         "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-monitoring-und-vitaldaten-" + suffix,
     }
+expected["Observation.category:vs-cat.coding"].update(min=1, max="1")
 observed = rules(actual)
 if expected != observed:
     differences = sorted(key for key in expected.keys() | observed.keys() if expected.get(key) != observed.get(key))
-    sys.exit("ISiK element rules differ beyond the three intended bindings: " + ", ".join(differences))
-print(f"PASS: {len(expected)} element definitions match ISiK 6.0.0; only the three code bindings differ")
+    sys.exit("ISiK element rules differ beyond the intended bindings and category coding cardinality: " + ", ".join(differences))
+print(f"PASS: {len(expected)} element definitions match ISiK 6.0.0; only the three code bindings and vital-signs coding cardinality differ")

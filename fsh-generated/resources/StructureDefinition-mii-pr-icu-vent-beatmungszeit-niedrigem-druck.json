@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Set duration of the low pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -35,8 +36,7 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -60,8 +60,7 @@
         "max": "1",
         "patternCoding": {
           "code": "76229-4",
-          "system": "http://loinc.org",
-          "display": "Low pressure hold time setting Ventilator"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -72,8 +71,7 @@
         "max": "1",
         "patternCoding": {
           "code": "16929864",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

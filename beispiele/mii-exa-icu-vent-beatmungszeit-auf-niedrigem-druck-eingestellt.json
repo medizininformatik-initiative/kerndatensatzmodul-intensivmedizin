@@ -29,12 +29,14 @@
       {
         "system": "http://loinc.org",
         "code": "76229-4",
-        "display": "Low pressure hold time setting Ventilator"
+        "display": "Low pressure hold time setting Ventilator",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "16929864",
-        "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING"
+        "display": "MDC_VENT_TIME_PD_EXP_TLOW_SETTING",
+        "version": "2024-12-05"
       }
     ]
   },

@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "A medical device used in intensive care, such as a ventilator or a device for an extracorporeal procedure, to which recorded settings and measurements can be attributed.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -68,6 +69,17 @@
         "mustSupport": true
       },
       {
+        "id": "Device.type.coding.version",
+        "path": "Device.type.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.type.coding.display",
+        "path": "Device.type.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Device.version",
         "path": "Device.version",
         "mustSupport": true
@@ -85,6 +97,17 @@
       {
         "id": "Device.property.type",
         "path": "Device.property.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Device.property.type.coding.version",
+        "path": "Device.property.type.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Device.property.type.coding.display",
+        "path": "Device.property.type.coding.display",
         "mustSupport": true
       }
     ]

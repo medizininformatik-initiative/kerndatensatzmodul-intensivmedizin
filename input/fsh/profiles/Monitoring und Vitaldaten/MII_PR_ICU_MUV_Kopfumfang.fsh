@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Kopfumfang
 Parent: $observation-de-vitalsign-kopfumfang
 Id: mii-pr-icu-muv-kopfumfang
 Title: "MII PR ICU MUV Kopfumfang"
+Description: "Head circumference, measured as the largest circumference of the head."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kopfumfang"
@@ -9,13 +10,6 @@ Title: "MII PR ICU MUV Kopfumfang"
 
 * status MS
 
-* category contains sct 0..1 MS
-* category[sct] = $sct#248326004
-* category[sct].coding MS
-* category[sct].coding ^patternCoding.system = "http://snomed.info/sct"
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display 1.. MS
 
 * code MS
 * code.coding 2.. MS
@@ -48,3 +42,18 @@ Title: "MII PR ICU MUV Kopfumfang"
 * bodySite.coding MS
 * bodySite.coding.system 1.. MS
 * bodySite.coding.code 1.. MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[snomed].display 0..1 MS
+* code.coding[snomed].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category[VSCat].coding.display 0..1 MS
+* category[VSCat].coding.version 1..1 MS

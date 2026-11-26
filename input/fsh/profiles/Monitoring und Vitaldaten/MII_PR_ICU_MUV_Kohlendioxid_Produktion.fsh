@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Kohlendioxid_Produktion
 Parent: MII_PR_ICU_Monitoring_Und_Vitaldaten
 Id: mii-pr-icu-muv-kohlendioxid-produktion
 Title: "MII PR ICU MUV Kohlendioxid Produktion"
+Description: "Carbon dioxide production (VCO2): the volume of carbon dioxide the body produces per minute."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-kohlendioxid-produktion"
@@ -18,13 +19,6 @@ Title: "MII PR ICU MUV Kohlendioxid Produktion"
 * category[vs-cat].coding.system 1.. MS
 * category[vs-cat].coding.code 1.. MS
 * category[vs-cat].coding.display MS
-* category contains sct 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 * code.coding 3.. MS
 * code.coding ^slicing.rules = #closed
@@ -64,3 +58,23 @@ Title: "MII PR ICU MUV Kohlendioxid Produktion"
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* component.code.coding.display 0..1 MS
+* component.code.coding.version 1..1 MS
+* component.dataAbsentReason.coding.display 0..1 MS
+* component.dataAbsentReason.coding.version 1..1 MS
+* component.interpretation.coding.display 0..1 MS
+* component.interpretation.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS

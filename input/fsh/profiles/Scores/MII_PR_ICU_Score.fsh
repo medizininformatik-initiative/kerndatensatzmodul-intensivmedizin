@@ -29,10 +29,10 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * category contains 
     survey 1..1 MS and
     assessment-scale 1..1 MS
-* category[survey] = $observation-category#survey "Survey"
+* category[survey] = $observation-category#survey
 * category[survey] ^short = "Survey category"
 * category[survey].coding 1..1 MS
-* category[assessment-scale] = $sct#273249006 "Assessment scales (assessment scale)"
+* category[assessment-scale] = $sct#273249006
 * category[assessment-scale].coding 1..1 MS
 
 * code ^definition = "Identifies which score/scale is being represented"
@@ -53,7 +53,6 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 * code.coding[sct].system 1..1
 * code.coding[sct].system = $sct
 * code.coding[sct].version 1..1 MS  // 05.08.26 - auf 1..1 gesetzt
-* code.coding[sct].version = $sct-international-version // Versionierungsoption, vgl. MII Wiki
 * code.coding[sct].code 1..1 MS
 * code.coding[ieee11073] ^patternCoding.system = $ieee-11073
 * code.coding[ieee11073].system 1..1  // neues IEEE-11073 Slicing hinzugefügt - Beschluss 05.08.26
@@ -87,6 +86,29 @@ Description: "Parent profile for ICU scoring systems. Scores are represented as 
 
 * interpretation 0..1 MS
 * dataAbsentReason 0..1 MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[ieee11073].display 0..1 MS
+* code.coding[ieee11073].version 1..1 MS
+* code.coding[loinc].display 0..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].display 0..1 MS
+* component.code.coding.display 0..1 MS
+* component.code.coding.version 1..1 MS
+* component.dataAbsentReason.coding.display 0..1 MS
+* component.dataAbsentReason.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* category[assessment-scale].coding.display 0..1 MS
+* category[assessment-scale].coding.version 1..1 MS
+* category[survey].coding.display 0..1 MS
+* category[survey].coding.version 1..1 MS
 Invariant: mii-icu-score-supported-code
 Description: "Es muss mindestens ein LOINC, SnomedCT, IEEE-11073 oder DGAI Code vorhanden sein"
 * severity = #error

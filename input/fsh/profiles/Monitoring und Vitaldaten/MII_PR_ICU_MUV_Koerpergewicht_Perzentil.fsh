@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Koerpergewicht_Perzentil
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-koerpergewicht-perzentil
 Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
+Description: "Body weight of a child expressed as a percentile for age, compared with a reference population."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht-perzentil"
@@ -17,13 +18,6 @@ Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
 * category[VSCat].coding.system 1.. MS
 * category[VSCat].coding.code 1.. MS
 * category[VSCat].coding.display MS
-* category contains sct 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 * code MS
 * code.coding 2.. MS
@@ -35,13 +29,11 @@ Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
     sct 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8336-0
-* code.coding[loinc] ^patternCoding.display = "Body weight [Percentile] Per age"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #1153592008
-* code.coding[sct] ^patternCoding.display = "Weight for age percentile (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
@@ -70,3 +62,15 @@ Title: "MII PR ICU MUV Koerpergewicht Perzentil (altersabhaengig)"
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

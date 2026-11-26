@@ -35,3 +35,9 @@ Description: "Estimated daily energy requirement. This is distinct from measured
 * method.text MS
 * method ^definition = "Method used to estimate the daily energy requirement. Record the specific equation or approach in method.text when no sufficiently specific code is available. For example: Harris-Benedict, Schofield, Mifflin-St Jeor or a weight-based estimate. If the estimate uses a measured energy expenditure, derivedFrom can reference the source Observation."
 * derivedFrom MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS

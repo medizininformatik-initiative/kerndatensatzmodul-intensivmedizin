@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,25 +23,30 @@
       {
         "system": "http://loinc.org",
         "code": "8333-7",
-        "display": "Tympanic membrane temperature"
+        "display": "Tympanic membrane temperature",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "415974002",
-        "display": "Core body temperature measured at tympanic membrane"
+        "display": "Core body temperature measured at tympanic membrane",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150392"
+        "code": "150392",
+        "version": "2024-12-05"
       },
       {
         "system": "http://loinc.org",
         "code": "8329-5",
-        "display": "Body temperature - Core"
+        "display": "Body temperature - Core",
+        "version": "2.83"
       },
       {
         "system": "http://loinc.org",
-        "code": "8310-5"
+        "code": "8310-5",
+        "version": "2.83"
       }
     ]
   },
@@ -62,7 +68,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "42859004",
-        "display": "Tympanic membrane structure (body structure)"
+        "display": "Tympanic membrane structure (body structure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }

@@ -2,16 +2,21 @@ Profile: MII_PR_ICU_VENT_Eingestellter_Inspiratorischer_Gasfluss
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss
 Title: "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
+Description: "Inspiratory gas flow set on the ventilator."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"
 * ^status = #active
 
 * category contains kuenstlicheBeatmung 1..1
-* category[kuenstlicheBeatmung] = $sct#40617009 "Artificial ventilation (regime/therapy)"
+* category[kuenstlicheBeatmung] = $sct#40617009
 
 * code.coding[sct] ..0
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76275-7 "Inspiratory flow setting Ventilator"
+* code.coding[loinc] = $loinc#76275-7
 * code.coding[IEEE-11073] ..0
 * valueQuantity = $ucum#L/min
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category[kuenstlicheBeatmung].coding.display 0..1 MS
+* category[kuenstlicheBeatmung].coding.version 1..1 MS

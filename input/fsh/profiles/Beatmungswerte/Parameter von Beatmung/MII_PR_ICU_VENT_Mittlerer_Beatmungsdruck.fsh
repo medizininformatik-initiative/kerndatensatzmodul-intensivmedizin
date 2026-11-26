@@ -7,6 +7,7 @@ Profile: MII_PR_ICU_VENT_Mittlerer_Beatmungsdruck
 Parent: MII_PR_ICU_Parameter_Von_Beatmung
 Id: mii-pr-icu-vent-mittlerer-beatmungsdruck
 Title: "MII PR ICU Mittlerer Beatmungsdruck"
+Description: "Retired. Mean airway pressure on the ventilator. Use Mittlerer inspiratorischer Beatmungsdruck or Plateau Beatmungsdruck instead."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mittlerer-beatmungsdruck"
@@ -15,9 +16,9 @@ Title: "MII PR ICU Mittlerer Beatmungsdruck"
 
 * code.coding 3..
 * code.coding[sct] 1..1
-* code.coding[sct] = $sct#698821009 "Mean inspiratory airway pressure (observable entity)"
+* code.coding[sct] = $sct#698821009
 * code.coding[loinc] 1..1
-* code.coding[loinc] = $loinc#76530-5 "Mean pressure Respiratory system airway --on ventilator"
+* code.coding[loinc] = $loinc#76530-5
 * code.coding[IEEE-11073] 1..1
-* code.coding[IEEE-11073] = $ieee-11073#151975 "MDC_VENT_PRESS_AWAY_MEAN"
+* code.coding[IEEE-11073] = $ieee-11073#151975
 * valueQuantity = $ucum#cm[H2O]

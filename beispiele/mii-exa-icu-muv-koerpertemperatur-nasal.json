@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,17 +23,20 @@
       {
         "system": "http://loinc.org",
         "code": "76010-8",
-        "display": "Nasal temperature"
+        "display": "Nasal temperature",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "188504",
-        "display": "Nasal temperature"
+        "display": "Nasal temperature",
+        "version": "2024-12-05"
       },
       {
         "system": "http://loinc.org",
         "code": "8310-5",
-        "display": "Body temperature"
+        "display": "Body temperature",
+        "version": "2.83"
       }
     ]
   },
@@ -54,7 +58,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "45206002",
-        "display": "Nasal structure (body structure)"
+        "display": "Nasal structure (body structure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }

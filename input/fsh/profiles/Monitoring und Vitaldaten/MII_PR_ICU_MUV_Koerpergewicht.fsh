@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Koerpergewicht
 Parent: $observation-de-vitalsign-koerpergewicht
 Id: mii-pr-icu-muv-koerpergewicht
 Title: "MII PR ICU MUV Koerpergewicht"
+Description: "Body weight of the patient."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergewicht"
@@ -17,13 +18,6 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * category[VSCat].coding.code 1..1 MS
 * category[VSCat].coding.display 0..1 MS
 
-* category contains sct 0.. MS
-* category[sct].coding 0.. MS
-* category[sct].coding.system 1..1 MS
-* category[sct].coding.code 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding.display 0..1 MS
 
 * code MS
 * code.coding[loinc] 1..1 MS
@@ -71,4 +65,9 @@ Title: "MII PR ICU MUV Koerpergewicht"
 * code.coding[loinc].version 1..1 MS
 * code.coding[snomed].version 1..1 MS
 * code.coding[IEEE-11073].version 1..1 MS
-* category[sct].coding.version 1..1 MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS

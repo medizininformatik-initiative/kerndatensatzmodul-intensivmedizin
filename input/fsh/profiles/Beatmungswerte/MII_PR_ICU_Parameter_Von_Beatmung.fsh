@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Parameter_Von_Beatmung
 Parent: Observation
 Id: mii-pr-icu-parameter-von-beatmung
 Title: "MII PR ICU Parameter von Beatmung"
+Description: "Generic profile for a single setting or measurement of mechanical ventilation, identified by SNOMED CT, LOINC and IEEE 11073 codes. The specialised ventilation profiles derive from it."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung"
@@ -76,3 +77,17 @@ Title: "MII PR ICU Parameter von Beatmung"
 * bodySite from mii-vs-icu-body-site-observation-beatmung (extensible)
 * device only Reference(MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung)
 * device MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[IEEE-11073].display 0..1 MS
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
