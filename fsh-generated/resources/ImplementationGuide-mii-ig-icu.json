@@ -1651,6 +1651,13 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-muv-bmi"
+        },
+        "exampleBoolean": false,
+        "name": "mii-exa-icu-muv-bmi"
+      },
+      {
+        "reference": {
           "reference": "Parameters/mii-param-icu-manifest"
         },
         "exampleBoolean": false,
