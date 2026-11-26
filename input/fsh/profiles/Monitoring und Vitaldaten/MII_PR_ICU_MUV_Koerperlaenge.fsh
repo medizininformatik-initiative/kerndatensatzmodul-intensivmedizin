@@ -15,8 +15,9 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[loinc] ^patternCoding.code = #8306-3
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.code = #1149101003
+// Actual body length/height; lying position is specified by LOINC and SNOMED CT.
 * code.coding[IEEE-11073] 1..1 MS
-* code.coding[IEEE-11073] ^patternCoding.code = #68060
+* code.coding[IEEE-11073] ^patternCoding.code = #188740
 
 // LOINC 8306-3 describes recumbent length more precisely. The HL7 Java validator
 // in IG Publisher 2.3.2 currently also requires the broader LOINC 8302-2.
