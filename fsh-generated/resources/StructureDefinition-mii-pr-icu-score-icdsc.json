@@ -87,12 +87,7 @@
       {
         "id": "Observation.interpretation",
         "path": "Observation.interpretation",
-        "short": "Delirium status",
-        "definition": "Optional interpretation of the screening result. A total score of 4 or higher indicates a positive delirium screen.",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/delirium-interpretation"
-        }
+        "max": "0"
       },
       {
         "id": "Observation.component",

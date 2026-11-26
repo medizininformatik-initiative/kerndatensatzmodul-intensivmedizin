@@ -21,8 +21,9 @@ Description: "Overall result of the Confusion Assessment Method for the ICU (CAM
 * value[x] only CodeableConcept
 * valueCodeableConcept from mii-vs-icu-cam-icu-result (required)
 
-* interpretation from mii-vs-icu-delirium-interpretation (extensible)
-* interpretation ^short = "Delirium status"
+// Keine Interpretation: Das Screening-Ergebnis folgt aus dem Wert und dem Cut-off
+// des Instruments; eine Delir-Diagnose ist eine Condition, keine Score-Interpretation.
+* interpretation 0..0
 
 * component 0..0
 

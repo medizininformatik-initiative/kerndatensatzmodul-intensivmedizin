@@ -32,7 +32,6 @@ Die 33 ValueSets des Moduls (die Bilanz-, Pupillen- und RASS-ValueSets sind mit 
 - [MII VS ICU Component GCS Eyes](ValueSet-mii-vs-icu-component-gcs-eyes.html)
 - [MII VS ICU Component GCS Motor](ValueSet-mii-vs-icu-component-gcs-motor.html)
 - [MII VS ICU Component GCS Verbal](ValueSet-mii-vs-icu-component-gcs-verbal.html)
-- [MII VS ICU Delirium Interpretation](ValueSet-mii-vs-icu-delirium-interpretation.html)
 - [MII VS ICU DeviceMetric extrakorporale Verfahren](ValueSet-mii-vs-icu-devicemetric-extrakorporale-verfahren.html)
 - [MII VS ICU Method Observation Blutdruck](ValueSet-mii-vs-icu-method-observation-blutdruck.html)
 - [MII VS ICU Present Absent](ValueSet-mii-vs-icu-present-absent.html)
