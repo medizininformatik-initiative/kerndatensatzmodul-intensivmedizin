@@ -654,7 +654,7 @@
           "reference": "StructureDefinition/mii-pr-icu-ect-arterieller-druck"
         },
         "name": "MII PR ICU Arterieller Druck",
-        "description": "Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure.",
+        "description": "Pressure measured in the device in the arterial limb of an extracorporeal circuit: in extracorporeal gas exchange the line returning blood to the patient, in renal replacement therapy the line drawing blood from the patient.",
         "exampleBoolean": false
       },
       {
@@ -838,7 +838,7 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-druckdifferenz-beatmung"
         },
         "name": "MII PR ICU Druckdifferenz Beatmung",
-        "description": "Difference between the upper and lower airway pressure during a ventilator breath, for example between peak or plateau pressure and PEEP.",
+        "description": "Inspiratory airway pressure of a ventilator breath relative to PEEP or baseline airway pressure (delta Pinsp). It is not the driving pressure (plateau pressure minus PEEP).",
         "exampleBoolean": false
       },
       {
@@ -846,7 +846,7 @@
           "reference": "StructureDefinition/mii-pr-icu-vent-dynamische-kompliance"
         },
         "name": "MII PR ICU Dynamische Compliance",
-        "description": "Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow.",
+        "description": "Dynamic compliance of the respiratory system (lung and chest wall): the change in volume per change in airway pressure, measured during ongoing breathing with gas flow.",
         "exampleBoolean": false
       },
       {
@@ -918,7 +918,7 @@
           "reference": "StructureDefinition/mii-pr-icu-ect-gasfluss"
         },
         "name": "MII PR ICU Gasfluss",
-        "description": "Flow of fresh gas (sweep gas) through the oxygenator of an extracorporeal gas exchange.",
+        "description": "Flow of sweep gas (oxygen or an air/oxygen blend) through the oxygenator of an extracorporeal gas exchange.",
         "exampleBoolean": false
       },
       {
@@ -1117,7 +1117,7 @@
           "reference": "StructureDefinition/mii-pr-icu-muv-ideales-koerpergewicht"
         },
         "name": "MII PR ICU MUV Ideales Koerpergewicht",
-        "description": "Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight.",
+        "description": "Ideal body weight (also called predicted body weight): a weight estimated from height with the sex-specific Devine formula (1974), used for example to set tidal volumes and dose drugs. It is not a measured weight.",
         "exampleBoolean": false
       },
       {
@@ -1412,7 +1412,7 @@
           "reference": "StructureDefinition/mii-pr-icu-ect-venoeser-druck"
         },
         "name": "MII PR ICU Venoeser Druck",
-        "description": "Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure.",
+        "description": "Pressure measured in the device in the venous limb of an extracorporeal circuit: in extracorporeal gas exchange the line draining blood from the patient, in renal replacement therapy the line returning blood to the patient.",
         "exampleBoolean": false
       },
       {

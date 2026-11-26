@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Difference between the upper and lower airway pressure during a ventilator breath, for example between peak or plateau pressure and PEEP.",
+  "description": "Inspiratory airway pressure of a ventilator breath relative to PEEP or baseline airway pressure (delta Pinsp). It is not the driving pressure (plateau pressure minus PEEP).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
