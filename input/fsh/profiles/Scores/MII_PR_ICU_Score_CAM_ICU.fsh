@@ -25,3 +25,7 @@ Description: "Overall result of the Confusion Assessment Method for the ICU (CAM
 * interpretation ^short = "Delirium status"
 
 * component 0..0
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* valueCodeableConcept.coding.display 0..1 MS
+* valueCodeableConcept.coding.version 1..1 MS

@@ -29,7 +29,8 @@
       {
         "system": "http://loinc.org",
         "code": "20112-9",
-        "display": "Tidal volume setting Ventilator"
+        "display": "Tidal volume setting Ventilator",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
@@ -40,7 +41,8 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "16929196",
-        "display": "MDC_VENT_VOL_TIDAL_SETTING"
+        "display": "MDC_VENT_VOL_TIDAL_SETTING",
+        "version": "2024-12-05"
       }
     ]
   },

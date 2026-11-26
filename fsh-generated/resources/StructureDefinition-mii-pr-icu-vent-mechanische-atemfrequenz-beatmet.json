@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Mechanical breath rate: the number of breaths per minute delivered by the ventilator.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -35,8 +36,7 @@
           "coding": [
             {
               "code": "40617009",
-              "system": "http://snomed.info/sct",
-              "display": "Artificial ventilation (regime/therapy)"
+              "system": "http://snomed.info/sct"
             }
           ]
         }
@@ -54,8 +54,7 @@
         "max": "1",
         "patternCoding": {
           "code": "250876000",
-          "system": "http://snomed.info/sct",
-          "display": "Ventilator rate (observable entity)"
+          "system": "http://snomed.info/sct"
         }
       },
       {
@@ -66,8 +65,7 @@
         "max": "1",
         "patternCoding": {
           "code": "33438-3",
-          "system": "http://loinc.org",
-          "display": "Breath rate mechanical --on ventilator"
+          "system": "http://loinc.org"
         }
       },
       {
@@ -78,8 +76,7 @@
         "max": "1",
         "patternCoding": {
           "code": "151586",
-          "system": "urn:iso:std:iso:11073:10101",
-          "display": "MDC_VENT_RESP_RATE"
+          "system": "urn:iso:std:iso:11073:10101"
         }
       },
       {

@@ -29,7 +29,8 @@
       {
         "system": "http://loinc.org",
         "code": "75931-6",
-        "display": "Inspiration/Expiration time Ratio"
+        "display": "Inspiration/Expiration time Ratio",
+        "version": "2.83"
       },
       {
         "system": "http://snomed.info/sct",
@@ -40,7 +41,8 @@
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "151832",
-        "display": "MDC_RATIO_IE"
+        "display": "MDC_RATIO_IE",
+        "version": "2024-12-05"
       }
     ]
   },

@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_MUV_Pulmonalvaskulaerer_Widerstandsindex
 Parent: $observation-de-vitalsign
 Id: mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex
 Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
+Description: "Pulmonary vascular resistance index: the resistance of the pulmonary circulation, indexed to the body surface area."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex"
@@ -17,13 +18,6 @@ Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
 * category[VSCat].coding.system 1.. MS
 * category[VSCat].coding.code 1.. MS
 * category[VSCat].coding.display MS
-* category contains sct 1..1 MS
-* category[sct] ^patternCodeableConcept.coding.system = $sct
-* category[sct] ^patternCodeableConcept.coding.code = #248326004
-* category[sct].coding MS
-* category[sct].coding.system 1.. MS
-* category[sct].coding.code 1.. MS
-* category[sct].coding.display MS
 
 * code MS
 * code.coding 3.. MS
@@ -36,19 +30,16 @@ Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
     IEEE-11073 1..1 MS
 * code.coding[loinc] ^patternCoding.system = $loinc
 * code.coding[loinc] ^patternCoding.code = #8834-4
-* code.coding[loinc] ^patternCoding.display = "Pulmonary vascular Resistance index"
 * code.coding[loinc].system MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
 * code.coding[sct] ^patternCoding.system = $sct
 * code.coding[sct] ^patternCoding.code = #276902009
-* code.coding[sct] ^patternCoding.display = "Pulmonary vascular resistance index (observable entity)"
 * code.coding[sct].system MS
 * code.coding[sct].code MS
 * code.coding[sct].display MS
 * code.coding[IEEE-11073] ^patternCoding.system = $ieee-11073
 * code.coding[IEEE-11073] ^patternCoding.code = #152852
-* code.coding[IEEE-11073] ^patternCoding.display = "Pulmonary Vascular Resistance Index"
 * code.coding[IEEE-11073].system MS
 * code.coding[IEEE-11073].code MS
 * code.coding[IEEE-11073].display MS
@@ -76,3 +67,16 @@ Title: "MII PR ICU MUV Pulmonalvaskulaerer Widerstandsindex"
 * dataAbsentReason 0..1 MS
 * interpretation
 * referenceRange
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* code.coding[IEEE-11073].version 1..1 MS
+* code.coding[loinc].version 1..1 MS
+* code.coding[sct].version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS

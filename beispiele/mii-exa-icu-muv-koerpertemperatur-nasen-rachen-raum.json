@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -22,21 +23,25 @@
       {
         "system": "http://snomed.info/sct",
         "code": "698831002",
-        "display": "Core body temperature measured in nasopharynx"
+        "display": "Core body temperature measured in nasopharynx",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       },
       {
         "system": "http://loinc.org",
         "code": "60838-0",
-        "display": "Body temperature"
+        "display": "Body temperature",
+        "version": "2.83"
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
         "code": "150380",
-        "display": "Nasopharynx temperature"
+        "display": "Nasopharynx temperature",
+        "version": "2024-12-05"
       },
       {
         "system": "http://loinc.org",
-        "code": "8310-5"
+        "code": "8310-5",
+        "version": "2.83"
       }
     ]
   },
@@ -58,7 +63,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "71836000",
-        "display": "Nasopharyngeal structure (body structure)"
+        "display": "Nasopharyngeal structure (body structure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701"
       }
     ]
   }

@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h
 Parent: Observation
 Id: mii-pr-icu-bilanz-einfuhr-kalorien-24h
 Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
+Description: "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
@@ -58,3 +59,18 @@ Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 * specimen MS
 * device MS
 * referenceRange MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* category.coding[hl7-category].version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS

@@ -2,6 +2,7 @@ Profile: MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch
 Title: "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"
+Description: "Blood flow through the circuit of an extracorporeal gas exchange, indexed to the patient's body surface area."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"

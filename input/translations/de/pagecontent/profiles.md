@@ -50,7 +50,7 @@
 <summary>Beatmungswerte<span class="cnt">35</span></summary><div class="body">
 <p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-beatmung.html">Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung.html">Eingestellte Gemessene Parameter Beatmung</a> &middot; <a href="StructureDefinition-mii-pr-icu-parameter-von-beatmung.html">Parameter von Beatmung</a></p>
 <div class="items">
-<a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html">Atemwegsdruck Bei Null Expiratorischem Gasfluss</a>
+<a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss.html">Atemwegsdruck bei inspiratorischem Nullfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.html">Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-atemzugvolumen-einstellung.html">Atemzugvolumen Einstellung</a>
 <a href="StructureDefinition-mii-pr-icu-vent-atemzugvolumen-waehrend-beatmung.html">Atemzugvolumen Waehrend Beatmung</a>
@@ -58,7 +58,7 @@
 <a href="StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.html">Beatmungszeit Hohem Druck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.html">Beatmungszeit Niedrigem Druck</a>
 <a href="StructureDefinition-mii-pr-icu-vent-druckdifferenz-beatmung.html">Druckdifferenz Beatmung</a>
-<a href="StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.html">Dynamische Kompliance</a>
+<a href="StructureDefinition-mii-pr-icu-vent-dynamische-kompliance.html">Dynamische Compliance</a>
 <a href="StructureDefinition-mii-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html">Eingestellter Inspiratorischer Gasfluss</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html">Einstellung Ausatmungszeit Beatmung</a>
 <a href="StructureDefinition-mii-pr-icu-vent-einstellung-einatmungszeit-beatmung.html">Einstellung Einatmungszeit Beatmung</a>
@@ -162,6 +162,12 @@ Körpergröße und allgemeines Körpergewicht behalten ihre deutschen Elternprof
 **Validator-Kompatibilität:** Die Körperlänge im Liegen verlangt zusätzlich den allgemeineren LOINC-Code 8302-2 (Body height), weil der HL7-Java-Validator im IG Publisher 2.3.2 ihn fordert, sobald 8306-3 vorhanden ist. LOINC 8306-3 bleibt der genauere Code für die Körperlänge im Liegen (NRA-592).
 
 Jedes Mess-Coding muss die tatsächlich verwendete Terminologieversion angeben. Die Profile legen keine Editionen oder Displays fest. Die IEEE-Messcodierung bleibt verpflichtend.
+
+**Terminologieversionen und Displays (alle modul-eigenen Profile)**
+
+Jedes Coding in den modul-eigenen Profilen verlangt `version` (1..1, Must Support) und unterstützt `display` (0..1, Must Support). Feste Codes und Muster (Patterns) enthalten nur System und Code; sie legen nie eine Version oder ein Display fest.
+
+Abweichungen von ISiK: Das modul-eigene Basisprofil `MII_PR_ICU_Monitoring_Und_Vitaldaten` behält die Elementregeln aus ISiK 6.0.0 unverändert bei; diese Coding-Regeln stehen daher in den davon abgeleiteten Profilen. Die unten aufgeführten ISiK-Profile werden so verwendet, wie gematik sie veröffentlicht, und folgen diesen Regeln noch nicht; Änderungsanträge an gematik sind in Vorbereitung.
 
 <!-- BEGIN GENERATED:profile-map:isik-note -->
 <p class="icu-note"><b>ISiK-gehostete Profile &mdash; de.gematik.isik 6.0.0</b><br>Von der gematik gehostet und versioniert; dieser Leitfaden listet sie als fachlichen Bestandteil des KDS Intensivmedizin. Aus der gepinnten Paketversion generiert &mdash; die Liste &auml;ndert sich nur mit einem bewussten Pin-Wechsel. Jeder Link &ouml;ffnet das in diesem Leitfaden gerenderte Profil (Differential, Snapshot, Must Support, Definitionen); die Profile selbst bleiben im ISiK-Paket.</p>

@@ -12,7 +12,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs"
+          "code": "vital-signs",
+          "version": "2.0.0"
         }
       ]
     }
@@ -32,7 +33,8 @@
       },
       {
         "system": "urn:iso:std:iso:11073:10101",
-        "code": "150104"
+        "code": "150104",
+        "version": "2024-12-05"
       }
     ]
   },
@@ -46,17 +48,20 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8478-0"
+            "code": "8478-0",
+            "version": "2.83"
           },
           {
             "system": "http://loinc.org",
             "code": "8406-1",
-            "display": "Right ventricular Intrachamber mean pressure"
+            "display": "Right ventricular Intrachamber mean pressure",
+            "version": "2.83"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
             "code": "150107",
-            "display": "Mean right ventricular pressure"
+            "display": "Mean right ventricular pressure",
+            "version": "2024-12-05"
           }
         ]
       },
@@ -72,17 +77,20 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8480-6"
+            "code": "8480-6",
+            "version": "2.83"
           },
           {
             "system": "http://loinc.org",
             "code": "8432-7",
-            "display": "Right ventricular Intrachamber systolic pressure"
+            "display": "Right ventricular Intrachamber systolic pressure",
+            "version": "2.83"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
             "code": "150105",
-            "display": "Systolic right ventricular pressure"
+            "display": "Systolic right ventricular pressure",
+            "version": "2024-12-05"
           }
         ]
       },
@@ -98,17 +106,20 @@
         "coding": [
           {
             "system": "http://loinc.org",
-            "code": "8462-4"
+            "code": "8462-4",
+            "version": "2.83"
           },
           {
             "system": "http://loinc.org",
             "code": "8377-4",
-            "display": "Right ventricular Intrachamber diastolic pressure"
+            "display": "Right ventricular Intrachamber diastolic pressure",
+            "version": "2.83"
           },
           {
             "system": "urn:iso:std:iso:11073:10101",
             "code": "150106",
-            "display": "Diastolic right ventricular pressure"
+            "display": "Diastolic right ventricular pressure",
+            "version": "2024-12-05"
           }
         ]
       },

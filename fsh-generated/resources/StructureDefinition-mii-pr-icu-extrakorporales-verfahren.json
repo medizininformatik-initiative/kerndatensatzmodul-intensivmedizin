@@ -128,6 +128,7 @@
       ]
     }
   ],
+  "description": "An extracorporeal procedure as a procedure, for example extracorporeal membrane oxygenation, haemofiltration, dialysis or apheresis. Individual settings and measurements are recorded with the Parameter von extrakorporalen Verfahren profiles.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -148,6 +149,17 @@
         "max": "1"
       },
       {
+        "id": "Procedure.category.coding.version",
+        "path": "Procedure.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.category.coding.display",
+        "path": "Procedure.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.category.coding:sct",
         "path": "Procedure.category.coding",
         "sliceName": "sct",
@@ -162,8 +174,39 @@
         "patternUri": "http://snomed.info/sct"
       },
       {
+        "id": "Procedure.category.coding:sct.version",
+        "path": "Procedure.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.category.coding:sct.display",
         "path": "Procedure.category.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding"
+      },
+      {
+        "id": "Procedure.code.coding.version",
+        "path": "Procedure.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding.display",
+        "path": "Procedure.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:ops",
+        "path": "Procedure.code.coding",
+        "sliceName": "ops"
+      },
+      {
+        "id": "Procedure.code.coding:ops.display",
+        "path": "Procedure.code.coding.display",
         "mustSupport": true
       },
       {
@@ -175,6 +218,12 @@
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren",
           "description": "Liste aller SNOMED Codes für extrakorporale Verfahren (i.d.R: Untercodes von 182744004)"
         }
+      },
+      {
+        "id": "Procedure.code.coding:sct.version",
+        "path": "Procedure.code.coding.version",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:sct.display",
@@ -226,6 +275,36 @@
             ]
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite.coding",
+        "path": "Procedure.bodySite.coding"
+      },
+      {
+        "id": "Procedure.bodySite.coding.version",
+        "path": "Procedure.bodySite.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite.coding.display",
+        "path": "Procedure.bodySite.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite.coding:snomed-ct",
+        "path": "Procedure.bodySite.coding",
+        "sliceName": "snomed-ct"
+      },
+      {
+        "id": "Procedure.bodySite.coding:snomed-ct.version",
+        "path": "Procedure.bodySite.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Procedure.bodySite.coding:snomed-ct.display",
+        "path": "Procedure.bodySite.coding.display",
         "mustSupport": true
       }
     ]

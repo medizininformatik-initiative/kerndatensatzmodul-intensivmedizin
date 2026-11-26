@@ -15,8 +15,9 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[loinc] ^patternCoding.code = #8306-3
 * code.coding[sct] 1..1 MS
 * code.coding[sct] ^patternCoding.code = #1149101003
+// Actual body length/height; lying position is specified by LOINC and SNOMED CT.
 * code.coding[IEEE-11073] 1..1 MS
-* code.coding[IEEE-11073] ^patternCoding.code = #68060
+* code.coding[IEEE-11073] ^patternCoding.code = #188740
 
 // LOINC 8306-3 describes recumbent length more precisely. The HL7 Java validator
 // in IG Publisher 2.3.2 currently also requires the broader LOINC 8302-2.
@@ -41,3 +42,23 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[loinc].version 1..1 MS
 * code.coding[sct].version 1..1 MS
 * code.coding[IEEE-11073].version 1..1 MS
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* bodySite.coding.display 0..1 MS
+* bodySite.coding.version 1..1 MS
+* category.coding.display 0..1 MS
+* category.coding.version 1..1 MS
+* code.coding.display 0..1 MS
+* code.coding.version 1..1 MS
+* component.code.coding.display 0..1 MS
+* component.code.coding.version 1..1 MS
+* component.dataAbsentReason.coding.display 0..1 MS
+* component.dataAbsentReason.coding.version 1..1 MS
+* component.interpretation.coding.display 0..1 MS
+* component.interpretation.coding.version 1..1 MS
+* dataAbsentReason.coding.display 0..1 MS
+* dataAbsentReason.coding.version 1..1 MS
+* interpretation.coding.display 0..1 MS
+* interpretation.coding.version 1..1 MS
+* method.coding.display 0..1 MS
+* method.coding.version 1..1 MS

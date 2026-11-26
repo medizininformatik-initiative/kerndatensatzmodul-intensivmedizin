@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "description": "Body weight of the patient.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -49,6 +50,17 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding.display",
+        "path": "Observation.category.coding.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category:VSCat",
         "path": "Observation.category",
         "sliceName": "VSCat",
@@ -66,6 +78,12 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category:VSCat.coding.version",
+        "path": "Observation.category.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Observation.category:VSCat.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
@@ -73,50 +91,6 @@
       },
       {
         "id": "Observation.category:VSCat.coding.display",
-        "path": "Observation.category.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct",
-        "path": "Observation.category",
-        "sliceName": "sct",
-        "min": 0,
-        "max": "*",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "248326004"
-            }
-          ]
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding",
-        "path": "Observation.category.coding",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.system",
-        "path": "Observation.category.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.version",
-        "path": "Observation.category.coding.version",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.code",
-        "path": "Observation.category.coding.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.category:sct.coding.display",
         "path": "Observation.category.coding.display",
         "mustSupport": true
       },
@@ -139,6 +113,17 @@
         },
         "min": 3,
         "max": "3",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
         "mustSupport": true
       },
       {
@@ -223,6 +208,11 @@
         "id": "Observation.code.coding:IEEE-11073.version",
         "path": "Observation.code.coding.version",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:IEEE-11073.display",
+        "path": "Observation.code.coding.display",
         "mustSupport": true
       },
       {

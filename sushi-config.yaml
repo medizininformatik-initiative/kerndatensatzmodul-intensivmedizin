@@ -812,13 +812,13 @@ resources:
     name: "Vent Atemwegsdruck Bei Mitl Exspiratori Gasf Gemess"
     description: "Beispiel: MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
     exampleBoolean: true
-  Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-eingest:
-    name: "Vent Atemwegsdruck Bei Null Exspiratori Gasf Eingest"
-    description: "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+  Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-eingest:
+    name: "Vent Atemwegsdruck Bei Null Inspiratori Gasf Eingest"
+    description: "Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss"
     exampleBoolean: true
-  Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-exspiratori-gasf-gemess:
-    name: "Vent Atemwegsdruck Bei Null Exspiratori Gasf Gemess"
-    description: "Beispiel: MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+  Observation/mii-exa-icu-vent-atemwegsdruck-bei-null-inspiratori-gasf-gemess:
+    name: "Vent Atemwegsdruck Bei Null Inspiratori Gasf Gemess"
+    description: "Beispiel: MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss"
     exampleBoolean: true
   Observation/mii-exa-icu-vent-atemzugvolumen-einstellung:
     name: "Vent Atemzugvolumen Einstellung"
@@ -857,8 +857,8 @@ resources:
     description: "Beispiel: MII PR ICU Druckdifferenz Beatmung"
     exampleBoolean: true
   Observation/mii-exa-icu-vent-dynamische-kompliance:
-    name: "Vent Dynamische Kompliance"
-    description: "Beispiel: MII PR ICU Dynamische Kompliance"
+    name: "Vent Dynamische Compliance"
+    description: "Beispiel: MII PR ICU Dynamische Compliance"
     exampleBoolean: true
   Observation/mii-exa-icu-vent-eingestellter-inspiratorischer-gasfluss:
     name: "Vent Eingestellter Inspiratorischer Gasfluss"

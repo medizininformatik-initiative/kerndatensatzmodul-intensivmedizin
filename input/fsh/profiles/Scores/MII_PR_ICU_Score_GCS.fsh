@@ -15,11 +15,9 @@ Title: "MII PR ICU Score GCS"
 * code.coding[sct] 1..1
 * code.coding[sct].system = $sct 
 * code.coding[sct].code = #248241002
-* code.coding[sct].display = "Glasgow coma score (observable entity)"
 * code.coding[loinc] 1..1
 * code.coding[loinc].system = $loinc
 * code.coding[loinc].code = #9269-2
-* code.coding[loinc].display = "Glasgow coma score total"
 * code.coding[ieee11073] 1..1 
 * code.coding[ieee11073].system = $ieee-11073
 * code.coding[ieee11073].code = #153728
@@ -61,7 +59,7 @@ Title: "MII PR ICU Score GCS"
 * component[GCSeyes].code = $loinc#9267-6
 * component[GCSeyes].code.coding.system 1.. MS
 * component[GCSeyes].code.coding.code 1..1 MS
-* component[GCSeyes].code.coding.display 1.. MS
+* component[GCSeyes].code.coding.display 0..1 MS
 * component[GCSeyes].value[x] MS
 * component[GCSeyes].value[x] only CodeableConcept
 * component[GCSeyes].valueCodeableConcept from mii-vs-icu-component-gcs-eyes
@@ -71,7 +69,7 @@ Title: "MII PR ICU Score GCS"
 * component[GCSmotor].code = $loinc#9268-4
 * component[GCSmotor].code.coding.system 1.. MS
 * component[GCSmotor].code.coding.code 1..1 MS
-* component[GCSmotor].code.coding.display 1.. MS
+* component[GCSmotor].code.coding.display 0..1 MS
 * component[GCSmotor].value[x] MS
 * component[GCSmotor].value[x] only CodeableConcept
 * component[GCSmotor].valueCodeableConcept from mii-vs-icu-component-gcs-motor
@@ -81,7 +79,7 @@ Title: "MII PR ICU Score GCS"
 * component[GCSverbal].code = $loinc#9270-0
 * component[GCSverbal].code.coding.system 1.. MS
 * component[GCSverbal].code.coding.code 1..1 MS
-* component[GCSverbal].code.coding.display 1.. MS
+* component[GCSverbal].code.coding.display 0..1 MS
 * component[GCSverbal].value[x] MS
 * component[GCSverbal].value[x] only CodeableConcept
 * component[GCSverbal].valueCodeableConcept from mii-vs-icu-component-gcs-verbal
@@ -89,3 +87,14 @@ Title: "MII PR ICU Score GCS"
 
 * bodySite 0..0
 * specimen 0..0
+
+// Terminologie-Versionierung: Coding.version 1..1 MS, Coding.display 0..1 MS (Best Practice "Umgang mit Terminologien")
+* component[GCSeyes].valueCodeableConcept.coding.display 0..1 MS
+* component[GCSeyes].valueCodeableConcept.coding.version 1..1 MS
+* component[GCSmotor].valueCodeableConcept.coding.display 0..1 MS
+* component[GCSmotor].valueCodeableConcept.coding.version 1..1 MS
+* component[GCSverbal].valueCodeableConcept.coding.display 0..1 MS
+* component[GCSverbal].valueCodeableConcept.coding.version 1..1 MS
+* component[GCSeyes].code.coding.version 1..1 MS
+* component[GCSmotor].code.coding.version 1..1 MS
+* component[GCSverbal].code.coding.version 1..1 MS
