@@ -1051,52 +1051,362 @@
       ]
     },
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss",
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-bauchlage",
       "tests": [
         {
-          "source": "valid/icu-inspiratory-zero-flow-pressure.json",
+          "source": "valid/icu-kontraindikation-bauchlage-present.json",
           "valid": true,
-          "description": "Inspiratory zero-flow pressure: pressure"
+          "description": "Valid assessed present clinical state"
         },
         {
-          "source": "valid/icu-inspiratory-zero-flow-absent.json",
+          "source": "valid/icu-kontraindikation-bauchlage-absent.json",
           "valid": true,
-          "description": "Inspiratory zero-flow pressure: absent"
+          "description": "Valid assessed absent clinical state"
         },
         {
-          "source": "invalid/icu-inspiratory-zero-flow-peep-code.json",
-          "valid": false,
-          "description": "Inspiratory zero-flow pressure: peep-code"
+          "source": "valid/icu-kontraindikation-bauchlage-not-assessed.json",
+          "valid": true,
+          "description": "An unavailable assessment is not a negative finding"
         },
         {
-          "source": "invalid/icu-inspiratory-zero-flow-snomed-measurement.json",
+          "source": "invalid/icu-kontraindikation-bauchlage-value-and-reason.json",
           "valid": false,
-          "description": "Inspiratory zero-flow pressure: snomed-measurement"
+          "description": "Value and dataAbsentReason are mutually exclusive"
         },
         {
-          "source": "invalid/icu-inspiratory-zero-flow-missing-version.json",
+          "source": "invalid/icu-kontraindikation-bauchlage-missing-value-and-reason.json",
           "valid": false,
-          "description": "Inspiratory zero-flow pressure: missing-version"
+          "description": "Assessment requires value or reason"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-missing-patient.json",
+          "valid": false,
+          "description": "A patient is required"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-missing-effective.json",
+          "valid": false,
+          "description": "An effective time is required"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-boolean-value.json",
+          "valid": false,
+          "description": "Results must be SNOMED CodeableConcepts"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-missing-question-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-missing-result-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-wrong-question.json",
+          "valid": false,
+          "description": "An unrelated DGAI question must not match the specialised assessment"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-extra-question-coding.json",
+          "valid": false,
+          "description": "One unambiguous specialised assessment code is required"
+        },
+        {
+          "source": "valid/icu-kontraindikation-supporting-condition.json",
+          "valid": true,
+          "description": "A coded clinical assessment can reference a supporting Condition through the standard HL7 extension"
+        },
+        {
+          "source": "valid/icu-contraindication-organization-performer.json",
+          "valid": true,
+          "description": "Contraindication assessments retain standard FHIR performer types, including Organization"
+        },
+        {
+          "source": "valid/icu-contraindication-absent-part-of-procedure.json",
+          "valid": true,
+          "description": "The PN-specific partOf invariant must not restrict a negative contraindication assessment"
         }
       ]
     },
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerpergroesse-perzentil",
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung",
       "tests": [
         {
-          "source": "valid/category-koerpergroesse-perzentil-vital-signs-only.json",
+          "source": "valid/icu-kontraindikation-enterale-ernaehrung-present.json",
           "valid": true,
-          "description": "mii-pr-icu-muv-koerpergroesse-perzentil: vital-signs-only"
+          "description": "Valid assessed present clinical state"
         },
         {
-          "source": "valid/category-koerpergroesse-perzentil-legacy-body-measure.json",
+          "source": "valid/icu-kontraindikation-enterale-ernaehrung-absent.json",
           "valid": true,
-          "description": "mii-pr-icu-muv-koerpergroesse-perzentil: legacy-body-measure"
+          "description": "Valid assessed absent clinical state"
         },
         {
-          "source": "invalid/category-koerpergroesse-perzentil-missing-vital-signs.json",
+          "source": "valid/icu-kontraindikation-enterale-ernaehrung-not-assessed.json",
+          "valid": true,
+          "description": "An unavailable assessment is not a negative finding"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-value-and-reason.json",
           "valid": false,
-          "description": "mii-pr-icu-muv-koerpergroesse-perzentil: missing-vital-signs"
+          "description": "Value and dataAbsentReason are mutually exclusive"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-missing-value-and-reason.json",
+          "valid": false,
+          "description": "Assessment requires value or reason"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-missing-patient.json",
+          "valid": false,
+          "description": "A patient is required"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-missing-effective.json",
+          "valid": false,
+          "description": "An effective time is required"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-boolean-value.json",
+          "valid": false,
+          "description": "Results must be SNOMED CodeableConcepts"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-missing-question-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-missing-result-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-wrong-question.json",
+          "valid": false,
+          "description": "An unrelated DGAI question must not match the specialised assessment"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-extra-question-coding.json",
+          "valid": false,
+          "description": "One unambiguous specialised assessment code is required"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+      "tests": [
+        {
+          "source": "valid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-present.json",
+          "valid": true,
+          "description": "Valid assessed present clinical state"
+        },
+        {
+          "source": "valid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-absent.json",
+          "valid": true,
+          "description": "Valid assessed absent clinical state"
+        },
+        {
+          "source": "valid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-not-assessed.json",
+          "valid": true,
+          "description": "An unavailable assessment is not a negative finding"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-value-and-reason.json",
+          "valid": false,
+          "description": "Value and dataAbsentReason are mutually exclusive"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-missing-value-and-reason.json",
+          "valid": false,
+          "description": "Assessment requires value or reason"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-missing-patient.json",
+          "valid": false,
+          "description": "A patient is required"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-missing-effective.json",
+          "valid": false,
+          "description": "An effective time is required"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-boolean-value.json",
+          "valid": false,
+          "description": "Results must be SNOMED CodeableConcepts"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-missing-question-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-missing-result-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-wrong-question.json",
+          "valid": false,
+          "description": "An unrelated DGAI question must not match the specialised assessment"
+        },
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-extra-question-coding.json",
+          "valid": false,
+          "description": "One unambiguous specialised assessment code is required"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung",
+      "tests": [
+        {
+          "source": "valid/icu-klinische-beurteilung-parenterale-ernaehrung-present.json",
+          "valid": true,
+          "description": "Valid assessed present clinical state"
+        },
+        {
+          "source": "valid/icu-klinische-beurteilung-parenterale-ernaehrung-absent.json",
+          "valid": true,
+          "description": "Valid assessed absent clinical state"
+        },
+        {
+          "source": "valid/icu-klinische-beurteilung-parenterale-ernaehrung-not-assessed.json",
+          "valid": true,
+          "description": "An unavailable assessment is not a negative finding"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-value-and-reason.json",
+          "valid": false,
+          "description": "Value and dataAbsentReason are mutually exclusive"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-missing-value-and-reason.json",
+          "valid": false,
+          "description": "Assessment requires value or reason"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-missing-patient.json",
+          "valid": false,
+          "description": "A patient is required"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-missing-effective.json",
+          "valid": false,
+          "description": "An effective time is required"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-boolean-value.json",
+          "valid": false,
+          "description": "Results must be SNOMED CodeableConcepts"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-missing-question-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-missing-result-version.json",
+          "valid": false,
+          "description": "Coding.version must be present without fixing an edition"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-wrong-question.json",
+          "valid": false,
+          "description": "An unrelated DGAI question must not match the specialised assessment"
+        },
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-extra-question-coding.json",
+          "valid": false,
+          "description": "One unambiguous specialised assessment code is required"
+        },
+        {
+          "source": "valid/icu-pn-supporting-medicationadministration.json",
+          "valid": true,
+          "description": "Medication documentation can support the current administration assessment"
+        },
+        {
+          "source": "valid/icu-pn-supporting-medicationstatement.json",
+          "valid": true,
+          "description": "Medication documentation can support the current administration assessment"
+        },
+        {
+          "source": "valid/icu-pn-part-of-administration.json",
+          "valid": true,
+          "description": "Assessment can be part of a specific administration event"
+        },
+        {
+          "source": "valid/icu-pn-organization-performer.json",
+          "valid": true,
+          "description": "The generic base retains standard FHIR performer types"
+        },
+        {
+          "source": "invalid/icu-pn-extra-result-coding.json",
+          "valid": false,
+          "description": "Exactly one result coding remains required"
+        },
+        {
+          "source": "valid/icu-pn-period.json",
+          "valid": true,
+          "description": "PN status period: period"
+        },
+        {
+          "source": "valid/icu-pn-open-period.json",
+          "valid": true,
+          "description": "PN status period: open-period"
+        },
+        {
+          "source": "invalid/icu-pn-period-missing-start.json",
+          "valid": false,
+          "description": "PN status period: period-missing-start"
+        },
+        {
+          "source": "invalid/icu-pn-period-reversed.json",
+          "valid": false,
+          "description": "PN status period: period-reversed"
+        },
+        {
+          "source": "invalid/icu-pn-no-category.json",
+          "valid": false,
+          "description": "PN therapy category: no-category"
+        },
+        {
+          "source": "invalid/icu-pn-wrong-category.json",
+          "valid": false,
+          "description": "PN therapy category: wrong-category"
+        },
+        {
+          "source": "valid/icu-pn-extra-category.json",
+          "valid": true,
+          "description": "PN therapy category: extra-category"
+        },
+        {
+          "source": "valid/icu-pn-additional-hl7-category.json",
+          "valid": true,
+          "description": "Open category slicing: additional-hl7-category"
+        },
+        {
+          "source": "valid/icu-pn-therapy-second.json",
+          "valid": true,
+          "description": "Open category slicing: therapy-second"
+        },
+        {
+          "source": "invalid/icu-pn-duplicate-therapy.json",
+          "valid": false,
+          "description": "Open category slicing: duplicate-therapy"
+        },
+        {
+          "source": "invalid/icu-pn-absent-part-of-administration.json",
+          "valid": false,
+          "description": "Absent PN must not have partOf"
+        },
+        {
+          "source": "valid/icu-pn-absent-supporting-info.json",
+          "valid": true,
+          "description": "Negative PN can retain supporting evidence"
         }
       ]
     }

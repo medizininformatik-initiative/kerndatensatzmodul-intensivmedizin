@@ -1,0 +1,36 @@
+{
+  "resourceType": "Observation",
+  "id": "icu-kontraindikation-enterale-ernaehrung-missing-effective",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+        "version": "2027.0.0",
+        "code": "contraindication-enteral-nutrition"
+      }
+    ]
+  },
+  "subject": {
+    "type": "Patient",
+    "identifier": {
+      "system": "urn:icu:synthetic-patient",
+      "value": "assessment-test"
+    }
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "code": "52101004",
+        "display": "Present"
+      }
+    ]
+  }
+}

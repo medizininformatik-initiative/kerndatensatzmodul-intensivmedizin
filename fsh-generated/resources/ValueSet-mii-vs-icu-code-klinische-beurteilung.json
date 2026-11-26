@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MII_VS_ICU_Code_Klinische_Beurteilung",
+  "id": "mii-vs-icu-code-klinische-beurteilung",
+  "title": "MII VS ICU Code Klinische Beurteilung",
+  "description": "Clinical assessment questions, including contraindications and current therapy status.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung",
+  "version": "2027.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"
+        ]
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+        "concept": [
+          {
+            "code": "parenteral-nutrition-in-progress"
+          }
+        ]
+      }
+    ]
+  }
+}

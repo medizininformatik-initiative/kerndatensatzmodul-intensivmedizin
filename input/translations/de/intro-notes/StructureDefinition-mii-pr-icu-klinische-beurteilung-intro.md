@@ -1,0 +1,5 @@
+Abstrakte Basis für kategoriale klinische Beurteilungen. Das konkrete Profil legt die Frage und das Ergebnis-ValueSet fest. Kontraindikationen und aktueller Therapiestatus sind unterschiedliche Beurteilungsfragen. Observation.status beschreibt den Dokumentationsstatus; valueCodeableConcept enthält das klinische Ergebnis. Genau ein Ergebnis oder dataAbsentReason, Patient und fachlicher Zeitbezug sind erforderlich. performer benennt Beurteilende, note die Begründung und workflow-supportingInfo die zugrunde liegenden klinischen Informationen.
+
+Diese Basis gilt nur für davon abgeleitete kategoriale Beurteilungen. Sie ersetzt weder die bestehende Score-Basis noch quantitative Monitoring- oder ISiK-Pupillenprofile. Insbesondere kann die Pupillengröße quantitativ sein; Form und Lichtreaktion haben eigene Ergebnis-ValueSets. Present / Absent ist nur in den konkreten binären Beurteilungsprofilen verpflichtend, nicht in dieser generischen Basis.
+
+Das Kategorie-Coding ist offen und Must Support. Die generische Beurteilung verlangt keine bestimmte Kategorie. Kontraindikationsbeurteilungen behaupten keine Therapiedurchführung und haben keine feste therapy-Kategorie.
