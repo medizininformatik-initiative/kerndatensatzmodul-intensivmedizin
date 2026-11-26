@@ -67,7 +67,8 @@ Profile: [MII PR ICU MUV Koerperlaenge](StructureDefinition-mii-pr-icu-muv-koerp
     {
       "system" : "urn:iso:std:iso:11073:10101",
       "version" : "2024-12-05",
-      "code" : "68060"
+      "code" : "188740",
+      "display" : "MDC_LEN_BODY_ACTUAL"
     }]
   },
   "subject" : {

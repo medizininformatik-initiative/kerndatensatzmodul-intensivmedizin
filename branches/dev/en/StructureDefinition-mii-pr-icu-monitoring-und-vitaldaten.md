@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten | *Version*:2027.0.0 |
-| Draft as of 2026-11-25 | *Computable Name*:MII_PR_ICU_Monitoring_Und_Vitaldaten |
+| Draft as of 2026-11-26 | *Computable Name*:MII_PR_ICU_Monitoring_Und_Vitaldaten |
 
  
-Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement. 
+Independent counterpart of the ISiK 6.0.0 monitoring profile, with module-specific measurement-code value-set bindings and exactly one coding in the required vital-signs category slice. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement. 
 
 **Usages:**
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-monito
   "name" : "MII_PR_ICU_Monitoring_Und_Vitaldaten",
   "title" : "MII PR ICU Monitoring und Vitaldaten",
   "status" : "draft",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-monito
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
+  "description" : "Independent counterpart of the ISiK 6.0.0 monitoring profile, with module-specific measurement-code value-set bindings and exactly one coding in the required vital-signs category slice. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -190,6 +190,8 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-monito
     {
       "id" : "Observation.category:vs-cat.coding",
       "path" : "Observation.category.coding",
+      "min" : 1,
+      "max" : "1",
       "mustSupport" : true
     },
     {

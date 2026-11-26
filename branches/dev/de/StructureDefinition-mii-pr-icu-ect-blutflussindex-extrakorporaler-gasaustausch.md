@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch | *Version*:2027.0.0 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch |
 
  
 Blood flow through the circuit of an extracorporeal gas exchange, indexed to the patient's body surface area. 
@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-e
   "name" : "MII_PR_ICU_ECT_Blutflussindex_Extrakorporaler_Gasaustausch",
   "title" : "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
   "status" : "active",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

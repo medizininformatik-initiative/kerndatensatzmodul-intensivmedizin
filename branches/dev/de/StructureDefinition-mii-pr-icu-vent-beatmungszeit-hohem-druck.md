@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-beatmungszeit-hohem-druck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck |
 
  
 Set duration of the high pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV. 
@@ -90,7 +90,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Beatmungszeit_Hohem_Druck",
   "title" : "MII PR ICU Beatmungszeit Hohem Druck",
   "status" : "active",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

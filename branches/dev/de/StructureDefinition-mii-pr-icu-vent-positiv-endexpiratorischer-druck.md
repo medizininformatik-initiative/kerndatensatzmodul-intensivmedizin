@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-positiv-endexpiratorischer-druck | *Version*:2027.0.0 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck |
 
  
 Positive end-expiratory pressure (PEEP): the airway pressure that remains at the end of expiration during ventilation. 
@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Positiv_Endexpiratorischer_Druck",
   "title" : "MII PR ICU Positiv Endexpiratorischer Druck",
   "status" : "active",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

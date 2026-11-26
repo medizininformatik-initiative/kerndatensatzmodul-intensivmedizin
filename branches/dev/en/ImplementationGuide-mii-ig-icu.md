@@ -2923,7 +2923,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten"
       },
       "name" : "MII PR ICU Monitoring und Vitaldaten",
-      "description" : "Independent counterpart of the ISiK 6.0.0 monitoring profile, preserving its element rules except for the three measurement-code value-set bindings. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
+      "description" : "Independent counterpart of the ISiK 6.0.0 monitoring profile, with module-specific measurement-code value-set bindings and exactly one coding in the required vital-signs category slice. Terminology bindings are extensible: a suitable concept from the bound value set must be used when available; concepts outside the value set may be used when it does not cover the measurement.",
       "exampleBoolean" : false
     },
     {

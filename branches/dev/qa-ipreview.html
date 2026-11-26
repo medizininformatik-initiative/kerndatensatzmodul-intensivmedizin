@@ -227,7 +227,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2023+ Medizininformatik Initiative.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 based on FHIR 4.0.1.
-          Generated 2026-11-25
+          Generated 2026-11-26
           
           
             
@@ -253,7 +253,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2023+ Medizininformatik Initiative.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf FHIR 4.0.1.
-          Erstellt 2026-11-25
+          Erstellt 2026-11-26
           
           
             
@@ -3478,7 +3478,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Wed, Nov 25, 2026 11:38+0000">2026-11-25</span>
+          Erstellt           <span title="Thu, Nov 26, 2026 10:27+0000">2026-11-26</span>
 
                     <br/>
 
@@ -6726,6 +6726,66 @@ Außerdem erhebt dieses Profil Anspruch auf Aufwärtskompatibilität zum Profil 
         </td>
         <td>
 &nbsp;&nbsp;          <a href="http://snomed.info/id/1187491009">1187491009</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">imi-uka.atlassian.net</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ category[vs-cat].coding wird im generischen Monitoring-/Vitaldatenprofil auf 1..1 gesetzt. Geburtsgewicht, Körperlänge bei Geburt, Körperlänge, Energieverbrauch durch indirekte Kalorimetrie und Kohlendioxidproduktion erben diese Regel. Die redundante lokale Regel bei Körperlänge entfällt. Der verpflichtende Code vital-signs bleibt unverändert; zusätzliche Kategorien sind weiterhin zulässig, zusätzliche Codings innerhalb des vital-signs-Slices dagegen nicht. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ category[vs-cat].coding wird im generischen Monitoring-/Vitaldatenprofil auf 1..1 gesetzt. Geburtsgewicht, Körperlänge bei Geburt, Körperlänge, Energieverbrauch durch indirekte Kalorimetrie und Kohlendioxidproduktion erben diese Regel. Die redundante lokale Regel bei Körperlänge entfällt. Der verpflichtende Code vital-signs bleibt unverändert; zusätzliche Kategorien sind weiterhin zulässig, zusätzliche Codings innerhalb des vital-signs-Slices dagegen nicht. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">imi-uka.atlassian.net</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Im Entwurfsprofil Körperlänge wird der verpflichtende IEEE-11073-Code 68060 durch 188740 (MDC_LEN_BODY_ACTUAL) ersetzt. Die liegende Position wird weiterhin durch LOINC 8306-3 und SNOMED CT 1149101003 spezifiziert; IEEE 188740 allein legt keine Messposition fest. category[vs-cat].coding wird explizit auf 1..1 eingeschränkt. Der vom Validator geforderte LOINC 8302-2, Canonical und Elternprofil bleiben erhalten. Beispiel und Regressionstests sind angepasst. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Im Entwurfsprofil Körperlänge wird der verpflichtende IEEE-11073-Code 68060 durch 188740 (MDC_LEN_BODY_ACTUAL) ersetzt. Die liegende Position wird weiterhin durch LOINC 8306-3 und SNOMED CT 1149101003 spezifiziert; IEEE 188740 allein legt keine Messposition fest. category[vs-cat].coding wird explizit auf 1..1 eingeschränkt. Der vom Validator geforderte LOINC 8302-2, Canonical und Elternprofil bleiben erhalten. Beispiel und Regressionstests sind angepasst. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
         </td>
       </tr>
       <tr>
@@ -10407,7 +10467,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Wed, Nov 25, 2026 11:38+0000">2026-11-25</span>
+          Generated           <span title="Thu, Nov 26, 2026 10:27+0000">2026-11-26</span>
 
                     <br/>
 
@@ -10711,6 +10771,66 @@ This is a pulsatile pressure. In addition to the properties of the generic profi
         <td>
 This profile also claims upward compatibility with the           <a href="http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse">VitalSignDE_Koerpergroesse</a>
  profile.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">imi-uka.atlassian.net</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Require category[vs-cat].coding 1..1 in the generic monitoring/vital-data profile, inherited by birth weight, birth length, recumbent body length, indirect-calorimetry energy expenditure and carbon dioxide production. Remove the redundant local body-length rule. The required vital-signs code remains unchanged; additional categories remain allowed, but additional codings inside the vital-signs slice are no longer permitted. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ Require category[vs-cat].coding 1..1 in the generic monitoring/vital-data profile, inherited by birth weight, birth length, recumbent body length, indirect-calorimetry energy expenditure and carbon dioxide production. Remove the redundant local body-length rule. The required vital-signs code remains unchanged; additional categories remain allowed, but additional codings inside the vital-signs slice are no longer permitted. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">imi-uka.atlassian.net</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ In the draft recumbent-body-length profile, replace mandatory IEEE 11073 68060 with 188740 (MDC_LEN_BODY_ACTUAL). The lying position remains specified by LOINC 8306-3 and SNOMED CT 1149101003; IEEE 188740 alone does not specify posture. Explicitly require category[vs-cat].coding 1..1. Retain validator-required LOINC 8302-2, canonical URL and parent. Update the example and regression tests. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">github.com</a>
+        </td>
+        <td>
+          <strong>
+<code class="language-plaintext highlighter-rouge">BREAKING</code>          </strong>
+ In the draft recumbent-body-length profile, replace mandatory IEEE 11073 68060 with 188740 (MDC_LEN_BODY_ACTUAL). The lying position remains specified by LOINC 8306-3 and SNOMED CT 1149101003; IEEE 188740 alone does not specify posture. Explicitly require category[vs-cat].coding 1..1. Retain validator-required LOINC 8302-2, canonical URL and parent. Update the example and regression tests. (          <a href="https://imi-uka.atlassian.net/browse/NRA-1190">NRA-1190</a>
+; PR           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-intensivmedizin/pull/205">#205</a>
+).
         </td>
       </tr>
       <tr>

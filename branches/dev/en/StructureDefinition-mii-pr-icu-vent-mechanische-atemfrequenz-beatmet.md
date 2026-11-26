@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-mechanische-atemfrequenz-beatmet | *Version*:2027.0.0 |
-| Active as of 2026-11-25 | *Computable Name*:MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet |
+| Active as of 2026-11-26 | *Computable Name*:MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet |
 
  
 Mechanical breath rate: the number of breaths per minute delivered by the ventilator. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-m
   "name" : "MII_PR_ICU_VENT_Mechanische_Atemfrequenz_Beatmet",
   "title" : "MII PR ICU Mechanische Atemfrequenz Beatmet",
   "status" : "active",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

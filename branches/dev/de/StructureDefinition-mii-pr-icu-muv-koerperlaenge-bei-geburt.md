@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-koerperlaenge-bei-geburt | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge_Bei_Geburt |
+| Draft Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Koerperlaenge_Bei_Geburt |
 
  
 Body length measured at birth, expressed in centimetres. The effective time refers to the measurement at birth, even when the result is documented later. 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](Structu
 
 ** Summary **
 
-Mandatory: 4 elements(11 nested mandatory elements)
+Mandatory: 5 elements(10 nested mandatory elements)
  Must-Support: 25 elements
  Prohibited: 1 element
 
@@ -78,7 +78,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](Structu
 
 ** Summary **
 
-Mandatory: 4 elements(11 nested mandatory elements)
+Mandatory: 5 elements(10 nested mandatory elements)
  Must-Support: 25 elements
  Prohibited: 1 element
 
@@ -105,7 +105,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Koerperlaenge_Bei_Geburt",
   "title" : "MII PR ICU MUV Koerperlaenge Bei Geburt",
   "status" : "draft",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

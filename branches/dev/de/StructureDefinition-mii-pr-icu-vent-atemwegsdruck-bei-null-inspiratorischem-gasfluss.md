@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-atemwegsdruck-bei-null-inspiratorischem-gasfluss | *Version*:2027.0.0 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Inspiratorischem_Gasfluss |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Inspiratorischem_Gasfluss |
 
  
 Airway pressure on a ventilator measured at zero inspiratory gas flow. 
@@ -104,7 +104,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Atemwegsdruck_Bei_Null_Inspiratorischem_Gasfluss",
   "title" : "MII PR ICU Atemwegsdruck bei inspiratorischem Nullfluss",
   "status" : "active",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

@@ -10,7 +10,7 @@
   "name" : "MII_PR_ICU_MUV_Kohlendioxid_Produktion",
   "title" : "MII PR ICU MUV Kohlendioxid Produktion",
   "status" : "draft",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -1533,8 +1533,8 @@
       "definition" : "A reference to a code defined by a terminology system.",
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
-      "min" : 0,
-      "max" : "*",
+      "min" : 1,
+      "max" : "1",
       "base" : {
         "path" : "CodeableConcept.coding",
         "min" : 0,

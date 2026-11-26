@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-vent-dynamische-kompliance | *Version*:2027.0.0 |
-| Active Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Dynamische_Kompliance |
+| Active Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_VENT_Dynamische_Kompliance |
 
  
 Dynamic compliance: the change in lung volume per change in airway pressure, measured during ongoing breathing with gas flow. 
@@ -88,7 +88,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-v
   "name" : "MII_PR_ICU_VENT_Dynamische_Kompliance",
   "title" : "MII PR ICU Dynamische Compliance",
   "status" : "active",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

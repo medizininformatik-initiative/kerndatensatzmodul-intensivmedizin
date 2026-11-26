@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-geburtsgewicht | *Version*:2027.0.0 |
-| Draft Stand: 2026-11-25 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Geburtsgewicht |
+| Draft Stand: 2026-11-26 | *Maschinenlesbarer Name*:MII_PR_ICU_MUV_Geburtsgewicht |
 
  
 Body weight measured at birth, expressed in grams. The effective time refers to the birth-weight measurement, even when documented later. 
@@ -46,7 +46,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](Structu
 
 ** Summary **
 
-Mandatory: 7 elements(10 nested mandatory elements)
+Mandatory: 8 elements(9 nested mandatory elements)
  Must-Support: 27 elements
 
 **Slices**
@@ -77,7 +77,7 @@ Diese Struktur ist abgeleitet von [MII_PR_ICU_Monitoring_Und_Vitaldaten](Structu
 
 ** Summary **
 
-Mandatory: 7 elements(10 nested mandatory elements)
+Mandatory: 8 elements(9 nested mandatory elements)
  Must-Support: 27 elements
 
 **Slices**
@@ -103,7 +103,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-icu-m
   "name" : "MII_PR_ICU_MUV_Geburtsgewicht",
   "title" : "MII PR ICU MUV Geburtsgewicht",
   "status" : "draft",
-  "date" : "2026-11-25T11:38:26+00:00",
+  "date" : "2026-11-26T10:27:59+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

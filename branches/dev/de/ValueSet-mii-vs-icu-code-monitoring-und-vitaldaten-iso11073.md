@@ -261,6 +261,10 @@ No Expansion for this valueset (Unknown Code System)
         "display" : "MDC_ATTR_PT_HEIGHT"
       },
       {
+        "code" : "188740",
+        "display" : "MDC_LEN_BODY_ACTUAL"
+      },
+      {
         "code" : "68059",
         "display" : "MDC_ATTR_PT_BIRTH_WEIGHT"
       },
