@@ -18,9 +18,8 @@ Description: "Intensive Care Delirium Screening Checklist (ICDSC) for delirium a
 * value[x] only integer
 * obeys mii-icu-score-icdsc-total-range
 
-// Interpretation: delirium status categories
-* interpretation from mii-vs-icu-delirium-interpretation (extensible)
-* interpretation ^short = "Delirium status"
-* interpretation ^definition = "Optional interpretation of the screening result. A total score of 4 or higher indicates a positive delirium screen."
+// Keine Interpretation: Das Screening-Ergebnis folgt aus dem Wert und dem Cut-off
+// des Instruments; eine Delir-Diagnose ist eine Condition, keine Score-Interpretation.
+* interpretation 0..0
 
 * component 0..0
