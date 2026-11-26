@@ -19,8 +19,9 @@ Description: "Recumbent body length, expressed in centimetres. Measurements spec
 * code.coding[IEEE-11073] 1..1 MS
 * code.coding[IEEE-11073] ^patternCoding.code = #188740
 
-// LOINC 8306-3 describes recumbent length more precisely. The HL7 Java validator
-// in IG Publisher 2.3.2 currently also requires the broader LOINC 8302-2.
+// LOINC 8302-2 ist der allgemeine Code fuer die Koerpergroesse (Methode nicht festgelegt)
+// und schliesst die Liegendlaenge ein. Der HL7-Java-Validator (IG Publisher 2.3.2) verlangt
+// ihn fuer die Kategorie vital-signs. LOINC 8306-3 praezisiert die liegende Position.
 * code.coding contains loinc-body-height 1..1 MS
 * code.coding[loinc-body-height] ^patternCoding.system = $loinc
 * code.coding[loinc-body-height] ^patternCoding.code = #8302-2
