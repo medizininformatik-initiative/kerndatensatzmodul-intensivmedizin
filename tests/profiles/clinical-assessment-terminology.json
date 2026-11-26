@@ -1,0 +1,44 @@
+{
+  "profiles": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-bauchlage",
+      "tests": [
+        {
+          "source": "invalid/icu-kontraindikation-bauchlage-wrong-result-system.json",
+          "valid": false,
+          "description": "Results use SNOMED CT"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung",
+      "tests": [
+        {
+          "source": "invalid/icu-kontraindikation-enterale-ernaehrung-wrong-result-system.json",
+          "valid": false,
+          "description": "Results use SNOMED CT"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+      "tests": [
+        {
+          "source": "invalid/icu-kontraindikation-medikamentoese-thromboseprophylaxe-wrong-result-system.json",
+          "valid": false,
+          "description": "Results use SNOMED CT"
+        }
+      ]
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung",
+      "tests": [
+        {
+          "source": "invalid/icu-klinische-beurteilung-parenterale-ernaehrung-wrong-result-system.json",
+          "valid": false,
+          "description": "Results use SNOMED CT"
+        }
+      ]
+    }
+  ]
+}

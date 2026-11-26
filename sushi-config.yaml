@@ -472,6 +472,22 @@ resources:
     name: "Ect Venoeser Druck"
     description: "Beispiel: MII PR ICU Venoeser Druck"
     exampleBoolean: true
+  Observation/mii-exa-icu-klinische-beurteilung-parenterale-ernaehrung:
+    name: "Klinische Beurteilung Parenterale Ernaehrung"
+    description: "Beispiel: MII PR ICU Klinische Beurteilung Parenterale Ernaehrung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-kontraindikation-bauchlage:
+    name: "Kontraindikation Bauchlage"
+    description: "Beispiel: MII PR ICU Kontraindikation Bauchlage"
+    exampleBoolean: true
+  Observation/mii-exa-icu-kontraindikation-enterale-ernaehrung:
+    name: "Kontraindikation Enterale Ernaehrung"
+    description: "Beispiel: MII PR ICU Kontraindikation Enterale Ernaehrung"
+    exampleBoolean: true
+  Observation/mii-exa-icu-kontraindikation-medikamentoese-thromboseprophylaxe:
+    name: "Kontraindikation Medikamentoese Thromboseprophylaxe"
+    description: "Beispiel: MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe"
+    exampleBoolean: true
   Observation/mii-exa-icu-muv-arterieller-blutdruck:
     name: "Muv Arterieller Blutdruck"
     description: "Beispiel: MII PR ICU MUV Arterieller Blutdruck"
@@ -720,6 +736,14 @@ resources:
     name: "Score Cam Icu"
     description: "Beispiel: MII PR ICU Score CAM-ICU"
     exampleBoolean: true
+  Observation/mii-exa-icu-score-capd:
+    name: "Score Capd"
+    description: "Beispiel: MII PR ICU Score CAPD"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-comfort-b:
+    name: "Score Comfort B"
+    description: "Beispiel: MII PR ICU Score COMFORT-B"
+    exampleBoolean: true
   Observation/mii-exa-icu-score-faces-pain-scale-revised:
     name: "Score Faces Pain Scale Revised"
     description: "Beispiel: MII PR ICU Score Faces Pain Scale Revised"
@@ -732,6 +756,10 @@ resources:
     name: "Score Icdsc"
     description: "Beispiel: MII PR ICU Score ICDSC"
     exampleBoolean: true
+  Observation/mii-exa-icu-score-kuss:
+    name: "Score Kuss"
+    description: "Beispiel: MII PR ICU Score KUSS"
+    exampleBoolean: true
   Observation/mii-exa-icu-score-numerische-ratingskala:
     name: "Score Numerische Ratingskala"
     description: "Beispiel: MII PR ICU Score Numerische Ratingskala"
@@ -739,6 +767,14 @@ resources:
   Observation/mii-exa-icu-score-rass:
     name: "Score Rass"
     description: "Beispiel: MII PR ICU Score RASS"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-sos-pd:
+    name: "Score Sos Pd"
+    description: "Beispiel: MII PR ICU Score SOS-PD"
+    exampleBoolean: true
+  Observation/mii-exa-icu-score-sos:
+    name: "Score Sos"
+    description: "Beispiel: MII PR ICU Score SOS"
     exampleBoolean: true
   Observation/mii-exa-icu-score-visuelle-analogskala:
     name: "Score Visuelle Analogskala"

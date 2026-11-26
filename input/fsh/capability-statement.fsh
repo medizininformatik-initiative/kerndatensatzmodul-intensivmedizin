@@ -94,6 +94,13 @@ Usage: #definition
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-muv-pulmonalvaskulaerer-widerstandsindex, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung, #SHALL)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren, #SHALL)
+
+// Draft clinical assessments
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung, #MAY)  // draft
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung, #MAY)  // draft
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-bauchlage, #MAY)  // draft
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe, #MAY)  // draft
+
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-bps, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-cam-icu, #MAY)  // draft
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-score-faces-pain-scale-revised, #MAY)  // draft

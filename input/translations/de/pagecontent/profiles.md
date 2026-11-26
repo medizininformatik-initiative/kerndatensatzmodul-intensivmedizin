@@ -116,6 +116,16 @@
 </div>
 </div></details>
 <details>
+<summary>Klinische Beurteilungen<span class="cnt">6</span></summary><div class="body">
+<p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-klinische-beurteilung.html">Kategoriale Klinische Beurteilung</a> &middot; <a href="StructureDefinition-mii-pr-icu-kontraindikationsbeurteilung.html">Kontraindikationsbeurteilung</a></p>
+<div class="items">
+<a href="StructureDefinition-mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung.html">Klinische Beurteilung Parenterale Ernaehrung</a>
+<a href="StructureDefinition-mii-pr-icu-kontraindikation-bauchlage.html">Bauchlage</a>
+<a href="StructureDefinition-mii-pr-icu-kontraindikation-enterale-ernaehrung.html">Enterale Ernaehrung</a>
+<a href="StructureDefinition-mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe.html">Medikamentoese Thromboseprophylaxe</a>
+</div>
+</div></details>
+<details>
 <summary>Scores<span class="cnt">14</span></summary><div class="body">
 <p class="generic"><b>Generisch:</b> <a href="StructureDefinition-mii-pr-icu-score.html">Score</a></p>
 <div class="items">

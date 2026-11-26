@@ -24,6 +24,7 @@ FAM = [("Parameter von extrakorporalen Verfahren", "Extracorporeal procedures",
        ("Monitoring und Vitaldaten", "Monitoring and vital signs",
         lambda p: 'muv-' in p or p.startswith('sd-mii-icu-')),
        ("Untersuchungen", "Examinations", lambda p: 'untersuchung' in p),
+       ("Klinische Beurteilungen", "Clinical assessments", lambda p: "kontraindikation" in p or "klinische-beurteilung" in p),
        ("Scores", "Scores", lambda p: 'score' in p),
        ("Geräteinformationen", "Device information", lambda p: p.endswith('-device'))]
 
