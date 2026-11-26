@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Ideal body weight: a weight estimated from height and sex, used for example to set tidal volumes and dose drugs. It is not a measured weight.",
+  "description": "Ideal body weight (also called predicted body weight): a weight estimated from height with the sex-specific Devine formula (1974), used for example to set tidal volumes and dose drugs. It is not a measured weight.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

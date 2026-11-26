@@ -2,7 +2,7 @@ Profile: MII_PR_ICU_ECT_Venoeser_Druck
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-venoeser-druck
 Title: "MII PR ICU Venoeser Druck"
-Description: "Pressure measured in the device in the line that carries blood from the patient to the pump (venous limb) during an extracorporeal procedure."
+Description: "Pressure measured in the device in the venous limb of an extracorporeal circuit: in extracorporeal gas exchange the line draining blood from the patient, in renal replacement therapy the line returning blood to the patient."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-venoeser-druck"

@@ -2,7 +2,7 @@ Profile: MII_PR_ICU_ECT_Gasfluss
 Parent: MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 Id: mii-pr-icu-ect-gasfluss
 Title: "MII PR ICU Gasfluss"
-Description: "Flow of fresh gas (sweep gas) through the oxygenator of an extracorporeal gas exchange."
+Description: "Flow of sweep gas (oxygen or an air/oxygen blend) through the oxygenator of an extracorporeal gas exchange."
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-ect-gasfluss"

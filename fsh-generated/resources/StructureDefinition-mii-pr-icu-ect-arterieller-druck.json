@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "description": "Pressure measured in the device in the line that carries blood away from the pump back to the patient (arterial limb) during an extracorporeal procedure.",
+  "description": "Pressure measured in the device in the arterial limb of an extracorporeal circuit: in extracorporeal gas exchange the line returning blood to the patient, in renal replacement therapy the line drawing blood from the patient.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
