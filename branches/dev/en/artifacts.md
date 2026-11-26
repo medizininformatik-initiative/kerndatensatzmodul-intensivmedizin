@@ -47,6 +47,9 @@ These are profiles on resources or data types that describe patterns used by oth
 
 | | |
 | :--- | :--- |
+| [ MII PR ICU Bilanz Ernährung Generisch  ](StructureDefinition-mii-pr-icu-bilanz-ernaehrung-generisch.md) | Abstract base for quantitative observations of nutritional intake. Specialisations define nutrient or energy, compatible codes and units, and whether the value is an accumulated amount or an intake rate. Requirements and prescribed targets are distinct concepts. |
+| [ MII PR ICU Kategoriale Klinische Beurteilung  ](StructureDefinition-mii-pr-icu-klinische-beurteilung.md) | Reusable categorical clinical assessment with explicit question, patient, effective time and assessor. Concrete profiles define the clinical question and permitted result values. Observation.status represents the documentation status, not the clinical result. |
+| [ MII PR ICU Kontraindikationsbeurteilung  ](StructureDefinition-mii-pr-icu-kontraindikationsbeurteilung.md) | Assessment of the presence or absence of contraindications to one specified intervention. The assessment code identifies the intervention. The result does not itself state whether treatment was performed or whether a contraindication is absolute or relative. |
 | [ MII PR ICU Score  ](StructureDefinition-mii-pr-icu-score.md) | Parent profile for ICU scoring systems. Scores are represented as Observations with the total score in value[x] and their respective items as components. If subitems of observations have independent medical applications or usage, hasMember can be used to implement these. This profile defines common constraints for all ICU scales and scores including sedation, pain, delirium both pediatric and adult as well as Assessments. |
 
 ### Structures: Resource Profiles 
@@ -64,7 +67,10 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung  ](StructureDefinition-mii-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.md) | Minute volume of mechanical ventilation: the volume of gas the ventilator delivers per minute. |
 | [ MII PR ICU Beatmungszeit Hohem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-hohem-druck.md) | Set duration of the high pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV. |
 | [ MII PR ICU Beatmungszeit Niedrigem Druck  ](StructureDefinition-mii-pr-icu-vent-beatmungszeit-niedrigem-druck.md) | Set duration of the low pressure level in pressure-controlled ventilation with two pressure levels, such as BIPAP or APRV. |
+| [ MII PR ICU Bilanz Einfuhr Eiweiß  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-eiweiss.md) | Protein intake as an accumulated mass in grams over the documented interval. This is distinct from protein requirements, prescribed targets, energy intake and protein intake rates. |
+| [ MII PR ICU Bilanz Einfuhr Fett  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fett.md) | Fat intake as an accumulated mass in grams over the documented interval. This is distinct from fat requirements, prescribed targets, energy intake and fat intake rates. |
 | [ MII PR ICU Bilanz Einfuhr Kalorien 24h  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kalorien-24h.md) | Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required. |
+| [ MII PR ICU Bilanz Einfuhr Kohlenhydrate  ](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kohlenhydrate.md) | Carbohydrate intake as an accumulated mass in grams over the documented interval. This is distinct from carbohydrate requirements, prescribed targets, energy intake and carbohydrate intake rates. |
 | [ MII PR ICU Bilanz Kalorienbedarf pro Tag  ](StructureDefinition-mii-pr-icu-bilanz-kalorienbedarf-pro-tag.md) | Estimated daily energy requirement. This is distinct from measured calorie intake, measured energy expenditure and a prescribed nutrition target. |
 | [ MII PR ICU Blutfluss Cardiovasculaeres Geraet  ](StructureDefinition-mii-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.md) | Blood flow through a cardiovascular device, such as a ventricular assist device or an extracorporeal circuit. |
 | [ MII PR ICU Blutfluss Extrakorporaler Gasaustausch  ](StructureDefinition-mii-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.md) | Blood flow through the circuit of an extracorporeal gas exchange, such as ECMO or ECCO2R. |
@@ -90,6 +96,10 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ MII PR ICU Inspiratorische Sauerstofffraktion  ](StructureDefinition-mii-pr-icu-vent-inspiratorische-sauerstofffraktion.md) | Inspiratory oxygen fraction (FiO2): the proportion of oxygen in the inspired gas. |
 | [ MII PR ICU Inspiratorischer Gasfluss  ](StructureDefinition-mii-pr-icu-vent-inspiratorischer-gasfluss.md) | Inspiratory gas flow in the airway measured by the ventilator. |
 | [ MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren  ](StructureDefinition-mii-pr-icu-ect-ionisiertes-kalzium-nierenersatzverfahren.md) | Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation. |
+| [ MII PR ICU Klinische Beurteilung Parenterale Ernaehrung  ](StructureDefinition-mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung.md) | Assessment of whether parenteral nutrition is actually being administered at a specified time or throughout a specified period. Present means administration is in progress; known absent means it was assessed as not in progress. This is not an order, indication or contraindication, and does not replace the underlying administration record. |
+| [ MII PR ICU Kontraindikation Bauchlage  ](StructureDefinition-mii-pr-icu-kontraindikation-bauchlage.md) | Assessment of contraindications to prone positioning. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result. |
+| [ MII PR ICU Kontraindikation Enterale Ernaehrung  ](StructureDefinition-mii-pr-icu-kontraindikation-enterale-ernaehrung.md) | Assessment of contraindications to enteral nutrition. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result. |
+| [ MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe  ](StructureDefinition-mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe.md) | Assessment of contraindications to pharmacological thromboprophylaxis. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result. |
 | [ MII PR ICU MUV Arterieller Blutdruck  ](StructureDefinition-mii-pr-icu-muv-arterieller-blutdruck.md) | Arterial blood pressure with systolic, diastolic and mean pressure as components, measured invasively or non-invasively. |
 | [ MII PR ICU MUV Atemfrequenz  ](StructureDefinition-mii-pr-icu-muv-atemfrequenz.md) | Respiratory rate of the patient: the number of breaths per minute. |
 | [ MII PR ICU MUV Body Mass Index  ](StructureDefinition-mii-pr-icu-muv-bmi.md) | Body mass index (BMI) calculated from body weight and height, expressed in kg/m2. |
@@ -154,7 +164,10 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ MII VS ICU BodySite Observation extrakorporale Verfahren  ](ValueSet-mii-vs-icu-body-site-observation-extrakorporale-verfahren.md) | Dieses ValueSet enthält Codes für bodySites für die im Kontext von extrakoralen Verfahren eingestellten oder gemessenen Parametern. |
 | [ MII VS ICU CAM-ICU Result  ](ValueSet-mii-vs-icu-cam-icu-result.md) | CAM-ICU assessment result: positive (delirium present) or negative (no delirium) |
 | [ MII VS ICU Category Procedure Beatmung SNOMED  ](ValueSet-mii-vs-icu-category-procedure-beatmung-snomed.md) |  |
+| [ MII VS ICU Code Ernährungszufuhr  ](ValueSet-mii-vs-icu-code-ernaehrungszufuhr.md) | Nutritional intake observables for the generic ICU nutrition-intake base. Extensible to additional nutrients and appropriate intake codes. Not a value set of requirements or prescribed targets. |
 | [ MII VS ICU Code Extrakorporale Verfahren  ](ValueSet-mii-vs-icu-code-extrakorporale-verfahren.md) | Mögliche Codes für extrakorporale Verfahren. Für die Einteilung und Interpretation in Bezug auf unterschiedliche Detail-Level beachte den zugehörigen implementationguide. |
+| [ MII VS ICU Code Klinische Beurteilung  ](ValueSet-mii-vs-icu-code-klinische-beurteilung.md) | Clinical assessment questions, including contraindications and current therapy status. |
+| [ MII VS ICU Code Kontraindikation  ](ValueSet-mii-vs-icu-code-kontraindikation.md) | Assessment questions identifying whether a contraindication to the specified intervention has been found. |
 | [ MII VS ICU Code Monitoring und Vitaldaten ISO11073  ](ValueSet-mii-vs-icu-code-monitoring-und-vitaldaten-iso11073.md) | Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring. |
 | [ MII VS ICU Code Monitoring und Vitaldaten LOINC  ](ValueSet-mii-vs-icu-code-monitoring-und-vitaldaten-loinc.md) | Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring. |
 | [ MII VS ICU Code Monitoring und Vitaldaten SNOMED  ](ValueSet-mii-vs-icu-code-monitoring-und-vitaldaten-snomed.md) | Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem Patientenmonitoring. |
@@ -189,7 +202,7 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [ MII CS ICU DGAI  ](CodeSystem-mii-cs-icu-dgai.md) | Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe). |
+| [ MII CS ICU DGAI  ](CodeSystem-mii-cs-icu-dgai.md) | Placeholder codes for intensive care concepts without an established international code (drafts only). |
 
 ### Example: Example Instances 
 
@@ -209,8 +222,11 @@ These are example instances that show what data produced and consumed by systems
 | [ Bilanz Ausfuhr Wunddrainage  ](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Wunddrainage |
 | [ Bilanz Blutverlust  ](Observation-mii-exa-icu-bilanz-blutverlust.md) | Beispiel: MII PR ICU Bilanz Ausfuhr Blutverlust |
 | [ Bilanz Einfuhr Abgepumpte Muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch |
+| [ Bilanz Einfuhr Eiweiss  ](Observation-mii-exa-icu-bilanz-einfuhr-eiweiss.md) | Beispiel: MII PR ICU Bilanz Einfuhr Eiweiß |
 | [ Bilanz Einfuhr Enterale Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit |
+| [ Bilanz Einfuhr Fett  ](Observation-mii-exa-icu-bilanz-einfuhr-fett.md) | Beispiel: MII PR ICU Bilanz Einfuhr Fett |
 | [ Bilanz Einfuhr Fluessigkeit Gesamt  ](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) | Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt |
+| [ Bilanz Einfuhr Kohlenhydrate  ](Observation-mii-exa-icu-bilanz-einfuhr-kohlenhydrate.md) | Beispiel: MII PR ICU Bilanz Einfuhr Kohlenhydrate |
 | [ Bilanz Einfuhr Muttermilch  ](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.md) | Beispiel: MII PR ICU Bilanz Einfuhr Muttermilch |
 | [ Bilanz Einfuhr Oraler Fluessigkeit  ](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | Beispiel: MII PR ICU Bilanz Einfuhr Orale Fluessigkeit |
 | [ Bilanz Einfuhr Saeuglingsnahrung  ](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | Beispiel: MII PR ICU Bilanz Einfuhr Saeuglingsnahrung |
@@ -237,6 +253,10 @@ These are example instances that show what data produced and consumed by systems
 | [ Ect Substituatfluss  ](Observation-mii-exa-icu-ect-substituatfluss.md) | Beispiel: MII PR ICU Substituatfluss |
 | [ Ect Substituatvolumen  ](Observation-mii-exa-icu-ect-substituatvolumen.md) | Beispiel: MII PR ICU Substituatvolumen |
 | [ Ect Venoeser Druck  ](Observation-mii-exa-icu-ect-venoeser-druck.md) | Beispiel: MII PR ICU Venoeser Druck |
+| [ Klinische Beurteilung Parenterale Ernaehrung  ](Observation-mii-exa-icu-klinische-beurteilung-parenterale-ernaehrung.md) | Beispiel: MII PR ICU Klinische Beurteilung Parenterale Ernaehrung |
+| [ Kontraindikation Bauchlage  ](Observation-mii-exa-icu-kontraindikation-bauchlage.md) | Beispiel: MII PR ICU Kontraindikation Bauchlage |
+| [ Kontraindikation Enterale Ernaehrung  ](Observation-mii-exa-icu-kontraindikation-enterale-ernaehrung.md) | Beispiel: MII PR ICU Kontraindikation Enterale Ernaehrung |
+| [ Kontraindikation Medikamentoese Thromboseprophylaxe  ](Observation-mii-exa-icu-kontraindikation-medikamentoese-thromboseprophylaxe.md) | Beispiel: MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe |
 | [ Muv Arterieller Blutdruck  ](Observation-mii-exa-icu-muv-arterieller-blutdruck.md) | Beispiel: MII PR ICU MUV Arterieller Blutdruck |
 | [ Muv Atemfrequenz  ](Observation-mii-exa-icu-muv-atemfrequenz.md) | Beispiel: MII PR ICU MUV Atemfrequenz |
 | [ Muv Energieverbrauch Indirekte Kalorimetrie  ](Observation-mii-exa-icu-muv-energieverbrauch-indirekte-kalorimetrie.md) | Beispiel: MII PR ICU MUV Energieverbrauch Indirekte Kalorimetrie |
@@ -300,11 +320,16 @@ These are example instances that show what data produced and consumed by systems
 | [ Score Bps  ](Observation-mii-exa-icu-score-bps.md) | Beispiel: MII PR ICU Score BPS |
 | [ Score Cam Icu  ](Observation-mii-exa-icu-score-cam-icu.md) | Beispiel: MII PR ICU Score CAM-ICU |
 | [ Score Cam Icu Absent  ](Observation-mii-exa-icu-score-cam-icu-absent.md) | Beispiel: MII PR ICU Score CAM-ICU |
+| [ Score Capd  ](Observation-mii-exa-icu-score-capd.md) | Beispiel: MII PR ICU Score CAPD |
+| [ Score Comfort B  ](Observation-mii-exa-icu-score-comfort-b.md) | Beispiel: MII PR ICU Score COMFORT-B |
 | [ Score Faces Pain Scale Revised  ](Observation-mii-exa-icu-score-faces-pain-scale-revised.md) | Beispiel: MII PR ICU Score Faces Pain Scale Revised |
 | [ Score Gcs  ](Observation-mii-exa-icu-score-gcs.md) | Beispiel: MII PR ICU Score GCS |
 | [ Score Icdsc  ](Observation-mii-exa-icu-score-icdsc.md) | Beispiel: MII PR ICU Score ICDSC |
+| [ Score Kuss  ](Observation-mii-exa-icu-score-kuss.md) | Beispiel: MII PR ICU Score KUSS |
 | [ Score Numerische Ratingskala  ](Observation-mii-exa-icu-score-numerische-ratingskala.md) | Beispiel: MII PR ICU Score Numerische Ratingskala |
 | [ Score Rass  ](Observation-mii-exa-icu-score-rass.md) | Beispiel: MII PR ICU Score RASS |
+| [ Score Sos  ](Observation-mii-exa-icu-score-sos.md) | Beispiel: MII PR ICU Score SOS |
+| [ Score Sos Pd  ](Observation-mii-exa-icu-score-sos-pd.md) | Beispiel: MII PR ICU Score SOS-PD |
 | [ Score Visuelle Analogskala  ](Observation-mii-exa-icu-score-visuelle-analogskala.md) | Beispiel: MII PR ICU Score Visuelle Analogskala |
 | [ Untersuchung Pupillenbefund  ](Observation-mii-exa-icu-untersuchung-pupillenbefund.md) | Beispiel: MII PR ICU Untersuchung Pupillenbefund |
 | [ Untersuchung Pupillenform  ](Observation-mii-exa-icu-untersuchung-pupillenform.md) | Beispiel: MII PR ICU Untersuchung Pupillenform |
@@ -357,10 +382,5 @@ These are resources that are used within this implementation guide that do not f
 | |
 | :--- |
 | [ mii-exa-icu-muv-bmi  ](Observation-mii-exa-icu-muv-bmi.md) |
-| [ mii-exa-icu-score-capd  ](Observation-mii-exa-icu-score-capd.md) |
-| [ mii-exa-icu-score-comfort-b  ](Observation-mii-exa-icu-score-comfort-b.md) |
-| [ mii-exa-icu-score-kuss  ](Observation-mii-exa-icu-score-kuss.md) |
-| [ mii-exa-icu-score-sos  ](Observation-mii-exa-icu-score-sos.md) |
-| [ mii-exa-icu-score-sos-pd  ](Observation-mii-exa-icu-score-sos-pd.md) |
 | [ mii-param-icu-manifest  ](Parameters-mii-param-icu-manifest.md) |
 

@@ -13,6 +13,30 @@
     ],
     "Observation": [
       {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung",
+        "title": "MII PR ICU Kategoriale Klinische Beurteilung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung",
+        "title": "MII PR ICU Klinische Beurteilung Parenterale Ernaehrung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-bauchlage",
+        "title": "MII PR ICU Kontraindikation Bauchlage"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung",
+        "title": "MII PR ICU Kontraindikation Enterale Ernaehrung"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+        "title": "MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe"
+      },
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikationsbeurteilung",
+        "title": "MII PR ICU Kontraindikationsbeurteilung"
+      },
+      {
         "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-monitoring-und-vitaldaten",
         "title": "MII PR ICU Monitoring und Vitaldaten"
       },
@@ -398,6 +422,9 @@
       "ImplementationGuide.definition.page.title",
       "StructureDefinition.snapshot.element.definition",
       "StructureDefinition.snapshot.element.short"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"

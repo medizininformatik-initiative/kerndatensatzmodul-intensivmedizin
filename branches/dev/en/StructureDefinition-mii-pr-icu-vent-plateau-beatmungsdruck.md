@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-icu-vent-p
   "name" : "MII_PR_ICU_VENT_Plateau_Beatmungsdruck",
   "title" : "MII PR ICU Plateau Beatmungsdruck",
   "status" : "active",
-  "date" : "2026-11-26T10:27:59+00:00",
+  "date" : "2026-11-26T11:03:30+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

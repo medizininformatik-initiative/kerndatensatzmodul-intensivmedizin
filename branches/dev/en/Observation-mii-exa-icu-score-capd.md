@@ -1,10 +1,10 @@
-# mii-exa-icu-score-capd - MII IG ICU v2027.0.0
+# Score Capd - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-score-capd**
+* **Score Capd**
 
-## Observation: mii-exa-icu-score-capd
+## Example Observation: Score Capd
 
 -------
 

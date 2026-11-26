@@ -16,6 +16,10 @@
   </parameter>
   <parameter>
     <name value="system-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="system-version"/>
     <valueCanonical value="http://unitsofmeasure.org|3.0.1"/>
   </parameter>
   <parameter>
@@ -29,6 +33,18 @@
   <parameter>
     <name value="default-canonical-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kohlenhydrate|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-eiweiss|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fett|2027.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -149,6 +165,22 @@
   <parameter>
     <name value="default-canonical-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-extrakorporalen-verfahren|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-bauchlage|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe|2027.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -547,6 +579,14 @@
     <valueCanonical value="http://hl7.org/fhir/StructureDefinition/bodySite|5.3.0"/>
   </parameter>
   <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ernaehrung-generisch|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-valueset-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr|2027.0.0"/>
+  </parameter>
+  <parameter>
     <name value="default-valueset-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-method-kalorienbedarf|2027.0.0"/>
   </parameter>
@@ -585,6 +625,50 @@
   <parameter>
     <name value="default-valueset-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.3.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|4.0.1"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/MedicationStatement|4.0.1"/>
+  </parameter>
+  <parameter>
+    <name value="default-valueset-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-valueset-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/present-absent|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikationsbeurteilung|2027.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-valueset-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -648,15 +732,7 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"/>
-  </parameter>
-  <parameter>
-    <name value="default-canonical-version"/>
     <valueCanonical value="http://hl7.org/fhir/StructureDefinition/MedicationDispense|4.0.1"/>
-  </parameter>
-  <parameter>
-    <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/MedicationStatement|4.0.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -729,10 +805,6 @@
   <parameter>
     <name value="default-canonical-version"/>
     <valueCanonical value="http://hl7.org/fhir/StructureDefinition/MolecularSequence|4.0.1"/>
-  </parameter>
-  <parameter>
-    <name value="default-canonical-version"/>
-    <valueCanonical value="http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>

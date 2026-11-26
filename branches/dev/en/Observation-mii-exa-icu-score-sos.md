@@ -1,10 +1,10 @@
-# mii-exa-icu-score-sos - MII IG ICU v2027.0.0
+# Score Sos - MII IG ICU v2027.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **mii-exa-icu-score-sos**
+* **Score Sos**
 
-## Observation: mii-exa-icu-score-sos
+## Example Observation: Score Sos
 
 -------
 

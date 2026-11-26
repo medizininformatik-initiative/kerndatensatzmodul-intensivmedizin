@@ -13,7 +13,7 @@ Diese Seite führt die Beispielinstanzen des Moduls **Intensive Care** auf. Die 
 
 > **Written during migration - review before release.** Aus dem Build generierte Liste (Quelle hatte hier kein Narrativ).
 
-Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.md) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt **Examples**.
+Das Modul liefert **160 Beispiele** (mindestens eines je Profilfamilie, inkl. vollständiger Beatmungs-, Bilanz-, ECT-, Monitoring-, Untersuchungs- und Score-Ketten). Jedes Beispiel ist in der [Artefakt-Übersicht](artifacts.md) unter seinem Profil gelistet; zusätzlich führt jede Profilseite ihre Beispiele im Abschnitt **Examples**.
 
 #### Parameter von extrakorporalen Verfahren (20)
 
@@ -82,7 +82,7 @@ Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Vent Unterstuetzungsdruck Beatmung](Observation-mii-exa-icu-vent-unterstuetzungsdruck-beatmung.md) | [MII PR ICU Unterstuetzungsdruck Beatmung](StructureDefinition-mii-pr-icu-vent-unterstuetzungsdruck-beatmung.md) |
 | [Vent Zeitverhaeltnis Ein Ausatmung](Observation-mii-exa-icu-vent-zeitverhaeltnis-ein-ausatmung.md) | [MII PR ICU Zeitverhaeltnis Ein Ausatmung](StructureDefinition-mii-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.md) |
 
-#### Bilanzen (20)
+#### Bilanzen (23)
 
 | | |
 | :--- | :--- |
@@ -98,8 +98,11 @@ Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Bilanz Ausfuhr Wunddrainage](Observation-mii-exa-icu-bilanz-ausfuhr-wunddrainage.md) | [MII PR ICU Bilanz Ausfuhr Wunddrainage](extern-mii-pr-icu-bilanz-ausfuhr-wunddrainage.md)(ISiK) |
 | [Bilanz Blutverlust](Observation-mii-exa-icu-bilanz-blutverlust.md) | [MII PR ICU Bilanz Ausfuhr Blutverlust](extern-mii-pr-icu-bilanz-ausfuhr-blutverlust.md)(ISiK) |
 | [Bilanz Einfuhr Abgepumpte Muttermilch](Observation-mii-exa-icu-bilanz-einfuhr-abgepumpte-muttermilch.md) | [MII PR ICU Bilanz Einfuhr Abgepumpte Muttermilch](extern-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.md)(ISiK) |
+| [Bilanz Einfuhr Eiweiss](Observation-mii-exa-icu-bilanz-einfuhr-eiweiss.md) | [MII PR ICU Bilanz Einfuhr Eiweiß](StructureDefinition-mii-pr-icu-bilanz-einfuhr-eiweiss.md) |
 | [Bilanz Einfuhr Enterale Fluessigkeit](Observation-mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit.md) | [MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit](extern-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.md)(ISiK) |
+| [Bilanz Einfuhr Fett](Observation-mii-exa-icu-bilanz-einfuhr-fett.md) | [MII PR ICU Bilanz Einfuhr Fett](StructureDefinition-mii-pr-icu-bilanz-einfuhr-fett.md) |
 | [Bilanz Einfuhr Fluessigkeit Gesamt](Observation-mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt.md) | [MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt](extern-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.md)(ISiK) |
+| [Bilanz Einfuhr Kohlenhydrate](Observation-mii-exa-icu-bilanz-einfuhr-kohlenhydrate.md) | [MII PR ICU Bilanz Einfuhr Kohlenhydrate](StructureDefinition-mii-pr-icu-bilanz-einfuhr-kohlenhydrate.md) |
 | [Bilanz Einfuhr Muttermilch](Observation-mii-exa-icu-bilanz-einfuhr-muttermilch.md) | [MII PR ICU Bilanz Einfuhr Muttermilch](extern-mii-pr-icu-bilanz-einfuhr-muttermilch.md)(ISiK) |
 | [Bilanz Einfuhr Oraler Fluessigkeit](Observation-mii-exa-icu-bilanz-einfuhr-oraler-fluessigkeit.md) | [MII PR ICU Bilanz Einfuhr Orale Fluessigkeit](extern-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.md)(ISiK) |
 | [Bilanz Einfuhr Saeuglingsnahrung](Observation-mii-exa-icu-bilanz-einfuhr-saeuglingsnahrung.md) | [MII PR ICU Bilanz Einfuhr Saeuglingsnahrung](extern-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.md)(ISiK) |
@@ -181,6 +184,15 @@ Das Modul liefert **148 Beispiele** (mindestens eines je Profilfamilie, inkl. vo
 | [Untersuchung Pupillenlichtreaktion Direkt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-direkt.md) | [MII PR ICU Untersuchung Pupillenlichtreaktion Direkt](extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.md)(ISiK) |
 | [Untersuchung Pupillenlichtreaktion Indirekt](Observation-mii-exa-icu-untersuchung-pupillenlichtreaktion-indirekt.md) | [MII PR ICU Untersuchung Pupillenlichtreaktion Indirekt](extern-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.md)(ISiK) |
 | [Untersuchung Pupillensymmetrie](Observation-mii-exa-icu-untersuchung-pupillensymmetrie.md) | [MII PR ICU Untersuchung Pupillensymmetrie](extern-mii-pr-icu-untersuchung-pupillensymmetrie.md)(ISiK) |
+
+#### Klinische Beurteilungen (4)
+
+| | |
+| :--- | :--- |
+| [Klinische Beurteilung Parenterale Ernaehrung](Observation-mii-exa-icu-klinische-beurteilung-parenterale-ernaehrung.md) | [MII PR ICU Klinische Beurteilung Parenterale Ernaehrung](StructureDefinition-mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung.md) |
+| [Kontraindikation Bauchlage](Observation-mii-exa-icu-kontraindikation-bauchlage.md) | [MII PR ICU Kontraindikation Bauchlage](StructureDefinition-mii-pr-icu-kontraindikation-bauchlage.md) |
+| [Kontraindikation Enterale Ernaehrung](Observation-mii-exa-icu-kontraindikation-enterale-ernaehrung.md) | [MII PR ICU Kontraindikation Enterale Ernaehrung](StructureDefinition-mii-pr-icu-kontraindikation-enterale-ernaehrung.md) |
+| [Kontraindikation Medikamentoese Thromboseprophylaxe](Observation-mii-exa-icu-kontraindikation-medikamentoese-thromboseprophylaxe.md) | [MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe](StructureDefinition-mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe.md) |
 
 #### Scores (15)
 

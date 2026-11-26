@@ -1,10 +1,10 @@
-# mii-exa-icu-score-comfort-b - MII IG ICU v2027.0.0
+# Score Comfort B - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-score-comfort-b**
+* **Score Comfort B**
 
-## Observation: mii-exa-icu-score-comfort-b
+## Beispiel Observation: Score Comfort B
 
 -------
 

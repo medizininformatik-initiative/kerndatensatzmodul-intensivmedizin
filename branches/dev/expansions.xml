@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e5dcc22b-07ba-4c51-93c3-60b25c52c3cd"/>
+  <id value="05887bdb-b273-4fa0-82f1-8e87ff50d515"/>
   <meta>
-    <lastUpdated value="2026-11-26T10:27:59.036+00:00"/>
+    <lastUpdated value="2026-11-26T11:03:30.454+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -96,8 +96,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:17c62d74-1fa6-4adc-a2e4-0e1c8d830f37"/>
-          <timestamp value="2026-11-26T10:41:20+00:00"/>
+          <identifier value="urn:uuid:e21156ed-4f85-498c-8f03-ac65bacf81ad"/>
+          <timestamp value="2026-11-26T11:14:28+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -135,6 +135,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -244,8 +248,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:17c62d74-1fa6-4adc-a2e4-0e1c8d830f37"/>
-          <timestamp value="2026-11-26T10:41:20+00:00"/>
+          <identifier value="urn:uuid:e21156ed-4f85-498c-8f03-ac65bacf81ad"/>
+          <timestamp value="2026-11-26T11:14:28+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -283,6 +287,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -392,8 +400,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3b80cb79-fa5c-4744-ac91-1268137db99b"/>
-          <timestamp value="2026-11-26T10:41:21+00:00"/>
+          <identifier value="urn:uuid:21131354-dc40-4f43-8a89-4e96d132796a"/>
+          <timestamp value="2026-11-26T11:14:29+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -431,6 +439,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -618,8 +630,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8a1b02c5-f9ac-4209-a8a4-5ea81198cb47"/>
-          <timestamp value="2026-11-26T10:43:32+00:00"/>
+          <identifier value="urn:uuid:9318c2e6-1b82-423d-b3bc-0c8456c414ef"/>
+          <timestamp value="2026-11-26T11:16:14+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -657,6 +669,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -866,8 +882,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8a1b02c5-f9ac-4209-a8a4-5ea81198cb47"/>
-          <timestamp value="2026-11-26T10:43:32+00:00"/>
+          <identifier value="urn:uuid:9318c2e6-1b82-423d-b3bc-0c8456c414ef"/>
+          <timestamp value="2026-11-26T11:16:14+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -905,6 +921,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -1114,8 +1134,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c4043d35-9966-4508-bbd3-eacb0f9d769c"/>
-          <timestamp value="2026-11-26T10:43:33+00:00"/>
+          <identifier value="urn:uuid:90e5dbf2-020b-4332-99e2-f2439ee636df"/>
+          <timestamp value="2026-11-26T11:16:15+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1153,6 +1173,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -1256,8 +1280,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e03c848-b350-435b-a905-c3bef917720e"/>
-          <timestamp value="2026-11-26T10:40:05+00:00"/>
+          <identifier value="urn:uuid:fe5ea8f3-4ec5-457c-9f3b-6e4f75546e3d"/>
+          <timestamp value="2026-11-26T11:13:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1295,6 +1319,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -1379,8 +1407,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e03c848-b350-435b-a905-c3bef917720e"/>
-          <timestamp value="2026-11-26T10:40:05+00:00"/>
+          <identifier value="urn:uuid:fe5ea8f3-4ec5-457c-9f3b-6e4f75546e3d"/>
+          <timestamp value="2026-11-26T11:13:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1418,6 +1446,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -1502,8 +1534,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e4b5a7fe-1e9a-4721-9437-2587f61075e9"/>
-          <timestamp value="2026-11-26T10:40:07+00:00"/>
+          <identifier value="urn:uuid:c69aa76d-78ff-49e1-ab07-9f3afb3a3df3"/>
+          <timestamp value="2026-11-26T11:13:24+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1541,6 +1573,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -2264,8 +2300,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:df69f5d0-0d4e-425e-82a9-175ecca55a51"/>
-          <timestamp value="2026-11-26T10:40:46+00:00"/>
+          <identifier value="urn:uuid:d839b0e3-6aa9-49c9-b96d-5e7e6813d196"/>
+          <timestamp value="2026-11-26T11:14:01+00:00"/>
           <total value="33"/>
           <offset value="0"/>
           <parameter>
@@ -2303,6 +2339,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -3187,8 +3227,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:df69f5d0-0d4e-425e-82a9-175ecca55a51"/>
-          <timestamp value="2026-11-26T10:40:46+00:00"/>
+          <identifier value="urn:uuid:d839b0e3-6aa9-49c9-b96d-5e7e6813d196"/>
+          <timestamp value="2026-11-26T11:14:01+00:00"/>
           <total value="33"/>
           <offset value="0"/>
           <parameter>
@@ -3226,6 +3266,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -4110,8 +4154,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:848cfc75-7bd0-476a-975e-ed1572206206"/>
-          <timestamp value="2026-11-26T10:40:47+00:00"/>
+          <identifier value="urn:uuid:95b07e4d-f582-4682-8dc9-075e913d3e99"/>
+          <timestamp value="2026-11-26T11:14:02+00:00"/>
           <total value="33"/>
           <offset value="0"/>
           <parameter>
@@ -4149,6 +4193,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -4371,7 +4419,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4380,8 +4428,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:93d5df0c-72a0-456e-97a6-9cd2d4515df9"/>
-          <timestamp value="2026-11-26T10:41:23+00:00"/>
+          <identifier value="urn:uuid:3c54d697-c4f2-4ea1-bce9-6c06129f20ad"/>
+          <timestamp value="2026-11-26T11:14:31+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4419,6 +4467,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -4519,7 +4571,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4528,8 +4580,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:93d5df0c-72a0-456e-97a6-9cd2d4515df9"/>
-          <timestamp value="2026-11-26T10:41:23+00:00"/>
+          <identifier value="urn:uuid:3c54d697-c4f2-4ea1-bce9-6c06129f20ad"/>
+          <timestamp value="2026-11-26T11:14:31+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4567,6 +4619,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -4667,7 +4723,7 @@
         <title value="MII VS ICU CAM-ICU Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4676,8 +4732,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b1b3b02-08ef-44c1-b8f7-731cb409924a"/>
-          <timestamp value="2026-11-26T10:41:25+00:00"/>
+          <identifier value="urn:uuid:d2efd3cb-2a12-4fd6-80cb-8b7f2c80b6b3"/>
+          <timestamp value="2026-11-26T11:14:33+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4715,6 +4771,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -4822,8 +4882,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e11938e5-fd5e-4348-8412-26bdfae3c038"/>
-          <timestamp value="2026-11-26T10:41:17+00:00"/>
+          <identifier value="urn:uuid:acf3f739-ba75-4dc0-b1d8-005dfc63e5a0"/>
+          <timestamp value="2026-11-26T11:14:26+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4861,6 +4921,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -4970,8 +5034,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e11938e5-fd5e-4348-8412-26bdfae3c038"/>
-          <timestamp value="2026-11-26T10:41:17+00:00"/>
+          <identifier value="urn:uuid:acf3f739-ba75-4dc0-b1d8-005dfc63e5a0"/>
+          <timestamp value="2026-11-26T11:14:26+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -5009,6 +5073,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -5118,8 +5186,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ef4c2e18-8a35-439b-84e4-bf4425bba951"/>
-          <timestamp value="2026-11-26T10:41:21+00:00"/>
+          <identifier value="urn:uuid:996dffde-06f2-4968-b35b-9abfa744109a"/>
+          <timestamp value="2026-11-26T11:14:29+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -5160,6 +5228,10 @@
           </parameter>
           <parameter>
             <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
             <valueUri value="http://unitsofmeasure.org|3.0.1"/>
           </parameter>
           <contains>
@@ -5169,6 +5241,748 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="57485005"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from 127.0.0.1 based on:</p>
+              <ul>
+                <li>Loinc v2.83
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Jul 2026
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-788472008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/788472008">788472008</a>
+                </td>
+                <td>Carbohydrate intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;788472008&quot;, &quot;display&quot;: &quot;Carbohydrate intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;788472008&quot;&gt;&lt;display value=&quot;Carbohydrate intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-870372004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/870372004">870372004</a>
+                </td>
+                <td>Fat and oil intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;870372004&quot;, &quot;display&quot;: &quot;Fat and oil intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;870372004&quot;&gt;&lt;display value=&quot;Fat and oil intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-874875003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/874875003">874875003</a>
+                </td>
+                <td>Protein and/or protein derivative intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;874875003&quot;, &quot;display&quot;: &quot;Protein and/or protein derivative intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;874875003&quot;&gt;&lt;display value=&quot;Protein and/or protein derivative intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-787787004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/787787004">787787004</a>
+                </td>
+                <td>Energy intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;787787004&quot;, &quot;display&quot;: &quot;Energy intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;787787004&quot;&gt;&lt;display value=&quot;Energy intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-9057-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/9057-1/">9057-1</a>
+                </td>
+                <td>Calorie intake total 24 hour</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;9057-1&quot;, &quot;display&quot;: &quot;Calorie intake total 24 hour&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;9057-1&quot;&gt;&lt;display value=&quot;Calorie intake total 24 hour&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Ernaehrungszufuhr"/>
+        <title value="MII VS ICU Code Ernährungszufuhr"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c75a92dd-4772-48a8-8cf9-25b5e2c1ab6e"/>
+          <timestamp value="2026-11-26T11:13:14+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://unitsofmeasure.org|3.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="788472008"/>
+            <display value="Carbohydrate intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870372004"/>
+            <display value="Fat and oil intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="874875003"/>
+            <display value="Protein and/or protein derivative intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787787004"/>
+            <display value="Energy intake"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9057-1"/>
+            <display value="Calorie intake total 24 hour"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from 127.0.0.1 based on:</p>
+              <ul>
+                <li>Loinc v2.83
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Jul 2026
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-788472008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/788472008">788472008</a>
+                </td>
+                <td>Carbohydrate intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;788472008&quot;, &quot;display&quot;: &quot;Carbohydrate intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;788472008&quot;&gt;&lt;display value=&quot;Carbohydrate intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-870372004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/870372004">870372004</a>
+                </td>
+                <td>Fat and oil intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;870372004&quot;, &quot;display&quot;: &quot;Fat and oil intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;870372004&quot;&gt;&lt;display value=&quot;Fat and oil intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-874875003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/874875003">874875003</a>
+                </td>
+                <td>Protein and/or protein derivative intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;874875003&quot;, &quot;display&quot;: &quot;Protein and/or protein derivative intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;874875003&quot;&gt;&lt;display value=&quot;Protein and/or protein derivative intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-787787004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/787787004">787787004</a>
+                </td>
+                <td>Energy intake</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;787787004&quot;, &quot;display&quot;: &quot;Energy intake&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;787787004&quot;&gt;&lt;display value=&quot;Energy intake&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-9057-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/9057-1/">9057-1</a>
+                </td>
+                <td>Calorie intake total 24 hour</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;9057-1&quot;, &quot;display&quot;: &quot;Calorie intake total 24 hour&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;9057-1&quot;&gt;&lt;display value=&quot;Calorie intake total 24 hour&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Ernaehrungszufuhr"/>
+        <title value="MII VS ICU Code Ernährungszufuhr"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c75a92dd-4772-48a8-8cf9-25b5e2c1ab6e"/>
+          <timestamp value="2026-11-26T11:13:14+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://unitsofmeasure.org|3.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="788472008"/>
+            <display value="Carbohydrate intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870372004"/>
+            <display value="Fat and oil intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="874875003"/>
+            <display value="Protein and/or protein derivative intake"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787787004"/>
+            <display value="Energy intake"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9057-1"/>
+            <display value="Calorie intake total 24 hour"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from 127.0.0.1 based on:</p>
+              <ul>
+                <li>Loinc v2.83
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Jul 2026
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-788472008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/788472008">788472008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;788472008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;788472008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-870372004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/870372004">870372004</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;870372004&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;870372004&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-874875003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/874875003">874875003</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;874875003&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;874875003&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-787787004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/787787004">787787004</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;, &quot;code&quot;: &quot;787787004&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20260701&quot;&gt;&lt;code value=&quot;787787004&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-9057-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/9057-1/">9057-1</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.83&quot;, &quot;code&quot;: &quot;9057-1&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.83&quot;&gt;&lt;code value=&quot;9057-1&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Ernaehrungszufuhr"/>
+        <title value="MII VS ICU Code Ernährungszufuhr"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cf5bf0ff-b61c-4647-8fff-9fa75471aa12"/>
+          <timestamp value="2026-11-26T11:13:16+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20260701"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://unitsofmeasure.org|3.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="788472008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870372004"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="874875003"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787787004"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9057-1"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -6224,8 +7038,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbe37ca1-a798-4c1c-872b-415b30fc15f4"/>
-          <timestamp value="2026-11-26T10:43:33+00:00"/>
+          <identifier value="urn:uuid:1c55a2a6-0007-4946-b3cd-aca32438564a"/>
+          <timestamp value="2026-11-26T11:16:15+00:00"/>
           <total value="50"/>
           <offset value="0"/>
           <parameter>
@@ -6263,6 +7077,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -7572,8 +8390,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbe37ca1-a798-4c1c-872b-415b30fc15f4"/>
-          <timestamp value="2026-11-26T10:43:33+00:00"/>
+          <identifier value="urn:uuid:1c55a2a6-0007-4946-b3cd-aca32438564a"/>
+          <timestamp value="2026-11-26T11:16:15+00:00"/>
           <total value="50"/>
           <offset value="0"/>
           <parameter>
@@ -7611,6 +8429,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -8920,8 +9742,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbbc1cb3-91ca-4049-bb6f-7f329674863e"/>
-          <timestamp value="2026-11-26T10:43:34+00:00"/>
+          <identifier value="urn:uuid:557d5b4c-58f8-4da8-9ec6-5ed7063936f9"/>
+          <timestamp value="2026-11-26T11:16:16+00:00"/>
           <total value="50"/>
           <offset value="0"/>
           <parameter>
@@ -8959,6 +9781,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -9163,6 +9989,1211 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="19647005"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-mii-cs-icu-dgai.html">codesystem MII CS ICU DGAI v2027.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="ValueSet-mii-vs-icu-code-kontraindikation.html">valueset MII VS ICU Code Kontraindikation v2027.0.0 (ValueSet)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-enteral-nutrition">contraindication-enteral-nutrition</a>
+                </td>
+                <td>Contraindication to enteral nutrition</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-enteral-nutrition&quot;, &quot;display&quot;: &quot;Contraindication to enteral nutrition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-enteral-nutrition&quot;&gt;&lt;display value=&quot;Contraindication to enteral nutrition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-proning"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-proning">contraindication-proning</a>
+                </td>
+                <td>Contraindication to prone positioning</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-proning&quot;, &quot;display&quot;: &quot;Contraindication to prone positioning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-proning&quot;&gt;&lt;display value=&quot;Contraindication to prone positioning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis">contraindication-drug-based-thrombosis-prophylaxis</a>
+                </td>
+                <td>Contraindication to pharmacological thromboprophylaxis</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-drug-based-thrombosis-prophylaxis&quot;, &quot;display&quot;: &quot;Contraindication to pharmacological thromboprophylaxis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-drug-based-thrombosis-prophylaxis&quot;&gt;&lt;display value=&quot;Contraindication to pharmacological thromboprophylaxis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-parenteral-nutrition-in-progress"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-parenteral-nutrition-in-progress">parenteral-nutrition-in-progress</a>
+                </td>
+                <td>Parenteral nutrition currently being administered</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;parenteral-nutrition-in-progress&quot;, &quot;display&quot;: &quot;Parenteral nutrition currently being administered&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;parenteral-nutrition-in-progress&quot;&gt;&lt;display value=&quot;Parenteral nutrition currently being administered&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Klinische_Beurteilung"/>
+        <title value="MII VS ICU Code Klinische Beurteilung"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fafa3c9f-9805-43df-875e-d0a1b6ca3ea6"/>
+          <timestamp value="2026-11-26T11:13:36+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-enteral-nutrition"/>
+            <display value="Contraindication to enteral nutrition"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-proning"/>
+            <display value="Contraindication to prone positioning"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
+            <display value="Contraindication to pharmacological thromboprophylaxis"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="parenteral-nutrition-in-progress"/>
+            <display value="Parenteral nutrition currently being administered"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-mii-cs-icu-dgai.html">codesystem MII CS ICU DGAI v2027.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="ValueSet-mii-vs-icu-code-kontraindikation.html">valueset MII VS ICU Code Kontraindikation v2027.0.0 (ValueSet)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-enteral-nutrition">contraindication-enteral-nutrition</a>
+                </td>
+                <td>Contraindication to enteral nutrition</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-enteral-nutrition&quot;, &quot;display&quot;: &quot;Contraindication to enteral nutrition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-enteral-nutrition&quot;&gt;&lt;display value=&quot;Contraindication to enteral nutrition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-proning"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-proning">contraindication-proning</a>
+                </td>
+                <td>Contraindication to prone positioning</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-proning&quot;, &quot;display&quot;: &quot;Contraindication to prone positioning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-proning&quot;&gt;&lt;display value=&quot;Contraindication to prone positioning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis">contraindication-drug-based-thrombosis-prophylaxis</a>
+                </td>
+                <td>Contraindication to pharmacological thromboprophylaxis</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-drug-based-thrombosis-prophylaxis&quot;, &quot;display&quot;: &quot;Contraindication to pharmacological thromboprophylaxis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-drug-based-thrombosis-prophylaxis&quot;&gt;&lt;display value=&quot;Contraindication to pharmacological thromboprophylaxis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-parenteral-nutrition-in-progress"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-parenteral-nutrition-in-progress">parenteral-nutrition-in-progress</a>
+                </td>
+                <td>Parenteral nutrition currently being administered</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;parenteral-nutrition-in-progress&quot;, &quot;display&quot;: &quot;Parenteral nutrition currently being administered&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;parenteral-nutrition-in-progress&quot;&gt;&lt;display value=&quot;Parenteral nutrition currently being administered&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Klinische_Beurteilung"/>
+        <title value="MII VS ICU Code Klinische Beurteilung"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:fafa3c9f-9805-43df-875e-d0a1b6ca3ea6"/>
+          <timestamp value="2026-11-26T11:13:36+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-enteral-nutrition"/>
+            <display value="Contraindication to enteral nutrition"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-proning"/>
+            <display value="Contraindication to prone positioning"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
+            <display value="Contraindication to pharmacological thromboprophylaxis"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="parenteral-nutrition-in-progress"/>
+            <display value="Parenteral nutrition currently being administered"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-mii-cs-icu-dgai.html">codesystem MII CS ICU DGAI v2027.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="ValueSet-mii-vs-icu-code-kontraindikation.html">valueset MII VS ICU Code Kontraindikation v2027.0.0 (ValueSet)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-enteral-nutrition">contraindication-enteral-nutrition</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-enteral-nutrition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-enteral-nutrition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-proning"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-proning">contraindication-proning</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-proning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-proning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis">contraindication-drug-based-thrombosis-prophylaxis</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-drug-based-thrombosis-prophylaxis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-drug-based-thrombosis-prophylaxis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-parenteral-nutrition-in-progress"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-parenteral-nutrition-in-progress">parenteral-nutrition-in-progress</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;parenteral-nutrition-in-progress&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;parenteral-nutrition-in-progress&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Klinische_Beurteilung"/>
+        <title value="MII VS ICU Code Klinische Beurteilung"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c2dbe4c6-a5f4-447f-9a6f-0cafb79bb2aa"/>
+          <timestamp value="2026-11-26T11:13:37+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-enteral-nutrition"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-proning"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="parenteral-nutrition-in-progress"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-mii-cs-icu-dgai.html">codesystem MII CS ICU DGAI v2027.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-enteral-nutrition">contraindication-enteral-nutrition</a>
+                </td>
+                <td>Contraindication to enteral nutrition</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-enteral-nutrition&quot;, &quot;display&quot;: &quot;Contraindication to enteral nutrition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-enteral-nutrition&quot;&gt;&lt;display value=&quot;Contraindication to enteral nutrition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-proning"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-proning">contraindication-proning</a>
+                </td>
+                <td>Contraindication to prone positioning</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-proning&quot;, &quot;display&quot;: &quot;Contraindication to prone positioning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-proning&quot;&gt;&lt;display value=&quot;Contraindication to prone positioning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis">contraindication-drug-based-thrombosis-prophylaxis</a>
+                </td>
+                <td>Contraindication to pharmacological thromboprophylaxis</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-drug-based-thrombosis-prophylaxis&quot;, &quot;display&quot;: &quot;Contraindication to pharmacological thromboprophylaxis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-drug-based-thrombosis-prophylaxis&quot;&gt;&lt;display value=&quot;Contraindication to pharmacological thromboprophylaxis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Kontraindikation"/>
+        <title value="MII VS ICU Code Kontraindikation"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c1e504e0-458d-4b67-b520-f487045a69cc"/>
+          <timestamp value="2026-11-26T11:13:38+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-enteral-nutrition"/>
+            <display value="Contraindication to enteral nutrition"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-proning"/>
+            <display value="Contraindication to prone positioning"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
+            <display value="Contraindication to pharmacological thromboprophylaxis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-mii-cs-icu-dgai.html">codesystem MII CS ICU DGAI v2027.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-enteral-nutrition">contraindication-enteral-nutrition</a>
+                </td>
+                <td>Contraindication to enteral nutrition</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-enteral-nutrition&quot;, &quot;display&quot;: &quot;Contraindication to enteral nutrition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-enteral-nutrition&quot;&gt;&lt;display value=&quot;Contraindication to enteral nutrition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-proning"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-proning">contraindication-proning</a>
+                </td>
+                <td>Contraindication to prone positioning</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-proning&quot;, &quot;display&quot;: &quot;Contraindication to prone positioning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-proning&quot;&gt;&lt;display value=&quot;Contraindication to prone positioning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis">contraindication-drug-based-thrombosis-prophylaxis</a>
+                </td>
+                <td>Contraindication to pharmacological thromboprophylaxis</td>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-drug-based-thrombosis-prophylaxis&quot;, &quot;display&quot;: &quot;Contraindication to pharmacological thromboprophylaxis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-drug-based-thrombosis-prophylaxis&quot;&gt;&lt;display value=&quot;Contraindication to pharmacological thromboprophylaxis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Kontraindikation"/>
+        <title value="MII VS ICU Code Kontraindikation"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c1e504e0-458d-4b67-b520-f487045a69cc"/>
+          <timestamp value="2026-11-26T11:13:38+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-enteral-nutrition"/>
+            <display value="Contraindication to enteral nutrition"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-proning"/>
+            <display value="Contraindication to prone positioning"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
+            <display value="Contraindication to pharmacological thromboprophylaxis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-mii-cs-icu-dgai.html">codesystem MII CS ICU DGAI v2027.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (de)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-enteral-nutrition">contraindication-enteral-nutrition</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-enteral-nutrition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-enteral-nutrition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-proning"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-proning">contraindication-proning</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-proning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-proning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a>
+                  <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis">contraindication-drug-based-thrombosis-prophylaxis</a>
+                </td>
+                <td/>
+                <td>
+                  <div>
+                    <p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;, &quot;version&quot;: &quot;2027.0.0&quot;, &quot;code&quot;: &quot;contraindication-drug-based-thrombosis-prophylaxis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai&quot;&gt;&lt;version value=&quot;2027.0.0&quot;&gt;&lt;code value=&quot;contraindication-drug-based-thrombosis-prophylaxis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"/>
+        <version value="2027.0.0"/>
+        <name value="MII_VS_ICU_Code_Kontraindikation"/>
+        <title value="MII VS ICU Code Kontraindikation"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DE"/>
+            <display value="Germany"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:36f3a952-0e16-4bb5-9473-5d450a9dab7e"/>
+          <timestamp value="2026-11-26T11:13:38+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="de"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-enteral-nutrition"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-proning"/>
+          </contains>
+          <contains>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
+            <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -10338,8 +12369,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a25cc232-af1b-4174-862f-76c085888dfd"/>
-          <timestamp value="2026-11-26T10:40:21+00:00"/>
+          <identifier value="urn:uuid:072c4011-5329-4fc7-9a3f-be9fa0255198"/>
+          <timestamp value="2026-11-26T11:13:41+00:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -10377,6 +12408,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -11836,8 +13871,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a25cc232-af1b-4174-862f-76c085888dfd"/>
-          <timestamp value="2026-11-26T10:40:21+00:00"/>
+          <identifier value="urn:uuid:072c4011-5329-4fc7-9a3f-be9fa0255198"/>
+          <timestamp value="2026-11-26T11:13:41+00:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -11875,6 +13910,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -13334,8 +15373,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e4b81f0-926a-4c76-a3a3-3be7f3de2bed"/>
-          <timestamp value="2026-11-26T10:40:26+00:00"/>
+          <identifier value="urn:uuid:63d274f4-1a79-4eca-beaf-82241885d6a3"/>
+          <timestamp value="2026-11-26T11:13:44+00:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -13373,6 +15412,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -14516,8 +16559,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2016e645-e6de-48ed-a45f-96ba6950d72d"/>
-          <timestamp value="2026-11-26T10:40:20+00:00"/>
+          <identifier value="urn:uuid:2f15862e-0c16-4690-ba23-eb80028fa26a"/>
+          <timestamp value="2026-11-26T11:13:40+00:00"/>
           <total value="43"/>
           <offset value="0"/>
           <parameter>
@@ -14555,6 +16598,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -15689,8 +17736,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2016e645-e6de-48ed-a45f-96ba6950d72d"/>
-          <timestamp value="2026-11-26T10:40:20+00:00"/>
+          <identifier value="urn:uuid:2f15862e-0c16-4690-ba23-eb80028fa26a"/>
+          <timestamp value="2026-11-26T11:13:40+00:00"/>
           <total value="43"/>
           <offset value="0"/>
           <parameter>
@@ -15728,6 +17775,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -16862,8 +18913,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:82eabfbe-f6ee-4a1f-b3dc-91294cfb59ed"/>
-          <timestamp value="2026-11-26T10:40:26+00:00"/>
+          <identifier value="urn:uuid:9c360f69-8062-4619-a368-0329b6afa096"/>
+          <timestamp value="2026-11-26T11:13:44+00:00"/>
           <total value="43"/>
           <offset value="0"/>
           <parameter>
@@ -16901,6 +18952,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -17732,8 +19787,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8c49855c-056a-4cfa-9e7e-457898488edd"/>
-          <timestamp value="2026-11-26T10:41:18+00:00"/>
+          <identifier value="urn:uuid:b7f71cb8-b168-44a9-a11f-cc537e32435b"/>
+          <timestamp value="2026-11-26T11:14:27+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -17771,6 +19826,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -18580,8 +20639,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8c49855c-056a-4cfa-9e7e-457898488edd"/>
-          <timestamp value="2026-11-26T10:41:18+00:00"/>
+          <identifier value="urn:uuid:b7f71cb8-b168-44a9-a11f-cc537e32435b"/>
+          <timestamp value="2026-11-26T11:14:27+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -18619,6 +20678,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -19428,8 +21491,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:10efd04f-5691-4de8-bee4-73ce524947ae"/>
-          <timestamp value="2026-11-26T10:41:21+00:00"/>
+          <identifier value="urn:uuid:37da2652-6197-4d37-ac6c-ac6e72eae68e"/>
+          <timestamp value="2026-11-26T11:14:29+00:00"/>
           <total value="30"/>
           <offset value="0"/>
           <parameter>
@@ -19467,6 +21530,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -20026,8 +22093,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:29cb342e-ca5e-4dcf-bf66-ee239d5e3505"/>
-          <timestamp value="2026-11-26T10:41:18+00:00"/>
+          <identifier value="urn:uuid:7bbd7c11-bc2c-4b6c-ab33-a47fe70b4ec6"/>
+          <timestamp value="2026-11-26T11:14:27+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -20065,6 +22132,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -20599,8 +22670,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:29cb342e-ca5e-4dcf-bf66-ee239d5e3505"/>
-          <timestamp value="2026-11-26T10:41:18+00:00"/>
+          <identifier value="urn:uuid:7bbd7c11-bc2c-4b6c-ab33-a47fe70b4ec6"/>
+          <timestamp value="2026-11-26T11:14:27+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -20638,6 +22709,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -21172,8 +23247,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9a5cb11-aebd-4bfb-9e56-adb09bc93f79"/>
-          <timestamp value="2026-11-26T10:41:21+00:00"/>
+          <identifier value="urn:uuid:d349ce39-2263-476a-9c5e-7773a1958777"/>
+          <timestamp value="2026-11-26T11:14:29+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -21211,6 +23286,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -21386,8 +23465,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f791a25f-8cd1-4939-9f0f-ef0293521c47"/>
-          <timestamp value="2026-11-26T10:40:14+00:00"/>
+          <identifier value="urn:uuid:7536ec7e-4c32-48da-87cb-f34f9bc33ae7"/>
+          <timestamp value="2026-11-26T11:13:30+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -21425,6 +23504,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -21534,8 +23617,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f791a25f-8cd1-4939-9f0f-ef0293521c47"/>
-          <timestamp value="2026-11-26T10:40:14+00:00"/>
+          <identifier value="urn:uuid:7536ec7e-4c32-48da-87cb-f34f9bc33ae7"/>
+          <timestamp value="2026-11-26T11:13:30+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -21573,6 +23656,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -21682,8 +23769,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fdcb829c-dec3-4561-bbac-c5f4cdfee1f6"/>
-          <timestamp value="2026-11-26T10:40:17+00:00"/>
+          <identifier value="urn:uuid:92c6001b-2774-42ac-a7c5-9cb90aefc0c7"/>
+          <timestamp value="2026-11-26T11:13:33+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -21721,6 +23808,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -22008,8 +24099,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:954e48b6-c24d-4ca2-9997-02ae94c0d1b7"/>
-          <timestamp value="2026-11-26T10:40:13+00:00"/>
+          <identifier value="urn:uuid:a413bce6-5cd6-4468-9760-a77a37922e78"/>
+          <timestamp value="2026-11-26T11:13:30+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -22047,6 +24138,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -22381,8 +24476,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:954e48b6-c24d-4ca2-9997-02ae94c0d1b7"/>
-          <timestamp value="2026-11-26T10:40:13+00:00"/>
+          <identifier value="urn:uuid:a413bce6-5cd6-4468-9760-a77a37922e78"/>
+          <timestamp value="2026-11-26T11:13:30+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -22420,6 +24515,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -22754,8 +24853,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3b0f1b81-f49f-4038-b084-c7143fb822e3"/>
-          <timestamp value="2026-11-26T10:40:16+00:00"/>
+          <identifier value="urn:uuid:a11beef3-8a55-49f6-be08-5afaba6a4569"/>
+          <timestamp value="2026-11-26T11:13:32+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -22793,6 +24892,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -24536,8 +26639,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:141b20fd-793e-4ceb-9bf1-ee0323085a93"/>
-          <timestamp value="2026-11-26T10:43:35+00:00"/>
+          <identifier value="urn:uuid:9bf19a0c-9d59-4f34-bb51-5decd9031a44"/>
+          <timestamp value="2026-11-26T11:16:17+00:00"/>
           <total value="82"/>
           <offset value="0"/>
           <parameter>
@@ -24575,6 +26678,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -26684,8 +28791,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:141b20fd-793e-4ceb-9bf1-ee0323085a93"/>
-          <timestamp value="2026-11-26T10:43:35+00:00"/>
+          <identifier value="urn:uuid:9bf19a0c-9d59-4f34-bb51-5decd9031a44"/>
+          <timestamp value="2026-11-26T11:16:17+00:00"/>
           <total value="82"/>
           <offset value="0"/>
           <parameter>
@@ -26723,6 +28830,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -28832,8 +30943,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:30b8d692-98fc-4244-9706-0937e1cce5af"/>
-          <timestamp value="2026-11-26T10:43:35+00:00"/>
+          <identifier value="urn:uuid:0e0cafbf-7909-4567-880e-f474ea4b3210"/>
+          <timestamp value="2026-11-26T11:16:17+00:00"/>
           <total value="82"/>
           <offset value="0"/>
           <parameter>
@@ -28871,6 +30982,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -29338,8 +31453,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3e71a326-5a42-4093-9e4c-754c920e4a6f"/>
-          <timestamp value="2026-11-26T10:41:28+00:00"/>
+          <identifier value="urn:uuid:943f6677-74ff-46f9-8dfb-fb6b6143739f"/>
+          <timestamp value="2026-11-26T11:14:36+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -29377,6 +31492,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -29536,8 +31655,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3e71a326-5a42-4093-9e4c-754c920e4a6f"/>
-          <timestamp value="2026-11-26T10:41:28+00:00"/>
+          <identifier value="urn:uuid:943f6677-74ff-46f9-8dfb-fb6b6143739f"/>
+          <timestamp value="2026-11-26T11:14:36+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -29575,6 +31694,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -29734,8 +31857,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3ccd5458-7d5b-46aa-acfa-1d3bcc7b7cfb"/>
-          <timestamp value="2026-11-26T10:41:32+00:00"/>
+          <identifier value="urn:uuid:c8b6a220-a1c8-44aa-aa4f-c6f809079856"/>
+          <timestamp value="2026-11-26T11:14:40+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -29773,6 +31896,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -29968,8 +32095,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:73cd5af3-69ae-42ff-9f52-a011c7f2ad97"/>
-          <timestamp value="2026-11-26T10:41:29+00:00"/>
+          <identifier value="urn:uuid:5f56877a-89a6-4adc-811a-30da54e72d3f"/>
+          <timestamp value="2026-11-26T11:14:37+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -30007,6 +32134,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -30216,8 +32347,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:73cd5af3-69ae-42ff-9f52-a011c7f2ad97"/>
-          <timestamp value="2026-11-26T10:41:29+00:00"/>
+          <identifier value="urn:uuid:5f56877a-89a6-4adc-811a-30da54e72d3f"/>
+          <timestamp value="2026-11-26T11:14:37+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -30255,6 +32386,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -30464,8 +32599,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:abc9252a-e834-41c0-9f75-8ae1bc2d4308"/>
-          <timestamp value="2026-11-26T10:41:32+00:00"/>
+          <identifier value="urn:uuid:15524ba0-ea21-4713-91ac-3d9bfafaad76"/>
+          <timestamp value="2026-11-26T11:14:40+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -30503,6 +32638,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -30686,8 +32825,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc278ae5-aaf6-485b-9875-21b4b1519cc5"/>
-          <timestamp value="2026-11-26T10:41:30+00:00"/>
+          <identifier value="urn:uuid:2bb09653-0c80-4ba7-9488-c1e90bd4b8f7"/>
+          <timestamp value="2026-11-26T11:14:38+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -30725,6 +32864,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -30909,8 +33052,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc278ae5-aaf6-485b-9875-21b4b1519cc5"/>
-          <timestamp value="2026-11-26T10:41:30+00:00"/>
+          <identifier value="urn:uuid:2bb09653-0c80-4ba7-9488-c1e90bd4b8f7"/>
+          <timestamp value="2026-11-26T11:14:38+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -30948,6 +33091,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31132,8 +33279,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e22374a2-2f00-44f7-ac61-74307445a699"/>
-          <timestamp value="2026-11-26T10:41:33+00:00"/>
+          <identifier value="urn:uuid:94ed6a81-ccaf-4320-b874-94f253ce1db9"/>
+          <timestamp value="2026-11-26T11:14:40+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -31171,6 +33318,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31281,7 +33432,7 @@
         <title value="MII VS ICU Delirium Interpretation"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31290,8 +33441,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ec5eee5b-7f9a-4920-8191-56ee93593979"/>
-          <timestamp value="2026-11-26T10:41:24+00:00"/>
+          <identifier value="urn:uuid:6700ce44-ec14-4902-9bba-3868b755b623"/>
+          <timestamp value="2026-11-26T11:14:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -31329,6 +33480,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31429,7 +33584,7 @@
         <title value="MII VS ICU Delirium Interpretation"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31438,8 +33593,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ec5eee5b-7f9a-4920-8191-56ee93593979"/>
-          <timestamp value="2026-11-26T10:41:24+00:00"/>
+          <identifier value="urn:uuid:6700ce44-ec14-4902-9bba-3868b755b623"/>
+          <timestamp value="2026-11-26T11:14:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -31477,6 +33632,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31577,7 +33736,7 @@
         <title value="MII VS ICU Delirium Interpretation"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31586,8 +33745,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ceafe2d8-cd02-4bc8-9257-81c099bec0d8"/>
-          <timestamp value="2026-11-26T10:41:25+00:00"/>
+          <identifier value="urn:uuid:9f952d81-8949-4992-acfa-f5af6650bb3a"/>
+          <timestamp value="2026-11-26T11:14:33+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -31625,6 +33784,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31712,8 +33875,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71b1419a-eb5d-41ee-9c6e-32b76170410b"/>
-          <timestamp value="2026-11-26T10:43:36+00:00"/>
+          <identifier value="urn:uuid:4b73d3cc-e35b-438f-9df2-c5e678ccb0b3"/>
+          <timestamp value="2026-11-26T11:16:17+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -31751,6 +33914,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31835,8 +34002,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:71b1419a-eb5d-41ee-9c6e-32b76170410b"/>
-          <timestamp value="2026-11-26T10:43:36+00:00"/>
+          <identifier value="urn:uuid:4b73d3cc-e35b-438f-9df2-c5e678ccb0b3"/>
+          <timestamp value="2026-11-26T11:16:17+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -31874,6 +34041,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -31958,8 +34129,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a4b9b028-4aaf-41ba-a637-5c4341ddf7fb"/>
-          <timestamp value="2026-11-26T10:43:36+00:00"/>
+          <identifier value="urn:uuid:9c617cf2-4487-4aa0-8b9e-86b28d134b56"/>
+          <timestamp value="2026-11-26T11:16:18+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -31997,6 +34168,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32090,7 +34265,7 @@
         <name value="MII_VS_ICU_Method_Kalorienbedarf"/>
         <title value="MII VS ICU Method Kalorienbedarf"/>
         <status value="draft"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32099,8 +34274,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:24d63133-2193-4cce-97bf-200b31ae7b70"/>
-          <timestamp value="2026-11-26T10:40:02+00:00"/>
+          <identifier value="urn:uuid:525309c2-3cd4-4562-8d07-6603216988be"/>
+          <timestamp value="2026-11-26T11:13:21+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -32138,6 +34313,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32237,7 +34416,7 @@
         <name value="MII_VS_ICU_Method_Kalorienbedarf"/>
         <title value="MII VS ICU Method Kalorienbedarf"/>
         <status value="draft"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32246,8 +34425,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:24d63133-2193-4cce-97bf-200b31ae7b70"/>
-          <timestamp value="2026-11-26T10:40:02+00:00"/>
+          <identifier value="urn:uuid:525309c2-3cd4-4562-8d07-6603216988be"/>
+          <timestamp value="2026-11-26T11:13:21+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -32285,6 +34464,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32384,7 +34567,7 @@
         <name value="MII_VS_ICU_Method_Kalorienbedarf"/>
         <title value="MII VS ICU Method Kalorienbedarf"/>
         <status value="draft"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32393,8 +34576,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c3fa64d4-b762-4f92-b448-607ae625a127"/>
-          <timestamp value="2026-11-26T10:40:04+00:00"/>
+          <identifier value="urn:uuid:f61308a5-36c1-43b3-a16a-9f1e294c9e7f"/>
+          <timestamp value="2026-11-26T11:13:22+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -32432,6 +34615,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32539,8 +34726,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c3e09b5-62f5-4686-b638-dc158f28745f"/>
-          <timestamp value="2026-11-26T10:43:37+00:00"/>
+          <identifier value="urn:uuid:55891e72-5223-4f18-a4e0-8562e6bde1df"/>
+          <timestamp value="2026-11-26T11:16:18+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -32578,6 +34765,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32687,8 +34878,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c3e09b5-62f5-4686-b638-dc158f28745f"/>
-          <timestamp value="2026-11-26T10:43:37+00:00"/>
+          <identifier value="urn:uuid:55891e72-5223-4f18-a4e0-8562e6bde1df"/>
+          <timestamp value="2026-11-26T11:16:18+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -32726,6 +34917,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32835,8 +35030,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3a4ecf80-343d-422e-ae72-a3910d0a3a2c"/>
-          <timestamp value="2026-11-26T10:43:37+00:00"/>
+          <identifier value="urn:uuid:e40472a6-2ff0-4f7a-9322-4a156bd6b6a3"/>
+          <timestamp value="2026-11-26T11:16:19+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -32874,6 +35069,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -32972,7 +35171,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32981,8 +35180,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9d3cddcb-9c1b-49f7-975d-989ec42c3957"/>
-          <timestamp value="2026-11-26T10:43:37+00:00"/>
+          <identifier value="urn:uuid:768317bd-2d78-4836-ba57-44d641e7e310"/>
+          <timestamp value="2026-11-26T11:13:36+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -33020,6 +35219,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33120,7 +35323,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33129,8 +35332,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9d3cddcb-9c1b-49f7-975d-989ec42c3957"/>
-          <timestamp value="2026-11-26T10:43:37+00:00"/>
+          <identifier value="urn:uuid:768317bd-2d78-4836-ba57-44d641e7e310"/>
+          <timestamp value="2026-11-26T11:13:36+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -33168,6 +35371,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33268,7 +35475,7 @@
         <title value="MII VS ICU Present Absent"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33277,8 +35484,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:33e1f753-8266-494a-91c4-a3a5ecfc566a"/>
-          <timestamp value="2026-11-26T10:43:38+00:00"/>
+          <identifier value="urn:uuid:fa64a1ff-f58d-4433-b81f-0216a95ca235"/>
+          <timestamp value="2026-11-26T11:13:37+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -33316,6 +35523,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33394,7 +35605,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33403,8 +35614,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e351201-df44-4c30-8022-0f629810bb13"/>
-          <timestamp value="2026-11-26T10:43:38+00:00"/>
+          <identifier value="urn:uuid:9c3758fb-7bd1-4d4d-b1b9-c77665617de0"/>
+          <timestamp value="2026-11-26T11:16:19+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -33442,6 +35653,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33517,7 +35732,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33526,8 +35741,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e351201-df44-4c30-8022-0f629810bb13"/>
-          <timestamp value="2026-11-26T10:43:38+00:00"/>
+          <identifier value="urn:uuid:9c3758fb-7bd1-4d4d-b1b9-c77665617de0"/>
+          <timestamp value="2026-11-26T11:16:19+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -33565,6 +35780,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33640,7 +35859,7 @@
         <title value="MII VS ICU Score Category"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33649,8 +35868,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:14de9331-1177-4e84-bb66-48daa6ded4e8"/>
-          <timestamp value="2026-11-26T10:43:38+00:00"/>
+          <identifier value="urn:uuid:678c3429-6d01-4f7b-a48e-68c4bbb306aa"/>
+          <timestamp value="2026-11-26T11:16:19+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -33688,6 +35907,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33802,7 +36025,7 @@
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33811,8 +36034,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:20c86087-fcd1-4a13-b0d2-def91387af7e"/>
-          <timestamp value="2026-11-26T10:43:38+00:00"/>
+          <identifier value="urn:uuid:e57604f0-3e76-4c36-94ff-e3ca39eaaae8"/>
+          <timestamp value="2026-11-26T11:16:19+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -33850,6 +36073,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -33975,7 +36202,7 @@
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33984,8 +36211,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:20c86087-fcd1-4a13-b0d2-def91387af7e"/>
-          <timestamp value="2026-11-26T10:43:38+00:00"/>
+          <identifier value="urn:uuid:e57604f0-3e76-4c36-94ff-e3ca39eaaae8"/>
+          <timestamp value="2026-11-26T11:16:19+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -34023,6 +36250,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -34148,7 +36379,7 @@
         <title value="MII VS ICU Score LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34157,8 +36388,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:891b29dd-70fe-47c0-b50f-65234f3ba0ed"/>
-          <timestamp value="2026-11-26T10:43:39+00:00"/>
+          <identifier value="urn:uuid:bd324ac4-1a1b-4077-9e9f-23cf879d9f40"/>
+          <timestamp value="2026-11-26T11:16:20+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -34196,6 +36427,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -34318,7 +36553,7 @@
         <title value="MII VS Score SNOMED CT"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34327,8 +36562,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fbfe1d77-11c3-429b-927f-85586e0ff37d"/>
-          <timestamp value="2026-11-26T10:43:39+00:00"/>
+          <identifier value="urn:uuid:c8a55bba-33fc-4654-9a6a-cc7e6d80a4c2"/>
+          <timestamp value="2026-11-26T11:16:20+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -34366,6 +36601,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -34491,7 +36730,7 @@
         <title value="MII VS Score SNOMED CT"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34500,8 +36739,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fbfe1d77-11c3-429b-927f-85586e0ff37d"/>
-          <timestamp value="2026-11-26T10:43:39+00:00"/>
+          <identifier value="urn:uuid:c8a55bba-33fc-4654-9a6a-cc7e6d80a4c2"/>
+          <timestamp value="2026-11-26T11:16:20+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -34539,6 +36778,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>
@@ -34664,7 +36907,7 @@
         <title value="MII VS Score SNOMED CT"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-26T10:27:59+00:00"/>
+        <date value="2026-11-26T11:03:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -34673,8 +36916,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aec3aaac-226a-41a7-8bcd-1c45cc7239c3"/>
-          <timestamp value="2026-11-26T10:43:40+00:00"/>
+          <identifier value="urn:uuid:e6a3b5bd-3b11-4f2f-98b4-d3744be8c6cf"/>
+          <timestamp value="2026-11-26T11:16:20+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -34712,6 +36955,10 @@
           <parameter>
             <name value="system-version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai|2027.0.0"/>
           </parameter>
           <parameter>
             <name value="system-version"/>

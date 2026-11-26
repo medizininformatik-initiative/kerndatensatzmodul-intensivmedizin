@@ -16,7 +16,8 @@ Present or absent findings
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [MII PR ICU Klinische Beurteilung Parenterale Ernaehrung](StructureDefinition-mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung.md)
+* [MII PR ICU Kontraindikationsbeurteilung](StructureDefinition-mii-pr-icu-kontraindikationsbeurteilung.md)
 
 ### Logical Definition (CLD)
 
@@ -42,7 +43,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS ICU Present Absent",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-26T10:27:59+00:00",
+  "date" : "2026-11-26T11:03:30+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",

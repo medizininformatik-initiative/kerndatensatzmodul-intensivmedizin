@@ -1635,6 +1635,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-eiweiss"
+      },
+      "name" : "Bilanz Einfuhr Eiweiss",
+      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Eiweiß",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"
       },
       "name" : "Bilanz Einfuhr Enterale Fluessigkeit",
@@ -1647,10 +1659,34 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-fett"
+      },
+      "name" : "Bilanz Einfuhr Fett",
+      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Fett",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"
       },
       "name" : "Bilanz Einfuhr Fluessigkeit Gesamt",
       "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-bilanz-einfuhr-kohlenhydrate"
+      },
+      "name" : "Bilanz Einfuhr Kohlenhydrate",
+      "description" : "Beispiel: MII PR ICU Bilanz Einfuhr Kohlenhydrate",
       "exampleBoolean" : true
     },
     {
@@ -1968,6 +2004,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-klinische-beurteilung-parenterale-ernaehrung"
+      },
+      "name" : "Klinische Beurteilung Parenterale Ernaehrung",
+      "description" : "Beispiel: MII PR ICU Klinische Beurteilung Parenterale Ernaehrung",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-kontraindikation-bauchlage"
+      },
+      "name" : "Kontraindikation Bauchlage",
+      "description" : "Beispiel: MII PR ICU Kontraindikation Bauchlage",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-kontraindikation-enterale-ernaehrung"
+      },
+      "name" : "Kontraindikation Enterale Ernaehrung",
+      "description" : "Beispiel: MII PR ICU Kontraindikation Enterale Ernaehrung",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-kontraindikation-medikamentoese-thromboseprophylaxe"
+      },
+      "name" : "Kontraindikation Medikamentoese Thromboseprophylaxe",
+      "description" : "Beispiel: MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -1986,7 +2070,7 @@
         "reference" : "CodeSystem/mii-cs-icu-dgai"
       },
       "name" : "MII CS ICU DGAI",
-      "description" : "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).",
+      "description" : "Placeholder codes for intensive care concepts without an established international code (drafts only).",
       "exampleBoolean" : false
     },
     {
@@ -2115,10 +2199,58 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-eiweiss"
+      },
+      "name" : "MII PR ICU Bilanz Einfuhr Eiweiß",
+      "description" : "Protein intake as an accumulated mass in grams over the documented interval. This is distinct from protein requirements, prescribed targets, energy intake and protein intake rates.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fett"
+      },
+      "name" : "MII PR ICU Bilanz Einfuhr Fett",
+      "description" : "Fat intake as an accumulated mass in grams over the documented interval. This is distinct from fat requirements, prescribed targets, energy intake and fat intake rates.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
       },
       "name" : "MII PR ICU Bilanz Einfuhr Kalorien 24h",
       "description" : "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kohlenhydrate"
+      },
+      "name" : "MII PR ICU Bilanz Einfuhr Kohlenhydrate",
+      "description" : "Carbohydrate intake as an accumulated mass in grams over the documented interval. This is distinct from carbohydrate requirements, prescribed targets, energy intake and carbohydrate intake rates.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-bilanz-ernaehrung-generisch"
+      },
+      "name" : "MII PR ICU Bilanz Ernährung Generisch",
+      "description" : "Abstract base for quantitative observations of nutritional intake. Specialisations define nutrient or energy, compatible codes and units, and whether the value is an accumulated amount or an intake rate. Requirements and prescribed targets are distinct concepts.",
       "exampleBoolean" : false
     },
     {
@@ -2419,6 +2551,78 @@
       },
       "name" : "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
       "description" : "Concentration of ionised calcium measured in the circuit of a renal replacement procedure, for example to monitor citrate anticoagulation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-klinische-beurteilung"
+      },
+      "name" : "MII PR ICU Kategoriale Klinische Beurteilung",
+      "description" : "Reusable categorical clinical assessment with explicit question, patient, effective time and assessor. Concrete profiles define the clinical question and permitted result values. Observation.status represents the documentation status, not the clinical result.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung"
+      },
+      "name" : "MII PR ICU Klinische Beurteilung Parenterale Ernaehrung",
+      "description" : "Assessment of whether parenteral nutrition is actually being administered at a specified time or throughout a specified period. Present means administration is in progress; known absent means it was assessed as not in progress. This is not an order, indication or contraindication, and does not replace the underlying administration record.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-kontraindikation-bauchlage"
+      },
+      "name" : "MII PR ICU Kontraindikation Bauchlage",
+      "description" : "Assessment of contraindications to prone positioning. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung"
+      },
+      "name" : "MII PR ICU Kontraindikation Enterale Ernaehrung",
+      "description" : "Assessment of contraindications to enteral nutrition. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe"
+      },
+      "name" : "MII PR ICU Kontraindikation Medikamentoese Thromboseprophylaxe",
+      "description" : "Assessment of contraindications to pharmacological thromboprophylaxis. Present means at least one contraindication was identified; known absent means the assessment found none. Missing or unavailable assessment is not a negative result.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-icu-kontraindikationsbeurteilung"
+      },
+      "name" : "MII PR ICU Kontraindikationsbeurteilung",
+      "description" : "Assessment of the presence or absence of contraindications to one specified intervention. The assessment code identifies the intervention. The result does not itself state whether treatment was performed or whether a contraindication is absolute or relative.",
       "exampleBoolean" : false
     },
     {
@@ -3120,10 +3324,46 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/mii-vs-icu-code-ernaehrungszufuhr"
+      },
+      "name" : "MII VS ICU Code Ernährungszufuhr",
+      "description" : "Nutritional intake observables for the generic ICU nutrition-intake base. Extensible to additional nutrients and appropriate intake codes. Not a value set of requirements or prescribed targets.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/mii-vs-icu-code-extrakorporale-verfahren"
       },
       "name" : "MII VS ICU Code Extrakorporale Verfahren",
       "description" : "Mögliche Codes für extrakorporale Verfahren. Für die Einteilung und Interpretation in Bezug auf unterschiedliche Detail-Level beachte den zugehörigen implementationguide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-icu-code-klinische-beurteilung"
+      },
+      "name" : "MII VS ICU Code Klinische Beurteilung",
+      "description" : "Clinical assessment questions, including contraindications and current therapy status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-icu-code-kontraindikation"
+      },
+      "name" : "MII VS ICU Code Kontraindikation",
+      "description" : "Assessment questions identifying whether a contraindication to the specified intervention has been found.",
       "exampleBoolean" : false
     },
     {
@@ -3454,61 +3694,6 @@
         "reference" : "Observation/mii-exa-icu-muv-bmi"
       },
       "name" : "mii-exa-icu-muv-bmi",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-capd"
-      },
-      "name" : "mii-exa-icu-score-capd",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-comfort-b"
-      },
-      "name" : "mii-exa-icu-score-comfort-b",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-kuss"
-      },
-      "name" : "mii-exa-icu-score-kuss",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-sos"
-      },
-      "name" : "mii-exa-icu-score-sos",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/mii-exa-icu-score-sos-pd"
-      },
-      "name" : "mii-exa-icu-score-sos-pd",
       "exampleBoolean" : false
     },
     {
@@ -4416,6 +4601,30 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-capd"
+      },
+      "name" : "Score Capd",
+      "description" : "Beispiel: MII PR ICU Score CAPD",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-comfort-b"
+      },
+      "name" : "Score Comfort B",
+      "description" : "Beispiel: MII PR ICU Score COMFORT-B",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-icu-score-faces-pain-scale-revised"
       },
       "name" : "Score Faces Pain Scale Revised",
@@ -4452,6 +4661,18 @@
         "valueString" : "Observation"
       }],
       "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-kuss"
+      },
+      "name" : "Score Kuss",
+      "description" : "Beispiel: MII PR ICU Score KUSS",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
         "reference" : "Observation/mii-exa-icu-score-numerische-ratingskala"
       },
       "name" : "Score Numerische Ratingskala",
@@ -4468,6 +4689,30 @@
       },
       "name" : "Score Rass",
       "description" : "Beispiel: MII PR ICU Score RASS",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-sos"
+      },
+      "name" : "Score Sos",
+      "description" : "Beispiel: MII PR ICU Score SOS",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mii-exa-icu-score-sos-pd"
+      },
+      "name" : "Score Sos Pd",
+      "description" : "Beispiel: MII PR ICU Score SOS-PD",
       "exampleBoolean" : true
     },
     {

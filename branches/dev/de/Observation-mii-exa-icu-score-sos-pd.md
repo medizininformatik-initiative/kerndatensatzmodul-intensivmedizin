@@ -1,10 +1,10 @@
-# mii-exa-icu-score-sos-pd - MII IG ICU v2027.0.0
+# Score Sos Pd - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-score-sos-pd**
+* **Score Sos Pd**
 
-## Observation: mii-exa-icu-score-sos-pd
+## Beispiel Observation: Score Sos Pd
 
 -------
 

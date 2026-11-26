@@ -12,11 +12,12 @@
 | Draft as of 2026-11-26 | *Computable Name*:MII_CS_ICU_DGAI |
 
  
-Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe). 
+Placeholder codes for intensive care concepts without an established international code (drafts only). 
 
 This Code system is referenced in the definition of the following value sets:
 
-* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [MII VS ICU Code Klinische Beurteilung](ValueSet-mii-vs-icu-code-klinische-beurteilung.md)
+* [MII VS ICU Code Kontraindikation](ValueSet-mii-vs-icu-code-kontraindikation.md)
 
 -------
 
@@ -36,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS ICU DGAI",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-26T10:27:59+00:00",
+  "date" : "2026-11-26T11:03:30+00:00",
   "publisher" : "Medizininformatik Initiative",
   "contact" : [{
     "name" : "Medizininformatik Initiative",
@@ -45,7 +46,7 @@ This Code system is referenced in the definition of the following value sets:
       "value" : "https://www.medizininformatik-initiative.de/"
     }]
   }],
-  "description" : "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).",
+  "description" : "Placeholder codes for intensive care concepts without an established international code (drafts only).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -55,7 +56,7 @@ This Code system is referenced in the definition of the following value sets:
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 9,
+  "count" : 12,
   "concept" : [{
     "code" : "ped-capd",
     "display" : "pediatric CAPD",
@@ -64,22 +65,22 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "ped-cbs",
     "display" : "pediatric COMFORT-B-Scale",
-    "definition" : "COMFORT-Behavior-Skala (COMFORT-B)"
+    "definition" : "COMFORT-Behavior Scale (COMFORT-B)"
   },
   {
     "code" : "ped-kuss",
     "display" : "pediatric KUSS",
-    "definition" : "Kindliche Unbehagens- und Schmerzskala (KUSS)"
+    "definition" : "Child discomfort and pain scale (KUSS)"
   },
   {
     "code" : "ped-sos",
     "display" : "pediatric SOS",
-    "definition" : "Sophia Observation withdrawal Symptoms-scale (SOS) Scope des Profils ist die Entzugssymptomatik. \nFuer paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden."
+    "definition" : "Sophia Observation withdrawal Symptoms-scale (SOS). This profile covers withdrawal symptoms.\nFor pediatric delirium use MII_PR_ICU_Score_SOS_PD."
   },
   {
     "code" : "ped-sos-pd",
     "display" : "pediatric SOS-PD",
-    "definition" : "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD) \nScope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet. \nDie elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden."
+    "definition" : "Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD).\nThis profile covers only the pediatric delirium assessment score, although the instrument also includes SOS.\nParental behavioural assessment is not captured. For withdrawal symptoms use MII_PR_ICU_Score_SOS."
   },
   {
     "code" : "bps",
@@ -94,12 +95,27 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "contraindication-enteral-nutrition",
     "display" : "Contraindication to enteral nutrition",
-    "definition" : "Kontraindikation gegen enterale Ernaehrung"
+    "definition" : "Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence."
   },
   {
     "code" : "calorie-goal-in-24-h",
     "display" : "Calorie Goal in 24h",
-    "definition" : "Kalorienziel ueber 24h"
+    "definition" : "Calorie target over 24 hours"
+  },
+  {
+    "code" : "contraindication-proning",
+    "display" : "Contraindication to prone positioning",
+    "definition" : "Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence."
+  },
+  {
+    "code" : "contraindication-drug-based-thrombosis-prophylaxis",
+    "display" : "Contraindication to pharmacological thromboprophylaxis",
+    "definition" : "Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope."
+  },
+  {
+    "code" : "parenteral-nutrition-in-progress",
+    "display" : "Parenteral nutrition currently being administered",
+    "definition" : "Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment."
   }]
 }
 

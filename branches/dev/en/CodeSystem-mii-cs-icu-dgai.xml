@@ -5,17 +5,20 @@
   <language value="en"/>
   <text>
     <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-icu-dgai</b></p><a name="mii-cs-icu-dgai"> </a><a name="hcmii-cs-icu-dgai"> </a><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ped-capd<a name="mii-cs-icu-dgai-ped-capd"> </a></td><td>pediatric CAPD</td><td><div><p>Cornell Assessment of Pediatric Delirium (CAPD)</p>
-</div></td></tr><tr><td style="white-space:nowrap">ped-cbs<a name="mii-cs-icu-dgai-ped-cbs"> </a></td><td>pediatric COMFORT-B-Scale</td><td><div><p>COMFORT-Behavior-Skala (COMFORT-B)</p>
-</div></td></tr><tr><td style="white-space:nowrap">ped-kuss<a name="mii-cs-icu-dgai-ped-kuss"> </a></td><td>pediatric KUSS</td><td><div><p>Kindliche Unbehagens- und Schmerzskala (KUSS)</p>
-</div></td></tr><tr><td style="white-space:nowrap">ped-sos<a name="mii-cs-icu-dgai-ped-sos"> </a></td><td>pediatric SOS</td><td><div><p>Sophia Observation withdrawal Symptoms-scale (SOS) Scope des Profils ist die Entzugssymptomatik.
-Fuer paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden.</p>
-</div></td></tr><tr><td style="white-space:nowrap">ped-sos-pd<a name="mii-cs-icu-dgai-ped-sos-pd"> </a></td><td>pediatric SOS-PD</td><td><div><p>Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD)
-Scope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet.
-Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden.</p>
+</div></td></tr><tr><td style="white-space:nowrap">ped-cbs<a name="mii-cs-icu-dgai-ped-cbs"> </a></td><td>pediatric COMFORT-B-Scale</td><td><div><p>COMFORT-Behavior Scale (COMFORT-B)</p>
+</div></td></tr><tr><td style="white-space:nowrap">ped-kuss<a name="mii-cs-icu-dgai-ped-kuss"> </a></td><td>pediatric KUSS</td><td><div><p>Child discomfort and pain scale (KUSS)</p>
+</div></td></tr><tr><td style="white-space:nowrap">ped-sos<a name="mii-cs-icu-dgai-ped-sos"> </a></td><td>pediatric SOS</td><td><div><p>Sophia Observation withdrawal Symptoms-scale (SOS). This profile covers withdrawal symptoms.
+For pediatric delirium use MII_PR_ICU_Score_SOS_PD.</p>
+</div></td></tr><tr><td style="white-space:nowrap">ped-sos-pd<a name="mii-cs-icu-dgai-ped-sos-pd"> </a></td><td>pediatric SOS-PD</td><td><div><p>Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD).
+This profile covers only the pediatric delirium assessment score, although the instrument also includes SOS.
+Parental behavioural assessment is not captured. For withdrawal symptoms use MII_PR_ICU_Score_SOS.</p>
 </div></td></tr><tr><td style="white-space:nowrap">bps<a name="mii-cs-icu-dgai-bps"> </a></td><td>BPS</td><td><div><p>Behavioral Pain Scale (BPS)</p>
 </div></td></tr><tr><td style="white-space:nowrap">cam-icu<a name="mii-cs-icu-dgai-cam-icu"> </a></td><td>CAM-ICU</td><td><div><p>Confusion Assessment Method for the ICU (CAM-ICU)</p>
-</div></td></tr><tr><td style="white-space:nowrap">contraindication-enteral-nutrition<a name="mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a></td><td>Contraindication to enteral nutrition</td><td><div><p>Kontraindikation gegen enterale Ernaehrung</p>
-</div></td></tr><tr><td style="white-space:nowrap">calorie-goal-in-24-h<a name="mii-cs-icu-dgai-calorie-goal-in-24-h"> </a></td><td>Calorie Goal in 24h</td><td><div><p>Kalorienziel ueber 24h</p>
+</div></td></tr><tr><td style="white-space:nowrap">contraindication-enteral-nutrition<a name="mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a></td><td>Contraindication to enteral nutrition</td><td><div><p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
+</div></td></tr><tr><td style="white-space:nowrap">calorie-goal-in-24-h<a name="mii-cs-icu-dgai-calorie-goal-in-24-h"> </a></td><td>Calorie Goal in 24h</td><td><div><p>Calorie target over 24 hours</p>
+</div></td></tr><tr><td style="white-space:nowrap">contraindication-proning<a name="mii-cs-icu-dgai-contraindication-proning"> </a></td><td>Contraindication to prone positioning</td><td><div><p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+</div></td></tr><tr><td style="white-space:nowrap">contraindication-drug-based-thrombosis-prophylaxis<a name="mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a></td><td>Contraindication to pharmacological thromboprophylaxis</td><td><div><p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+</div></td></tr><tr><td style="white-space:nowrap">parenteral-nutrition-in-progress<a name="mii-cs-icu-dgai-parenteral-nutrition-in-progress"> </a></td><td>Parenteral nutrition currently being administered</td><td><div><p>Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment.</p>
 </div></td></tr></table></div>
   </text>
   <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai"/>
@@ -24,7 +27,7 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
   <title value="MII CS ICU DGAI"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-11-26T10:27:59+00:00"/>
+  <date value="2026-11-26T11:03:30+00:00"/>
   <publisher value="Medizininformatik Initiative"/>
   <contact>
     <name value="Medizininformatik Initiative"/>
@@ -33,7 +36,7 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
       <value value="https://www.medizininformatik-initiative.de/"/>
     </telecom>
   </contact>
-  <description value="Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe)."/>
+  <description value="Placeholder codes for intensive care concepts without an established international code (drafts only)."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -43,7 +46,7 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
   </jurisdiction>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="9"/>
+  <count value="12"/>
   <concept>
     <code value="ped-capd"/>
     <display value="pediatric CAPD"/>
@@ -52,22 +55,22 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
   <concept>
     <code value="ped-cbs"/>
     <display value="pediatric COMFORT-B-Scale"/>
-    <definition value="COMFORT-Behavior-Skala (COMFORT-B)"/>
+    <definition value="COMFORT-Behavior Scale (COMFORT-B)"/>
   </concept>
   <concept>
     <code value="ped-kuss"/>
     <display value="pediatric KUSS"/>
-    <definition value="Kindliche Unbehagens- und Schmerzskala (KUSS)"/>
+    <definition value="Child discomfort and pain scale (KUSS)"/>
   </concept>
   <concept>
     <code value="ped-sos"/>
     <display value="pediatric SOS"/>
-    <definition value="Sophia Observation withdrawal Symptoms-scale (SOS) Scope des Profils ist die Entzugssymptomatik. &#xA;Fuer paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden."/>
+    <definition value="Sophia Observation withdrawal Symptoms-scale (SOS). This profile covers withdrawal symptoms.&#xA;For pediatric delirium use MII_PR_ICU_Score_SOS_PD."/>
   </concept>
   <concept>
     <code value="ped-sos-pd"/>
     <display value="pediatric SOS-PD"/>
-    <definition value="Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD) &#xA;Scope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet. &#xA;Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden."/>
+    <definition value="Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD).&#xA;This profile covers only the pediatric delirium assessment score, although the instrument also includes SOS.&#xA;Parental behavioural assessment is not captured. For withdrawal symptoms use MII_PR_ICU_Score_SOS."/>
   </concept>
   <concept>
     <code value="bps"/>
@@ -82,11 +85,26 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
   <concept>
     <code value="contraindication-enteral-nutrition"/>
     <display value="Contraindication to enteral nutrition"/>
-    <definition value="Kontraindikation gegen enterale Ernaehrung"/>
+    <definition value="Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence."/>
   </concept>
   <concept>
     <code value="calorie-goal-in-24-h"/>
     <display value="Calorie Goal in 24h"/>
-    <definition value="Kalorienziel ueber 24h"/>
+    <definition value="Calorie target over 24 hours"/>
+  </concept>
+  <concept>
+    <code value="contraindication-proning"/>
+    <display value="Contraindication to prone positioning"/>
+    <definition value="Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence."/>
+  </concept>
+  <concept>
+    <code value="contraindication-drug-based-thrombosis-prophylaxis"/>
+    <display value="Contraindication to pharmacological thromboprophylaxis"/>
+    <definition value="Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope."/>
+  </concept>
+  <concept>
+    <code value="parenteral-nutrition-in-progress"/>
+    <display value="Parenteral nutrition currently being administered"/>
+    <definition value="Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment."/>
   </concept>
 </CodeSystem>

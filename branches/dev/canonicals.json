@@ -104,11 +104,39 @@
   "name" : "MII_PR_ICU_Beatmung"
 },
 {
+  "id" : "mii-pr-icu-bilanz-einfuhr-eiweiss",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-eiweiss",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Eiweiss"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-fett",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fett",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Fett"
+},
+{
   "id" : "mii-pr-icu-bilanz-einfuhr-kalorien-24h",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h",
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h"
+},
+{
+  "id" : "mii-pr-icu-bilanz-einfuhr-kohlenhydrate",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kohlenhydrate",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Bilanz_Einfuhr_Kohlenhydrate"
+},
+{
+  "id" : "mii-pr-icu-bilanz-ernaehrung-generisch",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ernaehrung-generisch",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Bilanz_Ernaehrung_Generisch"
 },
 {
   "id" : "mii-pr-icu-bilanz-kalorienbedarf-pro-tag",
@@ -228,6 +256,48 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-extrakorporales-verfahren",
   "version" : "2027.0.0",
   "name" : "MII_PR_ICU_Extrakorporales_Verfahren"
+},
+{
+  "id" : "mii-pr-icu-klinische-beurteilung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Klinische_Beurteilung"
+},
+{
+  "id" : "mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-klinische-beurteilung-parenterale-ernaehrung",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Klinische_Beurteilung_Parenterale_Ernaehrung"
+},
+{
+  "id" : "mii-pr-icu-kontraindikation-bauchlage",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-bauchlage",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Kontraindikation_Bauchlage"
+},
+{
+  "id" : "mii-pr-icu-kontraindikation-enterale-ernaehrung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-enterale-ernaehrung",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Kontraindikation_Enterale_Ernaehrung"
+},
+{
+  "id" : "mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikation-medikamentoese-thromboseprophylaxe",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Kontraindikation_Medikamentoese_Thromboseprophylaxe"
+},
+{
+  "id" : "mii-pr-icu-kontraindikationsbeurteilung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-kontraindikationsbeurteilung",
+  "version" : "2027.0.0",
+  "name" : "MII_PR_ICU_Kontraindikationsbeurteilung"
 },
 {
   "id" : "mii-pr-icu-monitoring-und-vitaldaten",
@@ -755,11 +825,32 @@
   "name" : "MII_VS_ICU_Category_Procedure_Beatmung_SNOMED"
 },
 {
+  "id" : "mii-vs-icu-code-ernaehrungszufuhr",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Code_Ernaehrungszufuhr"
+},
+{
   "id" : "mii-vs-icu-code-extrakorporale-verfahren",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren",
   "version" : "2027.0.0",
   "name" : "MII_VS_ICU_Code_Extrakorporale_Verfahren"
+},
+{
+  "id" : "mii-vs-icu-code-klinische-beurteilung",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Code_Klinische_Beurteilung"
+},
+{
+  "id" : "mii-vs-icu-code-kontraindikation",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Code_Kontraindikation"
 },
 {
   "id" : "mii-vs-icu-code-monitoring-und-vitaldaten-iso11073",

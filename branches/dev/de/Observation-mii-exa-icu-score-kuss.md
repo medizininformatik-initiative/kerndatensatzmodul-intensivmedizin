@@ -1,10 +1,10 @@
-# mii-exa-icu-score-kuss - MII IG ICU v2027.0.0
+# Score Kuss - MII IG ICU v2027.0.0
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
-* **mii-exa-icu-score-kuss**
+* **Score Kuss**
 
-## Observation: mii-exa-icu-score-kuss
+## Beispiel Observation: Score Kuss
 
 -------
 

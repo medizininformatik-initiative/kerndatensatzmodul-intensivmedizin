@@ -68,8 +68,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15.135"}
-    h3,h4,h5,h6{--heading-prefix:"15.135"}</style>
+    <style type="text/css">h2{--heading-prefix:"15.148"}
+    h3,h4,h5,h6{--heading-prefix:"15.148"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -355,7 +355,7 @@
   </table>
 
 <p>
-<p>Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe).</p>
+<p>Placeholder codes for intensive care concepts without an established international code (drafts only).</p>
 
 </p>
 
@@ -367,7 +367,10 @@
   <p>Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:</p>
 
   
-<ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
+<ul>
+ <li><a href="ValueSet-mii-vs-icu-code-klinische-beurteilung.html">MII VS ICU Code Klinische Beurteilung</a></li>
+ <li><a href="ValueSet-mii-vs-icu-code-kontraindikation.html">MII VS ICU Code Kontraindikation</a></li>
+</ul>
 
 
   <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="mii-cs-icu-dgai"> </a><a name="hcmii-cs-icu-dgai"> </a><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code> defines the following codes:</p>
@@ -378,22 +381,22 @@
 </div></td></tr>
 <tr><td style="white-space:nowrap">ped-cbs<a name="mii-cs-icu-dgai-ped-cbs"> </a></td>
 <td>pediatric COMFORT-B-Scale</td>
-<td><div><p>COMFORT-Behavior-Skala (COMFORT-B)</p>
+<td><div><p>COMFORT-Behavior Scale (COMFORT-B)</p>
 </div></td></tr>
 <tr><td style="white-space:nowrap">ped-kuss<a name="mii-cs-icu-dgai-ped-kuss"> </a></td>
 <td>pediatric KUSS</td>
-<td><div><p>Kindliche Unbehagens- und Schmerzskala (KUSS)</p>
+<td><div><p>Child discomfort and pain scale (KUSS)</p>
 </div></td></tr>
 <tr><td style="white-space:nowrap">ped-sos<a name="mii-cs-icu-dgai-ped-sos"> </a></td>
 <td>pediatric SOS</td>
-<td><div><p>Sophia Observation withdrawal Symptoms-scale (SOS) Scope des Profils ist die Entzugssymptomatik.
-Fuer paediatrisches Delirium MII_PR_ICU_Score_SOS_PD verwenden.</p>
+<td><div><p>Sophia Observation withdrawal Symptoms-scale (SOS). This profile covers withdrawal symptoms.
+For pediatric delirium use MII_PR_ICU_Score_SOS_PD.</p>
 </div></td></tr>
 <tr><td style="white-space:nowrap">ped-sos-pd<a name="mii-cs-icu-dgai-ped-sos-pd"> </a></td>
 <td>pediatric SOS-PD</td>
-<td><div><p>Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD)
-Scope des Profils ist nur (!) der Punktwert des paediatrischen Delirium-Assessments, gleichwohl das Instrument auch den SOS mit beinhaltet.
-Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik Profil MII_PR_ICU_Score_SOS verwenden.</p>
+<td><div><p>Sophia Observation withdrawal Symptoms-scale and Pediatric Delirium (SOS-PD).
+This profile covers only the pediatric delirium assessment score, although the instrument also includes SOS.
+Parental behavioural assessment is not captured. For withdrawal symptoms use MII_PR_ICU_Score_SOS.</p>
 </div></td></tr>
 <tr><td style="white-space:nowrap">bps<a name="mii-cs-icu-dgai-bps"> </a></td>
 <td>BPS</td>
@@ -405,11 +408,23 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
 </div></td></tr>
 <tr><td style="white-space:nowrap">contraindication-enteral-nutrition<a name="mii-cs-icu-dgai-contraindication-enteral-nutrition"> </a></td>
 <td>Contraindication to enteral nutrition</td>
-<td><div><p>Kontraindikation gegen enterale Ernaehrung</p>
+<td><div><p>Assessment of whether a contraindication to enteral nutrition is present or absent; the code itself does not assert its presence.</p>
 </div></td></tr>
 <tr><td style="white-space:nowrap">calorie-goal-in-24-h<a name="mii-cs-icu-dgai-calorie-goal-in-24-h"> </a></td>
 <td>Calorie Goal in 24h</td>
-<td><div><p>Kalorienziel ueber 24h</p>
+<td><div><p>Calorie target over 24 hours</p>
+</div></td></tr>
+<tr><td style="white-space:nowrap">contraindication-proning<a name="mii-cs-icu-dgai-contraindication-proning"> </a></td>
+<td>Contraindication to prone positioning</td>
+<td><div><p>Assessment of whether a contraindication to prone positioning is present or absent; the code itself does not assert its presence.</p>
+</div></td></tr>
+<tr><td style="white-space:nowrap">contraindication-drug-based-thrombosis-prophylaxis<a name="mii-cs-icu-dgai-contraindication-drug-based-thrombosis-prophylaxis"> </a></td>
+<td>Contraindication to pharmacological thromboprophylaxis</td>
+<td><div><p>Assessment of whether a contraindication to pharmacological thromboprophylaxis is present or absent; the code itself does not assert its presence. Mechanical thromboprophylaxis is outside its scope.</p>
+</div></td></tr>
+<tr><td style="white-space:nowrap">parenteral-nutrition-in-progress<a name="mii-cs-icu-dgai-parenteral-nutrition-in-progress"> </a></td>
+<td>Parenteral nutrition currently being administered</td>
+<td><div><p>Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment.</p>
 </div></td></tr></table></div>
 
   <hr/>
@@ -447,7 +462,7 @@ Die elterliche Verhaltensbeurteilung wird nicht erfasst. Fuer Entzugssymptomatik
 
           IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.medizininformatik-initiative.de/">Medizininformatik Initiative</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Nov 26, 2026 10:27+0000">2026-11-26</span>
+          Erstellt <span title="Thu, Nov 26, 2026 11:03+0000">2026-11-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

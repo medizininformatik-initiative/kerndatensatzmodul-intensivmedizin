@@ -5,6 +5,10 @@
     "status" : "draft",
     "name" : "MII_CS_ICU_DGAI",
     "title" : "MII CS ICU DGAI",
-    "description" : "Platzhaltercodes fuer Konzepte der Intensivmedizin ohne etablierten internationalen Code (nur Entwuerfe)."
+    "description" : "Placeholder codes for intensive care concepts without an established international code (drafts only).",
+    "uses" : {
+    },
+    "ValueSet-mii-vs-icu-code-kontraindikation.html" : "MII VS ICU Code Kontraindikation",
+    "ValueSet-mii-vs-icu-code-klinische-beurteilung.html" : "MII VS ICU Code Klinische Beurteilung"
   }]
 }

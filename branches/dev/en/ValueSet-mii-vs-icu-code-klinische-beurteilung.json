@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-icu-code-klinische-beurteilung",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-icu-code-klinische-beurteilung</b></p><a name=\"mii-vs-icu-code-klinische-beurteilung\"> </a><a name=\"hcmii-vs-icu-code-klinische-beurteilung\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-mii-vs-icu-code-kontraindikation.html\">MII VS ICU Code Kontraindikation</a></li><li>Include these codes as defined in <a href=\"CodeSystem-mii-cs-icu-dgai.html\"><code>https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-mii-cs-icu-dgai.html#mii-cs-icu-dgai-parenteral-nutrition-in-progress\">parenteral-nutrition-in-progress</a></td><td style=\"color: #cccccc\">Parenteral nutrition currently being administered</td><td>Assessment of whether parenteral nutrition is actually being administered at the effective time or throughout the effective period; the code identifies the assessment question and does not itself assert that administration is in progress. This is not an order, indication or contraindication assessment.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-klinische-beurteilung",
+  "version" : "2027.0.0",
+  "name" : "MII_VS_ICU_Code_Klinische_Beurteilung",
+  "title" : "MII VS ICU Code Klinische Beurteilung",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-26T11:03:30+00:00",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Clinical assessment questions, including contraindications and current therapy status.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-kontraindikation"]
+    },
+    {
+      "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/CodeSystem/mii-cs-icu-dgai",
+      "concept" : [{
+        "code" : "parenteral-nutrition-in-progress"
+      }]
+    }]
+  }
+}

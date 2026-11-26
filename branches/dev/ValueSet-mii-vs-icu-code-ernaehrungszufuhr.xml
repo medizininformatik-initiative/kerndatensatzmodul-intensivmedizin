@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-icu-code-ernaehrungszufuhr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-icu-code-ernaehrungszufuhr</b></p><a name="mii-vs-icu-code-ernaehrungszufuhr"> </a><a name="hcmii-vs-icu-code-ernaehrungszufuhr"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/788472008">788472008</a></td><td style="color: #cccccc">Carbohydrate intake</td></tr><tr><td><a href="http://snomed.info/id/870372004">870372004</a></td><td style="color: #cccccc">Fat and oil intake</td></tr><tr><td><a href="http://snomed.info/id/874875003">874875003</a></td><td style="color: #cccccc">Protein and/or protein derivative intake</td></tr><tr><td><a href="http://snomed.info/id/787787004">787787004</a></td><td style="color: #cccccc">Energy intake</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/9057-1/">9057-1</a></td><td style="color: #cccccc">Calorie intake total 24 hour</td></tr></table></li></ul></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-icu-code-ernaehrungszufuhr</b></p><a name="de-mii-vs-icu-code-ernaehrungszufuhr"> </a><a name="de-hcmii-vs-icu-code-ernaehrungszufuhr"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/788472008">788472008</a></td><td/></tr><tr><td><a href="http://snomed.info/id/870372004">870372004</a></td><td/></tr><tr><td><a href="http://snomed.info/id/874875003">874875003</a></td><td/></tr><tr><td><a href="http://snomed.info/id/787787004">787787004</a></td><td/></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/9057-1/">9057-1</a></td><td/></tr></table></li></ul></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-ernaehrungszufuhr"/>
+  <version value="2027.0.0"/>
+  <name value="MII_VS_ICU_Code_Ernaehrungszufuhr"/>
+  <title value="MII VS ICU Code Ernährungszufuhr"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-26T11:03:30+00:00"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Nutritional intake observables for the generic ICU nutrition-intake base. Extensible to additional nutrients and appropriate intake codes. Not a value set of requirements or prescribed targets."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="788472008"/>
+      </concept>
+      <concept>
+        <code value="870372004"/>
+      </concept>
+      <concept>
+        <code value="874875003"/>
+      </concept>
+      <concept>
+        <code value="787787004"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="9057-1"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
