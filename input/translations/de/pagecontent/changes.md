@@ -4,6 +4,10 @@ Alle Änderungen sind hier gelistet.
 
 Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publisher, auf Basis des MII-KDS-Modul-Templates.
 
+- `feat` Abstrakte generische Ernährungszufuhr mit extensible Identitätscode-Bindung; Kohlenhydrate, Fett, Eiweiß und Kalorienzufuhr 24h erben davon. Zeiträume benötigen Anfang und Ende; auch Kalorienzufuhr unterstützt dataAbsentReason.
+- `feat` Draft *Bilanz Einfuhr Eiweiß*: aufsummierte Zufuhr in Gramm mit SNOMED CT 874875003, Bezugszeitraum und Unterstützung fehlender Werte.
+- `feat` Draft *Bilanz Einfuhr Fett*: aufsummierte Zufuhr in Gramm mit SNOMED CT 870372004, Bezugszeitraum und Unterstützung fehlender Werte.
+- `feat` Draft *Bilanz Einfuhr Kohlenhydrate*: aufsummierte Kohlenhydratzufuhr in Gramm mit SNOMED CT 788472008, Bezugszeitraum und Unterstützung fehlender Werte. Ohne DGAI-Code und ohne geerbte Flüssigkeitsbilanz-Semantik.
 - `fix` Klinische Beurteilungen verwenden das bestehende Present/Absent-ValueSet (52101004/2667000); das redundante Draft-ValueSet entfällt. Nur im PN-Durchführungsprofil verbietet ein negatives Ergebnis partOf; supportingInfo bleibt verfügbar.
 - `fix` Die PN-Kategorie therapy verwendet offenes Slicing auf category-Ebene; weitere HL7-Kategorien bleiben zulässig. Ergebnisse werden durch das required ValueSet begrenzt, ohne zusätzlich festgelegtes SNOMED-System.
 - `fix` Klinische Beurteilungen unterstützen offenes Kategorie-Coding. Nur die Beurteilung der tatsächlichen parenteralen Ernährung verlangt therapy; Kontraindikationsbeurteilungen haben keine feste Kategorie. DGAI-Definitionen beschreiben die Beurteilungsfragen einheitlich auf Englisch.
@@ -36,8 +40,6 @@ Ballot-Release — erste formale Publikation dieses Moduls über den HL7 IG Publ
 - **`BREAKING`** SOFA verwendet auswertbare Integer-Wertebereichsregeln und geschlossenes Organkomponenten-Slicing. Ein erfasstes Ergebnis verlangt alle sechs unterschiedlichen Organsysteme; fremde oder doppelte Komponenten ersetzen keinen Subscore. Bei vollständig fehlender SOFA-Beobachtung genügt `dataAbsentReason`; auch ein fehlender Organ-Subscore kann einen eigenen Grund tragen.
 - `fix` Die Score-Basis liefert nun Systemmuster auf Coding-Ebene für den Diskriminator `pattern:$this`. GCS und Wong-Baker-FACES erlauben `dataAbsentReason` anstelle des Gesamtwerts; Wert und Fehlgrund bleiben gegenseitig ausgeschlossen. Das GCS-Beispiel enthält jetzt einen numerischen Gesamtwert und die erwartete Score-Einheit.
 - `fix` Das IEEE-11073-ValueSet für extrakorporale Parameter verwendet die eigene Canonical `...-iso11073` statt der kollidierenden LOINC-Canonical. Seine generische extensible Bindung umfasst die IEEE-11073-Nomenklatur; spezifische Profile wählen passende Messgrößen. Für IEEE gedachte Referenzen müssen die korrigierte Canonical verwenden; die LOINC-Canonical bleibt unverändert.
-
-- Klinische Beurteilungen als Draft: neue abstrakte Basis für kategoriale Beurteilungen, eine abstrakte Kontraindikationsbasis und spezifische Beurteilungen für enterale Ernährung, Bauchlage und medikamentöse Thromboseprophylaxe. DGAI-Fragecodes benennen die Maßnahme; verpflichtende SNOMED-CT-Ergebnisse sind Present (52101004) oder Absent (2667000). Fehlende Beurteilungen verwenden dataAbsentReason. Ein separates Draft-Profil erfasst, ob zu einem Zeitpunkt oder während eines Zeitraums parenterale Ernährung durchgeführt wird. Coding-Versionen sind verpflichtend, Editionen und Displays werden nicht festgelegt. Begründende Diagnosen und Befunde können über workflow-supportingInfo referenziert werden. Zugehörige Issues: parenterale Ernährung [NRA-179](https://imi-uka.atlassian.net/browse/NRA-179), Kontraindikation gegen enterale Ernährung [NRA-19](https://imi-uka.atlassian.net/browse/NRA-19).
 
 ### Bekannte Einschränkungen
 

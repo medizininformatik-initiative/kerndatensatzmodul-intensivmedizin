@@ -347,6 +347,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-eiweiss"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Eiweiß",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Eiweiss"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-bilanz-einfuhr-enterale-fluessigkeit"
         },
         "description": "Beispiel: MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
@@ -355,11 +363,27 @@
       },
       {
         "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-fett"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Fett",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Fett"
+      },
+      {
+        "reference": {
           "reference": "Observation/mii-exa-icu-bilanz-einfuhr-fluessigkeit-gesamt"
         },
         "description": "Beispiel: MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
         "exampleBoolean": true,
         "name": "Bilanz Einfuhr Fluessigkeit Gesamt"
+      },
+      {
+        "reference": {
+          "reference": "Observation/mii-exa-icu-bilanz-einfuhr-kohlenhydrate"
+        },
+        "description": "Beispiel: MII PR ICU Bilanz Einfuhr Kohlenhydrate",
+        "exampleBoolean": true,
+        "name": "Bilanz Einfuhr Kohlenhydrate"
       },
       {
         "reference": {
@@ -699,10 +723,42 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-eiweiss"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Eiweiß",
+        "description": "Protein intake as an accumulated mass in grams over the documented interval. This is distinct from protein requirements, prescribed targets, energy intake and protein intake rates.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-fett"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Fett",
+        "description": "Fat intake as an accumulated mass in grams over the documented interval. This is distinct from fat requirements, prescribed targets, energy intake and fat intake rates.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
         },
         "name": "MII PR ICU Bilanz Einfuhr Kalorien 24h",
         "description": "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-einfuhr-kohlenhydrate"
+        },
+        "name": "MII PR ICU Bilanz Einfuhr Kohlenhydrate",
+        "description": "Carbohydrate intake as an accumulated mass in grams over the documented interval. This is distinct from carbohydrate requirements, prescribed targets, energy intake and carbohydrate intake rates.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-icu-bilanz-ernaehrung-generisch"
+        },
+        "name": "MII PR ICU Bilanz Ernährung Generisch",
+        "description": "Abstract base for quantitative observations of nutritional intake. Specialisations define nutrient or energy, compatible codes and units, and whether the value is an accumulated amount or an intake rate. Requirements and prescribed targets are distinct concepts.",
         "exampleBoolean": false
       },
       {
@@ -1412,6 +1468,14 @@
           "reference": "ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
         },
         "name": "MII VS ICU Category Procedure Beatmung SNOMED",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-icu-code-ernaehrungszufuhr"
+        },
+        "name": "MII VS ICU Code Ernährungszufuhr",
+        "description": "Nutritional intake observables for the generic ICU nutrition-intake base. Extensible to additional nutrients and appropriate intake codes. Not a value set of requirements or prescribed targets.",
         "exampleBoolean": false
       },
       {

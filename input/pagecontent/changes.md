@@ -6,6 +6,10 @@ All changes are listed here.
 
 Ballot release — first formal publication of this module through the HL7 IG Publisher, based on the MII KDS module template.
 
+- `feat` Abstract generic nutritional intake base with extensible identity-code binding; carbohydrate, fat, protein and 24-hour calorie intake derive from it. Periods require start and end; calorie intake also supports dataAbsentReason.
+- `feat` Draft *Bilanz Einfuhr Eiweiß*: accumulated protein intake in grams with SNOMED CT 874875003, a documented time interval and support for absent values.
+- `feat` Draft *Bilanz Einfuhr Fett*: accumulated fat intake in grams with SNOMED CT 870372004, a documented time interval and support for absent values.
+- `feat` Draft *Bilanz Einfuhr Kohlenhydrate*: carbohydrate intake as an accumulated mass in grams with SNOMED CT 788472008, explicit time interval and support for missing values. No DGAI code or fluid-balance semantics are inherited.
 - `fix` Reuse the existing Present/Absent ValueSet (52101004/2667000) for clinical assessments. Remove the redundant draft presence ValueSet. Only the actual PN administration assessment prohibits partOf when the result is Absent; supportingInfo remains available.
 - `fix` PN therapy category uses open category-level slicing, allowing additional HL7 categories. Presence results are constrained by their required ValueSet, without a redundant fixed SNOMED system.
 - `fix` Clinical assessments support open category coding; only the actual parenteral nutrition administration assessment requires therapy. Contraindication assessments have no fixed category. DGAI definitions consistently describe assessment questions in English.
@@ -38,8 +42,6 @@ Ballot release — first formal publication of this module through the HL7 IG Pu
 - **`BREAKING`** SOFA now uses evaluable integer range constraints and closed organ-component slicing. A recorded result requires all six distinct organ systems; unrelated or duplicate components cannot replace a subscore. A wholly unavailable SOFA observation can contain only `dataAbsentReason`, and an unavailable organ subscore can carry its own reason.
 - `fix` The Score base now supplies coding-level system patterns for its `pattern:$this` discriminator. GCS and Wong-Baker-FACES permit `dataAbsentReason` instead of a total; value and absence reason remain mutually exclusive. The GCS example now contains a numeric total and the expected score unit.
 - `fix` The extracorporeal-parameter IEEE 11073 ValueSet now uses its own `...-iso11073` canonical instead of colliding with the LOINC ValueSet. Its generic extensible binding covers the IEEE 11073 nomenclature; specialised profiles select appropriate metrics. References intended for IEEE must use the corrected canonical; the LOINC canonical is unchanged.
-
-- Draft clinical assessments: add an abstract categorical assessment base, an abstract contraindication base and specialised assessments for enteral nutrition, prone positioning and pharmacological thromboprophylaxis. DGAI question codes identify the intervention; required SNOMED CT results are Present (52101004) or Absent (2667000). Missing assessments use dataAbsentReason. A separate draft profile records whether parenteral nutrition is being administered at a specified time or throughout a specified period. Coding versions are required without fixed editions or displays. Supporting diagnoses and findings can be referenced using workflow-supportingInfo. Related issues: parenteral nutrition [NRA-179](https://imi-uka.atlassian.net/browse/NRA-179), contraindication to enteral nutrition [NRA-19](https://imi-uka.atlassian.net/browse/NRA-19).
 
 ### Known issues
 

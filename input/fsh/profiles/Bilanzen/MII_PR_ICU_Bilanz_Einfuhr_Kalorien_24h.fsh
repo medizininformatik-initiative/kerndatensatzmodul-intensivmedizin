@@ -1,5 +1,5 @@
 Profile: MII_PR_ICU_Bilanz_Einfuhr_Kalorien_24h
-Parent: Observation
+Parent: MII_PR_ICU_Bilanz_Ernaehrung_Generisch
 Id: mii-pr-icu-bilanz-einfuhr-kalorien-24h
 Title: "MII PR ICU Bilanz Einfuhr Kalorien 24h"
 Description: "Calorie intake over 24 hours, as part of the fluid and nutrition balance. The period it covers is required."
@@ -7,7 +7,7 @@ Description: "Calorie intake over 24 hours, as part of the fluid and nutrition b
 * insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-einfuhr-kalorien-24h"
 * ^status = #draft
-* obeys mii-icu-val-xor-dar
+* ^abstract = false
 
 * identifier MS
 
@@ -49,7 +49,7 @@ Description: "Calorie intake over 24 hours, as part of the fluid and nutrition b
 * issued MS
 
 * value[x] only Quantity
-* valueQuantity MS // optional: dataAbsentReason may replace the value (mii-icu-val-xor-dar)
+* valueQuantity MS
 * valueQuantity.code 1.. MS
 * valueQuantity = $ucum#kcal/(24.h) "kilocalorie per day"
 * dataAbsentReason MS
